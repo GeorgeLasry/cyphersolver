@@ -1,0 +1,223 @@
+{
+ "schema_version": 1,
+ "target": "greenhow1861",
+ "title": "Rose O'Neal Greenhow, letter in cipher on mourning paper, Washington 1861 (seized 23 Aug 1861), read in part with the 1864 Greenhow key (NARA naId 1634036; catalogue 644)",
+ "documents": [
+  {
+   "id": "1634036-side1",
+   "read": "read in part",
+   "shelfmark": "NARA RG 59, Seized Correspondence of Rose O'Neal Greenhow (entry A1-986), naId 1634036, image 1",
+   "date": "1861 (seized 23 Aug 1861)",
+   "year": 1861,
+   "country": "Confederate States",
+   "route": "Washington -> Confederate lines (presumed)",
+   "language": "English",
+   "pages": 1,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {"location": ["none"], "source": "No decipherment on the NARA record or its images; none found in print or online (bounded search, NOTES.md)."},
+   "length": {
+    "tokens": 183,
+    "distinct": 24,
+    "unit": "symbols",
+    "measured": true,
+    "file": "ciphertext_side1.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "NARA naId 1634036 image 1, enlarged crops; two independent readings, the second in neutral shape labels",
+    "image_quality": "fair",
+    "notes": "Mourning-paper leaf in fragments laid down on a backing; about 17 lines; several paper losses. Uncertain signs marked '?' in transcription_side1.txt."
+   }
+  },
+  {
+   "id": "1634036-side2",
+   "read": "not read",
+   "shelfmark": "NARA RG 59, Seized Correspondence of Rose O'Neal Greenhow (entry A1-986), naId 1634036, image 2",
+   "date": "1861 (seized 23 Aug 1861)",
+   "year": 1861,
+   "country": "Confederate States",
+   "route": "Washington -> Confederate lines (presumed)",
+   "language": "English",
+   "pages": 1,
+   "cleartext_in_document": "none",
+   "plaintext": {"location": ["none"]},
+   "length": {"tokens": 17, "distinct": 11, "unit": "symbols", "measured": true, "file": "ciphertext_side2.txt"},
+   "transcription": {
+    "by": "llm from images",
+    "source": "NARA naId 1634036 image 2",
+    "image_quality": "poor",
+    "notes": "Two ink lines at the top; the rest is show-through from side 1. Read once, not re-read independently."
+   }
+  }
+ ],
+ "system": {
+  "types": ["monoalphabetic", "nomenclator"],
+  "summary": "Symbol substitution of the Jordan-Greenhow cipher: one sign per letter (26 on the 1864 key, plus a second N form), with digraph and code signs on the key sheet; words separated by dots, clear words mixed in.",
+  "symbol_kind": "digits and symbols",
+  "distinct_symbols": 24,
+  "diacritics": {"used": false},
+  "homophones": {"used": true, "per_letter": {"N": 2}},
+  "nomenclator": {
+   "present": true,
+   "kinds": ["names", "places", "common words"]
+  },
+  "nulls": {"present": false},
+  "key_order": "random",
+  "word_division": "kept",
+  "doubled_letters": "written twice (ATTACK, WILL, EFFORT, FERRY, ALARM on side 1); the key sheet's rule 'second letter inverted' not seen",
+  "sibling_key": "1864 Greenhow key (NARA M1091 naId 62017285 image 0484, 'Lamb Papers CXXIX'); used. The same key reads Jordan's 1861 letter (targets/jordan1861).",
+  "notes": "distinct_symbols = distinct sign labels on side 1. The key sheet's digraph and code signs were not identified on side 1."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "None found: the NARA record has no scope note or decipherment; the Library of Congress / World Digital Library copy (wdl.2706) and the Santa Clara University exhibit (item 3281) show the letter without a transcription; phrase searches found nothing. The Official Records Ser. II vol. 2 (Greenhow case papers, pp. 561-577), Pinkerton's Spy of the Rebellion (1883) and Greenhow's My Imprisonment (1863) do not print it (text searches, 27 Oct 2026). Fishel, The Secret War for the Union (1996) and Blackman, Wild Rose (2005) were checked by web search only (lending-library copies, full text not reachable). A period Union decipherment cannot be excluded: OR II 2 p. 561 says fragments were 'placed together so as to be read and copied'.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": ["images", "key from archive"],
+  "attack": "key from archive",
+  "human_role": "Outside contribution (WAINUT): the operator chose the catalogue item; transcription, key reading, decode, controls and prior-art search were done by AI language-model agents and checked against the images. No hand correction of readings recorded.",
+  "tools": ["decode.py (key applied to shape labels; controls against the English word list in lang/lexicons)"],
+  "models": ["AI language-model agents (WAINUT)"],
+  "sessions": 1,
+  "first_date": "2026-10-27",
+  "last_date": "2026-10-27"
+ },
+ "solution": [
+  {
+   "date": "2026-10-27",
+   "kind": "access",
+   "what": "Fetched the four images of NARA naId 1634036 and images 0482-0486 of M1091 naId 62017285.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "key from source",
+   "technique": ["key matching"],
+   "what": "Read the symbol column of M1091 image 0484 (the 1864 key found on Greenhow's body); image 0483 is a different table. Header 'Lamb Papers CXXIX'.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "transcription",
+   "what": "Transcribed side 1 twice: by key value, and independently in neutral shape labels (transcription_side1.txt). Side 2 (two lines) and the numeral fragment (image 3) transcribed once.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "reading",
+   "technique": ["key matching", "contextual inference"],
+   "what": "Applied the key to side 1: attack is hourly expected, they believe the attack will be simultaneous, an effort is being made to find out who gave the alarm, a troop of cavalry, Harper's Ferry. A second N form, not on the key sheet, valued from context. Restorations at paper losses marked.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "control",
+   "technique": ["statistical test"],
+   "what": "decode.py: true key 17/27 whole cipher words in the English word list, mean bigram -2.49; 2,000 random keys mean 0.5, max 5, bigram z = 5.6; key shifted +1: 4/27; signs shuffled inside words: mean 2.6, max 6.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "reading",
+   "technique": ["key matching"],
+   "what": "Side 2: two ink lines give only fragments (gr..e, tim.., bo.., ..ganiz.ing). Not read.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "literature search",
+   "what": "NARA record, LoC/WDL wdl.2706, Santa Clara University exhibit item 3281, phrase searches: no decipherment found. NARA naId 1634043, a clear pencil draft headed 10 Aug 1861 on McClellan's activity and an expected attack, is close in theme; it is not a copy of this letter.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "literature search",
+   "what": "Review (Claude, for Daniel Bourdeau), print step: grepped the archive.org texts of the Official Records Ser. II vol. 2 (warofrebellion02unit_0; the Greenhow case papers, pp. 561-577), Pinkerton's Spy of the Rebellion (1883; Gutenberg 34973) and Greenhow's My Imprisonment (1863) for the side-1 phrases ('hourly expected', 'gave the alarm', 'panic', 'simultaneous', 'Harper's Ferry', 'cavalry') and for 'mourning'. None prints this letter or a decipherment of it. OR II 2 p. 561 says her cipher letters were found torn in the stove and some fragments 'assorted and placed together so as to be read and copied'; pp. 564-565 print Jordan's letter of 29 Oct 1861 (cipher arranged 'last April', alias Thomas John Rayford); Greenhow (1863, pp. 76-77) says the agents puzzled over her cipher scraps for seven days. Fishel (1996) and Blackman (2005) are lending-library copies on archive.org whose full text could not be searched; web searches for the phrases with either book found nothing. Six web searches in all.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "key from source",
+   "technique": ["key matching", "statistical test"],
+   "what": "Review: tested the numeral scrap (image 3) against the 1864 key sheet. The key's figure row writes 1-9 as letter-like signs (a, d, phi, ff, m, b, nn, c, c; 10 = III), so Arabic figures are not this key's numbers. Read as the key's digit-like letter signs (3 C, 4 I/R, 5 O, 7 B, 8 G, 9 K, 0 J, $ U), 11 of the 33 figure groups contain a 2 or 6, which has no letter value, and no group gives a word; the scrap's clear letters are not figure signs either (numerals_test.py). The figures (5 ... 104, with '$5 dollers $25') read as a money reckoning. The last line has three key-like signs (box with X = S, box with dot = M, Y = E) among torn clear letters: too short to read.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "verification",
+   "what": "Review (Claude, for Daniel Bourdeau): side 1 reading re-read against decryption_side1.txt and image 1 (lines 4-9 checked sign by sign: ATTACK IS HOURLY EXPEC-R-TED, THEY BELEIVE, SIMULTANEOU, FERR-). Grade B: coherent, but holes or conjectures in 9 of 15 sentences. Side 2 counted from transcription_side2.txt (17 signs read; no clear words), filling the two 'unknown' fields.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "recovered",
+  "method": "read after matching with key from external sources",
+  "method_basis": "The 1864 key found on Greenhow's body (NARA M1091 naId 62017285 image 0484), not previously tied to this 1861 letter, decodes side 1 with no change except one extra N form; side 2 and the numeral fragment are not read.",
+  "contribution": ["transcription", "catalogue correction"],
+  "fraction_read": 0.6,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "reading_side1.md scored with research/reading_audit/v2_score.py: hole rate 0.405 with every supplied letter and conjecture counted as a hole (0.595 read as sense); side 2 not counted.",
+  "verification": ["key confirms", "historical consistency"],
+  "provenance": "contributed",
+  "notes": "Applying the 1864 key to 1861 Greenhow material is not new (the Rosenbach did so in 2011 for another note); no decipherment of this letter was found. The second N form (looped l with a crossbar) is not on the key sheet; every word that contains it is otherwise keyed.",
+  "gaps": [
+   {"item": "Side 1, paper losses (al[l], acti[vi]ty, atta[ck], [b]e, Ferr[y], eff[o]rt, tro[op o]f, Harpe[r's F]erry, line 15 [th]is)", "blocker": "illegible", "detail": "signs lost with the paper; restorations from context, marked"},
+   {"item": "Side 1, clear words cut by losses (myste.., a.., u.., l..) and the heading 'P 31 ?'", "blocker": "illegible", "detail": "torn clear words; the heading may be a number or date"},
+   {"item": "Side 1, '[..]r[d]s Ferr[y]' and '[Bal]timore'", "blocker": "illegible", "detail": "'Edwards Ferry' and 'Baltimore' are conjectures; only R d S - F E R R and TIMORE are on the paper"},
+   {"item": "Side 2 (image 2)", "blocker": "illegible", "detail": "two ink lines, the rest show-through; fragments only"},
+   {"item": "Numeral fragment (image 3)", "blocker": "no-key-material", "detail": "tested against the 1864 key (numerals_test.py): its figure signs are letter-like (1 a, 2 d ...), so the Arabic figures are not this key's numbers, and read as its letter signs the figures give no words (2 and 6 have no value); the scrap reads as a money reckoning ('$5 dollers $25'), and the three key-like signs on its last line are too few to read. No other key or code book is known"}
+  ],
+  "credits": [
+   {
+    "who": "lccompany",
+    "role": "solution",
+    "note": "side 1 transcribed and decoded with the 1864 key; controls",
+    "date": "2026-10-27"
+   },
+   {
+    "who": "lccompany",
+    "role": "transcription",
+    "note": "side 1 in shape labels, side 2 and the numeral fragment",
+    "date": "2026-10-27"
+   },
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "the 1864 key found on Greenhow's body, copy in NARA M1091 naId 62017285 image 0484 ('Lamb Papers CXXIX')",
+    "source": "https://catalog.archives.gov/id/62017285"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "1634036-side1",
+    "label": "Greenhow, mourning-paper letter, side 1 (naId 1634036 image 1)",
+    "transcription": "transcription_side1.txt",
+    "decryption": "decryption_side1.txt",
+    "reading": "reading_side1.md",
+    "language": "en",
+    "state": "read in part",
+    "read_share": 0.595,
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude (review for Daniel Bourdeau)",
+     "date": "2026-10-27",
+     "note": "Read reading_side1.md against decryption_side1.txt and image 1 (lines 4-9 sign by sign). The sentences cohere in her spelling (attack is hourly expected; they believe the attack will be simultaneous; an effort is being made to find out who gave the alarm), and every restoration is marked; but 9 of 15 sentences carry losses or conjectures ('Edwards Ferry', 'Baltimore', 'troop of', 'Harper's Ferry'), so grade B, not A. Replaces the contributor's own grade A (WAINUT agent)."
+    },
+    "summary": "From Washington in summer 1861: McClellan is busy and the panic is great; an attack is hourly expected and they believe it will be simultaneous from [...]rds Ferry (Edwards Ferry?) and [...]timore (Baltimore?); an effort is being made to find out who gave the alarm; a troop of cavalry [...]nt from here this morning; Harper's Ferry is named. Intelligence from the Greenhow ring before her arrest on 23 Aug 1861."
+   },
+   {
+    "doc": "1634036-side2",
+    "label": "Greenhow, mourning-paper letter, side 2 (naId 1634036 image 2)",
+    "transcription": "transcription_side2.txt",
+    "decryption": "decryption_side2.txt",
+    "language": "en",
+    "state": "decoded, not read",
+    "note": "Two ink lines; fragments only."
+   }
+  ],
+  "key_file": "key_1864.md"
+ }
+}

@@ -1,0 +1,37 @@
+== 1. Decryption, key MANCHESTERBLUFF advancing by plaintext length ==
+INVADE     key MANCHE     expected UNICKI     written UNIEK     written deciphered INVCD      matches 4
+KENTUCKY   key STERBLUF   expected CXRKVNED   written CXNKVNED  written deciphered KEJTUCKY   matches 7
+EXTEND     key FMANCH     expected JJTRPK     written JJTRRK    written deciphered EXTEPD     matches 5
+EAST       key ESTE       expected ISLX       written ISLX      written deciphered EAST       matches 4
+TENNESSEE  key RBLUFFMAN  expected KFYHJXEER  written KFYHJEER  written deciphered TENNEZSR   matches 6
+positional matches 26/33
+  variant: key advancing by cipher: 5/33
+  variant: key advancing by nothing (restart per word): 4/33
+
+== 2. Key stream implied by cipher - crib (no key assumed) ==
+INVADE     UNIEK     C-P = MANEH
+KENTUCKY   CXNKVNED  C-P = STARBLUF
+EXTEND     JJTRRK    C-P = FMANEH
+EAST       ISLX      C-P = ESTE
+TENNESSEE  KFYHJEER  C-P = RBLUFMMN
+TENNESEE   KFYHJEER  C-P = RBLUFMAN   (one S of TENNESSEE dropped)
+
+== 3. Controls ==
+  key COMPLETEVICTORY  1/33  written deciphered: SZWPZ JTSCTUQM LHFFCZ EZHC CDFTSGCD
+  key COMERETRIBUTION  3/33  written deciphered: SZWAT JGFJBUWP WHFFNT EZUP JLFZVRCD
+  key MANCHESTER       9/33  written deciphered: INVCD KEJTJNRB CFBYNT WSYV DBGOFNSR
+  key BLUFF            9/33  written deciphered: TCOZF RDIFUCKY EIIXMF HHRS FENNEZDG
+  key VICKSBURG        0/33  written deciphered: ZFGUS IGHPNLUL IPCLWC GITW QOSMBCUZ
+  key RICHMOND         2/33  written deciphered: DFGXY PUWCTGSP WGCJPD WEYU TXWAXQRO
+  20000 random 15-letter keys: mean 1.19/33, max 11/33
+  119 shuffled cipher-word orders, right key: mean 5.43/33, max 18/33
+  15 start offsets of the key: [26, 4, 2, 1, 0, 2, 0, 0, 1, 0, 0, 0, 1, 0, 1]
+
+== 4. Alternative sign readings ==
+  reading UNICK CXNKVNED JJTRRK ISLX KFYHJEER -> 27 /33
+  reading UNIEK CXNKVNED JJTRRK ISDX KFYHJEER -> 25 /33
+  reading UNIEK CXNKVNED JJTRRK ISLX KTYHJEER -> 25 /33
+
+== 5. The two C positions of the key ==
+  INVADE position 4: key C gives C, written E = A + E
+  EXTEND position 5: key C gives P, written R = N + E

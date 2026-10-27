@@ -4305,52 +4305,6 @@
    "access": "archive"
   },
   {
-   "id": 380,
-   "counted": true,
-   "year": 1642,
-   "date": "1642-1644",
-   "title": "João IV → marquês de Nisa, ambassador in Paris: six letters mostly in cipher, 1642-44 (embassy letter-book)",
-   "correspondents": "João IV of Portugal → Vasco Luís da Gama, marquês de Nisa",
-   "place": "Lisbon",
-   "language": "Portuguese",
-   "region": "Portugal",
-   "period": "1611-1650",
-   "shelfmark": "ANTT, Manuscritos da Livraria, nº 1017 (PT/TT/MSLIV/1017), letters 9 ff.",
-   "folio_note": "6 letters: 28 Dec 1642 (PT/TT/MSLIV/1017/00009); 31 Dec 1642 (PT/TT/MSLIV/1017/00013); 9 Oct 1643 (PT/TT/MSLIV/1017/00044); 9 Oct 1643 (PT/TT/MSLIV/1017/00049); 20 Nov 1643 (PT/TT/MSLIV/1017/00056); 21 Sep 1644 (PT/TT/MSLIV/1017/00153)",
-   "cls": "C",
-   "status": "6 letters grouped. DigitArq: letter-book copy, 'escrita na sua maioria em cifra'; no decipherment mentioned. A sampled scan (m0019) shows cipher written as pseudo-words in Latin letters inside clear text, no interlinear decipherment. Not on DECODE. 27 Oct 2026, Brice Dudout (email): key rebuilt from the volume's own 'papel junto'; three of the six letters have a clear copy beside them in the letter-book. The only apparently unpublished piece is no. 00153 (21 Sept 1644), in a different system. Work in progress.",
-   "why": "Restoration diplomacy: the king's secret instructions to his ambassador in France on the French alliance, Westphalia and the captive infante D. Duarte.",
-   "importance": 4,
-   "solvability": 4,
-   "difficulty": 2,
-   "score_note": "Scored from the archive description during the Oct 2026 Torre do Tombo sweep (research/torre_do_tombo/); volume scans sampled",
-   "verify": "Locate the letter in the volume scans (one scan ≈ one letter, in order), transcribe the cipher runs; check Laranjo Coelho's 1940-42 edition for printed decipherments.",
-   "links": [
-    {
-     "label": "DigitArq PT/TT/MSLIV/1017/00009",
-     "href": "https://digitarq.arquivos.pt/documentDetails/491768ec61d54170ac77a21481399cfe"
-    },
-    {
-     "label": "Volume MSLIV 1017 with scans",
-     "href": "https://digitarq.arquivos.pt/documentDetails/1bfdb5d27fe049d7af1599290b3ebb03"
-    },
-    {
-     "label": "DigitArq PT/TT/MSLIV/1017/00013",
-     "href": "https://digitarq.arquivos.pt/documentDetails/190d26af2b1242d38c0ee5c62b7e50be"
-    },
-    {
-     "label": "DigitArq PT/TT/MSLIV/1017/00044",
-     "href": "https://digitarq.arquivos.pt/documentDetails/f8e25303792147b18fc10f045ffcfc65"
-    }
-   ],
-   "seen": "image",
-   "source": "Arquivo Nacional Torre do Tombo (DigitArq) sweep",
-   "prior_art": "Printed: Cartas de El-Rei D. João IV ao Conde da Vidigueira (Marquês de Niza), ed. P. M. Laranjo Coelho, Academia Portuguesa da História, 1940-42, from Torre do Tombo MSS; whether the cipher runs are deciphered there is unchecked (checked 26 Oct 2026: known.py (repo, DECODE, Cryptoole: no hit), web search).",
-   "ark": "",
-   "scored": "sweep",
-   "as_of": "2026-10-27"
-  },
-  {
    "id": 381,
    "counted": true,
    "year": 1642,
@@ -7517,46 +7471,35 @@
    "id": 474,
    "counted": true,
    "year": 1655,
-   "date": "24 May - 6 Sept 1655",
-   "title": "Comenius → Andreas Klobusiczky, letters with a ciphered sentence (Rákóczi archive)",
+   "date": "24 May 1655",
+   "title": "Comenius → Andreas Klobusiczky, cipher passage of 24 May 1655 (Rákóczi archive)",
    "correspondents": "Jan Amos Komenský (Comenius) → Andreas Klobusiczky (Rákóczi's councillor)",
    "place": "Leszno",
    "language": "Latin",
    "region": "Central Europe",
    "period": "1651-1700",
    "shelfmark": "Magyar Nemzeti Levéltár Országos Levéltár (Budapest), E 190 (Archivum familiae Rákóczi): 5.t. 788 ff. 389-390v; 6962 ff. 351-354v; 5.t. 800 ff. 414-415v",
-   "folio_note": "4 letters (24 May, 22 Jul, 4 Aug, 6 Sept 1655), each 'Contains ciphered sentence'; on 6 Sept the cipher follows news of Charles X's Polish campaign",
+   "folio_note": "One passage of 50 letters and the numbers 7, 865, 73 inside news quoted from an English correspondent; printed MHH XXIII (1874) no. CIII p. 178 and Patera 1892 no. CLII p. 178 (italic). The 4 Aug 1655 sentence is deciphered (write-up comenius1655); 22 Jul and 6 Sept have invisible ink / secret script printed in clear by Szilágyi 1890.",
    "cls": "B",
-   "status": "EMLO (Comenius catalogue) notes 'Contains ciphered sentence' with no decipherment noted. Printed in Patera, Jana Amosa Komenského korrespondence (1892) nos. 152-155 and partly in Szilágyi, Transsylvania et bellum boreo-orientale i (1890) / Okmánytár II. Rákóczy György; whether the editors deciphered the sentences is not stated. Not in the repo (known.py: Comenius, Klobusiczky no hit).",
+   "status": "4 Aug 1655 sentence deciphered in print (Szilágyi 1890 p. 393; Patera 1892 p. 182); key = Rákóczi envoys' table, MHH XXIII p. 740. The 24 May passage does not decipher with that table, shifts, keyword ciphers, or as a simple substitution of Latin (annealing with matched control); no decipherment in MHH, Szilágyi 1890 or Patera. See targets/comenius1655/.",
    "why": "Comenius's secret line to George II Rákóczi on the Swedish-Polish war of 1655, when he pressed Transylvania to join Sweden.",
    "importance": 3,
    "solvability": 2,
    "difficulty": 2,
    "score_note": "Scored from the archive description during the Oct 2026 EMLO sweep (research/founders_emlo/); not viewed",
-   "verify": "Check Patera 1892 nos. 152-155 and Szilágyi 1890 (both on archive.org / Hungaricana) for the ciphered sentences and any decipherment; Rákóczi chancery keys are in MNL OL.",
+   "verify": "Needs the original (MNL OL E 190) for the readings (Xyopatus / Xyoapus, long s / f) and any key; the cipher may belong to the English correspondent.",
    "links": [
-    {
-     "label": "EMLO 6 Sept 1655",
-     "href": "https://emlo.bodleian.ox.ac.uk/profile/work/94fce8d6-48e2-44ec-8f95-45ef44f261ac"
-    },
     {
      "label": "EMLO 24 May 1655",
      "href": "https://emlo.bodleian.ox.ac.uk/profile/work/93d0a370-eaa1-404e-9f0f-74da34dbfecc"
-    },
-    {
-     "label": "EMLO 22 Jul 1655",
-     "href": "https://emlo.bodleian.ox.ac.uk/profile/work/a7ea66a8-1972-440e-8a22-1cba4d17488f"
-    },
-    {
-     "label": "EMLO 4 Aug 1655",
-     "href": "https://emlo.bodleian.ox.ac.uk/profile/work/9541612d-f5c3-405d-baba-972b67c573ea"
     }
    ],
    "seen": "catalogue",
    "source": "EMLO sweep",
-   "prior_art": "not checked in print (26 Oct 2026); Patera 1892 / Szilágyi 1890 may print the cipher deciphered",
+   "prior_art": "checked 27 Oct 2026: MHH XXIII 1874, Szilágyi 1890 I pp. 388-394, Patera 1892; no decipherment of 24 May",
    "ark": "",
-   "scored": "sweep"
+   "scored": "sweep",
+   "outcome": "attempted, open"
   },
   {
    "id": 475,
@@ -9768,39 +9711,6 @@
    "scored": "sweep"
   },
   {
-   "id": 542,
-   "counted": true,
-   "year": 1761,
-   "date": "12 Jun 1761",
-   "title": "Le Mercier de La Rivière (Martinique) → minister: letter 'en grande partie chiffrée et n'a pas été transcrite en clair'",
-   "correspondents": "Pierre-Paul Le Mercier de La Rivière, intendant of Martinique → secretary of state for the Navy",
-   "place": "Martinique",
-   "language": "French",
-   "region": "Americas",
-   "period": "1701-1800",
-   "shelfmark": "Archives nationales d'outre-mer, COL C8 A 64 f° 1",
-   "folio_note": "1 letter; digitised (ANOM IREL)",
-   "cls": "C",
-   "status": "ANOM inventory: 'Cette lettre est en grande partie chiffrée et n'a pas été transcrite en clair'; digitised.",
-   "why": "British preparations at Dominica for the 1762 conquest of Martinique.",
-   "importance": 3,
-   "solvability": 4,
-   "difficulty": 3,
-   "score_note": "Scored from the archive description during the Oct 2026 FranceArchives / Archives nationales sweep (research/central_archives/); not viewed",
-   "verify": "Open the digitised C8 A 64 f° 1 on ANOM IREL; look for Martinique siblings with clear transcriptions (C8 A 69, 1770; C8 A 81, 1782).",
-   "links": [
-    {
-     "label": "FranceArchives",
-     "href": "https://francearchives.gouv.fr/fr/facomponent/a6723569c4eb8c23ca454a7927a681687ae15cdf"
-    }
-   ],
-   "seen": "catalogue",
-   "source": "FranceArchives / Archives nationales sweep",
-   "prior_art": "open (checked 26 Oct 2026: repo known.py, web search)",
-   "ark": "",
-   "scored": "sweep"
-  },
-  {
    "id": 543,
    "counted": true,
    "year": 1759,
@@ -10057,13 +9967,13 @@
    "shelfmark": "Archives départementales de Seine-et-Marne, 142J5",
    "folio_note": "1 letter among 6",
    "cls": "B",
-   "status": "Inventory: 'lettre de Rome à l'occasion des bonnes fêtes, en partie chiffrée, non signée 22 décembre 1699'. The repo's bossuet target covers BnF NAF 28227(9), the abbé's Rome correspondence of 1697-98 — same circle. The 24 Oct Archives nationales sweep noted it is probably printed decoded in Urbain-Levesque, Correspondance de Bossuet t. 12; check that first.",
+   "status": "Inventory: 'lettre de Rome à l'occasion des bonnes fêtes, en partie chiffrée, non signée 22 décembre 1699'. The repo's bossuet target covers BnF NAF 28227(9), the abbé's Rome correspondence of 1697-98 — same circle. The 24 Oct Archives nationales sweep noted it is probably printed decoded in Urbain-Levesque, Correspondance de Bossuet t. 12; check that first. Ciphertext not online (27 Oct 2026). The keys are in print: Urbain-Levesque, Correspondance de Bossuet t. XII has an appendix 'Clef de la correspondance sur le Quiétisme' with Bossuet's, Phelipeaux's and La Broue's keys, so a scan from AD77 should be enough to read it.",
    "why": "Aftermath of the Quietism affair at Rome.",
    "importance": 2,
    "solvability": 2,
    "difficulty": 2,
    "score_note": "Scored from the archive description during the Oct 2026 FranceArchives / Archives nationales sweep (research/central_archives/); not viewed",
-   "verify": "Ask AD77 for 142J5; test the bossuet target key.",
+   "verify": "Ask AD77 for a scan of 142J5; read it with the keys in the Urbain-Levesque t. XII appendix 'Clef de la correspondance sur le Quiétisme' (Bossuet, Phelipeaux, La Broue).",
    "links": [
     {
      "label": "FranceArchives",
@@ -10072,9 +9982,11 @@
    ],
    "seen": "catalogue",
    "source": "FranceArchives / Archives nationales sweep",
-   "prior_art": "open (checked 26 Oct 2026: repo known.py, web search)",
+   "prior_art": "keys in print (27 Oct 2026: Urbain-Levesque t. XII appendix 'Clef de la correspondance sur le Quiétisme'); ciphertext not online, no reading found",
    "ark": "",
-   "scored": "sweep"
+   "scored": "sweep",
+   "access": "archive",
+   "as_of": "2026-10-27"
   },
   {
    "id": 551,
@@ -12288,13 +12200,13 @@
    "shelfmark": "AGS, Estado, K 1639 (old D. 3), no. 89",
    "folio_note": "4 h. f.; \"Parte en cifra\"",
    "cls": "B",
-   "status": "Paz, Catálogo IV (1914) p. 14: \"Puntos en que el Papa deseaba le complaciese Carlos V acerca de la Liga y negociaciones pendientes con Francia. — 8 Abril 1524. — Lat. — Parte en cifra. — 4 h. f.\" No decipherment mentioned. Not on DECODE or in the repo (known.py: K 1639 no hits). Printed decipherment possible (Bergenroth CSP Spain II 1524 covers Sessa's Rome correspondence).",
+   "status": "Paz, Catálogo IV (1914) p. 14: \"Puntos en que el Papa deseaba le complaciese Carlos V acerca de la Liga y negociaciones pendientes con Francia. — 8 Abril 1524. — Lat. — Parte en cifra. — 4 h. f.\" No decipherment mentioned. Not on DECODE or in the repo (known.py: K 1639 no hits). Printed decipherment possible (Bergenroth CSP Spain II 1524 covers Sessa's Rome correspondence). No image found on PARES for K 1639 (27 Oct 2026); not transcribed.",
    "why": "Papal terms to the Emperor in April 1524, before Pavia, in the Rome imperial cipher family the repo already reads (sessa1523/sessa1524).",
    "importance": 4,
    "solvability": 3,
    "difficulty": 2,
    "score_note": "Scored from the archive description during the Oct 2026 PARES sweep (research/pares_ags/); not viewed",
-   "verify": "Check Bergenroth CSP Spain II (1524) for an 8 April 1524 papal memorandum; find K 1639 no. 89 on PARES and test the Sessa 1523-24 key from targets/sessa1524.",
+   "verify": "Find K 1639 no. 89 on PARES (no image found 27 Oct 2026; may need AGS scans) and test the Sessa 1523-24 key from targets/sessa1524; check Bergenroth CSP Spain II (1524) for the 8 April points.",
    "links": [
     {
      "label": "Paz, Catálogo IV (1914), archive.org",
@@ -12305,29 +12217,31 @@
    "source": "PARES (AGS) sweep",
    "prior_art": "open as far as checked (26 Oct 2026: CSP Spain II, April 1524 section on BHO, calendars K 1639 no. 50 (the Emperor's answer to the Pope's proposals) but not the 8 April points; cryptiana not yet searched)",
    "ark": "",
-   "scored": "sweep"
+   "scored": "sweep",
+   "access": "archive",
+   "as_of": "2026-10-27"
   },
   {
    "id": 615,
    "counted": true,
    "year": 1495,
-   "date": "1495 (undated)",
-   "title": "Undated letter in Puebla's Roman-numeral code (Ferdinand and Isabella / Puebla correspondence)",
-   "correspondents": "Ferdinand and Isabella ↔ Rodrigo González de Puebla (direction not recorded)",
-   "place": "unknown",
+   "date": "28 Dec 1495",
+   "title": "Ferdinand and Isabella → De Puebla, Tortosa, 28 Dec 1495, cipher copy in Puebla's Great Roman Numeral code",
+   "correspondents": "Ferdinand and Isabella → Rodrigo González de Puebla",
+   "place": "Tortosa",
    "language": "Spanish",
    "region": "England",
    "period": "15th century",
    "shelfmark": "AGS, Patronato Real, LEG,52, DOC.124",
-   "folio_note": "PARES description 2207846; size unknown",
+   "folio_note": "PARES description 2207846, 4 images (pp. 1-4, foliation 664-665; old mark T. c. Y. 2). Sample decoded: p. 1 ll. 6-8 and p. 2 ll. 1-6; the rest of the cipher copy not decoded.",
    "cls": "B",
-   "status": "Tomokiyo, cryptiana 'Spanish ciphers' page (copy in targets/esp318/lit/crypt/spanish.htm) lists it under Puebla's Great Roman Numeral Code (key extant: AGS PTR,LEG,52,DOC.33); no decipherment mentioned and no Bergenroth page given. Not on DECODE, not in the repo (known.py: 'Puebla', 'PTR,LEG,52' no hits). PARES record not reopened in this session (429).",
+   "status": "Identified 27 Oct 2026 (WAINUT, PR #101; targets/puebla1495/): the cipher copy of the despatch of 28 Dec 1495 whose clear draft Bergenroth abstracted in CSP Spain I no. 113 (no. 114 notices the cipher copy, 'substance exactly the same', with no decipherment); five sending dates on p. 2 match no. 113 and no other item. A sample (p. 1 ll. 6-8) decoded with the extant key AGS PTR leg. 52 doc. 33. Open: the cipher copy beyond the sample, and the groups 883, 1374, 1335, 1813, 852, 868, 1221 and 'xxix' (key images not opened: PARES HTTP 429). No page.",
    "why": "Anglo-Spanish diplomacy of 1495 (Perkin Warbeck, the Catherine of Aragon marriage treaty) in a code whose 2400-element key survives.",
    "importance": 3,
    "solvability": 4,
    "difficulty": 2,
    "score_note": "Scored from the archive description during the Oct 2026 PARES sweep (research/pares_ags/); not viewed",
-   "verify": "Open PARES show/2207846, confirm cipher and images; check Bergenroth CSP Spain I and the 1868 Supplement for an undated 1495 piece; read with the PTR 52 DOC.33 key.",
+   "verify": "Decode the rest of pp. 1-4 with the PTR 52 doc. 33 key (key images 3-9, 47-51, 70-75, 78-84, 110-113 for the open groups) and compare the wording with no. 113.",
    "links": [
     {
      "label": "PARES description",
@@ -12340,83 +12254,10 @@
    ],
    "seen": "catalogue",
    "source": "PARES (AGS) sweep",
-   "prior_art": "probably open (checked 26 Oct 2026: Tomokiyo lists it without a reading; CSP Spain I not matched; 1868 Supplement not checked)",
+   "prior_art": "checked 27 Oct 2026: content in print as Bergenroth's abstract of the clear draft (CSP Spain I no. 113, pp. 72-75); no decipherment of the cipher copy printed (no. 114); 1868 Supplement starts in 1498",
    "ark": "",
-   "scored": "sweep"
-  },
-  {
-   "id": 616,
-   "counted": true,
-   "year": 1496,
-   "date": "1496 (undated)",
-   "title": "Undated letter in Puebla's Roman-numeral code, 1496",
-   "correspondents": "Ferdinand and Isabella ↔ Rodrigo González de Puebla (direction not recorded)",
-   "place": "unknown",
-   "language": "Spanish",
-   "region": "England",
-   "period": "15th century",
-   "shelfmark": "AGS, Patronato Real, LEG,52, DOC.47",
-   "folio_note": "PARES description 2207769; size unknown",
-   "cls": "B",
-   "status": "Tomokiyo, cryptiana 'Spanish ciphers' page (copy in targets/esp318/lit/crypt/spanish.htm) lists it under Puebla's Great Roman Numeral Code (key extant: AGS PTR,LEG,52,DOC.33); no decipherment mentioned and no Bergenroth page given. Not on DECODE, not in the repo. PARES record not reopened in this session (429).",
-   "why": "Same 1495-96 embassy in England; readable with the extant code book if the numerals match.",
-   "importance": 3,
-   "solvability": 4,
-   "difficulty": 2,
-   "score_note": "Scored from the archive description during the Oct 2026 PARES sweep (research/pares_ags/); not viewed",
-   "verify": "Open PARES show/2207769; check Bergenroth I/Supplement; read with the PTR 52 DOC.33 key.",
-   "links": [
-    {
-     "label": "PARES description",
-     "href": "https://pares.cultura.gob.es/ParesBusquedas20/catalogo/description/2207769"
-    },
-    {
-     "label": "Tomokiyo, Spanish ciphers",
-     "href": "http://cryptiana.web.fc2.com/code/spanish.htm"
-    }
-   ],
-   "seen": "catalogue",
-   "source": "PARES (AGS) sweep",
-   "prior_art": "probably open (checked 26 Oct 2026: Tomokiyo, CSP Spain I)",
-   "ark": "",
-   "scored": "sweep"
-  },
-  {
-   "id": 617,
-   "counted": true,
-   "year": 1506,
-   "date": "21 Apr 1506",
-   "title": "Puebla → Almazán, London, in Puebla's First Cipher",
-   "correspondents": "Rodrigo González de Puebla → Miguel Pérez de Almazán",
-   "place": "London",
-   "language": "Spanish",
-   "region": "England",
-   "period": "1497-1559",
-   "shelfmark": "AGS, Patronato Real (PARES 2208120, per Tomokiyo; not yet opened)",
-   "folio_note": "size unknown",
-   "cls": "B",
-   "status": "Tomokiyo lists it among letters in Puebla's First Cipher (which he reconstructed) without a reading or Bergenroth page; CSP Spain I, April 1506 section (pp. 385-386), has no Puebla letter. Not on DECODE, not in the repo. PARES record not reopened (429). PARES id corrected 27 Oct 2026: 2208061 is the 15 Apr 1507 letter (catalogue 618, closed); Tomokiyo gives 2208120 for 21 Apr 1506. Bergenroth's 1868 Supplement has no Puebla letter of April 1506 (1506 section pp. 73-85).",
-   "why": "Puebla's reports from London in 1506, the year Philip and Juana were driven ashore in England and the Catherine dowry dispute ran on.",
-   "importance": 3,
-   "solvability": 4,
-   "difficulty": 2,
-   "score_note": "Scored from the archive description during the Oct 2026 PARES sweep (research/pares_ags/); not viewed",
-   "verify": "Open PARES show/2208120 for images and signatura; read with Tomokiyo's Puebla First Cipher table.",
-   "links": [
-    {
-     "label": "PARES description",
-     "href": "https://pares.cultura.gob.es/ParesBusquedas20/catalogo/description/2208120"
-    },
-    {
-     "label": "Tomokiyo, Spanish ciphers",
-     "href": "http://cryptiana.web.fc2.com/code/spanish.htm"
-    }
-   ],
-   "seen": "catalogue",
-   "source": "PARES (AGS) sweep",
-   "prior_art": "probably open (checked 26-27 Oct 2026: CSP Spain I April 1506 and the 1868 Supplement have no Puebla letter; Tomokiyo gives no reading)",
-   "ark": "",
-   "scored": "sweep"
+   "scored": "sweep",
+   "outcome": "attempted, open"
   },
   {
    "id": 619,
@@ -12470,13 +12311,13 @@
    "shelfmark": "AGS, Estado, leg. 6446 and 6452 (run 6445-6452)",
    "folio_note": "'Correspondencia cifrada' (6446, Apr-Jun 1729); 'Avisos cifrados' (6452, Jun-Sep 1730)",
    "cls": "A",
-   "status": "Paz, Catálogo II (1912) pp. 143-145. No decipherment noted; Paz's preface says embassy letters normally reached the Council as secretaries' descifrados, so decipherments may be in the same legajos. known.py: 6446, Viana, Eguiluz no hits.",
+   "status": "Paz, Catálogo II (1912) pp. 143-145. No decipherment noted; Paz's preface says embassy letters normally reached the Council as secretaries' descifrados, so decipherments may be in the same legajos. known.py: 6446, Viana, Eguiluz no hits. The despatches are not online (27 Oct 2026), but the key is: PARES has a digitised 'Cifra para la correspondencia reservada del marqués de Castelar con José de Viana y Eguiluz' (AHN Estado 193 Exp. 66, PARES 12709762).",
    "why": "Spanish chargé in Vienna reporting the breakdown of the Austro-Spanish alliance after the Treaty of Seville.",
    "importance": 3,
    "solvability": 2,
    "difficulty": 3,
    "score_note": "Scored from the archive description during the Oct 2026 PARES/AGS printed-catalogue sweep (research/pares_ags/); not viewed",
-   "verify": "Find leg. 6446/6452 on PARES; look for interlinear or separate descifrados.",
+   "verify": "Get scans of AGS Estado 6446 and 6452; read with the Castelar-Viana y Eguiluz cifra (AHN Estado 193 Exp. 66, PARES 12709762); look for interlinear or separate descifrados in the same legajos.",
    "links": [
     {
      "label": "Paz, Catálogo II (1912), archive.org",
@@ -12489,9 +12330,11 @@
    ],
    "seen": "catalogue",
    "source": "PARES (AGS) sweep",
-   "prior_art": "open as far as checked (26 Oct 2026: repo, DECODE list)",
+   "prior_art": "key online (27 Oct 2026: AHN Estado 193 Exp. 66, PARES 12709762); despatches not digitised, no reading found",
    "ark": "",
-   "scored": "sweep"
+   "scored": "sweep",
+   "access": "archive",
+   "as_of": "2026-10-27"
   },
   {
    "id": 621,
@@ -12770,80 +12613,6 @@
    "scored": "sweep"
   },
   {
-   "id": 629,
-   "counted": true,
-   "year": 1863,
-   "date": "16 Jun 1863",
-   "title": "Gen. Joseph E. Johnston → Confederate Secretary of War Seddon, telegram with enciphered phrases",
-   "correspondents": "Joseph E. Johnston → James A. Seddon",
-   "place": "Jackson, Mississippi",
-   "language": "English",
-   "region": "Americas",
-   "period": "1801-1900",
-   "shelfmark": "NARA RG 109, War Department Collection of Confederate Records, Telegrams Received by the Confederate Secretary of War (series naId 651917), item naId 3854726",
-   "folio_note": "1 leaf + docket, 4 images. Clear text with five cipher words, 31 letters: UNIEK CXNKVNED ... JJTRRK ... ISDX KFYHJEER (read from the image; check).",
-   "cls": "B",
-   "status": "Images online (viewed): clear telegram ('Genl Bragg informs me that a Telegram from Louisville of the 10th says that part of the 9th Corps have been sent to reinforce Grant; will not this enable us to [cipher] for this Genl Bragg & should [cipher] over [cipher]'), cipher words in capitals, no interlinear decipherment on the leaf. Confederate Vigenère with the keys MANCHESTERBLUFF, COMPLETEVICTORY, COMERETRIBUTION in three variants gave no plaintext (quick test, this sweep). Probably printed decoded in the Official Records. Not on DECODE; not in the repo.",
-   "why": "Johnston's proposal, during the Vicksburg siege, for Bragg to act against Rosecrans; short, but a clean test of which Confederate key Johnston's office used.",
-   "importance": 2,
-   "solvability": 4,
-   "difficulty": 2,
-   "score_note": "Scored from the archive description during the Oct 2026 NARA catalogue sweep (research/nara_catalog/); image viewed",
-   "verify": "Check OR Ser. I vol. 24 pt. 1 or pt. 3 for Johnston to Seddon, 16 Jun 1863; re-transcribe the cipher words at full resolution; try a Vigenère key search with the clear context as crib.",
-   "links": [
-    {
-     "label": "NARA catalogue item (images)",
-     "href": "https://catalog.archives.gov/id/3854726"
-    }
-   ],
-   "seen": "image",
-   "source": "NARA catalogue sweep",
-   "prior_art": "open as far as checked (checked 27 Oct 2026: web search; OR not yet checked)",
-   "ark": "",
-   "scored": "sweep"
-  },
-  {
-   "id": 631,
-   "counted": true,
-   "year": 1780,
-   "date": "1775-1789",
-   "title": "Continental Congress Miscellaneous Papers: 'communications in cipher' filed with the keys of Franklin, Jay and Dumas",
-   "correspondents": "Benjamin Franklin, John Jay, C. W. F. Dumas and others → Congress / Committee of Foreign Affairs",
-   "place": "Paris, The Hague, Madrid → Philadelphia",
-   "language": "English, French",
-   "region": "Americas",
-   "period": "1701-1800",
-   "shelfmark": "NARA RG 360, Papers of the Continental Congress, Miscellaneous Papers (PCC item 59, vols. 1-2; file unit naId 2124632; M247 rolls 72-73); keys include 'Cipher With Keywords' (naId 631635424, PCC item 59 vol. 1 pp. 141-142) and 'Ciphers Belonging to the Various American Peace Commissioners' (naId 2450021)",
-   "folio_note": "Which communications are in cipher, and whether each is decoded, is not given; the two key items are imaged (2450021: 3 images)",
-   "cls": "A",
-   "status": "Catalogue: 'keys to ciphers, apparently used by Benjamin Franklin, John Jay, and C. W. F. Dumas, and communications in cipher'. Keys and cipher pieces in the same volumes. Most diplomatic ciphers of this group are decoded in the Franklin/Jay papers editions; whether these PCC pieces are among them is not checked. PCC overlap with the nara_state sweep. Not on DECODE; not in the repo.",
-   "why": "Revolutionary diplomatic ciphers filed with their own keys; any piece not decoded in the Franklin or Jay editions can be read directly.",
-   "importance": 3,
-   "solvability": 3,
-   "difficulty": 1,
-   "score_note": "Scored from the archive description during the Oct 2026 NARA catalogue sweep (research/nara_catalog/); not viewed",
-   "verify": "Open M247 rolls 72-73 (PCC item 59) and list the cipher pieces; match against Papers of Benjamin Franklin and the Jay Papers (Founders Online).",
-   "links": [
-    {
-     "label": "PCC Miscellaneous Papers (file unit)",
-     "href": "https://catalog.archives.gov/id/2124632"
-    },
-    {
-     "label": "Cipher With Keywords",
-     "href": "https://catalog.archives.gov/id/631635424"
-    },
-    {
-     "label": "Ciphers of the American Peace Commissioners",
-     "href": "https://catalog.archives.gov/id/2450021"
-    }
-   ],
-   "seen": "catalogue",
-   "source": "NARA catalogue sweep",
-   "prior_art": "not checked item by item; Franklin and Jay ciphers largely decoded in the editions (27 Oct 2026)",
-   "ark": "",
-   "scored": "sweep"
-  },
-  {
    "id": 632,
    "counted": true,
    "year": 1865,
@@ -12988,39 +12757,6 @@
    "seen": "catalogue",
    "source": "FRUS (history.state.gov) sweep",
    "prior_art": "possibly read by Room 40 at the time (not checked); not in the repo",
-   "ark": "",
-   "scored": "sweep"
-  },
-  {
-   "id": 636,
-   "counted": true,
-   "year": 1781,
-   "date": "28 Nov 1781",
-   "title": "Robert R. Livingston → John Jay, Philadelphia, instruction passage in a modified Thomson code that the Jay Papers editors call 'undecipherable'",
-   "correspondents": "Robert R. Livingston (Secretary for Foreign Affairs) → John Jay",
-   "place": "Philadelphia",
-   "language": "English",
-   "region": "Americas",
-   "period": "1701-1800",
-   "shelfmark": "ALS, partly in code, NHi Jay Papers (EJ 598); triplicate NHi; dup./quadruplicate NNC (EJ 7763, 7925); Dft NHi R. R. Livingston (EJ 1537); LbkCs NARA PCC item 79 vol. 1 pp. 332-34 and item 118 pp. 48-50 (M247)",
-   "folio_note": "one passage (Livingston's attempt to add six symbols for syllables ending in r to the Thomson code); the rest of the letter was decoded by the editors from the draft",
-   "cls": "A",
-   "status": "Selected Papers of John Jay vol. 2 (Founders Jay/01-02-02-0272) n. 7: 'RRL's passage is undecipherable, as explained in JJUP, 1: 664'; Jay could not decode either this letter or the 20 Oct 1781 one (code lost with William Palfrey). Founders sweep (research/founders_emlo) did not search 'undecipherable'.",
-   "why": "Small, but it is the one passage of the Livingston-Jay correspondence that the modern edition could not read, in a nomenclator family that is otherwise reconstructed.",
-   "importance": 2,
-   "solvability": 3,
-   "difficulty": 3,
-   "score_note": "Scored from the Founders Online note during the Oct 2026 NARA/State Department sweep (research/nara_state/); not viewed",
-   "verify": "Read JJUP 1:664 (Columbia Jay Papers) for why it fails; view the draft (NHi) and PCC item 79 copy (NARA M247) and test the Thomson code with Livingston's r-syllable extension.",
-   "links": [
-    {
-     "label": "Founders Jay/01-02-02-0272",
-     "href": "https://founders.archives.gov/documents/Jay/01-02-02-0272"
-    }
-   ],
-   "seen": "catalogue",
-   "source": "Papers of the Continental Congress / Founders Online sweep",
-   "prior_art": "open per the edition (checked 27 Oct 2026: Founders Online notes)",
    "ark": "",
    "scored": "sweep"
   },
@@ -13268,125 +13004,6 @@
    "seen": "catalogue",
    "source": "CryptoCellar (via captured-records slice)",
    "prior_art": "unbroken per Ostwald & Weierud (checked 27 Oct 2026: CryptoCellar list updated 27 Jul 2026)",
-   "ark": "",
-   "scored": "sweep"
-  },
-  {
-   "id": 644,
-   "counted": true,
-   "year": 1861,
-   "date": "1861 (seized 23 Aug 1861)",
-   "title": "Rose O'Neal Greenhow, letter written in cipher on mourning paper (Confederate spy ring, Washington)",
-   "correspondents": "Rose O'Neal Greenhow → Thomas Jordan / Beauregard's headquarters (presumed)",
-   "place": "Washington, D.C.",
-   "language": "English",
-   "region": "Americas",
-   "period": "1801-1900",
-   "shelfmark": "NARA RG 59, Seized Correspondence of Rose O'Neal Greenhow (entry A1-986), NAID 1634036",
-   "folio_note": "4 images; one mourning-paper leaf in fragments, about 20 lines of symbol-and-digit cipher with clear words ('the', 'this') between cipher groups; second side very faint",
-   "cls": "A",
-   "status": "Catalogue gives no decipherment. Greenhow's cipher (Jordan's symbol alphabet with code signs) has a surviving key, laminated, recovered from her effects (North Carolina State Archives, Greenhow Papers 1863-64), which the Rosenbach used to read her Beauregard note. Whether this leaf was read by Pinkerton's men in 1861 is not established. Key lead found in this sweep: NARA RG 45, M1091 Subject File of the Confederate States Navy, file 'DC - Codes and cryptography - Miscellaneous' (NAID 62017285, images 0483-0485) holds a 'Confederate cipher 1864' symbol table, docketed as found on Rose Greenhow's person when she drowned off Fort Fisher (Condor, 1864): symbol alphabet, digraph signs (th, ph, ch, sh, ee, ll, ss...) and code signs for Washington, Richmond, Lincoln, Pennsylvania Avenue, Virginia, South Carolina, regiment, infantry, cannon, soldiers; 'double letter, 2nd letter itself inverted'. The 1861 letters' signs (squares with dots/crosses, triangles, digits) look like the same family (viewed 27 Oct 2026).",
-   "why": "Intelligence from the Washington ring before and after First Bull Run, in the original cipher; a readable test with an outside key.",
-   "importance": 3,
-   "solvability": 4,
-   "difficulty": 2,
-   "score_note": "Scored from the published description during the Oct 2026 US military/intelligence records sweep (research/nara_military/); not viewed",
-   "verify": "Apply the 1864 key in NARA M1091 (NAID 62017285, images 0483-0485; also NC State Archives copy) to the scans; Get the NC State Archives key image (Rose O'Neal Greenhow Papers, digital.ncdcr.gov 378359); check Blackman, 'Wild Rose' (2005), and the Pinkerton report in the same series for a period decipherment",
-   "links": [
-    {
-     "label": "NARA catalog NAID 1634036",
-     "href": "https://catalog.archives.gov/id/1634036"
-    },
-    {
-     "label": "NARA Greenhow guide",
-     "href": "https://www.archives.gov/research/military/civil-war/greenhow"
-    },
-    {
-     "label": "NC key (Greenhow Papers)",
-     "href": "https://digital.ncdcr.gov/Documents/Detail/rose-oneal-greenhow-papers-1863-1864/378359"
-    },
-    {
-     "label": "Greenhow key 1864, NARA M1091 (NAID 62017285)",
-     "href": "https://catalog.archives.gov/id/62017285"
-    }
-   ],
-   "seen": "image",
-   "source": "NARA RG 59 (US military/intelligence sweep)",
-   "prior_art": "open as far as found (checked 27 Oct 2026: NARA catalogue, Rosenbach blog, web); period decipherment possible, not located",
-   "ark": "",
-   "scored": "sweep"
-  },
-  {
-   "id": 645,
-   "counted": true,
-   "year": 1861,
-   "date": "1861 (seized 23 Aug 1861)",
-   "title": "Thomas Jordan to 'My Dearest Rachel' (Greenhow), letter with portions in cipher",
-   "correspondents": "Lt. Col. Thomas Jordan → Rose O'Neal Greenhow ('Rachel')",
-   "place": "Manassas / Confederate lines (presumed)",
-   "language": "English",
-   "region": "Americas",
-   "period": "1801-1900",
-   "shelfmark": "NARA RG 59, Seized Correspondence of Rose O'Neal Greenhow, file 'Letters from Lieutenant Colonel Thomas Jordan to Mrs. Greenhow and to My Dearest Rachel', NAID 1634051",
-   "folio_note": "6 images; clear letter with cipher passages (not viewed)",
-   "cls": "B",
-   "status": "Catalogue title only; no decipherment noted. Same Jordan-Greenhow cipher as NAID 1634036; key survives at NC State Archives. Key lead found in this sweep: NARA RG 45, M1091 Subject File of the Confederate States Navy, file 'DC - Codes and cryptography - Miscellaneous' (NAID 62017285, images 0483-0485) holds a 'Confederate cipher 1864' symbol table, docketed as found on Rose Greenhow's person when she drowned off Fort Fisher (Condor, 1864): symbol alphabet, digraph signs (th, ph, ch, sh, ee, ll, ss...) and code signs for Washington, Richmond, Lincoln, Pennsylvania Avenue, Virginia, South Carolina, regiment, infantry, cannon, soldiers; 'double letter, 2nd letter itself inverted'. The 1861 letters' signs (squares with dots/crosses, triangles, digits) look like the same family (viewed 27 Oct 2026).",
-   "why": "The handler's side of the Greenhow ring's correspondence; cipher passages name agents or movements.",
-   "importance": 3,
-   "solvability": 4,
-   "difficulty": 2,
-   "score_note": "Scored from the published description during the Oct 2026 US military/intelligence records sweep (research/nara_military/); not viewed",
-   "verify": "Apply the 1864 key in NARA M1091 (NAID 62017285, images 0483-0485; also NC State Archives copy) to the scans; View the 6 images; apply the NC key",
-   "links": [
-    {
-     "label": "NARA catalog NAID 1634051",
-     "href": "https://catalog.archives.gov/id/1634051"
-    },
-    {
-     "label": "Greenhow key 1864, NARA M1091 (NAID 62017285)",
-     "href": "https://catalog.archives.gov/id/62017285"
-    }
-   ],
-   "seen": "catalogue",
-   "source": "NARA RG 59 (US military/intelligence sweep)",
-   "prior_art": "open as far as found (checked 27 Oct 2026)",
-   "ark": "",
-   "scored": "sweep"
-  },
-  {
-   "id": 646,
-   "counted": true,
-   "year": 1861,
-   "date": "1861 (seized 23 Aug 1861)",
-   "title": "Greenhow papers: photostat of a burnt letter fragment partially written in cipher",
-   "correspondents": "Rose O'Neal Greenhow → unknown (Confederate contact)",
-   "place": "Washington, D.C.",
-   "language": "English",
-   "region": "Americas",
-   "period": "1801-1900",
-   "shelfmark": "NARA RG 59, Seized Correspondence of Rose O'Neal Greenhow, NAID 6925618",
-   "folio_note": "1 image: negative photostat of a fragment recovered from her stove; mixed clear text and about 60 cipher symbols",
-   "cls": "B",
-   "status": "Catalogue title only; no decipherment noted. Same symbol cipher; key at NC State Archives. Key lead found in this sweep: NARA RG 45, M1091 Subject File of the Confederate States Navy, file 'DC - Codes and cryptography - Miscellaneous' (NAID 62017285, images 0483-0485) holds a 'Confederate cipher 1864' symbol table, docketed as found on Rose Greenhow's person when she drowned off Fort Fisher (Condor, 1864): symbol alphabet, digraph signs (th, ph, ch, sh, ee, ll, ss...) and code signs for Washington, Richmond, Lincoln, Pennsylvania Avenue, Virginia, South Carolina, regiment, infantry, cannon, soldiers; 'double letter, 2nd letter itself inverted'. The 1861 letters' signs (squares with dots/crosses, triangles, digits) look like the same family (viewed 27 Oct 2026).",
-   "why": "Short, but the cipher signs sit inside clear sentences, which also gives cribs for the system.",
-   "importance": 2,
-   "solvability": 3,
-   "difficulty": 2,
-   "score_note": "Scored from the published description during the Oct 2026 US military/intelligence records sweep (research/nara_military/); not viewed",
-   "verify": "Apply the 1864 key in NARA M1091 (NAID 62017285, images 0483-0485; also NC State Archives copy) to the scans; Apply the NC key; compare with the mourning-paper letter",
-   "links": [
-    {
-     "label": "NARA catalog NAID 6925618",
-     "href": "https://catalog.archives.gov/id/6925618"
-    },
-    {
-     "label": "Greenhow key 1864, NARA M1091 (NAID 62017285)",
-     "href": "https://catalog.archives.gov/id/62017285"
-    }
-   ],
-   "seen": "image",
-   "source": "NARA RG 59 (US military/intelligence sweep)",
-   "prior_art": "open as far as found (checked 27 Oct 2026)",
    "ark": "",
    "scored": "sweep"
   },
@@ -14633,6 +14250,1177 @@
      "href": "https://catalog.archives.gov/id/5131597"
     }
    ],
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 681,
+   "counted": true,
+   "year": 1865,
+   "date": "Nov 1864 - Apr 1865",
+   "title": "Lt. Gen. Richard Taylor (Dept. of Alabama, Mississippi and East Louisiana) → Maury, S. D. Lee, Forrest and others: telegram letter-books with Confederate Vigenère passages copied in cipher only",
+   "correspondents": "Richard Taylor (by W. F. Bullock Jr., AAG) → D. H. Maury (Mobile), S. D. Lee (Augusta), Wirt Adams, Gov. Clark, Richmond and others",
+   "place": "Meridian, Mississippi",
+   "language": "English",
+   "region": "Americas",
+   "period": "1801-1900",
+   "shelfmark": "NARA RG 109, War Department Collection of Confederate Records, Chapter II vols. 10, 11 and 196 (Telegrams Sent, Department of Alabama, Mississippi and East Louisiana, 1864-1865)",
+   "folio_note": "Cipher words written in capitals inside the clear copies, word lengths kept. Vol. 196 (Feb-Mar 1865, naId 45485022): about 40 runs, e.g. frame 0061 = p. 117, Taylor → Maury 12 Mar 1865 (viewed). Vol. 11 (1865, naId 12127054): about 10 runs. Vol. 10 (1864-65, naId 16878212): about 8 runs. Run lists with best key per run in research/nara_triage_d/capruns1.txt and capruns2.txt.",
+   "cls": "A",
+   "status": "Not unsolved in the strict sense: the keys are the known Confederate ones. Frame 0061 transcribed from the image and read here with COME RETRIBUTION (Vigenère, key running through the cipher letters only): 'Telegraph in cipher what [cavalry you have on which side of bay, strength and name of commander] ... Direct [cavalry so keep close to enemy] as possible ... [keep in constant telegraphic communication with] Genl D W Adams ... indicate in cipher [what] ... you have decided upon [outside through which to communicate]'. On the OCR alone, runs in vol. 11 read with COME RETRIBUTION ('stores', 'will move westward', 'was evacuated by') and runs in vol. 10 read with COMPLETE VICTORY ('Genl Johnston this alone will restore confidence', 'renders the assignment'). The volumes carry the 'War Records COPIED' stamp, so the Official Records may print these telegrams, but whether OR printed the cipher words deciphered or left them out was not checked. Not on DECODE; known.py: no hit for Come Retribution, Taylor 1865 or Markoe.",
+   "why": "A set of Confederate field ciphers from the last months of the war (Mobile campaign, Wilson's raid) that a known key reads, with the clear sense of each telegram in the same book: a quick, verifiable reading and a test set for Confederate key usage (which key, and when the change was made).",
+   "importance": 3,
+   "solvability": 5,
+   "difficulty": 1,
+   "score_note": "Scored from NARA OCR and one viewed frame during the Oct 2026 NARA bulk-scan triage (research/nara_triage_d/)",
+   "verify": "Check OR Ser. I vol. 49 pt. 2 and vol. 45 pt. 2 for Taylor's telegrams of 12 Mar 1865 to Maury and to S. D. Lee (does OR give the cipher words in clear?). Then transcribe the capital runs from the images of vols. 10, 11 and 196 and decipher with vig.py.",
+   "links": [
+    {
+     "label": "Vol. 196, Telegrams Sent Feb-Mar 1865 (NARA 45485022)",
+     "href": "https://catalog.archives.gov/id/45485022"
+    },
+    {
+     "label": "Vol. 11, Telegrams Sent 1865 (NARA 12127054)",
+     "href": "https://catalog.archives.gov/id/12127054"
+    },
+    {
+     "label": "Vol. 10, Telegrams Sent 1864-65 (NARA 16878212)",
+     "href": "https://catalog.archives.gov/id/16878212"
+    }
+   ],
+   "seen": "image",
+   "source": "NARA bulk-scan triage (RG 109)",
+   "prior_art": "Keys known (Manchester Bluff / Complete Victory / Come Retribution); OR not checked (checked 27 Oct 2026: web search for the 12 Mar 1865 Taylor-Maury text gave no hit; Rosenbach Telegraphic History holds Maury-Taylor telegrams of Nov 1864-Feb 1865)",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 682,
+   "counted": true,
+   "year": 1778,
+   "date": "Revolutionary War letter; submitted 25 July 1934",
+   "title": "Letter of the Revolutionary War period in code, probably by a British officer, sent to MID for decipherment in 1934",
+   "correspondents": "unknown (probably a British officer) -> unknown",
+   "place": "unknown (North America)",
+   "language": "English (presumed)",
+   "region": "Americas",
+   "period": "1701-1800",
+   "shelfmark": "NARA RG 165, MID correspondence 1917-41, file 4131-829 (index card M1194 roll 42, frame 1068)",
+   "folio_note": "One letter; length unknown. Card only.",
+   "cls": "C",
+   "status": "M1194 card (MID file 4131-829, 25 July 1934): an old letter 'of Revolutionary days, probably by a British officer, in code'; its owner asks for a decipherment. The card records no answer. The MID correspondence file itself (RG 165, entry 65, MID 1917-41) is not digitised; only the index card (M1194/M912/M1474) is online.",
+   "why": "A British cipher letter of 1775-83 in private hands in 1934. If the copy is in the file, it can be compared with the known Clinton/André/Arnold ciphers.",
+   "importance": 3,
+   "solvability": 1,
+   "difficulty": 3,
+   "score_note": "Scored from MID index cards / BI case-file OCR during the Oct 2026 NARA slice-E triage (research/nara_triage_e/); not viewed",
+   "verify": "Order MID file 4131-829 (RG 165, entry 65, NARA College Park) and check whether the ciphertext copy survives. The British Revolutionary War systems (Clinton's and Andre's book and number codes) are the first keys to try.",
+   "links": [
+    {
+     "label": "M1194 roll 42 (index card, frame 1068)",
+     "href": "https://catalog.archives.gov/id/117997172"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "NARA bulk-scan triage (slice E, RG 165/RG 65 cipher-word pass)",
+   "prior_art": "open as far as checked (27 Oct 2026: known.py, catalogue 628-680, nara_triage_a-d, nara_military/state/catalog; web search)",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 683,
+   "counted": true,
+   "year": 1917,
+   "date": "Sept-Oct 1917",
+   "title": "The \"Gulick message\" signed \"Honytre\", still unsolved at Riverbank in Oct 1917, and the cipher letter found on Thomas Gulick",
+   "correspondents": "unknown ('Honytre') -> unknown; letter in Thomas Gulick's possession",
+   "place": "United States",
+   "language": "unknown",
+   "region": "Americas",
+   "period": "1901-1950",
+   "shelfmark": "NARA RG 165, WCD/MID files 10020-69 and 9140-1369 (M912 roll 34 frame 0948; M1194 roll 199 frame 1339)",
+   "folio_note": "One message (length unknown); a separate cipher letter in the 9140-1369 file (Ernest K. Erdmann, NDL wireless operator).",
+   "cls": "C",
+   "status": "Name-index cards: Riverbank (Fabyan) reports the 'Gulick message' signed Honytre still unsolved (10020-69, 2 Oct 1917). The same Riverbank card run lists monthly reports of 'undeciphered messages' (10020-64). Gulick held a suspicious cipher letter (9140-1369). Not the Tampico message (entry 674, 10020-60). The MID correspondence file itself (RG 165, entry 65, MID 1917-41) is not digitised; only the index card (M1194/M912/M1474) is online.",
+   "why": "One of the few messages the first US cryptanalytic unit (Riverbank, 1917) reported it could not solve.",
+   "importance": 2,
+   "solvability": 1,
+   "difficulty": 4,
+   "score_note": "Scored from MID index cards / BI case-file OCR during the Oct 2026 NARA slice-E triage (research/nara_triage_e/); not viewed",
+   "verify": "Order MID file 10020-69 with 9140-1369 and the Riverbank monthly reports 10020-64 (RG 165, entry 65, NARA College Park) and check whether the ciphertext copy survives.",
+   "links": [
+    {
+     "label": "M912 roll 34 (name index, frames 0947-0948)",
+     "href": "https://catalog.archives.gov/id/221122451"
+    },
+    {
+     "label": "M1194 roll 199 (frame 1339)",
+     "href": "https://catalog.archives.gov/id/118388587"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "NARA bulk-scan triage (slice E, RG 165/RG 65 cipher-word pass)",
+   "prior_art": "open as far as checked (27 Oct 2026: known.py, catalogue 628-680, nara_triage_a-d, nara_military/state/catalog; web search)",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 684,
+   "counted": true,
+   "year": 1918,
+   "date": "22 Aug 1918",
+   "title": "O. G. Roth, Cape Haïtien, to Elder G. G. Roth, New York: letter of 24 five-figure groups the postal censor could not decipher",
+   "correspondents": "O. G. Roth -> Elder G. G. Roth, c/o Review & Herald, 32 Union Sq., New York",
+   "place": "Cap-Haïtien, Haiti",
+   "language": "unknown",
+   "region": "Americas",
+   "period": "1901-1950",
+   "shelfmark": "NARA RG 165, MID file PF 31444 (index card M1194 roll 196, frames 1173, 1263)",
+   "folio_note": "24 groups of five figures (120 digits).",
+   "cls": "C",
+   "status": "Record card: New York postal censor report, 22 Aug 1918, 'contains twenty four numbers of five numeral each; unable to decipher'. Later entries to the Port-au-Prince postal inspector, the State Department and ONI record no solution. The MID correspondence file itself (RG 165, entry 65, MID 1917-41) is not digitised; only the index card (M1194/M912/M1474) is online.",
+   "why": "A short all-numeric message sent to a Seventh-day Adventist address in 1918. Probably private, but it was never read.",
+   "importance": 1,
+   "solvability": 1,
+   "difficulty": 4,
+   "score_note": "Scored from MID index cards / BI case-file OCR during the Oct 2026 NARA slice-E triage (research/nara_triage_e/); not viewed",
+   "verify": "Order MID file PF 31444 (RG 165, entry 65, NARA College Park) and check whether the ciphertext copy survives.",
+   "links": [
+    {
+     "label": "M1194 roll 196 (frames 1173, 1263)",
+     "href": "https://catalog.archives.gov/id/118380843"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "NARA bulk-scan triage (slice E, RG 165/RG 65 cipher-word pass)",
+   "prior_art": "open as far as checked (27 Oct 2026: known.py, catalogue 628-680, nara_triage_a-d, nara_military/state/catalog; web search)",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 685,
+   "counted": true,
+   "year": 1919,
+   "date": "13 May 1919",
+   "title": "Nauen wireless code message that MI-8 judged 'not in any German code known to us' and indecipherable",
+   "correspondents": "German station Nauen -> unknown",
+   "place": "Nauen (intercepted by US Naval Communications)",
+   "language": "German (presumed)",
+   "region": "Germany",
+   "period": "1901-1950",
+   "shelfmark": "NARA RG 165, MID file 4131-532 (index card M1194 roll 260, frame 0780)",
+   "folio_note": "One radio message; length unknown.",
+   "cls": "C",
+   "status": "Card: the Director of Naval Communications sent a Nauen code message to the Chief of Staff. Yardley's memo says it is 'not in any of Ger. codes known to us & is indecipherable'. Other Nauen intercepts of 1918 (10531-51, -103, -163; 4131-526, 25 messages) were deciphered. The MID correspondence file itself (RG 165, entry 65, MID 1917-41) is not digitised; only the index card (M1194/M912/M1474) is online.",
+   "why": "German post-armistice wireless in a code that MI-8 did not have.",
+   "importance": 2,
+   "solvability": 1,
+   "difficulty": 5,
+   "score_note": "Scored from MID index cards / BI case-file OCR during the Oct 2026 NARA slice-E triage (research/nara_triage_e/); not viewed",
+   "verify": "Order MID file 4131-532 (RG 165, entry 65, NARA College Park) and check whether the ciphertext copy survives.",
+   "links": [
+    {
+     "label": "M1194 roll 260 (frame 0780)",
+     "href": "https://catalog.archives.gov/id/118548515"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "NARA bulk-scan triage (slice E, RG 165/RG 65 cipher-word pass)",
+   "prior_art": "open as far as checked (27 Oct 2026: known.py, catalogue 628-680, nara_triage_a-d, nara_military/state/catalog; web search)",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 686,
+   "counted": true,
+   "year": 1931,
+   "date": "dug up 1931; MID correspondence 3 Sept-7 Dec 1931",
+   "title": "Document dug up near a post, believed to locate the James brothers' loot and signed 'Frank James': War Department cryptographers found no solution",
+   "correspondents": "'Frank James' (attributed) -> unknown; submitted by Wm. Cruikshank",
+   "place": "Missouri (presumed)",
+   "language": "English (presumed)",
+   "region": "Americas",
+   "period": "1801-1900",
+   "shelfmark": "NARA RG 165, MID file 4131-788 (index card M1194 roll 54, frame 2124)",
+   "folio_note": "One document; two photographs sent to MID.",
+   "cls": "C",
+   "status": "Cards (1931): photographs of the document went to MID. The Chief Signal Officer gave an 'interpretation', then the cryptographers were 'unable to arrive at any solution of the code'. The MID correspondence file itself (RG 165, entry 65, MID 1917-41) is not digitised; only the index card (M1194/M912/M1474) is online.",
+   "why": "An outlaw treasure cipher (a genre like Beale) that the Signal Intelligence Service examined in its Friedman years.",
+   "importance": 2,
+   "solvability": 1,
+   "difficulty": 4,
+   "score_note": "Scored from MID index cards / BI case-file OCR during the Oct 2026 NARA slice-E triage (research/nara_triage_e/); not viewed",
+   "verify": "Order MID file 4131-788 (RG 165, entry 65, NARA College Park) and check whether the ciphertext copy survives. The Friedman Collection (NSA) may hold SIS's worksheet.",
+   "links": [
+    {
+     "label": "M1194 roll 54 (frame 2124)",
+     "href": "https://catalog.archives.gov/id/118026020"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "NARA bulk-scan triage (slice E, RG 165/RG 65 cipher-word pass)",
+   "prior_art": "open as far as checked (27 Oct 2026: known.py, catalogue 628-680, nara_triage_a-d, nara_military/state/catalog; web search); no published solution found for a 1931 'Frank James' treasure document",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 687,
+   "counted": true,
+   "year": 1941,
+   "date": "Dec 1940-Aug 1941",
+   "title": "German Legation telegrams, Central America 1940-41: Chargé Tripeloury (San José) ↔ Minister Reinebeck (Guatemala), La Paz → Berlin radiograms, Havana → Berlin",
+   "correspondents": "Tripeloury (German chargé, San José) <-> Reinebeck (German minister, Guatemala) / Auswärtiges Amt; German minister La Paz -> Berlin; Tauchnitz (Havana) -> Berlin",
+   "place": "San José, Guatemala City, La Paz, Havana",
+   "language": "German",
+   "region": "Americas",
+   "period": "1901-1950",
+   "shelfmark": "NARA RG 165, MID files 10987-718, 2655-P, 4131-B-16, 4131-B-13 (index cards M1194 rolls 204, 229, 251)",
+   "folio_note": "Copies of several cipher telegrams and a one-page cipher message with an aide-mémoire (Costa Rica); two La Paz radiograms in code; Havana copies.",
+   "cls": "B",
+   "status": "Cards: the US attaché sent copies of the cipher telegrams 'to be decoded', saying there were 'no facilities here for breaking Ger. codes'. MID records no decode. German diplomatic traffic of 1940-41 (the Auswärtiges Amt systems) was later read in part by GC&CS and the US (Floradora and related systems), so these copies may match decrypts in RG 457. The MID correspondence file itself (RG 165, entry 65, MID 1917-41) is not digitised; only the index card (M1194/M912/M1474) is online.",
+   "why": "German diplomatic traffic from the Americas just before the US entered the war.",
+   "importance": 3,
+   "solvability": 1,
+   "difficulty": 5,
+   "score_note": "Scored from MID index cards / BI case-file OCR during the Oct 2026 NARA slice-E triage (research/nara_triage_e/); not viewed",
+   "verify": "Order MID file 10987-718, 2655-P and 4131-B-16 (RG 165, entry 65, NARA College Park) and check whether the ciphertext copy survives. Search RG 457 for the same dates.",
+   "links": [
+    {
+     "label": "M1194 roll 204 (frames 1418, 2148)",
+     "href": "https://catalog.archives.gov/id/118401301"
+    },
+    {
+     "label": "M1194 roll 251 (frame 1345)",
+     "href": "https://catalog.archives.gov/id/118524655"
+    },
+    {
+     "label": "M1194 roll 229 (frame 1832)",
+     "href": "https://catalog.archives.gov/id/118467098"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "NARA bulk-scan triage (slice E, RG 165/RG 65 cipher-word pass)",
+   "prior_art": "open as far as checked (27 Oct 2026: known.py, catalogue 628-680, nara_triage_a-d, nara_military/state/catalog; web search); the German diplomatic systems of 1940-41 were attacked by GC&CS and the US Army SIS; these particular copies were not checked against them",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 688,
+   "counted": true,
+   "year": 1918,
+   "date": "21 Feb 1918",
+   "title": "Letter and map from 'Agent Pfeiffer' in signs taken for Slavic or Hungarian shorthand; MI-8 could not read them",
+   "correspondents": "Pfeiffer -> unknown",
+   "place": "United States",
+   "language": "unknown",
+   "region": "Americas",
+   "period": "1901-1950",
+   "shelfmark": "NARA RG 165, MID file 4131-195 (index card M1194 roll 260, frame 0759)",
+   "folio_note": "One letter with a map.",
+   "cls": "C",
+   "status": "Card: MI-8 was 'unable after exam' to add anything. The signs were thought to be shorthand. The MID correspondence file itself (RG 165, entry 65, MID 1917-41) is not digitised; only the index card (M1194/M912/M1474) is online.",
+   "why": "A suspected agent's letter with a map, in an unidentified sign system.",
+   "importance": 2,
+   "solvability": 1,
+   "difficulty": 4,
+   "score_note": "Scored from MID index cards / BI case-file OCR during the Oct 2026 NARA slice-E triage (research/nara_triage_e/); not viewed",
+   "verify": "Order MID file 4131-195 (RG 165, entry 65, NARA College Park) and check whether the ciphertext copy survives.",
+   "links": [
+    {
+     "label": "M1194 roll 260 (frame 0759)",
+     "href": "https://catalog.archives.gov/id/118548515"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "NARA bulk-scan triage (slice E, RG 165/RG 65 cipher-word pass)",
+   "prior_art": "open as far as checked (27 Oct 2026: known.py, catalogue 628-680, nara_triage_a-d, nara_military/state/catalog; web search)",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 689,
+   "counted": true,
+   "year": 1918,
+   "date": "Feb 1918",
+   "title": "Intercepted letters in code from the Panama Canal Zone, including one to D. V. Kracker, Bogotá, that MI-8 could not decipher",
+   "correspondents": "unknown -> D. V. Kracker, Bogotá; Lorenzo García -> Instituto Científico (stamp code)",
+   "place": "Panama Canal Zone",
+   "language": "Spanish/German (unknown)",
+   "region": "Americas",
+   "period": "1901-1950",
+   "shelfmark": "NARA RG 165, MID files 4131-155 and 4131-156 (index card M1194 roll 143, frame 0931)",
+   "folio_note": "Several letters.",
+   "cls": "C",
+   "status": "Card: the Intelligence Officer, Panama CZ, sent the letters; the Branch had 'not been able to decipher' them. The MID correspondence file itself (RG 165, entry 65, MID 1917-41) is not digitised; only the index card (M1194/M912/M1474) is online.",
+   "why": "Wartime Canal Zone mail to Colombia (a German-trading neutral).",
+   "importance": 2,
+   "solvability": 1,
+   "difficulty": 4,
+   "score_note": "Scored from MID index cards / BI case-file OCR during the Oct 2026 NARA slice-E triage (research/nara_triage_e/); not viewed",
+   "verify": "Order MID file 4131-155/156 (RG 165, entry 65, NARA College Park) and check whether the ciphertext copy survives.",
+   "links": [
+    {
+     "label": "M1194 roll 143 (frame 0931)",
+     "href": "https://catalog.archives.gov/id/118249035"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "NARA bulk-scan triage (slice E, RG 165/RG 65 cipher-word pass)",
+   "prior_art": "open as far as checked (27 Oct 2026: known.py, catalogue 628-680, nara_triage_a-d, nara_military/state/catalog; web search)",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 690,
+   "counted": true,
+   "year": 1918,
+   "date": "21 Feb 1918",
+   "title": "Message concerning Mrs Anne Belmforth: 'seems to be a code, Cipher Bureau can do nothing with it'",
+   "correspondents": "unknown -> unknown (Belmforth case)",
+   "place": "United States",
+   "language": "unknown",
+   "region": "Americas",
+   "period": "1901-1950",
+   "shelfmark": "NARA RG 165, MID file 10496-18 (index card M1194 roll 260, frame 0754)",
+   "folio_note": "One message.",
+   "cls": "C",
+   "status": "Card states the Cipher Bureau (MI-8) could do nothing with it. The MID correspondence file itself (RG 165, entry 65, MID 1917-41) is not digitised; only the index card (M1194/M912/M1474) is online.",
+   "why": "A message that MI-8 explicitly failed on in 1918.",
+   "importance": 1,
+   "solvability": 1,
+   "difficulty": 4,
+   "score_note": "Scored from MID index cards / BI case-file OCR during the Oct 2026 NARA slice-E triage (research/nara_triage_e/); not viewed",
+   "verify": "Order MID file 10496-18 (RG 165, entry 65, NARA College Park) and check whether the ciphertext copy survives.",
+   "links": [
+    {
+     "label": "M1194 roll 260 (frame 0754)",
+     "href": "https://catalog.archives.gov/id/118548515"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "NARA bulk-scan triage (slice E, RG 165/RG 65 cipher-word pass)",
+   "prior_art": "open as far as checked (27 Oct 2026: known.py, catalogue 628-680, nara_triage_a-d, nara_military/state/catalog; web search)",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 691,
+   "counted": true,
+   "year": 1941,
+   "date": "17 Mar 1941",
+   "title": "Anonymous cipher postcard, Selfridge Field, Michigan: 'simple cryptogramic keys have not yielded results'",
+   "correspondents": "anonymous -> unknown",
+   "place": "Selfridge Field, Michigan",
+   "language": "English (presumed)",
+   "region": "Americas",
+   "period": "1901-1950",
+   "shelfmark": "NARA RG 165, MID file 10312-2932 (index card M1474 roll 16, frame 0023)",
+   "folio_note": "One postcard; photostat enclosed in the file.",
+   "cls": "C",
+   "status": "Card: photostat of the postcard enclosed; simple keys tried without result. The MID correspondence file itself (RG 165, entry 65, MID 1917-41) is not digitised; only the index card (M1194/M912/M1474) is online.",
+   "why": "A cipher postcard at an Army Air Corps base nine months before Pearl Harbor.",
+   "importance": 1,
+   "solvability": 1,
+   "difficulty": 3,
+   "score_note": "Scored from MID index cards / BI case-file OCR during the Oct 2026 NARA slice-E triage (research/nara_triage_e/); not viewed",
+   "verify": "Order MID file 10312-2932 (RG 165, entry 65, NARA College Park) and check whether the ciphertext copy survives.",
+   "links": [
+    {
+     "label": "M1474 roll 16 (frame 0023)",
+     "href": "https://catalog.archives.gov/id/145745813"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "NARA bulk-scan triage (slice E, RG 165/RG 65 cipher-word pass)",
+   "prior_art": "open as far as checked (27 Oct 2026: known.py, catalogue 628-680, nara_triage_a-d, nara_military/state/catalog; web search)",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 692,
+   "counted": true,
+   "year": 1921,
+   "date": "June 1921",
+   "title": "Code telegrams between the Mexican consul at San Antonio (Enrique D. Ruiz) and President Obregón, photostats 'not translated'",
+   "correspondents": "Enrique D. Ruiz (Mexican consul, San Antonio) <-> Álvaro Obregón; Padres -> Col. Damián Alarcón",
+   "place": "San Antonio / Mexico City",
+   "language": "Spanish",
+   "region": "Americas",
+   "period": "1901-1950",
+   "shelfmark": "NARA RG 165, MID file 61-988 (index card M1194 roll 172, frame 1378)",
+   "folio_note": "Photostats of several telegrams, part code, part clear.",
+   "cls": "B",
+   "status": "Card: photostats of telegrams 'in code and clear', 'not translated'. MI-8 broke several Mexican government codes in 1917-19 (files 10531, 10640, 9700; Clave Garduño / Clave Relaciones, 8530-14), so the 1921 code may belong to a known family. The MID correspondence file itself (RG 165, entry 65, MID 1917-41) is not digitised; only the index card (M1194/M912/M1474) is online.",
+   "why": "Obregón's own code correspondence with his San Antonio consul in his first year as president.",
+   "importance": 3,
+   "solvability": 1,
+   "difficulty": 3,
+   "score_note": "Scored from MID index cards / BI case-file OCR during the Oct 2026 NARA slice-E triage (research/nara_triage_e/); not viewed",
+   "verify": "Order MID file 61-988 (RG 165, entry 65, NARA College Park) and check whether the ciphertext copy survives. Compare with the Mexican codes rebuilt by MI-8 (RG 457 25757 series).",
+   "links": [
+    {
+     "label": "M1194 roll 172 (frame 1378)",
+     "href": "https://catalog.archives.gov/id/118320001"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "NARA bulk-scan triage (slice E, RG 165/RG 65 cipher-word pass)",
+   "prior_art": "open as far as checked (27 Oct 2026: known.py, catalogue 628-680, nara_triage_a-d, nara_military/state/catalog; web search)",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 693,
+   "counted": true,
+   "year": 1928,
+   "date": "4 and 24 Aug 1928",
+   "title": "Soviet Baltic Fleet radio cipher messages (five-figure groups) copied by the US military attaché at Riga",
+   "correspondents": "Soviet Baltic Fleet units (incl. the cruiser 'Avrora', submarine no. 6) -> Kronstadt staff",
+   "place": "Gulf of Finland",
+   "language": "Russian",
+   "region": "Other",
+   "period": "1901-1950",
+   "shelfmark": "NARA RG 165, MID 2503 (Russia: Navy), G-2 report 7190 / MA Riga report 6943 of 12 Oct 1928; M1443 roll 19, frames 0431-0432",
+   "folio_note": "Two messages on the digitised frames: about 45 five-figure groups (4 Aug, key 'big') and 13 groups (24 Aug, key 'dub'), with call signs.",
+   "cls": "C",
+   "status": "The OCR of the frames gives the groups (read from NARA's OCR, not the image). The attaché's report gives call signs, key names and his guess at the content ('probably reports her location'). No decipherment is filed.",
+   "why": "Rare surviving Soviet naval cipher traffic of the 1920s, with external context (date, sender, probable content).",
+   "importance": 2,
+   "solvability": 1,
+   "difficulty": 5,
+   "score_note": "Scored from MID index cards / BI case-file OCR during the Oct 2026 NARA slice-E triage (research/nara_triage_e/); not viewed",
+   "verify": "View M1443 roll 19 frames 0431-0432 and transcribe the groups. Messages this short under an additive are unlikely to be solvable without more traffic.",
+   "links": [
+    {
+     "label": "M1443 roll 19 (frames 0429-0432)",
+     "href": "https://catalog.archives.gov/id/248385500"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "NARA bulk-scan triage (slice E, RG 165/RG 65 cipher-word pass)",
+   "prior_art": "open as far as checked (27 Oct 2026: known.py, catalogue 628-680, nara_triage_a-d, nara_military/state/catalog; web search)",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 694,
+   "counted": true,
+   "year": 1917,
+   "date": "1917-18",
+   "title": "Hindu–German conspiracy cipher material: Heramba Lal Gupta's cipher letter, the Chakravarty cipher message, and a telegram 'not as yet satisfactorily deciphered'",
+   "correspondents": "Heramba Lal Gupta / Chandra Kanta Chakravarty and the Indian committee -> German agents",
+   "place": "United States / Mexico",
+   "language": "English (presumed)",
+   "region": "Other",
+   "period": "1901-1950",
+   "shelfmark": "NARA RG 165, MID files 10020-87, 9771-23 (M1194 roll 91, frame 0195); RG 65 OG 1396 (M1085 card); M1085 roll 760 frame 0286 (printed account)",
+   "folio_note": "Gupta letter: one cipher letter (card only). Telegram: given only in substance in a printed account filed in the BI case.",
+   "cls": "B",
+   "status": "The M1194 card (10020-87, 7 Nov 1917) lists Gupta's cipher letter with no solution. M1085 roll 760 frame 0286 carries a printed account of the case that quotes the telegram's substance and says it 'has not been as yet satisfactorily deciphered'. MI-8 (Manly) read other Hindu-conspiracy letters (Ghose, 10531-409), so the system family is known.",
+   "why": "Cipher evidence from the San Francisco Hindu–German conspiracy trial of 1917-18.",
+   "importance": 3,
+   "solvability": 1,
+   "difficulty": 3,
+   "score_note": "Scored from MID index cards / BI case-file OCR during the Oct 2026 NARA slice-E triage (research/nara_triage_e/); not viewed",
+   "verify": "Order MID file 10020-87 and 9771-23 (RG 165, entry 65, NARA College Park) and check whether the ciphertext copy survives. Also check the trial exhibits (RG 21, N.D. Cal., US v. Bopp/Ram Chandra) and RG 65 OG 1396.",
+   "links": [
+    {
+     "label": "M1194 roll 91 (frame 0195)",
+     "href": "https://catalog.archives.gov/id/118118268"
+    },
+    {
+     "label": "M1085 roll 760 (frame 0286)",
+     "href": "https://catalog.archives.gov/id/370916833"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "NARA bulk-scan triage (slice E, RG 165/RG 65 cipher-word pass)",
+   "prior_art": "open as far as checked (27 Oct 2026: known.py, catalogue 628-680, nara_triage_a-d, nara_military/state/catalog; web search)",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 695,
+   "counted": true,
+   "year": 1918,
+   "date": "16 May-9 Oct 1918",
+   "title": "Luisa Castellanos, Matanzas, to R. V. Heredia, Venezuela: letter partly in code; MI-8 reported 'insufficient material to give coherent reading'",
+   "correspondents": "Luisa Castellanos -> R. V. Heredia",
+   "place": "Matanzas, Cuba",
+   "language": "Spanish",
+   "region": "Americas",
+   "period": "1901-1950",
+   "shelfmark": "NARA RG 165, MID file 61-105 (index cards M1194 roll 41 frames 1879, 1887; roll 4 frame 2165)",
+   "folio_note": "Part of one letter.",
+   "cls": "C",
+   "status": "Cards: the cryptographers reported insufficient material for a coherent reading. The MID correspondence file itself (RG 165, entry 65, MID 1917-41) is not digitised; only the index card (M1194/M912/M1474) is online.",
+   "why": "A wartime Cuba–Venezuela code letter that MI-8 could not read.",
+   "importance": 1,
+   "solvability": 1,
+   "difficulty": 4,
+   "score_note": "Scored from MID index cards / BI case-file OCR during the Oct 2026 NARA slice-E triage (research/nara_triage_e/); not viewed",
+   "verify": "Order MID file 61-105 (RG 165, entry 65, NARA College Park) and check whether the ciphertext copy survives.",
+   "links": [
+    {
+     "label": "M1194 roll 41 (frames 1879, 1887)",
+     "href": "https://catalog.archives.gov/id/117994764"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "NARA bulk-scan triage (slice E, RG 165/RG 65 cipher-word pass)",
+   "prior_art": "open as far as checked (27 Oct 2026: known.py, catalogue 628-680, nara_triage_a-d, nara_military/state/catalog; web search)",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 696,
+   "counted": true,
+   "year": 1918,
+   "date": "7-15 May 1918",
+   "title": "'Beatriz' (Arizona) to Manuel Loya, Mexico: suspected cipher letter that MIB called 'impossible to solve'",
+   "correspondents": "'Beatriz' -> Manuel Loya, Lista de Correos, Mexico",
+   "place": "Arizona",
+   "language": "Spanish",
+   "region": "Americas",
+   "period": "1901-1950",
+   "shelfmark": "NARA RG 165, MID file 61-70 (index card M1194 roll 136, frame 1602)",
+   "folio_note": "One letter plus an inscription on the flap; original sent to MIB.",
+   "cls": "C",
+   "status": "Card: MIB said such problems were impossible to solve without more material and offered to try the flap inscription. The MID correspondence file itself (RG 165, entry 65, MID 1917-41) is not digitised; only the index card (M1194/M912/M1474) is online.",
+   "why": "A border cipher letter MI-8 gave up on.",
+   "importance": 1,
+   "solvability": 1,
+   "difficulty": 4,
+   "score_note": "Scored from MID index cards / BI case-file OCR during the Oct 2026 NARA slice-E triage (research/nara_triage_e/); not viewed",
+   "verify": "Order MID file 61-70 (RG 165, entry 65, NARA College Park) and check whether the ciphertext copy survives.",
+   "links": [
+    {
+     "label": "M1194 roll 136 (frame 1602)",
+     "href": "https://catalog.archives.gov/id/118231400"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "NARA bulk-scan triage (slice E, RG 165/RG 65 cipher-word pass)",
+   "prior_art": "open as far as checked (27 Oct 2026: known.py, catalogue 628-680, nara_triage_a-d, nara_military/state/catalog; web search)",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 697,
+   "counted": true,
+   "year": 1917,
+   "date": "9 Nov 1917",
+   "title": "German agent messages: two deciphered and the 'Tismera' message being worked through an old German shorthand system",
+   "correspondents": "German agents -> unknown",
+   "place": "United States / Mexico",
+   "language": "German",
+   "region": "Americas",
+   "period": "1901-1950",
+   "shelfmark": "NARA RG 165, WCD/MID file 10270-81 (index card M1194 roll 75, frame 2399)",
+   "folio_note": "Three messages; the Tismera message unfinished.",
+   "cls": "B",
+   "status": "Card: two messages deciphered; the 'Tismera' message was being deciphered by an old German shorthand system, 'very slow'. No later result on the card. The MID correspondence file itself (RG 165, entry 65, MID 1917-41) is not digitised; only the index card (M1194/M912/M1474) is online.",
+   "why": "MI-8's first months: a German agent system built on shorthand, read only in part.",
+   "importance": 2,
+   "solvability": 1,
+   "difficulty": 4,
+   "score_note": "Scored from MID index cards / BI case-file OCR during the Oct 2026 NARA slice-E triage (research/nara_triage_e/); not viewed",
+   "verify": "Order MID file 10270-81 (RG 165, entry 65, NARA College Park) and check whether the ciphertext copy survives.",
+   "links": [
+    {
+     "label": "M1194 roll 75 (frame 2399)",
+     "href": "https://catalog.archives.gov/id/118077561"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "NARA bulk-scan triage (slice E, RG 165/RG 65 cipher-word pass)",
+   "prior_art": "open as far as checked (27 Oct 2026: known.py, catalogue 628-680, nara_triage_a-d, nara_military/state/catalog; web search)",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 698,
+   "counted": true,
+   "year": 1917,
+   "date": "22 Feb 1917",
+   "title": "Code message from the Austro-Hungarian minister in Mexico to the German consul at San Antonio, seized with its key on Henry and Olga Visser at Laredo",
+   "correspondents": "Austro-Hungarian minister, Mexico City -> German consul, San Antonio",
+   "place": "Mexico City",
+   "language": "German",
+   "region": "Americas",
+   "period": "1901-1950",
+   "shelfmark": "NARA RG 165, MID file 9140-103 (index card M1194 roll 243, frame 1821); see also 4131-44 (Olga de Visser message and Kolbeck key)",
+   "folio_note": "One message plus key.",
+   "cls": "A",
+   "status": "Cards: the Vissers were arrested at Laredo carrying a message in code and its key, weeks after the Zimmermann telegram. No decipherment is recorded on the card, but with the key held it was probably read. The MID correspondence file itself (RG 165, entry 65, MID 1917-41) is not digitised; only the index card (M1194/M912/M1474) is online. The MID cards are not digitised (27 Oct 2026).",
+   "why": "Central Powers courier traffic between Mexico City and Texas in February 1917.",
+   "importance": 3,
+   "solvability": 1,
+   "difficulty": 1,
+   "score_note": "Scored from MID index cards / BI case-file OCR during the Oct 2026 NARA slice-E triage (research/nara_triage_e/); not viewed",
+   "verify": "Order MID file 9140-103 and 4131-44 (RG 165, entry 65, NARA College Park) and check whether the ciphertext copy survives.",
+   "links": [
+    {
+     "label": "M1194 roll 243 (frame 1821)",
+     "href": "https://catalog.archives.gov/id/118503354"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "NARA bulk-scan triage (slice E, RG 165/RG 65 cipher-word pass)",
+   "prior_art": "open as far as checked (27 Oct 2026: known.py, catalogue 628-680, nara_triage_a-d, nara_military/state/catalog; web search)",
+   "ark": "",
+   "scored": "sweep",
+   "access": "archive",
+   "as_of": "2026-10-27"
+  },
+  {
+   "id": 699,
+   "counted": true,
+   "year": 1917,
+   "date": "Aug 1917-Dec 1917 (returned 1932)",
+   "title": "Hermann Rueckheim (alias Rafael Gómez), Nuevo Laredo: code letters to Kurt Hinsch's sabotage network, and a Folke Cronholm letter in cipher",
+   "correspondents": "Hermann Rueckheim (Reukheim) -> Kurt Hinsch; Folke Cronholm (Swedish legation, Mexico) -> unknown",
+   "place": "Nuevo Laredo / Mexico City",
+   "language": "German",
+   "region": "Americas",
+   "period": "1901-1950",
+   "shelfmark": "NARA RG 165, MID files 9140-2235, 9140-668/42, 2778-B-6 (index cards M1194 roll 197 frames 1552, 1595; M1474 roll 8 frame 0841)",
+   "folio_note": "Several code letters (papers 3-5) and one secret-writing document; the original went to the German claims files and came back in 1932.",
+   "cls": "C",
+   "status": "Cards: no solution recorded. The 1932 entry shows the papers were used in the Black Tom / Kingsland sabotage claims. The MID correspondence file itself (RG 165, entry 65, MID 1917-41) is not digitised; only the index card (M1194/M912/M1474) is online.",
+   "why": "Cipher evidence from the German sabotage network behind Black Tom, and from the Swedish channel for German traffic in Mexico.",
+   "importance": 3,
+   "solvability": 1,
+   "difficulty": 4,
+   "score_note": "Scored from MID index cards / BI case-file OCR during the Oct 2026 NARA slice-E triage (research/nara_triage_e/); not viewed",
+   "verify": "Order MID file 9140-2235 and 9140-668/42 (RG 165, entry 65, NARA College Park) and check whether the ciphertext copy survives. Also check the Mixed Claims Commission sabotage exhibits (RG 76).",
+   "links": [
+    {
+     "label": "M1194 roll 197 (frame 1552)",
+     "href": "https://catalog.archives.gov/id/118383430"
+    },
+    {
+     "label": "M1474 roll 8 (frame 0841)",
+     "href": "https://catalog.archives.gov/id/145734480"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "NARA bulk-scan triage (slice E, RG 165/RG 65 cipher-word pass)",
+   "prior_art": "open as far as checked (27 Oct 2026: known.py, catalogue 628-680, nara_triage_a-d, nara_military/state/catalog; web search); the Mixed Claims Commission exhibits (Herrmann's pin-prick message) are published, but no Rueckheim/Cronholm decipherment was found",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 700,
+   "counted": true,
+   "year": 1917,
+   "date": "23 Oct-21 Nov 1917",
+   "title": "Austrian E. Kovacs, Valparaíso, to Buenos Aires: code messages (and Nunezant -> Morluk, Iquique), translation requested",
+   "correspondents": "E. Kovacs -> Elgira Pallavicini / E. Staudtkova, Buenos Aires; Nunezant -> Morluk, Iquique",
+   "place": "Valparaíso / Iquique",
+   "language": "German (presumed)",
+   "region": "Americas",
+   "period": "1901-1950",
+   "shelfmark": "NARA RG 165, WCD/MID file 10020-115 (index cards M1194 roll 173, frame 0046 and others)",
+   "folio_note": "Several messages.",
+   "cls": "C",
+   "status": "Cards: translation of the messages requested; no result recorded. The same file holds German bank cables to South America (Banco Germánico). The MID correspondence file itself (RG 165, entry 65, MID 1917-41) is not digitised; only the index card (M1194/M912/M1474) is online.",
+   "why": "Central Powers commercial and agent traffic on the west coast of South America.",
+   "importance": 2,
+   "solvability": 1,
+   "difficulty": 4,
+   "score_note": "Scored from MID index cards / BI case-file OCR during the Oct 2026 NARA slice-E triage (research/nara_triage_e/); not viewed",
+   "verify": "Order MID file 10020-115 (RG 165, entry 65, NARA College Park) and check whether the ciphertext copy survives.",
+   "links": [
+    {
+     "label": "M1194 roll 173 (frame 0046)",
+     "href": "https://catalog.archives.gov/id/118322465"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "NARA bulk-scan triage (slice E, RG 165/RG 65 cipher-word pass)",
+   "prior_art": "open as far as checked (27 Oct 2026: known.py, catalogue 628-680, nara_triage_a-d, nara_military/state/catalog; web search)",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 701,
+   "counted": true,
+   "year": 1918,
+   "date": "12 Jan 1918",
+   "title": "Letter from 'German Mexico' to Sam Becer, Havana, 'in unknown code, may be a German spy letter'",
+   "correspondents": "unknown (Mexico) -> Sam Becer, Havana; Becer <-> Jacob Sobel, Buenos Aires",
+   "place": "Mexico / Havana",
+   "language": "unknown",
+   "region": "Americas",
+   "period": "1901-1950",
+   "shelfmark": "NARA RG 165, MID files 6370-667, 6370-663 (index card M1194 roll 18, frame 0857)",
+   "folio_note": "One letter (held).",
+   "cls": "C",
+   "status": "Card: letter held; Becer said to correspond in code with Sobel at Buenos Aires. No solution recorded. The MID correspondence file itself (RG 165, entry 65, MID 1917-41) is not digitised; only the index card (M1194/M912/M1474) is online.",
+   "why": "A possible German agent channel through Havana.",
+   "importance": 2,
+   "solvability": 1,
+   "difficulty": 4,
+   "score_note": "Scored from MID index cards / BI case-file OCR during the Oct 2026 NARA slice-E triage (research/nara_triage_e/); not viewed",
+   "verify": "Order MID file 6370-667 (RG 165, entry 65, NARA College Park) and check whether the ciphertext copy survives.",
+   "links": [
+    {
+     "label": "M1194 roll 18 (frame 0857)",
+     "href": "https://catalog.archives.gov/id/117938013"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "NARA bulk-scan triage (slice E, RG 165/RG 65 cipher-word pass)",
+   "prior_art": "open as far as checked (27 Oct 2026: known.py, catalogue 628-680, nara_triage_a-d, nara_military/state/catalog; web search)",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 702,
+   "counted": true,
+   "year": 1918,
+   "date": "1 Apr 1918",
+   "title": "Letter in cipher addressed to Cornelius K. Bettman, Barcelona, with a map thought to be of Havana harbour",
+   "correspondents": "unknown -> Cornelius K. Bettman, Barcelona",
+   "place": "Havana (presumed)",
+   "language": "unknown",
+   "region": "Americas",
+   "period": "1901-1950",
+   "shelfmark": "NARA RG 165, MID file PF 1444 (index cards M1194 roll 22 frame 1556; M1474 roll 14 frame 0152)",
+   "folio_note": "One letter; a photo copy and the map are in the file.",
+   "cls": "C",
+   "status": "Cards: the military attaché at Havana sent a photo copy of the cipher letter with the map. No solution recorded. The MID correspondence file itself (RG 165, entry 65, MID 1917-41) is not digitised; only the index card (M1194/M912/M1474) is online.",
+   "why": "A cipher letter with a harbour map, routed to Spain.",
+   "importance": 2,
+   "solvability": 1,
+   "difficulty": 4,
+   "score_note": "Scored from MID index cards / BI case-file OCR during the Oct 2026 NARA slice-E triage (research/nara_triage_e/); not viewed",
+   "verify": "Order MID file PF 1444 (RG 165, entry 65, NARA College Park) and check whether the ciphertext copy survives.",
+   "links": [
+    {
+     "label": "M1194 roll 22 (frame 1556)",
+     "href": "https://catalog.archives.gov/id/117947767"
+    },
+    {
+     "label": "M1474 roll 14 (frame 0152)",
+     "href": "https://catalog.archives.gov/id/145743156"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "NARA bulk-scan triage (slice E, RG 165/RG 65 cipher-word pass)",
+   "prior_art": "open as far as checked (27 Oct 2026: known.py, catalogue 628-680, nara_triage_a-d, nara_military/state/catalog; web search)",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 703,
+   "counted": true,
+   "year": 1917,
+   "date": "24 Mar 1917",
+   "title": "Code message to the Swiss consul at San Francisco; Weiskopf: 'almost impossible to decode a single message'",
+   "correspondents": "unknown -> Swiss consul, San Francisco",
+   "place": "San Francisco",
+   "language": "unknown",
+   "region": "Americas",
+   "period": "1901-1950",
+   "shelfmark": "NARA RG 65, Bureau of Investigation case files (M1085 roll 307, 'Old German Files'), OG 3337 'Swiss Consul, San Francisco, Pro-German Activities', frame 2026 (roll 307)",
+   "folio_note": "One message (the BI asked for more in the same code).",
+   "cls": "C",
+   "status": "Case-file letter (OG 3337, 24 Mar 1917, Bureau to H. B. Hook, Nogales, Arizona): Victor Weiskopf, the Bureau's code expert, said one message could hardly be deciphered (it might be German, French or English) and asked for others in the same code. The message text was not found in the OCR of this roll; the Nogales report should carry the copy.",
+   "why": "Neutral-consulate traffic in San Francisco in the weeks before the US entered the war.",
+   "importance": 2,
+   "solvability": 1,
+   "difficulty": 4,
+   "score_note": "Scored from MID index cards / BI case-file OCR during the Oct 2026 NARA slice-E triage (research/nara_triage_e/); not viewed",
+   "verify": "Read M1085 roll 307 around frame 2026 on the images and look for the message copy.",
+   "links": [
+    {
+     "label": "M1085 roll 307 (frame 2026)",
+     "href": "https://catalog.archives.gov/id/369507528"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "NARA bulk-scan triage (slice E, RG 165/RG 65 cipher-word pass)",
+   "prior_art": "open as far as checked (27 Oct 2026: known.py, catalogue 628-680, nara_triage_a-d, nara_military/state/catalog; web search)",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 704,
+   "counted": true,
+   "year": 1940,
+   "date": "Apr-Jun 1940 (one exercise message 25 Feb 1939)",
+   "title": "Flugabwehrkommando Schwarzwald (Luftgau VII), Funksprüche in the Luftgauschlüssel double transposition, Western campaign 1940",
+   "correspondents": "Flugabwehrkommando Schwarzwald and its Flak groups/regiments (Luftgaukommando VII, Munich) ↔ subordinate Flak units",
+   "place": "Black Forest / Upper Rhine (Flak-Gruppe Schwarzwald-Süd and -Nord)",
+   "language": "German",
+   "region": "Germany",
+   "period": "1901-1950",
+   "shelfmark": "NARA RG 242, T405 (German Air Force Records of the Luftgaukommandos, Flak ...), roll 9 (NAID 332033680)",
+   "folio_note": "c. 70 Funkspruch forms in five-letter groups, frames 863-867 (one message in 5 parts, 'Un 1.Tl-179' ... '5.Tl-204'), 889-901, 917-936, 947-948, 964-1003, 1010-1011, 1025-1056, 1069-1105, 1113 (plus 565, 9); most messages are multi-part ('1.Tl', '2.Tl' ...) of 160-250 letters. Frame 349: an exercise Fernschreiben of 25.2.1939 (221 letters) to Luftverteidigungskommando Berlin; frame 350: its key card 'Annahme: Luftgauschlüssel für den 25.2.1939', two transposition keys a (21) and b (19), Kenngruppen qli vzn fks puc.",
+   "cls": "B",
+   "status": "Not on DECODE, not in the repo (known.py: T405, Schwarzwald, Luftgau: no hits). The letter counts of the groups are those of German plaintext with X as word separator (pooled IC 0.060 on noisy OCR, top letters E R X I N A), so this is a transposition, not Enigma. Tested 27 Oct 2026: the 1939 exercise message reads in full with its key card (double columnar transposition, key a then b, the group containing the Kenngruppe 'fks' at group 7 dropped, CH written Q): 'ROEM X ERSTE FLAKREGIMENT X ZWOELF X RES X FLAKABTEILUNG ... WERDEN IN DER NACHT DURQ TEILE DER X FLAKTRANSPORTABTEILUNG X DREIEINS X NAQ X MAGDEBURG X VERLEGT X LUFTGAUKOMMANDO X ROEM X DREI' (dw1939.py). The 1940 messages carry no key and no decipherment on the frames; some have a typed Fernschreiben in clear on a neighbouring frame (e.g. 862, 4 June 1940) that may be the same text.",
+   "why": "A large, dated file of German hand-cipher (Doppelwürfel) radio traffic from 1940, with the system and one key proven from the same reel: a ready test bed for double-transposition hill-climbing and possibly cribbed by the clear Fernschreiben filed beside it.",
+   "importance": 2,
+   "solvability": 3,
+   "difficulty": 4,
+   "score_note": "Scored from NARA OCR during the Oct 2026 NARA bulk-scan triage (research/nara_triage_g/); frames 349-350 and the key verified on the images, the 1940 messages read from OCR only",
+   "verify": "Transcribe the five-part message of frames 863-867 and two or three same-day messages from the images; match them to the clear Fernschreiben on neighbouring frames (862, 878, 888, 897 ...) as cribs; then run a double-transposition solver with key lengths 15-25 (one daily key per day for all messages).",
+   "links": [
+    {
+     "label": "T405 roll 9 (NAID 332033680)",
+     "href": "https://catalog.archives.gov/id/332033680"
+    },
+    {
+     "label": "frame 350, key card 25.2.1939",
+     "href": "https://catalog.archives.gov/medialz/dc-metro/rg-242/7794463/T405/T405-0009/T405-0009-00350.tif"
+    },
+    {
+     "label": "frame 863, five-part Funkspruch",
+     "href": "https://catalog.archives.gov/medialz/dc-metro/rg-242/7794463/T405/T405-0009/T405-0009-00863.tif"
+    }
+   ],
+   "seen": "image",
+   "source": "NARA bulk-scan triage G (RG 242 / RG 94)",
+   "prior_art": "open (checked 27 Oct 2026: known.py; no edition of T405 roll 9 known; the 1939 exercise message read here with its own key)",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 705,
+   "counted": true,
+   "year": 1940,
+   "date": "Oct-Nov 1939 and Apr 1940",
+   "title": "British consular cipher telegrams (Vigo → Foreign Office 1939; Gibraltar ↔ British consul Las Palmas, Lisbon/Lagos → consul Tenerife 1940), copies obtained by the German naval attaché Madrid and sent to OKW/Chi",
+   "correspondents": "British consul Vigo → Foreign Office London; British authorities Gibraltar, Lisbon, Lagos → British consuls Las Palmas and Tenerife",
+   "place": "Vigo; Gibraltar; Las Palmas / Tenerife",
+   "language": "English (presumed)",
+   "region": "England",
+   "period": "1901-1950",
+   "shelfmark": "NARA RG 242, T1022 (Copies of Records of the German Navy), rolls 2865 (NAID 338541514) and 2866 (NAID 338542419); OKW Ausland IV files B.Nr. 1440/39 gKdos and 3022/40",
+   "folio_note": "Roll 2865 frames 362-366: Marineattaché Madrid B.Nr. 128/39 g.Kdos (20.11.1939) 'Englische Konsularchiffer im Verkehr mit Auswärtigem Amt', copies of the Vigo consul's telegrams of 11-12.11.1939 (5-figure groups, some letter groups) on the sailing of eight German steamers; forwarded 1.12.1939 to W.F.A./Chi. (an earlier batch B.Nr. 97/39 of 21.10.1939 not located). Roll 2866 frames 503-515: Marineattaché Madrid B.Nr. 597 g (21.5.1940) 'Feindliche Schlüsseltelegramme', anonymous copies of April 1940 telegrams: 5-figure group telegrams Gibraltar → British Consul Las Palmas on Spanish telegraph forms (frames 504, 508-515), 'Nota num. 5-7' letter-group telegrams Lisbon/Lagos → British consul Tenerife (frame 507).",
+   "cls": "C",
+   "status": "Not on DECODE, not in the repo. The covering letters submit the copies 'zwecks möglicher Auswertung'; no decipherment or Chi reply is filed with them on these frames. British consular traffic of 1939-40 was in hand book ciphers (figure codes with subtractor tables); the system is not identified here.",
+   "why": "British reporting from neutral Spanish ports on German blockade-runners at the start of the war, intercepted by German agents; any reading would show what the consuls reported and whether German Chi read it.",
+   "importance": 3,
+   "solvability": 1,
+   "difficulty": 5,
+   "score_note": "Scored from NARA OCR during the Oct 2026 NARA bulk-scan triage (research/nara_triage_g/); read from OCR, not viewed",
+   "verify": "View rolls 2865 frames 362-366 and 2866 frames 503-515; look for the Chi answer and the October 1939 batch in the neighbouring OKW Ausland IV files; check TNA FO 371 / FO 185 for the Vigo and Las Palmas consuls' telegrams of those dates (the clear versions would be cribs).",
+   "links": [
+    {
+     "label": "T1022 roll 2865 (NAID 338541514)",
+     "href": "https://catalog.archives.gov/id/338541514"
+    },
+    {
+     "label": "T1022 roll 2866 (NAID 338542419)",
+     "href": "https://catalog.archives.gov/id/338542419"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "NARA bulk-scan triage G (RG 242 / RG 94)",
+   "prior_art": "open (checked 27 Oct 2026: known.py; nothing found on these intercepts)",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 706,
+   "counted": true,
+   "year": 1940,
+   "date": "22-28 Apr 1940",
+   "title": "French consular agent Las Palmas → Marine Casablanca, letter-cipher telegrams ('Nota num. 2-4') copied by an anonymous informant for the German naval attaché Madrid",
+   "correspondents": "Agent consulaire de France, Las Palmas → Marine (French Navy) Casablanca",
+   "place": "Las Palmas",
+   "language": "French (presumed)",
+   "region": "France",
+   "period": "1901-1950",
+   "shelfmark": "NARA RG 242, T1022 roll 2866 (NAID 338542419), frames 505-507 (OKW Ausland IV 3022/40)",
+   "folio_note": "Three short telegrams in five-letter groups: 22.4.1940 (frame 505, c. 14 groups), 'Nota num. 3' 24.4.1940 (frame 506, c. 30 groups), 'Nota num. 4' 28.4.1940 (frame 507, c. 25 groups), each with the informant's German note.",
+   "cls": "C",
+   "status": "Not on DECODE, not in the repo. Submitted to OKW Ausland IV for 'mögliche Auswertung'; no decipherment on the frames. French naval traffic of 1940 used code with letter superencipherment; system not identified.",
+   "why": "French naval intelligence reporting from the Canaries in the last weeks before the German offensive in the West.",
+   "importance": 2,
+   "solvability": 1,
+   "difficulty": 5,
+   "score_note": "Scored from NARA OCR during the Oct 2026 NARA bulk-scan triage (research/nara_triage_g/); read from OCR, not viewed",
+   "verify": "View frames 505-507; check whether French naval intelligence files (SHD Marine, Vincennes) hold the clear versions.",
+   "links": [
+    {
+     "label": "T1022 roll 2866 (NAID 338542419)",
+     "href": "https://catalog.archives.gov/id/338542419"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "NARA bulk-scan triage G (RG 242 / RG 94)",
+   "prior_art": "open (checked 27 Oct 2026: known.py)",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 707,
+   "counted": true,
+   "year": 1940,
+   "date": "1938-Aug 1940",
+   "title": "Kriegsmarine Etappendienst / OKW Abwehr IV 'Scheintelegramme' in the W.f.S. (Wörterbuch für Scheintelegramme 1930/1936: Hapag-Lloyd code + Kammwürfel transposition): radio telegrams to M.S. Havelland, Aug 1940, filed without clear text",
+   "correspondents": "OKW Ausland IV / Etappe → German merchant ship M.S. 'Havelland' (Yokohama) via DEBEG ship radio",
+   "place": "Berlin → Yokohama",
+   "language": "German",
+   "region": "Germany",
+   "period": "1901-1950",
+   "shelfmark": "NARA RG 242, T1022 roll 3391 (NAID 338968820), frames 877-878; system and plain/cipher pairs on rolls 3391, 3367 (NAID 338928415) and 2864 (NAID 338540609)",
+   "folio_note": "Roll 3391 frames 877 (3.8.1940, c. 160 groups, 'DGR-DZG DFB-DFQ') and 878 (1.8.1940, c. 35 groups): no Klartext on the frames. Key material in the same rolls: 3391 frames 614-617 (Jan 1940 proposal to change the W.f.S. procedure, with a worked example 'Englischer schwerer Kreuzer ...' in old and new form), 91 (telegram with code numbers glossed '0898 = unter Bezugnahme ...'); roll 3367 frames 221-230 (KALORLUX Hamburg telegrams Jan-Mar 1938 each with 'Klartext'); roll 2864 frame 837 (21.11.1938 telegram with Klartext).",
+   "cls": "A",
+   "status": "Not on DECODE, not in the repo. The W.f.S. is a commercial-code (Hapag-Lloyd) dictionary with a columnar 'Kammwürfel' step; several telegrams in the same rolls are filed with their clear text, so the code list and the transposition can be rebuilt from pairs; the two 1940 radio telegrams have no clear text with them.",
+   "why": "Abwehr/Etappe instructions to a blockade-running supply ship in Japan in 1940; and a documented German naval-agent hand system with plain/cipher pairs, not on DECODE.",
+   "importance": 2,
+   "solvability": 2,
+   "difficulty": 4,
+   "score_note": "Scored from NARA OCR during the Oct 2026 NARA bulk-scan triage (research/nara_triage_g/); read from OCR, not viewed",
+   "verify": "View 3391 frames 614-617 and 877-878; gather all W.f.S. telegrams with Klartext in rolls 2864-2866, 3367, 3391 and neighbouring Abw IV rolls; find a Hapag-Lloyd Code copy (Hamburg 1920s) to identify the dictionary.",
+   "links": [
+    {
+     "label": "T1022 roll 3391 (NAID 338968820)",
+     "href": "https://catalog.archives.gov/id/338968820"
+    },
+    {
+     "label": "T1022 roll 3367 (NAID 338928415)",
+     "href": "https://catalog.archives.gov/id/338928415"
+    },
+    {
+     "label": "T1022 roll 2864 (NAID 338540609)",
+     "href": "https://catalog.archives.gov/id/338540609"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "NARA bulk-scan triage G (RG 242 / RG 94)",
+   "prior_art": "open (checked 27 Oct 2026: known.py: Etappe, Vermehren, Kammwürfel: no hits)",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 708,
+   "counted": true,
+   "year": 1943,
+   "date": "19 Mar 1942 - 10 Aug 1945",
+   "title": "Office of Censorship: secret submissions on intercepted letters with concealed messages, 1942-45",
+   "correspondents": "various suspect correspondents (Axis agents, watch-listed persons) → various",
+   "place": "unknown (US postal and cable censorship stations)",
+   "language": "unknown",
+   "region": "Americas",
+   "period": "1901-1950",
+   "shelfmark": "NARA RG 216, Records of the Office of Censorship, series \"Secret Submissions\" (naId 1266133), 4 reels of microfilm; finding aid: \"Index to Intercepted Communications Received\" 1943-45 (naId 1265114, 3 ft of cards)",
+   "folio_note": "4 microfilm reels of submissions with copies of the intercepted originals; extent of code/cipher items unknown (most will be secret ink and open-code text). Not digitised.",
+   "cls": "C",
+   "status": "Series description: copies of secret submissions on communications containing secret writing or other forms of concealed messages, accompanied by copies of the original intercepted communications. Whether any coded item stayed unread is not stated. Not digitised. Not in catalogue.json (known.py: no hits for the series or naIds).",
+   "why": "The US censorship's own file of suspect concealed-message letters; any enciphered item unread at the time is a WWII agent or courier text with known context.",
+   "importance": 2,
+   "solvability": 1,
+   "difficulty": 3,
+   "score_note": "Scored from the NARA bulk_all catalogue scan during the Oct 2026 NARA triage (research/nara_triage_h/); not viewed",
+   "verify": "Order the 4 reels (College Park); scan the index cards (naId 1265114) for 'code' / 'cipher' / 'cryptographic' entries and check the submission for a solution.",
+   "links": [
+    {
+     "label": "Secret Submissions series",
+     "href": "https://catalog.archives.gov/id/1266133"
+    },
+    {
+     "label": "Index to Intercepted Communications Received",
+     "href": "https://catalog.archives.gov/id/1265114"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "NARA bulk_all triage (slice H)",
+   "prior_art": "open (checked 27 Oct 2026: catalogue.json/known.py; the related RG 457 censorship rows in catalogue 628-707 are other files)",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 709,
+   "counted": true,
+   "year": 1919,
+   "date": "9 Jul 1919",
+   "title": "Col. Williams, Allied Mine Guard → Commanding General AEF Siberia: enciphered field message No. 5, Vladimirovka",
+   "correspondents": "Col. Williams, Commanding Officer, Allied Mine Guard (31st Infantry) → Commanding General, American Expeditionary Force Siberia, Vladivostok",
+   "place": "Vladimirovka (Suchan mines district), Russian Far East",
+   "language": "English (presumed)",
+   "region": "Other",
+   "period": "1901-1950",
+   "shelfmark": "NARA RG 395, Records of US Army Overseas Operations and Commands, AEF Siberia historical files, microfilm M917 roll 9 (file unit naId 337865023, \"21-33.5 Headquarters, AEF in Siberia\"), frame M917-009-0963",
+   "folio_note": "One US Army Field Message form: 32 five-letter groups (160 letters), beginning LJEQE WJJOM RFAHN OVLBO, ending XXKOX XALYX (X padding). Note: 'Given to Japanese Captain 7/8/19 ... to be sent to Vladivostok by wireless'. Filed as an appendix to the Mine Guard war diary between clear field messages Nos. 2 and 4 of 7-8 July and No. 1 of 9 July.",
+   "cls": "C",
+   "status": "Enciphered text only; no decipherment on the frame or the neighbouring frames, and no other five-letter cipher group in the cached OCR of rolls 3 and 9. Tested 27 Oct 2026 (vig1919.py): IC 0.041 (flat, so not a transposition of English); no periodic Vigenere or Beaufort key of period 2-15 gives English; a JJ falls inside a digraph (so not Playfair). Likely a 1918-19 US Army field system (cipher disk / Larrabee-type long key) or an enciphered code. OCR read, image not viewed. Not in catalogue.json (known.py: no hits for Vladimirovka, Siberia, M917).",
+   "why": "A field cipher of the US intervention in Siberia, sent through Japanese wireless during the July 1919 partisan fighting round the Suchan mines; it shows which system the AEF Siberia used in the field.",
+   "importance": 2,
+   "solvability": 3,
+   "difficulty": 3,
+   "score_note": "Scored from the NARA bulk_all catalogue scan during the Oct 2026 NARA triage (research/nara_triage_h/); OCR of the frame read, image not viewed",
+   "verify": "View frame M917-009-0963 to confirm the groups; read the Mine Guard war diary for 8-9 July 1919 (frames 0966 ff.) and the HQ message files for the received copy; try the 1918-19 US Army field systems (Army Cipher Disk, Larrabee, War Department Telegraph Code 1915 + cipher).",
+   "links": [
+    {
+     "label": "M917 roll 9 file unit",
+     "href": "https://catalog.archives.gov/id/337865023"
+    },
+    {
+     "label": "frame M917-009-0963",
+     "href": "https://catalog.archives.gov/medialz/dc-metro/rg-395/649566/M917/M917-009/M917-009-0963.tif"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "NARA bulk_all triage (slice H)",
+   "prior_art": "open (checked 27 Oct 2026: catalogue.json/known.py, nara_triage_a-g READMEs; no web search)",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 710,
+   "counted": true,
+   "year": 1918,
+   "date": "4 May 1918",
+   "title": "Chicherin → Sukhanov (Vladivostok Soviet): telegram on routing Allied consular telegrams via Moscow, with code passages unread by AEF Siberia",
+   "correspondents": "G. V. Chicherin, People's Commissar for Foreign Affairs → K. A. Sukhanov, President of the Vladivostok Soviet",
+   "place": "Moscow",
+   "language": "Russian",
+   "region": "Other",
+   "period": "1901-1950",
+   "shelfmark": "NARA RG 395, AEF Siberia historical files, microfilm M917 roll 3 (file unit naId 337858938), frames M917-003-0350 to 0354 (Intelligence Summary No. 27, 8 Nov 1918, with Capt. F. B. Rives' memorandum of 6 Nov 1918)",
+   "folio_note": "Only the translation is filmed (frame 0353, 'Moscow #00784'), with '(code from hereon)' and '(more code)' where the code passages stood. Rives says the 'exact copy of the telegram as received' was held by the AEF intelligence office; a copy went to the Director of Military Intelligence, Washington.",
+   "cls": "C",
+   "status": "AEF Siberia memorandum: 'The code and cipher section inform that they are not in position to solve by inspection the short passages of code contained in the message'; the key was presumed destroyed with Sukhanov's papers. The ciphertext itself is not on the reel; it may survive in the MID copy (RG 165) or the AEF intelligence files. The same memorandum describes 18 Allied telegrams (16 American, many 'wholly or partly in code') abstracted from the Vladivostok telegraph office; those are US/Allied traffic copies, not a separate candidate. Not in catalogue.json (known.py: no hits for Chicherin, Sukhanov).",
+   "why": "A Soviet foreign-commissariat code telegram of spring 1918 tied to the Mirbach/German-control allegations; the unread passages name the routing after Brest-Litovsk. Its authenticity should be checked against the Sisson-document controversy.",
+   "importance": 2,
+   "solvability": 1,
+   "difficulty": 4,
+   "score_note": "Scored from the NARA bulk_all catalogue scan during the Oct 2026 NARA triage (research/nara_triage_h/); OCR of the frames read, images not viewed",
+   "verify": "Find the copy sent to the Director of Military Intelligence (RG 165 MID correspondence, Nov-Dec 1918) or the AEF Siberia G-2 files in RG 395 for the code text; check the Sisson documents and Soviet code literature of 1918.",
+   "links": [
+    {
+     "label": "M917 roll 3 file unit",
+     "href": "https://catalog.archives.gov/id/337858938"
+    },
+    {
+     "label": "frame M917-003-0352",
+     "href": "https://catalog.archives.gov/medialz/dc-metro/rg-395/649566/M917/M917-003/M917-003-0352.tif"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "NARA bulk_all triage (slice H)",
+   "prior_art": "open (checked 27 Oct 2026: catalogue.json/known.py; no web search)",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 711,
+   "counted": true,
+   "year": 1930,
+   "date": "1912-1944",
+   "title": "Bureau of the Mint → U.S. Mint Philadelphia: coded Western Union telegrams on coin shipments, 1912-44",
+   "correspondents": "Bureau of the Mint, Washington → U.S. Mint, Philadelphia",
+   "place": "Washington, D.C.",
+   "language": "English",
+   "region": "Americas",
+   "period": "1901-1950",
+   "shelfmark": "NARA RG 104, Records of the U.S. Mint, series \"Coded Telegrams\" (naId 610827; 4 folders, e.g. folder 4, naId 23932517, 1939); key: series \"Telegraphic Code Key\" (naId 1132821, one volume, 1902)",
+   "folio_note": "Four folders of telegrams; 'some of the telegrams are decoded'. Not digitised.",
+   "cls": "B",
+   "status": "Series description: coded telegrams, some decoded, mostly on coin shipments to Federal Reserve Banks. A Treasury telegraphic code key of 1902 (code word to true reading and back) is held in the same record group, so the undecoded ones should read by lookup if that code was still in use. Low historical weight. Not in catalogue.json.",
+   "why": "A complete government code correspondence with its key in the same record group; a ready test set for code-recovery methods more than a historical find.",
+   "importance": 1,
+   "solvability": 2,
+   "difficulty": 1,
+   "score_note": "Scored from the NARA bulk_all catalogue scan during the Oct 2026 NARA triage (research/nara_triage_h/); not viewed",
+   "verify": "Order the 4 folders and the 1902 code key volume (College Park or Philadelphia); test whether the code words of the 1930s-40s telegrams are in the 1902 key.",
+   "links": [
+    {
+     "label": "Coded Telegrams series",
+     "href": "https://catalog.archives.gov/id/610827"
+    },
+    {
+     "label": "Telegraphic Code Key 1902",
+     "href": "https://catalog.archives.gov/id/1132821"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "NARA bulk_all triage (slice H)",
+   "prior_art": "open (checked 27 Oct 2026: catalogue.json/known.py)",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 712,
+   "counted": true,
+   "year": 1940,
+   "date": "unknown (Office of Alien Property litigation, c. 1919-1950)",
+   "title": "Duisberg code messages: enclosure to an Office of Alien Property litigation case file",
+   "correspondents": "Duisberg (presumably Walter H. Duisberg, I.G. Farben's agent in the US) → unknown",
+   "place": "unknown (New York?)",
+   "language": "unknown",
+   "region": "Americas",
+   "period": "unknown",
+   "shelfmark": "NARA RG 131, Records of the Office of Alien Property, series \"Enclosures to Litigation Case Files\", file unit \"Duisberg Code Messages\" (naId 22467079)",
+   "folio_note": "One file unit; size and dates not given; not digitised.",
+   "cls": "C",
+   "status": "Catalogue title only: 'Duisberg Code Messages', filed as an enclosure to an OAP litigation case. Whether a decoding was filed with them is not stated. In the same record group, seized commercial code books (Mitsui San Francisco, naId 6883834; Chemnyco Inc., naId 6850950; Mitsubishi Shoji Seattle 'Cyphers / Meanings', naId 6837958) could serve as keys. The OSS Safehaven reports (RG 226, M1934) mention I.G. Farben code telegrams sent via Chemnyco. Not in catalogue.json (known.py: no hits for Duisberg).",
+   "why": "Corporate code messages of I.G. Farben's US network, evidence in the alien-property litigation; with the seized Chemnyco code books in the same record group they may read.",
+   "importance": 2,
+   "solvability": 1,
+   "difficulty": 2,
+   "score_note": "Scored from the NARA bulk_all catalogue scan during the Oct 2026 NARA triage (research/nara_triage_h/); not viewed",
+   "verify": "Order the file unit (College Park); identify the case and the code (Chemnyco code books, naId 6850950; commercial codes such as Bentley/ABC); check whether the litigation record prints the decodings.",
+   "links": [
+    {
+     "label": "Duisberg Code Messages",
+     "href": "https://catalog.archives.gov/id/22467079"
+    },
+    {
+     "label": "Seized office files of Chemnyco (code books)",
+     "href": "https://catalog.archives.gov/id/6850950"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "NARA bulk_all triage (slice H)",
+   "prior_art": "open (checked 27 Oct 2026: catalogue.json/known.py)",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 713,
+   "counted": true,
+   "year": 1918,
+   "date": "1917-1918",
+   "title": "AEF G-2 Radio Intelligence Section: intercepted German messages and worksheets on the solution of enemy codes and ciphers, 1917-18",
+   "correspondents": "German Army units on the Western Front → various (intercepted by the AEF)",
+   "place": "Western Front (France)",
+   "language": "German",
+   "region": "Germany",
+   "period": "1901-1950",
+   "shelfmark": "NARA RG 120, Records of the American Expeditionary Forces (World War I), series \"Records Relating to the Solution of Enemy Codes and Ciphers and the Decoding of Intercepted Messages\" (naId 6582019), 26 ft 4 in; finding aid: \"Subject Card Index to Correspondence Relating to the Solution...\" (naId 6581645, 6 in)",
+   "folio_note": "26 linear feet, 1917-18; not digitised. Related series: \"Card File of Symbols Used in German Codes and Ciphers\" 1917-19 (naId 6582839, 2 ft) and \"Card List of German Proper and Place Names Appearing in Codes and Ciphered Messages\" (naId 6582984), which are reconstructed code vocabularies (key material).",
+   "cls": "B",
+   "status": "Series title only; the descriptions give no scope note. The AEF G-2 A-6 section worked on ADFGX/ADFGVX, the KRU/Schlüsselheft trench codes and the German field codes; many of those systems were broken only for some days or keys (Painvin, Childs), so an undecoded residue is likely but not stated. Not in catalogue.json (known.py: no hits for the naIds, 'Solution of Enemy Codes' or 'Radio Intelligence'); the repo's targets/adfgvx covers the Eastern Front messages printed by Childs, not this file.",
+   "why": "The American Western Front intercept file: any unsolved ADFGVX or trench-code messages here extend the 1918 corpus the repo already works on (targets/adfgvx), with the AEF's own symbol and name card files as partial keys.",
+   "importance": 3,
+   "solvability": 1,
+   "difficulty": 4,
+   "score_note": "Scored from the NARA bulk_all catalogue scan during the Oct 2026 NARA triage (research/nara_triage_h/); not viewed",
+   "verify": "Order the subject card index (naId 6581645) first to locate unsolved-message folders; compare with the Childs/Friedman AEF reports (NSA Friedman collection) for which keys were recovered.",
+   "links": [
+    {
+     "label": "Solution of Enemy Codes and Ciphers series",
+     "href": "https://catalog.archives.gov/id/6582019"
+    },
+    {
+     "label": "Subject card index",
+     "href": "https://catalog.archives.gov/id/6581645"
+    },
+    {
+     "label": "Card file of symbols used in German codes",
+     "href": "https://catalog.archives.gov/id/6582839"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "NARA bulk_all triage (slice H)",
+   "prior_art": "unknown whether the residue was ever read (checked 27 Oct 2026: catalogue.json/known.py; web search found only general AEF G-2 A-6 / ADFGVX histories, e.g. Friedman papers on nsa.gov, nothing on this series)",
    "ark": "",
    "scored": "sweep"
   }

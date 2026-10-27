@@ -299,15 +299,35 @@ R1076 have no matching cipher run (clear periods of the letter or cipher not ima
 (Lyonet's decipherment, `plain/R1069.txt`, plain 0.5) fails only on "Mr" and names (Saltikof, Golofkin, Laurenzi ...):
 keeps read. No English files yet for the register readings (summaries in the profile).
 
+## 27 Oct 2026: the last five letters checked on the images
+
+R1054, R1068, R1070, R1073 and R1076 were still measured on the DECODE parse. Converted with doc2tr.py and checked line
+by line on the images (R1068 here; R1054/R1070 and R1073/R1076 by two image sub-agents, full-resolution strips); each
+`transcr/R*.txt` ends with a `# changes vs DECODE:` list. These copyists' 8 is never read as 0.
+- R1068: 60 groups, all agree with DECODE (911 is one group).
+- R1054: 369 groups (DECODE 372): three groups DECODE split at a superscript correction (831|861, 878|875, 740|140);
+  the first two agree with the r2q corrections of 23 Oct.
+- R1070: 400 groups: 849 and 219 that DECODE dropped (I5590 l.1); a struck 851 kept by DECODE as a second 852;
+  1132 -> 1131; 58 -> 56|58. The letter begins on I5591 (No 210 header): DECODE has the pages reversed (positions
+  kept in DECODE order). One group under an ink blot (I5590 l.4).
+- R1073: 315 groups (312): merges split (5831711041 -> 583 171 1041, 96699681 -> 966 996 81|61), 958 -> 938, a blot
+  that DECODE read as a group removed.
+- R1076: 424 groups (403): DECODE dropped two whole 11-group lines, the first lines of paragraphs P:4 and P:8;
+  105 -> 1057 at the edge; 845 corrected by a superscript 2 (= 245) had been read as 8 245. The letter begins on I5607
+  (No 124, P:4); I5606 (P:8) is the later leaf, so DECODE's page order is reversed. The two recovered lines may be part
+  of the "register stretches with no matching cipher run" noted in verification 5.
+
+Re-measured (measure_sense.py, now on the image transcriptions): R1073 0.939 -> 0.962, R1076 0.873 -> 0.887, R1054
+0.968 -> 0.967, R1070 0.965 -> 0.955 (the corrected digits lose two values), R1068 unchanged; letters with no
+contemporary decipherment 0.906 -> 0.908; all groups 8,760/9,306 -> 8,787/9,327 = 0.942.
+
 ## Remaining gaps
 
 - 45 groups without a value that the register does not settle (listed above under "Not adopted") - blocker: no-key-material; the register piece is noise or the occurrences disagree
 - groups that take two values in practice (727 moi/mois, 911 ns/co, 556 contre/contraire, 842 étoit/été, 1186, 895 devoir/devoit, 1193 utile/utilité, 16 roi de Prusse/prussien, 605 in R1074) - blocker: no-key-material; one value per group is all key_X can hold, so the measure under-reads these
 - R1054 and R1064 groups that the Fagel register passes over without a word (R1054: 101, 760; R1064: 103, 178 in a false start, 146, 29 108) and the R1064 passport-date groups 978 634 114 - blocker: no-key-material; the register pages 5186 248R-249L and 62R-63R were checked on the scans 23 Oct 2026 (r2q) and both letters now read from them, these groups have no value in any letter
 
-Not a gap of unread text but a possible improvement (moved out of the gap list 14 Oct 2026): R1054, R1068, R1070,
-R1073 and R1076 are measured on the DECODE parse (view.fix splits), not re-transcribed from the images; they already
-measure 0.75-0.95, and their unread groups are the open codes above.
+- groups cut by the binding or under ink (R1073 p.1 line ends, R1076 102|1024 and 663|668, R1054 ll.2/3/21, one group under the blot on R1070 I5590 l.4) - blocker: illegible; checked at full resolution 27 Oct 2026, no better image online
 
 ## Escalation
 
@@ -319,6 +339,7 @@ measure 0.75-0.95, and their unread groups are the open codes above.
 - [x] retry: 5 Oct 2026, R1072/R1074/R1067/R1064 re-transcribed from the images, open groups pooled across all letters, all letters re-measured with measure_sense.py (0.778 -> 0.823 of all groups)
 - [x] clear-pages (again): 21 Oct 2026, the Fagel registers NA 1.10.29 inv. 5186/5187 hold clear copies of all ten letters (WAINUT, PR #65); 58 values checked on 16 register scans and folded into key_X.tsv (0.890 -> 0.913)
 - [x] the register's words for the valueless groups (wainut/open_groups.tsv): 86 adopted after a scan check, 45 left open (second pass, 21 Oct 2026; 0.913 -> 0.941)
+- [x] retry: 27 Oct 2026, R1054, R1068, R1070, R1073, R1076 checked on the images (two dropped lines of R1076 and two groups of R1070 recovered; reversed page order of R1070/R1076 found), all letters re-measured (0.941 -> 0.942)
 - [x] clear-pages (register, R1054/R1064): 23 Oct 2026 (r2q), 5186 248R, 249L, 62R, 63L, 63R checked on the scans; both letters read from the register, figures followed where they differ
 
 ## Contribution by WAINUT (21 Oct 2026)

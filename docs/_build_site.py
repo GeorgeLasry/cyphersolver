@@ -18,7 +18,7 @@ import re, sys, pathlib, html, json, hashlib, datetime
 HERE = pathlib.Path(__file__).parent
 ICONS = ('<link rel="icon" href="favicon.svg" type="image/svg+xml">\n<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">\n'
          '<link rel="apple-touch-icon" href="apple-touch-icon.png">\n')
-VERSION ='20261026b'
+VERSION ='20261027a'
 SITE = 'Cyphersolver'
 REPO = 'https://github.com/dbourdeau/cyphersolver'
 
@@ -33,6 +33,10 @@ REPO = 'https://github.com/dbourdeau/cyphersolver'
 # build.  Seed the file with _seed_dates.py; after that it maintains itself.
 DATES_PATH = HERE / '_dates.json'
 TODAY = datetime.date.today().isoformat()
+# 'posted' (UTC, to the second) is when a write-up was submitted: stamped the first time a build sees the page,
+# backfilled for older pages from the commit that first added them (tools/backfill_posted.py). It orders the
+# Latest list in the Write-ups menu; 'first' alone would leave every page of one day tied.
+NOW = datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
 MONTHS = ('January', 'February', 'March', 'April', 'May', 'June', 'July',
           'August', 'September', 'October', 'November', 'December')
 SHORT = ('Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec')
@@ -104,7 +108,7 @@ def page_dates(slug, s):
     """Record and return {'first', 'updated'} for a page, moving 'updated' when the body changed."""
     h = content_hash(s)
     rec = DATES['pages'].get(slug)
-    if rec is None: rec = DATES['pages'][slug] = {'first': TODAY, 'updated': TODAY, 'hash': h}
+    if rec is None: rec = DATES['pages'][slug] = {'first': TODAY, 'updated': TODAY, 'hash': h, 'posted': NOW}
     elif rec.get('hash') != h: rec['updated'], rec['hash'] = TODAY, h
     return rec
 
@@ -287,6 +291,11 @@ PAGES = [
          blurb='DECODE R1154, catalogued as a cipher letter of 1504, is plain Italian of 29 May 1505 to Cardinal Ippolito d&rsquo;Este, printed by Berzeviczy in 1914. The queen writes no more because she has no cipher.',
          quote='&ldquo;et per non havere cifra: non ce extendemo altramente per questa&rdquo;',
          rights='Printed edition: Berzeviczy, 1914. ASMo manuscript not reproduced.'),
+    dict(slug='puebla1506', label='De Puebla to Almaz&aacute;n 1506', year='1506', y=1506.3, place='London &rarr; Miguel P&eacute;rez de Almaz&aacute;n', st='partial', stt='known key applied &middot; partial',
+         title='De Puebla to Almaz&aacute;n, London, 21 April 1506',
+         blurb='Ferdinand&rsquo;s ambassador in London writes to the King&rsquo;s secretary while Philip and Juana wait at Falmouth to sail for Castile (AGS Patronato Real leg. 54 doc. 78). The cipher passages, in Puebla&rsquo;s First Cipher, were deciphered with Satoshi Tomokiyo&rsquo;s reconstruction of the table: Katharine&rsquo;s people had her write letters for their own interest, and her household is finely dressed, the day before she told her father she was all but naked. Contributed by WAINUT; the clear text around the cipher and the lines 11&ndash;17 fragments stay open.',
+         quote='&ldquo;Los de la se&ntilde;ora princesa veo tan bien ataviados que mas no pense ver&rdquo;',
+         rights='Archivo General de Simancas, via PARES (Ministerio de Cultura).'),
 
     dict(slug='aerssen1601', label='Aerssen to Oldenbarnevelt', year='1601', y=1601, place='Paris', st='partial', stt='key from adjacent plaintext · partial',
          title='Aerssen to Oldenbarnevelt, 25 May 1601',
@@ -513,6 +522,11 @@ PAGES = [
          blurb='A clear letter with two cipher passages, catalogued on DECODE with writer and recipient unknown; the signature and endorsement identify Robert Reade, Secretary Windebank&rsquo;s nephew, writing from the exiled household. The Deciphering Branch&rsquo;s reconstruction of the Windebank cipher (DECODE R9115), filed in another volume, was found to fit; with 8 values rebuilt here, 93% of the significant groups are deciphered. The passages weigh whether Windebank can safely return under a summons.',
          quote='&ldquo;they have not enough against him to confiscate his fortune, and they would be [willing] to take the advantage of his refusall to return&rdquo;',
          rights='British Library, via DECODE'),
+    dict(slug='joao1642', label='Jo&atilde;o IV to Nisa 1642&ndash;44', year='1642&ndash;1644', y=1642.95, place='Lisbon &rarr; Paris', st='partial', stt='read in part',
+         title='Jo&atilde;o IV to the marqu&ecirc;s de Nisa, 1642&ndash;44',
+         blurb='Six letters of Jo&atilde;o IV to his ambassador in Paris, copied into the embassy letter-book (ANTT Manuscritos da Livraria 1017) with passages in cipher. Two substitution alphabets were rebuilt from clear text in the same volume: clear copies of three 1642 letters, and a leaf listing two 1645 passages in clear. The 1642 letters concern the captive Infante D. Duarte and Richelieu&rsquo;s death; the 1644 letter, which had no decipherment, keeps the marriages of Prince Teod&oacute;sio and the Infantas secret. 398 of 438 cipher words read; the 1643 runs are illegible at the scan resolution.',
+         quote='&ldquo;dos casamentos do Pr&iacute;ncipe meu sobre todos muito amado e prezado filho e das Infantas&rdquo;',
+         rights='Manuscript rights: Arquivo Nacional Torre do Tombo, via DigitArq'),
     dict(slug='boswell', label='Boswell', year='1643', y=1643, place='Oxford &rarr; The Hague', st='solved', stt='read in substance',
          title='Charles I and Nicholas to Boswell, 2 November 1643',
          blurb='Two cipher letters sent through Sir William Boswell at The Hague (TNA SP 84/157 ff. 217, 219): the King&rsquo;s re-credentials to the Duke of Courland&rsquo;s envoy and Secretary Nicholas&rsquo;s covering letter. Robert Pitt&rsquo;s published alphabet for this homophonic numerical cipher was checked with a permutation control and applied; the four graphic signs are word signs. Both letters are decrypted except about a dozen code groups that occur once.',
@@ -1439,6 +1453,11 @@ PAGES = [
          blurb='Despatch no. 117 of the Venetian ambassador in France (ASVe Busta 30, DECODE R1871), catalogued as an English letter of 1555: one page of continuous digits. Transcribed here (1,839 digits) and segmented into 612 three-digit groups, 211 different, from a non-alphabetical table of about 300 codes; annealing solvers with an Italian model gave no text. Paolo Bonavoglia lists the despatch as deciphered, but his decipherment is offline, and the key is not on DECODE.',
          quote='200 518 245 226 459 533 263 321 517 451 547 &hellip;',
          rights='Manuscript rights: Archivio di Stato di Venezia, via DECODE (images not reproduced)'),
+    dict(slug='mercier1761', label='La Touche and La Rivi&egrave;re 1761', year='1761', y=1761.45, place='Martinique &rarr; Versailles', st='partial', stt='read in part',
+         title='La Touche and La Rivi&egrave;re to Berryer, Martinique, 12 June 1761',
+         blurb='A letter of the governor and the intendant of Martinique to the Navy minister (ANOM COL C8 A 64 f&deg; 1), catalogued as largely in cipher and never transcribed in clear. No key survives; a ciphertext-only solver failed its control and the 1765 Martinique key does not fit. The two-part code was rebuilt from the decipherment of the time written above a sibling letter of August 1761 and extended from context: 754 of 818 cipher numbers read as sense (92.2%), with about 40 single-use code words open.',
+         quote='&ldquo;trois mille barils de farines et douze cent barils de beuf; la farine &agrave; soixante livres le baril&rdquo;',
+         rights='Manuscript rights: Archives nationales d&rsquo;outre-mer, via ANOM IREL'),
     dict(slug='r1875', label='Foscarini 1761', year='1761', y=1761.8, place='Escorial &rarr; Venice', st='found', stt='read at the time',
          title='Sebastiano Foscarini to the Doge and Senate, 13 October 1761',
          blurb='A Venetian despatch from the Escorial in a numerical cipher, catalogued on DECODE (R1875) with sender and recipient unknown. The chancery wrote a complete contemporary decipherment on the despatch and barred the cipher; the text was transcribed from it, and the key was not rebuilt. It reports Madrid&rsquo;s view of the broken-off Anglo-French peace talks and the talk of a union with another court: the Family Compact with France, signed in secret that August.',
@@ -1775,6 +1794,11 @@ PAGES = [
          blurb='A Dutch despatch from the peace talks with Cromwell, intercepted by Thurloe&rsquo;s office and printed by Birch in 1742: three cipher passages, 136 groups, figures 6&ndash;33 for letters and eight three-figure groups from a new word code. Every royalist and Commonwealth key of 1653&ndash;60 on Cryptiana fails, and a hill-climb in Dutch and French finds no reading. A matched control shows the solver would have read a letter cipher of this shape, so the system is not what it seems, or the print is corrupt. Not solved.',
          quote='&ldquo;We are served with the same cypher; but hereafter to express particular words, we will rather make use of the new one&rdquo;',
          rights='Thomas Birch, Thurloe State Papers (1742), via the Internet Archive'),
+    dict(slug='comenius1655', label='Comenius to Klobusiczky 1655', year='1655', y=1655.4, place='Leszno &rarr; S&aacute;rospatak', st='partial', stt='existing decipherment, partial',
+         title='Comenius to Andreas Klobusiczky, 1655',
+         blurb='Comenius, at Leszno during the Swedish invasion of Poland, ended his report of 4 August 1655 to Rákóczi&rsquo;s councillor with one ciphered sentence. Szilágyi printed its decipherment in 1890 and Patera in 1892; the key rebuilt from it is the reciprocal table of Rákóczi&rsquo;s envoys that Szilágyi had printed in 1874, with one letter in conflict. A second cipher passage, of 24 May 1655, does not decipher with that table or as a simple substitution of Latin.',
+         quote='&ldquo;Nihil certius quam Poloniam periisse, et papatum in illa&rdquo;',
+         rights='Patera 1892, Szil&aacute;gyi 1874 and 1890, via the Internet Archive'),
     dict(slug='dugard1656', label='Du Gard to White 1656', year='1656', y=1656.44, place='Brussels &rarr; White', st='stuck', stt='too short',
          title='Du Gard to White, Brussels, 10 June 1656',
          blurb='An intercepted letter printed in Birch&rsquo;s <i>Thurloe State Papers</i>, ending with &ldquo;a new direction to write to me&rdquo;: a cover address of 27 figures and letters. No royalist or Commonwealth key of 1653&ndash;60 on Cryptiana reads it, and it is too short to break. Not solved.',
@@ -1815,6 +1839,21 @@ PAGES = [
          blurb='A papal dispatch intercepted and printed as 955 digits by Mazzini&rsquo;s paper in 1848, with a prize for its decipherment. The key was recovered from the ciphertext alone: two-digit letters and syllables, 5 as word divider, and a four-digit alphabetical code. The text is a counter-order written the day after the nuncio had left; eleven code groups stay open.',
          quote='&ldquo;per nuove sopraggiunte circostanze Le partecipo [&hellip;] del (Padre) che Ella rimanga in Inspruck presso l&rsquo;(Imperatore)&rdquo;',
          rights='Broadsheet scan: Tony Gaffney, via Klaus Schmeh, Cipherbrain'),
+    dict(slug='jordan1861', label='Jordan to &ldquo;Rachel&rdquo; 1861', year='1861', y=1861.55, place='Confederate lines &rarr; Washington', st='solved', stt='existing decipherment',
+         title='Jordan to &ldquo;My Dearest Rachel&rdquo; (Rose Greenhow), 1861',
+         blurb='Two catalogue entries are one letter: a burnt fragment with cipher groups (NARA naId 6925618) and a clerk&rsquo;s clear copy (naId 1634051) of Thomas Jordan&rsquo;s letter to &ldquo;My Dearest Rachel&rdquo;, Rose Greenhow, seized at her house in August 1861. The copy is the decipherment. The symbol key found on Greenhow&rsquo;s body in 1864 gives the copy&rsquo;s letter for all 82 securely transcribed signs. Jordan asks for drill books, navy flannel and shoulder straps for his new rank.',
+         quote='&ldquo;These books are essential to me in my position as Lieutenant Colonel of Infantry&rdquo;',
+         rights='National Archives (NARA), RG 59, Seized Correspondence of Rose O&rsquo;Neal Greenhow, via the National Archives Catalog'),
+    dict(slug='greenhow1861', label='Greenhow mourning-paper letter 1861', year='1861', y=1861.6, place='Washington &rarr; Confederate lines', st='partial', stt='read in part',
+         title='Rose Greenhow&rsquo;s letter on mourning paper, Washington 1861',
+         blurb='A torn letter in symbols on mourning paper, seized from Rose O&rsquo;Neal Greenhow&rsquo;s house on 23 August 1861 (NARA naId 1634036). Side 1 deciphers with the key found on her body when she drowned off Fort Fisher in 1864: Washington expects an attack hourly and is hunting whoever gave the alarm. About 60% of its words read as sense between paper losses; side 2 and a scrap of figures stay open. No earlier decipherment was found.',
+         quote='&ldquo;Attack is hourly expected. They beleive this: the atta[ck] will [b]e simultaneou[s]&rdquo;',
+         rights='National Archives (NARA), RG 59, Seized Correspondence of Rose O&rsquo;Neal Greenhow, and RG 45, M1091, via the National Archives Catalog'),
+    dict(slug='johnston1863', label='Johnston to Seddon 1863', year='1863', y=1863.46, place='Jackson &rarr; Richmond', st='solved', stt='existing decipherment',
+         title='Johnston to Seddon, Jackson, 16 June 1863',
+         blurb='General Joseph E. Johnston&rsquo;s telegram to the Confederate Secretary of War during the siege of Vicksburg has five words in Vigen&egrave;re. The War Department&rsquo;s &ldquo;Translation of Cypher&rdquo; is filed with it, and the text was printed in 1864 and in the Official Records. The five words fit the Confederate key MANCHESTERBLUFF when the key advances by the length of each plaintext word, 26 of 33 positions, the rest being the clerk&rsquo;s slips.',
+         quote='&ldquo;Will not this enable us to invade Kentucky?&rdquo;',
+         rights='National Archives (NARA), RG 109, War Department Collection of Confederate Records, via the National Archives Catalog'),
     dict(slug='hellen1752', label='Hellen 1752–1763', year='1752&ndash;63', y=1752, place='The Hague &rarr; Prussia', st='stuck', stt='unsolved; investigation open',
          title='Hellen&rsquo;s intercepted letters to Frederick II, 1752&ndash;1763',
          blurb='Intercepted despatches of the Prussian envoy at The Hague, in numerical nomenclators. The DECODE transcriptions were audited and corrected; no key was recovered and no enciphered passage was decoded. Digitised decipherments of Hellen letters of 1752&ndash;53 in Fagel 5206 are an untested lead.',
@@ -1825,6 +1864,11 @@ PAGES = [
          blurb='Two cipher dispatches of the Charleston commandant to Cornwallis (March 1781) and his letter to Stewart (August 1781), taken by the Americans and filed in the Papers of the Continental Congress with a decipherment between the lines. The ring key of the British &ldquo;Common cipher&rdquo; and its moving setting were rebuilt from it, and all 6,349 numbers deciphered again by program: 99.8% English, control 0&ndash;2%. Saberton had found no evidence these ciphers were broken.',
          quote='&ldquo;Scott&rsquo;s letter is a blind&rdquo;',
          rights='National Archives, RG 360, Papers of the Continental Congress, via the National Archives Catalog'),
+    dict(slug='livingston1781', label='Livingston to Jay 1781', year='1781', y=1781.9, place='Philadelphia &rarr; John Jay', st='solved', stt='existing decipherment',
+         title='Livingston to Jay, 28 November 1781: the addition to the cypher',
+         blurb='The last line of Livingston&rsquo;s letter, six pairs of code numbers, is printed in the Selected Papers of John Jay as undecipherable and explained as six syllables ending in r. Livingston&rsquo;s draft writes a syllable under each pair, and Jay&rsquo;s own copy of the Thomson code lists the same additions: be, ce, de, fe, ge, he as 600 to 605. Each pair spells its syllable, with 226 as e, not r.',
+         quote='&ldquo;Make this addition to your cypher&rdquo;',
+         rights='Columbia University RBML, The Papers of John Jay (photostats of New-York Historical Society originals), via Columbia Digital Library Collections'),
     dict(slug='deswart1782', label='De Swart 1782', year='1782', y=1782.2, place='St Petersburg &rarr; The Hague', st='partial', stt='read in part',
          title='De Swart to Van Bleiswijk, St Petersburg, 1782',
          blurb='A Dutch despatch in a three-digit code with marked digits, whose codebook DECODE could not identify. It is the 1765 Croiset codebook of the Russia legation (DECODE R1038); with 34 values from context and 41 entries transcribed from the key scans, 96.7% of the 1,719 groups decode. The Austro-Russian mediation, Catherine II&rsquo;s Greek project and Prussia&rsquo;s accession to the Armed Neutrality.',
@@ -1850,6 +1894,11 @@ PAGES = [
          blurb='Two French despatches of the Dutch envoy decode with William V&rsquo;s 1782 Grand Chiffre (DECODE R1024), checked on a control letter with known plaintext; digits the DECODE transcription could not place were resolved with a French language model. They report the Prussian refusal to guarantee the Dutch possessions overseas. Van Reede&rsquo;s 1793 letter to the Secret Committee is in another code, with its own page.',
          quote='&ldquo;le Roi a dit qu&rsquo;il ne pouvoit pas garantir nos possessions d&rsquo;outre-mer&rdquo;',
          rights='Manuscript image: Nationaal Archief, The Hague, via DECODE R1026'),
+    dict(slug='deboli1789', label='Deboli 1789', year='1789', y=1789.4, place='St Petersburg &rarr; Warsaw', st='partial', stt='read in part',
+         title='Deboli to Stanis&#322;aw August, St Petersburg 1789',
+         blurb='The 106 cipher despatches of the Polish envoy at St Petersburg in 1789 (AGAD Zbi&oacute;r Popiel&oacute;w 17): 103 have their Polish clear text in Zbi&oacute;r Popiel&oacute;w 419 and 417. Eleven pairs were aligned group by group and the code, a Polish syllabary in alphabetical order, rebuilt from them and tested blind. The three despatches with no clear text (25 March, 10 May, 14 December) were then read in part: 5,094 of 5,903 groups.',
+         quote='&ldquo;&#380;e to teraz pora, aby si&#281; Polska pod&#378;wign&#281;&#322;a, a reszt&#281; Panie Bo&#380;e robi&rdquo;',
+         rights='Manuscript images: Archiwum G&#322;&oacute;wne Akt Dawnych, Warsaw, Zbi&oacute;r Popiel&oacute;w 17 and 419'),
     dict(slug='legation1788', label='Short, Carmichael, Pinckney 1788&ndash;93', year='1788&ndash;1793', y=1790.5, place='The Hague, Madrid, London &rarr; Jefferson', st='solved', stt='existing decipherment',
          title='Short, Carmichael and Pinckney to Jefferson: the last groups of the legation codes Nos. 10, 13 and 16',
          blurb='Three letters to Jefferson in three numerical codes, printed by the Jefferson Papers editors with a few groups unread or guessed: Short from The Hague (1792), Carmichael from Madrid (1788), Pinckney from London (1793). Every one of the 737 groups was transcribed and checked against values decoded at the time in sibling letters: the readings hold, Pinckney&rsquo;s &ldquo;undeciphered 497&rdquo; is 447 on the original, and nine single-occurrence groups stay open.',
@@ -2504,6 +2553,7 @@ IMAGES['sperantio1534'] = None
 IMAGES['r1862'] = None
 IMAGES['r1874'] = None
 IMAGES['legation1788'] = ('legation1788_lead.jpg', 'Pinckney to Jefferson, London, 28 August 1793: the coded passage, &ldquo;447. 735. 753. 1846. 923. 1490 &hellip;&rdquo; (447 regiments are to embark &hellip;), with Jefferson&rsquo;s pencil &ldquo;copy so far only&rdquo;', 'National Archives and Records Administration, RG 59, Despatches from U.S. Ministers to Great Britain, microfilm M30 roll 2, frame 140, via the NARA catalog')
+IMAGES['deboli1789'] = ('deboli1789_lead.jpg', 'Deboli to Stanis&#322;aw August, 6 January 1789, k. 2r: 8 1046 117 637 690 213 &mdash; Do ostatniego listu mego', 'Archiwum G&#322;&oacute;wne Akt Dawnych, Warsaw, Zbi&oacute;r Popiel&oacute;w 17 k. 2r, via the AGAD image server')
 IMAGES['deboli1791'] = ('deboli1791_lead.jpg', 'Deboli to Stanis&#322;aw August, 7 January 1791: 1944 951 1578 1944 951 21a 2152 &mdash; ani od WKrMci, ani od Deputacyi', 'Archiwum G&#322;&oacute;wne Akt Dawnych, Warsaw, Zbi&oacute;r Popiel&oacute;w 5 k. 6r, via the AGAD image server')
 IMAGES['r1212'] = None
 IMAGES['r1854'] = None
@@ -2524,6 +2574,7 @@ IMAGES['rechteren1785'] = ('rechteren1785_lead.jpg', 'Head of the deciphered let
 IMAGES['r1944'] = ('r1944_lead.jpg', 'The clear copy of Bourdeaux&rsquo;s dispatch no. 16, Berlin, 31 January 1801, fol. 295', 'Nationaal Archief, The Hague, via DECODE R1946')
 IMAGES['hereditary1796'] = ('hereditary1796_lead.jpg', 'R2239, head of the letter: Berlin 12. Mars 1796, then number groups with superscript marks and clear words', 'Koninklijk Huisarchief, The Hague, via DECODE R2239')
 IMAGES['balfour1781'] = ('balfour1781_lead.jpg', 'Balfour to Cornwallis, No. 1, p. 717: the setting group 33 19 37 45 31, then &ldquo;the principal occurrences since you left us&rdquo; written over the numbers', 'National Archives, RG 360, Papers of the Continental Congress, item 51 vol. 1, p. 717 (image 562), via the National Archives Catalog')
+IMAGES['livingston1781'] = ('livingston1781_lead.jpg', 'Livingston&rsquo;s draft: &ldquo;Make this addition to your cypher&rdquo;, six pairs of numbers, a syllable written under each', 'New-York Historical Society, R. R. Livingston Papers (EJ 1537), draft of 28 Nov 1781; photostat in Columbia University RBML, Jay Papers, ldpd:11572, via Columbia Digital Library Collections')
 IMAGES['yvoy1797'] = ('yvoy1797_lead.jpg', 'The Prince&rsquo;s No. 22 to d&rsquo;Yvoy, 22 September 1797: code numbers with the Dutch decipherment written over them (&ldquo;Tollius&rdquo;, &ldquo;voldaan van zyne eerste conferentien met Hunne Hoogh.&rdquo;)', 'Koninklijk Huisarchief, The Hague, A35-1450 scan 221 (image 147106), via Koninklijke Verzamelingen')
 IMAGES['reede1796'] = ('reede1796_lead.jpg', 'Van Reede, 15 August 1796: name numbers glossed above (Athlone, au Duc de Portland, de Luc) and the dotted run (1.) explained on the next page', 'Koninklijk Huisarchief, The Hague, A35-1232 (image 144358), via Koninklijke Verzamelingen')
 IMAGES['schoning1783'] = ('schoning1783_lead.jpg', 'No. 3, Potsdam 8 August 1783: symbol cipher with underlined code numbers (914 Thulemeier, 446 Hertzberg, 818 the King, 724 the Prince, 734 the Princess)', 'Koninklijk Huisarchief, The Hague, A32-603 scan 5, via Koninklijke Verzamelingen')
@@ -2537,6 +2588,8 @@ IMAGES['hesse1824'] = ('hesse1824_lead.jpg', 'The heading &ldquo;Snell an A?ud&r
 IMAGES['r2234'] = ('r2234_lead.jpg', 'The head of the letter: section capital D, the date in clear, then one line per alphabet', 'Koninklijk Huisarchief, The Hague, via DECODE R2234')
 IMAGES['marburg1635'] = ('marburg1635_lead.jpg', 'The cipher lines with the contemporary gloss over the first four', 'Hessisches Staatsarchiv Marburg, via DECODE R4500')
 IMAGES['mountflorence1801'] = ('mountflorence1801_lead.jpg', 'The letter of 18 March 1801: the coded paragraph, then clear news of prize cases and Malaga', 'National Archives (NARA), RG 59, Despatches from US Consuls in Paris, microfilm T1 roll 1, frame 0097, via the National Archives Catalog')
+IMAGES['joao1642'] = ('joao1642_cipher.jpg', 'Letter 153, 21 September 1644: the passage in the second alphabet, on the marriages of Prince Teod&oacute;sio and the Infantas', 'Arquivo Nacional Torre do Tombo, Manuscritos da Livraria 1017 f. 153 (scan m0157), via DigitArq')
+IMAGES['mercier1761'] = ('mercier1761_cipher.jpg', 'The first coded lines of the letter of 12 June 1761, with &ldquo;D..&rdquo; and &ldquo;Choiseul&rdquo; left in clear between 423 (le) and 614 (de)', 'Archives nationales d&rsquo;outre-mer, COL C8 A 64 f&deg; 1, image 2, via ANOM IREL')
 IMAGES['jefferson1787'] = ('jefferson1787_lead.jpg', 'Jefferson to Barclay, 4 July 1787, lines 3&ndash;6: &ldquo;M. 1420. 1336. 459. 1089.&rdquo; (de Rayneval?), &ldquo;M. 1420. 374. 1139. 1128.&rdquo; (de Montmorin), &ldquo;another quarter of the 495.&rdquo;', 'Library of Congress, Thomas Jefferson Papers, series 1, Jefferson to Thomas Barclay, 4 July 1787, press copy, image mtj1 007_0605')
 IMAGES['murray1801'] = ('murray1801_lead.jpg', 'Frame 0398: Murray&rsquo;s postscript, &ldquo;P.S. As to 536. 406. 1004. 264. 1136. 1175. not a Word has yet been said&rdquo;, beside his signature', 'National Archives and Records Administration, RG 59, Despatches from US Ministers to the Netherlands, vol. 4, microfilm M42 reel 5, frame 0398 (left page), via catalog.archives.gov NAID 188770447')
 IMAGES['r2232'] = ('r2232_lead.jpg', 'The opening of the letter: clear text, then the numbers with superscript indices', 'Koninklijk Huisarchief, The Hague, via DECODE R2232')
@@ -2750,22 +2803,29 @@ def lr_inline(s):
     return s
 
 def lr_copy(src, dst):
-    """Copy a report image into docs/, scaled down to LR_MAXW; returns (width, height) as published."""
+    """Copy a report image into docs/ as a JPEG scaled down to LR_MAXW; returns (width, height) as published.
+    The copy is redone only when the source's content changes (sha1 in docs/lasry/<folder>/sources.json), not on file
+    times: a fresh checkout gives every file a new mtime, and comparing them rewrote all the copies on each build."""
+    import hashlib
+    man_f = dst.parent / 'sources.json'
+    man = json.loads(man_f.read_text(encoding='utf-8')) if man_f.is_file() else {}
+    sha = hashlib.sha1(src.read_bytes()).hexdigest()
     try:
         from PIL import Image
+        if dst.exists() and man.get(dst.name) == sha:
+            return Image.open(dst).size
         im = Image.open(src)
         w, h = im.size
-        if dst.exists() and dst.stat().st_mtime >= src.stat().st_mtime:
-            if w > LR_MAXW: h, w = round(h * LR_MAXW / w), LR_MAXW
-            return w, h
         dst.parent.mkdir(parents=True, exist_ok=True)
         if w > LR_MAXW:
             im = im.resize((LR_MAXW, round(h * LR_MAXW / w)), Image.LANCZOS); w, h = im.size
-        if dst.suffix.lower() in ('.jpg', '.jpeg'): im.convert('RGB').save(dst, quality=88)
-        else: im.save(dst, optimize=True)
-        return w, h
+        im.convert('RGB').save(dst, quality=85, optimize=True)
     except ImportError:
-        dst.parent.mkdir(parents=True, exist_ok=True); dst.write_bytes(src.read_bytes()); return None, None
+        if dst.exists() and man.get(dst.name) == sha: return None, None
+        dst.parent.mkdir(parents=True, exist_ok=True); dst.write_bytes(src.read_bytes()); w = h = None
+    man[dst.name] = sha
+    man_f.write_text(json.dumps(man, indent=1, sort_keys=True) + '\n', encoding='utf-8')
+    return w, h
 
 def lasry_report_html(page):
     out = []
@@ -2781,7 +2841,7 @@ def lasry_report_html(page):
         gal = {g['label']: g['url'] for g in r.get('gallica') or [] if g.get('label')}
         def fig(rec, credit, cap, cls=''):
             src = rd / rec['file']
-            name = f'lasry/{f}/{pathlib.PurePosixPath(rec["file"]).name}'
+            name = f'lasry/{f}/{pathlib.PurePosixPath(rec["file"]).stem}.jpg'
             w, h = lr_copy(src, HERE / name)
             wh = f' width="{w}" height="{h}"' if w else ''
             alt = html.escape(html.unescape(re.sub(r'<[^>]+>', '', cap)))
@@ -2884,25 +2944,35 @@ EXPLORE = [('highlights', 'Highlights', 'Thirty favourites: the funny, the histo
            ('secret', 'Secret letter', 'Seal a message in a real historical cipher')]
 CHEVRON = ('<svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" '
            'stroke="currentColor" stroke-width="1.6"/></svg>')
+# the same groups named in a word or two, for the two-column outcome grid in the phone menu
+NAV_SHORT = {'ct': 'Ciphertext-only', 'extpt': 'Ext. plaintext', 'adjpt': 'Adj. plaintext', 'extkey': 'External key',
+             'known': 'Known key', 'deciph': 'Existing reading', 'notsolved': 'Not solved', 'na': 'Not applicable',
+             'other': 'Unclassified', 'survey': 'Surveys'}
 NAV_LATEST = 6          # write-ups shown in the menu; the rest are one click away on writeups.html
 
 def kind_of(p): return 'survey' if p['slug'] in SURVEYS else M.KEY[p['method']] if p.get('method') else 'other'
+
+def posted_at(slug):
+    """Submission time of a write-up for the Latest list: 'posted', else the first day at midnight."""
+    rec = DATES['pages'].get(slug, {})
+    return rec.get('posted') or (rec.get('first', TODAY) + 'T00:00:00Z')
 
 def nav_html(current):
     """The Write-ups menu. It stopped listing every page when the count passed forty: it now shows the newest few,
     the counts by outcome (each a link into the filtered index) and the way to the full list on writeups.html."""
     cur = lambda slug: ' aria-current="page"' if slug == current else ''
     latest = sorted([p for p in PAGES if p['slug'] not in SURVEYS],
-                    key=lambda p: (DATES['pages'].get(p['slug'], {}).get('first', TODAY), p['y']), reverse=True)[:NAV_LATEST]
-    lis = ''.join(f'<li><a href="{p["slug"]}.html"{cur(p["slug"])}><span class="st {p["st"]}">{p["stt"]}</span>'
-                  f'<b>{p["label"]}</b><span class="yr">{p["year"]}</span></a></li>' for p in latest)
-    groups = ''.join(f'<li><a href="writeups.html#kind={key}"><span class="st {cls}">{n}</span>'
-                     f'<b>{name}</b></a></li>' for key, name, cls, pred in GROUPS if (n := sum(1 for p in PAGES if pred(p))))
+                    key=lambda p: posted_at(p['slug']), reverse=True)[:NAV_LATEST]
+    # each row: a coloured dot for the outcome, the label, the year; the method under it in plain text, not a pill
+    lis = ''.join(f'<li><a href="{p["slug"]}.html"{cur(p["slug"])}><i class="dot {p["st"]}" aria-hidden="true"></i>'
+                  f'<b>{p["label"]}</b><span class="yr">{p["year"]}</span><span class="m">{p["stt"]}</span></a></li>' for p in latest)
+    groups = ''.join(f'<li><a href="writeups.html#kind={key}"><i class="dot {cls}" aria-hidden="true"></i>'
+                     f'<b>{name}</b><b class="sh">{NAV_SHORT.get(key, name)}</b><span class="n">{n}</span></a></li>' for key, name, cls, pred in GROUPS if (n := sum(1 for p in PAGES if pred(p))))
     in_explore = any(slug == current for slug, _, _ in EXPLORE)
     on = ' class="active"' if not in_explore and (current == 'writeups' or any(p['slug'] == current for p in PAGES)) else ''
     panel = (f'<div class="grp latest"><h4>Latest</h4><ul>{lis}</ul></div>'
-             f'<div class="grp"><h4>By outcome</h4><ul>{groups}</ul></div>'
-             f'<div class="foot"><a href="writeups.html"{cur("writeups")}>All {len(PAGES)} write-ups, with filters &rarr;</a>'
+             f'<div class="grp outc"><h4>By outcome</h4><ul>{groups}</ul></div>'
+             f'<div class="foot"><a class="all" href="writeups.html"{cur("writeups")}>All {len(PAGES)} write-ups, with filters &rarr;</a>'
              f'<a href="writeups.html#src=notes">Results only in the notes</a></div>')
     explore = (''.join(f'<li><a href="{slug}.html"{cur(slug)}><b>{name}</b><span class="d">{desc}</span></a></li>'
                        for slug, name, desc in EXPLORE).join(('<ul>', '</ul>'))
@@ -2939,20 +3009,22 @@ SEARCH_HTML = (
 # writeups.html: every write-up, filterable, followed by the results that exist only as notes in the repository.
 # The second list is read from ../README.md, whose Results tables are the ledger every session keeps: a row whose
 # "Where" column links to a site page is a write-up (checked against PAGES), any other row is notes only.
-PERIODS = [('1500s', 'to 1599', lambda y: y < 1600), ('1600s', '1600s', lambda y: 1600 <= y < 1700),
-           ('1800s', '1700s and 1800s', lambda y: 1700 <= y < 1900), ('1900s', '1900s', lambda y: 1900 <= y < 9000)]
+# century keys are the ones the catalogue.html Century facet uses, so a #century=1600s link works on both pages
+CENTURIES = [('early', 'before 1400')] + [(f'{c}00s', f'{c}00s') for c in range(14, 20)] + [('undated', 'undated')]
 KINDS = [(M.KEY[m], M.LABEL[m]) for m in M.METHODS] + [('active', 'in progress'), ('other', 'not yet classified'), ('survey', 'survey')]
 EXTENTS = [('complete', 'complete'), ('partial', 'partial'), ('none', 'text not obtained')]
 # README section heading, status class, badge text
 README_SECTIONS = [(M.SECTION[m], M.status_class(m, 'complete'), M.LABEL[m]) for m in M.METHODS] + \
                   [('### In progress', 'partial', 'in progress')]
 
-def period_of(y):
-    return next((k for k, _, f in PERIODS if f(y)), 'survey')
+def century_of(y):
+    if not y or y >= 2000: return 'undated'           # surveys carry 9999, undatable notes 0
+    return 'early' if y < 1400 else f'{int(y) // 100}00s'
 
 # the writeups.html Language facet: plaintext languages from profile documents[].language, matched by the first words
 # ('Latin with Catalan and Castilian phrases' counts as Latin, 'French and German' as both); the rest is 'other'
-LANGS = ['French', 'Italian', 'English', 'Spanish', 'German', 'Latin', 'Dutch', 'Hungarian', 'Polish']
+LANGS = ['French', 'Italian', 'English', 'Spanish', 'German', 'Latin', 'Dutch', 'Hungarian', 'Polish', 'Swedish',
+         'Portuguese', 'Chinese', 'Japanese']
 LANG_ALIAS = {'castilian': 'Spanish', 'scots': 'English'}
 
 def langs_of(folders):
@@ -2966,7 +3038,7 @@ def langs_of(folders):
             head = re.split(r'[(;,]| with ', v)[0]
             found = {LANG_ALIAS.get(w.lower(), w.capitalize()) for w in re.findall(r'[A-Za-z]+', head)} & set(LANGS)
             out |= found or {'other'}
-    return ' '.join(sorted(l.lower() for l in out))
+    return ' '.join(sorted(l.lower() for l in out)) or 'unknown'
 
 def repo_url(link):
     if link.startswith('http'): return link
@@ -3067,7 +3139,7 @@ def writeups_html():
     rows = []
     for p in sorted(PAGES, key=lambda p: p['y']):
         by = ' '.join(sorted({c['who'] for c in p.get('credits') or [] if c.get('who') in CONTRIB}))
-        rows.append(f'<li data-kind="{kind_of(p)}" data-extent="{p.get("extent") or ""}" data-period="{period_of(p["y"])}" data-src="page" data-by="{by}" '
+        rows.append(f'<li data-kind="{kind_of(p)}" data-extent="{p.get("extent") or ""}" data-century="{century_of(p["y"])}" data-src="page" data-by="{by}" '
                     f'data-lang="{langs_of(p.get("folders") or [])}" '
                     f'data-q="{q(p["label"], p["title"], p["place"], p["year"], p["blurb"], p["stt"])}">'
                     f'<a href="{p["slug"]}.html"><span class="st {p["st"]}">{p["stt"]}</span>'
@@ -3076,46 +3148,58 @@ def writeups_html():
     notes = readme_notes()
     nrows = []
     for n in sorted(notes, key=lambda n: n['y']):
-        nrows.append(f'<li data-kind="{n["kind"]}" data-extent="{n["extent"]}" data-period="{period_of(n["y"])}" data-src="notes" data-lang="{n.get("lang", "")}" '
+        nrows.append(f'<li data-kind="{n["kind"]}" data-extent="{n["extent"]}" data-century="{century_of(n["y"])}" data-src="notes" data-lang="{n.get("lang", "")}" '
                      f'data-q="{q(n["target"], n["result"], n["date"], n["stt"])}">'
                      f'<a href="{n["url"]}" rel="noopener"><span class="st {n["st"]}">{n["stt"]}</span>'
                      f'<span class="t">{n["target"]}</span><span class="dt">notes &#8599;</span><span class="yr">{n["date"]}</span>'
                      f'<span class="b">{n["result"]}</span></a></li>')
-    used = {p_kind for p_kind in [kind_of(p) for p in PAGES] + [n['kind'] for n in notes]}
-    chips = lambda facet, vals: ''.join(f'<button type="button" class="chip" data-facet="{facet}" data-val="{k}" aria-pressed="false">{label}</button>' for k, label in vals)
+    # chips only for values some entry has; site.js fills in each chip's live count
+    have = {}
+    for li in rows + nrows:
+        for k, v in re.findall(r' data-(kind|extent|century|src|lang)="([^"]*)"', li.split('>', 1)[0]):
+            n = have.setdefault(k, {})
+            for x in v.split(): n[x] = n.get(x, 0) + 1
+    def facet(name, label, vals, extra=''):
+        opts = ''.join(f'<button type="button" class="chip" data-facet="{name}" data-val="{k}" aria-pressed="false">{l}<span class="n"></span></button>'
+                       for k, l in vals if k in have.get(name, {}))
+        return f'<div class="facet" role="group" aria-label="{label}"><span class="flabel">{label}</span><span class="opts">{opts}</span>{extra}</div>'
+    def dropdown(label, body, name):
+        return (f'<details class="dd" data-dd="{name}"><summary><span class="dl">{label}</span><span class="dv"></span></summary>'
+                f'<div class="pop">{body}</div></details>')
+    nl = have.get('lang', {})
+    langs = [(l, l if l in ('other', 'unknown') else l.capitalize()) for l in sorted(nl, key=lambda l: (l in ('other', 'unknown'), l == 'unknown', -nl[l], l))]
     total = len(rows) + len(nrows)
     return (
         '<!DOCTYPE html>\n<html lang="en">\n<head>\n<meta charset="utf-8">\n'
         '<meta name="viewport" content="width=device-width, initial-scale=1">\n'
         f'<title>All write-ups &mdash; {len(rows)} ciphers by outcome and date, and {len(nrows)} results still in the notes</title>\n'
-        f'<meta name="description" content="Every write-up on the site, filterable by outcome, language, period and text, followed by the '
+        f'<meta name="description" content="Every write-up on the site, filterable by method, extent, language, century and text, followed by the '
         f'results that exist only as notes in the repository: read, explained, attempted or waiting on an archive.">\n'
         f'<link rel="stylesheet" href="style.css?v={VERSION}">\n</head>\n<body id="top">\n<!-- site:nav -->\n\n'
         '<section class="hero">\n'
         f'  <p class="kicker">Index &middot; {len(rows)} write-ups &middot; {len(nrows)} results only in the notes</p>\n'
         '  <h1>Every write-up</h1>\n'
-        '  <p class="sub">Each cipher this site has worked on, in date order, with its outcome. Filter by outcome, language or period, or search '
+        '  <p class="sub">Each cipher this site has worked on, in date order, with its outcome. Filter by method, extent, language or century, or search '
         'the titles and summaries. The second list is work that exists only as notes in the repository: results not yet written up, '
         'attempts closed from the evidence, and items waiting on an archive.</p>\n'
         '  <div class="jump"><a href="#pages">Write-ups</a><a href="#notes">Only in the notes</a><a href="catalogue.html">Catalogue</a></div>\n'
         '  <p class="meta">Daniel Bourdeau</p>\n</section>\n\n<main>\n\n'
-        '<div class="wfilters" role="search">\n'
-        f'  <div class="facet"><span class="flabel">Method</span>{chips("kind", [k for k in KINDS if k[0] in used])}'
-        '<a class="gl" href="glossary.html">what these mean</a></div>\n'
-        f'  <div class="facet"><span class="flabel">Extent</span>{chips("extent", EXTENTS)}</div>\n'
-        f'  <div class="facet"><span class="flabel">Language</span>{chips("lang", [(l.lower(), l.lower()) for l in LANGS] + [("other", "other")])}</div>\n'
-        f'  <div class="facet"><span class="flabel">Period</span>{chips("period", [(k, l) for k, l, _ in PERIODS])}</div>\n'
-        f'  <div class="facet"><span class="flabel">Where</span>{chips("src", [("page", "site page"), ("notes", "notes only")])}</div>\n'
-        '  <div class="facet"><span class="flabel">Search</span><input id="wq" type="search" placeholder="titles, places, summaries" aria-label="Search the write-ups">'
-        '<button type="button" class="chip" id="wreset">reset</button></div>\n'
-        f'  <p class="wcount" id="wcount" aria-live="polite" data-names="{html.escape(json.dumps({k: c["name"] for k, c in CONTRIB.items()}, ensure_ascii=False), quote=True)}">All {total} entries</p>\n</div>\n\n'
+        '<div class="cfilters" role="search">\n'
+        '  <input id="wq" type="search" placeholder="Search: titles, places, summaries&hellip;" aria-label="Search the write-ups">\n'
+        f'  {dropdown("Method", facet("kind", "Method", KINDS, '<a class="gl" href="glossary.html">what these mean</a>'), "kind")}\n'
+        f'  {dropdown("Extent", facet("extent", "Extent", EXTENTS), "extent")}\n'
+        f'  {dropdown("Language", facet("lang", "Language", langs), "lang")}\n'
+        f'  {dropdown("Century", facet("century", "Century", CENTURIES), "century")}\n'
+        f'  {dropdown("Where", facet("src", "Where", [("page", "site page"), ("notes", "notes only")]), "src")}\n'
+        f'  <span class="count" id="wcount" aria-live="polite" data-names="{html.escape(json.dumps({k: c["name"] for k, c in CONTRIB.items()}, ensure_ascii=False), quote=True)}">All {total} entries</span>\n'
+        '  <button type="button" class="chip clear" id="wreset" hidden>clear filters</button>\n</div>\n\n'
         '<section class="wsec" id="pages">\n<h2 id="write-ups"><span class="num">01</span> Write-ups</h2>\n'
-        '<ul class="list wl">\n' + '\n'.join(rows) + '\n</ul>\n</section>\n\n'
+        '<ul class="list wl wi">\n' + '\n'.join(rows) + '\n</ul>\n</section>\n\n'
         '<section class="wsec" id="notes">\n<h2 id="only-in-the-notes"><span class="num">02</span> Only in the notes</h2>\n'
         f'<p>Results recorded in the repository <a href="{REPO}#results" rel="noopener">README</a> that have no page here yet. '
         'Each row links to the folder with the notes, transcriptions and code. The rows are read from the README at build time, '
         'so a result lands here as soon as it is logged there.</p>\n'
-        '<ul class="list wl">\n' + '\n'.join(nrows) + '\n</ul>\n</section>\n\n</main>\n<!-- site:footer -->\n</body>\n</html>\n')
+        '<ul class="list wl wi">\n' + '\n'.join(nrows) + '\n</ul>\n</section>\n\n</main>\n<!-- site:footer -->\n</body>\n</html>\n')
 
 # glossary.html: the outcome methods (with a count of write-ups under each, linked into the filtered index) and the
 # cryptologic terms the write-ups use.  Generated from _methods.py, the same vocabulary the badges and checkers use.
@@ -3321,7 +3405,7 @@ def fold_findings(s, n=RECENT_VISIBLE):
     items = re.findall(r'<li>.*?</li>', m.group(2), re.S)
     # Navigation entries have been accidentally pasted here during publication
     # merges. Do not date and promote menu links as research findings.
-    if any(re.search(r'<span class="st [^"]+">', li) for li in items):
+    if any(re.search(r'<span class="st [^"]+">|<i class="dot [^"]+"', li) for li in items):
         raise ValueError('Recent findings contains navigation status badges. '
                          'Restore the editorial findings; do not copy menu <li> entries.')
     # Concurrent publications can insert the same finding twice. Compare the
@@ -3745,3 +3829,8 @@ IMAGES['comuel1416'] = None
 IMAGES['swieten1759'] = ('swieten1759_r956.jpg', 'R956, f. 344, 4 February 1759: runs of unseparated digits inside the clear French', 'Archives g&eacute;n&eacute;rales du Royaume, Brussels, Secr&eacute;tairerie d&rsquo;&Eacute;tat et de Guerre inv. 1236 f. 344, via DECODE R956')
 IMAGES['dedem1799'] = ('dedem1799_p2.jpg', 'R1895, image 2 (turned upright): the heading XVIII Duplicaat, Burger Agent, and the marked code groups', 'Nationaal Archief, The Hague, 2.01.08 inv. 346, via DECODE R1895')
 IMAGES['waddall1656'] = ('waddall1656_tsp5_p337.jpg','The cipher words in Waddall&rsquo;s clear frame', 'Thomas Birch, A Collection of the State Papers of John Thurloe (1742), vol. 5 p. 337, via the Internet Archive')
+IMAGES['johnston1863'] = ('johnston1863_lead.jpg', 'The cipher lines of the telegram: UNIEK &ndash; CXNKVNED, JJTRRK, ISLX &ndash; KFYHJEER', 'National Archives, RG 109, naId 3854726, image 1, via the National Archives Catalog')
+IMAGES['greenhow1861'] = ('greenhow1861_lead.jpg', 'Side 1, lines 4&ndash;10: &hellip;ck is hourly expec[r]ted. they beleive this: the atta[ck] will [b]e simultaneou[s] &hellip;', 'National Archives, RG 59, Seized Correspondence of Rose O&rsquo;Neal Greenhow, naId 1634036, image 1, via the National Archives Catalog')
+IMAGES['jordan1861'] = ('jordan1861_lead.jpg', 'The left block of the burnt fragment, inverted: HAR with &ldquo;h a r&rdquo; under it, SCOTT, HANS FIELD FORTIFICATION', 'National Archives, RG 59, Seized Correspondence of Rose O&rsquo;Neal Greenhow, naId 6925618, image 1, via the National Archives Catalog; inverted and contrast-stretched here')
+IMAGES['puebla1506'] = None
+IMAGES['comenius1655'] = ('comenius1655_lead.jpg', 'The cipher sentence of 4 August 1655 as printed by Patera', 'A. Patera, Jana Amosa Komensk&eacute;ho korrespondence (Praha 1892), p. 182, via the Internet Archive (bub_gb_xnVMAAAAYAAJ)')

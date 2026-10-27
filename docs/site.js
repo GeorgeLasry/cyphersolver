@@ -101,35 +101,51 @@ document.querySelectorAll('.showmore').forEach(b=>b.dataset.label=b.textContent)
   cards.forEach(c=>{ const p=c.querySelector('.tg-b p'); if(!p) return; const t=document.createElement('div'); t.className='tgmore'; t.textContent='more'; p.after(t);
     const toggle=()=>{ const on=c.classList.toggle('x'); t.textContent=on?'less':'more'; }; p.addEventListener('click',toggle); t.addEventListener('click',toggle); });
 })();
-// write-ups index: outcome / period / source chips, text search, state in the hash (writeups.html#kind=solved&q=rome)
+// write-ups index: method / extent / language / century / where dropdowns, text search, state in the hash
+// (writeups.html#kind=ct&q=rome). Same toolbar as catalogue.html: each chip counts the entries it would show given
+// every other facet and the search, empty chips dim, each dropdown button names what is chosen in it.
 (function(){
   const items=[...document.querySelectorAll('ul.wl li')]; if(!items.length) return;
-  const chips=[...document.querySelectorAll('.wfilters .chip[data-facet]')], q=document.getElementById('wq'),
-        count=document.getElementById('wcount')||{}, reset=document.getElementById('wreset');
+  const chips=[...document.querySelectorAll('.cfilters .chip[data-facet]')], q=document.getElementById('wq'),
+        count=document.getElementById('wcount')||{}, reset=document.getElementById('wreset'),
+        dds=[...document.querySelectorAll('.cfilters details.dd')];
   const state={f:{}, q:''};
+  const vals=(li,k)=>(li.dataset[k]||'').split(' ').filter(Boolean);   // lang and by hold several space-separated ids
+  dds.forEach(d=>d.addEventListener('toggle',()=>{ if(!d.open) return; dds.forEach(o=>{ if(o!==d) o.open=false; });
+    const p=d.querySelector('.pop'); p.style.left=''; p.style.right='';
+    if(p.getBoundingClientRect().right>document.documentElement.clientWidth-8){ p.style.left='auto'; p.style.right='0'; } }));
+  document.addEventListener('click',ev=>{ if(!ev.target.closest('.cfilters details.dd')) dds.forEach(d=>d.open=false); });
+  document.addEventListener('keydown',ev=>{ if(ev.key==='Escape') dds.forEach(d=>{ if(d.open){ d.open=false; d.querySelector('summary').focus(); } }); });
   function parse(){
     state.f={}; state.q='';
     location.hash.slice(1).split('&').forEach(kv=>{ if(!kv) return; const i=kv.indexOf('='); const k=i<0?kv:kv.slice(0,i), v=i<0?'':decodeURIComponent(kv.slice(i+1));
       if(k==='q') state.q=v; else if(k) state.f[k]=v.split(',').filter(Boolean); });
   }
+  function match(li,needle,skip){
+    if(needle && !(li.dataset.q||'').includes(needle)) return false;
+    for(const k in state.f){ const vs=state.f[k]; if(k===skip || !vs.length) continue; const d=vals(li,k); if(!vs.some(v=>d.includes(v))) return false; }
+    return true;
+  }
   function apply(remember){
-    chips.forEach(c=>c.setAttribute('aria-pressed', (state.f[c.dataset.facet]||[]).includes(c.dataset.val)?'true':'false'));
     if(q && q.value!==state.q) q.value=state.q;
     const needle=state.q.trim().toLowerCase(); let n=0;
-    items.forEach(li=>{ let ok=true;
-      for(const k in state.f){ const vs=state.f[k], d=li.dataset[k]||'';   // by= (a contributor id) and lang= match any of a row's space-separated ids
-        if(vs.length && !(k==='by'||k==='lang' ? vs.some(v=>d.split(' ').includes(v)) : vs.includes(d))) ok=false; }
-      if(ok && needle && !(li.dataset.q||'').includes(needle)) ok=false;
-      li.hidden=!ok; if(ok) n++; });
+    items.forEach(li=>{ const ok=match(li,needle); li.hidden=!ok; if(ok) n++; });
     document.querySelectorAll('.wsec').forEach(s=>{ s.hidden=![...s.querySelectorAll('li')].some(li=>!li.hidden); });
+    const c={}; new Set(chips.map(b=>b.dataset.facet)).forEach(k=>items.forEach(li=>{ if(match(li,needle,k)) vals(li,k).forEach(v=>{ c[k+'|'+v]=(c[k+'|'+v]||0)+1; }); }));
+    chips.forEach(b=>{ const on=(state.f[b.dataset.facet]||[]).includes(b.dataset.val), x=c[b.dataset.facet+'|'+b.dataset.val]||0;
+      b.setAttribute('aria-pressed',on?'true':'false'); b.querySelector('.n').textContent=x; b.classList.toggle('z',!x&&!on); });
+    dds.forEach(d=>{ const k=d.dataset.dd, on=(state.f[k]||[]).map(v=>{ const b=d.querySelector(`.chip[data-facet="${k}"][data-val="${CSS.escape(v)}"]`); return b?b.firstChild.textContent:v; });
+      d.querySelector('.dv').textContent=on.length?': '+(on.length>2?on.length+' chosen':on.join(', ')):''; d.classList.toggle('act',on.length>0); });
     count.textContent = n===items.length ? 'All '+n+' entries' : n+' of '+items.length+' entries';
     if((state.f.by||[]).length){ let nm={}; try{ nm=JSON.parse(count.dataset.names||'{}'); }catch(e){}
       count.textContent += ', credited to '+state.f.by.map(v=>nm[v]||v).join(' or '); }
-    if(remember){ const parts=[]; for(const k in state.f) if(state.f[k].length) parts.push(k+'='+state.f[k].join(','));
+    let nf=0; for(const k in state.f) nf+=state.f[k].length;
+    if(reset){ reset.hidden=!(nf||needle); reset.textContent=nf?'clear '+nf+' filter'+(nf>1?'s':''):'clear search'; }
+    if(remember){ const parts=[]; for(const k in state.f) if(state.f[k].length) parts.push(k+'='+state.f[k].map(encodeURIComponent).join(','));
       if(needle) parts.push('q='+encodeURIComponent(state.q.trim()));
       try{ history.replaceState(null,'', parts.length ? '#'+parts.join('&') : location.pathname+location.search); }catch(e){} }
   }
-  chips.forEach(c=>c.addEventListener('click',()=>{ const a=state.f[c.dataset.facet]=state.f[c.dataset.facet]||[]; const i=a.indexOf(c.dataset.val); if(i<0) a.push(c.dataset.val); else a.splice(i,1); apply(true); }));
+  chips.forEach(c=>c.addEventListener('click',()=>{ const k=c.dataset.facet, a=state.f[k]=state.f[k]||[], i=a.indexOf(c.dataset.val); if(i<0) a.push(c.dataset.val); else a.splice(i,1); if(!a.length) delete state.f[k]; apply(true); }));
   if(q) q.addEventListener('input',()=>{ state.q=q.value; apply(true); });
   if(reset) reset.addEventListener('click',()=>{ state.f={}; state.q=''; apply(true); });
   window.addEventListener('hashchange',()=>{ parse(); apply(false); });

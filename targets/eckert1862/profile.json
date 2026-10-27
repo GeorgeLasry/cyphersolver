@@ -1,0 +1,203 @@
+{
+ "schema_version": 1,
+ "target": "eckert1862",
+ "title": "Eckert ledgers, War Department cipher telegrams 1862-1867 (catalogue 648): code layer, Book #1 applied to the 1864-65 traffic; in progress",
+ "documents": [
+  {
+   "id": "mssEC25",
+   "read": "not read",
+   "shelfmark": "Huntington Library, Thomas T. Eckert Papers, mssEC 25 (Fort Monroe Va., Ciphers Received and Sent)",
+   "date": "3 Feb 1864 - 6 Apr 1865",
+   "year": 1864,
+   "country": "United States",
+   "route": "Fort Monroe (Butler's command) <-> War Department and Grant's headquarters",
+   "language": "English",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "partial": false
+   },
+   "length": {
+    "tokens": 76165,
+    "unit": "mixed",
+    "measured": true,
+    "file": "transcription/mssEC25.txt"
+   },
+   "transcription": {
+    "by": "published",
+    "source": "Decoding the Civil War volunteers (Zooniverse, 2016-17), transc field of the Huntington Digital Library page records, harvested by harvest.py",
+    "image_quality": "good",
+    "notes": "Count includes the headings, addresses and signatures of each telegram; the route transposition is already undone in the ledger, code words stand among clear words."
+   }
+  },
+  {
+   "id": "mssEC15",
+   "read": "not read",
+   "shelfmark": "Huntington Library, Thomas T. Eckert Papers, mssEC 15 (War Department Ciphers Sent)",
+   "date": "1 Feb - 21 Jul 1862",
+   "year": 1862,
+   "country": "United States",
+   "route": "War Department / McClellan's headquarters -> Union commanders",
+   "language": "English",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "unrelated source"
+    ],
+    "source": "Official Records print many of these telegrams in clear (not yet matched)",
+    "partial": true
+   },
+   "length": {
+    "tokens": 23513,
+    "unit": "mixed",
+    "measured": true,
+    "file": "transcription/mssEC15.txt"
+   },
+   "transcription": {
+    "by": "published",
+    "source": "Decoding the Civil War volunteers (Zooniverse, 2016-17), transc field of the Huntington Digital Library page records",
+    "image_quality": "good",
+    "notes": "Same printed code words as Book #1 but a different, lost filling (Andes = McClellan)."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "transposition",
+   "code"
+  ],
+  "summary": "Stager route cipher: words written in columns and copied by a route set by an indicator word, with printed code words (two per meaning, meanings filled in by hand for each issue) for names, places, punctuation and common words, and padding words at the end.",
+  "symbol_kind": "letters",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": 427,
+   "kinds": [
+    "names",
+    "places",
+    "titles",
+    "common words",
+    "phrases"
+   ]
+  },
+  "nulls": {
+   "present": true
+  },
+  "key_order": "not applicable",
+  "word_division": "kept",
+  "notes": "The ledgers record the telegrams with the route already undone, so only the code layer is open. Entries counts the Book #1 vocabulary rows of copy mssEC 43 (key_book1_mssEC43.tsv). Each meaning has two code words (left and right printed word): homophones in that sense. Units: the ledger text is words (code words among clear words); length unit \"mixed\"."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in print",
+   "where": "Decoded at the time; many of the telegrams are printed in clear in the Official Records. No modern decoding of the ledgers' code layer published (Decoding the Civil War phase 3 not reported; searched 27 Oct 2026).",
+   "found": "before attempt",
+   "used": false
+  },
+  "inputs": [
+   "transcription",
+   "images",
+   "key from archive"
+  ],
+  "attack": "key from archive",
+  "human_role": "unknown",
+  "tools": [
+   "CONTENTdm API harvest (harvest.py)",
+   "word-level key application (decode.py)"
+  ],
+  "models": [
+   "claude-opus-5-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-10-27",
+  "last_date": "2026-10-27"
+ },
+ "solution": [
+  {
+   "date": "2026-10-27",
+   "kind": "literature search",
+   "what": "Searched for a Decoding the Civil War decipherment phase, a code-word glossary or a data export: none published.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "access",
+   "what": "Huntington Digital Library collection p16003coll11: 67 Eckert items, page records carry the volunteers' transcriptions; harvested through the dmwebservices API.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "hypothesis",
+   "technique": [
+    "contextual inference"
+   ],
+   "what": "Ledgers hold the telegrams with the route undone and the code words in place, so only the code layer is open.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "key from source",
+   "what": "Cipher Book #1 copies mssEC 41-45 checked against the Feb 1862 ledger mssEC 15: same printed words, different meanings (Andes = Fort Donelson in the book, McClellan in 1862).",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "key from source",
+   "what": "mssEC 37, 38, 40 checked for the 1862 filling: post-1866 codes and Banks's 1863 Gulf issue.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "crib",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Official Records as external plaintext for the 1862 code words (Lander 6 Feb 1862): OR texts not reachable from archive.org full text or eHistory on this machine.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "transcription",
+   "what": "Cipher Book #1, copy mssEC 43, transcribed whole by a subagent (427 vocabulary rows, routes, time code, numerals); page 16 spot-checked against the image.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "sibling key",
+   "technique": [
+    "key matching"
+   ],
+   "what": "Book #1 applied to every coded ledger: fits mssEC 25 (Fort Monroe 1864-65; 19.4% of words are book code words) and mssEC 20 (1865-67); Received ledgers are already clear (about 1% false hits).",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "method": "read with known key",
+  "method_basis": "Cipher Book #1 filed in the same papers (mssEC 41-45) applied to the 1864-65 coded ledgers; not yet measured against the read bar.",
+  "contribution": [
+   "none"
+  ],
+  "class": "not read",
+  "key": "partial",
+  "fraction_read": "unknown",
+  "verification": [
+   "key confirms"
+  ],
+  "notes": "In progress. Book #1 covers the 1864-65 traffic; the 1862 filling is not in the papers; Books #2, #5, #9 not yet transcribed.",
+  "credits": [
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "Cipher Book #1 (mssEC 41-45, meanings filled in by hand for the 1864-65 issue), filed in the Eckert papers"
+   }
+  ]
+ }
+}

@@ -1,0 +1,256 @@
+{
+ "schema_version": 1,
+ "target": "puebla1496",
+ "title": "Ferdinand and Isabella to Rodrigo González de Puebla, Almazán, 21 June 1496, ciphered article, AGS Patronato Real leg. 52 doc. 47 f. 396 (catalogue 616)",
+ "documents": [
+  {
+   "id": "f396",
+   "read": "read in part",
+   "shelfmark": "AGS, Patronato Real, leg. 52, doc. 47, ff. 396r-396v (old stamp T.c.Y.2; PARES description 2207769, images 5-6)",
+   "date": "21 Jun 1496",
+   "year": 1496,
+   "country": "Spain",
+   "route": "Ferdinand and Isabella (Almazán) -> De Puebla (London)",
+   "places": {
+    "from": "Almazán",
+    "to": "London"
+   },
+   "language": "Spanish",
+   "pages": 2,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "separate folio",
+     "printed edition"
+    ],
+    "source": "The minuta of 21 June 1496 carries the article in clear (note on f. 397v; closing leaves ff. 398r-399r in the same unit); Bergenroth, CSP Spain I (1862) no. 138, pp. 106-107, abstracts it and quotes the opening; no. 137 abstracts the draft.",
+    "partial": false
+   },
+   "length": {
+    "tokens": "unknown",
+    "unit": "mixed",
+    "measured": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "PARES show/2207769, image 5 (f. 396r heading and lines 1-3 only)",
+    "corrections": 1,
+    "image_quality": "fair",
+    "notes": "Sample only. Line 2 group corrected in the check to DCCCCXXI (wide ligature with overbar). Image 5 at the largest size PARES serves, 1005 x 1402 px."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "code"
+  ],
+  "summary": "Puebla's Great Roman Numeral code: an alphabetical one-part code of words and names numbered in Roman figures (key AGS PTR leg. 52 doc. 33), mixed with clear words.",
+  "symbol_kind": "letters",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": true,
+   "note": "C ligatures: plain = CC, with a superscript o = CCC, wide with an overbar = CCCC (read on key images 48, 51-53, 101, 110, 116)."
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": "unknown",
+   "kinds": [
+    "common words",
+    "names",
+    "titles"
+   ],
+   "unread_groups": 3
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "alphabetical",
+  "word_division": "kept",
+  "doubled_letters": "not applicable",
+  "sibling_key": "Same code and key as targets/puebla1495 (catalogue 615). Key AGS PTR leg. 52 doc. 33, PARES show/2207755.",
+  "notes": "Tomokiyo's note that CC and CCC are written in ligature does not settle the count; the superscript o and the overbar do."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in print",
+   "where": "Bergenroth, CSP Spain I (1862) nos. 137-138, pp. 104-107; the minuta in the same unit (contemporary clear text)",
+   "found": "during attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "key from archive",
+   "published key",
+   "published reading"
+  ],
+  "attack": "key from archive",
+  "human_role": "WAINUT: the owner set the task (catalogue items 615-617). The work was done by AI language-model agents, and a second agent re-checked it on the images and the key. No human reading.",
+  "tools": [
+   "decode_sample.py (key-excerpt lookup; shift, ligature and shuffle controls)"
+  ],
+  "models": [
+   "AI language-model agents (WAINUT; versions not recorded here)"
+  ],
+  "sessions": 1,
+  "first_date": "2026-10-27",
+  "last_date": "2026-10-27"
+ },
+ "solution": [
+  {
+   "date": "2026-10-27",
+   "kind": "access",
+   "what": "PARES show/2207769: 12 images, ff. 394r-399v; contents mapped (two clear drafts, the cipher leaf, 19th-century notes).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "literature search",
+   "what": "CSP Spain I (BHO): no. 138 quotes the opening of the ciphered article word for word; no. 137 = the draft of 21 June 1496; no. 141 = the draft of 6 July 1496.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "reading",
+   "technique": [
+    "key matching"
+   ],
+   "what": "First pass with Tomokiyo's published values: six groups (que, Rey de Inglaterra, Escocia, nuestros, de, De Puebla) fit the quotation; C-count left open.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "key from source",
+   "technique": [
+    "key matching",
+    "key-structure hypothesis"
+   ],
+   "what": "Key AGS PTR leg. 52 doc. 33 read on images 30, 37, 48, 50-54, 100-101, 110, 116: C-count rule for the three ligature forms; 921 = el Rey de Escocia, 922 = el Reyno de Escocia.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "control",
+   "technique": [
+    "key matching"
+   ],
+   "what": "decode_sample.py: key shifted by -1, +1, -7, +13 entries, every ligature read as CC, and three shuffles of the groups: none gives the quoted sentence.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "verification",
+   "what": "Second agent re-read the heading and lines 1-3 on fresh crops and the f. 397v note; line 2 group corrected from 'Escocia' to DCCCCXXI 'el Rey de Escocia'.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "verification",
+   "what": "Maintainer review (Claude for Daniel Bourdeau): the sample read as sentences (heading and lines 1-2 coherent and matching Bergenroth's quotation; line 3 fragmentary). Decided: no write-up. The article was deciphered at the time (minuta, f. 397v note) and calendared by Bergenroth (CSP Spain I no. 138); the contribution adds the identification, the date, a three-line sample and the C-ligature rule, not a new reading of the text. Remaining gaps left as deliberately not done.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "already solved",
+  "key": "recovered",
+  "method": "read from existing decipherment",
+  "method_basis": "The article was deciphered at the time (the minuta carries it in clear, note on f. 397v) and Bergenroth calendared it (CSP Spain I no. 138); the extant key was applied here only to a sample, which matches his quotation group for group, except that the cipher has 'el Rey de Escocia' where he has 'Escocia'.",
+  "contribution": [
+   "sender or date identified",
+   "catalogue correction",
+   "transcription",
+   "key extended or corrected"
+  ],
+  "verification": [
+   "contemporary decipherment",
+   "key confirms"
+  ],
+  "provenance": "contributed",
+  "notes": "No write-up: the text was deciphered at the time (the minuta of 21 June 1496 carries the article in clear, note on f. 397v) and Bergenroth calendared it (CSP Spain I no. 138); this contribution adds the identification, the dating, a three-line sample decoded with the extant key and the C-ligature rule. The key state is 'recovered' because the whole key survives in the archive; only the entries in key_excerpt.tsv were looked up. Proposed: catalogue 616 becomes an earlier-solution pointer to CSP Spain I no. 138 (with nos. 137 and 141 for the drafts in the same unit), dated Almazán, 21 June 1496.",
+  "credits": [
+   {
+    "who": "lccompany",
+    "role": "solution",
+    "note": "catalogue item closed: the cipher leaf identified as CSP Spain I no. 138 and a sample decoded with the extant key; the text was deciphered at the time",
+    "date": "2026-10-27",
+    "source": "https://github.com/WAINUTAI"
+   },
+   {
+    "who": "lccompany",
+    "role": "identification",
+    "note": "f. 396 = the ciphered article of 21 June 1496 (CSP Spain I no. 138); drafts in the same unit = nos. 137 and 141",
+    "date": "2026-10-27",
+    "source": "https://github.com/WAINUTAI"
+   },
+   {
+    "who": "lccompany",
+    "role": "pointer",
+    "note": "pointer to Bergenroth, CSP Spain I nos. 137-138, pp. 104-107, and no. 141",
+    "date": "2026-10-27",
+    "source": "https://github.com/WAINUTAI"
+   },
+   {
+    "who": "lccompany",
+    "role": "transcription",
+    "note": "sample, f. 396r heading and lines 1-3",
+    "date": "2026-10-27",
+    "source": "https://github.com/WAINUTAI"
+   },
+   {
+    "who": "lccompany",
+    "role": "key corrected",
+    "note": "C-count rule for the ligatures read on the key; 921 = el Rey de Escocia (not 'Escocia'), 922 = el Reyno de Escocia",
+    "date": "2026-10-27",
+    "source": "https://github.com/WAINUTAI"
+   },
+   {
+    "who": "contemporary",
+    "role": "prior solution",
+    "note": "the minuta of 21 June 1496 carries the article in clear (f. 397v note)"
+   },
+   {
+    "who": "bergenroth",
+    "role": "prior solution",
+    "note": "CSP Spain I no. 138: calendar of the deciphered article, with its opening quoted (and no. 137, the draft)",
+    "date": "1862",
+    "source": "https://www.british-history.ac.uk/cal-state-papers/spain/vol1/pp99-107"
+   },
+   {
+    "who": "tomokiyo",
+    "role": "key or decipherment used",
+    "note": "Great Roman Numeral code values used in the first pass; lists doc. 47 under this code",
+    "source": "https://cryptiana.web.fc2.com/code/spanish.htm"
+   },
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "the key itself, AGS PTR leg. 52 doc. 33",
+    "source": "https://pares.cultura.gob.es/ParesBusquedas20/catalogo/show/2207755"
+   }
+  ],
+  "key_file": "key_excerpt.tsv",
+  "texts": [
+   {
+    "doc": "f396",
+    "label": "AGS PTR leg. 52 doc. 47 f. 396r, sample (heading and lines 1-3)",
+    "transcription": "sample_transcription.txt",
+    "decryption": "sample_decryption.txt",
+    "reading": "sample_reading.txt",
+    "translation": "sample_translation.txt",
+    "language": "es",
+    "state": "read in part",
+    "read_share": 0.85,
+    "summary": "Ferdinand and Isabella answer De Puebla's report that Henry VII had good news of the affairs of the King of Scots: the news comes from nowhere but their own envoys sent to Scotland (Bergenroth's no. 137: the Spanish ambassadors obtained a solemn promise from the King of Scots).",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude (review for Daniel Bourdeau)",
+     "date": "2026-10-27",
+     "note": "Read as sentences: the heading and the first sentence (y quanto a lo que dezis que el Rey de Inglaterra vos dixo que tenia buenas nuevas de los negocios de el Rey de Escocia, esto no viene de otra parte sino que nuestros ...) are coherent Spanish and agree with Bergenroth's quotation, except 'el Rey de Escocia' for his 'Escocia'. Line 3 is a fragment (three unread groups, two doubtful), so the sample is coherent but raw: grade B. It is a three-line sample of a two-page article; nothing beyond it is read."
+    },
+    "note": "Sample only; the rest of ff. 396r-396v is not transcribed. read_share from research/reading_audit/v2_score.py (explicit holes)."
+   }
+  ]
+ }
+}

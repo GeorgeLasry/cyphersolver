@@ -1,0 +1,98 @@
+# System-B (Greek-shaped alphabet) passages outside letter 00153, ANTT MSLIV 1017
+# Sweep of scans m0070-m0289 (27 Oct 2026). Letter labels as in l153_cipher.txt; E = looped capital-E sign; ? = unsure.
+# Line numbers count from the top line of the scan's text block.
+
+## Find 1: m0179 (letter of 14 Jan 1645, begins m0178 "De ElRei de 14 de Jan.ro de 1645", ends m0179 l.7 "Escrita em Lx.a a 14 de Jan.ro de 1645 Rey")
+# Context (clear, m0178 bottom -> m0179): Moniz de Carvalho is being sent to Osnabrück ("Mando este homem a Osnabrug ...
+# Encomendo-vos muito o instruais antes de partir o melhor que for possível ... em Osnabrug com toda a moderação:
+# porque tudo será necessário.")
+# clear (m0179 l.4-5): "O mais / q me direis sobre aquele neg.o de"
+m0179 L5: infeqtix bxv nEqmx oEuEn bvfoEp
+m0179 L6: bpuEx imxt puE zfacE
+# clear (m0179 l.6-7): "me parece acertado naquela conformidade / o deveis seguir. Escrita em Lx.a a 14 de Jan.ro de 1645 Rey"
+# 31 letters. Notes: L5 'infeqtix' first sign is i then n (153 has 'imfeqtix'; here n, not m, is the clearer reading
+#   but m/n is a minim count, treat as same word). 'bvfoEp': third sign long-s/f shape (153 read it as s in 'bvsoEp').
+#   L6 'puE' (153: 'pueEE'), 'zfacE' (153: 'zfoeE'): 'a'/'oe' and the extra E differ; the 'a' could be 'oe' run together.
+# PARALLEL: this is the same cipher phrase as l153 L4 end - L5: 'imfeqtix bxv nEqmx / oEuEnbvsoEpbpuEx imxt pueEE zfoeE'.
+#   Word division here: oEuEn bvfoEp bpuEx (153 runs them together). The phrase is a noun phrase governed by
+#   "aquele negócio de ...", i.e. a named affair; 153 introduces it after "visto se não entende tão no [uEn qotpbxeoln vE] ...".
+
+## Find 2: m0190 (letter of 7 Feb 1645, begins m0189 bottom "De ElRei de 7 de Fever.o de 1645": António Moniz de
+## Carvalho goes as resident to Osnabrück; Nisa is to hand the Paris secretariat to António de Sousa de Macedo)
+# clear (m0190 ~l.15-16): "... lhe deixareis inteiram.te toda a secretaria / desa Embaix.da tirado os Avisos q vos forão sobre"
+m0190 L16 end: E. qotpbxooEuEl imfeqtix
+m0190 L17:     bxv nEqmx oEuEm bvfoE pbpuEx imxtpuE zfacE ?Enuepn fcrpeoxn ib?
+m0190 L18:     lix vxnox exoE qfE. qpb tix mE q ngtqp bpfn q vos e asfrs ixmxfmq
+# clear (L18 end - L19): "e alen / dysto lhe deixareis hum papel mui largo de tudo o q vos parecer neces.ro ..."
+#   ('calen dyto' = "e além disto": the cipher ends at 'ixmxfmq').
+# Notes:
+#   'E.' (with a point) before qotpbx...: may be a cipher sign or an abbreviation mark; 153 has 'uEn' at that place.
+#   'qotpbxooEuEl': 153 has 'qotpbxeoln vE'; here the run reads ...x o o E u E l, the 'oo' could be 'eo' (153).
+#   'imfeqtix' t/f uncertain (long cross-stroke).
+#   'bxv': x written raised (as in 153). 'oEuEm' (final m here; 153 and m0179 have n).
+#   'pbpuEx': a small 'd'-like mark over E (correction?).
+#   'imxtpuE' run together (m0179: 'imxt puE'; 153: 'imxt pueEE').
+#   '?Enuepn': first sign z-like or x-like with E; 153 has 'fuepn' at this place. 'fcrpeoxn': 153 'fcrzpeoxn'.
+#   'ib?' last letter n or z, line end.
+#   L18: 'q' with abbreviation stroke appears twice and 'vos e' looks like ordinary clear Portuguese ("que vos e");
+#   if so the cipher is interrupted: '... qpb tix mE / que / ngtqp bpfn / que vos e / asfrs ixmxfmq'.
+# PARALLEL: L16 end - L17 'fcrpeoxn' repeats l153 L4-L5 'qotpbxeoln vE imfeqtix bxv nEqmx oEuEnbvsoEpbpuEx imxt
+#   pueEE zfoeE fuepn fcrzpeoxn' almost sign for sign, and m0179's 'infeqtix ... zfacE'. L18 is new text.
+
+## Find 3 (clear parallel, not a cipher): m0276, the volume's own list of cipher passages
+# m0276 (after the index? no: a leaf before the index m0277-m0282) lists, by letter number and folio, the cipher
+# passages in clear ("Carta 54 Decifrada ... af. 81", "Carta 59 ... 85", "Carta 60 ... 86", "Carta 82 ... 110",
+# "Carta 187 ... 174", "Carta 212 ... 185"). The last two are the system-B passages, deciphered:
+#   Carta 187, f. 174 (= letter of 14 Jan 1645, m0179):  "Do Pr.e sobre todos meu m.to amado, e prez.do f.o"
+#       = "do Príncipe sobre todos meu muito amado e prezado filho"
+#   Carta 212, f. 185 (= letter of 7 Feb 1645, m0190):  "sobre o caram.to do Pr.e meu sobre todos meu m.to amado e
+#       prez.do f.o e das Inf.as porq este neg.o não q[uer]o q saiba mais q vós, e Luís Pr.a"
+#       = "sobre o casamento do Príncipe meu sobre todos muito amado e prezado filho e das Infantas, porque este
+#          negócio não quero que saiba mais que vós e Luís Pereira"
+#   Also: Carta 54 (af. 81) "Of.al da Junta de Munster"; Carta 59/60 (af. 85-86) "com o off.al da secretaria dos
+#   Plenipotenciários de Fr.a ... official ... seus avisos"; Carta 82 (f. 110) "p.a Angola m.do huma Arm.da de 20
+#   Navios com ordem q e munições e capuchos bast.es p.a fundarem huma nova cid.e na boca do Rio q sirva de Metropole
+#   aquele R.no" (these four are system-A passages of 1643-44).
+#
+# KEY CHECK (simple substitution, consistent across all three B texts):
+#   cipher : plain   o:t E:o u:d n:s (also r) q:c (and b?) t:z(or i) p:a b:m x:e i:p m:r f:i e:n v:u c:h
+#            a:l  z:f  l:(m/n?) r:? (fcrzpeoxn 'infantes' -> f i, c n?, r f?)  -- to be confirmed
+#   m0179 'infeqtix bxv nEqmx oEuEn bvfoEp bpuEx imxt puE zfacE'
+#        -> 'p r i n c i p e  m e u  s o b r e  t o d o s  m u i t o  a m a d o  e  p r e z a d o  f i l h o'
+#        (spacing in the copy is off; 'imxt puE' = 'prez ado', 'zfacE' = 'filho': z=f f=i a=l c=h E=o)
+#   l153 L4-L5 'uEn qotpbxeoln vE imfeqtix bxv nEqmx oEuEnbvsoEpbpuEx imxt pueEE zfoeE fuepn fcrzpeoxn'
+#        -> 'dos casamentos do principe meu sobre todos muito amado e prezado filho e das infantes'
+#   m0190 'qotpbxooEuEl imfeqtix ... fcrpeoxn' -> 'casamento do principe ... e das infantes'
+#   So the B sign labels are a monoalphabetic key (plain->cipher roughly: a p, c q, d u, e x, f z, h c, i f, l a,
+#   m b, n e, o E, p i, r m, s n, t o, u v, z t; homophones/variants to be settled), and the 'Greek' shapes are
+#   just this second key's letters. The 1644-45 passages are all about the marriage of Prince Teodósio and the Infantas.
+#   CORRECTION to the key line above (checked by alignment script): firm values E=o b=m e=n f=i i=p m=r n=s p=a
+#   u=d x=e z=f q=c a=l c=h o=t; homophones: i = f/s/t, a = p (and o in 'qotpbx'?); v = u (also d in 'vE' = do).
+#   l153 'zfoeE' is a misreading of 'zfacE' (m0179/m0190 show a, c): o/a and e/c are confusable in the copy.
+#   Trial decode of l153 L6: 'xnoxn epb qEbEefogmxfnefb qEbzofmxfn' -> 'estes nam comuni(c)areis nem confiareis'
+#   ('estes não comunicareis nem confiareis'); L7 'pE bpmvxn exb p Erompp ...' -> 'ao marques nem a outra pessoa'.
+#   m0190 L18 ends '... ixmxfmq' -> 'pereir(a)' = Luís Pereira (cf. m0276 "não quero q saiba mais q vós e Luís Pr.a").
+#   r, g, d, l, k unsettled; a full reading of l153 is the next step (not done in this sweep).
+
+## SUMMARY (sweep m0070-m0289, 27 Oct 2026; m0140-m0289 by 4-page contact sheets, zooms on candidates)
+# Scans m0283-m0289 are blank end leaves, back board and spine; m0277-m0282 the letter index; m0276 list of
+# cipher passages deciphered (see Find 3).
+#
+# System A (Latin-letter pseudo-words, 1642-43 key) seen, not transcribed:
+#   m0085  letter 20 Nov 1643, l.3 ('Ezzfgfpu ... upfreopuyx brenoxn'), short run
+#   m0089  letter 20 Dec 1643 (Em resposta da carta de 27 de Set.), ~1 line ('Com ie ullaeaop forcet natao turr
+#          peracuncicataur')
+#   m0114  letter 22 Jan 1644, ~3.5 lines ('gotto oi duppo zoifix bxzo otzofofi xaincio / xaur eur ulfcZ dorinc ...
+#          goto Exifot / cz bxzo iuxo eapopcio queofu taiporty ixc tatkope zenteguipaolxz / ppo tcaeu'); key.py
+#          decodes it: 'barra ... manda huma armada ... pera fundar em huma nova cidade ...' = Angola armada of
+#          20 ships (Carta 82 f.110 on m0276).
+#   (earlier m0064-m0069 per NOTES.) m0074 'Carta Decifrada' (Oct 1643) and m0224, m0246, m0254-m0255, m0258
+#   'Carta Decifrada' headings (Mar-Nov 1645) are clear texts headed as deciphered: no cipher on the page.
+#   No system-A pseudo-words seen after m0114.
+# System B passages:
+#   l153 / m0157   letter 00153, 21 Sept (heading 21 Nov) 1644   148 letters (existing)
+#   m0179 L5-6     letter of 14 Jan 1645 (Carta 187, f.174)      31 letters
+#   m0190 L16-18   letter of 7 Feb 1645 (Carta 212, f.185)       ~105 letters (L16-17 ~55, L18 ~50, partly unsure)
+#   Total system B: ~284 letters (148 + 31 + ~105).
+# Clear parallels: m0276 gives both new B passages in clear (Find 3); the 1645 texts repeat the l153 phrase
+#   'dos casamentos do príncipe meu sobre todos muito amado e prezado filho e das infantes', which gives the key.

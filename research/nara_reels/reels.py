@@ -91,6 +91,21 @@ def letter_score(text):
     return n5, (n5 / len(toks) if toks else 0.0), best
 
 
+def caps_score(text):
+    """Polyalphabetic-ciphertext likeness: all-caps tokens of 3+ letters, their share of alphabetic tokens, the longest
+    run, and the index of coincidence of their letters (Vigenere text about 0.045; English, names, headings 0.06+)."""
+    toks = re.findall(r'[A-Za-z]+', text or '')
+    caps = [len(t) >= 3 and t.isupper() for t in toks]
+    run = best = 0
+    for c in caps:
+        run = run + 1 if c else 0
+        best = max(best, run)
+    letters = ''.join(t for t, c in zip(toks, caps) if c)
+    n = len(letters)
+    ic = sum(letters.count(ch) * (letters.count(ch) - 1) for ch in set(letters)) / (n * (n - 1)) if n > 1 else 1.0
+    return sum(caps), (sum(caps) / len(toks) if toks else 0.0), best, n, ic
+
+
 def frames(naid):
     rec, objs = fetch(naid)
     names = {o['objectId']: o['objectFilename'] for o in rec.get('digitalObjects') or []}

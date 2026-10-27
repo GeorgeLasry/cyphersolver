@@ -1,0 +1,12 @@
+# Worklog: pcc1780 (catalogue 631)
+
+- 2026-10-27 repo check: no target folder; entry from research/nara_catalog (Oct 2026 NARA sweep); siblings in the catalogue: 485 (Dana), 636 (Livingston → Jay, modified Thomson code).
+- 2026-10-27 access: NARA proxy API (`/proxy/records/search?naId=` and `?ancestorNaId=2124632`): file unit has 8 described children; vols. 1-3 imaged (vol. 1 naId 475671573, 422 images; vol. 2 naId 475671996, 314); key items 2450021 (3 images) and 2440605 (fisheries translation, 3 images); 631635424 has no images of its own (it is vol. 1 image 95).
+- 2026-10-27 inventory: Fold3 object descriptions of vols. 1-2 filtered for cipher/code/key/names: vol. 1 has 7 cipher communications and ~12 key sheets (images 95-135, 317-324); vol. 2 none. Worked.
+- 2026-10-27 images: vol. 1 images 93-140 and 313-325 downloaded (JP2, scratch only) and viewed.
+- 2026-10-27 classification: the "7 p. fragment to B. Franklin" is pp. 169-172 (images 133-135; image 136 on is an unrelated 1785 letter): encipherment worksheet, English under each number group. Resolves of 8 Feb 1782 (317-324) and 7 Aug 1782 (116-120) likewise carry the English. Worked.
+- 2026-10-27 literature: worksheet phrases ("The contracts made for the ensuing Campaign must be given up", "difficult Card to play") matched to Livingston → Franklin, 26 Nov 1781, Papers of Benjamin Franklin 36 (Founders Online, read in the browser pane; curl blocked by the WAF). Edition: encoded passages in Cipher No. 4, text taken from the National Archives copy. Worked.
+- 2026-10-27 images 313-316 (pp. 325-328, no Fold3 description): first half of the same Livingston worksheet, bound apart. Worked.
+- 2026-10-27 control: the worksheet's English checked against the edition passage by passage (pp. 171-172, 325-328): agrees except p. 171 "one Month's continuance" (group 190) where the edition prints "one years"; zoomed crop confirms "Month's". Variant recorded, not resolved.
+- 2026-10-27 literature: Committee for Foreign Affairs → Jay, 16 June 1780: Jay Papers 2 (Founders Online) and Columbia's cipher copy decoded in Jay's hand. Thomson 19 May 1780 (image 100): Columbia "Document, 1780 May 19", dictionary cypher from Thomson in Jay's hand, bills on Jay and Franklin for 25,000 dollars each. Not decoded here.
+- 2026-10-27 closed: every cipher piece has its English on the page or in print; method existing decipherment; Status: no write-up; DECODE skip (not on DECODE).

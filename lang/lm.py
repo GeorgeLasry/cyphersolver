@@ -26,6 +26,7 @@ D = 0.75
 
 def _deaccent(t):
     t = t.replace('æ', 'ae').replace('œ', 'oe').replace('Æ', 'ae').replace('Œ', 'oe').replace('ß', 'ss')
+    t = t.replace('ł', 'l').replace('Ł', 'L')  # Polish ł has no NFD decomposition and was dropped
     return ''.join(c for c in unicodedata.normalize('NFD', t) if unicodedata.category(c) != 'Mn')
 
 def norm(text, scheme='modern', spaces=True):
