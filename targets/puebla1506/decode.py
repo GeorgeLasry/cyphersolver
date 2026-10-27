@@ -76,7 +76,7 @@ out = ['# Line-by-line decryption of transcription.txt with key_first_cipher.tsv
        '']
 for tag, text in L:
     out += [f'{tag} T  {text}', f'{tag} D  {decode(text, KEY)}', '']
-(HERE / 'decryption.txt').write_text('\n'.join(out), encoding='utf-8')
+(HERE / 'decryption.txt').write_text('\n'.join(out) + '\n', encoding='utf-8', newline='\n')
 print('\n'.join(out))
 
 # controls

@@ -41,7 +41,7 @@ out = ['# Line-by-line decryption of sample_transcription.txt with key_excerpt.t
        '# T = transcription, D = decryption: code values in { }, groups the excerpt does not hold as [?number].', '']
 for tag, text in L:
     out += [f'{tag} T  {text}', f'{tag} D  {render(text, KEY)}', '']
-(HERE / 'sample_decryption.txt').write_text('\n'.join(out), encoding='utf-8')
+(HERE / 'sample_decryption.txt').write_text('\n'.join(out) + '\n', encoding='utf-8', newline='\n')
 print('\n'.join(out))
 
 # controls on the heading and lines 1-2 (the securely read groups)

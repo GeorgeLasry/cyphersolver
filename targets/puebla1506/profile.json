@@ -110,7 +110,7 @@
    "technique": [
     "key matching"
    ],
-   "what": "Tomokiyo's First Cipher table applied: 'por su propio interese que la princesa me escriviese estas cartas que aqui van inclusas', 'los de la señora princesa veo tanbien ataviados que mas no pense ver', 'codicia de algunas personas', 'tesoro de [el Rey de Inglaterra]'.",
+   "what": "Tomokiyo's First Cipher table applied: 'por su propio interese que la princesa me escriviese estas cartas que aqui van inclusas', 'los de la señora princesa veo tan bien ataviados que mas no pense ver', 'codicia de algunas personas', 'tesoro de [?el Rey de Inglaterra]'.",
    "result": "partial"
   },
   {
@@ -232,13 +232,13 @@
     "translation": "translation.txt",
     "language": "es",
     "state": "read in part",
-    "read_share": 0.89,
-    "summary": "De Puebla tells Almazán that people around the Princess of Wales, for their own interest, had her write the letters he encloses; that he sees her household finely dressed beyond expectation; and that the greed of certain persons is such that he doubts even the King of England's treasure would content them. Written as Philip and Juana were about to sail from England; Katharine's own letter of the next day (CSP I no. 459) says her people were all but naked.",
+    "read_share": 0.82,
+    "summary": "De Puebla tells Almazán that people around the Princess of Wales, for their own interest, had her write the letters he encloses; that he sees her household finely dressed beyond expectation; and that the greed of certain persons is such that he doubts even the treasure of [?the King of England] would content them. Written as Philip and Juana were about to sail from England; Katharine's own letter of the next day (CSP I no. 459) says her people were all but naked.",
     "reading_review": {
-     "grade": "A",
-     "by": "WAINUT (AI language-model agent; checked against the PARES image)",
+     "grade": "B",
+     "by": "WAINUT (contributor's own check by an AI language-model agent against the PARES image; for the maintainers' reviewer to confirm)",
      "date": "2026-10-27",
-     "note": "Four cipher passages read as Spanish sentences; the holes are untranscribed clear text at the passage ends, two unread signs and one doubtful verb ending. The low sentence score comes from those [...] marks and the period spelling."
+     "note": "Four cipher passages read as Spanish sentences; the holes are untranscribed clear text at the passage ends, two unread signs, one doubtful verb ending, one doubtful article and the code group, whose C-count is not checked on this letter. The low sentence score comes from those [...] marks and the period spelling."
     },
     "note": "read_share from research/reading_audit/v2_score.py (explicit holes)."
    },
@@ -251,7 +251,7 @@
     "translation": "translation_ll11-17.txt",
     "language": "es",
     "state": "decoded, not read",
-    "note": "Secure words (y de la partida; senora princesa; conviene; bien y acrecentamiento; de el Rey de Inglaterra y del principe; abra quien le [?pedir] que ningun malcontentamiento), but the clear words between them are not read, so no sentences."
+    "note": "Secure words (y de la partida; senora princesa; conviene; bien y acrecentamiento; de [?el Rey de Inglaterra] y del principe; abra quien le [?pedir] que ningun malcontentamiento), but the clear words between them are not read, so no sentences."
    }
   ]
  }

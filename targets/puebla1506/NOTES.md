@@ -34,7 +34,8 @@ Puebla's First Cipher is a letter substitution with a few homophones. It is Berg
 by S. Tomokiyo (cryptiana, "Spanish ciphers", table `Puebla1.jpg`). One Roman-numeral code group from Puebla's Great
 Roman Numeral code occurs three times: DCCCLXXXVIII = "el Rey de Inglaterra", key AGS PTR leg. 52 doc. 33, image 51
 (read in the check of `targets/puebla1496`). Its C-count in this letter was not checked against the ligature rule,
-so the value stays marked [?] at its first occurrence. The aliases and values are in `key_first_cipher.tsv`. Sign
+so the value is marked [?] at every occurrence. The value fits the context, but it is an
+assumption until the group is checked on this letter. The aliases and values are in `key_first_cipher.tsv`. Sign
 `o` serves for both u and v, as is usual in the period. The sign in "ra?on" (l. 13) is not in Tomokiyo's table, and
 neither is a z sign; "plazer" (l. 12) has a Z with a hook [?].
 
@@ -50,17 +51,17 @@ neither is a z sign; "plazer" (l. 12) has a Z with a hook [?].
 The passages that read:
 
 > [...] por aquella gente hazia, por su propio interese, que la princesa me escriviese estas cartas que aqui van
-> inclusas. [...] Los de la señora princesa veo tanbien ataviados que mas no pense ver. Por la codicia de algunas
-> personas [?] [?] es tal que con el tesoro de {el Rey de Inglaterra}, dudo que se [?contentasen] [...] va a beneficio
+> inclusas. [...] Los de la señora princesa veo tan bien ataviados que mas no pense ver. Por la codicia de algunas
+> personas [?] [?] es tal que con [?el] tesoro de {el Rey de Inglaterra?}, dudo que se [?contentasen] [...] va a beneficio
 > de natura con este [...]
 
-> [...] that people did, for their own interest, that the princess should write me these letters, which go enclosed
-> here. [...] I also see the lady princess's people so finely dressed that I did not think to see more. Through the
-> greed of certain persons [?] [?] it is such that, even with the treasure of {the King of England}, I doubt they
+> [...] those people did, for their own interest, that the princess should write me these letters, which go enclosed
+> here. [...] I see the lady princess's people so finely dressed that I did not think to see more. Through the
+> greed of certain persons [?] [?] it is such that, even with [?the] treasure of {the King of England?}, I doubt they
 > would be [?content] [...] goes to the benefit of nature with this [...]
 
 The fragments of ll. 11-17 have secure words: "y de la partida", "de todo el [?aresto]", "con mucha [?razon]",
-"señora princesa", "conviene", "bien y acrecentamiento", "de {el Rey de Inglaterra} y del principe", "abra quien
+"señora princesa", "conviene", "bien y acrecentamiento", "de {el Rey de Inglaterra?} y del principe", "abra quien
 le [?pedir] que ningun malcontentamiento". The clear words between them are not read, so they do not build sentences.
 
 **Controls** (`python decode.py`). We measured how much of the decoded letters a small generic Spanish word list

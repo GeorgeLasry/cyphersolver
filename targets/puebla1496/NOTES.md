@@ -58,7 +58,8 @@ is one of the "poco ..." entries.
 > y quanto alo que dezis **[que] [el Rey de Inglaterra]** vos dixo que tenia buenas nuevas delos negocios de
 > **[el Rey de Escocia]** esto no viene de otra parte sino que **[nuestro]**s ...
 
-This is Bergenroth's quotation, group for group. The controls in the same script give no sentence. A shift of one
+This agrees with Bergenroth's quotation group for group, except that the cipher has "[el Rey de Escocia]"
+where he has "Escocia" (see the correction below). The controls in the same script give no sentence. A shift of one
 entry gives "dotor de talavera", "la Reyna de Inglaterra" and "el Reyno de Escocia". Reading every ligature as CC
 gives 755, 1785, 788 and 721. Shuffling the groups gives, for example, "negocios de [dotor de puebla]".
 

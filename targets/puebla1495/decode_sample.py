@@ -59,7 +59,7 @@ out = ['# Line-by-line decryption of sample_transcription.txt with key_excerpt.t
        '# T = transcription, D = decryption: code values in { }, groups the excerpt does not hold as [?number].', '']
 for tag, text in joined:
     out += [f'{tag} T  {text}', f'{tag} D  {render(text, KEY)}', '']
-(HERE / 'sample_decryption.txt').write_text('\n'.join(out), encoding='utf-8')
+(HERE / 'sample_decryption.txt').write_text('\n'.join(out) + '\n', encoding='utf-8', newline='\n')
 print('\n'.join(out))
 
 # controls on p.1 ll. 6-8: the key moved by one entry, and the groups shuffled
