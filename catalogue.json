@@ -13036,7 +13036,7 @@
    "region": "Spain",
    "period": "1801-1900",
    "shelfmark": "NARA RG 59, Despatches from US Ministers to Spain, vol. 22 (20 May 1822-30 Dec 1823) = microfilm M31 reel 24, catalog naId 188609418",
-   "folio_note": "18 code groups in the body (Manning prints them: 1088 648 1576 794 1384 1453 347 1372 500 192 668 1384 169 1244 1501 1110 1426 1290; several OCR-uncertain); frame not located",
+   "folio_note": "18 code groups in the body (Manning prints them: 1088 648 1576 794 1384 1453 347 1372 500 192 668 1384 169 1244 1501 1110 1426 1290; several OCR-uncertain); frame not located Frame located 27 Oct 2026 (NARA bulk scan, research/nara_triage_a/): M31 reel 24, frame 0134.",
    "cls": "A",
    "status": "Manning, Diplomatic Correspondence ... Independence of the Latin-American Nations (1925) vol. 3, doc. 1124, p. 2041, prints the groups with '[no decodification]'. The groups fit the code rebuilt in targets/jqa (the = 1385, of = 1576, that = 1384, and = 668; the London/St Petersburg code): with targets/jqa/code_table.tsv 16 of 18 groups take a value ('... of [794] that ... was [192] and that he had a part in England'). Not in the repo (known.py: Appleton no hits).",
    "why": "The Spanish constitutional government's secret plan to raise money in England in the last weeks of the Cortes at Cadiz (1823), told to the US chargé by the finance minister Yandiola; directly readable with a key this repository already holds.",
@@ -13073,7 +13073,7 @@
    "region": "Spain",
    "period": "1801-1900",
    "shelfmark": "NARA RG 59, Despatches from US Ministers to Spain, vol. 25 (17 Mar 1825-18 Apr 1826) = microfilm M31 reel 27, catalog naId 188610348",
-   "folio_note": "six lines of cipher in the body, after the minister's (Zea Bermúdez's) declaration that the King would never abandon his claim to the colonies",
+   "folio_note": "six lines of cipher in the body, after the minister's (Zea Bermúdez's) declaration that the King would never abandon his claim to the colonies Frame located 27 Oct 2026 (research/nara_triage_a/): M31 reel 27, frame 0114; about 445 groups (not six lines) in the JQA-type code, readable with targets/jqa/code_table.tsv.",
    "cls": "B",
    "status": "Manning 1925 vol. 3, doc. 1134, p. 2002: '[Here follow six lines in cipher, without decodification.]'. Everett's code not identified; the Legation in Madrid also held the code used by Appleton in 1823 (the targets/jqa family), the first thing to test. Not in the repo (known.py: Everett no hits).",
    "why": "Everett's confidential report of Spain's position on recognising the new American states after Ayacucho; the six lines are the part he hid.",
@@ -13110,7 +13110,7 @@
    "region": "Americas",
    "period": "1801-1900",
    "shelfmark": "NARA RG 59, Despatches from Special Agents, vol. 3 (Poinsett 1813-23) = microfilm M37 roll 2, catalog naId 213803757; Poinsett's other 1811-14 reports ('parts in cipher') are in the Poinsett Papers vol. 4, Historical Society of Pennsylvania (Gilpin collection)",
-   "folio_note": "nine '(undeciphered cipher)' insertions in Manning's text, single words to whole clauses (on the Carreras, the Buenos Aires army, the Portuguese, the Araucanian chief); frame of the letter not located (M37 roll 2 frames 16-24 are the Poinsett list and his 'State of society' essay)",
+   "folio_note": "nine '(undeciphered cipher)' insertions in Manning's text, single words to whole clauses (on the Carreras, the Buenos Aires army, the Portuguese, the Araucanian chief); frame of the letter not located (M37 roll 2 frames 16-24 are the Poinsett list and his 'State of society' essay) Frame located 27 Oct 2026 (research/nara_triage_a/): M37 roll 2, frame 0093; a coded sibling of 14 June 1814 is at frames 0097-0099.",
    "cls": "B",
    "status": "Manning 1925 vol. 2, doc. 442, pp. 896-897, prints the despatch with '(undeciphered cipher)' at each coded passage; the State Department returned Poinsett's other letters to him in 1818, so his own copies (some 'Part in cipher', May-July 1811 from Buenos Aires, per the HSP list filmed at M37 roll 2 frames 20-22) are at HSP, possibly with plaintext drafts. Not in the repo (known.py: Poinsett no hits).",
    "why": "Poinsett was an active partisan of the Carreras in the first Chilean republic; the hidden passages are his own views on the Chilean leadership and the war with Peru, otherwise unrecorded in US files.",
@@ -13461,6 +13461,1178 @@
    "seen": "catalogue",
    "source": "Literature sweep (US military/intelligence slice)",
    "prior_art": "partly read at the time (ledgers often hold the cipher form; translations exist for many in OR); decipherment phase not published (checked 27 Oct 2026)",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 649,
+   "counted": true,
+   "year": 1797,
+   "date": "25 Messidor an V (13 July 1797); enclosed in King No. 53, London, 12 Nov 1797",
+   "title": "Delacroix (French Foreign Minister) → Létombe (French consul general, Philadelphia), despatch No. 5 entirely in a French numeric code, copy sent by Rufus King",
+   "correspondents": "Charles Delacroix → Philippe de Létombe (copy forwarded by Rufus King to Timothy Pickering)",
+   "place": "Paris",
+   "language": "French",
+   "region": "France",
+   "period": "1701-1800",
+   "shelfmark": "NARA RG 59, Despatches from US Ministers to Great Britain, vol. 5 (10 Aug 1796-28 Dec 1797) = microfilm M30 roll 5, catalog naId 188512917",
+   "folio_note": "frames 0244-0245 (about 470 code groups, 1-1171, in a clerk's copy marked \"Dup.\" and \"(Copy)\"; heading and close \"Salut et fraternité, Delacroix\" in clear); King's covering No. 53 at frames 0239-0241",
+   "cls": "B",
+   "status": "Frame 0244 viewed: a clean copy of the whole despatch in code, no interlinear or appended decipherment; the OCR of 0245 and the neighbouring frames shows none either. Not on DECODE; known.py: no hit for Létombe/Delacroix.",
+   "why": "A Directory instruction to the French chargé/consul general in Philadelphia days before Delacroix left office and on the eve of the XYZ mission, which Rufus King obtained in London (probably from Grenville's decipherers); its content is not known from the US side.",
+   "importance": 4,
+   "solvability": 3,
+   "difficulty": 3,
+   "verify": "Read frames 0244-0245 in full; look for the plaintext in the French ministerial register (AMAE Correspondance politique États-Unis vol. 47-48) or Nasatir & Monell's calendar (1967); otherwise a codebook-style attack on ~470 groups of a French 1100-group nomenclator.",
+   "links": [
+    {
+     "label": "NARA M30 vol. 5",
+     "href": "https://catalog.archives.gov/id/188512917"
+    },
+    {
+     "label": "frame 0244",
+     "href": "https://catalog.archives.gov/medialz/dc-metro/rg-059/603720/M30/M30-004/M30-004-0244.jpg"
+    },
+    {
+     "label": "frame 0245",
+     "href": "https://catalog.archives.gov/medialz/dc-metro/rg-059/603720/M30/M30-004/M30-004-0245.jpg"
+    }
+   ],
+   "seen": "image",
+   "prior_art": "open as far as checked (27 Oct 2026: web search for Delacroix/Létombe 25 Messidor an V found only calendars; Turner, Correspondence of the French Ministers 1791-97 not checked for this letter; the French register copy, if kept, would be in clear)",
+   "source": "NARA RG 59 bulk-scan triage (slice A, 1789-1906)",
+   "score_note": "Scored from the NARA OCR and the frame image(s) named in folio_note during the Oct 2026 NARA bulk-scan triage (research/nara_triage_a/)",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 650,
+   "counted": true,
+   "year": 1814,
+   "date": "c. Nov 1813 - 1815 (one leaf dated 14 Jan 1814)",
+   "title": "Anthony Morris (US confidential agent at Cadiz/Madrid) → James Monroe, despatches largely in an unidentified State Department code (the = 285?)",
+   "correspondents": "Anthony Morris → James Monroe, Secretary of State",
+   "place": "Cadiz; Madrid",
+   "language": "English",
+   "region": "Spain",
+   "period": "1801-1900",
+   "shelfmark": "NARA RG 59, Despatches from US Ministers to Spain, vol. 12 (28 May 1813-13 Apr 1816) = microfilm M31 roll 14, catalog naId 188606645",
+   "folio_note": "code runs on frames 0036-0039 (Triplicate, Cadiz), 0050, 0052-0057, 0124-0125 and 0191-0192 (two copies of the same despatch: a built-in check), about 3,000 groups in all; frame 0058 is a Morris account sheet",
+   "cls": "C",
+   "status": "Frame 0039 viewed: page after page of numeric code with a few clear words (\"would induce them to\", \"an offer was made by them\", \"the intention of holding it\"), groups 1-1600 with marks (subscript 5/s, c, underline, arrow) as in the JQA-type syllabic codes; no interlinear decipherment, none in the OCR of the neighbouring frames. Signature groups do not match the JQA (the=1385), Armstrong (972), Pinckney (1651) or Code No. 11 tables; 285 and 76 are the most frequent groups. Not on DECODE; known.py: no hit.",
+   "why": "Morris negotiated with Cevallos over Florida and seized ships in the last years of the Peninsular War; the coded passages are the confidential part of the only US channel to the Regency and to Ferdinand VII in 1813-15.",
+   "importance": 3,
+   "solvability": 3,
+   "difficulty": 3,
+   "verify": "Check Woolfley, A Quaker Goes to Spain (2013), and Manning 1925 vol. 3 for printed decodes; look for a decipherment bound elsewhere in vol. 12; otherwise rebuild the code from the two copies and the clear-text islands (syllabic code of ~1,600 groups, partly alphabetical).",
+   "links": [
+    {
+     "label": "NARA M31 vol. 12",
+     "href": "https://catalog.archives.gov/id/188606645"
+    },
+    {
+     "label": "frame 0039",
+     "href": "https://catalog.archives.gov/medialz/dc-metro/rg-059/603720/M31/M31-014/M31-014-0039.jpg"
+    }
+   ],
+   "seen": "image",
+   "prior_art": "open as far as checked (27 Oct 2026: web search found Woolfley 2013 on the mission, no mention of cipher; Founders has only his private letters to Madison)",
+   "source": "NARA RG 59 bulk-scan triage (slice A, 1789-1906)",
+   "score_note": "Scored from the NARA OCR and the frame image(s) named in folio_note during the Oct 2026 NARA bulk-scan triage (research/nara_triage_a/)",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 651,
+   "counted": true,
+   "year": 1814,
+   "date": "14 June 1814 (Duplicate)",
+   "title": "Joel R. Poinsett → James Monroe, despatch with code passages on Britain, the Plate and the Portuguese, sibling of the 1813 Santiago despatch already in the catalogue",
+   "correspondents": "Joel Roberts Poinsett → James Monroe",
+   "place": "unknown (Buenos Aires/Chile mission; \"Duplicate\")",
+   "language": "English",
+   "region": "Americas",
+   "period": "1801-1900",
+   "shelfmark": "NARA RG 59, Despatches from Special Agents, vol. 3 (Poinsett 1813-18) = microfilm M37 roll 2, catalog naId 213803757",
+   "folio_note": "frames 0097-0099 (code passages on 0098, about 60 groups, e.g. \"1385, 415 ... rupture between G. Britain ...\"); the catalogued 20 Feb 1813 Santiago letter is frame 0093 (located here: both pages carry long code passages, no decipherment) with the 1813 table of contents at 0091",
+   "cls": "B",
+   "status": "OCR only for 0098; frame 0093 viewed (the 1813 letter): code in Poinsett's hand, no interlinear decipherment. 1355 is the commonest group in both. Same code and volume as the catalogue's Poinsett 1813 row, which this row should be merged with or added to as a second letter.",
+   "why": "A second coded Poinsett letter gives the 1813 code more text and its own content on Britain and the Plate in 1814.",
+   "importance": 3,
+   "solvability": 3,
+   "difficulty": 3,
+   "verify": "View frames 0097-0099; transcribe both letters together and test the 1810-era State Department codes (Weber 1979 tables) once available.",
+   "links": [
+    {
+     "label": "NARA M37 vol. 3",
+     "href": "https://catalog.archives.gov/id/213803757"
+    },
+    {
+     "label": "frame 0093 (1813 letter)",
+     "href": "https://catalog.archives.gov/medialz/dc-metro/rg-059/876974/M37-02/M37-02-0093.jpg"
+    },
+    {
+     "label": "frame 0098",
+     "href": "https://catalog.archives.gov/medialz/dc-metro/rg-059/876974/M37-02/M37-02-0098.jpg"
+    }
+   ],
+   "seen": "image",
+   "prior_art": "Manning 1925 prints Poinsett 1813 with \"(undeciphered cipher)\"; the 1814 letter not checked in Manning",
+   "source": "NARA RG 59 bulk-scan triage (slice A, 1789-1906)",
+   "score_note": "Scored from the NARA OCR and the frame image(s) named in folio_note during the Oct 2026 NARA bulk-scan triage (research/nara_triage_a/)",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 652,
+   "counted": true,
+   "year": 1813,
+   "date": "3 Sept 1813 (No. 1, private) to 1814",
+   "title": "William H. Crawford → James Monroe, Paris despatches with long coded passages in the JQA-type Department code (the = 1385), no decipherment on the filmed copies",
+   "correspondents": "William Harris Crawford (US minister to France) → James Monroe, Secretary of State",
+   "place": "Paris",
+   "language": "English",
+   "region": "France",
+   "period": "1801-1900",
+   "shelfmark": "NARA RG 59, Despatches from US Ministers to France, vol. 17 (25 July 1813-17 Aug 1814) = microfilm M34 roll 17, catalog naId 188672892",
+   "folio_note": "coded runs on frames 0027-0029 (No. 1, 3 Sept 1813: 0028 alone about 410 groups, 70 OCR words), 0031-0033, 0047-0049, 0065-0067, 0072, 0086-0090, 0199-0201, 0213-0214 (1814); several thousand groups in all",
+   "cls": "B",
+   "status": "OCR only (frames not viewed): the coded frames carry few words, so no interlinear decipherment is likely; signature groups 1385/1576/668/1384/1401 occur 6-43 times per frame, so this is the code rebuilt in targets/jqa. A trial decode of frame 0028 with targets/jqa/code_table.tsv already gives phrases (\"I am ignorant ... support ... the Emperor ... negotiation ... it is generally ...\"), despite the noisy OCR. Monroe to Madison [Nov 1813] (Founders Madison/03-07-02-0011): the 3 Sept letter came \"in cypher\" and was to be deciphered, so a contemporary decode existed but is not on the film.",
+   "why": "Crawford reported from Napoleon's capital during the 1813-14 campaigns and the first Restoration; the coded parts hold his talks with Bassano/Talleyrand on the Berlin and Milan decrees and a settlement.",
+   "importance": 3,
+   "solvability": 5,
+   "difficulty": 1,
+   "verify": "View frames 0027-0033 to confirm no decipherment; transcribe and decode with targets/jqa/code_table.tsv; check whether the Madison or Monroe Papers print the deciphered text.",
+   "links": [
+    {
+     "label": "NARA M34 vol. 17",
+     "href": "https://catalog.archives.gov/id/188672892"
+    },
+    {
+     "label": "frame 0028",
+     "href": "https://catalog.archives.gov/medialz/dc-metro/rg-059/603720/M34/M34-017/M34-017-0028.jpg"
+    },
+    {
+     "label": "Monroe to Madison, Nov 1813",
+     "href": "https://founders.archives.gov/documents/Madison/03-07-02-0011"
+    }
+   ],
+   "seen": "catalogue",
+   "prior_art": "a decipherment was made in 1813 (Monroe to Madison); no printed text found (27 Oct 2026 web search); Crawford Papers not checked",
+   "source": "NARA RG 59 bulk-scan triage (slice A, 1789-1906)",
+   "score_note": "Scored from the NARA OCR and the frame image(s) named in folio_note during the Oct 2026 NARA bulk-scan triage (research/nara_triage_a/)",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 653,
+   "counted": true,
+   "year": 1836,
+   "date": "1836 (Ellis's first mission) and 16 Nov 1839 (No. 9)",
+   "title": "Powhatan Ellis → John Forsyth, Mexico City despatches in the JQA-type Department code on the Texas war and Mexican politics, pure code on the filmed copies",
+   "correspondents": "Powhatan Ellis (US chargé, then minister, in Mexico) → John Forsyth, Secretary of State",
+   "place": "Mexico City",
+   "language": "English",
+   "region": "Americas",
+   "period": "1801-1900",
+   "shelfmark": "NARA RG 59, Despatches from US Ministers to Mexico, vol. 7 (23 Mar-29 Oct 1836) = M97 roll 8, naId 189101351; vol. 8 (Nov 1836-Feb 1837) = M97 roll 9, naId 189101765; vol. 9 (12 June 1837-28 July 1840) = M97 roll 10, naId 189102194",
+   "folio_note": "vol. 7 frames 0014 (mirror-image exposure) to 0019, 0025-0027 (a despatch of 8 May 1836 \"in cypher\"), 0066-0071, 0078, 0123, 0204, 0323: about 3,000 groups with 0-25 OCR words per frame; vol. 8 frames 0098-0099, 0208-0211; vol. 9 frames 0298-0303 (No. 9, 16 Nov 1839, about 500 groups, no words)",
+   "cls": "B",
+   "status": "OCR only: no interlinear words on the coded frames. Trial decodes with targets/jqa/code_table.tsv read as sense: vol. 9 frame 0302 \"a war with Texas ... under such circumstances will be decidedly popular ... the insurgents who were lately in arms against this government have either capitulated ... or have been dispersed\"; vol. 7 frame 0015 \"... the interior ... this movement ... the President ... a proclamation ... the party ...\". Not on DECODE; known.py: no hit.",
+   "why": "Coded reports from the US legation in Mexico during the Texas Revolution and the 1839 crisis, the confidential side of a relationship that led to war in 1846.",
+   "importance": 3,
+   "solvability": 5,
+   "difficulty": 1,
+   "verify": "Check Manning, Diplomatic Correspondence ... Inter-American Affairs vol. 8 (Mexico 1831-48; HathiTrust, behind a bot check here) for printed decodes; if absent, transcribe from the frames and decode with targets/jqa/code_table.tsv.",
+   "links": [
+    {
+     "label": "NARA M97 vol. 7",
+     "href": "https://catalog.archives.gov/id/189101351"
+    },
+    {
+     "label": "NARA M97 vol. 9",
+     "href": "https://catalog.archives.gov/id/189102194"
+    },
+    {
+     "label": "vol. 9 frame 0302",
+     "href": "https://catalog.archives.gov/medialz/dc-metro/rg-059/603720/M97/M97-010/M97-010-0302.jpg"
+    }
+   ],
+   "seen": "catalogue",
+   "prior_art": "unchecked: Manning Inter-American Affairs vol. 8 (1937) may print these decoded (it prints cipher passages in small capitals when a Department decipherment exists); not reachable 27 Oct 2026",
+   "source": "NARA RG 59 bulk-scan triage (slice A, 1789-1906)",
+   "score_note": "Scored from the NARA OCR and the frame image(s) named in folio_note during the Oct 2026 NARA bulk-scan triage (research/nara_triage_a/)",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 654,
+   "counted": true,
+   "year": 1918,
+   "date": "22-27 Jul 1918 (copies sent 4 Oct, 8 Oct and 6 Nov 1918)",
+   "title": "German Foreign Office → German Legation Stockholm, numeric-code telegrams obtained by the US Legation Stockholm (indicator groups 017/010/693)",
+   "correspondents": "Auswärtiges Amt, Berlin (signed Stumm, Bussche, 'auswaertig') → Deutsche Gesandtschaft Stockholm",
+   "place": "Berlin",
+   "language": "German",
+   "region": "Germany",
+   "period": "1901-1950",
+   "shelfmark": "NARA RG 59, Decimal File 763.72/11631, 11654, 11668 and enclosures of Stockholm despatches 1421 (4 Oct 1918), 1426 (8 Oct 1918), 1475 (6 Nov 1918); microfilm M367 rolls 108, 114, 122, 141",
+   "folio_note": "Telegraph-form copies with full German headers (w-numbers, word counts, dates): M367 roll 114 frames 0415-0418 (desp. 1421: nos. 1-3), roll 141 frames 1255-1265 (desp. 1426: ten telegrams, incl. 017 733 405, 017 435 437 693, 017 149 405, 017 963 405, 017 556 405, 010 018 406), roll 122 frames 0154-0155 (desp. 1475: 017 119 943). The same texts re-cabled by Chargé Schoenfeld from Christiania as legation telegrams 1214, 1233-1237 (5-11 Oct 1918): roll 108 frames 0450, 0511-0515, 0578, 0690-0754. About 12 telegrams, each 30-120 groups of 3-5 digits (values up to ~33000, many repeats such as 4435 9405 2837 10953 23456 21890).",
+   "cls": "B",
+   "status": "Stockholm 2943 (4 Oct) and 2952 (8 Oct 1918): 'Am sending through Christiania ... authentic German telegrams to German Legation ... dates uncertain'. No decode, paraphrase or substance is filed in the four rolls (OCR of the full rolls searched); the cable copies were routed 'To MID' (Military Intelligence, i.e. MI-8). Not on DECODE; not in the repo.",
+   "why": "German Foreign Office instructions to its Stockholm legation in the last months of the war (July 1918), obtained by US diplomats; content unknown.",
+   "importance": 4,
+   "solvability": 3,
+   "difficulty": 4,
+   "score_note": "Scored from the NARA OCR of the scans during the Oct 2026 NARA bulk-scan triage (research/nara_triage_b/); frames read as OCR, image not viewed",
+   "verify": "View roll 141 frames 1256-1265 and roll 114 frames 0416-0418; identify the codebook from the indicator groups (German diplomatic codes 13040 / 0075 / 7500 family); look for MI-8 decodes in RG 165 (MID 10xxx files) / RG 457 and Room 40 copies in TNA HW 7 before treating as open.",
+   "links": [
+    {
+     "label": "M367 roll 141 (763.72/354-13348A), naId 27158076",
+     "href": "https://catalog.archives.gov/id/27158076"
+    },
+    {
+     "label": "M367 roll 114 (763.72/11966-12000), naId 27133946",
+     "href": "https://catalog.archives.gov/id/27133946"
+    },
+    {
+     "label": "M367 roll 122 (763.72/12478-12525), naId 27140577",
+     "href": "https://catalog.archives.gov/id/27140577"
+    },
+    {
+     "label": "M367 roll 108 (763.72/11561-11720), naId 27128808",
+     "href": "https://catalog.archives.gov/id/27128808"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "NARA catalogue bulk-scan triage (RG 59 1906-1950)",
+   "prior_art": "open as far as checked (27 Oct 2026: web search, repo known.py, FRUS 1918 not checked page by page); probably handed to MI-8 at the time, decode not located",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 655,
+   "counted": true,
+   "year": 1918,
+   "date": "22 Jul 1918 (copies sent Oct-Nov 1918)",
+   "title": "German Foreign Office (Abteilung II) → German Legation Stockholm, five-letter pronounceable code-word telegrams",
+   "correspondents": "Auswärtiges Amt, Berlin → Deutsche Gesandtschaft Stockholm, Abteilung II",
+   "place": "Berlin",
+   "language": "German",
+   "region": "Germany",
+   "period": "1901-1950",
+   "shelfmark": "NARA RG 59, 763.72/11654 (Christiania tel. 1215) and enclosures of Stockholm despatches 1421 and 1475; M367 rolls 108, 114, 122",
+   "folio_note": "Roll 114 frames 0419-0420 (telegrams nos. 4 and 5 of desp. 1421: 'umsebosul lanihunci ...', 'undulanef ihoxueriwe ...', 16 and 36 groups); roll 122 frame 0158 (W894, 22 Jul: 'OZUXOWUDA UKASEETITU ...'); cabled copy roll 108 frame 0516. Groups are CVCVC pairs run together (10-letter blocks), so ~3 telegrams, ~70 code words.",
+   "cls": "C",
+   "status": "Sent unsigned, 'dates uncertain' (Stockholm 2943). No decode filed with the copies. Not on DECODE; not in the repo.",
+   "why": "A second, letter-based German code used for a separate department of the Stockholm legation (Abt. II, propaganda/intelligence) in 1918.",
+   "importance": 3,
+   "solvability": 2,
+   "difficulty": 4,
+   "score_note": "Scored from the NARA OCR of the scans during the Oct 2026 NARA bulk-scan triage (research/nara_triage_b/); image not viewed",
+   "verify": "View roll 114 frames 0419-0420 and roll 122 frame 0158 for an exact transcription; compare with known German five-letter code-word systems of 1918 (Room 40 / MI-8 records).",
+   "links": [
+    {
+     "label": "M367 roll 114, naId 27133946",
+     "href": "https://catalog.archives.gov/id/27133946"
+    },
+    {
+     "label": "M367 roll 122, naId 27140577",
+     "href": "https://catalog.archives.gov/id/27140577"
+    },
+    {
+     "label": "M367 roll 108, naId 27128808",
+     "href": "https://catalog.archives.gov/id/27128808"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "NARA catalogue bulk-scan triage (RG 59 1906-1950)",
+   "prior_art": "open as far as checked (27 Oct 2026: web search, repo known.py)",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 656,
+   "counted": true,
+   "year": 1918,
+   "date": "22-26 Jul 1918",
+   "title": "German Supreme Command (GrHQu, signed Ludendorff) → German military attaché Stockholm, and Berlin → Legation / Consulate-General Stockholm, five-digit-group telegrams",
+   "correspondents": "Großes Hauptquartier (Ludendorff) → Deutscher Militärattaché Stockholm; Berlin → Légation Allemande Stockholm; Berlin → Deutsches Generalkonsulat Stockholm",
+   "place": "Großes Hauptquartier / Berlin",
+   "language": "German",
+   "region": "Germany",
+   "period": "1901-1950",
+   "shelfmark": "NARA RG 59, enclosures of Stockholm despatches 1426 and 1475; Christiania tels. 1233-1236 (763.72/11668); M367 rolls 141, 122, 108",
+   "folio_note": "Roll 141 frame 1264 (w791 'Sehr dringend', 'DEUTSCHER MIL ATT STOCKHOLM', '5 Teile, 1. Teil 29 Gruppen', 08762 42680 ...), frame 1257 (w769 'legation allemande sthm', 55356 06165 ...), frame 1260 approx. (w592 Generalkonsulat, 2507 18 57454 54936 ...); roll 122 frames 0156-0157 (W628 Légation Allemande 57316 87882 ...; w611 'hansa 23 juli' with code words vera/lilly/hanna/lolo between 5-digit groups); cabled copies roll 108 frames 0691-0709, 0722-0728. Five parts of ~29-40 groups for the attaché telegram alone.",
+   "cls": "C",
+   "status": "Stockholm 2952: 'number nine to German Military Attaché ... signed Ludendorff'. No decode filed. Not on DECODE; not in the repo.",
+   "why": "A very urgent Ludendorff/OHL message to the Stockholm military attaché in late July 1918, after the failure of the Marne offensive.",
+   "importance": 4,
+   "solvability": 2,
+   "difficulty": 5,
+   "score_note": "Scored from the NARA OCR of the scans during the Oct 2026 NARA bulk-scan triage (research/nara_triage_b/); image not viewed",
+   "verify": "View roll 141 frames 1257-1264; check whether the 5-digit groups are additive-enciphered code (German army/attaché systems 1918) and whether MI-8 or Room 40 read them.",
+   "links": [
+    {
+     "label": "M367 roll 141, naId 27158076",
+     "href": "https://catalog.archives.gov/id/27158076"
+    },
+    {
+     "label": "M367 roll 122, naId 27140577",
+     "href": "https://catalog.archives.gov/id/27140577"
+    },
+    {
+     "label": "M367 roll 108, naId 27128808",
+     "href": "https://catalog.archives.gov/id/27128808"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "NARA catalogue bulk-scan triage (RG 59 1906-1950)",
+   "prior_art": "open as far as checked (27 Oct 2026: web search, repo known.py)",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 657,
+   "counted": true,
+   "year": 1917,
+   "date": "11 Jan 1917",
+   "title": "Bernstorff (German Embassy Washington) → German Foreign Office, cipher telegram on armed merchantmen sent through the State Department cable",
+   "correspondents": "Count Johann Heinrich von Bernstorff → Auswärtiges Amt, Berlin (via Secretary Lansing and Amembassy Berlin)",
+   "place": "Washington",
+   "language": "German",
+   "region": "Germany",
+   "period": "1901-1950",
+   "shelfmark": "NARA RG 59, 763.72111/4443 and related papers; M367 roll 166 (763.72111/4226-4500)",
+   "folio_note": "Roll 166 frames 0785-0786: the cipher text (about 150 groups of 3-5 digits, e.g. 958 677 728 229 0705 1166 0352 7031 ...; frame 0786 is a reversed/offset image). Frames 0769-0775 hold the German memorandum on armed merchant vessels (in clear) and 0778-0784 its English translation; 0787-0789 Lansing's note of 10 Jan 1917 and the 'TELEGRAM SENT ... Please deliver following cipher to Foreign Office, from German Ambassador here' of 11 Jan 1917; 0790-0795 Lansing-Wilson letters of 22 and 31 Jan 1917.",
+   "cls": "B",
+   "status": "Filed without a decode. The memorandum Bernstorff delivered to Lansing the day before is filed in clear beside it and is very probably the plaintext or its basis (a crib). Same channel as the Zimmermann telegram five days later; German traffic on it was in code 13040 or 0075. Distinct from catalogue entry 'German Foreign Office → Bernstorff, 5 Dec 1916' (FRUS sweep). Not on DECODE.",
+   "why": "A German Embassy code telegram of the last weeks before unrestricted U-boat warfare, with a near-certain crib; a test of the 13040/0075 codes on known text.",
+   "importance": 4,
+   "solvability": 3,
+   "difficulty": 3,
+   "score_note": "Scored from the NARA OCR of the scans during the Oct 2026 NARA bulk-scan triage (research/nara_triage_b/); image not viewed",
+   "verify": "View roll 166 frames 0785-0786 and transcribe; check Room 40 decrypts (TNA HW 7, ADM 223/ADM 137) for 11 Jan 1917; align with the German memorandum text (frames 0769-0775).",
+   "links": [
+    {
+     "label": "M367 roll 166 (763.72111/4226-4500), naId 27179174",
+     "href": "https://catalog.archives.gov/id/27179174"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "NARA catalogue bulk-scan triage (RG 59 1906-1950)",
+   "prior_art": "not found in print (27 Oct 2026: web search on Bernstorff/13040/Room 40, repo known.py); Room 40 probably read it at the time",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 658,
+   "counted": true,
+   "year": 1917,
+   "date": "May 1917 - Jan 1918",
+   "title": "German Minister at Lima (Perl) ↔ German legations Santiago, Buenos Aires, Montevideo, Mexico: copies of cipher telegrams obtained by the US Legation Lima",
+   "correspondents": "German Legation Lima (Minister Perl; later Weyers) ↔ German legations in Santiago, Buenos Aires, Montevideo and Mexico",
+   "place": "Lima / Santiago / Buenos Aires",
+   "language": "German",
+   "region": "Americas",
+   "period": "1901-1950",
+   "shelfmark": "NARA RG 59, Central Decimal File 1910-29, 862.20223 (German military activities in Peru), sub-nos. 4-99",
+   "folio_note": "Known only from the purport list (M973 roll 207 frames 1008-1014): about 70 cables from Callao-Lima each transmitting 1-7 'telegrams in German cipher' (June 1917 - Jan 1918), Lima despatch 342 of 6 June 1917 'copies of cipher code messages exchanged between German diplomatic officers', and the Department's relays 'FOR BELL FROM HARRISON' to London. The 862.20223 file itself is not among the scanned frames.",
+   "cls": "B",
+   "status": "Partially read at the time: London (Bell / Gunther, i.e. Room 40 via the US Embassy) cabled back the 'substance' of most batches; Lima 85 (9 Oct 1917) reports some messages could not be deciphered. Verbatim decodes not listed. Not on DECODE; not in the repo.",
+   "why": "German diplomatic traffic along the west coast of South America in 1917, with a contemporary partial reading to check against.",
+   "importance": 3,
+   "solvability": 1,
+   "difficulty": 3,
+   "score_note": "Scored from the M973 purport-list OCR during the Oct 2026 NARA bulk-scan triage (research/nara_triage_b/); the file itself not seen",
+   "verify": "Locate 862.20223 in the RG 59 Central Decimal File 1910-29 (not microfilmed?); check whether the cipher texts are in the file and whether the London 'substance' telegrams cover them all.",
+   "links": [
+    {
+     "label": "M973 roll 207 purport list 862.00-862.348, naId 87662081",
+     "href": "https://catalog.archives.gov/id/87662081"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "NARA catalogue bulk-scan triage (RG 59 1906-1950)",
+   "prior_art": "substance read by Room 40 at the time per the purport list; no publication found (27 Oct 2026)",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 659,
+   "counted": true,
+   "region": "Other",
+   "period": "1901-1950",
+   "language": "unknown",
+   "place": "unknown",
+   "cls": "C",
+   "seen": "catalogue",
+   "source": "NARA bulk-scan triage C sweep",
+   "prior_art": "open (checked 27 Oct 2026: repo known.py, nara_military + nara_catalog READMEs; no published reading found)",
+   "score_note": "Scored from the NARA catalogue description during the Oct 2026 NARA bulk-scan triage, slice C (research/nara_triage_c/); not viewed",
+   "year": 1944,
+   "date": "1944",
+   "title": "GC&CS Cryptographic Co-ordination and Records section: file of \"Unsolved Problems\", 1944",
+   "correspondents": "unknown (various unidentified systems; CCR, Government Code & Cipher School)",
+   "shelfmark": "NARA RG 457, Archival and Historian's Source Files, 47647A \"Cryptographic Co-ordination and Records - Unsolved Problems - CCR - 1944\" (naId 23891396)",
+   "folio_note": "One file unit; size unknown; not digitised.",
+   "status": "Catalogue title names it as a file of unsolved problems kept by the British CCR section (which logged unidentified and unread systems). Not digitised (no digital objects). Contents may be mostly machine or one-time traffic; hand systems among them unknown. Not on DECODE.",
+   "why": "A wartime register of traffic GC&CS could not read; any hand-cipher or code items in it are, by definition, unsolved at the time.",
+   "importance": 3,
+   "solvability": 1,
+   "difficulty": 4,
+   "verify": "Order a copy from NARA College Park (RG 457, entry for Archival and Historian's Source Files, item 47647A); list the problems and keep only hand systems before 1951.",
+   "links": [
+    {
+     "label": "NARA catalogue file unit",
+     "href": "https://catalog.archives.gov/id/23891396"
+    }
+   ],
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 660,
+   "counted": true,
+   "region": "Americas",
+   "period": "1901-1950",
+   "language": "unknown",
+   "place": "unknown",
+   "cls": "C",
+   "seen": "catalogue",
+   "source": "NARA bulk-scan triage C sweep",
+   "prior_art": "open (checked 27 Oct 2026: repo known.py, nara_military + nara_catalog READMEs; no published reading found)",
+   "score_note": "Scored from the NARA catalogue description during the Oct 2026 NARA bulk-scan triage, slice C (research/nara_triage_c/); not viewed",
+   "year": 1937,
+   "date": "18 Oct 1937",
+   "title": "Messages studied (by SIS) for a hidden or code message, 1937",
+   "correspondents": "unknown",
+   "shelfmark": "NARA RG 457, Historic Cryptographic Collection, NR 4568 (ZEMA33, 9027A), \"Messages Studied for Hidden or Code Message\", 18 Oct 1937 (naId 2811333)",
+   "folio_note": "Size unknown; not digitised.",
+   "status": "Title only: messages examined for concealed text. Outcome of the study not stated. Not digitised.",
+   "why": "A suspected concealment case referred to Friedman's SIS; if it was never resolved, the messages are an open problem with a known context.",
+   "importance": 2,
+   "solvability": 1,
+   "difficulty": 3,
+   "verify": "Order NR 4568 from College Park; check whether the file records a finding.",
+   "links": [
+    {
+     "label": "NARA catalogue file unit",
+     "href": "https://catalog.archives.gov/id/2811333"
+    }
+   ],
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 661,
+   "counted": true,
+   "region": "Americas",
+   "period": "1901-1950",
+   "language": "Spanish (probably)",
+   "place": "unknown",
+   "cls": "C",
+   "seen": "catalogue",
+   "source": "NARA bulk-scan triage C sweep",
+   "prior_art": "open (checked 27 Oct 2026: repo known.py, nara_military + nara_catalog READMEs; no published reading found)",
+   "score_note": "Scored from the NARA catalogue description during the Oct 2026 NARA bulk-scan triage, slice C (research/nara_triage_c/); not viewed",
+   "year": 1942,
+   "date": "13 Nov 1942",
+   "title": "Raphael Pino Roca → Primitivo Yella, coded message, 1942",
+   "correspondents": "Raphael Pino Roca → Primitivo Yella",
+   "shelfmark": "NARA RG 457, Historic Cryptographic Collection, NR 4407 (ZEMA191, 5921A), \"Coded Message from Raphael Pino Roca to Primitivo Yella\", 13 Nov 1942 (naId 2811167)",
+   "folio_note": "One message; not digitised.",
+   "status": "A private coded message referred to the Army cryptanalysts in 1942 (censorship or FBI case, by its filing). Whether SIS read it is not stated. Not digitised.",
+   "why": "A wartime suspect message between two named Spanish-speaking individuals; reading it would close a small counter-intelligence case.",
+   "importance": 2,
+   "solvability": 1,
+   "difficulty": 3,
+   "verify": "Order NR 4407; look for a worksheet or solution in the file; search the names in RG 65 / RG 216 censorship records.",
+   "links": [
+    {
+     "label": "NARA catalogue file unit",
+     "href": "https://catalog.archives.gov/id/2811167"
+    }
+   ],
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 662,
+   "counted": true,
+   "region": "Americas",
+   "period": "1801-1900",
+   "language": "English",
+   "place": "unknown",
+   "cls": "C",
+   "seen": "catalogue",
+   "source": "NARA bulk-scan triage C sweep",
+   "prior_art": "open (checked 27 Oct 2026: repo known.py, nara_military + nara_catalog READMEs; no published reading found)",
+   "score_note": "Scored from the NARA catalogue description during the Oct 2026 NARA bulk-scan triage, slice C (research/nara_triage_c/); not viewed",
+   "year": 1862,
+   "date": "1862-1865",
+   "title": "American Civil War letters, messages and cipher instructions, 1862-1865 (NSA historian's file)",
+   "correspondents": "unknown (Union and/or Confederate)",
+   "shelfmark": "NARA RG 457, Archival and Historian's Source Files, item 9122 \"American Civil War Letters, Messages, Information, Cipher Instructions, 1862-1865\" (naId 23890756)",
+   "folio_note": "Size unknown; not digitised.",
+   "status": "Historian's source file; may be copies of known Union route-cipher and Confederate Vigenère material, or may include messages never read. Not digitised. Distinct from the RG 107 Eckert ledgers and the Greenhow items already catalogued.",
+   "why": "Civil War cipher messages with keys in the same file would be a quick key alignment; unread ones would join the Greenhow/Johnston family already in the catalogue.",
+   "importance": 3,
+   "solvability": 1,
+   "difficulty": 2,
+   "verify": "Order item 9122; compare any ciphertext with the Union route books and the three Confederate keys.",
+   "links": [
+    {
+     "label": "NARA catalogue file unit",
+     "href": "https://catalog.archives.gov/id/23890756"
+    }
+   ],
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 663,
+   "counted": true,
+   "region": "Americas",
+   "period": "1901-1950",
+   "language": "German (presumed)",
+   "place": "Buenos Aires",
+   "cls": "C",
+   "seen": "catalogue",
+   "source": "NARA bulk-scan triage C sweep",
+   "prior_art": "open (checked 27 Oct 2026: repo known.py, nara_military + nara_catalog READMEs; no published reading found)",
+   "score_note": "Scored from the NARA catalogue description during the Oct 2026 NARA bulk-scan triage, slice C (research/nara_triage_c/); not viewed",
+   "year": 1945,
+   "date": "16 Jun 1945",
+   "title": "Code messages found in the archives of the former German Embassy, Buenos Aires (report of 1945)",
+   "correspondents": "German Embassy Buenos Aires / German agents in Argentina → Berlin (presumed)",
+   "shelfmark": "NARA RG 457, Historic Cryptographic Collection, NR 2054 (CBLK11, 158A), \"Information on Code Messages Found in Ex-German Embassy Archives - Argentina\", 16 Jun 1945 (naId 2808583)",
+   "folio_note": "Size unknown; not digitised.",
+   "status": "Title says code messages were found in the seized embassy archive; whether they were read is not stated. Related: NR 1403 \"German Clandestine Radio Code Messages and Axis Agents in Argentina\" (1944, naId 2807843), most of which the FCC/Coast Guard read at the time. Not digitised.",
+   "why": "Embassy-held code messages of the German network in Argentina; any not matched to a known decrypt would add to the history of the Argentine Axis networks.",
+   "importance": 3,
+   "solvability": 1,
+   "difficulty": 3,
+   "verify": "Order NR 2054 and NR 1403; check against the published Coast Guard (CGI) decrypts of the Argentine clandestine circuits.",
+   "links": [
+    {
+     "label": "NR 2054 file unit",
+     "href": "https://catalog.archives.gov/id/2808583"
+    },
+    {
+     "label": "NR 1403 file unit",
+     "href": "https://catalog.archives.gov/id/2807843"
+    }
+   ],
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 664,
+   "counted": true,
+   "region": "Americas",
+   "period": "1901-1950",
+   "language": "unknown",
+   "place": "unknown",
+   "cls": "C",
+   "seen": "catalogue",
+   "source": "NARA bulk-scan triage C sweep",
+   "prior_art": "open (checked 27 Oct 2026: repo known.py, nara_military + nara_catalog READMEs; no published reading found)",
+   "score_note": "Scored from the NARA catalogue description during the Oct 2026 NARA bulk-scan triage, slice C (research/nara_triage_c/); not viewed",
+   "year": 1917,
+   "date": "7 Dec 1917",
+   "title": "Cipher forwarded to MI-8 by Major Mauborgne, 1917",
+   "correspondents": "Maj. Joseph O. Mauborgne (Signal Corps) → MI-8 (Yardley)",
+   "shelfmark": "NARA RG 457, Historic Cryptographic Collection, NR 2089 (CBLK15, 8586A), \"Cipher Forwarded to M18 by Major Mauborgne\", 7 Dec 1917 (naId 2808618)",
+   "folio_note": "Size unknown; not digitised.",
+   "status": "A cipher sent to MI-8 for solution; outcome not in the title. Could be a proposed US system rather than an intercept. Not digitised.",
+   "why": "If an intercepted message, it is a WWI item MI-8 was asked to break; if a proposed system, it is a key lead only.",
+   "importance": 2,
+   "solvability": 1,
+   "difficulty": 3,
+   "verify": "Order NR 2089; decide whether it is ciphertext or a system proposal.",
+   "links": [
+    {
+     "label": "NARA catalogue file unit",
+     "href": "https://catalog.archives.gov/id/2808618"
+    }
+   ],
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 665,
+   "counted": true,
+   "region": "Other",
+   "period": "1901-1950",
+   "language": "unknown (German traffic presumed)",
+   "place": "unknown",
+   "cls": "C",
+   "seen": "catalogue",
+   "source": "NARA bulk-scan triage C sweep",
+   "prior_art": "open (checked 27 Oct 2026: repo known.py, nara_military + nara_catalog READMEs; no published reading found)",
+   "score_note": "Scored from the NARA catalogue description during the Oct 2026 NARA bulk-scan triage, slice C (research/nara_triage_c/); not viewed",
+   "year": 1915,
+   "date": "20 Sep 1915",
+   "title": "British naval officer asks the US for help in solving ciphers, 1915",
+   "correspondents": "unknown British naval officer → US Navy/War Department",
+   "shelfmark": "NARA RG 457, Historic Cryptographic Collection, NR 4841 (ZEMA59, 8149A), \"British Naval Officer's Request for U.S. Aid in Solving Ciphers\", 20 Sep 1915 (naId 2811605)",
+   "folio_note": "Size unknown; not digitised.",
+   "status": "A request, while the US was neutral, for help with ciphers the British had not solved. Whether specimens are enclosed is not stated. Not digitised.",
+   "why": "Would show which WWI enemy messages the Royal Navy could not read in 1915, before Room 40 matured.",
+   "importance": 3,
+   "solvability": 1,
+   "difficulty": 4,
+   "verify": "Order NR 4841; see whether the enclosures carry ciphertext and whether it was later read.",
+   "links": [
+    {
+     "label": "NARA catalogue file unit",
+     "href": "https://catalog.archives.gov/id/2811605"
+    }
+   ],
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 666,
+   "counted": true,
+   "region": "Americas",
+   "period": "1901-1950",
+   "language": "German",
+   "place": "unknown",
+   "cls": "C",
+   "seen": "catalogue",
+   "source": "NARA bulk-scan triage C sweep",
+   "prior_art": "open (checked 27 Oct 2026: repo known.py, nara_military + nara_catalog READMEs; no published reading found)",
+   "score_note": "Scored from the NARA catalogue description during the Oct 2026 NARA bulk-scan triage, slice C (research/nara_triage_c/); not viewed",
+   "year": 1944,
+   "date": "1942-1945",
+   "title": "Coded messages in German POW letters and the cipher system of German POWs in US camps, 1942-1945",
+   "correspondents": "German prisoners of war in US camps → families/comrades",
+   "shelfmark": "NARA RG 457, Historic Cryptographic Collection, NR 2892 (CBNK11, 3400A), \"Cipher System Used by German PW'S in U.S. Camps\", 7 Apr 1945 (naId 2809479); NARA RG 38, CNSG serial files 3460/2 \"Coded Messages from German POWs Letters, 1942-1944\" (naId 7523906)",
+   "folio_note": "Two files; sizes unknown; not digitised.",
+   "status": "Censorship found coded passages in POW mail; one file describes the system (so at least part was understood), the Navy file holds the messages. Whether all were read is not stated. Not digitised.",
+   "why": "Hand ciphers improvised in captivity; unread letters would show what prisoners tried to pass out.",
+   "importance": 2,
+   "solvability": 1,
+   "difficulty": 2,
+   "verify": "Order both files; test the messages against the system described in NR 2892.",
+   "links": [
+    {
+     "label": "NR 2892 (RG 457)",
+     "href": "https://catalog.archives.gov/id/2809479"
+    },
+    {
+     "label": "CNSG 3460/2 (RG 38)",
+     "href": "https://catalog.archives.gov/id/7523906"
+    }
+   ],
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 667,
+   "counted": true,
+   "region": "Americas",
+   "period": "1901-1950",
+   "language": "Spanish",
+   "place": "unknown",
+   "cls": "C",
+   "seen": "catalogue",
+   "source": "NARA bulk-scan triage C sweep",
+   "prior_art": "open (checked 27 Oct 2026: repo known.py, nara_military + nara_catalog READMEs; no published reading found)",
+   "score_note": "Scored from the NARA catalogue description during the Oct 2026 NARA bulk-scan triage, slice C (research/nara_triage_c/); not viewed",
+   "year": 1935,
+   "date": "7 May 1935",
+   "title": "Peruvian coded dispatch (1935) and coded message of the commander of the Peruvian submarine division",
+   "correspondents": "Peruvian government / Peruvian Navy submarine division commander",
+   "shelfmark": "NARA RG 457, Historic Cryptographic Collection, NR 1478 (CBKH37, 5944A), \"Perwian [sic] Coded Dispatch\", 7 May 1935 (naId 2807918); RG 457 SIGINT Operational Analysis files, 9045 \"Code Message Sent by Commander of Peruvian Submarine Division\" (naId 7828759, undated)",
+   "folio_note": "Two file units; not digitised.",
+   "status": "Intercepted Peruvian code traffic held by SIS; no solution indicated in the titles. Not digitised.",
+   "why": "Peruvian diplomatic/naval code of the 1930s (Leticia war aftermath); small, but an unread Latin American state system.",
+   "importance": 2,
+   "solvability": 1,
+   "difficulty": 3,
+   "verify": "Order both; check RG 457 \"Cryptographic Codes and Ciphers: Peru\" files and the commercial code books (NR 404 Peruvian Commercial Code Book, 1912) as a possible base code.",
+   "links": [
+    {
+     "label": "NR 1478",
+     "href": "https://catalog.archives.gov/id/2807918"
+    },
+    {
+     "label": "9045",
+     "href": "https://catalog.archives.gov/id/7828759"
+    }
+   ],
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 668,
+   "counted": true,
+   "region": "Americas",
+   "period": "1901-1950",
+   "language": "Spanish",
+   "place": "unknown",
+   "cls": "C",
+   "seen": "catalogue",
+   "source": "NARA bulk-scan triage C sweep",
+   "prior_art": "open (checked 27 Oct 2026: repo known.py, nara_military + nara_catalog READMEs; no published reading found)",
+   "score_note": "Scored from the NARA catalogue description during the Oct 2026 NARA bulk-scan triage, slice C (research/nara_triage_c/); not viewed",
+   "year": 1942,
+   "date": "26 Dec 1942",
+   "title": "Bolivian commercial cipher cable intercepted in New York, 1942",
+   "correspondents": "unknown (Bolivian commercial sender → New York)",
+   "shelfmark": "NARA RG 457, Historic Cryptographic Collection, NR 2225 (CBLL24, 5918A), \"Bolivian Commercial Cipher Cable Intercepted in New York\", 26 Dec 1942 (naId 2808756)",
+   "folio_note": "One cable (presumed); not digitised.",
+   "status": "Cable censorship intercept; solution not stated. Not digitised.",
+   "why": "Wartime commercial code cables were screened for smuggling and espionage; minor.",
+   "importance": 1,
+   "solvability": 1,
+   "difficulty": 3,
+   "verify": "Order NR 2225; try the standard commercial codes (ABC, Bentley, Peterson) first.",
+   "links": [
+    {
+     "label": "NARA catalogue file unit",
+     "href": "https://catalog.archives.gov/id/2808756"
+    }
+   ],
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 669,
+   "counted": true,
+   "region": "Other",
+   "period": "1901-1950",
+   "language": "Russian",
+   "place": "Constantinople",
+   "cls": "C",
+   "seen": "catalogue",
+   "source": "NARA bulk-scan triage C sweep",
+   "prior_art": "open (checked 27 Oct 2026: repo known.py, nara_military + nara_catalog READMEs; no published reading found)",
+   "score_note": "Scored from the NARA catalogue description during the Oct 2026 NARA bulk-scan triage, slice C (research/nara_triage_c/); not viewed",
+   "year": 1921,
+   "date": "1921",
+   "title": "Russian coded messages of 1921 provided by the US High Commissioner at Constantinople",
+   "correspondents": "Soviet or White Russian senders (unknown)",
+   "shelfmark": "NARA RG 457, Archival and Historian's Source Files, 6707N \"Russian Coded Messages, 1921 (Provided by U.S. High Commissioner Constantinople)\" (naId 23890165)",
+   "folio_note": "Size unknown; not digitised.",
+   "status": "Messages passed by Admiral Bristol's office to MI-8; whether read is not stated (MI-8 worked on Soviet traffic 1920-21 with mixed success: see the RG 457 4896 Moscow-Vienna/Berlin worksheets). Not digitised.",
+   "why": "Constantinople in 1921 was the hub of Wrangel's evacuated army and Soviet-Turkish contacts; unread code here is early Soviet or White diplomatic traffic.",
+   "importance": 3,
+   "solvability": 1,
+   "difficulty": 4,
+   "verify": "Order 6707N; compare with the 1920-21 Soviet systems described in TICOM 1036 and the 4896 worksheets.",
+   "links": [
+    {
+     "label": "NARA catalogue file unit",
+     "href": "https://catalog.archives.gov/id/23890165"
+    }
+   ],
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 670,
+   "counted": true,
+   "region": "Other",
+   "period": "1901-1950",
+   "language": "Russian",
+   "place": "unknown",
+   "cls": "C",
+   "seen": "catalogue",
+   "source": "NARA bulk-scan triage C sweep",
+   "prior_art": "open (checked 27 Oct 2026: repo known.py, nara_military + nara_catalog READMEs; no published reading found)",
+   "score_note": "Scored from the NARA catalogue description during the Oct 2026 NARA bulk-scan triage, slice C (research/nara_triage_c/); not viewed",
+   "year": 1931,
+   "date": "1931-1932",
+   "title": "Intercepted Russian (Soviet) coded messages, 1931-1932",
+   "correspondents": "Soviet senders (unknown)",
+   "shelfmark": "NARA RG 457, Archival and Historian's Source Files, 6616N \"Intercepted Russian Coded Messages, 1931-32\" (naId 23890161)",
+   "folio_note": "Size unknown; not digitised.",
+   "status": "SIS-era intercepts; Soviet systems of the period were mostly additive codes or one-time pads, so this may be out of hand-cipher scope. Not digitised.",
+   "why": "Early SIS work on Soviet traffic; only worth pursuing if the file shows a hand system.",
+   "importance": 2,
+   "solvability": 1,
+   "difficulty": 5,
+   "verify": "Order 6616N; drop it if the traffic is one-time pad.",
+   "links": [
+    {
+     "label": "NARA catalogue file unit",
+     "href": "https://catalog.archives.gov/id/23890161"
+    }
+   ],
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 671,
+   "counted": true,
+   "region": "Americas",
+   "period": "1901-1950",
+   "language": "German / Spanish / English",
+   "place": "unknown",
+   "cls": "C",
+   "seen": "catalogue",
+   "source": "NARA bulk-scan triage C sweep",
+   "prior_art": "open (checked 27 Oct 2026: repo known.py, nara_military + nara_catalog READMEs; no published reading found)",
+   "score_note": "Scored from the NARA catalogue description during the Oct 2026 NARA bulk-scan triage, slice C (research/nara_triage_c/); not viewed",
+   "year": 1917,
+   "date": "2 Nov 1917",
+   "title": "Postal censorship and German espionage: codes and ciphers file, 1917",
+   "correspondents": "German agents in the US and Mexico (presumed) → various",
+   "shelfmark": "NARA RG 457, Historic Cryptographic Collection, NR 4458 (ZEMA20, 4895A), \"Censorship and German Espionage-Codes and Ciphers\", 2 Nov 1917 (naId 2811219)",
+   "folio_note": "Size unknown; not digitised.",
+   "status": "MI-8 / censorship file on codes and ciphers found in suspect mail, 1917. Many such letters were read (Witzke, von Igel), so some contents will be solved. Not digitised.",
+   "why": "A WWI censorship crypto file; any unread specimen is a German agent cipher with a known context.",
+   "importance": 3,
+   "solvability": 1,
+   "difficulty": 3,
+   "verify": "Order NR 4458; set aside items with solutions, list the rest.",
+   "links": [
+    {
+     "label": "NARA catalogue file unit",
+     "href": "https://catalog.archives.gov/id/2811219"
+    }
+   ],
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 672,
+   "counted": true,
+   "region": "Americas",
+   "period": "1901-1950",
+   "language": "English (presumed)",
+   "place": "unknown",
+   "cls": "C",
+   "seen": "catalogue",
+   "source": "NARA bulk-scan triage C sweep",
+   "prior_art": "open (checked 27 Oct 2026: repo known.py, nara_military + nara_catalog READMEs; no published reading found)",
+   "score_note": "Scored from the NARA catalogue description during the Oct 2026 NARA bulk-scan triage, slice C (research/nara_triage_c/); not viewed",
+   "year": 1942,
+   "date": "1942",
+   "title": "\"Amateur sends in code to War Department\", 1942",
+   "correspondents": "unnamed amateur → War Department",
+   "shelfmark": "NARA RG 457, Archival and Historian's Source Files, 47548A \"Amateur Sends in Code to War Department 1942\" (naId 23891323)",
+   "folio_note": "Size unknown; not digitised.",
+   "status": "A civilian-submitted cryptogram (challenge or proposed system). Low historical value; listed because such submissions are sometimes unsolved. Not digitised.",
+   "why": "Minor; only of interest if it is an unsolved challenge cipher.",
+   "importance": 1,
+   "solvability": 1,
+   "difficulty": 3,
+   "verify": "Order 47548A.",
+   "links": [
+    {
+     "label": "NARA catalogue file unit",
+     "href": "https://catalog.archives.gov/id/23891323"
+    }
+   ],
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 673,
+   "counted": true,
+   "region": "Americas",
+   "period": "1901-1950",
+   "language": "unknown",
+   "place": "unknown",
+   "cls": "C",
+   "seen": "catalogue",
+   "source": "NARA bulk-scan triage C sweep",
+   "prior_art": "open (checked 27 Oct 2026: repo known.py, nara_military + nara_catalog READMEs; no published reading found)",
+   "score_note": "Scored from the NARA catalogue description during the Oct 2026 NARA bulk-scan triage, slice C (research/nara_triage_c/); not viewed",
+   "year": 1935,
+   "date": "1932-1941",
+   "title": "ONI A6-3 files: coded messages sent in by civilians and the Coast Guard for analysis, 1932-1941",
+   "correspondents": "L. K. Birinyi (1935, \"alleged discovery of coded message\"); US Coast Guard (1939, coded message received, ET14); Uvan Handy (1934); E. De Forest (1941); Walter J. Sosnoski (1939) → Office of Naval Intelligence / OP-20-G",
+   "shelfmark": "NARA RG 38, Office of the CNO, Formerly Security Classified Administrative Correspondence, A6-3: Birinyi (naId 481141482), A6-3/ET14 Coast Guard (481141459), Handy (481141488), De Forest (481141485), Sosnoski (481141480); memos acknowledging civilian ciphers and deciphered messages 1931- (481141495)",
+   "folio_note": "Six small file units; not digitised.",
+   "status": "Requests to the Navy to read messages held by private persons and the Coast Guard. Outcome not stated in the titles. Birinyi (Louis K. Birinyi, Hungarian-American writer) claimed a discovered coded message. Not digitised.",
+   "why": "Each is a ciphertext someone could not read in the 1930s; the Coast Guard one may be rum-runner or smuggling traffic.",
+   "importance": 2,
+   "solvability": 1,
+   "difficulty": 3,
+   "verify": "Order the six A6-3 folders from College Park (RG 38 CNO security-classified administrative correspondence, 1927-1942).",
+   "links": [
+    {
+     "label": "Birinyi 1935",
+     "href": "https://catalog.archives.gov/id/481141482"
+    },
+    {
+     "label": "Coast Guard 1939",
+     "href": "https://catalog.archives.gov/id/481141459"
+    },
+    {
+     "label": "Handy 1934",
+     "href": "https://catalog.archives.gov/id/481141488"
+    },
+    {
+     "label": "De Forest 1941",
+     "href": "https://catalog.archives.gov/id/481141485"
+    },
+    {
+     "label": "Sosnoski 1939",
+     "href": "https://catalog.archives.gov/id/481141480"
+    },
+    {
+     "label": "memos 1931-",
+     "href": "https://catalog.archives.gov/id/481141495"
+    }
+   ],
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 674,
+   "counted": true,
+   "region": "Americas",
+   "period": "1901-1950",
+   "language": "German or Spanish (presumed)",
+   "place": "Tampico",
+   "cls": "C",
+   "seen": "catalogue",
+   "source": "NARA bulk-scan triage C sweep",
+   "prior_art": "open (checked 27 Oct 2026: repo known.py, nara_military + nara_catalog READMEs; no published reading found)",
+   "score_note": "Scored from the catalogue description and the OCR snippet of the flagged frame during the Oct 2026 NARA bulk-scan triage, slice C (research/nara_triage_c/); image not viewed",
+   "year": 1917,
+   "date": "27 Aug 1917",
+   "title": "The \"Tampico message\": Riverbank reports it cannot solve it, 1917",
+   "correspondents": "unknown sender at Tampico (German agent traffic presumed) / Riverbank Laboratories (Fabyan, Friedman) → War College Division / MIS",
+   "shelfmark": "NARA RG 165, War College Division general correspondence, file 10020-60 (27 Aug 1917; NARA microfilm M1024); indexed in M912 (Name Index, roll 34, frame 0947, naId 221122451)",
+   "folio_note": "Index card entries 10020-41 to 10020-64 (July-Sept 1917): \"repts. re inability to solve Tampico message\" (10020-60); \"fwds. monthly report of Sept. 1-17 undeciphered messages\" (10020-64); \"fwds two cipher code messages to be translated\" (10020-61).",
+   "status": "The M912 index card (OCR of frame 0947) shows Riverbank reporting that it could not solve a message from Tampico, and sending monthly lists of undeciphered messages. The M1024 roll for files 10018-10049 (roll 310, naIds 267255625 + 267257126) was fetched and searched: frame 0051 is a withdrawal card, \"File 10020 ... Transferred to: Military Information Division\", so the file is in the MID correspondence (RG 165 entry 65), which is not digitised.",
+   "why": "Tampico was the centre of German agent activity against the Mexican oil fields in 1917; the message and the \"undeciphered messages\" reports are a list of what Friedman's first unit could not break.",
+   "importance": 4,
+   "solvability": 2,
+   "difficulty": 3,
+   "verify": "Order MID file 10020 (RG 165 entry 65, MID correspondence 1917-41) from College Park, items 10020-41 to -64; check the Riverbank papers in the George C. Marshall Foundation Friedman collection for the same monthly reports.",
+   "links": [
+    {
+     "label": "M912 index card reel (frame 0947)",
+     "href": "https://catalog.archives.gov/id/221122451"
+    },
+    {
+     "label": "M1024 roll 310, withdrawal card frame 0051",
+     "href": "https://catalog.archives.gov/id/267255625"
+    }
+   ],
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 675,
+   "counted": true,
+   "region": "Americas",
+   "period": "1901-1950",
+   "language": "German (presumed)",
+   "place": "Arizona / Sonora border (presumed)",
+   "cls": "C",
+   "seen": "catalogue",
+   "source": "NARA bulk-scan triage C sweep",
+   "prior_art": "open (checked 27 Oct 2026: repo known.py, nara_military + nara_catalog READMEs; no published reading found)",
+   "score_note": "Scored from the catalogue description and the OCR snippet of the flagged frame during the Oct 2026 NARA bulk-scan triage, slice C (research/nara_triage_c/); image not viewed",
+   "year": 1918,
+   "date": "20 May 1918",
+   "title": "Letter in code possibly for Gustav Möller, German consul at Guaymas; MID could not decipher it, 1918",
+   "correspondents": "unknown → Gustav Möller (German consul, Guaymas, Sonora) (presumed)",
+   "shelfmark": "NARA RG 165, MID correspondence 1917-41 (index M1194 roll 159, frame 1644, naId 118288769); MID file cited on the card as \"8-II\" / postal censorship",
+   "folio_note": "Index card: \"Re ltr. ... written in code which [MID] could not decipher. States it may have been intended for Gustav Moller, Ger. Consul stationed at Guaymas, Mex.\"",
+   "status": "Known only from the MID name-index card (OCR). The letter itself sits in the MID case file; whether it was read later is unknown.",
+   "why": "A German consular-network letter on the Sonora border in 1918.",
+   "importance": 2,
+   "solvability": 2,
+   "difficulty": 3,
+   "verify": "Read frame 1644 of M1194 roll 159 for the full file number; locate the MID file (M1194 index → RG 165 entry 65) and order or find it digitised.",
+   "links": [
+    {
+     "label": "M1194 index roll 159",
+     "href": "https://catalog.archives.gov/id/118288769"
+    }
+   ],
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 676,
+   "counted": true,
+   "region": "Americas",
+   "period": "1901-1950",
+   "language": "Spanish (presumed)",
+   "place": "San Luis Potosí",
+   "cls": "C",
+   "seen": "catalogue",
+   "source": "NARA bulk-scan triage C sweep",
+   "prior_art": "open (checked 27 Oct 2026: repo known.py, nara_military + nara_catalog READMEs; no published reading found)",
+   "score_note": "Scored from the catalogue description and the OCR snippet of the flagged frame during the Oct 2026 NARA bulk-scan triage, slice C (research/nara_triage_c/); image not viewed",
+   "year": 1918,
+   "date": "26 Jan 1918",
+   "title": "Message enclosed in a letter from San Luis Potosí that the postal censor could not decipher, 1918",
+   "correspondents": "unknown writer (San Luis Potosí, Mexico) → his wife",
+   "shelfmark": "NARA RG 165, MID file 10632-27 (postal censor report, 26 Jan 1918); index M1194 roll 251, frame 0196 (naId 118524655)",
+   "folio_note": "Index card: \"Postal Censor Rept: letr. fr. --- to his wife Jan. 26-18 enclos. message which he could not decipher\" (the report concerns pro-German propaganda in El Heraldo de México).",
+   "status": "Known from the MID index card only. File 10632 is in the MID series (not yet traced to a digitised reel).",
+   "why": "Minor WWI Mexico censorship item.",
+   "importance": 1,
+   "solvability": 2,
+   "difficulty": 3,
+   "verify": "Locate MID file 10632-27 (RG 165 entry 65); check whether the enclosure survives.",
+   "links": [
+    {
+     "label": "M1194 index roll 251",
+     "href": "https://catalog.archives.gov/id/118524655"
+    }
+   ],
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 677,
+   "counted": true,
+   "region": "Central Europe",
+   "period": "1901-1950",
+   "language": "German",
+   "place": "unknown",
+   "cls": "C",
+   "seen": "catalogue",
+   "source": "NARA bulk-scan triage C sweep",
+   "prior_art": "open (checked 27 Oct 2026: repo known.py, nara_military + nara_catalog READMEs; no published reading found)",
+   "score_note": "Scored from the catalogue description and the OCR snippet of the flagged frame during the Oct 2026 NARA bulk-scan triage, slice C (research/nara_triage_c/); image not viewed",
+   "year": 1918,
+   "date": "May 1918",
+   "title": "German agent's correspondence in cipher via Sweden and Switzerland (St. Gall intermediary), 1918",
+   "correspondents": "German agent in the US → Berlin, via a Swiss intermediary at St. Gallen",
+   "shelfmark": "NARA RG 165, MID correspondence, index M1194 roll 154, frame 0328 (naId 118276148), card dated 17 May 1918",
+   "folio_note": "Index card: \"memo repts re active & authoritative Ger. agent corresp. in cypher via Sweden & Switz with Berlin; Swiss intermediary St. Gall\".",
+   "status": "Index card only; whether specimens are in the MID file and whether MI-8 read them is unknown.",
+   "why": "A German intelligence line from the US to Berlin in 1918; if specimens exist they fall in MI-8's period.",
+   "importance": 2,
+   "solvability": 1,
+   "difficulty": 3,
+   "verify": "Read the full card (frame 0328) for the name and file number; trace the MID file.",
+   "links": [
+    {
+     "label": "M1194 index roll 154",
+     "href": "https://catalog.archives.gov/id/118276148"
+    }
+   ],
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 678,
+   "counted": true,
+   "region": "Americas",
+   "period": "1901-1950",
+   "language": "English",
+   "place": "New York and district offices (Milwaukee, Philadelphia, Sandusky, Los Angeles, Phoenix ...)",
+   "cls": "A",
+   "seen": "catalogue",
+   "source": "NARA bulk-scan triage C sweep",
+   "prior_art": "open (checked 27 Oct 2026: repo known.py, nara_military + nara_catalog READMEs; no published reading found)",
+   "score_note": "Scored from the catalogue description and the OCR snippet of the flagged frame during the Oct 2026 NARA bulk-scan triage, slice C (research/nara_triage_c/); image not viewed",
+   "year": 1921,
+   "date": "Sep 1920 - Apr 1921",
+   "title": "Communist Party of America underground: book-cipher addresses and names in letters seized at 170 Bleecker St., New York, 1920-21",
+   "correspondents": "District organizers and members (signing D.O. 5, J. Mortin, Frederick Mayer ...) ↔ the Executive Secretary (\"EXSEC\", Paul Holt), Communist Party of America",
+   "shelfmark": "NARA RG 65, Investigative Case Files of the Bureau of Investigation 1908-1922, Old German Files (M1085) roll 940, case 202600 (\"202600-1775 THRU 202600-1949-1 (4 of 4)\", naId 369272950), multi-page PDFs M1085-940A, -940B, -940C (\"Copies of Letters & Documents Found at 170 Bleecker St.\")",
+   "folio_note": "OCR count: 77 runs of line/letter fraction groups (e.g. \"(New code) 3/3 3/4 2/8 3/7 1/14 - 7/3 2/7 4/4 ...\", \"Old code P 14 ... 14/15 2/1 6/4\"), about 2,400 fraction tokens over the three PDFs. 27 runs are followed by a Bureau \"Decode:\" or \"the above code reads as follows\" line; about 50 runs show no decode nearby. 940C also copies the party's own instruction for the system (count lines down, letters across on a set page; a dash between words).",
+   "status": "Seen in the OCR of the digitised reel: Bureau agents copied the seized letters and decoded many of the coded addresses (class A: decodes in the same file give cribs for the page). The undecoded runs are names, addresses and telegraph covers. Not on DECODE; nothing in the repo.",
+   "why": "The early US Communist underground (after the Palmer raids) hid its contact network in a book code; the undecoded runs would name more of that network, and the system is a clean example of a period book cipher.",
+   "importance": 2,
+   "solvability": 4,
+   "difficulty": 2,
+   "verify": "Open M1085-940A/B/C from the reel record, pair each decoded run with its plaintext to rebuild the key page(s) (\"old code\" P 14 and the \"new code\"), then read the runs without a decode; check the other parts of case 202600 on roll 940 for more.",
+   "links": [
+    {
+     "label": "M1085 roll 940, case 202600 (4 of 4)",
+     "href": "https://catalog.archives.gov/id/369272950"
+    }
+   ],
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 679,
+   "counted": true,
+   "region": "Other",
+   "period": "1901-1950",
+   "language": "German / Italian / unknown",
+   "place": "unknown",
+   "cls": "C",
+   "seen": "catalogue",
+   "source": "NARA bulk-scan triage C sweep",
+   "prior_art": "open (checked 27 Oct 2026: repo known.py, nara_military + nara_catalog READMEs; no published reading found)",
+   "score_note": "Scored from the NARA catalogue description during the Oct 2026 NARA bulk-scan triage, slice C (research/nara_triage_c/); not viewed",
+   "year": 1917,
+   "date": "unknown (c. 1913-1939)",
+   "title": "ONI naval attaché reports filed as \"Miscellaneous Code Messages\" and \"German/Italian Wireless Communications and Code Messages\"",
+   "correspondents": "US naval attachés → Office of Naval Intelligence (intercepted foreign messages, presumed)",
+   "shelfmark": "NARA RG 38, ONI Secret and Confidential Reports of Naval Attachés: P-10-c 23197, 23197-A, 23197&A \"Miscellaneous Code Messages\" (naIds 117834699, 117834700, 117840664); P-10-c 4435 and 4435-A \"German Wireless Communications & Code Messages\" (117834691, 117834692, 117840658; also Naval Attache Reports 196047419); P-10-c 23080 \"Italian Wireless Communications & Code Messages\" (117834698, 117840661)",
+   "folio_note": "File units; sizes unknown; not digitised.",
+   "status": "Titles only. Register numbers place 4435 early (WWI era) and 23080/23197 later (1920s-30s). Whether the messages were read is not stated. Not digitised.",
+   "why": "Attaché-collected foreign code messages; any unread ones are interwar naval or diplomatic codes.",
+   "importance": 2,
+   "solvability": 1,
+   "difficulty": 4,
+   "verify": "Order P-10-c 4435 and 23197 from College Park; date them from the ONI register (M975 index).",
+   "links": [
+    {
+     "label": "P-10-c 23197",
+     "href": "https://catalog.archives.gov/id/117834699"
+    },
+    {
+     "label": "P-10-c 4435",
+     "href": "https://catalog.archives.gov/id/117834691"
+    },
+    {
+     "label": "P-10-c 23080",
+     "href": "https://catalog.archives.gov/id/117834698"
+    }
+   ],
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 680,
+   "counted": true,
+   "region": "Americas",
+   "period": "1801-1900",
+   "language": "English",
+   "place": "Baltimore; New Orleans",
+   "cls": "B",
+   "seen": "catalogue",
+   "source": "NARA bulk-scan triage C sweep",
+   "prior_art": "open (checked 27 Oct 2026: repo known.py, nara_military + nara_catalog READMEs; no published reading found)",
+   "score_note": "Scored from the NARA catalogue description during the Oct 2026 NARA bulk-scan triage, slice C (research/nara_triage_c/); not viewed",
+   "year": 1867,
+   "date": "1865-1868",
+   "title": "Army cipher telegrams of the Middle Department (1865), Department of the Gulf and Fifth Military District (1866-68)",
+   "correspondents": "Department / district commanders (Hancock, Sheridan, ...) ↔ War Department and posts",
+   "shelfmark": "NARA RG 393, Records of U.S. Army Continental Commands: \"Press Copies of Cipher Telegrams Sent\", Middle Department, Jan-Jun 1865 (series naId 4486363, 0.5 in.); \"Telegrams Sent in Cipher\", Dept. of the Gulf / Fifth Military District, Dec 1866-Apr 1867 (5081118, 2 in.; scope note: \"These records are in cipher\"); \"Cipher Telegrams Sent and Received\", Fifth Military District, Office of Civil Affairs, Feb-Jun 1868 (5131597, 1 in.)",
+   "folio_note": "Three small series; not digitised.",
+   "status": "Series level only. If the volumes hold the enciphered texts without plain copies (the 5081118 scope note says they are in cipher), they are Union route-cipher telegrams of Reconstruction, readable with the War Department route books. Overlaps the nara_catalog README \"Union Army cipher telegram books\" note (not a row there).",
+   "why": "Reconstruction-era military government traffic from New Orleans (Sheridan, Hancock) in cipher; probably readable with known route books, adding texts not in the War Department plain copies.",
+   "importance": 2,
+   "solvability": 2,
+   "difficulty": 2,
+   "verify": "Order the three series; compare against the RG 107 M473 plain copies and the route books in the Eckert papers / Plum (1882).",
+   "links": [
+    {
+     "label": "Middle Dept 1865",
+     "href": "https://catalog.archives.gov/id/4486363"
+    },
+    {
+     "label": "Dept of the Gulf 1866-67",
+     "href": "https://catalog.archives.gov/id/5081118"
+    },
+    {
+     "label": "Fifth Mil. Dist. 1868",
+     "href": "https://catalog.archives.gov/id/5131597"
+    }
+   ],
    "ark": "",
    "scored": "sweep"
   }
