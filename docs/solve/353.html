@@ -40,7 +40,7 @@
 </div>
 
 <section class="hero solve">
-  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 353 · class B · priority 1.6 · open</p>
+  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 353 · class B · priority 1.6 · attempted, open</p>
   <h1>Duke of Ormond to the Earl of Arran, short passage in code ('a trial whether you are skilful in deciphering')</h1>
   <p class="sub">Ormond testing his son with a family cipher in the Popish-Plot year; small, but from a well-documented family of reconstructed Ormond keys.</p>
   <dl class="facts">
@@ -48,7 +48,7 @@
     <dt>Correspondents</dt><dd>James Butler, 1st Duke of Ormond → Richard Butler, Earl of Arran</dd>
     <dt>Place</dt><dd>unknown</dd>
     <dt>Language</dt><dd>English</dd>
-    <dt>Held at</dt><dd>HMC, Calendar of the MSS of the Marquess of Ormonde, New Series iv (1906), p. 93 (manuscript shelfmark unknown)</dd>
+    <dt>Held at</dt><dd>NLI, Ormonde MSS (letters 1665-80, MSS 2335-2362; NLI Sources MS UR 006261), volume and folio not identified; printed HMC, Calendar of the MSS of the Marquess of Ormonde, New Series iv (1906), p. 93</dd>
     <dt>Images</dt><dd><a href="https://archive.org/details/calendarofmanusc04greauoft" rel="noopener">source</a> · <a href="https://cryptiana.web.fc2.com/code/charlesii2.htm" rel="noopener">Cryptiana</a> · <a href="https://cryptoole.satoru.net/case.html?id=XX1678-1" rel="noopener">Cryptoole XX1678-1</a></dd>
   </dl>
 </section>
@@ -69,7 +69,7 @@ THE CIPHER
   Correspondents: James Butler, 1st Duke of Ormond → Richard Butler, Earl of Arran
   Place:          unknown
   Language:       English (expected)
-  Held at:        HMC, Calendar of the MSS of the Marquess of Ormonde, New Series iv (1906), p. 93 (manuscript shelfmark unknown)
+  Held at:        NLI, Ormonde MSS (letters 1665-80, MSS 2335-2362; NLI Sources MS UR 006261), volume and folio not identified; printed HMC, Calendar of the MSS of the Marquess of Ormonde, New Series iv (1906), p. 93
   Images/records:
     - source: https://archive.org/details/calendarofmanusc04greauoft
     - Cryptiana: https://cryptiana.web.fc2.com/code/charlesii2.htm
@@ -78,20 +78,21 @@ THE CIPHER
 WHAT IS KNOWN
   Known so far (checked 21 Oct 2026): Nothing deciphered. The passage (20 numbers, count corrected 20 Oct 2026) is printed in HMC Ormonde n.s. iv p. 93 without gloss; Tomokiyo's trial with the Ormond-Longford key was rejected.
   Still open: All 20 numbers: not deciphered; the 1678 Ormond-Arran code is not rebuilt and the manuscript (Ormonde papers, NLI) is unlocated; very short.
-  History and prior art: Cryptoole XX1678-1 (open). 20 numbers in the quoted passage: 445 and 342 before two runs ('726 91 33 425 93 57 384 54 700 720' and '732 573 526 32 643 214 55 440'); the calendar gives no gloss, although it prints Ormond's interlinear decipherments for neighbouring letters (pp. 105-107). Tomokiyo's rejected trial with the Ormond-Longford key is in an HTML comment on charlesii2.htm. Count corrected 20 Oct 2026 from Tomokiyo’s literal quotation: 2 + 10 + 8 = 20; the two runs alone contain 18. This is a transcription/count correction, not a decipherment.
-  Outcome so far: not yet attempted by the project
-  Prior-art check: open (checked 14 Oct 2026): no decipherment in HMC or elsewhere in Internet Archive full text (Turner, cipher-lab ormond-arran-1678, 25 Sept 2026)
-  Check first: Rebuild the Ormond-Longford 1680 cipher (HMC vol. v pp. 454 ff.) and the Southwell-Ormond 1677-78 code and test them; find the manuscript (Ormonde papers, NLI) for an interlinear gloss HMC did not print.
+  History and prior art: Cryptoole XX1678-1 (open). Attempted 27 Oct 2026, not solved (targets/ormond1678/). 20 figures, all distinct: 445 and 342 before two runs ('726 91 33 425 93 58 384 54 700 720' and '732 573 526 32 643 214 55 440'). The sixth figure of run 1 is printed 58 on the p. 93 scan; '57' came from Tomokiyo's quotation. The calendar gives no gloss. The 1678 Ormond-Arran code of Arran's 9 Feb letter (pp. 105-106) is a two-letter code, so it cannot be this one. The Ormond-Longford 1680 key puts the low figures on bare consonants (l, k, m, h), as in Tomokiyo's rejected trial. Too short and repeat-free for a ciphertext-only attack.
+  Outcome so far: attempted, open
+  Prior-art check: open (checked 27 Oct 2026): no decipherment in HMC n.s. iv-v, cryptiana charlesii2.htm or a web search; NLI catalogue records only
+  Check first: Have NLI MSS 2335-2362 searched for the 24 Jan 1677/8 letter, and Bodleian Carte 216-217 for Arran's copy as received; look for an interlinear decipherment or a numeric Ormond-Arran key of 1677-78. Ormond-Anglesey 1663 and Ormond-Longford 2-3 are untested.
   Class B: part of a key or a known cipher family of the same office is in print or on DECODE.
+  Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/tree/main/targets/ormond1678
 
 STEPS
 0. Set up. If you can run a shell, fork and clone the repository and work inside it:
      git clone https://github.com/dbourdeau/cyphersolver.git
    Then read, in this order: CONTRIBUTING.md (how a contribution is sent and credited); README.md, sections
-   "Repository layout" and "Conventions" (how readings are measured and named); and
-   lang/README.md (shared language models).
-   Put all your work in targets/&lt;writer&gt;&lt;year&gt;/ (a new folder, e.g. sega1593): transcription, key, decipherment, scripts. Write a NOTES.md that says
-   what the document is, the system, the key, the reading, and what is open and why. Keep WORKLOG.md there too:
+   "Repository layout" and "Conventions" (how readings are measured and named); targets/ormond1678/NOTES.md (everything
+   already tried on this cipher, with the files it used); and lang/README.md (shared language models).
+   Put all your work in targets/ormond1678/: transcription, key, decipherment, scripts. Add your findings to its NOTES.md
+   under a dated heading, without rewriting what is there. Keep WORKLOG.md there too:
    one dated line per step (transcription, hypothesis, solver run, crib, key found, control), failures included.
    Do not edit docs/ (the site is generated and rebuilt on merge) and do not commit large images: link them.
    If you cannot run a shell, do the same work in files you keep and send them with the issue below.
@@ -131,7 +132,7 @@ STEPS
      - not applicable: Not a cipher (clear text, shorthand, a key sheet, instructions), or the item could not be reached.
 
 REPORT BACK
-With a clone: open a pull request with your targets/&lt;writer&gt;&lt;year&gt;/ folder. Say in the description how you want to be
+With a clone: open a pull request with your targets/ormond1678/ folder. Say in the description how you want to be
   credited (name, initials or handle, and a link) and include the same points as the issue below.
 Without one: open an issue: https://github.com/dbourdeau/cyphersolver/issues/new?template=solution.yml&amp;title=Solution%3A+catalogue+353&amp;target=catalogue+353
 (other kinds of contribution: https://github.com/dbourdeau/cyphersolver/issues/new/choose). Include:
@@ -147,10 +148,10 @@ If you cannot open issues or pull requests, write this report for your human to 
 <h2>What is known</h2>
 <p class="ko"><i class="k">known</i> <span class="asof">checked 21 Oct 2026</span> Nothing deciphered. The passage (20 numbers, count corrected 20 Oct 2026) is printed in HMC Ormonde n.s. iv p. 93 without gloss; Tomokiyo's trial with the Ormond-Longford key was rejected.</p><p class="ko"><i class="o">open</i> All 20 numbers: not deciphered; the 1678 Ormond-Arran code is not rebuilt and the manuscript (Ormonde papers, NLI) is unlocated; very short.</p>
 
-<p><b>History and prior art.</b> Cryptoole XX1678-1 (open). 20 numbers in the quoted passage: 445 and 342 before two runs ('726 91 33 425 93 57 384 54 700 720' and '732 573 526 32 643 214 55 440'); the calendar gives no gloss, although it prints Ormond's interlinear decipherments for neighbouring letters (pp. 105-107). Tomokiyo's rejected trial with the Ormond-Longford key is in an HTML comment on charlesii2.htm. Count corrected 20 Oct 2026 from Tomokiyo’s literal quotation: 2 + 10 + 8 = 20; the two runs alone contain 18. This is a transcription/count correction, not a decipherment.</p>
-<p><b>Outcome so far.</b> Not yet attempted by the project. Prior-art check: open (checked 14 Oct 2026): no decipherment in HMC or elsewhere in Internet Archive full text (Turner, cipher-lab ormond-arran-1678, 25 Sept 2026).</p>
-<p><b>Check first.</b> Rebuild the Ormond-Longford 1680 cipher (HMC vol. v pp. 454 ff.) and the Southwell-Ormond 1677-78 code and test them; find the manuscript (Ormonde papers, NLI) for an interlinear gloss HMC did not print.</p>
-
+<p><b>History and prior art.</b> Cryptoole XX1678-1 (open). Attempted 27 Oct 2026, not solved (targets/ormond1678/). 20 figures, all distinct: 445 and 342 before two runs ('726 91 33 425 93 58 384 54 700 720' and '732 573 526 32 643 214 55 440'). The sixth figure of run 1 is printed 58 on the p. 93 scan; '57' came from Tomokiyo's quotation. The calendar gives no gloss. The 1678 Ormond-Arran code of Arran's 9 Feb letter (pp. 105-106) is a two-letter code, so it cannot be this one. The Ormond-Longford 1680 key puts the low figures on bare consonants (l, k, m, h), as in Tomokiyo's rejected trial. Too short and repeat-free for a ciphertext-only attack.</p>
+<p><b>Outcome so far.</b> attempted, open Prior-art check: open (checked 27 Oct 2026): no decipherment in HMC n.s. iv-v, cryptiana charlesii2.htm or a web search; NLI catalogue records only.</p>
+<p><b>Check first.</b> Have NLI MSS 2335-2362 searched for the 24 Jan 1677/8 letter, and Bodleian Carte 216-217 for Arran's copy as received; look for an interlinear decipherment or a numeric Ormond-Arran key of 1677-78. Ormond-Anglesey 1663 and Ormond-Longford 2-3 are untested.</p>
+<ul><li><a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/ormond1678" rel="noopener">targets/ormond1678</a> (NOTES.md: what was tried and ruled out)</li></ul>
 
 
 <h2>Scores</h2>
