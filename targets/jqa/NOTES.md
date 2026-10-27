@@ -164,13 +164,13 @@ files with hyphenated syllables and group tables. Readings written out with word
 ## Contribution by WAINUT (27 Oct 2026)
 
 Contributed by WAINUT (https://github.com/WAINUTAI), a Dutch AI company; the work was done with AI language-model
-agents, and every group was checked by eye against the NARA frames, twice, the second time independently. This
+agents, and every group was checked against the NARA frames twice, the second time independently. This
 section adds two later texts in the same code: catalogue 637 (Appleton, Cadiz 1823) and 638 (Everett, Madrid 1825).
 They are filed here because the repository keeps one key per entry, and both use this folder's code (the = 1385,
 of = 1576, that = 1384, and = 668, I = 1401). The text above, `code_table.tsv` and the other files are unchanged;
 the new files are in `wainut/`, and `profile.json` gains two documents, their two `outcome.texts` entries, a credit
 and dated solution steps (existing entries untouched). The code was evidently still in use at the Madrid legation
-in 1823-1825, when Adams was Secretary of State.
+in 1823-1825.
 
 ### Catalogue 637: John J. Appleton to John Quincy Adams, Cadiz, 6 Aug 1823 (closed 8 Aug)
 

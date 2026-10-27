@@ -58,9 +58,11 @@ with the annotations removed, it gives back the transcription.
 - **Three letters supplied** at line ends where nothing is visible: o (20) at the end of line 2, f (11) at the end of
   line 5 (a partial stroke is visible there), n (1) at the end of line 7. The key phase of the next line requires
   exactly one position in each case. Line 2 shows no cut, so there Dana may simply have left the letter out.
-- **Code groups and the key.** After 29 and 137 the key continues with the next letter. After 31 and 168 the next
-  letter takes the key two places on (or, equally, one place back). Either the groups had their own rule, or this is
-  one more irregularity. It changes no letter. Within these rules the key phase runs on unbroken across all eight lines.
+- **Code groups and the key.** After 137 the key continues with the next letter. After 31 and 168 the next letter
+  takes the key two places on (or, equally, one place back). 29 opens the passage, so it shows nothing about the
+  phase. Either the groups had their own rule, or this is one more irregularity. It changes no letter. Within these
+  rules the key phase runs on unbroken across all eight lines. Because the rule is not understood, the opening
+  "[29]n an [31]" is not confirmed: the letters n, a, n decode directly, but how they join the groups is open.
 
 Of 211 letter positions, 201 decode directly and 10 need one of the interventions above.
 
