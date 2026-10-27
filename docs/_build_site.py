@@ -1850,6 +1850,11 @@ PAGES = [
          blurb='Two French despatches of the Dutch envoy decode with William V&rsquo;s 1782 Grand Chiffre (DECODE R1024), checked on a control letter with known plaintext; digits the DECODE transcription could not place were resolved with a French language model. They report the Prussian refusal to guarantee the Dutch possessions overseas. Van Reede&rsquo;s 1793 letter to the Secret Committee is in another code, with its own page.',
          quote='&ldquo;le Roi a dit qu&rsquo;il ne pouvoit pas garantir nos possessions d&rsquo;outre-mer&rdquo;',
          rights='Manuscript image: Nationaal Archief, The Hague, via DECODE R1026'),
+    dict(slug='legation1788', label='Short, Carmichael, Pinckney 1788&ndash;93', year='1788&ndash;1793', y=1790.5, place='The Hague, Madrid, London &rarr; Jefferson', st='solved', stt='existing decipherment',
+         title='Short, Carmichael and Pinckney to Jefferson: the last groups of the legation codes Nos. 10, 13 and 16',
+         blurb='Three letters to Jefferson in three numerical codes, printed by the Jefferson Papers editors with a few groups unread or guessed: Short from The Hague (1792), Carmichael from Madrid (1788), Pinckney from London (1793). Every one of the 737 groups was transcribed and checked against values decoded at the time in sibling letters: the readings hold, Pinckney&rsquo;s &ldquo;undeciphered 497&rdquo; is 447 on the original, and nine single-occurrence groups stay open.',
+         quote='&ldquo;447 regiments are to embark in a short [time?] on a [secret?] expedition&rdquo;',
+         rights='Manuscript images: Library of Congress, Thomas Jefferson Papers; National Archives and Records Administration'),
     dict(slug='deboli1791', label='Deboli 1791', year='1791', y=1791.4, place='St Petersburg &rarr; Warsaw', st='found', stt='read at the time',
          title='Deboli to Stanis&#322;aw August, St Petersburg 1791',
          blurb='The 105 cipher despatches of the Polish envoy at St Petersburg in 1791 (AGAD Zbi&oacute;r Popiel&oacute;w 5) were deciphered at the time: the King&rsquo;s cabinet&rsquo;s fair copies are filed as Zbi&oacute;r Popiel&oacute;w 421, catalogued as Deboli&rsquo;s clear letters. Five despatches were transcribed and aligned group by group with them (98.9% of 3,082 groups), and two Polish syllabic codes were found alternating, switched by marker groups. The same pairing runs through 1788&ndash;1792.',
@@ -2498,6 +2503,7 @@ IMAGES['r9319'] = None
 IMAGES['sperantio1534'] = None
 IMAGES['r1862'] = None
 IMAGES['r1874'] = None
+IMAGES['legation1788'] = ('legation1788_lead.jpg', 'Pinckney to Jefferson, London, 28 August 1793: the coded passage, &ldquo;447. 735. 753. 1846. 923. 1490 &hellip;&rdquo; (447 regiments are to embark &hellip;), with Jefferson&rsquo;s pencil &ldquo;copy so far only&rdquo;', 'National Archives and Records Administration, RG 59, Despatches from U.S. Ministers to Great Britain, microfilm M30 roll 2, frame 140, via the NARA catalog')
 IMAGES['deboli1791'] = ('deboli1791_lead.jpg', 'Deboli to Stanis&#322;aw August, 7 January 1791: 1944 951 1578 1944 951 21a 2152 &mdash; ani od WKrMci, ani od Deputacyi', 'Archiwum G&#322;&oacute;wne Akt Dawnych, Warsaw, Zbi&oacute;r Popiel&oacute;w 5 k. 6r, via the AGAD image server')
 IMAGES['r1212'] = None
 IMAGES['r1854'] = None

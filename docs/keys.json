@@ -4315,6 +4315,7 @@
 {"source": "s-cyphersolver", "key": "k-balfour-stewart-1781"}
  ],
  "unlinked": {
+  "legation1788": "Read from the existing decipherments (Jefferson's interlinear on Short's letter; the Jefferson Papers editors' printed decodings). targets/legation1788/key.tsv collects the values decoded at the time, for checking (Code No. 10 from Jefferson's interlinear, Code No. 16 from George Taylor's decodings); no key sheet of Codes 10, 13 or 16 survives.",
   "deboli1791": "Read from the contemporary decipherments (AGAD Zbiór Popielów 421); the code tables in targets/deboli1791/align are partial by-products of the alignment, and the keys (Zbiór Popielów 444, 451, 453, 454) are not online.",
   "smallwood1777": "Not a cipher: erased words marked with printer’s symbols; no key exists.",
   "garcilaso1498": "Not solved: no key fits the Garcilaso-cipher passages; the probable key (Garcilaso's 1496 letters, RAH Salazar A-11) is not online.",
@@ -4407,6 +4408,7 @@
   "urquhart": "No cipher key: a rule-based word puzzle, read by applying the stated rule (see the write-up)."
  },
  "tried": [
+{"key": "k-jefferson-code11", "target": "legation1788", "note": "tried on Carmichael's Code No. 13 numbers: does not fit (597 = freedom, 223 = trouble in Code No. 11)"},
 {"key": "k-hessen1652", "target": "erbach1653", "note": "viewed; a different system (cipher alphabets, not a verse key)"},
 {"key": "k-armstrong972", "target": "mountflorence1801", "note": "different code: 'the' is 972 there, 688 here"},
 {"key": "k-silva-garcilaso", "target": "garcilaso1498", "note": "alphabet lacks the postscript's commonest signs (Λ, π, ⧺o, T-with-o, β-forms); 9 = m would be far too frequent"},
