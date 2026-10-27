@@ -1,0 +1,209 @@
+{
+ "schema_version": 1,
+ "target": "puebla1507",
+ "title": "Rodrigo González de Puebla (London) to King Ferdinand, 15 Apr 1507, AGS Patronato Real, Tratados con Inglaterra leg. 5 ff. 31-32 (catalogue 618)",
+ "documents": [
+  {
+   "id": "f31",
+   "shelfmark": "AGS, Patronato Real, Tratados con Inglaterra, leg. 5, f. 31 (probably PARES show/2208061, Tomokiyo's link; unconfirmed)",
+   "date": "15 Apr 1507",
+   "year": 1507,
+   "country": "England",
+   "route": "De Puebla (London) to King Ferdinand",
+   "language": "Spanish",
+   "pages": 9,
+   "cleartext_in_document": "unknown",
+   "plaintext": {
+    "location": [
+     "printed edition"
+    ],
+    "source": "Deciphered at the time by Almazán; Bergenroth, CSP Spain I (1862) no. 511 (abstract) and Supplement to vols. I-II (1868) no. 14, pp. 90-97 (full Spanish text, Almazán's gaps deciphered by the editor)",
+    "partial": false
+   },
+   "length": {
+    "tokens": 0,
+    "distinct": 0,
+    "unit": "symbols",
+    "measured": false
+   },
+   "transcription": {
+    "by": "published",
+    "source": "not transcribed; PARES images not reachable (429)",
+    "image_quality": "unknown",
+    "notes": "Closed from the two Bergenroth calendars; no image seen."
+   }
+  },
+  {
+   "id": "f32",
+   "shelfmark": "AGS, Patronato Real, Tratados con Inglaterra, leg. 5, f. 32",
+   "date": "15 Apr 1507",
+   "year": 1507,
+   "country": "England",
+   "route": "De Puebla (London) to King Ferdinand, outer address to Almazán",
+   "language": "Spanish",
+   "pages": 1,
+   "cleartext_in_document": "mostly clear",
+   "plaintext": {
+    "location": [
+     "printed edition"
+    ],
+    "source": "Bergenroth, CSP Spain I (1862) no. 512 and Supplement (1868) no. 15, pp. 97-99: clear autograph, the cipher words deciphered by the editor from the extant key",
+    "partial": false
+   },
+   "length": {
+    "tokens": 0,
+    "distinct": 0,
+    "unit": "symbols",
+    "measured": false
+   },
+   "transcription": {
+    "by": "published",
+    "source": "not transcribed; PARES images not reachable (429)",
+    "image_quality": "unknown",
+    "notes": "Sibling of the same day, listed because either folio could be the catalogue's PARES item."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "unknown"
+  ],
+  "summary": "Per Tomokiyo, Puebla's First Cipher (letter substitution, = Bergenroth's key no. 6) used with Puebla's Great Roman Numeral code; not viewed here.",
+  "symbol_kind": "unknown",
+  "distinct_symbols": 0,
+  "key_order": "unknown",
+  "word_division": "unknown",
+  "doubled_letters": "unknown",
+  "sibling_key": "unknown",
+  "notes": "System taken from Tomokiyo's list; no image seen.",
+  "diacritics": "unknown",
+  "homophones": "unknown",
+  "nomenclator": "unknown",
+  "nulls": "unknown"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in print",
+   "where": "Bergenroth, CSP Spain I (1862) nos. 511-512 pp. 408-410; Supplement to vols. I-II (1868) nos. 14-15 pp. 90-99 (full Spanish text); contemporary decipherment by Almazán (f. 31)",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "cleartext context",
+   "published reading"
+  ],
+  "attack": "none",
+  "human_role": "Pasted the catalogue task; no other input.",
+  "tools": [
+   "web search",
+   "British History Online",
+   "PARES (429)"
+  ],
+  "models": [
+   "claude-opus-5-5"
+  ],
+  "sessions": 2,
+  "first_date": "2026-10-26",
+  "last_date": "2026-10-27"
+ },
+ "solution": [
+  {
+   "date": "2026-10-26",
+   "kind": "literature search",
+   "what": "Tomokiyo's spanish.htm: the letter is in his Puebla's First Cipher list with PARES show/2208061 and no reading; his First Cipher reconstruction image saved.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "access",
+   "what": "PARES show/2208061 by curl and in the browser: HTTP 429 both times.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "literature search",
+   "what": "Bergenroth's 1868 Supplement (BHO), April 1507: nos. 14 (f. 31, in cipher, deciphered by Almazán) and 15 (f. 32), both Puebla to Ferdinand, 15 Apr 1507, printed in full Spanish; CSP Spain I nos. 511-512 pp. 408-410 calendar the same two letters (found by a parallel session, checked here).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "control",
+   "what": "Supplement nos. 14-15 read through in Spanish and English: both texts coherent throughout; f. 31's content agrees with the CSP Spain I no. 511 abstract.",
+   "result": "worked",
+   "technique": [
+    "plaintext matching"
+   ]
+  }
+ ],
+ "outcome": {
+  "method": "read from existing decipherment",
+  "method_basis": "Almazán deciphered f. 31 at the time and Bergenroth printed both 15 April 1507 letters in full Spanish (Supplement 1868, nos. 14-15, cipher gaps deciphered from the extant key); found before any work on the cipher, and nothing was transcribed or deciphered here.",
+  "contribution": [
+   "catalogue correction"
+  ],
+  "class": "already solved",
+  "fraction_read": 1.0,
+  "grades": {
+   "H": 1
+  },
+  "verification": [
+   "contemporary decipherment"
+  ],
+  "notes": "Catalogue 618 removed (in print 1862/1868); catalogue 617's PARES id corrected from 2208061 to 2208120. No write-up.",
+  "credits": [
+   {
+    "who": "bergenroth",
+    "role": "key or decipherment used",
+    "note": "CSP Spain I nos. 511-512 and the 1868 Supplement nos. 14-15 print the letters, completing Almazán's decipherment from the extant key",
+    "date": "1868",
+    "source": "G. A. Bergenroth (ed.), Calendar of State Papers, Spain, Supplement to vols. I and II (1868), nos. 14-15"
+   },
+   {
+    "who": "contemporary",
+    "role": "prior solution",
+    "note": "Miguel Pérez de Almazán's decipherment of f. 31"
+   },
+   {
+    "who": "tomokiyo",
+    "role": "prior solution",
+    "note": "identifies the cipher (Puebla's First Cipher) and the PARES record",
+    "date": "2026",
+    "source": "cryptiana, Spanish ciphers"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "f31",
+    "label": "f. 31, Puebla to Ferdinand, 15 Apr 1507 (Supp. no. 14)",
+    "decryption": "https://www.british-history.ac.uk/cal-state-papers/spain/supp/vols1-2/pp90-105",
+    "summary": "Henry VII has recovered from quinsy; Puebla showed him the deciphered despatch of 15 March at Richmond; the dowry payment is postponed only to Michaelmas, jewels accepted only at London prices; Henry will send an ambassador with full powers to marry Queen Juana per verba de praesenti as soon as Ferdinand writes from Castile.",
+    "note": "Decryption and translation: Bergenroth's printed Spanish text (Almazán's decipherment, gaps completed by the editor) and his English translation, Supplement (1868) no. 14 (linked, not copied). No transcription of the ciphertext (PARES images not reached).",
+    "language": "es",
+    "translation": "https://www.british-history.ac.uk/cal-state-papers/spain/supp/vols1-2/pp90-105",
+    "state": "read",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-27",
+     "note": "Bergenroth's printed Spanish text and his English translation read through as sentences on the BHO page; the cipher itself was not seen."
+    }
+   },
+   {
+    "doc": "f32",
+    "label": "f. 32, Puebla to Ferdinand, 15 Apr 1507 (Supp. no. 15)",
+    "decryption": "https://www.british-history.ac.uk/cal-state-papers/spain/supp/vols1-2/pp90-105",
+    "summary": "Short duplicate sent in a Lucca merchant's bag in case the courier Perote is stopped by French troops in Italy: the dowry postponed to Michaelmas; Henry waits for Ferdinand's arrival in Castile to send his embassy for the marriage with the Queen of Castile.",
+    "note": "Decryption and translation: Bergenroth's printed Spanish text and English translation, Supplement (1868) no. 15 (linked).",
+    "language": "es",
+    "translation": "https://www.british-history.ac.uk/cal-state-papers/spain/supp/vols1-2/pp90-105",
+    "state": "read",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-27",
+     "note": "Bergenroth's printed Spanish text and his English translation read through as sentences on the BHO page; the cipher itself was not seen."
+    }
+   }
+  ]
+ }
+}
