@@ -1,6 +1,6 @@
 # Henri IV to Maisse (Venice), 8 February and 27 April 1593, in Maisse's Cipher (1592-1593) — BnF fr. 16093 ff. 406, 410
 
-Status: in progress. The Brienne 13 clear copies are not transcribed; both letters decoded, not read (reading audit, 22 Oct 2026).
+Status: in progress. Both letters read in part (27 Oct 2026, WAINUT): the Brienne 13 clear copies are transcribed except fol. 173r and most of fol. 194v, and Tomokiyo's key gives the copies' text on the first cipher stretches (128 signs). Next step: transcribe fol. 173r and the rest of fol. 194v, and the remaining cipher lines (about 18 on f. 406, about 23 on f. 410), and fix where each cipher block ends. Proposed: class read in part, method read from existing decipherment. Before that: both letters decoded, not read (reading audit, 22 Oct 2026).
 
 **22 Oct 2026, reading audit** (George Lasry's test): no text of f. 406 or f. 410 is in the repository, only links to the cipher leaves and to the Brienne 13 copies. Both are *decoded, not read*; class read -> not read, method read from existing decipherment -> not solved until the copies are transcribed; fraction_read 1.0 -> 0.
 
@@ -66,26 +66,29 @@ on ff. 406/410. The text comes from the Brienne copies (and, for f. 406, the int
 
 ## Remaining gaps
 
-- ff. 406 and 410: the Brienne 13 clear copies, not transcribed - blocker: not-attempted; Gallica btv1b100904592 canvases 176 and 199 through the IIIF at openapi.bnf.fr; then check them against the cipher leaves and f. 404's interlinear decipherment
+- Brienne 13 fol. 173r (end of the 8 Feb letter, f. 406) and most of fol. 194v (f. 410), not transcribed - blocker: not-attempted; next step, images online (btv1b100904592 canvases 177-178 and 200)
+- the cipher blocks: about 18 cipher lines on f. 406 (and the verso, canvas 458, if it carries cipher) and about 23 on f. 410 not transcribed; where each block ends is not fixed - blocker: not-attempted; next step, key in hand (btv1b90074656 canvases 457-458, 461)
 
 ## Escalation
 
 - [x] siblings: f. 404 (twin of f. 406, partial interlinear) and f. 412 (twin of f. 410) identified
 - [x] clear-pages: Brienne 13 fol. 171r and 193v located
-- [ ] known-keys: Tomokiyo's key for this cipher (src/henryiv_Maisse2.png) not applied
+- [x] known-keys: Tomokiyo's key for this cipher (src/henryiv_Maisse2.png) applied unchanged to six stretches (128 signs) of ff. 404, 406, 410 on 27 Oct 2026; it gives the copies' text (wainut/decode_check.py). The rest of the cipher is not yet transcribed
 - [x] print: Berger de Xivrey used to locate the copies
 - [n/a] key-rebuild: the key exists (Tomokiyo)
-- [ ] retry: none yet
+- [ ] retry: in progress; the remaining copy pages and cipher lines are the next step (Remaining gaps)
 
 ## Contribution by WAINUT (27 Oct 2026)
 
 Contributed by WAINUT (https://github.com/WAINUTAI), a Dutch AI company. The work was done with AI language-model
 agents, and the key lines were checked against the Gallica images a second time, independently; what rests on one
 reading only is said below. The target and the Brienne 13 copies were found by Arya Sanketbhai Patel (PR #7); this
-section builds on that. The text above is unchanged. The new files are in `wainut/`, and `profile.json` gains two `outcome.texts` entries, credits and dated
-solution steps (existing entries untouched).
+section builds on that. The text above is unchanged except the Status line, Remaining gaps and Escalation (review of PR #106). The new files are in
+`wainut/`. In `profile.json` the two WAINUT `outcome.texts` entries replace the earlier f406/f410 entries (images only, decoded,
+not read; the image links are kept in their notes), and `documents[].read`, class, method, gaps, credits and dated solution steps
+are brought in line. The texts carry no `reading_review` grade: grading is left to a reviewer.
 
-**Outcome: read in part.** The two clear copies in Brienne 13 are transcribed through the enciphered passages, and
+**Outcome: read in part, work in progress** (not a stopping point: the remaining pieces have no outside blocker). The two clear copies in Brienne 13 are transcribed through the enciphered passages, and
 the start of each cipher block is decrypted with Tomokiyo's key against them. The cipher itself is not transcribed
 in full: only six stretches (128 signs) of ff. 404, 406 and 410.
 

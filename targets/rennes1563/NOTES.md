@@ -185,9 +185,12 @@ re-checked on the image. This section covers **fr. 3181 f. 55 only**; Colbert 39
 p. 231 were not re-opened. The text above is unchanged. The new files are in `wainut/`,
 and `profile.json` gains one `outcome.texts` entry, a credit and dated solution steps (existing entries untouched).
 
-**Outcome: f. 55 stays decoded, not read, but closer.** The third pass closes or proposes several of the open runs
-and removes slips. On `docs/_check_reading.py` the new reading has 0.545 clean sentences (6 of 11) and a hole rate of
-0.132, against 0.50 in the verify pass of 23 Oct 2026. That is still under the bar for "read in part", and several
+**Outcome: f. 55 stays decoded, not read.** The third pass proposes values for several of the open runs and removes
+slips. It is not a measured gain: on `docs/_check_reading.py` the new reading has 0.545 clean sentences (6 of 11) and a
+hole rate of 0.132, below the existing `aligned/f55.txt` (0.6) and `f55_v2_reading.md` (0.562); the French-word share
+rises only a little (0.764 to 0.793, below), and the ss value for the doubled e-sign is proposed from context in three
+places with no gloss. The `outcome.texts` entry has its own doc id, `fr3181-f55-v3`, so it does not shadow the main
+`fr3181-f55` entry (review of PR #106). That is still under the bar for "read in part", and several
 values rest on context, so we do not claim a reading. The French reading and an English translation are given for
 checking.
 
