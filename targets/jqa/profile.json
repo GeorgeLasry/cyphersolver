@@ -128,6 +128,76 @@
     "image_quality": "good",
     "notes": "Contributed by WAINUT (27 Oct 2026). Three passages (A 8 lines, B 14, C 12), checked line by line against the frames a second time, independently. Measured with docs/_check_profile.py --measure --digits --drop-first."
    }
+  },
+  {
+   "id": "crawford1813",
+   "read": "read in part",
+   "shelfmark": "NARA RG 59, Despatches from US Ministers to France vol. 17, M34 roll 17 (naId 188672892), frames 0027R-0029R (catalogue 652)",
+   "date": "3 Sep 1813",
+   "year": 1813,
+   "country": "United States",
+   "route": "Paris -> Washington",
+   "places": {
+    "from": "Paris",
+    "to": "Washington"
+   },
+   "language": "English",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment on the film. Monroe to Madison [ca. 1 Nov 1813] (PJM Pres. Ser. 7, Founders Madison/03-07-02-0011) says it was to be deciphered; the PJM editors summarise the subjects of the coded letters of 15 Aug and 3 Sept (Madison/03-06-02-0671 n. 1) but print no deciphered text."
+   },
+   "length": {
+    "tokens": 1368,
+    "distinct": 486,
+    "unit": "code groups",
+    "measured": true,
+    "file": "wainut/crawford1813_transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "NARA M34 roll 17 frames 0027-0029 (full resolution)",
+    "corrections": 1,
+    "image_quality": "good",
+    "notes": "Contributed by WAINUT (27 Oct 2026). About 150 groups (11%) re-read independently on fresh crops; one 0/8 slip corrected (29R01: 1383, not 1303). In this hand 8 is an o with a top tick. Measured with docs/_check_profile.py --measure --digits --drop-first (distinct counts mark variants such as 449o separately; 437 numbers)."
+   }
+  },
+  {
+   "id": "ellis1839",
+   "read": "read",
+   "shelfmark": "NARA RG 59, Despatches from US Ministers to Mexico vol. 9, M97 roll 10 (naId 189102194), frames 0298, 0299, 0302, 0303; clear copy frames 0300-0301 (catalogue 653)",
+   "date": "16 Nov 1839",
+   "year": 1839,
+   "country": "United States",
+   "route": "Mexico City -> Washington",
+   "places": {
+    "from": "Mexico City",
+    "to": "Washington"
+   },
+   "language": "English",
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "separate folio"
+    ],
+    "source": "The Department's contemporary clear copy of the whole coded passage, words only, on frames 0300-0301 of the same volume, filmed between the code leaves (wainut/ellis1839_clearcopy.txt)."
+   },
+   "length": {
+    "tokens": 519,
+    "distinct": 254,
+    "unit": "code groups",
+    "measured": true,
+    "file": "wainut/ellis1839_transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "NARA M97 roll 10 frames 0298, 0299, 0302, 0303",
+    "corrections": 0,
+    "image_quality": "good",
+    "notes": "Contributed by WAINUT (27 Oct 2026). Every line checked a second time, independently, on full-frame views, about 15 lines on enlarged crops; no disagreement. Counts include 1261 (comma), 1264 (stop) and the inserted groups. Two groups not legible on the film (0303.02 blot, 0303.03 last group). Measured with docs/_check_profile.py --measure --digits --drop-first."
+   }
   }
  ],
  "system": {
@@ -430,6 +500,67 @@
    "kind": "literature search",
    "what": "WAINUT contribution: Manning III docs. 1124 (p. 2041) and 1134 (p. 2062) print the code undecoded; 1134 is an extract without passages B and C; one web search each found no decipherment.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "access",
+   "what": "WAINUT contribution: catalogue 652 located on NARA M34 roll 17 frames 0027-0029 (Crawford, Paris, 3 Sept 1813) and catalogue 653 on M97 roll 10 frames 0298-0303 (Ellis, Mexico, 16 Nov 1839), with the Department's clear copy of 653 on frames 0300-0301; both in this folder's code (the = 1385).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "transcription",
+   "what": "WAINUT contribution: 652 transcribed (1,368 groups, 102 lines); about 150 groups re-read independently, one 0/8 slip corrected (29R01 1383). 653 transcribed (519 groups, 88 lines), every line checked a second time independently; the clear copy of 653 transcribed.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "sibling key",
+   "technique": [
+    "key matching"
+   ],
+   "what": "WAINUT contribution: applied code_table.tsv unchanged. 652: 1,313 of 1,368 groups valued, raw output English on every page. 653: 471 of 519 groups valued; joined into letters, the table-only decode recovers 88% of the clear copy's letters (difflib ratio 0.868; shuffled tables 0.12-0.22, shuffled group orders 0.20-0.22).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "verification",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "WAINUT contribution: 653 groups aligned line by line with the 1839 clear copy (wainut/ellis1839_pairs.tsv, about 40 pairs): 1261 comma, 1264 full stop (the table has gar, H, 1x), 1067 s, 651 x, 1366 tal, 601 713 Mr.; the copy's 'Toops' repeats the groups' spelling.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "hypothesis",
+   "technique": [
+    "contextual inference",
+    "key-structure hypothesis"
+   ],
+   "what": "WAINUT contribution: 652 first read with 1264 as 'and'; replaced by the full stop (30x, always at a clause end; 668 is 'and') after the 653 alignment. 713 = r gives Sir (27R02) and Mr. Warden (27R11), matching the PJM editors' mention of Warden. Context values 449 -nity (5x), 462 -tract (3x), 1106 will, 1323 been; about 40 context words marked [?].",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "WAINUT contribution: wrong-key controls (wainut/decode.py --controls): function-word rate 0.36 (652) and 0.28 (653) for the true table, 0.02-0.14 for shifts of 1-100, 0.03-0.05 for random table permutations; an independent bigram check on 652 gave 0.117 against 0.015-0.019 for shuffled group orders.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "literature search",
+   "what": "WAINUT contribution: 652: Founders Madison/03-07-02-0011 and 03-06-02-0671 (PJM Pres. Ser. 7 and 6) say the letter came in cypher and summarise its subjects; no deciphered text printed; ASP FR 3 and the Crawford Papers not checked. 653: Manning, Inter-American Affairs vol. 8 (1937) not reachable (bot check, not bypassed); two web searches found no printed text.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "reading",
+   "what": "WAINUT contribution: 652 read in part (wainut/crawford1813_reading.md, read_share 0.916); 653 read, following the groups where they differ from the clear copy (wainut/ellis1839_reading.md, read_share 1.0).",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -533,6 +664,30 @@
     "note": "637 (18 groups) and 638 (355 groups) from NARA M31 reels 24 and 27",
     "date": "2026-10-27"
    }
+,
+   {
+    "who": "lccompany",
+    "role": "solution",
+    "note": "PR: catalogue 652 (Crawford 1813) read in part with this folder's code table; 1264 = full stop and 713 = r carried over from 653",
+    "date": "2026-10-27"
+   },
+   {
+    "who": "lccompany",
+    "role": "transcription",
+    "note": "652 (1,368 groups) and 653 (519 groups, with the 1839 clear copy) from NARA M34 roll 17 and M97 roll 10",
+    "date": "2026-10-27"
+   },
+   {
+    "who": "contemporary",
+    "role": "prior solution",
+    "note": "653: the State Department's clear copy of Ellis's No. 9 (1839), M97 roll 10 frames 0300-0301, used to fill and check the reading"
+   },
+   {
+    "who": "founders",
+    "role": "pointer",
+    "note": "652: PJM editors' notes (Madison/03-07-02-0011, 03-06-02-0671): the 3 Sept 1813 letter was in cypher; summary of its subjects, no deciphered text",
+    "source": "https://founders.archives.gov/documents/Madison/03-07-02-0011"
+   }
   ],
   "texts": [
    {
@@ -604,6 +759,43 @@
      "date": "2026-10-27",
      "note": "Coherent sentences; 23 holes in about 240 words: 8 open groups and 15 context-only or against-the-table words, all marked [?]. read_share = 1 - hole rate of docs/_check_reading.py --file (0.096)."
     }
+   }
+,
+   {
+    "doc": "crawford1813",
+    "label": "Crawford to Monroe, No. 1 (private), Paris, 3 Sept 1813 (catalogue 652), M34 roll 17 frames 0027R-0029R",
+    "transcription": "wainut/crawford1813_transcription.txt",
+    "decryption": "wainut/crawford1813_decryption.txt",
+    "reading": "wainut/crawford1813_reading.md",
+    "language": "en",
+    "state": "read in part",
+    "read_share": 0.916,
+    "summary": "The new US minister in Paris explains why he has not opened official talks with Napoleon's foreign minister Bassano, who is with the Emperor at Dresden: Mr. Warden acts as the channel at Paris, a minister need not follow a court abroad, and Crawford has been painted as impetuous; the Russian mediation is unwelcome to Napoleon. He then judges Joel Barlow's secret plan to fund indemnities from trade licences useless, since licensed imports have glutted the American market.",
+    "reading_review": {
+     "grade": "A",
+     "by": "WAINUT (AI language-model agent, checked against the frames)",
+     "date": "2026-10-27",
+     "note": "Coherent sentences with scattered holes: about 40 context words marked [?] and about 30 open groups; 1264 read as the full stop (from 653). research/reading_audit/v2_score.py: hole rate 0.084, explicit-hole sentence share 0.732; docs/_check_reading.py clean share 0.69. Under the 95% bar, so read in part."
+    },
+    "note": "read_share = 1 - hole rate of research/reading_audit/v2_score.py (0.084)."
+   },
+   {
+    "doc": "ellis1839",
+    "label": "Ellis to Forsyth, No. 9, Mexico, 16 Nov 1839 (catalogue 653), M97 roll 10 frames 0298-0303",
+    "transcription": "wainut/ellis1839_transcription.txt",
+    "decryption": "wainut/ellis1839_decryption.txt",
+    "reading": "wainut/ellis1839_reading.md",
+    "language": "en",
+    "state": "read",
+    "read_share": 1.0,
+    "summary": "The US minister in Mexico reports that Texian troops with disaffected Mexicans have crossed the line, apparently to attack Matamoros, and that the government is sending General Arista to the frontier with 4,000 men; a war with Texas would unite the Mexican parties; the foreign minister Cañedo wants a general congress of the Spanish American states, unlikely to succeed. The Department's 1839 clear copy is in the same file.",
+    "reading_review": {
+     "grade": "A",
+     "by": "WAINUT (AI language-model agent, checked against the frames and the 1839 clear copy)",
+     "date": "2026-10-27",
+     "note": "Every group lines up with a word or syllable of the contemporary clear copy (frames 0300-0301); values missing from the table are taken from it. v2_score.py: hole rate 0.0. Two groups are illegible on the film; their words rest on the clear copy."
+    },
+    "note": "A contemporary decipherment exists (prior solution); this entry adds the groups, the decode with the table and the alignment."
    }
   ],
   "key_file": "code_table.tsv"

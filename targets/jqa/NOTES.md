@@ -301,3 +301,157 @@ necessary, 257 speci, 1525 al, 1599 ood, 727 rather.
 - `appleton1823_transcription.txt`, `appleton1823_decryption.txt`, `appleton1823_reading.md`
 - `everett1825_transcription.txt`, `everett1825_decryption.txt`, `everett1825_reading.md`
 - `decode.py`: applies `../code_table.tsv`; `--controls` runs the wrong-key controls (standard library)
+
+## Contribution by WAINUT (27 Oct 2026): catalogue 652 and 653
+
+Contributed by WAINUT (https://github.com/WAINUTAI), a Dutch AI company; the work was done with AI language-model
+agents. This section adds two more texts in this folder's code: catalogue 652 (Crawford, Paris 1813) and 653 (Ellis,
+Mexico 1839). They follow 637 and 638 above: the repository keeps one key per entry, and both use this folder's code
+(the = 1385, of = 1576, that = 1384, and = 668, I = 1401). The text above, `code_table.tsv` and the other files are
+unchanged; the new files are in `wainut/`, and `profile.json` gains two documents, their `outcome.texts` entries,
+credits and dated solution steps (existing entries untouched). With 637 and 638, the code is now seen in State
+Department use from 1811 to 1839, at St Petersburg, Paris, Madrid and Mexico.
+
+### Catalogue 652: William H. Crawford to James Monroe, No. 1 (private), Paris, 3 Sept 1813
+
+- **Source.** NARA RG 59, Despatches from US Ministers to France vol. 17, microfilm M34 roll 17
+  ([naId 188672892](https://catalog.archives.gov/id/188672892)), frames 0027 (right leaf), 0028 and 0029 (both
+  leaves), e.g. [frame 0028](https://catalog.archives.gov/medialz/dc-metro/rg-059/603720/M34/M34-017/M34-017-0028.jpg).
+  The letter opens in code on 0027R. Words in clear are written in among the groups. A clear paragraph and the
+  closing are on 0029L-R. The film shows no interlinear decipherment.
+- **Same code, and Crawford says why.** The clear paragraph on 0029L-R: "Among the Papers of the Legation delivered me
+  by Mr Thomas Barlow is a copy of a letter in Cypher from John Q. Adams esquire." The Duke of Bassano is spelt
+  1278 1448 1576 1308 1068 352 (du-ke of bass-sa-no), five times.
+- **Transcription** (`wainut/crawford1813_transcription.txt`): **1,368 groups** in 102 lines, read by eye from the
+  full-resolution frames. About 150 groups (lines 27R01-04, 27R17-20, 28R06-09, 29R01-02, about 11%) were re-read
+  independently on fresh crops. That check found one slip, now corrected: 29R01, ninth group, is 1383 (than), not
+  1303. In this hand 8 is an o with a small top tick, so 0 and 8 have to be told apart by sense. About 89% of the
+  groups were read once only.
+- **Decryption** (`wainut/crawford1813_decryption.txt`, `python wainut/decode.py crawford1813_transcription.txt`):
+  1,313 of 1,368 groups have a value in `code_table.tsv`, applied without any change; 55 groups (38 numbers) have
+  none. The raw output reads as English on every page, e.g. 27R12 "between the amer sian and the french govern ment at
+  Paris", 28L24 "that i have been REPRESENTED as an im pe u ous and un ac", 29R01 "no more is commu ted in this
+  country than what com port with the views of the emperor".
+- **Reading** (`wainut/crawford1813_reading.md`, read in part). Crawford explains why he has not opened the official
+  correspondence. After Bassano's letter from Dresden, Mr. Warden acts as the organ of communication at Paris.
+  Crawford will not follow the court to Dresden: a minister must follow a court only within its own dominions, and
+  outside France he would lose his immunities. He doubts Bassano's sincerity and points to the slow answer to his
+  letter. He has been represented as "an impetuous and unaccommodating man", he thinks through the American papers.
+  The Russian mediation is unwelcome to Napoleon, who will not let the French negotiation advance before the result
+  at St Petersburg is known. The second half deals with the "plan of indemnity" of the late minister Joel Barlow: a
+  rumoured arrangement by which Paris capitalists were to take the trade licences and pay 25 per cent in advance into
+  the indemnity fund. Crawford calls the contract useless now, because licensed imports have glutted the US market,
+  and will use it only as evidence that France admitted the principle of indemnity. The opening line (27R01) is a
+  heading and is only partly read ("Paris, ... 3rd ... the Secretary of State. Sir, ...").
+- **Values read here against the table or without one** (this letter; [?] in the reading unless said otherwise):
+  - 1264 = **full stop** (table: gar, H, 1x). It stands 30 times, always at the end of a clause, while Crawford
+    writes "and" as 668 throughout. In Ellis's despatch of 1839 (653, below) the clear copy fixes 1264 as the full
+    stop. A first reading of this letter had taken 1264 as "and"; the full stop fits every place. Not marked.
+  - 713 = **r** (table: port, M, 1x), as in the 1839 alignment: 1098 713 = "Sir" (27R02, after "the Secretary of
+    State"); 601 713 499 545 = "Mr. Warden" (27R11; 499 ward and 545 en are table values). Warden matches the Madison
+    editors' summary below. Not marked.
+  - 1009 1401 1366 = cap-i-tal, as in 1839 (1366 = tal there; table: take, M). Not marked.
+  - 449 = -nity/-nities (no value): im-mu-449 = immunities, in-dem-449 = indemnity (five times). Not marked.
+  - 1106 = will (table: pa, M, 1x): "these immunities will cease", "it will be proper". Not marked.
+  - 462 = -tract (con-462 = contract, 3x) and 1323_ = been (3x), not marked; 770 = -turn (re-770, 2x),
+    400 = under (before the clear "stood"), 1450_ 1379 = latter, 130 = mine (de-ter-130^ = determined; "as fast as
+    mine"), all marked [?].
+  - 1105 = accept (un-1105-able, [?]); 1105 700 occurs twice and gives no word that fits both places, so 700 stays
+    open.
+  - Context words, each [?] in the reading: dated, Dresden, subjects, During, affect, sent, brought, return, former,
+    who, independent, especially, allies, not, till, fast, has, disposed, whence, originated, here, charged, postpo-,
+    no, claim, houses, and, constitu-, reconcile, correspondingly, date, tool, exchequer, it, whom I have, colonial,
+    the plan, however, under, thousand, ret-, keep.
+- **Controls.** `python wainut/decode.py crawford1813_transcription.txt --controls`: function-word rate 0.36 for the
+  true table; every group shifted by 1, 2, 3, 7, 50 or 100 either way gives 0.02-0.14; three random permutations of
+  the table give 0.03-0.05. An independent bigram check (share of adjacent word pairs in a fixed list of common
+  English bigrams; script not included) gave 0.117 for the true decode, 0.015-0.019 for three shuffled group orders
+  and 0.000-0.001 for shifted or permuted keys.
+- **Prior work.** Monroe to Madison, [ca. 1 Nov 1813] (*Papers of James Madison, Presidential Series* 7, pp. 11-12;
+  [Founders Madison/03-07-02-0011](https://founders.archives.gov/documents/Madison/03-07-02-0011)): a Crawford letter
+  "of the 4th of Sepr. in cypher", to be "decypherd as soon as possible"; the editors' note 1 identifies it as this
+  letter of 3 Sept. Monroe to Madison, 12 Oct 1813 (PJM Pres. Ser. 6, pp. 691-692;
+  [Madison/03-06-02-0671](https://founders.archives.gov/documents/Madison/03-06-02-0671)), note 1: the coded letters
+  of 15 Aug and 3 Sept discussed the correspondence with Bassano, the proposed commercial treaty, the European war and
+  D. B. Warden's conduct. So a decipherment was ordered in 1813 and the editors summarise the content, but neither
+  page prints a deciphered text or names a decoded copy. Not checked: ASP Foreign Relations 3 (a search summary says
+  Monroe's report of 18 Jan 1814 printed the 15 Aug letter and an extract of 8 Sept, not this one), the Crawford
+  Papers, a decoded copy elsewhere in RG 59. As far as we checked, no full text of the coded letter has been printed.
+
+### Catalogue 653: Powhatan Ellis to John Forsyth, No. 9, Mexico, 16 Nov 1839
+
+- **Source.** NARA RG 59, Despatches from US Ministers to Mexico vol. 9, microfilm M97 roll 10
+  ([naId 189102194](https://catalog.archives.gov/id/189102194)). Code on frames 0298 (after the heading "No. 9 ...
+  Sir,"), 0299, 0302 and 0303 (before the clear closing, signed Powhatan Ellis), e.g.
+  [frame 0302](https://catalog.archives.gov/medialz/dc-metro/rg-059/603720/M97/M97-010/M97-010-0302.jpg).
+- **Contemporary decipherment in the same file.** Frames 0300-0301
+  ([0300](https://catalog.archives.gov/medialz/dc-metro/rg-059/603720/M97/M97-010/M97-010-0300.jpg),
+  [0301](https://catalog.archives.gov/medialz/dc-metro/rg-059/603720/M97/M97-010/M97-010-0301.jpg)), filmed between
+  the code leaves, are the Department's clear copy of the whole coded passage, in words only. It shows the decipherer
+  at work: "Cado" corrected to Cañedo, "sp" struck and "not" written above, "we" and "learn" above the line, and the
+  misspelling "Toops". So the text was read in 1839. This contribution adds the group transcription, the decode with
+  this folder's table and the alignment of the two. The clear copy is transcribed in `wainut/ellis1839_clearcopy.txt`.
+  The catalogue's "no words" for frames 0298-0303 missed these two frames.
+- **Transcription** (`wainut/ellis1839_transcription.txt`): **519 groups** in 88 lines, counting the commas, the
+  stops and the groups inserted above the line (the catalogue's "about 500" was right; a first count of 711 was
+  wrong). Every line was checked a second time, independently, on full-frame views, and about 15 lines on enlarged
+  crops, with no disagreement. Two groups are not legible on the film: one under an ink blot in 0303.02 (di) and the
+  last group of 0303.03 (560 or 500, "enemy").
+- **Decryption** (`wainut/ellis1839_decryption.txt`): `code_table.tsv` alone gives a value to 471 of 519 groups, and
+  the raw output already reads, e.g. "who were late ly in arm say against this govern ment have either ca pit u la
+  ted". Joined into letters and aligned with the clear copy (difflib), the table-only decode recovers 1,228 of the
+  copy's 1,394 letters (88%, ratio 0.868); three shuffled tables give 0.12-0.22 and three shuffled group orders
+  0.20-0.22 (independent check; script not included). Each line of the file also gives the syllables as read; {x}
+  marks a value taken from the clear copy.
+- **Reading** (`wainut/ellis1839_reading.md`, read): a body of Texian troops, joined by disaffected Mexicans, has
+  crossed the line, it is thought to attack Matamoros; the government will send General Arista to the frontier with
+  4,000 men; a war with Texas would be popular, and Ellis expects all parties to set aside their animosities against
+  the common enemy; the foreign minister Cañedo wants a general congress of the Spanish American states, which Ellis
+  thinks unlikely to succeed. Where the groups differ from the clear copy, the reading follows the groups: "a most
+  respectable source" (153 = most, H), where the copy has "very respectable sources"; "the 14th instant", where it
+  has "the 14th of instant". T. M. Nance (*After San Jacinto*) has Arista sent north from Mexico City on
+  17 Nov 1839, the day after the despatch.
+- **New values** (`wainut/ellis1839_pairs.tsv`, about 40 pairs from the alignment): above all 1261 = comma (27x, no
+  value in the table) and 1264 = full stop (11x; the table has gar, H, 1x: a conflict), 1067 = s (table: say, M),
+  651 = x (Te-x-as, Me-x-i-cans), 1366 = tal, 1003 = able, 336 fifteen, 43 hundred, 987 four, 553 thousand,
+  601 713 = Mr. The table column was checked against `code_table.tsv`; a first draft had some entries wrong (for
+  example the new value su belongs to 383, not 1123, which is per in the table and in 1839).
+- **Prior work.** The clear copy above. Manning, *Diplomatic Correspondence of the United States: Inter-American
+  Affairs 1831-1860*, vol. 8 (Mexico, 1937) may print the despatch from that copy: **not checked** (HathiTrust full
+  text answered with a bot check, which we did not try to get past; the Internet Archive has no copy). Two web
+  searches for phrases found no printed text.
+
+### Proposed table changes (652, 653; not applied)
+
+`code_table.tsv` was used as it is. Proposals, with the evidence above: 1261 comma (1839 clear copy); 1264 full stop
+instead of gar (1839 clear copy, 11x; Crawford 1813, 30x); 713 r (1839, and Sir / Mr. in 1813) instead of port;
+1067 s instead of say; 1366 tal instead of take; 1003 able (1839) beside cal; 449 -nity (1813, 5x); 462 -tract
+(1813, 3x); 1106 will (1813) instead of pa; and the other clear-copy pairs in `wainut/ellis1839_pairs.tsv`.
+
+### Remaining gaps (catalogue 652 and 653)
+
+- 652: about 40 context words marked [?] and the open groups ([102], [267], [343], [366], [529], [58], [104],
+  [531], [665], [700], [909], [1204], [1313], [1444] and others) - blocker: no-key-material; most occur once here.
+  Crawford's other coded despatches in the same volume (frames 0031-0033, 0047-0049, 0065-0067, 0072, 0086-0090,
+  0199-0201, 0213-0214) were not transcribed and are the next source of occurrences.
+- 652: about 89% of the groups were read once only; a second full reading against the frames is still to do.
+- 653: the two groups not legible on the film (0303.02, 0303.03) - blocker: illegible; the words rest on the clear
+  copy.
+
+### Escalation (catalogue 652 and 653)
+
+- [x] siblings: 652 and 653 read with this folder's table; Ellis's 1839 values (1264, 713, 1366) used for 652
+- [x] clear-pages: the clear words and paragraphs of 652 and the clear copy of 653 used for the sense
+- [x] known-keys: this folder's table applies directly to both texts (the = 1385, of = 1576)
+- [ ] print: the Founders/PJM notes checked for 652 (summary only); ASP FR 3 for 652 and Manning vol. 8 for 653 not
+  checked
+- [x] key-rebuild: context values for 449, 462, 770, 1106, 1323, 130 checked at their occurrences
+- [ ] retry: Crawford's other coded runs on M34 roll 17 and Ellis's 1836-1837 despatches (M97 rolls 8-9) not tried
+
+### Files (in `wainut/`, 652 and 653)
+
+- `crawford1813_transcription.txt`, `crawford1813_decryption.txt`, `crawford1813_reading.md`
+- `ellis1839_transcription.txt`, `ellis1839_decryption.txt`, `ellis1839_reading.md`, `ellis1839_clearcopy.txt`
+  (the 1839 clear copy), `ellis1839_pairs.tsv` (values from the alignment)
+- `decode.py`: now also reads the line labels, clear words and inserted groups of these two files; its output for
+  637 and 638 is unchanged

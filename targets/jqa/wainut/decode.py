@@ -1,12 +1,18 @@
-"""Apply this folder's code table (../code_table.tsv, JQA's St Petersburg code, the = 1385) to the Madrid legation
-texts of 1823 and 1825 (catalogue 637 and 638), and run the controls quoted in ../NOTES.md.
+"""Apply this folder's code table (../code_table.tsv, JQA's St Petersburg code, the = 1385) to the later legation
+texts in the same code: Madrid 1823 and 1825 (catalogue 637, 638), Paris 1813 (652) and Mexico 1839 (653), and run
+the controls quoted in ../NOTES.md.
 
     python decode.py appleton1823_transcription.txt            group-by-group decryption, line by line
     python decode.py everett1825_transcription.txt
-    python decode.py everett1825_transcription.txt --controls   wrong-key controls
+    python decode.py crawford1813_transcription.txt
+    python decode.py ellis1839_transcription.txt
+    python decode.py everett1825_transcription.txt --controls   wrong-key controls (any of the four files)
 
 Output per group: number=value/grade, the grade as in code_table.tsv (H clerk decode, C Ford-aligned, M uncertain,
 I slot inference); '?' = no value in the table. The marks of the transcription are kept after the value.
+A first column like 27R01: or 0298.01: or without digits (A, B, C) is the line label. Words written in clear
+among the groups ("word") are copied through; groups written above the line ([ins: ...]) are decoded in place; a
+group with an unreadable digit (?03) counts as a group without a value.
 Python standard library only; paths are relative to this file.
 """
 import os, random, re, sys
@@ -34,13 +40,19 @@ def groups(path):
         if line.startswith('#') or not line.strip():
             continue
         toks = line.split()
-        label = toks.pop(0) if toks and not re.search(r'\d', toks[0]) else ''
+        label = toks.pop(0) if toks and (re.fullmatch(r'\w*[A-Za-z.]\w*(\.\w+)?:', toks[0]) or not re.search(r'\d', toks[0])) else ''
         gs = []
         for t in toks:
+            if t.startswith('"'):                       # words in clear among the groups: number None
+                gs.append((None, t))
+                continue
+            t = t.replace('[ins:', '').rstrip(']')      # groups inserted above the line
             m = re.fullmatch(r'-?(\d+)(\S*)', t)
             if m:
                 gs.append((int(m.group(1)), m.group(2).rstrip('-')))
-        rows.append((label, gs))
+            elif re.fullmatch(r'[\d?]*\?[\d?]*', t):     # a digit lost (blot): a group with no value
+                gs.append((-1, t))
+        rows.append((label.rstrip(':'), gs))
     return rows
 
 
@@ -55,8 +67,13 @@ def decode(path):
     for label, gs in groups(path):
         out = []
         for n, mk in gs:
+            if n is None:
+                out.append(mk)
+                continue
             tot += 1
-            if n in tab:
+            if n == -1:
+                out.append(f'{mk}=?')
+            elif n in tab:
                 hit += 1
                 out.append(f'{n}={tab[n][0]}{mk}/{tab[n][1]}')
             else:
@@ -75,7 +92,7 @@ def controls(path):
     function words; a wrong key gives scattered syllables. (Shuffling the group order keeps the same words, so it
     needs a word-order model; that check is described in ../NOTES.md and not repeated here.)"""
     tab = table()
-    seq = [n for _, gs in groups(path) for n, _ in gs]
+    seq = [n for _, gs in groups(path) for n, _ in gs if n is not None and n >= 0]
     dec = lambda f: [value(tab, f(n)) for n in seq]
     hits = lambda f: sum(f(n) in tab for n in seq)
     print(f'{len(seq)} groups. real decode (table, no corrections): {hits(lambda n: n)} with a value, '
