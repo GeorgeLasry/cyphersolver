@@ -1,0 +1,29 @@
+# Anthony Morris's copy of the State Department code (catalogue 650): his sixteen blocks of 100 numbers against the
+# blocks of ../jqa/code_table.tsv. Each block keeps its inner order: Morris 100*i + r (r = 1..100) = JQA 100*(15 - i) + r.
+# This file is read by decode.py; change a row here and the decode follows.
+# basis: how the row is supported on frame 0039 (python decode.py --controls, sections B and C):
+#   fw+bg = the claimed JQA block is the best block for this Morris block on function words alone, and first (or tied
+#           first) on word bigrams from Ford, Writings of J. Q. Adams vols 3-4;
+#   bg    = function words alone prefer another block; the claimed block is first (or tied first) on bigrams
+#           (701-800 and 1201-1300 rest on only 2 bigrams each, 701-800 tied with one other block);
+#   pattern+context = second on bigrams; kept because the reversal holds for every other block and the words read in
+#           context (should, United States, Minister).
+# The words column gives a few values from the table that read in context on frame 0039 (groups as Morris writes
+# them; 1357 is "soon" in the table and the syllable son in Jefferson, reason, Madison).
+# morris_first	morris_last	jqa_first	jqa_last	basis	words
+1	100	1501	1600	fw+bg	76 of, 1 a, 92 on, 97 only, 10 act, 5 about
+101	200	1401	1500	fw+bg	126 in, 140 it, 133 ion, 157 last, 101 i
+201	300	1301	1400	fw+bg	285 the, 284 that, 286 their, 299 this, 210 be, 279 ter, 264 tain
+301	400	1201	1300	bg	329 govern, 344 had, 354 has, 364 full stop (Ellis 1839; the table has gar)
+401	500	1101	1200	fw+bg	476 which, 490 with, 486 will, 473 when, 482 whose
+501	600	1001	1100	bg	575 se, 554 cre, 546 cor, 549 count, 593 shall, 571 same, 550 country
+601	700	901	1000	fw+bg	608 or, 629 over, 699 from, 695 french, 670 [no value, 5x]
+701	800	801	900	bg	721 dem, 738 difficul, 711 de, 726 depart, 764 ation
+801	900	701	800	fw+bg	892 by, 890 but, 849 respect, 877 british, 804 quarter
+901	1000	601	700	fw+bg	968 and, 992 as, 937 ment, 956 year, 999 at, 974 any
+1001	1100	501	600	fw+bg	1069 to, 1018 rect, 1025 ef, 1054 thr, 1045 en
+1101	1200	401	500	bg	1180 under, 1200 was, 1198 war, 1171 vin, 1172 ving, 1116 nd
+1201	1300	301	400	bg	1252 no, 1260 not, 1280 sti, 1295 sur, 1227 fer
+1301	1400	201	300	bg	1309 pres, 1310 present, 1355 spa, 1356 Spain, 1357 son, 1372 ests
+1401	1500	101	200	bg	1403 change, 1449 months, 1484 his, 1453 most, 1491 hon
+1501	1600	1	100	pattern+context	1590 should, 1549 United States, 1521 Minister
