@@ -2340,7 +2340,9 @@
 {"id": "k-villeneuve1737-lasry", "label": "Louis-Sauveur, marquis de Villeneuve to…: Lasry key (BnF review)", "kind": "scholar's key", "by": "George Lasry", "year": 1737, "found": 2026, "note": "Key recovered by George Lasry from ciphertext only in his 2026 review of BnF cipher volumes (targets/villeneuve1737/lasry_entry.md)."},
 {"id": "k-villeroy258-lasry", "label": "M. de Villeroy to M. de La Verrière, 19…: Lasry key (BnF review)", "kind": "scholar's key", "by": "George Lasry", "found": 2026, "note": "Key recovered by George Lasry from the contemporary decipherment or clear copy beside the cipher in his 2026 review of BnF cipher volumes (targets/villeroy258/lasry_entry.md)."},
 {"id": "k-vulcob1573-lasry", "label": "Charles IX to Jean de Vulcob, 7 March 1573: Lasry key (BnF review)", "kind": "scholar's key", "by": "George Lasry", "year": 1573, "found": 2026, "note": "Key recovered by George Lasry from the contemporary decipherment or clear copy beside the cipher in his 2026 review of BnF cipher volumes (targets/vulcob1573/lasry_entry.md)."},
-{"id": "k-wotton1585-rebuilt", "label": "Wotton 1585, rebuilt here", "kind": "rebuilt here", "by": "cyphersolver", "year": 1585, "note": "Key recovered here from the contemporary decipherment or clear copy beside the cipher (targets/wotton1585/NOTES.md)."}
+{"id": "k-wotton1585-rebuilt", "label": "Wotton 1585, rebuilt here", "kind": "rebuilt here", "by": "cyphersolver", "year": 1585, "note": "Key recovered here from the contemporary decipherment or clear copy beside the cipher (targets/wotton1585/NOTES.md)."},
+{"id": "k-common-cipher-1781", "label": "British southern Common cipher ring, 1781, rebuilt here", "kind": "rebuilt here", "by": "cyphersolver", "year": 1781, "note": "Ring of 25 numbers (5 24 29 1 25 23 22 6 19 9 17 13 16 7 12 8 14 15 26 4 18 21 3 2 11) against a 25-letter alphabet, A-setting reset by indicator groups, fillers from 30 (Saberton's Common cipher); rebuilt from the 1781 interlinear decipherment (targets/balfour1781/NOTES.md)."},
+{"id": "k-balfour-stewart-1781", "label": "Balfour to Stewart table, 1781, rebuilt here", "kind": "rebuilt here", "by": "cyphersolver", "year": 1781, "note": "Fixed number table (a31 b12 c22 d32 e13 ... w38 y29), fillers from 40; rebuilt from the interlinear of the 12 Aug 1781 letter (targets/balfour1781/NOTES.md)."}
  ],
  "links": [
 {"key": "k-erbach1666", "target": "erbach1653", "how": "rebuilt from", "note": "verse rebuilt from about eighty crib cells; all 610 pairs of the three 1666 letters read with it unchanged, 19 writer's slips"},
@@ -3701,7 +3703,9 @@
 {"key": "k-villeneuve1737-lasry", "target": "villeneuve1737", "how": "read unchanged", "note": "Lasry's key as given in his BnF review; the write-up follows it."},
 {"key": "k-villeroy258-lasry", "target": "villeroy258", "how": "read unchanged", "note": "Lasry's key as given in his BnF review; the write-up follows it."},
 {"key": "k-vulcob1573-lasry", "target": "vulcob1573", "how": "read unchanged", "note": "Lasry's key as given in his BnF review; the write-up follows it."},
-{"key": "k-wotton1585-rebuilt", "target": "wotton1585", "how": "rebuilt from", "note": "rebuilt from the contemporary decipherment or clear copy beside the cipher"}
+{"key": "k-wotton1585-rebuilt", "target": "wotton1585", "how": "rebuilt from", "note": "rebuilt from the contemporary decipherment or clear copy beside the cipher"},
+{"key": "k-common-cipher-1781", "target": "balfour1781", "how": "rebuilt from", "note": "rebuilt from the interlinear of Nos. 1-3 and applied unchanged to the second Balfour letter"},
+{"key": "k-balfour-stewart-1781", "target": "balfour1781", "how": "rebuilt from", "note": "rebuilt from the interlinear of the Stewart letter"}
  ],
  "sources": [
   {
@@ -4306,7 +4310,9 @@
 {"source": "s-lasry", "key": "k-villeneuve1737-lasry"},
 {"source": "s-lasry", "key": "k-villeroy258-lasry"},
 {"source": "s-lasry", "key": "k-vulcob1573-lasry"},
-{"source": "s-cyphersolver", "key": "k-wotton1585-rebuilt"}
+{"source": "s-cyphersolver", "key": "k-wotton1585-rebuilt"},
+{"source": "s-cyphersolver", "key": "k-common-cipher-1781"},
+{"source": "s-cyphersolver", "key": "k-balfour-stewart-1781"}
  ],
  "unlinked": {
   "deboli1791": "Read from the contemporary decipherments (AGAD Zbiór Popielów 421); the code tables in targets/deboli1791/align are partial by-products of the alignment, and the keys (Zbiór Popielów 444, 451, 453, 454) are not online.",

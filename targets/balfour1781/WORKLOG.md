@@ -1,0 +1,25 @@
+# balfour1781 worklog
+
+- 2026-10-27 literature: repo search; only research/oldest/scan_2026-09-23/hard_targets.md line 150 (Saberton decoded the southern ciphers, JAR 2019). No target folder, not on DECODE.
+- 2026-10-27 access: NARA proxy records API for vols. 1 and 2 (naId 475670722, 475671370): 646 + 202 JP2 images with Fold3 descriptions. Worked.
+- 2026-10-27 access: Fold3 descriptions filtered for cipher/Cornwallis/Balfour: Balfour→Cornwallis 18 pp (img 562), Balfour→Stuart 12 Aug 1781 (576), Cornwallis→Wemyss 7 Oct 1780 (416), Craig→Cornwallis 23 Jul 1781 (552), plus Sorel (580), Laurens (586/591), vol. 2 unknown (188). Worked.
+- 2026-10-27 access: images 412-420, 550-584 (vol. 1), 186-190 (vol. 2) viewed. Interlinear decipherment on every cipher page of the Balfour letters (pp. 717-736); translations of Craig, Cornwallis→Wemyss and Cornwallis→Balfour on pp. 759-761. Worked.
+- 2026-10-27 literature: Saberton, JAR 2019: no evidence the Americans broke the southern ciphers; describes the Common cipher (ring, number for A first, fillers from 30). Lovell broke the Clinton/Cornwallis cipher in 1781 (NSA history; Washington to Lovell 6 Oct 1781).
+- 2026-10-27 hypothesis: p. 717 by hand: numbers < 50 are letters, >= 50 fillers, "the principal occurrences since you left us". Partly right (fillers start at 30).
+- 2026-10-27 transcription: two agents, pp. 717-721 and 722-725 (L numbers, I interlinear, N notes), 168 lines. Worked.
+- 2026-10-27 solver: key_from_interlinear.py, one fixed number->letter table per sheet: 20-27% agreement. Failed: the table changes inside a sheet.
+- 2026-10-27 key-structure hypothesis: ring.py, Saberton's ring with a setting per dash group, 26 letters: works in long runs, i/j and h/i confusions. Partial.
+- 2026-10-27 key-structure hypothesis: 25-letter alphabet (i = j): ring order of 25 numbers fixed, 5 24 29 1 25 23 22 6 19 9 17 13 16 7 12 8 14 15 26 4 18 21 3 2 11. Worked.
+- 2026-10-27 hypothesis: the braced groups (fillers + one real number) are setting indicators, the number = A; decode.py deciphers from the ciphertext alone. No. 1 reads. Worked.
+- 2026-10-27 verification: p. 718 indicator gives a=25; decipherer's note "should be 13"; a=13 reads "two troops under Colonel Fenwick". Worked.
+- 2026-10-27 transcription fix: p. 722 L01 and L13 end in a filler cut at the page edge ("4x"), which completes the indicators a=16 and a=2. Worked.
+- 2026-10-27 solver: indicators with only two fillers decided by en-modern on the next 40 letters; indicator groups at line starts/ends split from the neighbouring line. Worked (p. 719 L14, p. 724 L11/L14).
+- 2026-10-27 hypothesis: No. 3 opens without indicator: all 25 settings scored, a=14 (= No. 2's last) reads "some of the detachments". No. 2's opening six numbers read "bridge" under No. 1's last a=9. Settings carry across sheets. Worked.
+- 2026-10-27 hypothesis: lone numbers between dashes are numerals in clear (82, 84, 71, 64, dates); exception a lone number reading "a" (p. 732). Worked.
+- 2026-10-27 transcription: agent, pp. 729-736 (B and the Stewart letter). Worked.
+- 2026-10-27 sibling key: ring applied unchanged to B: 99.4% in English windows. Worked.
+- 2026-10-27 sibling key: ring on the Stewart letter (C): all 25 settings fail (-6.9 to -10.4). Ruled out.
+- 2026-10-27 key from source: C's interlinear aligned with fillers >= 40 removed ("day notice is sent" = 32 31 29 35 16 37 24 22 13 24 27 27 13 35 37): fixed table, 21 values; k=34 and e=1 from context. C reads 100% in English windows. Worked.
+- 2026-10-27 control: same measure with a corrupted ring (neighbour swaps): 2.1%, 0.0%, 0.0% on Nos. 1-3. Measure discriminates.
+- 2026-10-27 reading: reading.md written; decoded.txt has cipher / interlinear / decipherment per line.
+- 2026-10-27 verification: docs/_validate.py on validation.tsv (A, B typed number@setting; C table numbers): reading -2.241 vs random keys -7.258, shuffled refit -4.156; verdict pass. Write-up docs/balfour1781.html; _check_writeup result complete.
