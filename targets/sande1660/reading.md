@@ -17,7 +17,7 @@ Ele está muito sentido de que a cousa chegasse a estes tirarem a [?máscara] [6
 
 [63] O dito [132] [61] teve cartas de Monsieur de Comminges [132] [64] de França, que está em Lisboa.
 
-Ele dá notícia das instâncias que ele fez para que aceitassem a mediação [?tanto] [61] [...]
+Ele dá notícia das instâncias que ele fez para que [?aceitassem] a mediação [?tanto] [61] [...]
 
 # Passage 2. m0266, lines 2-5
 
@@ -39,7 +39,7 @@ O [132] de França faz grandes deveres para achar expediente, mas como não há 
 
 # Passage 5. m0269, last line (end of the second unit; "Ds gde" is in clear)
 
-[...] em sua mão [...] para Duarte da Silva. Deus guarde.
+[...] em sua mão, e o mesmo para Duarte da Silva. Deus guarde.
 
 # Passage 6. m0273, last 12 lines (end of the third unit, m0271-m0273)
 

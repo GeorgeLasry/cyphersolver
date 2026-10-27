@@ -3,7 +3,7 @@
 
 # Passage 1. m0265, lines 1-18
 
-I am at present in great displeasure, because word came from The Hague, and in it [62] I saw [341] things are so [?changed] that I [...] know what to say.
+I am at present in great displeasure, because word came from The Hague, and in it [62] I saw [341] things are [?changed], that I [...] know what to say.
 
 With the arrival of the [128], who have made a report [...], they are all so inflamed against Portugal that it is not to be believed.
 
@@ -13,7 +13,7 @@ He is much grieved that matters have come to the point where these people take o
 
 [63] The said [132] [61] has had letters from Monsieur de Comminges [132] [64] of France, who is in Lisbon.
 
-He reports the representations he made so that they should accept the mediation [?so much] [61] [...]
+He reports the representations he made so that they should [?accept] the mediation [?so much] [61] [...]
 
 # Passage 2. m0266, lines 2-5
 
@@ -35,7 +35,7 @@ The [132] of France makes great efforts to find an expedient, but as there is no
 
 # Passage 5. m0269, last line
 
-[...] in his hand [...] for Duarte da Silva. God keep [you].
+[...] in his hand, and the same for Duarte da Silva. God keep [you].
 
 # Passage 6. m0273, last 12 lines
 

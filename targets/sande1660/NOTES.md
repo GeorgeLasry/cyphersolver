@@ -35,11 +35,13 @@ a second reader) shows at least three units:
 - **m0265-m0267**: a letter that opens "Com grande desgosto fico ao presente" with no heading and ends half-way down
   m0267 with a dash (raw decode "… hemqueocorre —").
 - **m0268**: blank, except one line along the top edge, near the binding: in clear "[…]x° 30: Nov° 165[?]" (the start
-  is lost in the gutter; the last digit is probably 7), then in cipher **"Vossa [62] Excelência não firme [61] suas
+  is lost in the gutter; the last digit could be 7 or 2, and 7 would fit the content), then in cipher **"Vossa [62] Excelência não firme [61] suas
   cartas"** ("Your Excellency should not sign your letters"). This may explain why none of the cipher letters is
   signed. Which unit the line belongs to is not settled.
-- **m0269**: one page. It ends with "… [?] para Duarte da Silva" in cipher and "Ds gde" (Deus guarde) in clear.
-  Duarte da Silva may be the Portuguese merchant-banker of that name; not checked. m0270 is a blank verso.
+- **m0269**: one page. It ends with "… em sua mão, e o mesmo para Duarte da Silva" in cipher and "Ds gde" (Deus
+  guarde) in clear. Duarte da Silva may be the Portuguese merchant-banker of that name; not checked. About
+  two-thirds down the page a few words stand in clear after the cipher group 15.4.9.27.20.19.3 ("cuberta"):
+  "de Fran[cis]co Mendes en Casado" (read once, at review; not transcribed or interpreted). m0270 is a blank verso.
 - **m0271-m0273**: a letter ending "Deus [62] guarde a Vossa Excelência [62]", with no signature and no date.
   m0274 is a blank verso.
 
@@ -68,7 +70,7 @@ Numbers of 60 and up are code groups. The full table is in `key.txt`:
 
 `transcription.txt` holds the transcribed lines: m0265 lines 1-18, m0266 lines 2-5, the m0268 line, m0269 from the end
 of line 2 to line 12 plus its last line, and the last 12 lines of m0273. That is about 45 of roughly 290 cipher lines,
-1,332 tokens. **It is not a full transcription.**
+1,338 tokens. **It is not a full transcription.**
 
 Corrections to the first reading, all made on the scan (the second reader's, unless marked):
 
@@ -79,6 +81,8 @@ Corrections to the first reading, all made on the scan (the second reader's, unl
 4. m0265.09: "17" is most likely **12**: "afecto". m0265.03: "6.5.3.3" is most likely **6.5.8.3**: "diga".
 5. m0265.09: "19.3.27" is **19.3.21**, "tal" (preparation check; the same sign as 21 in 1.21.36 on that line).
 6. m0265.10: "13.3.2" before 2.4.5 is **18.3.2**, "não" (preparation check; the same 18 as in 18.3.13 on that line).
+7. m0269.end: the second group, left as [?] in the preparation check, is **1.2.7.27.13.7.2**, "e o mesmo" (read at
+   review, at 2x zoom): "em sua mão, e o mesmo para Duarte da Silva".
    With 5 and 6 the sentence reads "porque tal afecto no mo[d]o com que ele fala nas cousas do nosso reino não o vi".
 
 Doubtful, not changed: "crocadas" (m0265.03) may be "trocadas" (19 for 15); "pesaados" (m0265.13) may be 18.14 for
@@ -128,15 +132,15 @@ for reputation. The writer asks for advice and says that only an envoy from the 
 can calm this fury.
 
 **Date and people (inference, not proven).** De Thou at The Hague (1657-62), Comminges in Lisbon and Bordeaux in
-London, with the Dutch "inflamed against Portugal", fit the Dutch-Portuguese war of 1657-61. The m0268 line dated
-30 Nov 165[7] agrees. The writer is not identified. The catalogue entry names Diogo Lopes de Ulhoa at The Hague
+London, with the Dutch "inflamed against Portugal", fit the Dutch-Portuguese war of 1657-61. The m0268 line
+(30 Nov 165?) does not settle it: its last digit could be 7 or 2. The writer is not identified. The catalogue entry names Diogo Lopes de Ulhoa at The Hague
 writing to Rui Teles de Meneses in Paris; that lead, and Francisco de Melo (whose papers these are) as the addressee,
 are both untested. The letter just before (m0264, clear, "Anterdã 22 nov", signed "Criado de V. Ex.ª") comes from the
 same milieu; no link is shown.
 
-**Measured.** In the transcribed lines 1,306 of 1,332 tokens get a value (23 code-group tokens and 3 blotted signs
-open). `reading.md` has a hole rate of 0.128 on `research/reading_audit/v2_score.py` (read_share 0.872).
-`docs/_check_reading.py` gives a low clean share (0.385), because the open code groups, the names (Thou, Comminges,
+**Measured.** In the transcribed lines 1,313 of 1,338 tokens get a value (23 code-group tokens and 2 blotted signs
+open). `reading.md` has a hole rate of 0.127 on `research/reading_audit/v2_score.py` (read_share 0.873).
+`docs/_check_reading.py` gives a low clean share (0.423), because the open code groups, the names (Thou, Comminges,
 Bordeaux) and words outside the period Portuguese word list (acesos, empenhados, arrepesos …) count as holes in short
 sentences.
 
@@ -158,7 +162,7 @@ sentences.
 
 | Text | Real key | Letter values permuted, mean / max | Groups shuffled, real key, mean / max |
 |---|---|---|---|
-| transcription.txt (300 words) | **115** | 5.0 / 27 | 18.0 / 29 |
+| transcription.txt (300 words) | **115** | 5.0 / 27 | 17.6 / 29 |
 
 The second reader's run on its own m0269 transcription alone (52 words) gave 17 for the real key, against 1.3 / 7 and
 2.7 / 7.

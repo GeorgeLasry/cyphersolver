@@ -16,11 +16,11 @@
    "cleartext_in_document": "separate passages",
    "plaintext": {
     "location": ["none"],
-    "source": "No gloss, clear copy or printed decipherment found. The only clear words are the date on m0268 and 'Ds gde' at the end of m0269.",
+    "source": "No gloss, clear copy or printed decipherment found. The only clear words seen are the date on m0268, a few words on m0269 ('de Fran[cis]co Mendes en Casado') and 'Ds gde' at the end of m0269.",
     "partial": false
    },
    "length": {
-    "tokens": 1329,
+    "tokens": 1336,
     "distinct": 36,
     "unit": "mixed",
     "measured": false
@@ -30,7 +30,7 @@
     "source": "DigitArq JPEGs of PT/TT/LMP/0001, scans m0265, m0266, m0268, m0269, m0273",
     "corrections": 7,
     "image_quality": "fair",
-    "notes": "Partial: about 45 of roughly 290 cipher lines (m0265 lines 1-18, m0266 lines 2-5, the m0268 line, m0269 lines 2-12 and its last line, m0273 last 12 lines). m0269 lines 3-12 were transcribed by a second reader who never saw the first reading; seven tokens of the first reading were corrected against the scan (listed in transcription.txt). The m0268 line, the end of m0269.02 and the last line of m0269 were read once. Counts are of the transcribed lines only, made by splitting transcription.txt on '.' and '|' (not with --measure, which counts dot-joined words): 1,332 tokens, of them 1,329 numbers and 3 blotted or unread signs; 23 code-group tokens."
+    "notes": "Partial: about 45 of roughly 290 cipher lines (m0265 lines 1-18, m0266 lines 2-5, the m0268 line, m0269 lines 2-12 and its last line, m0273 last 12 lines). m0269 lines 3-12 were transcribed by a second reader who never saw the first reading; seven tokens of the first reading were corrected against the scan (listed in transcription.txt). The m0268 line, the end of m0269.02 and the last line of m0269 were read once; the second group of that last line (1.2.7.27.13.7.2, 'e o mesmo') was filled in at review. Counts are of the transcribed lines only, made by splitting transcription.txt on '.' and '|' (not with --measure, which counts dot-joined words): 1,338 tokens, of them 1,336 numbers and 2 blotted signs; 23 code-group tokens."
    }
   },
   {
@@ -106,10 +106,10 @@
   {"date": "2026-10-27", "kind": "statistics", "technique": ["frequency analysis", "repeat/pattern analysis"], "what": "Numbers 1-41 with word gaps kept: a letter substitution with a few homophones; numbers of 60 and up stand alone as code groups. Frequent short words (16.4.27, 6.27, 11.2.20) taken as que, de, por.", "result": "worked"},
   {"date": "2026-10-27", "kind": "solver", "technique": ["manual reconstruction", "language-model scoring"], "what": "Letter values built out from the short-word guesses and checked on the whole transcription: the opening 'com grande desgosto fico ao presente', Portugal, França, Monsiur de Cominges, Monsiur de Bordeus and the close 'a quem peço me diga largamente seu parecer sobre tudo' come out without forcing.", "result": "worked"},
   {"date": "2026-10-27", "kind": "verification", "technique": ["statistical test"], "what": "Second reader, separately: re-read m0265, m0266, m0273 and m0269 on the scans at 2x zoom; transcribed m0269 lines 3-12, which the first reader never saw, and decrypted them with an own implementation of the key: fluent Portuguese with no tuning. Corrections: m0265.07 19.4 (Tu, i.e. de Thou), not 13.4; 2.9, not 29; 20, not 28; 12, not 17; 8, not 3 in diga. 'Unassigned 17, 28, 29' were misreadings. 62 as a full stop not proven; 132 = embaixador proposed.", "result": "worked"},
-  {"date": "2026-10-27", "kind": "control", "technique": ["statistical test"], "what": "Function-word controls (decrypt.py --controls, 2,000 trials each, on the corrected transcription, 300 words): real key 115 words in a fixed list of about 50 common Portuguese words; letter values permuted mean 5.0, max 27; groups shuffled under the real key mean 18.0, max 29.", "result": "worked"},
-  {"date": "2026-10-27", "kind": "reading", "technique": ["contextual inference", "manual reconstruction"], "what": "Preparation check for this contribution: m0265.09 19.3.21 (tal) and m0265.10 18.3.2 (não) read on the scan; with them the sentence reads 'porque tal afecto no mo[d]o com que ele fala nas cousas do nosso reino não o vi'. Word joins across line ends: 'nada pode moderar esta fúria' (m0273.e08-09), 'aceitassem a mediação' (m0265.18), 'hum perso/nagem confidente nosso' (m0269.02-03).", "result": "worked"},
-  {"date": "2026-10-27", "kind": "access", "what": "Preparation check of the page layout: m0267 ends half-way down with a dash; m0268 is blank but for a line along the top edge, '[...] 30 Nov[embr]o 165[?7]' in clear and in cipher 'Vossa [62] Excelência não firme [61] suas cartas'; m0269 is one page ending in clear 'Ds gde', its last cipher words 'para Duarte da Silva'; m0270 and m0274 are blank versos. So the cipher pages hold at least three units, not one nine-page letter. Read once, not verified by a second reader.", "result": "worked"},
-  {"date": "2026-10-27", "kind": "hypothesis", "technique": ["contextual inference"], "what": "Date and people: de Thou (French ambassador at The Hague 1657-62), Comminges (French envoy in Lisbon), Bordeaux (French ambassador in London) and a Dutch Republic 'inflamed against Portugal' fit the Dutch-Portuguese war of 1657-61; the m0268 date 30 Nov 165[7] agrees. Writer and addressee not identified: the catalogue's lead (Diogo Lopes de Ulhoa at The Hague to Rui Teles de Meneses in Paris) and Francisco de Melo (owner of the papers) are both untested.", "result": "partial"},
+  {"date": "2026-10-27", "kind": "control", "technique": ["statistical test"], "what": "Function-word controls (decrypt.py --controls, 2,000 trials each, on the corrected transcription, 300 words): real key 115 words in a fixed list of about 50 common Portuguese words; letter values permuted mean 5.0, max 27; groups shuffled under the real key mean 17.6, max 29.", "result": "worked"},
+  {"date": "2026-10-27", "kind": "reading", "technique": ["contextual inference", "manual reconstruction"], "what": "Preparation check for this contribution: m0265.09 19.3.21 (tal) and m0265.10 18.3.2 (não) read on the scan; with them the sentence reads 'porque tal afecto no mo[d]o com que ele fala nas cousas do nosso reino não o vi'. Word joins across line ends: 'nada pode moderar esta fúria' (m0273.e08-09), 'hum perso/nagem confidente nosso' (m0269.02-03).", "result": "worked"},
+  {"date": "2026-10-27", "kind": "access", "what": "Preparation check of the page layout: m0267 ends half-way down with a dash; m0268 is blank but for a line along the top edge, '[...] 30 Nov[embr]o 165[?7]' in clear and in cipher 'Vossa [62] Excelência não firme [61] suas cartas'; m0269 is one page ending in clear 'Ds gde', its last cipher words 'em sua mão, e o mesmo para Duarte da Silva'; m0270 and m0274 are blank versos. So the cipher pages hold at least three units, not one nine-page letter. Read once, not verified by a second reader.", "result": "worked"},
+  {"date": "2026-10-27", "kind": "hypothesis", "technique": ["contextual inference"], "what": "Date and people: de Thou (French ambassador at The Hague 1657-62), Comminges (French envoy in Lisbon), Bordeaux (French ambassador in London) and a Dutch Republic 'inflamed against Portugal' fit the Dutch-Portuguese war of 1657-61; the m0268 date (30 Nov 165?, last digit 7 or 2) does not settle the year. Writer and addressee not identified: the catalogue's lead (Diogo Lopes de Ulhoa at The Hague to Rui Teles de Meneses in Paris) and Francisco de Melo (owner of the papers) are both untested.", "result": "partial"},
   {"date": "2026-10-27", "kind": "hypothesis", "technique": ["contextual inference"], "what": "Code groups: 132 = embaixador fits four places (o [132] de França; Comminges [132] [64] de França; o dito [132] escreveu a Monsiur de Bordeus) but is not proven; 61, 62, 63, 64, 65, 79, 102, 128 and 341 stay open.", "result": "partial"},
   {"date": "2026-10-27", "kind": "hypothesis", "technique": ["repeat/pattern analysis"], "what": "Cipher B (Rome 1664): numerical, two-digit multiples of 5, small numbers, three-digit groups and 9xx groups closing each passage; glosses of the time over some groups on m0063. The groups do not line up one-to-one with the glossed letters (nine groups for 'ninguem'). Not attacked.", "result": "failed"},
   {"date": "2026-10-27", "kind": "literature search", "what": "Repository history (400 commits on origin/main) has nothing on catalogue 390, LMP/0001 or Sande's LMP papers; the nearest is miranda1660 (catalogue 389, CPN/0019 and the MMCG 3L keys, not digitised). One web search found no edition or decipherment. Prestage and the published Sande correspondence not checked.", "result": "failed"}
@@ -122,7 +122,7 @@
   "contribution": ["transcription", "key recovered", "catalogue correction"],
   "first_break": true,
   "fraction_read_method": "estimated",
-  "fraction_read_source": "transcription.txt with decrypt.py: in the transcribed lines 1,306 of 1,332 tokens get a value (23 code-group tokens and 3 blotted or unread signs open), 0.98. Those lines are about 45 of roughly 290 cipher lines, so the share of the whole of cipher A given a value is put at about 0.15. reading.md: hole rate 0.128 on research/reading_audit/v2_score.py (read_share 0.872 of the transcribed passages).",
+  "fraction_read_source": "transcription.txt with decrypt.py: in the transcribed lines 1,313 of 1,338 tokens get a value (23 code-group tokens and 2 blotted signs open), 0.98. Those lines are about 45 of roughly 290 cipher lines, so the share of the whole of cipher A given a value is put at about 0.15. reading.md: hole rate 0.127 on research/reading_audit/v2_score.py (read_share 0.873 of the transcribed passages).",
   "fraction_read": 0.15,
   "codes_open": {"open": 10, "total": 10, "tokens_open": 23},
   "verification": ["independent verification", "matched control", "historical consistency"],
@@ -135,7 +135,7 @@
   "gaps": [
    {"item": "cipher A: the untranscribed lines (most of m0265-m0267, m0269 lines 1-2 and 13 to the end, m0271, m0272, m0273 above the last 12 lines)", "blocker": "not-attempted", "detail": "about 245 of roughly 290 cipher lines; the scans are online and good enough to read"},
    {"item": "cipher A: code groups 61, 62, 63, 64, 65, 79, 102, 128, 132, 341", "blocker": "open-codes", "detail": "no key sheet found; the rest of the text should repeat some of them; 132 = embaixador proposed, not proven"},
-   {"item": "cipher A: writer, addressee and exact date", "blocker": "not-attempted", "detail": "candidates (Ulhoa; Francisco de Melo; the 30 Nov 165[7] line on m0268) untested against clear letters of the codex and the catalogue 389 / MMCG 3L material"},
+   {"item": "cipher A: writer, addressee and exact date", "blocker": "not-attempted", "detail": "candidates (Ulhoa; Francisco de Melo; the 30 Nov 165? line on m0268, last digit 7 or 2) untested against clear letters of the codex and the catalogue 389 / MMCG 3L material"},
    {"item": "cipher B (Rome 1664, m0059-m0063 and neighbours, m0170)", "blocker": "not-attempted", "detail": "located and described; the interlinear glosses on m0063 are the way in"}
   ],
   "texts": [
@@ -148,8 +148,8 @@
     "translation": "translation.md",
     "language": "pt",
     "state": "read in part",
-    "read_share": 0.872,
-    "summary": "A Portuguese agent in the Dutch Republic, about the end of 1657, reports that the Dutch are inflamed against Portugal and that the French ambassador de Thou is friendly and is working for a French mediation, with Comminges in Lisbon and Bordeaux in London; a confidant says the Dutch regret the war but must keep it up for reputation; the writer asks Your Excellency for advice and says only an envoy from the King, to treat of a settlement, can calm this fury. A cipher line on m0268 tells the addressee not to sign his letters. Ten code groups are open.",
+    "read_share": 0.873,
+    "summary": "A Portuguese agent in the Dutch Republic, probably in 1657-59, reports that the Dutch are inflamed against Portugal and that the French ambassador de Thou is friendly and is working for a French mediation, with Comminges in Lisbon and Bordeaux in London; a confidant says the Dutch regret the war but must keep it up for reputation; the writer asks Your Excellency for advice and says only an envoy from the King, to treat of a settlement, can calm this fury. A cipher line on m0268 tells the addressee not to sign his letters. Ten code groups are open.",
     "note": "Only about 45 of some 290 cipher lines are transcribed; the reading covers those lines. read_share is 1 - hole rate of research/reading_audit/v2_score.py on reading.md. The sentence check (docs/_check_reading.py) is low because the open code groups and names (Thou, Comminges, Bordeaux) and words outside the period Portuguese word list count as holes. reading_review left to the maintainer."
    }
   ],
