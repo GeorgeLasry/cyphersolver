@@ -179,9 +179,10 @@ Tried and failed: the p.139 runs listed above, "choses" (needs € = h against t
 ## Contribution by WAINUT (27 Oct 2026)
 
 Contributed by WAINUT (https://github.com/WAINUTAI), a Dutch AI company. The work was done with AI language-model
-agents. The changed signs were read on the Gallica image (fr. 3181, btv1b9059845t view 36) and checked a second time,
-independently, on the image and on Tomokiyo's key. This section covers **fr. 3181 f. 55 only**; Colbert 390 pp. 139
-and 357-358 and Colbert 392 p. 231 were not re-opened. The text above is unchanged. The new files are in `wainut/`,
+agents. The changed signs were read on the Gallica image (fr. 3181, btv1b9059845t view 36); those of lines 2, 4, 8, 9
+and 11 were checked a second time, independently, on the image and on Tomokiyo's key. The l. 7 change was not
+re-checked on the image. This section covers **fr. 3181 f. 55 only**; Colbert 390 pp. 139 and 357-358 and Colbert 392
+p. 231 were not re-opened. The text above is unchanged. The new files are in `wainut/`,
 and `profile.json` gains one `outcome.texts` entry, a credit and dated solution steps (existing entries untouched).
 
 **Outcome: f. 55 stays decoded, not read, but closer.** The third pass closes or proposes several of the open runs
@@ -204,7 +205,7 @@ checking.
 > la conduicte d'iceulx, en mon intention se trouve toute conforme; et ay tenu ce chemin, dont je ver[r]ay ce qui
 > pourra sortir. J'ay auss[i] entendu ce que l{…} vous mist en avant, qui l'avoit deeliberay[?] faire pour le[?] bien
 > de la Chrestienté[?] et avancer le concile. A ce que je veoy, chacun faict {…} dessain[?] à part; et monstr{…}er
-> b[?]onne [et?] fructueuse {…} yssue[?] de ce concile. Mais nous sommes [à] voir l'utilité qui en sortira,
+> b[?]one [et?] fructueuse {…} yssue[?] de ce concile. Mais nous sommes [à] voir l'utilité qui en sortira,
 > mesmes{…}e ce qui se promect des sessions[?] [de] Decembre, desquelz vous avez oy parler[?], vous estant
 > dernierement à {…} Trante. [clear: Au demeurant ...]
 

@@ -80,9 +80,9 @@ on ff. 406/410. The text comes from the Brienne copies (and, for f. 406, the int
 ## Contribution by WAINUT (27 Oct 2026)
 
 Contributed by WAINUT (https://github.com/WAINUTAI), a Dutch AI company. The work was done with AI language-model
-agents, and the readings were checked against the Gallica images twice, the second time independently. The target
-and the Brienne 13 copies were found by Arya Sanketbhai Patel (PR #7); this section builds on that. The text above
-is unchanged. The new files are in `wainut/`, and `profile.json` gains two `outcome.texts` entries, credits and dated
+agents, and the key lines were checked against the Gallica images a second time, independently; what rests on one
+reading only is said below. The target and the Brienne 13 copies were found by Arya Sanketbhai Patel (PR #7); this
+section builds on that. The text above is unchanged. The new files are in `wainut/`, and `profile.json` gains two `outcome.texts` entries, credits and dated
 solution steps (existing entries untouched).
 
 **Outcome: read in part.** The two clear copies in Brienne 13 are transcribed through the enciphered passages, and
@@ -109,12 +109,13 @@ in full: only six stretches (128 signs) of ff. 404, 406 and 410.
    letter of 8 Feb begins lower on fol. 171r, under "Coppie de lettre du Roy audict sieur de Maisse de Chartres le
    huictiesme febvrier 1593 receue le viii.e Avril", with "Monsieur de Maisse j'ay tousiours faict responce a voz
    depesches ...".
-2. **Where the cipher is.** f. 406 is mostly in clear. Its cipher block starts on the line after "faire des bons
-   advis que vous y pouvez apporter", with "Le surplus de voz lettres est sur le subiect des affaires de Rome du
+2. **Where the cipher is.** f. 406 is mostly in clear. Its cipher block starts right after "faire des bons advis
+   que vous y pouvez apporter", on the same line of the leaf, with "Le surplus de voz lettres est sur le subiect des affaires de Rome du
    voiage ..." (copy fol. 172r); this was checked on f. 406 itself and on its twin f. 404. A short run of cipher
-   groups also stands on an earlier line of f. 406, inside the clear part; it is not decrypted. The enciphered
-   matter of 8 Feb: Rome; Pisany's journey and his arrival in Italy; the war in Piedmont and the new means Maisse
-   found to help it; a letter sent through Lesdiguières' men and a further charge for Lesdiguières; Gondi at Nancy
+   groups also stands on an earlier line of f. 406, inside the clear part; it is not decrypted. From the start of the
+   block on, the copy of 8 Feb covers the following (where the cipher ends is not fixed, so not all of it need be in
+   cipher): Rome; Pisany's journey and his arrival in Italy; the war in Piedmont and the new means Maisse found to
+   help it; a letter sent through Lesdiguières' men and a further charge for Lesdiguières; Gondi at Nancy
    with the King's passport; the King going down to Saumur, where his sister is. On f. 410 the cipher starts right
    after "de ma bonne grace et faveur", with "L'experience a faict cognoistre ..." (fol. 193v). It covers the affairs
    of Rome; the advice not yet to let Cardinal de Gondi and the marquis de Pisany come back, so as to keep the Pope
@@ -123,8 +124,8 @@ in full: only six stretches (128 signs) of ff. 404, 406 and 410.
 3. **Tomokiyo's key reads these leaves.** Applied unchanged, it gives the copy's text on every stretch: f. 410 cipher
    ll. 1-2 (ratio 0.94 and 0.93 against the copy), f. 404 l. 3 (1.00), f. 406 cipher l. 1 (0.91) and two pieces of
    l. 2 (1.00 and 0.79). With 2000 random permutations of the key values no stretch gets above 0.67, and none of the
-   four long ones above 0.53. Values confirmed include 27/e, 29/x, 14/p, to/r, 19/i, 23/c, 24/g, 26/n, 10/s, 8/r,
-   7/l, 16/m, 25/d, 5/u, 6/u, 1/o, y/o, the x-like sign = p, the omega-like sign = s, the d-shaped sign = t, the
+   four longest (13 to 39 signs) above 0.53. Values confirmed include 27/e, 29/x, 14/p, to/r, 19/i, 23/c, 24/g, 26/n,
+   10/s, 8/r, 7/l, 16/m, 25/d, 5/u, 6/u, 1/o, y/o, the x-like sign = p, the omega-like sign = s, the d-shaped sign = t, the
    crossed 2 = i, the T-like sign = f, the z-like sign = a, and the word signs **15 = faict, 17 = vous, 18 = est**,
    *que* (a 9 with a straight tail), *des* (p with a stroke) and *de* (looped sign). The hooked q-like sign that
    opens both blocks is Tomokiyo's l (l column, row 2), not a new homophone.

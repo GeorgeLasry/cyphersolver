@@ -21,12 +21,12 @@ Notes on the lines:
 - f. 406 l. 2, *Rome*: the pi-like sign is r in our reading of Tomokiyo's key, which gives *rrme*. The value o for it
   is not supported by the key, so the sign is left as a hole.
 - f. 406 l. 2, *voiage*: the `+` sign is a by the key, but the copy and the sense need i. Left as a hole.
-- f. 406 itself was checked, not only its twin f. 404: the cipher begins on the line after "faire des bons advis que
-  vous y pouvez apporter", as on f. 404.
+- f. 406 itself was checked, not only its twin f. 404: the cipher begins right after "faire des bons advis que vous y
+  pouvez apporter", on the same line, as on f. 404 (l. 3).
 - A short run of cipher groups stands on an earlier line of f. 406, inside the clear part of the letter. It was
   seen but not decrypted.
 
 Controls (`decode_check_output.txt`, difflib ratio between the decryption and the copy): f. 404 l. 3 1.00;
 f. 406 cipher l. 1 0.91; l. 2 start 1.00; l. 2 later 0.79. With 2000 random permutations of the key values the best
-ratio on any of these lines is 0.67, and 0.56 or lower on the two longer ones. The short stretches (7 and 11 signs)
+ratio on any of these lines is 0.67, and 0.52 or lower on the two longer ones (25 and 13 signs). The short stretches (7 and 11 signs)
 prove little alone, but they agree with the long ones and with f. 410.

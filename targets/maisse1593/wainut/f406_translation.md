@@ -25,7 +25,7 @@ Meanwhile, having thought it fitting to make some reply to the letters I receive
 
 If you have kept the copy of the cipher that I sent to the said sieur de Brèves, as I understood you would, you will see what I write to him; for I wish you to know all that comes and goes in that quarter, because of the connection between the two charges, and because of the value I set on the good advice you can give in it.
 
-## In cipher on f. 406 and f. 404 (from "Le surplus")
+## From "Le surplus" on: in cipher on f. 406 and f. 404 (where the cipher block ends is not fixed)
 
 The rest of your letters concerns the affairs of Rome, the journey of the marquis de Pisany and the war in Piedmont.
 

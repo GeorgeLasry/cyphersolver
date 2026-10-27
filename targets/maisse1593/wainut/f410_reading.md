@@ -13,7 +13,7 @@ Vous me faictes veoir si clairement par voz depesches la disposition et l'estat 
 
 Aussi ie vous prie vous asseurer que i'en estime vostre merite tel envers moy que vostre absence a cette occasion ne vous y fera rien perdre de ce que, en servant si bien et dignement, vous pouvez iustement desirer de ma bonne grace et faveur.
 
-## In cipher on f. 410 (from "L'experience")
+## From "L'experience" on: in cipher on f. 410 (where the cipher block ends is not fixed)
 
 L'experience a faict cognoistre que vous ne vous estes en rien trompé du iugement que vous avez de long temps faict des affaires de Rome.
 

@@ -211,7 +211,7 @@
     "plaintext matching",
     "key matching"
    ],
-   "what": "WAINUT contribution: the start of each cipher block fixed against the copies (f. 406 and twin f. 404: 'Le surplus de voz lettres ...', on the line after 'vous y pouvez apporter'; f. 410: 'L'experience a faict cognoistre ...', after 'de ma bonne grace et faveur'). Six stretches (f. 410 cipher ll. 1-2, f. 404 l. 3, f. 406 cipher l. 1 and two pieces of l. 2; 128 signs) transcribed sign by sign (wainut/cipher_lines.txt) and decrypted with Tomokiyo's 'Maisse' Cipher 2' unchanged: they give the copy's text (wainut/f406_decryption.md, f410_decryption.md). Word signs 15 = faict, 17 = vous, 18 = est confirmed.",
+   "what": "WAINUT contribution: the start of each cipher block fixed against the copies (f. 406 and twin f. 404: 'Le surplus de voz lettres ...', right after 'vous y pouvez apporter', on the same line of the leaf; f. 410: 'L'experience a faict cognoistre ...', after 'de ma bonne grace et faveur'). Six stretches (f. 410 cipher ll. 1-2, f. 404 l. 3, f. 406 cipher l. 1 and two pieces of l. 2; 128 signs) transcribed sign by sign (wainut/cipher_lines.txt) and decrypted with Tomokiyo's 'Maisse' Cipher 2' unchanged: they give the copy's text (wainut/f406_decryption.md, f410_decryption.md). Word signs 15 = faict, 17 = vous, 18 = est confirmed.",
    "result": "worked"
   },
   {
@@ -220,7 +220,7 @@
    "technique": [
     "statistical test"
    ],
-   "what": "WAINUT contribution: wainut/decode_check.py: difflib ratio of decryption to copy 0.79-1.00 on the six stretches (0.91-0.94 on the four long ones); 2000 random permutations of the key values give at most 0.67 on any stretch and 0.53 on the long ones; 2000 shuffles of the group order at most 0.65 on the long ones.",
+   "what": "WAINUT contribution: wainut/decode_check.py: difflib ratio of decryption to copy 0.79-1.00 on the six stretches (0.91-0.94 on the three longest, 25-39 signs; 0.79 on the 13-sign stretch with two holes); 2000 random permutations of the key values give at most 0.67 on any stretch and 0.53 on the four longest; 2000 shuffles of the group order at most 0.65 on the three longest and 0.71 on the 13-sign stretch.",
    "result": "worked"
   },
   {
@@ -327,7 +327,7 @@
     "translation": "wainut/f406_translation.md",
     "language": "fr",
     "state": "read in part",
-    "summary": "Henri IV to Maisse at Venice: he has answered every despatch and noted their dates, approves Maisse's sending of duplicates, hopes the despatch for the Pope was not delayed, and has written to the Grand Seigneur and his ministers (Maisse can read the letter to Breves if he kept the copy of the cipher). In cipher: Rome; Pisany's arrival in Italy; the war in Piedmont and a letter sent through Lesdiguieres' men with a further charge for Lesdiguieres; Gondi at Nancy with the King's passport; the King going down to Saumur, where his sister is. The repository's earlier summary of f. 406 (the Spanish insolence, Pisany and Cardinal Gondi not to leave Rome) describes the top of fol. 171r, which is the end of Maisse's own letter to the King of 10 Apr 1593.",
+    "summary": "Henri IV to Maisse at Venice: he has answered every despatch and noted their dates, approves Maisse's sending of duplicates, hopes the despatch for the Pope was not delayed, and has written to the Grand Seigneur and his ministers (Maisse can read the letter to Breves if he kept the copy of the cipher). From the start of the cipher block on (its end is not fixed): Rome; Pisany's arrival in Italy; the war in Piedmont and a letter sent through Lesdiguieres' men with a further charge for Lesdiguieres; Gondi at Nancy with the King's passport; the King going down to Saumur, where his sister is. The repository's earlier summary of f. 406 (the Spanish insolence, Pisany and Cardinal Gondi not to leave Rome) describes the top of fol. 171r, which is the end of Maisse's own letter to the King of 10 Apr 1593.",
     "reading_review": {
      "grade": "A",
      "by": "WAINUT (AI language-model agent, checked against the images)",
@@ -346,7 +346,7 @@
     "translation": "wainut/f410_translation.md",
     "language": "fr",
     "state": "read in part",
-    "summary": "Henri IV acknowledges Maisse's letters of 20 Feb, 7 and 23 Mar (one courier held by the duc de Nevers in Champagne) and assures him that his absence will cost him nothing. In cipher: experience has proved Maisse right about the affairs of Rome; on advice the King will not yet recall Cardinal de Gondi or the marquis de Pisany, to keep the Pope from extremes, and leaves their moves to the Grand Duke's advice; Gondi's promises; the original letters of the Grand Seigneur and his ministers received; the King waits on the ambassador's despatch.",
+    "summary": "Henri IV acknowledges Maisse's letters of 20 Feb, 7 and 23 Mar (one courier held by the duc de Nevers in Champagne) and assures him that his absence will cost him nothing. In cipher: experience has proved Maisse right about the affairs of Rome; on advice the King will not yet recall Cardinal de Gondi or the marquis de Pisany, to keep the Pope from extremes, and leaves their moves to the Grand Duke's advice; Gondi's promises. Then (whether still in cipher is not fixed): the original letters of the Grand Seigneur and his ministers received; the King waits on the ambassador's despatch.",
     "reading_review": {
      "grade": "A",
      "by": "WAINUT (AI language-model agent, checked against the images)",

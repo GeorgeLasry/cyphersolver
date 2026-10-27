@@ -13,7 +13,7 @@ Par où j'ay sceu ce que vous avez descouvert {…} par delà[?] du mariage[s], 
 
 J'ay auss[i] entendu ce que l{…} vous mist en avant, qui l'avoit deeliberay[?] faire pour le[?] bien de la Chrestienté[?] et avancer le concile.
 
-A ce que je veoy, chacun faict {…} dessain[?] à part; et monstr{…}er b[?]onne [et?] fructueuse {…} yssue[?] de ce concile.
+A ce que je veoy, chacun faict {…} dessain[?] à part; et monstr{…}er b[?]one [et?] fructueuse {…} yssue[?] de ce concile.
 
 Mais nous sommes [à] voir l'utilité qui en sortira, mesmes{…}e ce qui se promect des sessions[?] [de] Decembre, desquelz vous avez oy parler[?], vous estant dernierement à {…} Trante.
 

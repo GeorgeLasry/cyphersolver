@@ -27,7 +27,7 @@ Cependant, aiant estimé apropos de faire quelque response a celles que i'ay rec
 
 Si vous avez retenu le double du chiffre que i'ay envoié audict sieur de Breves, ainsy que i'ay entendu que vous le fissiez, vous verrez ce que ie luy escris; comme ie desire que vous ayez la cognoissance de tout ce qui ira et viendra de ce costé la, pour la connexité que les deux charges ont ensemble, et pour l'estime que ie faictz des bons advis que vous y pouvez apporter.
 
-## In cipher on f. 406 and f. 404 (from "Le surplus")
+## From "Le surplus" on: in cipher on f. 406 and f. 404 (where the cipher block ends is not fixed)
 
 Le surplus de voz lettres est sur le subiect des affaires de Rome, du voiage du marquis de Pisani et de ce qui touche la guerre de Piemont.
 

@@ -11,7 +11,7 @@ You show me so clearly in your despatches the disposition and state of all thing
 
 So I beg you to be assured that I hold your merit towards me to be such that your absence on this occasion will make you lose nothing of what, by serving so well and worthily, you may rightly desire of my good grace and favour.
 
-## In cipher on f. 410 (from "L'experience")
+## From "L'experience" on: in cipher on f. 410 (where the cipher block ends is not fixed)
 
 Experience has shown that you were in no way mistaken in the judgement you formed long ago of the affairs of Rome.
 
