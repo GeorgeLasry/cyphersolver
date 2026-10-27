@@ -1,0 +1,235 @@
+{
+ "schema_version": 1,
+ "target": "ellis1839",
+ "title": "Powhatan Ellis to John Forsyth, No. 9, Mexico, 16 Nov 1839: a coded despatch in the JQA code, with its 1839 clear copy (catalogue 653)",
+ "documents": [
+  {
+   "id": "ellis1839",
+   "read": "read",
+   "shelfmark": "NARA RG 59, Despatches from US Ministers to Mexico vol. 9, M97 roll 10 (naId 189102194), frames 0298, 0299, 0302, 0303; clear copy frames 0300-0301 (catalogue 653)",
+   "date": "16 Nov 1839",
+   "year": 1839,
+   "country": "United States",
+   "route": "Mexico City -> Washington",
+   "places": {
+    "from": "Mexico City",
+    "to": "Washington"
+   },
+   "language": "English",
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "separate folio"
+    ],
+    "source": "The Department's contemporary clear copy of the whole coded passage, words only, on frames 0300-0301 of the same volume, filmed between the code leaves (ellis1839_clearcopy.txt)."
+   },
+   "length": {
+    "tokens": 519,
+    "distinct": 254,
+    "unit": "code groups",
+    "measured": true,
+    "file": "ellis1839_transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "NARA M97 roll 10 frames 0298, 0299, 0302, 0303",
+    "corrections": 0,
+    "image_quality": "good",
+    "notes": "Contributed by WAINUT (27 Oct 2026). Every line checked a second time, independently, on full-frame views, about 15 lines on enlarged crops; no disagreement. Counts include 1261 (comma), 1264 (stop) and the inserted groups. Two groups not legible on the film (0303.02 blot, 0303.03 last group). Measured with docs/_check_profile.py --measure --digits --drop-first."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "code",
+   "syllabic"
+  ],
+  "summary": "John Quincy Adams's numerical syllable-and-word code of 1811-1812 (the = 1385), about 1,600 numbers, rebuilt in ../jqa; used here unchanged.",
+  "symbol_kind": "digits",
+  "digit_groups": {
+   "width": "1-4",
+   "separation": "spaces"
+  },
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": "unknown",
+   "kinds": [
+    "syllables",
+    "common words",
+    "names",
+    "titles"
+   ],
+   "unread_groups": 0
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "partly alphabetical",
+  "word_division": "none",
+  "doubled_letters": "unknown",
+  "sibling_key": "the JQA code, ../jqa/code_table.tsv (rebuilt there from the State Department clerk's decodes and Ford's printed decipherments of JQA's 1811-1812 despatches), applied unchanged",
+  "distinct_symbols": 254,
+  "notes": "distinct_symbols = distinct groups in ellis1839_transcription.txt (python docs/_check_profile.py --measure --digits --drop-first; 249 numbers). 1261 = comma and 1264 = full stop (fixed by the 1839 clear copy)."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in archive",
+   "where": "The Department's contemporary clear copy of the whole coded passage, words only, on frames 0300-0301 of the same volume (ellis1839_clearcopy.txt). Manning, Inter-American Affairs vol. 8 (1937) may print it: not checked.",
+   "found": "during attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "cleartext context",
+   "sibling key",
+   "known plaintext"
+  ],
+  "attack": "sibling key",
+  "human_role": "WAINUT set the task (catalogue 653) and the rules; the AI agents fetched the frames, transcribed, decoded, read and verified. No target-specific human intervention.",
+  "tools": [
+   "../appleton1823/decode.py (applies ../jqa/code_table.tsv; wrong-key controls)"
+  ],
+  "models": [
+   "AI language-model agents (WAINUT); a vision-capable language model for the transcription"
+  ],
+  "sessions": 1,
+  "first_date": "2026-10-27",
+  "last_date": "2026-10-27"
+ },
+ "solution": [
+  {
+   "date": "2026-10-27",
+   "kind": "access",
+   "what": "WAINUT contribution: located catalogue 653 on NARA M97 roll 10 frames 0298-0303 (Ellis, Mexico, 16 Nov 1839), in the JQA code (the = 1385), with the Department's clear copy on frames 0300-0301.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "transcription",
+   "what": "WAINUT contribution: 519 groups in 88 lines transcribed, every line checked a second time independently; the clear copy transcribed.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "sibling key",
+   "technique": [
+    "key matching"
+   ],
+   "what": "WAINUT contribution: applied ../jqa/code_table.tsv unchanged: 471 of 519 groups valued; joined into letters, the table-only decode recovers 88% of the clear copy's letters (difflib ratio 0.868; shuffled tables 0.12-0.22, shuffled group orders 0.20-0.22).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "verification",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "WAINUT contribution: groups aligned line by line with the 1839 clear copy (ellis1839_pairs.tsv, about 40 pairs): 1261 comma, 1264 full stop (the table has gar, H, 1x), 1067 s, 651 x, 1366 tal, 601 713 Mr.; the copy's 'Toops' repeats the groups' spelling.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "WAINUT contribution: wrong-key controls (decode.py --controls): function-word rate 0.28 for the true table, 0.02-0.12 for shifts of 1-100, 0.03 for random table permutations.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "literature search",
+   "what": "WAINUT contribution: Manning, Inter-American Affairs vol. 8 (1937) not reachable (bot check, not bypassed); two web searches found no printed text.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "reading",
+   "what": "WAINUT contribution: read (ellis1839_reading.md, read_share 1.0), following the groups where they differ from the clear copy.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "already solved",
+  "key": "partial",
+  "method": "read from existing decipherment",
+  "method_basis": "A complete contemporary clear copy of the whole coded passage (the Department's, frames 0300-0301 of the same volume) exists and was used to fill about 48 groups the table lacks; the work here is the transcription of the groups, their decode with the JQA code table (../jqa/code_table.tsv, applied unchanged) and the alignment with the copy.",
+  "contribution": [
+   "transcription"
+  ],
+  "fraction_read_method": "measured",
+  "fraction_read_source": "ellis1839_reading.md: research/reading_audit/v2_score.py hole rate 0.0; every group lines up with a word or syllable of the clear copy; the two groups illegible on the film rest on the clear copy.",
+  "fraction_read": 1.0,
+  "codes_open": {
+   "open": 0,
+   "total": 249,
+   "tokens_open": 0
+  },
+  "verification": [
+   "contemporary decipherment",
+   "matched control",
+   "historical consistency"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "lccompany",
+    "role": "solution",
+    "note": "PR: catalogue 653 (Ellis 1839) transcribed, decoded with the JQA code table (../jqa/code_table.tsv) and aligned with the 1839 clear copy",
+    "date": "2026-10-27"
+   },
+   {
+    "who": "lccompany",
+    "role": "transcription",
+    "note": "653 (519 groups, with the 1839 clear copy) from NARA M97 roll 10",
+    "date": "2026-10-27"
+   },
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "the State Department clerk's interlinear decodes of JQA's 1811-1812 despatches (NARA M35 reel 3), from which targets/jqa/code_table.tsv was rebuilt in this repository; that table is applied here unchanged"
+   },
+   {
+    "who": "ford",
+    "role": "key or decipherment used",
+    "note": "printed decipherments in Writings of John Quincy Adams vols 3-4, aligned in targets/jqa to rebuild the code table used here",
+    "source": "Ford, Writings of John Quincy Adams, vols 3-4"
+   },
+   {
+    "who": "contemporary",
+    "role": "prior solution",
+    "note": "the State Department's clear copy of Ellis's No. 9 (1839), M97 roll 10 frames 0300-0301, used to fill and check the reading"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "two groups not legible on the film (0303.02, 0303.03)",
+    "blocker": "illegible",
+    "detail": "the words rest on the clear copy"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "ellis1839",
+    "label": "Ellis to Forsyth, No. 9, Mexico, 16 Nov 1839 (catalogue 653), M97 roll 10 frames 0298-0303",
+    "transcription": "ellis1839_transcription.txt",
+    "decryption": "ellis1839_decryption.txt",
+    "reading": "ellis1839_reading.md",
+    "language": "en",
+    "state": "read",
+    "read_share": 1.0,
+    "summary": "The US minister in Mexico reports that Texian troops with disaffected Mexicans have crossed the line, apparently to attack Matamoros, and that the government is sending General Arista to the frontier with 4,000 men; a war with Texas would unite the Mexican parties; the foreign minister Cañedo wants a general congress of the Spanish American states, unlikely to succeed. The Department's 1839 clear copy is in the same file.",
+    "note": "A contemporary decipherment exists (prior solution, used); this entry adds the groups, the decode with the table and the alignment. reading_review left to the maintainer."
+   }
+  ],
+  "key_file": "../jqa/code_table.tsv",
+  "notes": "Contributed by WAINUT (catalogue 653). Same code as ../jqa; nothing there is changed. Proposed table changes (not applied) are in NOTES.md and ellis1839_pairs.tsv. Manning, Inter-American Affairs vol. 8 (Mexico, 1937) may print the clear text: not checked (the copy was not reachable).",
+  "first_break": "unpublished prior"
+ }
+}

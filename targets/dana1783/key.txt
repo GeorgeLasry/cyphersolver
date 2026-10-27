@@ -1,0 +1,12 @@
+# Key of Dana's cipher in No. 23 (6 Apr 1783 O.S.), recovered from the ciphertext alone (WAINUT, 27 Oct 2026)
+# Periodic numerical table of the Lovell type. Alphabet of 27 signs: a..z and &.
+# Key word WIN, used cyclically letter by letter. Under key letter K the plaintext letter K is written 1,
+# the next letter 2, and so on round the alphabet: number = (p - K) mod 27 + 1 (a = 0 ... & = 26).
+# Numbers above 27 are code groups. Their meanings are not known (no code list found).
+#
+# plain:  a  b  c  d  e  f  g  h  i  j  k  l  m  n  o  p  q  r  s  t  u  v  w  x  y  z  &
+W      : 6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27  1  2  3  4  5
+I      :20 21 22 23 24 25 26 27  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19
+N      :15 16 17 18 19 20 21 22 23 24 25 26 27  1  2  3  4  5  6  7  8  9 10 11 12 13 14
+#
+# Code groups seen: 29, 31, 137, 168 (meaning unknown).
