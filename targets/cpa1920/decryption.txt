@@ -1,0 +1,287 @@
+# decode.py output: grid from the Bureau decodes, tests, and every run decoded
+
+new-code cells from Bureau decodes: 112; old-code (page 14) cells: 27
+cells with two different Bureau values: {"5/14": {"U": 6, "Y": 1}, "1/2": {"I": 1, "7": 1}, "26/30": {"L": 1, "Z": 1}}
+
+== leave one run out: grid from the OTHER Bureau runs predicts this run (R right, W wrong, U unseen) ==
+A11      letters R15 W1 U 2 | digits R3 W0 U0  1/2: Bureau I, grid 7
+A12      letters R11 W0 U 1 | digits R0 W0 U0  
+A13      letters R25 W0 U 5 | digits R3 W0 U0  
+A15(1)   letters R22 W0 U 1 | digits R4 W0 U0  
+A15(2)   letters R24 W1 U 4 | digits R2 W0 U1  26/30: Bureau L, grid Z
+A15(3)   letters R24 W0 U 2 | digits R3 W0 U0  
+A15(4)   letters R28 W0 U 5 | digits R2 W0 U0  
+A886(1)  letters R 9 W0 U 0 | digits R4 W0 U0  
+A886(2)  letters R14 W0 U 0 | digits R2 W0 U1  
+A886(3)  letters R13 W0 U 0 | digits R2 W0 U1  
+A887(1)  letters R25 W1 U 2 | digits R2 W1 U1  26/30: Bureau Z, grid L; 1/2: Bureau 7, grid I
+A887(2)  letters R13 W0 U13 | digits R4 W0 U0  
+A887(3)  letters R21 W0 U 7 | digits R3 W0 U1  
+A939(b)  letters R 5 W1 U 0 | digits R0 W0 U0  5/14: Bureau Y, grid U
+A939(a)  letters R 2 W0 U 0 | digits R0 W0 U0  
+TOTAL letters R251 W4 U42 | digits R34 W1 U5
+CONTROL shuffled grid, 500 repetitions: right 6845, wrong 138155, unseen 23500; right rate 0.047
+CONTROL grid shifted one line down: right 3, wrong 178, unseen 156
+CONTROL grid shifted one letter along: right 13, wrong 160, unseen 164
+A880 run 2 (2/8 2/9 2/10 2/11 2/12), followed by the struck typed word "arden": the grid gives AR...
+
+== digits ==
+digit tokens 40, at letter position 1-2 of their line: 40
+letter tokens 297, at letter position 1-2: 1 [('I', '1/2')]
+digit cells: 1/1=3, 1/2=7, 2/1=7, 3/2=8, 5/1=4, 5/2=0, 6/1=4, 6/2=2, 7/2=6, 10/1=5, 10/2=6, 11/2=1, 16/2=8, 17/2=1, 20/2=1, 22/2=2
+cells used for two different digits: []
+first-letter-of-the-number-word rule (1=O, 2/3=T, 4/5=F, 6/7=S, 8=E, 0=Z) against the data:
+  4 and 5 would share a letter; cells for 4: ['5/1', '6/1'], for 5: ['10/1'], shared: []
+  6 and 7 would share a letter; cells for 6: ['10/2', '7/2'], for 7: ['1/2', '2/1'], shared: []
+  2 and 3 would share a letter; cells for 2: ['22/2', '6/2'], for 3: ['1/1'], shared: []
+  digit 0 -> 'Z': 0 known 'Z' cells at position 3 or later could serve; used for a digit: 0
+  digit 1 -> 'O': 7 known 'O' cells at position 3 or later could serve; used for a digit: 0
+  digit 2 -> 'T': 4 known 'T' cells at position 3 or later could serve; used for a digit: 0
+  digit 3 -> 'T': 4 known 'T' cells at position 3 or later could serve; used for a digit: 0
+  digit 4 -> 'F': 1 known 'F' cells at position 3 or later could serve; used for a digit: 0
+  digit 5 -> 'F': 1 known 'F' cells at position 3 or later could serve; used for a digit: 0
+  digit 6 -> 'S': 6 known 'S' cells at position 3 or later could serve; used for a digit: 0
+  digit 7 -> 'S': 6 known 'S' cells at position 3 or later could serve; used for a digit: 0
+  digit 8 -> 'E': 9 known 'E' cells at position 3 or later could serve; used for a digit: 0
+
+== grid rows (letter positions 1-34) from the Bureau decodes; "." = no value ==
+line  1: 37I.YLLS..THEK..GV................
+line  2: 7.ENOCHAR.............T...........
+line  3: .8FRIEND.H.P......................
+line  4: ..SOCIAL.S........................
+line  5: 40O.GO.......U....................
+line  6: 42M.M.RI..O.P........L.N..........
+line  7: .6TH.A..I..T......................
+line  8: ..IN.ER...........................
+line  9: ..SPE.C...A...............W...I...
+line 10: 56ADREA...JO..B...WI..............
+line 11: .1P.E.S.......U...................
+line 12: ....R.............................
+line 14: ..W.R....J........................
+line 15: ..A.IL....S.......................
+line 16: .8POE.............................
+line 17: .1.I..............................
+line 18: ...U......V.......................
+line 19: ....E.......................V.....
+line 20: .1.......U........................
+line 22: .2................................
+line 26: .............................?....
+line 27: ................................UM
+
+== every run, decoded with the full grid ==
+Each word: tokens, then the value of each token. [a/b] = cell with no value; [..] = cut or torn; lower case = typed in clear.
+
+A11 (new code)   Bureau: typed at the foot: "Decode: Hugo S---l, 148 Jackson St., Sandusky, Ohio."
+  2/7 5/14 5/5 5/6                              HUGO
+  4/3 3/17 3/13 3/18 1/6                        S[3/17][3/13][3/18]L
+  11/2 5/1 3/2                                  148
+  {Jackson St.}                                 jackson st.
+  4/3 4/7 2/4 3/8 5/14 4/3 1/14 1/5             SANDUSKY
+  5/3 2/7 1/2 2/5                               OH7O
+  = HUGO - S[3/17][3/13][3/18]L - 148 - jackson st. - SANDUSKY - OH7O
+  note: S[3/17][3/13][3/18]L: the Bureau also left these three letters open, and no other run uses the cells. OH7O: 1/2 is 7 in 773 (A887.1); the Bureau reads OHIO, so the writer most likely typed 1/2 for 1/3 (I).
+
+A12 (new code)   Bureau: typed: "Decode: Paul Stockman."
+  11/3 2/8 5/14 1/6                             PAUL
+  4/3 7/3 5/3 2/6 1/14 6/3 2/8 2/4              STOCKMAN
+  = PAUL - STOCKMAN
+
+A13 (new code)   Bureau: typed: "Decode: Frank Thomas, 446 E. Washington St., Phoenix."
+  3/3 3/4 2/8 3/7 1/14                          FRANK
+  7/3 2/7 4/4 6/3 4/7 4/3                       THOMAS
+  5/1 6/1 7/2                                   446
+  2/3                                           E
+  14/3 2/8 4/3 3/10 1/3 2/4 1/17 7/3 2/5 3/7    WASHINGTON
+  4/3 7/12                                      ST
+  3/12 7/4 2/5 3/6 3/7 1/3 {x}                  PHOENIx
+  = FRANK - THOMAS - 446 - E - WASHINGTON - ST - PHOENIx
+  note: The final x of PHOENIX is typed in clear.
+
+A14 (old code)   Bureau: typed (old code page 14): "Decode: Wm. Burns, 2600 Oakdale St."
+  2/7 2/9                                       WM
+  7/8 4/2 1/15 2/8 1/14                         BURNS
+  6/1 3/7 1/5 1/13 6/1 5/12                     TWENTY
+  4/3 2/3 12/21                                 SIX
+  3/6 1/18 1/13 11/1 6/4 3/1 5/10               HUNDRED
+  1/1 3/2 13/14 5/10 3/2 3/8 3/1                OAKDALE
+  3/5 2/4                                       ST
+  = WM - BURNS - TWENTY - SIX - HUNDRED - OAKDALE - ST
+
+A15.1 (new code)   Bureau: typed: "Decode: (1) S. Ki?ga, 1615 St. Clair St., Racine, Wis." ("S. K" struck through; one letter unclear)
+  4/3                                           S
+  1/14 3/4 5/5 4/7                              KRGA
+  11/2 7/2 17/2 10/1                            1615
+  9/3 7/3                                       ST
+  4/5 1/6 7/6 7/9 8/7                           CLAIR
+  11/7 1/11 2/9                                 STR
+  10/5 10/7 9/7 8/3 8/4 8/6                     RACINE
+  14/3 15/5 15/11                               WIS
+  = S - KRGA - 1615 - ST - CLAIR - STR - RACINE - WIS
+  note: KRGA: 3/4 = R is attested 8 times; the Bureau wrote "Ki?ga" and struck "S. K". G (5/5) comes only from HUGO. The name stays doubtful.
+
+A15.2 (new code)   Bureau: typed: "(2) Chas. K-ldas, 23-8 Julia Str., Milwaukee, Wis."
+  2/6 2/7 2/8 1/8                               CHAS
+  1/14 18/6 26/30 10/4 10/3 9/3                 K[18/6][L|Z]DAS
+  22/2 1/1 14/2 3/2                             23[14/2]8
+  14/10 18/4 15/6 15/5 15/3                     JULIA
+  4/3 1/11 3/4                                  STR
+  6/3 1/3 1/7 14/3 4/7 5/14 1/14 1/13 2/3       MILWAUKEE
+  14/3 8/3 4/10                                 WIS
+  = CHAS - K[18/6][L|Z]DAS - 23[14/2]8 - JULIA - STR - MILWAUKEE - WIS
+  note: 18/6 has no value. 26/30 is Z in Speizman and L here (Bureau "K-ldas"), so the name is K?LDAS or K?ZDAS. 14/2 is at a digit position but has no attested value: the Bureau wrote "23-8"; 2308 if 14/2 is 0 [?].
+
+A15.3 (new code)   Bureau: typed: "(3) Joe Rasheta, 504 Park Ave., Racine, Wis."
+  10/11 10/12 11/5                              JOE
+  3/4 4/7 4/10 2/7 2/3 7/3 7/6                  RASHETA
+  10/1 5/2 5/1                                  504
+  9/4 9/11 2/9 1/14                             PARK
+  2/8 19/29 3/6                                 AVE
+  10/5 10/7 9/7 8/3 8/4 8/6                     RACINE
+  14/3 15/5 15/11                               WIS
+  = JOE - RASHETA - 504 - PARK - AVE - RACINE - WIS
+
+A15.4 (new code)   Bureau: typed: "(4) Peter Barry, 48 - Milwaukee St., Milwaukee, Wis."
+  3/12 3/6 7/3 2/3 2/9                          PETER
+  10/15 2/8 3/4 8/7 1/5                         BARRY
+  6/1 3/2 3/1                                   48[3/1]
+  6/5 6/8 4/8 14/3 7/6 20/10 1/14 19/5 16/5     MILWAUKEE
+  4/3 1/11                                      ST
+  6/3 1/3 1/7 14/3 4/7 5/14 1/14 1/13 2/3       MILWAUKEE
+  14/3 8/3 4/10                                 WIS
+  = PETER - BARRY - 48[3/1] - MILWAUKEE - ST - MILWAUKEE - WIS
+  note: 3/1 has no value; the Bureau wrote "48 -". The third digit is open.
+
+A493 (new code)   no Bureau decode
+  6/3 6/8 2/4 2/5 3/4                           MINOR
+  = MINOR
+
+A527 (new code)   no Bureau decode
+  6/3 2/8 1/5                                   MAY
+  11/2 6/2                                      12
+  = MAY - 12
+
+A706.1 (new code)   no Bureau decode
+  7/6 1/11 5/29 2/5 4/4 3/8                     AT[5/29]OOD
+  = AT[5/29]OOD
+  note: 5/29 has no value; ATWOOD is the likely name [?], W is not attested at 5/29.
+
+A706.2 (new code)   no Bureau decode
+  5/12 6/13                                     [5/12]P
+  = [5/12]P
+  note: 5/12 has no value. If 5/12 is C, the five runs read UCP and CP (two parties); C at 5/12 is not attested.
+
+A706.3 (new code)   no Bureau decode
+  11/15 5/12 6/13                               U[5/12]P
+  = U[5/12]P
+  note: U = 11/15 and P = 6/13 come only from the Bureau decode of A887.2 (SUPERIOR, POLTN).
+
+A706.4 (new code)   no Bureau decode
+  5/12 {and} 6/13                               [5/12]andP
+  = [5/12]andP
+  note: Typed "5/12 and 6/13/": the clear "and" between the tokens is most likely a slip.
+
+A706.5 (new code)   no Bureau decode
+  5/13 {and} 6/13                               [5/13]andP
+  = [5/13]andP
+  note: Typed 5/13, not 5/12, and again with "and" between the tokens.
+
+A706.6 (new code)   no Bureau decode
+  5/12 6/13                                     [5/12]P
+  = [5/12]P
+
+A880.1 (old code)   no Bureau decode
+  4/2 6/4 6/10 4/1 6/5                          UR[6/10][4/1][6/5]
+  = UR[6/10][4/1][6/5]
+  note: Old code page 14. Its grid has only the one Bureau decode (A14), so three cells are open. A typed word of about 8 letters, starting with s, follows and is struck through; it is not read.
+
+A880.2 (new code)   no Bureau decode
+  2/8 2/9 2/10 2/11 2/12                        AR[2/10][2/11][2/12]
+  = AR[2/10][2/11][2/12]
+  note: Followed by the typed word "arden", struck through. The grid gives A R from the Bureau decodes; D E N rest on that struck word alone (2/8-2/12 = ARDEN, as in ENOCH ARDEN on line 2).
+
+A886.1 (new code)   Bureau: typed: "Decode: Bundle address S. Minski, 1320 18th St."
+  4/3                                           S
+  6/3 1/3 2/4 9/3 1/14 1/3                      MINSKI
+  [cut]1 6/2 5/2                                [..]20
+  11/2 3/2                                      18
+  4/3 7/3                                       ST
+  = S - MINSKI - [..]20 - 18 - ST
+  note: The first token of the number is cut at the edge; the Bureau read 1320.
+
+A886.2 (new code)   Bureau: typed: "Telegraph address Emil Smith (h) 1 R 11 Curtis"
+  2/3 6/3 1/3 1/7                               EMIL
+  4/3 6/3 4/6 [cut]2                            SMI[..]
+  11/2 2/9 17/2 20/2                            1R11
+  2/6 18/4 2/9 7/3 3/5 4/3                      CURTIS
+  = EMIL - SMI[..] - 1R11 - CURTIS
+  note: The last token of SMI[..] is cut; the Bureau read Smith (h).
+
+A886.3 (new code)   Bureau: typed, torn: "[..]hlin, 808 Montana Av."
+  [cut] 2/3 3/4 1/3 4/5                         [..]ERIC
+  4/3 2/8 2/7 1/6 4/6 2/4                       SAHLIN
+  [cut] 3/2 5/2 16/2                            [..]808
+  6/3 2/5 2/4 7/3 4/7 3/7 2/8                   MONTANA
+  10/3 1/18                                     AV
+  = [..]ERIC - SAHLIN - [..]808 - MONTANA - AV
+  note: The page is torn before 2/3: a token may be lost, so the first name ends in ERIC (very likely Eric). The Bureau decode is torn too ("[..]hlin").
+
+A887.1 (new code)   Bureau: typed: "Decode: Harr Speizman, 773 8th St., Milwaukee, Wis. (1)"
+  2/7 2/8 2/9 3/4                               HARR
+  9/3 9/4 9/5 1/3 26/30 6/3 10/3 2/4            SPEI[L|Z]MAN
+  2/1 1/2 1/1                                   773
+  3/2 1/11 1/12                                 8TH
+  4/3 7/3 3/4                                   STR
+  6/5 3/5 1/6 14/3 4/7 5/14 1/14 1/13 2/3       MILWAUKEE
+  10/19 4/6 4/3                                 WIS
+  = HARR - SPEI[L|Z]MAN - 773 - 8TH - STR - MILWAUKEE - WIS
+
+A887.2 (new code)   Bureau: typed: "Joe Poltn, 1208 Winter St., Superior, Wis. (2)"
+  10/11 10/12 10/6                              JOE
+  6/13 6/11 6/22 2/23 6/24                      POLTN
+  11/2 6/2 5/2 3/2                              1208
+  14/3 15/5 8/4 7/3 8/6 8/7                     WINTER
+  9/3 ?/16 12/5                                 S[?/16]R
+  4/3 11/15 16/3 16/5 14/5 17/4 16/4 12/5       SUPERIOR
+  10/19 10/20 11/7                              WIS
+  = JOE - POLTN - 1208 - WINTER - S[?/16]R - SUPERIOR - WIS
+  note: ?/16 has an unreadable line number. S[?]R is STR, as in other runs; the Bureau wrote St.
+
+A887.3 (new code)   Bureau: typed: "W. J. Schnetrum, 1624 Oake Ave., Superior, Wis. (3)"
+  14/3                                          W
+  14/10                                         J
+  4/3 4/5 2/7 2/4 2/3 7/3 6/7 27/33 27/34       SCHNETRUM
+  17/2 10/2 6/2 6/1                             1624
+  5/3 10/3 1/14 11/5                            OAKE
+  10/7 18/11 11/5                               AVE
+  9/3 27/33 3/12 3/6 2/9 1/3 4/4 10/5           SUPERIOR
+  9/27 9/31 9/2?                                WI[9/2?]
+  = W - J - SCHNETRUM - 1624 - OAKE - AVE - SUPERIOR - WI[9/2?]
+  note: The last token is 9/2 plus an unreadable figure, or a slip; WI[S].
+
+A888 (new code)   no Bureau decode
+  11/2 11/2 5/1 3/2                             1148
+  9/3                                           S
+  3/2                                           8
+  4/3 7/3                                       ST
+  = 1148 - S - 8 - ST
+  note: 1148 S. 8[th] St. (Philadelphia).
+
+A939.1 (new code)   Bureau: pencilled above the run: "I W"
+  1/3                                           I
+  14/3                                          W
+  = I - W
+  note: I. W., most likely the I.W.W., which the same letter names in clear.
+
+A939.2 (new code)   Bureau: typed under the run: "(Decode: S O V R Y S)"
+  4/3 2/5 1/18                                  SOV
+  3/4 5/14 4/3                                  RUS
+  = SOV - RUS
+  note: The Bureau wrote SOVRYS; 5/14 is U in six other Bureau words. SOV. RUS. = the magazine Soviet Russia.
+
+B494 (new code)   no Bureau decode
+  4/3                                           S
+  3/4 5/14 10/15 1/3 2/4                        RUBIN
+  = S - RUBIN
+  note: B = 10/15 comes from BARRY; every other cell is in two or more Bureau words.
+
+tokens (cut markers not counted): 437; with a value from the grid: 415 (0.950)

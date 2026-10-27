@@ -1,0 +1,105 @@
+# Catalogue 678. Communist Party of America book code, letters seized at 170 Bleecker St., New York, 1920-21.
+# NARA RG 65, M1085 roll 940, case 202600 (4 of 4), naId 369272950. Pages are PDF pages of M1085-940A (A) and
+# M1085-940B (B), e.g. A0015 = 940A p. 15. "scan 115" is the Bureau's own pencilled exhibit number.
+#
+# Every coded run found on the typed pages, as typed by the Bureau of Investigation's copyist. Read from the scans
+# and re-read independently by a second agent; the redo re-read A887 runs (2) and (3) and the A886 member run.
+#
+# Format: one run per line:  <run id> TAB <key: new | old> TAB <tokens>
+#   a/b     line a, letter b of the key page
+#   -       a word break as typed ("--" is written "-")
+#   {..}    clear text typed inside the run
+#   [cut]   the page is torn or cut here; a token may be lost
+#   [cut]1  a token cut at the edge, only its last figure visible
+#   ?/16    a token with an unreadable figure
+# Lines starting with "##" give the page, date, writer and the clear words around each run (">" lines).
+# The Bureau's own "Decode:" lines are in bureau_decodes.tsv, not here.
+
+## A0011 (scan 114). 4 Apr 1921. J. Mortin, Sandusky, Ohio, to the Executive Secretary. New code.
+## > "Please make conections with Mr. [run]"
+A11	new	2/7 5/14 5/5 5/6 - 4/3 3/17 3/13 3/18 1/6 - 11/2 5/1 3/2 - {Jackson St.} - 4/3 4/7 2/4 3/8 5/14 4/3 1/14 1/5 - 5/3 2/7 1/2 2/5
+## The last token 2/5 is typed at the right margin of the next line. The letter is signed only "(Signed) J. Mortin".
+
+## A0012 (scan 118). Undated (answers a letter of 25 Mar). To "Comrade Flynn"; signed D O #6 (rubber stamped).
+## > "My official name ... shall be [run]. I must have a credential to this name."
+A12	new	11/3 2/8 5/14 1/6 - 4/3 7/3 5/3 2/6 1/14 6/3 2/8 2/4
+
+## A0013 (scan 117). 4 Feb 1921. To the Executive Secretary. Asks for 50 copies of Bukharin's "Programme".
+## > "Will you send 50 copies at once of Bukharin's "Programme" to address as follows: (New code) [run]"
+A13	new	3/3 3/4 2/8 3/7 1/14 - 7/3 2/7 4/4 6/3 4/7 4/3 - 5/1 6/1 7/2 - 2/3 - 14/3 2/8 4/3 3/10 1/3 2/4 1/17 7/3 2/5 3/7 - 4/3 7/12 - 3/12 7/4 2/5 3/6 3/7 1/3 {x}
+## The same letter says "Am repeating it [the new bundle address] in new code below"; no second run is on this page.
+
+## A0014 (scan 116). Page 3 of a letter signed "Your Siegel", undated. Old code, page 14.
+## > "From now on please send all parcels to Phila  p. 14  [run]"
+A14	old	2/7 2/9 - 7/8 4/2 1/15 2/8 1/14 - 6/1 3/7 1/5 1/13 6/1 5/12 - 4/3 2/3 12/21 - 3/6 1/18 1/13 11/1 6/4 3/1 5/10 - 1/1 3/2 13/14 5/10 3/2 3/8 3/1 - 3/5 2/4
+
+## A0015 (scan 115). Undated sheet headed "Agents.", four runs.
+## > "For Bohemian ... (25 copies)"
+A15.1	new	4/3 - 1/14 3/4 5/5 4/7 - 11/2 7/2 17/2 10/1 - 9/3 7/3 - 4/5 1/6 7/6 7/9 8/7 - 11/7 1/11 2/9 - 10/5 10/7 9/7 8/3 8/4 8/6 - 14/3 15/5 15/11
+## > "(10 copies)"
+A15.2	new	2/6 2/7 2/8 1/8 - 1/14 18/6 26/30 10/4 10/3 9/3 - 22/2 1/1 14/2 3/2 - 14/10 18/4 15/6 15/5 15/3 - 4/3 1/11 3/4 - 6/3 1/3 1/7 14/3 4/7 5/14 1/14 1/13 2/3 - 14/3 8/3 4/10
+## > "Armenian: (15 copies)"
+A15.3	new	10/11 10/12 11/5 - 3/4 4/7 4/10 2/7 2/3 7/3 7/6 - 10/1 5/2 5/1 - 9/4 9/11 2/9 1/14 - 2/8 19/29 3/6 - 10/5 10/7 9/7 8/3 8/4 8/6 - 14/3 15/5 15/11
+## > "English (10 copies)"
+A15.4	new	3/12 3/6 7/3 2/3 2/9 - 10/15 2/8 3/4 8/7 1/5 - 6/1 3/2 3/1 - 6/5 6/8 4/8 14/3 7/6 20/10 1/14 19/5 16/5 - 4/3 1/11 - 6/3 1/3 1/7 14/3 4/7 5/14 1/14 1/13 2/3 - 14/3 8/3 4/10
+## The first two tokens of A15.4 are typed "3/12/36" with no space.
+
+## A0493. March 1921 (answers letters of March). District letter on finances, Finnish groups and leaflets.
+## > "As to the application by this district for [run], I can state that I have not the slightest knowledge."
+A493	new	6/3 6/8 2/4 2/5 3/4
+
+## A0527. 27 Apr 1921. Office circular on the unity convention.
+## > "We hereby inform you that you must have your delegates to the unity convention elected by [run] this means
+## > that you are supposed to have all your delegates ready to begin travel upon this date"
+A527	new	6/3 2/8 1/5 - 11/2 6/2
+
+## A0706 (Bureau no. 898). 23 Mar 1921. Report signed "Grey D.O. 12".
+## > "[run] Delegate of P A C arrived here Monday."
+A706.1	new	7/6 1/11 5/29 2/5 4/4 3/8
+## > "He convened a joint meeting of representatives of the [run] and our Dist. Comm."
+A706.2	new	5/12 6/13
+## > "The committees to be composed of two members of [run]"
+A706.3	new	11/15 5/12 6/13
+## > "and three members of [run]/ Grey and Conner were elected from our side"
+A706.4	new	5/12 {and} 6/13
+## > "and Brown Mitchell and Jones from the [run] side."
+A706.5	new	5/13 {and} 6/13
+## > "The [run] has a C E C member here masquerading as an organizer and us [is] apparently trying to organize to smother us"
+A706.6	new	5/12 6/13
+
+## A0880 (scan 492). 24 Jan 1921. Circular to all D.O.s, signed "Exsec".
+## > "P.S. Hereafter telegrams sent by the N O will be signed: Old code page 14: [run 1] - [struck typed word]
+## > New code last page: [run 2] [struck typed word 'arden']"
+A880.1	old	4/2 6/4 6/10 4/1 6/5
+A880.2	new	2/8 2/9 2/10 2/11 2/12
+## Both runs are followed by a typed word struck through: after run 1 about 8 letters starting with "s" (unread),
+## after run 2 "arden". Before run 1 a typed group is struck out (XXXXXXXX).
+
+## A0886. Undated. Letter signed "District Organizer 9" (Salt Lake, Ogden, Butte, Pocatello, Portland). Left edge torn.
+## > "Bundle address (new code) [run 1]"
+A886.1	new	4/3 - 6/3 1/3 2/4 9/3 1/14 1/3 - [cut]1 6/2 5/2 - 11/2 3/2 - 4/3 7/3
+## > "Telegraph address (new code) [run 2]"
+A886.2	new	2/3 6/3 1/3 1/7 - 4/3 6/3 4/6 [cut]2 - 11/2 2/9 17/2 20/2 - 2/6 18/4 2/9 7/3 3/5 4/3
+## > "Below find name and address (new code) of member who has [moved] from Pocatello, Ida. to Portland, Oregon."
+A886.3	new	[cut] 2/3 3/4 1/3 4/5 - 4/3 2/8 2/7 1/6 4/6 2/4 - [cut] 3/2 5/2 16/2 - 6/3 2/5 2/4 7/3 4/7 3/7 2/8 - 10/3 1/18
+
+## A0887 (Bureau no. 497). Undated. "COPY"; signed Frederick Mayer (the D.O. #13 of B0494). Three runs, "1st.",
+## "2nd." and "3rd."; the third is headed "Agent for English Labor Organ:".
+A887.1	new	2/7 2/8 2/9 3/4 - 9/3 9/4 9/5 1/3 26/30 6/3 10/3 2/4 - 2/1 1/2 1/1 - 3/2 1/11 1/12 - 4/3 7/3 3/4 - 6/5 3/5 1/6 14/3 4/7 5/14 1/14 1/13 2/3 - 10/19 4/6 4/3
+A887.2	new	10/11 10/12 10/6 - 6/13 6/11 6/22 2/23 6/24 - 11/2 6/2 5/2 3/2 - 14/3 15/5 8/4 7/3 8/6 8/7 - 9/3 ?/16 12/5 - 4/3 11/15 16/3 16/5 14/5 17/4 16/4 12/5 - 10/19 10/20 11/7
+A887.3	new	14/3 - 14/10 - 4/3 4/5 2/7 2/4 2/3 7/3 6/7 27/33 27/34 - 17/2 10/2 6/2 6/1 - 5/3 10/3 1/14 11/5 - 10/7 18/11 11/5 - 9/3 27/33 3/12 3/6 2/9 1/3 4/4 10/5 - 9/27 9/31 9/2?
+## The copy is faint. The last token of A887.3 is "9/2" and one more unreadable figure, or a slip.
+
+## A0888. 26 Mar [1921]. To the Executive Secretary, from the Philadelphia side (Italian and Lettish literature).
+## > "The address of the assistant editor in place of the one out is Mr. Louis De Philips Address [run] Phila. Pa."
+A888	new	11/2 11/2 5/1 3/2 - 9/3 - 3/2 - 4/3 7/3
+
+## A0939. Undated. Report signed "D.O. 9".
+## > "Being watched very closely now, since distribution of leaflets. Members of [run 1] - doing distributing for us."
+A939.1	new	1/3 - 14/3
+## > "P.S. ... Have you any objection to working up a route for [run 2]. Magazine in order to make up deficit?"
+A939.2	new	4/3 2/5 1/18 - 3/4 5/14 4/3
+
+## B0494. Typed date "January 24, 1920". Signed "Frederick Mayer D.O. #13" (Milwaukee, Kenosha).
+## > "I shall see to day Comrade [run] (this is his right name) he can speak English, Russian, Jewish and German"
+B494	new	4/3 - 3/4 5/14 10/15 1/3 2/4
