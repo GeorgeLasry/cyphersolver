@@ -1,0 +1,254 @@
+{
+ "schema_version": 1,
+ "target": "manuel1910",
+ "title": "King Manuel II to Queen Amélie, three code telegrams from Bussaco, August 1910 (ANTT PT/TT/CAM/M13; catalogue 408): transcribed, not read",
+ "documents": [
+  {
+   "id": "m0015",
+   "read": "not read",
+   "shelfmark": "ANTT, Documentos de D. Carlos, D. Amélia e D. Manuel II, mct. 13 (PT/TT/CAM/M13), images m0015 and m0017 (backs m0016, m0018)",
+   "date": "8 Aug 1910",
+   "year": 1910,
+   "country": "Portugal",
+   "route": "Bussaco -> Pena (Sintra)",
+   "places": {
+    "from": "Bussaco",
+    "to": "Sintra"
+   },
+   "language": "Portuguese",
+   "pages": 2,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decode found in M13."
+   },
+   "length": {
+    "tokens": 36,
+    "distinct": 30,
+    "unit": "code groups",
+    "measured": true,
+    "file": "m0015_transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "DigitArq images PT-TT-CAM-M13_m0015.jpg, _m0017.jpg (by hand, Modelo 72)",
+    "corrections": 0,
+    "image_quality": "fair",
+    "notes": "One reading from the image, not independently re-checked; the receiver's stroke through the third digit of each group makes some digits doubtful (marked ?). 36 items + 18 clear words = 54 = the form's word count."
+   }
+  },
+  {
+   "id": "m0019",
+   "read": "not read",
+   "shelfmark": "ANTT, Documentos de D. Carlos, D. Amélia e D. Manuel II, mct. 13 (PT/TT/CAM/M13), image m0019 (back m0020)",
+   "date": "2 Aug 1910",
+   "year": 1910,
+   "country": "Portugal",
+   "route": "Bussaco -> Pena (Sintra)",
+   "places": {
+    "from": "Bussaco",
+    "to": "Sintra"
+   },
+   "language": "unknown",
+   "pages": 1,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decode found in M13."
+   },
+   "length": {
+    "tokens": 3,
+    "distinct": 3,
+    "unit": "code groups",
+    "measured": true,
+    "file": "m0019_transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "DigitArq image PT-TT-CAM-M13_m0019.jpg",
+    "corrections": 0,
+    "image_quality": "fair",
+    "notes": "Three groups, the three underlined on m0022; probably a service repetition."
+   }
+  },
+  {
+   "id": "m0021",
+   "read": "not read",
+   "shelfmark": "ANTT, Documentos de D. Carlos, D. Amélia e D. Manuel II, mct. 13 (PT/TT/CAM/M13), images m0021 and m0022",
+   "date": "2 Aug 1910",
+   "year": 1910,
+   "country": "Portugal",
+   "route": "Bussaco -> Pena (Sintra)",
+   "places": {
+    "from": "Bussaco",
+    "to": "Sintra"
+   },
+   "language": "Portuguese",
+   "pages": 2,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decode found in M13."
+   },
+   "length": {
+    "tokens": 54,
+    "distinct": 47,
+    "unit": "code groups",
+    "measured": true,
+    "file": "m0021_transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "DigitArq images PT-TT-CAM-M13_m0021.jpg, _m0022.jpg (by hand, Modelo 72)",
+    "corrections": 2,
+    "notes": "One reading from the image, not independently re-checked; the receiver's stroke through the third digit of each group makes some digits doubtful (marked ?). 54 items + 18 clear words = 72 = the form's word count. Against the first pass (15 groups of m0021 only): adds 4965? and 89864? at the start, reads 39644 (not 37644), and adds the 37 items of sheet 2 (m0022).",
+    "image_quality": "fair"
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "code"
+  ],
+  "summary": "Telegraphic code of five-digit groups over 00000-99999 with short items 05 and 06, between clear Portuguese openings and closings; not Sabugosa's alphabetical code.",
+  "symbol_kind": "digits",
+  "digit_groups": {
+   "width": "5, and the short items 05, 06",
+   "separation": "spaces"
+  },
+  "distinct_symbols": 73,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": true,
+   "kinds": [
+    "common words"
+   ],
+   "unread_groups": 93
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "none",
+  "sibling_key": "Sabugosa's alphabetical code (targets/sabugosa1910): tested, no group matches, also with the struck third digit dropped.",
+  "notes": "distinct_symbols = distinct items over the three telegrams (groups.py). The two long telegrams share 37708, 39644, 93608 and 97183, and open with a parallel run after the same clear words 'Tudo bem tempo lindo': 37708 ... 97183 39644 05/06. The receiver at Pena struck each group through its third digit (m0021-22) or dashed it (m0015); the meaning is unknown."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "No decode in M13; no printed decipherment found (one web search by the first pass). M13 m0001-m0002 hold a pencil text in telegram style signed Manuel (London, a dinner given by the Queen Mother), which may be the decode of a telegram not in the file; it does not match these three.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "cleartext context"
+  ],
+  "attack": "none",
+  "human_role": "WAINUT chose the catalogue items and set the rules; AI language-model agents fetched the images and transcribed them. No hand correction recorded.",
+  "tools": [
+   "groups.py (counts, repeats, shared groups, chance control)"
+  ],
+  "models": [
+   "AI language-model agents (WAINUT); a vision-capable language model for the transcription"
+  ],
+  "sessions": 1,
+  "first_date": "2026-10-27",
+  "last_date": "2026-10-27"
+ },
+ "solution": [
+  {
+   "date": "2026-10-27",
+   "kind": "access",
+   "what": "All 22 images of M13 fetched through the DigitArq JSON backend. Telegram forms on m0015, m0017, m0019, m0021, m0022 (three telegrams: m0015+m0017, m0019, m0021+m0022).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "transcription",
+   "what": "Transcribed the three telegrams with headers and stamps: 36, 3 and 54 items; the word counts on the forms (54, 72) match.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "statistics",
+   "technique": [
+    "repeat/pattern analysis"
+   ],
+   "what": "Repeats and shared groups: m0015 and m0021 share 37708, 39644, 93608, 97183 and open with a parallel run; m0019 repeats three groups of m0022. Random telegrams of the same sizes share two groups in about 1 of 10,000 trials.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "sibling key",
+   "technique": [
+    "key matching"
+   ],
+   "what": "Tried Sabugosa's 52 code values (targets/sabugosa1910) on the 79 five-digit groups, as written and with the struck third digit dropped: no match, and 7 groups would fall above the last known value (veio 9019). Not the same code in that form.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "literature search",
+   "what": "Looked through the clear letters of M13 for a decode: none for these telegrams.",
+   "result": "failed"
+  }
+ ],
+ "outcome": {
+  "class": "not read",
+  "key": "none",
+  "method": "not solved",
+  "method_basis": "No decode of the time and no codebook; the groups are transcribed and the repeats listed.",
+  "contribution": [
+   "transcription",
+   "sender or date identified",
+   "catalogue correction"
+  ],
+  "fraction_read": 0.0,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "documents[].length: 0 of 93 items have a value.",
+  "verification": [
+   "none"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "lccompany",
+    "role": "solution",
+    "note": "attempt recorded: telegrams transcribed and analysed (repeats, shared groups, Sabugosa's code tried); no reading",
+    "date": "2026-10-27"
+   },
+   {
+    "who": "lccompany",
+    "role": "transcription",
+    "note": "three telegrams, 93 items, from the DigitArq images",
+    "date": "2026-10-27"
+   },
+   {
+    "who": "lccompany",
+    "role": "identification",
+    "note": "dates and route: Bussaco -> Pena, 2 and 8 Aug 1910 (the catalogue gives 1908-1910)",
+    "date": "2026-10-27"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "all 93 items of the three telegrams",
+    "blocker": "no-key-material",
+    "detail": "no decode in M13 and no codebook found; the shared opening run is a possible crib only if a decode turns up"
+   }
+  ],
+  "notes": "Contributed by WAINUT (catalogue 408). The catalogue's 'some in cipher' concerns only the three telegrams; the letters of M13 are in clear."
+ }
+}

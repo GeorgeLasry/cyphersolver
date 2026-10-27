@@ -1,0 +1,80 @@
+1. telegraph word count (address + text, 5 figures = 1 word)
+  m0001: 12 + 63 = 75, header 75
+  m0003: 9 + 37 = 46, header 46
+  m0001 with 60134 read as one 6-figure group 601341: 76
+
+2. m0003: groups between the clear words against the units of the decode of the time
+  1 groups / 1 units ok: 1378=Hoje
+  3 groups / 3 units ok: 24724=Camara dos Pares, 29878=Arroio, 11876=divorciado
+  5 groups / 5 units ok: 37600=interpellar, 43322=Mi. Estrangeiros, 34962=acerca de, 62851=viagem, 41285=V. M.
+  4 groups / 4 units ok: 53538=referencia, 28643=ausencia, 28605=auctoridades, 67398=Livorno
+  8 groups / 8 units ok: 5556=falta, 63416=visita, 50554=Presidente, 3707=da Rep., 49641=franceza, 43322=Mm. dos Estrangeiros, 18148=contestar, 5554=falso
+  1 groups / 1 units ok: 26541=boato
+  1 groups / 1 units ok: 5897=factos
+  2 groups / 2 units ok: 59587=termos, 17836=convenientes
+
+3. order: raw Spearman rho (value, alphabetical) over 24 decoded groups = 0.569
+  page model: best rho 0.957 at split 375 (pages below it reflected, lines kept)
+    34962 ->  2662 acerca
+    29878 ->  7778 arroio
+    28605 ->  8905 auctoridades
+    28643 ->  8943 ausencia
+    26541 -> 11041 boato
+    24724 -> 12824 camara
+    18148 -> 19448 contestar
+    17836 -> 19736 convenientes
+    11876 -> 25776 divorciado
+     5897 -> 31797 factos
+     5554 -> 32054 falso
+     5556 -> 32056 falta
+     3707 -> 33807 da   <- out of order
+     1378 -> 36278 hoje
+    37600 -> 37600 interpellar
+    41285 -> 41285 magestade (vossa)
+    43322 -> 43322 ministro
+    49641 -> 49641 franceza   <- out of order
+    50554 -> 50554 presidente
+    53538 -> 53538 referencia
+    59587 -> 59587 termos
+    62851 -> 62851 viagem
+    63416 -> 63416 visita
+    67398 -> 67398 livorno   <- out of order
+  null (shuffled words, same choice of split): median 0.275, max 0.746; P(>= 0.957) = 0/2000
+
+4. m0001 groups bracketed under the page model (decoded neighbours in model order)
+  34648: after acerca, before arroio
+  7684: after divorciado, before factos
+  22922: after camara, before contestar
+  67033: after visita, before livorno
+  50272: after franceza, before presidente
+  32540: after acerca, before arroio
+  55354: after referencia, before termos
+  57136: after referencia, before termos   [guess: seu]
+  53803: after referencia, before termos   [guess: regresso]
+  67394: after visita, before livorno   [guess: Lisboa]
+  63194: after viagem, before visita
+  60134: after termos, before viagem
+  10972: after divorciado, before factos
+  49920: after franceza, before presidente
+  1347: after da, before hoje
+  49638: after ministro, before franceza
+  41285: = Vossa Magestade
+  15716: after convenientes, before divorciado
+  35512: after None, before acerca
+  10928: after divorciado, before factos
+  42476: after magestade (vossa), before ministro
+  56840: after referencia, before termos
+  49638: after ministro, before franceza
+  60775: after termos, before viagem
+  15128: after convenientes, before divorciado
+  53251: after presidente, before referencia
+  55354: after referencia, before termos
+  42414: after magestade (vossa), before ministro
+  5249: after falta, before da
+
+5. groups shared with the sibling folders
+  carlos1903: 59 distinct groups, shared: none
+  sabugosa1910: 89 distinct groups, shared: none
+  manuel1910: 71 distinct groups, shared: none
+  lima1909: 258 distinct groups, shared: none
+  range of this code: 1347-67398
