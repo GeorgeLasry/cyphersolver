@@ -1,0 +1,251 @@
+{
+ "schema_version": 1,
+ "target": "deboli1791",
+ "title": "Deboli (St Petersburg) to King Stanisław August, cipher despatches of 1791 (AGAD Zbiór Popielów 5; catalogue 420)",
+ "documents": [
+  {
+   "id": "ZbPop5-001",
+   "shelfmark": "AGAD Warszawa, Zbiór Popielów 5, k. 2-5v (img 0002-0007)",
+   "date": "4 Jan 1791",
+   "year": 1791,
+   "country": "Poland-Lithuania",
+   "route": "St Petersburg -> Warsaw",
+   "language": "Polish",
+   "pages": 7,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "separate collection"
+    ],
+    "source": "ZbPop 421 item 088 (k. 297, 301) is the clear text of this date; it looks short for a 2,202-group despatch and is not yet checked."
+   },
+   "length": {
+    "tokens": 2202,
+    "distinct": 671,
+    "unit": "code groups",
+    "measured": true,
+    "file": "transcription/groups_001.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "AGAD agadd2 image server, full-size slides",
+    "image_quality": "good",
+    "notes": "Closed q-like 4 vs 9 and the z-shaped 2/4 are the main doubts; 62 groups marked ? across 001-003. Small letters a/b/c (rarely e, z, o, oo) are written under many groups; meaning not yet known."
+   },
+   "read": "not read"
+  },
+  {
+   "id": "ZbPop5-002",
+   "shelfmark": "AGAD Warszawa, Zbiór Popielów 5, k. 6-7 (img 0008-0009)",
+   "date": "7 Jan 1791",
+   "year": 1791,
+   "country": "Poland-Lithuania",
+   "route": "St Petersburg -> Warsaw",
+   "language": "Polish",
+   "pages": 3,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "separate collection"
+    ],
+    "source": "Cabinet decipherment, AGAD Zbiór Popielów 421 item 090, k. 302-303 (img 0380-0381), docketed 'reçu le 19.'; transcribed in transcription/zbpop421_090_clear_1791-01-07.txt and matched to the cipher at the opening and at two repeated words."
+   },
+   "length": {
+    "tokens": 708,
+    "distinct": 319,
+    "unit": "code groups",
+    "measured": true,
+    "file": "transcription/groups_002.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "AGAD agadd2 image server, full-size slides",
+    "image_quality": "good",
+    "notes": "One reading pass plus a re-check per strip; not cross-checked against the decipherment group by group yet."
+   },
+   "read": "not read"
+  },
+  {
+   "id": "ZbPop5-003",
+   "shelfmark": "AGAD Warszawa, Zbiór Popielów 5, k. 8-13 (img 0010-0017)",
+   "date": "11 Jan 1791",
+   "year": 1791,
+   "country": "Poland-Lithuania",
+   "route": "St Petersburg -> Warsaw",
+   "language": "Polish",
+   "pages": 11,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "separate collection"
+    ],
+    "source": "ZbPop 421 item 091 (7 images), not yet transcribed."
+   },
+   "length": {
+    "tokens": 214,
+    "distinct": 138,
+    "unit": "code groups",
+    "measured": true,
+    "file": "transcription/groups_003.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "AGAD agadd2 image server, full-size slides",
+    "image_quality": "good",
+    "notes": "First page only (img 0010); img 0011-0017 not transcribed."
+   },
+   "read": "not read"
+  }
+ ],
+ "system": {
+  "types": [
+   "code",
+   "syllabic",
+   "nomenclator"
+  ],
+  "summary": "A Polish syllabic code of about 2,200 numbered groups with whole-word groups for common words and titles, small a/b/c marks under many groups, and a clear French salutation and closing.",
+  "symbol_kind": "digits",
+  "distinct_symbols": "unknown",
+  "digit_groups": {
+   "separation": "dots"
+  },
+  "diacritics": {
+   "used": true
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": true,
+   "kinds": [
+    "syllables",
+    "common words",
+    "titles"
+   ]
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "none",
+  "doubled_letters": "unknown",
+  "sibling_key": "unknown"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in archive",
+   "where": "AGAD Zbiór Popielów 421: the cabinet's fair-copy decipherments, catalogued by AGAD as Deboli's clear Polish letters",
+   "found": "during attempt",
+   "used": true
+  },
+  "inputs": [
+   "images"
+  ],
+  "attack": "archive decipherment",
+  "human_role": "Pasted the catalogue 420 task brief; no other input.",
+  "tools": [
+   "AGAD online inventories",
+   "AGAD agadd2 image server",
+   "web search",
+   "PIL crops",
+   "image-reading subagents"
+  ],
+  "models": [
+   "claude-opus-5-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-10-26",
+  "last_date": "2026-10-27"
+ },
+ "solution": [
+  {
+   "date": "2026-10-26",
+   "kind": "access",
+   "what": "Parsed the AGAD ZbPop 5 letter list (105 items, 463 images) and found the full-size image path on agadd2.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "key from source",
+   "what": "Looked for the key units ZbPop 444, 451, 453, 454 and the deciphered registers 317/320 online: no album and no letter list.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "literature search",
+   "what": "Web search in Polish and English for decipherments of Deboli's 1791 cipher despatches; Zielińska & Danilczyk edit 1780-1782 only; Szczygielski 2014 cites only the King's clear letters.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "hypothesis",
+   "technique": [
+    "contextual inference"
+   ],
+   "what": "The 'Sire!' salutation suggested French plaintext; the same-day ZbPop 421 despatch also opens 'Sire!' and continues in Polish.",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "transcription",
+   "what": "Transcribed the 1792 Danzig mixed clear/code letters ZbPop 415 items 084 and 086 (794 groups) with their filed clear copies.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "transcription",
+   "what": "Transcribed ZbPop 5 despatches 001 and 002 in full and the first page of 003: 3,124 groups.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "sibling key",
+   "technique": [
+    "frequency analysis"
+   ],
+   "what": "Compared the 1791 code with the 1792 Danzig code: the frequent Danzig groups do not occur in 1791, and 1791 has one-digit groups that Danzig lacks; different codes.",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis"
+   ],
+   "what": "The ZbPop 421 'clear despatches' are the cabinet's decipherments of ZbPop 5: same despatch numbers, 'reçu le' docket, 103 date matches with tracking image counts.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "verification",
+   "technique": [
+    "plaintext matching",
+    "repeat/pattern analysis"
+   ],
+   "what": "Read ZbPop 421 item 090 and matched it to cipher 002: ani od WKrMci, ani od Deputacyi = 1944 951 1578 1944 951 21a 2152; przysięgi x2 = 1117 1353 212 1775; Graff(owi de) Stahremberg x2 = ... 686 1405 1255 207, at the expected positions.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "method": "read from existing decipherment",
+  "method_basis": "The cabinet's contemporary fair-copy decipherments survive as AGAD Zbiór Popielów 421 and match the cipher; the work left is transcribing and checking.",
+  "contribution": [
+   "transcription",
+   "catalogue correction"
+  ],
+  "class": "already solved",
+  "key": "partial",
+  "fraction_read": "unknown",
+  "verification": [
+   "contemporary decipherment"
+  ],
+  "credits": [
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "the royal cabinet's fair-copy decipherments, AGAD Zbiór Popielów 421 (catalogued as Deboli's clear letters)"
+   }
+  ],
+  "notes": "In progress: 3 of 105 despatches transcribed, one aligned. The same cipher/clear pairing very probably holds for catalogue 417-421 (ZbPop 428/417, 17/419, 4/420, 416/415)."
+ }
+}
