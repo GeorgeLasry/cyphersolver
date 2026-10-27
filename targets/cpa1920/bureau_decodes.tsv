@@ -1,0 +1,21 @@
+# The Bureau of Investigation's own decodes on the same pages (1920-21): its typed "Decode:" lines and pencil glosses,
+# as written, and aligned word by word to the tokens in transcription.txt. "?" marks a letter the Bureau leaves open
+# or gives no usable value for (a gap, a dash, a struck letter, an unread token). decode.py builds the key grid
+# from these lines only. Columns: unit, run, where and what the Bureau wrote, alignment (WORD=tokens; ...).
+unit	run	bureau_as_written	alignment
+A11	A11	typed at the foot: "Decode: Hugo S---l, 148 Jackson St., Sandusky, Ohio."	HUGO=2/7 5/14 5/5 5/6; S???L=4/3 3/17 3/13 3/18 1/6; 148=11/2 5/1 3/2; SANDUSKY=4/3 4/7 2/4 3/8 5/14 4/3 1/14 1/5; OHIO=5/3 2/7 1/2 2/5
+A12	A12	typed: "Decode: Paul Stockman."	PAUL=11/3 2/8 5/14 1/6; STOCKMAN=4/3 7/3 5/3 2/6 1/14 6/3 2/8 2/4
+A13	A13	typed: "Decode: Frank Thomas, 446 E. Washington St., Phoenix."	FRANK=3/3 3/4 2/8 3/7 1/14; THOMAS=7/3 2/7 4/4 6/3 4/7 4/3; 446=5/1 6/1 7/2; E=2/3; WASHINGTON=14/3 2/8 4/3 3/10 1/3 2/4 1/17 7/3 2/5 3/7; ST=4/3 7/12; PHOENI=3/12 7/4 2/5 3/6 3/7 1/3
+A15(1)	A15.1	typed: "Decode: (1) S. Ki?ga, 1615 St. Clair St., Racine, Wis." ("S. K" struck through; one letter unclear)	S=4/3; K?GA=1/14 3/4 5/5 4/7; 1615=11/2 7/2 17/2 10/1; ST=9/3 7/3; CLAIR=4/5 1/6 7/6 7/9 8/7; STR=11/7 1/11 2/9; RACINE=10/5 10/7 9/7 8/3 8/4 8/6; WIS=14/3 15/5 15/11
+A15(2)	A15.2	typed: "(2) Chas. K-ldas, 23-8 Julia Str., Milwaukee, Wis."	CHAS=2/6 2/7 2/8 1/8; K?LDAS=1/14 18/6 26/30 10/4 10/3 9/3; 23?8=22/2 1/1 14/2 3/2; JULIA=14/10 18/4 15/6 15/5 15/3; STR=4/3 1/11 3/4; MILWAUKEE=6/3 1/3 1/7 14/3 4/7 5/14 1/14 1/13 2/3; WIS=14/3 8/3 4/10
+A15(3)	A15.3	typed: "(3) Joe Rasheta, 504 Park Ave., Racine, Wis."	JOE=10/11 10/12 11/5; RASHETA=3/4 4/7 4/10 2/7 2/3 7/3 7/6; 504=10/1 5/2 5/1; PARK=9/4 9/11 2/9 1/14; AVE=2/8 19/29 3/6; RACINE=10/5 10/7 9/7 8/3 8/4 8/6; WIS=14/3 15/5 15/11
+A15(4)	A15.4	typed: "(4) Peter Barry, 48 - Milwaukee St., Milwaukee, Wis."	PETER=3/12 3/6 7/3 2/3 2/9; BARRY=10/15 2/8 3/4 8/7 1/5; 48?=6/1 3/2 3/1; MILWAUKEE=6/5 6/8 4/8 14/3 7/6 20/10 1/14 19/5 16/5; ST=4/3 1/11; MILWAUKEE=6/3 1/3 1/7 14/3 4/7 5/14 1/14 1/13 2/3; WIS=14/3 8/3 4/10
+A886(1)	A886.1	typed: "Decode: Bundle address S. Minski, 1320 18th St."	S=4/3; MINSKI=6/3 1/3 2/4 9/3 1/14 1/3; 20=6/2 5/2; 18=11/2 3/2; ST=4/3 7/3
+A886(2)	A886.2	typed: "Telegraph address Emil Smith (h) 1 R 11 Curtis"	EMIL=2/3 6/3 1/3 1/7; SMI=4/3 6/3 4/6; 1R11=11/2 2/9 17/2 20/2; CURTIS=2/6 18/4 2/9 7/3 3/5 4/3
+A886(3)	A886.3	typed, torn: "[..]hlin, 808 Montana Av."	??HLIN=4/3 2/8 2/7 1/6 4/6 2/4; 808=3/2 5/2 16/2; MONTANA=6/3 2/5 2/4 7/3 4/7 3/7 2/8; AV=10/3 1/18
+A887(1)	A887.1	typed: "Decode: Harr Speizman, 773 8th St., Milwaukee, Wis. (1)"	HARR=2/7 2/8 2/9 3/4; SPEIZMAN=9/3 9/4 9/5 1/3 26/30 6/3 10/3 2/4; 773=2/1 1/2 1/1; 8TH=3/2 1/11 1/12; ST?=4/3 7/3 3/4; MILWAUKEE=6/5 3/5 1/6 14/3 4/7 5/14 1/14 1/13 2/3; WIS=10/19 4/6 4/3
+A887(2)	A887.2	typed: "Joe Poltn, 1208 Winter St., Superior, Wis. (2)"	JOE=10/11 10/12 10/6; POLTN=6/13 6/11 6/22 2/23 6/24; 1208=11/2 6/2 5/2 3/2; WINTER=14/3 15/5 8/4 7/3 8/6 8/7; S??=9/3 ?/16 12/5; SUPERIOR=4/3 11/15 16/3 16/5 14/5 17/4 16/4 12/5; WIS=10/19 10/20 11/7
+A887(3)	A887.3	typed: "W. J. Schnetrum, 1624 Oake Ave., Superior, Wis. (3)"	W=14/3; J=14/10; SCHNETRUM=4/3 4/5 2/7 2/4 2/3 7/3 6/7 27/33 27/34; 1624=17/2 10/2 6/2 6/1; OAKE=5/3 10/3 1/14 11/5; AVE=10/7 18/11 11/5; SUPERIOR=9/3 27/33 3/12 3/6 2/9 1/3 4/4 10/5; WI=9/27 9/31
+A939(b)	A939.2	typed under the run: "(Decode: S O V R Y S)"	SOV=4/3 2/5 1/18; RYS=3/4 5/14 4/3
+A939(a)	A939.1	pencilled above the run: "I W"	I=1/3; W=14/3
+A14	A14	typed (old code page 14): "Decode: Wm. Burns, 2600 Oakdale St."	WM=2/7 2/9; BURNS=7/8 4/2 1/15 2/8 1/14; TWENTY=6/1 3/7 1/5 1/13 6/1 5/12; SIX=4/3 2/3 12/21; HUNDRED=3/6 1/18 1/13 11/1 6/4 3/1 5/10; OAKDALE=1/1 3/2 13/14 5/10 3/2 3/8 3/1; ST=3/5 2/4
