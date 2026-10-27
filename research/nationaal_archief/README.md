@@ -48,6 +48,9 @@ Already on DECODE: 1.02.13 inv. 226/228 (Russia legation, R1033/R1035), which co
 ## Next steps
 
 - Ranked scan-on-demand drafts for the physical leads: `scan_requests.md` (26 Oct 2026; Croiset 2.21.045 inv. 21, 18, 22 first).
+- 27 Oct 2026: the Nationaal Archief has been asked whether the seven Secrete kas envoy volumes of catalogue
+  373-379 exist in a digital copy that is not online; reply awaited. Catalogue 372 (K3, Philip IV to Velada 1640)
+  is agreed too short to break without the key, and the 1640 England papers of Simancas are not on PARES.
 
 1. Open lead 1 (WIC inv. 62): find the Pina folios and the ciphered letters in the same volume, through IIIF.
 2. Check leads 13 and 15 (scanned and small).
