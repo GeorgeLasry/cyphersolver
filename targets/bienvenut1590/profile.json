@@ -178,6 +178,28 @@
    "kind": "literature search",
    "what": "Recipient: the full text points to Charles-Emmanuel I of Savoy rather than Nevers (Bienvenut signs as 'subject' of Vostre Altesse; Gex and the siege of Bonne 'qui nous travaille', both Savoyard places under Genevan/Bernese attack 1589-90; 'remedy in Provence & Dauphine'; the Altesse's 'ministres' in Paris kept out by Mendoza and Moreo). Web search for Bienvenut as a Savoyard agent in Paris 1590 found nothing; hypothesis only.",
    "result": "partial"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "transcription",
+   "what": "Second pass: native-resolution crops of the 13 doubtful words. Settled 8 (emotions, Roccas, Vier, style, cogneu, occurrances, a, que); corrected 2 (35r.24 affectionnes -> affaires; 35r.26 unread word -> 'de bon lieu', 'ne part' struck); 4 words and the 35v.20 heading stay doubtful.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "verification",
+   "what": "Re-measured the reading: read_share 0.985 -> 0.996 (963 words, 0 unread, 4 doubtful); _check_reading.py 0.80 -> 0.84 clean sentences (76/90).",
+   "result": "worked",
+   "technique": [
+    "language-model scoring",
+    "statistical test"
+   ]
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "literature search",
+   "what": "Bienvenu found as secretary of Charles-Emmanuel I of Savoy, engaged with the League, in Lucinge, Lettres sur les debuts de la Ligue (1585), ed. Dufour, Droz 1964; recipient Savoy now probable. Roccas, Vier and M. de Riddes not found (Lesdiguieres/Dauphine 1590, Geneva-Savoy war 1589-90 searches).",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -188,19 +210,26 @@
   ],
   "class": "read",
   "key": "recovered",
-  "fraction_read": 0.985,
+  "fraction_read": 0.996,
   "fraction_read_method": "measured",
-  "fraction_read_source": "Measured 26 Oct 2026 on the full reading texts/n23_decryption.md: read_share = 1 - (holes + doubtful)/(words + holes) = 0.985 (962 words, 1 hole, 13 doubtful words; research/reading_audit/v10_relabel.share). All 26 code numbers resolve from the key slip; at 2 of them (35r.28 '15', 35v.33 '17') the slip's dual value is not settled by context and both values are given.",
+  "fraction_read_source": "Measured 27 Oct 2026 on the full reading texts/n23_decryption.md after the second pass: read_share = 1 - (holes + doubtful)/(words + holes) = 0.996 (963 words, 0 unread, 4 doubtful; research/reading_audit/v10_relabel.share). All 26 code numbers resolve from the key slip; at 2 of them (35r.28 '15', 35v.33 '17') the slip's dual value is not settled by context and both values are given.",
   "verification": [
    "key confirms",
    "historical consistency"
   ],
-  "notes": "Split on 14 Oct 2026 from champagne1590. The copy is in clear except for nine name codes; it reports the League court in Paris (Madame de Nemours, Saint-Sorlin, the Pope and Spain, Mayenne). 22 Oct 2026 reading audit: only a sample was transcribed (read in part). 26 Oct 2026: ff. 35r-v transcribed in full and read, read_share 0.985. The recipient is more likely Charles-Emmanuel I of Savoy than Nevers (hypothesis, see NOTES).",
+  "notes": "Split on 14 Oct 2026 from champagne1590. The copy is in clear except for nine name codes; it reports the League court in Paris (Madame de Nemours, Saint-Sorlin, the Pope and Spain, Mayenne). 22 Oct 2026 reading audit: only a sample was transcribed (read in part). 26 Oct 2026: ff. 35r-v transcribed in full and read, read_share 0.985; 27 Oct second pass 0.996. The writer is probably Bienvenu, secretary of Charles-Emmanuel I of Savoy (Lucinge's letters, 1585), and the recipient the Duke of Savoy (probable, see NOTES).",
   "credits": [
    {
     "who": "contemporary",
     "role": "key or decipherment used",
     "note": "key slip bound with the copy, BnF fr. 3623 f. 36r"
+   },
+   {
+    "who": "dufour",
+    "role": "identification",
+    "note": "edition of René de Lucinge, Lettres sur les débuts de la Ligue (1585), Droz 1964, which names the Savoyard secretary Bienvenu",
+    "source": "René de Lucinge, Lettres sur les débuts de la Ligue (1585), ed. A. Dufour, Droz 1964",
+    "date": "1964"
    }
   ],
   "texts": [
@@ -213,18 +242,18 @@
      "key.txt"
     ],
     "decryption": "texts/n23_decryption.md",
-    "summary": "Bienvenut reports from Paris to 'Vostre Altesse' (Savoy more likely than Nevers) that Madame de Nemours wants her son Nemours in Spanish service or back in his government; that news has come of Grenoble, Gex and the siege of Bonne; that the Pope, Spain and Mayenne have agreed Spain's aid will pass through the Pope, who is to send 8 or 10,000 men; that Mendoza and Moreo keep the Altesse's ministers out of affairs; and, in cipher, that he means to leave Paris in March with Nemours's troops, and can raise 1,000-1,200 arquebusiers.",
-    "note": "Full text of ff. 35r-v, transcribed 26 Oct 2026 (texts/n23_transcription.md, diplomatic, folio and line); 13 doubtful words and one unread word marked.",
+    "summary": "Bienvenut reports from Paris to 'Vostre Altesse' (probably Charles-Emmanuel I of Savoy, whose secretary Bienvenu was) that Madame de Nemours wants her son Nemours in Spanish service or back in his government; that news has come of Grenoble, Gex and the siege of Bonne; that the Pope, Spain and Mayenne have agreed Spain's aid will pass through the Pope, who is to send 8 or 10,000 men; that Mendoza and Moreo keep the Altesse's ministers out of affairs; and, in cipher, that he means to leave Paris in March with Nemours's troops, and can raise 1,000-1,200 arquebusiers.",
+    "note": "Full text of ff. 35r-v, transcribed 26 Oct 2026, doubtful words re-read at native resolution 27 Oct 2026 (texts/n23_transcription.md, diplomatic, folio and line); 4 doubtful words and the 35v.20 heading marked.",
     "reading_review": {
      "grade": "A",
      "by": "Claude Opus 5.5",
-     "date": "2026-10-26",
-     "note": "Full letter read as French sentences with the 26 codes resolved; _check_reading.py 0.80 clean (73/91); the failing sentences carry the doubtful words (emotions, Roccas, Vier, affectionnes, empieter, baste l'ame) and long run-on periods; replaces the 22 Oct excerpt review."
+     "date": "2026-10-27",
+     "note": "Second pass at native resolution: 8 doubtful words settled, 2 corrected (affaires, de bon lieu); _check_reading.py 0.84 clean (76/90); the failing sentences are long run-on periods and the 4 doubtful words."
     },
     "state": "read",
     "language": "fr",
     "translation": "texts/n23_en.md",
-    "read_share": 0.985
+    "read_share": 0.996
    }
   ],
   "gaps": []

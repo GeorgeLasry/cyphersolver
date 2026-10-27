@@ -1,6 +1,6 @@
 # Bienvenut to "Vostre Altesse" (the duc de Nevers?), Paris, 28 February 1590 (BnF fr. 3623 no. 23; DECODE R9453)
 
-Status: read (26 Oct 2026): ff. 35r-v transcribed in full and read with the key slip, read_share 0.985 (see the dated section below). The site page still shows the 22 Oct excerpt until the write-up is rerun.
+Status: read (26-27 Oct 2026): ff. 35r-v transcribed in full and read with the key slip, read_share 0.996 after the second pass of 27 Oct (see the dated sections below).
 
 **22 Oct 2026, reading audit** (George Lasry's test): texts/n23_decryption.md is a sample of about 90 words joined by "..."; it reads, but most of the letter is not in the repository. Claim read -> read in part (about 15%, estimated) until ff. 35r-v are transcribed; every code is already resolved by the key slip.
 
@@ -72,6 +72,30 @@ Gap closed: "n23, ff. 35r-v beyond the sample: not transcribed".
   Nevers papers would then be an intercept or a copy passed on. Web search (26 Oct 2026) for Bienvenut as a Savoyard
   agent found nothing. DECODE R9453 should carry the transcription and the recipient question.
 
+## 27 Oct 2026: second pass on the doubtful words, and Bienvenu in Lucinge's letters (Claude Opus 5.5)
+
+* **Native-resolution re-read** of every doubtful word (1:1 crops of `full_5007_79.jpg` / `_80.jpg`). Settled:
+  émotions (35r.4), Roccas and Vier (35r.22, letters certain), stylé, cogneu, occurran[ce]s (35v.22-23), "a" (35v.5),
+  "que" (35r.31). Two first-pass readings corrected: 35r.24 is "aff[air]es" ("affes" with a superscript sign: "parmy
+  les affaires de ce Royaume"), not "affect[ionné]s"; 35r.26 is "de bon~~ne part~~ lieu" (the stroke starts inside
+  "bonne"), so the unread word is "bon". Still doubtful: fer[r]oit (35r.11, ending overwritten), empieter (35r.29),
+  baste l'ame (35v.5), "me" (35v.12), the heading "Ce qui suyt (?) mys en chiffre" (35v.20). Details in
+  `texts/n23_transcription.md`.
+* **Measured again:** read_share 0.996 (963 words, 0 unread, 4 doubtful); `_check_reading.py` 0.84 clean (76/90).
+* **Bienvenut = Bienvenu, the Duke of Savoy's secretary.** René de Lucinge, *Lettres sur les débuts de la Ligue (1585)*,
+  ed. Alain Dufour (Droz, 1964), letters of Savoy's ambassador to Charles-Emmanuel I: "le sieur de Bienvenu, qui est
+  icy, mandé de Monsieur le marquis afin de sentir de cet afayre, en doibt estre le porteur"; Dufour's introduction:
+  "le secrétaire Bienvenu représenterait le côté engagé avec la Ligue" of the Duke's policy (Droz EPUB extract,
+  e.lavoisier.fr/extract/537086, read 27 Oct 2026). A Savoyard secretary Bienvenu, already on League business in
+  France in 1585, fits the 1590 writer who signs as the Altesse's "subject" and writes of "the Altesse's ministers"
+  in Paris. Recipient: Charles-Emmanuel I of Savoy, probable (name match plus the internal evidence of 26 Oct); not
+  proven until the signature or the Turin copy is matched. Next sources: Lucinge, *Lettres sur la cour d'Henri III en
+  1586* (Droz 1966); Archivio di Stato di Torino, Lettere ministri, Francia, mazzo for 1590.
+* **Roccas / Vier and Riddes:** web searches (Lesdiguières and Dauphiné 1590; the Geneva-Savoy war 1589-90; Savoyard
+  envoys) found neither. The war of 1589-90 destroyed Versoix (Nov 1589) and La Roche (29 Mar 1590, after this
+  letter); Lucien Cramer and Alain Dufour, *La Seigneurie de Genève et la Maison de Savoie*, t. IV (*La guerre de
+  1589-1593*), is the book to check for Roccas and Vier. Open, names only.
+
 ## Open
 
 * The dual entries 15 (villes de l'Union, or Provence & Dauphiné) and 17 (duc de Parme, or Picardie) are taken from
@@ -92,7 +116,7 @@ found (Tomokiyo nevers.htm and GL.htm, Mémoires de Nevers index checked 21 Sept
 
 ## Remaining gaps
 
-- ~~n23, ff. 35r-v beyond the sample: not transcribed~~ - closed 26 Oct 2026: transcribed in full (texts/n23_transcription.md) and read, read_share 0.985. Left: 13 doubtful words and one struck word (35r.26), and the dual key values at 35r.28 (15) and 35v.33 (17), listed in the 26 Oct section
+- ~~n23, ff. 35r-v beyond the sample: not transcribed~~ - closed 26 Oct 2026: transcribed in full (texts/n23_transcription.md) and read; second pass 27 Oct 2026, read_share 0.996. Left: 4 doubtful words and the heading (35r.11, 35r.29, 35v.5, 35v.12, 35v.20), the dual key values at 35r.28 (15) and 35v.33 (17), and the unidentified names Roccas and Vier (35r.22)
 
 ## Escalation
 
