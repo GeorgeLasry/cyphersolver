@@ -1,8 +1,8 @@
 # John J. Appleton to John Quincy Adams, Cadiz, 6 Aug 1823: 18 code groups in the JQA code
 
 Status: contributed by WAINUT (27 Oct 2026). Read in part with the JQA code table (`../jqa/code_table.tsv`, applied
-unchanged): 15 of the 18 groups read, two of them from the alphabetical slot only, one group open. The site page and
-the ledger rows are left to the maintainer.
+unchanged): 15 of the 18 groups read, two more (1088, 794) from the alphabetical slot only, one group (192) open. The
+site page and the ledger rows are left to the maintainer.
 
 Catalogue 637. Contributed by WAINUT (https://github.com/WAINUTAI), a Dutch AI company; the work was done with AI
 language-model agents, and every group was checked against the NARA frame twice, the second time independently.
