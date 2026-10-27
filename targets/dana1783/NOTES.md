@@ -155,3 +155,7 @@ put the rotations of WIN at ranks 0 and 8.
 - `reading.md`: the reading as sentences
 - `key.txt`: the WIN table
 - `validation.tsv`: token-by-token pairs for `docs/_validate.py` (cipher type = key letter + number); verdict pass
+
+## Independent reading by Brice Dudout (27 Oct 2026)
+
+Same letters, read separately the same day; the three word codes are identified (31 Administration, 137 and 168 Minister). See `dudout/README.md`.
