@@ -80,7 +80,8 @@ These are the 1910 attempts to arrange a British marriage for Manuel II, in the 
 `related_clear.md` transcribes two more cards of the same week: a decode of 22 May (m0001, probably continued on
 m0002: Queen Alexandra invites "the Princess" and her family to dinner; "I hope this is significant and that the
 Princess will please His Majesty the King"), whose coded telegram is not in M14, and the Queen's clear reply of
-21 May (m0007). Whether these cards are quoted in the literature on Manuel II was not checked.
+21 May (m0007). The missing coded telegram of 22 May, like the one behind Manuel's pencil decode in M13
+(`targets/manuel1910`), may be in another CAM unit; if either turns up, its decode is a crib for the code. Whether these cards are quoted in the literature on Manuel II was not checked.
 
 ## 4. The code (`code_values.tsv`, `python code.py`, output in `code_output.txt`)
 
@@ -121,19 +122,22 @@ neighbours of the other 37. Not enough to read.
 
 - m0014, 43 groups (Lisbon -> Paris, 13 May 1903) - blocker: no-key-material. No decode; 6 groups have a value,
   the rest only alphabetical bounds; the codebook was not found.
-- m0012-13: 1738 and 3667 (left blank by the decoder) and the doubtful 0539 va, 17004 conde, 7114 socegado -
-  blocker: open-codes. Single occurrences; the alphabetical bounds (1738 between ir and me, 3667 just after para)
-  do not fix a word.
+- m0012-13: 1738, 3667 (blank in the decode) and the doubtful 0539 va, 17004 conde, 7114 socegado - blocker: open-codes.
+  Single occurrences; the alphabetical bounds (1738 between ir and me, 3667 just after para) do not fix a word.
 - 13657, the decoder's "assumpto" - blocker: open-codes. Its place suggests a word in cas-; one occurrence.
 
 ## Escalation
 
-- [x] siblings: all four telegrams and the clear cards of M14 examined; three decodes found and paired
+- [x] siblings: all four telegrams and the clear cards of M14 examined; three decodes found and paired. Other CAM
+  units were not searched: they may hold more of Sabugosa's decoded telegrams or the printed codebook, either of which
+  would read m0014
 - [x] clear-pages: m0016's clear words frame its code; the related cards are in related_clear.md
 - [x] known-keys: King Carlos's 1903 code (targets/carlos1903) and Manuel II's 1910 code (targets/manuel1910) are different codes
 - [x] print: one web search; no edition found
 - [x] key-rebuild: 52 values rebuilt and the alphabetical order tested against shuffles; applied to m0014
-- [ ] retry: the printed codebook (a Portuguese one-part code of about 24,000 entries?) or more decoded telegrams of Sabugosa would read m0014
+- [x] retry: the decoder's doubtful values (0539 va, 7114 socegado, 13657 assumpto, 17004 conde, 7328 subsequente) and
+  the blanks 1738 and 3667 regraded against the alphabetical bounds of the 52 values (section 4, `code_output.txt`);
+  m0014 retried with the rebuilt key (6 of 43 groups take a value, the rest only bounds); none becomes readable
 
 ## Files
 

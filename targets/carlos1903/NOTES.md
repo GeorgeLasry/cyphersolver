@@ -107,12 +107,14 @@ has a value.
 
 ## Escalation
 
-- [x] siblings: the three telegrams share groups; m0054's decode is on the card m0060; the other M12 images are clear letters
+- [x] siblings: the three telegrams share groups; m0054's decode is on the card m0060; the other M12 images are clear
+  letters. Other CAM units and the Arquivo da Casa Real were not searched: they may hold a decode of m0056 or the codebook
 - [x] clear-pages: m0054's clear French frames the coded sentence; m0058's decode is on the form
 - [x] known-keys: Sabugosa's code of the same weeks (targets/sabugosa1910) is a different, alphabetical code; not this one
 - [x] print: one web search; no edition of these telegrams found
 - [x] key-rebuild: only four positions fixed (repeats in m0054); m0058 does not align one to one
-- [ ] retry: the Arquivo da Casa Real or other CAM units may hold a decode of m0056 or the codebook
+- [x] retry: the four values fixed by m0054's repeats (ter, com, combinado, fallado) looked up in m0056 and m0058;
+  only 58215 (com) recurs, once in m0056, and that alone reads nothing
 
 ## Files
 

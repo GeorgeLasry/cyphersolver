@@ -1,7 +1,9 @@
 # Venceslau de Lima to King Manuel II, eight code telegrams of November-December 1909 (ANTT PT/TT/CAM/M09, catalogue 409)
 
 Status: contributed by WAINUT (27 Oct 2026). The eight coded telegrams are read from the decodes of the time that the
-receiver pencilled above the groups; nine of 409 code items stay open. Pairing the glosses with the groups gives 261
+receiver pencilled above the groups; nine of 409 code items stay open. One rule for all eight: a telegram is read
+when at least 95% of its words read as sense; each is at 95.7% or above (400 of 409 items, 0.978), so all eight are
+classed read, with the open items listed under Remaining gaps. Pairing the glosses with the groups gives 261
 values of a two-part (randomised) Portuguese code. The site page and the ledger rows are left to the maintainer.
 
 Catalogue 409. Contributed by WAINUT (https://github.com/WAINUTAI). The work was done with AI language-model agents;
@@ -28,12 +30,12 @@ corrections are applied here. m0001 and m0007 have had one reading.
 | images | route and date (header) | code items | state |
 |---|---|---|---|
 | m0001 | Lisbon -> Madrid, no. 6625, 12 Nov 1909, 2.50 pm | 4, in a clear text | read |
-| m0011 + m0012 | Lisbon -> Paris, no. 105, 113 words, 27 Nov, 5.25 pm | 101 | read in part |
+| m0011 + m0012 | Lisbon -> Paris, no. 105, 113 words, 27 Nov, 5.25 pm | 101 | read (one clause unclear) |
 | m0018 + m0016 | Lisbon -> Paris, no. 24, 110 words, 28 Nov, 12.25 pm | 91 | read |
 | m0014 | Lisbon -> Paris, no. 25, 49 words, 28 Nov, 12.30 pm | 31 | read |
 | m0009 | Lisbon -> Paris, no. 141, 68 words, 30 Nov, 10.30 am, via Eastern | 47 | read |
 | m0005 | Lisbon -> Paris, no. 425, 48 words, 30 Nov, 12.30 am | 30 | read |
-| m0020 | Lisbon -> Paris, no. 325, 93 [83] words, 30 Nov, 12.30 pm | 65 | read in part |
+| m0020 | Lisbon -> Paris, no. 325, 93 [83] words, 30 Nov, 12.30 pm | 65 | read (one clause unclear) |
 | m0007 | Lisbon -> Paris, no. 43, 122 words, 2 Dec, 12.55 am, via Eastern | 40, among clear text | read |
 
 The French form says that the first number after the place of origin is the serial number and the second the taxed

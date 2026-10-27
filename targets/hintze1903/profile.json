@@ -110,7 +110,7 @@
   "key_order": "partly alphabetical",
   "word_division": "none",
   "sibling_key": "Not the code of carlos1903, sabugosa1910, manuel1910 or lima1909: no group shared (code.py, part 5).",
-  "notes": "distinct_symbols and nomenclator.entries = the 24 values from the decode (code_values.tsv), not the size of the code. Page model (code.py, part 3): page = n // 100, pages below 375 reflected, lines kept: 21 of 24 values in alphabetical order, rho 0.957; shuffled words with the same choice of split reach at most 0.746 in 2000 runs. Found after the fact on these 24 values. unread_groups = the distinct open groups of m0001 (26 of 27; 41285 has a value)."
+  "notes": "distinct_symbols and nomenclator.entries = the 24 values from the decode (code_values.tsv), not the size of the code. Page model (code.py, part 3): page = n // 100, pages below 375 reflected, lines kept: 21 of 24 values in alphabetical order, rho 0.957; shuffled words with the same choice of split reach at most 0.746 in 2000 runs. Found after the fact on these 24 values, with a fitted split: a hypothesis, to be tested on more decoded traffic. unread_groups = the distinct open groups of m0001 (26 of 27; 41285 has a value)."
  },
  "conditions": {
   "prior_solution": {
@@ -212,10 +212,10 @@
   "key": "partial",
   "method": "read from existing decipherment",
   "first_break": false,
-  "method_basis": "m0003 is read from the decode of the time on the form; 24 code values were rebuilt by aligning it with the groups; m0001 has no decode and stays unread.",
+  "method_basis": "m0003 is read from the decode of the time on the form; 24 code values were tabulated by aligning it with the groups (an extension of the decipherment of the time, not cryptanalysis); m0001 has no decode and stays unread.",
   "contribution": [
    "transcription",
-   "key recovered",
+   "key extended or corrected",
    "sender or date identified",
    "catalogue correction"
   ],
@@ -260,7 +260,7 @@
    {
     "who": "lccompany",
     "role": "solution",
-    "note": "m0003 read from the decode of the time; 24 code values and the page model of the code",
+    "note": "m0003 read from the decode of the time; 24 code values and a hypothesis on the page order of the code",
     "date": "2026-10-27"
    },
    {

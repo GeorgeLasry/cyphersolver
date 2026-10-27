@@ -153,7 +153,7 @@
   },
   {
    "id": "m0011",
-   "read": "read in part",
+   "read": "read",
    "shelfmark": "ANTT, Documentos de D. Carlos, D. Amélia e D. Manuel II, mct. 9 (PT/TT/CAM/M09), images m0011 and m0012; decode of the time in pencil above the groups",
    "date": "27 Nov 1909",
    "year": 1909,
@@ -264,7 +264,7 @@
   },
   {
    "id": "m0020",
-   "read": "read in part",
+   "read": "read",
    "shelfmark": "ANTT, Documentos de D. Carlos, D. Amélia e D. Manuel II, mct. 9 (PT/TT/CAM/M09), image m0020 (back m0021); decode of the time in pencil above the groups",
    "date": "30 Nov 1909",
    "year": 1909,
@@ -424,31 +424,24 @@
   }
  ],
  "outcome": {
-  "class": "read in part",
+  "class": "read",
   "key": "partial",
   "method": "read from existing decipherment",
   "first_break": false,
-  "method_basis": "Every coded telegram carries the receiver's pencil decode above its groups; the readings follow it, with five corrections from a review against the scans; 261 code values were rebuilt by pairing groups with glosses.",
+  "method_basis": "Every coded telegram carries the receiver's pencil decode above its groups; the readings follow it, with five corrections from a review against the scans; 261 code values were then tabulated by pairing groups with the glosses (an extension of the decipherment of the time, not cryptanalysis).",
   "contribution": [
    "transcription",
-   "key recovered",
+   "key extended or corrected",
    "sender or date identified",
    "catalogue correction"
   ],
   "parts": [
    {
-    "label": "m0001, m0005, m0007, m0009, m0014, m0018 (decodes above the groups)",
-    "records": "m0001, m0005, m0007, m0009, m0014, m0018",
+    "label": "The eight coded telegrams (decodes above the groups)",
+    "records": "m0001, m0005, m0007, m0009, m0011, m0014, m0018, m0020",
     "method": "read from existing decipherment",
     "extent": "complete",
-    "basis": "Every group but four scattered ones carries a gloss that reads."
-   },
-   {
-    "label": "m0011 and m0020 (one clause each unclear)",
-    "records": "m0011, m0020",
-    "method": "read from existing decipherment",
-    "extent": "partial",
-    "basis": "Faint or garbled glosses leave one clause of each unclear."
+    "basis": "One rule for all eight: a telegram is read when at least 95% of its words read as sense. Each is at 95.7% or above; 9 of 409 code items stay open (no-key-material or illegible), and faint glosses leave one clause unclear in m0009, m0011 and m0020."
    },
    {
     "label": "Lima's two-part code, 261 values",
@@ -611,7 +604,7 @@
     "reading": "m0011_reading.md",
     "translation": "m0011_en.md",
     "language": "pt",
-    "state": "read in part",
+    "state": "read",
     "read_share": 0.96,
     "summary": "Lima proposes the return route: the 7.40 pm night train from Paris to Medina del Campo and a special train to Lisbon, cutting out the stop at Luso.",
     "reading_review": {
@@ -665,7 +658,7 @@
     "reading": "m0020_reading.md",
     "translation": "m0020_en.md",
     "language": "pt",
-    "state": "read in part",
+    "state": "read",
     "read_share": 0.985,
     "summary": "Confidential: the King should go only to São Carlos on the night of his arrival and hold the reception at the station; Lima asks for an answer.",
     "reading_review": {

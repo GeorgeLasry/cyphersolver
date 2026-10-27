@@ -65,13 +65,13 @@ on 49641 = franceza, which the page model puts in doubt.
 
 - **24 values** from the decode, plus 3 guesses for m0001 marked as such. Groups under 10000 are sent with four
   figures; all 54 groups lie between 1347 and 67398, so the book probably has fewer than about 70,000 entries.
-- **Order: alphabetical within page blocks.** The raw rank correlation of group number with the alphabetical order of
+- **Order: alphabetical within page blocks (a hypothesis).** The raw rank correlation of group number with the alphabetical order of
   the value is 0.57. Read each group as page (n // 100) and line (n % 100), and reflect the pages below a split
   (best at 375) while keeping the lines in order: then 21 of the 24 values fall in alphabetical order (rho 0.957).
   Shuffling the 24 words and giving chance the same choice of split reaches a median of 0.275 and a maximum of 0.746
   in 2000 runs, so the model is not a fit to noise (P < 1/2000). The lower, reversed half holds a-h, the upper half
-  i-v; Livorno sits in a high block (67398), perhaps for names. The model was found after the fact on these 24 values;
-  more decoded traffic in this code would test it.
+  i-v; Livorno sits in a high block (67398), perhaps for names. The model was found after the fact on these 24 values,
+  with a fitted split, so it stays a hypothesis; more decoded traffic in this code would test it.
 - **What the model says about the decode.** It supports the doubtful words: divorciado falls among the d-words,
   contestar among the c-words, Arroio among the a-words (so the encoder used the common noun *arroio* for the name).
   3707 ("da Rep.") and 49641 ("franceza") are out of order; the model would rather make 3707 = franceza and 49641 a word

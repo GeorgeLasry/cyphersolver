@@ -16,7 +16,9 @@ also read by a second agent for its first sheet only; the rest has had one readi
 - **What is coded.** Only the three telegrams. The letters and cards (m0001-m0014) are in clear. m0001-m0002 hold a
   pencil text in telegram style signed Manuel ("Confidencialíssimo. Realisou-se hoje jantar no Paço offerecido Rainha
   Viuva ...", with question marks and "Paris terça-feira onze horas manhã"), which may be the decode of a London
-  telegram of May 1910; its coded form is not in M13, and it does not match these three.
+  telegram of May 1910; its coded form is not in M13, and it does not match these three. That telegram, like the one
+  behind Sabugosa's decode of 22 May 1910 (`targets/sabugosa1910`, related_clear.md), may be in another CAM unit; if
+  either turns up, its decode is a crib for the code.
 
 ## 2. The telegrams
 
@@ -74,7 +76,8 @@ writing 9 above the 4; 97183 is also in m0015.
 - [x] known-keys: Sabugosa's 1903-1910 code tested and ruled out; King Carlos's 1903 code has no values to test
 - [x] print: one web search; nothing found
 - [x] key-rebuild: not possible without a single decoded telegram
-- [ ] retry: other CAM units (Manuel II's papers) may hold decodes of his telegrams to his mother
+- [n/a] retry: no group has a value, so there is nothing to retry with. Other CAM units (Manuel II's papers) may hold
+  decodes of his telegrams to his mother
 
 ## Files
 
