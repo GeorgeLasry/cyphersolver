@@ -54,12 +54,12 @@
   "word_division": "none",
   "doubled_letters": "written twice",
   "sibling_key": "Livingston's own cipher to Dana, which Dana says he laid aside (P.S. of No. 23; letter of 23 Sept 1782, Wharton V pp. 752-754); not used here.",
-  "notes": "distinct_symbols = 27 table numbers and 4 code groups seen. nomenclator.kinds is a guess from context (the groups stand for words such as a court or ministry); their meaning is not known. After code group 137 the key runs on; after 31 and 168 the next letter takes the key two places on; 29 opens the text. The opening [29]n an [31] is therefore not confirmed."
+  "notes": "distinct_symbols = 27 table numbers and 4 code groups seen. nomenclator.kinds is a guess from context (the groups stand for words such as a court or ministry); their meaning is not known. After each of 31, 137 and 168 the next letter is under N: the groups reset the key to N (the earlier 'No. 1' sheet prescribes such a restart after an arbitrary character). The text after the opening 29 starts under W, which the reset does not explain, so the opening [29]n an [31] is not confirmed."
  },
  "conditions": {
   "prior_solution": {
    "exists": "no",
-   "where": "Wharton VI (1889) prints the passage as cipher without decipherment; the Madison Papers note says it is not decoded there. Wharton VI p. 464 'The key to Mr. Dana's cipher is missing' belongs to Dana to J. Adams, 1 June 1783, not to No. 23. Original and duplicate of No. 23, the Hawkins transcripts, Giunta and the MHS Dana Papers not checked.",
+   "where": "Wharton VI (1889) prints the passage as cipher without decipherment; the key sheet 'No. 1' in PCC 59 vol. 1 pp. 137-138 is an earlier, different scheme (checked after the break); the Madison Papers note says it is not decoded there. Wharton VI p. 464 'The key to Mr. Dana's cipher is missing' belongs to Dana to J. Adams, 1 June 1783, not to No. 23. Original and duplicate of No. 23, the Hawkins transcripts, Giunta, the MHS Dana Papers and the Papers of John Adams vol. 13 (Dana to JA, 4 Oct 1782, and notes, which describe Dana's cipher) not checked.",
    "found": "not found",
    "used": false
   },
@@ -78,25 +78,28 @@
  "solution": [
   {"date": "2026-10-27", "kind": "access", "what": "Located Dana's No. 23 in NARA PCC item 89 vol. 2 (naId 502963402): MS pp. 727-730, digital objects 312-315; the cipher on p. 730, docketed as the triplicate.", "result": "worked"},
   {"date": "2026-10-27", "kind": "transcription", "what": "Transcribed the eight lines from the scan (212 tokens); four numbers cut by the frame edge marked n|.", "result": "worked"},
-  {"date": "2026-10-27", "kind": "statistics", "technique": ["statistical test", "frequency analysis"], "what": "Numbers 1-27 apart from four groups; index of coincidence over periods and alphabet sizes gave English only for a 27-sign alphabet and period 3.", "result": "worked"},
+  {"date": "2026-10-27", "kind": "statistics", "technique": ["statistical test", "frequency analysis"], "what": "Numbers 1-27 apart from four groups; index of coincidence over periods and alphabet sizes pointed to a 27-sign alphabet and period 3, but the signal is weak (period-3 IC 1.30 x 27 against 1.12-1.23 for other periods); the bigram ranking of the keys (control below) is what finds the key.", "result": "worked"},
   {"date": "2026-10-27", "kind": "solver", "technique": ["exhaustive search", "language-model scoring"], "what": "Shifts for the three positions found by scoring; in Lovell's convention (key letter = 1) the key word is WIN. Long English runs at each phase.", "result": "worked"},
   {"date": "2026-10-27", "kind": "reading", "technique": ["manual reconstruction", "contextual inference"], "what": "Aligned the text line by line: three encipherer slips (W positions enciphered with N, N, I), one skipped key position, four cut numbers completed from their first digit, three letters supplied at line ends from the key phase. 201 of 211 letter positions decode directly.", "result": "worked"},
   {"date": "2026-10-27", "kind": "verification", "what": "Independent re-reading of the scan and independent decryption script: same 212 tokens, same plaintext; found that the code groups move the key phase irregularly (after 31 and 168, not after 137; 29 opens the text), so the opening [29]n an [31] is not confirmed.", "result": "worked"},
   {"date": "2026-10-27", "kind": "control", "technique": ["exhaustive search", "statistical test"], "what": "Bigram scores (repository English word list): decryption -2.739; 200 wrong keys with the same alignment best -4.431; all 19,683 period-3 keys on the raw uncorrected stream rank WIN second (WIP first, one letter off) and NWI tenth; 200 shuffles best -4.874.", "result": "worked"},
   {"date": "2026-10-27", "kind": "literature search", "what": "Wharton V-VI read for the letter and Dana's cipher: No. 23 printed with '(Here follow eight lines of cipher.)'; the 'key ... is missing' footnote belongs to the letter of 1 June 1783 to J. Adams; the scan's P.S. reads 'has come to hand', Wharton 'has not come'. Two web searches found no decipherment.", "result": "worked"},
-  {"date": "2026-10-27", "kind": "hypothesis", "technique": ["contextual inference"], "what": "Code groups 29, 31, 137, 168 considered from context (court, ministry, system); no value adopted, one occurrence each.", "result": "failed"}
+  {"date": "2026-10-27", "kind": "hypothesis", "technique": ["contextual inference"], "what": "Code groups 29, 31, 137, 168 considered from context (court, ministry, system); no value adopted, one occurrence each.", "result": "failed"},
+  {"date": "2026-10-27", "kind": "access", "what": "Review lead checked after the break: Dana's key sheet in PCC item 59 vol. 1 pp. 137-138 (naId 475671573, images 107-108, Fold3 172700-172701). It is headed 'No. 1': a 25-sign table (a..z without j and v, plus &) in three columns that are not the W, I, N alphabets, and a word list numbered 26-52 (England 29, Holland 31, ... Russia 51, Court 52). It is not the 27-sign WIN scheme of No. 23; 137 and 168 are not on it, and England / Holland do not fit '[29]n an [31] like this'. Verso: 'N.B. When you come to an arbitrary character begin [the] key word again.'", "result": "failed"},
+  {"date": "2026-10-27", "kind": "reading", "technique": ["manual reconstruction"], "what": "Phase after the code groups re-measured on the raw numbers: after each of 31, 137 and 168 the next letter is under N (liketh..., adopti..., herehe...); W and I give nonsense. So the groups reset the key to N, a fixed restart of the kind the No. 1 sheet's N.B. prescribes. After the opening 29 the text starts under W, which this rule does not explain.", "result": "partial"},
+  {"date": "2026-10-27", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 204 tokens, 58 types, en-modern order 4: reading -1.921 per letter; random keys -6.754 (z 11.8); key annealed onto shuffled ciphertext best -2.808 (mean -3.025, z 7.4); annealer on the real text -2.786. Verdict: pass.", "result": "worked"}
  ],
- "outcome": {
+ "outcome": {"first_break": true, "validation": {"date": "2026-10-27", "model": "en-modern", "file": "validation.tsv", "tokens": 204, "types": 58, "tokens_per_type": 3.52, "score": -1.921, "nulls": {"random keys": {"n": 200, "mean": -6.754, "sd": 0.409, "max": -5.528, "z": 11.8, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -3.025, "sd": 0.149, "max": -2.808, "z": 7.4, "p": 0.1429}}, "power": -2.786, "verdict": "pass", "notes": "claimed per-occurrence score -1.921; polyphony 0.0; 8 unread tokens left out; annealer on the real text from random keys reached -2.786"}, 
   "class": "read in part",
   "key": "partial",
   "method": "key recovered from ciphertext-only",
   "method_basis": "The WIN table was recovered from the eight cipher lines alone (period and alphabet size by index of coincidence, shifts by scoring); the code groups stay without value.",
   "contribution": ["transcription", "key recovered"],
   "fraction_read_method": "measured",
-  "fraction_read_source": "decrypt.py over transcription.txt: 211 of 215 tokens given a value (211 letter positions including 7 completed or supplied at line ends; 4 code groups open); reading.md 0.906 of words read as sense (docs/_check_reading.py --file: hole rate 0.094).",
+  "fraction_read_source": "decrypt.py over transcription.txt: 211 of 215 tokens given a value (211 letter positions including 7 completed or supplied at line ends; 4 code groups open); reading.md 0.855 of words read as sense (docs/_check_reading.py --file: hole rate 0.145, which counts the seven words with a bracketed completed or supplied letter as holes; 0.906 without them).",
   "fraction_read": 0.981,
   "codes_open": {"open": 4, "total": 4, "tokens_open": 4},
-  "verification": ["independent verification", "historical consistency"],
+  "verification": ["independent verification", "historical consistency", "statistical test"],
   "provenance": "contributed",
   "credits": [
    {"who": "lccompany", "role": "solution", "note": "Dana's WIN table recovered from the ciphertext; eight lines transcribed and read in part", "date": "2026-10-27"},
@@ -104,7 +107,7 @@
    {"who": "lccompany", "role": "verification", "note": "independent re-reading and decryption; Wharton footnote traced to the 1 June 1783 letter", "date": "2026-10-27"}
   ],
   "gaps": [
-   {"item": "code groups 29, 31, 137, 168", "blocker": "no-key-material", "detail": "no code list for Dana's 1782 scheme found; one occurrence each"},
+   {"item": "code groups 29, 31, 137, 168", "blocker": "open-codes", "detail": "one occurrence each; the code list of Dana's 1782 scheme is not found (the PCC 59 'No. 1' sheet is an earlier scheme without 137 or 168); Dana's other 1783 despatches in this cipher, his Papers at the MHS and the Adams Papers vol. 13 are still to be tried"},
    {"item": "letters supplied at the ends of lines 2, 5 and 7 (o, f, n)", "blocker": "needs-physical-access", "detail": "the microfilm frame cuts the line ends; supplied from the key phase only"}
   ],
   "texts": [
@@ -116,12 +119,12 @@
     "reading": "reading.md",
     "language": "en",
     "state": "read in part",
-    "read_share": 0.906,
-    "summary": "Dana, waiting in vain for the Russian court to receive him, explains why he cannot predict the outcome: at a court not guided by settled principles or system nothing can be counted on, what one party adopts may be overturned by another influence the next hour, and properly speaking there is no [168] there. Four code groups are open.",
-    "reading_review": {"grade": "A", "by": "WAINUT (AI language-model agent, reviewed against the scan)", "date": "2026-10-27", "note": "Coherent English sentences; the four holes are code groups without value. Spelling 'irresistable' normalised."}
+    "read_share": 0.855,
+    "summary": "Dana, waiting in vain for the Russian court to receive him, explains why he cannot predict the outcome: at a court not guided by settled principles or system nothing can be counted on, what one party adopts may be overturned by another influence the next hour, and properly speaking there is no [168] here. Four code groups are open.",
+    "note": "Letters completed or supplied at line ends are in square brackets in reading.md. Spelling 'irresistable' normalised. reading_review left to the maintainer."
    }
   ],
   "key_file": "key.txt",
-  "notes": "Contributed by WAINUT (catalogue 485). The decryption needs ten interventions out of 211 letter positions (three slips, four completed cut numbers, three supplied line-end letters) plus one skipped key position; all are explicit in decrypt.py. No earlier decipherment found; the search was not exhaustive."
+  "notes": "Contributed by WAINUT (catalogue 485). The decryption needs ten interventions out of 211 letter positions (three slips, four completed cut numbers, three supplied line-end letters) plus one skipped key position; all are explicit in decrypt.py. No earlier decipherment found; the search was not exhaustive, so first_break = true stands until the MHS Dana Papers and the original and duplicate of No. 23 are checked. The PCC 59 key sheet 'No. 1' was found and checked after the break and is a different scheme, so the method stays ciphertext-only."
  }
 }

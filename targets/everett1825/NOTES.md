@@ -37,8 +37,13 @@ Madrid legation in 1823-1825.
 ## 3. Transcription and decryption
 
 - **Transcription** (`everett1825_transcription.txt`): **355 groups** in three passages (A 8 lines, B 14,
-  C 12). The catalogue estimate of "about 445 groups" is too high. There is no interlinear decipherment on these
-  pages. Marks: a lozenge after a group = -s (plural or possessive), like the superscript o in `../jqa`; a caret
+  C 12). These are the coded passages of MS pp. 14-18 only. The catalogue counts "about 445 groups" from frame 0114;
+  a check of frames 0112-0118 made after the review shows why: the same Notes (endorsed as the duplicate sent with
+  despatch No. 7 of 25 Sept 1825) carry further coded passages on MS pp. 1-6 (frames 0112-0115): short runs on
+  pp. 1-3, pp. 4-5 wholly in code, and nine coded lines opening p. 6; about 80 lines, very roughly 900 groups.
+  Pp. 7-13 (frames 0115-0118) are clear. Those passages are **not transcribed** here (see Remaining gaps). A pencil
+  "Decyphered" at the foot of p. 4 suggests the Department deciphered them; no decipherment was found. There is no
+  interlinear decipherment on pp. 14-18. Marks: a lozenge after a group = -s (plural or possessive), like the superscript o in `../jqa`; a caret
   after it = -ed; a cross under 1535 = all (al, all, als by the next letter, as in `../jqa`) and under 1167 = well; a
   tick under a group truncates it (108 comply -> compl in ac-compl-ish; 563 time -> tim in le-gi-tim-).
 - **Decryption** (`everett1825_decryption.txt`, `python decode.py everett1825_transcription.txt`): 347 of 355 groups
@@ -100,10 +105,14 @@ or in the Clay Papers.
 666 Zea [?] instead of March; 1072 satis (2x) instead of see. Second values confirmed in 1825: 70 necessary,
 257 speci, 1525 al, 1599 ood, 727 rather.
 
+Queued as a `jqa` follow-up for the maintainer (not applied here). The most important is 1264 = full stop, attested
+41 times (Crawford 1813 30x, Ellis 1839 11x, fixed by Ellis's clear copy), which conflicts with the table's grade-H
+"gar".
+
 ## Remaining gaps
 
-- groups 125, 126, 211, 258, 850, 917, 1354, 1512 and the context-only words listed above - blocker:
-  no-key-material; Everett's other cipher despatches of 1825-1826 on reel 27 are the next source of occurrences.
+- groups 125, 126, 211, 258, 850, 917, 1354, 1512 and the context-only words listed above - blocker: open-codes; Everett's other cipher despatches of 1825-1826 on reel 27 are the next source of occurrences (retry not done).
+- the coded passages on MS pp. 1-6 of the same Notes (frames 0112-0115, about 80 lines, very roughly 900 groups) - blocker: not-attempted; found on the review check, not yet transcribed; the pencil "Decyphered" on p. 4 points to a lost or unfound contemporary decipherment.
 
 ## Escalation
 

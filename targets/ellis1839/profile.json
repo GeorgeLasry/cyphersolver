@@ -156,10 +156,10 @@
   }
  ],
  "outcome": {
-  "class": "read",
+  "class": "already solved",
   "key": "partial",
-  "method": "read with known key",
-  "method_basis": "The JQA code table (../jqa/code_table.tsv), rebuilt in targets/jqa for JQA's 1811-1812 St Petersburg despatches, applied unchanged; values missing from the table taken from the Department's 1839 clear copy in the same file.",
+  "method": "read from existing decipherment",
+  "method_basis": "A complete contemporary clear copy of the whole coded passage (the Department's, frames 0300-0301 of the same volume) exists and was used to fill about 48 groups the table lacks; the work here is the transcription of the groups, their decode with the JQA code table (../jqa/code_table.tsv, applied unchanged) and the alignment with the copy.",
   "contribution": [
    "transcription"
   ],
@@ -192,6 +192,17 @@
    },
    {
     "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "the State Department clerk's interlinear decodes of JQA's 1811-1812 despatches (NARA M35 reel 3), from which targets/jqa/code_table.tsv was rebuilt in this repository; that table is applied here unchanged"
+   },
+   {
+    "who": "ford",
+    "role": "key or decipherment used",
+    "note": "printed decipherments in Writings of John Quincy Adams vols 3-4, aligned in targets/jqa to rebuild the code table used here",
+    "source": "Ford, Writings of John Quincy Adams, vols 3-4"
+   },
+   {
+    "who": "contemporary",
     "role": "prior solution",
     "note": "the State Department's clear copy of Ellis's No. 9 (1839), M97 roll 10 frames 0300-0301, used to fill and check the reading"
    }
@@ -214,16 +225,11 @@
     "state": "read",
     "read_share": 1.0,
     "summary": "The US minister in Mexico reports that Texian troops with disaffected Mexicans have crossed the line, apparently to attack Matamoros, and that the government is sending General Arista to the frontier with 4,000 men; a war with Texas would unite the Mexican parties; the foreign minister Cañedo wants a general congress of the Spanish American states, unlikely to succeed. The Department's 1839 clear copy is in the same file.",
-    "reading_review": {
-     "grade": "A",
-     "by": "WAINUT (AI language-model agent, checked against the frames and the 1839 clear copy)",
-     "date": "2026-10-27",
-     "note": "Every group lines up with a word or syllable of the contemporary clear copy (frames 0300-0301); values missing from the table are taken from it. v2_score.py: hole rate 0.0. Two groups are illegible on the film; their words rest on the clear copy."
-    },
-    "note": "A contemporary decipherment exists (prior solution); this entry adds the groups, the decode with the table and the alignment."
+    "note": "A contemporary decipherment exists (prior solution, used); this entry adds the groups, the decode with the table and the alignment. reading_review left to the maintainer."
    }
   ],
   "key_file": "../jqa/code_table.tsv",
-  "notes": "Contributed by WAINUT (catalogue 653). Same code as ../jqa; nothing there is changed. Proposed table changes (not applied) are in NOTES.md and ellis1839_pairs.tsv."
+  "notes": "Contributed by WAINUT (catalogue 653). Same code as ../jqa; nothing there is changed. Proposed table changes (not applied) are in NOTES.md and ellis1839_pairs.tsv. Manning, Inter-American Affairs vol. 8 (Mexico, 1937) may print the clear text: not checked (the copy was not reachable).",
+  "first_break": "unpublished prior"
  }
 }

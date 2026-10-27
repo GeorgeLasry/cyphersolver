@@ -1,8 +1,9 @@
 # Powhatan Ellis to John Forsyth, No. 9, Mexico, 16 Nov 1839: a coded despatch in the JQA code, with its 1839 clear copy
 
-Status: contributed by WAINUT (27 Oct 2026). Read with the JQA code table (`../jqa/code_table.tsv`, applied
-unchanged) and aligned with the Department's contemporary clear copy in the same file: the table alone gives a value
-to 471 of 519 groups; the rest are filled from the clear copy. The site page and the ledger rows are left to the
+Status: contributed by WAINUT (27 Oct 2026). Already solved: the Department's contemporary clear copy of the whole
+coded passage is in the same file, so the method is "read from existing decipherment". The groups were transcribed,
+decoded with the JQA code table (`../jqa/code_table.tsv`, applied unchanged) and aligned with that copy: the table
+alone gives a value to 471 of 519 groups; the rest (about 48) are filled from the clear copy. The site page and the ledger rows are left to the
 maintainer.
 
 Catalogue 653. Contributed by WAINUT (https://github.com/WAINUTAI), a Dutch AI company; the work was done with AI
@@ -85,6 +86,10 @@ printed text.
 full stop instead of gar (1839 clear copy, 11x; Crawford 1813, 30x); 713 r (here, and Sir / Mr. in 1813) instead of
 port; 1067 s instead of say; 1366 tal instead of take; 1003 able beside cal; and the other clear-copy pairs in
 `ellis1839_pairs.tsv`.
+
+Queued as a `jqa` follow-up for the maintainer (not applied here). The most important is 1264 = full stop, attested
+41 times (Crawford 1813 30x, Ellis 1839 11x, fixed by Ellis's clear copy), which conflicts with the table's grade-H
+"gar".
 
 ## Remaining gaps
 

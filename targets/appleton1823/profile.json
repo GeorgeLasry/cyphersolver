@@ -183,13 +183,24 @@
     "role": "transcription",
     "note": "637 (18 groups) from NARA M31 reel 24 frame 0134",
     "date": "2026-10-27"
+   },
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "the State Department clerk's interlinear decodes of JQA's 1811-1812 despatches (NARA M35 reel 3), from which targets/jqa/code_table.tsv was rebuilt in this repository; that table is applied here unchanged"
+   },
+   {
+    "who": "ford",
+    "role": "key or decipherment used",
+    "note": "printed decipherments in Writings of John Quincy Adams vols 3-4, aligned in targets/jqa to rebuild the code table used here",
+    "source": "Ford, Writings of John Quincy Adams, vols 3-4"
    }
   ],
   "gaps": [
    {
     "item": "group 192 (hon-) and the slot-only values of 1088 and 794",
-    "blocker": "no-key-material",
-    "detail": "each occurs once in this text and has no clerk decode"
+    "blocker": "open-codes",
+    "detail": "each occurs once in this text and has no clerk decode; Appleton's other despatches on M31 reels 24-27 may repeat them (retry not done)"
    },
    {
     "item": "second coded leaf on frame 0150",
@@ -208,12 +219,6 @@
     "state": "read in part",
     "read_share": 0.8,
     "summary": "The Spanish constitutional government's secret plan, told to the US charge by the finance minister Yandiola in the last weeks of the Cortes at Cadiz: liquidating an account in England would produce [?seven] millions of [?dollars]; Lafitte (probably the Paris banker Jacques Laffitte) was [192] and had a part in England.",
-    "reading_review": {
-     "grade": "A",
-     "by": "WAINUT (AI language-model agent, checked against the frame)",
-     "date": "2026-10-27",
-     "note": "One sentence of 18 groups: 15 read, 1088 and 794 from the alphabetical slot only, 192 open. The sentence scorer also counts the name Lafitte as unknown."
-    },
     "note": "read_share counted on the 15 words of the cipher: 3 holes (seven?, dollars?, 192)."
    }
   ],

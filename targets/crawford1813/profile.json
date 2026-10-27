@@ -79,8 +79,8 @@
  },
  "conditions": {
   "prior_solution": {
-   "exists": "no",
-   "where": "No decipherment on the film. Monroe to Madison [ca. 1 Nov 1813] (PJM Pres. Ser. 7, Founders Madison/03-07-02-0011) says it was to be deciphered; the PJM editors summarise the subjects of the coded letters of 15 Aug and 3 Sept (Madison/03-06-02-0671 n. 1) but print no deciphered text. ASP FR 3, the Crawford Papers and decoded copies elsewhere in RG 59 not checked.",
+   "exists": "unpublished",
+   "where": "A decipherment was made in 1813: Monroe to Madison [ca. 1 Nov 1813] (PJM Pres. Ser. 7, Founders Madison/03-07-02-0011) shows the letter was to be deciphered, and the PJM editors summarise the subjects of the coded letters of 15 Aug and 3 Sept (Madison/03-06-02-0671 n. 1); no deciphered text found, none on the film. ASP FR 3, the Crawford Papers and decoded copies elsewhere in RG 59 not checked (escalation print open).",
    "found": "not found",
    "used": false
   },
@@ -196,6 +196,17 @@
     "date": "2026-10-27"
    },
    {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "the State Department clerk's interlinear decodes of JQA's 1811-1812 despatches (NARA M35 reel 3), from which targets/jqa/code_table.tsv was rebuilt in this repository; that table is applied here unchanged"
+   },
+   {
+    "who": "ford",
+    "role": "key or decipherment used",
+    "note": "printed decipherments in Writings of John Quincy Adams vols 3-4, aligned in targets/jqa to rebuild the code table used here",
+    "source": "Ford, Writings of John Quincy Adams, vols 3-4"
+   },
+   {
     "who": "founders",
     "role": "pointer",
     "note": "PJM editors' notes (Madison/03-07-02-0011, 03-06-02-0671): the 3 Sept 1813 letter was in cypher; summary of its subjects, no deciphered text",
@@ -205,8 +216,13 @@
   "gaps": [
    {
     "item": "about 40 context words marked [?] and the open groups ([102], [267], [343], [366], [529], [58], [104], [531], [665], [700], [909], [1204], [1313], [1444] and others)",
-    "blocker": "no-key-material",
-    "detail": "most occur once here; Crawford's other coded despatches in the same volume (frames 0031-0033, 0047-0049, 0065-0067, 0072, 0086-0090, 0199-0201, 0213-0214) are the next source of occurrences"
+    "blocker": "open-codes",
+    "detail": "most occur once here; Crawford's other coded despatches in the same volume (frames 0031-0033, 0047-0049, 0065-0067, 0072, 0086-0090, 0199-0201, 0213-0214) are workable siblings and the next source of occurrences (retry not done)"
+   },
+   {
+    "item": "second reading of the groups (about 89% were read once only)",
+    "blocker": "not-attempted",
+    "detail": "a second full reading against the frames is workable and still to do"
    }
   ],
   "texts": [
@@ -220,12 +236,6 @@
     "state": "read in part",
     "read_share": 0.915,
     "summary": "The new US minister in Paris explains why he has not opened official talks with Napoleon's foreign minister Bassano, who is with the Emperor at Dresden: Mr. Warden acts as the channel at Paris, a minister need not follow a court abroad, and Crawford has been painted as impetuous; the Russian mediation is unwelcome to Napoleon. He then judges Joel Barlow's secret plan to fund indemnities from trade licences useless, since licensed imports have glutted the American market.",
-    "reading_review": {
-     "grade": "A",
-     "by": "WAINUT (AI language-model agent, checked against the frames)",
-     "date": "2026-10-27",
-     "note": "Coherent sentences with scattered holes: about 40 context words marked [?] and about 30 open groups; 1264 read as the full stop (from 653). research/reading_audit/v2_score.py: hole rate 0.085, explicit-hole sentence share 0.732; docs/_check_reading.py clean share 0.69. Under the 95% bar, so read in part."
-    },
     "note": "read_share = 1 - hole rate of research/reading_audit/v2_score.py (0.085)."
    }
   ],

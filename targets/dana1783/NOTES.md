@@ -38,8 +38,9 @@ in a cycle of three. The full table is in `key.txt`. Numbers above 27 (29, 31, 1
 meanings are not known: the code list was not found.
 
 How it was found: the numbers run 1-27 apart from four groups, which suggests a 27-sign table. An index-of-coincidence
-test over periods (in the solver's working scripts, not included) gave English only for alphabet size 27 and period 3.
-The key letters then followed from the best shifts. `decrypt.py` reproduces the decryption from `transcription.txt`.
+test over periods (in the solver's working scripts, not included) pointed to alphabet size 27 and period 3, but the
+signal is weak (period-3 IC 1.30 x 27, against 1.12-1.23 for other periods). What finds the key is the bigram ranking
+of all period-3 keys (section 5), not the IC. The key letters then followed from the best shifts. `decrypt.py` reproduces the decryption from `transcription.txt`.
 
 ## 3. Transcription and interventions
 
@@ -58,11 +59,13 @@ with the annotations removed, it gives back the transcription.
 - **Three letters supplied** at line ends where nothing is visible: o (20) at the end of line 2, f (11) at the end of
   line 5 (a partial stroke is visible there), n (1) at the end of line 7. The key phase of the next line requires
   exactly one position in each case. Line 2 shows no cut, so there Dana may simply have left the letter out.
-- **Code groups and the key.** After 137 the key continues with the next letter. After 31 and 168 the next letter
-  takes the key two places on (or, equally, one place back). 29 opens the passage, so it shows nothing about the
-  phase. Either the groups had their own rule, or this is one more irregularity. It changes no letter. Within these
-  rules the key phase runs on unbroken across all eight lines. Because the rule is not understood, the opening
-  "[29]n an [31]" is not confirmed: the letters n, a, n decode directly, but how they join the groups is open.
+- **Code groups and the key.** After each of 31, 137 and 168 the next letter is under **N** (on the raw numbers:
+  "liketh...", "adopti...", "herehe..."; W and I give nonsense). In `decrypt.py` terms, after 137 the key continues
+  and after 31 and 168 it moves two places on, but the simpler description is that every code group in the body
+  resets the key to N. Dana's earlier key sheet "No. 1" (section 6) carries exactly such a rule on its back:
+  "N.B. When you come to an arbitrary character begin [the] key word again." After the opening 29 the text starts
+  under W, which the reset does not explain. It changes no letter. Because of this, the opening "[29]n an [31]" is
+  not confirmed: the letters n, a, n decode directly, but how they join the groups is open.
 
 Of 211 letter positions, 201 decode directly and 10 need one of the interventions above.
 
@@ -111,14 +114,23 @@ put the rotations of WIN at ranks 0 and 8.
 - Two web searches for phrases of the plaintext found no printed decipherment. The Papers of John Adams (vol. 13)
   describe a separate Livingston nomenclator endorsed "Mr Dana's Papers"; Dana's P.S. says he did not use
   Livingston's cipher here.
+- **Dana's key sheet in PCC item 59 vol. 1** (pp. 137-138, naId 475671573 images 107-108, Fold3 172700-172701; listed
+  in `targets/pcc1780`), checked after the break on a reviewer's lead. It is headed "No. 1": a 25-sign table (a..z
+  without j and v, plus &) in three columns that are not the W, I, N alphabets, and a word list numbered 26-52
+  (Washington 40, Congress 26, America 27, England 29, France 30, Holland 31, ... Russia 51, Court 52). It is not the
+  27-sign WIN scheme of No. 23: 137 and 168 are not on it, and England / Holland do not fit "[29]n an [31] like
+  this". So the WIN key was not available from it, and the method stays ciphertext-only. The sheet is probably the
+  cipher Dana took to Russia in 1781; the 1782 scheme sent by J. Q. Adams was not found. The verso has the restart
+  rule quoted in section 3.
+- The Papers of John Adams vol. 13 (Dana to John Adams, 4 Oct 1782, and the editors' notes) describe Dana's cipher;
+  not checked.
 - Not checked: the original and duplicate of No. 23 elsewhere in the PCC (one may carry a decipherment), the Hawkins
   transcripts (naId 2316037), Giunta's *The Emerging Nation*, and the Dana Papers at the Massachusetts Historical
   Society. **No earlier solution was found, but the search was not exhaustive.**
 
 ## Remaining gaps
 
-- Code groups 29, 31, 137 and 168 (4 of 215 tokens) - blocker: no-key-material. No code list for Dana's 1782 scheme
-  was found, and no other letter in this cipher has been decrypted to give more occurrences.
+- Code groups 29, 31, 137 and 168 (4 of 215 tokens) - blocker: open-codes; one occurrence each. The code list of Dana's 1782 scheme was not found (the PCC 59 "No. 1" sheet is an earlier scheme without 137 or 168); Dana's other 1783 despatches in this cipher, the MHS Dana Papers and the Adams Papers vol. 13 are still to be tried.
 - The letters supplied at the ends of lines 2, 5 and 7 rest on the key phase only - blocker: needs-physical-access.
   The frame edge cuts the lines on the microfilm; the original sheet (or the original and duplicate of No. 23) would
   settle them.
@@ -128,7 +140,8 @@ put the rotations of WIN at ranks 0 and 8.
 - [x] siblings: the clear P.S. and Dana's letter of 23 Sept 1782 identify the cipher as his own scheme; other letters
   in it were not decrypted (next step)
 - [x] clear-pages: the clear text of No. 23 (Wharton VI) frames the passage; it gives no crib for the code groups
-- [x] known-keys: Livingston's cipher is ruled out by Dana's own P.S.; the key was recovered from the ciphertext
+- [x] known-keys: Livingston's cipher is ruled out by Dana's own P.S.; Dana's earlier "No. 1" sheet (PCC 59 vol. 1
+  pp. 137-138) checked: a different, 25-sign scheme without 137 or 168; the key was recovered from the ciphertext
 - [x] print: Wharton V-VI read; the "key missing" footnote traced to the 1 June 1783 letter to Adams
 - [x] key-rebuild: the letter table is complete (WIN); the code groups have one occurrence each
 - [ ] retry: Dana's other 1783 despatches in PCC item 89 vol. 2 may use the same scheme and repeat the code groups
@@ -140,3 +153,4 @@ put the rotations of WIN at ranks 0 and 8.
 - `decryption.txt`: output of `python decrypt.py`
 - `reading.md`: the reading as sentences
 - `key.txt`: the WIN table
+- `validation.tsv`: token-by-token pairs for `docs/_validate.py` (cipher type = key letter + number); verdict pass

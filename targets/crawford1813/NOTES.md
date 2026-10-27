@@ -100,6 +100,8 @@ D. B. Warden's conduct. So a decipherment was ordered in 1813 and the editors su
 page prints a deciphered text or names a decoded copy. Not checked: ASP Foreign Relations 3 (a search summary says
 Monroe's report of 18 Jan 1814 printed the 15 Aug letter and an extract of 8 Sept, not this one), the Crawford
 Papers, a decoded copy elsewhere in RG 59. As far as we checked, no full text of the coded letter has been printed.
+In `profile.json` the prior solution is therefore "unpublished" (made in 1813, not found), not "no"; ASP FR 3 and the
+Crawford Papers stay on the print list (escalation `print` open).
 
 ## Proposed table changes (for `../jqa/code_table.tsv`, not applied)
 
@@ -107,13 +109,14 @@ Papers, a decoded copy elsewhere in RG 59. As far as we checked, no full text of
 clear copy, 11x; this letter, 30x); 713 r (1839, and Sir / Mr. here) instead of port; 449 -nity (5x); 462 -tract
 (3x); 1106 will instead of pa.
 
+Queued as a `jqa` follow-up for the maintainer (not applied here). The most important is 1264 = full stop, attested
+41 times (Crawford 1813 30x, Ellis 1839 11x, fixed by Ellis's clear copy), which conflicts with the table's grade-H
+"gar".
+
 ## Remaining gaps
 
-- about 40 context words marked [?] and the open groups ([102], [267], [343], [366], [529], [58], [104], [531],
-  [665], [700], [909], [1204], [1313], [1444] and others) - blocker: no-key-material; most occur once here.
-  Crawford's other coded despatches in the same volume (frames 0031-0033, 0047-0049, 0065-0067, 0072, 0086-0090,
-  0199-0201, 0213-0214) were not transcribed and are the next source of occurrences.
-- about 89% of the groups were read once only; a second full reading against the frames is still to do.
+- about 40 context words marked [?] and the open groups ([102], [267], [343], [366], [529], [58], [104], [531], [665], [700], [909], [1204], [1313], [1444] and others) - blocker: open-codes; most occur once here. Crawford's other coded despatches in the same volume (frames 0031-0033, 0047-0049, 0065-0067, 0072, 0086-0090, 0199-0201, 0213-0214) are workable siblings, not yet transcribed, and the next source of occurrences.
+- about 89% of the groups were read once only - blocker: not-attempted; a second full reading against the frames is workable and still to do.
 
 ## Escalation
 

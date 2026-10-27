@@ -77,10 +77,13 @@ Manning prints the passage undecoded. One web search found no decipherment.
 `../jqa/code_table.tsv` was used as it is. Proposals, with the evidence above: 648 millions (clerk 0210R3, slot)
 instead of April; 1088 seven [?] (slot) instead of sa; 794 dollar(s) [?] (slot; no value now).
 
+Queued as a `jqa` follow-up for the maintainer (not applied here). The most important is 1264 = full stop, attested
+41 times (Crawford 1813 30x, Ellis 1839 11x, fixed by Ellis's clear copy), which conflicts with the table's grade-H
+"gar".
+
 ## Remaining gaps
 
-- group 192 (hon-) and the slot-only values of 1088 and 794 - blocker: no-key-material; each occurs once in this text
-  and has no clerk decode.
+- group 192 (hon-) and the slot-only values of 1088 and 794 - blocker: open-codes; each occurs once in this text and has no clerk decode; Appleton's other despatches on M31 reels 24-27 may repeat them (retry not done).
 - the second coded leaf on frame 0150 - blocker: illegible; bleed-through on the microfilm, the original volume would
   allow a transcription.
 
