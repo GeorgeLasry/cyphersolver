@@ -53,6 +53,9 @@ c = d['conditions']
 c['inputs'] = ["images", "known plaintext"]
 c['sessions'] = 2
 c['last_date'] = "2026-10-27"
+c['prior_solution'] = {"exists": "in archive",
+    "where": "AGAD Zbiór Popielów 421: the cabinet's contemporary decipherments, catalogued as Deboli's clear letters; historians quote them (Rolnik 2025 cites ZbPop 415/420/421) without linking them to the cipher originals in ZbPop 5",
+    "found": "during attempt", "used": True}
 c['tools'] = ["AGAD online inventories", "AGAD agadd2 image server", "web search", "PIL crops", "image-reading subagents",
               "group-by-group alignment (subagents)", "scripts/consistency.py"]
 done = {x['what'][:40] for x in d['solution']}
@@ -65,8 +68,10 @@ for st in [
      "what": "Aligned the five sample despatches group by group with their decipherments: 3,048 of 3,082 groups given a value (98.9%); two codes found, code B being the 1792 Danzig code, switched by indicator groups 3283/3285/4000.", "result": "worked"},
     {"date": "2026-10-27", "kind": "verification", "technique": ["statistical test"],
      "what": "Value consistency of repeated groups across the sample: 83.3% (code A, 1,757 occurrences) and 84.4% (code B, 762) carry their commonest value; the rest are mostly syllable-split guesses.", "result": "worked"},
+    {"date": "2026-10-27", "kind": "literature search",
+     "what": "After rebasing onto main: the parallel target deboli1790 reports that Rolnik 2025 quotes the 1790-92 despatches from ZbPop 415/420/421 (the decipherments were in use; their link to the cipher was not), and reads WKrMci as 1570 where this transcription has 1578 (barred loop read 0 there, 8 here; unsettled).", "result": "worked"},
 ]:
-    if st['what'][:40] not in done:
+    if st['what'][:40] not in done:  # appended once
         d['solution'].append(st)
 
 

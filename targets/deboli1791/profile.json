@@ -217,7 +217,7 @@
  "conditions": {
   "prior_solution": {
    "exists": "in archive",
-   "where": "AGAD Zbiór Popielów 421: the cabinet's fair-copy decipherments, catalogued by AGAD as Deboli's clear Polish letters",
+   "where": "AGAD Zbiór Popielów 421: the cabinet's contemporary decipherments, catalogued as Deboli's clear letters; historians quote them (Rolnik 2025 cites ZbPop 415/420/421) without linking them to the cipher originals in ZbPop 5",
    "found": "during attempt",
    "used": true
   },
@@ -344,6 +344,12 @@
     "statistical test"
    ],
    "what": "Value consistency of repeated groups across the sample: 83.3% (code A, 1,757 occurrences) and 84.4% (code B, 762) carry their commonest value; the rest are mostly syllable-split guesses.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "literature search",
+   "what": "After rebasing onto main: the parallel target deboli1790 reports that Rolnik 2025 quotes the 1790-92 despatches from ZbPop 415/420/421 (the decipherments were in use; their link to the cipher was not), and reads WKrMci as 1570 where this transcription has 1578 (barred loop read 0 there, 8 here; unsettled).",
    "result": "worked"
   }
  ],

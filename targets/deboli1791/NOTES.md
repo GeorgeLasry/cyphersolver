@@ -135,6 +135,18 @@ per year was looked at side by side:
 The January 1790 cipher items (001–009) have no partner in ZbPop 420. The 1783–1787 units (ZbPop 9, 10, 11, 2, 3) are
 not scanned.
 
+A parallel session worked on the same series as target `deboli1790` (catalogue 419, landed on main 27 Oct 2026), and
+reached the same pairing independently. Its `targets/deboli1790/NOTES.md` adds four things:
+- **1790:** the January 1790 decipherments are in ZbPop 417 (k. 353–386), which accounts for the unpaired January items.
+- **1788:** an older code runs until spring, and the code of 1789–91 then starts with a leading group 4000. 4000 marks
+  a change of code, as it does in the 1791 despatches here.
+- **1792:** No. 95 (17 Feb) does not fit on its opening lines, so catalogue 421 stays open there. No. 114 (20 Apr)
+  does fit (above).
+- **WKrMci:** it reads the group as **1570**, where the transcription here has **1578**. The scribe writes two round
+  figures, a small open o (as in 2107) and a barred loop (θ). This project reads the barred loop as 8 and the open o as
+  0; that session reads the barred loop as 0. Both read the same repeat at the same place, so the pairing stands
+  either way. Which figure is 0 is not settled; a key sheet (ZbPop 444, 453–454) would settle it.
+
 ## Remaining gaps
 
 - Despatches other than the five of the sample (100 items, about 440 cipher images) - blocker: not-attempted; their
@@ -157,7 +169,13 @@ not scanned.
 
 ## Prior work
 
-No decipherment of the 1791 cipher despatches is published. The ZbPop 421 decipherments were not identified as
-decipherments in the AGAD inventory or, as far as searched, in the literature (web search 26 Oct 2026). Rolnik 2025 was
-not read: the server refused the connection. The decipherments are contemporary (the King's cabinet, 1791). This
-project found them on 26 Oct 2026 while attempting the cipher, and the sample text comes from them.
+No decipherment of the 1791 cipher despatches is printed. The ZbPop 421 texts were already in historians' use, though:
+- Rolnik 2025 (*Rocznik Filozoficzny Ignatianum* 31/3) quotes Deboli's 1790–92 despatches from ZbPop 415/420/421 and
+  notes that this correspondence was in cipher. This comes from the deboli1790 notes; the article was not read here
+  because the server refused the connection.
+- Zielińska & Danilczyk print 1780–1782 from the cabinet's "deszyfry" (Archiwum Królestwa Polskiego 265).
+
+What was missing was the link between these Polish texts and the cipher originals in ZbPop 5. The AGAD inventory lists
+the originals as unread cipher and the decipherments as ordinary letters. The decipherments are contemporary (the
+King's cabinet, 1791). This project found the link on 26 Oct 2026 while attempting the cipher; deboli1790 found it
+independently on 27 Oct. The sample text comes from the decipherments.

@@ -23,3 +23,4 @@
 - 2026-10-27 statistics (scripts/consistency.py): repeated groups carry their commonest value in 83.3% of 1,757 occurrences (code A) and 84.4% of 762 (code B); the rest mostly syllable-split guesses.
 - 2026-10-27 reading: English translations of the five sample despatches (texts/NNN_en.md).
 - 2026-10-27 correction: przysięgi is 1117 1353 212 (przy-się-gi); the 1775 that follows it is the full stop, as the alignment shows. The 26 Oct entry above counted it in the word.
+- 2026-10-27 rebase onto main: the parallel target deboli1790 closed catalogue 418-420 independently (same pairing); its notes give Rolnik 2025's use of ZbPop 415/420/421 (prior use of the decipherments, recorded), 1788's code change at 4000, 1792 No. 95 not fitting, and WKrMci read 1570 (here 1578; barred-loop figure unsettled). NOTES and profile updated.
