@@ -1,0 +1,168 @@
+{
+ "schema_version": 1,
+ "target": "ferducci1532",
+ "title": "Niccolò Ferducci to Ferdinand I, Fiume, 19 July 1532 (catalogue 498): eight nomenclator groups in a clear Italian letter",
+ "documents": [
+  {
+   "id": "turkei-i-2-2-19",
+   "read": "read",
+   "shelfmark": "Österreichisches Staatsarchiv, HHStA, StAbt Türkei I 2-2-19, fols. 60–61",
+   "date": "19 July 1532",
+   "year": 1532,
+   "country": "Austria",
+   "route": "Fiume -> court of Ferdinand I",
+   "places": {
+    "from": "Fiume (Rijeka)",
+    "to": "court of Ferdinand I"
+   },
+   "language": "Italian",
+   "pages": 2,
+   "cleartext_in_document": "mostly clear",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No gloss on this letter; values from the glosses of 2-2-9 and 2-2-24."
+   },
+   "length": {
+    "tokens": 8,
+    "unit": "code groups",
+    "measured": true,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "ÖStA Archivinformationssystem images",
+    "image_quality": "good"
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "nomenclator",
+   "code"
+  ],
+  "summary": "letter in clear (Venetian Italian) with a small nomenclator: three-figure numbers (543, 547, 518, 520, 521), barred Q + number (Q19), D + number for months and year",
+  "symbol_kind": "digits and letters",
+  "distinct_symbols": 8,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": false
+  },
+  "nomenclator": {
+   "present": true,
+   "kinds": [
+    "names",
+    "places",
+    "titles"
+   ]
+  },
+  "nulls": {
+   "present": false
+  },
+  "key_order": "not applicable",
+  "word_division": "kept"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "Catalogue 498 open; Cryptiana and web search (27 Oct 2026); not in Gévay, Urkunden und Actenstücke.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "sibling key"
+  ],
+  "attack": "sibling key",
+  "first_date": "2026-10-27",
+  "last_date": "2026-10-27",
+  "human_role": "Brice Dudout chose the target from the catalogue and set the rules (frozen key before validation, held-out checks, prior-work search the day of publication); AI agents transcribed, solved, checked and wrote up. Doubtful signs were settled by targeted visual review where stated.",
+  "models": [
+   "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout"
+  ]
+ },
+ "solution": [
+  {
+   "date": "2026-10-27",
+   "kind": "sibling key",
+   "technique": [
+    "key matching"
+   ],
+   "what": "Table of groups built from the contemporary glosses of 2-2-9 and 2-2-24 and frozen.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "reading",
+   "technique": [
+    "manual reconstruction"
+   ],
+   "what": "Frozen table applied to 2-2-19; all eight groups read.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "verification",
+   "what": "No conflict between the two glossed letters; 6/6 agreement with the 1542 table (catalogue 499); month and year confirmed by the archival dockets \"1532. 19/7\".",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "literature search",
+   "what": "Catalogue, Cryptiana, web, Gévay: no earlier reading.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "read",
+  "key": "recovered",
+  "method": "read after matching with key from external sources",
+  "method_basis": "Values taken from the contemporary glosses of two sibling letters, frozen, then applied.",
+  "contribution": [
+   "key recovered",
+   "sender or date identified"
+  ],
+  "fraction_read": 1.0,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "8 of 8 cipher groups read; clear text read with four doubtful words marked {x}.",
+  "first_break": true,
+  "verification": [
+   "contemporary decipherment",
+   "key confirms",
+   "historical consistency"
+  ],
+  "credits": [
+   {
+    "who": "dudout",
+    "role": "solution",
+    "note": "table from the 1532 glosses; all eight groups read; Italian text and English translation",
+    "date": "2026-10-27"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "four doubtful clear-text words (a peschara, a divotione, ve se avisarà, Lanbergher)",
+    "blocker": "illegible",
+    "detail": "palaeography of the clear text, not cipher"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "turkei-i-2-2-19",
+    "label": "Ferducci to Ferdinand I, Fiume, 19 July 1532 (HHStA Türkei I 2-2-19)",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "reading": "reading.md",
+    "translation": "translation.md",
+    "language": "it",
+    "state": "read",
+    "summary": "A spy’s letter from the Ragusa network during Süleyman’s campaign: written in clear, it enciphers only eight words — names of people and places, the date and the signature. Once these groups are read, it reveals a plan: to seize the French ambassador at sea on his way back from the sultan."
+   }
+  ],
+  "key_file": "decryption.txt",
+  "provenance": "contributed"
+ }
+}
