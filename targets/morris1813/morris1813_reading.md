@@ -8,12 +8,14 @@ original are in quotation marks. Marks:
 - `[?word]`: a word proposed from context, or a table value that does not fit as it stands. Not confirmed.
 - `Spa[in]`: letters supplied.
 - Punctuation is supplied. Groups 361 and 364 (= JQA 1261 and 1264) are read as comma and full stop, as in the Ellis
-  1839 alignment with its clear copy (open PR #8; on main the table has no value for 1261 and "gar" for 1264).
+  1839 alignment with its clear copy (open PR #107; on main the table has no value for 1261 and "gar" for 1264).
   370 (= JQA 1270), which follows 364 three times, is left as `[370]`.
 - 670 (5x, no value in the table) is read `[?Floridas]` from context. It fits every occurrence ("an integral part
   of", "the provinces of both", "the insurrection of [470]", "the governor of the"), but it is a context reading.
-- Figures: 652 is read 1 (JQA 952; "first" in the table, 1 in the Ellis 1839 "14th"). The other figure groups
-  (650, 654, 655, 657, 659, 65?) are open, so the years stay open.
+- Figures: 652 is read 1 (JQA 952; "flat", also "first", grade M in the table; 1 in the Ellis 1839 "14th"). The
+  other figure groups are left open, so the years stay open: 655, 657 and 659 have no value in the table, and the
+  table values of 650 (vour) and 654 (3rd (23rd)), both grade M, are not used as figures. If the year in L13 is
+  1810, the summer of the West Florida rising, 659 = 8 and 657 = 0; this is not adopted.
 - Doubtful transcription: L17 132 (perhaps 133, ion), L19 479 (perhaps 279, ter), L24 518 (perhaps 548).
 
 The line numbers are the written lines of the frame. The page starts and ends in mid-sentence.
@@ -25,17 +27,17 @@ induce them to" [350] [35.462.507] a respectable [?force] in the [1187.528] [114
 any [1577] of the British in that quarter. "An offer was made by them" last year to [L4] send [1579.401] there under
 the [1311.1246] of preserving the territory to Spa[in], [L5] but probably with "the intention of holding it", which
 [757.140.133] under present [1548] [?would] no doubt [89] [L6] be in-cre-[993], should a change in the [?Regency]
-"take place". Their views will be [1204.121.140], [L7] and no means [?would] be [1043] untri[ed] to effect this change
+"take place". Their views will be [1204.121.140], [L7] and no mean[s] [?would] be [1043] untri[ed] to [?effect] this change
 as soon as the Cor[tes] [285] [L8] shall be organi[zed], which will be about the [873.101.1378.126] [1362.364.973.1491.953]
 [1450.138].
 
 [L9] The democratic government of the United States, under the administration of the Frenchified [L10] Señor
 Jefferson [908] Ma[d]ison, not only [385] the [?European] war, but also before that [L11] England [57.524] has give[n]
 the [1153] [1282.57.1138] and [846.1073] present [1201] of in [729.1589] and inter[12] [L12] to [1026.1078.1157.1000]
-the separation of the [?Spanish] [?colonies] from the [?mot]her country. [370] In [L13] summer of the year 1 [659]
-1 [657] broke out the insurrection of [470] [?Floridas], instigated [8] [L14] the [909.787] [1555.1151] government,
+the separation of the [?Spanish] [?colonies] from the [?mot]her country. [370] In [L13] sum[m]er of the year 1 [659]
+1 [657] br[o]ke out the insurrection of [470] [?Floridas], instigated [8] [L14] the [909.787] [1555.1151] government,
 whose [126.1515.272] and [729.1313.44.237.133] [1280.1403.763] it [10] [L15] [1323.140] of the [126] [140.115] and
-difficulties which then threaten[ed] to [?overwhelm] the [?Peninsula] [L16] and [1039] possess itself of the
+difficulties which then [?threatened] to [?overwhelm] the [?Peninsula] [L16] and [1039] possess itself of the
 [752.106], that of Baton Rouge, which was the [1000.813] of the [L17] insurrect[?ion]. The futile [1311.1398] of this
 [1354.87.102.261.133] [932] [35.1027] by the last [L18] [904.106.1357] was that the territory [1058] [434.1180]
 [?appertains] to [1527.136.101.491.1.1556.2] [L19] the same [?territory] had been [723.51.940.763] and govern[ed] by
@@ -54,14 +56,17 @@ Minister [?declaration] the most [1397.143.100] [L26] of their depart[ment], int
 - L6 830.1047 = JQA 730 "heard(part)" and 547 "cy": the table value of 730 is uncertain; "Regency" is a context
   reading.
 - L6 1204.121.140 = [?], ill, it: probably "facilitated" (fa-cil-it-ated), not adopted.
+- L7 1025.1018 = ef, rect: "effect" is a context reading. 930 = mean: "means" with the s supplied.
 - L9 721 dem (grade I in the table), o, cre, at, ic = democratic; 13.1521.764 = ad-Minister-ation; 695.101.1235 =
   french-i-fied (1235 = fied, grade M).
 - L10 110.1227.1357 = ie-fer-son, Jefferson; 902.101.1357 = ma-i-son, Madison, with no group for d; 908 (table: maj,
   grade M) stands between the two names, where "and" is expected.
 - L10 1387.115.129 = Europe, ties?, ing: "European" is a context reading.
 - L12 1356.135 = Spain, ir; 1566 (no value) = "colonies" from context; 1454.1477 = [?], her.
-- L15 1054.1013.1045 = thr, eat (table: peat), en: "threaten", with "=" after it; 629.473.786 = over, when (table),
-  [786]: "overwhelm" is a context reading; 421.126.1290 = pen, in, [1290]: "Peninsula" is a context reading.
+- L15 738.115 = difficul, jes: "difficulties", with 115 read as ties (as in L10).
+- L15 1054.1013.1045 = thr, peat (table), en: "threatened" is a context reading, with "=" after it; 629.473.786 =
+  over, when (table), [786]: "overwhelm" is a context reading; 421.126.1290 = pen, in, [1290]: "Peninsula" is a
+  context reading.
 - L16 209.92 = bat (grade I), on; 192.1001 = rough, e: Baton Rouge.
 - L18 977.264 = appear(s), tain: "appertain(s)".
 - L19 571.479 = same, who: with 479 read as 279 it is "the same ter-ritory" (ter-it-or-ty, as in L4 and L18).

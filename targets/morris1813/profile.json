@@ -54,7 +54,7 @@
   "word_division": "none",
   "doubled_letters": "unknown",
   "sibling_key": "the JQA code, ../jqa/code_table.tsv (rebuilt there from the State Department clerk's decodes and Ford's printed decipherments of JQA's 1811-1812 despatches), applied unchanged under the block order in block_map.tsv",
-  "notes": "distinct_symbols = distinct numbers in morris1813_transcription.txt (decode.py). Groups are joined by dots within a word and separated by a space between words. Marks under groups (5, 55, 5555, c, s) and a short double stroke after groups are transcribed; their meaning is not known. 361 and 364 (= JQA 1261, 1264) behave as comma and full stop, as in the Ellis 1839 alignment (open PR #8)."
+  "notes": "distinct_symbols = distinct numbers in morris1813_transcription.txt (decode.py). Groups are joined by dots within a word and separated by a space between words. Marks under groups (5, 55, 5555, c, s) and a short double stroke after groups are transcribed; their meaning is not known. 361 and 364 (= JQA 1261, 1264) behave as comma and full stop, as in the Ellis 1839 alignment (open PR #107)."
  },
  "conditions": {
   "prior_solution": {
@@ -82,8 +82,8 @@
   {"date": "2026-10-27", "kind": "hypothesis", "technique": ["key-structure hypothesis", "exhaustive search"], "what": "WAINUT contribution: constant shifts of the group numbers, with and without a modulus, against the US tables: the JQA table at +1100 stands out (function-word share 0.25 against 0.03 for the next tables) because one block of 100 lines up.", "result": "partial"},
   {"date": "2026-10-27", "kind": "solver", "technique": ["key-structure hypothesis", "exhaustive search", "statistical test"], "what": "WAINUT contribution: best JQA offset for each Morris block of 100: the busy blocks give +1500, +1300, +1100 (Morris 1-300), which suggests the sixteen blocks in reverse order (block_map.tsv); the first round overstated this as a clean pattern in every block. On the corrected transcription function words alone pick that block for 8 of 16 Morris blocks (1-300, 401-500, 601-700, 801-1100); the other eight follow from the pattern and from context.", "result": "worked"},
   {"date": "2026-10-27", "kind": "verification", "what": "WAINUT contribution: a second agent re-read 144 groups blind from the image (140 agree) and re-applied the method with its own code. The three clear misreadings it found (L9 724 -> 721 dem, L9 131 -> 13 ad, L24 108 -> 608 or) each turn a broken syllable into the expected one (democratic, administration, ambassador). It corrected overstated counts of the first round: 76.285 'of the' 15x (not 25x); 'territory' and 'insurrection' 2x each as identical group strings (not 3x).", "result": "worked"},
-  {"date": "2026-10-27", "kind": "control", "technique": ["statistical test", "exhaustive search"], "what": "WAINUT contribution: decode.py --controls on the 552 groups: block_map.tsv coverage 0.917, function words 0.353; identity 0.630 / 0.058; 20,000 random orders of the 16 blocks: function words median 0.062, 99.9th percentile 0.250, max 0.297. Per block, against word bigrams of Ford, Writings of JQA vols 3-4, the block_map.tsv block ranks first (two ties) for 15 of 16 Morris blocks; Morris 1501-1600 ranks second (3 bigrams against 4) and is kept from the pattern and from context (should, United States, Minister).", "result": "worked"},
-  {"date": "2026-10-27", "kind": "reading", "technique": ["contextual inference", "manual reconstruction"], "what": "WAINUT contribution: frame 0039 written out as sentences (morris1813_reading.md): 506 of 554 groups have a table value; read_share 0.689 (research/reading_audit/v2_score.py hole rate 0.311); 670 read [?Floridas] from context at all five occurrences; names Jefferson, Madison, Baton Rouge from the table syllables.", "result": "partial"},
+  {"date": "2026-10-27", "kind": "control", "technique": ["statistical test", "exhaustive search"], "what": "WAINUT contribution: decode.py --controls on the 552 groups: block_map.tsv coverage 0.917, function words 0.353; identity 0.630 / 0.058; 20,000 random orders of the 16 blocks: function words median 0.062, 99.9th percentile 0.250, max 0.297. Per block, against word bigrams of Ford, Writings of JQA vols 3-4, the block_map.tsv block ranks first (one tie) for 15 of 16 Morris blocks; Morris 1501-1600 ranks second (3 bigrams against 4) and is kept from the pattern and from context (should, United States, Minister).", "result": "worked"},
+  {"date": "2026-10-27", "kind": "reading", "technique": ["contextual inference", "manual reconstruction"], "what": "WAINUT contribution: frame 0039 written out as sentences (morris1813_reading.md): 506 of 554 groups have a table value; read_share 0.678 (research/reading_audit/v2_score.py hole rate 0.322); 670 read [?Floridas] from context at all five occurrences; names Jefferson, Madison, Baton Rouge from the table syllables.", "result": "partial"},
   {"date": "2026-10-27", "kind": "literature search", "what": "WAINUT contribution: one web search and two by the verifier found no printed decipherment and no record of the code with reversed blocks. Manning (1925) vol. 3, Woolfley and the HSP Morris papers not checked.", "result": "partial"}
  ],
  "outcome": {
@@ -93,8 +93,8 @@
   "method_basis": "The JQA code table (../jqa/code_table.tsv), rebuilt in targets/jqa for JQA's 1811-1812 St Petersburg despatches and not tied to Morris, found here to fit Morris's groups once his sixteen blocks of 100 are taken in reverse order (block_map.tsv, recovered from the ciphertext).",
   "contribution": ["transcription", "key extended or corrected"],
   "fraction_read_method": "measured",
-  "fraction_read_source": "morris1813_reading.md: research/reading_audit/v2_score.py hole rate 0.311 (every [n], [?word] and supplied letter counted as a hole). 506 of 554 groups (0.913) have a value in the table under block_map.tsv (decode.py).",
-  "fraction_read": 0.689,
+  "fraction_read_source": "morris1813_reading.md: research/reading_audit/v2_score.py hole rate 0.322 (every [n], [?word] and supplied letter counted as a hole). 506 of 554 groups (0.913) have a value in the table under block_map.tsv (decode.py).",
+  "fraction_read": 0.678,
   "codes_open": {"open": 36, "total": 288, "tokens_open": 48},
   "verification": ["independent verification", "matched control", "historical consistency"],
   "provenance": "contributed",
@@ -107,7 +107,7 @@
   ],
   "gaps": [
    {"item": "frames 0036-0038, 0050, 0052-0057, 0124-0125 and 0191-0192 (about 2,500 groups)", "blocker": "not-attempted", "detail": "not transcribed; 0191-0192 are two copies of one despatch and would check readings and transcription"},
-   {"item": "36 distinct groups (48 tokens) on frame 0039 with no table value, e.g. 670 (5x, [?Floridas]), 904, 1149, 1311, 163, the figure groups", "blocker": "open-codes", "detail": "open slots in ../jqa/code_table.tsv; more Morris text would test them"},
+   {"item": "36 distinct groups (48 tokens) on frame 0039 with no table value, e.g. 670 (5x, [?Floridas]), 904, 1149, 1311, 163, the figure groups 655, 657 and 659", "blocker": "open-codes", "detail": "open slots in ../jqa/code_table.tsv; more Morris text would test them"},
    {"item": "about 74% of the groups on frame 0039 read once only; L17 132, L19 479, L24 518 doubtful", "blocker": "not-attempted", "detail": "a second full reading of the frame is the next step"}
   ],
   "texts": [
@@ -119,9 +119,9 @@
     "reading": "morris1813_reading.md",
     "language": "en",
     "state": "read in part",
-    "read_share": 0.689,
+    "read_share": 0.678,
     "summary": "A page from the middle of a despatch about Spain's Floridas: a British offer 'last year' to send [troops] there 'under the [pretext] of preserving the territory to Spain, but probably with the intention of holding it'; a change in the Regency once the Cortes are organized; the 'democratic government of the United States under the administration of the Frenchified Señor Jefferson [and] Madison'; the separation of Spain's colonies; the insurrection of [West?] Florida and Baton Rouge; the claim that the territory belongs to Spain and was an integral part of the Floridas; the treason of a governor and the ambassador of a revolutionary government.",
-    "reading_review": {"grade": "B", "by": "WAINUT (AI language-model agent, reviewed against the frame)", "date": "2026-10-27", "note": "Coherent English in stretches (lines 3-7, 9-10, 12-13, 15-17, 20-26 in part), with holes in most sentences: 31% of the words are open groups, context readings or supplied letters. A partial reading of one page, not a full one."}
+    "reading_review": {"grade": "B", "by": "WAINUT (AI language-model agent, reviewed against the frame)", "date": "2026-10-27", "note": "Coherent English in stretches (lines 3-7, 9-10, 12-13, 15-17, 20-26 in part), with holes in most sentences: 32% of the words are open groups, context readings or supplied letters. A partial reading of one page, not a full one."}
    }
   ],
   "key_file": ["../jqa/code_table.tsv", "block_map.tsv"],

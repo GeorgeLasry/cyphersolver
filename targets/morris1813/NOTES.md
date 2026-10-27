@@ -53,7 +53,7 @@ for only **8 of 16** Morris blocks (1-300, 401-500, 601-700, 801-1100). The spar
 other eight rest on the pattern and on context. A context test supports them: for each Morris block, every JQA block
 is tried with the other blocks kept as in `block_map.tsv`, and the decoded word pairs touching the block are counted
 as word bigrams of Ford, *Writings of J. Q. Adams* vols 3-4 (in `../jqa`). The reversed block ranks first in **15 of
-16** blocks (twice tied). Morris 701-800 and 1201-1300 rest on only 2 bigrams each. Morris 1501-1600 ranks second (3
+16** blocks (once tied). Morris 701-800 and 1201-1300 rest on only 2 bigrams each. Morris 1501-1600 ranks second (3
 bigrams against 4), but reads in context: 1590 should ("should a change in the [Regency] take place"), 1549 United
 States, 1521 Minister (ad-Minister-ation). The `basis` column of `block_map.tsv` records this per block.
 
@@ -85,12 +85,12 @@ by them last year to send [1579.401] there under the [1311.1246] of preserving t
 with the intention of holding it ..."
 
 **Read in part, and only just.** The page builds sentences in stretches, but there are holes in most sentences.
-read_share is **0.689** (`research/reading_audit/v2_score.py`, hole rate 0.311, every open group, context reading and
+read_share is **0.678** (`research/reading_audit/v2_score.py`, hole rate 0.322, every open group, context reading and
 supplied letter counted). Of the 32 sentence units of the `## Reading` section, 4 are clean (v2_score.py);
-`docs/_check_reading.py` over the whole file, notes included, gives a clean share of 0.463 ("marginal"). The main
+`docs/_check_reading.py` over the whole file, notes included, gives a clean share of 0.467 ("marginal"). The main
 context readings, all marked `[?word]`: 670 = Floridas (5x, no value in the table; it fits each occurrence: "an integral part
 of", "the provinces of both"), force (the table has france), Regency, colonies, Peninsula, overwhelm, importunities,
-treason, revolutionary.
+treason, revolutionary, effect, threatened.
 
 **What the page says.** It deals with Spain's Floridas: a British offer "last year" to send [troops] there under
 cover of preserving the territory to Spain, "but probably with the intention of holding it"; a change in the Regency
@@ -113,7 +113,7 @@ On the 552 groups 1-1600 of the frame:
   govern-ment 3x; 279.140.608.953 ter-it-or-ty and 126.1295.1018.133 in-sur-rect-ion 2x each as identical group
   strings. (The first round said 25x, and 3x each for territory and insurrection; the third instances need L19 479
   read as 279 and L17 132 as 133, which are plausible but not checked.)
-- 364 = JQA 1264: in the Ellis 1839 alignment (open PR #8, `targets/ellis1839/ellis1839_pairs.tsv` there) 1264 is
+- 364 = JQA 1264: in the Ellis 1839 alignment (open PR #107, `targets/ellis1839/ellis1839_pairs.tsv` there) 1264 is
   the full stop. Here 364 stands where a sentence ends in lines 12, 17, 21 and 24 (once, in line 8, inside an
   unread word). 364.370 occurs 3 times, so 370 (= JQA 1270) may be part of the stop sign.
 
@@ -140,14 +140,14 @@ in the table (a slot inference); it fits here (democratic).
 - Frames 0036-0038, 0050, 0052-0057, 0124-0125 and 0191-0192 (about 2,500 groups) - blocker: not-attempted. Not
   transcribed. 0191-0192 are two copies of one despatch and would check readings and transcription together.
 - 36 distinct groups (48 tokens) on frame 0039 without a table value, among them 670 (5x), 904, 1149, 1311, 163 and
-  the figure groups 650-659 - blocker: open-codes. More Morris text would test the context readings.
+  the figure groups 655, 657 and 659 - blocker: open-codes. More Morris text would test the context readings.
 - About 74% of the groups on frame 0039 were read once only; L17 132, L19 479 and L24 518 are doubtful - blocker:
   not-attempted. A second full reading is the next step.
 
 ## Escalation
 
 - [x] siblings: the code is the JQA table (`../jqa`), also used by Crawford 1813, Appleton 1823, Everett 1825 and
-  Ellis 1839 (open PR #8), with the blocks reversed in Morris's copy
+  Ellis 1839 (open PR #107), with the blocks reversed in Morris's copy
 - [x] clear-pages: the clear phrases in lines 1-6 fit the decode around them; no clear copy found
 - [x] known-keys: 220 repository tables tried directly (none fits); the JQA table fits under the block reversal
 - [ ] print: Manning (1925) vol. 3 and Woolfley not checked
