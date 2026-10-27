@@ -1,0 +1,44 @@
+# Catalogue 657, telegram No. 205 (groups 0-146): decryption line by line. Written by decode.py.
+# Each line: group numbers | groups | value of each group from codebook.tsv (grade) | German as printed | note.
+# A group with no value of its own sits in a span whose split is not fixed (see align_205.tsv); [?] after a
+# group = doubtful reading of its figures. Value N+x = prefix figure N on base group x.
+
+  0-  4 | 958 677 728 229 0705 | 958=-; 677=-; 728=-; 229=-; 0705=- | [Antwort auf Telegramm 148]? | header; 3-figure groups = 12 figures, may be misspaced 4-figure groups; not resolved
+  5-  5 | 1166 | 1166=Memorandum(C) | Memorandum
+  6-  6 | 0352 | 0352=Lansing(C) | Lansing | confirmed at 84
+  7-  7 | 7031 | 7031=überreicht(C) | überreicht
+  8-  8 | 1515 | 1515=[Punkt](C) | .
+  9-  9 | 6147 | 6147=Meines Erachtens(C) | Meines Erachtens | phrase group
+ 10- 10 | 9699 | 9699=wird(C) | wird | confirmed at 35, 44, 80, 145
+ 11- 11 | 6699 | 6699=Vorgehen(C) | Vorgehen | confirmed at 32; 86699 = vorgegangen at 144
+ 12- 13 | 6918 7437 | 6918=im(C); 7437=Sinne(C) | im Sinne | repeated at 141-142
+ 14- 14 | 7436 | 7436=dieses(C) | dieses
+ 15- 15 | 1166 | 1166=Memorandum(C) | Memorandums
+ 16- 17 | 2396 2772 | 2396=Friedens-(C); 2772=-vermittlung(C) | Friedensvermittlung | repeated at 113-114
+ 18- 18 | 2373 | 2373=Wilson(s)(C) | Wilsons | confirmed at 78, 96, 112
+ 19- 23 | 0280 8918 8559 92312 5180 | 0280[?]=-; 8918=-; 8559=-; 92312=-; 5180=- | zum Scheitern bringen und statt dessen | 5 groups for 6 words; split not fixed; the words are taken from the print, not read
+ 24- 26 | 4879 7937 54873 | 4879=Bruch(C); 7937=mit(C); 54873=5+Vereinigten Staaten(C) | Bruch mit Vereinigten Staaten | repeated at 132-134 (4873 without prefix)
+ 27- 27 | 8789 | 8789=herbeiführen(C) | herbeiführen | 88789 = herbeigeführt at 40
+ 28- 30 | 8584 0441 4171 | 8584=-; 0441=-; 4171=- | , wenn nicht mindestens so lange | 3 groups for 5 words and a comma; split not fixed; the words are taken from the print, not read
+ 31- 32 | 7937 6699 | 7937=mit(C); 6699=Vorgehen(C) | mit Vorgehen
+ 33- 35 | 3091 5205 9699 | 3091=ge- (participle prefix)(C); 5205=-wartet(C); 9699=wird(C) | ge- wartet wird | 3091 = ge- also at 52
+ 36- 38 | 7424 1609 7937 | 7424=bis(C); 1609=Einigung(C); 7937=mit(C) | bis Einigung mit | 7424 bis again at 92
+ 39- 39 | 1374 | 1374=hiesige Regierung(C) | hiesiger Regierung | 11374 = hiesigen Regierung at 69
+ 40- 42 | 88789 2012 3377 | 88789=8+herbeiführen(C); 2012=ist(C); 3377=[Punkt](C) | herbeigeführt ist . | 2012 ist again at 81
+ 43- 48 | 2199 9699 1275 3371 5919 7158 | 2199=Es(C); 9699=wird(C); 1275=sich(C); 3371=vielleicht(C); 5919=erreichen(C); 7158=lassen(C) | Es wird sich vielleicht erreichen lassen
+ 49- 54 | 8172 7294 8517 3091 5383 6356 | 8172=daß(C); 7294=Amerikaner(C); 8517=davor(C); 3091=ge- (participle prefix)(C); 5383=-warnt(C); 6356=werden(C) | , daß Amerikaner davor ge- warnt werden
+ 55- 58 | 8693 2524 9335 71621 | 8693=auf(C); 2524=Schiffen(C); 9335=Dienst(C); 71621=7+nehmen(M) | auf Schiffen Dienst zu nehmen | 8693 auf again at 111
+ 59- 64 | 8951 73169 0358 0411 7599 0404 | 8951=-; 73169=-; 0358=-; 0411=-; 7599=-; 0404=[Punkt](C) | , welche zu Angriffszwecken bewaffnet sind . | 6 groups for 5 words, a comma and a stop (0404 = stop); split not fixed
+ 65- 73 | 8796 5810 8335 0498 11374 6251 2170 6356 1515 | 8796=Hierzu(C); 5810=muß(C); 8335=aber(C); 0498=jedenfalls (der?)(M); 11374=1+hiesige Regierung(C); 6251=Zeit(C); 2170=gelassen(C); 6356=werden(C); 1515=[Punkt](C) | Hierzu muß aber jedenfalls (der) hiesigen Regierung Zeit gelassen werden . | 5810 muß again at 102
+ 74- 76 | 9793 4349 7918 | 9793=Da(C); 4349=alles(C); 7918=- | Da alles [?] | 7918 extra group, unexplained
+ 77- 81 | 0197 2373 3404 9699 2012 | 0197=von(C); 2373=Wilson(s)(C); 3404=entschieden(C); 9699=wird(C); 2012=ist(C) | von Wilson entschieden wird , ist
+ 82- 88 | 6143 7937 0352 5902 2958 3119 3377 | 6143=Besprechung(C); 7937=mit(C); 0352=Lansing(C); 5902=reine(C); 2958=Form-(C); 3119=-sache(C); 3377=[Punkt](C) | Besprechung mit Lansing reine Form sache .
+ 89- 98 | 2765 5380 5132 7424 2765 06887 0197 2373 0270 0404 | 2765=er(C); 5380=antwortet(C); 5132=niemals(C); 7424=bis(C); 2765=er(C); 06887=0+Instruktionen(M); 0197=von(C); 2373=Wilson(s)(C); 0270=hat(C); 0404=[Punkt](C) | Er antwortet niemals , bis er Instruktionen von Wilson hat .
+ 99-107 | 6918 4118 5653 5810 3285 4003 1861 7785 1724 | 6918=im(C); 4118=vorliegenden(M); 5653=Fall(C); 5810=muß(C); 3285=letzterer(C); 4003=erst(C); 1861=Denkschrift(C); 7785=lesen(C); 1724=[Punkt] or [Absatz](M) | Im vorliegenden Fall muß letzterer erst Denkschrift lesen .
+108-115 | 0656 6105 2878 8693 2373 2396 2772 4905 | 0656=Wieviel(C); 6105=Wert(C); 2878=Euere Exzellenz(C); 8693=auf(C); 2373=Wilson(s)(C); 2396=Friedens-(C); 2772=-vermittlung(C); 4905=legen(C) | Wieviel Wert Euere Exzellenz auf Wilsons Friedensvermittlung legen
+116-122 | 7184 2880 0197 1589 1354 0321 1515 | 7184=kann(C); 2880=ich(C); 0197=von(C); 1589=hier(C); 1354=aus [?](M); 0321=(nicht) ermessen [?](M); 1515=[Punkt](C) | , kann ich von hier aus nicht ermessen . | 1354/0321 split doubtful
+123-124 | 2805 8416 | 2805=Davon(C); 8416=abgesehen(C) | Davon abgesehen
+125-131 | 6436 0089 5051 5052 6011 1878 7325 | 6436=-; 0089[?]=-; 5051=-; 5052=-; 6011=-; 1878=-; 7325=- | , muß ich pflichtgemäß bestimmt erklären , daß ich | 7 groups; none of the known groups for muß (5810), ich (2880) or daß (8172) occurs here: a hole, not a confirmed reading
+132-137 | 4879 7937 4873 9076 8096 1026 | 4879=Bruch(C); 7937=mit(C); 4873=Vereinigten Staaten(C); 9076=für(C); 8096[?]=unvermeidlich(M); 1026=halte(C) | Bruch mit Vereinigten Staaten für unvermeidlich halte
+138-145 | 0545 4203 6986 6918 7437 61166 86699 9699 | 0545=[Komma](C); 4203=wenn(C); 6986=ohne weiteres(C); 6918=im(C); 7437=Sinne(C); 61166=6+Memorandum(C); 86699=8+Vorgehen(C); 9699=wird(C) | , wenn ohne weiteres im Sinne des Memorandums vorgegangen wird
+146-146 | 0278 | 0278=- | [Schluss / Bernstorff]? | end of telegram 205; part 2 starts at 147
