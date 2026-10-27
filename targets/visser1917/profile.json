@@ -1,0 +1,101 @@
+{
+ "schema_version": 1,
+ "target": "visser1917",
+ "title": "Henry Kolbeck and Olga de Visser's symbol message for Joe Bolner, San Antonio, seized at Laredo, February 1917 (BI case OG 2889): located with a key strip, not deciphered",
+ "documents": [
+  {
+   "id": "msg",
+   "read": "not read",
+   "shelfmark": "NARA RG 65, Bureau of Investigation, Old German Files (M1085), case OG 2889 (Olga Visser), roll 302 frames 39 and 58 (two photostats of one sheet); key strip on frames 42 and 59",
+   "date": "Feb 1917 (the carriers were detained at Laredo on 14 Feb 1917)",
+   "year": 1917,
+   "country": "Austria-Hungary (claimed)",
+   "route": "Mexico City -> San Antonio (claimed)",
+   "language": "Spanish",
+   "pages": 1,
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": ["none"],
+    "source": "The Bureau of Investigation read the note in 1917: E. E. Swift's reports in OG 3410 (M1085 roll 308, naId 369510329) quote the word 'avantaceran' (for abastecerán, 'will supply') from 'your copy of the note' and say it stated how many men, guns and ammunition would be supplied for money. The full plaintext was not located; it may be in MID 9140-103 / 4131-44 (not digitised)."
+   },
+   "length": {
+    "tokens": "unknown",
+    "distinct": "unknown",
+    "unit": "symbols",
+    "measured": false
+   },
+   "transcription": {
+    "by": "unknown",
+    "source": "NARA M1085 roll 302 frames 39 and 58 (https://catalog.archives.gov/medialz/dc-metro/rg-065/833664/M1085/M1085-302/M1085-302-0039.jpg)",
+    "image_quality": "poor",
+    "notes": "Not transcribed. Seven lines of letter-like signs (some dotted) with short dashes inside the lines, plus a signature line; about 170-200 signs by eye (estimate, not counted). The frames are about 1000x1300 pixels and no larger copy was found."
+   }
+  }
+ ],
+ "system": {
+  "types": ["undetermined"],
+  "summary": "Handwritten symbol script of letter-like signs, some with dots above, short dashes inside the lines; a key strip in the same file pairs Latin letters (LL in its own cell) with signs, which suggests simple substitution over a Spanish alphabet, not tested.",
+  "symbol_kind": "symbols",
+  "distinct_symbols": "unknown",
+  "diacritics": {"used": true, "note": "dots above some signs; function unknown"},
+  "homophones": {"used": "unknown"},
+  "nomenclator": {"present": "unknown"},
+  "nulls": {"present": "unknown"},
+  "key_order": "unknown",
+  "word_division": "unknown",
+  "sibling_key": "Key strip in OG 2889 (roll 302 frames 42 and 59); legible at the right end: j[?] C-shape with dot, K Λ, L †, LL ⊓ with tick, M[?]/Ñ[?] unclear, v ✓. The strip may be a Bureau copy, and Franz Visser said Olga's key was used in the Vissers' own correspondence. Not shown to be this message's key; not applied.",
+  "notes": "Kolbeck confessed in 1917 that he wrote the document himself in Laredo jail 'from a key he had originated in Mexico' (OG 3410). The message and the key strip share only some signs (†/T, 9, X, ✓)."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in archive",
+   "where": "Bureau of Investigation 1917: Swift's reports in OG 3410 (M1085 roll 308, naId 369510329) show the note was read in Spanish and quote one word; full plaintext not located (possibly MID 9140-103 / 4131-44, RG 165, not digitised). No printed treatment found by one web search; Tuchman and Boghardt not checked.",
+   "found": "during attempt",
+   "used": false
+  },
+  "inputs": ["images", "cleartext context"],
+  "attack": "none",
+  "human_role": "WAINUT set the task (catalogue 698) and the rules; the AI agents found the case files, fetched the frames, read the OCR and checked the findings. No target-specific human intervention.",
+  "tools": [
+   "NARA catalogue API and extractedText proxy (OCR of the Bureau reports)",
+   "image enlargement with autocontrast for the key strip"
+  ],
+  "models": ["AI language-model agents (WAINUT); a vision-capable language model for looking at the frames"],
+  "sessions": 1,
+  "first_date": "2026-10-27",
+  "last_date": "2026-10-27"
+ },
+ "solution": [
+  {"date": "2026-10-27", "kind": "access", "what": "From the DOJ alien enemy card 'VISSER, Olga' (naId 296747364) to Bureau of Investigation case OG 2889 (M1085 rolls 301-302; cover card roll 302 frame 40) and the companion case OG 3410 (Kolbeck, roll 308 frames 1988-2067).", "result": "worked"},
+  {"date": "2026-10-27", "kind": "access", "what": "Message found as two photostats of one sheet (roll 302 frames 39 and 58) and a key strip as two photostats (frames 42 and 59). Single frames downloaded a second time independently: same sizes as the images in the roll PDF; no higher resolution available.", "result": "worked"},
+  {"date": "2026-10-27", "kind": "transcription", "what": "Message and key strip examined on the frames: seven lines of letter-like signs with dashes and a signature line; on the key strip only the right end reads (j[?], K, L, LL, M[?]/Ñ[?], v). No sign-by-sign transcription made.", "result": "partial"},
+  {"date": "2026-10-27", "kind": "literature search", "what": "Bureau reports read in OCR (OG 2889, OG 3410, OG 2864): detention at Laredo on 14 Feb 1917; claimed sender Horotwischka of the Austro-Hungarian Legation; Kolbeck's confession that he wrote the document himself and the May 1917 charge; the Bureau's 1917 reading in Spanish ('avantaceran' = abastecerán; men, guns and ammunition for money); a Bureau copy of the key made in April 1917.", "result": "worked"},
+  {"date": "2026-10-27", "kind": "crib", "technique": ["crib testing"], "what": "Crib 'avasteceran' (pattern a?a???e?e?an) tried on the message by eye.", "result": "failed"},
+  {"date": "2026-10-27", "kind": "verification", "what": "Independent recheck: frames re-downloaded and compared, page attribution confirmed, confession re-fetched from naId 369510329; corrected the first finding of 'no contemporary decode' to a 1917 reading in Spanish whose text is not located.", "result": "worked"},
+  {"date": "2026-10-27", "kind": "literature search", "what": "Web search (Olga Visser, Kolbeck, Laredo, code): no printed treatment found. Tuchman and Boghardt not checked.", "result": "failed"}
+ ],
+ "outcome": {
+  "class": "not read",
+  "key": "none",
+  "method": "not solved",
+  "method_basis": "The message and a key strip were located as photostats in BI case OG 2889; no transcription or decryption was made, and the strip is not shown to be this message's key.",
+  "contribution": ["sender or date identified", "catalogue correction"],
+  "fraction_read": 0,
+  "fraction_read_method": "estimated",
+  "fraction_read_source": "Nothing deciphered.",
+  "verification": ["none"],
+  "provenance": "contributed",
+  "credits": [
+   {"who": "lccompany", "role": "solution", "note": "contributed entry: case file, message and key strip located and checked on the frames; not deciphered", "date": "2026-10-27"},
+   {"who": "lccompany", "role": "identification", "note": "message and key strip located in BI OG 2889 (M1085 roll 302 frames 39, 42, 58, 59); names, claimed sender, recipient and language corrected", "date": "2026-10-27"},
+   {"who": "lccompany", "role": "pointer", "note": "Bureau reports in OG 3410: the 1917 reading in Spanish and Kolbeck's confession", "date": "2026-10-27"},
+   {"who": "contemporary", "role": "prior solution", "note": "Bureau of Investigation read the note in 1917 (E. E. Swift, OG 3410); text not located", "date": "1917", "source": "https://catalog.archives.gov/id/369510329"}
+  ],
+  "gaps": [
+   {"item": "the whole message", "blocker": "illegible", "detail": "frames about 1000x1300 pixels, no larger copy online; a careful double transcription was not attempted"},
+   {"item": "left half of the key strip", "blocker": "needs-physical-access", "detail": "too faint on the film (frames 42 and 59)"},
+   {"item": "the 1917 Bureau plaintext", "blocker": "needs-physical-access", "detail": "probably in MID 9140-103 / 4131-44 (RG 165, not digitised) or on badly OCR'd pages of OG 2889 / OG 3410"}
+  ],
+  "notes": "Contributed by WAINUT (catalogue 698). Corrections: language Spanish, not German; carriers Henry Kolbeck and Olga de Visser (cousins); claimed sender the Legation secretary Hugo Horotwischka, not the minister; Kolbeck confessed he wrote it himself. Authenticity is open."
+ }
+}
