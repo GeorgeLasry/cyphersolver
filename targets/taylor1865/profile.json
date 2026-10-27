@@ -1,0 +1,398 @@
+{
+ "schema_version": 1,
+ "target": "taylor1865",
+ "title": "Lt. Gen. Richard Taylor's telegram letter-books, Meridian 1865: four telegrams with Confederate Vigenere passages read with the key COME RETRIBUTION (NARA RG 109 ch. II vols. 196 and 11; catalogue 681)",
+ "documents": [
+  {
+   "id": "v196-0061",
+   "read": "read",
+   "shelfmark": "NARA RG 109, War Department Collection of Confederate Records, ch. II vol. 196 (Telegrams Sent, Dept. of Alabama, Mississippi and East Louisiana, Feb-Mar 1865; naId 45485022), frame 0061, MS p. 117",
+   "date": "12 Mar 1865",
+   "year": 1865,
+   "country": "Confederate States",
+   "route": "Meridian, Mississippi -> Mobile",
+   "places": {
+    "from": "Meridian",
+    "to": "Mobile"
+   },
+   "language": "English",
+   "pages": 1,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "Not found in OR Ser. I vol. 49 pts. 1-2 (OCR full-text search, 27 Oct 2026)."
+   },
+   "length": {
+    "tokens": 180,
+    "distinct": 25,
+    "unit": "letters",
+    "measured": true,
+    "file": "v196-0061_cipher.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "NARA naId 45485022, chapter-2-volume-196-0061.jpg (full resolution)",
+    "corrections": 9,
+    "image_quality": "good",
+    "notes": "Read twice from the image, the second time independently on fresh crops. 9 letters as written do not give the plaintext; each is one misleading glyph (barred E for F x4, T for F x2, R for J, U for M, C for B) and is corrected in alignment.tsv. Measured with docs/_check_profile.py --measure --letters."
+   }
+  },
+  {
+   "id": "v11-0022",
+   "read": "read",
+   "shelfmark": "NARA RG 109, War Department Collection of Confederate Records, ch. II vol. 11 (Telegrams Sent, 1865; naId 12127054), frame 0022, MS pp. 40-41",
+   "date": "30 Mar 1865",
+   "year": 1865,
+   "country": "Confederate States",
+   "route": "Meridian, Mississippi -> Selma, Alabama",
+   "places": {
+    "from": "Meridian",
+    "to": "Selma"
+   },
+   "language": "English",
+   "pages": 2,
+   "cleartext_in_document": "mostly clear",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "Not found in OR Ser. I vol. 49 pt. 2 (OCR full-text search, 27 Oct 2026)."
+   },
+   "length": {
+    "tokens": 52,
+    "distinct": 25,
+    "unit": "letters",
+    "measured": true,
+    "file": "v11-0022_cipher.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "NARA naId 12127054, rg-109-chapter-2-volume-11-0022.jpg (full resolution)",
+    "corrections": 2,
+    "image_quality": "good",
+    "notes": "Cipher words read twice, the second time independently; the second reading (P in PBYBBG, F in YMF) is used. 2 letters corrected (N for G, Y for V). Clear text read on enlarged crops of both pages. Measured with docs/_check_profile.py --measure --letters."
+   }
+  },
+  {
+   "id": "v11-0036",
+   "read": "read",
+   "shelfmark": "NARA RG 109, War Department Collection of Confederate Records, ch. II vol. 11 (Telegrams Sent, 1865; naId 12127054), frame 0036, MS p. 69",
+   "date": "6 Apr 1865",
+   "year": 1865,
+   "country": "Confederate States",
+   "route": "Meridian, Mississippi -> Mobile",
+   "places": {
+    "from": "Meridian",
+    "to": "Mobile"
+   },
+   "language": "English",
+   "pages": 1,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "printed edition"
+    ],
+    "source": "War of the Rebellion: Official Records, Ser. I vol. 49 pt. 2 (1897), p. 1209, prints the telegram in clear (archive.org warofrebellion014902rootrich).",
+    "partial": false
+   },
+   "length": {
+    "tokens": 56,
+    "distinct": 22,
+    "unit": "letters",
+    "measured": true,
+    "file": "v11-0036_cipher.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "NARA naId 12127054, rg-109-chapter-2-volume-11-0036.jpg (full resolution)",
+    "corrections": 6,
+    "image_quality": "good",
+    "notes": "Read twice, the second time independently. 56 letters as read, 57 after correction: a U-like glyph in IRUBEE stands for IC. Other corrections: EQXLVNI to FQXLVGJ (3 glyphs), E to F in IRUBEE and ME. The OR print confirms the plaintext. Measured with docs/_check_profile.py --measure --letters."
+   }
+  },
+  {
+   "id": "v11-0039",
+   "read": "read",
+   "shelfmark": "NARA RG 109, War Department Collection of Confederate Records, ch. II vol. 11 (Telegrams Sent, 1865; naId 12127054), frame 0039, MS p. 75",
+   "date": "8 Apr 1865",
+   "year": 1865,
+   "country": "Confederate States",
+   "route": "Meridian, Mississippi -> Demopolis, Alabama",
+   "places": {
+    "from": "Meridian",
+    "to": "Demopolis"
+   },
+   "language": "English",
+   "pages": 1,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "printed edition"
+    ],
+    "source": "War of the Rebellion: Official Records, Ser. I vol. 49 pt. 2 (1897), p. 1216, prints the telegram in clear (archive.org warofrebellion014902rootrich).",
+    "partial": false
+   },
+   "length": {
+    "tokens": 61,
+    "distinct": 23,
+    "unit": "letters",
+    "measured": true,
+    "file": "v11-0039_cipher.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "NARA naId 12127054, rg-109-chapter-2-volume-11-0039.jpg (full resolution)",
+    "corrections": 2,
+    "image_quality": "good",
+    "notes": "Read twice, the second time independently; the date line reads 'Meridian April 8th 1865' and the telegram is complete. 2 letters corrected (Z for E, X for W). Measured with docs/_check_profile.py --measure --letters."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "polyalphabetic"
+  ],
+  "summary": "Confederate Vigenere on the tabula recta with the key COMERETRIBUTION, enciphering only chosen words of otherwise clear telegrams; the key runs over the cipher letters only and restarts at offset 0 with each telegram.",
+  "symbol_kind": "letters",
+  "distinct_symbols": 26,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": false
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": false
+  },
+  "key_order": "keyword-derived",
+  "word_division": "kept",
+  "sibling_key": "COMERETRIBUTION, one of the three known Confederate keys; COMPLETEVICTORY and MANCHESTERBLUFF tested as controls. The catalogue's OCR triage suggests COMPLETE VICTORY in vol. 10 (not checked here).",
+  "notes": "Distinct symbols: the 26-letter alphabet of the tabula recta. The clerks' capitals mislead in a few recurring ways (barred E for F, T for F, R for J, N for G, Y for V, X for W, Z for E, U for M, C for B, a U-like glyph for IC); every correction is a single glyph and is listed in alignment.tsv."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "partial",
+   "where": "Two of the four telegrams (6 and 8 April 1865) are printed in clear in War of the Rebellion: Official Records, Ser. I vol. 49 pt. 2 (1897), pp. 1209 and 1216. The 12 and 30 March telegrams were not found in OR I/49 pts. 1-2.",
+   "found": "during attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "cleartext context",
+   "published key"
+  ],
+  "attack": "published key",
+  "human_role": "Outside contribution (WAINUT): the operator chose the catalogue item; transcription, decryption, controls and the prior-art search were done by AI language-model agents and checked against the images. No hand correction of readings recorded.",
+  "tools": [
+   "decrypt.py (Vigenere decryption over alignment.tsv, controls)"
+  ],
+  "models": [
+   "AI language-model agents (WAINUT)"
+  ],
+  "sessions": 1,
+  "first_date": "2026-10-27",
+  "last_date": "2026-10-27"
+ },
+ "solution": [
+  {
+   "date": "2026-10-27",
+   "kind": "access",
+   "what": "Fetched the NARA catalogue records of vols. 196, 11 and 10 and the full-resolution frames listed in the catalogue's OCR run lists; screened them on montages. Vol. 196 frame 0027 has no cipher words (an OCR false hit).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "transcription",
+   "what": "Read the cipher words of vol. 196 fr. 0061 (180 letters) and vol. 11 frs. 0022, 0036 and 0039 (52, 56 and 61 letters) and the clear text around them from the images.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "key from source",
+   "technique": [
+    "key matching"
+   ],
+   "what": "Applied the known Confederate key COMERETRIBUTION, over the cipher letters only, offset 0 at each telegram: English from the first letter in all four telegrams (171/180, 50/52, 46/57, 59/61 letters right as read).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "hypothesis",
+   "technique": [
+    "contextual inference"
+   ],
+   "what": "Explained the remaining letters as single misleading glyphs of the clerks' capitals (barred E for F, T for F, R for J, N for G, Y for V, X for W, Z for E, U for M, C for B, U-like glyph for IC); no correction needs more than one glyph.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Controls on the letters as read (decrypt.py --controls): COMERETRIBUTION offset 0 chi2 19-37; best other offset 92-676; COMPLETEVICTORY 132-381; MANCHESTERBLUFF 133-1072; 200 random keys minimum 75-402; shuffled cipher words with the right key 3-10 letters agreeing on average.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "literature search",
+   "what": "OCR full text of OR Ser. I vol. 49 pt. 2 searched for each plaintext phrase: the 6 April telegram to Levy is printed in clear on p. 1209. The 12 and 30 March and 8 April telegrams not found in this first search.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "verification",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Second, independent agent: re-read all four telegrams on its own crops, decrypted them with its own code (same plaintext, 171/180, 50/52, 59/61 letters right as read), corrected the 12 March letter count to 180, read the 8 April date line, and found that the 8 April telegram is printed in clear in OR I/49/2 p. 1216 (the first search missed it because of double spaces in the OCR text). Searched OR I/49 pt. 1 for the 12 March telegram: not found.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "reading",
+   "what": "The four telegrams written as sentences (<doc>_reading.md). One hole: [?west] in the 12 March telegram, where the cipher gives WEST and the sense wants 'what'.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "recovered",
+  "method": "read after matching with key from external sources",
+  "method_basis": "The known Confederate key COMERETRIBUTION, not previously tied to these letter-books except for the catalogue's triage of frame 0061, was found to fit each telegram from its first cipher letter and applied word by word; two of the four telegrams are printed in clear in OR I/49/2.",
+  "contribution": [
+   "transcription",
+   "catalogue correction"
+  ],
+  "fraction_read": "unknown",
+  "verification": [
+   "key confirms",
+   "independent clear copy",
+   "historical consistency"
+  ],
+  "provenance": "contributed",
+  "notes": "Four telegrams read in full (350 cipher letters); the other cipher passages of vols. 10, 11 and 196 are not read. Two of the four are earlier solutions (OR I/49/2 pp. 1209, 1216); the 12 and 30 March telegrams were not found in print. fraction_read is unknown because the unread passages have not been transcribed or counted.",
+  "gaps": [
+   {
+    "item": "vol. 196, cipher passages other than frame 0061",
+    "blocker": "not-attempted",
+    "detail": "about 40 OCR runs, noisy; screen the frames visually first"
+   },
+   {
+    "item": "vol. 11, frames 0041-0046 and 0076-0081",
+    "blocker": "not-attempted"
+   },
+   {
+    "item": "vol. 10 (naId 16878212)",
+    "blocker": "not-attempted",
+    "detail": "the OCR suggests COMPLETE VICTORY; the key-change date is open"
+   }
+  ],
+  "credits": [
+   {
+    "who": "lccompany",
+    "role": "solution",
+    "note": "four telegrams read with COMERETRIBUTION from the NARA images; controls",
+    "date": "2026-10-27"
+   },
+   {
+    "who": "lccompany",
+    "role": "transcription",
+    "note": "cipher words and clear text of vol. 196 fr. 0061 and vol. 11 frs. 0022, 0036, 0039, read twice",
+    "date": "2026-10-27"
+   },
+   {
+    "who": "lccompany",
+    "role": "pointer",
+    "note": "earlier solutions: OR Ser. I vol. 49 pt. 2 pp. 1209 and 1216 print the 6 and 8 April telegrams in clear",
+    "date": "2026-10-27"
+   },
+   {
+    "who": "contemporary",
+    "role": "prior solution",
+    "note": "the 6 and 8 April 1865 telegrams in clear, from the Confederate records, printed in War of the Rebellion: Official Records, Ser. I vol. 49 pt. 2 (1897), pp. 1209 and 1216",
+    "source": "https://archive.org/details/warofrebellion014902rootrich"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "v196-0061",
+    "label": "Taylor (W. F. Bullock Jr.) to Maury, Meridian, 12 Mar 1865, vol. 196 fr. 0061",
+    "transcription": "v196-0061_transcription.txt",
+    "decryption": "v196-0061_decryption.txt",
+    "reading": "v196-0061_reading.md",
+    "language": "en",
+    "state": "read",
+    "read_share": 0.988,
+    "reading_review": {
+     "grade": "A",
+     "by": "WAINUT (AI language-model agent; a second agent re-read the image and decrypted independently)",
+     "date": "2026-10-27",
+     "note": "Coherent orders throughout; one hole, [?west] point, where the cipher gives west and the sense wants what."
+    },
+    "summary": "At the start of Canby's campaign against Mobile, Taylor asks Maury to report in cipher the cavalry on each side of Mobile Bay, its strength and commander, to keep the cavalry close to the enemy and in telegraphic touch with D. W. Adams and headquarters, and to name a point outside the city for a courier line.",
+    "note": "read_share from research/reading_audit/v2_score.py: 1 hole in 86 words."
+   },
+   {
+    "doc": "v11-0022",
+    "label": "Surget to Taylor, Meridian, 30 Mar 1865, vol. 11 fr. 0022",
+    "transcription": "v11-0022_transcription.txt",
+    "decryption": "v11-0022_decryption.txt",
+    "reading": "v11-0022_reading.md",
+    "language": "en",
+    "state": "read",
+    "read_share": 1.0,
+    "reading_review": {
+     "grade": "A",
+     "by": "WAINUT (AI language-model agent; a second agent re-read the image and decrypted independently)",
+     "date": "2026-10-27",
+     "note": "Clear news followed by a cipher recommendation; no holes."
+    },
+    "summary": "Surget reports to Taylor the forwarding of Lee's and Pillow's despatches, a (false) report that Sherman had been wounded, and the permission for Federal ambulances between Big Black and Jackson; in cipher he asks that the War Department again be urged to relieve Col. Watts (probably N. G. Watts, the agent of exchange), whose habits unfit him for the position.",
+    "note": "read_share from research/reading_audit/v2_score.py: no holes in 100 words."
+   },
+   {
+    "doc": "v11-0036",
+    "label": "Surget to Levy, Meridian, 6 Apr 1865, vol. 11 fr. 0036",
+    "transcription": "v11-0036_transcription.txt",
+    "decryption": "v11-0036_decryption.txt",
+    "reading": "v11-0036_reading.md",
+    "language": "en",
+    "state": "read",
+    "read_share": 1.0,
+    "reading_review": {
+     "grade": "A",
+     "by": "WAINUT (AI language-model agent; a second agent re-read the image and decrypted independently)",
+     "date": "2026-10-27",
+     "note": "Agrees word for word with the clear text printed in OR I/49/2 p. 1209."
+    },
+    "summary": "Surget tells Levy at Mobile, in cipher, to see that Sam Duncan returns promptly, which is to his advantage, and adds in clear that the enemy (Wilson's raid) seem to have crossed the river at Selma going east.",
+    "note": "Earlier solution: OR Ser. I vol. 49 pt. 2 p. 1209."
+   },
+   {
+    "doc": "v11-0039",
+    "label": "Surget to Taylor, Meridian, 8 Apr 1865, vol. 11 fr. 0039",
+    "transcription": "v11-0039_transcription.txt",
+    "decryption": "v11-0039_decryption.txt",
+    "reading": "v11-0039_reading.md",
+    "language": "en",
+    "state": "read",
+    "read_share": 1.0,
+    "reading_review": {
+     "grade": "A",
+     "by": "WAINUT (AI language-model agent; a second agent re-read the image and decrypted independently)",
+     "date": "2026-10-27",
+     "note": "Agrees with the clear text printed in OR I/49/2 p. 1216."
+    },
+    "summary": "Surget passes on to Taylor at Demopolis the news, from Northern papers received by General Hodge, that Richmond fell by assault on 3 April 1865.",
+    "note": "Earlier solution: OR Ser. I vol. 49 pt. 2 p. 1216."
+   }
+  ],
+  "key_file": "key.md"
+ }
+}

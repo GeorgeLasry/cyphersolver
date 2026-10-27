@@ -1,0 +1,35 @@
+# Controls for decrypt.py, run on the letters AS READ (no corrections), python decrypt.py --controls
+# chi2 = chi-squared distance of the decrypt from English letter frequencies (lower is more English).
+# agree = letters of the decrypt equal to the plaintext letter in the same place.
+
+== v196-0061 (180 letters in words read with the right length)
+COMERETRIBUTION offset 0: chi2 37, agree 171/180: cavalryyouhaveoneachsideofbayrtqengthandnamepfcommandercaval
+best other offset of the same key: chi2 676 (offset 4)
+COMPLETEVICTORY: chi2 381, agree 71/180: cavprrylbnzapbdnearnsiqrhxbuvgtqecmthnawfagbefcobsanqrkuapxa
+MANCHESTERBLUFF: chi2 1072, agree 12/180: soucvrzwseaijnwdszersjbiyyjohzjedpqtiyrngianxvqnowaobibvijjt
+200 random 15-letter keys: chi2 min 402, median 1110
+cipher words shuffled, right key, 50 runs: agree mean 10.3, max 21
+
+== v11-0022 (52 letters in words read with the right length)
+COMERETRIBUTION offset 0: chi2 19, agree 50/52: relievecolwattschargesagaiusthimbuthishaeitsunfithim
+best other offset of the same key: chi2 156 (offset 2)
+COMPLETEVICTORY: chi2 184, agree 22/52: relxkvepbeoanqhchagmesnttaumqwimbjzhifutwinpjnfiinim
+MANCHESTERBLUFF: chi2 323, agree 4/52: hskkovfasvpihcasvztqetykkbcgcpyaawdhjqlkxqhbcdthvrin
+200 random 15-letter keys: chi2 min 75, median 434
+cipher words shuffled, right key, 50 runs: agree mean 3.0, max 10
+
+== v11-0036 (50 letters in words read with the right length)
+COMERETRIBUTION offset 0: chi2 33, agree 46/50: seethatsamduncanqetururpromptlyontimetohisgetndoso
+best other offset of the same key: chi2 130 (offset 3)
+COMPLETEVICTORY: chi2 242, agree 19/50: seeinatfnfvuhzpnqeiarueckgmjqayoniomegbaasmetaqhko
+MANCHESTERBLUFF: chi2 133, agree 4/50: isdvrauqewwcblidedvervptbhudctocmvsmfrsrbaqeulhylw
+200 random 15-letter keys: chi2 min 95, median 422
+cipher words shuffled, right key, 50 runs: agree mean 3.8, max 12
+
+== v11-0039 (61 letters in words read with the right length)
+COMERETRIBUTION offset 0: chi2 22, agree 59/61: northeripapersjvstreceivedsayrichmondfellbyassaultonthirdins
+best other offset of the same key: chi2 92 (offset 11)
+COMPLETEVICTORY: chi2 132, agree 24/61: norinervcthelpyvstgkcevixvsuvgichbundsredbsxhsauazongubjdckh
+MANCHESTERBLUFF: chi2 273, agree 4/61: dcqvresgtkimfbrlgstocfgzowaohzyqgoynedivejmjaiotndoorlsklwwa
+200 random 15-letter keys: chi2 min 117, median 456
+cipher words shuffled, right key, 50 runs: agree mean 5.2, max 25
