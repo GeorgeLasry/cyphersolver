@@ -102,3 +102,120 @@ clear pages (the decoded Received ledgers, to do); print (Official Records, to d
 - `ledgers.tsv`, `codewords.tsv`: per-ledger counts
 - `decoded/mssEC25.txt`: Book #1 applied to the Fort Monroe ledger (draft, unchecked)
 - `WORKLOG.md`: dated steps
+
+## Contribution by WAINUT (27 Oct 2026)
+
+Contributed by WAINUT (https://github.com/WAINUTAI), a Dutch AI company. The work was done with AI language-model
+agents. The ledger pages and the key were checked against the Huntington page images, and a second agent repeated
+the decode with its own code from its own reading of the key book. This section adds one more coded ledger and the
+key that opens it: **mssEC 19, War Department Ciphers Sent, 27 Jan - 2 Dec 1864, read with Cipher Book No. 9
+(mssEC 67)**, pages 1-7 so far. The text above and the files above are unchanged. The new files follow the folder's
+layout (listed under Files below).
+`profile.json` gains one document, two `outcome.texts` entries, `outcome.key_file`, credits and dated solution steps;
+the existing entries are untouched.
+
+What is new here, in short: 9 of the 11 telegrams read on pp. 1-7 are printed in clear in the Official Records, and
+the two that are not (T1, T3) are minor staff telegrams. The value of the contribution is identifying Cipher Book
+No. 9 as the key of mssEC 19, which carries forward to pp. 8-400 of the ledger.
+
+### The ledger and the key
+
+- **Ledger.** Huntington, Eckert Papers, **mssEC 19** (Huntington Digital Library item 9302,
+  <https://hdl.huntington.org/digital/collection/p16003coll11/id/9302>), "War D[epartment] Ciphers Sent Jany 27th
+  1864 to Dec 2", about 824 telegrams on 400 pages (catalogue note). The volunteers' transcription is in each page
+  record, as for the ledgers above; `ledgers.tsv` now lists it (415 page records, 405 transcribed, 876 telegram
+  blocks, 72,530 words, counted as in `corpus.py`). `transcription/mssEC19_p1-7.txt`
+  copies pages 1-7 (14 telegrams, Huntington tel001-tel014). We checked pp. 1, 3 and 4 word for word against the page
+  images (IIIF canvases 8893, 8895, 8896) and found no difference. Pages 2 and 5-7 rest on the transcription.
+- **What the Sent ledger holds.** As said above for the other ledgers, the words are in reading order with the code
+  words in place. On p. 3 the telegram is laid out five words to a row, as a grid ready for the route, so this
+  ledger copies the message after the code words were put in and before the route transposition. Only the code
+  layer is open.
+- **Key.** Cipher Book No. 9, **mssEC 67** (item 1750, 37 canvases; "Cipher for Telegraphic Correspondence ...
+  [Cipher Book #9]"): printed code words two to a line, with the meaning written in by hand between them, so the
+  left and right word of a line share one meaning. The same key is printed in W. R. Plum, *The Military Telegraph
+  during the Civil War* (1882), vol. 1, appendix "Cipher Number Nine Complete" (archive.org `cu31924092908742`). A
+  first pass used the Plum OCR. Every code word used in pp. 1-7 was then read on the book images (canvases
+  1719-1744). `key_book9_mssEC67.tsv` lists them with the canvas, and the time words (canvas 1720).
+- **Book #1 does not fit this ledger.** In Book #1 (`key_book1_mssEC43.tsv`) Pagan is Battery, Applause is Big Sandy,
+  Vernon is Point and Relay is Evacuate. In No. 9 they are Washington, Halleck, Major General and Cavalry, which is
+  what the telegrams need.
+
+### Result: pages 1-7
+
+`python decode_book9.py` writes `decoded/mssEC19_p1-7.txt` (T1-T11, line by line) and
+`decoded/mssEC19_p1-7_U1-U3_unread.txt` (U1-U3). The sentences are in `reading/mssEC19_p1-7.md`.
+
+| tel. | page | to (for), from | date | in print |
+|---|---|---|---|---|
+| T1 | 1 | Sheldon, Fort Monroe (Butler), from D. H. Rucker | 27 Jan 1864 | not found in OR I/32/2 or I/33 |
+| T2 | 1 | Smith, St Louis (Grant), Halleck | 28 Jan | OR I/32/2 p. 244 |
+| T3 | 2 | Sheldon (Butler), from J. H. Taylor, chief of staff | 30 Jan | not found in OR I/33 |
+| T4 | 3 | Willard, Chattanooga (Thomas), Halleck | 30 Jan | OR I/32/2 pp. 263-264 |
+| T5 | 3 | Baldwin, Baltimore (Lockwood), Halleck | 1 Feb | OR I/33 p. 488 |
+| T6 | 4 | Lt W. B. Kelly (Kelley and Sullivan), Halleck | 1 Feb | OR I/33 p. 489 |
+| T7 | 4 | Baldwin (Lt Col Chesebrough), Halleck | 1 Feb | OR I/33 p. 488 |
+| T8 | 5 | Baldwin (J. W. Garrett, B&O RR), Halleck | 1 Feb | OR I/33 p. 488 |
+| T9 | 5 | Baldwin (Lockwood), Halleck | 2 Feb | OR I/33 p. 497 |
+| T10 | 6 | Lawrence, Harpers Ferry (Sullivan), Halleck | 3 Feb | OR I/33 p. 503 |
+| T11 | 7 | Sheldon, Fort Monroe (Butler), Halleck | 5 Feb | OR I/33 pp. 518-519 |
+
+- **Eleven telegrams read.** Every code word in T1-T11 has a meaning in No. 9, and each telegram reads as English
+  sentences (read_share 1.0, 665 words, measured with `research/reading_audit/v10_relabel.py`). The document
+  (pp. 1-7, 14 telegrams) is *read in part*, because U1-U3 below are not read.
+- **Nine are earlier solutions.** OR Series I prints T2 and T4-T11 in clear (`contemporary/mssEC19_p1-7_OR.txt`, from the
+  archive.org OCR of vols. 32 pt. 2 and 33). For these the contribution is the pointer and the evidence that No. 9
+  is the key of this ledger. T1 (Baker's cavalry on the way to Yorktown) and T3 (Parker's cavalry men and the
+  recruits in Maine for Fort Monroe) are staff telegrams that we did not find in print.
+- **Where the ledger and the print differ.** Village (= Major) for Brig. Gen. K. Garrard (T4). Vernon/Vermin
+  (= Major General) for Kelley and Lockwood, where OR prints "General" (T8, T10); the clerk seems to use them
+  loosely. OR adds "and burning" in T4. Antwerp is "Adjutant [General]" in the book and "Assistant Adjutant-General"
+  in OR (T2).
+- **Controls** (`python decode_book9.py --controls`, `decoded/mssEC19_p1-7_controls.txt`). For 64 of the 68 code-word tokens of
+  the nine printed telegrams, the meaning appears in the printed text of the same telegram. With the meanings
+  shuffled among the same code words (500 runs) the count is 4 to 24 (median 14). The four misses are the rank words
+  above. Time words agree with the printed time in 6 of 8: T2 has Martha (1.30 p.m.) where OR has 1.24 p.m., and T7
+  has Harriet (1 p.m.) where OR has 1.15 p.m. The second agent's own decoder and control, on its own reading of the
+  key images, gave the same readings, and 39 of 42 hits against 2-19 for shuffled keys (a narrower count).
+- **Corrections made in review.** T6 has Vermont (Brig. Gen.), not Vernon: checked on the page image. Hammer is Fort
+  Monroe: it stands under the hand-written heading "Forts" (canvas 1735). Palate is the left word of the Yorktown
+  line. Antwerp was found in the book (canvas 1729); it had first been inferred from OR. Vernon/Vermin is on page
+  [22], not [21].
+
+### Not read on pages 1-7
+
+`decoded/mssEC19_p1-7_U1-U3_unread.txt` shows these three telegrams with the No. 9 meanings where they exist. They
+are not counted as read.
+
+- **U1, Caldwell to "Nestor", 1 Feb.** No. 9 gives Nestor = Raleigh, Midas = New York, Bermuda = F. Sigel, Biscay =
+  Jno. Pope and Peru = Wilmington. The second agent also read Walnut = Army, Salem = Flotilla, Lady = Galveston and
+  Jaunts = Port Hudson in the book. Together these make no sense ("opinion of New York that Early ..."), so another
+  word list was probably used.
+- **U2, to S. H. Beckwith, 5 Feb.** Grapes, Plaster, Emily and Paradise were not found among the No. 9 meanings
+  checked. Unity is a code word whose line has no meaning written in (canvas 1742). The rest is clear: "I leave here
+  today and will report to you soon as possible. A. Anderson".
+- **U3, Baldwin (for Lockwood), 5 Feb, prisoners of war passing through from Cleveland.** Pauline has no meaning
+  written in. Quarrel = Pemberton and Ink = Abingdon do not fit, and Rodneyed, Abel and Viola are not in No. 9 as
+  checked. Probably another list.
+
+### Remaining gaps (this contribution)
+
+- mssEC 19 pp. 8-400 (about 810 telegrams) are not decoded yet. This includes the McPhail report of 15-16 Feb 1864
+  on pp. 9-10, which is heavy with code words. Blocker: not attempted; the method is the same.
+- U1-U3: the word list they use is not identified. Blocker: no key material found yet.
+- The page images of pp. 2 and 5-7 were not checked against the transcription.
+- OR was not searched for T1 and T3 beyond vols. 32 pt. 2 and 33. D. H. Bates, *Lincoln in the Telegraph Office*
+  (1907; archive.org `cu31924032766846`, OCR) was searched for T1, T3 and Cipher No. 9: T1 and T3 are not in it, and
+  it does not discuss No. 9. It describes the twelve War Department editions in general, refers to Plum for the
+  detail, and gives one example from No. 12 (key word "Blonde").
+- The target stays in progress: pp. 8-400 are open, so this contribution does not make the target finished.
+
+### Files (this contribution)
+
+- `transcription/mssEC19_p1-7.txt`: the volunteers' transcription of pp. 1-7, with page and telegram markers.
+- `key_book9_mssEC67.tsv`: the No. 9 code words used, read on the book images, with canvas numbers.
+- `decode_book9.py`: applies the key and writes the decodes; `--controls` writes `decoded/mssEC19_p1-7_controls.txt`.
+- `decoded/mssEC19_p1-7.txt`, `decoded/mssEC19_p1-7_U1-U3_unread.txt`: line-by-line decodes.
+- `reading/mssEC19_p1-7.md`: T1-T11 as sentences.
+- `contemporary/mssEC19_p1-7_OR.txt`: the nine printed clear texts (OR I/32/2 and I/33), for comparison.
+- `ledgers.tsv`: row for mssEC 19 added.
