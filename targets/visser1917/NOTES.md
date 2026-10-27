@@ -1,6 +1,7 @@
 # Kolbeck and Olga de Visser's symbol message for San Antonio, seized at Laredo, February 1917 (BI case OG 2889)
 
-Status: contributed by WAINUT (27 Oct 2026). Located, not deciphered. The ciphertext and a key strip survive as
+Status: in progress. Contributed by WAINUT (27 Oct 2026). Located, not deciphered; open work is listed under
+Remaining gaps and Escalation. The ciphertext and a key strip survive as
 photostats in the Bureau of Investigation file. No transcription and no decryption were made. The site page and the
 ledger rows are left to the maintainer.
 
@@ -133,12 +134,15 @@ or in MID files 9140-103 and 4131-44, which are not digitised. A web search (Olg
 
 ## Remaining gaps
 
-- The whole message - blocker: illegible. The frames (about 1000x1300 pixels) are too small for a safe sign-by-sign
-  transcription; no larger copy is online. A careful double transcription from these frames was not attempted.
+- The whole message - not attempted yet. The frames (about 1000x1300 pixels) are small and no larger copy is online,
+  but a careful double transcription from these frames was not attempted, so no illegible blocker is claimed. With
+  about 170-200 signs, a likely simple substitution over Spanish, about five legible key pairs and the crib
+  "avasteceran", it is a workable target: next step.
 - The left half of the key strip - blocker: needs-physical-access. Too faint on the film; the photostats in RG 65 or
   a new scan would settle it.
-- The 1917 Bureau reading - blocker: needs-physical-access. Possibly in MID 9140-103 / 4131-44 (RG 165, not
-  digitised) or on badly OCR'd pages of OG 2889 / OG 3410.
+- The 1917 Bureau reading in MID 9140-103 / 4131-44 - blocker: needs-physical-access (RG 165, not digitised).
+- The 1917 Bureau reading on badly OCR'd pages of OG 2889 / OG 3410 - not attempted yet. No outside blocker: the
+  frames around 39-61 of roll 302 can be looked through page by page (see retry below).
 - Authenticity - open. Kolbeck's confession says he wrote it himself; the agent in charge still thought it genuine.
 
 ## Escalation
@@ -147,7 +151,7 @@ or in MID files 9140-103 and 4131-44, which are not digitised. A web search (Olg
 - [x] clear-pages: the Bureau reports give the language (Spanish), one word (abastecerán, written avastecerán); the
   rest of the content is not given (the "men and guns" passage of 2 April 1917 is about a different, planned letter)
 - [ ] known-keys: the key strip on frames 42 and 59 is not applied; only about five pairs are legible
-- [x] print: one web search; Tuchman and Boghardt not checked
+- [ ] print: one web search only; Tuchman and Boghardt (2012, German agents on the Mexican border) not yet checked
 - [ ] key-rebuild: with about 200 signs and simple substitution likely, a transcription plus the legible key pairs
   and the crib "avasteceran" could break it; first a better image or a careful double transcription is needed
 - [ ] retry: look through the OG 2889 frames around 39-61 page by page for a typed plaintext the OCR missed
