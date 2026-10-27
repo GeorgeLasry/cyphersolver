@@ -337,6 +337,12 @@
       ],
       "what": "Statistical validation (docs/_validate.py): 1164 tokens, 20 types, pt-modern order 4: reading -2.508 per letter; random keys -7.09 (z 6.9); key annealed onto shuffled ciphertext best -4.213 (mean -4.283, z 27.7); annealer on the real text -2.472. Verdict: pass.",
       "result": "worked"
+    },
+    {
+      "date": "2026-10-27",
+      "kind": "verification",
+      "what": "Brice Dudout's reading of letter 153 published (https://bdudout.github.io/europe-chiffree/en/documents.html#nisa-1644), made independently and frozen before he saw the one here: P1 and P2 agree; he took two corrections from this reading (z in \"confiareis\", c = h in \"tenho\"); he reads the five words left open here; one disagreement in the clear text before the cipher (\"entenderá no\" against \"entende tão no[s]\"). His five words not yet checked here against m0157.",
+      "result": "worked"
     }
   ],
   "outcome": {
@@ -382,7 +388,8 @@
     "fraction_read_method": "measured",
     "fraction_read_source": "transcription_l09/l13/l44/l49/l56.txt counts and l153_reading.txt: 398 of 438 transcribed cipher words read; untranscribed illegible words not counted",
     "verification": [
-      "statistical test"
+      "statistical test",
+      "independent verification"
     ],
     "codes_open": {
       "open": 0,
@@ -409,6 +416,14 @@
         "date": "2026-10-27",
         "source": "email to the project, 27 Oct 2026",
         "published": false
+      },
+      {
+        "who": "dudout",
+        "role": "verification",
+        "note": "independent reading of letter 153 published the same day (all 26 cipher groups, about 96%); agrees on P1-P2 and reads the five words left open here",
+        "date": "2026-10-27",
+        "source": "https://bdudout.github.io/europe-chiffree/en/documents.html#nisa-1644",
+        "published": true
       }
     ],
     "notes": "Letters 9 and 13 have contemporary clear copies, so their content was known; the new reading is letter 153 in alphabet B.",

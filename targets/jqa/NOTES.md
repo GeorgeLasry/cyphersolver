@@ -142,6 +142,29 @@ files with hyphenated syllables and group tables. Readings written out with word
 `texts/no88_gap_reading.md` (plain 0.9, explicit 1.0) and `texts/no88_remainder_reading.md` (plain 0.688, explicit
 0.812). Both keep read.
 
+## Outside validation and later users of the code (Brice Dudout, 27 Oct 2026)
+
+Brice Dudout (Europe chiffrée) read Crawford's Paris letter of 15 Aug 1813 (catalogue 652) and Everett's Madrid "Notes
+of a conversation with Mr Zea" of 25 Sept 1825 (catalogue 638) with this table, frozen before use (SHA-256). His two
+held-out checks are the first tests of the table against decodes it was not built from. They are his measurements,
+not repeated here:
+
+- Crawford's despatch No. 4, Paris 3 Sept 1813 (M34 roll 17 frames 0031-0032), against its interlinear decipherment
+  of the time: 194 of 226 and 224 of 246 values agree (0.858, 0.911); the same table with shuffled values reaches at
+  most 0.027 and 0.020 (99th percentile).
+- Everett's despatch of 8 Sept 1825 (M31 reel 27 frames 0061-0064), against the Department's decoding printed by
+  Manning (doc. 1133): 288 of 304 groups agree (0.947); permuted-value control p99 0.023.
+
+So Crawford in 1813 and Everett in 1825 used this code (Weber's "Monroe Cipher", 1979, as Dudout identifies it). Two values
+he supplied that the table lacked are added as overrides: 126 convey (grade I, slot and sense) and 1323 been (grade M,
+from the 1813 interlinear decipherments). The values he uses that disagree with the table, or that only one later
+writer attests, are kept apart in `overlay_dudout.tsv` and are not in `code_table.tsv`: the date digits of Crawford's
+heading (932 = 1, 939 = 8, 954 = 3), 1264 as a full stop, 580 was, and Everett's 557 thro. WAINUT's readings
+(crawford1813, ellis1839) reached 1264 = full stop and 1323 = been independently; their other proposals are in the
+"Proposed table changes" sections of crawford1813 and everett1825, still not applied. The digits are sound for
+Crawford: the legation register (frame 0005, checked here) dates the letter 15 Aug 1813, and "932 939 932 954" can
+only be 1813. Whether 932 and 939 also meant force and ow for Adams, or the 1813 copy differs, is open.
+
 ## Remaining gaps
 
 - rem88 seven groups with lost digits (142x, 21x, 15xx, 11xx, 10xx, 55x, 13xx) - blocker: needs-physical-access; cut by the binding gutter on the microfilm of frame 0207 (every line end); the original and duplicate of No. 88 are not on reel 3, and JQA's letterbook copy (MHS) is not online. Context fixes most of them (in-, pre-, sa-id, tem-p-t) but they are counted unread

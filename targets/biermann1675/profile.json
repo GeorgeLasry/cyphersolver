@@ -82,7 +82,7 @@
  "conditions": {
   "prior_solution": {
    "exists": "no",
-   "where": "unknown",
+   "where": "unknown After the key was found here (26 Oct 2026), Brice Dudout published readings of the image-55 letters to Høeg (eighteen letters, 2 Jan-5 June 1675) and Meyercrone (nineteen, 16 Feb-21 June; 6,103 groups, 99.4%) on Europe chiffrée, 27 Oct 2026, made independently.",
    "found": "not found",
    "used": false
   },
@@ -196,6 +196,12 @@
    ],
    "what": "Values missing from the sheet inferred from repeated use: letter homophones among low numbers (26 n, 31 s, 33 u), names (279 Suédois, 67 l'Empereur, 582 Prince), syllables in the alphabetical gaps (598 que, 702 xe, 710 zo), and the open-square sign = l.",
    "result": "partial"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "literature search",
+   "what": "Brice Dudout's readings published (https://bdudout.github.io/europe-chiffree/en/documents.html#hoeg-1675, #meyercrone-1675): the image-55 key (his K55) reads the Høeg and Meyercrone letters of Jan-June 1675; the 2 Jan Meyercrone letter is in another key, as the survey here found. Scope here narrowed to Gioë, Schröder and the letters without a key.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -218,7 +224,8 @@
   "grades": "unknown",
   "verification": [
    "key confirms",
-   "historical consistency"
+   "historical consistency",
+   "independent verification"
   ],
   "gaps": [
    {
@@ -240,6 +247,14 @@
     "who": "contemporary",
     "role": "key or decipherment used",
     "note": "Danish chancery key sheet, Rigsarkivet TKUA 'Chiffer' 1670-1709, Arkivalieronline image 55 (id 48691530)"
+   },
+   {
+    "who": "dudout",
+    "role": "verification",
+    "note": "independent reading of the image-55 letters to Høeg and Meyercrone, Jan-June 1675, with the same key sheet (37 letters)",
+    "date": "2026-10-27",
+    "source": "https://bdudout.github.io/europe-chiffree/en/documents.html#hoeg-1675",
+    "published": true
    }
   ]
  }

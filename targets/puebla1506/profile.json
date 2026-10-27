@@ -71,7 +71,7 @@
  "conditions": {
   "prior_solution": {
    "exists": "no",
-   "where": "None found in CSP Spain I (April 1506, pp. 385-386), the 1868 Supplement (1506), Fuensalida's Correspondencia (1907), CODOIN vol. 8 (1846), Paz y Meliá's Series de los más importantes documentos ... Medinaceli vols. 1-2 (1915-22), Rodríguez Villa's Juana la Loca (1892), Mattingly EHR 1940, or an Internet Archive full-text search for the reading's phrases (27 Oct 2026). Tomokiyo lists the letter without a reading; the source of his page carries an HTML comment with the first words of l. 11 ('y dela parti da ....'), so he had begun to decipher it. HathiTrust, Google Books, BNE Hispánica and Mattingly's Catherine of Aragon (1941) not searched in full text.",
+   "where": "None found in CSP Spain I (April 1506, pp. 385-386), the 1868 Supplement (1506), Fuensalida's Correspondencia (1907), CODOIN vol. 8 (1846), Paz y Meliá's Series de los más importantes documentos ... Medinaceli vols. 1-2 (1915-22), Rodríguez Villa's Juana la Loca (1892), Mattingly EHR 1940, or an Internet Archive full-text search for the reading's phrases (27 Oct 2026). Tomokiyo lists the letter without a reading; the source of his page carries an HTML comment with the first words of l. 11 ('y dela parti da ....'), so he had begun to decipher it. HathiTrust, Google Books, BNE Hispánica and Mattingly's Catherine of Aragon (1941) not searched in full text. A parallel independent reading by Brice Dudout, with the same Tomokiyo table, was published the same day (Europe chiffrée, 27 Oct 2026); it credits two readings taken from this one.",
    "found": "not found",
    "used": false
   },
@@ -171,6 +171,12 @@
    "kind": "access",
    "what": "Maintainer review tried to fetch image 1 of show/2208120 for the cipher snip and a re-read of the unread signs (l. 13, l. 25): PARES answered HTTP 429 (Too Many Requests) to every request, site-wide, from about 11:45 to 13:10; nothing opened.",
    "result": "failed"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "verification",
+   "what": "Brice Dudout's parallel, independent reading published (https://bdudout.github.io/europe-chiffree/en/documents.html#puebla-1506): same table frozen, 363 of 366 signs; the decipherments agree word for word on S01, S02, S06-S08, S10-S11, S13, S15, S16; he adopts \"a beneficio de natura\" and \"por aquella gente hazia\" from this one. He reads z in \"ra?on\" (l. 13), \"de la\" (S05), \"pedrique\" (l. 16), and transcribes the clear text of ll. 11-17; not checked here (PARES 429).",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -196,7 +202,8 @@
   },
   "verification": [
    "key confirms",
-   "historical consistency"
+   "historical consistency",
+   "independent verification"
   ],
   "provenance": "contributed",
   "notes": "New as far as the prints checked go. Key state partial: one sign (l. 13) has no value in Tomokiyo's table, and the C-count of the code group was not checked on this letter. Proposed: catalogue 617 stays open as read in part, shelfmark AGS PTR leg. 54 doc. 78.",
@@ -257,6 +264,14 @@
     "role": "key or decipherment used",
     "note": "Great Roman Numeral key, AGS PTR leg. 52 doc. 33, image 51 (DCCCLXXXVIII)",
     "source": "https://pares.cultura.gob.es/ParesBusquedas20/catalogo/show/2207755"
+   },
+   {
+    "who": "dudout",
+    "role": "verification",
+    "note": "parallel independent reading with the same table (363 of 366 signs); agrees word for word on most passages; proposes razón, de la, pedrique and the clear text of ll. 11-17",
+    "date": "2026-10-27",
+    "source": "https://bdudout.github.io/europe-chiffree/en/documents.html#puebla-1506",
+    "published": true
    }
   ],
   "key_file": "key_first_cipher.tsv",

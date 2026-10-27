@@ -3921,7 +3921,7 @@
    "seen": "catalogue",
    "scored": "sweep",
    "prior_art": "open (web search 24 Oct 2026)",
-   "as_of": "2026-10-24",
+   "as_of": "2026-10-27",
    "id": 369,
    "access": "archive",
    "year": 1623,
@@ -3936,7 +3936,7 @@
    "folio_note": "whole item",
    "cls": "C",
    "source": "FranceArchives sweep (24 Oct 2026)",
-   "status": "FranceArchives inventory entry read 24 Oct 2026; cote absent from catalogue.json/README/SOLVED_CATALOGUE/targets; no Archives nationales or matching record on DECODE list.json; web search found no reading; not digitised, ciphertext not seen",
+   "status": "FranceArchives inventory entry read 24 Oct 2026; cote absent from catalogue.json/README/SOLVED_CATALOGUE/targets; no Archives nationales or matching record on DECODE list.json; web search found no reading; not digitised, ciphertext not seen. 27 Oct 2026, Brice Dudout (email): asked the history research centre of La Rochelle Université (CRHIA) to pass a request for photographs to master's and doctoral students (association and credit offered); next the Charente-Maritime genealogical societies, then a professional's quote.",
    "why": "inventory flags several cipher letters",
    "importance": 2,
    "solvability": 2,
@@ -6140,63 +6140,6 @@
    "scored": "sweep"
   },
   {
-   "id": 439,
-   "counted": true,
-   "year": 1662,
-   "date": "21 Oct 1662 (DECODE date for all; 1662-1669)",
-   "title": "Ludwik Wąsowicz, stolnik of Łomża → Aleksander Lubomirski, cipher letters, 1662-1669",
-   "correspondents": "Ludwik Wąsowicz → Aleksander Michał Lubomirski",
-   "place": "unknown",
-   "language": "unknown",
-   "region": "Poland-Lithuania",
-   "period": "1651-1700",
-   "shelfmark": "Archiwum Narodowe w Krakowie, Archiwum Krzeszowickie Potockich (AKPot) 3227, pp. 81-268",
-   "folio_note": "nine records, 1-7 pp. each (about 38 pp.); R7507 (item 7) is mentioned in targets/sieniawski1708 as a sibling only",
-   "cls": "A",
-   "status": "DECODE R7502, R7503, R7504, R7505, R7506, R7508, R7509, R7510, R7511 (status N/A, cipher type unknown, private ciphertext, uploaded by the Archiwum Narodowe w Krakowie 2023; no key or decryption file on the records).DECODE R7501 (AKPot 3227 pp. 81-268 item 1) is a key record in the same file (record type key). Not in repo (known.py on each R-number: no hits). Listed as DECODE neighbours in targets/schenck1706, not worked. 27 Oct 2026, Brice Dudout (email): not online; he has written to the archive for a quote.",
-   "why": "Letters to Aleksander Lubomirski in the years of the Lubomirski rokosz (1665-66), from a Mazovian noble.",
-   "importance": 3,
-   "solvability": 4,
-   "difficulty": 2,
-   "score_note": "Scored from the DECODE metadata dump (research/catalogue_harvest/decode) during the Oct 2026 Polish archives sweep (research/polish_archives/); not viewed",
-   "verify": "Log in to DECODE and open the images; for AKPot 3227 try key R7501 first.",
-   "links": [
-    {
-     "label": "DECODE R7502",
-     "href": "https://de-crypt.org/decrypt-web/RecordsView/7502"
-    },
-    {
-     "label": "DECODE R7503",
-     "href": "https://de-crypt.org/decrypt-web/RecordsView/7503"
-    },
-    {
-     "label": "DECODE R7504",
-     "href": "https://de-crypt.org/decrypt-web/RecordsView/7504"
-    },
-    {
-     "label": "DECODE R7505",
-     "href": "https://de-crypt.org/decrypt-web/RecordsView/7505"
-    }
-   ],
-   "seen": "catalogue",
-   "source": "Polish archives sweep (DECODE, Archiwum Narodowe w Krakowie)",
-   "prior_art": "open (checked 26 Oct 2026: known.py, web search for Wąsowicz/Lubomirski cipher: nothing)",
-   "decode_ids": [
-    7502,
-    7503,
-    7504,
-    7505,
-    7506,
-    7508,
-    7509,
-    7510,
-    7511
-   ],
-   "ark": "",
-   "scored": "sweep",
-   "as_of": "2026-10-27"
-  },
-  {
    "id": 440,
    "counted": true,
    "year": 1669,
@@ -7140,13 +7083,13 @@
    "shelfmark": "Rigsarkivet, Tyske Kancelli, Udenrigske Afdeling, Almindelig del, \"Conrad Biermanns kopibog over udgående skrivelser til danske ministre i udlandet\" 1675 (Daisy heid 2130515, unit S-1418)",
    "folio_note": "255 images online (Arkivalieronline epid 15552891; image ids from 48573952). Image 109 (pp. 104-105): French letter with long runs of a numeric nomenclator (2-3 digit numbers 10-672) mixed with letters and symbols (X, #, pi-like signs), no interlinear decipherment.",
    "cls": "B",
-   "status": "Daisy (new search): \"En stor del af de indførte skrivelser er i chifre.\" Viewed one opening (image 109): ciphertext copied into the register, clear text around it, no decipherment. Not on DECODE, not in the repo. Key lead: Tyske Kancelli \"Chiffer\" 1670-1709 (heid 2132747, \"a mix of many different cipher keys\"), fully scanned (epid 15553654). 27 Oct 2026, Brice Dudout (email): Copenhagen to Just Høeg at The Hague, 2, 5 and 9 January 1675, read: 841 of 849 groups, key = the untitled sheet at image 55 of the TKUA 'Chiffer' volume 1670-1709, checked on letters to Meyercrone in Paris in the same key. The rest of the copybook not reported.",
+   "status": "Daisy (new search): \"En stor del af de indførte skrivelser er i chifre.\" Viewed one opening (image 109): ciphertext copied into the register, clear text around it, no decipherment. Not on DECODE, not in the repo. Key lead: Tyske Kancelli \"Chiffer\" 1670-1709 (heid 2132747, \"a mix of many different cipher keys\"), fully scanned (epid 15553654). 27 Oct 2026, Brice Dudout (email): Copenhagen to Just Høeg at The Hague, 2, 5 and 9 January 1675, read: 841 of 849 groups, key = the untitled sheet at image 55 of the TKUA 'Chiffer' volume 1670-1709, checked on letters to Meyercrone in Paris in the same key. The rest of the copybook not reported. Extended 27 Oct 2026 (Europe chiffrée, documents.html#hoeg-1675, #meyercrone-1675): 37 letters read with key K55, 18 to Høeg (2 Jan-5 June 1675) and 19 to Meyercrone (16 Feb-21 June; 6,103 groups, 99.4%). Still open: the letters to Lilienkron (German, numbers 14-707 with the signs Δ θ), to Gioë and Schröder (K55 family, untested) and the letter of 2 Jan to Meyercrone (another key); see the survey in targets/biermann1675/.",
    "why": "Danish foreign policy at the start of the Scanian War (Gottorp, France, Sweden, Niels Brahe's mission) in the chancery's own outgoing ciphers; clear context and probable keys online.",
    "importance": 4,
    "solvability": 5,
    "difficulty": 2,
    "score_note": "Scored from the Rigsarkivet description and one viewed opening during the Oct 2026 Rigsarkivet sweep (research/scandinavia/)",
-   "verify": "Count the cipher entries (255 images); transcribe the keys in TKUA \"Chiffer\" 1670-1709 (scanned) and test them on image 109.",
+   "verify": "Test K55 on the Gioë and Schröder letters; look for the Lilienkron key and the 2 Jan Meyercrone key in TKUA \"Chiffer\" 1670-1709 (scanned).",
    "links": [
     {
      "label": "Daisy series",
@@ -7167,7 +7110,7 @@
    ],
    "seen": "image",
    "source": "Rigsarkivet Daisy sweep",
-   "prior_art": "partial: the Høeg letters of 2, 5, 9 Jan 1675 read by Brice Dudout, Europe chiffrée (https://bdudout.github.io/europe-chiffree/en/documents.html#hoeg-1675), Oct 2026; key TKUA Chiffer image 55",
+   "prior_art": "partial: 37 letters to Høeg (The Hague) and Meyercrone (Paris), Jan-June 1675, read by Brice Dudout, Europe chiffrée (https://bdudout.github.io/europe-chiffree/en/documents.html#hoeg-1675, #meyercrone-1675), Oct 2026; key TKUA Chiffer image 55 (K55)",
    "ark": "",
    "scored": "sweep",
    "as_of": "2026-10-27"
@@ -7697,39 +7640,6 @@
    "outcome": "attempted, open"
   },
   {
-   "id": 485,
-   "counted": true,
-   "year": 1783,
-   "date": "6 Apr 1783",
-   "title": "Francis Dana → Congress, St Petersburg despatch with eight coded lines left undecoded in Wharton",
-   "correspondents": "Francis Dana (American envoy to Russia) → Robert R. Livingston / Congress",
-   "place": "St Petersburg",
-   "language": "English",
-   "region": "Americas",
-   "period": "1701-1800",
-   "shelfmark": "NARA, Papers of the Continental Congress, item 89, vol. II, pp. 727-742 (M247)",
-   "folio_note": "only 8 lines of the 6 April despatch encoded (the 11 and 14 April despatches are clear)",
-   "cls": "B",
-   "status": "Madison Papers note to JM to TJ 11 Aug 1783: 'only 8 lines of the earliest were encoded (NA: PCC, No. 89, II, 727-42). This passage is not decoded in Wharton, Revol. Dipl. Corr.' Madison wrote that Dana's despatches 'were in part undecypher'd' when Hawkins's transcript was made. Whether a later edition decoded it is not stated. Not in the repo.",
-   "why": "Dana's last months at the Russian court, after Catherine II declined to receive him.",
-   "importance": 3,
-   "solvability": 3,
-   "difficulty": 2,
-   "score_note": "Scored from the archive description during the Oct 2026 Founders Online sweep (research/founders_emlo/); not viewed",
-   "verify": "Check The Emerging Nation (Giunta) and the Dana papers (MHi) for a decoding; view PCC item 89 on the NARA catalogue / Fold3; test the Lovell and Livingston-Dana ciphers.",
-   "links": [
-    {
-     "label": "Founders JM to TJ 11 Aug 1783 (note 9)",
-     "href": "https://founders.archives.gov/documents/Madison/01-07-02-0151"
-    }
-   ],
-   "seen": "catalogue",
-   "source": "Founders Online sweep",
-   "prior_art": "not decoded in Wharton 1889; later editions not checked (26 Oct 2026)",
-   "ark": "",
-   "scored": "sweep"
-  },
-  {
    "id": 488,
    "counted": true,
    "year": 1813,
@@ -8171,25 +8081,25 @@
    "counted": true,
    "year": 1548,
    "date": "1547-1550",
-   "title": "Constantinople ciphers of Ferdinand I's resident Malvezzi and his circle: letters 'nicht dechiffriert', Veltwyck 1547, 'mehrere vollständig chiffrierte Briefe' 1548, Hungarian estates' letter 1547",
+   "title": "Constantinople ciphers of Ferdinand I's resident Malvezzi and his circle: Veltwyck 1547, 'mehrere vollständig chiffrierte Briefe' 1548, Hungarian estates' letter 1547",
    "correspondents": "Giovanni Maria Malvezzi, Gerhard Veltwyck → Ferdinand I; Hungarian estates (exemplum); John Sigismund / Sigismund Augustus → Süleyman (intercepted copies)",
    "place": "Constantinople / Adrianople",
    "language": "Italian; Latin",
    "region": "Central Europe",
    "period": "1497-1559",
-   "shelfmark": "HHStA Wien, StAbt Türkei I 7-1-4, 7-2-18, 7-2-25, 7-3-39, 8-3-8, 8-3-11, 8-4-6, 9-1-8",
+   "shelfmark": "HHStA Wien, StAbt Türkei I 7-1-4, 7-2-25, 7-3-39, 8-3-8, 8-3-11, 8-4-6, 9-1-8 (7-2-18 read elsewhere, see status)",
    "folio_note": "about 10 items, digitised",
    "cls": "A",
-   "status": "AIS: 7-2-18 'Inhalt nicht dechiffriert'; 7-1-4 (Veltwyck) and 7-3-39 'vollständig chiffriert' with no decipherment; siblings 7-1-9 and 7-3-20 carry 'Dechiffrierung'. The repo read Ferdinand→Malvezzi 1548 (malvezzi1548, DECODE R366) — the same resident's cipher. Target malvezzi1548 holds a Malvezzi key (DECODE R367). 27 Oct 2026, Brice Dudout (email): 7-2-18 is a Latin copy of Henri II's credentials for d'Huyson to Süleyman and of a second letter on the 1547 truce, about 80% read by him: the King's friends and allies (the Swiss first) to be included in the peace; Charles V's and Ferdinand's envoys said to have offered the Porte 30,000 florins for places in Hungary. Ribier (1666) prints the French content, not this Latin text. Work in progress, unpublished.",
+   "status": "AIS: 7-2-18 'Inhalt nicht dechiffriert'; 7-1-4 (Veltwyck) and 7-3-39 'vollständig chiffriert' with no decipherment; siblings 7-1-9 and 7-3-20 carry 'Dechiffrierung'. The repo read Ferdinand→Malvezzi 1548 (malvezzi1548, DECODE R366) — the same resident's cipher. Target malvezzi1548 holds a Malvezzi key (DECODE R367). 27 Oct 2026, Brice Dudout (Europe chiffrée, documents.html#huyson-1547): 7-2-18 (fols. 143r-146r, 207 lines) read, about 97.5% of some 1,550 groups, with Malvezzi's alphabet frozen and checked blind. It is Malvezzi's enciphered Latin copy of Henri II's letter of credence for d'Huyson to Süleyman and of two other letters of Henri II, with Malvezzi's Italian notes: the Swiss to be included in the truce, Charles V's letters 'lusorias et ridicolas'. Ribier (1666) prints the French content, not this text. Entry narrowed to the other files.",
    "why": "Habsburg-Ottoman truce of 1547 and the Transylvanian crisis, from the imperial resident's own ciphers.",
    "importance": 4,
    "solvability": 4,
    "difficulty": 2,
    "score_note": "Scored from the archive description during the Oct 2026 Austrian State Archives (HHStA/FHKA) sweep (research/central_archives/); not viewed",
-   "verify": "View 7-2-18 and 7-3-39 in AIS; apply the malvezzi1548 key and the 7-1-9 / 7-3-20 decipherments.",
+   "verify": "View 7-3-39 and 7-1-4 in AIS; apply Malvezzi's alphabet (malvezzi1548 key R367; Dudout read 7-2-18 with it) and the 7-1-9 / 7-3-20 decipherments.",
    "links": [
     {
-     "label": "AIS 7-2-18 not deciphered",
+     "label": "AIS 7-2-18 (read by Dudout, Oct 2026)",
      "href": "https://www.archivinformationssystem.at/detail.aspx?ID=6567149"
     },
     {
@@ -8207,7 +8117,7 @@
    ],
    "seen": "catalogue",
    "source": "Austrian State Archives (HHStA/FHKA) sweep",
-   "prior_art": "open (checked 26 Oct 2026: repo malvezzi1548 covers R366 only)",
+   "prior_art": "partial: 7-2-18 read by Brice Dudout, Europe chiffrée (https://bdudout.github.io/europe-chiffree/en/documents.html#huyson-1547), Oct 2026; the other files open (repo malvezzi1548 covers R366 only)",
    "ark": "",
    "scored": "sweep",
    "as_of": "2026-10-27"
@@ -12496,39 +12406,6 @@
    "scored": "sweep"
   },
   {
-   "id": 626,
-   "counted": true,
-   "year": 1520,
-   "date": "Nov-Dec 1520",
-   "title": "Lope Hurtado de Mendoza to Charles V on the Comunidades: one of seven letters in cipher",
-   "correspondents": "Lope Hurtado de Mendoza → Charles V",
-   "place": "Medina de Rioseco / Tordesillas",
-   "language": "Spanish",
-   "region": "Spain",
-   "period": "1497-1559",
-   "shelfmark": "AGS, Patronato Real (Paz, Catálogo V, no. 189; PTR legajo/doc to map)",
-   "folio_note": "7 letters, 17 hoj. fol. + 1 en 4.°; one letter in cipher",
-   "cls": "B",
-   "status": "Paz, Catálogo V (1912) no. 189: \"Cartas (Siete) de Lope Hurtado de Mendoza á S. M. ... Una carta ológr. y otra en cifra.\" No descifrado noted. The repo has his 1522-24 Rome ciphers (lopehurtado1522, lopehurtado1523) but not this 1520 letter (known.py).",
-   "why": "A royalist cipher report from inside the Comunidades revolt; the writer's later cipher is already broken here.",
-   "importance": 3,
-   "solvability": 3,
-   "difficulty": 2,
-   "score_note": "Scored from the printed-catalogue description during the Oct 2026 PARES (AGS) sweep (research/pares_ags/); not viewed",
-   "verify": "Map no. 189 to PTR,LEG,<n>,DOC on PARES; try the targets/lopehurtado1522 key; grep Danvila MHE 35-40.",
-   "links": [
-    {
-     "label": "Paz, Catálogo V (1912), Google Books p. 29-32",
-     "href": "https://books.google.com/books?id=V0hQAQAAMAAJ&pg=PA29&q=cifra"
-    }
-   ],
-   "seen": "catalogue",
-   "source": "PARES (AGS) sweep",
-   "prior_art": "open as far as checked (26 Oct 2026: repo has his 1522-24 ciphers only; Danvila's Comunidades volumes not grepped)",
-   "ark": "",
-   "scored": "sweep"
-  },
-  {
    "id": 627,
    "counted": true,
    "year": 1546,
@@ -12789,43 +12666,6 @@
    "seen": "catalogue",
    "source": "NARA RG 59 diplomatic despatches (via Manning 1925) sweep",
    "prior_art": "open (checked 27 Oct 2026: Manning prints it undecoded; no other decoding found)",
-   "ark": "",
-   "scored": "sweep"
-  },
-  {
-   "id": 638,
-   "counted": true,
-   "year": 1825,
-   "date": "25 Sep 1825",
-   "title": "Alexander H. Everett → Henry Clay, Madrid, despatch on his audience about Spanish America with six lines in cipher 'without decodification'",
-   "correspondents": "Alexander Hill Everett (US minister to Spain) → Henry Clay, Secretary of State",
-   "place": "Madrid",
-   "language": "English",
-   "region": "Spain",
-   "period": "1801-1900",
-   "shelfmark": "NARA RG 59, Despatches from US Ministers to Spain, vol. 25 (17 Mar 1825-18 Apr 1826) = microfilm M31 reel 27, catalog naId 188610348",
-   "folio_note": "six lines of cipher in the body, after the minister's (Zea Bermúdez's) declaration that the King would never abandon his claim to the colonies Frame located 27 Oct 2026 (research/nara_triage_a/): M31 reel 27, frame 0114; about 445 groups (not six lines) in the JQA-type code, readable with targets/jqa/code_table.tsv.",
-   "cls": "B",
-   "status": "Manning 1925 vol. 3, doc. 1134, p. 2002: '[Here follow six lines in cipher, without decodification.]'. Everett's code not identified; the Legation in Madrid also held the code used by Appleton in 1823 (the targets/jqa family), the first thing to test. Not in the repo (known.py: Everett no hits).",
-   "why": "Everett's confidential report of Spain's position on recognising the new American states after Ayacucho; the six lines are the part he hid.",
-   "importance": 3,
-   "solvability": 4,
-   "difficulty": 2,
-   "score_note": "Scored from the printed edition (Manning 1925) during the Oct 2026 NARA/State Department sweep (research/nara_state/); not viewed",
-   "verify": "View the despatch on M31 reel 27 (naId 188610348); transcribe the cipher; test targets/jqa/code_table.tsv and the Pinckney/Armstrong codes in targets/erving1807aug and targets/armstrong.",
-   "links": [
-    {
-     "label": "Manning vol. 3 (archive.org)",
-     "href": "https://archive.org/details/diplomaticcorres03mann"
-    },
-    {
-     "label": "NARA M31 vol. 25",
-     "href": "https://catalog.archives.gov/id/188610348"
-    }
-   ],
-   "seen": "catalogue",
-   "source": "NARA RG 59 diplomatic despatches (via Manning 1925) sweep",
-   "prior_art": "open (checked 27 Oct 2026: Manning; Everett not in cryptiana/web)",
    "ark": "",
    "scored": "sweep"
   },
@@ -13202,47 +13042,6 @@
    ],
    "seen": "image",
    "prior_art": "Manning 1925 prints Poinsett 1813 with \"(undeciphered cipher)\"; the 1814 letter not checked in Manning",
-   "source": "NARA RG 59 bulk-scan triage (slice A, 1789-1906)",
-   "score_note": "Scored from the NARA OCR and the frame image(s) named in folio_note during the Oct 2026 NARA bulk-scan triage (research/nara_triage_a/)",
-   "ark": "",
-   "scored": "sweep"
-  },
-  {
-   "id": 652,
-   "counted": true,
-   "year": 1813,
-   "date": "3 Sept 1813 (No. 1, private) to 1814",
-   "title": "William H. Crawford → James Monroe, Paris despatches with long coded passages in the JQA-type Department code (the = 1385), no decipherment on the filmed copies",
-   "correspondents": "William Harris Crawford (US minister to France) → James Monroe, Secretary of State",
-   "place": "Paris",
-   "language": "English",
-   "region": "France",
-   "period": "1801-1900",
-   "shelfmark": "NARA RG 59, Despatches from US Ministers to France, vol. 17 (25 July 1813-17 Aug 1814) = microfilm M34 roll 17, catalog naId 188672892",
-   "folio_note": "coded runs on frames 0027-0029 (No. 1, 3 Sept 1813: 0028 alone about 410 groups, 70 OCR words), 0031-0033, 0047-0049, 0065-0067, 0072, 0086-0090, 0199-0201, 0213-0214 (1814); several thousand groups in all",
-   "cls": "B",
-   "status": "OCR only (frames not viewed): the coded frames carry few words, so no interlinear decipherment is likely; signature groups 1385/1576/668/1384/1401 occur 6-43 times per frame, so this is the code rebuilt in targets/jqa. A trial decode of frame 0028 with targets/jqa/code_table.tsv already gives phrases (\"I am ignorant ... support ... the Emperor ... negotiation ... it is generally ...\"), despite the noisy OCR. Monroe to Madison [Nov 1813] (Founders Madison/03-07-02-0011): the 3 Sept letter came \"in cypher\" and was to be deciphered, so a contemporary decode existed but is not on the film.",
-   "why": "Crawford reported from Napoleon's capital during the 1813-14 campaigns and the first Restoration; the coded parts hold his talks with Bassano/Talleyrand on the Berlin and Milan decrees and a settlement.",
-   "importance": 3,
-   "solvability": 5,
-   "difficulty": 1,
-   "verify": "View frames 0027-0033 to confirm no decipherment; transcribe and decode with targets/jqa/code_table.tsv; check whether the Madison or Monroe Papers print the deciphered text.",
-   "links": [
-    {
-     "label": "NARA M34 vol. 17",
-     "href": "https://catalog.archives.gov/id/188672892"
-    },
-    {
-     "label": "frame 0028",
-     "href": "https://catalog.archives.gov/medialz/dc-metro/rg-059/603720/M34/M34-017/M34-017-0028.jpg"
-    },
-    {
-     "label": "Monroe to Madison, Nov 1813",
-     "href": "https://founders.archives.gov/documents/Madison/03-07-02-0011"
-    }
-   ],
-   "seen": "catalogue",
-   "prior_art": "a decipherment was made in 1813 (Monroe to Madison); no printed text found (27 Oct 2026 web search); Crawford Papers not checked",
    "source": "NARA RG 59 bulk-scan triage (slice A, 1789-1906)",
    "score_note": "Scored from the NARA OCR and the frame image(s) named in folio_note during the Oct 2026 NARA bulk-scan triage (research/nara_triage_a/)",
    "ark": "",

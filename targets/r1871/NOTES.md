@@ -69,8 +69,9 @@ copied from its neighbour R1872 (Giovanni Michiel, Brussels, 19 Mar 1555, also i
 ## Remaining gaps
 
 - None in the text: Bonavoglia's decipherment covers the despatch, apart from his own open items (three number groups).
-- Not done here: the key (table) is not rebuilt, and his text is not aligned with our transcription. Next, if it is
-  worth doing: ask Dudout for his block table and check `groups.txt` against it (L18-19, L22).
+- Not done here: the key (table) is not rebuilt, and his text is not aligned with our transcription. Dudout's full
+  table and line-by-line decoding will come in his pull request (second email, 27 Oct 2026; summary in step 8).
+  Before it arrives: re-read `groups.txt` L18-L19 (the 114) and the middle of L22 on the image.
 
 ## Escalation
 
@@ -101,3 +102,11 @@ copied from its neighbour R1872 (Giovanni Michiel, Brussels, 19 Mar 1555, also i
 7. 27 Oct 2026: Brice Dudout's email: Bonavoglia's page back online, filza 166 chancery decipherment, his own block
    table (94.9% on held-out lines). Retrieved Bonavoglia's decipherment (`r1871_bonavoglia.txt`); outcome changed to
    read from existing decipherment.
+8. 27 Oct 2026, Dudout's second email: the table he rebuilt from our transcription and Bonavoglia's plain text is a
+   syllabary in blocks of five consecutive codes, one consonant per block with the vowels in order (Ca Ce Ci Co Cu):
+   b 115, n 142, r 151, ch 164, f 224, p 242, s 251, t 260, c 315 ...; the bare vowels on X56 (a 156, e 256, i 356,
+   o 456, u 556); a few words (167 con, 368 non, 366 nel, 540 spagn-, 200 = new paragraph). Learnt on L01-L15 and
+   read on L16-L23 held out, it agrees with Bonavoglia on 94.9% of the letters. Unresolved: 269 (Bonavoglia's
+   "[Francesi?]", once) and 114 at L18-L19, where he suspects our transcription rather than the table; at L22 the
+   middle of the line is weakest, with 3/5 and 2/0 the likely confusions. Full table and decoding to follow in his
+   pull request.

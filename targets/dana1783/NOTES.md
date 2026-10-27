@@ -1,6 +1,6 @@
 # Francis Dana to Robert R. Livingston, St Petersburg, 6 Apr 1783 (O.S.), No. 23: the eight cipher lines
 
-Status: in progress. Next step: try the key on the other despatches of PCC item 89 vol. 2 (the retry step).
+Status: in progress. Next step: check Dana's own table of October 1782 (PCC 89 vol. II p. 656, found by Brice Dudout, below) against the break and the four open groups; then try the key on the other despatches of PCC item 89 vol. 2 (the retry step).
 Contributed by WAINUT (27 Oct 2026). Key recovered from the ciphertext alone; the text is read in part
 (four code groups have no value). The site page and the ledger rows are left to the maintainer.
 
@@ -129,9 +129,29 @@ put the rotations of WIN at ranks 0 and 8.
   transcripts (naId 2316037), Giunta's *The Emerging Nation*, and the Dana Papers at the Massachusetts Historical
   Society. **No earlier solution was found, but the search was not exhaustive.**
 
+## Dana's own table and Brice Dudout's parallel reading (27 Oct 2026)
+
+Brice Dudout (Europe chiffrée, `https://bdudout.github.io/europe-chiffree/en/documents.html#dana-1783`) read the same
+eight lines on the same day, independently. He first broke the three shifted alphabets blind (letter frequencies and
+English 4-grams), as was done here, then found **Dana's table of October 1782 in the same volume, PCC 89 vol. II
+p. 656** by leafing through it: three shifted alphabets of 27 signs (a-z and &) starting at n, w and i, used in turn; a
+nomenclator of words and names numbered 30 to 305, three numbers per word; the keyword starts again after every
+number above 27. Its three columns coincide with the shifts of his blind break, and it reproduces its own example
+("When the Army of America go"). Dana's note on the sheet: he sends it "only because I have probable grounds to
+suppose yours is in the hands of the Ministry here"; it went by John Quincy Adams. This is the 1782 code list that
+section 6 looked for; the PCC 59 "No. 1" sheet is the earlier scheme.
+
+Values for the four open groups, from his reading: **31 = Administration; 137 and 168 = Minister** (two of its three
+numbers); **29 is Dana's slip for i** ("In an Administration like this"). So: "What the Minister adopt in this hour
+may be opposed by an irresistable influence in the next. In short, properly speaking, there is no Minister here.
+Hence my present difficulty." He counts 213 visible groups and 2 lost in the gutter, and four enciphering slips, each
+the value of the letter in a neighbouring column; reading about 98%. On the sentences compared (lines 1-5), his
+text and the reading here are the same wherever both give a value. Not yet checked here against p. 656 itself. Catalogue 485 was removed on
+27 Oct 2026 as read.
+
 ## Remaining gaps
 
-- Code groups 29, 31, 137 and 168 (4 of 215 tokens) - blocker: open-codes; one occurrence each. The code list of Dana's 1782 scheme was not found (the PCC 59 "No. 1" sheet is an earlier scheme without 137 or 168); Dana's other 1783 despatches in this cipher, the MHS Dana Papers and the Adams Papers vol. 13 are still to be tried.
+- Code groups 29, 31, 137 and 168 (4 of 215 tokens) - blocker: open-codes until checked; Brice Dudout reads them from Dana's 1782 table (PCC 89 vol. II p. 656) as i (a slip), Administration, Minister, Minister; the sheet has not yet been viewed here.
 - The letters supplied at the ends of lines 2, 5 and 7 rest on the key phase only - blocker: needs-physical-access.
   The frame edge cuts the lines on the microfilm; the original sheet (or the original and duplicate of No. 23) would
   settle them.

@@ -324,7 +324,21 @@
    "what": "Verification 5 (plain-bar rows): both No. 88 entries had been scored on decryption files with hyphenated syllables and group tables (the gap entry listed as French). Readings written out with words joined (texts/no88_gap_reading.md, no88_remainder_reading.md): plain 0.9 and 0.688, explicit 1.0 and 0.812. Both keep read.",
    "result": "worked"
   },
-  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 2 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
+  {
+   "date": "2026-10-24",
+   "kind": "verification",
+   "what": "Read bar applied per document (v10): 1 of 2 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "verification",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Outside validation by Brice Dudout (27 Oct 2026), table frozen: against Crawford's Despatch No. 4 interlinear decipherment, Paris 3 Sept 1813 (M34 roll 17 frames 0031-0032), 194/226 and 224/246 values agree (shuffled p99 0.027/0.020); against the Department's decoding of Everett's 8 Sept 1825 despatch (Manning doc. 1133), 288/304 = 0.947 (permuted p99 0.023). Two new values added as overrides (126 convey, 1323 been); his conflicting values kept apart in overlay_dudout.tsv.",
+   "result": "worked"
+  }
  ],
  "outcome": {
   "validation": {
@@ -382,7 +396,8 @@
   "verification": [
    "contemporary decipherment",
    "historical consistency",
-   "statistical test"
+   "statistical test",
+   "independent verification"
   ],
   "gaps": [
    {
@@ -414,6 +429,14 @@
     "role": "key or decipherment used",
     "note": "printed decipherments of 1811-12 despatches in Writings of JQA vol. 4, aligned as known plaintext",
     "source": "Ford, Writings of John Quincy Adams, vol. 4"
+   },
+   {
+    "who": "dudout",
+    "role": "verification",
+    "note": "held-out checks of the table on Crawford 1813 (interlinear decipherment) and Everett 1825 (Manning doc. 1133): 0.858-0.947 agreement against controls at most 0.027; values 126 convey and 1323 been",
+    "date": "2026-10-27",
+    "source": "https://bdudout.github.io/europe-chiffree/en/documents.html#crawford-1813",
+    "published": true
    }
   ],
   "texts": [

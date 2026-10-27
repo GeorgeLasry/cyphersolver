@@ -1,6 +1,6 @@
 # Biermann copybook 1675 (Unsolved Catalogue no. 465)
 
-Status: in progress
+Status: in progress (the image-55 letters to Høeg and Meyercron read by Brice Dudout, 27 Oct 2026; Gioë, Schröder and the letters without a key open)
 
 Conrad Biermann's copybook of outgoing letters from the Danish German Chancery (Tyske Kancelli, Udenrigske
 Afdeling) to Danish envoys abroad, 1675: Rigsarkivet, TKUA Almindelig del, "Conrad Biermanns kopibog over
@@ -96,9 +96,27 @@ on slots left blank on the sheet. Not proven; the sheet may be an incomplete cop
 Not testable: 309 (wrapper "Jens Juel or Petkum to Sweden 1670-71", key too faint), 083/091 rotated,
 096/098, 092 (pre-1672), 281-284 and 287-290 (large later keys).
 
+## Brice Dudout's reading of the image-55 letters (27 Oct 2026)
+
+Brice Dudout (Europe chiffrée, `https://bdudout.github.io/europe-chiffree/en/documents.html#hoeg-1675` and
+`#meyercrone-1675`) read the letters under the image-55 key (his K55), independently of the work here; his first email
+of 27 Oct named the same key sheet the day after this folder's key sweep had found it.
+
+- To Just Høeg, The Hague: eighteen letters, 2 Jan - 5 June 1675 (2, 5, 9, 12, 16, 19, 22, 26, 30 Jan; 6, 9, 13 Feb;
+  2, 6, 30 Mar; 10 Apr; 15 May; 5 June), cipher in eleven of them. 2, 5 and 9 Jan: 841 of 849 groups; 12 Jan - 9 Feb:
+  2,308 groups, about 2,260 read.
+- To Henning Meyercrone, Paris: nineteen letters, 16 Feb - 21 June 1675, 6,103 groups, 6,068 (99.4%) with K55 frozen.
+  A cipher "increased by a few words" went to Meyercrone on 3 Apr 1675, so some name codes are not on the sheet:
+  ‹35›, ‹37›, ‹53›, ‹29› open, ‹163› and ‹254› unresolved, a few understood from sense. The 2 Jan letter to
+  Meyercrone is in another key, as the survey here found.
+
+So the image-55 letters to Høeg and Meyercrone are read elsewhere and are not worth repeating here beyond a check of
+the 23 March letter and the 2 Jan test. What is left for this target: the letters to Gioë in England and Schröder
+(image-55 family, untested), and the letters without a key (next gap). Catalogue 465 narrowed accordingly.
+
 ## Remaining gaps
 
-- Letters under the image-55 key (Høeg in The Hague, Gioë in England, Schröder, Meyercron from late January), about half the copybook's cipher - blocker: not-attempted; transcription and decipherment under way letter by letter (Høeg first).
+- Letters under the image-55 key to Gioë in England and Schröder - blocker: not-attempted; the Høeg and Meyercron letters of this family were read by Brice Dudout (27 Oct 2026, above), so these are what is left of it.
 - Letters without a surviving key (Lilienkron, Gioë in Moscow, Reetz in Spain, Lindenow in Sweden, Klingenberg, Lincker, Meyercron 2 Jan, Høeg 21 June, Lente 21 June) - blocker: not-attempted; the whole key volume was swept and nothing fits (keyhunt.md), so the next move is a key rebuild from the ciphertext (large volumes per family) plus the cribs listed above.
 - 23 March letter to Meyercron, p105.24: one open-square sign, most likely "l" - blocker: open-codes; one occurrence, retry when more Paris letters are read.
 

@@ -1,13 +1,13 @@
 {
  "schema_version": 1,
  "target": "crawford1813",
- "title": "William H. Crawford to James Monroe, No. 1 (private), Paris, 3 Sept 1813: a coded letter in the JQA code (catalogue 652)",
+ "title": "William H. Crawford to James Monroe, Paris, 15 Aug 1813 (Despatch No. 3, item 1): a coded letter in the JQA code (catalogue 652)",
  "documents": [
   {
    "id": "crawford1813",
    "read": "read in part",
    "shelfmark": "NARA RG 59, Despatches from US Ministers to France vol. 17, M34 roll 17 (naId 188672892), frames 0027R-0029R (catalogue 652)",
-   "date": "3 Sep 1813",
+   "date": "15 Aug 1813",
    "year": 1813,
    "country": "United States",
    "route": "Paris -> Washington",
@@ -21,7 +21,7 @@
     "location": [
      "none"
     ],
-    "source": "No decipherment on the film. Monroe to Madison [ca. 1 Nov 1813] (PJM Pres. Ser. 7, Founders Madison/03-07-02-0011) says it was to be deciphered; the PJM editors summarise the subjects of the coded letters of 15 Aug and 3 Sept (Madison/03-06-02-0671 n. 1) but print no deciphered text."
+    "source": "No decipherment on the film. Monroe to Madison [ca. 1 Nov 1813] (PJM Pres. Ser. 7, Founders Madison/03-07-02-0011) says a coded letter \"of the 4th of Sepr.\" (Despatch No. 4, frame 0031, which carries an interlinear decipherment) was to be deciphered; the PJM editors summarise the subjects of the coded letters of 15 Aug and 3 Sept (Madison/03-06-02-0671 n. 1) but print no deciphered text."
    },
    "length": {
     "tokens": 1368,
@@ -80,7 +80,7 @@
  "conditions": {
   "prior_solution": {
    "exists": "unpublished",
-   "where": "A decipherment was made in 1813: Monroe to Madison [ca. 1 Nov 1813] (PJM Pres. Ser. 7, Founders Madison/03-07-02-0011) shows the letter was to be deciphered, and the PJM editors summarise the subjects of the coded letters of 15 Aug and 3 Sept (Madison/03-06-02-0671 n. 1); no deciphered text found, none on the film. ASP FR 3, the Crawford Papers and decoded copies elsewhere in RG 59 not checked (escalation print open).",
+   "where": "A decipherment was made in 1813: Monroe to Madison [ca. 1 Nov 1813] (PJM Pres. Ser. 7, Founders Madison/03-07-02-0011) shows the letter was to be deciphered, and the PJM editors summarise the subjects of the coded letters of 15 Aug and 3 Sept (Madison/03-06-02-0671 n. 1); no deciphered text found, none on the film. ASP FR 3, the Crawford Papers and decoded copies elsewhere in RG 59 not checked (escalation print open). Correction 27 Oct 2026: the letter Monroe calls \"of the 4th of Sepr. in cypher\" is Despatch No. 4 of 3 Sept 1813 (frame 0031, deciphered between the lines), not this one; this letter is of 15 Aug 1813. A parallel independent reading by Brice Dudout was published the same day as this one (Europe chiffrée, 27 Oct 2026); neither used the other.",
    "found": "not found",
    "used": false
   },
@@ -159,6 +159,18 @@
    "kind": "verification",
    "what": "WAINUT contribution: review pass: two passages (28R01-04, 29L08-29R01) decoded again with a separate script from origin/main ../jqa/code_table.tsv, same output; the clear word in 28R02 re-read on the full-resolution frame as 'silly', not 'folly' (no f descender), giving 'the silly pub[li]cations of our sapient Editors'; letters supplied in in[jur]ious and commu[nica]ted now marked.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "verification",
+   "what": "Maintainer review: date checked on the frames. Legation register frame 0005 lists Despatch No. 3 (sent 19 Aug 1813) as \"No 1 Letter from Minister to Secret.y of State Aug. 15th 1813 in cypher\"; frame 0027 is headed \"No (3)\"; frame 0031 is Despatch No. 4, Paris 3 Sept 1813, with an interlinear decipherment. The letter is of 15 Aug 1813; the heading groups 932 939 932 954 read as the digits 1813 (Brice Dudout), not \"force ow force 3rd\". Group 9 (1303 here, 1503 Dudout) not settled at the size viewed.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "verification",
+   "what": "Brice Dudout's parallel, independent reading published (https://bdudout.github.io/europe-chiffree/en/documents.html#crawford-1813): same table frozen; validated on No. 4's interlinear decipherment (194/226 and 224/246 values agree, shuffled-value controls at most 0.027/0.020); 1,330 of 1,371 groups read. Spot-checked against this reading: the same content (Dresden, the plan of indemnity, Barlow's capitalists, \"sapient Editors\"); not compared group by group.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -179,7 +191,8 @@
   },
   "verification": [
    "matched control",
-   "historical consistency"
+   "historical consistency",
+   "independent verification"
   ],
   "provenance": "contributed",
   "credits": [
@@ -209,8 +222,16 @@
    {
     "who": "founders",
     "role": "pointer",
-    "note": "PJM editors' notes (Madison/03-07-02-0011, 03-06-02-0671): the 3 Sept 1813 letter was in cypher; summary of its subjects, no deciphered text",
+    "note": "PJM editors' notes (Madison/03-07-02-0011, 03-06-02-0671): the coded letters of 15 Aug and 3 Sept 1813; summary of its subjects, no deciphered text",
     "source": "https://founders.archives.gov/documents/Madison/03-07-02-0011"
+   },
+   {
+    "who": "dudout",
+    "role": "verification",
+    "note": "parallel independent reading of the same letter with the same table (1,330 of 1,371 groups); dated it 15 Aug 1813 (Despatch No. 3) from the heading digits and the legation register; validated the table on Despatch No. 4's interlinear decipherment",
+    "date": "2026-10-27",
+    "source": "https://bdudout.github.io/europe-chiffree/en/documents.html#crawford-1813",
+    "published": true
    }
   ],
   "gaps": [
@@ -228,7 +249,7 @@
   "texts": [
    {
     "doc": "crawford1813",
-    "label": "Crawford to Monroe, No. 1 (private), Paris, 3 Sept 1813 (catalogue 652), M34 roll 17 frames 0027R-0029R",
+    "label": "Crawford to Monroe, Paris, 15 Aug 1813 (Despatch No. 3) (catalogue 652), M34 roll 17 frames 0027R-0029R",
     "transcription": "crawford1813_transcription.txt",
     "decryption": "crawford1813_decryption.txt",
     "reading": "crawford1813_reading.md",

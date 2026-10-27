@@ -1,6 +1,6 @@
 # Alexander H. Everett to Henry Clay, Madrid, 25 Sep 1825: three coded passages in the JQA code
 
-Status: in progress. Next step: transcribe frames 0112-0115 (about 900 groups), then the retry step on the sibling despatches.
+Status: in progress. Next step: compare with Brice Dudout's reading of all the cipher, pp. 1-6 included (below; his pull request will carry his transcription), rather than transcribing frames 0112-0115 afresh; then the retry step on the sibling despatches.
 Contributed by WAINUT (27 Oct 2026). Read in part with the JQA code table (`../jqa/code_table.tsv`, applied
 unchanged): 347 of 355 groups have a table value; 8 groups are open and some words rest on context only. The site
 page and the ledger rows are left to the maintainer.
@@ -110,10 +110,30 @@ Queued as a `jqa` follow-up for the maintainer (not applied here). The most impo
 41 times (Crawford 1813 30x, Ellis 1839 11x, fixed by Ellis's clear copy), which conflicts with the table's grade-H
 "gar".
 
+## Brice Dudout's parallel reading (27 Oct 2026)
+
+Brice Dudout (Europe chiffrée, `https://bdudout.github.io/europe-chiffree/en/documents.html#everett-1825`) read the
+same Notes on the same day, independently, with the same table frozen before use. Before reading he checked the table
+on Everett's despatch of 8 Sept 1825 (frames 0061-0064) against the Department's decoding printed by Manning
+(doc. 1133): 288 of 304 groups agree (0.947; permuted-value control p99 0.023). His reading covers all the cipher:
+
+- the six lines on p. 15: 74 groups, 72 read; 126 read {convey} from its place in the block;
+- pp. 1-6 and 17-18: 1,127 groups, 1,111 read (0.986; 0.929 without his readings from sense), 16 open. Pp. 1-6 hold
+  how Zea entered the government and removed Ugarte ("a creature of Russia", sent on a mission to {Tur}in, a probable reading), and a
+  portrait of the minister; pp. 17-18 the reasons for his refusal.
+
+He applies an overlay of Everett's own values, each recurring in independent contexts: 727 rather (x3), 1201 g (x5),
+557 thro (x2), 948 Russia (x4). They are listed in `../jqa/overlay_dudout.tsv`; 126 convey is added to the table as
+grade I. He notes the pencil glosses: "Decyphered" at the foot of p. 4, and five words in another hand on p. 5.
+Spot check of passage A: where the reading here marks "[?language] [?imposed]" as context words, his gives the same
+sentence, "a language imposed upon him at present by particular circumstances". The two readings have not been
+compared group by group. Catalogue 638 was removed on 27 Oct 2026 as read.
+
 ## Remaining gaps
 
+- comparison with Brice Dudout's transcription and reading of pp. 14-15 and 17-18 - blocker: not-attempted; his pull request will carry his files.
 - groups 125, 126, 211, 258, 850, 917, 1354, 1512 and the context-only words listed above - blocker: open-codes; Everett's other cipher despatches of 1825-1826 on reel 27 are the next source of occurrences (retry not done).
-- the coded passages on MS pp. 1-6 of the same Notes (frames 0112-0115, about 80 lines, very roughly 900 groups) - blocker: not-attempted; found on the review check, not yet transcribed; the pencil "Decyphered" on p. 4 points to a lost or unfound contemporary decipherment.
+- the coded passages on MS pp. 1-6 of the same Notes (frames 0112-0115, about 80 lines, very roughly 900 groups) - blocker: not-attempted; found on the review check, not yet transcribed here; read by Brice Dudout on 27 Oct 2026 (above), whose transcription is expected in a pull request; the pencil "Decyphered" on p. 4 points to a lost or unfound contemporary decipherment.
 
 ## Escalation
 

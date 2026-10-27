@@ -1,4 +1,4 @@
-# Crawford to Monroe, No. 1 (private), Paris, 3 Sept 1813 (catalogue 652): the coded letter as sentences
+# Crawford to Monroe, Paris, 15 Aug 1813 (Despatch No. 3, item 1; dated 3 Sept until 27 Oct 2026; catalogue 652): the coded letter as sentences
 # English, so no translation. Frames 0027R-0029R of NARA M34 roll 17; line labels as in crawford1813_transcription.txt.
 # Marks: [?word] = read from context, or against the table value (listed in NOTES.md); [343] = code group with no
 #        value, or whose table value does not fit here; [com]mand, rece[ipt] = letters supplied where the groups give only part of a word.

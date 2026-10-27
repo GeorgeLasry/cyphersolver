@@ -13751,6 +13751,149 @@
   },
   "deboli1789": {
    "skip": "Not on DECODE: the Deboli cipher despatches (AGAD Zbiór Popielów 17) and their clear texts (Zbiór Popielów 419, 417) have no DECODE record (list dump searched 26-27 Oct 2026); nothing to correct. A new record would need the owner's upload."
+  },
+  "wasowicz1662": {
+   "writeup": null,
+   "key": {
+    "decode": "R7501"
+   },
+   "cite": "Brice Dudout, 'Europe chiffrée': Wąsowicz to Lubomirski, 1662-1663, https://bdudout.github.io/europe-chiffree/en/documents.html#krakow-1663",
+   "fields": {
+    "sender": "Ludwik Wąsowicz, stolnik of Łomża",
+    "receiver": "Aleksander Michał Lubomirski",
+    "plaintext_lang": "Polish",
+    "cleartext_lang": "Polish",
+    "cipher_types": "simple substitution, one two-digit number per letter (25 values, no homophones, no nomenclator), numbers run together inside clear Polish"
+   },
+   "records": {
+    "R7501": {
+     "decode_status": "N/A",
+     "proposed": "N/A (key record)",
+     "note": "Key record: a nineteenth-century reconstruction headed 'Klucz Wąsowicza (i Kotowicza) do Alex. Lubomirskiego', a 1-100 grid with only the 25 used values filled in; not the period key. It reads R7503-R7510 (Brice Dudout, checked blind on R7508). AKPot 3227 p. 81.",
+     "reading": null,
+     "reading_not_needed": true,
+     "sent": false
+    },
+    "R7502": {
+     "decode_status": "N/A",
+     "proposed": "Decrypted",
+     "note": "Already deciphered: the decipherment is written between the lines and on the nineteenth-century sheet R7511 (Brice Dudout, 27 Oct 2026). Letter of about September 1662 (date not established). DECODE gives 21 Oct 1662 for every record of the file, a placeholder.",
+     "reading": null,
+     "reading_not_needed": true,
+     "sent": false
+    },
+    "R7503": {
+     "decode_status": "N/A",
+     "proposed": "Decrypted",
+     "note": "Deciphered by Brice Dudout (Europe chiffrée, 27 Oct 2026), not re-checked here: 29 Nov 1662, AKPot 3227 p. 137, read with the table R7501; https://bdudout.github.io/europe-chiffree/en/documents.html#krakow-1663.",
+     "reading": null,
+     "reading_not_needed": true,
+     "sent": false,
+     "fields": {
+      "start_year": 1662,
+      "start_month": 11,
+      "start_day": 29
+     }
+    },
+    "R7504": {
+     "decode_status": "N/A",
+     "proposed": "Decrypted",
+     "note": "Deciphered by Brice Dudout (Europe chiffrée, 27 Oct 2026), not re-checked here: undated letter of winter 1662-1663 (the Błażejowa matter), pp. 181-183, 14 cipher passages, every number read; https://bdudout.github.io/europe-chiffree/en/documents.html#krakow-1663.",
+     "reading": null,
+     "reading_not_needed": true,
+     "sent": false,
+     "fields": {
+      "start_year": 1662
+     }
+    },
+    "R7505": {
+     "decode_status": "N/A",
+     "proposed": "Decrypted",
+     "note": "Deciphered by Brice Dudout (Europe chiffrée, 27 Oct 2026), not re-checked here: 25 Jan 1663, p. 200; https://bdudout.github.io/europe-chiffree/en/documents.html#krakow-1663.",
+     "reading": null,
+     "reading_not_needed": true,
+     "sent": false,
+     "fields": {
+      "start_year": 1663,
+      "start_month": 1,
+      "start_day": 25
+     }
+    },
+    "R7506": {
+     "decode_status": "N/A",
+     "proposed": "Decrypted",
+     "note": "Deciphered by Brice Dudout (Europe chiffrée, 27 Oct 2026), not re-checked here: 17-18 Feb 1663, p. 209; https://bdudout.github.io/europe-chiffree/en/documents.html#krakow-1663.",
+     "reading": null,
+     "reading_not_needed": true,
+     "sent": false,
+     "fields": {
+      "start_year": 1663,
+      "start_month": 2,
+      "start_day": 17
+     }
+    },
+    "R7507": {
+     "decode_status": "N/A",
+     "proposed": "Decrypted",
+     "note": "Deciphered by Brice Dudout (Europe chiffrée, 27 Oct 2026), not re-checked here: 19 Mar 1663, p. 225; https://bdudout.github.io/europe-chiffree/en/documents.html#krakow-1663.",
+     "reading": null,
+     "reading_not_needed": true,
+     "sent": false,
+     "fields": {
+      "start_year": 1663,
+      "start_month": 3,
+      "start_day": 19
+     }
+    },
+    "R7508": {
+     "decode_status": "N/A",
+     "proposed": "Decrypted",
+     "note": "Deciphered by Brice Dudout (Europe chiffrée, 27 Oct 2026), not re-checked here: 5 May 1663, p. 235; the table R7501 was tested blind on this letter (0.389 of words in a Polish lexicon against at most 0.083 for 1,000 permuted tables); https://bdudout.github.io/europe-chiffree/en/documents.html#krakow-1663.",
+     "reading": null,
+     "reading_not_needed": true,
+     "sent": false,
+     "fields": {
+      "start_year": 1663,
+      "start_month": 5,
+      "start_day": 5
+     }
+    },
+    "R7509": {
+     "decode_status": "N/A",
+     "proposed": "Decrypted",
+     "note": "Deciphered by Brice Dudout (Europe chiffrée, 27 Oct 2026), not re-checked here: 9 Dec 1663, p. 239; the letter continues in R7510; https://bdudout.github.io/europe-chiffree/en/documents.html#krakow-1663.",
+     "reading": null,
+     "reading_not_needed": true,
+     "sent": false,
+     "fields": {
+      "start_year": 1663,
+      "start_month": 12,
+      "start_day": 9
+     }
+    },
+    "R7510": {
+     "decode_status": "N/A",
+     "proposed": "Decrypted",
+     "note": "Deciphered by Brice Dudout (Europe chiffrée, 27 Oct 2026), not re-checked here: the end of the letter of 9 Dec 1663 begun in R7509, dated from Jarosław, pp. 243-248 (about 700 numbers with the postscript, 98.7% read). Date 1663, not 1665. https://bdudout.github.io/europe-chiffree/en/documents.html#krakow-1663.",
+     "reading": null,
+     "reading_not_needed": true,
+     "sent": false,
+     "fields": {
+      "start_year": 1663,
+      "start_month": 12,
+      "start_day": 9,
+      "origin_city": "Jarosław"
+     }
+    },
+    "R7511": {
+     "decode_status": "N/A",
+     "proposed": "N/A",
+     "note": "A nineteenth-century sheet carrying the decipherment of R7502 (Brice Dudout, 27 Oct 2026); a decipherment, not a ciphertext.",
+     "reading": null,
+     "reading_not_needed": true,
+     "sent": false
+    }
+   }
   }
  }
 }

@@ -72,8 +72,10 @@ Context cribs:
    - P2 "Touraine" (244 = a + x/y: "Tour{ay}ne"); P3 "Montrichart"; P4 "Vautorneuf" (unidentified)
    - P5 "la duchesse d'Angolesme"; P6 "[le] conte de Gramont ne soit de la partie"
    - S1 "le chancelier et Sourdis font l'entreprinse"; S2 "le roy est trahi"
-   Differences from his text: our P1 gives "larest" and S1 "lenteprinse" (his "l'arrest", "l'entreprinse"):
-   check the page images for a dropped group. He also dates Du Maurier's letter Tuesday 20 July 1593 (the
+   Differences from his text: our P1 gives "larest" and S1 "lenteprinse" (his "l'arrest", "l'entreprinse").
+   Settled 27 Oct 2026 (his second email): no group is missing. The cipher itself gives "larest" (la re st ...) and
+   "lenteprinse" (... tl en te pr in se), each with a single r or none; "l'arrest" and "l'entreprinse" on his page
+   are the normalised spelling of the established text. He will say so on the page. He also dates Du Maurier's letter Tuesday 20 July 1593 (the
    edition prints "mardi .. juin"; the letter anticipates the abjuration of Sunday 25 July).
 
 ## Remaining gaps

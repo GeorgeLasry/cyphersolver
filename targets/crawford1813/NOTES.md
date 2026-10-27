@@ -1,6 +1,8 @@
-# William H. Crawford to James Monroe, No. 1 (private), Paris, 3 Sept 1813: a coded letter in the JQA code
+# William H. Crawford to James Monroe, Paris, 15 Aug 1813 (Despatch No. 3, item 1): a coded letter in the JQA code
 
-Status: in progress. Next step: a second reading of the groups read once, the print check, then the retry step on Crawford's other coded runs.
+Status: in progress. Next step: compare with Brice Dudout's parallel reading (below; his pull request will carry his transcription), then a second reading of the groups read once and the retry step on Crawford's other coded runs.
+
+**Date corrected 27 Oct 2026: 15 Aug 1813, not 3 Sept** (see "Date and Brice Dudout's parallel reading" below).
 Contributed by WAINUT (27 Oct 2026). Read in part with the JQA code table (`../jqa/code_table.tsv`, applied
 unchanged): 1,313 of 1,368 groups have a table value; about 40 context words are marked [?] and about 30 groups are
 open (read_share 0.915). The site page and the ledger rows are left to the maintainer.
@@ -93,8 +95,8 @@ shuffled group orders and 0.000-0.001 for shifted or permuted keys.
 
 Monroe to Madison, [ca. 1 Nov 1813] (*Papers of James Madison, Presidential Series* 7, pp. 11-12;
 [Founders Madison/03-07-02-0011](https://founders.archives.gov/documents/Madison/03-07-02-0011)): a Crawford letter
-"of the 4th of Sepr. in cypher", to be "decypherd as soon as possible"; the editors' note 1 identifies it as this
-letter of 3 Sept. Monroe to Madison, 12 Oct 1813 (PJM Pres. Ser. 6, pp. 691-692;
+"of the 4th of Sepr. in cypher", to be "decypherd as soon as possible"; the editors' note 1 identifies it as the
+letter of 3 Sept, which is Despatch No. 4 (frame 0031), not this one (27 Oct 2026, below). Monroe to Madison, 12 Oct 1813 (PJM Pres. Ser. 6, pp. 691-692;
 [Madison/03-06-02-0671](https://founders.archives.gov/documents/Madison/03-06-02-0671)), note 1: the coded letters
 of 15 Aug and 3 Sept discussed the correspondence with Bassano, the proposed commercial treaty, the European war and
 D. B. Warden's conduct. So a decipherment was ordered in 1813 and the editors summarise the content, but neither
@@ -114,8 +116,39 @@ Queued as a `jqa` follow-up for the maintainer (not applied here). The most impo
 41 times (Crawford 1813 30x, Ellis 1839 11x, fixed by Ellis's clear copy), which conflicts with the table's grade-H
 "gar".
 
+## Date and Brice Dudout's parallel reading (27 Oct 2026)
+
+**The letter is of 15 Aug 1813.** Checked on the frames in review:
+
+- Frame 0005, "Extract from the Despatch Book of the American Legation at Paris": "Despatch No 3 - Sent to Mr
+  Sherburne at Nantz Thursday 19th August - consisting of No 1 Letter from Minister to Secret.y of State Aug. 15th
+  1813 in cypher - 2 Note of ditto to ditto same date - 3 Letter of ditto to ditto same date - Secret convention with
+  the French Government in cypher - File of Moniteurs to the 19 August inclusive". The "No. 1" of the old title is
+  the item number in this despatch.
+- Frame 0027, right leaf: headed "No (3)" in clear above the first line of groups.
+- Frame 0031: "Despatch No (4) Private, Paris 3d September 1813", with the decipherment written over the groups. That
+  is the letter Monroe calls "of the 4th of Sepr. in cypher" (section 6), so the decipherment made in 1813 that the
+  PJM note points to is No. 4's, not this letter's. The PJM note on the coded letters of 15 Aug and 3 Sept does
+  cover this one.
+- The heading groups 1109 336 868 932 939 932 954 are Paris [15] Au[gust] 1813: 932 939 932 954 have the pattern of
+  1813 (Brice Dudout's reading). Section 4's "Paris, ... 3rd ..." took 954 at its table value "3rd (23rd)" (grade M).
+  The ninth group is transcribed 1303 (back) here and 1503 (able, giving Hon-orable) by Dudout; not settled on the
+  frame at the size viewed.
+
+**Parallel reading.** Brice Dudout (Europe chiffrée,
+`https://bdudout.github.io/europe-chiffree/en/documents.html#crawford-1813`) read the same letter on the same day,
+independently, with the same table frozen before use: 1,371 groups, 1,330 read (97.0%; 87.9% without his readings
+from sense), 41 marked unread. He validated the table first on No. 4's interlinear decipherment (194/226 and 224/246
+values agree; shuffled-value controls at most 0.027/0.020). He also reads 1264 as a full stop and 1323 as been, and
+says American State Papers, Foreign Relations III prints another letter of the same day, in clear (register item 3).
+Spot checks: both readings have Crawford refusing to follow the court to Dresden, the "plan of indemnity" obtained
+from the foreign ministry, Barlow's arrangement with capitalists and "the silly publications of our sapient Editors".
+The two transcriptions differ in length by three groups; they have not been compared group by group. His values that
+differ from the table are listed in `../jqa/overlay_dudout.tsv`. Catalogue 652 was removed on 27 Oct 2026 as read.
+
 ## Remaining gaps
 
+- comparison with Brice Dudout's transcription and reading (1,371 groups against 1,368 here; group 9 of the heading) - blocker: not-attempted; his pull request will carry his files.
 - about 40 context words marked [?] and the open groups ([102], [267], [343], [366], [529], [58], [104], [531], [665], [700], [909], [1204], [1313], [1444] and others) - blocker: open-codes; most occur once here. Crawford's other coded despatches in the same volume (frames 0031-0033, 0047-0049, 0065-0067, 0072, 0086-0090, 0199-0201, 0213-0214) are workable siblings, not yet transcribed, and the next source of occurrences.
 - about 89% of the groups were read once only - blocker: not-attempted; a second full reading against the frames is workable and still to do.
 

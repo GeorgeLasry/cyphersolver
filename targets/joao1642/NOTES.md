@@ -76,7 +76,7 @@ nEqmx = sobre, oEuEn = todos, zfacE = filho, ixmxfmq = Pereira.
 
 ## Remaining gaps
 - cipher words of letters 44, 49 and 56, and m0025 ll. 3-5 and 12-16 of letter 13 - blocker: illegible; rubbed or faint at 1060 px, the only resolution DigitArq serves; better images from ANTT would close them (letter 13's text is known from its clear copy)
-- letter 153, 'pn Evcv Eno nE' before 'mandado' and 'purzmofm' after it - blocker: too-short; five words in alphabet B with no parallel text, and the values they need (d, g, r and the homophones) rest on one or two occurrences
+- letter 153, 'pn Evcv Eno nE' before 'mandado' and 'purzmofm' after it - blocker: too-short; five words in alphabet B with no parallel text, and the values they need (d, g, r and the homophones) rest on one or two occurrences. Brice Dudout reads them (27 Oct 2026, Prior work); to be checked against m0157 and his values before they are taken here.
 
 ## Escalation
 - [x] siblings: the whole volume swept (289 scans); alphabet-B siblings m0179 and m0190 found and used; letter 8's cipher and clear paper used for alphabet A
@@ -96,6 +96,15 @@ nEqmx = sobre, oEuEn = todos, zfacE = filho, ixmxfmq = Pereira.
   the six letters have a clear copy beside them, and that 00153 is the only apparently unpublished piece, in a
   different system. His key was not seen; alphabet A was rebuilt here independently from the same clear copies the
   same day. Alphabet B and the reading of 00153 are new here.
+- Brice Dudout, published reading of letter 153 (Europe chiffrée,
+  `https://bdudout.github.io/europe-chiffree/en/documents.html#nisa-1644`, 27 Oct 2026; his second email the same
+  day): made independently, frozen (SHA-256) before he looked at the reading here. All 26 cipher groups (160 signs):
+  124 signs certain, 30 in probable words, 6 extra signs unexplained; about 96%. The two readings agree on P1 and P2.
+  He took two corrections from the reading here (the fourth sign of "confiareis" is z, not x; c = h, from "filho",
+  giving "tenho") and credits them. He reads the five words left open here (his P3-P4, "… as que vos {tenho} …
+  advertir"; "confiareis", "alguma" and "tenho" partly from sense). One disagreement, in the clear text before the
+  cipher: "entenderá no" (his) against "entende tão no[s]" (here). His readings of the five words are not yet checked
+  here against m0157.
 
 ## Files
 

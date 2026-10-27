@@ -131,12 +131,30 @@ Lines 11-13 were not re-read in the check. Only "con much[a]" on l. 13 was confi
 617: read in part (WAINUT, 27 Oct 2026): the cipher passages of ll. 18-29 read with Tomokiyo's First Cipher table.
 The shelfmark is AGS PTR leg. 54 doc. 78 (PARES 2208120). Keep it open for the clear text and ll. 11-17.
 
+## Brice Dudout's parallel reading (27 Oct 2026)
+
+Brice Dudout (Europe chiffrée, `https://bdudout.github.io/europe-chiffree/en/documents.html#puebla-1506`) read the
+same letter on the same day, independently, with the same Tomokiyo table frozen before use: 366 signs transcribed,
+363 read (99.2%); bigram score on a Spanish corpus of Puebla's 1507 letters -5.17 against a median of -6.99 for 1,000
+control permutations. He also transcribes the clear text of ll. 11-17. His "Parallel reading" paragraph says the two
+transcriptions give the same signs for most passages and the decipherments agree word for word on S01, S02, S06-S08,
+S10-S11, S13, S15 and S16. He adopts two readings from this folder, credited to WAINUT: the sense of "a beneficio de
+natura", and "por aquella gente hazia" in the clear text. His readings where this folder differs or is open:
+
+- l. 13, the sign in "ra?on": z ("razón"); and "plaze" where this folder has "plazer" with a doubtful r (his S03-S04);
+- "de la" where this folder has "da la" (S05);
+- l. 16: "pedrique" (from pedricar) where this folder has "pedri que" and proposes "pedir" (S09);
+- the two illegible signs after "personas" (l. 25) are not in his transcription (S12);
+- DCCCLXXXVIII: the same value from AGS PTR leg. 52 doc. 33.
+
+None of these is taken here yet; they need a look at the image (PARES answered HTTP 429 on 27 Oct 2026).
+
 ## Remaining gaps
 
 - The clear text of the letter (about 20 lines in Puebla's cursive), read only in part - blocker: illegible; at 1017 x 1413 px, the largest size PARES serves, many words cannot be read with confidence. A better scan from the AGS would allow it.
-- ll. 11-17: the fragments do not build sentences, because the clear words between them are not read and l. 12 ("[?desto] [?stares] ... [?aresto]") divides uncertainly - blocker: illegible; descenders from the line above run through ll. 11-13
-- l. 13, the sign in "ra?on", and l. 25, two signs after "personas" - blocker: illegible
-- l. 16, "pedri" (decoded) for "pedir" [?] - blocker: illegible; the letters are clear but the form is doubtful
+- ll. 11-17: the fragments do not build sentences, because the clear words between them are not read and l. 12 ("[?desto] [?stares] ... [?aresto]") divides uncertainly - blocker: illegible; descenders from the line above run through ll. 11-13. Brice Dudout transcribes the clear text of ll. 11-17 (27 Oct 2026, above); to be compared on the image (PARES answered 429 that day).
+- l. 13, the sign in "ra?on", and l. 25, two signs after "personas" - blocker: illegible; Brice Dudout reads z ("razón") and does not count the two signs (27 Oct 2026, above), not yet checked here
+- l. 16, "pedri" (decoded) for "pedir" [?] - blocker: illegible; the letters are clear but the form is doubtful; Brice Dudout reads "pedrique" (pedricar), not yet checked here
 - DCCCLXXXVIII: the C-count was not checked on this letter (three occurrences) - blocker: open-codes
 
 ## Escalation
