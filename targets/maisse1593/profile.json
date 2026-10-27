@@ -191,6 +191,43 @@
    "what": "Consistency pass (cl): documents[].read for f406, f410 read -> not read, matching outcome.texts (decoded, not read) and fraction_read_source.",
    "result": "worked",
    "technique": ["statistical test"]
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "access",
+   "what": "WAINUT contribution: Brienne 13 (NAF 6984, btv1b100904592) canvases 176-178, 199-200 and the cipher leaves fr. 16093 (btv1b90074656) canvases 455, 457, 458, 461 viewed at full resolution (Gallica viewer and the BnF IIIF API at openapi.bnf.fr); no image kept in the repository.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "transcription",
+   "what": "WAINUT contribution: the clear copies transcribed line by line: fol. 171r (lower part) to 172v for f. 406 (wainut/f406_brienne_copy.txt) and fol. 193v, 194r and the first lines of 194v for f. 410 (wainut/f410_brienne_copy.txt). fol. 173r and the rest of 194v are not transcribed. The top of fol. 171r ('insollence des Espagnolz ... prier Dieu, etc.') was found to be the end of Maisse's own letter 'Au Roy du dixiesme Avril 1593' (heading on fol. 170v), not part of the King's letter of 8 Feb.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "crib",
+   "technique": [
+    "plaintext matching",
+    "key matching"
+   ],
+   "what": "WAINUT contribution: the start of each cipher block fixed against the copies (f. 406 and twin f. 404: 'Le surplus de voz lettres ...', on the line after 'vous y pouvez apporter'; f. 410: 'L'experience a faict cognoistre ...', after 'de ma bonne grace et faveur'). Six stretches (f. 410 cipher ll. 1-2, f. 404 l. 3, f. 406 cipher l. 1 and two pieces of l. 2; 128 signs) transcribed sign by sign (wainut/cipher_lines.txt) and decrypted with Tomokiyo's 'Maisse' Cipher 2' unchanged: they give the copy's text (wainut/f406_decryption.md, f410_decryption.md). Word signs 15 = faict, 17 = vous, 18 = est confirmed.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "WAINUT contribution: wainut/decode_check.py: difflib ratio of decryption to copy 0.79-1.00 on the six stretches (0.91-0.94 on the four long ones); 2000 random permutations of the key values give at most 0.67 on any stretch and 0.53 on the long ones; 2000 shuffles of the group order at most 0.65 on the long ones.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "verification",
+   "what": "WAINUT contribution: a second, independent look at the images corrected the first sign-level alignment: on f. 404 the '9' is the uy sign (u) and the '+' the theta-like d; on f. 410 '9t' is c (not n), 's-long + hook' is two signs (e, n) and the z-like sign is a; the hooked q-like sign for l is in Tomokiyo's l column (not a new homophone); the cipher spells 'cougnoistre' and 'que vous en avez'; the copy has 'vous estes estes'. Still open: three signs where the copy has 'vous ne' decode r u e; the pi-like sign in 'Rome' and the '+' in 'voiage' do not fit the key.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -230,6 +267,30 @@
     "role": "identification",
     "note": "assigned ff. 406 and 410 to Maisse's Cipher (1592-1593) and published its key (henryiv_Maisse2.png), not applied here",
     "source": "cryptiana Henri IV page"
+   },
+   {
+    "who": "lccompany",
+    "role": "solution",
+    "note": "PR: ff. 406 and 410 read in part from the Brienne 13 clear copies, with Tomokiyo's key confirmed on the first cipher lines of ff. 404, 406 and 410; credit for the target shared with Arya Patel (PR #7)",
+    "date": "2026-10-27"
+   },
+   {
+    "who": "lccompany",
+    "role": "transcription",
+    "note": "Brienne 13 fol. 171r-172v and 193v-194v (first lines); 128 cipher signs of ff. 404, 406, 410",
+    "date": "2026-10-27"
+   },
+   {
+    "who": "lccompany",
+    "role": "identification",
+    "note": "the top of Brienne 13 fol. 171r is the end of Maisse's own letter to the King of 10 Apr 1593, not the King's letter of 8 Feb (f. 406)",
+    "date": "2026-10-27"
+   },
+   {
+    "who": "tomokiyo",
+    "role": "key or decipherment used",
+    "note": "'Maisse' Cipher 2 (BnF fr.16093, f.344 etc.)' (src/henryiv_Maisse2.png), applied unchanged to six stretches of ff. 404, 406, 410 (27 Oct 2026)",
+    "source": "cryptiana Henri IV page"
    }
   ],
   "texts": [
@@ -255,6 +316,44 @@
     "language": "fr",
     "state": "decoded, not read",
     "note": "Not in the repository: the content was read from the contemporary clear copy in Brienne 13 (NAF 6984, fol. 193v, canvas 199), which was never transcribed, and the cipher leaf itself was not deciphered; nothing of the letter is here (reading audit, 22 Oct 2026); fix: fetch the Brienne 13 page and the cipher leaf through the Gallica IIIF (openapi.bnf.fr) and transcribe the copy."
+   },
+   {
+    "doc": "f406",
+    "label": "WAINUT, 27 Oct 2026: f. 406 (twin f. 404), Chartres, 8 Feb 1593, from the Brienne 13 clear copy; cipher decrypted on its first lines",
+    "transcription": "wainut/cipher_lines.txt",
+    "contemporary": "wainut/f406_brienne_copy.txt",
+    "decryption": "wainut/f406_decryption.md",
+    "reading": "wainut/f406_reading.md",
+    "translation": "wainut/f406_translation.md",
+    "language": "fr",
+    "state": "read in part",
+    "summary": "Henri IV to Maisse at Venice: he has answered every despatch and noted their dates, approves Maisse's sending of duplicates, hopes the despatch for the Pope was not delayed, and has written to the Grand Seigneur and his ministers (Maisse can read the letter to Breves if he kept the copy of the cipher). In cipher: Rome; Pisany's arrival in Italy; the war in Piedmont and a letter sent through Lesdiguieres' men with a further charge for Lesdiguieres; Gondi at Nancy with the King's passport; the King going down to Saumur, where his sister is. The repository's earlier summary of f. 406 (the Spanish insolence, Pisany and Cardinal Gondi not to leave Rome) describes the top of fol. 171r, which is the end of Maisse's own letter to the King of 10 Apr 1593.",
+    "reading_review": {
+     "grade": "A",
+     "by": "WAINUT (AI language-model agent, checked against the images)",
+     "date": "2026-10-27",
+     "note": "Coherent French sentences with scattered holes; hole rate 0.027 by docs/_check_reading.py --file. The text is the contemporary clear copy; the cipher agrees with it on the decrypted lines only."
+    },
+    "note": "Read in part: the letter's end (Brienne 13 fol. 173r) and the end of the cipher block are not transcribed, and only the start of the cipher block (four stretches, 56 signs) is transcribed and decrypted. read_share is not given because the share of the whole letter is not known. The copy's lines checked a second time, independently: the heading and opening on fol. 171r and the line 'Le surplus de voz lettres ... du voiage'; the rest is one reading."
+   },
+   {
+    "doc": "f410",
+    "label": "WAINUT, 27 Oct 2026: f. 410 (twin f. 412), Mantes, 27/28 Apr 1593, from the Brienne 13 clear copy; cipher decrypted on its first two lines",
+    "transcription": "wainut/cipher_lines.txt",
+    "contemporary": "wainut/f410_brienne_copy.txt",
+    "decryption": "wainut/f410_decryption.md",
+    "reading": "wainut/f410_reading.md",
+    "translation": "wainut/f410_translation.md",
+    "language": "fr",
+    "state": "read in part",
+    "summary": "Henri IV acknowledges Maisse's letters of 20 Feb, 7 and 23 Mar (one courier held by the duc de Nevers in Champagne) and assures him that his absence will cost him nothing. In cipher: experience has proved Maisse right about the affairs of Rome; on advice the King will not yet recall Cardinal de Gondi or the marquis de Pisany, to keep the Pope from extremes, and leaves their moves to the Grand Duke's advice; Gondi's promises; the original letters of the Grand Seigneur and his ministers received; the King waits on the ambassador's despatch.",
+    "reading_review": {
+     "grade": "A",
+     "by": "WAINUT (AI language-model agent, checked against the images)",
+     "date": "2026-10-27",
+     "note": "Coherent French sentences with scattered holes; hole rate 0.032 by docs/_check_reading.py --file. The text is the contemporary clear copy; the cipher agrees with it on the two decrypted lines only."
+    },
+    "note": "Read in part: only the first lines of Brienne 13 fol. 194v are transcribed, where the cipher block ends is not fixed, and only its first two lines (72 signs) are transcribed and decrypted. read_share is not given because the share of the whole letter is not known. The copy's lines checked a second time, independently: the heading and 'L'experience ... par cette preuve' on fol. 193v; the rest is one reading."
    }
   ],
   "fraction_read_method": "measured",

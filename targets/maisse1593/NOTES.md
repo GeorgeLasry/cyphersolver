@@ -76,3 +76,83 @@ on ff. 406/410. The text comes from the Brienne copies (and, for f. 406, the int
 - [x] print: Berger de Xivrey used to locate the copies
 - [n/a] key-rebuild: the key exists (Tomokiyo)
 - [ ] retry: none yet
+
+## Contribution by WAINUT (27 Oct 2026)
+
+Contributed by WAINUT (https://github.com/WAINUTAI), a Dutch AI company. The work was done with AI language-model
+agents, and the readings were checked against the Gallica images twice, the second time independently. The target
+and the Brienne 13 copies were found by Arya Sanketbhai Patel (PR #7); this section builds on that. The text above
+is unchanged. The new files are in `wainut/`, and `profile.json` gains two `outcome.texts` entries, credits and dated
+solution steps (existing entries untouched).
+
+**Outcome: read in part.** The two clear copies in Brienne 13 are transcribed through the enciphered passages, and
+the start of each cipher block is decrypted with Tomokiyo's key against them. The cipher itself is not transcribed
+in full: only six stretches (128 signs) of ff. 404, 406 and 410.
+
+### Files
+
+- `wainut/f406_brienne_copy.txt`, `wainut/f410_brienne_copy.txt`: the contemporary clear copies, line by line
+  (Brienne 13 = NAF 6984 fol. 171r lower part to 172v; fol. 193v, 194r and the first lines of 194v).
+- `wainut/cipher_lines.txt`: the cipher stretches, sign by sign, with the sign names.
+- `wainut/f406_decryption.md`, `wainut/f410_decryption.md`: line-by-line decryption against the copies.
+- `wainut/f406_reading.md`, `wainut/f410_reading.md`: the letters as running French text (from the copies), with
+  the clear and the enciphered parts marked. `wainut/f406_translation.md`, `wainut/f410_translation.md`: English.
+- `wainut/decode_check.py` (standard library) and `wainut/decode_check_output.txt`: decryption and controls.
+
+### Findings
+
+1. **The summary of f. 406 above describes the wrong letter.** "The Spanish insolence and the Pope; Pisany and
+   Cardinal Gondi should not leave Rome ...; their entry among those of the League could breed division" is the top
+   of Brienne 13 fol. 171r. That text is the end of **Maisse's own letter "Au Roy du dixiesme Avril 1593"**, whose
+   heading is on fol. 170v ("Sire, J'escrivay d'aujourd'huy en huict iours ..."). Fol. 170v ends "il pourroit bien
+   advenir que cette" and fol. 171r goes on "insollence des Espagnolz fist resoudre Sa Saincteté ...". The King's
+   letter of 8 Feb begins lower on fol. 171r, under "Coppie de lettre du Roy audict sieur de Maisse de Chartres le
+   huictiesme febvrier 1593 receue le viii.e Avril", with "Monsieur de Maisse j'ay tousiours faict responce a voz
+   depesches ...".
+2. **Where the cipher is.** f. 406 is mostly in clear. Its cipher block starts on the line after "faire des bons
+   advis que vous y pouvez apporter", with "Le surplus de voz lettres est sur le subiect des affaires de Rome du
+   voiage ..." (copy fol. 172r); this was checked on f. 406 itself and on its twin f. 404. A short run of cipher
+   groups also stands on an earlier line of f. 406, inside the clear part; it is not decrypted. The enciphered
+   matter of 8 Feb: Rome; Pisany's journey and his arrival in Italy; the war in Piedmont and the new means Maisse
+   found to help it; a letter sent through Lesdiguières' men and a further charge for Lesdiguières; Gondi at Nancy
+   with the King's passport; the King going down to Saumur, where his sister is. On f. 410 the cipher starts right
+   after "de ma bonne grace et faveur", with "L'experience a faict cognoistre ..." (fol. 193v). It covers the affairs
+   of Rome; the advice not yet to let Cardinal de Gondi and the marquis de Pisany come back, so as to keep the Pope
+   from extremes; leaving their moves to the Grand Duke's advice; Gondi's promises; and probably more (see below).
+   The repository's summary of f. 410 covers only the part in clear.
+3. **Tomokiyo's key reads these leaves.** Applied unchanged, it gives the copy's text on every stretch: f. 410 cipher
+   ll. 1-2 (ratio 0.94 and 0.93 against the copy), f. 404 l. 3 (1.00), f. 406 cipher l. 1 (0.91) and two pieces of
+   l. 2 (1.00 and 0.79). With 2000 random permutations of the key values no stretch gets above 0.67, and none of the
+   four long ones above 0.53. Values confirmed include 27/e, 29/x, 14/p, to/r, 19/i, 23/c, 24/g, 26/n, 10/s, 8/r,
+   7/l, 16/m, 25/d, 5/u, 6/u, 1/o, y/o, the x-like sign = p, the omega-like sign = s, the d-shaped sign = t, the
+   crossed 2 = i, the T-like sign = f, the z-like sign = a, and the word signs **15 = faict, 17 = vous, 18 = est**,
+   *que* (a 9 with a straight tail), *des* (p with a stroke) and *de* (looped sign). The hooked q-like sign that
+   opens both blocks is Tomokiyo's l (l column, row 2), not a new homophone.
+4. **Variants between cipher and copy.** The cipher spells *cougnoistre* and has *que vous en avez* and the
+   abbreviation *l[ett]res*; the copy has *cognoistre*, *que vous avez*, *lettres*, and repeats *estes* ("vous ne
+   vous estes estes en rien trompé").
+
+### Corrections made on the second look
+
+The first sign-level alignment had errors, corrected before writing: on f. 404 the sign first read "9" is the uy
+sign (u) and the "+" the theta-like d; on f. 410 "9t" is c (not n), what looked like one long-s sign is two signs
+(e, n), and the z-like sign is a; the middle of *cognoistre* reads with the uy sign and the crossed 2. The short
+cipher run in the clear part of f. 406 was first placed near "pour le regard du pape" and on the second look near
+"... & puissance ..."; its place in the copy text is open.
+
+### Still open
+
+- In f. 410 l. 1, the three signs where the copy has *vous ne* decode as r u e: misread, or a word sign missing from
+  the key. In f. 406 l. 2 the pi-like sign in *Rome* is r by the key (*rrme*), and the `+` in *voiage* is a by the
+  key but i by the copy. All marked as holes.
+- The rest of both cipher blocks (about 18 lines on f. 406, and the verso, canvas 458, if it carries cipher; about
+  23 lines on f. 410) is not transcribed, so the decryption covers the first lines only.
+- The copies: fol. 173r (end of the 8 Feb letter) and fol. 194v after its first lines are not transcribed; on
+  fol. 194v the right edge was cut off in the view used. Where each cipher block ends is not fixed. Only the
+  headings and the first cipher lines of the copies were checked a second time.
+
+### Prior art
+
+The contemporary clear copies in Brienne 13 are in effect the decipherment of the time; they were located by Arya
+Sanketbhai Patel through Berger de Xivrey's citations (PR #7). Berger de Xivrey, t. III (1846), was not re-checked
+here. We know of no printed decipherment of ff. 406 and 410; Tomokiyo published the key, not readings of these leaves.

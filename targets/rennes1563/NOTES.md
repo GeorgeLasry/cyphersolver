@@ -176,3 +176,84 @@ What moved it (all from re-looking at the signs, not from context):
   *y [a]voit*, *[a]u repos*; dʒ = mm in *femme* and *commun*; ff-ligature a in *aliance*.
 Tried and failed: the p.139 runs listed above, "choses" (needs € = h against the € of afin), f.55 l.1-2 openings.
 
+## Contribution by WAINUT (27 Oct 2026)
+
+Contributed by WAINUT (https://github.com/WAINUTAI), a Dutch AI company. The work was done with AI language-model
+agents. The changed signs were read on the Gallica image (fr. 3181, btv1b9059845t view 36) and checked a second time,
+independently, on the image and on Tomokiyo's key. This section covers **fr. 3181 f. 55 only**; Colbert 390 pp. 139
+and 357-358 and Colbert 392 p. 231 were not re-opened. The text above is unchanged. The new files are in `wainut/`,
+and `profile.json` gains one `outcome.texts` entry, a credit and dated solution steps (existing entries untouched).
+
+**Outcome: f. 55 stays decoded, not read, but closer.** The third pass closes or proposes several of the open runs
+and removes slips. On `docs/_check_reading.py` the new reading has 0.545 clean sentences (6 of 11) and a hole rate of
+0.132, against 0.50 in the verify pass of 23 Oct 2026. That is still under the bar for "read in part", and several
+values rest on context, so we do not claim a reading. The French reading and an English translation are given for
+checking.
+
+### Files
+
+- `wainut/f55_v3.txt`: the token list, `../f55_v2.txt` with this pass's edits (written by `python wainut/f55_v3.py --write`).
+- `wainut/f55_v3_decryption.md`: line-by-line decryption, and a table of every change with how sure it is.
+- `wainut/f55_v3_reading.md`, `wainut/f55_v3_translation.md`: the cipher as French sentences with holes, and English.
+- `wainut/f55_v3.py` (standard library), `wainut/f55_v3_output.txt`: decode of v2, the first v3 proposal and v3 as
+  checked, with controls.
+
+### The reading (holes marked)
+
+> [clear: c'est pour] Par où j'ay sceu ce que vous avez descouvert {…} par delà[?] du mariage[s], et vostre advis sur
+> la conduicte d'iceulx, en mon intention se trouve toute conforme; et ay tenu ce chemin, dont je ver[r]ay ce qui
+> pourra sortir. J'ay auss[i] entendu ce que l{…} vous mist en avant, qui l'avoit deeliberay[?] faire pour le[?] bien
+> de la Chrestienté[?] et avancer le concile. A ce que je veoy, chacun faict {…} dessain[?] à part; et monstr{…}er
+> b[?]onne [et?] fructueuse {…} yssue[?] de ce concile. Mais nous sommes [à] voir l'utilité qui en sortira,
+> mesmes{…}e ce qui se promect des sessions[?] [de] Decembre, desquelz vous avez oy parler[?], vous estant
+> dernierement à {…} Trante. [clear: Au demeurant ...]
+
+> By which I learned what you discovered {…} over there[?] about the marriage[s], and your advice on how to conduct
+> them, with which my intention agrees in full; and I have held to this course, and I shall see what may come of
+> it. I have also heard what {…} put forward to you, which he had resolved[?] to do for the good of Christendom[?]
+> and to advance the Council. As far as I can see, each one pursues {…} design[?] apart; and to show a good[?]
+> [and?] fruitful {…} outcome[?] of this Council. But we have yet to see what benefit will come of it, in
+> particular{…} what is promised from the December sessions[?], which you heard talk[?] of when you were lately at
+> {…} Trent.
+
+### What changed, and how sure it is
+
+- **l. 2.** The first sign (looped L) is a null, as in Tomokiyo's null column: confirmed. The heavy sign after *par*
+  is read d, giving *par delà*: probable only. The sign is blotted, and Tomokiyo's b column has a similar sign.
+- **l. 4.** *ay tenu*, not *ayt tenu*: there is one circled G, and it belongs to *tenu* (confirmed). ee = r,
+  Tomokiyo's r homophone (confirmed), so the run after *dont* reads *je ver[r]ay*. The last small sign is either
+  Tomokiyo's y sign ⊤ or his r-like null; *je ver[r]ay* or *je vera* is French either way. (The first proposal said
+  Tomokiyo's y column has an "r-small" sign. It does not; that was corrected on the second look.)
+- **l. 7.** ɸ b read as χ-p, the *xpienté* abbreviation of *Chrestienté*. Plausible, not re-checked on the image.
+- **Doubled e-sign = ss [?].** The pair stands where French needs *ss* in all three places: *dessain* (l. 8),
+  *yssue* (l. 9), *sessions* (l. 11). The second look showed that l. 8 has the ligatured pair (the first proposal
+  counted one sign and read *desain*), and confirmed the sign counts in l. 9 (one e-sign fewer than v2) and l. 11.
+  No gloss in this hand confirms the value. Tomokiyo's s column has an "ll"-like homophone (row 5) that may be this
+  pair, but his small key image cannot settle it.
+- **l. 8-9.** The first proposal read the opening of l. 9 as *b o*. That contradicts its own values in l. 8
+  *monstrer*, where the same two signs are o and n. The v2 reading is restored: *b|one [et?] fructueuse*, with [?] on
+  the b, because the last sign of l. 8 may be struck through by the writer (or be Tomokiyo's e sign).
+- **Not re-checked:** *pour le bien* (l. 6) and *oy parler* (l. 12) both need the sign `sc` (v2 value *lettre*) to
+  stand for *le*. Marked [?].
+
+### Controls
+
+`python wainut/f55_v3.py`: the share of letters covered by French words of 3 or more letters is 0.764 for v2 and
+0.793 for this pass. With the letter values shuffled among the signs (200 runs) the median is 0.342 and the best
+0.444; with the token order shuffled within each line (200 runs) the median is 0.436 and the best 0.502. This shows
+that the key gives French as a whole; it does not test each disputed sign.
+
+### Still open in f. 55
+
+l. 2 the sign before *par* (a null, *et*, or *vous*); ll. 5-6 the subject of *vous mist en avant* (no signs for
+*l'on* or *le roy des Romains*); l. 6 *l'avoit deeliberay* (*délibéré* written with -ay, or a new clause *[je]
+délibéray*); l. 8 the sign before *dessain* (*son* expected) and the extra sign inside *monstr{…}er*; l. 9 the sign
+after *fructueuse*; l. 11 *mesmes{…}e*; l. 12 the two signs before *Trante* (h = b by a gloss, ϑ = m; no word fits).
+A glossed passage in this hand with *ss* written as the doubled e-sign would settle the ss value.
+
+### Prior art
+
+La Ferrière, *Lettres de Catherine de Médicis* II (1885), pp. 79-80 (archive.org OCR, re-checked): "1563. - 31
+juillet. Orig. Bibl. nat., fonds français, n° 3181, f° 55 r° et v°", *A monsieur de Rennes*. The cipher passage is
+blank, with the footnote "Partie chiffrée", between "c'est pour" and "Au demeurant". We found no contemporary or
+printed decipherment. Tomokiyo's "undeciphered" listing was not re-checked.
