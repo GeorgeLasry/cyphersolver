@@ -1,0 +1,110 @@
+{
+ "schema_version": 1,
+ "target": "tampico1917",
+ "title": "The \"Tampico message\": Riverbank reports it cannot solve it, 27 Aug 1917 (NARA RG 165, WCD file 10020-60)",
+ "documents": [
+  {
+   "id": "A",
+   "shelfmark": "NARA RG 165, War College Division general correspondence, file 10020-60 (M1024; transferred to MID, RG 165 entry 65)",
+   "date": "1917-08-27",
+   "year": 1917,
+   "country": "Mexico",
+   "route": "unknown sender at Tampico (intercept) -> Riverbank Laboratories -> War College Division",
+   "language": "unknown",
+   "cleartext_in_document": "unknown",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "Riverbank reported it could not solve the message; no decipherment known.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 0,
+    "unit": "mixed",
+    "measured": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "image_quality": "no images",
+    "notes": "Not digitised: M1024 roll 310 frame 0051 is a withdrawal card (file 10020 transferred to MID). Nothing transcribed. German or Spanish expected."
+   },
+   "read": "not read"
+  }
+ ],
+ "system": {
+  "types": [
+   "undetermined"
+  ],
+  "summary": "unknown: the message has not been seen.",
+  "symbol_kind": "symbols",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": "unknown"
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": "unknown"
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "not applicable",
+  "notes": "symbol_kind and key_order are placeholders: the schema has no 'unknown' value for them. Nothing about the system is known."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "unknown",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [],
+  "attack": "none",
+  "human_role": "Pasted the catalogue task; no other input.",
+  "tools": [
+   "NARA catalog (M912, M1024)",
+   "web search"
+  ],
+  "models": [
+   "claude-opus-5-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-10-27",
+  "last_date": "2026-10-27"
+ },
+ "solution": [
+  {
+   "date": "2026-10-27",
+   "kind": "access",
+   "what": "M912 roll 34 frame 0947 index card gives the subject line of 10020-60; M1024 roll 310 frame 0051 is a withdrawal card: file 10020 transferred to MID (RG 165 entry 65), not digitised.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "literature search",
+   "what": "Web search on Riverbank/Friedman 1917 + Tampico and on WCD 10020 / MID undeciphered messages: only general history (Riverbank traffic mostly Mexican government). No edition or decipherment.",
+   "result": "failed"
+  }
+ ],
+ "outcome": {
+  "class": "offline only",
+  "key": "none",
+  "method": "not applicable",
+  "verification": [
+   "none"
+  ],
+  "contribution": [
+   "none"
+  ],
+  "gaps": [
+   {
+    "item": "whole message",
+    "blocker": "needs-physical-access"
+   }
+  ],
+  "notes": "Not attempted on the ciphertext: the item could not be reached. MID file 10020 must be ordered from NARA College Park."
+ }
+}
