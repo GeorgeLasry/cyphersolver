@@ -1,0 +1,39 @@
+[
+ {
+  "year": 1865,
+  "date": "Nov 1864 - Apr 1865",
+  "title": "Lt. Gen. Richard Taylor (Dept. of Alabama, Mississippi and East Louisiana) → Maury, S. D. Lee, Forrest and others: telegram letter-books with Confederate Vigenère passages copied in cipher only",
+  "correspondents": "Richard Taylor (by W. F. Bullock Jr., AAG) → D. H. Maury (Mobile), S. D. Lee (Augusta), Wirt Adams, Gov. Clark, Richmond and others",
+  "place": "Meridian, Mississippi",
+  "language": "English",
+  "region": "Americas",
+  "period": "1801-1900",
+  "shelfmark": "NARA RG 109, War Department Collection of Confederate Records, Chapter II vols. 10, 11 and 196 (Telegrams Sent, Department of Alabama, Mississippi and East Louisiana, 1864-1865)",
+  "folio_note": "Cipher words written in capitals inside the clear copies, word lengths kept. Vol. 196 (Feb-Mar 1865, naId 45485022): about 40 runs, e.g. frame 0061 = p. 117, Taylor → Maury 12 Mar 1865 (viewed). Vol. 11 (1865, naId 12127054): about 10 runs. Vol. 10 (1864-65, naId 16878212): about 8 runs. Run lists with best key per run in research/nara_triage_d/capruns1.txt and capruns2.txt.",
+  "cls": "A",
+  "status": "Not unsolved in the strict sense: the keys are the known Confederate ones. Frame 0061 transcribed from the image and read here with COME RETRIBUTION (Vigenère, key running through the cipher letters only): 'Telegraph in cipher what [cavalry you have on which side of bay, strength and name of commander] ... Direct [cavalry so keep close to enemy] as possible ... [keep in constant telegraphic communication with] Genl D W Adams ... indicate in cipher [what] ... you have decided upon [outside through which to communicate]'. On the OCR alone, runs in vol. 11 read with COME RETRIBUTION ('stores', 'will move westward', 'was evacuated by') and runs in vol. 10 read with COMPLETE VICTORY ('Genl Johnston this alone will restore confidence', 'renders the assignment'). The volumes carry the 'War Records COPIED' stamp, so the Official Records may print these telegrams, but whether OR printed the cipher words deciphered or left them out was not checked. Not on DECODE; known.py: no hit for Come Retribution, Taylor 1865 or Markoe.",
+  "why": "A set of Confederate field ciphers from the last months of the war (Mobile campaign, Wilson's raid) that a known key reads, with the clear sense of each telegram in the same book: a quick, verifiable reading and a test set for Confederate key usage (which key, and when the change was made).",
+  "importance": 3,
+  "solvability": 5,
+  "difficulty": 1,
+  "score_note": "Scored from NARA OCR and one viewed frame during the Oct 2026 NARA bulk-scan triage (research/nara_triage_d/)",
+  "verify": "Check OR Ser. I vol. 49 pt. 2 and vol. 45 pt. 2 for Taylor's telegrams of 12 Mar 1865 to Maury and to S. D. Lee (does OR give the cipher words in clear?). Then transcribe the capital runs from the images of vols. 10, 11 and 196 and decipher with vig.py.",
+  "links": [
+   {
+    "label": "Vol. 196, Telegrams Sent Feb-Mar 1865 (NARA 45485022)",
+    "href": "https://catalog.archives.gov/id/45485022"
+   },
+   {
+    "label": "Vol. 11, Telegrams Sent 1865 (NARA 12127054)",
+    "href": "https://catalog.archives.gov/id/12127054"
+   },
+   {
+    "label": "Vol. 10, Telegrams Sent 1864-65 (NARA 16878212)",
+    "href": "https://catalog.archives.gov/id/16878212"
+   }
+  ],
+  "seen": "image",
+  "source": "NARA bulk-scan triage (RG 109)",
+  "prior_art": "Keys known (Manchester Bluff / Complete Victory / Come Retribution); OR not checked (checked 27 Oct 2026: web search for the 12 Mar 1865 Taylor-Maury text gave no hit; Rosenbach Telegraphic History holds Maury-Taylor telegrams of Nov 1864-Feb 1865)"
+ }
+]

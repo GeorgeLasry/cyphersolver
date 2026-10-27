@@ -21,6 +21,9 @@ sys.path.insert(0, HERE)
 from reels import frame_score, letter_score  # noqa: E402
 
 LETTERS = False  # --letters: a second pass that flags only five-letter code-word / letter-cipher frames
+WORDS = False  # --words: a pass that flags every frame whose OCR names a cipher (for index cards and case files)
+WORD = re.compile(r'\b(ciphers?|cyphers?|ciphered|cyphered|decipher\w*|decypher\w*|cryptogra\w*|code (?:message|letter|'
+                  r'telegram|book)s?|in code|secret (?:ink|writing)|invisible ink|sympathetic ink)\b', re.I)
 
 OUT = os.path.join(HERE, 'out')
 BUCKET = 'https://nara-national-archives-catalog.s3.amazonaws.com/'
@@ -65,6 +68,16 @@ def scan_file(rg, key):
             except ValueError:
                 continue
             r = d.get('record', d)
+            if WORDS:
+                for o in r.get('digitalObjects') or []:
+                    t = o.get('extractedText') or ''
+                    m = WORD.search(t)
+                    if m:
+                        a = max(0, m.start() - 250)
+                        hits.append(dict(kind='word', **context(r), file=o.get('objectFilename'),
+                                         objectId=o.get('objectId'), word=m.group(0),
+                                         snippet=' '.join(t[a:m.end() + 250].split())))
+                continue
             if LETTERS:
                 for o in r.get('digitalObjects') or []:
                     t = o.get('extractedText') or ''
@@ -95,7 +108,7 @@ def scan_file(rg, key):
 
 def run(rg, workers):
     os.makedirs(OUT, exist_ok=True)
-    tag = f'rg_{rg}_letters' if LETTERS else f'rg_{rg}'
+    tag = f'rg_{rg}_words' if WORDS else f'rg_{rg}_letters' if LETTERS else f'rg_{rg}'
     out_p, done_p = os.path.join(OUT, f'{tag}.jsonl'), os.path.join(OUT, f'done_{tag}.txt')
     done = set(open(done_p).read().split()) if os.path.exists(done_p) else set()
     todo = [k for k in keys(rg) if k not in done]
@@ -127,6 +140,9 @@ if __name__ == '__main__':
     sys.stdout.reconfigure(encoding='utf-8')
     args = sys.argv[1:]
     workers = 4
+    if '--words' in args:
+        WORDS = True
+        args.remove('--words')
     if '--letters' in args:
         LETTERS = True
         args.remove('--letters')
