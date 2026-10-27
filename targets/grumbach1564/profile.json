@@ -1,0 +1,187 @@
+{
+ "schema_version": 1,
+ "target": "grumbach1564",
+ "title": "Grumbach letters and ciphers, HStA Dresden Loc. 4414/04 (catalogue 564)",
+ "documents": [
+  {
+   "id": "f304r",
+   "shelfmark": "HStA Dresden, 10024 Geheimer Rat, Loc. 04414/04, f. 304r (scan 0377)",
+   "year": 1553,
+   "country": "Germany",
+   "language": "German",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment on the page or in the file; Ortloff does not print this letter (not yet confirmed)."
+   },
+   "length": {
+    "tokens": 311,
+    "unit": "symbols",
+    "measured": true,
+    "file": "f304r_transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "f304r_transcription.txt, pass 2, from the archiv.sachsen.de full-size scan",
+    "image_quality": "good",
+    "notes": "Plus 23 two-digit code numbers and 9 Latin-script words. Several close sign pairs (ω/ϖ, η/y, σ/6, 8/ξ) still uncertain."
+   }
+  },
+  {
+   "id": "f307",
+   "shelfmark": "HStA Dresden, 10024 Geheimer Rat, Loc. 04414/04, ff. 307r-v (scans 0380-0381)",
+   "year": 1564,
+   "country": "Germany",
+   "language": "German",
+   "cleartext_in_document": "mostly clear",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "Clear letter with about ten cipher runs; no glosses."
+   },
+   "length": {
+    "tokens": "unknown",
+    "unit": "letters",
+    "measured": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "not yet transcribed (viewed only)",
+    "image_quality": "good",
+    "notes": "Latin-shaped substitute letters, mostly without word breaks."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "monoalphabetic",
+   "nomenclator"
+  ],
+  "summary": "f. 304r: substitution with word breaks in a Greek-like hand, two-digit code numbers and a few special signs, some clear words; homophones likely. The file holds about 20 keys of 1562-1566 (simple and homophonic alphabets, name signs, numbered word codes).",
+  "symbol_kind": "letters and symbols",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": "unknown"
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": true
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "kept",
+  "sibling_key": "Key A (ff. 279r/287r/305r) and the Baumgartner-Grumbach key (f. 302r) in the same file; both tested against f. 304r and ruled out",
+  "notes": "Ortloff vol. 4 p. 151 n. 2 lists the 21 alphabets of Bl. 279-306."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "unknown",
+   "where": "Ortloff, Geschichte der Grumbachischen Händel (1868-70), paraphrases the letters of this file and says the Gotha letters seized in 1567 were deciphered; no decipherment of f. 304r or f. 307 found yet",
+   "found": "before attempt",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "sibling key"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "Project-level: posed the catalogue task (pasted solve/564 brief). No target-specific intervention recorded.",
+  "tools": [
+   "lang de-1500s",
+   "solve304.py",
+   "seeded304.py"
+  ],
+  "models": [
+   "claude-opus-5-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-10-26",
+  "last_date": "2026-10-26"
+ },
+ "solution": [
+  {
+   "date": "2026-10-26",
+   "kind": "literature search",
+   "what": "Finding aids via DDB: GStA Rep. 39 Nr. 289 = Jan 1557, Nr. 58 = Mar-Jul 1552, neither digitised.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "literature search",
+   "what": "Ortloff 1868-70 on archive.org: the Dresden file is his Nr. 26; Bl. 279-306 = 21 cipher alphabets; letters paraphrased.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "literature search",
+   "what": "All 381 scans surveyed: ff. 1-278 clear, ff. 279-307 keys plus two cipher letters (f. 304r 1553, ff. 307r-v 1564); no decipherments.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "sibling key",
+   "what": "Key A and the Baumgartner key tested against f. 304r by hand.",
+   "result": "ruled out",
+   "technique": [
+    "key matching"
+   ]
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "transcription",
+   "what": "f. 304r transcribed (pass 1, then pass 2 with finer sign split).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "solver",
+   "technique": [
+    "simulated annealing",
+    "language-model scoring"
+   ],
+   "what": "One-to-one and homophonic annealing on de-1500s.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "crib",
+   "what": "und, -en, machen, sachen, knecht, ersparen, vernemen fix e n u d m c h s k t r p.",
+   "result": "partial",
+   "technique": [
+    "crib testing",
+    "manual reconstruction"
+   ]
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "solver",
+   "technique": [
+    "simulated annealing",
+    "language-model scoring"
+   ],
+   "what": "Crib-seeded anneal: best -2.9/char, crib words and a few more, not a reading; no control run yet.",
+   "result": "failed"
+  }
+ ],
+ "outcome": {
+  "method": "not solved",
+  "method_basis": "In progress: neither key nor text of f. 304r obtained yet; a crib core of about twelve letters is consistent. ff. 307r-v not yet attacked.",
+  "contribution": [
+   "transcription",
+   "catalogue correction"
+  ],
+  "class": "not read",
+  "key": "partial",
+  "fraction_read": 0,
+  "verification": [
+   "none"
+  ]
+ }
+}
