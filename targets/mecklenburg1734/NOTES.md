@@ -1,7 +1,8 @@
 # Hanoverian Privy Council, Mecklenburg commission, 1731-1761 (NLA HA Hann. 9g; Unsolved Catalogue no. 598) — NOTES
 
 Status: in progress. Every cipher passage opened so far (five files, 1731-1738) carries its contemporary
-decipherment written between the lines. One passage transcribed and read (Nr. 964 f. 6); the rest still to transcribe.
+decipherment written between the lines. One passage transcribed and read (Nr. 964 f. 6), one transcribed and read in
+part (Nr. 964 ff. 8r-8v, WAINUT section below; not closed); the rest still to transcribe.
 
 **Verdict so far: deciphered at the time.** The Hanover chancery wrote the decipherment above each line of figures, in
 the rescripts from London as well as in the reports from Vienna. The catalogue's question ("whether decipherments are
@@ -63,6 +64,14 @@ Hanoverian code). Group boundaries are not marked. No key table was built.
 - No group-by-group check of a decipherment against the figures; that needs the code (rebuildable from the
   interlinear pairs, which would also give the Hanoverian code of the 1730s).
 - Nr. 1647 (Steinberg, Copenhagen 1760-61) is a different decade and probably a different code; not opened.
+- Nr. 964 ff. 8r-8v (WAINUT section below), the five barred stretches (BAR1, BAR2, BAR3, tails of C5 and C12; about
+  72 of 461 figures, no decipherment over them): probably nulls, not unread text (see "Barred stretches" below).
+  Blocker: not attempted. Confirming it needs part of the code, rebuilt from the interlinear pairs of more passages
+  (the key-rebuild step below); if a stretch turns out to be text, the same rebuild would read it.
+- Nr. 964 ff. 8r-8v, uncertain words: the gloss over C3, the end of C2's gloss, the last word over C4, and in the
+  clear text "[?jetzt] [?hereinkommenden]", the word before C2, "[?hätten]", "[?begreiflich]" and the councillor's
+  name "[...] Rath [?Verporten]". Blocker: none from outside; another pass on the public images by a reader of
+  German chancery hands. This piece is not closed at "read in part": the words are workable.
 
 ## Escalation
 
@@ -71,13 +80,23 @@ Hanoverian code). Group boundaries are not marked. No key table was built.
   pages, transcribe each run with its interlinear decipherment, then align runs to decipherments to rebuild the code.
 - Prior art: not on DECODE (Archivportal-D sweep README); no printed edition of these Hann. 9g pieces found in the
   quick web check of 26 Oct 2026. The decipherment found is the contemporary one, not a modern one.
+- Nr. 964 ff. 8r-8v (WAINUT, 27 Oct 2026):
+  - [x] siblings: f. 6 in the same file compared; no shared figure strings, and no barred run recorded there
+  - [x] clear-pages: the clear text around each run used for the sense, including the null test of the barred
+    stretches; the clear draft on image 004 noted
+  - [ ] known-keys: no Hanoverian code of the 1730s found to try
+  - [x] print: one web search, no edition found; "von Knörre" probably identified (see Prior work below)
+  - [ ] key-rebuild: aligning glosses to figures across more passages (Nr. 97, 563, 1130, 1494) could rebuild part
+    of the code and settle whether the barred stretches are nulls
+  - [ ] retry: the uncertain words on another pass
 
 ## Contribution by WAINUT (27 Oct 2026)
 
 Contributed by WAINUT (https://github.com/WAINUTAI), a Dutch AI company. The work was done with AI language-model
 agents; the transcription was made with a vision-capable language model from the full-resolution NLA images, and
 every figure and gloss was re-read independently by a second agent. This section adds one cipher piece that the
-table above does not list: Nr. 964 ff. 8r-8v. The text above and the files in `texts/` are unchanged. The new files
+table above does not list: Nr. 964 ff. 8r-8v. The files in `texts/` are unchanged; above, the status line and the
+main Remaining gaps and Escalation sections gain the f. 8 entries (review fix). The new files
 are in `wainut/`, and `profile.json` gains one document (`964-f8`), its `outcome.texts` entry, one gap, two
 credits and dated solution steps; existing entries are untouched.
 
@@ -119,8 +138,9 @@ transcribed in this contribution, and the five unopened files stay unopened.
   intention known to a Privy Councillor whose name is not read with certainty ("[?Verporten]"). The ciphered parts
   are the names and the money proposal. This is the Vienna side of the matter in the rescript on f. 6 (6/17 Dec
   1734: Prussia should not take over raising the Mecklenburg contingent) and Erffa's answer to the rescript of 5 Dec
-  1734 (the clear draft of that rescript, to Erffa at Vienna, is on image 004). State: **read in part**, because of the five undeciphered stretches and
-  several uncertain clear-text words.
+  1734 (the clear draft of that rescript, to Erffa at Vienna, is on image 004). State: **read in part**, because of
+  several uncertain words (workable, see Remaining gaps) and the five barred stretches (probably nulls, see below).
+  The piece is not closed.
 - **Where the gloss "der von Knörre" sits.** It is written over C5's figures `2152220834 0590365 97`, which do not
   contain the Knörre figures. BAR2, which follows, does (`2159826533...13571`, as in C13 "der von Knörre"). Either the
   gloss was moved up for lack of space, or the code has two different groups for the same words. Open.
@@ -150,32 +170,38 @@ checked is whether it is consistent with repeats in the figures (`python wainut/
   6-figure matches come up about 4% of the time. So the London-Hanover rescripts and the Vienna-Hanover reports
   probably use different codes, or the code is strongly homophonic.
 
+### Barred stretches: probably nulls (review, 27 Oct 2026)
+
+The maintainer's review asked whether the barred stretches are nulls rather than unread text. Tested on the figures
+and the sense, without a key:
+
+- **The sense needs nothing there.** The glossed runs carry about 1.2 figures per gloss letter (390 figures for 316
+  letters; C1 1.11, C13 1.17, C8 1.13). At that rate the 72 barred figures would be about 60 letters, some 8-10 words.
+  Yet the clear text and the glosses read straight through every bar: "der von Knörre [C5 tail, BAR2] hat sich
+  gantz willig dazu erklärt"; "über ein gewisses Quantum an Geld übereinkämen [C12 tail, BAR3]." ends the
+  sentence. BAR1 is the weakest case, because the end of C2's gloss before it is not read.
+- **They are built from neighbouring real groups.** BAR2 (`215222 159826533 5 13571`) is C13's "der von Knörre"
+  string `2159826533`+`13571` with one 5 inserted, preceded by the `215222` that opens the stretch under C5's
+  "der von Knörre". BAR1 ends with `40546`, which opens C9; BAR3 opens with `16514`, which is in C11. The C5 and
+  C12 tails share no 5-figure string with any glossed run.
+- **f. 6 has none.** The London rescript on f. 6 (`texts/964_f6.txt`) records no barred run; all four runs are
+  glossed and the gloss reads through. That transcription was not made with bars in mind, so this is weak.
+- **Reading.** A stroke over figures that the decipherer did not gloss, where the sense is complete and the figures
+  copy real groups, is what recognised padding looks like. So the barred stretches are probably nulls. This is not
+  proved: it needs the code (key-rebuild), and the other passages (Nr. 97, 563, 1130) are not transcribed, so no
+  barred runs there were looked for. In the reading files the stretches stay marked as holes.
+
 ### Prior work
 
 The decipherment is the contemporary one, on the same pages. One web search (Reichshofrat Knorr 1734, Erffa,
 Bartenstein, Contingent) found no printed edition of this report and no identification of "von Knörre". A
-biographical entry for a Georg Christian (von) Knorr at Vienna turned up in the first pass; it was not opened or
-checked.
+biographical entry for a Georg Christian (von) Knorr at Vienna turned up in the first pass. Checked in review (one
+search, 27 Oct 2026): the Niedersächsische Bibliographie person record gives Georg Christian von Knorr (b. Oettingen
+1691, d. 22 Jan 1762), Hofrat in Brunswick-Wolfenbüttel service at Blankenburg from 1725, ennobled 1728, Wirklicher
+Reichshofrat in Vienna from 1730; the Francke-Halle database adds Wolfenbüttel envoy in Vienna. "RhsRaht von
+Knörre" in 1734 is therefore **probably** Georg Christian von Knorr; only these two short entries were seen.
 
-### Remaining gaps (Nr. 964 ff. 8r-8v)
-
-- The five barred stretches (BAR1, BAR2, BAR3, tails of C5 and C12; about 72 of 461 figures) - blocker:
-  no-key-material; no interlinear decipherment and no key. BAR2 repeats C13's "der von Knörre" figures.
-- Uncertain words: the gloss over C3, the end of C2's gloss, the last word over C4, and in the clear text
-  "[?jetzt] [?hereinkommenden]", the word before C2, "[?hätten]", "[?begreiflich]" and the councillor's name
-  "[...] Rath [?Verporten]" - blocker: none from outside; another pass on the images by a reader of German
-  chancery hands.
-- Nr. 97, 563, 1130 (passages listed above) and the five unopened files - blocker: not-attempted.
-
-### Escalation (Nr. 964 ff. 8r-8v)
-
-- [x] siblings: f. 6 in the same file compared; no shared figure strings
-- [x] clear-pages: the clear text around each run used for the sense; the clear draft on image 004 noted
-- [ ] known-keys: no Hanoverian code of the 1730s found to try
-- [x] print: one web search, no edition found
-- [ ] key-rebuild: aligning glosses to figures across more passages (Nr. 97, 563, 1130, 1494) could rebuild part of
-  the code and read the barred stretches
-- [ ] retry: the uncertain words on another pass
+Remaining gaps and escalation for this piece are in the main sections above.
 
 ### Files (in `wainut/`)
 

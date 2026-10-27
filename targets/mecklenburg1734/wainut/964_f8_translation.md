@@ -1,7 +1,8 @@
 # Hann. 9g Nr. 964 ff. 8r-8v: Erffa to George II, P.S. no. 13, Vienna 18 December 1734: English translation
 
 Translation of `964_f8_reading.md`, with the same holes. ⟨ ⟩ = deciphered between the lines at the time;
-`[... n figures]` = figures with a stroke above them and no decipherment on the page.
+`[... n figures]` = figures with a stroke above them and no decipherment on the page (probably nulls; see
+`../NOTES.md`, "Barred stretches").
 
 In accordance with Your Majesty's gracious rescript of the 5th, [?now] [?arrived], I have [...] ⟨Imperial Aulic
 Councillor von Knörre⟩ ⟨what [?has brought about] [...]⟩ [... 16 figures] concerning the raising of the Reich

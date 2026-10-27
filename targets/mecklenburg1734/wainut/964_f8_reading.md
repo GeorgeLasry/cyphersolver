@@ -2,7 +2,8 @@
 # Reading = clear text plus the contemporary interlinear decipherment of the figure runs (marked with angle brackets).
 # Line-by-line transcription in 964_f8.txt; figures only in 964_f8_cipher.txt; English in 964_f8_translation.md.
 # Holes: [...] not read; [?word] uncertain. [... n figures] marks figures with a stroke above them and no
-# decipherment on the page (three whole runs and the tails of C5 and C12). Spelling as on the page; abbreviations
+# decipherment on the page (three whole runs and the tails of C5 and C12; probably nulls, see ../NOTES.md
+# "Barred stretches", kept here as holes). Spelling as on the page; abbreviations
 # expanded (RhsRaht = Reichshofraht, RVCantzler = Reichs-Vice-Cantzler). Notes on doubtful words: ../NOTES.md,
 # section "Contribution by WAINUT (27 Oct 2026)".
 

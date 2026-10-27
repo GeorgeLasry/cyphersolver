@@ -117,7 +117,7 @@
   "key_order": "unknown",
   "word_division": "none",
   "doubled_letters": "unknown",
-  "notes": "Group boundaries not marked; no code table built."
+  "notes": "Group boundaries not marked; no code table built. On 964 ff. 8r-8v five stretches with a stroke above and no decipherment are probably nulls (padding copied from real groups); not proved."
  },
  "conditions": {
   "prior_solution": {
@@ -208,6 +208,21 @@
    "kind": "literature search",
    "what": "WAINUT contribution: one web search (Reichshofrat Knorr 1734, Erffa, Bartenstein, Contingent) found no printed edition of the report and no identification of 'von Knörre'.",
    "result": "failed"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "control",
+   "technique": [
+    "repeat/pattern analysis"
+   ],
+   "what": "WAINUT review fix: null test of the five barred stretches on 964 ff. 8r-8v: figures per gloss letter in the glossed runs (390/316, about 1.2) against the sense around each bar (complete without them); shared strings between barred and glossed runs (BAR2 = C13's Knörre string plus a 5; BAR1 ends with C9's 40546; BAR3 opens with C11's 16514); f. 6 records no barred run. Probably nulls, not proved without the code.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "literature search",
+   "what": "WAINUT review fix: one web search for Georg Christian von Knorr: Niedersächsische Bibliographie person record (1691-1762; Wolfenbüttel Hofrat 1725, ennobled 1728, Wirklicher Reichshofrat in Vienna from 1730) and a Francke-Halle entry (Wolfenbüttel envoy in Vienna). 'RhsRaht von Knörre' (1734) is probably he.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -260,7 +275,7 @@
     "language": "de",
     "state": "read in part",
     "summary": "Hanover's envoy in Vienna reports that the Aulic Councillor von Knörre will help, and will put to Vice-Chancellor Count Metsch and Bartenstein that Mecklenburg should pay the Emperor a sum of money instead of raising its contingent for the Reich army (War of the Polish Succession). The names and the money proposal are in cipher, deciphered between the lines at the time; five barred stretches of figures carry no decipherment.",
-    "note": "Contributed by WAINUT (27 Oct 2026). Read from the contemporary interlinear decipherment; no key exists, so not checked group by group. The barred stretches (BAR1, BAR2, BAR3 and the tails of C5 and C12, about 72 of 461 figures) are not deciphered on the page."
+    "note": "Contributed by WAINUT (27 Oct 2026). Read from the contemporary interlinear decipherment; no key exists, so not checked group by group. In progress, not closed: several uncertain words are workable on another pass. The barred stretches (BAR1, BAR2, BAR3 and the tails of C5 and C12, about 72 of 461 figures) are not deciphered on the page and are probably nulls (NOTES, 'Barred stretches'); they stay marked as holes."
    }
   ],
   "gaps": [
@@ -275,9 +290,14 @@
     "detail": "rebuildable by aligning runs with their interlinear decipherments"
    },
    {
-    "item": "964 ff. 8r-8v: the five barred stretches of figures (BAR1, BAR2, BAR3, tails of C5 and C12)",
-    "blocker": "no-key-material",
-    "detail": "no interlinear decipherment over them and no key; BAR2 repeats C13's 'der von Knörre' figures (2159826533) and shares 215222 with the start of the C5 stretch under 'der von Knörre'; BAR1 ends with 40546, which also opens C9 ('man mit Ihr. Kayserl. Mayt.'), but a 5-figure match between two runs can be chance"
+    "item": "964 ff. 8r-8v: the five barred stretches of figures (BAR1, BAR2, BAR3, tails of C5 and C12), probably nulls",
+    "blocker": "not-attempted",
+    "detail": "no interlinear decipherment over them. Probably nulls, not text: the clear text and glosses read straight through every bar, while at the glossed runs' 1.2 figures per letter the 72 figures would be some 60 letters; BAR2 is C13's 'der von Knörre' string (2159826533, 13571) with a 5 inserted, after the 215222 that opens the C5 stretch; BAR1 ends with C9's 40546, BAR3 opens with C11's 16514. Confirming needs part of the code, rebuilt from the interlinear pairs of more passages (key-rebuild, workable)"
+   },
+   {
+    "item": "964 ff. 8r-8v: uncertain words (gloss over C3, end of C2's gloss, last word over C4; in the clear text '[?jetzt] [?hereinkommenden]', the word before C2, '[?hätten]', '[?begreiflich]', the councillor's name '[?Verporten]')",
+    "blocker": "not-attempted",
+    "detail": "workable: another pass on the public images by a reader of German chancery hands; the piece is not closed at 'read in part'"
    }
   ],
   "fraction_read": "unknown",
