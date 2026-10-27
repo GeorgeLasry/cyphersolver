@@ -1,5 +1,6 @@
 {
  "keys": [
+{"id": "k-murray1797", "label": "Murray's legation code (The Hague, 1797-1801), values rebuilt here", "kind": "rebuilt here", "by": "cyphersolver", "year": 1797, "note": "Values taken from the clerks' interlinear decodes of Murray's 1797-98 despatches (NARA M42 reel 4) and Wagner's decode of the 18 May 1801 postscript; six checked on the frames (26 Oct 2026)."},
 {"id": "k-mountflorence1801", "label": "Mountflorence's one-part code (Paris, 1801), rebuilt here", "kind": "rebuilt here", "by": "cyphersolver", "year": 1801, "note": "25 values from the 18 March 1801 letter: 15 letters from the spelled names Luneville, Parma, Tuscany, Dupont, 10 words placed by the alphabetical order (26 Oct 2026)."},
 {"id": "k-silva-garcilaso", "label": "Alonso de Silva - Garcilaso de la Vega cipher (RAH 9/15 ff. 11-14v)", "kind": "archive key", "by": "Catholic Monarchs' secretariat", "year": 1496, "note": "Alphabet, name list and a large code of VC/CVC groups; on DECODE as key record R9822 (BRAH 9/15)."},
 {"id": "k-rah915-f16", "label": "Rome cipher, RAH 9/15 f. 16", "kind": "archive key", "by": "Catholic Monarchs' secretariat", "year": 1496, "note": "Latin-letter alphabet with superscript marks and a Roman name list (pope, College, cardinals); Galende assigns it to fray Juan de Mauleon. DECODE R9823/R9824."},
@@ -2339,6 +2340,7 @@
 {"id": "k-wotton1585-rebuilt", "label": "Wotton 1585, rebuilt here", "kind": "rebuilt here", "by": "cyphersolver", "year": 1585, "note": "Key recovered here from the contemporary decipherment or clear copy beside the cipher (targets/wotton1585/NOTES.md)."}
  ],
  "links": [
+{"key": "k-murray1797", "target": "murray1801", "how": "rebuilt from", "note": "all six groups of the postscript decoded in the sibling despatches; 406 = arm three times"},
 {"key": "k-mountflorence1801", "target": "mountflorence1801", "how": "rebuilt from", "note": "pattern words and the alphabetical order of the code"},
 {"key": "k-schoning1783", "target": "schoning1783", "how": "rebuilt from", "note": "alphabet from the clear copies, code from glosses and the 14 Dec 1783 decipherment"},
 {"key": "k-yvoy-london1797", "target": "yvoy1797", "how": "rebuilt from", "note": "voted from 238 glossed runs on 66 pages"},
@@ -3723,6 +3725,7 @@
   }
  ],
  "source_links": [
+{"source": "s-cyphersolver", "key": "k-murray1797"},
 {"source": "s-cyphersolver", "key": "k-mountflorence1801"},
 {"source": "s-cyphersolver", "key": "k-schoning1783"},
 {"source": "s-cyphersolver", "key": "k-reede1789"},

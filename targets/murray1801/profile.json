@@ -1,0 +1,247 @@
+{
+ "schema_version": 1,
+ "target": "murray1801",
+ "title": "William Vans Murray to James Madison, Paris, 26 June 1801 (No. 5, duplicate), coded postscript 'As to ... not a Word has yet been said', Founders Madison/02-01-02-0456",
+ "documents": [
+  {
+   "id": "no5-26jun1801",
+   "read": "read",
+   "shelfmark": "NARA RG 59, Diplomatic Despatches, Netherlands, vol. 4 = M42 reel 5 frames 0397-0398 (naId 188770447)",
+   "date": "26 Jun 1801",
+   "year": 1801,
+   "country": "United States",
+   "route": "Paris -> Washington",
+   "language": "English",
+   "cleartext_in_document": "mostly clear",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment of this postscript; the Madison editors (PJM-SS 1:353) report it 'not deciphered (key not found)'.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 6,
+    "distinct": 6,
+    "unit": "code groups",
+    "measured": true,
+    "file": "ct.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "NARA M42 reel 5 frame 0398 (left page), Murray's hand",
+    "image_quality": "good",
+    "notes": "The last group was first read 1075 and corrected to 1175 at 4x (same '11' as in 1136 on the line)."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "code",
+   "syllabic"
+  ],
+  "summary": "Murray's numbered legation code of 1797-1801 (about 1-1600 groups for words and syllables, groups joined by dots; the = 536).",
+  "symbol_kind": "digits",
+  "digit_groups": {
+   "width": "1-4",
+   "separation": "dots"
+  },
+  "distinct_symbols": 6,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": "unknown",
+   "kinds": [
+    "syllables",
+    "common words",
+    "names"
+   ],
+   "unread_groups": 0
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "none",
+  "doubled_letters": "unknown",
+  "sibling_key": "Murray's 1797-98 despatches to Pickering in the same code with a clerk's interlinear decode (DD Netherlands vol. 3 = M42 reel 4) and his 18 May 1801 P.S. decoded by Wagner (M42 reel 5 f.0372); used.",
+  "notes": "distinct_symbols counts this letter's groups. Homophones seen in the siblings: revolution = 1194.1093.1224.1365 and 1194.738.13. No key sheet known; pairs.tsv lists the six values with their evidence."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "Madison Papers abstract (PJM-SS 1:353, 1986): 'not deciphered (key not found)'; no decode on the duplicate; original copy not located.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "cleartext context",
+   "sibling key"
+  ],
+  "attack": "sibling key",
+  "human_role": "Pasted the catalogue no. 481 task brief (from the project's solve page) into the session; no target-specific intervention.",
+  "tools": [
+   "dl.py (NARA frame download)",
+   "sheets.py, codescore.py (contact sheets, frame scoring)",
+   "PIL crops",
+   "subagents for frame scanning"
+  ],
+  "models": [
+   "claude-opus-5-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-10-26",
+  "last_date": "2026-10-26"
+ },
+ "solution": [
+  {
+   "date": "2026-10-26",
+   "kind": "literature search",
+   "what": "Founders abstract 02-01-02-0456 and the 26 Murray->Madison 1801 letters: only the 7 May letter (18 May P.S.) is coded and decoded; letter dated Paris, not The Hague.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "access",
+   "what": "Found DD Netherlands vol. 4 on the NARA catalogue (naId 188770447, M42 reel 5) and downloaded all frames; the letter is frames 0397-0398.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "transcription",
+   "what": "Transcribed the coded P.S.: six groups 536 406 1004 264 1136 1075 (last group later corrected to 1175).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "sibling key",
+   "what": "Read Wagner's decode of the 18 May 1801 P.S. (f.0372): 536 = the, 247 = Consuls, 1285.1181 = Gaudin, 712.621.1161 = Tribunate; 536 confirms the same code.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "access",
+   "what": "Looked for the original copy (sent via Le Havre) in DD France, M34 reel 9 (naId 188669701): it is the 1800 envoys' letter-book, no 1801 Murray despatch.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "sibling key",
+   "what": "Scanned DD Netherlands vol. 3 (M42 reel 4) frames 0018-0211 with a subagent: Murray's 1797-98 coded despatches with a clerk's interlinear decode, about 150 pairs.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "hypothesis",
+   "what": "Matched the groups against the pairs: 1004 = -ed (intended, worked), 264 = neutral (neutral ministers), 1136 = -i- and 1175 = -ty (majority); proposed 406 = arm, 'the armed neutrality'.",
+   "result": "worked",
+   "technique": [
+    "key matching",
+    "contextual inference"
+   ]
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "verification",
+   "what": "Re-read the last group at 4x: 1175, not 1075. Checked 264.88 (f.0039R), 279.1136.1175 and 948.164.1004 (f.0167R) on the frames.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "prediction",
+   "what": "Searched vol. 3 frames 0212-0421 for group 406: decoded 406.1503s armies, 1086.406.1004 alarmed (f.0224R), 406.517 arming (f.0257L); 406.1004 armed (f.0365R). The prediction 406 = arm is confirmed.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "reading",
+   "what": "P.S. As to the armed neutrality not a Word has yet been said (reading.txt, 6/6 tokens, all grade C).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Statistical validation (docs/_validate.py): 6 tokens, 6 types, en-modern order 4: reading -2.496 per letter; Verdict: too short.",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "validation": {
+   "date": "2026-10-26",
+   "model": "en-modern",
+   "file": "validation.tsv",
+   "tokens": 6,
+   "types": 6,
+   "tokens_per_type": 1.0,
+   "score": -2.496,
+   "nulls": {},
+   "verdict": "too short",
+   "notes": "claimed per-occurrence score -2.496; polyphony 0.0; 0 unread tokens left out; annealer on the real text from random keys reached n/a"
+  },
+  "method": "key recovered based on adjacent plaintext",
+  "method_basis": "The six code values were recovered from the contemporary interlinear decodes of Murray's other despatches in the same series (DD Netherlands vols. 3-4, M42 reels 4-5); 406 = arm was predicted from context and then found decoded three times.",
+  "contribution": [
+   "transcription",
+   "key recovered",
+   "catalogue correction"
+  ],
+  "class": "read",
+  "key": "partial",
+  "fraction_read_method": "measured",
+  "fraction_read_source": "reading.txt: 6 cipher tokens, 6 with values",
+  "fraction_read": 1.0,
+  "codes_open": {
+   "open": 0,
+   "total": 6,
+   "tokens_open": 0
+  },
+  "grades": {
+   "H": 0,
+   "C": 6,
+   "M": 0,
+   "I": 0
+  },
+  "verification": [
+   "contemporary decipherment",
+   "historical consistency"
+  ],
+  "notes": "Key is partial: only the six groups of this letter (and the ~150 sibling pairs in scan notes, unverified) are rebuilt, not Murray's whole code. Catalogue correction: dated Paris, not The Hague; last group 1175.",
+  "credits": [
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "State Department clerks' and Jacob Wagner's interlinear decodes of Murray's 1797-1801 despatches (M42 reels 4-5)"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "no5-26jun1801",
+    "label": "Postscript of No. 5, 26 June 1801",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "reading": "plaintext.txt",
+    "summary": "Murray, in Paris to exchange the ratifications of the Convention of 1800, tells Madison that in the conferences with the French ministers nothing has yet been said about the armed neutrality, the northern powers' league of 1800-01.",
+    "language": "en",
+    "read_share": 1.0,
+    "state": "read",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-26",
+     "note": "One English sentence that reads as sense throughout; all six code values attested in contemporary decodes of the same code."
+    }
+   }
+  ],
+  "key_file": "pairs.tsv"
+ }
+}

@@ -1890,6 +1890,11 @@ PAGES = [
          blurb='An American agent in Paris reported in code that Spain had ceded Louisiana to France. The Madison Papers printed the numbers with &ldquo;key not found&rdquo;. The one-part code was rebuilt here from four names spelled letter by letter (Lun&eacute;ville, Parma, Tuscany, Dupont) and the alphabetical order of the code, and all 39 groups decode; the NARA microfilm confirmed a figure the decipherment predicted.',
          quote='&ldquo;Spain has ceded to France, not Florida, but the Mississippi, with all its Dependencies&rdquo;',
          rights='National Archives (NARA), RG 59, microfilm T1'),
+    dict(slug='murray1801', label='Murray to Madison 1801', year='1801', y=1801.48, place='Paris &rarr; Washington', st='solved', stt='key recovered',
+         title='William Vans Murray to James Madison, Paris, 26 June 1801',
+         blurb='Murray, in Paris to exchange the ratifications of the Convention of 1800, ended his despatch No. 5 with six code groups that the Madison Papers left undecoded (&ldquo;key not found&rdquo;). Every group is decoded between the lines in Murray&rsquo;s own 1797&ndash;98 despatches from The Hague in the same code: 406 as <i>arm</i> in <i>armies</i>, <i>alarmed</i> and <i>arming</i>, 264 as <i>neutral</i>, 1004 as <i>-ed</i>.',
+         quote='&ldquo;As to the armed neutrality not a Word has yet been said&rdquo;',
+         rights='Microfilm images: National Archives and Records Administration'),
     dict(slug='r2232', label='Wolff to Wilhelmina 1801', year='1801', y=1801.6, place='The Hague &rarr; the Princess of Orange', st='solved', stt='read',
          title='Wolff to Princess Wilhelmina of Orange, 25 July 1801',
          blurb='A three-page letter to the exiled Princess of Orange with its substance in a homophonic cipher of row numbers and superscripts, listed on DECODE with no decipherment. The key Wolff sent six weeks later is the next record, R2233; applied unchanged, it decrypts the whole letter. A royalist claims authorship of a 1798 invasion plan and asks for British half-pay.',
@@ -2499,6 +2504,7 @@ IMAGES['hesse1824'] = ('hesse1824_lead.jpg', 'The heading &ldquo;Snell an A?ud&r
 IMAGES['r2234'] = ('r2234_lead.jpg', 'The head of the letter: section capital D, the date in clear, then one line per alphabet', 'Koninklijk Huisarchief, The Hague, via DECODE R2234')
 IMAGES['marburg1635'] = ('marburg1635_lead.jpg', 'The cipher lines with the contemporary gloss over the first four', 'Hessisches Staatsarchiv Marburg, via DECODE R4500')
 IMAGES['mountflorence1801'] = ('mountflorence1801_lead.jpg', 'The letter of 18 March 1801: the coded paragraph, then clear news of prize cases and Malaga', 'National Archives (NARA), RG 59, Despatches from US Consuls in Paris, microfilm T1 roll 1, frame 0097, via the National Archives Catalog')
+IMAGES['murray1801'] = ('murray1801_lead.jpg', 'Frame 0398: Murray&rsquo;s postscript, &ldquo;P.S. As to 536. 406. 1004. 264. 1136. 1175. not a Word has yet been said&rdquo;, beside his signature', 'National Archives and Records Administration, RG 59, Despatches from US Ministers to the Netherlands, vol. 4, microfilm M42 reel 5, frame 0398 (left page), via catalog.archives.gov NAID 188770447')
 IMAGES['r2232'] = ('r2232_lead.jpg', 'The opening of the letter: clear text, then the numbers with superscript indices', 'Koninklijk Huisarchief, The Hague, via DECODE R2232')
 IMAGES['r1942'] = ('r1942_lead.jpg', 'Hogendorp&rsquo;s ciphered dispatch no. 12 of 5 July 1803: the clear address to Maarten van der Goes followed by the marked numerical groups', 'Nationaal Archief, The Hague, via DECODE R1942')
 IMAGES['vizani1637'] = ('vizani1637_lead.jpg', 'The first two cipher lines of the letter, f. 292r: a row of look-alike symbols divided by strokes, beginning with the word sign for <em>il</em>', 'Biblioth&egrave;que nationale de France, Fran&ccedil;ais 16158 f. 292r, via Gallica')
