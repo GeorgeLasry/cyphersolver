@@ -1,5 +1,7 @@
 {
  "keys": [
+{"id": "k-joao-nisa-1642", "label": "João IV–Nisa alphabet A, 1642-44, rebuilt here", "kind": "rebuilt here", "by": "cyphersolver", "year": 1642, "note": "Latin-letter substitution with homophones for s and u/v, ⊕ = Castile, ft = King of France; rebuilt from the clear copies of letters 8, 9 and 13 in ANTT MSLIV 1017 (targets/joao1642/key.py)."},
+{"id": "k-joao-nisa-1644", "label": "João IV–Nisa alphabet B, 1644-45, rebuilt here", "kind": "rebuilt here", "by": "cyphersolver", "year": 1644, "note": "Greek-shaped signs, letter-for-letter substitution; rebuilt from the volume's list of deciphered passages (m0276) against Cartas 187 and 212 (targets/joao1642/key.py KEY_B)."},
 {"id": "k-ennery1765", "label": "Martinique key for d'Ennery, 1765 (printed form)", "kind": "archive key", "by": "Secretariat of State for the Navy", "year": 1765, "note": "ANOM COL C8 A 67 f. 178: printed two-part nomenclator form, 800 entries, numbers filled in by hand, encipher and decipher tables."},
 {"id": "k-windward1761", "label": "Windward Islands code of 1761 (La Touche and La Riviere), values rebuilt here", "kind": "rebuilt here", "by": "cyphersolver", "year": 1761, "note": "Two-part numerical nomenclator, values 11-696. About 110 values from the interlinear decipherment of La Riviere's letter of 21 Aug 1761 (ANOM C8 A 63 f. 208), extended from context in the letter of 12 June 1761 (27 Oct 2026); key1761.tsv grades every value."},
 {"id": "k-hessen1652", "label": "Hesse-Darmstadt cipher alphabets of Georg II and Cardinal Friedrich (HStAD D 4 Nr. 141/2)", "kind": "archive key", "by": "Hesse-Darmstadt chancery", "year": 1652, "note": "Archive key file with alphabets of 1652 and 1658."},
@@ -2349,6 +2351,8 @@
 {"id": "k-thomson-we007-jay", "label": "Thomson code, Jay's copy (Weber WE007), 1781", "kind": "archive key", "by": "Charles Thomson", "year": 1781, "note": "Printed form with numbers by hand, Columbia RBML Jay Papers ldpd:50144; headed as modified by Livingston 6 July 1782; carries the be-he 600-605 additions in manuscript."}
  ],
  "links": [
+{"key": "k-joao-nisa-1642", "target": "joao1642", "how": "rebuilt from", "note": "rebuilt from the clear copies of letters 8, 9 and 13; read letters 9, 13, 44, 49, 56"},
+{"key": "k-joao-nisa-1644", "target": "joao1642", "how": "rebuilt from", "note": "rebuilt from m0276 against the 1645 siblings; read letter 153"},
 {"key": "k-windward1761", "target": "mercier1761", "how": "rebuilt from", "note": "rebuilt from the interlinear decipherment of the sibling letter C8 A 63 f. 208, extended from context"},
 {"key": "k-erbach1666", "target": "erbach1653", "how": "rebuilt from", "note": "verse rebuilt from about eighty crib cells; all 610 pairs of the three 1666 letters read with it unchanged, 19 writer's slips"},
 {"key": "k-jefferson-code11", "target": "jefferson1787", "how": "rebuilt from", "note": "key.tsv; checks the editors' bracketed readings of 4 July 1787 and later"},
@@ -3741,6 +3745,8 @@
   }
  ],
  "source_links": [
+{"source": "s-cyphersolver", "key": "k-joao-nisa-1642"},
+{"source": "s-cyphersolver", "key": "k-joao-nisa-1644"},
 {"source": "s-cyphersolver", "key": "k-windward1761"},
 {"source": "s-cyphersolver", "key": "k-erbach1666"},
 {"source": "s-cyphersolver", "key": "k-jefferson-code11"},
@@ -4417,6 +4423,7 @@
   "urquhart": "No cipher key: a rule-based word puzzle, read by applying the stated rule (see the write-up)."
  },
  "tried": [
+{"key": "k-joao-nisa-1642", "target": "joao1642", "note": "alphabet A and its shifts do not read letter 153 (alphabet B)"},
 {"key": "k-ennery1765", "target": "mercier1761", "note": "does not fit: 614 = voisins, de = 428, values up to 800 while the letter stops at 696"},
 {"key": "k-jefferson-code11", "target": "legation1788", "note": "tried on Carmichael's Code No. 13 numbers: does not fit (597 = freedom, 223 = trouble in Code No. 11)"},
 {"key": "k-hessen1652", "target": "erbach1653", "note": "viewed; a different system (cipher alphabets, not a verse key)"},
