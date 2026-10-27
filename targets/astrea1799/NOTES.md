@@ -1,6 +1,9 @@
 # Rozier to Talleyrand, an VII (Oct-Nov 1798): the cipher letters of the Gibraltar packet, sent to Adams in March 1799
 
-Status: contributed by WAINUT (27 Oct 2026). A pointer, not a reading. The ciphertext has not been seen: it is not
+Status: in progress
+
+Blocked on images: the text is only on MHS microfilm reel 393, which makes it workable once the reel is
+seen. Contributed by WAINUT (27 Oct 2026). A pointer, not a reading. The ciphertext has not been seen: it is not
 online. In June 1799 Secretary of State Timothy Pickering checked the coded letters against Rozier's own cypher and
 plain copies and summarised their content. That check is the only reading on record. No plaintext is in print.
 The site page and the ledger rows are left to the maintainer.
