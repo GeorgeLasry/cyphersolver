@@ -1,0 +1,42 @@
+== 1. Rule control (Ostwald & Weierud, Fig. 2 and Figs. 5-6)
+  Fig. 2 key: PE -> LW, paper LW
+  Fig. 2 key: RT -> AF, paper AF
+  Fig. 2 key: AF -> IY, paper IY
+  Fig. 2 key: LW -> HX, paper HX
+  Fig. 2: 4/4 as in the paper
+  17 Sep 1941, 28 letters: 24/28 letters agree with the form's plaintext
+    decrypted: sqarfxplachxplachxisdpurueui
+    form:      sqarfxplachxplachxistzurueqb
+    pair 11: cipher OO, the form's plaintext gives OL (one-letter garble: True)
+    pair 14: cipher AZ, the form's plaintext gives NZ (one-letter garble: True)
+  17 Sep 1941, 126 letters: 117/126 letters agree with the form's plaintext
+    decrypted: ceostufxhenningxhenningxnaqrxgereateanborderunghwttebiuboberinspxreimannxreimannxeingetrfwfenxkradmelderniqtdaxplachxssxbfarfx
+    form:      ceostufxhenningxhenningxnaqrxgereateanborderungheutebilxobeginspxreimannxreimannxeingetroffenxkradmelderniqtdaxplachxssxsqarfx
+    pair 25: cipher GV, the form's plaintext gives YV (one-letter garble: True)
+    pair 28: cipher KZ, the form's plaintext gives HZ (one-letter garble: True)
+    pair 30: cipher EN, the form's plaintext gives EW (one-letter garble: True)
+    pair 45: cipher SY, the form's plaintext gives SG (one-letter garble: True)
+    pair 61: cipher BF, the form's plaintext gives FF (one-letter garble: True)
+
+== 2. Lengths (cells as printed; '-' = missing or illegible letter)
+  Nr. 088:   38 cells,   35 letters, 3 '-', 1 J
+  Nr. 090:   98 cells,   96 letters, 2 '-', 0 J
+  Nr. 091:   88 cells,   88 letters, 0 '-', 0 J
+  Nr. 092:  126 cells,  126 letters, 0 '-', 0 J
+  Nr. 094:  148 cells,  143 letters, 5 '-', 0 J
+  Nr. 095:   74 cells,   74 letters, 0 '-', 1 J
+  Nr. 096:   62 cells,   62 letters, 0 '-', 0 J
+  Nr. 097:   60 cells,   59 letters, 1 '-', 0 J
+  total 694 cells
+
+== 3. Repeated strings of 6 or more letters (start positions from 0, with parity)
+  HGZVUULV     Nr. 090@48 (even)   Nr. 092@70 (even)   same parity
+  VZHGZVUU     Nr. 091@28 (even)   Nr. 092@68 (even)   same parity
+  YRTUHBYF     Nr. 094@4 (even)   Nr. 094@12 (even)   same parity
+  YRZOZHVL     Nr. 096@54 (even)   Nr. 097@28 (even)   same parity
+  RODVLMQ      Nr. 090@85 (odd)   Nr. 091@75 (odd)   same parity
+  HGZVUU       Nr. 090@48 (even)   Nr. 091@30 (even)   same parity
+  WMTQMT       Nr. 096@11 (odd)   Nr. 096@21 (odd)   same parity
+  ZOZHVL       Nr. 096@56 (even)   Nr. 097@54 (even)   same parity
+  ZOZHVL       Nr. 097@30 (even)   Nr. 097@54 (even)   same parity
+  9 of 9 repeats start at the same parity
