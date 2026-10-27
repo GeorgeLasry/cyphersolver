@@ -1,0 +1,5 @@
+# Copenhagen, 6 March 1675: Copenhagen to Just Høeg (The Hague), cipher passages in context
+
+Biermann copybook, img 084–085 · pp. 80–80v. Text deciphered from the cipher in context; [word] = code word resolved; {x} probable; ‹x› unresolved; […] clear text not reproduced.
+
+Vostre Relation du 8 de ce mois a esté leue à Sa Majesté, qui y a veu ce que Mrs les Estats vous ont fait insinuer touchant la requisition qu’ils ont resolu de faire à Sa [Majesté] contre la [Suède]. M. Don Juan Major, Ministre d’Espagne icy, avoit deja fait la mesme chose de la part du Roy son maistre quelques {jo}urs aupa{ra}vant, en tes{mo}ignant que ‹94› avoit declaré au ministre de [Suède] en [Espagne] qu’elle ne pouvoit considerer autrement l’entrée des troupes suédoises dans les Estats de [Brandebourg] que comme une infraction de la paix de Westphalie, et se trouvoit par consequent obligée d’assister ledit electeur. […] la signature du projet […] n’a pour bout que de laisser et maintenir toujours les choses en negotiation dans l’esperance de gagner toujours temps et d’amuser les alliez par ce moyen.

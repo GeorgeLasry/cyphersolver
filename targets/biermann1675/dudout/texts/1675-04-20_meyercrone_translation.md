@@ -1,0 +1,3 @@
+# Copenhagen, 20 April 1675: English translation
+
+The project to be given to Mr de Terlon is fully ready and will be handed over in a few days, although the matter meets with opposition, which Griffenfeld, it is to be hoped, will overcome by the dexterity with which he handles minds and affairs. A new one will also be given to the Swedish ambassador extraordinary. As for the subsidies Spain and the States have just paid His Majesty, suffice it to say that this payment has changed nothing in his feelings, which remain towards France what they have always been, as the project for Terlon will show.

@@ -1,0 +1,3 @@
+# Copenhagen, 6 March 1675: English translation
+
+His Majesty has seen in your report of the 8th what the States have intimated to you about the requisition they have resolved to address to him against Sweden. Don Juan Major, the Spanish minister here, had already done the same on his king’s behalf a few days earlier, stating that ‹94› (the Queen Regent?) had declared to the Swedish minister in Spain that she could regard the entry of Swedish troops into the Brandenburg lands only as a breach of the peace of Westphalia, and was therefore bound to assist the Elector. The signing of the Swedish project only aims to keep things under negotiation, to gain time and to amuse the allies.

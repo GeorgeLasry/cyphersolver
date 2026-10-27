@@ -1,0 +1,3 @@
+# Copenhagen, 23 March 1675: English translation
+
+[Terlon has been led to hope for articles of a future alliance with France.] His Majesty nonetheless wishes you to go on using the same arguments as hitherto at the court where you are, and above all to make it understood there how little the Swedish ambassador’s demands match the fine fruits he had first spread about from his mission, and the clear and solid reasons His Majesty has to believe that the eagerness he shows to conclude a “just and reasonable” treaty here is hardly sincere, since there is little likelihood that His Majesty can accept his conditions.

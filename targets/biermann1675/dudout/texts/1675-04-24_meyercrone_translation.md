@@ -1,0 +1,3 @@
+# Copenhagen, 24 April 1675: English translation
+
+I wrote to you that a project would soon be given to Terlon, and Griffenfeld had it quite ready; but when it was debated in the council not all its members were of one mind, so it has not yet been handed over. Griffenfeld nonetheless hopes soon to overcome the difficulties that have prevented it. Meanwhile he has given the ‹commissioners› negotiating with the Swedish ambassador another project to hand to him, which His Majesty has had softened in several places out of regard for the King of France’s views, so much that the ambassador should be satisfied.

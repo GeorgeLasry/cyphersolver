@@ -1,0 +1,5 @@
+# Copenhagen, 11 May 1675: Copenhagen to Henning Meyercrone (Paris), cipher passages in context
+
+Biermann copybook, img 181–182 · pp. 177–178. Text deciphered from the cipher in context; [word] = code word resolved; {x} probable; ‹x› unresolved; […] clear text not reproduced.
+
+[…] nous avons aussy eu quelques avis de Hollande […] que ceux-cy auroient passé quelque accord avec les alliés au sujet de la guerre contre la [Suède] ; mais comme i{l}s n’en ont rien ma{nd}é eux-mesmes, et que telle chose seroit directement contraire à leurs [ordre]s, {ils} ont de la peine à y adjouter foy, et il est à souhaitter pour leur propre avantage que cela ne soit pas ; dequoy nous sçaurons la certitude par l’ordinaire prochain. Cependant si en effect cela estoit arrivé, ce que vous pourrez avoir apris auparavant la reception de celle-cy, comme un tel incident changeroit fort la face des affaires, et que l’on ne sçait si vostre presence seroit encores agreable au [Roy] à l’armée, Sa [Majesté] remet entierement à vostre propre choix d’y aller ou de n’y aller pas, et approuvera la resolution que vous prendrez, quelle qu’elle puisse estre.

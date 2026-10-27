@@ -1,0 +1,3 @@
+# Copenhagen, 11 May 1675: English translation
+
+We have news from Holland that our ministers there are said to have made an agreement with the allies about the war against Sweden. Since they have written nothing of it themselves and such a thing would be directly contrary to their orders, it is hard to believe, and for their own sake it is to be hoped it is not so; the next post will tell. If it has happened, however — which you may have learned before receiving this —, since such an incident would greatly change the face of affairs and it is uncertain whether your presence would still be agreeable to the King of France at the army, His Majesty leaves it entirely to you whether to go or not and will approve whatever you decide.

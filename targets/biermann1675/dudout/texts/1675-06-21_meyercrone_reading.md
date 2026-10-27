@@ -1,0 +1,5 @@
+# Copenhagen, 21 June 1675: Copenhagen to Henning Meyercrone (Paris), cipher passages in context
+
+Biermann copybook, img 240–241 · pp. 235v–236v. Text deciphered from the cipher in context; [word] = code word resolved; {x} probable; ‹x› unresolved; […] clear text not reproduced.
+
+[…] estime que l’avis que je vous ay donné depuis ce temps pour le mariage entre nostre princesse et le ‹145›{roi de Suède}, aussy bienque l’[article] qui a esté delivré en mesme temps à [Terlon], dont je vous ay aussy envoyé la copie, auront achevé de lever à la cour où vous estes tous les ombrages qu’elle pourroit avoir conceue de ce qui s’est passé à [la Haye]. C’est l’estat où se trouvent encores les affaires icy, et je ne vois pas grande apparence qu’il y arrive sitost quelque revolution considerable, à moins que [Gottorp], contre l’esperance que l’on en a voulu, par sa mauvaise conduite donner lieu à quelque changement. En tout cas, si Sa Majesté prennoit d’autres resolutions, je ne doute point que vous n’en soyez averti de bonne heure.
