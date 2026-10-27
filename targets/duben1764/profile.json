@@ -1,0 +1,408 @@
+{
+ "schema_version": 1,
+ "target": "duben1764",
+ "title": "C.W. von Düben, St Petersburg, to N.P. Gyldenstolpe and Queen Lovisa Ulrika, 1764-1765: numeric cipher letters filed with clear drafts (Riksarkivet K 259; Unsolved Catalogue no. 450)",
+ "documents": [
+  {
+   "id": "K259-1764-03-06",
+   "read": "not read",
+   "shelfmark": "Riksarkivet, Kungliga arkiv, Drottning Lovisa Ulrika, Utgångna skrivelser, SE/RA/710003/02/008/b/K 259, images A0073297_00101 (right) and _00102 (left)",
+   "date": "1764-03-06",
+   "year": 1764,
+   "country": "Russia",
+   "route": "C.W. von Düben (St Petersburg) -> N.P. Gyldenstolpe ('Mon cher Comte')",
+   "language": "French",
+   "pages": 4,
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "A clear French page filed with it (102R-103R, archivist's note 'Hör till chiffermeddelandet \"4.83.445.196.552\" etc 6 mars 1764') was tested as its plaintext with a control-validated aligner and does not fit; no decipherment known."
+   },
+   "length": {
+    "tokens": 641,
+    "distinct": 228,
+    "unit": "code groups",
+    "measured": true,
+    "file": "tx/c1764-03-06.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "IIIF full-size images A0073297_00101, _00102 cut into bands",
+    "image_quality": "fair",
+    "notes": "Single pass, 49 groups marked ?; 20 scribe's strokes kept as |. Counts from wem.load_cipher (strokes, deletions and marks excluded); _check_profile --measure counts 697 tokens including the strokes."
+   }
+  },
+  {
+   "id": "K259-1764-10-05",
+   "read": "not read",
+   "shelfmark": "Riksarkivet, Kungliga arkiv, Drottning Lovisa Ulrika, Utgångna skrivelser, SE/RA/710003/02/008/b/K 259, images A0073297_00118-00119; clear text image 120",
+   "date": "1764-10-05",
+   "year": 1764,
+   "country": "Russia",
+   "route": "C.W. von Düben -> the Queen ('Sire votre Mté'), 'Chiffer n:o 2'",
+   "language": "French",
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "The clear page on image 120 is the writer's draft of the same despatch (same opening 'Sire Votre Majesté', compositional corrections); tested as plaintext, it does not fit the cipher in order."
+   },
+   "length": {
+    "tokens": 821,
+    "distinct": 204,
+    "unit": "code groups",
+    "measured": true,
+    "file": "tx/c1764-10-05.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "IIIF full-size images A0073297_00118, _00119 cut into bands",
+    "image_quality": "fair",
+    "notes": "55 groups marked ?, 17 struck groups; two forms of 5 (one flat-topped, read as 5)."
+   },
+   "pages": 3
+  },
+  {
+   "id": "K259-1765-11-15",
+   "read": "read in part",
+   "shelfmark": "Riksarkivet, Kungliga arkiv, Drottning Lovisa Ulrika, Utgångna skrivelser, SE/RA/710003/02/008/b/K 259, images A0073297_00124 (right), _00125, _00126",
+   "date": "1765-11-15",
+   "year": 1765,
+   "country": "Russia",
+   "route": "'C. F.?' -> 'mon cher Comte' (Gyldenstolpe?)",
+   "language": "French",
+   "pages": 4,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "Contemporary interlinear decipherment over 36 of 47 number lines (tx/g1765-11-15.txt). 11 number lines are unglossed.",
+    "partial": true
+   },
+   "length": {
+    "tokens": 742,
+    "distinct": 251,
+    "unit": "code groups",
+    "measured": true,
+    "file": "tx/g1765-11-15.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "IIIF full-size images A0073297_00124-00126 cut into bands",
+    "image_quality": "fair",
+    "notes": "18 ? marks; one group lost under a blot (125R.04)."
+   }
+  },
+  {
+   "id": "K259-chiffer2-121-124",
+   "read": "not read",
+   "shelfmark": "Riksarkivet, Kungliga arkiv, Drottning Lovisa Ulrika, Utgångna skrivelser, SE/RA/710003/02/008/b/K 259, images A0073297_00121-00124 (left)",
+   "date": "1764-12-31",
+   "year": 1764,
+   "country": "Russia",
+   "route": "Chiffer n:o 2 letters; 121 dated 31 Dec 1764 v.st.",
+   "language": "French",
+   "pages": 5,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment; one clear passage on 122R."
+   },
+   "length": {
+    "tokens": 1247,
+    "distinct": 241,
+    "unit": "code groups",
+    "measured": true,
+    "file": "tx/c-chiffer2-121-124.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "IIIF full-size images cut into bands",
+    "image_quality": "good",
+    "notes": "9 ?; 4 lines on 122R in a thinner pen repeat earlier runs."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "undetermined"
+  ],
+  "summary": "Two numeric systems in the volume, separated by value profiles: A (6 Mar 1764, 15 Nov 1765) and B ('Chiffer n:o 2': 5 Oct 1764, 31 Dec 1764 and 122-124L). Groups 1-~760, dots, scribe's strokes, flat frequencies. Neither is the filed clear text enciphered with a fixed table of short values; the 15 Nov 1765 interlinear gloss does not give a fixed table either.",
+  "symbol_kind": "digits",
+  "digit_groups": {
+   "width": "1-3",
+   "separation": "dots"
+  },
+  "distinct_symbols": 204,
+  "diacritics": {
+   "used": true,
+   "note": "occasional double dots and ticks over or under groups; meaning unknown"
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": "unknown"
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "random",
+  "word_division": "none",
+  "sibling_key": "Three key tables at images 218-220 (a Swedish key naming Senator Düben, Fersen, Ribbing, Horn; the 1770-71 crown prince travel cipher; a 'marque ###' key with Panin, Bestucheff, Solms). Their value ranges do not fit these letters.",
+  "notes": "Image 219 is a later copy of the crown prince's key, printed in Svenska Akademiens Handlingar 29 p. 259 per the note on the sheet."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "partial",
+   "where": "Interlinear decipherment of the 15 Nov 1765 letter in K 259 (124R-126); none found for the other letters.",
+   "found": "during attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "cleartext context",
+   "known plaintext"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "Problem posed as a pasted catalogue brief (catalogue 450); no target-specific intervention.",
+  "tools": [
+   "Riksarkivet IIIF",
+   "PIL crops",
+   "soft-EM forward-backward aligner (fb.py)",
+   "hard-EM aligners (wem.py, lem.py; failed their control)",
+   "homophonic annealer homo.py (lang fr-1750-nospace)"
+  ],
+  "models": [
+   "claude-opus-5-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-10-26",
+  "last_date": "2026-10-26"
+ },
+ "solution": [
+  {
+   "date": "2026-10-26",
+   "kind": "literature search",
+   "what": "Web searches on Düben, Gyldenstolpe, Lovisa Ulrika, Panin, 1764 cipher; DECODE and repo checked.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "access",
+   "what": "IIIF manifest A0073297: all 223 images fetched, contact sheets, full size for 85-128 and 218-220.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "key from source",
+   "what": "Surveyed the three key tables at images 218-220 against the value range of the letters (1-~790, no 8xx-9xx).",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "hypothesis",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Found clear French pages in a second hand filed with the ciphers, each tied by an archivist's note to a cipher letter (6 Mar, 15/4 May, 15 June, 20/31 Aug 1764) and a clear text of the 5 Oct 1764 letter to the Queen. Withdrawn later the same day: a count coincidence (see the fb.py runs).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "transcription",
+   "what": "Transcribed the 6 Mar 1764 cipher (641 groups) and its clear text (626 words) by two agents.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "solver",
+   "technique": [
+    "EM alignment"
+   ],
+   "what": "Word-level hard-EM alignment of the 6 Mar groups to the clear words (one group per word or null).",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "solver",
+   "technique": [
+    "EM alignment"
+   ],
+   "what": "Letter-level hard-EM alignment (group -> 0-8 letters, plaintext skips allowed).",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "hypothesis",
+   "technique": [
+    "repeat/pattern analysis"
+   ],
+   "what": "Repeated phrases: 'd'une revolution totale' (twice in the clear) against '255 505 196 55x' (twice in the cipher), but at different relative positions (0.31 / 0.60 in the cipher, 0.30 / 0.78 in the clear).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "hypothesis",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "5 Oct 1764 letter (Chiffer n:o 2): after 'Sire votre Mté' in clear, the first two stroke-delimited segments (5 and 9 groups) match 'daignera j'espere me rendre justice' and 'et croire que depuis le moment de mon arrivée' word for word on the clear copy (image 120). Withdrawn later the same day: a count coincidence (see the fb.py runs).",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "transcription",
+   "what": "5 Oct 1764 cipher 118-119R (821 groups, 204 distinct, 55 ?) and the clear draft on 120 (373 words, 1682 letters, diplomatic and final texts).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "control",
+   "technique": [
+    "EM alignment"
+   ],
+   "what": "Control for lem.py: the 5 Oct draft enciphered in a synthetic syllabic code (1078 groups, 4% nulls). Hard EM failed (0.18): the earlier wem/lem results are void.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "control",
+   "technique": [
+    "EM alignment"
+   ],
+   "what": "fb.py soft EM (forward-backward, groups = null or 1-4 letters, fixed length penalty) on the same control: solved exactly (top-share 1.0, null found); with 7% corrupted groups 0.985.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "solver",
+   "technique": [
+    "EM alignment",
+    "plaintext matching"
+   ],
+   "what": "fb.py on the real pairs: 5 Oct 0.454, with plaintext skips 0.464, cipher reversed 0.443; 6 Mar with skips 0.445. No consistent table: neither cipher is its filed clear text enciphered in order.",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "statistics",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "One group per letter at offsets 0-39 against the 5 Oct draft: 0.567 vs shuffled 0.544 (max 0.58).",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "hypothesis",
+   "technique": [
+    "repeat/pattern analysis"
+   ],
+   "what": "5 Oct: '215 9 549 317' at 7/14/39% of the cipher vs 'Votre M' at 34/52/92/99% of the draft; positions do not correspond.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "control",
+   "technique": [
+    "simulated annealing",
+    "language-model scoring"
+   ],
+   "what": "homo.py homophonic annealer (fr-1750-nospace order 5, optional letter-count penalty) on a same-size control: 821 letters of the 6 Mar clear text in 204 homophones. True text -1.923/char; best found -2.214 to -2.287 (200k-2M moves, T0 1-6, penalty 0-4), gibberish. Search failure: control not recovered.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "solver",
+   "technique": [
+    "simulated annealing"
+   ],
+   "what": "Ciphertext-only homophonic solve of the 5 Oct letter not judged: the solver fails its control at this size, so its output on the real text would be meaningless (same ceiling as goertz1717).",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "transcription",
+   "what": "Chiffer n:o 2 pages 121-124L: 1,247 groups (9 ?); 15 Nov 1765 letter 124R-126 with its interlinear gloss: 742 groups, 36 of 47 number lines glossed.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "hypothesis",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Found an interlinear contemporary decipherment on the 15 Nov 1765 letter (124R-126).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "statistics",
+   "technique": [
+    "frequency analysis",
+    "repeat/pattern analysis"
+   ],
+   "what": "Value-profile cosine and shared bigrams split the texts into system A (6 Mar 1764 + 15 Nov 1765, cosine 0.753, 65 bigrams) and system B (5 Oct 1764 + 121-124L, 0.923, 269); A vs B 0.08-0.10.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "solver",
+   "technique": [
+    "EM alignment",
+    "plaintext matching"
+   ],
+   "what": "fb.py (chunks up to 8 letters) against the 15 Nov 1765 gloss: 0.64 on glossed lines, 0.613 on all lines in order; no fixed table. Recurring pairs: '620 660' under 'mariage', 264 near 'le Roi'.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "control",
+   "technique": [
+    "simulated annealing",
+    "language-model scoring"
+   ],
+   "what": "System B pooled 2,072 groups / 291 distinct; same-size control (2,072 letters, 291 homophones): homo.py orders 4-5, chi-square and KL penalties, 1.5M moves: not recovered. Real pooled text not judged.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "verification",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Checked the 15 Nov 1765 layout on the image: the French is placed over the groups it renders, strokes fall at sentence breaks, rules fence off unglossed lines; preamble 56 75 100 135 517. A positioned decipherment.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "hypothesis",
+   "technique": [
+    "manual reconstruction",
+    "repeat/pattern analysis"
+   ],
+   "what": "Hand rebuild of a system-A table from the gloss: no group has a letter string common to all its glossed lines (218 on 15 lines); repeated plaintext ('L: L: M: M:', 'l'Imperatrice', 'l'ordre') takes different groups with no constant difference. Values vary through the text; no fixed table, so no key to test on 6 Mar 1764.",
+   "result": "failed"
+  }
+ ],
+ "outcome": {
+  "class": "not read",
+  "key": "none",
+  "method": "not solved",
+  "contribution": [
+   "transcription"
+  ],
+  "verification": [
+   "none"
+  ],
+  "provenance": "project",
+  "notes": "In progress: two systems; the 15 Nov 1765 letter carries a positioned contemporary decipherment (36/47 lines), but its values vary through the text (no fixed table), so no key has been rebuilt; system B (2,072 groups) is beyond the Python annealer (control not recovered)."
+ }
+}
