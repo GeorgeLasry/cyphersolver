@@ -15,9 +15,11 @@ NARA RG 360, Papers of the Continental Congress, item 59 vol. 1, "Miscellaneous 
 [naId 475671573](https://catalog.archives.gov/id/475671573), 422 images. Image n below is the n-th digital object;
 its scan is `https://catalog.archives.gov/medialz/partners/dc-metro/rg-360/M247/pcc_172591_0001/<Fold3 file>.jp2`.
 The per-image descriptions (from Fold3) are in the NARA record. All the cipher material sits in objects 96-136
-(MS pp. 115-175) and 318-325 (pp. 329-336). The catalogue entry also names two NARA exhibit items:
-[naId 2450021](https://catalog.archives.gov/id/2450021) and, for the fisheries resolve,
-[naId 2440605](https://catalog.archives.gov/id/2440605). Both are colour photographs of leaves of this volume (see 4).
+(MS pp. 115-175) and 318-325 (pp. 329-336). The catalogue entry links the file unit (naId 2124632), the item
+"Cipher With Keywords" ([naId 631635424](https://catalog.archives.gov/id/631635424), PCC 59 vol. 1 pp. 141-142) and
+the exhibit item [naId 2450021](https://catalog.archives.gov/id/2450021). A second exhibit item,
+[naId 2440605](https://catalog.archives.gov/id/2440605), was found here for the fisheries resolve. Both exhibit items
+are colour photographs of leaves of this volume (see the table in section 7).
 
 ## 2. The document read here
 
@@ -26,8 +28,9 @@ The per-image descriptions (from Fold3) are in the NARA record. All the cipher m
   p. 134, object 107 (Fold3 172699), endorsed "Aug. 10. Negative / J. Jay".
 - **What it is.** "By the United States in Congress assembled, Augt 10 1781": the report of the committee on a letter
   of the 9th from the Superintendent of Finance is considered, and a proposition is put that "the said minister" (Jay,
-  at Madrid) be empowered to make further cessions of the right to navigate the Mississippi. Every member votes no.
-  "Extract from the minutes", signed James Lovell. Two stretches of the proposition are in cipher.
+  at Madrid) be empowered to make further cessions of the right to navigate the Mississippi. Every member present
+  votes no; twelve states vote no, and North Carolina, with one member, is not counted. "Extract from the minutes",
+  signed James Lovell. Two stretches of the proposition are in cipher.
 - **Transcription.** `transcription.txt` (whole page, line by line), `ciphertext.txt` (the 57 cipher numbers only).
   "1119" is written without a point; it decodes only as 11, 19 (h, t), so it is two numbers. The "13" in the fourth
   cipher line is written over another figure and reads 13.
@@ -65,8 +68,9 @@ Line by line in `decryption.txt` (output of `python decrypt.py`), as sentences i
 > these United States to the NAVIGATION OF THE RIVER MISSISSIPI as he may think proper and on such terms &
 > conditions as he may think most for the honor & interest of these United States."
 
-The yeas and nays were called for by Roger Sherman; every member present voted no. All 57 numbers are accounted
-for (55 letters, 2 nulls). The text is English; no translation is needed.
+The yeas and nays were called for by Roger Sherman; every member present voted no. Twelve states voted no; North
+Carolina had one member present and is marked "x" (not counted). The roll call is written out in `reading.md`.
+All 57 numbers are accounted for (55 letters, 2 nulls). The text is English; no translation is needed.
 
 Context: in 1781 Congress weighed giving up the claim to navigate the Mississippi to win Spain's alliance and aid.
 Earlier in 1781 it had already allowed Jay to give up navigation below 31 degrees (general history; that resolve
@@ -98,7 +102,7 @@ Journals of the Continental Congress, vol. 21, ed. Gaillard Hunt (Washington 191
 > of the river Mississippi as he may think proper, and on such terms and conditions as he may think most for the
 > honour and interest of these United States -- The yeas and nays being required by Mr. [Roger] Sherman --"
 
-All states voted no. The footnote on p. 854 reads: "This resolution (partly in cipher) and vote, as an extract from
+The footnote on p. 854 reads: "This resolution (partly in cipher) and vote, as an extract from
 the minutes, by James Lovell, are in the Papers of the Continental Congress, No. 59, I, folio 133." So the print
 names this very copy, and the plaintext has been known since 1912. It comes from the journal, not from a
 decipherment. The decryption agrees word for word, apart from "cessions" (cipher) against "cession" (print), and the
@@ -117,7 +121,7 @@ were viewed and identified, not transcribed. None of them is claimed as read her
 
 | Object (Fold3) | MS p. | What it is | State |
 |---|---|---|---|
-| 96 (172688) | 115-116 | "A new cypher": instructions for a keyword column cipher (example keyword "John", 27-letter alphabet); NARA item 631635424 "Cipher With Keywords" | not prose |
+| 96 (172688) | 115-116 | "A new cypher": instructions for a keyword column cipher (example keyword "John", 27-letter alphabet); Fold3 title "Cipher with keywords" | not prose |
 | 97-98 (172689-90) | 117, 120 | Dumas cipher: numbered homophone list A-Z (1-682) with punctuation; endorsed "Dumas Cyphering used by Dr Franklin and the Comtee of Secret Correspondence" | not prose |
 | 99 (172691) | 121-122 | Jay: proposal to change a numbered cipher by advancing each number one unit, with new entries 600 ff. (Washington 640 ...); endorsed "Jay cypher propos'd" | not prose |
 | 101 (172693) | 123 | Charles Thomson, 19 May 1780: four lines, mostly code groups, with clear words ("... under the direction of ... Doct Franklin") | **open**: not decoded; no key for it seen in the volume |
@@ -126,7 +130,7 @@ were viewed and identified, not transcribed. None of them is claimed as read her
 | 106-107 (172698-99) | 133-134 | Motion of 10 Aug 1781 | **this folder**: deciphered, already in JCC 21:853-854 |
 | 108-109 (172700-01) | 137-138 | Francis Dana's cipher: letter columns and a short nomenclator (Washington 40, Congress 27, Russia 51 ...) | not prose |
 | 110-111 (172702-03) | 139-140 | keyed table 1-24 with nomenclator; two numerical alphabets | not prose |
-| 112-113 (172704-05) | 141-143 | "Cipher with a keyword": five-column table, nomenclator 27-61 (America 27 ... Rh. Island 61); then Lovell's note on his use of the Dumas numbers, with words written in Dumas numbers | key: not prose; the note: **open**, decodable with p. 117, not done |
+| 112-113 (172704-05) | 141-143 | "Cipher with a keyword": five-column table, nomenclator 27-61 (America 27 ... Rh. Island 61); then Lovell's note on his use of the Dumas numbers, with words written in Dumas numbers; pp. 141-142 = NARA item naId 631635424 "Cipher With Keywords" (its NARA page reference) | key: not prose; the note: **open**, decodable with p. 117, not done |
 | 114 (172706) | - | endorsement "Dr Franklin Cypher" | - |
 | 115-116 (172707-08) | 144-146 | Lovell's key-letter sheet: Adams, H. Laurens, Franklin, Palfrey, Jay; = NARA exhibit naId 2450021 | key used here |
 | 117-122 (172709-14) | 147-154 | Resolve of 7 Aug 1782 on Jay, "copy in cipher" (code of the Office of Foreign Affairs), with a deciphering table 1-1107 on p. 154 | Thomson's clear copy at objects 131-133 (172723-25); printed, Journals 1782 pp. 455-456 |
@@ -162,5 +166,5 @@ were viewed and identified, not transcribed. None of them is claimed as read her
 - `key.txt`: the Jay columns of p. 144, and the start letters of the other columns
 - `decrypt.py`: decryption and controls (standard library; reads `transcription.txt`)
 - `decryption.txt`, `controls_output.txt`: output of `python decrypt.py` and `python decrypt.py --controls`
-- `reading.md`: the motion as sentences
+- `reading.md`: the extract as sentences, with the roll call
 - No images are kept here; they are on the NARA catalogue pages.
