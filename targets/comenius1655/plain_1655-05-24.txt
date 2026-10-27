@@ -1,0 +1,16 @@
+# 24 May 1655: NOT DECIPHERED. This file records the trials, not a reading.
+# Transcription: ct_1655-05-24.txt (Patera reading; long s written as s).
+
+cipher            Lmqsxmyo 7 Gpdlmuoyqnotlses Pnofeyprp 865 ap 73 pys pdyp Xyopatus
+4 Aug key         ?ant?ao? ? e?u?a??on??s?t?t ?????o??? ?il m? ?? ?ot ?uo? ?o??ms?t
+inverse key       ha?t?a?y ? ?c?hady??qyshtgt cqy?g?czc ??? mc ?? c?t c??c ??ycmsdt
+pairs reciprocal  hant?aoy ? ecuhadyonqyshtgt cqy?goczc ?il mc ?? cot cuoc ?oycmsdt
+
+# None of these is Latin (python check.py). Caesar, affine and progressive shifts, Vigenere, Beaufort and Porta
+# with about 10,000 Latin keywords, and the 4 Aug pairs combined with shifts also gave nothing.
+# Annealing of a one-to-one substitution (python anneal.py) gives only nonsense optima, for example
+#   empclman stheminapondecrc tongratyt ut tac that lantudic
+# while the same annealer recovers two synthetic Latin controls of 50 and 56 letters exactly.
+# So the passage is not a simple substitution of Latin with this word division, or its words are names,
+# numbers or abbreviations, or it is not in Latin.
+[not deciphered]
