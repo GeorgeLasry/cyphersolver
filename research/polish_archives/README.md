@@ -28,7 +28,9 @@ scripts to regenerate them; `polona_detail.py` needs `polona_hits.jsonl` from `p
 1. **Deboli → Stanisław August, St Petersburg cipher despatches, 1788-1792** (AGAD Zbiór Popielów 428, 17, 4, 5,
    416). There are about 500 despatches, all scanned on agadd2. One page was viewed: a full page of about 270
    numeric code groups (3-4 digits, some with a/b suffixes) and no interlinear decipherment. Each cipher despatch
-   has an open Polish despatch of the same day in ZbPop 417/419/420/421/415, so these are not decipherments. Keys
+   has a Polish text of the same day in ZbPop 417/419/420/421/415. **Correction, 27 Oct 2026:** these are not open
+   despatches but the cabinet's decipherments. For 1790 all 109 were paired and two were aligned group by group
+   (`targets/deboli1790/`, catalogue 419 closed). Keys
    are filed in the same fonds (ZbPop 444 "Cyfra polska" sent to Deboli 1783, 451 French cipher 1780, 453-454) but
    are not online. Zielińska & Danilczyk printed only 1780-1782. Importance 4, solvability 4.
 2. **Deboli 1783-1787** (ZbPop 9, 10, 11, 2, 3): the same series with about 420 pieces. No scans were found

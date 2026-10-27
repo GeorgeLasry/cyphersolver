@@ -1,0 +1,185 @@
+{
+ "schema_version": 1,
+ "target": "deboli1790",
+ "title": "Antoni Augustyn Deboli to King Stanisław August, cipher despatches from St Petersburg, 1790 (AGAD Zbiór Popielów 4; catalogue 419)",
+ "documents": [
+  {
+   "id": "ZbPop4",
+   "shelfmark": "AGAD Warszawa, Zbiór Popielów (zesp. 12), sygn. 4, k. 1-350 (109 despatches)",
+   "date": "2 Jan - 31 Dec 1790",
+   "year": 1790,
+   "country": "Poland-Lithuania",
+   "route": "St Petersburg -> Warsaw",
+   "language": "Polish",
+   "pages": "unknown",
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "separate collection"
+    ],
+    "source": "The cabinet's decipherments, filed apart: ZbPop 417 k. 353-386 (2 Jan - 2 Feb 1790) and ZbPop 420 (5 Feb - 31 Dec 1790); paired by date in pairs.tsv.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 211,
+    "unit": "code groups",
+    "measured": true,
+    "file": "transcription_sample.md"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "AGAD scans on agadd2.home.net.pl, album 4 (images 0002 and 0049).",
+    "corrections": 0,
+    "image_quality": "good",
+    "notes": "Only the opening six lines of two despatches (2 Jan, 9 Feb) were transcribed, for the alignment test; the measured count is that sample, not the volume (about 400 images of code groups). 0/8 and 6/b look alike in this hand."
+   },
+   "read": "read"
+  }
+ ],
+ "system": {
+  "types": [
+   "syllabic",
+   "code"
+  ],
+  "summary": "A Polish numerical code of syllables and words, groups of 1-4 digits (to about 2160) with subscript a/b/c variants, under a clear French heading.",
+  "symbol_kind": "digits and letters",
+  "digit_groups": {
+   "width": "1-4",
+   "separation": "dots"
+  },
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": true,
+   "note": "Subscript letters a, b, c under some groups."
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": "unknown",
+   "kinds": [
+    "syllables",
+    "common words"
+   ],
+   "unread_groups": "unknown"
+  },
+  "nulls": "unknown",
+  "key_order": "unknown",
+  "word_division": "none",
+  "doubled_letters": "unknown",
+  "sibling_key": "unknown",
+  "notes": "Three equivalences checked against the decipherments: 1559 = w, 1092 = po-, 606 = z. Probably the 'Cyfra polska' sent to Deboli on 8 III 1783 (ZbPop 444, not online); not verified."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in archive",
+   "where": "Contemporary cabinet decipherments in AGAD Zbiór Popielów 417 (k. 353-386) and 420; used by Rolnik 2025 without linking them to ZbPop 4.",
+   "found": "during attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "cleartext context"
+  ],
+  "attack": "archive decipherment",
+  "human_role": "Pasted the catalogue task; no other input.",
+  "tools": [
+   "curl (AGAD inventories and agadd2 scans)",
+   "PIL contact sheets and crops",
+   "web search",
+   "pdf.js in the built-in browser (RCIN edition)"
+  ],
+  "models": [
+   "claude-opus-5-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-10-26",
+  "last_date": "2026-10-27"
+ },
+ "solution": [
+  {
+   "date": "2026-10-26",
+   "kind": "access",
+   "what": "Fetched the ZbPop 4 letter list and scans; viewed k. 2-4: code groups only, French heading, no interlinear decipherment.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "access",
+   "what": "Looked for the keys ZbPop 444, 451, 453, 454 and the deciphered register ZbPop 320 on agadd2 and AGAD's inventories.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "access",
+   "what": "Contact sheets of all scanned cipher volumes (ZbPop 428, 17, 4, 5, 416) to look for decipherment pages among the ciphers.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "literature search",
+   "what": "Zielinska & Danilczyk, Deboli 1782 (IH PAN 2017), introduction: the cabinet kept decipherments of Deboli's despatches (AKP 265). Rolnik 2025 cites the 1790-92 texts in ZbPop 415/420/421 as ciphered correspondence.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "hypothesis",
+   "what": "ZbPop 420 holds the decipherments of ZbPop 4: matched AGAD's two letter lists by date; 99 of 109 despatches in ZbPop 420, the other 10 at the end of ZbPop 417.",
+   "result": "worked",
+   "technique": [
+    "plaintext matching",
+    "contextual inference"
+   ]
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "transcription",
+   "what": "Opening six lines of the 2 Jan and 9 Feb despatches (transcription_sample.md).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "verification",
+   "what": "Aligned the transcribed groups with the decipherments' opening words: 1559 = w and 1092 = po- in both pairs, 606 = z twice in 9 Feb; headings and receipt dates identical; image counts correlate r = 0.69.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "verification",
+   "what": "Checked one of the 17 copies AGAD lists as addressed to Kicinski (16 July 1790): headed 'Sire!' with the cipher's receipt date, so the King's copy.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "method": "read from existing decipherment",
+  "method_basis": "Every one of the 109 cipher despatches has a contemporary cabinet decipherment in ZbPop 417 or 420, matched by date and heading and checked by code-group alignment on two pairs.",
+  "contribution": [
+   "catalogue correction"
+  ],
+  "class": "already solved",
+  "fraction_read": "unknown",
+  "grades": "unknown",
+  "key": "none",
+  "verification": [
+   "contemporary decipherment",
+   "historical consistency"
+  ],
+  "notes": "Catalogue 419 closed: deciphered at the time. Added here: the 109 cipher/decipherment pairs (pairs.tsv), three code equivalences, and the inventory's wrong addressee on the Kicinski items. Code not rebuilt.",
+  "credits": [
+   {
+    "who": "contemporary",
+    "role": "prior solution",
+    "note": "Stanisław August's cabinet decipherments, AGAD Zbiór Popielów 417 k. 353-386 and 420"
+   },
+   {
+    "who": "rolnik",
+    "role": "pointer",
+    "note": "cites the ZbPop 420 texts as Deboli's ciphered despatches, which led to the pairing",
+    "date": "2025",
+    "source": "D. Rolnik, Rocznik Filozoficzny Ignatianum 31/3 (2025)",
+    "published": true
+   }
+  ]
+ }
+}
