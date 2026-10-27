@@ -1,0 +1,14 @@
+m0015 (8 Aug 1910): 36 items, short items {'05': 1, '06': 4}, repeats {'36508': 2, '97183': 2, '93843': 2}
+m0019 (2 Aug 1910): 3 items, short items {}, repeats {}
+m0021 (2 Aug 1910): 54 items, short items {'06': 5}, repeats {'39644': 2, '41877': 2, '71394': 2}
+
+shared groups:
+  m0015 (8 Aug 1910) & m0019 (2 Aug 1910): []
+  m0015 (8 Aug 1910) & m0021 (2 Aug 1910): ['37708', '39644', '93608', '97183']
+  m0019 (2 Aug 1910) & m0021 (2 Aug 1910): ['29134', '57710', '70790']
+
+opening code runs after the same clear words "Tudo bem tempo lindo":
+  m0015: 36508 50178 37708 97183 39644 05 36508 06
+  m0021: 4965 37708 89864 97183 39644 06 93608   (after "veio Sabugosa hoje")
+
+control: P(>=2 shared groups between random 36- and 54-group telegrams over 00000-99999) = 0.00010

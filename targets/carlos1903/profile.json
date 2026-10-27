@@ -1,0 +1,363 @@
+{
+ "schema_version": 1,
+ "target": "carlos1903",
+ "title": "King Carlos I to Queen Amélie, three code telegrams of 1903 (ANTT PT/TT/CAM/M12; catalogue 401): two read from decodes of the time, one open",
+ "documents": [
+  {
+   "id": "m0054",
+   "read": "read",
+   "shelfmark": "ANTT, Documentos de D. Carlos, D. Amélia e D. Manuel II, mct. 12 (PT/TT/CAM/M12), image m0054 (cover m0055); decode of the time on the card m0060",
+   "date": "12 May 1903",
+   "year": 1903,
+   "country": "Portugal",
+   "route": "Lisbon -> Paris",
+   "places": {
+    "from": "Lisbon",
+    "to": "Paris"
+   },
+   "language": "Portuguese (coded sentence); French (clear words)",
+   "pages": 1,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "separate folio"
+    ],
+    "source": "Card m0060 (printed 'Hotel Bristol / Paris'), filed in the same unit: the clear words of the telegram with a Portuguese sentence where the 14 code groups stand.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 14,
+    "distinct": 12,
+    "unit": "code groups",
+    "measured": true,
+    "file": "m0054_transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "DigitArq image PT-TT-CAM-M12_m0054.jpg (printed strips)",
+    "corrections": 0,
+    "image_quality": "good",
+    "notes": "Printed telegraph strips; read twice, the second time independently. Header and stamp: SS PARIS LISBOA 3428 33 12 12/40, CENTRAL PARIS 12 MAI 03."
+   }
+  },
+  {
+   "id": "m0056",
+   "read": "not read",
+   "shelfmark": "ANTT, Documentos de D. Carlos, D. Amélia e D. Manuel II, mct. 12 (PT/TT/CAM/M12), image m0056 (back m0057)",
+   "date": "4 Mar 1903",
+   "year": 1903,
+   "country": "Portugal",
+   "route": "Lisbon -> Tlemcen (Queen Amélie on board the yacht Amélie, Oran)",
+   "places": {
+    "from": "Lisbon",
+    "to": "Oran"
+   },
+   "language": "unknown",
+   "pages": 1,
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decode of the time found in M12."
+   },
+   "length": {
+    "tokens": 47,
+    "distinct": 41,
+    "unit": "code groups",
+    "measured": true,
+    "file": "m0056_transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "DigitArq image PT-TT-CAM-M12_m0056.jpg (by hand)",
+    "corrections": 1,
+    "image_quality": "good",
+    "notes": "47 items (44 five-digit groups, three '03'). Read twice; the second reading took the fourth group of line 3 as 19338, the final check as 59338 (the writer makes 5 like a long s), so it is marked 59338?. 76342? has a doubtful first digit. A struck-out figure at the start of line 3 is left out."
+   }
+  },
+  {
+   "id": "m0058",
+   "read": "read",
+   "shelfmark": "ANTT, Documentos de D. Carlos, D. Amélia e D. Manuel II, mct. 12 (PT/TT/CAM/M12), image m0058 (back m0059)",
+   "date": "undated (spring 1903?)",
+   "year": 1903,
+   "country": "Portugal",
+   "route": "unknown (to Queen Amélie, after a letter sent to her at Malta)",
+   "language": "French",
+   "pages": 1,
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "separate paragraph"
+    ],
+    "source": "Decode of the time written in ink on the same form under the code groups.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 13,
+    "distinct": 13,
+    "unit": "code groups",
+    "measured": true,
+    "file": "m0058_transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "DigitArq image PT-TT-CAM-M12_m0058.jpg (by hand on a blank French form)",
+    "corrections": 0,
+    "image_quality": "good",
+    "notes": "Read twice, the second time independently; the two readings agree digit for digit."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "code"
+  ],
+  "summary": "Telegraphic code of five-digit groups over 10000-99999 with a short group '03'; words and syllables (the decoder writes 'Po-des', 'Ros-a'); not alphabetical (ter 38564, com 58215).",
+  "symbol_kind": "digits",
+  "digit_groups": {
+   "width": "5, and the short group 03",
+   "separation": "spaces"
+  },
+  "distinct_symbols": 60,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": true,
+   "kinds": [
+    "common words",
+    "syllables",
+    "names"
+   ],
+   "unread_groups": 47
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "random",
+  "word_division": "none",
+  "sibling_key": "The code Sabugosa used in May 1903 (targets/sabugosa1910) is a different, alphabetical code with groups up to 23400.",
+  "notes": "distinct_symbols = distinct items seen in the three telegrams (60, '03' included). key_order 'random' rests on two inferred values only (ter 38564, com 58215), which run against alphabetical order. The three telegrams share groups (10734, 43554, 78341; 58215, 91518), so they use one code."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in archive",
+   "where": "Decodes of the time filed with the telegrams: on m0058 itself (French) and on the Hotel Bristol card m0060 (decode of m0054). No printed decipherment found (one web search).",
+   "found": "during attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "cleartext context"
+  ],
+  "attack": "archive decipherment",
+  "human_role": "WAINUT chose the catalogue items and set the rules; AI language-model agents fetched the images, transcribed, compared the decodes and checked the work. No hand correction of readings recorded.",
+  "tools": [
+   "groups.py (group counts, repeats, shared groups, chance control, letter-for-digit control)"
+  ],
+  "models": [
+   "AI language-model agents (WAINUT); a vision-capable language model for the transcription"
+  ],
+  "sessions": 1,
+  "first_date": "2026-10-27",
+  "last_date": "2026-10-27"
+ },
+ "solution": [
+  {
+   "date": "2026-10-27",
+   "kind": "access",
+   "what": "All 61 images of M12 fetched through the DigitArq JSON backend (the record says not accessible, but the images download). Telegrams on m0054-55, m0056-57, m0058-59.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "transcription",
+   "what": "Transcribed the three telegrams: 14, 47 and 13 items; headers and stamps read.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "reading",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "m0058 carries its own decode of the time in French under the code groups; transcribed and translated.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "verification",
+   "what": "Independent re-reading: m0058 confirmed digit for digit. Corrected the first pass: m0054 runs Lisbon -> Paris (the form's rule puts the serial number after the place of origin) and is dated 12 May 1903 by the stamp CENTRAL PARIS 12 MAI 03.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "m0058: the 60 digits against the 60 letters of the decode give 37 conflicts, shuffled digits 38.1 on average: a code, not a letter cipher. Random 12- and 44-group telegrams share two groups in under 1 of 20,000 trials, so the shared groups mean one code.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "key from source",
+   "technique": [
+    "plaintext matching",
+    "repeat/pattern analysis"
+   ],
+   "what": "Found the card m0060 (Hotel Bristol, Paris): the clear words of m0054 with a Portuguese sentence in place of the 14 groups, i.e. the decode of m0054. The two repeated groups (38564 at 5 and 11, 58215 at 7 and 13) sit where 'ter ... com' repeats in the decode, which fixes ter, combinado, com and fallado.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "hypothesis",
+   "technique": [
+    "contextual inference"
+   ],
+   "what": "m0056 (4 Mar 1903, 47 items) has no decode; tried the values from m0054 and m0058. Only 58215 (com) recurs with a value; the groups it shares with m0058 (10734, 43554, 78341) get no value because the m0058 decode does not align one to one.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "literature search",
+   "what": "One web search: no printed decipherment of these telegrams. Related pointer only: A. H. Norris, BHS Portugal Report 4 (1977) p. 56, on a letter of Queen Amélie to Manuel II with words in cipher given in brackets (a different document).",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "none",
+  "method": "read from existing decipherment",
+  "first_break": false,
+  "method_basis": "m0054 and m0058 are read from decodes of the time filed with them (the card m0060 and the ink decode on m0058); m0056 has no decode and the code is not rebuilt.",
+  "contribution": [
+   "transcription",
+   "sender or date identified",
+   "catalogue correction"
+  ],
+  "parts": [
+   {
+    "label": "m0054 and m0058 (decodes of the time on m0060 and on m0058)",
+    "records": "m0054, m0058",
+    "method": "read from existing decipherment",
+    "extent": "complete",
+    "basis": "Each decode gives the whole message; read and translated."
+   },
+   {
+    "label": "m0056, Lisbon -> Tlemcen, 4 Mar 1903",
+    "records": "m0056",
+    "method": "not solved",
+    "extent": "none",
+    "basis": "No decode found; one inferred value (58215 com) recurs; codebook not found."
+   }
+  ],
+  "fraction_read": 0.365,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "documents[].length: 27 of 74 code items are in the two telegrams read from their decodes (m0054 14, m0058 13); m0056's 47 items are open.",
+  "verification": [
+   "contemporary decipherment",
+   "independent verification"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "lccompany",
+    "role": "solution",
+    "note": "m0054 and m0058 read from the decodes of the time; m0060 identified as the decode of m0054",
+    "date": "2026-10-27"
+   },
+   {
+    "who": "lccompany",
+    "role": "transcription",
+    "note": "three telegrams, 74 items, from the DigitArq images",
+    "date": "2026-10-27"
+   },
+   {
+    "who": "lccompany",
+    "role": "identification",
+    "note": "directions and dates: m0054 Lisbon -> Paris 12 May 1903; m0056 Lisbon -> Tlemcen 4 Mar 1903",
+    "date": "2026-10-27"
+   },
+   {
+    "who": "lccompany",
+    "role": "verification",
+    "note": "independent re-reading of m0054, m0056 and m0058",
+    "date": "2026-10-27"
+   },
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "decodes of the time: in ink under the groups on m0058; the Hotel Bristol card m0060 for m0054",
+    "source": "https://digitarq.arquivos.pt/documentDetails/a58a28dda5844d2e8c9f61e2a2567e99"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "m0056, 47 items (Lisbon -> Tlemcen, 4 Mar 1903)",
+    "blocker": "no-key-material",
+    "detail": "no decode in M12; the code is not alphabetical and the two decodes give only a handful of values; the codebook was not found"
+   },
+   {
+    "item": "word-by-word split of m0054 groups 1-4 and 8-10, and of all of m0058",
+    "blocker": "too-short",
+    "detail": "the decodes give the words but not which group carries which; only the two repeats in m0054 fix positions"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "m0054",
+    "label": "m0054, Lisbon -> Paris, 12 May 1903",
+    "transcription": "m0054_transcription.txt",
+    "contemporary": "m0054_contemporary.txt",
+    "decryption": "m0054_decryption.txt",
+    "reading": "m0054_reading.md",
+    "translation": "m0054_en.md",
+    "language": "pt",
+    "state": "read",
+    "read_share": 1.0,
+    "summary": "King Carlos thanks the Queen, then in Paris, for her telegram and says all is well; in code he tells her she may give [something] but only after arranging it with Rosa (probably the Portuguese minister in Paris) and after the French government has been spoken to. The children kiss her hand.",
+    "reading_review": {
+     "grade": "A",
+     "by": "WAINUT (AI language-model agent, checked against the images)",
+     "date": "2026-10-27",
+     "note": "The decode on m0060 is a complete Portuguese sentence framed by the telegram's own clear French words; no holes. The object of 'dar' is not stated in the text."
+    }
+   },
+   {
+    "doc": "m0058",
+    "label": "m0058, undated (spring 1903?)",
+    "transcription": "m0058_transcription.txt",
+    "contemporary": "m0058_contemporary.txt",
+    "decryption": "m0058_decryption.txt",
+    "reading": "m0058_reading.md",
+    "translation": "m0058_en.md",
+    "language": "fr",
+    "state": "read",
+    "read_share": 1.0,
+    "summary": "King Carlos tells the Queen that all are well, that he has written to her at Malta, and sends his love and the children's greetings. Fits her Mediterranean cruise of spring 1903.",
+    "reading_review": {
+     "grade": "A",
+     "by": "WAINUT (AI language-model agent, checked against the image)",
+     "date": "2026-10-27",
+     "note": "Telegraphic French from the decode of the time; 'salue' is singular as written; two readings of the last clause are given in the translation."
+    }
+   },
+   {
+    "doc": "m0056",
+    "label": "m0056, Lisbon -> Tlemcen, 4 Mar 1903",
+    "transcription": "m0056_transcription.txt",
+    "decryption": "m0056_decryption.txt",
+    "state": "decoded, not read",
+    "summary": "Code telegram of 86 taxed words to Queen Amélie on board the yacht Amélie at Oran; no decode found.",
+    "note": "Not decoded: one group (58215) has an inferred value from m0054. Shown so that others can work on it."
+   }
+  ],
+  "notes": "Contributed by WAINUT (catalogue 401). The archive says some documents are in cipher; the letters (French, from King Carlos, 1904-1905) are in clear, and only the three telegrams are coded. The Hotel Bristol card m0060 was not noticed in the first pass; it was found while checking the contact sheets for this pull request and has not had a second, independent check."
+ }
+}

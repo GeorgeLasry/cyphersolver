@@ -1,0 +1,17 @@
+m0054: 14 items (14 five-digit groups), repeats inside: {'38564': 2, '58215': 2}
+m0056: 47 items (44 five-digit groups), repeats inside: {'17582': 2, '92270': 2, '43554': 2, '78341': 2}
+m0058: 13 items (12 five-digit groups), repeats inside: {}
+
+shared five-digit groups:
+  m0054 & m0056: ['58215', '91518']
+  m0054 & m0058: []
+  m0056 & m0058: ['10734', '43554', '78341']
+
+control: P(>=2 shared groups between random 12- and 44-group telegrams) = 0.00000
+
+m0054 repeats (group: positions): {'38564': [5, 11], '58215': [7, 13]}
+decode words that repeat (word: positions): {'ter': [8, 15], 'com': [10, 17]}
+both repeat pairs are 6 apart in the groups (5/11, 7/13) and 7 apart in the words (8/15, 10/17):
+  one group in each stretch carries two words, and "ter" sits two places before "com" in both
+
+m0058 letter-for-digit test: 37 conflicts; 1000 shuffled digit orders: mean 38.1, min 32. No better than chance: a code, not a letter cipher.
