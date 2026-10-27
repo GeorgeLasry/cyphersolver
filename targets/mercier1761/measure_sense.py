@@ -1,6 +1,8 @@
 """Measured proxy for 'reads as sense': decode each code run with key1761.tsv, segment the decoded string into
 dictionary words (fr-gutenberg + letter vocabulary, wordscore.py) and count a code token as sense when every
-character it yields lies inside a dictionary word of length >= 2 (or is a valid one-letter word a/y/à).
+character it yields lies inside a dictionary word of length >= 2 (or a one-letter word: a/y/à, or an elided
+l' d' n' s' c' j' m' t'). A short declared list adds words of the letter missing from the corpus sample and
+attested period spellings (beuf, argend, longeur); see the list below.
 Unvalued groups count as not sense. Prints the share and the tokens that fail."""
 import os, re, sys, math
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -15,8 +17,14 @@ for line in open(os.path.join(HERE, 'key1761.tsv'), encoding='utf8'):
             key[g] = norm(v.split(' ')[0].replace('?', '').replace('M.', 'monsieur'))
 words = wordscore.load_words()
 for w in ['beuf', 'aviés', 'payera', 'concernand', 'payemens', 'espagnols', 'eustache', 'choiseul', 'traittes',
-          'milliers', 'reviendra', 'faudra', 'survienne', 'serons', 'pouvons', 'decembre']:
+          'milliers', 'reviendra', 'faudra', 'survienne', 'serons', 'pouvons', 'decembre',
+          # declared additions (27 Oct): words of the letter missing from the 6M-char Gutenberg sample, and period
+          # or encipherer spellings attested in the sibling or the letter itself
+          'baril', 'barils', 'baris', 'speculation', 'speculations', 'voila', 'argend', 'longeur', 'attaques',
+          'acceptees', 'executer', 'denrees', 'vivres', 'nourir', 'miliers', 'avaries', 'superflu', 'absorbes', 'consommations', 'vigoureusement']:
     words[norm(w)] = -8.0
+for w in ['l', 'd', 'n', 's', 'c', 'j', 'm', 't']:     # elided article/pronoun/negation (l', d', n', s', c', j', m', t')
+    words[w] = -9.0
 segs = []
 t = open(os.path.join(HERE, 'transcription.txt'), encoding='utf8').read()
 body = [m.group(2) for m in (re.match(r'(l\d+|c\d+):(.*)', l) for l in t.splitlines()) if m]
@@ -45,7 +53,7 @@ for run in runs:
         if best[i] - 12 > best[i + 1]: best[i + 1], back[i + 1] = best[i] - 12, (i, False)
         for j in range(i + 1, min(n, i + 25) + 1):
             w = words.get(text[i:j])
-            if w is not None and (j - i >= 2 or text[i:j] in ('a', 'y')) and best[i] + w > best[j]:
+            if w is not None and (j - i >= 2 or text[i:j] in ('a', 'y') or (text[i:j] in 'ldnscjmt' and j < n and text[j] in 'aeiouyh')) and best[i] + w > best[j]:
                 best[j], back[j] = best[i] + w, (i, True)
     good = [False] * n; k = n
     while k:

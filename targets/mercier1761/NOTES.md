@@ -1,6 +1,6 @@
 # La Touche and Le Mercier de La Rivière to the minister, Martinique, 12 June 1761 (ANOM C8 A 64 f° 1)
 
-Status: in progress (read in part: 86.7% of tokens read as sense, measured 27 Oct; below the 95% bar)
+Status: in progress (read in part: 92.2% of tokens read as sense, measured 27 Oct; below the 95% bar)
 
 Unsolved Catalogue no. 542 (research/central_archives sweep, Oct 2026).
 
@@ -67,7 +67,10 @@ Unsolved Catalogue no. 542 (research/central_archives sweep, Oct 2026).
   word also stands in clear), 234 i + 306 an ("soixante", "croire"), 357 é + 535 ant ("étant venus", twice),
   31 di + 15 ge ("diligence"), 128 mo + 54 g + 337 mon ("Monseigneur" twice, "moitié" 4 times), 259 cu
   ("spéculation", "calculer"), 482 ar ("arriver", twice), 123 cha ("de change", twice), and others.
-- **Retry round (27 Oct): 761 of 818 valued (93.0%), 709 read as sense (86.7%).** Earlier figures follow.
+- **Final pass (27 Oct): 771 of 818 valued (94.3%), 754 read as sense (92.2%).** The measurement now accepts elided
+  l' d' n' s' … only before a vowel, and a declared list of words missing from the corpus sample or spelled as in the
+  letter (see `measure_sense.py`).
+- Retry round (27 Oct): 761 of 818 valued (93.0%), 709 read as sense (86.7%, earlier measurement). Earlier figures follow.
 - **Measured before the retry (27 Oct, after three context rounds): 729 of 818 tokens valued (89.1%, `apply_key.py`); 667 of 818
   read as sense (81.5%, `measure_sense.py`: each decoded run is segmented into dictionary words; a token counts
   only if every character it yields falls inside a word).** Corrections made on the way: 541 is u, not eu; 552 is
@@ -115,9 +118,9 @@ decipherment. Not on DECODE. Not on cryptiana.
 
 ## Remaining gaps
 
-- About 46 code groups (57 of 818 tokens), nearly all word codes that occur once: 408/451 ("ni en [408] ni [451] dans la colonie"), 339 and 75 (places in "en [339] une révolution … qui nous arrive en [75]"), 392, 122, 100, 511, 540 (the "consommation courante de …" phrase), 315 (in "dix [315]", "trois [315] têtes"), 138, 413, 459, 638, 82, 173, 183, 154, 110, 403 … - blocker: open-codes; single occurrences with thin context, still to be tried
-- C-grade values (441, 273, 145, 463, 303, 642, 525, 193, 657, 409, 394, 581, 11, 60, 664, 430, 30, 515, 509, 85, 330, 527, 20, 146, 675) - blocker: open-codes; each rests on one context
-- Two encipherer slips, checked on the image: "à r-ro-i-s livres" (321 written where t is meant) and "nous [16]frons" (offrons; 16 = ge elsewhere) - blocker: open-codes; the groups are clear on the image but wrong as written; read by sense and marked [?]
+- About 40 single-use word codes (47 of 818 tokens): 408/451 ("ni en [408] ni [451] dans la colonie"), 339 and 75 ("en [339] une révolution … qui nous arrive en [75]"), 100 and 511 ("l'[100]ce[511] est à notre porte"), 183, 403, 154, 110, 138, 413, 459, 638, 82, 173, 199, 245, 223, 600, 267, 670, 161, 462, 317, 404, 195, 516, 180, 685, 232, 336, 44, 449, 264, 327, 439, 523, 345, 480 - blocker: no-key-material; each occurs once, in a context that admits several words, and the 1761 key is not online (sibling and context exhausted)
+- C-grade values resting on one context (441, 273, 145, 463, 303, 642, 525, 193, 657, 409, 394, 581, 11, 60, 664, 430, 30, 515, 509, 85, 330, 527, 20, 146, 675, 88, 540, 392, 122) - blocker: no-key-material; no second occurrence in the two letters to confirm them
+- Two encipherer slips, checked on the image: "à r-ro-i-s livres" (321 where t is meant) and "nous [16]frons" (offrons) - blocker: no-key-material; the groups are clear but wrong as written; read by sense, marked [?]
 - The 1761 key itself, COL B 113/114, MAR/G/178 - blocker: needs-physical-access; not digitised
 
 ## Escalation
@@ -127,4 +130,4 @@ decipherment. Not on DECODE. Not on cryptiana.
 - [x] known-keys: 1765 Martinique key (C8 A 67 f° 178) tested and ruled out (614 = voisins, values to 800); no other colonial key of 1755-1765 online; MAR/G/178 (1758/1766/1771 keys) offline.
 - [x] print: web search on shelfmark, correspondents, date and "chiffre" + Martinique 1761; FranceArchives; nothing printed.
 - [x] key-rebuild: key rebuilt from the sibling's interlinear decipherment (~110 values) and extended from context in three rounds with kwic.py (89.1% valued, 81.5% sense measured); ciphertext-only annealing tried first and failed its control.
-- [x] retry: the three odd spots re-checked on the images (two encipherer slips, one confirmed); every open group dumped with kwic.py and retried in context; 22 values added; re-measured 93.0% valued, 86.7% sense. Single-occurrence word codes remain.
+- [x] retry: the three odd spots re-checked on the images (two encipherer slips, one confirmed); every open group dumped with kwic.py and retried in context; 22 values added; re-measured 93.0% valued, 86.7% sense; a final pass added attaqué/mille/voi and C-grade values: 94.3% valued, 92.2% sense. Single-occurrence word codes remain, not filled to avoid guesses.

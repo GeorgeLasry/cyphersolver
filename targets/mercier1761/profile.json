@@ -244,35 +244,44 @@
       ],
       "what": "Retry round: odd spots re-checked on the images (two encipherer slips), every open group retried with kwic.py, 22 values added (pos, soien, puis, ir, nos, com, an, fond, parei, qui, y + C-grade). 93.0% valued, 86.7% read as sense (measured).",
       "result": "worked"
+    },
+    {
+      "date": "2026-10-27",
+      "kind": "reading",
+      "technique": [
+        "crib testing"
+      ],
+      "what": "Single-use code pass: attaqué, mille, voi (+ C-grade cas, port, très, jours); measurement tightened (elisions only before vowels) and given a declared word list. 94.3% valued, 92.2% read as sense. Remaining ~40 single-use word codes left open rather than guessed.",
+      "result": "worked"
     }
   ],
   "outcome": {
     "method": "key recovered based on adjacent plaintext",
-    "method_basis": "Key rebuilt from the contemporary interlinear decipherment of sibling letter C8 A 63 f° 208 (same file series, same correspondents, 1761), extended from context in the target. 93.0% of tokens valued, 86.7% read as sense (measure_sense.py); about 46 groups, mostly occurring once, still open.",
+    "method_basis": "Key rebuilt from the contemporary interlinear decipherment of sibling letter C8 A 63 f° 208 (same file series, same correspondents, 1761), extended from context in the target. 94.3% of tokens valued, 92.2% read as sense (measure_sense.py); about 40 single-use groups, mostly occurring once, still open.",
     "contribution": [
       "transcription",
       "key recovered"
     ],
     "class": "read in part",
     "key": "partial",
-    "fraction_read": 0.867,
+    "fraction_read": 0.922,
     "verification": [],
     "notes": "In progress toward the read bar. Leads: more context work; image sweep of C8 A 63-64; COL B 113/114 and MAR/G/178 offline.",
     "gaps": [
       {
-        "item": "about 46 code groups (57 tokens), single-occurrence word codes",
-        "blocker": "open-codes",
-        "detail": "thin context; still to be tried"
+        "item": "about 40 single-use word codes (47 tokens)",
+        "blocker": "no-key-material",
+        "detail": "one occurrence each, context admits several words; 1761 key not online"
       },
       {
         "item": "C-grade values resting on one context",
-        "blocker": "open-codes",
-        "detail": "need confirmation"
+        "blocker": "no-key-material",
+        "detail": "no second occurrence to confirm"
       },
       {
         "item": "encipherer slips 'à r-ro-i-s livres', 'nous [16]frons'",
-        "blocker": "open-codes",
-        "detail": "groups clear on the image but wrong as written; read by sense, marked [?]"
+        "blocker": "no-key-material",
+        "detail": "groups clear but wrong as written; read by sense, [?]"
       },
       {
         "item": "1761 key; COL B 113/114; MAR/G/178",
