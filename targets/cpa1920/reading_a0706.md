@@ -24,5 +24,7 @@ possible.
   United Communist Party. C at 5/12 is not attested.
 - The sentences make the three-token group the writer's own side ("two members of U[?]P ... Grey and Conner from our
   side") and the two-token group the other side ("three members ... Brown, Mitchell and Jones from the [?]P side").
+  The letter is among the Communist Party of America papers; if Grey wrote as a CPA organizer, his own side would be
+  expected to be the CP, which is the reverse of what 5/12 = C gives. This is one more reason to leave 5/12 open.
 - What "P A C" is, and where the report was written, are not established. The report mentions "the S.P. of the C."
   and "Finns" and a convention "within two months". These are leads only.

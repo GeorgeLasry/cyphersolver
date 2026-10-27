@@ -113,8 +113,10 @@ SOV. RUS. (A939). Where the grid differs from the Bureau:
 | A880.2 | new-code telegram signature | AR[?][?][?] = **ARDEN** | D E N rest on the struck typed word "arden" alone |
 
 On A706 the sentences make the three-token group the writer's own side ("two members of U[?]P ... Grey and Conner
-from our side") and the two-token group the other side. What "P A C" is, and where Grey wrote from, are not
-established; the report mentions "the S.P. of the C." and "Finns". These are leads only, not checked.
+from our side") and the two-token group the other side. If Grey wrote as a CPA organizer, his own side would be
+expected to be the CP, the reverse of what 5/12 = C gives; one more reason to leave 5/12 open. What "P A C" is, and
+where Grey wrote from, are not established; the report mentions "the S.P. of the C." and "Finns". These are leads
+only, not checked.
 
 **B0494's date.** The copy is typed "January 24, 1920". The letter says the man "left the S.P." after "January
 raids" and joined a group "organized about three months ago", which fits January 1921 better. The year may be a

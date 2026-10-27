@@ -4,7 +4,7 @@ The letters are typed in clear English. Only the words in capitals were in the b
 grid in `key_new.tsv` (see `decryption.txt`). None of these runs has a Bureau decode, except A0939, where the
 Bureau wrote "I W" and "SOVRYS". The plaintext is English, so no translation is needed.
 
-## A0493, March 1921
+## A0493, 16 March [1921], signed DO. #6
 
 As to the application by this district for MINOR, I can state that I have not the slightest knowledge.
 
@@ -13,9 +13,10 @@ The word reads MINOR. Who or what is meant is not known. Robert Minor is only a 
 ## A0527, 27 April 1921
 
 We hereby inform you that you must have your delegates to the unity convention elected by MAY 12. This means that
-you are supposed to have all your delegates ready to begin travel upon this date.
+you are supposed to have all your delegates ready to begin travel upon this date, should subsequent instructions, to
+be sent you by this office, inform you that this is the date you are to leave on.
 
-## A0939, report of D.O. 9, undated
+## A0939, report of D.O. 9, 1921 (day and month cut off on the copy)
 
 Being watched very closely now, since distribution of leaflets. Members of I. W. doing distributing for us.
 
