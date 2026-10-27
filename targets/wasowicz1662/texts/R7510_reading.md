@@ -1,0 +1,11 @@
+# Wąsowicz to Lubomirski, 9 December 1663, continued (Jarosław) (ANK AKPot 3227, pp. 245–248; DECODE R7510): text in context (Polish)
+
+[…] clear text not reproduced; {x} probable; ‹x› slip or unresolved.
+
+p. 245 : […] Born miał za złe, że nie było do niego list[u] od Waszeci; mowił, że mu w tenże czas Paprocki. Kiedy to iest nieszczęście w domu naszym, że nie miewamy z sobą korespondencyi, przynamniey teraz pisać było, abym to robił imieniem iego. Odpowiedziałem: listu że nie d{a}no […], ale żebyś WMM Pan nie iedno miał rozumienie z Bornem w sprawach teraźnie[y]szych, mam zlecenie […] Bornowi.
+
+p. 246 : Narażałem się potym Bornowi, będąc u niego w pokoiu; iednego słowa do mnie mowić nie chciał, lubom sam dawał okazyą, namieniaiąc długi pozostałe. JMP Marszałek we czwartek na noc odiechał stąd do Przeworska, z kąd wczora po obiedzie iechał do Łańcuta. Nie idzie w Ukrainę y tak mowi: iam a{n}i hetman ani żołnierz do wiosny. Ma iechać do Ianowca, ale wprzod uczyni konferencyą z Woienskiem […] w Łańcucie. Udaią tu Bornowscy, że w woysku nie masz zgody et per consequens nic się dobrego nie stanie bez iego ‹d›ytności. […] powiedzieli mi, że cicho posłali do woyska, zdaiąc znać, żeby myślili o sobie, bo tu szelągami płacą deputatom, a tym czasem zakazuią brać ich. Są to także deputaci, y namienili, że woysko musi mieć koło potaiemnie. […]
+
+p. 247 : […] JMX Archidyakon nie pisał teraz do WMM Pana, bo zaraz nazaiutrz po pogrzebie odiechał do Sendomierza, ale z domu obiecał napisać. Miał ‹z› Bornem rozmowę, ale mi nie chciał odkryć, tylko to, że Born skarżył się na Waszeci, isz iego ruiną chcesz awancować. Born iuż Połonne odeymuie y słuchać pani nie barzo będą, bo kazał być u siebie mieszczanom połońskim w Łańcucie. […] Śmierć JMP Podczaszego z tłustości niewidaney przypisuią, ktora się miała zapalić z tańca wielkiego, bo sobie upo[do]bał Niemkę we Gdańsku y zakochał, a przydano, że miał krzemyk wnętrzny, około czego iest baieczek wszelkich między białemi głowami. […]
+
+p. 248, après « W Jarosławiu d. 9 decembr. 1663 » : Zanosiło się na to, że Born miał być teraz u Argenta, iako mi namienił starosta spiski, ale wczora Paczanowski powiedał o odmianie, od ktorego będę więcey wiedział iadąc przez Łańcut.
