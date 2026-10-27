@@ -1,7 +1,8 @@
 # Noailles (Venice) to the Cardinal de Lorraine, 13 Nov 1558 (BnF fr. 3151 no. 33): catalogue no. 10 (part)
 
-Status: in progress — the marginal decipherment of the time was found and is partly legible; the cipher itself
-(about 150 signs) has not been transcribed or attacked.
+Status: in progress (27 Oct 2026: transcribed and key largely recovered by Michael Brackx, issue #113; files
+requested). Three cipher blocks, 262 signs (his count); the marginal decipherments of the time are partly legible.
+Next step: reproduce his decode from his files, then retry the f. 60v gaps against the outer-margin gloss.
 
 Split on 14 Oct 2026 from `../guiche1551/` under the one-key rule (George Lasry, 14 Oct 2026). Catalogue item 10
 grouped this letter with La Guiche's Rome letter of 1551 (`../guiche1551/`, a 22-sign substitution) and Seure's
@@ -10,24 +11,53 @@ Worked 2026-09-21 (Claude Opus 5) as part of the joint entry.
 
 ## The letter
 
-Gallica btv1b9059865k, views 60–61 (f. 59–60). The letter is in clear (Levant galleys, Candia, Corfu) with two
-short cipher passages (3 and 3 lines) on f. 60r, in a symbol alphabet different from La Guiche's. **The court's
-decipherment is written beside each block in the inner margin** ("…mauluaise … gouvernement … affaires"; "grand
-seigneur … ne luy … de la fortune …"), but the binding has swallowed the start of each gloss line. Read at the time;
-the cipher itself (about 150 signs, an estimate by eye) was not attacked. A full reading would need the page opened
-flat, or a solve using the visible gloss words as cribs.
+Gallica btv1b9059865k, views 60–62 (ff. 59–60v). The letter is in clear (Levant galleys, Candia, Corfu) with
+**three cipher blocks sharing one key**, in a symbol alphabet different from La Guiche's:
 
-Images: `research/gallica_sweep/btv1b9059865k/` and `research/gallica_sweep/hi/k60.jpg`, `k61*.jpg` in the main
+- **A and B**, three lines each on f. 60r (view 61). **The court's decipherment is written beside each block in the
+  inner margin**, but the binding has swallowed the start of each gloss line. Gloss A: "… mauluaise … e pauur[eté] /
+  [cond]uitte q[u'il] donne a / … affaires"; gloss B: "[gr]and seigneur / [entre]prend sur luy et le / … / de la
+  Tou[ss]aint".
+- **C**, seven lines on f. 60v (view 62, left page), from after "… a dommaige" to before the clear "tant en Hongrie
+  qu'[en] / Italie". Its decipherment of the time stands in the **outer** margin and is nearly complete ("… pour le
+  singulier / plaisir … proffit / qu'ilz ont … / … plus hardiz ny / … ravitailles qu'ilz / … osté aux aultres / …
+  passées tant en / Hongrie …"). Found by Michael Brackx (issue #113, 27 Oct 2026); checked here on
+  `research/gallica_sweep/hi/k62.jpg`. Our first notes counted two blocks only.
+
+262 signs in all (Brackx's count; to be measured with `_check_profile.py --measure` once his transcription is in).
+The earlier figure, "about 150 signs", was an estimate by eye for A and B only.
+
+**Gloss readings corrected (27 Oct 2026).** The first notes quoted "gouvernement" (gloss A, line 2), "ne luy" and "de
+la fortune" (gloss B). These were misreadings: the crop `research/gallica_sweep/hi/k61_gloss.jpg` reads "…e
+pauur[eté]", "[cond]uitte q[u'il] donne a", "[entre]prend sur luy et le" and "de la Tou[ss]aint", as Brackx read them.
+
+Images: `research/gallica_sweep/btv1b9059865k/` and `research/gallica_sweep/hi/k60.jpg`, `k61*.jpg`, `k62.jpg` in the main
 checkout (git-ignored). Site figure: `docs/noailles1558_f60r.jpg` (was `guiche1551_noailles.jpg`).
 
+## Brackx 2026 (issue #113)
+
+Michael Brackx (https://github.com/brackxm), issue #113, 27 Oct 2026. **Not yet reproduced here: no files attached;
+requested.** As he reports it:
+
+- All 262 signs of the three blocks transcribed, with positions.
+- A homophonic symbol alphabet with nulls (a box sign, slashes, thin uprights) and two word signs, *qui* and *et*.
+- Key recovered from the glosses (A, B inner margin; C outer margin) and a French 5-gram model (Montaigne): 246 of 262
+  tokens valued, 16 of them tentative. About 0.75 of words read on firm values, 0.84 with the tentative ones; he grades
+  it *read in part*. Method if reproduced: key recovered from adjacent plaintext.
+- Negative checks: fr. 3151 no. 14 (Noailles to the King, 17 Oct 1558) is in clear; Ribier II has no November 1558
+  Noailles letter; fr. 20974 (31 Guise alphabets, 1556) has no alphabet that fits.
+- A parallel, not a source of plaintext: Charrière, *Négociations de la France dans le Levant* II, 505 (letter of
+  7 Nov 1558, "donne encore mauvais ordre à ses affaires"). Not checked here.
+
 ## Remaining gaps
-- start of each marginal gloss line - blocker: needs-physical-access; swallowed by the binding; needs the page opened flat
-- the cipher itself (about 150 signs) - blocker: not-attempted; not transcribed; the visible gloss words could serve as cribs
+- start of each marginal gloss line on f. 60r - blocker: needs-physical-access; swallowed by the binding; needs the page opened flat
+- Brackx's reading of A, B and C (262 signs) - blocker: not-attempted; not yet reproduced here: files requested (issue #113): transcription with positions and legend, key with the basis of each value, raw decode aligned, readings with holes marked
+- f. 60v C2, C4, C5 unread groups where the outer gloss is legible ("ilz ont dû commun…", "… pour a hazard", "… ravitaillez") - blocker: not-attempted; a crib exists, so this is work left, not an outside blocker; values fixed there may also close A3 and B1
 
 ## Escalation
-- [x] siblings: fr. 3151 searched; the Seure letters (nos. 39-44) are a different cipher; no other Noailles cipher letter of the volume was checked
-- [x] clear-pages: the marginal decipherment of the time found on f. 60r
-- [ ] known-keys: not done — no Noailles key (his Venice embassy, 1557-59) looked for
-- [ ] print: not done — the Noailles ambassade edition (Vertot, 1763) and Ribier (1666) not searched for this letter
-- [ ] key-rebuild: not done — the cipher is not transcribed
+- [x] siblings: fr. 3151 searched; the Seure letters (nos. 39-44) are a different cipher; fr. 3151 no. 14 (Noailles to the King, 17 Oct 1558) is in clear (Brackx, issue #113)
+- [x] clear-pages: the marginal decipherment of the time found on f. 60r; the f. 60v outer-margin decipherment of block C (Brackx, issue #113; checked here on view 62)
+- [x] known-keys: fr. 20974 Guise alphabets of 1556, 31 tried, none fits (Brackx, not checked here); the Cardinal de Lorraine's own key (pp. 41-44) is of the same sign kind with other values (Brackx)
+- [x] print: Ribier II has no Nov 1558 Noailles letter (Brackx); Charrière II 505 a parallel phrase only. The Noailles ambassade edition (Vertot, 1763) not yet searched
+- [x] key-rebuild: Brackx, gloss alignment + French 5-gram (Montaigne), 246/262 valued; not yet reproduced here
 - [ ] retry: not done

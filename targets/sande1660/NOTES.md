@@ -1,7 +1,12 @@
 # Marquês de Sande's papers, ANTT Luís de Miranda Pereira liv. 1: cipher A (Dutch Republic, c. 1657) and cipher B (Rome, 1664)
 
-Status: contributed by WAINUT (27 Oct 2026). Cipher A: key recovered from the ciphertext alone; the transcribed
-passages are read in part, but most of the cipher lines are not yet transcribed. Cipher B: located, not solved.
+Status: in progress (27 Oct 2026, merge review of PR #124). Next step: transcribe the rest of cipher A (most of
+m0265-m0267, m0269 lines 1-2 and 13 on, m0271-m0273) and decode it with key.txt; then test Fernando Teles de Faro
+(catalogue 385) as the writer, and work cipher B from the m0063 glosses. Not "read in part" yet: about 245 of ~290
+lines are untranscribed with no outside blocker.
+
+Contributed by WAINUT (27 Oct 2026). Cipher A: key recovered from the ciphertext alone; about 45 of ~290 lines
+transcribed and read, but most of the cipher lines are not yet transcribed. Cipher B: located, not solved.
 The site page and the ledger rows are left to the maintainer.
 
 Catalogue 390. Contributed by WAINUT (https://github.com/WAINUTAI). The work was done with AI language-model agents.
@@ -93,12 +98,12 @@ Doubtful, not changed: "crocadas" (m0265.03) may be "trocadas" (19 for 15); "pes
 Line by line in `decryption.txt` (output of `python decrypt.py`), as sentences in `reading.md`, in English in
 `translation.md`. The opening (m0265):
 
-> Com grande desgosto fico ao presente, porque chegou da Haia, e nela [62] vi [341] cousas são [?trocadas], que […]
+> Com grande desgosto fico ao presente, porque chego da Haia, e nela [62] vi [341] cousas são [?trocadas], que […]
 > sei o que diga. Com a chegada dos [128], que tem feito relação […], estão todos tão acesos contra Portugal que não é
 > crível. [63] [65] A Monsieur de Thou, embaixador de França, vi todos os dias desta semana, e lhe estou muito
 > obrigado …
 
-> I am at present in great displeasure, because word came from The Hague … With the arrival of the [128], who have
+> I am at present in great displeasure, because I have come from The Hague … With the arrival of the [128], who have
 > made a report […], they are all so inflamed against Portugal that it is not to be believed. [63] [65] Monsieur de
 > Thou, ambassador of France, I have seen every day this week, and I am much obliged to him …
 
@@ -120,6 +125,10 @@ The close (m0273):
 
 > … And I say again that nothing can moderate this fury except hearing some person on His Majesty's behalf come to
 > treat of a settlement. God [62] keep Your Excellency [62].
+
+m0265.02 15.14.27.8.2 decodes "chego", first person present: the writer has come (back) from The Hague and writes
+from elsewhere (the clear letter just before, m0264, is from Amsterdam). The first reading modernised it to
+"chegou" ("word came from The Hague"); corrected at the merge review (27 Oct 2026).
 
 "pode moderar" joins m0273.e08 "podemo" and e09 "derar" across the line end; the first reading had "podemos de[r]ar".
 "Sua M[ajestade]" is "sua mo" in the cipher (also "a suamo" in e01); it could also be read "seu amo" (his master).
@@ -197,6 +206,8 @@ The second reader's run on its own m0269 transcription alone (52 words) gave 17 
   the text should repeat some of them.
 - Cipher A, writer, addressee and exact date - blocker: not-attempted. Ulhoa / Teles de Meneses and Francisco de Melo
   are untested; the m0268 date line needs a second reading.
+  Lead (merge review, 27 Oct 2026): Fernando Teles de Faro, Portuguese envoy at The Hague 1657-59; catalogue 385
+  (Teles de Faro to Francisco de Melo, 1658-59) is the sibling to test for the writer and for shared code groups.
 - Cipher B (Rome 1664) - blocker: not-attempted. The m0063 glosses are the way in.
 
 ## Escalation
@@ -218,3 +229,14 @@ The second reader's run on its own m0269 transcription alone (52 words) gave 17 
 - `reading.md`: the passages as Portuguese sentences, holes marked
 - `translation.md`: English translation, same holes
 - `key.txt`: the letter table and the code groups seen
+
+## Review (27 Oct 2026, merge of PR #124)
+
+- key.txt re-implemented independently: all 46 transcribed lines decode, every sign below 60 has a value, output
+  identical to decryption.txt but for "q"/"que" on a lone 16 (three m0269 lines).
+- Ciphertext-only anneal on the transcription with `lang` `pt-modern` (order 5), values free: 2 of 3 runs converge
+  to 24 of the 26 values; the other two (10 = i for j, 22 = m for x) are spelling preferences of the model
+  ("embaixador" 1.7.9.3.5.22.3 needs x). The "key recovered from ciphertext-only" claim stands.
+- Reading graded by the reviewer: passages 1, 3-6 A; passage 2 (m0266.02-05) B. The grade covers only the ~45
+  transcribed lines.
+- Not checked by anyone yet: Prestage (1928) and the printed Sande correspondence; first_break = true is provisional.

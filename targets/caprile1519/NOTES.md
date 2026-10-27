@@ -1,6 +1,6 @@
 # Giuliano Caprile (Eger) to Bonaventura Pistofilo, 9 March 1519: the 1519 two-tier cipher (catalogue 157, R1128) — NOTES
 
-Status: in progress (written up in docs/caprile1519.html as attempted, not solved; R1128 not read; the key is still rebuildable from the 1882 sibling decipherments)
+Status: in progress (written up in docs/caprile1519.html as attempted, not solved; R1128 not read; the key is still rebuildable from the 1882 sibling decipherments). 27 Oct 2026: a 19th-century reconstruction of this key is printed in Cremonini 2017 (found by Michael Brackx, issue #121); the originals are ASMo Cifrario b. 8 fasc. 4
 
 Split on 14 Oct 2026 under the one-key rule (George Lasry, 14 Oct 2026): one entry per key. This folder held the whole
 Caprile/Cistarelli file (ASMo Ungheria b. 4, DECODE R1128–R1139) with three ciphers. It now keeps the **1519 two-tier
@@ -74,6 +74,46 @@ letter-column types have reliable values; a language-model anneal over R1133+R11
 another 1882-paired letter (R1131/5b, R1132/6b) line by line against the decipherment, to fill the letter table and the
 codebook, then R1128.
 
+## The archivists' key (Cremonini 2017)
+
+Found by Michael Brackx (issue #121, 27 Oct 2026, from his checkpoint `historical-cypher/targets/caprile1519/r1132_6b/`);
+the citation and pages checked here on 27 Oct 2026.
+
+- Patrizia Cremonini, "Note sulle testimonianze dell'Archivio di Stato di Modena …", *Rivista di Studi Ungheresi* XVI
+  (2017), 105-154. PDF p. 33 (printed p. 137): "Cifrario n. 5. Cifra con Ungheria (1519) – Card. d'Este e Caprile
+  Giuliano, ricostruita dagli archivisti nel secolo XIX", n. 80: ASMo, A.S.E., Cancelleria, Cifrario, b. 8, fasc. 4
+  "Cifre". PDF p. 49 (printed p. 153) reproduces the key sheets as figs. 17.1-17.3: alphabet, "doppie", syllable rows, a
+  repertory and the archivists' note. The note says the 1519 Caprile dispatches were copies of letters Ippolito d'Este
+  sent to the French king on the imperial election, which matches what R1133 showed.
+- Resolution: the embedded images are about 350 x 470 px each, too small to transcribe sign by sign. The originals at
+  ASMo (b. 8 fasc. 4) are the real key. The PDF is not in git (a copy fetched for the 27 Oct review is in the session
+  scratchpad only).
+- Somogyi's description of the system, as reported by Brackx, **not checked here**: W. Somogyi Judit, *Kéziratos
+  szöveg(re)produkció Itáliában a kora újkor kezdetén*, p. 237: 252 symbols, 144 of them syllables (14 doubled
+  consonants, 85 two-letter, 45 three/four-letter syllables such as *cra*, *stro*); shelfmark given as ASMo Cifrari,
+  Cifre con Ambasciatori … sec. XVI, b. 5, fasc. 1, which differs from Cremonini's (flagged by Brackx).
+- A second pointer to b. 8 fasc. 4: *Segrete scritture estensi* (ASMo 2020), pp. 129-130 (Brackx's note, not checked).
+
+## Brackx 2026 (issue #121)
+
+Michael Brackx (https://github.com/brackxm), issue #121, 27 Oct 2026; OpenAI Codex-assisted inspection, Python/Pillow.
+Contributor's provisional evidence, not a reading:
+
+- **BO** = a tall d-like upper with a lower loop over the n base, fitted on R1134 against the 1882 copy 8c (*bon conto*);
+  kept as a provisional BO at R1128 L01 position 8. Consistent with our R1130/4c finding (base n = *o*). One value on one
+  faint occurrence.
+- **Frozen transfer test on R1134** against 8c: 40 pairs, 37 assigned, 3 abstentions; 32 exact, 5 different
+  (DE/DI, I/N twice, SI/SE, R/RE), 32/37 = 86.5%, short of his own 95% target. The plaintext was seen before the test,
+  so it is not a blind test. Recounted here from his `E53_comparison.json` (40 / 32 / 5 / 3, as stated). The I/N
+  look-alike is the main failure.
+- **Column-shift diagnosis** for our `t1519.txt`: some small upper signs sit right of their base and were assigned to
+  the next column (his example: R1128 L02 cols 11-16). Not yet checked here; it may explain why every table so far
+  scores like a random key on R1128. His working table: 78 groups / 74 values (`visual_key_v21_training.json`,
+  "reference-assisted, not held out").
+- His R1128 fragment "uno al[?tro], per il che non mi è [?pa]rso tempo" (*tro* and *pa* supplied from context) is a
+  proposal, not a reading under our bar.
+- He confirms R1134 faces 4-5 are a second letter, Buda 15 June 1519 (already in the record map).
+
 ## Log
 
 - 2026-09-21: DECODE R1126–R1140 metadata and images; Vestigia searches "Caprile" (52) and "Cistarelli" (20);
@@ -89,13 +129,13 @@ codebook, then R1128.
 
 ## Remaining gaps
 
-- R1128 (9 Mar 1519, two-tier cipher, 183 columns, 78 column types, 39 code words) - blocker: left-open; known keys (`knownkeys.py r1128`): the R1130/4c syllabary covers 32 % of columns and scores like a random key (LM -3.22 vs -3.24), fixed1519 covers 13 %, key1519_ann is fitted on R1128 itself (no evidence); the 1882 sibling decipherments (R1129-R1135) still allow a key rebuild (R1131/R1132 against 5b/6b), so the key material exists and the gap is work, not an outside blocker; next: transcribe R1132 against 6b
+- R1128 (9 Mar 1519, two-tier cipher, 183 columns, 78 column types, 39 code words) - blocker: left-open; known keys (`knownkeys.py r1128`): the R1130/4c syllabary covers 32 % of columns and scores like a random key (LM -3.22 vs -3.24), fixed1519 covers 13 %, key1519_ann is fitted on R1128 itself (no evidence); the 1882 sibling decipherments (R1129-R1135) still allow a key rebuild (R1131/R1132 against 5b/6b), so the key material exists and the gap is work, not an outside blocker; next (27 Oct 2026): (1) get ASMo Cifrario b. 8 fasc. 4 (and b. 5 fasc. 1) photographed, or transcribe Cremonini 2017 figs. 17.1-17.2 as far as the print allows (an access request to ASMo); (2) re-transcribe R1128 with the upper signs re-attached to their bases (Brackx's column-shift diagnosis, issue #121); (3) then R1132 against 6b
 
 ## Escalation
 
 - [x] siblings: R1126-R1140 and Vestigia files opened; 1882 b/c decipherments found for R1129-R1135 (2 Oct 2026)
 - [x] clear-pages: b/c items identified as 1882 decipherments; R1135 interlinear gloss; R1128 has none
-- [x] known-keys: done 2 Oct 2026 (`knownkeys.py`): the 1519 tables (pairX syllabary, fixed1519, key1519_ann) on R1128 give no signal against a random-key control; the 1520-21 key (`../caprile1520/key21.json`) is another system; Fantini's 1517-18 letters (jantini1517) are the same family but not this key
-- [x] print: ASMo inventory; nothing printed for R1128
+- [ ] known-keys: reopened 27 Oct 2026: Cremonini 2017 prints the ASMo archivists' 19th-century key (b. 8 fasc. 4, figs. 17.1-17.3; pointer from Brackx, issue #121), not yet applied. Earlier, 2 Oct 2026 (`knownkeys.py`): the 1519 tables (pairX syllabary, fixed1519, key1519_ann) on R1128 give no signal against a random-key control; the 1520-21 key (`../caprile1520/key21.json`) is another system; Fantini's 1517-18 letters (jantini1517) are the same family but not this key
+- [x] print: ASMo inventory; nothing printed for R1128 (the letter); for the key, Cremonini 2017 figs. 17.1-17.3 (low resolution) and Somogyi, Kéziratos szöveg(re)produkció p. 237 (system described; reported by Brackx, not checked)
 - [x] key-rebuild: seeded EM on R1133/7c (one letter per column) and R1130/4c (syllabary); factorised syllabary rebuild (failed)
 - [x] retry: R1128 decoded with every 1519 table (2 Oct 2026); nothing reads. Still open as work: the key from R1131/R1132 against 5b/6b

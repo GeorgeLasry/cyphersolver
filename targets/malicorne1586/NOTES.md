@@ -1,7 +1,8 @@
 # Malicorne to Henri III, Niort, 21 April 1586: cipher letter in BnF fr. 15572 ff. 162–164 (Malicorne's cipher)
 
-Status: in progress (26 Oct 2026: all six pages read as far as the key allows and the split candidates checked
-(issue #92); left open: the `Lb`/`Lm` check on f. 162r, f. 163 and canvas 171, where no usable line positions exist).
+Status: in progress (26 Oct 2026: all six pages read as far as the key allows; the label checks on f. 162r, f. 163r
+and canvas 171 done after deskewing (Brackx, issue #92, 26 Oct 08:17): no shape split resolves the remaining
+two-valued labels; open only for a second deciphered letter in this key).
 
 **Read in part, 24 Oct 2026.** Contributed by Michael Brackx (@brackxm, issue #92, 22–23 Oct 2026), with Claude Code
 (Claude Opus 5.5). Method: **read with known key**: Tomokiyo's key table ("Malycorne's Cipher", Cryptiana henryiii
@@ -56,7 +57,7 @@ four letters or more under the best segmentation, against the same letters shuff
 | f. 162r | 739 | 807 | 15.6% | 3 | 72.7% | 24-26% |
 | f. 163r (A + B) | 257 | 276 | 17.0% | 1 | 71.4% | 18-22% |
 | f. 162v | 863 | 940 | 14.1% | 0 | 69.3% | 23-27% |
-| canvas 171 | 585 | 633 | 9.8% | 0 | 68.4% | 22-28% |
+| canvas 171 | 585 | 633 | 9.6% (Brackx; 9.8% before one relabel) | 0 | 68.4% | 22-28% |
 | canvas 172 left | 865 | 925 | 13.3% | 0 | 71.6% | 22-32% |
 | canvas 172 right | 609 | 673 | 11.1% | 0 | 81.1% | 23-32% |
 
@@ -77,18 +78,25 @@ Sentences build only between holes: f. 162v ll. 1-6, [?Laval] dead of grief afte
 Saintes; canvas 172 right, soldiers with intelligences with the enemy and the companies still to come; canvas 171,
 ladders of [?wood] and rope to surprise a town on an intelligence.
 
-Split checks on tiles cut by template matching (canvases 170 left, 172 left and right): **`Lb` splits** (barred £ =
-*m*, looped ℒ = *b*; the *m* tokens on canvas 172 moved to `Lc`, decoded text unchanged; two-valued share 172 left
-13.3% to 11.9%, 172 right 11.1% to 10.3%); `F` does not (all 19 tokens the same barred f); `Lm` does not on f. 162v;
-`y_` does not (one possible ꝩ flagged); `cr` probably splits (2 *h* tokens a crossed p with a bowl, 5 *s* tokens a
-dagger-like stem) but too few *h* to relabel.
+Split checks on tiles (canvases 170 left, 172 left and right, 25 Oct, cut by template matching; f. 162r, f. 163r and
+canvas 171 after deskewing the blocks, -3.5°, -1° and -2.25°/-2.5°, 26 Oct 08:17; Brackx, issue #92; 45 tokens of
+`Lb`, `Lc`, `Lm` and `cr` checked). **The barred £ is always *m*** (`Lc`). **The looped ℒ (`Lb`) is *b* or *m***, with
+six *m* tokens (162r l. 7; 162v l. 11; 171 right ll. 10, 16; 172 left l. 31), so `Lb` stays two-valued: the 25 Oct
+rule "looped ℒ = *b*" was wrong. The canvas 172 *m* tokens (two-valued share 172 left 13.3% to 11.9%, 172 right 11.1%
+to 10.3%) and 171 right l. 9 were moved to `Lc`; 162r l. 19 (a looped ℒ) was left as `Lc`. `Lm` (*m*/*n*): one barred
+£ shape throughout (21 tokens on f. 162r/163r/171, plus f. 162v), no split. `cr` (*h*/*s*): crossed p, crossed v and
+dagger forms, none keeping to one value, so no split (the 25 Oct "probable split" withdrawn). `F` (all 19 tokens the
+same barred f) and `y_` (one possible ꝩ flagged) do not split. The decoded text is unchanged by every relabelling.
+The deskewed positions and the relabelled canvas 171 transcription are not yet in the gist (last revised 25 Oct
+22:00): requested.
 
 **Split candidates** (Brackx's legend): `F` (*d* / *la*: Tomokiyo draws *la* as the same looped f with a bar, so a bar
 check per token should separate them); `cr` (*h* / *s*: a crossed p and a dagger-like stroke on the canvas 172 tiles);
 `Lb` (*b* / *m*) and `Lm` (*m* / *n*): script ℒ, barred £ and plain L not told apart in transcription; `a2` (*n* / *o*);
 `y_` (15 tokens on canvas 172, hooked ɣ = *s* or looped ꝩ = *p*). Not splittable by shape at this resolution: `dc`/`dcL`
 (one ∂ shape for c / s / o); too few tiles: `zz`, `s`. Usable sign positions exist only for canvas 172 (f. 163 and
-canvas 171 have none; the f. 162 positions are misaligned).
+canvas 171 have none; the f. 162 positions are misaligned). (25 Oct; on 26 Oct Brackx cut positions for f. 162r, f. 163r and canvas 171 after
+deskewing, see the split checks above.)
 
 > A: [?] consiste en la creance du [?] porteur et [l]esdicts articles. (margin: *consiste en la creance du port[eu]r, & les articles*)
 
@@ -119,8 +127,7 @@ Six hand-chosen readings (7 letters, all on two-valued labels: 0.6% of f. 162r's
 ## Remaining gaps
 
 - f. 162v and canvases 171-172 (four pages): decoded, not read (read share 0.565-0.790) - blocker: no-key-material; readings built and the split candidates checked (issue #92); no contemporary decipherment of these pages or of another letter in this key
-- `Lb`/`Lm` on f. 162r, f. 163 and canvas 171, and `cr` (h / s) - blocker: not-attempted; f. 162r positions are misaligned and f. 163 and canvas 171 have none; new positions would have to be cut
-- f. 162r and f. 163r B: decoded, not read (0.622, 0.694) - blocker: no-key-material; 13 labels still carry two values with shapes not split at this resolution, and the B margin is mostly illegible between 'argent' and 'descouvertes'
+- f. 162r and f. 163r B: decoded, not read (0.622, 0.694) - blocker: no-key-material; 13 labels still carry two values; shape checks after deskewing (26 Oct) split none of `Lb` (ℒ), `Lm`, `cr`, `F`, `y_`, so the values can only be fixed from context or a second deciphered letter, and the B margin is mostly illegible between 'argent' and 'descouvertes'
 - f. 163r A: the opening group, the word before 'porteur', the supplied l of lesdicts - blocker: too-short; single groups at the edges of a two-line stretch with no margin word
 
 ## Escalation
@@ -129,5 +136,11 @@ Six hand-chosen readings (7 letters, all on two-valued labels: 0.6% of f. 162r's
 - [x] clear-pages: the f. 163r margin decipherment used as the crib; no clear copy found among ff. 162-173
 - [x] known-keys: Tomokiyo's Malycorne table applied and corrected
 - [x] print: Tomokiyo gives the key table only; no edition found by Brackx's web search
-- [x] key-rebuild: aligned decodes of all six pages and the 195-label shape legend (23 Oct 2026); split candidates checked on tiles (25 Oct 2026): `Lb` split, `F`, `Lm`, `y_` not, `cr` probable
-- [x] retry: all four pages re-decoded after the `Lb` split (no letter changes) and read in the f. 163r format (Brackx, 25 Oct 2026)
+- [x] key-rebuild: aligned decodes of all six pages and the 195-label shape legend (23 Oct 2026); split candidates checked on tiles (25 Oct 2026); `Lb` barred £ moved to `Lc` (*m*), looped ℒ still *b*/*m*; `F`, `Lm`, `y_`, `cr` do not split (25-26 Oct, deskewed tiles on all six pages)
+- [x] retry: all four pages re-decoded after the `Lb` split (no letter changes) and read in the f. 163r format (Brackx, 25 Oct 2026); 26 Oct: canvas 171 relabel, decode unchanged
+
+## Log
+
+- 2026-10-26 08:17 Brackx (issue #92): deskewed f. 162r/163r/171; 45 tokens of `Lb`/`Lc`/`Lm`/`cr` checked; `Lb` rule
+  corrected (looped ℒ = *b* or *m*), `cr` no split; one token relabelled (171 right l. 9, `Lb` to `Lc`); text unchanged.
+  Recorded here 27 Oct 2026.

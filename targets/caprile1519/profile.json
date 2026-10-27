@@ -67,7 +67,7 @@
  "conditions": {
   "prior_solution": {
    "exists": "no",
-   "where": "none for R1128; the sibling letters R1129-R1135 in the same cipher were deciphered in 1882 (filed as b/c) or interlined",
+   "where": "none for R1128; the sibling letters R1129-R1135 in the same cipher were deciphered in 1882 (filed as b/c) or interlined. The key itself was reconstructed by the ASMo archivists in the 19th century (ASMo A.S.E. Cancelleria, Cifrario b. 8 fasc. 4), printed small in Cremonini, Rivista di Studi Ungheresi XVI (2017), figs. 17.1-17.3, p. 153: found 27 Oct 2026 (Michael Brackx, issue #121), after the attempts of 21 Sept and 2 Oct, not yet used",
    "found": "not found",
    "used": false
   },
@@ -87,7 +87,7 @@
   ],
   "sessions": 1,
   "first_date": "2026-09-21",
-  "last_date": "2026-10-02"
+  "last_date": "2026-10-27"
  },
  "solution": [
   {
@@ -152,6 +152,33 @@
    "technique": ["other"],
    "what": "Method checked after George Lasry (24 Oct 2026) separated key and text: stays not solved, because the tables rebuilt from the sibling decipherments give no signal on R1128, so no key for this letter was obtained.",
    "result": "failed"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "hypothesis",
+   "technique": ["plaintext matching"],
+   "what": "Contributor step (Michael Brackx, issue #121; OpenAI Codex-assisted): BO = tall d-like upper with a lower loop over the n base, fitted on R1134 against the 1882 copy 8c ('bon conto'); kept as a provisional BO at R1128 L01 pos. 8. Consistent with the R1130/4c base n = o. One value on one faint occurrence.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "verification",
+   "technique": ["plaintext matching"],
+   "what": "Contributor step (Brackx, issue #121): frozen 40-pair transfer test of his table on a newly fetched page of R1134 against 8c: 37 assigned, 3 abstentions, 32 exact, 5 different (86.5%), short of his 95% target; plaintext seen before the test, so not blind. Recounted here from his E53_comparison.json: 40/32/5/3 as stated.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "literature search",
+   "what": "Contributor step (Brackx, issue #121), citation checked here: the ASMo archivists' 19th-century reconstruction of the 1519 key, 'Cifra con Ungheria (1519) - Card. d'Este e Caprile Giuliano', is described in Cremonini, Rivista di Studi Ungheresi XVI (2017) p. 137 n. 80 (ASMo Cancelleria, Cifrario b. 8 fasc. 4) and printed as figs. 17.1-17.3 on p. 153, at about 350 px per sheet, too small to transcribe sign by sign. Known-keys escalation reopened; the originals at ASMo are the next step. Somogyi's description (252 symbols, 144 syllables; ASMo b. 5 fasc. 1) as reported by Brackx, not checked.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "hypothesis",
+   "technique": ["other"],
+   "what": "Contributor step (Brackx, issue #121), not yet checked here: in t1519.txt some small upper signs that sit right of their base were assigned to the next column (example R1128 L02 cols 11-16). If confirmed, it may explain why every 1519 table scores like a random key on R1128; re-transcribe R1128 with the uppers re-attached before the next decode.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -179,6 +206,14 @@
     "who": "contemporary",
     "role": "key or decipherment used",
     "note": "1882 decipherments and interlinear glosses of the sibling letters R1129-R1135, used as cribs for the 1519 tables"
+   },
+   {
+    "who": "brackx",
+    "role": "pointer",
+    "note": "located the archivists' 1519 key in Cremonini 2017; BO value and transfer test on R1134/8c; R1128 column-shift diagnosis (OpenAI Codex-assisted)",
+    "date": "2026-10-27",
+    "source": "https://github.com/dbourdeau/cyphersolver/issues/121",
+    "published": true
    }
   ]
  }

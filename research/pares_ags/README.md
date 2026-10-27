@@ -16,6 +16,9 @@ Estado, and the Archivo Histórico Nacional (AHN) Estado.
   "carta cifrada", contracifra, cifras.
 - `screen.py` ranks the unscreened hits offline for reading (see the evening-batch screening below).
 - Each hit kept as a candidate was checked with `research/archive_sweep_2026-10/known.py` on legajo and folio.
+  Run it with the repo's forms as well as the PARES signatura: "leg. NNNN" and "Estado leg. NNNN no. N" besides
+  "EST,LEG,NNNN,N". The PARES form alone missed EST,LEG,1394,247, which is `targets/toledo1565/` (written there as
+  "AGS Estado leg. 1394 no. 247"); it was taken out of the Genoa row at the merge review, 27 Oct 2026.
 
 ## Access log
 
@@ -69,6 +72,8 @@ Estado, and the Archivo Histórico Nacional (AHN) Estado.
   form as well (check the field names in the saved form first). Six of the seven period jobs of each term were
   therefore repeats: 84 of the 117 requests brought no new rows. The `anio1`/`anio2` fields on those rows in
   `hits.jsonl` are the requested range, not a filter PARES applied.
+  `run_batch.py` now refuses year-range (`term@years`) jobs until `sweep.open_search` sends the years in the POST
+  (merge review, 27 Oct 2026), so a resume cannot repeat the 84 wasted requests.
 - Stopped by WAINUT after this batch. Nothing else was requested from PARES. Resume with `run_batch.py` (it picks up
   from `hits_progress.json`) once the year filter is fixed; "cifrada" is still 923 of 1,282, and "cifra" and
   "descifrado" were not run.

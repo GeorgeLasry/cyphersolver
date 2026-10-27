@@ -44,9 +44,9 @@ Every label in the round-2 transcriptions, with its count, its value(s) in the r
 | `R` | 46 | p | rho with a loop, p-like (℘/ρ) | Tomokiyo table | f162r,f162v,f163,f171,f172l,f172r |
 | `Z` | 46 | m | 3 with a long tail (ʒ) | contact sheet, f. 172 | f162r,f162v,f172l,f172r |
 | `no` | 44 | que | the letters no | Tomokiyo table | f162r,f162v,f163,f171,f172l,f172r |
-| `Lb` | 43 | b/m | script L with a loop (ℒ) | Tomokiyo table | f162r,f162v,f163,f171,f172l,f172r |
+| `Lb` | 43 | b/m | looped ℒ; values *b* and *m* (6 *m*), not split by shape (26 Oct) | Tomokiyo table | f162r,f162v,f163,f171,f172l,f172r |
 | `aL` | 35 | o/n | cursive a (the f. 172 left form of a) | contact sheet, f. 172 | f172l |
-| `Lm` | 34 | m/n | L with a bar (£) | Tomokiyo table | f162r,f162v,f163,f171 |
+| `Lm` | 34 | m/n | barred £, *m*/*n*, not split by shape (26 Oct) | Tomokiyo table | f162r,f162v,f163,f171 |
 | `do2` | 33 | ll | two joined round d (∂∂), single-loop forms split off as mm2 | notes / label name | f162r,f162v,f171,f172l,f172r |
 | `s` | 33 | g/u | small s | Tomokiyo table | f162r,f162v,f163,f171,f172r |
 | `k` | 30 | c | k | Tomokiyo table | f162r,f162v,f163,f171,f172l,f172r |
@@ -54,8 +54,8 @@ Every label in the round-2 transcriptions, with its count, its value(s) in the r
 | `dcL` | 25 | c/o | round-backed d ∂ (f. 172 left) | contact sheet, f. 172 | f172l |
 | `zz` | 22 | ss/h | d with a stroke through it (struck ꝺ), f. 162–171 | Tomokiyo table | f162r,f162v,f163,f171 |
 | `X` | 20 | x | chi χ | Tomokiyo table | f162r,f162v,f163,f171,f172l |
-| `cr` | 18 | h/s | crossed p ꝑ | contact sheet, f. 172 | f162r,f163,f171,f172l |
-| `Lc` | 17 | m | script L without the loop (ℒ, plain form) | notes / label name | f162r,f162v,f171,f172l,f172r |
+| `cr` | 18 | h/s | crossed p ꝑ, crossed v or dagger; *h*/*s* not split by shape (26 Oct) | contact sheet, f. 172 | f162r,f163,f171,f172l |
+| `Lc` | 17 | m | barred £ (*m*); one looped ℒ token at 162r l. 19 left here (26 Oct) | notes / label name | f162r,f162v,f171,f172l,f172r |
 | `dx` | 17 | s | d with a stroke through it (struck ꝺ), f. 172 | contact sheet, f. 172 | f172l,f172r |
 | `3` | 15 | l | figure 3 | Tomokiyo table | f162r,f163,f171,f172l |
 | `sh3` | 15 | s | not described | not confirmed | f162r,f162v |
@@ -207,3 +207,8 @@ Every label in the round-2 transcriptions, with its count, its value(s) in the r
 | `xpq` | 1 | — | not described | not confirmed | f162v |
 | `xsx` | 1 | null | not described | not confirmed | f162r |
 | `zi` | 1 | i | not described | not confirmed | f163 |
+
+Note (27 Oct 2026, from Brackx's issue #92 comment of 26 Oct 08:17): the `Lb`, `Lm`, `Lc` and `cr` shape descriptions
+above were corrected after his deskewed tile check of f. 162r, f. 163r and canvas 171. The barred £ is always *m*; the
+looped ℒ is *b* or *m*; `Lm` and `cr` do not split by shape. Counts are those of 23 Oct (before the relabels). To be
+replaced by his updated legend when he posts it.

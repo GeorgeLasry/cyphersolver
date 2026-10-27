@@ -1,6 +1,8 @@
 # Powhatan Ellis to John Forsyth, No. 9, Mexico, 16 Nov 1839: a coded despatch in the JQA code, with its 1839 clear copy
 
-Status: contributed by WAINUT (27 Oct 2026). Already solved: the Department's contemporary clear copy of the whole
+Status: in progress. To be merged with Michael Brackx's issue #120 material (1836-40 despatches) into one Ellis folder and written up then.
+
+Contributed by WAINUT (27 Oct 2026). Already solved: the Department's contemporary clear copy of the whole
 coded passage is in the same file, so the method is "read from existing decipherment". The groups were transcribed,
 decoded with the JQA code table (`../jqa/code_table.tsv`, applied unchanged) and aligned with that copy: the table
 alone gives a value to 471 of 519 groups; the rest (about 48) are filled from the clear copy. The site page and the ledger rows are left to the
@@ -90,6 +92,36 @@ port; 1067 s instead of say; 1366 tal instead of take; 1003 able beside cal; and
 Queued as a `jqa` follow-up for the maintainer (not applied here). The most important is 1264 = full stop, attested
 41 times (Crawford 1813 30x, Ellis 1839 11x, fixed by Ellis's clear copy), which conflicts with the table's grade-H
 "gar".
+
+## Cross-check with Brackx's transcription (issue #120, 27 Oct 2026)
+
+Michael Brackx (issue #120) transcribed all of Ellis's coded pages of 1836-40 (36 pages, 4,117 groups; M97 rolls 8-10)
+and found the Department's decipherments filmed with them (all but 26 Oct 1836). His four pages of No. 9 (vol. 9 frames
+298, 299, 302, 303) and `ellis1839_transcription.txt` both have 519 groups and agree on 505. The 14 single-group
+differences, to be settled on the frames when the two are merged (group number in this file, line label, Brackx /
+this file):
+
+| group | line | Brackx | here |
+|---|---|---|---|
+| 41 | 0298.07 | 1551 | 1557 |
+| 54 | 0298.09 | 668 | 1068 |
+| 130 | 0299.04 | 145 | 45 |
+| 144 | 0299.06 | 1450 | 1430 |
+| 146 | 0299.07 | 438 | 1438 |
+| 150 | 0299.07 | 1361 | 1261 |
+| 198 | 0299.16 | 1570 | 1510 |
+| 210 | 0299.18 | 451 | 457 |
+| 232 | 0299.22 | 451 | 457 |
+| 292 | 0302.04 | 1001 | 1501 |
+| 374 | 0302.18 | 1070 | 1075 |
+| 434 | 0303.02 | 833 | 03 |
+| 454 | 0303.06 | 1216 | 416 |
+| 468 | 0303.09 | 731 | 721 |
+
+Values: of the 11 numbers both propose, 10 agree (116 Congress, 383 su, 647 mil, 987 four, 1067 s, 1152 por, 1261
+comma, 1264 full stop, 1485 rn, 713 r/ro). One disagrees and is unresolved: **401** = *n* (Brackx) against *ican* here
+(`ellis1839_pairs.tsv`; the jqa table has *sian*). Compared by the maintainer's own script on the gist's data files
+(27 Oct 2026); the contributor's scripts were not run.
 
 ## Remaining gaps
 

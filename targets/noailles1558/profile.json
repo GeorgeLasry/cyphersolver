@@ -5,7 +5,7 @@
  "documents": [
   {
    "id": "noailles1558",
-   "shelfmark": "BnF fr. 3151 no. 33, f. 60r (Gallica btv1b9059865k view 61)",
+   "shelfmark": "BnF fr. 3151 no. 33, ff. 60r-60v (Gallica btv1b9059865k views 61-62)",
    "date": "1558-11-13",
    "year": 1558,
    "country": "France",
@@ -16,7 +16,7 @@
     "location": [
      "margin"
     ],
-    "source": "The court's decipherment written beside each cipher block in the inner margin; the start of each gloss line is lost in the binding.",
+    "source": "The court's decipherment written beside blocks A and B in the inner margin of f. 60r (the start of each gloss line is lost in the binding), and beside block C in the outer margin of f. 60v, nearly complete (found by Michael Brackx, issue #113).",
     "partial": true
    },
    "length": {
@@ -26,10 +26,10 @@
     "measured": false
    },
    "transcription": {
-    "by": "unknown",
-    "source": "Gallica view 61",
+    "by": "mixed",
+    "source": "Gallica views 61-62",
     "image_quality": "good",
-    "notes": "Not transcribed: two cipher blocks of three lines on f. 60r, about 150 signs (estimate from NOTES)."
+    "notes": "By Michael Brackx (issue #113), with the tools he states. Three blocks, 262 signs (contributor's count; not yet measured here, files requested): A and B, three lines each on f. 60r; C, seven lines on f. 60v. The earlier 'two blocks, about 150 signs' was an estimate by eye that missed C."
    },
    "read": "not read"
   }
@@ -38,7 +38,7 @@
   "types": [
    "undetermined"
   ],
-  "summary": "A symbol cipher different from La Guiche's, two blocks of about 150 signs in all; not analysed.",
+  "summary": "A symbol cipher different from La Guiche's, three blocks of 262 signs; as Brackx reports it (unverified here), a homophonic symbol alphabet with nulls and two word signs (qui, et).",
   "symbol_kind": "symbols",
   "distinct_symbols": "unknown",
   "diacritics": {
@@ -62,7 +62,7 @@
  "conditions": {
   "prior_solution": {
    "exists": "in archive",
-   "where": "Contemporary decipherment in the inner margin of f. 60r, partly lost in the gutter.",
+   "where": "Contemporary decipherment in the inner margin of f. 60r, partly lost in the gutter, and in the outer margin of f. 60v (block C), nearly complete.",
    "found": "before attempt",
    "used": false
   },
@@ -77,9 +77,9 @@
   "models": [
    "claude-opus-5"
   ],
-  "sessions": 1,
+  "sessions": 2,
   "first_date": "2026-09-21",
-  "last_date": "2026-09-21"
+  "last_date": "2026-10-27"
  },
  "solution": [
   {
@@ -99,11 +99,30 @@
    "kind": "verification",
    "what": "Split under the one-key rule (George Lasry, 14 Oct 2026): catalogue item 10 had grouped three letters in three different ciphers. La Guiche's 22-sign substitution stays in guiche1551; Noailles's Venice letter (another symbol alphabet) went to noailles1558 and Seure's six Lisbon letters (homophonic with numeral codes) to seure1558. The Noailles cipher itself was not transcribed or attacked.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "access",
+   "what": "Third cipher block (C, seven lines) found on f. 60v with a nearly complete decipherment of the time in the outer margin (Michael Brackx, issue #113; contributor step). Checked here on research/gallica_sweep/hi/k62.jpg (view 62): the block and the legible gloss lines are there. Extent corrected from two blocks, about 150 signs, to three blocks, 262 signs (his count).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "verification",
+   "what": "Gloss readings on f. 60r corrected (Brackx, issue #113; contributor step), checked here on research/gallica_sweep/hi/k61_gloss.jpg: gloss A '...e pauur[ete]' and '[cond]uitte q[u'il] donne a', not 'gouvernement'; gloss B '[entre]prend sur luy et le' and 'de la Tou[ss]aint', not 'ne luy' and 'de la fortune'.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "solver",
+   "technique": ["plaintext matching", "language-model scoring"],
+   "what": "Key recovered from the three marginal glosses and a French 5-gram model (Montaigne): 246 of 262 tokens valued, 16 tentative; about 0.75 of words read on firm values (Brackx, issue #113; contributor step). Not reproduced here: no files attached; transcription, key, aligned decode and readings requested. His negative checks: fr. 3151 no. 14 in clear, Ribier II, fr. 20974 (31 Guise alphabets) none fits.",
+   "result": "partial"
   }
  ],
  "outcome": {
   "method": "not solved",
-  "method_basis": "A contemporary marginal decipherment exists but is cut by the binding; the cipher (about 150 signs) was neither transcribed nor attacked here, so no text was obtained.",
+  "method_basis": "Contemporary marginal decipherments exist (f. 60r cut by the binding; f. 60v nearly complete); the cipher (three blocks, 262 signs) has not been transcribed or attacked here. A contributor reports a key from the glosses (issue #113), not yet reproduced, so no text is obtained yet.",
   "contribution": [
    "catalogue correction"
   ],
@@ -122,9 +141,14 @@
     "detail": "swallowed by the binding; needs the page opened flat"
    },
    {
-    "item": "The cipher itself (about 150 signs)",
+    "item": "Brackx's reading of blocks A, B and C (262 signs)",
     "blocker": "not-attempted",
-    "detail": "not transcribed; the visible gloss words could serve as cribs"
+    "detail": "not yet reproduced here: files requested (issue #113)"
+   },
+   {
+    "item": "f. 60v C2, C4, C5 unread groups",
+    "blocker": "not-attempted",
+    "detail": "the outer gloss is legible there (a crib), so this is work left, not an outside blocker"
    }
   ],
   "notes": "Attempted only to the point of finding the contemporary decipherment; Status: in progress in NOTES.md.",
@@ -132,7 +156,15 @@
    {
     "who": "contemporary",
     "role": "key or decipherment used",
-    "note": "the court's marginal decipherment of the Noailles letter (fr. 3151 f. 60r), legible in part"
+    "note": "the court's marginal decipherment of the Noailles letter (fr. 3151 f. 60r, legible in part; f. 60v outer margin, nearly complete)"
+   },
+   {
+    "who": "brackx",
+    "role": "transcription",
+    "note": "found the f. 60v cipher block and its gloss; corrected the f. 60r gloss readings; transcription, key from the glosses and partial reading (tools as he states; to be checked when the files arrive). Role to become solution once the reading is reproduced and graded",
+    "date": "2026-10-27",
+    "source": "https://github.com/dbourdeau/cyphersolver/issues/113",
+    "published": true
    }
   ]
  }

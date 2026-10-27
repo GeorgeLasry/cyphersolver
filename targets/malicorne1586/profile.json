@@ -91,7 +91,7 @@
   ],
   "sessions": 1,
   "first_date": "2026-10-22",
-  "last_date": "2026-10-24"
+  "last_date": "2026-10-27"
  },
  "solution": [
   {
@@ -217,6 +217,15 @@
    ],
    "what": "Brackx read f. 162v, canvas 171 and canvas 172 left/right in the f. 163r format with sized holes and English (reading_r3.md). Measured here (v10): 0.630, 0.672, 0.565, 0.790; all decoded, not read.",
    "result": "partial"
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "verification",
+   "technique": [
+    "key-structure hypothesis"
+   ],
+   "what": "Contributor step (Brackx, issue #92 comment of 26 Oct 08:17; recorded 27 Oct): label shapes checked on deskewed tiles of f. 162r (-3.5 deg), f. 163r (-1 deg) and canvas 171 (-2.25/-2.5 deg), 45 tokens of Lb/Lc/Lm/cr. Lb rule corrected: the barred pound sign is always m, the looped script L is b or m (six m tokens), so Lb stays two-valued; Lm (m/n) and cr (h/s) do not split by shape (the 25 Oct 'probable split' of cr withdrawn); one token (171 right l. 9) relabelled Lb to Lc. Decode unchanged letter for letter; canvas 171 two-valued share 9.8% to 9.6% (his figure; relabelled transcription not yet posted). 13 labels stay two-valued with no further shape split.",
+   "result": "ruled out"
   }
  ],
  "outcome": {
@@ -241,7 +250,7 @@
    {
     "who": "brackx",
     "role": "solution",
-    "note": "transcription, corrected key, aligned decode and readings of the Malicorne letter with Claude Code",
+    "note": "transcription, corrected key, aligned decode, readings and label-shape checks (23-26 Oct 2026) of the Malicorne letter with Claude Code",
     "date": "2026-10-23",
     "source": "https://github.com/dbourdeau/cyphersolver/issues/92",
     "published": true

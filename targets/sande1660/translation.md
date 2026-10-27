@@ -3,7 +3,7 @@
 
 # Passage 1. m0265, lines 1-18
 
-I am at present in great displeasure, because word came from The Hague, and in it [62] I saw [341] things are [?changed], that I [...] know what to say.
+I am at present in great displeasure, because I have come from The Hague, and there [62] I saw [341] things are [?changed], that I [...] know what to say.
 
 With the arrival of the [128], who have made a report [...], they are all so inflamed against Portugal that it is not to be believed.
 

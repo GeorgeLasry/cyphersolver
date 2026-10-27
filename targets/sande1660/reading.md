@@ -7,7 +7,7 @@
 
 # Passage 1. m0265, lines 1-18 (opening of the first unit, m0265-m0267)
 
-Com grande desgosto fico ao presente, porque chegou da Haia, e nela [62] vi [341] cousas são [?trocadas], que [...] sei o que diga.
+Com grande desgosto fico ao presente, porque chego da Haia, e nela [62] vi [341] cousas são [?trocadas], que [...] sei o que diga.
 
 Com a chegada dos [128], que tem feito relação [...], estão todos tão acesos contra Portugal que não é crível.
 

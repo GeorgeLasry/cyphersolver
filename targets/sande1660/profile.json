@@ -23,14 +23,15 @@
     "tokens": 1336,
     "distinct": 36,
     "unit": "mixed",
-    "measured": false
+    "measured": true,
+    "file": "transcription.txt"
    },
    "transcription": {
     "by": "llm from images",
     "source": "DigitArq JPEGs of PT/TT/LMP/0001, scans m0265, m0266, m0268, m0269, m0273",
     "corrections": 7,
     "image_quality": "fair",
-    "notes": "Partial: about 45 of roughly 290 cipher lines (m0265 lines 1-18, m0266 lines 2-5, the m0268 line, m0269 lines 2-12 and its last line, m0273 last 12 lines). m0269 lines 3-12 were transcribed by a second reader who never saw the first reading; seven tokens of the first reading were corrected against the scan (listed in transcription.txt). The m0268 line, the end of m0269.02 and the last line of m0269 were read once; the second group of that last line (1.2.7.27.13.7.2, 'e o mesmo') was filled in at review. Counts are of the transcribed lines only, made by splitting transcription.txt on '.' and '|' (not with --measure, which counts dot-joined words): 1,338 tokens, of them 1,336 numbers and 2 blotted signs; 23 code-group tokens."
+    "notes": "Partial: about 45 of roughly 290 cipher lines (m0265 lines 1-18, m0266 lines 2-5, the m0268 line, m0269 lines 2-12 and its last line, m0273 last 12 lines). m0269 lines 3-12 were transcribed by a second reader who never saw the first reading; seven tokens of the first reading were corrected against the scan (listed in transcription.txt). The m0268 line, the end of m0269.02 and the last line of m0269 were read once; the second group of that last line (1.2.7.27.13.7.2, 'e o mesmo') was filled in at review. Counts are of the transcribed lines only, made by splitting transcription.txt on '.' and '|' (not with --measure, which counts dot-joined words): 1,338 tokens, of them 1,336 numbers and 2 blotted signs; 23 code-group tokens. Re-measured at the merge review (27 Oct 2026): `python docs/_check_profile.py --measure <file> --digits` on a copy of transcription.txt with the line labels dropped and '.' and '|' turned into spaces gives 1,336 tokens, 36 distinct (1,338 without --digits, the 2 blots counted)."
    }
   },
   {
@@ -112,7 +113,8 @@
   {"date": "2026-10-27", "kind": "hypothesis", "technique": ["contextual inference"], "what": "Date and people: de Thou (French ambassador at The Hague 1657-62), Comminges (French envoy in Lisbon), Bordeaux (French ambassador in London) and a Dutch Republic 'inflamed against Portugal' fit the Dutch-Portuguese war of 1657-61; the m0268 date (30 Nov 165?, last digit 7 or 2) does not settle the year. Writer and addressee not identified: the catalogue's lead (Diogo Lopes de Ulhoa at The Hague to Rui Teles de Meneses in Paris) and Francisco de Melo (owner of the papers) are both untested.", "result": "partial"},
   {"date": "2026-10-27", "kind": "hypothesis", "technique": ["contextual inference"], "what": "Code groups: 132 = embaixador fits four places (o [132] de França; Comminges [132] [64] de França; o dito [132] escreveu a Monsiur de Bordeus) but is not proven; 61, 62, 63, 64, 65, 79, 102, 128 and 341 stay open.", "result": "partial"},
   {"date": "2026-10-27", "kind": "hypothesis", "technique": ["repeat/pattern analysis"], "what": "Cipher B (Rome 1664): numerical, two-digit multiples of 5, small numbers, three-digit groups and 9xx groups closing each passage; glosses of the time over some groups on m0063. The groups do not line up one-to-one with the glossed letters (nine groups for 'ninguem'). Not attacked.", "result": "failed"},
-  {"date": "2026-10-27", "kind": "literature search", "what": "Repository history (400 commits on origin/main) has nothing on catalogue 390, LMP/0001 or Sande's LMP papers; the nearest is miranda1660 (catalogue 389, CPN/0019 and the MMCG 3L keys, not digitised). One web search found no edition or decipherment. Prestage and the published Sande correspondence not checked.", "result": "failed"}
+  {"date": "2026-10-27", "kind": "literature search", "what": "Repository history (400 commits on origin/main) has nothing on catalogue 390, LMP/0001 or Sande's LMP papers; the nearest is miranda1660 (catalogue 389, CPN/0019 and the MMCG 3L keys, not digitised). One web search found no edition or decipherment. Prestage and the published Sande correspondence not checked.", "result": "failed"},
+  {"date": "2026-10-27", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Maintainer review on merge (PR #124, Claude Opus 5.5): key.txt re-implemented independently decodes all 46 transcribed lines, every sign below 60 valued, output identical to decryption.txt but for q/que on a lone 16. A ciphertext-only anneal on the transcription (lang pt-modern, order 5, values free) converged in 2 of 3 runs to 24 of the 26 values; the other two (10 = i, 22 = m) are spelling preferences of the model. m0265.02 15.14.27.8.2 is 'chego' (first person), not 'chegou': reading.md and translation.md corrected. Reading graded A (passage 2 B). Length re-measured with --measure (1,336 numbers, 36 distinct). Status set to in progress: about 245 of ~290 lines untranscribed with no outside blocker. Lead for the writer: Fernando Teles de Faro (catalogue 385).", "result": "worked"}
  ],
  "outcome": {
   "class": "read in part",
@@ -135,7 +137,7 @@
   "gaps": [
    {"item": "cipher A: the untranscribed lines (most of m0265-m0267, m0269 lines 1-2 and 13 to the end, m0271, m0272, m0273 above the last 12 lines)", "blocker": "not-attempted", "detail": "about 245 of roughly 290 cipher lines; the scans are online and good enough to read"},
    {"item": "cipher A: code groups 61, 62, 63, 64, 65, 79, 102, 128, 132, 341", "blocker": "open-codes", "detail": "no key sheet found; the rest of the text should repeat some of them; 132 = embaixador proposed, not proven"},
-   {"item": "cipher A: writer, addressee and exact date", "blocker": "not-attempted", "detail": "candidates (Ulhoa; Francisco de Melo; the 30 Nov 165? line on m0268, last digit 7 or 2) untested against clear letters of the codex and the catalogue 389 / MMCG 3L material"},
+   {"item": "cipher A: writer, addressee and exact date", "blocker": "not-attempted", "detail": "candidates (Ulhoa; Francisco de Melo; the 30 Nov 165? line on m0268, last digit 7 or 2) untested against clear letters of the codex and the catalogue 389 / MMCG 3L material; reviewer's lead (27 Oct 2026): Fernando Teles de Faro, Portuguese envoy at The Hague 1657-59, catalogue 385"},
    {"item": "cipher B (Rome 1664, m0059-m0063 and neighbours, m0170)", "blocker": "not-attempted", "detail": "located and described; the interlinear glosses on m0063 are the way in"}
   ],
   "texts": [
@@ -150,7 +152,8 @@
     "state": "read in part",
     "read_share": 0.873,
     "summary": "A Portuguese agent in the Dutch Republic, probably in 1657-59, reports that the Dutch are inflamed against Portugal and that the French ambassador de Thou is friendly and is working for a French mediation, with Comminges in Lisbon and Bordeaux in London; a confidant says the Dutch regret the war but must keep it up for reputation; the writer asks Your Excellency for advice and says only an envoy from the King, to treat of a settlement, can calm this fury. A cipher line on m0268 tells the addressee not to sign his letters. Ten code groups are open.",
-    "note": "Only about 45 of some 290 cipher lines are transcribed; the reading covers those lines. read_share is 1 - hole rate of research/reading_audit/v2_score.py on reading.md. The sentence check (docs/_check_reading.py) is low because the open code groups and names (Thou, Comminges, Bordeaux) and words outside the period Portuguese word list count as holes. reading_review left to the maintainer."
+    "reading_review": {"grade": "A", "by": "Claude Opus 5.5 (PR review on merge)", "date": "2026-10-27", "note": "Read as sentences against an independent decode of transcription.txt. Passages 1 (m0265.01-18, after the chego fix), 3 (m0268 line), 4 (m0269.02-12), 5 (m0269 last line) and 6 (m0273 last 12 lines) A; passage 2 (m0266.02-05, four lines, two fragments, a cut word) B. Covers only the ~45 transcribed lines (about 15% of cipher A)."},
+    "note": "Only about 45 of some 290 cipher lines are transcribed; the reading covers those lines. read_share is 1 - hole rate of research/reading_audit/v2_score.py on reading.md. The sentence check (docs/_check_reading.py) is low because the open code groups and names (Thou, Comminges, Bordeaux) and words outside the period Portuguese word list count as holes. m0265.02 'chego' (first person: the writer has come from The Hague) corrected from 'chegou' at the merge review, 27 Oct 2026."
    }
   ],
   "key_file": "key.txt",

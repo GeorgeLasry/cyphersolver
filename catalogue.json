@@ -109,23 +109,23 @@
    "language": "French",
    "region": "Italy",
    "period": "1497-1559",
-   "shelfmark": "BnF fr. 3151 no. 33 f. 60r",
+   "shelfmark": "BnF fr. 3151 no. 33 ff. 60r-60v",
    "ark": "btv1b9059865k",
    "folio_note": "",
    "cls": "C",
    "seen": "catalogue",
    "source": "BnF harvest",
-   "status": "Narrowed 18 Oct 2026 to Noailles's letter (no. 33, views 60-61), targets/noailles1558/: two short cipher blocks (about 150 signs by eye) in a symbol alphabet of their own; the court's decipherment stands in the inner margin but the binding hides the start of each gloss line; cipher not transcribed or attacked. Removed: Seure's five Lisbon letters (nos. 39-41, 43-44), key recovered by Angus Robinson (PR #40), targets/seure1558/; La Guiche (fr. 3138 no. 22) read in part, targets/guiche1551/.",
+   "status": "Narrowed 18 Oct 2026 to Noailles's letter (no. 33, views 60-62), targets/noailles1558/: three cipher blocks, 262 signs, in a symbol alphabet of their own (two on f. 60r, gloss starts hidden by the binding; one on f. 60v with a nearly complete outer-margin gloss, found by Michael Brackx, issue #113). Transcribed and key largely recovered by Brackx (Oct 2026); not yet reproduced here, files requested. Removed: Seure's five Lisbon letters (nos. 39-41, 43-44), key recovered by Angus Robinson (PR #40), targets/seure1558/; La Guiche (fr. 3138 no. 22) read in part, targets/guiche1551/.",
    "why": "Venice embassy during the Cateau-Cambrésis negotiations; Levant galleys, Candia, Corfu.",
    "importance": 2,
    "solvability": 2,
    "difficulty": 4,
-   "score_note": "One letter, about 150 signs, with a partly hidden marginal decipherment as crib.",
-   "verify": "Transcribe the two blocks on f. 60r; use the visible gloss words as cribs, or get the page photographed open flat.",
+   "score_note": "One letter, three cipher blocks of 262 signs, with marginal decipherments as crib (f. 60r partly hidden, f. 60v nearly complete).",
+   "verify": "Reproduce Brackx's decode from his files; retry the C2/C4/C5 gaps against the f. 60v gloss.",
    "outcome": "attempted, open",
-   "known": "The court's decipherment of the time stands in the inner margin of f. 60r and is partly legible (noailles1558.html). Former siblings: Seure's 1558 Lisbon letters, key recovered by Angus Robinson (PR #40, seure1558); La Guiche 1551, key recovered ciphertext-only here (guiche1551).",
-   "open": "The two cipher blocks (about 150 signs) are not transcribed or attacked; the start of each gloss line is hidden by the binding (needs the page photographed open flat).",
-   "as_of": "2026-10-21"
+   "known": "The court's decipherment of the time stands in the inner margin of f. 60r (partly legible) and in the outer margin of f. 60v (nearly complete) (noailles1558.html). Transcribed and key largely recovered by Michael Brackx (issue #113, Oct 2026), read in part as he grades it; not yet reproduced here. Former siblings: Seure's 1558 Lisbon letters, key recovered by Angus Robinson (PR #40, seure1558); La Guiche 1551, key recovered ciphertext-only here (guiche1551).",
+   "open": "Three cipher blocks, 262 signs (two on f. 60r, gloss starts hidden by the binding; one on f. 60v with a nearly complete outer-margin gloss). Brackx's decode not yet reproduced (files requested); f. 60v C2/C4/C5 gaps have a legible gloss; the f. 60r gloss starts need the page photographed open flat.",
+   "as_of": "2026-10-27"
   },
   {
    "id": 11,
@@ -1573,7 +1573,7 @@
    "solvability": 3,
    "difficulty": 3,
    "score_note": "Reviewed by hand 19 Sept 2026 from DECODE's metadata and the literature; leaf not viewed.",
-   "verify": "Search the printed correspondence and Tomokiyo for a decipherment; then view the images (DECODE login) and transcribe.",
+   "verify": "Apply the archivists' key (ASMo b. 8 fasc. 4) to R1128 after re-attaching upper signs to their bases.",
    "ark": "",
    "links": [
     {
@@ -1588,9 +1588,9 @@
    ],
    "scored": "reviewed",
    "outcome": "attempted, open",
-   "known": "R1129-R1135 deciphered in 1882 (Vestigia b/c copies) or interlined. The 1520-21 letters: key recovered from Somogyi 2025's plaintext, V1921 97%, R1139 89.7%, R1136 66.9% (caprile1520.html). R1128 written up as not deciphered (caprile1519.html).",
+   "known": "R1129-R1135 deciphered in 1882 (Vestigia b/c copies) or interlined. The 1520-21 letters: key recovered from Somogyi 2025's plaintext, V1921 97%, R1139 89.7%, R1136 66.9% (caprile1520.html). R1128 written up as not deciphered (caprile1519.html). The 1519 key was reconstructed by ASMo archivists in the 19th century; sheets printed small in Cremonini 2017, figs. 17.1-17.3 (ASMo Cifrario b. 8 fasc. 4); pointer from Michael Brackx, issue #121.",
    "open": "R1128 (9 Mar 1519, seven lines, 183 columns). No outside blocker: the key can be rebuilt from the 1882 sibling decipherments (next step, transcribe R1132 against 6b).",
-   "as_of": "2026-10-21",
+   "as_of": "2026-10-27",
    "workable": true
   },
   {
@@ -4648,7 +4648,7 @@
    "id": 390,
    "counted": true,
    "year": 1661,
-   "date": "1657-1667",
+   "date": "1657-1664",
    "title": "Marquês de Sande's papers on the marriage of Catherine of Braganza and Charles II, with cipher letters (incl. Diogo Lopes de Ulhoa at The Hague → Rui Teles de Meneses in Paris)",
    "correspondents": "various → Francisco de Melo, conde da Ponte, marquês de Sande; Diogo Lopes de Ulhoa → Rui Teles de Meneses",
    "place": "London; The Hague; Paris; Lisbon",
@@ -4658,24 +4658,25 @@
    "shelfmark": "ANTT, Luís de Miranda Pereira, liv. 1 (PT/TT/LMP/0001)",
    "folio_note": "Luís de Miranda Pereira, liv. 1; 592 scans online; 'códice factício contendo cartas assinadas, cartas cifradas e cópias de cartas'",
    "cls": "C",
-   "status": "DigitArq: factitious codex with 'cartas cifradas'; no decipherment noted. Digitised (592 scans); not on DECODE.",
+   "status": "Cipher A (scans m0265-m0273, Dutch Republic c. 1657-59, three units) located and its letter key recovered from the ciphertext by WAINUT (PR #124, 27 Oct 2026); about 45 of ~290 lines transcribed and read; code groups open. Cipher B (Rome 1664, m0059-m0063, glossed) located, not attacked. In progress (targets/sande1660/).",
    "why": "The Anglo-Portuguese marriage treaty of 1661 (Bombay, Tangier) and Portuguese diplomacy at The Hague and Paris.",
    "importance": 4,
    "solvability": 4,
    "difficulty": 3,
-   "score_note": "Scored from the archive description during the Oct 2026 Torre do Tombo sweep (research/torre_do_tombo/); not viewed",
-   "verify": "Page through the 592 scans for the cipher letters and count tokens.",
+   "score_note": "Scored from the archive description during the Oct 2026 Torre do Tombo sweep (research/torre_do_tombo/); viewed 27 Oct 2026 (PR #124)",
+   "verify": "Transcribe the rest of m0265-m0273 and apply the key; test Fernando Teles de Faro (catalogue 385) as the writer; then the m0063 glosses for cipher B.",
    "links": [
     {
      "label": "DigitArq PT/TT/LMP/0001",
      "href": "https://digitarq.arquivos.pt/documentDetails/7d037cd7783448dfb5fa761cf9301aa5"
     }
    ],
-   "seen": "catalogue",
+   "seen": "viewed",
    "source": "Arquivo Nacional Torre do Tombo (DigitArq) sweep",
    "prior_art": "open (checked 26 Oct 2026: known.py (repo, DECODE, Cryptoole: no hit), web search).",
    "ark": "",
-   "scored": "sweep"
+   "scored": "sweep",
+   "as_of": "2026-10-27"
   },
   {
    "id": 392,
@@ -7301,7 +7302,7 @@
    "solvability": 3,
    "difficulty": 3,
    "score_note": "Scored from the archive description during the Oct 2026 EMLO sweep (research/founders_emlo/); not viewed",
-   "verify": "Order or view images of MS. e Mus. 203 pp. 218-226 (Digital Bodleian has no images listed in EMLO); check the 2020 auction copy description and whether Wallis's own keys for the French letters (Brasset/Bordeaux) in the same volume fit no. 50.",
+   "verify": "Order or view images of MS. e Mus. 203 pp. 218-226 (Digital Bodleian has no images listed in EMLO); check the 2020 auction copy description and whether Wallis's own keys for the French letters (Brasset/Bordeaux) in the same volume fit no. 50. Also test d'Aumont's Dec 1651 cipher, 'pareil à ceux' sent to Mme d'Estrades and Brasset (BL Add MS 32499 f. 1, Wallis's letter-book; pointer from Michael Brackx, issue #117), together with Bordeaux's R7537.",
    "links": [
     {
      "label": "EMLO letter 50 (Brasset 1653)",
@@ -7322,6 +7323,10 @@
     {
      "label": "Dominic Winter lot 375 (2020)",
      "href": "https://www.dominicwinter.co.uk/Auction/Lot/375-wallis-john-a-collection-of-letters-intercepted-in-cipher-during-the-late-warres-in-england-1653/?lot=361781"
+    },
+    {
+     "label": "BL Add MS 32499 f. 1 (d'Aumont cipher, Dec 1651)",
+     "href": "https://searcharchives.bl.uk/catalog/032-002026538"
     }
    ],
    "seen": "catalogue",
@@ -11073,22 +11078,22 @@
    "counted": true,
    "year": 1732,
    "date": "1730-1735",
-   "title": "Bavarian envoy Mörmann in Vienna, ciphered reports (Munich mistress economy seen from Vienna), with a cipher table",
-   "correspondents": "Mörmann, Bavarian resident in Vienna → Elector Karl Albrecht",
+   "title": "Bavarian envoy Mörmann in Vienna, reports partly in a large numeric code (drafts 1733 and German reports 1731-35); the finding aid's cipher table is not among the scans",
+   "correspondents": "Baron von Mörmann, Bavarian envoy in Vienna → Count Törring (Bavarian minister), for Elector Karl Albrecht",
    "place": "Vienna",
-   "language": "German",
+   "language": "French and German",
    "region": "Germany",
    "period": "1701-1800",
    "shelfmark": "BayHStA, Gesandtschaft Wien 201 and 215",
-   "folio_note": "Wien 201 'Chiffrierte Berichte'; Wien 215 'Darin: Chiffrentabelle für die z.T. verschlüsselten Berichte'",
-   "cls": "A",
-   "status": "Finding aid as quoted. Digitised: images in the Archivportal-D/DDB viewer.",
+   "folio_note": "Wien 215 (165 images): cover 'Wiener Gesandtschaftsakten, Konzepte v. Berichten ... 1733'; drafts of reports to 'Monsieur le Comte de Törring' (e.g. 2, 9, 23 Dec 1733, images 120, 122, 152), coded groups 1 to about 4,300 (some prefixed c., a., M., Q.) between clear words; slip on images 102-103 about a miscopied run 'c.19.14.56.20.92.3000.12'; printed papers filed with them (Wienerisches Diarium 17 Oct 1733, images 138-146). Wien 201 (28 images): German reports, same style. No table or decipherment in either.",
+   "cls": "C",
+   "status": "Checked image by image by Michael Brackx (issue #123, 27 Oct 2026; image 102 of Wien 215 confirmed here): no cipher table and no decipherment in either digitised file. The finding aid's 'Chiffrentabelle' was either not filmed or is a wrong description. Code of about 4,300 values, keyless; the clear context around each group could fix frequent groups but not give a full reading.",
    "why": "Bavarian-Austrian relations before the Austrian Succession.",
    "importance": 3,
-   "solvability": 4,
-   "difficulty": 1,
-   "score_note": "Scored from the archive description during the Oct 2026 Archivportal-D sweep (research/archivportal_d/); not viewed",
-   "verify": "Open both digitised files; apply the table.",
+   "solvability": 1,
+   "difficulty": 5,
+   "score_note": "Rescored 27 Oct 2026 after Michael Brackx's image-by-image check (issue #123).",
+   "verify": "Ask BayHStA whether the Chiffrentabelle of Gesandtschaft Wien 215 exists unfilmed, or look for the Mörmann/Törring key among the Bavarian cipher keys (Kasten schwarz / Ministerium des Äußern). Look for decoded copies on the Munich receiving side (Törring's files).",
    "links": [
     {
      "label": "Gesandtschaft Wien 201",
@@ -11099,11 +11104,12 @@
      "href": "https://www.archivportal-d.de/item/53KILM6RPXXEBXYGYCYROHUVPUJCKWLM"
     }
    ],
-   "seen": "catalogue",
+   "seen": "image",
    "source": "Archivportal-D sweep",
    "prior_art": "open (checked 26 Oct 2026: known.py, quick web search).",
    "ark": "",
-   "scored": "sweep"
+   "scored": "sweep",
+   "as_of": "2026-10-27"
   },
   {
    "id": 583,
@@ -12974,7 +12980,7 @@
    "shelfmark": "German Army message collection (original message forms, provenance given only as the German Army message collection; the BGAC page names the Bundesarchiv for its 2026 finds); transcribed by Olaf Ostwald and Frode Weierud",
    "folio_note": "Six pz6 messages 35+96+88+126+143+59 = 547 letters, plus Nr. 95 (74) and Nr. 96 (62) with blank addressee; facsimiles for Nr. 88, 94, 95",
    "cls": "B",
-   "status": "Listed as unbroken on CryptoCellar 'Unbroken German Army Truppenschlüssel Messages' (updated 27 Jul 2026). Truppenschlüssel is a hand cipher (simplified Doppelkasten); most of the 100+ surviving TS messages were broken by Ostwald & Weierud (Cryptologia 2021). Not in the repo (only Enigma rows of this collection are on HCPortal; Cryptoole's CryptoCellar rows were dropped wholesale as Enigma). This entry covers all 30 unbroken 1941 Truppenschlüssel messages on the CryptoCellar list, by net: net 'pz6', 4 July 1941 (Nr. 88, 90, 91, 92, 94, 97; also 95, 96 same day); net 'nfw', 3 July 1941 (Nr. 84, 85, 86); net '4fc', 8 July 1941 (Nr. 123, 129, 130); net 'f8y', 6 and 8 July 1941 (Nr. 109, 110, 121); net '8be', 25 July 1941 (Nr. 263, 264); June-September 1941 (VHRNE Nr. 284, AOXST Nr. 91, XWFEC Nr. 193, MZXNX Nr. 21, AAXYN Nr. 31, DOLHA Nr. 252, LSSLG Nr. 268, ZUBZE Nr. 8, CFQIB Nr. 281, YSGSS Nr. 56, AFUVO Nr. 26). They were dropped from the 14 Oct Cryptoole import because research/cryptoole/pull.py filtered every CryptoCellar row as Enigma.",
+   "status": "CryptoCellar 1941 Message List (status 20 Oct 2026) marks 24 of the 30 messages broken in Sept 2026 (Paefgen; Davies, Willis, Khan, marked AI), DOLHA 252 only in part; pz6 Nr. 88-97 by Paefgen 21.09 and Davies 25.09; plaintexts not published. Still unbroken: EHNPZ 123 (8 Jul, net 4fc), AFUVO 26, ZUBZE 8, MZXNX 21, AAXYN 31, AOXST 91; also BCUCC Nr. 20 NF (5 Sep 1941), not in this row. See targets/ts1941pz6/ (WAINUT, PR #125; ciphertext-only attempt failed; Status: no write-up). Earlier: Listed as unbroken on CryptoCellar 'Unbroken German Army Truppenschlüssel Messages' (updated 27 Jul 2026). Truppenschlüssel is a hand cipher (simplified Doppelkasten); most of the 100+ surviving TS messages were broken by Ostwald & Weierud (Cryptologia 2021). Not in the repo (only Enigma rows of this collection are on HCPortal; Cryptoole's CryptoCellar rows were dropped wholesale as Enigma). This entry covers all 30 unbroken 1941 Truppenschlüssel messages on the CryptoCellar list, by net: net 'pz6', 4 July 1941 (Nr. 88, 90, 91, 92, 94, 97; also 95, 96 same day); net 'nfw', 3 July 1941 (Nr. 84, 85, 86); net '4fc', 8 July 1941 (Nr. 123, 129, 130); net 'f8y', 6 and 8 July 1941 (Nr. 109, 110, 121); net '8be', 25 July 1941 (Nr. 263, 264); June-September 1941 (VHRNE Nr. 284, AOXST Nr. 91, XWFEC Nr. 193, MZXNX Nr. 21, AAXYN Nr. 31, DOLHA Nr. 252, LSSLG Nr. 268, ZUBZE Nr. 8, CFQIB Nr. 281, YSGSS Nr. 56, AFUVO Nr. 26). They were dropped from the 14 Oct Cryptoole import because research/cryptoole/pull.py filtered every CryptoCellar row as Enigma.",
    "why": "A same-day, same-net group of a WWII hand field cipher left unbroken by modern cryptanalysis: a direct test case for the paper beside the Orpo Doppelkasten target.",
    "importance": 2,
    "solvability": 3,
@@ -12989,13 +12995,21 @@
     {
      "label": "BGAC project",
      "href": "https://cryptocellar.org/bgac/index.html"
+    },
+    {
+     "label": "CryptoCellar 1941 Message List",
+     "href": "https://cryptocellar.org/bgac/1941-msg-list.html"
     }
    ],
    "seen": "catalogue",
    "source": "CryptoCellar (via captured-records slice)",
-   "prior_art": "unbroken per Ostwald & Weierud (checked 27 Oct 2026: CryptoCellar list updated 27 Jul 2026)",
+   "prior_art": "broken by others Sept 2026 for 24/30 (CryptoCellar 1941 Message List, status 20 Oct 2026); unpublished; checked 27 Oct 2026",
    "ark": "",
-   "scored": "sweep"
+   "scored": "sweep",
+   "outcome": "attempted, open: 24/30 broken by others (unpublished); no write-up (targets/ts1941pz6/)",
+   "known": "24 of the 30 messages broken Sept 2026 (Paefgen; Davies, Willis, Khan, marked AI), plaintexts and keys unpublished; DOLHA 252 in part. pz6 Nr. 88-97 of 4 July: Paefgen 21.09, Davies 25.09.",
+   "open": "EHNPZ 123 (8 Jul, net 4fc; same net and day as broken Nr. 129-130), AFUVO 26, ZUBZE 8, MZXNX 21, AAXYN 31, AOXST 91.",
+   "as_of": "2026-10-27"
   },
   {
    "id": 647,
@@ -13083,15 +13097,15 @@
    "language": "French",
    "region": "France",
    "period": "1701-1800",
-   "shelfmark": "NARA RG 59, Despatches from US Ministers to Great Britain, vol. 5 (10 Aug 1796-28 Dec 1797) = microfilm M30 roll 5, catalog naId 188512917",
-   "folio_note": "frames 0244-0245 (about 470 code groups, 1-1171, in a clerk's copy marked \"Dup.\" and \"(Copy)\"; heading and close \"Salut et fraternité, Delacroix\" in clear); King's covering No. 53 at frames 0239-0241",
+   "shelfmark": "NARA RG 59, Despatches from US Ministers to Great Britain, vol. 5 (10 Aug 1796-28 Dec 1797) = microfilm M30 roll 4 (image path M30-004), catalog naId 188512917",
+   "folio_note": "frames 0244 right, 0245 left and right (0244 left blank): 653 code groups, values 2-1198, 297 distinct, in a clerk's copy marked 'Dup.', '(Copy)', 'No. 5 Duplicata'; heading and close in clear, signed 'Ch. Delacroix'; catchwords (806, 278) at the page feet confirm no group lost between pages. King's covering No. 53 ends on frame 0243.",
    "cls": "B",
-   "status": "Frame 0244 viewed: a clean copy of the whole despatch in code, no interlinear or appended decipherment; the OCR of 0245 and the neighbouring frames shows none either. Not on DECODE; known.py: no hit for Létombe/Delacroix.",
+   "status": "Transcribed in full by Michael Brackx (issue #122, 27 Oct 2026; transcription in the issue). King's No. 53: 'I have no means of decyphering it'; no decipherment on frames 0236-0252. Turner, Correspondence of the French Ministers 1791-1797 (AHA 1903) does not print No. 5, but prints Létombe's reply No. 42 (22 Brumaire an VI, p. 1077, from the ministry's decipherment, CP États-Unis 48 f. 355): he will follow what the 25 Messidor despatch prescribed for keeping his political correspondence, 'dont je dicte moi-même les chiffres'. So part of No. 5 is probably about the keeping and ciphering of his political letters. Statistics: repeats 705 806 711/400 405 ×7, 474 670 1068 ×3; adjacent frequent pairs 972/973 and 81/82 hint at a one-part code, but a one-part word anneal did not converge; flat profile (top ten 14%). Not on DECODE.",
    "why": "A Directory instruction to the French chargé/consul general in Philadelphia days before Delacroix left office and on the eve of the XYZ mission, which Rufus King obtained in London (probably from Grenville's decipherers); its content is not known from the US side.",
    "importance": 4,
    "solvability": 3,
    "difficulty": 3,
-   "verify": "Read frames 0244-0245 in full; look for the plaintext in the French ministerial register (AMAE Correspondance politique États-Unis vol. 47-48) or Nasatir & Monell's calendar (1967); otherwise a codebook-style attack on ~470 groups of a French 1100-group nomenclator.",
+   "verify": "Find the clear minute of 25 Messidor an V in AMAE CP États-Unis 47 or 48, or Nasatir & Monell's calendar (1967). Alternatively, find Létombe's 1797-98 ciphered despatches with the ministry's decipherments (CP États-Unis 48; Turner prints them from the decipherment) to rebuild the code.",
    "links": [
     {
      "label": "NARA M30 vol. 5",
@@ -13107,11 +13121,13 @@
     }
    ],
    "seen": "image",
-   "prior_art": "open as far as checked (27 Oct 2026: web search for Delacroix/Létombe 25 Messidor an V found only calendars; Turner, Correspondence of the French Ministers 1791-97 not checked for this letter; the French register copy, if kept, would be in clear)",
+   "prior_art": "open (27 Oct 2026). Turner 1903 checked by Michael Brackx: No. 5 not printed; reply No. 42 printed p. 1077.",
    "source": "NARA RG 59 bulk-scan triage (slice A, 1789-1906)",
    "score_note": "Scored from the NARA OCR and the frame image(s) named in folio_note during the Oct 2026 NARA bulk-scan triage (research/nara_triage_a/)",
    "ark": "",
-   "scored": "sweep"
+   "scored": "sweep",
+   "outcome": "attempted, open",
+   "as_of": "2026-10-27"
   },
   {
    "id": 650,
@@ -13246,7 +13262,7 @@
    "shelfmark": "NARA RG 59, Despatches from US Ministers to Mexico, vol. 7 (23 Mar-29 Oct 1836) = M97 roll 8, naId 189101351; vol. 8 (Nov 1836-Feb 1837) = M97 roll 9, naId 189101765; vol. 9 (12 June 1837-28 July 1840) = M97 roll 10, naId 189102194",
    "folio_note": "vol. 7 frames 0014 (mirror-image exposure) to 0019, 0025-0027 (a despatch of 8 May 1836 \"in cypher\"), 0066-0071, 0078, 0123, 0204, 0323: about 3,000 groups with 0-25 OCR words per frame; vol. 8 frames 0098-0099, 0208-0211; vol. 9 frames 0298-0303 (No. 9, 16 Nov 1839, about 500 groups, no words)",
    "cls": "B",
-   "status": "OCR only: no interlinear words on the coded frames. Trial decodes with targets/jqa/code_table.tsv read as sense: vol. 9 frame 0302 \"a war with Texas ... under such circumstances will be decidedly popular ... the insurgents who were lately in arms against this government have either capitulated ... or have been dispersed\"; vol. 7 frame 0015 \"... the interior ... this movement ... the President ... a proclamation ... the party ...\". Not on DECODE; known.py: no hit.",
+   "status": "OCR only: no interlinear words on the coded frames. Trial decodes with targets/jqa/code_table.tsv read as sense: vol. 9 frame 0302 \"a war with Texas ... under such circumstances will be decidedly popular ... the insurgents who were lately in arms against this government have either capitulated ... or have been dispersed\"; vol. 7 frame 0015 \"... the interior ... this movement ... the President ... a proclamation ... the party ...\". Not on DECODE; known.py: no hit. 27 Oct 2026: Michael Brackx (issue #120) finds the despatches deciphered at the time (the Department's decipherments filmed with them, all but 26 Oct 1836); his 19 May 1836 decode reads 289/289 groups with the jqa table plus his Ellis values (fitted on that text). No. 9 of 1839 is in targets/ellis1839/ (WAINUT, PR #107); the two are to be merged into one Ellis folder and written up, after which this entry leaves the catalogue.",
    "why": "Coded reports from the US legation in Mexico during the Texas Revolution and the 1839 crisis, the confidential side of a relationship that led to war in 1846.",
    "importance": 3,
    "solvability": 5,
@@ -13271,7 +13287,8 @@
    "source": "NARA RG 59 bulk-scan triage (slice A, 1789-1906)",
    "score_note": "Scored from the NARA OCR and the frame image(s) named in folio_note during the Oct 2026 NARA bulk-scan triage (research/nara_triage_a/)",
    "ark": "",
-   "scored": "sweep"
+   "scored": "sweep",
+   "as_of": "2026-10-27"
   },
   {
    "id": 654,
@@ -15529,6 +15546,53 @@
    "prior_art": "open (checked 27 Oct 2026: repository dedup only)",
    "ark": "",
    "scored": "sweep"
+  },
+  {
+   "id": 717,
+   "counted": true,
+   "year": 1786,
+   "date": "12 Aug [1786?] (exhibition caption: 12 Apr 1787)",
+   "title": "Mirabeau's secret Berlin mission, despatch 'X. en réponse au n° 3. le 12 août', numeric code, undeciphered (exhibited 2025)",
+   "correspondents": "Honoré-Gabriel Riqueti, comte de Mirabeau → (probably) the abbé de Périgord (Talleyrand) / Calonne",
+   "place": "Berlin",
+   "language": "French",
+   "region": "France",
+   "period": "1701-1800",
+   "shelfmark": "Archives diplomatiques (La Courneuve), Mémoires et documents, France, 53MD/1884, f. 29r",
+   "folio_note": "43 code groups (57-1450, no repeats; transcription S. Tomokiyo, cryptiana 14 July 2026); clear heading 'X. en réponse au n° 3. le 12 août'; the following page's numbers show faintly through",
+   "cls": "B",
+   "seen": "image",
+   "source": "GitHub issue #118 (Michael Brackx)",
+   "contributed_by": "brackx",
+   "status": "Exhibited as undeciphered (Art du chiffre, Desenclos & Clinet, 30 June 2025, fig. 6). Tomokiyo (2026) transcribed the groups and doubted the April date. The despatches of Mirabeau's Berlin mission were printed in Histoire secrète de la cour de Berlin (1789), which has a short letter dated 12 Aug 1786 (about 46 words: 'Le Roi paroit beaucoup mieux ... à mon retour de Rheinsberg'). It is a candidate plaintext for the 43 groups, untested beyond a negative word-for-word one-part check. The volume holds decipherments of five letters from the abbé de Périgord to Mirabeau.",
+   "why": "Mirabeau's secret reports from Berlin at Frederick II's death (17 Aug 1786); one exhibited, undeciphered page.",
+   "importance": 3,
+   "solvability": 3,
+   "difficulty": 3,
+   "score_note": "Scored from the exhibition image and the issue; not worked.",
+   "verify": "Align the 43 groups with the Histoire secrète letter of 12 Aug 1786 (vol. 1) as a two-part or homophonic word code. Get f. 29v and the neighbouring leaves of 53MD/1884, including the Périgord decipherments. Compare the numbering 'X. / n° 3' with Welschinger 1900 and 40MD/14 (microfilm 8609).",
+   "links": [
+    {
+     "label": "Art du chiffre (MEAE, 2025)",
+     "href": "https://bibliotheque-numerique.diplomatie.gouv.fr/meae/fr/content/art-du-chiffre"
+    },
+    {
+     "label": "facsimile f. 29r",
+     "href": "https://bibliotheque-numerique.diplomatie.gouv.fr/meae/sites/default/files/2025-06/FIG.6_53MD_1884_2000px_0.jpg"
+    },
+    {
+     "label": "cryptiana, 14 July 2026",
+     "href": "https://cryptiana.blogspot.com/2026/07/mirabeaus-undecoded-letter-1787.html"
+    },
+    {
+     "label": "Histoire secrète de la cour de Berlin (1789), vol. 1",
+     "href": "https://archive.org/details/bim_eighteenth-century_histoire-secrete-de-la-c_mirabeau-gabriel-honor_1789_1"
+    }
+   ],
+   "prior_art": "Tomokiyo 2026: transcription, no decipherment. Possible printed plaintext: Histoire secrète (1789), letter of 12 Aug 1786; unconfirmed.",
+   "ark": "",
+   "scored": "issue",
+   "as_of": "2026-10-27"
   }
  ]
 }

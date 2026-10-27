@@ -61,6 +61,12 @@ def main(argv):
     if not todo:
         print('no jobs', file=sys.stderr)
         return 1
+    if any(a1 is not None for _, a1, _ in todo):
+        # Year-filter bug (README, access log 27 Oct 2026): anio1/anio2 are dropped by the 100-row formBusqueda
+        # POST, so every year job re-runs the whole term. Refuse until sweep.open_search sends them in the POST too.
+        print('year ranges are not applied by PARES in the 100-row session (README, year-filter bug); '
+              'fix sweep.open_search first', file=sys.stderr)
+        return 1
     sweep.MAXREQ, sweep.PAUSE_EVERY, sweep.PAUSE_SECS = cap, PAUSE_EVERY, PAUSE_SECS
     print(f'{len(todo)} jobs, cap {cap} requests, pause {PAUSE_SECS} s after every {PAUSE_EVERY}', file=sys.stderr)
     code = 0

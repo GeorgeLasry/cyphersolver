@@ -59,6 +59,7 @@ def prose(s):
 
 def check(slug):
     f = HERE / f'{slug}.html'
+    if not f.is_file(): return []  # no page yet (target in progress): nothing to check
     lines = prose(f.read_text(encoding='utf-8'))
     hits = []
     for i, l in enumerate(lines, 1):

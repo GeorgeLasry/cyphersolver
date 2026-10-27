@@ -1372,21 +1372,17 @@
     "language": "Spanish",
     "region": "Italy",
     "period": "1560-1589 / 1589-1598 / 1598-1610",
-    "shelfmark": "AGS, EST,LEG,1394-1432 (Génova): EST,LEG,1394,247; EST,LEG,1401,41; EST,LEG,1401,53; EST,LEG,1401,54; EST,LEG,1401,225; EST,LEG,1405,119; EST,LEG,1408,159; EST,LEG,1410,115; EST,LEG,1413,172; EST,LEG,1413,173; EST,LEG,1413,235; EST,LEG,1413,239; EST,LEG,1414,4; EST,LEG,1414,8; EST,LEG,1414,15; EST,LEG,1414,16; EST,LEG,1414,22; EST,LEG,1414,26; EST,LEG,1414,32; EST,LEG,1414,38; EST,LEG,1414,39; EST,LEG,1414,40; EST,LEG,1414,46; EST,LEG,1414,49; EST,LEG,1414,54; EST,LEG,1414,67; EST,LEG,1414,85; EST,LEG,1414,93; EST,LEG,1414,98; EST,LEG,1414,99; EST,LEG,1414,100; EST,LEG,1414,107; EST,LEG,1414,153; EST,LEG,1414,161; EST,LEG,1414,163; EST,LEG,1414,242; EST,LEG,1416,11; EST,LEG,1416,17; EST,LEG,1416,18; EST,LEG,1416,20; EST,LEG,1416,22; EST,LEG,1416,58; EST,LEG,1416,62; EST,LEG,1416,79; EST,LEG,1416,80; EST,LEG,1416,81; EST,LEG,1416,171; EST,LEG,1416,172; EST,LEG,1418,2; EST,LEG,1418,6; EST,LEG,1418,9; EST,LEG,1418,10; EST,LEG,1418,124; EST,LEG,1418,125; EST,LEG,1419,5; EST,LEG,1419,7; EST,LEG,1430,169; EST,LEG,1430,170; EST,LEG,1432,169",
-    "folio_note": "59 items; images online",
+    "shelfmark": "AGS, EST,LEG,1401-1432 (Génova): EST,LEG,1401,41; EST,LEG,1401,53; EST,LEG,1401,54; EST,LEG,1401,225; EST,LEG,1405,119; EST,LEG,1408,159; EST,LEG,1410,115; EST,LEG,1413,172; EST,LEG,1413,173; EST,LEG,1413,235; EST,LEG,1413,239; EST,LEG,1414,4; EST,LEG,1414,8; EST,LEG,1414,15; EST,LEG,1414,16; EST,LEG,1414,22; EST,LEG,1414,26; EST,LEG,1414,32; EST,LEG,1414,38; EST,LEG,1414,39; EST,LEG,1414,40; EST,LEG,1414,46; EST,LEG,1414,49; EST,LEG,1414,54; EST,LEG,1414,67; EST,LEG,1414,85; EST,LEG,1414,93; EST,LEG,1414,98; EST,LEG,1414,99; EST,LEG,1414,100; EST,LEG,1414,107; EST,LEG,1414,153; EST,LEG,1414,161; EST,LEG,1414,163; EST,LEG,1414,242; EST,LEG,1416,11; EST,LEG,1416,17; EST,LEG,1416,18; EST,LEG,1416,20; EST,LEG,1416,22; EST,LEG,1416,58; EST,LEG,1416,62; EST,LEG,1416,79; EST,LEG,1416,80; EST,LEG,1416,81; EST,LEG,1416,171; EST,LEG,1416,172; EST,LEG,1418,2; EST,LEG,1418,6; EST,LEG,1418,9; EST,LEG,1418,10; EST,LEG,1418,124; EST,LEG,1418,125; EST,LEG,1419,5; EST,LEG,1419,7; EST,LEG,1430,169; EST,LEG,1430,170; EST,LEG,1432,169",
+    "folio_note": "58 items; images online",
     "cls": "C",
-    "status": "PARES hits (27 Oct 2026, \"carta cifrada\"/\"cifrada\"; EST,LEG,1401,54, 1416,11 and 1416,79 also \"no descifrada\"). Pairs of \"Carta cifrada\" and \"Duplicado de carta cifrada\" of the same letter are common (e.g. 1414, 1416). PARES full-text search matches words, not the phrase, so a term hit is a pointer; the hit-list title says the letter is in cipher, not whether a decipherment is filed with it. Sibling of the Binasco 1592 row already here (EST,LEG,1424,79). Not in the repo (known.py: no hits for the legajos).",
+    "status": "PARES hits (27 Oct 2026, \"carta cifrada\"/\"cifrada\"; EST,LEG,1401,54, 1416,11 and 1416,79 also \"no descifrada\"). Pairs of \"Carta cifrada\" and \"Duplicado de carta cifrada\" of the same letter are common (e.g. 1414, 1416). PARES full-text search matches words, not the phrase, so a term hit is a pointer; the hit-list title says the letter is in cipher, not whether a decipherment is filed with it. Sibling of the Binasco 1592 row already here (EST,LEG,1424,79). EST,LEG,1394,247 (PARES 3576569, García de Toledo to Philip II, 16 July 1565), found in the sweep, is targets/toledo1565/, already solved, and was taken out of this row at the merge review (27 Oct 2026); its key (two-digit homophonic, 12-43) is the first to try on the García de Toledo items here. known.py missed it because the repo writes \"AGS Estado leg. 1394 no. 247\", not \"EST,LEG,1394,247\"; re-run with \"leg. 1401/1405/1408/1410/1413/1414/1416/1418/1419/1430/1432\": no other hits for the remaining legajos (checked 27 Oct 2026).",
     "why": "The densest cipher run in the sweep (about 80 items, 1571-1587 mostly): duplicates of the same letter give depth, and the series spans the 1570s-80s Italian cipher changes (see the key leads).",
     "importance": 3,
     "solvability": 3,
     "difficulty": 3,
     "score_note": "Scored from the PARES hit list (title, dates, signatura only) during the 27 Oct 2026 PARES batch (research/pares_ags/, screen.py + reading of the top of screen_ranked.tsv); full description and images not viewed",
-    "verify": "Open the three \"no descifrada\" hits first (1401,54; 1416,11; 1416,79); then sample the run for filed descifrados.",
+    "verify": "Try the toledo1565 key (two-digit homophonic, 12-43) on the García de Toledo items first. Open the three \"no descifrada\" hits (1401,54; 1416,11; 1416,79); then sample the run for filed descifrados.",
     "links": [
-      {
-        "label": "PARES 3576569 (EST,LEG,1394,247)",
-        "href": "https://pares.cultura.gob.es/ParesBusquedas20/catalogo/description/3576569"
-      },
       {
         "label": "PARES 3550804 (EST,LEG,1401,41)",
         "href": "https://pares.cultura.gob.es/ParesBusquedas20/catalogo/description/3550804"
@@ -1892,7 +1888,7 @@
     "solvability": 3,
     "difficulty": 3,
     "score_note": "Scored from the PARES hit list (title, dates, signatura only) during the 27 Oct 2026 PARES batch (research/pares_ags/, screen.py + reading of the top of screen_ranked.tsv); full description and images not viewed",
-    "verify": "Open both descriptions and images; try the 1516 Ayala key (targets/ayala1516) on the 1516 passages; check Gayangos & de la Fuente (1867, 1875) and CODOIN for prints.",
+    "verify": "Open both descriptions and images; try the ayala1516 / DECODE R10024 key (Tomokiyo) on the 1516 letter to Cisneros first; check Gayangos & de la Fuente (1867, 1875) and CODOIN for prints.",
     "links": [
       {
         "label": "PARES 13037853 (EST,LEG,3,353)",
