@@ -1,0 +1,119 @@
+# Letter 13 -- PT/TT/MSLIV/1017/00013, João IV to the marquês de Nisa, Lisbon 31 Dec 1642
+# Cipher: scan m0024 from the middle of the page (heading 'De El Rei de 31 de Dez.ro de 1642 / Carta', c. line 16)
+#   to the foot, and scan m0025 lines 1-16, ending 'Escrita em Lx.a a 31 de Dez.ro de 1642 / Rey'.
+# CLEAR COPY: m0025 l.17 'Carta inclusa' -> m0026 l.21. It is the same letter in clear and is used here to check
+#   every cipher word; its wording is quoted under each run as CLEAR COPY.
+#
+# Conventions: cipher exactly as written, one line per manuscript line; ? after a letter = that letter is unsure;
+#   [..] = unreadable stretch; E = the looped capital-E sign (plain f); (+) = the crossed-circle symbol for Castela/ElRei de Castela.
+#   NORMALISED = the same words with the scribe's letter-form confusions resolved (c/e, o/a, r/x, t/z, u/v) where the clear copy settles them.
+#   DECODE = key.py on the normalised form, with b/p, m/v, u/v resolved by sense. Old spelling: -ão written -am, intervocalic s as z.
+# Line numbers count from the top of each page.
+# SCAN NOTE: the top half of m0025 is faint and shows through from the other side; letter-exact transcription there is
+#   possible only for part of the words. Those lines are marked PARTIAL and the illegible stretches left as [..].
+
+## Run A  m0024 l.20-22  (after the clear '... e da licenca q')
+m0024 l.20: g?ha?ecieo sxc ft euiecfao orcx? xorroppo tadou c o uxntur goto zo-
+m0024 l.21: fotcz ioz?aur rcxr c dcinc o apbo fc voz? puxtcieu ogtat auzctecu?
+m0024 l.22: c Eolct Eutnolpolor
+            [clear resumes: ", e porq a[ssistente] da embarcacao em q veio a vossa carta deu a entender q era falecido o Card.al Duq.e de Rechelieu, porto q a"]
+NORMALISED: ... sxc ft euiecfao o rcx xorroppo tadou c o uxntur goto zofotcz ioxaur rcxr c dcinc o apbo fc roz puxtcieu
+            ogtat euzctcau c Eolct Eutnolpolor
+DECODE    : ... que [ft = ElRei Christianissimo] concedia a seu vassal(l)o Rigao e a outros para madarem navios seus e gente
+            a ilha de Sam Lourenco, abrir comercio e fazer fortalezas
+CLEAR COPY: "e da licenca q ElRei Christ.mo concedia a seu vassalo Rigao, ea outros p.a mandarem Navios, e g.te a ilha
+            de S.to L.co abrir com.co e fazer fortalezas"
+NOTES     : 'euiecfao' = concedia; 'orcx' as written for 'o rcx' = a seu (word division lost); 'xorroppo' = vassalla (copy: vassalo);
+            'tadou' = Rigao, a proper name spelled out, not a code; 'zo-|fotcz' = madarem (copy mandarem), the n not written;
+            'ioxaur' written 'ioz?aur' (z for x) = navios; 'auzctecu' as written for euzctcau = comercio (letters transposed in the copying).
+
+## Run B  m0024 l.23-27  (after the clear '... porto q a nova senao certefique')
+m0024 l.23: [clear: 'nova senao certefique'] xur sxc z?o-
+m0024 l.24: ?c zoar Euzcinoxo ox? dxcttor c
+m0024 l.25: fareutfeor euz (+). c sxc o rcx tcrgeanu rc ioz ofianatoz zx xclcr
+m0024 l.26: or gtonaeor sxc rc uEEctcc?c-|cectoz? rc? eigqiclaeor? c ecrroeoz-
+m0024 l.27: ?c otzor, cs iu eolu fc xat o rct ectno o Eopno fu eotfcop rc gufc tcecot
+NORMALISED: xur sxc zu ... zoar Euzcinoxo or dxcttor c fareutfeor euz (+) c sxc o rcx tcrgcanu rc ioz ofzanatoz
+            zxanor xclcr or gtonaeor sxc rc uEEctceaoz fc euzgulaeoz c ecrroeoz fc otzor
+            cs iu eolu fc xat o rct ectno o Eopno fu eotfcop rc gufc tcecot
+DECODE    : vos que [mo]... mais fomentava as guerras e discordias com [Castela] e que a seu respeito se nam admitiram
+            muitas vezes as praticas que se offereciam de composicam e cessacam de armas;
+            e que no cazo de vir a ser certa a falta do cardeal se pode recear
+CLEAR COPY: "vos quis avisar logo q se tinha por sem duvida q o Card.al era o q mais fomentava as guerras e dissensoens
+            com ElRei de Cast.a, e q a seu resp.to senao admitirao m.tas vezes as praticas q se offerecião de composicao
+            [e cessacao] de armas, e q no caso de vir a ser certa a falta do Card.al se pode recear"
+NOTES     : '(+)' (crossed circle) stands here for ElRei de Castela, confirmed by the clear copy; 'ox' written for 'or' = as
+            (the r/x trap); 'ofianatoz' as written, read ofzanatoz = admitiram; 'zx xclcr' as written for zxanor xclcr =
+            muitas vezes (copy m.tas vezes) -- the abbreviation is carried into the cipher, so 'zx' = m.tas [?];
+            'uEEctcc?c-' line-end, the word runs over to l.26 and its second half is rubbed: offereciam [?];
+            'eigqiclaeor?' = composicam, badly formed [?]; 'cs' = e q(ue), the clear 'q' abbreviation inside the cipher;
+            'eolu' = cazo, 'Eopno' = falta, 'eotfcop' = cardeal, 'xat' = vir (written xul/xut, u for a), 'ectno' = certa
+            (written octno, letters out of order).
+
+## Run C  m0024 l.27-32
+m0024 l.27 (end): sxc gufc tcecot
+m0024 l.28: sxc (+) euinaixc or zcrzor gtonaeor c ncibo zc-
+m0024 l.29: pbut rxeecrru rugtc or zoar euxlor sxc ncifcr o eotdu
+            [clear: ', pelo q vos encomendo, e encarrego'] rugtc ur zoar
+m0024 l.30: euxlor sxc ncifcr o eotdu, sxc gtuextcar euz tceonu c rcdtcfu
+m0024 l.31: sxc euixcz gcicatot ur rcdtcfur fc (+) c u oiazu fc ft c rcxr
+m0024 l.32: zaiarntur goto zc ofxctnatfcr fcppc [page ends]
+NORMALISED: sxc (+) euinaixc or zcrzor gtonaeor c ncibo zcpbut rxeecrru rugtc or zoar euxlor sxc ncifcr o eotdu
+            sxc gtuextcar euz tceonu c rcdtcfu sxc euixcz gcicatot ur rcdtcfur fc (+) c u oiazu fc ft
+            c rcxr zaiarntur goto zc ofxctnatfcr fcppc
+DECODE    : que [Castela] continue as mesmas praticas e tenha melhor sucesso sobre as mais couzas que tendes a cargo;
+            que procureis com recato e segredo que convem penetrar os segredos de [Castela] e o animo de [ft]
+            e seus ministros, para me advertirdes delle
+CLEAR COPY: "q ElRei de Cast.a continue as mesmas praticas, e tenha melhor sucesso nellas, pelo q vos encomendo, e
+            encarrego sobre as mais couzas q tendes a cargo, q procureis com recato e segredo q convem penetrar
+            os segredos de Cast.a e o animo de ElRei Christ.mo e seus Minis.os p.a me advertirdes delle"
+NOTES     : the clear phrase 'pelo q vos encomendo, e encarrego' is written out in the clear in the middle of the cipher on l.29;
+            'ncibo' = tenha; 'zcpbut' = melhor; 'rxeecrru' = sucesso (the copy's 'nellas' is replaced here by 'sobre as mais
+            couzas'); 'euixcz' = convem; 'gcicatot' = penetrar; 'oiazu' = animo; 'zaiarntur' = ministros (written with i for a);
+            'ofxctnatfcr' = advertirdes; 'fcppc' = delle.
+
+## Run D  m0025 l.1-16  (PARTIAL -- faint page)
+m0025 l.1 : [clear: 'nao bem, promover'] cx? sxc xcoxcp? c xucttuxgor?? zc xofc fofu g.t Con-
+            legible cipher words: gurraxcp  crnutxopu  zc atcar fofu
+m0025 l.2 : ta fxaro? o opeoieor c cicinfcpfcr g. Conforme ouru crcznot gtc?-
+            legible: opeoieor (alcances), cicinfcpfcr (entenderdes)
+m0025 l.3 : cfxt? cxzcucpbcfour? [..] zoar gotcect sxc fcxcor Eolct Ec?eobu goto?
+m0025 l.4 : cxrc? ioz? [..] zc oxalot [..] cz nufor or ueolaucr sxc o[..] nctfc zc
+m0025 l.5 : eoxrc? iot? [..] zc xc ovalot? [..] gtcrcinc xur fcxc rct s[..]
+m0025 l.6 : xoc?tcc? gut orra euixat goto nxfu.
+            [clear resumes: 'Prez.te vos deve ser q'] o apbo fc ro-
+m0025 l.7 : [..] puxtcieu bc fo eutuo? fcrno eutuo c ixieo cto patdofo gut cppo
+m0025 l.8 : euzu ur Etoiecrcr zc foz o cincifct, eora ioz gufcz cppcr
+m0025 l.9 : icz uxntor crntoidcatur euzgtot ixtu? fcppo euzctcat
+m0025 l.10: ot ic ntonot rcz zcx euircinazcinu [..] paecieo goto u Eolctcz
+m0025 l.11: euz icibxz eorotcz? Eutnopcl?or gut crnor tolucr [..]
+m0025 l.12-16: [..] (faint; ends with the clear 'Escrita em Lx.a a 31 de Dez.ro de 1642 / Rey')
+CLEAR COPY (m0026 l.1-13, for the whole of run D):
+   "...e q no caso de vir a ser certa a falta do Card.al se podera recear. ElRei de Cast.a continue as mesmas praticas,
+    e tenha melhor sucesso nellas, pelo q vos encomendo o cuidado sobre as mais couzas, e sendo a cargo q procureis
+    com recato e segredo q convem, penetrar os segredos de Cast.a e o animo de ElRei Christ.mo e seus Minis.os p.a me
+    haver delle avizo, e q procureis tao bem p.a ver for possivel estorvalo, me ireis dando p.ar conta dos alcances,
+    e entenderdes p.a conforme a esto eu estar prevenido, e com o tempo ordenar o q mais parecer q devais fazer
+    dam.a p.ter e por esto neg.o ser o de mor importancia, me avisareis em todas as embarcacoens q desta parte
+    vierem por assi convir p.a tudo.  Prez.te vos deve ser q a Ilha de S.to L.co he da Coroa desta Coroa, e nunca
+    era largada por ella, como os Fran.ses dao a entender, casi nao podem elles, nem outras estrangeiras comerciar
+    nella sem meu consentim.to e licenca, p.a o fazerem, e convem nenhum caso fazer fortalezas por estas razoens,
+    e aproveitandovos das mais q vos levarao, procurareis q por nenhum caso dar a entender q me aceitasteis,
+    e tudo os resp.tos antes publico q tem ella, por vos aclarardes nesto."
+NOTES     : run D is the end of the letter; the sense is fixed throughout by the clear copy, but only part of the cipher
+            letters can be read on this scan, so most words of l.3-5 and l.12-16 are left [..].
+
+## Word lists used for the count (the legible cipher words of each run, in order)
+A: sxc ft euiecfao o rcx xorroppo tadou c o uxntur goto zofotcz ioxaur rcxr c dcinc o apbo fc roz puxtcieu ogtat euzctcau c Eolct Eutnolpolor
+B: xur sxc zu zoar Euzcinoxo or dxcttor c fareutfeor euz (+) c sxc o rcx tcrgcanu rc ioz ofzanatoz zxanor xclcr or gtonaeor sxc rc uEEctceaoz fc euzgulaeoz c ecrroeoz fc otzor cs iu eolu fc xat o rct ectno o Eopno fu eotfcop rc gufc tcecot
+C: sxc (+) euinaixc or zcrzor gtonaeor c ncibo zcpbut rxeecrru rugtc or zoar euxlor sxc ncifcr o eotdu sxc gtuextcar euz tceonu c rcdtcfu sxc euixcz gcicatot ur rcdtcfur fc (+) c u oiazu fc ft c rcxr zaiarntur goto zc ofxctnatfcr fcppc
+D: gurraxcp crnutxopu zc atcar fofu opeoieor cicinfcpfcr cfxt cxzcucpbcfour zoar gotcect sxc fcxcor Eolct Eceobu goto cxrc ioz zc oxalot cz nufor or ueolaucr sxc nctfc zc eoxrc iot zc xc oxalot gtcrcinc xur fcxc rct xoctcc gut orra euixat goto nxfu o ro puxtcieu bc fo eutuo fcrno eutuo c ixieo cto patdofo gut cppo euzu ur Etoiecrcr zc foz o cincifct eora ioz gufcz cppcr icz uxntor crntoidcatur euzgtot ixtu fcppo euzctcat ot ic ntonot rcz zcx euircinazcinu paecieo goto u Eolctcz euz icibxz eorotcz Eutnopclor gut crnor tolucr
+
+## COUNTS (letter 13) -- Python split() on the four word lists above
+Run A = 26, Run B = 47, Run C = 43, Run D = 91 (the words legible on the faint half-page; the rest of m0025 l.3-5 and l.12-16 is [..])
+TOTAL cipher words transcribed: 207
+Decode to sense (match the clear copy word for word): 199
+Doubtful (6): zx (m.tas, abbreviation inside the cipher), uEEctcc?c (offereciam, second half rubbed),
+  eigqiclaeor (composicam), xoc?tcc (l.6 first word), cx?/xcoxcp (m0025 l.1 first words), fxaro (m0025 l.2)
+Unread: the illegible stretches marked [..] on m0025 l.3-5 and l.12-16 (not counted above; they are blocked by the scan,
+  and their plaintext is known from the clear copy on m0026).

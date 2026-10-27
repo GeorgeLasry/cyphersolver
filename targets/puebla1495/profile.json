@@ -1,0 +1,263 @@
+{
+ "schema_version": 1,
+ "target": "puebla1495",
+ "title": "Ferdinand and Isabella to Rodrigo González de Puebla, Tortosa, 28 Dec. [1495], cipher copy, AGS Patronato Real leg. 52 doc. 124 (catalogue 615)",
+ "documents": [
+  {
+   "id": "doc124",
+   "read": "read in part",
+   "shelfmark": "AGS, Patronato Real, leg. 52, doc. 124 (old mark T. c. Y. 2; PARES description 2207846)",
+   "date": "28 Dec. 1495 (dated 1496, Spanish year from Christmas)",
+   "year": 1495,
+   "country": "Spain",
+   "route": "Ferdinand and Isabella (Tortosa) -> De Puebla (London)",
+   "places": {
+    "from": "Tortosa",
+    "to": "London"
+   },
+   "language": "Spanish",
+   "pages": 4,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "printed edition"
+    ],
+    "source": "Bergenroth, CSP Spain I (1862) no. 113, pp. 72-75: an English abstract, with quotations, of the clear draft of the same despatch (an abstract of the clear draft, not a decipherment of the cipher copy); no. 114, p. 75, notices the cipher copy ('substance exactly the same') but prints no decipherment of it.",
+    "partial": true
+   },
+   "length": {
+    "tokens": "unknown",
+    "unit": "mixed",
+    "measured": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "PARES show/2207846, images 1-2 (p. 1 ll. 6-8, p. 2 ll. 1-6 only)",
+    "corrections": 1,
+    "image_quality": "fair",
+    "notes": "Sample only. One code group corrected in the check: jVdc iiij -> jVda iiij (MDCCIIII, otubre)."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "code"
+  ],
+  "summary": "Puebla's Great Roman Numeral code: an alphabetical one-part code of words and names numbered in Roman figures (key AGS PTR leg. 52 doc. 33), mixed with clear words under merchant cover words.",
+  "symbol_kind": "letters",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": true,
+   "note": "A ring over the C ligature and over final iiij/viij; the C-count rule (ligature, ligature with superscript o, wide ligature with overbar = CC, CCC, CCCC) is from the key images, see targets/puebla1496."
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": "unknown",
+   "kinds": [
+    "common words",
+    "names",
+    "titles"
+   ],
+   "unread_groups": 8
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "alphabetical",
+  "word_division": "kept",
+  "doubled_letters": "not applicable",
+  "sibling_key": "Same code and key as targets/puebla1496 (catalogue 616). Key AGS PTR leg. 52 doc. 33, PARES show/2207755; values used in key_excerpt.tsv.",
+  "notes": "Script forms: jV = M, d = D, dc = DC, da = DCC, dar = DCCC, ar = CCC."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "partial",
+   "where": "Bergenroth, CSP Spain I (1862) no. 113, pp. 72-75: abstract of the clear draft, not a decipherment of the cipher copy; no. 114 notices the cipher copy without deciphering it",
+   "found": "during attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "key from archive",
+   "published key",
+   "cleartext context"
+  ],
+  "attack": "key from archive",
+  "human_role": "WAINUT: the owner set the task (catalogue items 615-617). The work was done by AI language-model agents, and a second agent re-checked it on the images and the key. No human reading.",
+  "tools": [
+   "decode_sample.py (key-excerpt lookup, shift and shuffle controls)",
+   "date-matching control over 42 CSP Spain I calendar items (WAINUT research script, not ported)"
+  ],
+  "models": [
+   "AI language-model agents (WAINUT; versions not recorded here)"
+  ],
+  "sessions": 1,
+  "first_date": "2026-10-27",
+  "last_date": "2026-10-27"
+ },
+ "solution": [
+  {
+   "date": "2026-10-27",
+   "kind": "access",
+   "what": "PARES show/2207846: 4 images; old mark T. c. Y. 2; modern note 'Carta de los RR.CC. al doctor Puebla en cifra incompleta'.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "transcription",
+   "what": "Clear words of pp. 1-2 and the code groups of p. 1 ll. 6-8 and p. 2 ll. 1-2 transcribed (sample_transcription.txt).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "literature search",
+   "what": "CSP Spain I pp. 57-107 (BHO): no. 113 (Tortosa, 28 Dec.) has the five sending dates of p. 2 and the letters received; no. 114 is the cipher copy.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "control",
+   "technique": [
+    "plaintext matching",
+    "statistical test"
+   ],
+   "what": "Five sending dates scored against 42 calendar items: no. 113 matches 5/5, the next item 1/5; 0 of 2,000 random five-date sets match 3 dates in any item.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "key from source",
+   "technique": [
+    "key matching"
+   ],
+   "what": "Key AGS PTR leg. 52 doc. 33 read on images 20, 24, 49, 51-53, 55, 60, 66, 80, 100, 103-106, 111; script form da = DCC; MDCCIIII = otubre (image 105).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "reading",
+   "technique": [
+    "key matching"
+   ],
+   "what": "Sample decoded: 'de nueve de otubre y otra de diez e siete de otubre y otra de treynta de otubre que'; 'que [dotor de puebla] partio de aca'. Shift and shuffle controls give no Spanish (decode_sample.py).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "verification",
+   "what": "Second agent re-read the crops and key images: month group corrected from jVdc iiij to jVda iiij; DCCCLV read on key image 48; the cipher's 'nueve de otubre' differs from the abstract's '9th of September'.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "access",
+   "what": "Maintainer review tried to fetch key images 3-9, 47-51, 70-75, 78-84, 110-113 of PTR leg. 52 doc. 33 (show/2207755) for the open groups 852, 868, 883, 1221, 1335, 1374, 1813, 29: PARES answered HTTP 429 (Too Many Requests) to every request, site-wide, from about 11:45 to 13:10; nothing opened.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "verification",
+   "what": "Maintainer review (Claude for Daniel Bourdeau): sample read as sentences, graded B; outcome changed from 'already solved' to 'read in part' (sample) because Bergenroth's no. 113 is an abstract of the clear draft, not a decipherment of the cipher copy; his credit role changed from 'prior solution' to 'pointer'; prior_solution.exists set to 'partial'. Decided: no write-up.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "recovered",
+  "method": "read with known key",
+  "method_basis": "A sample of the cipher copy (p. 1 ll. 6-8, p. 2 ll. 1-2) was decoded with the extant key of Puebla's Great Roman Numeral code (AGS PTR leg. 52 doc. 33), which Tomokiyo tied to this code; the content of the despatch is known otherwise only from Bergenroth's abstract of the clear draft (CSP Spain I no. 113), not from a decipherment of the cipher copy.",
+  "contribution": [
+   "sender or date identified",
+   "catalogue correction",
+   "transcription",
+   "key extended or corrected"
+  ],
+  "verification": [
+   "historical consistency",
+   "key confirms"
+  ],
+  "provenance": "contributed",
+  "notes": "No write-up: only a sample of the cipher copy is decoded, and the despatch's content is in print as Bergenroth's abstract of the clear draft. The key state is 'recovered' because the whole key survives in the archive; only the entries in key_excerpt.tsv were looked up. Whether doc. 124 is no. 114 itself or another of the three copies named in the endorsement of no. 113 is open. Proposed: catalogue 615 is identified (Ferdinand and Isabella to De Puebla, Tortosa, 28 Dec. 1495; content abstracted from the clear draft in CSP Spain I no. 113); the cipher copy itself is not deciphered beyond the sample.",
+  "credits": [
+   {
+    "who": "lccompany",
+    "role": "solution",
+    "note": "letter identified and a sample of the cipher copy decoded with the extant key; the content of the despatch was already in print as Bergenroth's abstract of the clear draft (1862)",
+    "date": "2026-10-27",
+    "source": "https://github.com/WAINUTAI"
+   },
+   {
+    "who": "lccompany",
+    "role": "identification",
+    "note": "doc. 124 identified as the cipher copy of Ferdinand and Isabella to De Puebla, Tortosa, 28 Dec. 1495 (CSP Spain I nos. 113-114)",
+    "date": "2026-10-27",
+    "source": "https://github.com/WAINUTAI"
+   },
+   {
+    "who": "lccompany",
+    "role": "pointer",
+    "note": "pointer to Bergenroth, CSP Spain I nos. 113-114, pp. 72-75",
+    "date": "2026-10-27",
+    "source": "https://github.com/WAINUTAI"
+   },
+   {
+    "who": "lccompany",
+    "role": "transcription",
+    "note": "sample, p. 1 ll. 6-8 and p. 2 ll. 1-6",
+    "date": "2026-10-27",
+    "source": "https://github.com/WAINUTAI"
+   },
+   {
+    "who": "lccompany",
+    "role": "key corrected",
+    "note": "MDCCIIII = otubre (script jVda iiij); MDCXCV = otro/otra; DCCCLV read on key image 48",
+    "date": "2026-10-27",
+    "source": "https://github.com/WAINUTAI"
+   },
+   {
+    "who": "bergenroth",
+    "role": "pointer",
+    "note": "CSP Spain I no. 113: English abstract of the clear draft of the despatch (its content), not a decipherment of the cipher copy; no. 114 notices the cipher copy",
+    "date": "1862",
+    "source": "https://www.british-history.ac.uk/cal-state-papers/spain/vol1/pp72-79"
+   },
+   {
+    "who": "tomokiyo",
+    "role": "key or decipherment used",
+    "note": "Great Roman Numeral code values; lists doc. 124 under this code",
+    "source": "https://cryptiana.web.fc2.com/code/spanish.htm"
+   },
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "the key itself, AGS PTR leg. 52 doc. 33",
+    "source": "https://pares.cultura.gob.es/ParesBusquedas20/catalogo/show/2207755"
+   }
+  ],
+  "key_file": "key_excerpt.tsv",
+  "texts": [
+   {
+    "doc": "doc124",
+    "label": "AGS PTR leg. 52 doc. 124, sample (p. 1 ll. 6-8, p. 2 ll. 1-6)",
+    "transcription": "sample_transcription.txt",
+    "decryption": "sample_decryption.txt",
+    "reading": "sample_reading.txt",
+    "translation": "sample_translation.txt",
+    "language": "es",
+    "state": "read in part",
+    "read_share": 0.91,
+    "summary": "Ferdinand and Isabella acknowledge De Puebla's letters of 9 (here October), 17 and 30 October, list the dates they wrote to him (14 May to 22 September 1495, the last by Salvador Duarte) and say that, now the court has come to Tortosa, it will be done from now on as he asks. The merchant cover ('the company', 'its factors') stands for the sovereigns and their court.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude (review for Daniel Bourdeau)",
+     "date": "2026-10-27",
+     "note": "Read sample_reading.txt as sentences. p. 2 ll. 2-6 read as Spanish, but they are clear text, not cipher. The ciphered part is short: the code groups decode to function words and the month ('de nueve de otubre y otra de diez e siete de otubre y otra de treynta de otubre que'; 'que dotor de Puebla partio de aca'), which fit the clear numerals and agree with CSP no. 113 apart from 'nueve de otubre' for its '9th of September'. Five code groups (883, 1374, 1335 and four on p. 2 l. 1) are unread, so 'nos fiso [?] Diego Lopez de Ayala [?]' and 'dezia sea hecho [?] [?] [?] [?] de [?]' do not close as sentences. Coherent but raw: grade B, for a sample of a four-page letter."
+    },
+    "note": "Sample only; the rest of the four pages is not transcribed. read_share from research/reading_audit/v2_score.py (explicit holes)."
+   }
+  ]
+ }
+}

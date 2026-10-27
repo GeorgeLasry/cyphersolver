@@ -30,6 +30,8 @@ NEW_PLACES = {
     'Greenwich': [51.477, 0.0], 'Nonsuch': [51.35, -0.235], 'Dorking': [51.232, -0.331], 'Jargeau': [47.863, 2.128],
     'Saumur': [47.26, -0.077], 'Angers': [47.473, -0.554], 'Strasbourg': [48.573, 7.752], 'Noirmoutier': [47.0, -2.25],
     'Sondrio': [46.17, 9.872], 'Compiègne': [49.418, 2.826], 'Agen': [44.203, 0.616], 'Landriano': [45.311, 9.26], 'Locate': [45.351, 9.226],
+    'Jackson, Mississippi': [32.299, -90.185], 'Richmond, Virginia': [37.541, -77.436], 'Manassas': [38.751, -77.475],
+    'Leszno': [51.8457, 16.5753], 'Sárospatak': [48.3188, 21.5683], 'Tortosa': [40.812, 0.521], 'Almazán': [41.486, -2.531],
 }
 # words in a route that stand for a gazetteer place
 ALIASES = {

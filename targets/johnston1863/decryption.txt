@@ -1,0 +1,26 @@
+# Johnston to Seddon, 16 June 1863: decryption line by line against transcription.txt
+# Key MANCHESTERBLUFF, Vigenere (tabula recta), running across the cipher words only, advancing by plaintext length.
+# Columns: cipher word as written | key letters | written deciphered | plaintext (image 3) | what differs
+# python check.py reproduces every column (check_output.txt).
+
+Line "Grant. will not this enable us to"   (clear)
+Line "UNIEK - CXNKVNED. for this"
+  UNIEK     key MANCHE     -> INVCD      INVADE      4th letter: key C applied as E (A+E = E); final letter (E+E = I) not written
+  CXNKVNED  key STERBLUF   -> KEJTUCKY   KENTUCKY    3rd letter: plaintext N written unenciphered (key E gives R)
+  "for this"                                          (clear)
+Line "Genl Bragg & should JJTRRK -"
+  JJTRRK    key FMANCH     -> EXTEPD     EXTEND      5th letter: key C applied as E (N+E = R)
+Line "Over ISLX - KFYHJEER -"
+  "Over"                                              (clear)
+  ISLX      key ESTE       -> EAST       EAST        exact
+  KFYHJEER  key RBLUFFMAN  -> TENNEZSR   TENNESSEE   one S (key F, cipher X) left out; the rest follows one place on
+
+Totals: 31 cipher letters; 26 of the 33 plaintext positions match the expected encipherment.
+The two places where the key letter is C are the two places where the clerk used E: one systematic slip, not two errors.
+
+Plaintext of the cipher words: INVADE KENTUCKY | EXTEND | EAST TENNESSEE
+
+The telegram with the cipher words in place (cipher words in capitals):
+  Genl Bragg[s?] informs me that a Telegram from Louisville of the 10th says that Part of the 9th 23d Corps' have
+  been sent to reinforce Grant. will not this enable us to INVADE KENTUCKY. for this Genl Bragg & should EXTEND
+  Over EAST TENNESSEE. J E Johnston Genl

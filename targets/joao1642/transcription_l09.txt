@@ -1,0 +1,102 @@
+# Letter 9 -- PT/TT/MSLIV/1017/00009, João IV to the marquês de Nisa, Lisbon 28 Dec 1642
+# Cipher: scan m0020, lines 8-28 (line 1 = first line of the page 'seu poder Credito ...';
+#   line 5 = heading 'De ElRei de 28 de Dez.ro de 1642 Carta'). No cipher on m0021 before 'Escrita em Lx.a a 28 de Dez.ro de 1642'.
+# CHECK: m0021 lines 5-27 hold a CLEAR COPY of this same letter ('De ElRei / Carta', 'De vossa carta de 16 de out.ro ...',
+#   ending 'Seg.e-se a de cima'). Its words are given under each run as CLEAR COPY.
+#
+# Conventions: cipher as written, word divisions kept; ? after a letter = unsure letter; [..] = unreadable;
+#   E = looped capital-E sign; 'aEℓinc' = the recurring Infante group (a, looped E, a second tall loop, i, n, c -- see key_notes).
+#   NORMALISED = the cipher with scribal letter-form confusions resolved (c/e, o/a, u/v, x/z) where the clear copy fixes them.
+#   DECODE = key.py output on the normalised form, then cleaned (b/p, m/v, u/v chosen by sense).
+#   Old spelling: -ão is written -am in the plaintext (irmam, mandaram, sam, seram, Millam); intervocalic s as z (avizo, cazo, prizioneiros).
+
+## Run 1  m0020 l.8-13
+clear before: "... a quem vos o cuid.o e vigilancia e zello com q trataveis e procuraveis"
+m0020 l.8 : o pagetfofc fu
+m0020 l.9 : aEℓinc fuz fxotnc zox? zxanc? ozofu c gtclofu atzoz
+            [clear: ", e como tinheis"]
+m0020 l.10: [clear: "procurado"] eotnor fc ft goto u gtaieage nbuzor c fxsxc fc puidoxapbo
+m0020 l.11: zoifotoz c?evintat ov ntu?gox sxe gorrorez ou aEℓinc o t?uppoz
+            [clear: "e co|mo tão bem procurasteis q se vos desem"]
+m0020 l.12: o pdxr~ crgoibucr gtal?av?icatu
+m0020 l.13: fc ft gcrru?coz fc euinb goto ez rcz ntucu nct u aEℓinc pagetfofc
+            [clear: ". E havendo visto e considerado tudo ..."]
+NORMALISED: o pagetfofc fu aEℓinc fuz fxotnc zcx zxanu ozofu c gtclofu atzoz
+            eotnor fc ft goto u gtaieage nbuzor c fxsxc fc puidoxapbo zoifotoz cieuintot ov ntugor sxc gorrorcz ou aEℓinc o zappoz
+            o pdxir crgoibucr gtalauicatu fc ft gcrruoz fc euinu goto cz rcx ntueu nct u aEℓinc pagetfofc
+DECODE    : a liberdade do Infante dom Duarte meu muito amado e prezado irmam
+            cartas de [ft = ElRei Christianíssimo] para o principe Thomas e duque de Longavilha mandaram encontrar as tropas que passassem
+            ao Infante a Millam
+            alguns Espanhoes prizioneiros de [ft] pessoa(s) de conta para em seu troco ter o Infante liberdade
+CLEAR COPY: a liberd.e do Inf.e D. Duarte meu m.to amado e prezado irmão | cartas de ElRei Christ.mo e mo(?) P.e Tomas e Duq. de
+            Longavile mandarem encontrar as tropas q passasem o Inf.e a Milão | alguns Hespanhois prision.ros de ElRei Christ.mo
+            pessoas de conta, p.a em seu troco ter o Inf.e liberd.e
+NOTES     : 'zox' as written (expected zcx = meu); 'zxanc' as written (expected zxanu = muito); 'zoifotoz' = mandaram where the
+            copy has mandarem; 'c?evintat' = encontrar with v for u and a for o; 'ntu?gox' = tropas with an extra letter (e?) and
+            x for r/v at the end (uncertain); 'gorrorez' = passassem (e for c); 'ou' = ao (copy: o); 'o t?uppoz' = a Millam,
+            first letter looks t (t/z confusion), second u for a; 'o pdxr~' = alguns, the n as a tilde over r;
+            'gtal?av?icatu' = prizioneiro(s), v for u, final s not written or carried; 'gcrru?coz' = pessoas? letters after rr unsure
+            (expected gcrruor); 'euinb' = conta (final u written b-like); 'ez' = em; 'rcz' = seu (z for x); 'ntucu' = troco (c for e).
+
+## Run 2  m0020 l.17-25
+clear before: "... encomendandovos q o continueis com a vigilancia e recato q sua qualid.e merece, e pellos meios mais suaves"
+m0020 l.17: euzu voz ur fc ntu-
+m0020 l.18: [..]?ie ux Exdafo gut urfe xaupaie?ao euxu ur sxe gtoncifcrner aince-
+m0020 l.19: not euz ov eotnor fc ft rctoz zxa attareofuv goto oxafo fu aEℓinc
+m0020 l.20: gut rc nct oxalu sxc u[g blotted]rrotoz fc opezoibo o zapoz pcxoxoz utfcz fc
+m0020 l.21: pbc natot oxafo iu eolu fc rc pbc sxctot nuzot iu eoz?aibu
+            [clear: ". E de mais deq por esta via, e com sem.es"]
+m0020 l.22: eotnor rc ioz guefao euirctxot u rdtcfu sxc
+m0020 l.23: bcu guenu zoar crrciaop fcrnc icdueau
+            [clear: "e logo q dellas se soubesse"] cz e-
+m0020 l.24: ornepo rc gutaoz zoautcr xadaor c Eotaoz zoautcr ogctnuer ogcrruo
+m0020 l.25: fu aEℓinc
+            [clear: ", pello q com estas consideraçoens e advert.as vos deveis haver na materia"]
+NORMALISED: euzu voz ur fc ntu|eu ux Exdafo gut urfc xaupcieao euzu ur sxc gtcncifcrncr aincinot euz ov eotnor fc ft rctoz zxa
+            ottarcofur goto oxafo fu aEℓinc | gut rc nct oxalu sxc u gorrotoz fc opczoibo o zapoz pcxoxoz utfcz fc pbc natot
+            oxafo iu eolu fc rc pbc sxctct nuzot iu eozaibu | eotnor rc ioz gufao euirctxot u rcdtcfu sxc bc u guinu zoar
+            crrciaop fcrnc icdueau | cz eornepo rc gutaoz zoautcr xadaor c Eotaoz zoautcr ogctnur o gcrruo fu aEℓinc
+DECODE    : como sam os de tro[co] ou fugida por os de violencia, como os que pretendestes intentar com as cartas de [ft] seram mui
+            arriscados para a vida do Infante | por se ter avizo que o passaram de Alemanha a Milam levavam ordem de lhe tirar a vida no
+            cazo de se lhe querer tomar no caminho | cartas se nam podia conservar o segredo que he o ponto mais essencial deste negocio |
+            em Castela se poriam maiores vigias e fariam maiores apertos a pessoa do Infante
+CLEAR COPY: como são os de troco ou da fugida, q os da viol.a, como os q pertendeis intentar com as cartas de ElRei de Fr.a, serão
+            mui arriscados p.a a vida do Inf.e | por se ter aviso q os q o passarão de Alem.a a Milão levavão ordem delle tirar a vida
+            no caso de se lhe querer tomar no cam.o | cartas se não podia conservar o segredo q he o p.to mais essencial deste neg.o |
+            em Cast.a se porião maiores vigias, e farião maiores apertos à pessoa do Inf.e
+NOTES     : start of l.18 not legible (expected 'eu', end of troco = ntu|eu) -> [?]; 'gut urfe' = 'por os de' where the copy has
+            'q os da' (letters read are g-u-t, cipher g for p; 'urfe' could be urfo = os da) -> doubtful; 'gtoncifcrner' =
+            pretendestes (o for c; copy pertendeis); 'aince-|not' = intentar (e for i in the 4th letter); 'attareofuv' = arriscados
+            (a for o at start, e for c, v for r); 'oxafo' = a vida joined; 'oxalu', 'eolu' = avizo, cazo (l = z);
+            'sxctot' = querer (o for c); 'guefao' = podia (extra e?); 'rdtcfu' = segredo with the first e (c) missing;
+            'bcu' = he o joined; 'guenu' = ponto (e for i); 'crrciaop' = essencial with the e before the second c missing;
+            'cz e-|ornepo' = em Castela (e for c); 'ogctnuer' = apertos (e for r); 'ogcrruo' = a pessoa joined.
+            ft is used here for 'ElRei de França' (copy) as in run 1 for 'ElRei Christianíssimo'.
+
+## Run 3  m0020 l.26-28
+clear before: "... vos deveis haver na materia"
+m0020 l.26: c gtu extot ofaoinopu cx Eoxut fo pagetfofc fu aEℓinc gut ze-
+m0020 l.27: ?u fontueo sxc naibcar aincino fu eux u Eapbu fu fxsxc fc u[..]o c? fc
+m0020 l.28: uxntur gtalavicatur fc euins
+            [clear: ", como o Card.al Mazarini pella afeição q mostra em m.tas coisas vos havia dado a entender ..." -- clear to the end]
+NORMALISED: c gtuextot ofaoinopu cz Eoxut fo pagetfofc fu aEℓinc gut zc|au fo ntueo sxc naibcar aincinofu euz u Eapbu fu fxsxc
+            fc u[..]o c fc uxntur gtalauicatur fc euinu
+DECODE    : e procurar adiantalo em favor da liberdade do Infante por me[io] da troco(a) que tinheis intentado com o filho do duque
+            de O[..]a e de outros prizioneiros de conta
+CLEAR COPY: e procurar adiantar o em favor da liberd.e do Inf.e por meio da troca, q tomaes intentado como f.o do Duq.e de Oria
+            [reading of the copy uncertain], e de outros prision.ros de conta
+NOTES     : 'gtu extot' = procurar split; 'cx' = em (x for z); 'ze-|?u' = meio, second half unclear [?]; 'fontueo' = da troca
+            joined (written troco/troca, last letter o or u?); 'naibcar' = tinheis (copy: tomaes); 'aincino fu' = intentado split;
+            'eux' = com (x for z); the duke's name 'u[..]o' is blotted: [?] (copy 'Oria', itself uncertain);
+            'gtalavicatur' = prizioneiros (v for u); 'euins' = conta (s-like final for u).
+
+## COUNT (letter 9)  -- counted from the NORMALISED word lists above, 'ft' counted as one code word, split words
+## ('gtu extot', 'aincino fu', 'ze-|?u', 'ntu-|?ie', 'aince-|not', 'cz e-|ornepo' word-break hyphens) counted once each as the word meant.
+## Counted with Python split() on the three NORMALISED strings: Run 1 = 50, Run 2 = 80, Run 3 = 28.
+TOTAL cipher words: 158
+Unread (1): u[..]o (duke's name, run 3)
+Doubtful (8): ntu?gox (tropas), o t?uppoz -> zappoz (Millam), gcrru?coz (pessoas), ntu-|?ie (troco, 2nd half illegible),
+  gut + urfe (por os de / copy 'q os da'), ze-|?u (meio, 2nd half unclear), c? (e, before 'de outros')
+Read as sense: 158 - 9 = 149 (94.3%), of which these needed a scribal letter-form correction from the clear copy
+  (legible, but written with a wrong/variant letter): zox (meu), zxanc (muito), c?evintat (encontrar), attareofuv (arriscados),
+  gtoncifcrner (pretendestes), rdtcfu (segredo), crrciaop (essencial), guefao (podia), sxctot (querer), ogctnuer (apertos), euxu (como).

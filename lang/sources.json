@@ -184,5 +184,8 @@
     "first_used": "waldeck1744"},
   "nl-1600-prose": {"language": "nl", "period": "1569-1642", "genre": "prose",
     "title": "Early-modern Dutch prose from DBNL: Marnix (1569), Coornhert (1586), Van Mander (1604), Bredero (1617), Hooft (1642); editorial paragraphs filtered out by spelling",
-    "local": ["lang/corpora/nl-1600-prose.txt"], "note": "Built by python -m lang.build_nl1600 from DBNL text downloads.", "first_used": "casimir1618"}
+    "local": ["lang/corpora/nl-1600-prose.txt"], "note": "Built by python -m lang.build_nl1600 from DBNL text downloads.", "first_used": "casimir1618"},
+  "pl-1790": {"language": "pl", "period": "1780-1795 (respelled 19th-c. text + Deboli clear despatches)", "genre": "literature + diplomatic letters",
+    "title": "pl-gutenberg respelled to late-18th-c. conventions (iest, moie, wczoray, -cya), plus the ZbPop 419 Deboli despatches transcribed in targets/deboli1789/clear",
+    "local": ["lang/corpora/pl-1790.txt"], "note": "Built by python -m lang.build_pl1790; rerun after adding clear despatches.", "first_used": "deboli1789"}
 }
