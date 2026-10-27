@@ -74,4 +74,7 @@ the model was given, the solution steps and the outcome (`profile.schema.json`; 
 - `.github/workflows/rebuild-site.yml` rebuilds `docs/` (catalogue included) on every push to main, every PR opened or
   closed, and daily, and commits the result as github-actions[bot]. Pull before pushing; on a conflict in a generated
   file (`search.json`, `_dates.json`, `*.html`) take main's copy and rebuild.
+- main has two rulesets. "no force-push or delete" has no bypass: never force-push main; on a rejected push, pull and
+  merge. "require pull request" lets the repo admin and deploy keys push directly; the rebuild pushes with the
+  `REBUILD_DEPLOY_KEY` deploy key, because GitHub Actions cannot bypass a ruleset on a personal repo.
 - Write long HTML with the Write tool, not a Bash heredoc.
