@@ -101,3 +101,7 @@ copied from its neighbour R1872 (Giovanni Michiel, Brussels, 19 Mar 1555, also i
 7. 27 Oct 2026: Brice Dudout's email: Bonavoglia's page back online, filza 166 chancery decipherment, his own block
    table (94.9% on held-out lines). Retrieved Bonavoglia's decipherment (`r1871_bonavoglia.txt`); outcome changed to
    read from existing decipherment.
+
+## Block table by Brice Dudout (27 Oct 2026)
+
+The code table, rebuilt from the transcription and Bonavoglia's decipherment (syllables in blocks of five, vowels on X56), is in `dudout/table_blocks.json`; see `dudout/README.md` for the validation and the suspected misreadings at L18-L19 and L22.

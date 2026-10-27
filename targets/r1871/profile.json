@@ -172,6 +172,7 @@
   }
  ],
  "outcome": {
+  "key_file": "dudout/table_blocks.json",
   "method": "read from existing decipherment",
   "method_basis": "The text is Paolo Bonavoglia's published decipherment (crittologia.eu), retrieved 27 Oct 2026 once his page was back online; nothing was deciphered here, the key was not rebuilt and his text was not aligned with this project's transcription. The project's own ciphertext-only attempt (22 Sept 2026) failed.",
   "contribution": [
@@ -203,7 +204,8 @@
     "date": "2026-10-27",
     "note": "Reported Bonavoglia's page back online and the table's structure (five-code blocks out of order, 94.9% on held-out lines); transcription doubts L18-19, L22",
     "source": "email to Daniel Bourdeau, 27 Oct 2026"
-   }
+   },
+   {"who": "dudout", "role": "key corrected", "date": "2026-10-27", "note": "block table rebuilt from the transcription and Bonavoglia's plain text, validated on held-out lines L16-L23 (94.9%); possible transcription corrections at L18-L19 and L22 (dudout/)"}
   ],
   "key": "none",
   "gaps": [],
