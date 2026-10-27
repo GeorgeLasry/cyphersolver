@@ -6,9 +6,12 @@ Estado, and the Archivo Histórico Nacional (AHN) Estado.
 
 ## Method
 
-- Endpoint: `https://pares.cultura.gob.es/ParesBusquedas20/catalogo/find?nm=&texto=<term>&tambloque=100&pagina=<n>`
-  (server-rendered; see the memory note `pares-access-and-search.md` and `targets/toledo1565/NOTES.md`).
-  `sweep.py` in this folder runs one term, slowly, and appends hits to `hits.jsonl`.
+- Search flow (server-rendered; see `targets/toledo1565/NOTES.md`), per term in its own session (cookie jar):
+  `GET catalogo/find?nm=&texto=<term>[&anio1=<y>&anio2=<y>]` (always 25 rows), then
+  `POST catalogo/SearchController.do?nm=.` with the `formBusqueda` fields `tambloque=100&orderBy=8` (100 rows a
+  page), then the displaytag links `SearchController.do;jsessionid=<s>?...&d-2677838-p=<n>` for pages 2..n.
+  `sweep.py` in this folder runs one term (optionally one year range), slowly, and appends hits to `hits.jsonl`;
+  `run_batch.py` runs a list of term / year-range jobs under one hard request cap (usage in its docstring).
 - Terms: cifra, cifrada, "en cifra", "parte en cifra", "sin descifrar", "no descifrada", descifrado,
   "carta cifrada", contracifra, cifras.
 - Each hit kept as a candidate was checked with `research/archive_sweep_2026-10/known.py` on legajo and folio.
@@ -22,7 +25,7 @@ Estado, and the Archivo Histórico Nacional (AHN) Estado.
   first 429, request cap, `hits_progress.json`) ran three narrow terms: "sin descifrar" (1 page), "no descifrada"
   (14 pages), "parte en cifra" (15 pages). 30 requests in all, about one every 30 s, no 429. Nothing was fetched after
   that; the screening below is from the hit lists only (no description pages were opened).
-- **Bug to fix: pagination did not work.** PARES ignored `tambloque=100` and `pagina=<n>` on `catalogo/find`. Every
+- **Pagination bug (fixed in the next entry).** PARES ignored `tambloque=100` and `pagina=<n>` on `catalogo/find`. Every
   page came back with 25 rows (the "Resultados por página" select shows 25 selected), and pages 2-15 list
   the same 25 rows as page 1. The site pages through the displaytag parameter `d-2677838-p=<n>` on
   `SearchController.do;jsessionid=<session>?texto=...&d-2677838-p=<n>` links in the `pagelinks` div of page 1, so it
@@ -34,10 +37,27 @@ Estado, and the Archivo Histórico Nacional (AHN) Estado.
   belongs to the next row (the thumbnail link comes first in each row), and the signatura was cut at the first space
   ("SANTA" for "SANTA CRUZ,C.51,D.40-60"); pages were also decoded as Latin-1 although PARES sends UTF-8. `hits.jsonl`
   was rebuilt from the saved pages with the fixed parser (same 74 rows). `sweep.py` now also stops when a page repeats
-  the previous one, and `hits_progress.json` is reset to page 1 for the two unfinished terms. The pagination itself is
-  not fixed: it needs a test against the live site, which was not done.
+  the previous one, and `hits_progress.json` is reset to page 1 for the two unfinished terms. The paging was
+  then tested live and fixed the same evening (next entry).
+- 27 Oct 2026, 19:39-19:46 UTC: pagination fixed and tested live (session + `formBusqueda` POST + displaytag
+  links, see Method). 16 requests in all, one at a time, no 429:
+  - 19:39:16 GET, 19:39:40 POST: "parte en cifra", all 58 rows on one 100-row page ("Resultados 58"). 58 of 58.
+  - 19:40:14 GET, 19:40:42 POST, 19:41:08, 19:41:36, 19:42:05, 19:42:27 GET (pages 2-5): "no descifrada", banners
+    1-100, 101-200, 201-300, 301-400, 401-488 of 488, so the rows really differ page to page; 475 unique ids,
+    because the order is not stable between pages (page 3 repeated 12 rows of page 2, page 4 one row of page 3,
+    and as many were skipped).
+  - 19:43:07 GET, 19:43:34 POST: the same term with `orderBy=7` (signatura) gave the PARES error page.
+  - 19:43:46 GET, 19:44:15 POST, 19:44:44, 19:45:10, 19:45:34, 19:45:58 GET: "no descifrada" in title order
+    (`orderBy=0`, 481 unique, 7 repeats); it added the 13 missing rows: 488 of 488.
+  - The 19:43:46 request came 12 s after the one before, because it was a new process and the delay was only kept
+    inside one process. `sweep.py` now keeps the time of the last request in a stamp file (`PARES_STAMP`), so the
+    20 s + jitter spacing holds across processes too. All other gaps were 22-40 s.
+  - `hits.jsonl` now holds 570 rows: "sin descifrar" 24, "no descifrada" 488, "parte en cifra" 58 (dedup by id
+    within a term). The 463 new "no descifrada" rows and 33 new "parte en cifra" rows are not screened yet; 399 of
+    the 488 are AGS Estado (EST,LEG) letters, most of them 16th century.
 - Not run, on purpose: the broad terms ("cifra", "cifrada", "en cifra", "descifrado", "carta cifrada", "contracifra",
-  "cifras"). They return thousands of rows and should be run by decade (date filter), after the pagination fix.
+  "cifras"). They return thousands of rows and should be run by decade with `run_batch.py` (e.g.
+  `run_batch.py 120 "cifrada@1500-1599/10"`); the owner allowed batches for the evening of 27 Oct only.
 
 ## Screening of the 27 Oct 2026 hits (74 rows, hit-list titles only)
 

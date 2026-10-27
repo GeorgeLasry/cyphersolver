@@ -8,21 +8,38 @@
   "requests": 1
  },
  "no descifrada": {
-  "last_page": 1,
-  "done": false,
+  "last_page": 5,
+  "per_page": 100,
+  "done": true,
   "date": "2026-10-27",
-  "unique_hits": 25,
-  "total": "488",
-  "requests": 14,
-  "note": "pages 2-13 repeated page 1 (pagination ignored, see README access log); page 14 was the PARES error page 'Problema encontrado al realizar la búsqueda'. Only rows 1-25 of 488 collected; last_page reset to 1 so a fixed sweep.py resumes at page 2."
+  "unique_hits": 475,
+  "total": 488,
+  "requests": 20,
+  "unique_hits_all_passes": 488,
+  "note": "27 Oct 2026 19:40-19:42 UTC, session paging, 100 rows a page: 475 unique of 488 (page 3 repeated 12 rows of page 2 and page 4 one row of page 3, so 13 rows were skipped; the order is not stable). Second pass in title order (#order0) added the 13: 488 of 488."
  },
  "parte en cifra": {
   "last_page": 1,
-  "done": false,
+  "per_page": 100,
+  "done": true,
   "date": "2026-10-27",
-  "unique_hits": 25,
-  "total": "58",
-  "requests": 15,
-  "note": "pages 2-15 repeated page 1 (pagination ignored, see README access log). Only rows 1-25 of 58 collected; last_page reset to 1 so a fixed sweep.py resumes at page 2."
+  "unique_hits": 58,
+  "total": 58,
+  "requests": 17,
+  "note": "27 Oct 2026 19:39 UTC: all 58 rows on one 100-row page (find + POST, 2 requests)"
+ },
+ "no descifrada#order7": {
+  "note": "orderBy=7 (signatura) answered with the PARES error page, 2026-10-27 19:43:34 UTC; not used again",
+  "requests": 2
+ },
+ "no descifrada#order0": {
+  "last_page": 5,
+  "per_page": 100,
+  "done": true,
+  "date": "2026-10-27",
+  "unique_hits": 488,
+  "total": 488,
+  "requests": 6,
+  "order": 0
  }
 }
