@@ -7991,13 +7991,13 @@
    "shelfmark": "Library of Congress, Burr Conspiracy Collection (DLC)",
    "folio_note": "2 documents: RC 12 Nov 1806 (Madison/02-13-02-0044) and undated extract [22 Nov 1806] (Madison/02-13-02-0081); the extract prints several numerals for which 'there is as yet no key' (46, 73, 71, 18 ...)",
    "cls": "A",
-   "status": "Editors: 'encoded by Graham using a State Department code, decoded here by the editors with assistance from James E. Lewis's partially reconstructed key. The numerals in the text represent words for which there is as yet no key.' Partly decoded interlinearly by Wagner on the 12 Nov letter. Not in the repo (known.py: Graham, Burr no hit).",
+   "status": "Editors: 'encoded by Graham using a State Department code, decoded here by the editors with assistance from James E. Lewis's partially reconstructed key. The numerals in the text represent words for which there is as yet no key.' Partly decoded interlinearly by Wagner on the 12 Nov letter. Not in the repo (known.py: Graham, Burr no hit). Attempted 26 Oct 2026 (targets/graham1806/): Pinckney legation code and Armstrong's THE=972 code ruled out on the open groups; the likely code is the State Department code printed in Weber 1979 pp. 419-30 (used for Graham's 2 Jan 1806 letter, Founders 02-11-02-0004), not obtained; LoC Burr Conspiracy Collection not digitised (microfilm 17,112).",
    "why": "Graham's reports were the government's first inside intelligence on Burr and Blennerhassett; the unread groups are names and places.",
    "importance": 4,
    "solvability": 3,
    "difficulty": 2,
    "score_note": "Scored from the archive description during the Oct 2026 Founders Online sweep (research/founders_emlo/); not viewed",
-   "verify": "Identify the State Department code (Weber, US Diplomatic Codes) and gather other letters in it; check James E. Lewis, The Burr Conspiracy (2017) for his key; LoC images of the Burr Conspiracy Collection.",
+   "verify": "Read Weber 1979 pp. 419-30 at groups 10-77 and test against the [22 Nov] extract (targets/graham1806/render.py); else James E. Lewis's partial key or LoC microfilm 17,112.",
    "links": [
     {
      "label": "Founders 12 Nov 1806",
@@ -8012,7 +8012,8 @@
    "source": "Founders Online sweep",
    "prior_art": "read in part by the Madison Papers editors with J. E. Lewis's partial key (checked 26 Oct 2026)",
    "ark": "",
-   "scored": "sweep"
+   "scored": "sweep",
+   "outcome": "attempted, open"
   },
   {
    "id": 483,

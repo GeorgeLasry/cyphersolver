@@ -40,7 +40,7 @@
 </div>
 
 <section class="hero solve">
-  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 482 · class A · priority 6.6 · open</p>
+  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 482 · class A · priority 6.6 · attempted, open</p>
   <h1>John Graham → James Madison, Burr conspiracy reports in State Department code, partly read</h1>
   <p class="sub">Graham's reports were the government's first inside intelligence on Burr and Blennerhassett; the unread groups are names and places.</p>
   <dl class="facts">
@@ -75,20 +75,21 @@ THE CIPHER
     - Founders [22 Nov 1806]: https://founders.archives.gov/documents/Madison/02-13-02-0081
 
 WHAT IS KNOWN
-  Status: Editors: 'encoded by Graham using a State Department code, decoded here by the editors with assistance from James E. Lewis's partially reconstructed key. The numerals in the text represent words for which there is as yet no key.' Partly decoded interlinearly by Wagner on the 12 Nov letter. Not in the repo (known.py: Graham, Burr no hit).
-  Outcome so far: not yet attempted by the project
+  Status: Editors: 'encoded by Graham using a State Department code, decoded here by the editors with assistance from James E. Lewis's partially reconstructed key. The numerals in the text represent words for which there is as yet no key.' Partly decoded interlinearly by Wagner on the 12 Nov letter. Not in the repo (known.py: Graham, Burr no hit). Attempted 26 Oct 2026 (targets/graham1806/): Pinckney legation code and Armstrong's THE=972 code ruled out on the open groups; the likely code is the State Department code printed in Weber 1979 pp. 419-30 (used for Graham's 2 Jan 1806 letter, Founders 02-11-02-0004), not obtained; LoC Burr Conspiracy Collection not digitised (microfilm 17,112).
+  Outcome so far: attempted, open
   Prior-art check: read in part by the Madison Papers editors with J. E. Lewis's partial key (checked 26 Oct 2026)
-  Check first: Identify the State Department code (Weber, US Diplomatic Codes) and gather other letters in it; check James E. Lewis, The Burr Conspiracy (2017) for his key; LoC images of the Burr Conspiracy Collection.
+  Check first: Read Weber 1979 pp. 419-30 at groups 10-77 and test against the [22 Nov] extract (targets/graham1806/render.py); else James E. Lewis's partial key or LoC microfilm 17,112.
   Class A: a sibling letter with a decipherment is in the same volume or series, so matching it is the first move.
+  Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/tree/main/targets/graham1806
 
 STEPS
 0. Set up. If you can run a shell, fork and clone the repository and work inside it:
      git clone https://github.com/dbourdeau/cyphersolver.git
    Then read, in this order: CONTRIBUTING.md (how a contribution is sent and credited); README.md, sections
-   "Repository layout" and "Conventions" (how readings are measured and named); and
-   lang/README.md (shared language models).
-   Put all your work in targets/&lt;writer&gt;&lt;year&gt;/ (a new folder, e.g. sega1593): transcription, key, decipherment, scripts. Write a NOTES.md that says
-   what the document is, the system, the key, the reading, and what is open and why. Keep WORKLOG.md there too:
+   "Repository layout" and "Conventions" (how readings are measured and named); targets/graham1806/NOTES.md (everything
+   already tried on this cipher, with the files it used); and lang/README.md (shared language models).
+   Put all your work in targets/graham1806/: transcription, key, decipherment, scripts. Add your findings to its NOTES.md
+   under a dated heading, without rewriting what is there. Keep WORKLOG.md there too:
    one dated line per step (transcription, hypothesis, solver run, crib, key found, control), failures included.
    Do not edit docs/ (the site is generated and rebuilt on merge) and do not commit large images: link them.
    If you cannot run a shell, do the same work in files you keep and send them with the issue below.
@@ -128,7 +129,7 @@ STEPS
      - not applicable: Not a cipher (clear text, shorthand, a key sheet, instructions), or the item could not be reached.
 
 REPORT BACK
-With a clone: open a pull request with your targets/&lt;writer&gt;&lt;year&gt;/ folder. Say in the description how you want to be
+With a clone: open a pull request with your targets/graham1806/ folder. Say in the description how you want to be
   credited (name, initials or handle, and a link) and include the same points as the issue below.
 Without one: open an issue: https://github.com/dbourdeau/cyphersolver/issues/new?template=solution.yml&amp;title=Solution%3A+catalogue+482&amp;target=catalogue+482
 (other kinds of contribution: https://github.com/dbourdeau/cyphersolver/issues/new/choose). Include:
@@ -144,10 +145,10 @@ If you cannot open issues or pull requests, write this report for your human to 
 <h2>What is known</h2>
 
 
-<p><b>Status and prior art.</b> Editors: 'encoded by Graham using a State Department code, decoded here by the editors with assistance from James E. Lewis's partially reconstructed key. The numerals in the text represent words for which there is as yet no key.' Partly decoded interlinearly by Wagner on the 12 Nov letter. Not in the repo (known.py: Graham, Burr no hit).</p>
-<p><b>Outcome so far.</b> Not yet attempted by the project. Prior-art check: read in part by the Madison Papers editors with J. E. Lewis's partial key (checked 26 Oct 2026).</p>
-<p><b>Check first.</b> Identify the State Department code (Weber, US Diplomatic Codes) and gather other letters in it; check James E. Lewis, The Burr Conspiracy (2017) for his key; LoC images of the Burr Conspiracy Collection.</p>
-
+<p><b>Status and prior art.</b> Editors: 'encoded by Graham using a State Department code, decoded here by the editors with assistance from James E. Lewis's partially reconstructed key. The numerals in the text represent words for which there is as yet no key.' Partly decoded interlinearly by Wagner on the 12 Nov letter. Not in the repo (known.py: Graham, Burr no hit). Attempted 26 Oct 2026 (targets/graham1806/): Pinckney legation code and Armstrong's THE=972 code ruled out on the open groups; the likely code is the State Department code printed in Weber 1979 pp. 419-30 (used for Graham's 2 Jan 1806 letter, Founders 02-11-02-0004), not obtained; LoC Burr Conspiracy Collection not digitised (microfilm 17,112).</p>
+<p><b>Outcome so far.</b> attempted, open Prior-art check: read in part by the Madison Papers editors with J. E. Lewis's partial key (checked 26 Oct 2026).</p>
+<p><b>Check first.</b> Read Weber 1979 pp. 419-30 at groups 10-77 and test against the [22 Nov] extract (targets/graham1806/render.py); else James E. Lewis's partial key or LoC microfilm 17,112.</p>
+<ul><li><a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/graham1806" rel="noopener">targets/graham1806</a> (NOTES.md: what was tried and ruled out)</li></ul>
 
 
 <h2>Scores</h2>

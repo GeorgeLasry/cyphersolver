@@ -1,0 +1,187 @@
+{
+ "schema_version": 1,
+ "target": "graham1806",
+ "title": "John Graham to James Madison, Pittsburgh 12 Nov and Marietta [22 Nov] 1806, Burr conspiracy reports in a State Department code (catalogue 482)",
+ "documents": [
+  {
+   "id": "12nov1806",
+   "read": "read",
+   "shelfmark": "LoC Burr Conspiracy Collection (DLC), RC; Founders Madison/02-13-02-0044",
+   "date": "12 Nov 1806",
+   "year": 1806,
+   "country": "United States",
+   "route": "Pittsburgh -> Washington",
+   "language": "English",
+   "cleartext_in_document": "mostly clear",
+   "plaintext": {
+    "location": [
+     "interlinear",
+     "printed edition"
+    ],
+    "source": "Wagner's interlinear decode, completed by the Madison Papers editors with J. E. Lewis's partial key (PJM-SS 13:39-40).",
+    "partial": false
+   },
+   "length": {
+    "tokens": "unknown",
+    "distinct": "unknown",
+    "unit": "code groups",
+    "measured": false
+   },
+   "transcription": {
+    "by": "published",
+    "source": "Founders Online text only; group numbers not printed",
+    "image_quality": "no images"
+   }
+  },
+  {
+   "id": "22nov1806",
+   "read": "read in part",
+   "shelfmark": "LoC Burr Conspiracy Collection (DLC), extract in Graham's hand; Founders Madison/02-13-02-0081",
+   "date": "[22 Nov 1806]",
+   "year": 1806,
+   "country": "United States",
+   "route": "Marietta -> Washington",
+   "language": "English",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "printed edition"
+    ],
+    "source": "Madison Papers editors' decode with J. E. Lewis's partial key (PJM-SS 13:78-79); 12 groups unread, 6 conjectured.",
+    "partial": true
+   },
+   "length": {
+    "tokens": "unknown",
+    "distinct": "unknown",
+    "unit": "code groups",
+    "measured": false,
+    "file": "founders_22nov.txt"
+   },
+   "transcription": {
+    "by": "published",
+    "source": "Founders Online text; only the unread groups are printed as numerals",
+    "image_quality": "no images"
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "code"
+  ],
+  "summary": "Numerical State Department code; probably the code issued to the Orleans Territory (Weber 1979 pp. 419-30), unconfirmed.",
+  "symbol_kind": "digits",
+  "digit_groups": {
+   "width": "unknown",
+   "separation": "dots"
+  },
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": "unknown",
+   "kinds": [
+    "common words"
+   ],
+   "unread_groups": 12
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "unknown",
+  "doubled_letters": "unknown",
+  "sibling_key": "Graham 2 Jan 1806 (Founders 02-11-02-0004) decoded by Wagner with the State Department code printed in Weber pp. 419-30; not obtained.",
+  "notes": "Pinckney legation code and Armstrong's THE=972 code ruled out on the open groups."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "partial",
+   "where": "PJM-SS 13:39-40 and 13:78-79 (Founders 02-13-02-0044, 02-13-02-0081), decoded with J. E. Lewis's partial key",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "published reading"
+  ],
+  "attack": "none",
+  "human_role": "Project owner pasted the catalogue 482 contributor task; no target-specific intervention.",
+  "tools": [
+   "Founders Online",
+   "loc.gov JSON API",
+   "Internet Archive search-inside (layout only)"
+  ],
+  "models": [
+   "claude-opus-5-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-10-26",
+  "last_date": "2026-10-26"
+ },
+ "solution": [
+  {
+   "date": "2026-10-26",
+   "kind": "literature search",
+   "what": "Read both Founders texts; 12 Nov fully decoded; [22 Nov] has 12 unread and 6 conjectured groups.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "sibling key",
+   "what": "Tested the Pinckney legation code and Armstrong's THE=972 code on the open groups.",
+   "technique": [
+    "key matching"
+   ],
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "access",
+   "what": "LoC Burr Conspiracy Collection: not digitised (microfilm 17,112); finding aid behind a bot check.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "literature search",
+   "what": "Found sibling Graham 2 Jan 1806 decoded with the State Department code printed in Weber 1979 pp. 419-30.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "access",
+   "what": "Weber 1979 is a print-disabled loan; table layout seen in search-inside only (73/74 near present/president); a bulk sweep was stopped and not used.",
+   "result": "failed"
+  }
+ ],
+ "outcome": {
+  "method": "not solved",
+  "method_basis": "No key and no images reached; the editors' partial decode stands.",
+  "contribution": [
+   "none"
+  ],
+  "class": "not read",
+  "key": "none",
+  "verification": [
+   "none"
+  ],
+  "gaps": [
+   {
+    "item": "groups 10 19 30 33 35 36 39 41 51 61 65 77",
+    "blocker": "no-key-material"
+   },
+   {
+    "item": "conjectures 18 46 54 67 71 73",
+    "blocker": "no-key-material"
+   },
+   {
+    "item": "group numbers of the decoded words",
+    "blocker": "needs-physical-access"
+   }
+  ],
+  "notes": "Attempted, open. Next: Weber pp. 419-30 from a library copy; Lewis's key; LoC microfilm 17,112."
+ }
+}
