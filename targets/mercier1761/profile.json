@@ -31,6 +31,11 @@
         "source": "ANOM IREL images FRANOM23_C8A_064_0001-0005 (ark:/61561/zn401b233uu)",
         "image_quality": "good",
         "notes": "Clear letter with long runs of comma-separated 2-3 digit groups on images 2-5; four caret insertions; 514/614 and 553/653 the main doubtful readings."
+      },
+      "read": "read in part",
+      "places": {
+        "from": "Martinique",
+        "to": "Versailles"
       }
     },
     {
@@ -61,6 +66,11 @@
         "source": "ANOM IREL FRANOM23_C8A_063_0374-0375 (ark:/61561/zn401g8z62m)",
         "image_quality": "good",
         "notes": "Sibling used as key source; 19 clear|code pairs."
+      },
+      "read": "not applicable",
+      "places": {
+        "from": "Martinique",
+        "to": "Versailles"
       }
     }
   ],
@@ -253,9 +263,49 @@
       ],
       "what": "Single-use code pass: attaqué, mille, voi (+ C-grade cas, port, très, jours); measurement tightened (elisions only before vowels) and given a declared word list. 94.3% valued, 92.2% read as sense. Remaining ~40 single-use word codes left open rather than guessed.",
       "result": "worked"
+    },
+    {
+      "date": "2026-10-27",
+      "kind": "verification",
+      "technique": [
+        "statistical test",
+        "language-model scoring"
+      ],
+      "what": "Statistical validation (docs/_validate.py): 771 tokens, 177 types, fr-modern order 4: reading -1.971 per letter; random keys -3.593 (z 10.0); key annealed onto shuffled ciphertext best -2.258 (mean -2.282, z 15.3); annealer on the real text -2.187. Verdict: pass.",
+      "result": "worked"
     }
   ],
   "outcome": {
+    "validation": {
+      "date": "2026-10-27",
+      "model": "fr-modern",
+      "file": "validation.tsv",
+      "tokens": 771,
+      "types": 177,
+      "tokens_per_type": 4.36,
+      "score": -1.971,
+      "nulls": {
+        "random keys": {
+          "n": 200,
+          "mean": -3.593,
+          "sd": 0.163,
+          "max": -3.142,
+          "z": 10.0,
+          "p": 0.005
+        },
+        "shuffled refit": {
+          "n": 6,
+          "mean": -2.282,
+          "sd": 0.02,
+          "max": -2.258,
+          "z": 15.3,
+          "p": 0.1429
+        }
+      },
+      "power": -2.187,
+      "verdict": "pass",
+      "notes": "claimed per-occurrence score -1.971; polyphony 0.0; 47 unread tokens left out; annealer on the real text from random keys reached -2.187"
+    },
     "method": "key recovered based on adjacent plaintext",
     "method_basis": "Key rebuilt from the contemporary interlinear decipherment of sibling letter C8 A 63 f° 208 (same file series, same correspondents, 1761), extended from context in the target. 94.3% of tokens valued, 92.2% read as sense (measure_sense.py); about 40 single-use groups, mostly occurring once, still open.",
     "contribution": [
@@ -265,8 +315,10 @@
     "class": "read in part",
     "key": "partial",
     "fraction_read": 0.922,
-    "verification": [],
-    "notes": "In progress toward the read bar. Leads: more context work; image sweep of C8 A 63-64; COL B 113/114 and MAR/G/178 offline.",
+    "verification": [
+      "statistical test"
+    ],
+    "notes": "Written up 27 Oct 2026 as read in part (92.2%). Leads: COL B 113/114 and MAR/G/178 offline; image sweep of C8 A 63-64 not done.",
     "gaps": [
       {
         "item": "about 40 single-use word codes (47 tokens)",
@@ -289,6 +341,54 @@
         "detail": "not digitised"
       }
     ],
-    "fraction_read_method": "measured"
+    "fraction_read_method": "measured",
+    "texts": [
+      {
+        "doc": "C8A64-f1",
+        "label": "C8 A 64 f° 1, 12 June 1761 (duplicata)",
+        "transcription": "transcription.txt",
+        "decryption": "decipherment.txt",
+        "translation": "translation.txt",
+        "summary": "Without the promised Spanish ships and Choiseul's provisions, the governor and intendant order 3,000 barrels of flour and 1,200 of beef from Saint Eustatius, price them, reckon a year's consumption for a siege, and propose paying half in bills of exchange and half in money or produce.",
+        "reading": "reading.txt",
+        "reading_review": {
+          "grade": "A",
+          "by": "Claude Opus 5.5 (model reader)",
+          "date": "2026-10-27",
+          "note": "reading.txt read as sentences: every sentence is coherent French with its subject and verb; the holes are single unread code words (about 40 single-use groups), never a whole clause. _check_reading.py scores 53% of sentences clean because several sentences hold two holes; not checked by a person."
+        },
+        "read_share": 0.922,
+        "state": "read in part"
+      },
+      {
+        "doc": "C8A63-f208",
+        "label": "C8 A 63 f° 208, 21 Aug 1761 (key source)",
+        "transcription": "sibling178_code.txt",
+        "contemporary": "sibling178_decipherment.txt",
+        "decryption": "sibling178_decipherment.txt",
+        "summary": "La Rivière to Berryer: the Saint Eustatius supply contract has broken down; he pays from his own bills; the fall of Belle-Isle does not restore the colony's credit; provisions will hold until December. Code lines with the decipherment of the time above them.",
+        "translation": "sibling178_translation.txt",
+        "reading_review": {
+          "grade": "A",
+          "by": "Claude Opus 5.5 (model reader)",
+          "date": "2026-10-27",
+          "note": "The 1761 interlinear decipherment, transcribed: coherent sentences, a few words unsure in the transcription."
+        }
+      }
+    ],
+    "codes_open": {
+      "open": 40,
+      "total": 217,
+      "tokens_open": 47
+    },
+    "credits": [
+      {
+        "who": "contemporary",
+        "role": "key or decipherment used",
+        "note": "the colonies bureau's 1761 decipherment written above La Rivière's letter of 21 Aug 1761 (ANOM C8 A 63 f. 208)",
+        "date": "1761"
+      }
+    ],
+    "key_file": "key1761.tsv"
   }
 }

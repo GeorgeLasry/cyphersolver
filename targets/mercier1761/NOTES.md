@@ -1,6 +1,6 @@
 # La Touche and Le Mercier de La Rivière to the minister, Martinique, 12 June 1761 (ANOM C8 A 64 f° 1)
 
-Status: in progress (read in part: 92.2% of tokens read as sense, measured 27 Oct; below the 95% bar)
+Status: read in part (92.2% of tokens read as sense, measured 27 Oct 2026; key recovered from adjacent plaintext; write-up mercier1761.html, 27 Oct 2026)
 
 Unsolved Catalogue no. 542 (research/central_archives sweep, Oct 2026).
 
@@ -10,8 +10,9 @@ Unsolved Catalogue no. 542 (research/central_archives sweep, Oct 2026).
   ark:/61561/zn401b233uu, five images FRANOM23_C8A_064_0001-0005 (FranceArchives component
   a6723569c4eb8c23ca454a7927a681687ae15cdf). Images are served behind an Anubis proof-of-work page; they open in
   a normal browser. Not downloaded into the repository.
-- *Duplicata*, "à la Martinique ce 12 juin 1761", "Mrs de la Touche et de la Rivière" to "Monseigneur" (the Duc de
-  Choiseul, then secretary of state for the Navy). Signed Levassor de La Touche (governor general of the Windward
+- *Duplicata*, "à la Martinique ce 12 juin 1761", "Mrs de la Touche et de la Rivière" to "Monseigneur": Nicolas René
+  Berryer, secretary of state for the Navy (Nov 1758 to Oct 1761; Choiseul took the Navy in October 1761). The
+  cipher names "M. le Duc de Choiseul" as the minister who had promised provisions. Signed Levassor de La Touche (governor general of the Windward
   Islands) and De La Rivière (intendant). FranceArchives gives the date range as 1762 (the volume's date); the
   letter itself is dated 12 June 1761.
 - Clerk's notes at the top left: "Mr Accaron ... 29 avril ..." (unsure) and **"déchiffrée et remise à M. Accaron par

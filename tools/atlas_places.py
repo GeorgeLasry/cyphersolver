@@ -15,6 +15,7 @@ ATLAS = ROOT / 'docs' / 'atlas.json'
 
 # places added with the 25 Oct 2026 backfill (lat, lon); names are what the atlas shows
 NEW_PLACES = {
+    'Martinique': [14.602, -61.071],  # Fort-Royal (Fort-de-France), seat of the governor and intendant of the Windward Islands
     'Fürstenau': [49.664, 9.003],  # Schloss Fürstenau, Michelstadt (Odenwald)
     'Potsdam': [52.391, 13.065], 'Emmerich': [51.835, 6.245], 'Lyon': [45.764, 4.836], 'Prague': [50.088, 14.42], 'Breslau': [51.11, 17.03], 'Danzig': [54.35, 18.65],
     'Moscow': [55.756, 37.617], 'Shanghai': [31.23, 121.47], 'Nagasaki': [32.75, 129.87], 'Toledo': [39.857, -4.024],

@@ -1,5 +1,7 @@
 {
  "keys": [
+{"id": "k-ennery1765", "label": "Martinique key for d'Ennery, 1765 (printed form)", "kind": "archive key", "by": "Secretariat of State for the Navy", "year": 1765, "note": "ANOM COL C8 A 67 f. 178: printed two-part nomenclator form, 800 entries, numbers filled in by hand, encipher and decipher tables."},
+{"id": "k-windward1761", "label": "Windward Islands code of 1761 (La Touche and La Riviere), values rebuilt here", "kind": "rebuilt here", "by": "cyphersolver", "year": 1761, "note": "Two-part numerical nomenclator, values 11-696. About 110 values from the interlinear decipherment of La Riviere's letter of 21 Aug 1761 (ANOM C8 A 63 f. 208), extended from context in the letter of 12 June 1761 (27 Oct 2026); key1761.tsv grades every value."},
 {"id": "k-hessen1652", "label": "Hesse-Darmstadt cipher alphabets of Georg II and Cardinal Friedrich (HStAD D 4 Nr. 141/2)", "kind": "archive key", "by": "Hesse-Darmstadt chancery", "year": 1652, "note": "Archive key file with alphabets of 1652 and 1658."},
 {"id": "k-erbach1666", "label": "Erbach's Lord's Prayer verse key (line, letter), rebuilt here", "kind": "rebuilt here", "by": "cyphersolver", "year": 1666, "note": "Eight-line rhymed German Lord's Prayer, 'O Vatter aller frommen / geheiligt werd dein nahm / ...'; rebuilt from cribs in the contemporary Latin outline of the undated letter (27 Oct 2026). Line 8 known only as 'p?x'."},
 {"id": "k-jefferson-code11", "label": "Jefferson's Code No. 11 (Barclay-Lamb code, 1785-1791), values rebuilt here", "kind": "rebuilt here", "by": "cyphersolver", "year": 1785, "note": "348 values from Jefferson's interlinear decodings of Barclay's and Carmichael's letters, his clear-text sheets (1787, 1788, 1791) and the State Department decodings of Short's 1789 despatches (27 Oct 2026). The Jefferson Papers editors' partial reconstruction was never printed."},
@@ -2345,6 +2347,7 @@
 {"id": "k-balfour-stewart-1781", "label": "Balfour to Stewart table, 1781, rebuilt here", "kind": "rebuilt here", "by": "cyphersolver", "year": 1781, "note": "Fixed number table (a31 b12 c22 d32 e13 ... w38 y29), fillers from 40; rebuilt from the interlinear of the 12 Aug 1781 letter (targets/balfour1781/NOTES.md)."}
  ],
  "links": [
+{"key": "k-windward1761", "target": "mercier1761", "how": "rebuilt from", "note": "rebuilt from the interlinear decipherment of the sibling letter C8 A 63 f. 208, extended from context"},
 {"key": "k-erbach1666", "target": "erbach1653", "how": "rebuilt from", "note": "verse rebuilt from about eighty crib cells; all 610 pairs of the three 1666 letters read with it unchanged, 19 writer's slips"},
 {"key": "k-jefferson-code11", "target": "jefferson1787", "how": "rebuilt from", "note": "key.tsv; checks the editors' bracketed readings of 4 July 1787 and later"},
 {"key": "k-murray1797", "target": "murray1801", "how": "rebuilt from", "note": "all six groups of the postscript decoded in the sibling despatches; 406 = arm three times"},
@@ -3734,6 +3737,7 @@
   }
  ],
  "source_links": [
+{"source": "s-cyphersolver", "key": "k-windward1761"},
 {"source": "s-cyphersolver", "key": "k-erbach1666"},
 {"source": "s-cyphersolver", "key": "k-jefferson-code11"},
 {"source": "s-cyphersolver", "key": "k-murray1797"},
@@ -4408,6 +4412,7 @@
   "urquhart": "No cipher key: a rule-based word puzzle, read by applying the stated rule (see the write-up)."
  },
  "tried": [
+{"key": "k-ennery1765", "target": "mercier1761", "note": "does not fit: 614 = voisins, de = 428, values up to 800 while the letter stops at 696"},
 {"key": "k-jefferson-code11", "target": "legation1788", "note": "tried on Carmichael's Code No. 13 numbers: does not fit (597 = freedom, 223 = trouble in Code No. 11)"},
 {"key": "k-hessen1652", "target": "erbach1653", "note": "viewed; a different system (cipher alphabets, not a verse key)"},
 {"key": "k-armstrong972", "target": "mountflorence1801", "note": "different code: 'the' is 972 there, 688 here"},
