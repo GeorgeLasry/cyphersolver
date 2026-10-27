@@ -1,7 +1,8 @@
 # Richard Taylor's telegram letter-books, Meridian 1865: Confederate Vigenere, key COME RETRIBUTION (catalogue 681)
 
-Status: read in part. Four telegrams of March-April 1865 are read in full from the NARA images with the known
-Confederate key COME RETRIBUTION. Two of them (6 and 8 April) are printed in clear in the Official Records, so for
+Status: in progress. Four telegrams of March-April 1865 are read from the NARA images with the known Confederate
+key COME RETRIBUTION; the 6 April telegram needed 11 of its 57 letters corrected and is settled only with the clear
+text printed in the Official Records. Two of them (6 and 8 April) are printed in clear in the Official Records, so for
 those this is an earlier solution; for the other two (12 and 30 March) we found no printed text. The other cipher
 passages in the three volumes are not read yet. Contributed by WAINUT (https://github.com/WAINUTAI), 27 Oct 2026;
 the work was done with AI language-model agents. Every cipher word was read on the NARA images, and a second agent
@@ -32,8 +33,9 @@ Image links are on each catalogue page above (frame numbers as in the NARA file 
 ## Key and method
 
 Vigenere with the key COMERETRIBUTION, running over the cipher letters only, starting at offset 0 with the first
-cipher letter of each telegram (`key.md`). The key was not assumed for the three vol. 11 telegrams: the catalogue
-entry had read frame 0061 with it, and it was then tried on the vol. 11 passages and fits each from its first letter.
+cipher letter of each telegram (`key.md`). The key was already known for this correspondence: catalogue entry 681
+had read frame 0061 and the vol. 11 OCR runs with it, and it is the known key of Confederate telegraph traffic in
+1864-65. Applied to the vol. 11 passages, it fits each from its first letter.
 The 12 March telegram has 180 cipher letters, exactly 12 turns of the key.
 
 `python decrypt.py` checks every word of `alignment.tsv` and writes `<doc>_cipher.txt` and `<doc>_decryption.txt`.
@@ -66,7 +68,7 @@ The four telegrams as sentences: `v196-0061_reading.md`, `v11-0022_reading.md`, 
   LINE may be established. Answer." Canby's advance on Mobile was beginning; Taylor wants Maury's cavalry kept in
   touch with the enemy and a courier point outside the city. The cipher gives WEST POINT where "what point" would
   fit the sense; Taylor had just returned from West Point, Mississippi (facing page), so the clerk may have
-  enciphered the wrong word. One hole, read_share 0.988.
+  enciphered the wrong word. One hole, read_share 0.989.
 - **30 March 1865, Surget to Taylor, Selma.** After clear news (Lee's and Pillow's despatches; Dana's report at
   Vicksburg that Sherman had been wounded; Federal ambulances allowed between Big Black and Jackson): "War Dept
   ought to be again recommended to RELIEVE COL WATTS. Have no official CHARGES AGAINST HIM BUT HIS HABITS UNFIT HIM
@@ -100,8 +102,9 @@ War of the Rebellion: Official Records, Ser. I vol. 49 pt. 2 (Washington 1897), 
 `warofrebellion014902rootrich`, and pt. 1, `warofrebellion014901rootrich` (correspondence to 15 March 1865).
 Searched in the OCR full text with the whitespace normalised:
 
-- **6 April, to Levy: printed**, OR I/49/2 p. 1209, word for word with the reading.
-- **8 April, to Taylor: printed**, OR I/49/2 p. 1216, word for word ("on 3d instant" for THIRD INST). A first search
+- **6 April, to Levy: printed**, OR I/49/2 p. 1209, word for word with the reading (page checked again on the OCR
+  page headers and in the index, "Duncan, Sam. Mentioned 1209").
+- **8 April, to Taylor: printed**, OR I/49/2 p. 1216, word for word ("on 3d instant" for THIRD INST; page checked again on the OCR page headers). A first search
   missed this one because the OCR text has double spaces between words; the second agent found it.
 - **12 March, to Maury: not found** in OR I/49/1 (which prints the other Meridian telegrams of 12 March, to S. D.
   Lee, Gov. Watts, Forrest and D. W. Adams, about pp. 1050-1051) or pt. 2. Searches: "each side of bay", "courier
@@ -126,14 +129,15 @@ not checked. We know of no modern decipherment of these letter-book passages; th
 
 ## Remaining gaps
 
-- Vol. 196: only frame 0061 was read. The OCR run list of the catalogue (about 40 runs) is noisy: frame 0027, checked
-  on the image, has no cipher words. Blocker: not attempted (needs a visual screen of the frames first).
-- Vol. 11: frames 0041-0046 and 0076-0081 not read. Blocker: not attempted.
-- Vol. 10 (about 8 runs; the OCR suggests COMPLETE VICTORY): not read. Blocker: not attempted. The date of the key
+- Vol. 196: only frame 0061 read - blocker: not-attempted; the catalogue's OCR run list (about 40 runs) is noisy
+  (frame 0027, checked on the image, has no cipher words), so the frames need a visual screen first.
+- Vol. 11: frames 0041-0046 and 0076-0081 not read - blocker: not-attempted; mechanical with the known key.
+- Vol. 10 (about 8 runs; the OCR suggests COMPLETE VICTORY): not read - blocker: not-attempted; the date of the key
   change is therefore open.
-- OR vols. 45 pt. 2 and 39 pt. 3 not searched for the remaining passages.
+- OR vols. 45 pt. 2 and 39 pt. 3 not searched for the remaining passages - blocker: not-attempted.
 
-None of these has an outside blocker; they are left for a later pass.
+None of these has an outside blocker, so this is not a stopping point: the folder stays "in progress" until the
+remaining passages are read (mechanical with the known key; vol. 10 probably COMPLETE VICTORY).
 
 ## Escalation
 

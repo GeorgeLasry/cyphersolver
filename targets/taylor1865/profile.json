@@ -263,8 +263,8 @@
  "outcome": {
   "class": "read in part",
   "key": "recovered",
-  "method": "read after matching with key from external sources",
-  "method_basis": "The known Confederate key COMERETRIBUTION, not previously tied to these letter-books except for the catalogue's triage of frame 0061, was found to fit each telegram from its first cipher letter and applied word by word; two of the four telegrams are printed in clear in OR I/49/2.",
+  "method": "read with known key",
+  "method_basis": "The key COMERETRIBUTION was already identified for this correspondence: catalogue entry 681 had read frame 0061 and the vol. 11 OCR runs with it, and it is the known key of Confederate telegraph traffic in 1864-65. It was applied to each telegram from its first cipher letter, word by word; two of the four telegrams are printed in clear in OR I/49/2.",
   "contribution": [
    "transcription",
    "catalogue correction"
@@ -276,7 +276,7 @@
    "historical consistency"
   ],
   "provenance": "contributed",
-  "notes": "Four telegrams read in full (350 cipher letters); the other cipher passages of vols. 10, 11 and 196 are not read. Two of the four are earlier solutions (OR I/49/2 pp. 1209, 1216); the 12 and 30 March telegrams were not found in print. fraction_read is unknown because the unread passages have not been transcribed or counted.",
+  "notes": "Four telegrams read (350 cipher letters); the 6 April telegram needed 11 of its 57 letters corrected and is settled only with the clear text printed in OR I/49/2 p. 1209; the other cipher passages of vols. 10, 11 and 196 are not read. Two of the four are earlier solutions (OR I/49/2 pp. 1209, 1216); the 12 and 30 March telegrams were not found in print. fraction_read is unknown because the unread passages have not been transcribed or counted.",
   "gaps": [
    {
     "item": "vol. 196, cipher passages other than frame 0061",
@@ -314,6 +314,11 @@
    },
    {
     "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "the Confederate key COME RETRIBUTION, in use for Confederate telegraph traffic in 1864-65 and already applied to frame 0061 in catalogue entry 681"
+   },
+   {
+    "who": "contemporary",
     "role": "prior solution",
     "note": "the 6 and 8 April 1865 telegrams in clear, from the Confederate records, printed in War of the Rebellion: Official Records, Ser. I vol. 49 pt. 2 (1897), pp. 1209 and 1216",
     "source": "https://archive.org/details/warofrebellion014902rootrich"
@@ -328,15 +333,9 @@
     "reading": "v196-0061_reading.md",
     "language": "en",
     "state": "read",
-    "read_share": 0.988,
-    "reading_review": {
-     "grade": "A",
-     "by": "WAINUT (AI language-model agent; a second agent re-read the image and decrypted independently)",
-     "date": "2026-10-27",
-     "note": "Coherent orders throughout; one hole, [?west] point, where the cipher gives west and the sense wants what."
-    },
+    "read_share": 0.989,
     "summary": "At the start of Canby's campaign against Mobile, Taylor asks Maury to report in cipher the cavalry on each side of Mobile Bay, its strength and commander, to keep the cavalry close to the enemy and in telegraphic touch with D. W. Adams and headquarters, and to name a point outside the city for a courier line.",
-    "note": "read_share from research/reading_audit/v2_score.py: 1 hole in 86 words."
+    "note": "read_share from research/reading_audit/v10_relabel.py: 1 hole in 89 words."
    },
    {
     "doc": "v11-0022",
@@ -347,14 +346,8 @@
     "language": "en",
     "state": "read",
     "read_share": 1.0,
-    "reading_review": {
-     "grade": "A",
-     "by": "WAINUT (AI language-model agent; a second agent re-read the image and decrypted independently)",
-     "date": "2026-10-27",
-     "note": "Clear news followed by a cipher recommendation; no holes."
-    },
     "summary": "Surget reports to Taylor the forwarding of Lee's and Pillow's despatches, a (false) report that Sherman had been wounded, and the permission for Federal ambulances between Big Black and Jackson; in cipher he asks that the War Department again be urged to relieve Col. Watts (probably N. G. Watts, the agent of exchange), whose habits unfit him for the position.",
-    "note": "read_share from research/reading_audit/v2_score.py: no holes in 100 words."
+    "note": "read_share from research/reading_audit/v10_relabel.py: no holes in 102 words."
    },
    {
     "doc": "v11-0036",
@@ -365,14 +358,8 @@
     "language": "en",
     "state": "read",
     "read_share": 1.0,
-    "reading_review": {
-     "grade": "A",
-     "by": "WAINUT (AI language-model agent; a second agent re-read the image and decrypted independently)",
-     "date": "2026-10-27",
-     "note": "Agrees word for word with the clear text printed in OR I/49/2 p. 1209."
-    },
     "summary": "Surget tells Levy at Mobile, in cipher, to see that Sam Duncan returns promptly, which is to his advantage, and adds in clear that the enemy (Wilson's raid) seem to have crossed the river at Selma going east.",
-    "note": "Earlier solution: OR Ser. I vol. 49 pt. 2 p. 1209."
+    "note": "Earlier solution: OR Ser. I vol. 49 pt. 2 p. 1209. read_share from research/reading_audit/v10_relabel.py: no holes in 47 words."
    },
    {
     "doc": "v11-0039",
@@ -383,14 +370,8 @@
     "language": "en",
     "state": "read",
     "read_share": 1.0,
-    "reading_review": {
-     "grade": "A",
-     "by": "WAINUT (AI language-model agent; a second agent re-read the image and decrypted independently)",
-     "date": "2026-10-27",
-     "note": "Agrees with the clear text printed in OR I/49/2 p. 1216."
-    },
     "summary": "Surget passes on to Taylor at Demopolis the news, from Northern papers received by General Hodge, that Richmond fell by assault on 3 April 1865.",
-    "note": "Earlier solution: OR Ser. I vol. 49 pt. 2 p. 1216."
+    "note": "Earlier solution: OR Ser. I vol. 49 pt. 2 p. 1216. read_share from research/reading_audit/v10_relabel.py: no holes in 31 words."
    }
   ],
   "key_file": "key.md"
