@@ -1,0 +1,198 @@
+{
+ "schema_version": 1,
+ "target": "king1801",
+ "title": "Rufus King (London) to James Madison, 25 April and 8 June 1801, NARA RG 59 Despatches Great Britain vol. 9",
+ "documents": [
+  {
+   "id": "1801-04-25",
+   "shelfmark": "NARA RG 59, Diplomatic Despatches, Great Britain, vol. 9 (M30); despatch no. 14, duplicate",
+   "date": "25 Apr 1801",
+   "year": 1801,
+   "country": "England",
+   "route": "London -> Washington",
+   "language": "English",
+   "pages": 5,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "printed edition"
+    ],
+    "source": "C. R. King, Life and Correspondence of Rufus King 3 (1896) 436-38, coded words in italics (\"Italics in cipher\", p. 438)",
+    "partial": false
+   },
+   "length": {
+    "tokens": "unknown",
+    "distinct": "unknown",
+    "unit": "code groups",
+    "measured": false
+   },
+   "transcription": {
+    "by": "published",
+    "source": "printed plaintext only; 96 of 124 printed words of the final paragraph in italics (counted from king_1801-04-25_print.txt)",
+    "image_quality": "no images",
+    "notes": "NARA M30 roll 9 not found online; the coded duplicate was not seen."
+   }
+  },
+  {
+   "id": "1801-06-08",
+   "shelfmark": "NARA RG 59, Diplomatic Despatches, Great Britain, vol. 9 (M30); despatch no. 21, duplicate",
+   "date": "8 Jun 1801",
+   "year": 1801,
+   "country": "England",
+   "route": "London -> Washington",
+   "language": "English",
+   "pages": 4,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "printed edition"
+    ],
+    "source": "C. R. King, Life and Correspondence of Rufus King 3 (1896) 472-73; only 'Lord Hawkesbury and Mr. Addington' in italics",
+    "partial": false
+   },
+   "length": {
+    "tokens": "unknown",
+    "distinct": "unknown",
+    "unit": "code groups",
+    "measured": false
+   },
+   "transcription": {
+    "by": "published",
+    "source": "printed plaintext only (king_1801-06-08_print.txt)",
+    "image_quality": "no images",
+    "notes": "NARA M30 roll 9 not found online; the coded duplicate was not seen."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "undetermined"
+  ],
+  "summary": "A code used for selected words and phrases inside clear despatches (Founders: 'partly in code'); the code itself was not seen, so the system is not measured.",
+  "symbol_kind": "unknown",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": "unknown"
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": "unknown"
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "unknown",
+  "doubled_letters": "unknown",
+  "notes": "No ciphertext seen."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in print",
+   "where": "C. R. King (ed.), The Life and Correspondence of Rufus King, vol. 3 (New York 1896), pp. 436-38 and 472-73, coded words printed in italics",
+   "found": "during attempt",
+   "used": true
+  },
+  "inputs": [
+   "published reading"
+  ],
+  "attack": "none",
+  "human_role": "Project-level: set up Claude Code and passed the catalogue entry's agent brief (solve/487 page) to the model. No target-specific intervention recorded.",
+  "tools": [
+   "text search"
+  ],
+  "models": [
+   "claude-opus-5-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-10-26",
+  "last_date": "2026-10-26"
+ },
+ "solution": [
+  {
+   "date": "2026-10-26",
+   "kind": "access",
+   "what": "Opened Founders Online 02-01-02-0163 and 0361 in the browser: abstracts only, 'partly in code; key not found', printed in King, Life and Correspondence 3:436-38, 472-73. The 25 Apr despatch is no. 14, not no. 15.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "literature search",
+   "what": "Grepped the archive.org text of Life and Correspondence vol. 3: both despatches printed in full; the 25 Apr final paragraph carries the footnote 'Italics in cipher'.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "verification",
+   "what": "Viewed the page images pp. 438, 472-473 and transcribed the italics: 25 Apr, 96 of 124 words of the final paragraph in 13 runs (George III's relapse); 8 June, only 'Lord Hawkesbury and Mr. Addington'.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "access",
+   "what": "Looked for images of NARA M30 roll 9 online to transcribe the code groups and rebuild the code from the printed crib: none found.",
+   "result": "failed"
+  }
+ ],
+ "outcome": {
+  "method": "read from existing decipherment",
+  "method_basis": "Both despatches are printed in full in King, Life and Correspondence 3 (1896) 436-38 and 472-73, with the coded words set in italics ('Italics in cipher').",
+  "contribution": [
+   "catalogue correction"
+  ],
+  "class": "already solved",
+  "fraction_read": 1.0,
+  "key": "none",
+  "grades": {
+   "H": 2
+  },
+  "verification": [
+   "historical consistency"
+  ],
+  "notes": "Printed in 1896 with the coded words marked; the coded duplicates (NARA M30 roll 9) were not seen and the code was not identified. Catalogue entry 487 removed, no write-up.",
+  "credits": [
+   {
+    "who": "crking",
+    "role": "key or decipherment used",
+    "note": "Life and Correspondence of Rufus King 3 (1896) 436-38, 472-73 prints both despatches with the coded words in italics",
+    "date": "1896"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "1801-04-25",
+    "label": "25 Apr 1801, no. 14",
+    "decryption": "king_1801-04-25_print.txt",
+    "summary": "King reports the Baltic campaign, Copenhagen, Russia, Hanover and Egypt in clear; the coded final paragraph says George III has relapsed after returning to business too early and may never completely recover, which adds to the ministers' difficulties.",
+    "note": "Decryption: King, Life and Correspondence 3 (1896) p. 438, coded words in italics (underscored in the file). No transcription of the code groups: microfilm not online.",
+    "language": "en",
+    "read_share": 1.0,
+    "state": "read",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-26",
+     "note": "The decryption is the 1896 printed text, ordinary English prose; the low shape score comes from the italics markers (underscores) and the line breaks of the page transcription, not from holes. Every sentence reads."
+    }
+   },
+   {
+    "doc": "1801-06-08",
+    "label": "8 June 1801, no. 21",
+    "decryption": "king_1801-06-08_print.txt",
+    "summary": "King reports the King's recovery, Egypt, the Baltic settlement and French invasion preparations; the coded words name Lord Hawkesbury and Mr. Addington as the ministers who offered the United States by treaty any limitation of the right of search Britain conceded to another nation.",
+    "note": "Decryption: King, Life and Correspondence 3 (1896) p. 473, coded words in italics. No transcription of the code groups: microfilm not online.",
+    "language": "en",
+    "read_share": 1.0,
+    "state": "read",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-26",
+     "note": "The decryption is the 1896 printed text, ordinary English prose; the low shape score comes from the italics markers (underscores) and the line breaks of the page transcription, not from holes. Every sentence reads."
+    }
+   }
+  ]
+ }
+}
