@@ -14,7 +14,7 @@ ROOT = os.path.dirname(os.path.dirname(HERE))
 SWEEPS = ['nationaal_archief', 'torre_do_tombo', 'pares_ags', 'polish_archives', 'scandinavia', 'medici_bia',
           'founders_emlo', 'central_archives', 'archivportal_d', 'nara_catalog', 'nara_state', 'nara_military',
           'nara_triage_a', 'nara_triage_b', 'nara_triage_c', 'nara_triage_d', 'nara_triage_e',
-          'nara_triage_f', 'nara_triage_g', 'nara_triage_h', 'nara_triage_i']
+          'nara_triage_f', 'nara_triage_g', 'nara_triage_h', 'nara_triage_i', 'jacar']
 REQUIRED = ['year', 'date', 'title', 'correspondents', 'place', 'language', 'region', 'period', 'shelfmark',
             'folio_note', 'cls', 'status', 'why', 'importance', 'solvability', 'difficulty', 'score_note', 'verify',
             'links', 'seen', 'source']
