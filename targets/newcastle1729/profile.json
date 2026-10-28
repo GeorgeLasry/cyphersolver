@@ -19,21 +19,27 @@
     "source": "No decipherment on the leaf; deciphered sibling enclosures in the same code are in mssBLA 187, 188 and the letters of 14 July and 4 Aug 1729."
    },
    "length": {
-    "tokens": "unknown",
-    "unit": "code groups"
+    "tokens": 141,
+    "distinct": 101,
+    "unit": "code groups",
+    "measured": true,
+    "file": "transcription/report_61005_tokens.txt"
    },
    "transcription": {
     "by": "llm from images",
-    "source": "HDL image 61005",
-    "image_quality": "good"
-   }
+    "source": "HDL image 61005, IIIF region crops at full resolution",
+    "image_quality": "good",
+    "notes": "Doubtful digits: L01 386, L02 1201, L03 163, L10 473 (the last settled by 14 July p. 3: 473 = faire)."
+   },
+   "read": "not read"
   }
  ],
  "system": {
   "types": [
-   "code"
+   "nomenclator",
+   "syllabic"
   ],
-  "summary": "Numerical code of three- and four-digit groups, values unknown at the start.",
+  "summary": "Numerical syllable-and-word nomenclator of about 1,300 groups, roughly alphabetical (syllables then words per letter), with homophones for a few words and unglossed stop groups.",
   "symbol_kind": "digits",
   "digit_groups": {
    "width": "1 to 4",
@@ -44,29 +50,43 @@
    "used": false
   },
   "homophones": {
-   "used": "unknown"
+   "used": true,
+   "max_per_vowel": "unknown",
+   "max_per_consonant": "unknown"
   },
   "nomenclator": {
-   "present": "unknown"
+   "present": true,
+   "entries": "unknown",
+   "kinds": [
+    "syllables",
+    "common words",
+    "names",
+    "titles"
+   ],
+   "unread_groups": 20
   },
   "nulls": {
-   "present": "unknown"
+   "present": true,
+   "count": "unknown"
   },
-  "key_order": "unknown",
+  "key_order": "partly alphabetical",
   "word_division": "none"
  },
  "conditions": {
   "prior_solution": {
-   "exists": "unknown",
-   "where": "Catalogue #826 (checked 28 Oct 2026): no decipherment known for p. 5; sibling letters in the same code carry contemporary interlinear decipherments.",
-   "found": "unknown",
-   "used": "unknown"
+   "exists": "no",
+   "where": "Catalogue #826 (28 Oct 2026): no decipherment of p. 5 known; the sibling letters in the same code carry contemporary interlinear decipherments, which supplied the key.",
+   "found": "not found",
+   "used": false
   },
   "inputs": [
-   "images"
+   "images",
+   "transcription",
+   "sibling key",
+   "cleartext context"
   ],
   "attack": "sibling key",
-  "human_role": "Outside contribution: johonn chose the target, set the rules and the plan (rebuild the code from the deciphered sibling enclosures, apply it to p. 5) and approved it; the work was done by Claude Code (Anthropic) under johonn's direction.",
+  "human_role": "Outside contribution: johonn chose the target, set the rules and the plan (rebuild the code from the deciphered sibling letters, apply it to p. 5) and approved it. The transcription, table, decode and reading were done by Claude Code under their direction; no target-specific intervention.",
   "tools": [
    "curl (HDL IIIF and CONTENTdm API)",
    "python"
@@ -91,12 +111,104 @@
    ],
    "what": "Contact sheets of the 39 pages: code pages with a contemporary interlinear decipherment found on 60963, 60916-60920, 60886-60887 and 60907-60909; the interlinear values are syllables and short words, so the system is a syllable-and-word code.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "transcription",
+   "what": "Report (HDL 61005) transcribed from region crops: 13 lines, 141 groups, 101 distinct; four doubtful digits.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "transcription",
+   "what": "mssBLA 188 enclosure (HDL 60917-60920) transcribed: 56 code lines with the interlinear gloss under each group.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "sibling key",
+   "technique": [
+    "key matching",
+    "manual reconstruction"
+   ],
+   "what": "First code table from the 188 glosses applied to the report: 105 of 141 groups valued.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "transcription",
+   "what": "Letter of 14 July (60887, 19 passages) and letter of 4 Aug (60907-60909, 40 passages) transcribed; clear, dotted copies.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "transcription",
+   "what": "mssBLA 187 p. 3 (60963) transcribed; glosses not set under their groups, so alignment by position was unreliable and every pairing is marked doubtful.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis",
+    "repeat/pattern analysis"
+   ],
+   "what": "Table read in group order: a roughly alphabetical syllable-and-word nomenclator (208 comme, 217 concert, 224 confidence ... 256 correspondance; numerals 1206-1213; T block not strictly ordered).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "reading",
+   "technique": [
+    "manual reconstruction",
+    "contextual inference"
+   ],
+   "what": "Table rebuilt (383 groups, 1,078 glossed groups); report decoded: 116 firm, 2 doubtful, 22 tokens open; French reading with holes checked against the table by reading.py.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis",
+    "contextual inference"
+   ],
+   "what": "Alphabetical bracketing of the open groups (slots.py): candidates 285 do, 1152 vos, 1210 six, 222 conduite, 805 obligation, 816 ordre, 585 ig, kept as [?word]; the weak guess 1152 = traite was dropped because its slot contradicts it.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "literature search",
+   "what": "Clear pages: the 21 July letter (61003-61004) and the 14 July clear text (60886) do not contain the report; 60886 repeats the 14 July extracts only.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "verification",
+   "technique": [
+    "language-model scoring"
+   ],
+   "what": "docs/_validate.py could not run: the lang corpora (Gutenberg) were unreachable. validation.tsv is ready.",
+   "result": "failed"
   }
  ],
  "outcome": {
   "class": "not read",
-  "method": "not solved",
-  "method_basis": "Work in progress: no key obtained yet.",
+  "key": "partial",
+  "method": "key recovered based on adjacent plaintext",
+  "method_basis": "Key rebuilt from the interlinear decipherments of the sibling letters in the same file (mssBLA 187, 188, 14 July, 4 Aug 1729) and applied to the report.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "fraction_read": 0.823,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "decryption/report_61005_decode.txt: 116 of 141 cipher tokens with a firm value; doubtful values, open groups and the stop group counted unread.",
+  "codes_open": {
+   "open": 20,
+   "total": 101,
+   "tokens_open": 22
+  },
   "verification": [
    "none"
   ],
@@ -113,6 +225,30 @@
     "role": "key or decipherment used",
     "note": "Interlinear decipherments on the sibling enclosures in mssBLA 187, 188 and the letters of 14 July and 4 Aug 1729 (Huntington Library)."
    }
-  ]
+  ],
+  "gaps": [
+   {
+    "item": "20 code groups (22 tokens) of the report: 805, 6, 1210, 689, 460, 285, 84, 214, 65, 816, 1019, 711, 937, 1118, 1052, 726, 836, 585, 1152, 222",
+    "blocker": "open-codes",
+    "detail": "each occurs once or twice, no parallel text; only the alphabetical bracket (decryption/open_groups_slots.txt) narrows them"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "report",
+    "label": "Report, mssBLA 191 p. 5",
+    "transcription": [
+     "transcription/report_61005.txt",
+     "transcription/report_61005_tokens.txt"
+    ],
+    "decryption": "decryption/report_61005_reading.txt",
+    "summary": "An undated report from Port Sainte-Marie to a Milord, in the code of the 1729 sibling letters: thanks for a letter, an answer at the first address, Mr Keene who tells the writer nothing, an accommodement, and a request to be told what to do. Decoded with many holes, not read.",
+    "language": "fr",
+    "state": "decoded, not read",
+    "read_share": 0.78
+   }
+  ],
+  "key_file": "codetable.tsv",
+  "notes": "Key partly recovered, text not read (README Conventions: a key can be obtained while the text is not read). Unfinished: see NOTES.md."
  }
 }
