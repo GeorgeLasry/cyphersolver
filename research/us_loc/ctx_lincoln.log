@@ -1,0 +1,49 @@
+10
+20
+retry IncompleteRead https://www.loc.gov/item/mal2344100/?fo=json
+30
+eteRead https://www.loc.gov/item/mal2344100/?fo=json
+30
+40
+retry IncompleteRead https://www.loc.gov/item/mal2455600/?fo=json
+50
+60
+70
+80
+90
+100
+110
+120
+retry IncompleteRead https://www.loc.gov/item/mal2025900/?fo=json
+130
+140
+150
+160
+Traceback (most recent call last):
+  File "C:\Users\dbour\cypher-sweep\research\us_loc\ctx.py", line 106, in <module>
+    print(n, flush=True)
+^^
+  File "C:\Users\dbour\cypher-sweep\research\us_loc\ctx.py", line 67, in main
+    if 'loc.gov/item/' not in url and 'loc.gov/resource/' not in url:
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dbour\cypher-sweep\research\us_loc\locapi.py", line 33, in get
+    with urllib.request.urlopen(req, timeout=60) as r:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dbour\AppData\Local\Programs\Python\Python312\Lib\urllib\request.py", line 215, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dbour\AppData\Local\Programs\Python\Python312\Lib\urllib\request.py", line 521, in open
+    response = meth(req, response)
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dbour\AppData\Local\Programs\Python\Python312\Lib\urllib\request.py", line 630, in http_response
+    response = self.parent.error(
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dbour\AppData\Local\Programs\Python\Python312\Lib\urllib\request.py", line 559, in error
+    return self._call_chain(*args)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dbour\AppData\Local\Programs\Python\Python312\Lib\urllib\request.py", line 492, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "C:\Users\dbour\AppData\Local\Programs\Python\Python312\Lib\urllib\request.py", line 639, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 525: <none>
