@@ -106,7 +106,7 @@ questions = [
              B('Standard English', 'NEG', 'Controls recovered at 97–100%; Dorabella scores like its shuffles.', 'S2–S3', [5, 6, 14]),
              B("Elgar's own register", 'NEG', 'A model trained on his 23 letters to the Pennys ("warbling wigorously … wunce a week").', 'S14 · R27', [27]),
              B('Reversed and back-slang', 'NEG', 'The whole text reversed, and each word written backwards.', 'S3 · R7', [7]),
-             B('Skeleton and abbreviations', 'NEG', 'English without vowels; the first three letters of each word.', 'R7', [7]),
+             B('Skeleton and abbreviations', 'NEG', 'English without vowels, and the first three letters of each word. At full power the skeleton came closest of any branch, but its decode splits into word skeletons no better than shuffles do (−3.24 per letter against −2.91 to −3.63; real controls −2.28 to −2.80).', 'R39 · R38 · R7', [39, 38, 7]),
              B('Phonetic English', 'NEG', 'Sounds grouped into 25 classes; controls recovered 99–100%. With all 39 sounds the test has no power.', 'S24'),
              B('Syllables', 'NEG', 'Orientation as consonant class, arc count as vowel.', 'R20', [20]),
              B('Word initials', 'NP', 'A model of English word initials recovers its own controls only 1–48% of the time.', 'S18 · R22', [22]),
@@ -181,7 +181,7 @@ cov_rows = [
 ]
 
 frontier = [
-    dict(rank=1, title='Saturation: the fixed-table branches are exhausted here', why='Every fixed-table branch that 87 signs can decide has been run at full power and is negative: English and Elgar (R32), misreads (R33), homophones (R34), five languages (R37), four plaintext forms (R38).', status='done', ev='R31–R38'),
+    dict(rank=1, title='Saturation: the fixed-table branches are exhausted here', why='Every fixed-table branch that 87 signs can decide has been run at full power and is negative: English and Elgar (R32), misreads (R33), homophones (R34), five languages (R37), four plaintext forms (R38), the consonant skeleton settled on two criteria (R39).', status='done', ev='R31–R39'),
     dict(rank=2, title='Undecidable at 87 signs', why='Pair habit vs language (R35), a key that changes partway (R16), ten or more misreads (R27), homophones with misreads. No calculation on this text can separate these from noise.', status='blocked', ev='R16 · R27 · R35'),
     dict(rank=3, title='A second text in the same system', why="The Courage cards and the Sotheby's Microcryptogram. Any surviving key could be checked on two documents; this is the single most valuable item.", status='blocked', ev='outside'),
     dict(rank=4, title='Better images of the plate', why='Greyscale plates from 1946 and 1949 (the 1949 second dot) and the Elgar Museum photo, to settle the 23 doubtful signs.', status='blocked', ev='outside'),

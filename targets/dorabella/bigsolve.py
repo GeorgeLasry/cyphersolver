@@ -130,11 +130,11 @@ if __name__ == '__main__':
     ctf = next((a.split('=')[1] for a in sys.argv if a.startswith('--ct=')), 'ct.txt')
     ct = [((ord(t[0]) - 65), int(t[1]) - 1) for t in open(os.path.join(HERE, ctf)).read().split()]
     if '--nulls' in sys.argv:                      # shuffles of the same signs under the identical search
-        targets = [(f'null {j}', [ct[i] for i in np.random.default_rng(j).permutation(len(ct))], None) for j in range(4)]
+        targets = [(f'null {j}', [ct[i] for i in np.random.default_rng(j).permutation(len(ct))], None) for j in range(int(os.environ.get('DORA_NNULL', 4)))]
     else:
         targets = [(f'DORABELLA {ctf}', ct, None)]
         if '--noctl' not in sys.argv:
-            targets += [(f'control {j}', sg, pt) for j, (sg, pt) in enumerate(make_controls(4, rng))]
+            targets += [(f'control {j}', sg, pt) for j, (sg, pt) in enumerate(make_controls(int(os.environ.get('DORA_NCTL', 4)), rng))]
     with Pool(max(1, (os.cpu_count() or 2) - 1)) as pool:
         for name, seq, truth in targets:
             res = pool.map(run, [(seq, 1000 * hash(name) % 100000 + r) for r in range(RESTARTS)])
