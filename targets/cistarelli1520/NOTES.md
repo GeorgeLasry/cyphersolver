@@ -1,4 +1,4 @@
-# Alfonso Cistarelli (Eger) to Cardinal Ippolito I d'Este, 25 July 1520 (catalogue 158, DECODE R1137) — NOTES
+# Alfonso Cistarelli to the Este, 1520: Eger to Cardinal Ippolito, 25 July (catalogue 158, DECODE R1137), and Kraków to Duke Alfonso I, 14 Oct (catalogue 846, Vestigia V1908) — NOTES
 
 Attempted, not solved: closed unread on 2 Oct 2026; blocker outside the session (the only image does not settle the
 digits; no key exists). Written up in docs/cistarelli1520.html.
@@ -46,6 +46,24 @@ a group starts); the single "0"/"5" groups may be halves of groups.
 word-level segmentation rerank): cribs custode, agria, alfonso, debito, buda, episcopato give anneal gains -57 to -348
 (mean -169), six control words -49 to -363 (mean -172); best word score is a control. No crib lands.
 
+## V1908, Cistarelli (Kraków) to Duke Alfonso I, 14 Oct 1520 (catalogue 846), attempted 28 Oct 2026, not read
+
+Pointed out by Brice Dudout (28 Oct 2026). ASMo Ungheria b. 4, Alfonso Cistarelli no. 7; Vestigia 1908 (DF 294963);
+not on DECODE. The only image (`../caprile1519/img/v/v1908_1.jpg`) is a photograph of an old photocopy. Vestigia
+gives the addressee as Alfonso I and the place as Kraków. The clear text agrees: the writer answers a letter "dela
+Ex.tia vostra" about "la grave infirmità e disperata salute del mio Ill.mo S.re et patrone", reports "la morte del
+sopraditto S. mio Ill.mo" (Cardinal Ippolito, d. 3 Sept 1520), and speaks of "la S.ma Regina" (Bona Sforza) and the King of Hungary and the bishopric
+("episcopato") and castle of Eger. So the catalogue's "Eger, to Ippolito" is wrong on both counts.
+
+Same cipher as R1137 (two-digit groups ending in 0 or 5, letter signs f k u y x h g m), so it joins this entry.
+Transcription `v1908_transcription.txt`: line 7 (34 tokens, after "dala S.ma Regina", before "e sino questo") and the
+end of line 27 (7 tokens). Lines 28-34, about six lines of cipher, are mostly lost in the photocopy's dark bands.
+
+The R1137 anneal key on line 7 gives "adlmodegmo?racentogseti?tipodtare". A joint anneal of R1137 and V1908 gives
+"adlmodelmoframentossediftiportare". These are fragments ("portare"), not a reading.
+
+- 2026-10-28: V1908 joined; clear text read for context; line 7 transcribed; key applied, joint anneal; not read.
+
 ## Log
 
 - 2026-09-21: DECODE and Vestigia records; subagent transcription of P2; ciphertext-only anneal (fragments).
@@ -57,6 +75,8 @@ word-level segmentation rerank): cribs custode, agria, alfonso, debito, buda, ep
 
 - R1137 Cistarelli, 584 two-digit groups - blocker: needs-physical-access; the only image (DECODE, whole spread at 3240 px, digits about 25 px, faded) does not settle the digit readings: a second reading of P2 L04-L07 disagrees with `r1137_transcription.txt` on 13 of 92 groups (14 %), and the single "0"/"5" groups may be halves of groups; no key exists anywhere (series, archive, correspondent, decade); ciphertext-only anneal and crib placement do not separate cribs from controls; my judgement, not proven, is that transcription noise is what stops the solve, so a better photograph from ASMo (b. 4/26 no. 3) is the next step
 
+- V1908 (14 Oct 1520), line 7 and about six cipher lines at the foot - blocker: needs-physical-access; the only online image is a photograph of an old photocopy and lines 28-34 are lost in its dark bands; Brice Dudout has asked ASMo for the original (28 Oct 2026); the R1137 anneal key gives fragments on the legible line
+
 ## Escalation
 
 - [x] siblings: Vestigia search "Cistarelli" (20 records) opened; no other Cistarelli letter carries cipher or a decipherment; Caprile's letters in the same box use other ciphers
@@ -64,4 +84,5 @@ word-level segmentation rerank): cribs custode, agria, alfonso, debito, buda, ep
 - [x] known-keys: no numeric key of the series, archive (DECODE ASMo/Este 1490-1550: none), correspondent (Bonzagni 1512-14, Ippolito's Eger household) or decade (Sadoleto 1482, Maffeo 1489) exists, so none could be applied
 - [x] print: ASMo inventory, Somogyi 2025: nothing on R1137
 - [x] key-rebuild: ciphertext-only anneal with consensus fixing (`refine37*.py`): fragments only
+- [x] siblings (28 Oct 2026): Vestigia V1908 (catalogue 846) is a second letter in this cipher, joined here; not on DECODE
 - [x] retry: anneal rerun with a shuffled control and crib placement with controls (2 Oct 2026): no reading
