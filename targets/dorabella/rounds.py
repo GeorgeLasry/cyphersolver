@@ -1841,3 +1841,58 @@ def round40():
     finally:
         VISIT = saved
     log(40, f'cribs: notebook practice phrases + {len(lyric_words)} lyric words', D[0], nulls, [], D[1], D[2])
+
+
+# ------------------------------------------------------------------ round 51: names and places of Elgar's circle in 1897
+CIRCLE = ['alice', 'carice', 'jaeger', 'august', 'nimrod', 'schuster', 'troyte', 'griffith', 'winifred', 'norbury',
+          'isabel', 'fitton', 'sinclair', 'nevinson', 'townshend', 'arnold', 'baker', 'forli', 'malvern', 'birchwood',
+          'worcester', 'hereford', 'wolverhampton', 'penny', 'edward', 'elgar', 'ladyelgar', 'mrselgar']
+
+
+@rnd(51)
+def round51():
+    global VISIT
+    saved = VISIT; VISIT = CIRCLE
+    try:
+        D = visit_cribs(SIGNS, 0)
+        nulls = [visit_cribs(s, 100 + j)[0] for j, s in enumerate(shuffles(3))]
+    finally:
+        VISIT = saved
+    log(51, "cribs: names and places of Elgar's circle in 1897 (28)", D[0], nulls, [], D[1], D[2])
+
+
+# ------------------------------------------------------------------ round 52: a music model from the Lullaby arrangement
+@rnd(52)
+def round52():
+    """Note events of every staff of the NWC Lullaby arrangement as (staff position mod 7, duration class) tokens
+    (21 symbols); order-3 model; Dorabella solved as a melody (one-to-one sign -> token). Controls: windows of the
+    Treble staff (held out of the model), enciphered; nulls: shuffles."""
+    import json, glob
+    def toks(f):
+        out = []
+        for pos, dur, *_ in json.load(open(f)):
+            if pos is None:
+                continue
+            dc = 0 if dur < 2 else (1 if dur == 2 else 2)
+            out.append(chr(97 + (pos % 7) * 3 + dc))
+        return out
+    files = sorted(glob.glob(_os.path.join(HERE, 'src', 'music', '*.json')))
+    held = [f for f in files if f.lower().endswith('treble.json')]
+    train = ''.join(''.join(toks(f)) for f in files if f not in held)
+    alpha = ''.join(chr(97 + i) for i in range(21))
+    m = lm.DenseLM.build(train, 3, alpha)
+    print(f'music model: {len(train)} note tokens from {len(files) - len(held)} staves', flush=True)
+    def run(tokens, seed):
+        syms = sorted(set(tokens), key=str); ct = np.array([syms.index(t) for t in tokens])
+        sc, key = anneal(ct, len(syms), m, restarts=20, iters=20000, seed=seed, injective=len(syms) <= m.A)
+        return sc / len(ct), ''.join(m.alpha[i] for i in key[ct])
+    D, txt = run(SIGNS, 0)
+    nulls = [run(s, 100 + j)[0] for j, s in enumerate(shuffles(4))]
+    tr = ''.join(toks(held[0])); rng = random.Random(52); ctl, acc = [], []
+    for j in range(3):
+        p = rng.randrange(len(tr) - N); pt = tr[p:p + N]
+        cells = rng.sample([(o, a) for o in range(8) for a in range(3)], 24)
+        key = {c: cells[i] for i, c in enumerate(sorted(set(pt)))}
+        sc, t2 = run([key[c] for c in pt], 200 + j); ctl.append(sc); acc.append(np.mean([a == b for a, b in zip(t2, pt)]))
+    log(52, 'Dorabella as a melody (music model from the Lullaby arrangement)', D, nulls, ctl, txt,
+        f'ctl acc {min(acc):.2f}..{max(acc):.2f}', acc)
