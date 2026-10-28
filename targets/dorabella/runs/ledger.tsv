@@ -1,0 +1,132 @@
+round	hypothesis	D	nulls	controls	verdict	best text	note
+1	Bacon biliteral (8 bit readings x 5 phases x 2)	-4.505	-5.579..-3.505	-1.528..-1.473	negative	aqataknagsraghdew	C/G axis pol0 ph0
+1	arcs as ternary triplets, phase 0	-1.652	-1.833..-1.680	-1.872..-1.366	READING?	oxcomputthecoatdaysgoodfachil	
+1	arcs as ternary triplets, phase 1	-1.792	-1.916..-1.677	-1.737..-1.672	negative	zuseditbysushionfootherhappr	
+1	arcs as ternary triplets, phase 2	-1.812	-1.596..-1.530	-1.917..-1.705	no power	wmblysputumbrackwingsformthe	
+1	orientation pairs (64 values), phase 0	-2.390	-1.844..-1.693	-2.365..-1.518	negative	gjzytoandprusfeelwhoaveaniamtoobackaningxqu	
+1	semaphore-like unordered pairs, phase 0	-1.936	-2.545..-2.067	-2.065..-1.538	READING?	pjchreeaboyingssuffeelseaserreemedmeasapaci	
+1	orientation pairs (64 values), phase 1	-2.258	-2.913..-1.651	-2.233..-1.591	negative	jzswriteadybutchpolifectsivoryackmetsignalp	
+1	semaphore-like unordered pairs, phase 1	-1.919	-2.336..-2.267	-2.847..-1.960	READING?	xviwentookthatrilsunfortinesetorymotingcoul	
+1	arcs ternary triplets ph0 (15 nulls)	-1.652	-1.865..-1.568	-1.872..-1.366	negative	oxcomputthecoatdaysgoodfachil	ctl acc 0.00..1.00
+1	unordered orientation pairs ph0 (15 nulls)	-1.936	-2.640..-2.032	-2.065..-1.538	READING?	pjchreeaboyingssuffeelseaserreemedmeasapaci	ctl acc 0.16..0.98
+1	unordered orientation pairs ph1 (15 nulls)	-1.919	-2.473..-2.157	-2.847..-1.960	READING?	xviwentookthatrilsunfortinesetorymotingcoul	ctl acc 0.02..0.14
+1	unordered pairs ph0, doublet nulls	-1.936	-2.327..-1.974	-2.065..-1.538	READING?	pjchreeaboyingssuffeelseaserreemedmeasapaci	ctl acc 0.16..0.98 [doublet nulls]
+1	unordered pairs ph1, doublet nulls	-1.919	-2.422..-1.936	-2.847..-1.960	no power	xviwentookthatrilsunfortinesetorymotingcoul	ctl acc 0.02..0.14 [doublet nulls]
+2	Morse: sign = dot/dash, unsegmented (16 bit readings)	-2.142	-2.394..-1.968	-2.245..-1.938	negative	hatheirlivingshandwhihadjipainth	C/G axis pol0
+2	Morse: sign = letter, arcs = length (768 labelings)	-4.147	-4.423..-3.788	-3.011..-2.542	negative	idaseitsemrmtemummiddmetmtergtmtitseasammaiettmrmingteteetrgagingaenkegamintgesdegisets	start0 step1 perm(2, 0, 1) pol0
+2	Morse run-length: arcs = repeats, orientation bit = element	-2.369	-2.421..-2.070	-2.220..-1.920	negative	sshatthesshosphisstheaughhishorhumbeshishothejoessonstherighs	C/G axis pol0
+3	Vigenere/Beaufort/variant, 27 context keywords	-5.680	-6.311..-5.898	-2.192..-1.843	above nulls	eqxddcuffrisieudsudisswybrhionuuayfemfalufahtosinbytieaelabmhtawwzeyrawfkiyltkyiktadgrd	beau key=[2, 0, 16, 0, 2, 18, 0, 2, 19, 17] grid=(7, -1, 1)
+3	autokey Vigenere/Beaufort, 27 context primers	-6.125	-6.568..-5.635	-2.417..-1.843	negative	kobtmkedkipxidzsghratoonsytrunrznddfledytzoxghauhdunwakwdwridzfocctsyrizfnmhshyrrnwilid	auto-vig key=[10, 19, 21, 2, 7, 16, 8, 17, 18, 8] grid=(2, 1, 0)
+3	Gronsfeld from the date 14.97 (6 digit keys)	-6.185	-6.531..-6.293	-2.417..-1.843	above nulls	kuheiaqezkinscuytqeryqgfnidbumuidimsahhntdewsmubtaroscnsziiogrekudgkrzwatarmuzmrcreefim	vig key=[1, 4, 0, 7] grid=(3, -1, 0)
+5	line order (0, 2, 1)	-2.797	-3.247..-2.983	-1.969..-1.746	no power	vcfintdilypersebeetccesayampofothofshumofethromicmotisaidedtailwifeeftmrdepethorsallapo	ctl acc 0.37..0.39 [shuffle nulls]
+5	line order (1, 0, 2)	-2.914	-3.232..-2.811	-2.737..-1.888	no power	bebasigrileelawnbeheamondsggshoutlicabigphendefeeattedspswholoamoldmywoleamnowitwoaidsi	ctl acc 0.16..0.33 [shuffle nulls]
+5	line order (1, 2, 0)	-3.032	-3.098..-3.021	-2.732..-1.818	no power	lelboamwadeedbitlenebustrommonsdsbusdrugisdebutsiahisbaroachdayblampnetrefeebhheropoins	ctl acc 0.02..0.10 [shuffle nulls]
+5	line order (2, 0, 1)	-2.869	-3.189..-3.077	-2.703..-1.763	no power	sityismyprisetyairuhritumoughsubtfuncleameweethhemocorlifeftounduseestrafeletyiamonnoli	ctl acc 0.06..0.09 [shuffle nulls]
+5	line 2 right-to-left, mirrored (boustrophedon)	-3.121	-3.360..-3.202	-3.258..-2.926	no power	jswdfendpicymaybyyessyatithcoulmaamptureilinthegiigswasmeninwoerowarkhowyermohdshoedatd	ctl acc 0.02..0.13 [shuffle nulls]
+5	lines 1 and 3 right-to-left, mirrored	-3.463	-3.466..-3.057	-3.052..-2.924	no power	nforeriphhappypispfeudwaxdghtwewashighveevaorwemealcrusiismcdridanohdonslapgnoblignlang	ctl acc 0.06..0.22 [shuffle nulls]
+5	line 2 mirrored, left-to-right	-3.344	-3.462..-3.156	-3.095..-3.023	no power	krupcampwentiltzttarrtlyeyonfmemairlurgeegaoymedeasbywillidbufasfulshofutasifoprofaplyp	ctl acc 0.09..0.21 [shuffle nulls]
+5	line 1 upside down	-3.119	-3.349..-2.983	-3.194..-3.038	no power	knuthtdarriaaladcanhopeifpsryusumorthrassamedusksmindcottoknanminacilenasmidnerpenmrcor	ctl acc 0.05..0.49 [shuffle nulls]
+5	line 2 upside down	-2.878	-3.119..-2.935	-3.395..-2.812	no power	zledgirdoutswaskssillsanunyththonnowatimeheyarmseeslunlomyeyehimheambyhesimwhydlyhidand	ctl acc 0.02..0.28 [shuffle nulls]
+5	line 3 upside down	-3.096	-3.400..-3.181	-3.170..-2.633	no power	xtanysundleromrprrsttrmilifecurusindgnarrasfourershcomiddiectdotheuntuemshareupsoresher	ctl acc 0.11..0.57 [shuffle nulls]
+5	line order (0,2,1), 15 nulls, valid controls	-2.797	-3.274..-2.915	-2.283..-1.673	above nulls	vcfintdilypersebeetccesayampofothofshumofethromicmotisaidedtailwifeeftmrdepethorsallapo	ctl acc 0.77..1.00 [shuffle nulls]
+5	line 2 upside down, 15 nulls, valid controls	-2.878	-3.333..-2.918	-2.283..-1.673	above nulls	zledgirdoutswaskssillsanunyththonnowatimeheyarmseeslunlomyeyehimheambyhesimwhydlyhidand	ctl acc 0.77..1.00 [shuffle nulls]
+6	per-line dial + arc shift (IoC-chosen)	-2.939	-3.127..-2.881	-2.657..-1.691	negative	cwdavoyalpseimeneeowwemupurshyeyoualfadeedoriyeseothimullushestoseionysedtomsywaystwilw	ctl acc 0.32..1.00 [shuffle nulls]
+6	per-line arc shift only (IoC-chosen)	-3.098	-3.298..-2.739	-2.701..-1.771	negative	okmidstinbeauralaaskkarybypectatsyingimaamsputaeashcurynnyecraptarethlaruptcaloflapoewo	ctl acc 0.52..0.99 [shuffle nulls]
+6	per-line progressive rotation a=1	-3.429	-4.042..-3.345	-1.836..-1.673	negative	ucyfroteskalirycoguedustyntwengryschgdubloornngalkmaninitsjamjubegsywickmounfiwendgeinw	ctl acc 0.94..1.00 [shuffle nulls]
+6	per-line progressive rotation a=2	-3.569	-4.086..-3.807	-1.836..-1.673	above nulls	ticiftbizcrosampcudypusnosherhubgayackomomthahurowglansasaxlmedtrostyfluctwarfpybedinsp	ctl acc 0.94..1.00 [shuffle nulls]
+4	running key from KJV/Shakespeare/verse/prose/Powell	-5.161	-5.222..-4.986	-2.357..-2.011	negative	rztsmfiuspigndamckgeaiheltruercsmiesaepugogeosceimnotuzgssrohossneazofennyaaoloywdaigho	beau KJV@163624 grid=(0, 1, 1)
+6	per-line progressive rotation a=3	-3.840	-3.793..-3.457	-1.836..-1.673	negative	kmdcodoeirerbwdfulrestawhoosmplynimbtsthrudyyplertheyboxwigengrumlanjackndryfagepjkebog	ctl acc 0.94..1.00 [shuffle nulls]
+6	per-line progressive rotation a=4	-3.133	-3.244..-3.093	-1.836..-1.673	negative	qoardsprighabblylamoraticineepapsfricollaasntpahammettiiffeeahmmeltmypellsstepoonhmrtio	ctl acc 0.94..1.00 [shuffle nulls]
+7	consonant skeleton (no vowels)	-2.513	-2.799..-2.649	-2.443..-2.049	above nulls	xpgsqtbslymnvdnjnntppndwywhmrbnbtwslksgnngthvbnmntfrvdwllwmrgrtfrgdfchrgntfvrhsphrtsdws	ctl acc 0.00..1.00
+7	back-slang: each word reversed	-2.818	-3.327..-3.174	-2.806..-1.854	above nulls	zfdahtwalmrocnokootffonimisrewowtialyadoodtscworotuecnilliredetuednubsedotucesafsetania	ctl acc 0.30..1.00
+7	abbreviated: first 3 letters of each word	-2.749	-3.205..-2.790	-1.935..-1.836	above nulls	jsnodarofwheplebeeasseliwithureraiofconeenatpreheamupliffihunuamunlmytuneamputostuaolio	ctl acc 0.98..0.99
+7	homophonic, up to 3 signs per letter	-2.227	-2.498..-2.297	-2.212..-2.008	above nulls	aspshamsoureseemeeasseenuntrememansofspeepatsmerearesenoonrepeareperatepearsetssteasens	ctl acc 0.07..0.66
+7	consonant skeleton, 20 restarts, 12 nulls, 6 ctl	-2.500	-2.764..-2.599	-2.422..-1.870	above nulls	jbwrmdvrsgplcylklldbblyhghtpnvlvdhrsqrwllwdtcvlpldfncyhsshpnwndfnwyfxtnwldfcntrbtndryhr	ctl acc 0.13..1.00
+8	columnar w=7 perm=(3, 2, 0, 4, 1, 5, 6) (pairs 20)	-2.973	-3.153..-2.929	-	negative	srpforpleniteeuptotolengmonmystharitdtalklydaypleasimyeasuidtommetbutndonutaswestarmmab	
+8	columnar w=7 perm=(3, 4, 2, 1, 5, 0, 6) (pairs 20)	-3.024	-3.153..-2.929	-	negative	ehdfururploasssimpiumpithbahapswiloreceinmymicensmucholescenothpildisaithtapleinilshreg	
+8	columnar w=7 perm=(4, 5, 2, 1, 6, 0, 3) (pairs 20)	-2.960	-3.153..-2.929	-	negative	etmybysslinounnapplaylactthuulnowaisegpeardpangerpygetoingetroclaiumanacticuleartainseq	
+9	language nl-modern	-3.111	-3.501..-3.196	-1.723..-1.627	above nulls	fdnuvlpuwkrastamaalddatokogrepaplouwhunaanlgsparaliestowworenelientijgenalisegudgelutou	ctl acc 0.97..1.00
+9	language pt-modern	-2.774	-3.412..-3.080	-2.113..-1.868	above nulls	pmsafugalnterdeveeummedinictogeguialhaseesucrgeteubordillitosoubosdbycoseubrocamcouadia	ctl acc 0.94..1.00
+9	language da-modern	-2.695	-3.180..-2.965	-2.528..-1.809	above nulls	cpnsuomslvkadtafaaoppativirkemamoislysnaanordmakaogedtillikeneogentgjrenaogderspreostis	ctl acc 0.21..1.00
+9	language sv-modern	-2.896	-3.356..-3.134	-2.016..-1.825	above nulls	fsnojtvombraklapaatssalebedrivavteomhonaantdkvaratyiklemmerinityinlygdinatykidosditoleo	ctl acc 0.98..1.00
+9	language cy-modern	-2.583	-2.818..-2.642	-2.354..-1.988	above nulls	kdrefnmethcaliauaanddaiohowcymamnoetperaarnwlmacangyliottocyryngyrigswyranglywedwyneioe	ctl acc 0.55..1.00
+9	language pl-modern	-2.582	-3.110..-2.733	-2.582..-1.993	no power	fgzeyktemprawnalaakgganipiorstatkiemjezaazkowtarakuswnimmirszskusznudoszakuwsoegoskenie	ctl acc 0.00..1.00
+9	language hu-modern	-2.838	-3.400..-3.062	-2.543..-1.816	above nulls	qcliusmintkerdejeesccedatazkomemsainvileelszrmekesbordannakolosboldbyzolesbroziczosidai	ctl acc 0.60..0.97
+10	fixed cribs: open	-3.520	-3.873..-3.094	-	negative	doraptsawyminciviitooiceyelmusisteawfariirtlnsimithuncewwemuruthurchblurithnulaolutacea	dora
+10	fixed cribs: close	-	-	-	excluded	no sign-off fits: last two signs (H1 A3) differ, so "ee" is impossible; longer closings conflict	9 sign-offs tried at the end
+10	fixed cribs: both	-	-	-	excluded	no opening+closing pair fits, because no closing fits	14 x 9 pairs
+11	source type by key-invariant statistics	0.885	0.002..0.837	-	above nulls	elgar:0.885 > lang:en-modern:0.837 > initials:0.655 > lang:de-modern:0.305 > lang:fr-moder	
+12	Playfair on the 3x8 / 8x3 sign grid	-9.000	0.000..0.000	-	negative	excluded: identical signs fall inside a digraph under every pairing	
+12	sign F2 = word space (10 words, mean 7.6)	-4.570	-5.009..-4.263	-	negative	vomizrtilbd ps j  roo subundat truilhim  mrnpt d reapsulludamareamseynam repanionarisui	
+12	sign C2 = word space (9 words, mean 8.8)	-4.044	-4.898..-4.530	-	above nulls	vnlic disobertegee nnethohabuded hismileel ardebe furthsshbulu fultfpaule fruainau ithi	
+12	sign F3 = word space (9 words, mean 8.8)	-3.869	-5.416..-4.535	-	above nulls	jvboutlongcaprazaatvvarigisc laltionmobaabtsplacate prinnic b te brews batep sovs torio	
+12	sign A3 = word space (7 words, mean 11.4)	-4.146	-4.724..-4.606	-	above nulls	jpt kne mulorioboonppoisusclaeoens my tootncreolongarismmslatangatighcatongrac pcan is 	
+12	sign B2 = word space (7 words, mean 11.6)	-4.229	-5.091..-4.361	-	above nulls	fp syrgsthmonlocoorppoleheumagogrestks oo rungomorianlettema aria liqua orinauspuarsles	
+12	sign H1 = word space (7 words, mean 11.6)	-4.092	-5.111..-5.086	-	above nulls	wbriktcilspendefeetbbed s opacect ilhireertoncepetuand ll paratuardugoaretunaoiboatid i	
+12	sign B1 = word space (6 words, mean 13.7)	-4.364	-5.302..-4.785	-	above nulls	wfeudanuroisy skssaffs poptilnsnapurguesseatynsisably prrpilelable bhtlesabyltuftlau pu	
+12	sign C1 = word space (6 words, mean 13.7)	-4.256	-4.996..-4.477	-	above nulls	vsiacedarbonumnynnessnmpbp oldndepartainnie udnoneglumprrpolileglimgh linegul as leampa	
+12	drop every 2th sign, phase 0	-2.186	-2.249..-2.107	-	negative	wrmrgencewellafflyreisfamonyloodidsimpsworl	 [shuffle nulls]
+12	drop every 2th sign, phase 1	-2.211	-2.524..-2.161	-	negative	fbzontillemrchalesubleillkidntbearwalkashers	 [shuffle nulls]
+12	drop every 3th sign, phase 0	-2.785	-2.618..-2.522	-	negative	iohmrtulallliiassdeffmrtrolodylumnyattueemeonceomnedidmrsr	 [shuffle nulls]
+12	drop every 3th sign, phase 1	-2.384	-2.576..-2.241	-	negative	wlnaythedefeaceshimyeastpleladymeroustsolarluxilerdinionun	 [shuffle nulls]
+12	drop every 3th sign, phase 2	-2.487	-2.809..-2.509	-	above nulls	qvnjfnordswelvesoariefanuneelyfeelidaharmitistyieldinvilsa	 [shuffle nulls]
+12	drop every 4th sign, phase 0	-2.530	-2.849..-2.518	-	negative	chaesanotitutectillmostslayahthemstoedrilylorredhidmrhedgmacreala	 [shuffle nulls]
+12	drop every 4th sign, phase 1	-2.657	-2.778..-2.588	-	negative	whenbealotodorffmyvilsobreachooritoloustyaalshrusmugshoutsefireme	 [shuffle nulls]
+12	drop every 4th sign, phase 2	-2.625	-3.104..-2.546	-	negative	xthushopendfeetterpryaggsrocheelingyesandooralamalmvilesnaitiahdr	 [shuffle nulls]
+12	drop every 4th sign, phase 3	-2.705	-2.985..-2.765	-	above nulls	qbevyitchwalllyblacsorilyspupeleywillydwastsheryreanorlydroporyasp	 [shuffle nulls]
+12	drop every 5th sign, phase 0	-2.690	-3.008..-2.646	-	negative	dnexpefrotsoooldosirycapplievenonlytocolatsificaalwaswhynolwayedalese	 [shuffle nulls]
+12	drop every 5th sign, phase 1	-2.617	-2.804..-2.693	-	above nulls	junkintmrchdydillhemergodientnuddiacordischeterguisgusbagdiscanlainhe	 [shuffle nulls]
+12	drop every 5th sign, phase 2	-2.653	-2.886..-2.725	-	above nulls	jdupistwheneceiddeawalosesautbreerlyseeifonatthorofornglorifyoudlounau	 [shuffle nulls]
+12	drop every 5th sign, phase 3	-2.671	-2.920..-2.537	-	negative	xfdualphbeteseeffechoiblelapmypeedatlebarntommondnandcrindertnifinacop	 [shuffle nulls]
+12	drop every 5th sign, phase 4	-2.761	-2.922..-2.709	-	negative	wyliahimusconssaysorrtuesharmpilslathsusdecommruleadlodgelsacetiteairi	 [shuffle nulls]
+12	drop every 6th sign, phase 0	-2.630	-2.886..-2.834	-	above nulls	dtenhelpyouofooddoubbaysjjhbeletootamjoyhismullbysshistiwasthimsadashebe	 [shuffle nulls]
+12	drop every 6th sign, phase 1	-2.725	-3.052..-2.690	-	negative	pnaughcodeteveegbemroldihegrackneengthedesitmrcrdingsinmylinestilaligama	 [shuffle nulls]
+12	drop every 6th sign, phase 2	-2.531	-2.963..-2.718	-	above nulls	xptungthrowsmoonposaharegogatlytoodnigoronewsalaredefedsfiedonweitpentsa	 [shuffle nulls]
+12	drop every 6th sign, phase 3	-2.749	-2.875..-2.746	-	negative	wmrjobuthsiasssommacyclebsboutpursrolishsoniactthereoerangersonelumlouacu	 [shuffle nulls]
+12	drop every 6th sign, phase 4	-2.847	-3.080..-2.902	-	above nulls	ydselterpochofolddoapaintotlargesoslictnolubharrabsblushumisoluciedibehae	 [shuffle nulls]
+12	drop every 6th sign, phase 5	-2.748	-3.020..-2.863	-	above nulls	zfnewhelpicutytofftupsairthoseventtoachttomrcsllsinromrumbartomcrefarouse	 [shuffle nulls]
+13	orientation = note name a-h (40,320 assignments)	-4.856	-5.497..-4.988	-2.254..-2.203	above nulls	bgebbacbfdehhehahhagghedddaehchcadbffbehheaahchehachhedffdehehacheeccahehachhabgahabedb	beafghcd
+14	arcs stream shifted by +1	-3.133	-3.451..-3.409	-1.836..-1.673	above nulls	xjwisthinkpoopcreemyjolduumwofoftkingspeepttofcperhoolubbkwewerhelphameperacomxvmemilks	ctl acc 0.94..1.00 [shuffle nulls]
+14	arcs stream shifted by -1	-3.096	-3.669..-3.284	-1.836..-1.673	above nulls	gkrughtofimeadyneankwemiishdebythsofcuraamnnypymentaediccideraltarmptlyrantaylowlylurio	ctl acc 0.94..1.00 [shuffle nulls]
+14	arcs stream shifted by +2	-3.275	-3.538..-3.308	-1.836..-1.673	above nulls	gzmguisgowmeataladickernnyimasasingofgraambbaparaiseemnjoyrdraivertsplarabpediuzldbutwh	ctl acc 0.94..1.00 [shuffle nulls]
+13	keyboard: 3 rows of 8, any column/row order (241,920)	-5.103	-4.942..-4.662	-2.380..-1.843	negative	psmyglfyhnuiaditiilssidenecurfifleyhqymiimlcafiuiloradehheurmrlormdoxcrmiloarcyscrlydey	rows(0, 1, 2) cols(6, 3, 2, 7, 1, 0, 5, 4)
+14	arcs stream shifted by -2	-3.420	-3.550..-3.397	-1.836..-1.673	negative	wxonyphysfatrolitrezzrumbbealdrhebyskwortoeethlatpcttubssbaluredtoucherarecttingprinofw	ctl acc 0.94..1.00 [shuffle nulls]
+14	arcs stream shifted by +3	-3.147	-3.359..-3.138	-1.836..-1.673	negative	ifagitbinderlarolloffredsstambmythinnwarmetolbraltummedjjhkralourkeyborampullticpmtiasw	ctl acc 0.94..1.00 [shuffle nulls]
+14	arcs stream shifted by -3	-3.252	-3.820..-3.329	-1.836..-1.673	above nulls	uqncydsumanionoriotjjonkharlivesrhumbygoelddowigidsoolkbbagigetwellswronitwoodupretunhy	ctl acc 0.94..1.00 [shuffle nulls]
+14	arcs stream reversed	-3.423	-3.578..-3.275	-1.836..-1.673	negative	uwfumnpubclearasiendwalookslipeptchbymriafttagarangeifovyclifesperlxgsalatpaishjtaturkm	ctl acc 0.94..1.00 [shuffle nulls]
+14	orientation stream reversed	-3.398	-3.602..-3.134	-1.836..-1.673	negative	lgdisesqchwetserehymrdathanwrkuponwayfedeyessnewdlubckstatwrhgoorevjfawhedearkbitflinvi	ctl acc 0.94..1.00 [shuffle nulls]
+14	arcs stream reversed within each line	-3.295	-3.398..-3.355	-1.836..-1.673	above nulls	bqeksatsjuloodoayofixhewrundoghtarkppbloodnaytolonchoeupmrlydyagodeggaheoncohabiaofslus	ctl acc 0.94..1.00 [shuffle nulls]
+15	polygraphic units: mixed (66 units)	-3.757	-4.001..-3.484	-3.812..-3.706	no power	kthatttheboonthemdispesstssothatthatseisdisaironsonoisthemanthetsstoaponsisoverpeismmisirt	
+15	polygraphic units: digraphs (60 units)	-4.719	-4.832..-4.688	-4.531..-4.369	negative	lethisinliarstinsersitatshesateaatatarththatestarstaasithestatstartainseedinisatatisarassh	
+15	polygraphic units: nomenclator (32 units)	-3.294	-3.805..-3.375	-3.440..-3.342	READING?	wyrtoyoudstofbandeaneceedyyenoboofandthesesdotofitoreerdofaseandedintheanoffoandtherthedin	
+15	nomenclator recheck: 15 nulls, control similarity	-3.132	-3.590..-3.310	-3.450..-3.247	no power	ysnayoudralmandowtogoodssotimitheanderordialhanoondthewroandodinewtilliandenedinentintothe	ctl similarity 0.16..0.28
+16	two interleaved messages (odd/even)	-2.154	-2.353..-2.285	-2.241..-2.165	no power	fusembleschangepeatunatoformadedtogivesaertundemebyinghisohisityartyouarebylauguritetog	ctl acc 0.00..0.25 [shuffle nulls]
+16	new key from line 2	-2.235	-2.393..-2.336	-2.278..-2.252	no power	xnmybabymypounotooannonlylipwhohheagratootheshorohissleggerstshistlikestohisseageshalea	ctl acc 0.07..0.30 [shuffle nulls]
+16	new key at the halfway point	-2.362	-2.497..-2.408	-2.377..-2.157	no power	mphchadcauleyremeeappernundlydedancatcheehasifirinceitofforesencestcusesinciesobsenotoo	ctl acc 0.14..0.31 [shuffle nulls]
+16	separate key per line	-2.632	-2.615..-2.596	-2.743..-2.493	no power	jhxcuckclimefrepeechhermimumbwowantoftnoonahiwodoadsignoondstaylatelgratbylvaryprayyesy	ctl acc 0.07..0.08 [shuffle nulls]
+17	Sukhotin V/C alternation like English	0.709	0.593..0.767	0.616..0.837	negative	A3 E3 F2 F3 G2 H1	
+17	opposite flips coincide with V/C switches	0.741	0.695..0.695	-	above nulls	flip switch 0.74 vs other 0.69	
+18	known quotation, letter by letter (6 texts, misread-tolerant)	37.000	35.000..36.000	79.000..81.000	above nulls	youngladywhoisgoodaccomplishedbeautifulyouaregoodaccomplishedandbeautifulasanangelahcou	gutenberg@558261 explains 37/87
+18	Elgar's table (832 variants) + transposition: letter frequencies	-3.205	-4.522..-3.180	-3.190..-2.735	negative	kwgildribnftuhtcttdwwthonoefsrtrdoibaigttgdeurtftdqsuhobbofsgsdqsghqpesgtdquseiwesdihoi	grid=(0, -1, 1) shift=8
+19	keyword-mixed alphabets on Elgar table (41,472)	-4.774	-5.689..-5.464	-2.298..-1.843	above nulls	hzlifprisbmockoqoopzzokebenmurorpeistiloolpncromopauckessemulupaulkagnulopacuniznupikei	courage cont=0 grid=(0, 1, 0) shift=9
+19	block 2: arcs rotated within block	-3.150	-3.723..-3.297	-1.836..-1.771	above nulls	bzrppinghedyamywootzzymeextmanafixgjjpdoodiwasydownoamelleryrowfordsstorowsoatbutatpmeb	ctl acc 0.94..0.99 [shuffle nulls]
+19	block 3: arcs rotated within block	-3.380	-3.795..-3.252	-1.836..-1.771	negative	pbdivorilydeadasecofbahuggsnaratsyilxvdeedmmetchestaangllynanesreddrjoehestcampwoeophyi	ctl acc 0.94..0.99 [shuffle nulls]
+19	block 3: arcs reversed within block	-3.355	-3.558..-3.054	-1.836..-1.771	negative	fyrfmbpunctiiseliabywescoolsaviplounjuriirddivisilheetonngteralharthplasilheadmybalutom	ctl acc 0.94..0.99 [shuffle nulls]
+19	block 4: arcs rotated within block	-3.151	-3.566..-3.134	-1.836..-1.771	negative	vjphhurtismaambueenjjaysoonmalarustichmeemudalbyedreayoffspapedleymrknepedkeanvwnentyst	ctl acc 0.94..0.99 [shuffle nulls]
+19	block 4: arcs reversed within block	-3.107	-3.418..-3.341	-1.836..-1.771	above nulls	ghnugprofelatlaptishvaleekplarampeoffunialsstractsriackybecalidriclmrdanasritdowdidonko	ctl acc 0.94..0.99 [shuffle nulls]
+19	block 5: arcs rotated within block	-3.307	-3.614..-3.310	-1.836..-1.771	above nulls	jvdifshimbleelpcaankverboxndeyewsofmgflealssawplasheerbttodedacharlhycalachpenjunaniroi	ctl acc 0.94..0.99 [shuffle nulls]
+19	block 5: arcs reversed within block	-3.425	-3.594..-3.130	-1.836..-1.771	negative	bqnipsaiconddntleesqwdrojulydatasupxxinddrssemeyehaddyoffurdyesverymasenesvtthightsirjb	ctl acc 0.94..0.99 [shuffle nulls]
+19	block 6: arcs rotated within block	-3.295	-3.723..-3.410	-1.836..-1.771	above nulls	tbyamidanlossohirsexbspuffeyscscglankmorroggschoridssofzzlysyridroodverprivhsitweretpla	ctl acc 0.94..0.99 [shuffle nulls]
+19	block 6: arcs reversed within block	-3.458	-3.494..-3.288	-1.836..-1.771	negative	kqrkfmyflireonameexquarvicsdeyepxvgllknoansmetenexpoonchwidenamyannptsodestoomfusesfrig	ctl acc 0.94..0.99 [shuffle nulls]
+20	syllabic: orientation = consonant class, arcs = vowel	-2.644	-2.831..-2.697	-2.528..-1.796	above nulls	ehksdxnsjiovpmvuvvxhhvmlilcognvnxlsjtskvvkxcpnvovxbgpmljjlogkgxbgkmbqcgkvxbpgcshcgxsmls	ctl acc 0.00..1.00
+20	repeated trigrams: English-like or pair-generator-like?	2.000	0.000..6.000	0.000..61.000	negative	trigrams 2 vs English 5.19, pair-keeping shuffles 2.33	
+21	misread-tolerant (≤ 8 slips, 30 restarts)	-2.739	-3.012..-2.794	-2.647..-2.120	above nulls	kslictringboydofootssodagamberortainpilooltmyrobotheycannabeletheldhumetothremismetidai	edits 3; ctl acc 0.45..0.89
+23	Nihilist on sign coordinates, 27 keys (COURAGE …)	-5.943	-6.607..-6.024	-2.140..-1.843	above nulls	cgsuzqutyqbaryfbnaigakcizruyofsowsywmtsknnibepnoscilppyeysbbfkwnonepgconscimosaguldlern	cipher sub grid=(0, 1, 0)
+23	Nihilist, key restarting each line	-6.015	-6.339..-6.083	-2.140..-1.843	above nulls	insbfkoaldbaryfunacngkcwmeoyoombtirystxnafwommadmpgoceelsioqfkpgoneiawonswcmomgnolxreet	cipher sub grid=(1, -1, 0)
+22	quotation from Longfellow/Tennyson/Browning (letters)	34.000	34.000..35.000	80.000..81.000	negative	ptoffthecaseandreadthenakedshieldnowguessedahiddenmeaninginhisarmsnowmadeaprettyhistory	Idylls of the King@182171 explains 34/87
+22	quotation from Longfellow/Tennyson/Browning (word initials)	34.000	32.000..34.000	81.000..82.000	negative	fhsthtitsahswlalabalcatmwatrfsoboathdavaasmitsatpwstmesuhfttwtmotvathteatpotvgttgipttqt	Longfellow (incl. King Olaf)@110244 explains 34/87
+25	two-habit pseudo-writer vs English-under-a-key	0.008	0.013..0.013	-	negative	pseudo-writer P 0.008; English-under-key P 0.013 (with flips as a 6th statistic)	
+26	English under the flip-maximising layout: all 6 statistics	0.711	0.008..0.013	-	above nulls	mean flips 24.5; P(flips>=27) 0.323	
+27	all plausible readings jointly (48 positions), en-modern	-2.437	-2.531..-2.387	-2.353..-1.808	no power	jfjulinutsmyplacryifeagorotmenandoutquiryiithormydrengottomeifiredgrewbirdsheguewedulou	ctl acc 0.00..0.83
+27	all plausible readings jointly (48 positions), en-elgar	-2.312	-2.491..-2.405	-2.567..-2.283	no power	vxvictpilyhepremedtobesayashopeptailwindentsfadhendofcallahonotdonceoroteneforioroticch	ctl acc 0.08..0.29
+24	July 1897 visit cribs (29 words), every fitting offset	-2.889	-3.372..-3.026	-	above nulls	vsnactualdmorwopootssowidigmeuoutialfanoontgruomotherwillimenethenwhygenothregasgetawia	mother@47

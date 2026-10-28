@@ -181,6 +181,14 @@ no repeated 4-gram. Orientation F carries 23/87.
    free fit 10 at offset 30 (shuffles 9.1, P = 0.33; random melodies 6.9, P = 0.01 — the tune's own repetition, not
    Dorabella). **Negative.** The piano introduction is chords and figuration; no single line before bar 9 to read.
 
+26. **Hypothesis loop, 27 rounds** (`hyp.py`, `rounds.py`, `run_round.py`; map in `HYPOTHESES.md`; one line per
+   round in `runs/loop.md`; every number in `runs/ledger.tsv`). Each hypothesis scored on Dorabella, shuffles (or
+   pair-keeping shuffles) and English put through the same system. All decidable branches negative or excluded.
+   Key findings: Dorabella's key-invariant statistics are typical of English letters and Elgar's letters (R 11);
+   neither a pseudo-writer nor English under a random key reproduces them, but English under a flip-heavy key does
+   (R 25–26); Playfair, sign-offs and Elgar-table-plus-transposition are excluded by logic (R 10, 12, 18); key changes,
+   heavy misreads and polygraphic units cannot be decided at 87 signs (R 15, 16, 27).
+
 ## Where it stands (28 Oct 2026)
 
 Not deciphered. Outcome: not solved (attempted, open).
