@@ -1,0 +1,116 @@
+{
+ "schema_version": 1,
+ "target": "mid4131829",
+ "title": "Revolutionary War letter in code, probably by a British officer, sent to MID by Col. H. L. Cavenaugh, Berkeley, 1934 (NARA RG 165, MID 4131-829)",
+ "documents": [
+  {
+   "id": "A",
+   "shelfmark": "NARA RG 165, MID correspondence 1917-41, file 4131-829 (known only from the M1194 roll 42 frame 1068 cross-reference card)",
+   "date": "unknown",
+   "year": "unknown",
+   "country": "unknown",
+   "route": "unknown (probably a British officer) -> unknown; forwarded to MID 25 July 1934 by Col. H. L. Cavenaugh, Berkeley, Calif.",
+   "language": "English (expected)",
+   "cleartext_in_document": "unknown",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "The card records a request for decipherment and no answer.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 0,
+    "unit": "mixed",
+    "measured": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "image_quality": "no images",
+    "notes": "The MID file itself is not digitised; only the index card is online. Nothing transcribed."
+   },
+   "read": "not read"
+  }
+ ],
+ "system": {
+  "types": [
+   "undetermined"
+  ],
+  "summary": "unknown: the letter has not been seen ('in code' per the 1934 card).",
+  "symbol_kind": "symbols",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": "unknown"
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": "unknown"
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "not applicable",
+  "notes": "symbol_kind and key_order are placeholders: the schema has no 'unknown' value for them. Nothing about the system is known."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "unknown",
+   "where": "MID may have answered in 1934; the file is not online",
+   "found": "before attempt",
+   "used": false
+  },
+  "inputs": [],
+  "attack": "none",
+  "human_role": "Pasted the catalogue task; no other input.",
+  "tools": [
+   "NARA catalog proxy API (M1194 roll 42 frames)",
+   "web search"
+  ],
+  "models": [
+   "claude-opus-5-5"
+  ],
+  "sessions": 2,
+  "first_date": "2026-10-27",
+  "last_date": "2026-10-27"
+ },
+ "solution": [
+  {
+   "date": "2026-10-27",
+   "kind": "literature search",
+   "what": "Repository, research/ and one web search for 4131-829 and a 1934 MID decipherment of a Revolutionary War letter: nothing.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "access",
+   "what": "Found M1194 roll 42 frame 1068 through the NARA catalog API and read it: cross-reference card for Col. H. L. Cavenaugh, Berkeley, Calif.; 4131-829, 7-25-34, 'Fwding old ltr of Rev. days probably written by Brit. officer in code; req. decipherment'. No answer recorded; the MID file is not digitised.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "literature search",
+   "what": "Web searches for Cavenaugh with Berkeley, 1934 and a Revolutionary War cipher letter: nothing relevant.",
+   "result": "failed"
+  }
+ ],
+ "outcome": {
+  "class": "offline only",
+  "key": "none",
+  "method": "not applicable",
+  "verification": [
+   "none"
+  ],
+  "contribution": [
+   "none"
+  ],
+  "gaps": [
+   {
+    "item": "the letter",
+    "blocker": "needs-physical-access"
+   }
+  ],
+  "notes": "Not attempted on the ciphertext: the letter is not online. Next: request MID 4131-829 at NARA College Park; if a copy survives, try the Clinton/Andre book and number codes first."
+ }
+}

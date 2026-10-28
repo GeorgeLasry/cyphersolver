@@ -9,8 +9,12 @@ Division (MID) for decipherment on 25 July 1934. Writer, recipient, place (proba
 unknown. Language presumed English.
 
 - Held at: NARA RG 165, MID correspondence 1917-41, file 4131-829.
-- Online: only the index card, M1194 roll 42, frame 1068 (https://catalog.archives.gov/id/117997172).
-  The card records no answer.
+- Online: only the index card, M1194 roll 42, frame 1068 (https://catalog.archives.gov/id/117997172;
+  frame image https://catalog.archives.gov/medialz/dc-metro/rg-165/2824985_M1194/M1194-042/M1194-042-1068.jpg).
+  It is an Office of the Chief of Staff cross-reference card headed "CAVENAUGH, COL. H. L. / BERKELEY CALIF.":
+  "4131-829 | 7-25-34 | Fwding old ltr of Rev. days propably written by Brit. officer in code; req. decipherment."
+  So the 1934 owner (or forwarder) was Col. H. L. Cavenaugh of Berkeley. The same card lists his 1929 and 1931
+  letters (9527-545 on the 40th Division, 51-760 introducing Col. S. R. Downing). The card records no answer.
 - The file itself (RG 165, entry 65) is not digitised.
 
 ## System, key, reading
@@ -23,6 +27,8 @@ Class C: if the text turns up, expect a ciphertext-only attack.
 Open as far as checked (27 Oct 2026): the repository, `research/`, and one standard web search found no reading
 and no mention of 4131-829. That search was thin, not exhaustive.
 
+Searched again 27 Oct 2026 for Cavenaugh with Berkeley, 1934 and a Revolutionary War cipher letter: nothing.
+
 ## Remaining gaps
 
 - The ciphertext: needs the MID file from NARA College Park, which is outside what can be done online.
@@ -30,6 +36,8 @@ and no mention of 4131-829. That search was thin, not exhaustive.
 ## Escalation
 
 - Siblings / clear pages / known keys: none exist for this file, since the text has not been seen.
+- The owner is now named (Col. H. L. Cavenaugh, Berkeley): his papers or descendants might keep the original
+  letter; not searched further.
 - Order MID file 4131-829 (RG 165, entry 65, College Park) and check whether the ciphertext copy survives.
 - If it does: first keys to try are the British Revolutionary War systems (Clinton's and Andre's book and
   number codes); then identify the system by symbol counts and run a solver with a control text at the same length.
