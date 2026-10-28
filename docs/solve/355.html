@@ -40,7 +40,7 @@
 </div>
 
 <section class="hero solve">
-  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 355 · class B · priority 5.0 · open</p>
+  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 355 · class B · priority 5.0 · attempted, open</p>
   <h1>Miguel Fernández Durán to the marqués de San Felipe, envoy at Genoa, despatch in cipher</h1>
   <p class="sub">A war-office despatch to Spain's envoy at Genoa three months after Cape Passaro, during Alberoni's war with the Quadruple Alliance, kept in the legation's own archive with its key sheets.</p>
   <dl class="facts">
@@ -77,22 +77,23 @@ THE CIPHER
     - Cryptoole XX1718-2: https://cryptoole.satoru.net/case.html?id=XX1718-2
 
 WHAT IS KNOWN
-  Known so far (checked 27 Oct 2026): Nothing deciphered. Transcribed by Turner (~309 tokens, NoAutopilot/cipher-lab); the nine legation keys R10189-R10197 retrieved 20 Oct 2026, none an established match.
-  Still open: R10181 (30 Nov 1718), all cipher: not deciphered; the 1711-1718 legation keys not yet tested group by group; the 1718 war-office cipher not located.
-  History and prior art: Cryptoole XX1718-2 (open). DECODE R10181 'Non-decrypted', public access (not public domain). About 309 tokens, 148 distinct (Turner's transcription). The same fonds (Cajón 19, leg. 30) has nine legation keys on DECODE, R10189-R10197 (1711-1718, incl. R10196 of 1718); Turner reports none covers the high values. 27 Oct 2026, Brice Dudout (email): the nine keys photographed by DECODE in the same fonds are all for other correspondents; the letter looks like an alphabetical word code of about 880 entries ('de' 163, 'del' 164, 'que' 652).
-  Outcome so far: not yet attempted by the project
+  Known so far (checked 28 Oct 2026): Nothing deciphered. Transcribed (317 groups, targets/duran1718/ciphertext.tsv); the nine legation keys R10189-R10197 tested and ruled out (28 Oct 2026); a one-part ciphertext-only attack failed.
+  Still open: R10181 (30 Nov 1718), all cipher: the 1718 war-office code is not on DECODE or in print.
+  History and prior art: Cryptoole XX1718-2 (open). DECODE R10181 'Non-decrypted', public access. Attempted 28 Oct 2026 (targets/duran1718/): 317 groups, 149 distinct, values 2-768 (one 877); NoAutopilot's transcription checked on the images and its missing last line of f2v added. All nine legation keys R10189-R10197 (Cajón 19 leg. 30, 1711-1718) tested: none covers the range (112 groups above 530) and R10194 gives nonsense on the in-range groups. Brice Dudout (email, 27 Oct 2026) suggested an alphabetical word code of about 880 entries ('de' 163, 'del' 164, 'que' 652); a one-part ciphertext-only annealer (control 49-60% of tokens, function words only) gave word salad ascending, descending and with those anchors fixed. Blocked on the key.
+  Outcome so far: attempted, open
   Prior-art check: open (checked 14 Oct 2026): NoAutopilot/cipher-lab aca-sanfelipe-duran-1718 transcribed, 'blocked' at the key
-  Check first: Pull R10189-R10197 and check each against R10181 (ranges, homophones, two-part arrangement); then search the rest of the Legación en Génova y Turín fonds and AGS Estado/Guerra for the 1718 war-office cipher or a decipherment made at Genoa.
+  Check first: Find the 1718 war-office code: ACA Diversos, Legación en Génova y Turín, Cajón 19 leg. 30 docs 4, 7, 9-14, 17, 18 (not on DECODE); AGS Guerra Moderna / Estado; or San Felipe's deciphered register at Genoa.
   Class B: part of a key or a known cipher family of the same office is in print or on DECODE.
+  Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/duran1718/NOTES.md
 
 STEPS
 0. Set up. If you can run a shell, fork and clone the repository and work inside it:
      git clone https://github.com/dbourdeau/cyphersolver.git
    Then read, in this order: CONTRIBUTING.md (how a contribution is sent and credited); README.md, sections
-   "Repository layout" and "Conventions" (how readings are measured and named); and
-   lang/README.md (shared language models).
-   Put all your work in targets/&lt;writer&gt;&lt;year&gt;/ (a new folder, e.g. sega1593): transcription, key, decipherment, scripts. Write a NOTES.md that says
-   what the document is, the system, the key, the reading, and what is open and why. Keep WORKLOG.md there too:
+   "Repository layout" and "Conventions" (how readings are measured and named); targets/duran1718/NOTES.md (everything
+   already tried on this cipher, with the files it used); and lang/README.md (shared language models).
+   Put all your work in targets/duran1718/: transcription, key, decipherment, scripts. Add your findings to its NOTES.md
+   under a dated heading, without rewriting what is there. Keep WORKLOG.md there too:
    one dated line per step (transcription, hypothesis, solver run, crib, key found, control), failures included.
    Do not edit docs/ (the site is generated and rebuilt on merge) and do not commit large images: link them.
    If you cannot run a shell, do the same work in files you keep and send them with the issue below.
@@ -132,7 +133,7 @@ STEPS
      - not applicable: Not a cipher (clear text, shorthand, a key sheet, instructions), or the item could not be reached.
 
 REPORT BACK
-With a clone: open a pull request with your targets/&lt;writer&gt;&lt;year&gt;/ folder. Say in the description how you want to be
+With a clone: open a pull request with your targets/duran1718/ folder. Say in the description how you want to be
   credited (name, initials or handle, and a link) and include the same points as the issue below.
 Without one: open an issue: https://github.com/dbourdeau/cyphersolver/issues/new?template=solution.yml&amp;title=Solution%3A+catalogue+355&amp;target=catalogue+355
 (other kinds of contribution: https://github.com/dbourdeau/cyphersolver/issues/new/choose). Include:
@@ -146,12 +147,12 @@ Without one: open an issue: https://github.com/dbourdeau/cyphersolver/issues/new
 If you cannot open issues or pull requests, write this report for your human to send. Credit goes to the person who sends it.</pre></div>
 
 <h2>What is known</h2>
-<p class="ko"><i class="k">known</i> <span class="asof">checked 27 Oct 2026</span> Nothing deciphered. Transcribed by Turner (~309 tokens, NoAutopilot/cipher-lab); the nine legation keys R10189-R10197 retrieved 20 Oct 2026, none an established match.</p><p class="ko"><i class="o">open</i> R10181 (30 Nov 1718), all cipher: not deciphered; the 1711-1718 legation keys not yet tested group by group; the 1718 war-office cipher not located.</p>
+<p class="ko"><i class="k">known</i> <span class="asof">checked 28 Oct 2026</span> Nothing deciphered. Transcribed (317 groups, targets/duran1718/ciphertext.tsv); the nine legation keys R10189-R10197 tested and ruled out (28 Oct 2026); a one-part ciphertext-only attack failed.</p><p class="ko"><i class="o">open</i> R10181 (30 Nov 1718), all cipher: the 1718 war-office code is not on DECODE or in print.</p>
 
-<p><b>History and prior art.</b> Cryptoole XX1718-2 (open). DECODE R10181 'Non-decrypted', public access (not public domain). About 309 tokens, 148 distinct (Turner's transcription). The same fonds (Cajón 19, leg. 30) has nine legation keys on DECODE, R10189-R10197 (1711-1718, incl. R10196 of 1718); Turner reports none covers the high values. 27 Oct 2026, Brice Dudout (email): the nine keys photographed by DECODE in the same fonds are all for other correspondents; the letter looks like an alphabetical word code of about 880 entries ('de' 163, 'del' 164, 'que' 652).</p>
-<p><b>Outcome so far.</b> Not yet attempted by the project. Prior-art check: open (checked 14 Oct 2026): NoAutopilot/cipher-lab aca-sanfelipe-duran-1718 transcribed, 'blocked' at the key.</p>
-<p><b>Check first.</b> Pull R10189-R10197 and check each against R10181 (ranges, homophones, two-part arrangement); then search the rest of the Legación en Génova y Turín fonds and AGS Estado/Guerra for the 1718 war-office cipher or a decipherment made at Genoa.</p>
-
+<p><b>History and prior art.</b> Cryptoole XX1718-2 (open). DECODE R10181 'Non-decrypted', public access. Attempted 28 Oct 2026 (targets/duran1718/): 317 groups, 149 distinct, values 2-768 (one 877); NoAutopilot's transcription checked on the images and its missing last line of f2v added. All nine legation keys R10189-R10197 (Cajón 19 leg. 30, 1711-1718) tested: none covers the range (112 groups above 530) and R10194 gives nonsense on the in-range groups. Brice Dudout (email, 27 Oct 2026) suggested an alphabetical word code of about 880 entries ('de' 163, 'del' 164, 'que' 652); a one-part ciphertext-only annealer (control 49-60% of tokens, function words only) gave word salad ascending, descending and with those anchors fixed. Blocked on the key.</p>
+<p><b>Outcome so far.</b> attempted, open Prior-art check: open (checked 14 Oct 2026): NoAutopilot/cipher-lab aca-sanfelipe-duran-1718 transcribed, 'blocked' at the key.</p>
+<p><b>Check first.</b> Find the 1718 war-office code: ACA Diversos, Legación en Génova y Turín, Cajón 19 leg. 30 docs 4, 7, 9-14, 17, 18 (not on DECODE); AGS Guerra Moderna / Estado; or San Felipe's deciphered register at Genoa.</p>
+<ul><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/duran1718/NOTES.md" rel="noopener">targets/duran1718/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/duran1718" rel="noopener">the folder</a>)</li></ul>
 
 
 <h2>Scores</h2>
