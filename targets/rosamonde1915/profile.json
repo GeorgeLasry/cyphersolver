@@ -226,14 +226,24 @@
       "kind": "verification",
       "what": "Verification 3 (v3_below_b): the 1916 telegrams (B03050089000), scored on the 1916 rows of readings_dudout.md: 0.31 explicit holes, 0.25 plain; 17% of letters are emended look-alikes with no outside text. Demoted to decoded, not read.",
       "result": "failed",
-      "technique": ["statistical test"]
+      "technique": [
+        "statistical test"
+      ]
     },
     {
       "date": "2026-10-23",
       "kind": "verification",
       "what": "Consistency pass (cl): documents[].read for 1916-B03050089000 read -> read in part, matching outcome.texts (decoded, not read) and fraction_read_source.",
       "result": "worked",
-      "technique": ["statistical test"]
+      "technique": [
+        "statistical test"
+      ]
+    },
+    {
+      "date": "2026-10-27",
+      "kind": "verification",
+      "what": "Claude Opus 5.5 (PR review on merge): the May 1916 transcriptions and emendation table (PR #161) wired into outcome.texts[2]; the entry stays decoded, not read (17% of letters supplied, over the 3% look-alike limit) pending a decision on whether the documented pairs lift it.",
+      "result": "partial"
     }
   ],
   "outcome": {
@@ -321,8 +331,13 @@
         "source": "https://bdudout.github.io/wenmi/en/rosamonde.html; email 15 Oct 2026 (6 and 7 Mar 1915 added, 16 Oct 2026)",
         "published": true
       },
-      {"who": "dudout", "role": "transcription", "note": "the seven May 1916 forms transcribed blind (B1) and confirmed; emendations tested letter by letter against the key (dudout/)", "date": "2026-10-28"}
-     ],
+      {
+        "who": "dudout",
+        "role": "transcription",
+        "note": "the seven May 1916 forms transcribed blind (B1) and confirmed; emendations tested letter by letter against the key (dudout/)",
+        "date": "2026-10-28"
+      }
+    ],
     "texts": [
       {
         "doc": "1915-B03050087600",
@@ -351,10 +366,15 @@
       {
         "doc": "1916-B03050089000",
         "label": "JACAR B03050089000, seven telegrams, 1 - 13 May 1916",
-        "decryption": "texts/readings_dudout.md",
+        "decryption": [
+          "dudout/decryption.txt",
+          "texts/readings_dudout.md"
+        ],
         "summary": "Between Shanghai and 'Rosamonde Tokio' after Sun's return to China, May 1916: his safe landing in the French concession, Canton, and repeated orders to leave the iron trunk in Mr Inuzuka's care. Brice Dudout's readings; no cipher transcription of these forms is in the repository.",
-        "note": "Decoded, not read (v3 check 23 Oct 2026): the seven 1916 readings (Brice Dudout's, texts/readings_dudout.md) score 0.31 on explicit holes, 0.25 plain, hole rate 0.48: 109 of 627 letters (17%) are bracketed, letters the forms give differently (n/v, i/r, y/h, g/p cursive and transmission confusions) and supplied from sense. That is far above the 3% look-alike limit, and nothing outside confirms them: the Japanese copies carry no translation, and no cipher transcription of these forms is in the repository (only Dudout's readings). The sense is plain English and not in doubt in most telegrams, but the letters rest on emendation.",
-        "state": "decoded, not read"
+        "note": "Decoded, not read (v3 check 23 Oct 2026): the seven 1916 readings (Brice Dudout's, texts/readings_dudout.md) score 0.31 on explicit holes, 0.25 plain, hole rate 0.48: 109 of 627 letters (17%) are bracketed, letters the forms give differently (n/v, i/r, y/h, g/p cursive and transmission confusions) and supplied from sense. That is far above the 3% look-alike limit, and nothing outside confirms them: the Japanese copies carry no translation, and no cipher transcription of these forms is in the repository (only Dudout's readings). The sense is plain English and not in doubt in most telegrams, but the letters rest on emendation. 27 Oct 2026: Brice Dudout sent the blind transcriptions of the seven forms, the decryption word by word and a table of every emendation against the key (dudout/, pull request #161), as Verification 3 asked; the emendations are systematic cursive pairs (n/v x23, i/r x18, r/i x7, y/h x6). Still 17% of letters supplied, over the 3% look-alike limit: kept decoded, not read pending a decision.",
+        "state": "decoded, not read",
+        "transcription": "dudout/transcription.txt",
+        "reading": "dudout/reading.md"
       }
     ]
   }

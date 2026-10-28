@@ -342,7 +342,6 @@ not tracked; re-fetch with
 
 ## Remaining gaps
 - pp. 29-31 (13 May 1526), decoded, not read - blocker: not-attempted; Brice Dudout (27 Oct 2026) found the microfilm resolves at Gallica IIIF full/max on 3x half-line crops, so the illegible verdict of session 3 (2x token crops) no longer holds; re-read pp. 29-31 that way
-- p. 105 and p. 106 (20 Nov 1526): read by Brice Dudout, about 98% of words (`dudout/`, pull request #163); no longer a gap
 - word signs absent from Tomokiyo's key: bold two-crossbar stem [X] (a person, follows 'son maistre') and ℓ° [Y] (three times on pp. 105-106: the one France should break with) - blocker: no-key-material; too few occurrences, no clear copy
 
 ## Escalation
