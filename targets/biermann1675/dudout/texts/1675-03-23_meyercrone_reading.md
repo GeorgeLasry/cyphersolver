@@ -1,0 +1,5 @@
+# Copenhagen, 23 March 1675: Copenhagen to Henning Meyercrone (Paris), cipher passages in context
+
+Biermann copybook, img 109 · pp. 104v–105. Text deciphered from the cipher in context; [word] = code word resolved; {x} probable; ‹x› unresolved; […] clear text not reproduced.
+
+[…] luy faisant aussy esperer au plustost quelques articles pour une alliance avec la France à l’avenir. Nonobstant quoy Sa [Majesté] veut que vous ne laissiez pas de continuer toujours à la cour où vous estes les mesmes raisonnements que vous y avez tenus jusques icy, et particulierement que vous luy fassiez connoistre le peu de rappo{r}t qu’ont les demandes de l’[ambassadeur de Suède] avec les ‹ʳ›{f}ruits avantageux qu’il avoit fait courir auparavant de sa commission, et les raisons evidentes et solides que Sa [Majesté] a de croire que l’ardeur que ledit [ambassadeur de Suède] fait paroistre pour conclure quelque [traitté] juste et raisonnable icy n’est guerres sincere, veu le peu d’apparence qu’il y a que Sa [Majesté] puisse condes{cen}dre aux conditions qu’il propose.

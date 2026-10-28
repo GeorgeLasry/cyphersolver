@@ -1,0 +1,3 @@
+# Copenhagen, 22 May 1675: English translation
+
+There was never any thought here of being content with the two hundred thousand écus a year for three years offered by Terlon. I have several times heard Griffenfeld tell him that, should His Majesty come to terms with Terlon, it was only fair that France treat her no less favourably than Sweden had been treated before taking action — as you yourself have several times represented to Mr de Pomponne. Considering the advantages the King of France can draw from His Majesty’s neutrality, Griffenfeld has asked for nothing but what is very just and reasonable. We must now see what ‹53› de Gravel will bring, since Terlon has no doubt done all a minister could for his master’s interests…

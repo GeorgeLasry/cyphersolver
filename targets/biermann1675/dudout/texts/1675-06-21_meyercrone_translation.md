@@ -1,0 +1,3 @@
+# Copenhagen, 21 June 1675: English translation
+
+[The Grand Chancellor] thinks that the news I have since given you of the marriage between our princess and the {King of Sweden}, together with the article handed at the same time to Terlon, of which I sent you a copy, will have removed at the court where you are any umbrage it may have taken at what happened at The Hague. That is still how things stand here, and I see little likelihood of any considerable upheaval soon, unless Gottorp, contrary to the hopes placed in him, gives occasion for some change by his bad conduct. Should His Majesty take other resolutions, you will be warned in good time.

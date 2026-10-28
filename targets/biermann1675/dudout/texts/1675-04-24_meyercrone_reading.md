@@ -1,0 +1,5 @@
+# Copenhagen, 24 April 1675: Copenhagen to Henning Meyercrone (Paris), cipher passages in context
+
+Biermann copybook, img 149–150 · pp. 145–145v. Text deciphered from the cipher in context; [word] = code word resolved; {x} probable; ‹x› unresolved; […] clear text not reproduced.
+
+[…] bienque dans la reponce que j’y ay faite je vous aye marqué que l’on delivreroit au plustost un projet à [Terlon], comme en effect [Griffenfeld] le tenoit tout prest, il se trouve neantmoins que la chose ayant esté debattue dans le conseil, tous ceux qui en sont n’ont pas esté d’un mesme sentiment sur ce sujet, de sorte que l’extradition dudit projet ne s’est pas encores faite ; mais [Griffenfeld] espere neantmoins de vaincre bientost les difficultez qui jusques icy l’ont empeschée. Son Excellence en a cependant donné un autre aux ‹349›{commissaire}s qui traittent avec l’[ambassadeur] de [Suède], pour {le} luy delivrer, lequel Sa [Majesté] a tellement fait adoucir en plusieurs endroits pour tesmoigner la consideration qu’elle a pour les sentiments du [Roy], qu’il y a lieu de croire que ledit [ambassadeur] en demeurera satisfait.

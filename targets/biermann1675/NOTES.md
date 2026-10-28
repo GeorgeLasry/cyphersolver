@@ -136,3 +136,9 @@ the 23 March letter and the 2 Jan test. What is left for this target: the letter
 - `contact.py`, `crop.py`: contact sheets and crops for reading the scans.
 - `key.tsv`: the image-55 key; `decode.py`: applies it to a transcription.
 - `transcription_p104-105.txt`, `ct_1675-03-23.txt`: the 23 March cipher; `reading_1675-03-23_meyercron.md`.
+
+## Readings contributed by Brice Dudout (28 Oct 2026)
+
+`dudout/` holds 26 further letters read with the image-55 key (frozen independently on 26 Oct 2026):
+Høeg 13 Feb - 5 June 1675 (7) and Meyercrone 16 Feb - 21 June 1675 (19, including 23 March, which can be compared
+with `reading_1675-03-23_meyercron.md`). See `dudout/README.md`.

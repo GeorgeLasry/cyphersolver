@@ -1,0 +1,5 @@
+# Copenhagen, 20 April 1675: Copenhagen to Henning Meyercrone (Paris), cipher passages in context
+
+Biermann copybook, img 146–147 · pp. 141v–142v. Text deciphered from the cipher in context; [word] = code word resolved; {x} probable; ‹x› unresolved; […] clear text not reproduced.
+
+[…] Le Project qui doit estre delivré à M. de Terlon est entierement ajusté, de sorte que je crois qu’il luy sera delivré en peu de jours, bienque la chose ne manque pas d’oppositions, lesquelles il faut esperer que [Griffenfeld] surmontera par cette dexterité dont elle sçait ma{ni}er les esprits et les affaires. On en donnera aussy un nouveau à M. l’Ambassadeur extraord. de Suede […]. Au reste, Monsieur, vous agreerez s’il vous plaist qu’à l’esgard des subsides que l’[Espagne] et [les États] ont nouvellement payé à Sa [Majesté], je me rapporte à ce que j’ay deja eu l’honneur de vous en mander […]. Il suffit que ce payement n’a rien changé dans les sentiments de Sa [Majesté], lesquels sont encores les mesmes pour la [France], qu’ils ont toujours, de {quo}y le projet qui sera donné à [Terlon] fera foy plus amplement.
