@@ -351,3 +351,23 @@ document.querySelectorAll('.showmore').forEach(b=>b.dataset.label=b.textContent)
       });
   });
 })();
+
+// Cursor trail: faint cipher letters drift up and fade behind the pointer.
+(function(){
+  if(matchMedia('(prefers-reduced-motion: reduce)').matches || !matchMedia('(pointer: fine)').matches) return;
+  const glyphs='ABCDEFGHIKLMNOPQRSTVXZ0123456789+·∆⊕☉♃♀Ꝑꝯ§';
+  let last=0, lx=0, ly=0;
+  addEventListener('pointermove', e=>{
+    const now=performance.now(), dx=e.clientX-lx, dy=e.clientY-ly;
+    if(now-last<45 || dx*dx+dy*dy<400) return;
+    last=now; lx=e.clientX; ly=e.clientY;
+    const s=document.createElement('span');
+    s.className='cipher-trail'; s.setAttribute('aria-hidden','true');
+    s.textContent=glyphs[Math.random()*glyphs.length|0];
+    s.style.left=(e.clientX+(Math.random()*24-12))+'px';
+    s.style.top=(e.clientY+(Math.random()*24-12))+'px';
+    s.style.setProperty('--rot',(Math.random()*40-20)+'deg');
+    document.body.appendChild(s);
+    s.addEventListener('animationend',()=>s.remove());
+  },{passive:true});
+})();

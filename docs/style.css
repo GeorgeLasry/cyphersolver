@@ -1625,3 +1625,7 @@ body.pg-catalogue .archnote{margin:1rem 0}
 @media (min-width:1061px){.hero:has(.herovid) .cipherstrip{top:calc(5.4rem + clamp(2rem,9.1vw,5.4rem) * 1.5 + 720px * 9 / 16 + 8.15rem)}}
 @media (max-width:640px){.hv-ch button{font-size:0}.hv-ch button.on{font-size:0.8rem;flex-grow:40}}
 @media (prefers-reduced-motion: reduce){.hv-ch button::after{transition:none}}
+
+/* cursor trail (site.js) */
+.cipher-trail{position:fixed;z-index:-1;pointer-events:none;user-select:none;font-family:var(--display);font-size:1.1rem;color:var(--ink);opacity:0;transform:translate(-50%,-50%);animation:cipher-trail 1.4s ease-out forwards}
+@keyframes cipher-trail{0%{opacity:0;transform:translate(-50%,-50%) rotate(var(--rot)) scale(.8)}15%{opacity:.16}100%{opacity:0;transform:translate(-50%,-110%) rotate(var(--rot)) scale(1.1)}}
