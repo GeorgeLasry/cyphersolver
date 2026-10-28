@@ -1,0 +1,160 @@
+{
+  "schema_version": 1,
+  "target": "duran1718",
+  "title": "Miguel Fernández Durán to the marqués de San Felipe, El Pardo 30 Nov 1718 (ACA Diversos, Legación en Génova y Turín, Cajón 1 leg. 22 doc. 67; DECODE R10181)",
+  "documents": [
+    {
+      "id": "R10181",
+      "shelfmark": "Archivo de la Corona de Aragón, Diversos, Legación en Génova y Turín, Cajón 1, leg. 22, doc. 67; DECODE R10181",
+      "date": "30 Nov 1718",
+      "year": 1718,
+      "country": "Spain",
+      "route": "El Pardo -> Genoa",
+      "language": "unknown",
+      "pages": 2,
+      "cleartext_in_document": "separate passages",
+      "plaintext": {
+        "location": [
+          "none"
+        ],
+        "source": "No decipherment on the four DECODE images; the only clear text is the cover, the closing formula and the signature."
+      },
+      "length": {
+        "tokens": 317,
+        "distinct": 149,
+        "unit": "code groups",
+        "measured": true,
+        "file": "ciphertext.tsv"
+      },
+      "transcription": {
+        "by": "mixed",
+        "source": "NoAutopilot's two-pass reconciled transcription (309 groups), checked here on the DECODE images; the missing last line of f2v (8 groups) added here.",
+        "image_quality": "good",
+        "notes": "7 written as ')', 9 as a tailed 'ɔ', 4 as a triangle, 5 as 'S'; 2/9/7 confusions graded R or M."
+      }
+    }
+  ],
+  "system": {
+    "types": [
+      "code"
+    ],
+    "summary": "A numerical code, values 2-768 (one 877), dot-separated, no marks; the range fits a code of about 770-880 entries. Whether it is one-part (alphabetical) is open: the legation's 1715 Acquaviva key R10193 is one-part, and Brice Dudout suggested de 163, del 164, que 652, but no passage reads under that.",
+    "symbol_kind": "digits",
+    "distinct_symbols": 149,
+    "diacritics": {
+      "used": false
+    },
+    "homophones": {
+      "used": "unknown"
+    },
+    "nomenclator": {
+      "present": "unknown"
+    },
+    "nulls": {
+      "present": "unknown"
+    },
+    "key_order": "unknown",
+    "word_division": "unknown",
+    "doubled_letters": "unknown",
+    "sibling_key": "unknown"
+  },
+  "conditions": {
+    "prior_solution": {
+      "exists": "no",
+      "where": "Cryptoole XX1718-2 open; DECODE Non-decrypted, no document attached; NoAutopilot cipher-lab 'blocked'",
+      "found": "not found",
+      "used": false
+    },
+    "inputs": [
+      "images",
+      "transcription"
+    ],
+    "attack": "ciphertext-only",
+    "human_role": "Selected the target (catalogue 355 solve brief); the DECODE session cookie was supplied earlier.",
+    "tools": [
+      "DECODE authenticated image download",
+      "one-part code annealer (mono.py) with a Spanish word-bigram model",
+      "web search"
+    ],
+    "models": [
+      "claude-opus-5-5"
+    ],
+    "sessions": 1,
+    "first_date": "2026-10-28",
+    "last_date": "2026-10-28"
+  },
+  "solution": [
+    {
+      "date": "2026-10-28",
+      "kind": "access",
+      "what": "Downloaded the DECODE pages R10181-R10197 and the images of R10181 and the nine keys R10189-R10197 with the saved cookie.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-10-28",
+      "kind": "transcription",
+      "what": "Took NoAutopilot's 309-group transcription, checked the digit shapes on f2r ll. 2-4 and f2v, and added the last line of f2v that it lacked (8 groups): 317 groups, 149 distinct.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-10-28",
+      "kind": "literature search",
+      "what": "Cryptoole snapshot (XX1718-2 open), DECODE record (no document), NoAutopilot's search log, web search: no decipherment or edition.",
+      "result": "failed"
+    },
+    {
+      "date": "2026-10-28",
+      "kind": "sibling key",
+      "what": "Tested the nine legation keys R10189-R10197 (1711-1718) by range (27-65% of the groups in range) and applied R10194, the Monteleón-Villamayor key that names the war secretariat, to the in-range groups: nonsense (32 = G eleven times).",
+      "result": "ruled out"
+    },
+    {
+      "date": "2026-10-28",
+      "kind": "control",
+      "technique": [
+        "simulated annealing",
+        "language-model scoring"
+      ],
+      "what": "Enciphered a 317-word Vasto-memoirs passage in a one-part code of the 700 commonest corpus words (2-770) and ran the order-constrained annealer: 49% and 60% of tokens right on two seeds, mostly function words.",
+      "result": "partial"
+    },
+    {
+      "date": "2026-10-28",
+      "kind": "solver",
+      "technique": [
+        "simulated annealing",
+        "language-model scoring"
+      ],
+      "what": "Ran the one-part annealer on the letter, ascending, descending, and ascending with Brice Dudout's anchors de 163, del 164, que 652 fixed: word salad every time (best -1497.5 anchored, -1499.5 ascending, -1557.9 descending).",
+      "result": "failed"
+    }
+  ],
+  "outcome": {
+    "method": "not solved",
+    "method_basis": "A numerical code of about 770-880 entries, 317 groups; none of the nine legation keys on DECODE fits, nothing is in print, and the one-part ciphertext-only annealer reads only 49-60% of a function-word control and gives word salad on the letter.",
+    "contribution": [
+      "transcription",
+      "catalogue correction"
+    ],
+    "class": "not read",
+    "fraction_read": 0,
+    "verification": [],
+    "notes": "Blocked on the key: needs the 1718 war-office code (ACA Cajón 19 leg. 30 docs not on DECODE, AGS Guerra/Estado) or San Felipe's deciphered register.",
+    "credits": [
+      {
+        "who": "noautopilot",
+        "role": "transcription",
+        "date": "2026-10-03",
+        "note": "two-pass transcription of R10181 and value ranges of the nine keys",
+        "source": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/aca-sanfelipe-duran-1718"
+      },
+      {
+        "who": "dudout",
+        "role": "identification",
+        "date": "2026-10-27",
+        "note": "the nine keys are for other correspondents; suggested an alphabetical word code of about 880 entries",
+        "source": "email to Daniel Bourdeau, 27 Oct 2026"
+      }
+    ]
+  }
+}
