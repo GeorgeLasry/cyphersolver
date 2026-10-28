@@ -64,7 +64,10 @@ def run(args):
     m = model(); rng = random.Random(seed); A = m.A
     base = np.array([TOKS.index(tuple(s)) for s in seq]); n = len(base)
     slips = np.zeros(n, dtype=np.int64)                     # -1, 0, +1 orientation slip per position
+    ARC = os.environ.get('DORA_SLIP') == 'arcs'          # slips in the arc count (1..3) instead of the orientation
     def reading(sl):
+        if ARC:
+            return np.array([(t // 3) * 3 + min(2, max(0, t % 3 + d)) for t, d in zip(base, sl)])
         return np.array([((t // 3 + d) % 8) * 3 + t % 3 for t, d in zip(base, sl)])
     if MODE == 'homo':
         key = np.array([rng.randrange(A) for _ in range(24)])
@@ -131,7 +134,11 @@ def make_controls(n_ctl, rng):
             key = {ch: cells[i % 24] for i, ch in enumerate(letters)}
             sg = [key[ch] for ch in pt]
             for q in rng.sample(range(87), K):
-                o, a = sg[q]; sg[q] = ((o + rng.choice((-1, 1))) % 8, a)
+                o, a = sg[q]
+                if os.environ.get('DORA_SLIP') == 'arcs':
+                    sg[q] = (o, 1 if a != 1 else rng.choice((0, 2)))      # a neighbouring arc count
+                else:
+                    sg[q] = ((o + rng.choice((-1, 1))) % 8, a)
         out.append((sg, pt))
     return out
 
