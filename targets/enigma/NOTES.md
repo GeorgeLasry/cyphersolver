@@ -107,3 +107,11 @@ therefore left Himmler's own headquarters train and was relayed by teleprinter (
 - Left-wheel step variants (kleft 0..3), the 92-letter variant, UKW C: later passes if main97 is empty.
 - Historical: the recipient's copy (OKW) or the sender's file (BA-MA RH 19 XIV, OB Oberrhein) could hold the clear text;
   "Karpathen" was the cover name of the signals station of Himmler's headquarters (his command train / Triberg).
+
+## 28 Oct 2026: issue #182 (AyushAg1002), alphabet-sequence bias
+
+The 97 letters contain 15 pairs of consecutive alphabet letters (HI, QR, AB, QR, RS, KL, LM, EF, AB, BC, AB, PQ, QR,
+TU, UV); a random text gives 3.7. Recounted here: 15 (14-15 under the other readings of the doubtful glyphs), shuffle
+test p about 5e-06, uniform-letter test p about 1e-05. The count itself holds; his reading (human-made letters, not
+Enigma) is an inference, and his 17 controls were not re-run. Possible explanations still to separate: a hand-made
+or tampered form, a copying habit in the transcription, or a non-Enigma system. Worth checking on the form image.

@@ -37,8 +37,8 @@ lines, on vol. 7 frames 0020-0023 (19 May), 0027-0028, 0068, 0073, 0115, 0124, 0
 frame goes with which despatch, beyond 19 May and 1839, has not been checked here.
 
 Brackx's transcriptions of all 36 coded pages (about 4,100 groups), his reading of 19 May, his values for Ellis and
-his scripts are in his gist (https://gist.github.com/brackxm/541493ba267c2a224b8ff5006215bc38, revision of
-27 Oct 2026). They are not copied here until he agrees to the project licence (asked on issue #120, 27 Oct).
+his scripts are copied unchanged into `brackx/` (from his gist, revision a98948e7db62 of 27 Oct 2026; he agreed to
+the project licence on issue #120, CC BY 4.0 for text and data, MIT for code, with credit).
 
 ### What the decode gives (measured)
 

@@ -80,18 +80,21 @@ disfavour upon him.*
 - **Agrees with Brackx** on lines 1-2 (*Will der Kayser bericht werden, dass der Hertzog von Braun[schweig]*) and on
   *gantz*, *Ihr Mayt.* and *haben.*
 - **Firm:** lines 1, 3, 7, 8 and most of 2, 4, 5. *Ungnad* is `augeuvq` (written *ungnad* with *u/n* swapped).
-- **Open:** the noun after *öffentlichen* (`ſoqqoju`, reflected *ſoddaln*; a word for a woman is expected, and
-  *Zotteln* would fit the sense but not the *dd*), line 6 `eqou`, `gacſſoa` (*grosser*?), `ſi ſeſſou` (*so dessen*?),
-  and `ſel` in line 2 (*sol*?).
+- **Open words settled 28 Oct 2026 (Brackx, #128; image 400 re-checked here for line 6):** line 2 `ſel` = *sol*; line 4
+  `ſoqqoju` = probably *Zoddeln* (*Zotteln*, a loose woman; Grimm *Zotte* 4; first letter tentative); line 6 `gacſſok`
+  = *grösser* (two dots over the third letter); `ſi ſeſſou` = *so sollen* (the tall strokes are turned *ll*). Line 6
+  `eqou` is still open: as written it is *oden*; *oben* if the *q* is a slip for *p*. Checked here: line 6 flipped reads
+  *oden* as written, the sentence needs *oben*.
 - **Context:** Heinrich Julius of Brunswick-Wolfenbüttel lived at Rudolf II's court in Prague from 1607 and
   died there in 1613. Not checked against the literature for a house bought for a mistress or a fall from favour
   in late 1611.
-- **Measured** (`docs/_check_reading.py --file`): 50 words, hole rate 0.14, 2 of 5 sentences clean. By the read bar the slip is
-  *decoded, not read* until the five open words are settled; the sense of the whole is clear.
+- **Measured** (`docs/_check_reading.py --file`, 28 Oct 2026): 49 words, hole rate 0.08, 4 of 5 sentences clean.
+  Two words stay tentative (*Zoddeln*, *oben*); by the read bar the slip is *decoded, not read* until a reader
+  reviews the sentences.
 
 ## Remaining gaps
 
-- Nov 1611 slip: five words open (the noun after *öffentlichen*; line 6 `eqou`, `gacſſoa`, `ſi ſeſſou`; line 2 `ſel`) - blocker: illegible; the letter forms are ambiguous once reflected at 2499 px, the archive's largest size. Brackx's reading (asked for on #128) or a sharper image would settle them; the historical literature on Heinrich Julius in Prague, 1611, may name the woman or the house
+- Nov 1611 slip: two words tentative (*Zoddeln*, *oben*) - blocker: illegible; the letter forms are ambiguous once reflected at 2499 px, the archive's largest size; the historical literature on Heinrich Julius in Prague, 1611, may name the woman or the house
 - 1610 letters: the contemporary decipherments not transcribed here or checked against the cipher lines - blocker: not-attempted; workable from the images
 - Whether any letter uses the prince's table or the slip key: Nr. 2 Bd. III-IV, Nr. 5-6 and Nr. 1 Bd. III image 80 not searched - blocker: not-attempted
 
@@ -111,3 +114,5 @@ disfavour upon him.*
 - 27 Oct 2026: images 6, 241, 400 fetched and checked here; slip line 1 agrees. Catalogue 597 rewritten; folder
   opened; reply on the issue asking for the reflection script, key transcriptions and his slip reading.
 - 27 Oct 2026: slip transcribed and decoded here (texts/slip1611_*); five words open.
+- 28 Oct 2026: Brackx answered the five open words and allowed the reflection script, key transcriptions and notes to be copied
+  (CC BY 4.0 / MIT, with credit); no files posted yet. Reading updated, 4 of 5 sentences clean.

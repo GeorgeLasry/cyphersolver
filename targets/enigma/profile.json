@@ -70,7 +70,8 @@
   {"date": "2026-09-16", "kind": "hypothesis", "technique": ["key matching"], "what": "Kenngruppe question: decrypting the Huppenkothen 1945 message with its published key from the first group shows no discriminant group, so all 97 letters are ciphertext.", "result": "worked"},
   {"date": "2026-09-16", "kind": "control", "what": "Calibrated the climber on real 1945 ciphertext and 40 synthetic 97-letter texts: 67 % with E-starts, 81-86 % with N-starts and ILS; failures are low-IC plaintexts at the unicity edge.", "result": "worked"},
   {"date": "2026-09-16", "kind": "verification", "what": "Indicator check (analyze.py) validated on Huppenkothen parts 1-3: returns the published rings and message keys.", "result": "worked"},
-  {"date": "2026-09-16", "kind": "solver", "technique": ["exhaustive search"], "what": "Exhaustive pass main97: Enigma I, UKW B, no left step, 60 wheel orders x 17,576 x 26 locations; 32 of 60 orders completed before interruption on 17 Sept, no convincing plaintext.", "result": "failed"}
+  {"date": "2026-09-16", "kind": "solver", "technique": ["exhaustive search"], "what": "Exhaustive pass main97: Enigma I, UKW B, no left step, 60 wheel orders x 17,576 x 26 locations; 32 of 60 orders completed before interruption on 17 Sept, no convincing plaintext.", "result": "failed"},
+  {"date": "2026-10-28", "kind": "hypothesis", "technique": ["statistical test"], "what": "Issue #182 (AyushAg1002, AI-assisted): the 97 letters hold 15 alphabet-ascending adjacent pairs (HI QR AB QR RS KL LM EF AB BC AB PQ QR TU UV) against 3.7 expected; he suggests the form is human-made rather than Enigma output. Recounted here: 15 pairs, 14-15 under the alternative readings of three doubtful glyphs; shuffle test p about 5e-06, uniform-letter test p about 1e-05. His 17 control messages (48 ascending pairs in 1,255 letters) were not re-run.", "result": "partial"}
  ],
  "outcome": {
   "method": "not solved",
