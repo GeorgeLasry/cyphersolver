@@ -40,7 +40,7 @@
 </div>
 
 <section class="hero solve">
-  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 681 · class A · priority 8.0 · open</p>
+  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 681 · class A · priority 8.0 · in progress</p>
   <h1>Lt. Gen. Richard Taylor (Dept. of Alabama, Mississippi and East Louisiana) → Maury, S. D. Lee, Forrest and others: telegram letter-books with Confederate Vigenère passages copied in cipher only</h1>
   <p class="sub">A set of Confederate field ciphers from the last months of the war (Mobile campaign, Wilson's raid) that a known key reads, with the clear sense of each telegram in the same book: a quick, verifiable reading and a test set for Confederate key usage (which key, and when the change was made).</p>
   <dl class="facts">
@@ -54,6 +54,7 @@
 </section>
 
 <main>
+<div class="callout blue"><p><strong>In progress here.</strong> <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/taylor1865/NOTES.md" rel="noopener">targets/taylor1865</a> is working on this cipher (status: in progress. Four telegrams of March-April 1865 are read from the NARA images with the known Confederate). Read its NOTES.md before you start, and hand it to your agent with this page: it records what was transcribed, tried and ruled out, and the next step.</p></div>
 <h2>Hand this page to your AI agent</h2>
 <p>Give your agent (Claude, ChatGPT or any assistant that can open web pages) this address and ask it to do the task on the page:</p>
 <p class="urlline">https://dbourdeau.github.io/cyphersolver/solve/681.html</p>
@@ -62,6 +63,10 @@
 This page: https://dbourdeau.github.io/cyphersolver/solve/681.html
 
 You are helping a public research project read historical cipher letters that nobody has read yet.
+
+START HERE: the project is already working on this cipher. Read these notes before anything else and
+build on them; they record what was transcribed, tried and ruled out, and the next step:
+  https://github.com/dbourdeau/cyphersolver/blob/main/targets/taylor1865/NOTES.md  (status: in progress. Four telegrams of March-April 1865 are read from the NARA images with the known Confederate)
 
 THE CIPHER
   Title:          Lt. Gen. Richard Taylor (Dept. of Alabama, Mississippi and East Louisiana) → Maury, S. D. Lee, Forrest and others: telegram letter-books with Confederate Vigenère passages copied in cipher only
@@ -77,11 +82,11 @@ THE CIPHER
 
 WHAT IS KNOWN
   Status: Not unsolved in the strict sense: the keys are the known Confederate ones. Frame 0061 transcribed from the image and read here with COME RETRIBUTION (Vigenère, key running through the cipher letters only): 'Telegraph in cipher what [cavalry you have on which side of bay, strength and name of commander] ... Direct [cavalry so keep close to enemy] as possible ... [keep in constant telegraphic communication with] Genl D W Adams ... indicate in cipher [what] ... you have decided upon [outside through which to communicate]'. On the OCR alone, runs in vol. 11 read with COME RETRIBUTION ('stores', 'will move westward', 'was evacuated by') and runs in vol. 10 read with COMPLETE VICTORY ('Genl Johnston this alone will restore confidence', 'renders the assignment'). The volumes carry the 'War Records COPIED' stamp, so the Official Records may print these telegrams, but whether OR printed the cipher words deciphered or left them out was not checked. Not on DECODE; known.py: no hit for Come Retribution, Taylor 1865 or Markoe. 27 Oct 2026 (WAINUT, PR #111; targets/taylor1865/, in progress): four telegrams of 12 and 30 Mar and 6 and 8 Apr 1865 read from the NARA images with COME RETRIBUTION; the 6 and 8 April ones are printed in clear in the OR. Frame 0061's "on each side of bay" and "[?west] point" confirmed.
-  Outcome so far: not yet attempted by the project
+  Outcome so far: In progress here, in targets/taylor1865/.
   Prior-art check: Keys known (Manchester Bluff / Complete Victory / Come Retribution); OR not checked (checked 27 Oct 2026: web search for the 12 Mar 1865 Taylor-Maury text gave no hit; Rosenbach Telegraphic History holds Maury-Taylor telegrams of Nov 1864-Feb 1865)
   Check first: Check OR Ser. I vol. 49 pt. 2 and vol. 45 pt. 2 for Taylor's telegrams of 12 Mar 1865 to Maury and to S. D. Lee (does OR give the cipher words in clear?). Then transcribe the capital runs from the images of vols. 10, 11 and 196 and decipher with vig.py.
   Class A: a sibling letter with a decipherment is in the same volume or series, so matching it is the first move.
-  Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/tree/main/targets/taylor1865
+  Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/taylor1865/NOTES.md
 
 STEPS
 0. Set up. If you can run a shell, fork and clone the repository and work inside it:
@@ -147,9 +152,9 @@ If you cannot open issues or pull requests, write this report for your human to 
 
 
 <p><b>Status and prior art.</b> Not unsolved in the strict sense: the keys are the known Confederate ones. Frame 0061 transcribed from the image and read here with COME RETRIBUTION (Vigenère, key running through the cipher letters only): 'Telegraph in cipher what [cavalry you have on which side of bay, strength and name of commander] ... Direct [cavalry so keep close to enemy] as possible ... [keep in constant telegraphic communication with] Genl D W Adams ... indicate in cipher [what] ... you have decided upon [outside through which to communicate]'. On the OCR alone, runs in vol. 11 read with COME RETRIBUTION ('stores', 'will move westward', 'was evacuated by') and runs in vol. 10 read with COMPLETE VICTORY ('Genl Johnston this alone will restore confidence', 'renders the assignment'). The volumes carry the 'War Records COPIED' stamp, so the Official Records may print these telegrams, but whether OR printed the cipher words deciphered or left them out was not checked. Not on DECODE; known.py: no hit for Come Retribution, Taylor 1865 or Markoe. 27 Oct 2026 (WAINUT, PR #111; targets/taylor1865/, in progress): four telegrams of 12 and 30 Mar and 6 and 8 Apr 1865 read from the NARA images with COME RETRIBUTION; the 6 and 8 April ones are printed in clear in the OR. Frame 0061's "on each side of bay" and "[?west] point" confirmed.</p>
-<p><b>Outcome so far.</b> Not yet attempted by the project. Prior-art check: Keys known (Manchester Bluff / Complete Victory / Come Retribution); OR not checked (checked 27 Oct 2026: web search for the 12 Mar 1865 Taylor-Maury text gave no hit; Rosenbach Telegraphic History holds Maury-Taylor telegrams of Nov 1864-Feb 1865).</p>
+<p><b>Outcome so far.</b> In progress here, in targets/taylor1865/. Prior-art check: Keys known (Manchester Bluff / Complete Victory / Come Retribution); OR not checked (checked 27 Oct 2026: web search for the 12 Mar 1865 Taylor-Maury text gave no hit; Rosenbach Telegraphic History holds Maury-Taylor telegrams of Nov 1864-Feb 1865).</p>
 <p><b>Check first.</b> Check OR Ser. I vol. 49 pt. 2 and vol. 45 pt. 2 for Taylor's telegrams of 12 Mar 1865 to Maury and to S. D. Lee (does OR give the cipher words in clear?). Then transcribe the capital runs from the images of vols. 10, 11 and 196 and decipher with vig.py.</p>
-<ul><li><a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/taylor1865" rel="noopener">targets/taylor1865</a> (NOTES.md: what was tried and ruled out)</li></ul>
+<ul><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/taylor1865/NOTES.md" rel="noopener">targets/taylor1865/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/taylor1865" rel="noopener">the folder</a>)</li></ul>
 
 
 <h2>Scores</h2>

@@ -40,7 +40,7 @@
 </div>
 
 <section class="hero solve">
-  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 674 · class C · priority 5.1 · open</p>
+  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 674 · class C · priority 5.1 · in progress</p>
   <h1>The "Tampico message": Riverbank reports it cannot solve it, 1917</h1>
   <p class="sub">Tampico was the centre of German agent activity against the Mexican oil fields in 1917; the message and the "undeciphered messages" reports are a list of what Friedman's first unit could not break.</p>
   <dl class="facts">
@@ -54,6 +54,7 @@
 </section>
 
 <main>
+<div class="callout blue"><p><strong>In progress here.</strong> <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/tampico1917/NOTES.md" rel="noopener">targets/tampico1917</a> is working on this cipher (status: in progress). Read its NOTES.md before you start, and hand it to your agent with this page: it records what was transcribed, tried and ruled out, and the next step.</p></div>
 <h2>Hand this page to your AI agent</h2>
 <p>Give your agent (Claude, ChatGPT or any assistant that can open web pages) this address and ask it to do the task on the page:</p>
 <p class="urlline">https://dbourdeau.github.io/cyphersolver/solve/674.html</p>
@@ -62,6 +63,10 @@
 This page: https://dbourdeau.github.io/cyphersolver/solve/674.html
 
 You are helping a public research project read historical cipher letters that nobody has read yet.
+
+START HERE: the project is already working on this cipher. Read these notes before anything else and
+build on them; they record what was transcribed, tried and ruled out, and the next step:
+  https://github.com/dbourdeau/cyphersolver/blob/main/targets/tampico1917/NOTES.md  (status: in progress)
 
 THE CIPHER
   Title:          The "Tampico message": Riverbank reports it cannot solve it, 1917
@@ -76,19 +81,20 @@ THE CIPHER
 
 WHAT IS KNOWN
   Status: The M912 index card (OCR of frame 0947) shows Riverbank reporting that it could not solve a message from Tampico, and sending monthly lists of undeciphered messages. The M1024 roll for files 10018-10049 (roll 310, naIds 267255625 + 267257126) was fetched and searched: frame 0051 is a withdrawal card, "File 10020 ... Transferred to: Military Information Division", so the file is in the MID correspondence (RG 165 entry 65), which is not digitised.
-  Outcome so far: not yet attempted by the project
+  Outcome so far: In progress here, in targets/tampico1917/.
   Prior-art check: open (checked 27 Oct 2026: repo known.py, nara_military + nara_catalog READMEs; no published reading found)
   Check first: Order MID file 10020 (RG 165 entry 65, MID correspondence 1917-41) from College Park, items 10020-41 to -64; check the Riverbank papers in the George C. Marshall Foundation Friedman collection for the same monthly reports.
   Class C: no key and no deciphered sibling is known, so expect a ciphertext-only attack.
+  Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/tampico1917/NOTES.md
 
 STEPS
 0. Set up. If you can run a shell, fork and clone the repository and work inside it:
      git clone https://github.com/dbourdeau/cyphersolver.git
    Then read, in this order: CONTRIBUTING.md (how a contribution is sent and credited); README.md, sections
-   "Repository layout" and "Conventions" (how readings are measured and named); and
-   lang/README.md (shared language models).
-   Put all your work in targets/&lt;writer&gt;&lt;year&gt;/ (a new folder, e.g. sega1593): transcription, key, decipherment, scripts. Write a NOTES.md that says
-   what the document is, the system, the key, the reading, and what is open and why. Keep WORKLOG.md there too:
+   "Repository layout" and "Conventions" (how readings are measured and named); targets/tampico1917/NOTES.md (everything
+   already tried on this cipher, with the files it used); and lang/README.md (shared language models).
+   Put all your work in targets/tampico1917/: transcription, key, decipherment, scripts. Add your findings to its NOTES.md
+   under a dated heading, without rewriting what is there. Keep WORKLOG.md there too:
    one dated line per step (transcription, hypothesis, solver run, crib, key found, control), failures included.
    Do not edit docs/ (the site is generated and rebuilt on merge) and do not commit large images: link them.
    If you cannot run a shell, do the same work in files you keep and send them with the issue below.
@@ -128,7 +134,7 @@ STEPS
      - not applicable: Not a cipher (clear text, shorthand, a key sheet, instructions), or the item could not be reached.
 
 REPORT BACK
-With a clone: open a pull request with your targets/&lt;writer&gt;&lt;year&gt;/ folder. Say in the description how you want to be
+With a clone: open a pull request with your targets/tampico1917/ folder. Say in the description how you want to be
   credited (name, initials or handle, and a link) and include the same points as the issue below.
 Without one: open an issue: https://github.com/dbourdeau/cyphersolver/issues/new?template=solution.yml&amp;title=Solution%3A+catalogue+674&amp;target=catalogue+674
 (other kinds of contribution: https://github.com/dbourdeau/cyphersolver/issues/new/choose). Include:
@@ -145,9 +151,9 @@ If you cannot open issues or pull requests, write this report for your human to 
 
 
 <p><b>Status and prior art.</b> The M912 index card (OCR of frame 0947) shows Riverbank reporting that it could not solve a message from Tampico, and sending monthly lists of undeciphered messages. The M1024 roll for files 10018-10049 (roll 310, naIds 267255625 + 267257126) was fetched and searched: frame 0051 is a withdrawal card, "File 10020 ... Transferred to: Military Information Division", so the file is in the MID correspondence (RG 165 entry 65), which is not digitised.</p>
-<p><b>Outcome so far.</b> Not yet attempted by the project. Prior-art check: open (checked 27 Oct 2026: repo known.py, nara_military + nara_catalog READMEs; no published reading found).</p>
+<p><b>Outcome so far.</b> In progress here, in targets/tampico1917/. Prior-art check: open (checked 27 Oct 2026: repo known.py, nara_military + nara_catalog READMEs; no published reading found).</p>
 <p><b>Check first.</b> Order MID file 10020 (RG 165 entry 65, MID correspondence 1917-41) from College Park, items 10020-41 to -64; check the Riverbank papers in the George C. Marshall Foundation Friedman collection for the same monthly reports.</p>
-
+<ul><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/tampico1917/NOTES.md" rel="noopener">targets/tampico1917/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/tampico1917" rel="noopener">the folder</a>)</li></ul>
 
 
 <h2>Scores</h2>

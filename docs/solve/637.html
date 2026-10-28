@@ -40,7 +40,7 @@
 </div>
 
 <section class="hero solve">
-  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 637 · class A · priority 8.0 · open</p>
+  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 637 · class A · priority 8.0 · in progress</p>
   <h1>John J. Appleton → John Quincy Adams, Cadiz, despatch with an 18-group coded passage on the Spanish liberal government's secret English loan, printed 'no decodification'</h1>
   <p class="sub">The Spanish constitutional government's secret plan to raise money in England in the last weeks of the Cortes at Cadiz (1823), told to the US chargé by the finance minister Yandiola; directly readable with a key this repository already holds.</p>
   <dl class="facts">
@@ -54,6 +54,7 @@
 </section>
 
 <main>
+<div class="callout blue"><p><strong>In progress here.</strong> <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/appleton1823/NOTES.md" rel="noopener">targets/appleton1823</a> is working on this cipher (status: in progress. Next step: look for more coded despatches on M31 reels 24-27 and read them with the same table (the retry step).). Read its NOTES.md before you start, and hand it to your agent with this page: it records what was transcribed, tried and ruled out, and the next step.</p></div>
 <h2>Hand this page to your AI agent</h2>
 <p>Give your agent (Claude, ChatGPT or any assistant that can open web pages) this address and ask it to do the task on the page:</p>
 <p class="urlline">https://dbourdeau.github.io/cyphersolver/solve/637.html</p>
@@ -62,6 +63,10 @@
 This page: https://dbourdeau.github.io/cyphersolver/solve/637.html
 
 You are helping a public research project read historical cipher letters that nobody has read yet.
+
+START HERE: the project is already working on this cipher. Read these notes before anything else and
+build on them; they record what was transcribed, tried and ruled out, and the next step:
+  https://github.com/dbourdeau/cyphersolver/blob/main/targets/appleton1823/NOTES.md  (status: in progress. Next step: look for more coded despatches on M31 reels 24-27 and read them with the same table (the retry step).)
 
 THE CIPHER
   Title:          John J. Appleton → John Quincy Adams, Cadiz, despatch with an 18-group coded passage on the Spanish liberal government's secret English loan, printed 'no decodification'
@@ -76,19 +81,20 @@ THE CIPHER
 
 WHAT IS KNOWN
   Status: Manning, Diplomatic Correspondence ... Independence of the Latin-American Nations (1925) vol. 3, doc. 1124, p. 2041, prints the groups with '[no decodification]'. The groups fit the code rebuilt in targets/jqa (the = 1385, of = 1576, that = 1384, and = 668; the London/St Petersburg code): with targets/jqa/code_table.tsv 16 of 18 groups take a value ('... of [794] that ... was [192] and that he had a part in England'). Not in the repo (known.py: Appleton no hits).
-  Outcome so far: not yet attempted by the project
+  Outcome so far: In progress here, in targets/appleton1823/.
   Prior-art check: open (checked 27 Oct 2026: Manning prints it undecoded; no other decoding found)
   Check first: Find the despatch on M31 reel 24 (naId 188609418, 329 frames), re-transcribe the 18 groups and decode with targets/jqa/code_table.tsv; check the other Appleton despatches of 1822-23 in the same volume for more code.
   Class A: a sibling letter with a decipherment is in the same volume or series, so matching it is the first move.
-  Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/tree/main/targets/jqa
+  Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/appleton1823/NOTES.md
+  Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/jqa/NOTES.md
 
 STEPS
 0. Set up. If you can run a shell, fork and clone the repository and work inside it:
      git clone https://github.com/dbourdeau/cyphersolver.git
    Then read, in this order: CONTRIBUTING.md (how a contribution is sent and credited); README.md, sections
-   "Repository layout" and "Conventions" (how readings are measured and named); targets/jqa/NOTES.md (everything
+   "Repository layout" and "Conventions" (how readings are measured and named); targets/appleton1823/NOTES.md (everything
    already tried on this cipher, with the files it used); and lang/README.md (shared language models).
-   Put all your work in targets/jqa/: transcription, key, decipherment, scripts. Add your findings to its NOTES.md
+   Put all your work in targets/appleton1823/: transcription, key, decipherment, scripts. Add your findings to its NOTES.md
    under a dated heading, without rewriting what is there. Keep WORKLOG.md there too:
    one dated line per step (transcription, hypothesis, solver run, crib, key found, control), failures included.
    Do not edit docs/ (the site is generated and rebuilt on merge) and do not commit large images: link them.
@@ -129,7 +135,7 @@ STEPS
      - not applicable: Not a cipher (clear text, shorthand, a key sheet, instructions), or the item could not be reached.
 
 REPORT BACK
-With a clone: open a pull request with your targets/jqa/ folder. Say in the description how you want to be
+With a clone: open a pull request with your targets/appleton1823/ folder. Say in the description how you want to be
   credited (name, initials or handle, and a link) and include the same points as the issue below.
 Without one: open an issue: https://github.com/dbourdeau/cyphersolver/issues/new?template=solution.yml&amp;title=Solution%3A+catalogue+637&amp;target=catalogue+637
 (other kinds of contribution: https://github.com/dbourdeau/cyphersolver/issues/new/choose). Include:
@@ -146,9 +152,9 @@ If you cannot open issues or pull requests, write this report for your human to 
 
 
 <p><b>Status and prior art.</b> Manning, Diplomatic Correspondence ... Independence of the Latin-American Nations (1925) vol. 3, doc. 1124, p. 2041, prints the groups with '[no decodification]'. The groups fit the code rebuilt in targets/jqa (the = 1385, of = 1576, that = 1384, and = 668; the London/St Petersburg code): with targets/jqa/code_table.tsv 16 of 18 groups take a value ('... of [794] that ... was [192] and that he had a part in England'). Not in the repo (known.py: Appleton no hits).</p>
-<p><b>Outcome so far.</b> Not yet attempted by the project. Prior-art check: open (checked 27 Oct 2026: Manning prints it undecoded; no other decoding found).</p>
+<p><b>Outcome so far.</b> In progress here, in targets/appleton1823/. Prior-art check: open (checked 27 Oct 2026: Manning prints it undecoded; no other decoding found).</p>
 <p><b>Check first.</b> Find the despatch on M31 reel 24 (naId 188609418, 329 frames), re-transcribe the 18 groups and decode with targets/jqa/code_table.tsv; check the other Appleton despatches of 1822-23 in the same volume for more code.</p>
-<ul><li><a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/jqa" rel="noopener">targets/jqa</a> (NOTES.md: what was tried and ruled out)</li></ul>
+<ul><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/appleton1823/NOTES.md" rel="noopener">targets/appleton1823/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/appleton1823" rel="noopener">the folder</a>)</li><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/jqa/NOTES.md" rel="noopener">targets/jqa/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/jqa" rel="noopener">the folder</a>)</li></ul>
 
 
 <h2>Scores</h2>

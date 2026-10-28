@@ -697,6 +697,13 @@ The builder is idempotent. It also regenerates the "At a glance" counts at the t
 on the index page is generated separately from [`docs/_queue.json`](docs/_queue.json) by `python _build_queue.py`,
 and the catalogue page from `catalogue.json` by `_catalogue_page.py`.
 
+A target folder that takes up a catalogue entry names it at the head of its NOTES.md, in the title or at the start of a
+line or sentence ("Unsolved Catalogue no. 450.", "Catalogue 450."). While the notes say `Status: in progress`, the
+build tags that entry *in progress* on the catalogue and its `solve/<id>.html` page, and points readers and agents at
+the notes ([`docs/_claims.py`](docs/_claims.py)). A mid-sentence mention ("then test X (catalogue 385)") is not a claim.
+When the work stops, the entry still needs its outcome from the writeup skill; `_check_writeup.py --audit`, section K,
+lists claimed entries that have neither.
+
 Two checkers keep the ledgers in step. `python docs/_check_writeup.py <slug>` lists every surface a finished target
 must reach (page, manifest, README row, ledgers, catalogue, DECODE queue) and prints `result: complete` when it has;
 `--audit` lists finished targets with no write-up and the drift between README, manifest and pages.

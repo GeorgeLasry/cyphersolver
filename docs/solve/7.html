@@ -40,7 +40,7 @@
 </div>
 
 <section class="hero solve">
-  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 7 · class C · priority 3.9 · attempted, open</p>
+  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 7 · class C · priority 3.9 · in progress</p>
   <h1>Hieronimo Ranzo (?) to 'Garbino', intercepted imperial letter</h1>
   <p class="sub">Five months after the Sack of Rome, during Lautrec's campaign in Italy.</p>
   <dl class="facts">
@@ -54,6 +54,7 @@
 </section>
 
 <main>
+<div class="callout blue"><p><strong>In progress here.</strong> <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ranzo1528/NOTES.md" rel="noopener">targets/ranzo1528</a> is working on this cipher (status: in progress (read in part 18 Oct 2026; left: check the 74 open groups of fr. 3022 no. 20 and the open codes of fr. 4050 and fr. 6638 against the images): key recovered from ciphertext-only by George Lasry with Claude Opus 5.5 and GPT-6 Astra (6 Oct 2026, on Norbert Biermann's transcription; contributed 14 Oct 2026, `lasry/`) and, independently, by Paolo Rosson with Claude (6 Oct 2026, on this project's transcription). Fr. 2988 (letters 1 and 2) and its copy fr. 20506 meet the read bar; fr. 3022 no. 20, fr. 4050 and fr. 6638 are read in part (measured 18 Oct 2026, below). This project's own annealer recovered only function words. Split from `targets/vasto1527/` on 14 Oct 2026.). Read its NOTES.md before you start, and hand it to your agent with this page: it records what was transcribed, tried and ruled out, and the next step.</p></div>
 <h2>Hand this page to your AI agent</h2>
 <p>Give your agent (Claude, ChatGPT or any assistant that can open web pages) this address and ask it to do the task on the page:</p>
 <p class="urlline">https://dbourdeau.github.io/cyphersolver/solve/7.html</p>
@@ -62,6 +63,10 @@
 This page: https://dbourdeau.github.io/cyphersolver/solve/7.html
 
 You are helping a public research project read historical cipher letters that nobody has read yet.
+
+START HERE: the project is already working on this cipher. Read these notes before anything else and
+build on them; they record what was transcribed, tried and ruled out, and the next step:
+  https://github.com/dbourdeau/cyphersolver/blob/main/targets/ranzo1528/NOTES.md  (status: in progress (read in part 18 Oct 2026; left: check the 74 open groups of fr. 3022 no. 20 and the open codes of fr. 4050 and fr. 6638 against the images): key recovered from ciphertext-only by George Lasry with Claude Opus 5.5 and GPT-6 Astra (6 Oct 2026, on Norbert Biermann's transcription; contributed 14 Oct 2026, `lasry/`) and, independently, by Paolo Rosson with Claude (6 Oct 2026, on this project's transcription). Fr. 2988 (letters 1 and 2) and its copy fr. 20506 meet the read bar; fr. 3022 no. 20, fr. 4050 and fr. 6638 are read in part (measured 18 Oct 2026, below). This project's own annealer recovered only function words. Split from `targets/vasto1527/` on 14 Oct 2026.)
 
 THE CIPHER
   Title:          Hieronimo Ranzo (?) to 'Garbino', intercepted imperial letter
@@ -77,19 +82,19 @@ WHAT IS KNOWN
   Known so far (checked 21 Oct 2026): No. 6 (del Vasto, Cipher 2) deciphered here with Lasry's key, 98.0% (vasto1527.html); no. 10 (Cipher 1) key recovered by Lasry 2023, read in part with Tomokiyo's text. No. 20: Ranzo's code key recovered from ciphertext only by George Lasry and, independently, Paolo Rosson (6 Oct 2026); no. 20 measured here at 94.4% (ranzo1528.html, PRs #35, #45).
   Still open: No. 20 (Garbino letter): 74 of 1,314 tokens, 27 groups with no value in either key and 47 tentative Lasry values Rosson's key does not confirm; both keys' readings still to be checked against the images of ff. 44r-46v. Blocker: open codes.
   History and prior art: The other two items first catalogued here (nos. 6 and 10, del Vasto to Charles V) are read: no. 10 by Lasry (2023) with Tomokiyo's edited text, no. 6 in targets/vasto1527/ (its own page since 14 Oct 2026). No. 20 is an Italian letter, Madrid 11 Apr 1528, to 'Garbino', in the same code as Hieronimo Ranzo's letters (fr. 2988). The code is initial letter + number with non-alphabetical numbering; ~3,900 groups are transcribed. The key was recovered from the ciphertext by George Lasry and, independently, by Paolo Rosson (6 Oct 2026; PRs #35, #45), and no. 20 measures 94.4% (targets/ranzo1528/, 18 Oct 2026), just under the read bar. No French decipherment exists; Clair. 327 ff. 279-280 is an undeciphered copy.
-  Outcome so far: attempted, open
+  Outcome so far: In progress here, in targets/ranzo1528/ (earlier: attempted, open).
   Check first: Look for Ranzo's key or a deciphered Ranzo letter (Simancas, Vienna HHStA) before any statistical attack.
   Class C: no key and no deciphered sibling is known, so expect a ciphertext-only attack.
-  Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/tree/main/targets/vasto1527
-  Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/tree/main/targets/ranzo1528
+  Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/ranzo1528/NOTES.md
+  Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/vasto1527/NOTES.md
 
 STEPS
 0. Set up. If you can run a shell, fork and clone the repository and work inside it:
      git clone https://github.com/dbourdeau/cyphersolver.git
    Then read, in this order: CONTRIBUTING.md (how a contribution is sent and credited); README.md, sections
-   "Repository layout" and "Conventions" (how readings are measured and named); targets/vasto1527/NOTES.md (everything
+   "Repository layout" and "Conventions" (how readings are measured and named); targets/ranzo1528/NOTES.md (everything
    already tried on this cipher, with the files it used); and lang/README.md (shared language models).
-   Put all your work in targets/vasto1527/: transcription, key, decipherment, scripts. Add your findings to its NOTES.md
+   Put all your work in targets/ranzo1528/: transcription, key, decipherment, scripts. Add your findings to its NOTES.md
    under a dated heading, without rewriting what is there. Keep WORKLOG.md there too:
    one dated line per step (transcription, hypothesis, solver run, crib, key found, control), failures included.
    Do not edit docs/ (the site is generated and rebuilt on merge) and do not commit large images: link them.
@@ -130,7 +135,7 @@ STEPS
      - not applicable: Not a cipher (clear text, shorthand, a key sheet, instructions), or the item could not be reached.
 
 REPORT BACK
-With a clone: open a pull request with your targets/vasto1527/ folder. Say in the description how you want to be
+With a clone: open a pull request with your targets/ranzo1528/ folder. Say in the description how you want to be
   credited (name, initials or handle, and a link) and include the same points as the issue below.
 Without one: open an issue: https://github.com/dbourdeau/cyphersolver/issues/new?template=solution.yml&amp;title=Solution%3A+catalogue+7&amp;target=catalogue+7
 (other kinds of contribution: https://github.com/dbourdeau/cyphersolver/issues/new/choose). Include:
@@ -147,9 +152,9 @@ If you cannot open issues or pull requests, write this report for your human to 
 <p class="ko"><i class="k">known</i> <span class="asof">checked 21 Oct 2026</span> No. 6 (del Vasto, Cipher 2) deciphered here with Lasry's key, 98.0% (vasto1527.html); no. 10 (Cipher 1) key recovered by Lasry 2023, read in part with Tomokiyo's text. No. 20: Ranzo's code key recovered from ciphertext only by George Lasry and, independently, Paolo Rosson (6 Oct 2026); no. 20 measured here at 94.4% (ranzo1528.html, PRs #35, #45).</p><p class="ko"><i class="o">open</i> No. 20 (Garbino letter): 74 of 1,314 tokens, 27 groups with no value in either key and 47 tentative Lasry values Rosson's key does not confirm; both keys' readings still to be checked against the images of ff. 44r-46v. Blocker: open codes.</p>
 <p><span class="ko"><i class="k">written up</i> <a href="ranzo1528.html" title="Hieronimo Ranzo's code: the letter to &quot;Garbino&quot;, Madrid, BnF fr. 3022 no. 20 ff. 44r–46v, and Ranzo's letters, fr. 2988 ff. 2, 9–10 (DECODE R1894), fr. 20506 ff. 136–138 (R4450, copy of ff. 9–10), fr. 3019 f. 73, fr. 4050 ff. 79–81, fr. 6638 pp. 67–70">ranzo1528</a> · <a href="vasto1527.html" title="Marquis del Vasto → Charles V, Rome, early Dec 1527, BnF fr. 3022 no. 6 ff. 16v–17v">vasto1527</a></span></p>
 <p><b>History and prior art.</b> The other two items first catalogued here (nos. 6 and 10, del Vasto to Charles V) are read: no. 10 by Lasry (2023) with Tomokiyo's edited text, no. 6 in targets/vasto1527/ (its own page since 14 Oct 2026). No. 20 is an Italian letter, Madrid 11 Apr 1528, to 'Garbino', in the same code as Hieronimo Ranzo's letters (fr. 2988). The code is initial letter + number with non-alphabetical numbering; ~3,900 groups are transcribed. The key was recovered from the ciphertext by George Lasry and, independently, by Paolo Rosson (6 Oct 2026; PRs #35, #45), and no. 20 measures 94.4% (targets/ranzo1528/, 18 Oct 2026), just under the read bar. No French decipherment exists; Clair. 327 ff. 279-280 is an undeciphered copy.</p>
-<p><b>Outcome so far.</b> attempted, open</p>
+<p><b>Outcome so far.</b> In progress here, in targets/ranzo1528/ (earlier: attempted, open).</p>
 <p><b>Check first.</b> Look for Ranzo's key or a deciphered Ranzo letter (Simancas, Vienna HHStA) before any statistical attack.</p>
-<ul><li><a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/vasto1527" rel="noopener">targets/vasto1527</a> (NOTES.md: what was tried and ruled out)</li><li><a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/ranzo1528" rel="noopener">targets/ranzo1528</a> (NOTES.md: what was tried and ruled out)</li></ul>
+<ul><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ranzo1528/NOTES.md" rel="noopener">targets/ranzo1528/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/ranzo1528" rel="noopener">the folder</a>)</li><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/vasto1527/NOTES.md" rel="noopener">targets/vasto1527/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/vasto1527" rel="noopener">the folder</a>)</li></ul>
 
 
 <h2>Scores</h2>

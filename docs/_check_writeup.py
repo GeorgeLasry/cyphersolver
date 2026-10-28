@@ -563,6 +563,17 @@ def audit(brief=False):
           f'(research/reading_audit/ holds the 22 Oct 2026 audit)')
     if not brief:
         for d in decoded: print(f'   decoded, not read: {d}/')
+    # 11. catalogue entries a target folder claims (_claims.py). The catalogue build tags the "in progress" ones; an
+    # entry whose claimants have all stopped needs the outcome the writeup skill sets ("attempted, open") or removal
+    import _claims
+    claims, entries = _claims.claims(), {e.get('id'): e for e in catalogue()}
+    stopped = [(n, cs) for n, cs in sorted(claims.items()) if n in entries and not entries[n].get('outcome') and not _claims.in_progress(cs)]
+    n_prog = sum(1 for n, cs in claims.items() if n in entries and _claims.in_progress(cs))
+    print(f'K. Catalogue entries worked here: {n_prog} tagged "in progress" from their folders\' NOTES; '
+          f'{len(stopped)} claimed by a folder no longer in progress but with no outcome (set "attempted, open" or remove the entry)')
+    for n, cs in stopped:
+        print(f'   #{n} {str(entries[n].get("title", ""))[:50]}  <- ' + ', '.join(f'targets/{f}/ ({st})' for f, st, _ in cs))
+    problems += len(stopped)
     return problems, gaps
 
 # ---------------------------------------------------------------------------
