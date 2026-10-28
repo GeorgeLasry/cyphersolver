@@ -1,5 +1,6 @@
 {
  "keys": [
+{"id": "k-portstemarie1729", "label": "Port Sainte-Marie agent code 1729 (rebuilt from glossed siblings)", "kind": "rebuilt here", "by": "cyphersolver", "year": 1729, "note": "One-part alphabetical French code, 379 values read off interlinear glosses in Huntington mssBLA 187-191."},
 {"id": "k-grandchiffre1812-shd", "label": "Grand Chiffre of 1812 (the Great Paris Cipher), deciphering table SHD B n° 30", "kind": "archive key", "by": "", "year": 1812, "note": "Repertory of 1,200 numbers for letters, syllables and words, extended to 1,400 with additions for Spain (1211 the Army of the Centre, 1214 the English army, 1300 Lord Wellington, 1383 the Tagus), several numbers for frequent words. The French deciphering table is at the Service historique de la Défense (B n° 30); photographs published by Jean-François Bouchaudy (jfbouch.fr/crypto/napoleon). Cells used for these letters read by Brice Dudout, 226 of them first for King Joseph’s letter of December 1812 (bdudout.github.io/joseph-napoleon): targets/marmont1812/key_1812_entries.tsv. Photographs not reproduced."},
 {"id": "k-dudout-albornoz-k1", "label": "Philip IV's royal cipher of 1644-45 for Albornoz (key K1), rebuilt by Brice Dudout", "kind": "scholar's key", "by": "Brice Dudout (with Claude)", "year": 1644, "note": "Syllabic cipher of the same kind with other values: letters for letters (a = c, c = n, f = r), numbered syllables in series of five (30-34 ma to mu), syllables written vowel first (ac = la, ap = sa). Rebuilt from AHNOB OSUNA,CT.2,D.16 (12 Dec 1644) against its plain copy of the time and tested on CT.2,D.20 (26 Jan 1645), transcribed before its plain copy was opened: 0.638 of letters against a p99 of 0.550; D.20 shifts the number series, so K1 is a family of keys (targets/albornoz1648/key_K1.tsv)."},
 {"id": "k-dudout-albornoz1648-k2", "label": "Cipher of the Albornoz embassy, 1648-49 (key K2), rebuilt by Brice Dudout", "kind": "scholar's key", "by": "Brice Dudout (with Claude)", "year": 1648, "note": "Syllabic cipher: syllables written with the consonant changed and the vowel kept (mo = co, ne = de, ra = sa, la = pa), numbers in series of five (35-39 la to lu, 45-49 ra to ru, 50-54 ta to tu), single letters (2 = n, e = n, n = s, m = r) and code signs (cross = que, sal = Su Santidad). Rebuilt from OSUNA,CT.11,D.1 (Luis de Haro to the Count of Penaranda, 25 Sept 1649, enciphered for Cardinal Albornoz) against its plain copy of the time, lines 1-12, frozen and tested on lines 13-23 (0.859 of letters; permuted keys p99 0.476); 29 values added on the 1648 letter (targets/albornoz1648/key_K2.tsv, key_K2b_additions.tsv)."},
@@ -2374,6 +2375,7 @@
 {"id": "k-poinsett1814", "label": "Poinsett's numbered code (the = 1355), values from the 1814 clerk's decipherment", "kind": "rebuilt here", "by": "", "year": 1813, "note": "95 values from the clerk's interlinear decipherment of Poinsett to Monroe, 14 June 1814 (NARA M37 roll 2 frame 0098); targets/poinsett1813/key_1814.tsv."}
  ],
  "links": [
+{"key": "k-portstemarie1729", "target": "portstemarie1729", "how": "rebuilt from", "note": "table from five glossed sibling letters, applied to the unglossed p. 5"},
 {"key": "k-grandchiffre1812-shd", "target": "marmont1812", "how": "read unchanged", "note": "cells read by Brice Dudout on Bouchaudy’s photographs and frozen before decoding; Jourdan to Soult (N.34, held out) 259 of 267 numbers with 8 restored from the sense, Marmont to Jourdan (N.73) about 85%"},
 {"key": "k-dudout-albornoz1648-k2", "target": "albornoz1648", "how": "rebuilt from", "note": "rebuilt from the 1649 Haro chapter in the same cipher and its plain copy (OSUNA,CT.11,D.1), tested on held-out lines; with 29 values added on the letter it deciphers 353 of the 359 groups of the 24 July 1648 letter"},
 {"key": "k-dudout-vilaflor1663", "target": "vilaflor1663", "how": "rebuilt from", "note": "recovered from the ciphertext of the 26 May letter, frozen and tested on the 13 May letter; deciphers all four letters of 13-26 May 1663"},
@@ -3794,6 +3796,7 @@
   }
  ],
  "source_links": [
+{"source": "s-cyphersolver", "key": "k-portstemarie1729"},
 {"source": "s-decode", "key": "k-r7501"},
 {"source": "s-cyphersolver", "key": "k-bernstorff-0075-1917"},
 {"source": "s-cyphersolver", "key": "k-hintze1903"},
