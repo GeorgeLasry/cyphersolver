@@ -40,7 +40,7 @@
 </div>
 
 <section class="hero solve">
-  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 207 · class A · priority 5.9 · attempted, open</p>
+  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 207 · class A · priority 5.9 · in progress</p>
   <h1>Riksarkivet key-box and Oxenstierna ciphers, 8 records (Bremen 1631, R4282, R4306 and Rusdorff 1625 read or partly read and removed)</h1>
   <p class="sub">One remaining key-box ciphertext that resisted a first attack, and Oxenstierna correspondence of 1628 and 1633 with a key collection that may hold their keys.</p>
   <dl class="facts">
@@ -54,6 +54,7 @@
 </section>
 
 <main>
+<div class="callout blue"><p><strong>In progress here.</strong> <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/oxenstierna1633/NOTES.md" rel="noopener">targets/oxenstierna1633</a> is working on this cipher (status: in progress — surveyed only; the codes and the interlinear decipherments of the time are not transcribed.). <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/riksarkivet4284/NOTES.md" rel="noopener">targets/riksarkivet4284</a> is working on this cipher (status: in progress (26 Oct 2026). **Key matched: DECODE R4325, the horizontal alphabet strip on I25940** (Dolly). <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/rusdorff1628/NOTES.md" rel="noopener">targets/rusdorff1628</a> is working on this cipher (status: in progress — surveyed only; nothing transcribed or attacked.). Read its NOTES.md before you start, and hand it to your agent with this page: it records what was transcribed, tried and ruled out, and the next step.</p></div>
 <h2>Hand this page to your AI agent</h2>
 <p>Give your agent (Claude, ChatGPT or any assistant that can open web pages) this address and ask it to do the task on the page:</p>
 <p class="urlline">https://dbourdeau.github.io/cyphersolver/solve/207.html</p>
@@ -62,6 +63,12 @@
 This page: https://dbourdeau.github.io/cyphersolver/solve/207.html
 
 You are helping a public research project read historical cipher letters that nobody has read yet.
+
+START HERE: the project is already working on this cipher. Read these notes before anything else and
+build on them; they record what was transcribed, tried and ruled out, and the next step:
+  https://github.com/dbourdeau/cyphersolver/blob/main/targets/oxenstierna1633/NOTES.md  (status: in progress — surveyed only; the codes and the interlinear decipherments of the time are not transcribed.)
+  https://github.com/dbourdeau/cyphersolver/blob/main/targets/riksarkivet4284/NOTES.md  (status: in progress (26 Oct 2026). **Key matched: DECODE R4325, the horizontal alphabet strip on I25940** (Dolly)
+  https://github.com/dbourdeau/cyphersolver/blob/main/targets/rusdorff1628/NOTES.md  (status: in progress — surveyed only; nothing transcribed or attacked.)
 
 THE CIPHER
   Title:          Riksarkivet key-box and Oxenstierna ciphers, 8 records (Bremen 1631, R4282, R4306 and Rusdorff 1625 read or partly read and removed)
@@ -80,19 +87,22 @@ WHAT IS KNOWN
   Known so far (checked 21 Oct 2026): Bremen letters of 1631 (R4330-R4331) deciphered in full here, key recovered from the interlinear glosses (riksarkivet1628). R4282 key recovered ciphertext-only by George Lasry (decode4282, PR #33). R4306 deciphered in part by George Lasry with CTTS and Opus 5.5, 17 Oct 2026 (sweden4306, PR #42); four code values open. R4336-R4337 (Rusdorff, London, Feb 1625) key recovered ciphertext-only by George Lasry with CTTS and Claude Opus 5.5, 21 Oct 2026 (rusdorff1625, PR #72); codes 628 and 701 open.
   Still open: R4284 (Latin, 1628, 822 groups): not deciphered; Latin annealing and two box keys failed (riksarkivet4284). R4333-R4335 (Rusdorff to Oxenstierna, 1628, rusdorff1628; not the 1625 key) and R4338-R4341 (Swedish, June 1633, glossed in part at the time, oxenstierna1633): surveyed only, not transcribed or attacked.
   History and prior art: DECODE R4284–R4341, 8 records in four different ciphers, each its own entry since the one-key split of 14 Oct 2026. Viewed 21 Sept 2026. The two Bremen letters of 1631 (R4330–R4331, riksarkivet1628.html) are read and removed from this entry; R4282 was deciphered by George Lasry (decode4282.html). R4306: contributed partial Dutch decipherment by George Lasry, transcribed with CTTS then solved with Opus 5.5 (17 Oct 2026; sweden4306.html, which also records this project's failed attempt of 21 Sept 2026); pencilled 1632? and Amsterdam attribution remain qualified, four code identities open. R4336–R4337 turned out to be Rusdorff's London letters of February 1625 in a homophonic cipher with an alphabetical nomenclator; key recovered from the ciphertext by George Lasry (21 Oct 2026, PR #72; rusdorff1625.html) and removed from this entry. Open: R4284 (Latin 1628, Camerarius docket; riksarkivet4284.html) — attacked with Latin annealing and against two box keys, not broken; R4333–R4335 (Rusdorff → Oxenstierna 1628, another cipher; rusdorff1628.html) and R4338–R4341 (E 708, Swedish, June 1633, not 1646; glossed in part at the time; oxenstierna1633.html) surveyed only.
-  Outcome so far: attempted, open
+  Outcome so far: In progress here, in targets/oxenstierna1633/ and targets/riksarkivet4284/ and targets/rusdorff1628/ (earlier: attempted, open).
   Check first: Fetch the images and the key record(s); test the key on the first lines.
   Class A: a sibling letter with a decipherment is in the same volume or series, so matching it is the first move.
+  Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/oxenstierna1633/NOTES.md
+  Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/riksarkivet4284/NOTES.md
+  Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/rusdorff1628/NOTES.md
   Related write-up: https://dbourdeau.github.io/cyphersolver/riksarkivet4284.html
 
 STEPS
 0. Set up. If you can run a shell, fork and clone the repository and work inside it:
      git clone https://github.com/dbourdeau/cyphersolver.git
    Then read, in this order: CONTRIBUTING.md (how a contribution is sent and credited); README.md, sections
-   "Repository layout" and "Conventions" (how readings are measured and named); and
-   lang/README.md (shared language models).
-   Put all your work in targets/&lt;writer&gt;&lt;year&gt;/ (a new folder, e.g. sega1593): transcription, key, decipherment, scripts. Write a NOTES.md that says
-   what the document is, the system, the key, the reading, and what is open and why. Keep WORKLOG.md there too:
+   "Repository layout" and "Conventions" (how readings are measured and named); targets/oxenstierna1633/NOTES.md (everything
+   already tried on this cipher, with the files it used); and lang/README.md (shared language models).
+   Put all your work in targets/oxenstierna1633/: transcription, key, decipherment, scripts. Add your findings to its NOTES.md
+   under a dated heading, without rewriting what is there. Keep WORKLOG.md there too:
    one dated line per step (transcription, hypothesis, solver run, crib, key found, control), failures included.
    Do not edit docs/ (the site is generated and rebuilt on merge) and do not commit large images: link them.
    If you cannot run a shell, do the same work in files you keep and send them with the issue below.
@@ -132,7 +142,7 @@ STEPS
      - not applicable: Not a cipher (clear text, shorthand, a key sheet, instructions), or the item could not be reached.
 
 REPORT BACK
-With a clone: open a pull request with your targets/&lt;writer&gt;&lt;year&gt;/ folder. Say in the description how you want to be
+With a clone: open a pull request with your targets/oxenstierna1633/ folder. Say in the description how you want to be
   credited (name, initials or handle, and a link) and include the same points as the issue below.
 Without one: open an issue: https://github.com/dbourdeau/cyphersolver/issues/new?template=solution.yml&amp;title=Solution%3A+catalogue+207&amp;target=catalogue+207
 (other kinds of contribution: https://github.com/dbourdeau/cyphersolver/issues/new/choose). Include:
@@ -149,9 +159,9 @@ If you cannot open issues or pull requests, write this report for your human to 
 <p class="ko"><i class="k">known</i> <span class="asof">checked 21 Oct 2026</span> Bremen letters of 1631 (R4330-R4331) deciphered in full here, key recovered from the interlinear glosses (riksarkivet1628). R4282 key recovered ciphertext-only by George Lasry (decode4282, PR #33). R4306 deciphered in part by George Lasry with CTTS and Opus 5.5, 17 Oct 2026 (sweden4306, PR #42); four code values open. R4336-R4337 (Rusdorff, London, Feb 1625) key recovered ciphertext-only by George Lasry with CTTS and Claude Opus 5.5, 21 Oct 2026 (rusdorff1625, PR #72); codes 628 and 701 open.</p><p class="ko"><i class="o">open</i> R4284 (Latin, 1628, 822 groups): not deciphered; Latin annealing and two box keys failed (riksarkivet4284). R4333-R4335 (Rusdorff to Oxenstierna, 1628, rusdorff1628; not the 1625 key) and R4338-R4341 (Swedish, June 1633, glossed in part at the time, oxenstierna1633): surveyed only, not transcribed or attacked.</p>
 <p><span class="ko"><i class="k">written up</i> <a href="rusdorff1625.html" title="J. J. von Rusdorff (London) → Axel Oxenstierna, three Latin letters, Riksarkivet, Oxenstierna af Södermöre Ser. B, E 701">rusdorff1625</a> · <a href="sweden4306.html" title="Riksarkivet R4306, Chifferklaver låda II:133; belongs to Riksarkivet key-box and Oxenstierna ciphers">sweden4306</a> · <a href="riksarkivet1628.html" title="Unknown sender → unknown recipient, undated Latin diplomatic letter, Riksarkivet, Stockholm, Chifferklaver låda II:113">riksarkivet1628</a> · <a href="riksarkivet4284.html" title="Unknown → Ludwig Camerarius? (docketed with his letters for 1628), Swedish and Latin numerical cipher, Riksarkivet Chifferklaver låda II:114">riksarkivet4284</a></span></p>
 <p><b>History and prior art.</b> DECODE R4284–R4341, 8 records in four different ciphers, each its own entry since the one-key split of 14 Oct 2026. Viewed 21 Sept 2026. The two Bremen letters of 1631 (R4330–R4331, riksarkivet1628.html) are read and removed from this entry; R4282 was deciphered by George Lasry (decode4282.html). R4306: contributed partial Dutch decipherment by George Lasry, transcribed with CTTS then solved with Opus 5.5 (17 Oct 2026; sweden4306.html, which also records this project's failed attempt of 21 Sept 2026); pencilled 1632? and Amsterdam attribution remain qualified, four code identities open. R4336–R4337 turned out to be Rusdorff's London letters of February 1625 in a homophonic cipher with an alphabetical nomenclator; key recovered from the ciphertext by George Lasry (21 Oct 2026, PR #72; rusdorff1625.html) and removed from this entry. Open: R4284 (Latin 1628, Camerarius docket; riksarkivet4284.html) — attacked with Latin annealing and against two box keys, not broken; R4333–R4335 (Rusdorff → Oxenstierna 1628, another cipher; rusdorff1628.html) and R4338–R4341 (E 708, Swedish, June 1633, not 1646; glossed in part at the time; oxenstierna1633.html) surveyed only.</p>
-<p><b>Outcome so far.</b> attempted, open</p>
+<p><b>Outcome so far.</b> In progress here, in targets/oxenstierna1633/ and targets/riksarkivet4284/ and targets/rusdorff1628/ (earlier: attempted, open).</p>
 <p><b>Check first.</b> Fetch the images and the key record(s); test the key on the first lines.</p>
-
+<ul><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/oxenstierna1633/NOTES.md" rel="noopener">targets/oxenstierna1633/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/oxenstierna1633" rel="noopener">the folder</a>)</li><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/riksarkivet4284/NOTES.md" rel="noopener">targets/riksarkivet4284/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/riksarkivet4284" rel="noopener">the folder</a>)</li><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/rusdorff1628/NOTES.md" rel="noopener">targets/rusdorff1628/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/rusdorff1628" rel="noopener">the folder</a>)</li></ul>
 <p>Related write-up: <a href="riksarkivet4284.html">riksarkivet4284.html</a></p>
 
 <h2>Scores</h2>

@@ -11,6 +11,7 @@ its "Also noted" list rewritten between <!-- table:start --> / <!-- table:end --
 """
 import json, html, pathlib, re, datetime
 import _methods as M
+import _claims
 
 HERE = pathlib.Path(__file__).parent
 ROOT = HERE.parent
@@ -204,6 +205,15 @@ def dots(v, cls=''):
 
 
 SOLVED = solved_map()
+# Target folders that name an entry at the head of their NOTES.md (_claims.py). A claimant whose Status is "in
+# progress" tags the entry "in progress" on the table and its page, whatever outcome catalogue.json carries: the
+# "attempted, open" tag only arrives when the writeup skill closes the target.
+CLAIMS = _claims.claims()
+
+
+def progress(e):
+    """The folders working on e now, as (folder, state, status line)."""
+    return _claims.in_progress(CLAIMS.get(e['id'], []))
 
 
 def parts_html(e):
@@ -228,7 +238,7 @@ CLASS_TEXT = {
 
 
 def short_outcome(e):
-    return (e.get('outcome') or 'open').split(':')[0]
+    return 'in progress' if progress(e) else (e.get('outcome') or 'open').split(':')[0]
 
 
 def solve_href(e):
@@ -238,7 +248,8 @@ def solve_href(e):
 def row(e):
     href = solve_href(e)
     seen = '<span class="seen img" title="viewed on the image">●</span>' if seen_image(e) else '<span class="seen cat" title="catalogue description only">◇</span>'
-    pill = f'<span class="pill{" att" if e.get("outcome") else ""}">{esc(short_outcome(e))}</span>'
+    tip = f' title="being worked in targets/{", targets/".join(f for f, _, _ in progress(e))}/"' if progress(e) else ''
+    pill = f'<span class="pill{" att" if e.get("outcome") or tip else ""}"{tip}>{esc(short_outcome(e))}</span>'
     if e.get('workable'): pill += '<span class="pill work" title="the key material exists (siblings, glosses); what is left is work, not an outside blocker">no outside blocker</span>'
     if e.get('access') == 'archive': pill += '<span class="pill arch" title="the ciphertext or the key material is not online; it needs the archive to digitise it or someone to photograph it">needs archive scans</span>'
     link = ''.join(f'<a href="{h}" rel="noopener">{esc(t)}</a>' if h else esc(t) for t, h in link_pairs(e)[:1])
@@ -263,7 +274,7 @@ CENTURIES = [('1400s', '1400s'), ('1500s', '1500s'), ('1600s', '1600s'), ('1700s
              ('1900s', '1900s'), ('undated', 'undated')]
 SOURCES = [('decode', 'DECODE'), ('sweep', 'archive sweeps'), ('cryptoole', 'Cryptoole'), ('bnf', 'BnF / Gallica'),
            ('print', 'print and literature'), ('contributed', 'sent in')]
-STATUSES = [('new', 'not attempted'), ('attempted', 'attempted here'), ('skipped', 'skipped')]
+STATUSES = [('new', 'not attempted'), ('progress', 'in progress here'), ('attempted', 'attempted here'), ('skipped', 'skipped')]
 ACCESS = [('workable', 'no outside blocker'), ('archive', 'needs archive scans')]
 CLASSES = [('A', 'A · sibling deciphered'), ('B', 'B · partial key known'), ('C', 'C · no key')]
 
@@ -303,7 +314,7 @@ def seen_image(e):
 def filter_keys(e):
     o = e.get('outcome') or ''
     return {'lang': lang_keys(e), 'century': century_key(e), 'region': e['region'], 'cls': e['cls'],
-            'status': 'skipped' if 'skipped' in o else 'attempted' if o.startswith('attempted') else 'new',
+            'status': 'progress' if progress(e) else 'skipped' if 'skipped' in o else 'attempted' if o.startswith('attempted') else 'new',
             'access': [k for k, on in (('workable', e.get('workable')), ('archive', e.get('access') == 'archive')) if on],
             'source': source_key(e), 'seen': 'image' if seen_image(e) else 'catalogue',
             'counted': 'counted' if e['counted'] else 'noted'}
@@ -343,8 +354,9 @@ def status_html(E):
     gone = sorted(set(SOLVED) - ids)
     part = sorted([e for e in E if (e.get('known') and not e['known'].startswith('Nothing')) or e['id'] in SOLVED], key=lambda e: e['id'])
     opn = sorted(E, key=lambda e: (-priority(e), e['id']))
-    n_blk = sum(1 for e in E if is_blocked(e))
-    n_att = sum(1 for e in E if (e.get('outcome') or '').startswith('attempted') and not is_blocked(e))
+    n_prog = sum(1 for e in E if progress(e))
+    n_blk = sum(1 for e in E if is_blocked(e) and not progress(e))
+    n_att = sum(1 for e in E if (e.get('outcome') or '').startswith('attempted') and not is_blocked(e) and not progress(e))
     prs = open_prs()
 
     def one(e, field):
@@ -367,7 +379,7 @@ def status_html(E):
 <details><summary>the {len(part)} open entries with known pieces</summary><ul class="sl">{"".join(one(e, "known") for e in part)}</ul></details>
 </div>
 <div class="scard"><h3>What is still unsolved</h3>
-<p><b>{len(E)}</b> entries are open ({sum(1 for e in E if e['counted'])} counted targets, the rest also noted): <b>{n_blk}</b> blocked from outside (no images online, an archive order needed, or no key known to exist), <b>{n_att}</b> attempted here without a decipherment, <b>{len(E) - n_blk - n_att}</b> not yet attempted. <b>{sum(1 for e in E if e.get('workable'))}</b> have their key material at hand and no outside blocker ({', '.join(f'<a href="{solve_href(e)}">no. {e["id"]}</a>' for e in E if e.get('workable'))}): good places to start.</p>
+<p><b>{len(E)}</b> entries are open ({sum(1 for e in E if e['counted'])} counted targets, the rest also noted): <b>{n_prog}</b> in progress here (a target folder is working on them; its notes are linked from the entry&rsquo;s page), <b>{n_blk}</b> blocked from outside (no images online, an archive order needed, or no key known to exist), <b>{n_att}</b> attempted here without a decipherment, <b>{len(E) - n_prog - n_blk - n_att}</b> not yet attempted. <b>{sum(1 for e in E if e.get('workable'))}</b> have their key material at hand and no outside blocker ({', '.join(f'<a href="{solve_href(e)}">no. {e["id"]}</a>' for e in E if e.get('workable'))}): good places to start.</p>
 <details><summary>the {len(E)} open entries, by priority, with what is still open</summary><ul class="sl">{"".join(one(e, "open") for e in opn)}</ul></details>
 </div>
 </div>
@@ -508,7 +520,7 @@ def build_html():
 <div style="overflow-x:auto"><table class="gone"><thead><tr><th>No.</th><th>Write-up</th><th>Outcome</th><th>Landed</th></tr></thead><tbody>{gone_rows}</tbody></table></div>
 
 <h2>About the catalogue</h2>
-<p>What is still in cipher in the digitised diplomatic volumes, and nobody has read. The first entries came from the French volumes on Gallica; the rest ({n_dec}) from the DECODE database, every ciphertext record it marks non-decrypted or partly decrypted, grouped into letters and series and checked against this repository's own targets and Tomokiyo's list. A sweep of 22 Sept 2026 added candidates for new solves and outside reads: DECODE records never classified, letters Tomokiyo calls undeciphered while naming a key, Gallica notices and the printed calendars. On 14 Oct 2026 open items were pulled from Satoru&rsquo;s <a href="https://cryptoole.satoru.net/" rel="noopener">Cryptoole</a> index and checked against the repository. {len(counted)} entries are counted targets, {len(E) - len(counted)} are noted only. Class <b>A</b> means siblings with decipherment in the same volume, <b>B</b> a partial key or known family in print, <b>C</b> no key and no sibling. Entries read, partly read, resolved or found already in print are taken out of the catalogue and written up; those attempted here without a reading stay, tagged <b>attempted, open</b>.</p>
+<p>What is still in cipher in the digitised diplomatic volumes, and nobody has read. The first entries came from the French volumes on Gallica; the rest ({n_dec}) from the DECODE database, every ciphertext record it marks non-decrypted or partly decrypted, grouped into letters and series and checked against this repository's own targets and Tomokiyo's list. A sweep of 22 Sept 2026 added candidates for new solves and outside reads: DECODE records never classified, letters Tomokiyo calls undeciphered while naming a key, Gallica notices and the printed calendars. On 14 Oct 2026 open items were pulled from Satoru&rsquo;s <a href="https://cryptoole.satoru.net/" rel="noopener">Cryptoole</a> index and checked against the repository. {len(counted)} entries are counted targets, {len(E) - len(counted)} are noted only. Class <b>A</b> means siblings with decipherment in the same volume, <b>B</b> a partial key or known family in print, <b>C</b> no key and no sibling. Entries read, partly read, resolved or found already in print are taken out of the catalogue and written up; those attempted here without a reading stay, tagged <b>attempted, open</b>. An entry a target folder is working on now is tagged <b>in progress</b>, read at each rebuild from the head of the folder&rsquo;s NOTES.md, and its page links those notes.</p>
 <p>Scores are judgements from catalogue descriptions and the literature, not from the leaves: {n_img} of {n_all} entries have been viewed on the image, and each page carries the check that would confirm it is open. Data: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/catalogue.json" rel="noopener">catalogue.json</a> · text: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/CATALOGUE.md" rel="noopener">CATALOGUE.md</a> · how to send a result: <a href="contribute.html">contribute</a>.</p>
 
 <h2>How the scores were set</h2>
@@ -527,9 +539,23 @@ def build_html():
 
 # ---------- one page per cipher: docs/solve/<id>.html ----------
 def target_folders(e):
-    """Repository folders named anywhere in the entry that exist on disk."""
-    found = dict.fromkeys(re.findall(r'targets/([\w-]+)', json.dumps(e, ensure_ascii=False)))
+    """Repository folders on the entry that exist on disk: those whose NOTES.md claims it (in progress first), then
+    any named in the entry's own text."""
+    claimed = sorted(CLAIMS.get(e['id'], []), key=lambda c: c[1] != 'in progress')
+    found = dict.fromkeys([f for f, _, _ in claimed] + re.findall(r'targets/([\w-]+)', json.dumps(e, ensure_ascii=False)))
     return [f for f in found if (ROOT / 'targets' / f).is_dir()]
+
+
+def notes_url(f):
+    return f'{REPO}/blob/main/targets/{f}/NOTES.md'
+
+
+def outcome_text(e):
+    """What the project has done with e: in progress (and where), else the catalogue's outcome; '' for neither."""
+    prog = progress(e)
+    if not prog: return e.get('outcome') or ''
+    s = 'In progress here, in ' + ' and '.join(f'targets/{f}/' for f, _, _ in prog)
+    return s + (f' (earlier: {e["outcome"].rstrip(".")})' if e.get('outcome') else '') + '.'
 
 
 def issue_url(e, template='solution.yml'):
@@ -545,8 +571,13 @@ def agent_text(e):
              f'This page: {url}',
              '',
              'You are helping a public research project read historical cipher letters that nobody has read yet.',
-             '',
-             'THE CIPHER',
+             '']
+    if progress(e):
+        lines += ['START HERE: the project is already working on this cipher. Read these notes before anything else and',
+                  'build on them; they record what was transcribed, tried and ruled out, and the next step:']
+        lines += [f'  {notes_url(f)}  (status: {st})' for f, _, st in progress(e)]
+        lines.append('')
+    lines += ['THE CIPHER',
              f'  Title:          {e["title"]}',
              f'  Date:           {e["date"]}',
              f'  Correspondents: {e["correspondents"]}',
@@ -561,12 +592,12 @@ def agent_text(e):
     if e.get('known'):
         lines += [f'  Known so far (checked {fmt_day(e.get("as_of") or AS_OF)}): {e["known"]}', f'  Still open: {e["open"]}']
     lines += [f'  {"History and prior art" if e.get("known") else "Status"}: {e["status"]}',
-              f'  Outcome so far: {e.get("outcome") or "not yet attempted by the project"}']
+              f'  Outcome so far: {outcome_text(e) or "not yet attempted by the project"}']
     if e.get('prior_art'): lines.append(f'  Prior-art check: {e["prior_art"]}')
     lines.append(f'  Check first: {e["verify"]}')
     lines.append(f'  Class {e["cls"]}: {CLASS_TEXT.get(e["cls"], "")}.')
     for f in target_folders(e):
-        lines.append(f'  Project notes (read these before anything else; they record what was tried and ruled out): {REPO}/tree/main/targets/{f}')
+        lines.append(f'  Project notes (read these before anything else; they record what was tried and ruled out): {notes_url(f)}')
     if e.get('writeup'): lines.append(f'  Related write-up: {SITE}{e["writeup"]}')
     lang = e['language'] if e['language'] and e['language'] != 'unknown' else 'the expected language'
     folders = target_folders(e)
@@ -640,7 +671,12 @@ b.addEventListener('click',function(){var t=p.textContent;(navigator.clipboard?n
 def solve_page(e, shell):
     url = SITE + solve_href(e)
     links = ' · '.join(f'<a href="{h}" rel="noopener">{esc(t)}</a>' if h else esc(t) for t, h in link_pairs(e)) or '&mdash;'
-    folders = ''.join(f'<li><a href="{REPO}/tree/main/targets/{f}" rel="noopener">targets/{f}</a> (NOTES.md: what was tried and ruled out)</li>' for f in target_folders(e))
+    folders = ''.join(f'<li><a href="{notes_url(f)}" rel="noopener">targets/{f}/NOTES.md</a>: what was tried and ruled out '
+                      f'(<a href="{REPO}/tree/main/targets/{f}" rel="noopener">the folder</a>)</li>' for f in target_folders(e))
+    prog = ''.join(f' <a href="{notes_url(f)}" rel="noopener">targets/{f}</a> is working on this cipher (status: {esc(st)}).' for f, _, st in progress(e))
+    if prog:
+        prog = (f'<div class="callout blue"><p><strong>In progress here.</strong>{prog} Read its NOTES.md before you start, and hand it to '
+                f'your agent with this page: it records what was transcribed, tried and ruled out, and the next step.</p></div>\n')
     who = people_html(e)
     title = esc(e['title'])
     body = f'''<section class="hero solve">
@@ -658,7 +694,7 @@ def solve_page(e, shell):
 </section>
 
 <main>
-<h2>Hand this page to your AI agent</h2>
+{prog}<h2>Hand this page to your AI agent</h2>
 <p>Give your agent (Claude, ChatGPT or any assistant that can open web pages) this address and ask it to do the task on the page:</p>
 <p class="urlline">{url}</p>
 <p>Or copy the block below into the chat. It is the whole task: what the cipher is, where the images are, what has been tried, the steps, and how to report back.</p>
@@ -668,7 +704,7 @@ def solve_page(e, shell):
 {(f'<p class="ko"><i class="k">known</i> <span class="asof">checked {fmt_day(e.get("as_of") or AS_OF)}</span> {esc(e["known"])}</p><p class="ko"><i class="o">open</i> {esc(e["open"])}</p>') if e.get("known") else ''}
 {f'<p>{parts_html(e)}</p>' if parts_html(e) else ''}
 <p><b>{"History and prior art" if e.get("known") else "Status and prior art"}.</b> {esc(e["status"])}</p>
-<p><b>Outcome so far.</b> {esc(e.get("outcome") or "Not yet attempted by the project.")}{(" Prior-art check: " + esc(e["prior_art"]) + ".") if e.get("prior_art") else ""}</p>
+<p><b>Outcome so far.</b> {esc(outcome_text(e) or "Not yet attempted by the project.")}{(" Prior-art check: " + esc(e["prior_art"]) + ".") if e.get("prior_art") else ""}</p>
 <p><b>Check first.</b> {esc(e["verify"])}</p>
 {f'<ul>{folders}</ul>' if folders else ''}
 {f'<p>Related write-up: <a href="{e["writeup"]}">{esc(e["writeup"])}</a></p>' if e.get("writeup") else ''}

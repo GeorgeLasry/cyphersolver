@@ -40,7 +40,7 @@
 </div>
 
 <section class="hero solve">
-  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 364 · class A · priority 5.0 · open</p>
+  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 364 · class A · priority 5.0 · in progress</p>
   <h1>Henri Clausse de Fleury to Villeroy, Soleure: ciphers marked 'non déchiffré' by Rott (BnF fr. 16026 f. 99 and pp. 130, 130bis)</h1>
   <p class="sub">French embassy to the Swiss under Henri III: a key that can be rebuilt from the online deciphered sibling, with four more deciphered letters in the same volume as the unread ones.</p>
   <dl class="facts">
@@ -54,6 +54,7 @@
 </section>
 
 <main>
+<div class="callout blue"><p><strong>In progress here.</strong> <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/fleury1585/NOTES.md" rel="noopener">targets/fleury1585</a> is working on this cipher (status: in progress (key rebuild from the f. 325 sibling; fr. 16026 not digitised).). Read its NOTES.md before you start, and hand it to your agent with this page: it records what was transcribed, tried and ruled out, and the next step.</p></div>
 <h2>Hand this page to your AI agent</h2>
 <p>Give your agent (Claude, ChatGPT or any assistant that can open web pages) this address and ask it to do the task on the page:</p>
 <p class="urlline">https://dbourdeau.github.io/cyphersolver/solve/364.html</p>
@@ -62,6 +63,10 @@
 This page: https://dbourdeau.github.io/cyphersolver/solve/364.html
 
 You are helping a public research project read historical cipher letters that nobody has read yet.
+
+START HERE: the project is already working on this cipher. Read these notes before anything else and
+build on them; they record what was transcribed, tried and ruled out, and the next step:
+  https://github.com/dbourdeau/cyphersolver/blob/main/targets/fleury1585/NOTES.md  (status: in progress (key rebuild from the f. 325 sibling; fr. 16026 not digitised).)
 
 THE CIPHER
   Title:          Henri Clausse de Fleury to Villeroy, Soleure: ciphers marked 'non déchiffré' by Rott (BnF fr. 16026 f. 99 and pp. 130, 130bis)
@@ -79,19 +84,20 @@ WHAT IS KNOWN
   Known so far (checked 22 Oct 2026): Siblings deciphered at the time (Colbert 427 f. 325, fr. 16026 f. 120, f. 126, p. 129). Brackx's tentative partial key from the f. 325v name group (17 signs: messieurs de Surich).
   Still open: fr. 16026 f. 99 and the undeciphered part of pp. 130–130bis; the key itself is not yet rebuilt.
   History and prior art: Reported by Michael Brackx (issue #82, 22 Oct 2026), from Rott, Inventaire sommaire I (1882) pp. 193–197. Rott marks only f. 99 and part of pp. 130–130bis 'non déchiffré'. Fr. 16026 is not digitised (Biblissima: numérisation indisponible); Colbert 427 is on Gallica. Rott vol. I could not be checked here (only the index volume is on archive.org; it confirms Fleury's embassy), and Gallica's bot check blocked a look at f. 325 on 22 Oct 2026. Not on DECODE or Cryptoole.
-  Outcome so far: not yet attempted by the project
+  Outcome so far: In progress here, in targets/fleury1585/.
   Prior-art check: open (checked 22 Oct 2026)
   Check first: Transcribe Colbert 427 f. 325 at full resolution and align it with its marginal decipherment to rebuild the key; request photographs of fr. 16026 f. 99, f. 120, f. 126, pp. 129–130bis and apply it.
   Class A: a sibling letter with a decipherment is in the same volume or series, so matching it is the first move.
+  Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/fleury1585/NOTES.md
 
 STEPS
 0. Set up. If you can run a shell, fork and clone the repository and work inside it:
      git clone https://github.com/dbourdeau/cyphersolver.git
    Then read, in this order: CONTRIBUTING.md (how a contribution is sent and credited); README.md, sections
-   "Repository layout" and "Conventions" (how readings are measured and named); and
-   lang/README.md (shared language models).
-   Put all your work in targets/&lt;writer&gt;&lt;year&gt;/ (a new folder, e.g. sega1593): transcription, key, decipherment, scripts. Write a NOTES.md that says
-   what the document is, the system, the key, the reading, and what is open and why. Keep WORKLOG.md there too:
+   "Repository layout" and "Conventions" (how readings are measured and named); targets/fleury1585/NOTES.md (everything
+   already tried on this cipher, with the files it used); and lang/README.md (shared language models).
+   Put all your work in targets/fleury1585/: transcription, key, decipherment, scripts. Add your findings to its NOTES.md
+   under a dated heading, without rewriting what is there. Keep WORKLOG.md there too:
    one dated line per step (transcription, hypothesis, solver run, crib, key found, control), failures included.
    Do not edit docs/ (the site is generated and rebuilt on merge) and do not commit large images: link them.
    If you cannot run a shell, do the same work in files you keep and send them with the issue below.
@@ -131,7 +137,7 @@ STEPS
      - not applicable: Not a cipher (clear text, shorthand, a key sheet, instructions), or the item could not be reached.
 
 REPORT BACK
-With a clone: open a pull request with your targets/&lt;writer&gt;&lt;year&gt;/ folder. Say in the description how you want to be
+With a clone: open a pull request with your targets/fleury1585/ folder. Say in the description how you want to be
   credited (name, initials or handle, and a link) and include the same points as the issue below.
 Without one: open an issue: https://github.com/dbourdeau/cyphersolver/issues/new?template=solution.yml&amp;title=Solution%3A+catalogue+364&amp;target=catalogue+364
 (other kinds of contribution: https://github.com/dbourdeau/cyphersolver/issues/new/choose). Include:
@@ -148,9 +154,9 @@ If you cannot open issues or pull requests, write this report for your human to 
 <p class="ko"><i class="k">known</i> <span class="asof">checked 22 Oct 2026</span> Siblings deciphered at the time (Colbert 427 f. 325, fr. 16026 f. 120, f. 126, p. 129). Brackx's tentative partial key from the f. 325v name group (17 signs: messieurs de Surich).</p><p class="ko"><i class="o">open</i> fr. 16026 f. 99 and the undeciphered part of pp. 130–130bis; the key itself is not yet rebuilt.</p>
 
 <p><b>History and prior art.</b> Reported by Michael Brackx (issue #82, 22 Oct 2026), from Rott, Inventaire sommaire I (1882) pp. 193–197. Rott marks only f. 99 and part of pp. 130–130bis 'non déchiffré'. Fr. 16026 is not digitised (Biblissima: numérisation indisponible); Colbert 427 is on Gallica. Rott vol. I could not be checked here (only the index volume is on archive.org; it confirms Fleury's embassy), and Gallica's bot check blocked a look at f. 325 on 22 Oct 2026. Not on DECODE or Cryptoole.</p>
-<p><b>Outcome so far.</b> Not yet attempted by the project. Prior-art check: open (checked 22 Oct 2026).</p>
+<p><b>Outcome so far.</b> In progress here, in targets/fleury1585/. Prior-art check: open (checked 22 Oct 2026).</p>
 <p><b>Check first.</b> Transcribe Colbert 427 f. 325 at full resolution and align it with its marginal decipherment to rebuild the key; request photographs of fr. 16026 f. 99, f. 120, f. 126, pp. 129–130bis and apply it.</p>
-
+<ul><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/fleury1585/NOTES.md" rel="noopener">targets/fleury1585/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/fleury1585" rel="noopener">the folder</a>)</li></ul>
 
 
 <h2>Scores</h2>

@@ -40,7 +40,7 @@
 </div>
 
 <section class="hero solve">
-  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 650 · class C · priority 5.0 · open</p>
+  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 650 · class C · priority 5.0 · in progress</p>
   <h1>Anthony Morris (US confidential agent at Cadiz/Madrid) → James Monroe, despatches largely in an unidentified State Department code (the = 285?)</h1>
   <p class="sub">Morris negotiated with Cevallos over Florida and seized ships in the last years of the Peninsular War; the coded passages are the confidential part of the only US channel to the Regency and to Ferdinand VII in 1813-15.</p>
   <dl class="facts">
@@ -54,6 +54,7 @@
 </section>
 
 <main>
+<div class="callout blue"><p><strong>In progress here.</strong> <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morris1813/NOTES.md" rel="noopener">targets/morris1813</a> is working on this cipher (status: in progress. Next step: transcribe the other coded frames, give frame 0039 a second reading, then the print search (Manning vol. 3, Woolfley).). Read its NOTES.md before you start, and hand it to your agent with this page: it records what was transcribed, tried and ruled out, and the next step.</p></div>
 <h2>Hand this page to your AI agent</h2>
 <p>Give your agent (Claude, ChatGPT or any assistant that can open web pages) this address and ask it to do the task on the page:</p>
 <p class="urlline">https://dbourdeau.github.io/cyphersolver/solve/650.html</p>
@@ -62,6 +63,10 @@
 This page: https://dbourdeau.github.io/cyphersolver/solve/650.html
 
 You are helping a public research project read historical cipher letters that nobody has read yet.
+
+START HERE: the project is already working on this cipher. Read these notes before anything else and
+build on them; they record what was transcribed, tried and ruled out, and the next step:
+  https://github.com/dbourdeau/cyphersolver/blob/main/targets/morris1813/NOTES.md  (status: in progress. Next step: transcribe the other coded frames, give frame 0039 a second reading, then the print search (Manning vol. 3, Woolfley).)
 
 THE CIPHER
   Title:          Anthony Morris (US confidential agent at Cadiz/Madrid) → James Monroe, despatches largely in an unidentified State Department code (the = 285?)
@@ -76,19 +81,20 @@ THE CIPHER
 
 WHAT IS KNOWN
   Status: Frame 0039 viewed: page after page of numeric code with a few clear words ("would induce them to", "an offer was made by them", "the intention of holding it"), groups 1-1600 with marks (subscript 5/s, c, underline, arrow) as in the JQA-type syllabic codes; no interlinear decipherment, none in the OCR of the neighbouring frames. Signature groups do not match the JQA (the=1385), Armstrong (972), Pinckney (1651) or Code No. 11 tables; 285 and 76 are the most frequent groups. Not on DECODE; known.py: no hit.
-  Outcome so far: not yet attempted by the project
+  Outcome so far: In progress here, in targets/morris1813/.
   Prior-art check: open as far as checked (27 Oct 2026: web search found Woolfley 2013 on the mission, no mention of cipher; Founders has only his private letters to Madison)
   Check first: Check Woolfley, A Quaker Goes to Spain (2013), and Manning 1925 vol. 3 for printed decodes; look for a decipherment bound elsewhere in vol. 12; otherwise rebuild the code from the two copies and the clear-text islands (syllabic code of ~1,600 groups, partly alphabetical).
   Class C: no key and no deciphered sibling is known, so expect a ciphertext-only attack.
+  Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/morris1813/NOTES.md
 
 STEPS
 0. Set up. If you can run a shell, fork and clone the repository and work inside it:
      git clone https://github.com/dbourdeau/cyphersolver.git
    Then read, in this order: CONTRIBUTING.md (how a contribution is sent and credited); README.md, sections
-   "Repository layout" and "Conventions" (how readings are measured and named); and
-   lang/README.md (shared language models).
-   Put all your work in targets/&lt;writer&gt;&lt;year&gt;/ (a new folder, e.g. sega1593): transcription, key, decipherment, scripts. Write a NOTES.md that says
-   what the document is, the system, the key, the reading, and what is open and why. Keep WORKLOG.md there too:
+   "Repository layout" and "Conventions" (how readings are measured and named); targets/morris1813/NOTES.md (everything
+   already tried on this cipher, with the files it used); and lang/README.md (shared language models).
+   Put all your work in targets/morris1813/: transcription, key, decipherment, scripts. Add your findings to its NOTES.md
+   under a dated heading, without rewriting what is there. Keep WORKLOG.md there too:
    one dated line per step (transcription, hypothesis, solver run, crib, key found, control), failures included.
    Do not edit docs/ (the site is generated and rebuilt on merge) and do not commit large images: link them.
    If you cannot run a shell, do the same work in files you keep and send them with the issue below.
@@ -128,7 +134,7 @@ STEPS
      - not applicable: Not a cipher (clear text, shorthand, a key sheet, instructions), or the item could not be reached.
 
 REPORT BACK
-With a clone: open a pull request with your targets/&lt;writer&gt;&lt;year&gt;/ folder. Say in the description how you want to be
+With a clone: open a pull request with your targets/morris1813/ folder. Say in the description how you want to be
   credited (name, initials or handle, and a link) and include the same points as the issue below.
 Without one: open an issue: https://github.com/dbourdeau/cyphersolver/issues/new?template=solution.yml&amp;title=Solution%3A+catalogue+650&amp;target=catalogue+650
 (other kinds of contribution: https://github.com/dbourdeau/cyphersolver/issues/new/choose). Include:
@@ -145,9 +151,9 @@ If you cannot open issues or pull requests, write this report for your human to 
 
 
 <p><b>Status and prior art.</b> Frame 0039 viewed: page after page of numeric code with a few clear words ("would induce them to", "an offer was made by them", "the intention of holding it"), groups 1-1600 with marks (subscript 5/s, c, underline, arrow) as in the JQA-type syllabic codes; no interlinear decipherment, none in the OCR of the neighbouring frames. Signature groups do not match the JQA (the=1385), Armstrong (972), Pinckney (1651) or Code No. 11 tables; 285 and 76 are the most frequent groups. Not on DECODE; known.py: no hit.</p>
-<p><b>Outcome so far.</b> Not yet attempted by the project. Prior-art check: open as far as checked (27 Oct 2026: web search found Woolfley 2013 on the mission, no mention of cipher; Founders has only his private letters to Madison).</p>
+<p><b>Outcome so far.</b> In progress here, in targets/morris1813/. Prior-art check: open as far as checked (27 Oct 2026: web search found Woolfley 2013 on the mission, no mention of cipher; Founders has only his private letters to Madison).</p>
 <p><b>Check first.</b> Check Woolfley, A Quaker Goes to Spain (2013), and Manning 1925 vol. 3 for printed decodes; look for a decipherment bound elsewhere in vol. 12; otherwise rebuild the code from the two copies and the clear-text islands (syllabic code of ~1,600 groups, partly alphabetical).</p>
-
+<ul><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/morris1813/NOTES.md" rel="noopener">targets/morris1813/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/morris1813" rel="noopener">the folder</a>)</li></ul>
 
 
 <h2>Scores</h2>

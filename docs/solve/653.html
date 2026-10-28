@@ -40,7 +40,7 @@
 </div>
 
 <section class="hero solve">
-  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 653 · class B · priority 8.0 · open</p>
+  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 653 · class B · priority 8.0 · in progress</p>
   <h1>Powhatan Ellis → John Forsyth, Mexico City despatches in the JQA-type Department code on the Texas war and Mexican politics, pure code on the filmed copies</h1>
   <p class="sub">Coded reports from the US legation in Mexico during the Texas Revolution and the 1839 crisis, the confidential side of a relationship that led to war in 1846.</p>
   <dl class="facts">
@@ -54,6 +54,7 @@
 </section>
 
 <main>
+<div class="callout blue"><p><strong>In progress here.</strong> <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ellis1839/NOTES.md" rel="noopener">targets/ellis1839</a> is working on this cipher (status: in progress. To be merged with Michael Brackx's issue #120 material (1836-40 despatches) into one Ellis folder and written up then.). Read its NOTES.md before you start, and hand it to your agent with this page: it records what was transcribed, tried and ruled out, and the next step.</p></div>
 <h2>Hand this page to your AI agent</h2>
 <p>Give your agent (Claude, ChatGPT or any assistant that can open web pages) this address and ask it to do the task on the page:</p>
 <p class="urlline">https://dbourdeau.github.io/cyphersolver/solve/653.html</p>
@@ -62,6 +63,10 @@
 This page: https://dbourdeau.github.io/cyphersolver/solve/653.html
 
 You are helping a public research project read historical cipher letters that nobody has read yet.
+
+START HERE: the project is already working on this cipher. Read these notes before anything else and
+build on them; they record what was transcribed, tried and ruled out, and the next step:
+  https://github.com/dbourdeau/cyphersolver/blob/main/targets/ellis1839/NOTES.md  (status: in progress. To be merged with Michael Brackx's issue #120 material (1836-40 despatches) into one Ellis folder and written up then.)
 
 THE CIPHER
   Title:          Powhatan Ellis → John Forsyth, Mexico City despatches in the JQA-type Department code on the Texas war and Mexican politics, pure code on the filmed copies
@@ -77,20 +82,20 @@ THE CIPHER
 
 WHAT IS KNOWN
   Status: OCR only: no interlinear words on the coded frames. Trial decodes with targets/jqa/code_table.tsv read as sense: vol. 9 frame 0302 "a war with Texas ... under such circumstances will be decidedly popular ... the insurgents who were lately in arms against this government have either capitulated ... or have been dispersed"; vol. 7 frame 0015 "... the interior ... this movement ... the President ... a proclamation ... the party ...". Not on DECODE; known.py: no hit. 27 Oct 2026: Michael Brackx (issue #120) finds the despatches deciphered at the time (the Department's decipherments filmed with them, all but 26 Oct 1836); his 19 May 1836 decode reads 289/289 groups with the jqa table plus his Ellis values (fitted on that text). No. 9 of 1839 is in targets/ellis1839/ (WAINUT, PR #107); the two are to be merged into one Ellis folder and written up, after which this entry leaves the catalogue.
-  Outcome so far: not yet attempted by the project
+  Outcome so far: In progress here, in targets/ellis1839/.
   Prior-art check: unchecked: Manning Inter-American Affairs vol. 8 (1937) may print these decoded (it prints cipher passages in small capitals when a Department decipherment exists); not reachable 27 Oct 2026
   Check first: Check Manning, Diplomatic Correspondence ... Inter-American Affairs vol. 8 (Mexico 1831-48; HathiTrust, behind a bot check here) for printed decodes; if absent, transcribe from the frames and decode with targets/jqa/code_table.tsv.
   Class B: part of a key or a known cipher family of the same office is in print or on DECODE.
-  Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/tree/main/targets/jqa
-  Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/tree/main/targets/ellis1839
+  Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/ellis1839/NOTES.md
+  Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/jqa/NOTES.md
 
 STEPS
 0. Set up. If you can run a shell, fork and clone the repository and work inside it:
      git clone https://github.com/dbourdeau/cyphersolver.git
    Then read, in this order: CONTRIBUTING.md (how a contribution is sent and credited); README.md, sections
-   "Repository layout" and "Conventions" (how readings are measured and named); targets/jqa/NOTES.md (everything
+   "Repository layout" and "Conventions" (how readings are measured and named); targets/ellis1839/NOTES.md (everything
    already tried on this cipher, with the files it used); and lang/README.md (shared language models).
-   Put all your work in targets/jqa/: transcription, key, decipherment, scripts. Add your findings to its NOTES.md
+   Put all your work in targets/ellis1839/: transcription, key, decipherment, scripts. Add your findings to its NOTES.md
    under a dated heading, without rewriting what is there. Keep WORKLOG.md there too:
    one dated line per step (transcription, hypothesis, solver run, crib, key found, control), failures included.
    Do not edit docs/ (the site is generated and rebuilt on merge) and do not commit large images: link them.
@@ -131,7 +136,7 @@ STEPS
      - not applicable: Not a cipher (clear text, shorthand, a key sheet, instructions), or the item could not be reached.
 
 REPORT BACK
-With a clone: open a pull request with your targets/jqa/ folder. Say in the description how you want to be
+With a clone: open a pull request with your targets/ellis1839/ folder. Say in the description how you want to be
   credited (name, initials or handle, and a link) and include the same points as the issue below.
 Without one: open an issue: https://github.com/dbourdeau/cyphersolver/issues/new?template=solution.yml&amp;title=Solution%3A+catalogue+653&amp;target=catalogue+653
 (other kinds of contribution: https://github.com/dbourdeau/cyphersolver/issues/new/choose). Include:
@@ -148,9 +153,9 @@ If you cannot open issues or pull requests, write this report for your human to 
 
 
 <p><b>Status and prior art.</b> OCR only: no interlinear words on the coded frames. Trial decodes with targets/jqa/code_table.tsv read as sense: vol. 9 frame 0302 "a war with Texas ... under such circumstances will be decidedly popular ... the insurgents who were lately in arms against this government have either capitulated ... or have been dispersed"; vol. 7 frame 0015 "... the interior ... this movement ... the President ... a proclamation ... the party ...". Not on DECODE; known.py: no hit. 27 Oct 2026: Michael Brackx (issue #120) finds the despatches deciphered at the time (the Department's decipherments filmed with them, all but 26 Oct 1836); his 19 May 1836 decode reads 289/289 groups with the jqa table plus his Ellis values (fitted on that text). No. 9 of 1839 is in targets/ellis1839/ (WAINUT, PR #107); the two are to be merged into one Ellis folder and written up, after which this entry leaves the catalogue.</p>
-<p><b>Outcome so far.</b> Not yet attempted by the project. Prior-art check: unchecked: Manning Inter-American Affairs vol. 8 (1937) may print these decoded (it prints cipher passages in small capitals when a Department decipherment exists); not reachable 27 Oct 2026.</p>
+<p><b>Outcome so far.</b> In progress here, in targets/ellis1839/. Prior-art check: unchecked: Manning Inter-American Affairs vol. 8 (1937) may print these decoded (it prints cipher passages in small capitals when a Department decipherment exists); not reachable 27 Oct 2026.</p>
 <p><b>Check first.</b> Check Manning, Diplomatic Correspondence ... Inter-American Affairs vol. 8 (Mexico 1831-48; HathiTrust, behind a bot check here) for printed decodes; if absent, transcribe from the frames and decode with targets/jqa/code_table.tsv.</p>
-<ul><li><a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/jqa" rel="noopener">targets/jqa</a> (NOTES.md: what was tried and ruled out)</li><li><a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/ellis1839" rel="noopener">targets/ellis1839</a> (NOTES.md: what was tried and ruled out)</li></ul>
+<ul><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ellis1839/NOTES.md" rel="noopener">targets/ellis1839/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/ellis1839" rel="noopener">the folder</a>)</li><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/jqa/NOTES.md" rel="noopener">targets/jqa/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/jqa" rel="noopener">the folder</a>)</li></ul>
 
 
 <h2>Scores</h2>

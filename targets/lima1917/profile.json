@@ -5,7 +5,7 @@
  "documents": [
   {
    "id": "A",
-   "shelfmark": "NARA RG 59, Central Decimal File 1910-29, 862.20223, sub-nos. 4-99 (known only from M973 roll 207 purport list)",
+   "shelfmark": "NARA RG 59, Central Decimal File 1910-29, 862.20223, sub-nos. 4-99; filmed on M336 roll 64 (naId 574876562), frames c. 0048-0207",
    "date": "1917-06",
    "year": 1917,
    "country": "Peru",
@@ -26,8 +26,8 @@
    },
    "transcription": {
     "by": "llm from images",
-    "image_quality": "no images",
-    "notes": "Not digitised: the 862.20223 file is not among the scanned frames. Nothing transcribed."
+    "image_quality": "unknown",
+    "notes": "Scanned on M336 roll 64 (naId 574876562); found 27 Oct 2026, not yet transcribed or viewed (OCR only)."
    },
    "read": "not read"
   }
@@ -87,6 +87,12 @@
    "kind": "literature search",
    "what": "Web search on Lima/Perl/Room 40 1917 and on the file number 862.20223: no edition, decipherment or mention. FRUS 1917 Supp. and UK HW 7/ADM 137 not searched.",
    "result": "failed"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "access",
+   "what": "NARA bulk sweep slice J found the file scanned: M336 roll 64 (naId 574876562), frames c. 0048-0207. OCR shows 5-figure German code groups relayed by the US Legation, a Quito-Lima letter code (f.0104), London replies with substance (f.0207 verbatim) and two of one batch of six called undecipherable (f.0101). Not yet transcribed.",
+   "result": "worked"
   }
  ],
  "outcome": {

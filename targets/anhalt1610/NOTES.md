@@ -1,6 +1,7 @@
 # Johann von Alairt to Prince Johann Georg I of Anhalt-Dessau, Prague 1610-11: upside-down German, and an undeciphered slip of November 1611
 
-Status: in progress (the Nov 1611 slip is the open item; the 1610 letters were deciphered at the time).
+Status: in progress (the Nov 1611 slip decoded here, 27 Oct 2026, five words open; the 1610 letters were
+deciphered at the time and are not yet transcribed).
 
 Catalogue no. 597. Checked image by image by Michael Brackx (@brackxm, issue #128, 27 Oct 2026), with Claude Code.
 Three of his images were checked here the same day (Claude Code, Claude Opus 5.5).
@@ -60,16 +61,37 @@ Check here (27 Oct 2026): image 241 flipped top to bottom; the pale cipher lines
 docket *praes. Dessau den 23. Novemb. 1611*. Unsigned; filed among Alairt's Prague reports of November 1611. Same
 system.
 
-Line 1, as written: `Wxll qoa kvyſoa poXXyt weaqou, qvff qoa yoatz` (transcribed here from the image, provisional);
-read *Will der Kayser bericht werden, dass der Hertz-* (Brackx; agreed here). Line 2 continues *-og von
-Braun[schweig] ... zu ihm erfordert ...* (Brackx). The rest is read only in part (*gantz*, *Ihr Mayt.*, last line
-*haben.*). If *Kayser* and *Braunschweig* hold, the slip reports on Rudolf II and Duke Heinrich Julius of Brunswick,
-then at the imperial court.
+Read here by reflection, 27 Oct 2026 (Claude Opus 5.5), from the 2499-px archive image; per-line crops with the
+reflected line under the original in `img/L1.png`-`L8.png` (git-ignored). Files: `texts/slip1611_transcription.txt`
+(letters as written, 242 letter tokens measured including two marked deletions), `texts/slip1611_reading.txt`,
+`texts/slip1611_english.txt`.
+
+> Will der Kayser bericht werden, dass der Hertz- / og von Braunschweig [?sol] ain unordentlich / leben mit losen
+> Weibern haben soll, wie / er dann einer öffentlichen [?] ein / gantz Hauss gekauft unnd wei- / ter [?] [?grosser]
+> bawen lassen, [?so] [?] / Ir Mayt. die Ungnad auff ihne geworffen / haben.
+
+*The Emperor is to be informed that the Duke of Brunswick [is said to] lead a disorderly life with loose women, as
+indeed he bought a whole house for a public [?] and further had [?] built, [so that] His Majesty has cast his
+disfavour upon him.*
+
+- **How the letters go.** The writer is not consistent: *w* stays *w* in *werden*, *Weibern*, but *M* is written
+  as *W* in *Mayt.*; *t* and *f/k* look alike once turned (*gekauft* is written `gotvaſt`); *u* and *n* swap; *o* is
+  written for *e* and *e* for *o* (*losen* = `jeſou`); *g* is a ʒ-like hook or `c`; *a* is `v`, *r* is `a`.
+- **Agrees with Brackx** on lines 1-2 (*Will der Kayser bericht werden, dass der Hertzog von Braun[schweig]*) and on
+  *gantz*, *Ihr Mayt.* and *haben.*
+- **Firm:** lines 1, 3, 7, 8 and most of 2, 4, 5. *Ungnad* is `augeuvq` (written *ungnad* with *u/n* swapped).
+- **Open:** the noun after *öffentlichen* (`ſoqqoju`, reflected *ſoddaln*; a word for a woman is expected, and
+  *Zotteln* would fit the sense but not the *dd*), line 6 `eqou`, `gacſſoa` (*grosser*?), `ſi ſeſſou` (*so dessen*?),
+  and `ſel` in line 2 (*sol*?).
+- **Context:** Heinrich Julius of Brunswick-Wolfenbüttel lived at Rudolf II's court in Prague from 1607 and
+  died there in 1613. Not checked against the literature for a house bought for a mistress or a fall from favour
+  in late 1611.
+- **Measured** (`docs/_check_reading.py --file`): 50 words, hole rate 0.14, 2 of 5 sentences clean. By the read bar the slip is
+  *decoded, not read* until the five open words are settled; the sense of the whole is clear.
 
 ## Remaining gaps
 
-- Nov 1611 slip (Nr. 4 Bd. I image 400): eight lines not yet transcribed or read in full - blocker: not-attempted; workable now
-  from the image by reflection (asked Brackx for his reading and reflection script, issue #128, 27 Oct 2026)
+- Nov 1611 slip: five words open (the noun after *öffentlichen*; line 6 `eqou`, `gacſſoa`, `ſi ſeſſou`; line 2 `ſel`) - blocker: illegible; the letter forms are ambiguous once reflected at 2499 px, the archive's largest size. Brackx's reading (asked for on #128) or a sharper image would settle them; the historical literature on Heinrich Julius in Prague, 1611, may name the woman or the house
 - 1610 letters: the contemporary decipherments not transcribed here or checked against the cipher lines - blocker: not-attempted; workable from the images
 - Whether any letter uses the prince's table or the slip key: Nr. 2 Bd. III-IV, Nr. 5-6 and Nr. 1 Bd. III image 80 not searched - blocker: not-attempted
 
@@ -78,9 +100,9 @@ then at the imperial court.
 - [x] siblings: the whole Prague series searched for cipher (Brackx, ~2,280 images); seven deciphered 1610 letters
 - [ ] clear-pages: decipherments not yet transcribed or aligned with the cipher lines
 - [ ] known-keys: the system needs no key (reflection); the two keys stay unused
-- [ ] print: no edition of the Alairt reports searched for yet
+- [ ] print: no edition of the Alairt reports searched for yet; literature on Heinrich Julius's last years in Prague not yet checked for the house and the disfavour
 - [ ] key-rebuild: not needed
-- [ ] retry: the slip to be read
+- [x] retry: the slip read here by reflection, line by line, original over reflected crop (27 Oct 2026)
 
 ## Log
 
@@ -88,3 +110,4 @@ then at the imperial court.
   upside-down German, deciphered at the time; the Nov 1611 slip found undeciphered, first line read.
 - 27 Oct 2026: images 6, 241, 400 fetched and checked here; slip line 1 agrees. Catalogue 597 rewritten; folder
   opened; reply on the issue asking for the reflection script, key transcriptions and his slip reading.
+- 27 Oct 2026: slip transcribed and decoded here (texts/slip1611_*); five words open.

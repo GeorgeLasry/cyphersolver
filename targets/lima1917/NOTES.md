@@ -2,7 +2,8 @@
 
 Status: in progress
 
-Blocked on images: no ciphertext is available. Nothing below rests on a sight of a telegram.
+No longer blocked (27 Oct 2026): the file is scanned on M336 roll 64 (see below). Not yet transcribed; nothing below
+rests on a sight of a telegram, only on the catalogue OCR.
 
 ## The document
 
@@ -12,6 +13,14 @@ Blocked on images: no ciphertext is available. Nothing below rests on a sight of
   (copies of cipher code messages exchanged between German diplomatic officers); relays "for Bell from Harrison" to London.
 - London (Room 40 via the US Embassy) cabled back the substance of most batches; Lima 85 (9 Oct 1917) says some
   could not be deciphered.
+- **Scanned after all** (NARA bulk sweep slice J, `research/nara_triage_j/README.md`): 862.20223 is filmed on M336
+  roll 64, the RG 64 copy, item naId 574876562 (https://catalog.archives.gov/id/574876562), frames c. 0048-0207 and
+  later. From the OCR: the US Legation's relays of the German code telegrams (5-figure groups, mostly under c. 24000,
+  with some high groups); a letter code between Quito and Lima, "dobombobet fesafbefys ..." (f.0104); the Department's
+  re-sends "For Bell from Harrison" (f.0049-0050, 0053-0054, 0069, 0103, 0129-0130, 0132, 0204); London's replies
+  (f.0101 "Second undecipherable ... Fourth undecipherable"; f.0207 a verbatim English text); the Lima despatch of
+  6 June 1917 (f.0070-0072); Minister Handley's despatch of 9 Oct 1917 (f.0205, "in a code I could not decipher").
+  F.0845 (Valparaiso, June 1918): two Groothoff (Iquique) commercial telegrams in an altered ABC code.
 
 ## Prior art (checked 27 Oct 2026)
 
@@ -21,12 +30,13 @@ Peruvian histories of the neutrality period were not searched.
 
 ## Remaining gaps
 
-- All telegrams: needs-physical-access. The 862.20223 file is not among the scanned frames; no cipher text, no
-  system, no key material is accessible. Cannot be counted, transcribed or attacked.
+- All telegrams: not yet transcribed. The frames are online (M336 roll 64, naId 574876562); the next step is to view
+  f.0048-0207, transcribe each batch, and pair it with London's substance reply. The batches London called
+  undecipherable (f.0101) and the Quito letter code (f.0104) are the open part.
 
 ## Escalation
 
-- Siblings: the London "substance" telegrams are in the same file series (not scanned). Room 40 decrypts
+- Siblings: the London "substance" telegrams are in the same file (M336 roll 64), so they can serve as cribs. Room 40 decrypts
   (UK National Archives HW 7 / ADM 137) may hold the German texts: not checked online.
-- Next: ask NARA College Park whether 862.20223 is held and copyable; search the UK catalogue for Lima 1917 decrypts;
+- Next: transcribe M336 roll 64 f.0048-0207; search the UK catalogue for Lima 1917 decrypts;
   search FRUS 1917 Supp. 1 and the Peruvian literature.
