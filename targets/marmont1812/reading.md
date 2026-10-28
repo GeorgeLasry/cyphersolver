@@ -1,0 +1,11 @@
+# Jourdan to Soult, Madrid, 28 May 1812: established text (Spanish copy + French decipherment)
+
+Conventions: {x} = probable reading; [x] = restored from the sense; *italics* = plain text of the copy (contemporary Spanish translation); the deciphered passages are in French, the language of the original.
+
+*Madrid, 28 de mayo de 1812. A Mr. el Mariscal Duque de Dalmacia. Sr. Mariscal: El Rey acaba de recibir una carta del Sr. Mariscal Duque de Ragusa con fecha 26. Este Mariscal anuncia de una manera positiva que el Lord Wellington se halla al norte del Tajo con todo su ejército, excepto la división de Hill. Él sienta como cierto que sobre el día 8 todo el ejército inglés habrá hecho movimiento sobre el mismo. Ya dos divisiones han pasado el Duero, etc. Él continúa sobre Zamora a fin de apoyar al ejército de Galicia que se disponía a marchar adelante* le duc de Raguse a rappelé à lui la division {Foy}, de manière qu’il ne va plus rester dans la vallée du Tage que trois bataillons et environ huit cents chevaux de l’armée du Centre, sous les ordres du général Treillar[d].
+
+*El Rey está tanto más inclinado a creer que Mr. el Duque de Ragusa dice bien, cuanto parece cierto ser la división del Gral. Hill la que hace su expedición sobre el puente de Almaraz, y que se halla bien sostenida por otras tropas.*
+
+Vous sentez, monsieur le maréchal, que dans cette circonstance vous deve[z] renf[or]cer le corps du comte d’Er{lon} autant que cela vous sera possible, afin de le me{tt}re en état de [ba]{tt}re le corps du général Hill s’il reste sur la Guadiana. Si [au] contraire lord Wellington rappelle à lui le général Hill, alors le comte d’Er{lon} doit se porter sur Miravete et venir pas[ser] le Tage au pont de l’Arzobispo, pour co[u]vrir Madrid ou pour se porter sur le flan[c] droi{t} de l’armée anglaise, suivant les circonstances. Le passage du pont de l’Arzobispo *es difícil* pour l’artillerie, mais il n’est pas impraticable. Le général d’Er{lon} devroit me[ner] avec lui le moins *el equipaje posible. Es muy importante que este general se ponga en correspondencia* avec le général Treillar[d], qui va commander dans la vallée du Tage.
+
+*Yo os pido recibáis con agrado mi consideración a vuestra persona. El Mariscal del Imperio, Jefe del E. M. de S. M. C. = Jourdan.* *[paraphe : Monsalud]*
