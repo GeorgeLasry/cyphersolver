@@ -43,7 +43,9 @@ refused); region crops `.../pct:x,y,w,h/1800,/0/default.jpg`. Page lists:
 ## Cipher type and key hypotheses
 
 Numerical nomenclator of syllables and words, groups of 1 to 4 digits separated by dots, about 1 to 1370. It is
-**roughly alphabetical**: syllables first, then words, per letter. Evidence from `codetable.tsv`:
+**roughly alphabetical**: syllables first, then words, per letter. Test (`slotsearch.py`): 273 of 330 adjacent
+firm entries are in alphabetical order (82.7%) against 50.1% for shuffled orders, 20 sd above chance; the 57 breaks
+are block restarts. Evidence from `codetable.tsv`:
 208 comme, 217 concert, 224 confidence, 238 consideration, 242 continuation, 256 correspondance; 119 bi, 123 br;
 S block 1013 s, 1014 sa, 1017 se, 1018 ser, 1020 si, 1022 so, 1032 su, 1033 sur, then words 1038 sçavoi, 1041 secours
 ... 1097 succède; numerals 8 vingt, 11 cinquante, 16 cent, 17 mille, 1206 deux, 1207 trois, 1209 cinq, 1211 sept,
@@ -67,6 +69,9 @@ open groups (bracketed by `slots.py`, all [?]): 285 do, 1152 vos, 1210 six, 222 
 - Merging 735 and 737: both read "monsieur" but the digits are different in two hands; kept apart.
 - Reading 1210 and 6 as months or days without checking: 1210 sits between cinq and sept (so "six"); 689 + ar + s spells
   "mars", which does not fit a July date (the cover letter is 8 Aug): unresolved, see Open questions.
+- Promoting the slot candidates to values: the slot lists (`decryption/slot_candidates.txt`) fit the proposals
+  (vos at 1152, conduite at 222, comte/compte at 214, ordre at 805/816, bon at 122) but also many other words, so
+  they stay [?]. A slot search that ignores the lexicon's j = i, v = u folding returns empty lists (fixed).
 - `docs/_validate.py`: could not run here (Gutenberg unreachable); not a failure of the reading.
 - Clear pages: the 21 July letter (61003-61004, trade, galleons, Patiño) and the clear text of 14 July (60886) do not
   contain the report; 60886 only repeats the 14 July extracts.
@@ -82,6 +87,7 @@ open groups (bracketed by `slots.py`, all [?]): 285 do, 1152 vos, 1210 six, 222 
 | `decryption/report_61005_reading.txt` | the French reading, hand-made from the raw stream, holes in place |
 | `reading.py` | checks that reading against the raw stream between holes (consonant skeletons) |
 | `slots.py`, `decryption/open_groups_slots.txt` | brackets each open group between its nearest table neighbours |
+| `slotsearch.py`, `decryption/slot_candidates.txt` | order test of the alphabetical hypothesis (82.7% vs 50.1% shuffled) and, per open group, the commonest French words that sort in its slot (v = u, j = i); slots, not readings |
 | `validation.tsv` | token/reading pairs for `docs/_validate.py` (firm values only); test not yet run |
 | `profile.json` | the profile (valid); `WORKLOG.md` the step-by-step log |
 

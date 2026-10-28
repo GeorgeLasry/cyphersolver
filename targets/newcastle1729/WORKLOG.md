@@ -57,3 +57,15 @@ collection p15150coll7) and are not committed; page ids are given as HDL ids.
     Doubtful and left marked: 491 (r? for 941), 045 (res), 1015 (sans? for 1016), 701/594 under "ai-mo-oit".
 11. **Table rebuilt**: 365 groups, 996 glossed occurrences (337 grade H, 28 grade M). Report coverage 118 of
     141 groups (83.7%).
+12. **Handover save** (commits 840035d47, b3dee5036): profile completed, NOTES written, docs checker run
+    (INCOMPLETE, docs/ surfaces left to the maintainer).
+13. **Order test and slot search** (`slotsearch.py`, 28 Oct 2026, after the user asked to continue). 273 of 330
+    adjacent firm entries are in alphabetical order (82.7%) against 50.1% for shuffled orders (sd 5.4, max 184
+    of 200 shuffles): the table is roughly alphabetical, 20 sd above chance; the 57 breaks are block restarts
+    (syllables then words, e.g. 36 at -> 42 accepte, 797 ont -> 807 obstin, 1114 tout -> 1121 tache). First run
+    gave empty slots for v-words and out-of-order neighbours because the lexicon folds j to i and v to u; fixed
+    (values folded the same way; out-of-order neighbours use each bound alone). Frequency-ranked candidates
+    (`decryption/slot_candidates.txt`) are consistent with the earlier proposals: 1152 uos (vos) is in its
+    slot, 222 conduite, 214 comte/compte, 805 and 816 ordre/oblige..., 122 bon, 585 ignore. They are slots,
+    not readings: nothing was promoted to a firm value. Language-model scoring of candidates in context was not
+    possible (corpora unreachable here).
