@@ -32,3 +32,18 @@ the 200 strongest word hits, and the top 40 frame and caps items.
 
 With this slice every file in the NARA catalogue export (record groups and collections, 367,000 files) has been scanned by the
 detectors and every group with hits reviewed (slices A-K).
+
+## Set-aside leads rechecked (28 Oct 2026)
+
+The weak leads earlier slices wrote down without making rows (`nara_triage_b`, `nara_triage_i`, `nara_catalog` READMEs) were
+re-read for any that hold filed ciphertext online. Most are mentions with no text in the file (Kopp intercepts 1921, the RG 80
+private submissions 1936-41, the RG 407 Kyushu message 1948, patents). Two were checked against the OCR:
+
+- RG 59 M588 roll 7, "Miscellaneous Intercepted Correspondence, 1789-1814" (naId 222577038, 593 pages, one request): no
+  cipher; the numeric pages are 1812-14 troop returns, provisions returns and an index, and no page uses cipher/cypher.
+- M336 roll 64 f.0845 (naId 574876562): the two Groothoff (Iquique) telegrams of May 1918 are short commercial messages in an
+  altered ABC code, filed in the 862.20223 file of catalogue 658 and noted there; not a separate row. The same file's German
+  diplomatic traffic is in the OCR (e.g. f.0079-0081: Guayaquil-Lima letter code, Lima-Montevideo/Buenos Aires/Santiago
+  number groups, 22 June 1917), which makes 658 workable.
+
+No further row.
