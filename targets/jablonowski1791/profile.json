@@ -1,0 +1,116 @@
+{
+ "schema_version": 1,
+ "target": "jablonowski1791",
+ "title": "Prince Jabłonowski at Berlin to Stanisław August, French political letters partly in cipher, 1791-1792 (AGAD Zbiór Popielów 63)",
+ "documents": [
+  {
+   "id": "A",
+   "shelfmark": "AGAD Warszawa, Zbiór Popielów (zesp. 12), sygn. 63 (old N. 293, 370, 317)",
+   "date": "1791-1792",
+   "year": 1791,
+   "country": "Poland-Lithuania",
+   "route": "Jabłonowski (Berlin) -> Stanisław August",
+   "language": "French",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "The AGAD inventory notes no decipherment; the file has not been seen.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 0,
+    "unit": "mixed",
+    "measured": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "image_quality": "no images",
+    "notes": "Not online: no letter list (ZbPop63.xml empty), no agadd2 album (28 Oct 2026); szukajwarchiwach blocked by a bot check. Nothing transcribed. cleartext_in_document is taken from the inventory's 'częściowo szyfrowa'."
+   },
+   "read": "not read"
+  }
+ ],
+ "system": {
+  "types": [
+   "undetermined"
+  ],
+  "summary": "unknown: the letters have not been seen. The inventory says 'pismo cyfrowe' (figures).",
+  "symbol_kind": "digits",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": "unknown"
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": "unknown"
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "not applicable",
+  "notes": "symbol_kind 'digits' rests on the inventory's 'pismo cyfrowe' only; key_order is a placeholder. Nothing else about the system is known."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "unknown",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [],
+  "attack": "none",
+  "human_role": "Pasted the catalogue task; no other input.",
+  "tools": [
+   "curl (AGAD inventory, agadd2 scan server)",
+   "web search"
+  ],
+  "models": [
+   "claude-opus-5-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-10-28",
+  "last_date": "2026-10-28"
+ },
+ "solution": [
+  {
+   "date": "2026-10-28",
+   "kind": "access",
+   "what": "AGAD inventory row for ZbPop 63 read; ZbPop63.xml letter list empty; agadd2 album index lists only Popiel units 4, 5, 17, 413-417, 419-421, 428; album 63 404. Not online.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "access",
+   "what": "Berlin siblings (Zabłocki ZbPop 13, 14, 20, 21, 372, 373, 423; Potocki 392) and cabinet keys (445, 451-454) checked against the agadd2 album list: none scanned.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "literature search",
+   "what": "Web searches on Jabłonowski at Berlin 1791-92 and the IH PAN Korespondencja polityczna Stanisława Augusta series: only Vienna volumes; envoy identified as Stanisław Jabłonowski 1762-1822 (Deutsche Biographie). No edition or decipherment found.",
+   "result": "failed"
+  }
+ ],
+ "outcome": {
+  "class": "offline only",
+  "key": "none",
+  "method": "not applicable",
+  "verification": [
+   "none"
+  ],
+  "contribution": [
+   "none"
+  ],
+  "gaps": [
+   {
+    "item": "all 123 pieces",
+    "blocker": "needs-physical-access"
+   }
+  ],
+  "notes": "Not attempted on the ciphertext: the file could not be reached. Scans from szukajwarchiwach (by a person) or an AGAD reproduction order."
+ }
+}
