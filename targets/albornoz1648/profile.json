@@ -249,9 +249,54 @@
    "what": "Claude Opus 5.5 (PR review on merge): the plain copies of the time used to rebuild K1 and K2 credited (contemporary); method kept as plaintext from external sources (the copies are in other files of the Osuna fonds, not beside the 1648 letter).",
    "result": "worked"
   },
-  {"date": "2026-10-27", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 636 tokens, 84 types, es-golden-age order 4: reading -2.038 per letter; random keys -3.743 (z 11.3); key annealed onto shuffled ciphertext best -2.535 (mean -2.565, z 19.3); annealer on the real text -2.246. Verdict: pass.", "result": "worked"}
+  {
+   "date": "2026-10-27",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Statistical validation (docs/_validate.py): 636 tokens, 84 types, es-golden-age order 4: reading -2.038 per letter; random keys -3.743 (z 11.3); key annealed onto shuffled ciphertext best -2.535 (mean -2.565, z 19.3); annealer on the real text -2.246. Verdict: pass.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "verification",
+   "what": "Claude Opus 5.5 (PR review on merge): D.32 graded A; the three key documents listed as not-prose texts.",
+   "result": "worked"
+  }
  ],
- "outcome": {"validation": {"date": "2026-10-27", "model": "es-golden-age", "file": "validation.tsv", "tokens": 636, "types": 84, "tokens_per_type": 7.57, "score": -2.038, "nulls": {"random keys": {"n": 200, "mean": -3.743, "sd": 0.15, "max": -3.371, "z": 11.3, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -2.565, "sd": 0.027, "max": -2.535, "z": 19.3, "p": 0.1429}}, "power": -2.246, "verdict": "pass", "notes": "claimed per-occurrence score -2.038; polyphony 0.0; 7 unread tokens left out; annealer on the real text from random keys reached -2.246"}, 
+ "outcome": {
+  "validation": {
+   "date": "2026-10-27",
+   "model": "es-golden-age",
+   "file": "validation.tsv",
+   "tokens": 636,
+   "types": 84,
+   "tokens_per_type": 7.57,
+   "score": -2.038,
+   "nulls": {
+    "random keys": {
+     "n": 200,
+     "mean": -3.743,
+     "sd": 0.15,
+     "max": -3.371,
+     "z": 11.3,
+     "p": 0.005
+    },
+    "shuffled refit": {
+     "n": 6,
+     "mean": -2.565,
+     "sd": 0.027,
+     "max": -2.535,
+     "z": 19.3,
+     "p": 0.1429
+    }
+   },
+   "power": -2.246,
+   "verdict": "pass",
+   "notes": "claimed per-occurrence score -2.038; polyphony 0.0; 7 unread tokens left out; annealer on the real text from random keys reached -2.246"
+  },
   "class": "read",
   "key": "recovered",
   "method": "key recovered based on plaintext from external sources",
@@ -264,7 +309,11 @@
   "fraction_read_method": "measured",
   "fraction_read_source": "Copy B: 353 of 359 groups with a value (98.3%), about 5 of them probable; 6 unresolved. 6 of 136 words of the cipher portion contain a hole.",
   "first_break": true,
-  "verification": ["matched control", "historical consistency", "statistical test"],
+  "verification": [
+   "matched control",
+   "historical consistency",
+   "statistical test"
+  ],
   "credits": [
    {
     "who": "dudout",
@@ -295,7 +344,40 @@
     "translation": "translation.md",
     "language": "es",
     "state": "read",
-    "summary": "In 1648 Innocent X was renewing his nuncios. Philip IV wanted to keep his own: Giulio Rospigliosi, Archbishop of Tarsus, nuncio at Madrid since 1644 – the future Pope Clement IX. He wrote so to his ambassador to the Pope, Cardinal Gil de Albornoz, in a cipher nobody had read: “there can be no instrument more suitable” for the service of both courts, so the ambassador must not desist “in any case”. The letter survives in two ciphered copies with no decipherment; the key came from another paper in the same family archive, a chapter of a letter by Luis de Haro enciphered for Albornoz in 1649, whose plain-text copy was kept."
+    "summary": "In 1648 Innocent X was renewing his nuncios. Philip IV wanted to keep his own: Giulio Rospigliosi, Archbishop of Tarsus, nuncio at Madrid since 1644 – the future Pope Clement IX. He wrote so to his ambassador to the Pope, Cardinal Gil de Albornoz, in a cipher nobody had read: “there can be no instrument more suitable” for the service of both courts, so the ambassador must not desist “in any case”. The letter survives in two ciphered copies with no decipherment; the key came from another paper in the same family archive, a chapter of a letter by Luis de Haro enciphered for Albornoz in 1649, whose plain-text copy was kept.",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Opus 5.5 (PR review on merge)",
+     "date": "2026-10-27",
+     "note": "reading.md read against translation.md and the decryption lines of copy B: three coherent sentences of chancery Spanish (the request on the Archbishop of Tarsus and the Pope's answer; the King's insistence that the ambassador press for Rospigliosi's retention and not desist; the order to report). The holes are the four code signs (74, underlined A, 124 twice, cross-11) and the doubtful \"el\"; four of them fall in the first sentence, which still parses (Veo [que] pasastis los oficios con Su Santidad, y lo que [el] respondió ...). The rest is continuous; probable readings {b}, {o}, {Be} and restorations [que], [de] are marked. Lines B09-B13 of the transcription (the reveal passage) were compared with image 5 at the published resolution and agree."
+    }
+   },
+   {
+    "doc": "osuna-ct11-d1",
+    "label": "OSUNA,CT.11,D.1: Haro to Peñaranda, 25 Sept 1649, enciphered for Albornoz, with its plain copy of the time (key document for K2)",
+    "transcription": "keydocs/CT11_cipher.txt",
+    "decryption": "keydocs/CT11_plain_13-23.txt",
+    "language": "es",
+    "state": "not prose",
+    "summary": "Key document: the cipher chapter and its plain copy of the time, used to rebuild K2 (lines 1-12) and to test it (lines 13-23); no reading of its own."
+   },
+   {
+    "doc": "osuna-ct2-d16",
+    "label": "OSUNA,CT.2,D.16: Philip IV to Albornoz, 12 Dec 1644, cipher aligned on its plain copy (key document for K1)",
+    "transcription": "keydocs/D16_alignment.txt",
+    "decryption": "keydocs/D16_alignment.txt",
+    "language": "es",
+    "state": "not prose",
+    "summary": "Key document: cipher original aligned on the plain copy of the time, used to rebuild K1, which does not read the 1648 letter."
+   },
+   {
+    "doc": "osuna-ct2-d20",
+    "label": "OSUNA,CT.2,D.20: Philip IV to Albornoz, 26 Jan 1645, cipher and plain copy (test of K1)",
+    "transcription": "keydocs/D20_cipher.txt",
+    "decryption": "keydocs/D20_plain.txt",
+    "language": "es",
+    "state": "not prose",
+    "summary": "Key document: transcribed before its plain copy was opened, used to test K1 (0.638 of characters recovered against a 99th percentile of 0.550 for permuted keys)."
    }
   ],
   "key_file": "key_K2.tsv",

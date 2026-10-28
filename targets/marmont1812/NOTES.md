@@ -71,3 +71,14 @@ manuscript decipherment was never printed. Files: `transcription_N73.txt`, `decr
 
 - N.34: eight numbers restored from the sense (208, 598, 88, 62, 1085, 266, 981, 372): copying errors or unreadable table cells.
 - N.73 (751): about 26 numbers unresolved; a better copy (the original in the Scovell papers, or the French minute) would settle them.
+
+## Escalation
+
+Added on review, 27 Oct 2026.
+
+- [x] siblings: 133 N.29 (Jardet to Marmont, 6 March 1812) opened: a different cipher (48 numbers on a line of Tancrède), deciphered at the time; kept as context, not part of this target (one key, one entry)
+- [n/a] clear-pages: the Spanish copies translate the clear text only; no decipherment of the cipher passages
+- [x] known-keys: the 1812 Grand Chiffre table (SHD "B n° 30") is the key, applied unchanged
+- [x] print: Oman (Peninsular War V, app. XV), Du Casse (Mémoires du roi Joseph IX), Marmont's and Jourdan's memoirs, Wellington's Dispatches and Supplementary Despatches searched (contributor)
+- [n/a] key-rebuild: the table is known; nothing to rebuild
+- [x] retry: the 26 unresolved numbers of N.73 tried as digit confusions of the Spanish copy (contributor); the remedy is the French minute or Scovell's papers
