@@ -2370,7 +2370,8 @@
 {"id": "k-common-cipher-1781", "label": "British southern Common cipher ring, 1781, rebuilt here", "kind": "rebuilt here", "by": "cyphersolver", "year": 1781, "note": "Ring of 25 numbers (5 24 29 1 25 23 22 6 19 9 17 13 16 7 12 8 14 15 26 4 18 21 3 2 11) against a 25-letter alphabet, A-setting reset by indicator groups, fillers from 30 (Saberton's Common cipher); rebuilt from the 1781 interlinear decipherment (targets/balfour1781/NOTES.md)."},
 {"id": "k-balfour-stewart-1781", "label": "Balfour to Stewart table, 1781, rebuilt here", "kind": "rebuilt here", "by": "cyphersolver", "year": 1781, "note": "Fixed number table (a31 b12 c22 d32 e13 ... w38 y29), fillers from 40; rebuilt from the interlinear of the 12 Aug 1781 letter (targets/balfour1781/NOTES.md)."},
 {"id": "k-thomson-palfrey-1781", "label": "Thomson code, the copy lost with Palfrey, 1781 (values recovered here)", "kind": "rebuilt here", "by": "cyphersolver", "year": 1781, "note": "Charles Thomson's printed syllable form, numbered differently from Jay's copy; b 69, c 538, d 346, e 226, f 216, g 209, h 259, to 398, your 264 from the draft's glosses and Jay's key sheet (targets/livingston1781/key.tsv)."},
-{"id": "k-thomson-we007-jay", "label": "Thomson code, Jay's copy (Weber WE007), 1781", "kind": "archive key", "by": "Charles Thomson", "year": 1781, "note": "Printed form with numbers by hand, Columbia RBML Jay Papers ldpd:50144; headed as modified by Livingston 6 July 1782; carries the be-he 600-605 additions in manuscript."}
+{"id": "k-thomson-we007-jay", "label": "Thomson code, Jay's copy (Weber WE007), 1781", "kind": "archive key", "by": "Charles Thomson", "year": 1781, "note": "Printed form with numbers by hand, Columbia RBML Jay Papers ldpd:50144; headed as modified by Livingston 6 July 1782; carries the be-he 600-605 additions in manuscript."},
+{"id": "k-poinsett1814", "label": "Poinsett's numbered code (the = 1355), values from the 1814 clerk's decipherment", "kind": "rebuilt here", "by": "", "year": 1813, "note": "95 values from the clerk's interlinear decipherment of Poinsett to Monroe, 14 June 1814 (NARA M37 roll 2 frame 0098); targets/poinsett1813/key_1814.tsv."}
  ],
  "links": [
 {"key": "k-grandchiffre1812-shd", "target": "marmont1812", "how": "read unchanged", "note": "cells read by Brice Dudout on Bouchaudy’s photographs and frozen before decoding; Jourdan to Soult (N.34, held out) 259 of 267 numbers with 8 restored from the sense, Marmont to Jourdan (N.73) about 85%"},
@@ -3763,7 +3764,8 @@
 {"key": "k-common-cipher-1781", "target": "balfour1781", "how": "rebuilt from", "note": "rebuilt from the interlinear of Nos. 1-3 and applied unchanged to the second Balfour letter"},
 {"key": "k-balfour-stewart-1781", "target": "balfour1781", "how": "rebuilt from", "note": "rebuilt from the interlinear of the Stewart letter"},
 {"key": "k-thomson-palfrey-1781", "target": "livingston1781", "how": "rebuilt from", "note": "values of the lost copy from the draft's glosses and Jay's key-sheet entries"},
-{"key": "k-thomson-we007-jay", "target": "livingston1781", "how": "partial", "note": "its handwritten list gives be-he = 600-605, the meaning of the addition; its own numbers do not fit the line"}
+{"key": "k-thomson-we007-jay", "target": "livingston1781", "how": "partial", "note": "its handwritten list gives be-he = 600-605, the meaning of the addition; its own numbers do not fit the line"},
+{"key": "k-poinsett1814", "target": "poinsett1813", "how": "partial", "note": "95 values cover 161 of 437 groups of the 20 Feb 1813 letter; no sentence reads"}
  ],
  "sources": [
   {
@@ -4382,7 +4384,8 @@
 {"source": "s-cyphersolver", "key": "k-wotton1585-rebuilt"},
 {"source": "s-cyphersolver", "key": "k-common-cipher-1781"},
 {"source": "s-cyphersolver", "key": "k-balfour-stewart-1781"},
-{"source": "s-cyphersolver", "key": "k-thomson-palfrey-1781"}
+{"source": "s-cyphersolver", "key": "k-thomson-palfrey-1781"},
+{"source": "s-cyphersolver", "key": "k-poinsett1814"}
  ],
  "unlinked": {
   "carlos1903": "deciphered from the decodes of the time (the card m0060 and the ink decode on m0058); no key: only four group values follow from the repeats, and the codebook was not found",
