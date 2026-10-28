@@ -355,3 +355,7 @@ not tracked; re-fetch with
 ## 2026-10-23: lead from the profile mining
 
 Lead from research/patterns/DEEPER.md: Lasry's GL.htm tables. GL.htm itself lists Raince's own cipher (Tomokiyo's 1526 table), already applied and re-measured here; Lasry's other tables there are other correspondents' ciphers (Gramont, Avranches, Macon). Redundant: the limit is the glyph map, not the key (see Session 2). No run.
+
+## 20 Nov 1526 letter: p. 105 completed and p. 106 read, Brice Dudout (28 Oct 2026)
+
+p. 106 (Gallica view 55, left page) is a whole page in cipher continuing the 20 Nov letter; read with the same table, together with the lower 21 lines of p. 105 (agreement with trans/residue1526_reading.md: 95.6 % of letters). About 98 % of words read; open: word signs absent from the table (ℓ°, three small squares, ϖ, ⋒, ⫝, a large C). See `dudout/README.md`.
