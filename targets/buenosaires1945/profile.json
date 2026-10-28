@@ -1,0 +1,110 @@
+{
+ "schema_version": 1,
+ "target": "buenosaires1945",
+ "title": "Code messages found in the ex-German Embassy archives, Buenos Aires (NARA RG 457 NR 2054, report of 16 June 1945)",
+ "documents": [
+  {
+   "id": "A",
+   "shelfmark": "NARA RG 457, Historic Cryptographic Collection, NR 2054 (CBLK11, 158A), naId 2808583",
+   "date": "1945-06-16",
+   "year": 1945,
+   "country": "Argentina",
+   "route": "German Embassy Buenos Aires / German agents in Argentina -> Berlin (presumed)",
+   "language": "German (expected)",
+   "cleartext_in_document": "unknown",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "unknown: the report's title does not say whether the messages were read; related Coast Guard decrypts of the Argentine clandestine circuits exist but are not linked to this file.",
+    "partial": true
+   },
+   "length": {
+    "tokens": 0,
+    "unit": "mixed",
+    "measured": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "image_quality": "no images",
+    "notes": "Not digitised: NR 2054 and NR 1403 have no digital objects in the NARA catalog. Nothing transcribed."
+   },
+   "read": "not read"
+  }
+ ],
+ "system": {
+  "types": [
+   "undetermined"
+  ],
+  "summary": "unknown: no message has been seen.",
+  "symbol_kind": "symbols",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": "unknown"
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": "unknown"
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "not applicable",
+  "notes": "symbol_kind and key_order are placeholders: the schema has no 'unknown' value for them. Nothing about the system is known."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "unknown",
+   "where": "unknown; Coast Guard decrypts of the Argentine clandestine circuits may cover some messages",
+   "found": "before attempt",
+   "used": false
+  },
+  "inputs": [],
+  "attack": "none",
+  "human_role": "Pasted the catalogue task; no other input.",
+  "tools": [
+   "NARA catalog proxy API",
+   "web search"
+  ],
+  "models": [
+   "claude-opus-5-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-10-27",
+  "last_date": "2026-10-27"
+ },
+ "solution": [
+  {
+   "date": "2026-10-27",
+   "kind": "access",
+   "what": "NARA catalog: naId 2808583 (NR 2054) and 2807843 (NR 1403) have no scope note and no digital objects. No ciphertext reachable.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "literature search",
+   "what": "Web search on NR 2054 / file title and on Buenos Aires German Embassy code messages 1945: no edition, decipherment or mention; FRUS 1942-43 and Coast Guard clandestine-circuit background only.",
+   "result": "failed"
+  }
+ ],
+ "outcome": {
+  "class": "offline only",
+  "key": "none",
+  "method": "not applicable",
+  "verification": [
+   "none"
+  ],
+  "contribution": [
+   "none"
+  ],
+  "gaps": [
+   {
+    "item": "all messages",
+    "blocker": "needs-physical-access"
+   }
+  ],
+  "notes": "Not attempted on the ciphertext: the file is not scanned. Next: order NR 2054 and NR 1403 at NARA College Park; match against the Coast Guard decrypts of the Argentine circuits."
+ }
+}

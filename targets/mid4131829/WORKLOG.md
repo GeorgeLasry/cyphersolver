@@ -5,3 +5,6 @@
 - 2026-10-27: One web search for a 1934 MID decipherment of a Revolutionary War letter: nothing relevant
   (Church letter 1777 and Friedman lecture notes only).
 - 2026-10-27: Closed as blocked on access. No ciphertext, so no transcription, solver run or control.
+- 2026-10-27: Found frame 1068 of M1194 roll 42 through the NARA catalog proxy API and read the card: sender
+  Col. H. L. Cavenaugh, Berkeley, Calif.; 4131-829 dated 7-25-34; no answer recorded.
+- 2026-10-27: Web searches for Cavenaugh with Berkeley, 1934, Revolutionary War cipher: nothing. Added profile.json.

@@ -13661,28 +13661,44 @@
    "counted": true,
    "region": "Other",
    "period": "1901-1950",
-   "language": "Russian",
+   "language": "Russian and German (per the intercept operator: Kopp–Chicherin traffic mostly Russian, some Chicherin telegrams German)",
    "place": "Constantinople",
    "cls": "C",
    "seen": "catalogue",
    "source": "NARA bulk-scan triage C sweep",
    "prior_art": "open (checked 27 Oct 2026: repo known.py, nara_military + nara_catalog READMEs; no published reading found)",
-   "score_note": "Scored from the NARA catalogue description during the Oct 2026 NARA bulk-scan triage, slice C (research/nara_triage_c/); not viewed",
+   "score_note": "Rescored 27 Oct 2026 from the M316 OCR (slice L); frames not yet viewed",
    "year": 1921,
    "date": "1921",
-   "title": "Russian coded messages of 1921 provided by the US High Commissioner at Constantinople",
-   "correspondents": "Soviet or White Russian senders (unknown)",
-   "shelfmark": "NARA RG 457, Archival and Historian's Source Files, 6707N \"Russian Coded Messages, 1921 (Provided by U.S. High Commissioner Constantinople)\" (naId 23890165)",
-   "folio_note": "Size unknown; not digitised.",
-   "status": "Messages passed by Admiral Bristol's office to MI-8; whether read is not stated (MI-8 worked on Soviet traffic 1920-21 with mixed success: see the RG 457 4896 Moscow-Vienna/Berlin worksheets). Not digitised.",
-   "why": "Constantinople in 1921 was the hub of Wrangel's evacuated army and Soviet-Turkish contacts; unread code here is early Soviet or White diplomatic traffic.",
+   "title": "Soviet and German cipher radiograms of 1921 (Moscow ↔ Berlin, Stockholm, Christiania, Kharkov), intercepted at Constantinople by the US High Commission and never deciphered",
+   "correspondents": "Chicherin / Narkomindel Moscow ↔ Soviet representation Berlin (Kopp, Krestinsky, 'Polpred'), Stockholm, Christiania, Reval; Nikolaev → Kharkov; Auswärtiges Amt Berlin ↔ Deutsche Vertretung Moskau (Hilger); copies sent by Admiral Mark L. Bristol, US High Commissioner, Constantinople",
+   "shelfmark": "NARA RG 59, Central Decimal File 1910-29, 861.00 (Political Affairs, Russia), microfilm M316 rolls 40-48 (RG 64 digital copies): file units naId 604700562 (861.00/8376-8492, Mar 1921), 604701877 (8493-8622, Apr), 604703234 (8623-8773, May-Jun), 604704577 (8774-8910, Jun-Jul), 604705830 (8911-9012, Jul-Sep), 604707113 (9013-9064, Sep-Oct), 604708415 (9065-9159, Oct-Nov), 604709981 (9160-9240, Nov-Dec), 604711297 (9241-9329, Dec 1921-Feb 1922); the War Department copies are RG 457, Archival and Historian's Source Files, 6707N 'Russian Coded Messages, 1921 (Provided by U.S. High Commissioner Constantinople)' (naId 23890165, not digitised)",
+   "folio_note": "Typed copies of intercepted radiograms, one per frame with date, route and addresses (e.g. 'MARCH 22d 1921 FROM ... TO MOSCOW 71915 67404 33684 ...'; 'SEPTEMBER 4th 1921 FROM BERLIN TO MOSCOW SCHITSCHERIN MOSKAU FUNKSPRUCH'; 'SEPTEMBER 28th 1921 FROM MOSCOW TO BERLIN POLPRED BERLIN'), mostly 4- and 5-figure groups. Frames with cipher text by roll (OCR count): M316-040 0889-0893 (5); 041 0543-1068 (61); 042 0244-1276 (83); 043 0427-1204 (42); 044 0186-1073 (56); 045 0048-0638 (22); 046 0178-1178 (45); 047 0155-1070 (64); 048 0128-0766 (13): about 390 frames, about 62,000 groups. Covering despatches: 861.00/8575 (Bristol No. 153, 20 Apr 1921, M316-041-0871: the Russian intercept operator's notes on the traffic), 040-0888 (March 1921: hopes anti-Bolshevik Russians may help find the key; Col. Castle sending similar messages to the War Department), 043-0936 (July 1921: 'unable to report any progress regarding the deciphering of the code messages of the Bolshevik Government'); 9071, 9130, 9132, 9133 (Oct-Nov 1921, Moscow-Berlin and Moscow-Christiania). M316-041-1073 'Deciphered telegrams of Soviet authorities' (Petrograd-Reval) is a separate, small set in clear.",
+   "status": "Unblocked 27 Oct 2026 (NARA slice L, research/nara_triage_l/): the purport list (naId 87657409) led to the 861.00 file, which is filmed on M316 and digitised as RG 64 copies; all nine 1921 rolls fetched and the OCR read. The High Commission could not decipher the traffic and the Department records no decipherment; the War Department (MI-8) received parallel copies (RG 457 6707N). Some of the same Soviet traffic may have been read by GC&CS (HW 12, 1921) and the German side is Auswärtiges Amt traffic; neither has been checked. Distinct from 710 (Chicherin → Sukhanov 1918).",
+   "why": "A large, dated corpus of early Soviet and German diplomatic cipher radio traffic from 1921, filed as typed copies with the intercept operator's notes: the Rapallo-era Moscow-Berlin channel, unread by the Americans who collected it.",
    "importance": 3,
-   "solvability": 1,
+   "solvability": 2,
    "difficulty": 4,
-   "verify": "Order 6707N; compare with the 1920-21 Soviet systems described in TICOM 1036 and the 4896 worksheets.",
+   "verify": "View sample frames (M316-041-0543, 0871; 046-0178); separate the Russian and German systems by route and group length; check HW 12 (GC&CS) 1921 Soviet decrypts and the RG 457 4896 worksheets for keys or matching texts; compare with TICOM 1036 on early Soviet systems.",
    "links": [
     {
-     "label": "NARA catalogue file unit",
+     "label": "M316 roll 41, 861.00/8493-8622 (naId 604701877)",
+     "href": "https://catalog.archives.gov/id/604701877"
+    },
+    {
+     "label": "Bristol No. 153 with the operator's notes (M316-041-0871)",
+     "href": "https://catalog.archives.gov/medialz/dc-metro/rg-064/530216169/M316/M316-041/M316-041-0871.jpg"
+    },
+    {
+     "label": "Intercept, 22 Mar 1921 (M316-041-0543)",
+     "href": "https://catalog.archives.gov/medialz/dc-metro/rg-064/530216169/M316/M316-041/M316-041-0543.jpg"
+    },
+    {
+     "label": "M316 roll 46, 861.00/9065-9159 (naId 604708415)",
+     "href": "https://catalog.archives.gov/id/604708415"
+    },
+    {
+     "label": "RG 457 6707N (naId 23890165)",
      "href": "https://catalog.archives.gov/id/23890165"
     }
    ],
@@ -17544,6 +17560,154 @@
    "seen": "image",
    "source": "NARA bulk_all triage J",
    "prior_art": "open (checked 27 Oct 2026: known.py, catalogue.json, nara_* sweep folders, web search for M1486 cipher material: nothing found beyond FamilySearch roll listings)",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 757,
+   "counted": true,
+   "year": 1918,
+   "date": "18 Feb - 1 Mar 1918",
+   "title": "US Consul-General Auckland ↔ Naval Commander San Francisco / Washington, cipher cables on unknown wireless signals heard in New Zealand; the reply could not be read by its recipient",
+   "correspondents": "Alfred A. Winslow, American Consul-General, Auckland → Naval Commander, San Francisco (18 Feb 1918); unidentified US Government office, Washington D.C. (probably the Navy Department) → American Consul-General, Auckland (received 1 Mar 1918)",
+   "place": "Auckland ↔ San Francisco / Washington",
+   "language": "English (plaintext unknown)",
+   "region": "Other",
+   "period": "1901-1950",
+   "shelfmark": "NARA, RG 59, Central Decimal File 1910-29, 763.72 (European War), microfilm M367 roll 83, file unit '763.72/9366-9450: Feb.-Apr. 1918' (naId 27107744); Auckland despatches No. 370 (26 Feb 1918) and No. 375 (4 Mar 1918) with enclosures",
+   "folio_note": "M367 roll 83 f.0110 (No. 370, 'Mysterious Wireless Calls in South Pacific', 26 Feb 1918); f.0111 (enclosure: Staff Paymaster W. J. Brown for the Naval Adviser to the NZ Government, HMS Philomel, Wellington, 14 Feb 1918, asking whether an unknown automatic W/T transmission heard on 2000 m on 11/12 Feb was US Californian-Honolulu traffic); f.0112 (No. 375, 4 Mar 1918, 'Coded Cablegram with reference to Wireless Stations'); f.0113 (copy of the cable sent 18 Feb 1918 to the Naval Commander, San Francisco: c. 20 five-letter groups, 98 letters, 'FVFRO TFKFX JTQII ...'); f.0114 (copy of the reply received 1 Mar 1918 from Washington 'usgovt', 37 counted words: ten-letter groups 'Ssblnodyym dncrvjjwij nakgtrtlme ...', c. 360 letters).",
+   "cls": "B",
+   "status": "Found in the slice L caps/word rerun of RG 59 (the early groups' missing detectors). Whole reel OCR read (fetched 27 Oct 2026). Winslow writes on 4 Mar that the reply is one 'which I am at a loss to know from whence it came, further than it was sent from Washington, D.C., I rather suppose from the Navy Department', and asks that it be passed to them: the recipient could not decipher it, and no clear text or decode is filed on the reel. The outgoing cable's content is known in substance from the Philomel letter (a crib: wireless, 2000 metres, Honolulu, automatic working). known.py: no hits for 763.72/9366, 27107744, Winslow; not in catalogue.json or earlier nara_* triage.",
+   "why": "A US Government cipher cable of 1918 that its own addressee could not read, filed with its context: a small test of US Navy/State cipher systems of the First World War, with a near-crib for the outgoing message.",
+   "importance": 2,
+   "solvability": 2,
+   "difficulty": 4,
+   "score_note": "Scored from the reel OCR during the Oct 2026 NARA caps/word rerun of the early groups (research/nara_triage_l/); frames not yet viewed",
+   "verify": "View M367 roll 83 f.0113-0114 and transcribe both cables; identify the systems (the consul's outgoing cable may be in a State Department code or cipher of 1918; the reply's ten-letter groups suggest paired five-letter code groups, perhaps a Navy code with a superencipherment); look for the Navy Department's answer in RG 45 / RG 38 and later 763.72 numbers and in the Auckland consular post files (RG 84).",
+   "links": [
+    {
+     "label": "NARA file unit 27107744 (M367 roll 83, 763.72/9366-9450)",
+     "href": "https://catalog.archives.gov/id/27107744"
+    },
+    {
+     "label": "Cable sent 18 Feb 1918 (f.0113)",
+     "href": "https://catalog.archives.gov/medialive/44/1077/27107744/content/dc-metro/rg-059/M367/M367_Box_3_70-121/M367_Roll83/M367_Roll83-0113.jpg"
+    },
+    {
+     "label": "Reply received 1 Mar 1918 (f.0114)",
+     "href": "https://catalog.archives.gov/medialive/44/1077/27107744/content/dc-metro/rg-059/M367/M367_Box_3_70-121/M367_Roll83/M367_Roll83-0114.jpg"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "NARA caps/word rerun triage L",
+   "prior_art": "open (checked 27 Oct 2026: known.py, catalogue.json, nara_* sweep folders)",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 758,
+   "counted": true,
+   "year": 1906,
+   "date": "25 Jun - 27 Jul 1906 (copies sent to the State Department 8 Nov 1907)",
+   "title": "Coahuila state code telegrams on the Mexican Kickapoo affair, Múzquiz ↔ Saltillo, 1906: two-digit code passages that the Mexican Embassy could not decipher",
+   "correspondents": "L. A. Guajardo (Jefe Político, Múzquiz) and Judge F. Valdés Llano → Governor Miguel Cárdenas, Saltillo; Cárdenas → Guajardo; R. C. Conine → Guajardo; Guajardo → Ignacio E. Rivas",
+   "place": "Múzquiz / Saltillo / Sabinas, Coahuila",
+   "language": "Spanish (clear passages translated into English for the Senate)",
+   "region": "Americas",
+   "period": "1901-1950",
+   "shelfmark": "NARA, RG 59, Numerical File 1906-1910, case 3706/35-45 (Kickapoo Indians), microfilm M862 roll 342; file unit naId 19505183",
+   "folio_note": "M862 roll 342 f.0500-0504 (Teller's letter of 8 Nov 1907 from Douglas, Arizona, enclosing the telegrams for deciphering, and the Department's memoranda); f.0505-0513 (copies of the telegrams numbered 35-45: 25 June, 30 June (2), 2 July, 11 July, 17 July, 19 July and Sabinas 27 July 1906; code passages as runs of two-digit numbers inside clear Spanish/English text, e.g. 'Conviene 70 48 35 40 34 30 98 99 70 90 73 49 ...'; c. 270 groups in the OCR, perhaps 400-450 on the frames); f.0514-0517 (Root's telegram and letter to Teller, 14 Nov 1907: 'The Mexican Embassy here does not know the code and is unable to decipher it').",
+   "cls": "C",
+   "status": "Found in the slice L word-hit triage of RG 59 (research/nara_triage_l/agent_59.md); the reel OCR was read again here (27 Oct 2026). The Senate subcommittee on the Mexican Kickapoo land frauds (Teller) obtained copies from the Federal telegraph office at Múzquiz and asked the Department for a decipherment; the Mexican Embassy could not read the code, suggested a state governors' code, and the copies were returned to Teller. Nothing later on the roll deciphers them. Repeated numbers inside words (10 35 30 18 / 10 35 70 18) and code mixed into clear text suggest a simple two-digit letter or syllable substitution with Spanish plaintext. known.py: no hits for Kickapoo, Múzquiz, Guajardo; not in catalogue.json.",
+   "why": "A Mexican state governor's telegraph code of 1906, unread by the Mexican Embassy and the State Department, filed with the clear context of a US Senate investigation into Kickapoo land frauds; likely readable from the ciphertext alone.",
+   "importance": 2,
+   "solvability": 4,
+   "difficulty": 2,
+   "score_note": "Scored from the reel OCR during the Oct 2026 NARA caps/word rerun of the early groups (research/nara_triage_l/); frames not yet viewed",
+   "verify": "View f.0505-0513 and transcribe the number runs; check the printed hearings 'Affairs of the Mexican Kickapoo Indians' (Senate Committee on Indian Affairs, 1907-08, 3 vols., S. Doc. 215, 60th Cong.) for the telegrams or a translation; then attack as a two-digit Spanish substitution.",
+   "links": [
+    {
+     "label": "NARA file unit 19505183 (M862 roll 342)",
+     "href": "https://catalog.archives.gov/id/19505183"
+    },
+    {
+     "label": "Telegram of 25 June 1906 (f.0505)",
+     "href": "https://catalog.archives.gov/medialive/83/5051/19505183/content/dc-metro/rg-059/M862/Box_09/JPG/M862_Roll342/M862_Roll342-0505.jpg"
+    },
+    {
+     "label": "Root to Teller, 14 Nov 1907 (f.0514)",
+     "href": "https://catalog.archives.gov/medialive/83/5051/19505183/content/dc-metro/rg-059/M862/Box_09/JPG/M862_Roll342/M862_Roll342-0514.jpg"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "NARA caps/word rerun triage L",
+   "prior_art": "open (checked 27 Oct 2026: known.py, catalogue.json, nara_* sweep folders, one web search on the Kickapoo hearings; the printed hearings not yet checked)",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 759,
+   "counted": true,
+   "year": 1941,
+   "date": "Oct 1941 - Jan 1942",
+   "title": "German, Japanese and French Legation code telegrams at La Paz, copied by informers for the US Legation, which the FBI could not decipher",
+   "correspondents": "German Legation La Paz ↔ Auswärtiges Amt Berlin (also German Embassy Buenos Aires → Berlin); Japanese Legation La Paz; French Legation La Paz; copies sent by US Minister Douglas Dawson to the State Department and passed to the FBI (Hoover)",
+   "place": "La Paz",
+   "language": "German / Japanese / French (plaintext unknown)",
+   "region": "Americas",
+   "period": "1901-1950",
+   "shelfmark": "NARA, RG 59, Central Decimal File 1940-44, 862.20224 ('German military activities in Bolivia', non-jacket case), sub-nos. c. 87-150; French Legation copies noted to 851.20224; known from the purport list, NARA naId 88161456 (frames 88162640-88162646)",
+   "folio_note": "Purport list 862.20224 pp. 9-14: La Paz despatches #1194 (15 Oct 1941), #1201, #1231 (20 Oct), #1248 (23 Oct, 'Copies of Code telegrams to and from German Legation in La Paz'), #1249 (German Embassy Buenos Aires → Berlin), #1265 (twelve enclosures), #1304 (ten additional handwritten text copies), #1318 (eleven), #1325 (six), #1408 (11 Dec, German and Japanese Legations), #1512 (2 Jan 1942, twenty-two telegrams), #1537, #1541 (French Legation), #1620 (26 Jan 1942) and more; telegram #259 of 12 Dec 1941 ('German and Japanese coded messages sent to Department: valuable enough to warrant considerable risk assumed by informer'); Justice Dept (Hoover) 19 Dec 1941: 'Coded messages of the German Legation, La Paz, Bolivia: Returning copies of -, unable to decipher same'; War Department: 'very valuable'; Justice 7 Jan 1942: '79 German Code Messages: Transmits copy of message decoded' (one decoded).",
+   "cls": "C",
+   "status": "Found in the slice L word-hit triage (agent_59.md) and confirmed from the purport list OCR (fetched 27 Oct 2026). Blocked on access: the 1940-44 decimal file 862.20224 is not digitised (only the purport lists are online). Dozens of telegrams were copied; the FBI returned the German Legation copies unread in Dec 1941, and only one of 79 later messages is noted as decoded. The German diplomatic systems of 1941 (Floradora and others) were partly read by GC&CS, so some texts may survive in HW 12; these US copies were not read. Distinct from catalogue 687 (two La Paz radiograms on MID cards, 1940-41). known.py: no hits for 862.20224.",
+   "why": "A dense run of Axis legation code traffic from wartime Bolivia, obtained by informers and filed unread by the FBI and State Department; a test of what survives of German, Japanese and French diplomatic codes in Latin America, 1941-42.",
+   "importance": 3,
+   "solvability": 1,
+   "difficulty": 4,
+   "score_note": "Scored from the purport list during the Oct 2026 NARA caps/word rerun (research/nara_triage_l/); file not digitised",
+   "verify": "Request RG 59 CDF 1940-44, 862.20224 sub-nos. 87-150 (and 851.20224) at NARA College Park; identify the systems; check HW 12 (GC&CS diplomatic decrypts) and the FBI Technical Laboratory files (RG 65) for decrypts of the same dates.",
+   "links": [
+    {
+     "label": "Purport list 862.20211-862.2422, 1940-44 (naId 88161456)",
+     "href": "https://catalog.archives.gov/id/88161456"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "NARA caps/word rerun triage L",
+   "prior_art": "open (checked 27 Oct 2026: known.py, catalogue.json; the file is not online)",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 760,
+   "counted": true,
+   "year": 1941,
+   "date": "1941 (FBI report 1 Nov 1941; Lima despatch #741, 19 Nov 1941)",
+   "title": "Code messages of Dr. Otto Joseph (Transocean News Agency, Lima) examined by the FBI laboratory and not decoded, 'as cipher tables are not available'",
+   "correspondents": "Dr. Otto Joseph, Lima (suspected Transocean / German propaganda agent) → unknown",
+   "place": "Lima",
+   "language": "German or Spanish (plaintext unknown)",
+   "region": "Americas",
+   "period": "1901-1950",
+   "shelfmark": "NARA, RG 59, Central Decimal File 1940-44, 862.20210 Transocean News Agency (jacket case), sub-no. 133 (Justice Dept, Hoover, 1 Nov 1941) and 134 (Peru #741); see also 800.20210 Covo, Jacques/3; known from the purport list, NARA naId 88159920 (frames 88160117-88160119)",
+   "folio_note": "Purport list 862.20210 Transocean pp. 8-10: #100 (6 May 1941, 'Dr. Otto Joseph of Lima, Peru: possible connection of - with Transocean News Agency'); #133 (Justice Dept, 1 Nov 1941: specimens of the portable typewriter of Dr. Otto Joseph and machines from the offices of W. R. Grace & Company examined; 'Code messages examined but could not be decoded, as cipher tables are not available'); #134 (Peru #741, 19 Nov 1941, transmits the same).",
+   "cls": "C",
+   "status": "Found in the slice L word-hit triage (agent_59.md) and confirmed from the purport list OCR (fetched 27 Oct 2026). Blocked on access: the 1940-44 decimal file is not digitised. The FBI laboratory had the code messages and no tables; nothing in the purports records a later reading. Amount unknown. known.py: no hits for Otto Joseph.",
+   "why": "Seized or intercepted code messages of a suspected German propaganda agent in Lima in 1941, filed unread by the FBI; a small Axis-network cipher from the Peruvian case.",
+   "importance": 2,
+   "solvability": 1,
+   "difficulty": 3,
+   "score_note": "Scored from the purport list during the Oct 2026 NARA caps/word rerun (research/nara_triage_l/); file not digitised",
+   "verify": "Request RG 59 CDF 1940-44, 862.20210 Transocean News Agency sub-nos. 100-134 and 800.20210 Covo, Jacques; look for the FBI laboratory report (RG 65) on Otto Joseph.",
+   "links": [
+    {
+     "label": "Purport list 862.20210 Sprenkeles - 862.20211 Kramer, 1940-44 (naId 88159920)",
+     "href": "https://catalog.archives.gov/id/88159920"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "NARA caps/word rerun triage L",
+   "prior_art": "open (checked 27 Oct 2026: known.py, catalogue.json; the file is not online)",
    "ark": "",
    "scored": "sweep"
   }
