@@ -244,7 +244,8 @@
       "kind": "verification",
       "what": "Claude Opus 5.5 (PR review on merge): the May 1916 transcriptions and emendation table (PR #161) wired into outcome.texts[2]; the entry stays decoded, not read (17% of letters supplied, over the 3% look-alike limit) pending a decision on whether the documented pairs lift it.",
       "result": "partial"
-    }
+    },
+    {"date": "2026-10-28", "kind": "verification", "what": "Decision (Daniel Bourdeau): the May 1916 telegrams stay decoded, not read under the 3% look-alike rule; the emendation table shows systematic cursive pairs but 17% of letters remain supplied.", "result": "partial"}
   ],
   "outcome": {
     "validation": {
@@ -373,7 +374,7 @@
           "texts/readings_dudout.md"
         ],
         "summary": "Between Shanghai and 'Rosamonde Tokio' after Sun's return to China, May 1916: his safe landing in the French concession, Canton, and repeated orders to leave the iron trunk in Mr Inuzuka's care. Brice Dudout's readings; no cipher transcription of these forms is in the repository.",
-        "note": "Decoded, not read (v3 check 23 Oct 2026): the seven 1916 readings (Brice Dudout's, texts/readings_dudout.md) score 0.31 on explicit holes, 0.25 plain, hole rate 0.48: 109 of 627 letters (17%) are bracketed, letters the forms give differently (n/v, i/r, y/h, g/p cursive and transmission confusions) and supplied from sense. That is far above the 3% look-alike limit, and nothing outside confirms them: the Japanese copies carry no translation, and no cipher transcription of these forms is in the repository (only Dudout's readings). The sense is plain English and not in doubt in most telegrams, but the letters rest on emendation. 27 Oct 2026: Brice Dudout sent the blind transcriptions of the seven forms, the decryption word by word and a table of every emendation against the key (dudout/, pull request #161), as Verification 3 asked; the emendations are systematic cursive pairs (n/v x23, i/r x18, r/i x7, y/h x6). Still 17% of letters supplied, over the 3% look-alike limit: kept decoded, not read pending a decision.",
+        "note": "Decoded, not read (v3 check 23 Oct 2026): the seven 1916 readings (Brice Dudout's, texts/readings_dudout.md) score 0.31 on explicit holes, 0.25 plain, hole rate 0.48: 109 of 627 letters (17%) are bracketed, letters the forms give differently (n/v, i/r, y/h, g/p cursive and transmission confusions) and supplied from sense. That is far above the 3% look-alike limit, and nothing outside confirms them: the Japanese copies carry no translation, and no cipher transcription of these forms is in the repository (only Dudout's readings). The sense is plain English and not in doubt in most telegrams, but the letters rest on emendation. 27 Oct 2026: Brice Dudout sent the blind transcriptions of the seven forms, the decryption word by word and a table of every emendation against the key (dudout/, pull request #161), as Verification 3 asked; the emendations are systematic cursive pairs (n/v x23, i/r x18, r/i x7, y/h x6). Still 17% of letters supplied, over the 3% look-alike limit: kept decoded, not read: Daniel Bourdeau decided on 28 Oct 2026 that the documented pairs do not lift the 3% look-alike rule.",
         "state": "decoded, not read",
         "transcription": "dudout/transcription.txt",
         "reading": "dudout/reading.md"
