@@ -1,0 +1,3 @@
+# English translation
+
+“Count Admiral, Ambassador, friend. I the King send you greetings, as one whom I love. Notwithstanding what you are told in a longer letter of this same date – that you should leave to the marquis of Cascais the business that was in your charge there –, since he is not to deal with the marriages of the Prince, my son beloved and esteemed above all, and of the Infantas, about which I had you written: for you shall neither tell nor entrust these to the Marquis, nor to any other person, except those whom I have ordered you to inform. Written in Lisbon on 21 September 1644. The King.”

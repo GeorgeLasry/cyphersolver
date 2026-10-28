@@ -112,3 +112,7 @@ nEqmx = sobre, oEuEn = todos, zfacE = filho, ixmxfmq = Pereira.
 `cipher_l09.txt`, `cipher_l13.txt` (word lists for measurement), `l153_cipher.txt`, `l153_reading.txt`,
 `sysB_siblings.txt` (volume sweep), `solve153.py`, `solve153b.py`, `solve153c.py` (failed anneals),
 `make_validation.py` → `validation.tsv`, `profile.json`.
+
+## Letter 00153 read in parallel by Brice Dudout (27 Oct 2026)
+
+Frozen before comparison with this folder; agrees on P1-P2 and reads the open words of P3-P4: "as que vos {tenho} [mandado] advertir". See `dudout/README.md`.
