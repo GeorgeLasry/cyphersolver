@@ -1,0 +1,93 @@
+[
+  {
+    "year": 1796,
+    "date": "c. 1789-1806 (letters undated in the released transcriptions)",
+    "title": "James Wilkinson ('Agent 13') ↔ Spanish governors of Louisiana: cipher letters in two dictionary-and-table codes, most pages unread",
+    "correspondents": "James Wilkinson → Spanish governors of Louisiana / agents of the Spanish Crown (Miró, Carondelet, Gayoso; not itemised in the source), and replies",
+    "place": "Kentucky / Louisiana / New Orleans (not itemised)",
+    "language": "English (some French words in the plaintext)",
+    "region": "Americas",
+    "period": "1701-1800",
+    "shelfmark": "Library of Congress, Manuscript Division, reproductions of the Archivo General de Indias, Papeles procedentes de Cuba, legajo 2374 (LoC page numbers 1524-1652, 2874-3072; 'File 1', 'File A', 'File B'); originals AGI Cuba leg. 2374",
+    "folio_note": "Per the Chu/Valenti/Knight project inventory (github c2huc2hu/wilkinson data.txt): about 73 pp of ciphertext without decipherment and 28 pp with interlinear decipherment. Two systems: the '1078' code (table of ~1,240 numbered words with caret, plus page.row dictionary references with one or two bars for the column; dictionary ~780 pp x 2 cols x 29 rows) and a different '1096' system. Unsolved pages: LoC 1524, 1576-1583, 1598-1600, 1630-1631, 1642-1643, 2874, 2888-2890, 2895-2898, 2907-2909, 2930, 2943-2946, 2951-2953, 2962-2965, 2972, 3044-3047; decipherments for 1614-1624 and 1635-1637 exist (LoC 2975-2989, 3014-3018) but the project did not have the scans.",
+    "cls": "A",
+    "status": "Partly read. Chu, Valenti and Knight (EMNLP Findings 2020, arXiv 2010.04746) recovered 75.1% of cipher-word tokens on a held-out 500-token excerpt (LoC 3044-3045) by a known-plaintext wordbank from the deciphered pages plus a neural LM; the dictionary itself was never identified and the 1096 system was not attacked. Not in the repo (known.py: no hits for 2374, Papeles de Cuba, Wilkinson cipher). Not on DECODE as far as checked.",
+    "why": "Wilkinson's paid espionage for Spain while commanding the US Army is a major early-republic affair; the unread letters would document what he sold and when, including the Burr period.",
+    "importance": 5,
+    "solvability": 4,
+    "difficulty": 3,
+    "score_note": "Scored from the Chu/Valenti/Knight 2020 paper and their released transcriptions during the Oct 2026 Library of Congress sweep (research/us_loc/); LoC scans not viewed (not online at loc.gov as far as found)",
+    "verify": "Get the LoC reproductions of AGI Cuba leg. 2374 (or AGI originals via PARES, Papeles de Cuba 2374); identify the dictionary (c. 1790s English dictionary of ~780 pp, 2 cols, 29 rows: candidates Entick's New Spelling Dictionary editions, Johnson abridgements); bank the 27 deciphered-but-unbanked pages; attack the 1096 system from the 1614-1624/2975-2989 pair.",
+    "links": [
+      {
+        "label": "Chu, Valenti, Knight 2020 (arXiv)",
+        "href": "https://arxiv.org/abs/2010.04746"
+      },
+      {
+        "label": "Project data and transcriptions",
+        "href": "https://github.com/c2huc2hu/wilkinson"
+      }
+    ],
+    "seen": "catalogue",
+    "source": "Library of Congress sweep",
+    "prior_art": "partly read: Chu, Valenti & Knight 2020, 75.1% tokens on one excerpt; dictionary unidentified (checked 28 Oct 2026: arXiv paper, GitHub repo, web search; no later full reading found)"
+  },
+  {
+    "year": 1903,
+    "date": "27 May 1903",
+    "title": "Theodore Roosevelt → John Hay, coded telegram (no decoding noted)",
+    "correspondents": "Theodore Roosevelt → John Hay",
+    "place": "unknown (Roosevelt's western tour, May 1903)",
+    "language": "English",
+    "region": "Americas",
+    "period": "1901-1950",
+    "shelfmark": "Library of Congress, Manuscript Division, Theodore Roosevelt Papers (TR Center image LC reel 413, frame 0026)",
+    "folio_note": "1 typed page; Theodore Roosevelt Center record o266250 describes it only as 'Coded message'",
+    "cls": "B",
+    "status": "TR Center catalogue gives no plaintext and no decoding; probably the State Department or a commercial telegraphic code of 1903, so a codebook should read it. Hay's received copy (Hay Papers, LoC/Brown) may carry the decode. Not in the repo (known.py). TR Center image server refused a scripted download (S3 AccessDenied), not viewed.",
+    "why": "Presidential coded traffic to the Secretary of State in May 1903 (Panama treaty / Alaska boundary period); short, low weight.",
+    "importance": 2,
+    "solvability": 3,
+    "difficulty": 2,
+    "score_note": "Scored from the Theodore Roosevelt Center catalogue during the Oct 2026 Library of Congress sweep (research/us_loc/); not viewed",
+    "verify": "View the image at the TR Center record; check John Hay Papers (LoC mm 79025993 / Brown Univ.) for the decoded copy; try the 1899 State Department Cipher (Red Code) and Slater/ABC codes.",
+    "links": [
+      {
+        "label": "TR Center record",
+        "href": "https://www.theodorerooseveltcenter.org/digital-library/o266250/"
+      }
+    ],
+    "seen": "catalogue",
+    "source": "Library of Congress sweep",
+    "prior_art": "open as far as checked (checked 28 Oct 2026: TR Center record, web search; no decoding found)"
+  },
+  {
+    "year": 1900,
+    "date": "27 Aug 1900",
+    "title": "Alexander Graham Bell → Mabel Hubbard Bell, 'Unicode' code telegram quoted in a letter, left for her to decipher",
+    "correspondents": "Alexander Graham Bell → Mabel Hubbard Bell",
+    "place": "unknown (aboard steamer)",
+    "language": "English",
+    "region": "Americas",
+    "period": "1801-1900",
+    "shelfmark": "Library of Congress, Manuscript Division, Alexander Graham Bell Family Papers, magbell.04100117",
+    "folio_note": "Five code words plus a name: 'Roboro, Diallage, Siquando, Adalligo, Promulgo Bert.' signed 'Signinas' (By the People transcription); the letter says he sent 'the following unicode message which you may have some fun in deciphering'",
+    "cls": "B",
+    "status": "Commercial phrase code ('The Unicode Universal Telegraphic Phrase Book', 1886 onward); no decoding in the transcription. Not in the repo. A family telegram, trivial once the codebook edition is found.",
+    "why": "Small private use of a commercial code by Bell; mainly a quick, checkable code-book exercise.",
+    "importance": 1,
+    "solvability": 5,
+    "difficulty": 1,
+    "score_note": "Scored from the LoC transcription during the Oct 2026 Library of Congress sweep (research/us_loc/); image not viewed",
+    "verify": "Look the five words up in The Unicode (1889 or 1898 ed., archive.org); confirm spellings on the image.",
+    "links": [
+      {
+        "label": "LoC item",
+        "href": "https://www.loc.gov/item/magbell.04100117/"
+      }
+    ],
+    "seen": "catalogue",
+    "source": "Library of Congress sweep",
+    "prior_art": "open (checked 28 Oct 2026: LoC transcription only)"
+  }
+]

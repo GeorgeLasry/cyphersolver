@@ -1,0 +1,41 @@
+retry IncompleteRead https://www.loc.gov/item/mal2257400/?fo=json
+10
+20
+30
+40
+50
+retry IncompleteRead https://www.loc.gov/item/mal2332500/?fo=json
+retry IncompleteRead https://www.loc.gov/item/mal4102700/?fo=json
+60
+70
+80
+retry IncompleteRead https://www.loc.gov/item/mss154040198/?fo=json
+90
+100
+retry IncompleteRead https://www.loc.gov/item/mss44669_02/?fo=json
+110
+retry IncompleteRead https://www.loc.gov/item/mss219560009/?fo=json
+retry IncompleteRead https://www.loc.gov/item/mss23044015/?fo=json
+retry IncompleteRead https://www.loc.gov/item/mss263850044/?fo=json
+120
+retry IncompleteRead https://www.loc.gov/item/mss263850050/?fo=json
+130
+140
+retry IncompleteRead https://www.loc.gov/item/mss184240290/?fo=json
+150
+retry IncompleteRead https://www.loc.gov/item/mss351210287/?fo=json
+160
+retry IncompleteRead https://www.loc.gov/item/maj017806/?fo=json
+170
+retry IncompleteRead https://www.loc.gov/item/mss184240331/?fo=json
+180
+retry IncompleteRead https://www.loc.gov/item/mss184240340/?fo=json
+190
+retry IncompleteRead https://www.loc.gov/item/mss184240165/?fo=json
+retry IncompleteRead https://www.loc.gov/item/mss23044010/?fo=json
+retry URLError https://www.loc.gov/item/mss23044005/?fo=json
+200
+skip http://www.loc.gov/item/2018662607/ ValueError unknown url type: 'page level only'
+skip http://www.loc.gov/item/2018662616/ ValueError unknown url type: 'page level only'
+210
+done 212

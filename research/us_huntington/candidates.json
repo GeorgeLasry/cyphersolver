@@ -1,0 +1,437 @@
+[
+  {
+    "year": 1729,
+    "date": "8 Aug 1729 (enclosure undated, c. July 1729)",
+    "title": "Intelligence report from Port Sainte-Marie (Spain) in numerical code, enclosed to the Duke of Newcastle, undeciphered",
+    "correspondents": "unnamed British agent at Port Sainte-Marie → Thomas Pelham-Holles, Duke of Newcastle (via a correspondent at 'Cesnok', signature illegible)",
+    "place": "El Puerto de Santa María (Spain); covering letter from 'Cesnok'",
+    "language": "French",
+    "region": "Spain",
+    "period": "1701-1800",
+    "shelfmark": "Huntington Library, William Blathwayt papers addenda, mssBLA 191 (HDL p15150coll7 id 61008)",
+    "folio_note": "6 pp. + cover; enclosure (a) is one full page of about 140 three- and four-digit code groups (p. 5, HDL page 61005), no interlinear decipherment; enclosure (b) 21 July 1729 is in clear French",
+    "cls": "A",
+    "status": "Catalogue: 'Enclosure: Two letters from Port Ste Marie: (a) undated, in cipher; (b) July 21, 1729, in French.' No decipherment noted. Image viewed 28 Oct 2026: p. 5 is pure code, unglossed. The same code (groups 659, 1013, 1250, 580, 26, 18 ...) is deciphered interlinearly on the enclosure of mssBLA 187 (letter of 23 June 1729, endorsed 'in the letter of 23 Juin 1729', deciphered 19 July 1729) and is noted as deciphered on mssBLA 188 and the 14 July and 4 Aug 1729 letters. Not on DECODE; not in the repo.",
+    "why": "A British spy's report from Andalusia in the summer of the Treaty of Seville negotiations (Spanish galleons, Gibraltar, Ripperdá era) that was never decoded on the leaf; the code book can be rebuilt from five deciphered sibling letters in the same file.",
+    "importance": 3,
+    "solvability": 5,
+    "difficulty": 2,
+    "score_note": "Scored from the archive description and the page image during the Oct 2026 Huntington Library sweep (research/us_huntington/)",
+    "verify": "Transcribe the deciphered siblings mssBLA 187 (HDL 60966), 188 (HDL 60924), 14 July 1729 (HDL 60892) and 4 Aug 1729 (HDL 60914) into a code table, then apply it to HDL 61005.",
+    "links": [
+      {
+        "label": "HDL mssBLA 191 (letter to Newcastle with cipher enclosure)",
+        "href": "https://hdl.huntington.org/digital/collection/p15150coll7/id/61008"
+      },
+      {
+        "label": "HDL mssBLA 187 (deciphered sibling, same code)",
+        "href": "https://hdl.huntington.org/digital/collection/p15150coll7/id/60966"
+      },
+      {
+        "label": "OAC finding aid, Blathwayt papers addenda",
+        "href": "https://oac.cdlib.org/findaid/ark:/13030/kt1199n4mx"
+      }
+    ],
+    "seen": "image",
+    "source": "Huntington Library sweep",
+    "prior_art": "open (checked 28 Oct 2026: OAC and HDL catalogue notes, known.py repo/DECODE/Cryptoole lists; no edition of the Hume-Campbell intelligence file found)"
+  },
+  {
+    "year": 1728,
+    "date": "13 Sep 1728",
+    "title": "Letter of intelligence from Madrid on Ripperdá's escape from Segovia, with one line in numerical code",
+    "correspondents": "unnamed intelligence agent (Madrid) → unnamed British recipient (Blathwayt/Hume-Campbell intelligence file)",
+    "place": "Madrid",
+    "language": "French",
+    "region": "Spain",
+    "period": "1701-1800",
+    "shelfmark": "Huntington Library, William Blathwayt papers addenda, mssBLA 186 (HDL p15150coll7 id 61211)",
+    "folio_note": "4 pp. + note + cover; p. 1 has one coded run of 11 groups (659.78.73.18.438.468.470.778.190.1102.53) in an otherwise clear letter",
+    "cls": "A",
+    "status": "Catalogue: 'In French, with two lines in cipher.' No decipherment noted; image viewed 28 Oct 2026, the coded run is unglossed. Group 659 and the 1-1300 range match the Port Sainte-Marie code deciphered on mssBLA 187/188, so probably the same agent network's code. Not on DECODE; not in the repo.",
+    "why": "The coded line follows the news that the fallen minister Ripperdá had escaped from Segovia castle and the court's request to foreign ministers to hand him over; it likely names who helped him or where he went.",
+    "importance": 2,
+    "solvability": 3,
+    "difficulty": 2,
+    "score_note": "Scored from the archive description and the page image during the Oct 2026 Huntington Library sweep (research/us_huntington/)",
+    "verify": "Rebuild the code from the deciphered Blathwayt siblings (mssBLA 187, 188, 14 Jul and 4 Aug 1729) and test it on the 11 groups; too short to break alone.",
+    "links": [
+      {
+        "label": "HDL mssBLA 186",
+        "href": "https://hdl.huntington.org/digital/collection/p15150coll7/id/61211"
+      }
+    ],
+    "seen": "image",
+    "source": "Huntington Library sweep",
+    "prior_art": "open (checked 28 Oct 2026: OAC/HDL notes, known.py)"
+  },
+  {
+    "year": 1728,
+    "date": "1727-1728",
+    "title": "Statement concerning M. Rottembourg (French envoy in Spain), partly in numerical code",
+    "correspondents": "unnamed agent → 'Monsieur le consul général' (British consul-general in Spain; Blathwayt/Hume-Campbell intelligence file)",
+    "place": "Spain (unknown)",
+    "language": "French",
+    "region": "Spain",
+    "period": "1701-1800",
+    "shelfmark": "Huntington Library, William Blathwayt papers addenda, mssBLA 184 (HDL p15150coll7 id 60843)",
+    "folio_note": "4 pp. + note + cover; p. 1 has a handful of 4-digit name/word codes (1240, 1243, 1250, 1259) and letter signs (E. T., S.) inside clear French",
+    "cls": "A",
+    "status": "Catalogue: 'In French, partly in cipher.' No decipherment noted; image viewed 28 Oct 2026, codes unglossed. 1250 also occurs in the deciphered Port Sainte-Marie code (mssBLA 187). Not on DECODE; not in the repo.",
+    "why": "Names the parties in Rottembourg's dealings at the Spanish court during the 1727-28 preliminaries (the Pardo convention); the codes are probably persons.",
+    "importance": 2,
+    "solvability": 3,
+    "difficulty": 2,
+    "score_note": "Scored from the archive description and the page image during the Oct 2026 Huntington Library sweep (research/us_huntington/)",
+    "verify": "Check pp. 2-4 (HDL 60837-60839) for more code; match 1240/1243/1250/1259 against the code table rebuilt from mssBLA 187/188.",
+    "links": [
+      {
+        "label": "HDL mssBLA 184",
+        "href": "https://hdl.huntington.org/digital/collection/p15150coll7/id/60843"
+      }
+    ],
+    "seen": "image",
+    "source": "Huntington Library sweep",
+    "prior_art": "open (checked 28 Oct 2026: OAC/HDL notes, known.py)"
+  },
+  {
+    "year": 1757,
+    "date": "28 Jan 1757",
+    "title": "Louis Billouart de Kerlerec, governor of French Louisiana → Machault d'Arnouville (Minister of Marine), despatch in cipher (intercepted)",
+    "correspondents": "Louis Billouart de Kerlerec → Jean-Baptiste de Machault d'Arnouville",
+    "place": "New Orleans (presumably)",
+    "language": "French",
+    "region": "Americas",
+    "period": "1701-1800",
+    "shelfmark": "Huntington Library, 3rd and 4th Earls of Loudoun papers (mssLO), Series 2 North American papers, Box 151, Folder 17",
+    "folio_note": "extent not given; described as 'In cipher'",
+    "cls": "B",
+    "status": "Finding aid item note: 'In cipher.' No decipherment noted. A French governor's despatch in Loudoun's (British commander-in-chief) papers is an intercept. Not on DECODE; not in the repo. A sibling Kerlerec despatch of Dec 1756 'encrypted in the nomenclator' was offered by Maggs Bros (dealer listing, not checked: HTTP 429).",
+    "why": "Kerlerec's reports on Louisiana's defence and Indian alliances (Choctaw, Cherokee overtures) in the first campaign year of the Seven Years' War, seized by the British; whether Loudoun's staff ever read them is unknown.",
+    "importance": 4,
+    "solvability": 2,
+    "difficulty": 3,
+    "score_note": "Scored from the archive description during the Oct 2026 Huntington Library sweep (research/us_huntington/); not viewed",
+    "verify": "Ask the Huntington for scans of LO Box 151 F17 and Box 145 F14 (not digitised); check whether the 'copy' in Box 145 F14 is a decipherment; check ANOM series C13A (Louisiana correspondence, Kerlerec years) for the clear register copy, which would be a crib.",
+    "links": [
+      {
+        "label": "OAC item (Loudoun papers)",
+        "href": "https://oac.cdlib.org/findaid/ark:/13030/c83n2bhm_aspace_b680f9c29e26d7e65603993657d06378"
+      },
+      {
+        "label": "OAC finding aid, Loudoun papers",
+        "href": "https://oac.cdlib.org/findaid/ark:/13030/c83n2bhm"
+      }
+    ],
+    "seen": "catalogue",
+    "source": "Huntington Library sweep",
+    "prior_art": "open as far as checked (28 Oct 2026: web search Kerlerec/Lyttelton/Loudoun cipher; cryptiana not checked for Kerlerec; known.py no hits)",
+    "access": "archive"
+  },
+  {
+    "year": 1756,
+    "date": "12 Dec 1756",
+    "title": "Louis Billouart de Kerlerec → unidentified recipient, letter in cipher and copy, enclosed by Governor Lyttelton to Loudoun",
+    "correspondents": "Louis Billouart de Kerlerec → unidentified (French minister?); forwarded by William Henry Lyttelton (South Carolina) → John Campbell, 4th Earl of Loudoun, 5 Apr 1757 (LO 3293)",
+    "place": "New Orleans (presumably)",
+    "language": "French",
+    "region": "Americas",
+    "period": "1701-1800",
+    "shelfmark": "Huntington Library, 3rd and 4th Earls of Loudoun papers (mssLO), Series 2, Box 145, Folder 14 (enclosure in LO 3293)",
+    "folio_note": "letter and copy; extent not given",
+    "cls": "B",
+    "status": "Finding aid: 'In cipher. Enclosed in William Henry Lyttelton letter to John Campbell, 1757 April 5 (LO 3293).' Whether the 'copy' is a decipherment is not stated. Not on DECODE; not in the repo. Same month as the Kerlerec cipher despatch offered by Maggs (Dec 1756), possibly a duplicate of the same intercept.",
+    "why": "An intercepted cipher despatch of the governor of Louisiana that reached the British via South Carolina; with the Jan 1757 despatch it is a two-letter sample of the French colonial nomenclator of the 1750s.",
+    "importance": 4,
+    "solvability": 2,
+    "difficulty": 3,
+    "score_note": "Scored from the archive description during the Oct 2026 Huntington Library sweep (research/us_huntington/); not viewed",
+    "verify": "Request scans of LO 3293 with enclosure; read Lyttelton's covering letter for whether he had it deciphered; compare with the Maggs listing and ANOM C13A Kerlerec registers.",
+    "links": [
+      {
+        "label": "OAC item (Loudoun papers)",
+        "href": "https://oac.cdlib.org/findaid/ark:/13030/c83n2bhm_aspace_c76b5435026fd03c121b1bde85e005bc"
+      },
+      {
+        "label": "Maggs listing of a Dec 1756 Kerlerec cipher despatch",
+        "href": "https://store.maggs.com/products/encrypted-message-using-number-code-1bnjs6nm"
+      }
+    ],
+    "seen": "catalogue",
+    "source": "Huntington Library sweep",
+    "prior_art": "open as far as checked (28 Oct 2026: web search; known.py no hits)",
+    "access": "archive"
+  },
+  {
+    "year": 1713,
+    "date": "1 Jul-31 Dec 1713",
+    "title": "Hans Kaspar von Bothmer and Hanoverian agents → Jean de Robethon: dispatches on the Hanoverian succession, some ciphered",
+    "correspondents": "Hans Kaspar von Bothmer (Hanoverian envoy, The Hague/London), Hanoverian diplomats and agents in Paris, London, Rotterdam, Utrecht, Copenhagen, Frankfurt, Leiden; Marlborough, Cadogan, Ridpath → Jean de Robethon",
+    "place": "The Hague, London, Paris and others",
+    "language": "French",
+    "region": "Germany",
+    "period": "1701-1800",
+    "shelfmark": "Huntington Library, mssHM 44710 (1 bound volume, 393 leaves, 161 pieces; flyleaf 'No. 9 Mr. de Bothmer an 1713 pars 2')",
+    "folio_note": "393 leaves; 'Some dispatches are ciphered' (catalogue); which ones not stated",
+    "cls": "B",
+    "status": "Catalogue (b1526768): 'In French and English. Some dispatches are ciphered.' Described by Schnath 1984 (Niedersächsisches Jahrbuch, 'Verschollene Robethonpapiere aus Hannover in den USA aufgetaucht'), who is not known to have deciphered them. Robethon's other papers (BL Stowe MSS 222-232) were printed in part by Macpherson, Original Papers (1775), which may print decipherments of parallel letters. Not on DECODE; not in the repo.",
+    "why": "Cipher dispatches from the Hanoverian network in the year before Queen Anne's death, when the succession and Jacobite threat were live; a lost Hanover volume.",
+    "importance": 4,
+    "solvability": 2,
+    "difficulty": 3,
+    "score_note": "Scored from the archive description during the Oct 2026 Huntington Library sweep (research/us_huntington/); not viewed",
+    "verify": "Read Schnath 1984 for the ciphered items and whether decipherments are bound in; check Macpherson's Original Papers vol. 2 and BL Stowe 225-226 for the same letters in clear; request sample scans.",
+    "links": [
+      {
+        "label": "Huntington catalog record",
+        "href": "https://catalog.huntington.org/record=b1526768"
+      }
+    ],
+    "seen": "catalogue",
+    "source": "Huntington Library sweep",
+    "prior_art": "partly checked (28 Oct 2026: catalogue note cites Schnath 1984; Macpherson 1775 not checked; known.py no hits)",
+    "access": "archive"
+  },
+  {
+    "year": 1771,
+    "date": "1769-1780",
+    "title": "East India Company Committee of Secrecy: letters and documents in cipher on a proposed Anglo-Philippine expedition",
+    "correspondents": "East India Company Secret Committee (Laurence Sulivan, William Devaynes, Philip Carteret, Hillsborough, George III, Sir Edward Hughes) → Madras / Lord Macartney's archive",
+    "place": "London / Madras",
+    "language": "English",
+    "region": "England",
+    "period": "1701-1800",
+    "shelfmark": "Huntington Library, mssHM 80328-80338 (11 pieces, from the archive of Lord Macartney)",
+    "folio_note": "11 pieces; 'some ... are written in cipher' (which ones not stated)",
+    "cls": "C",
+    "status": "Catalogue (b1815040): 'Some of the letters and documents are the product of the Committee of Secrecy of the Court of Directors and are written in cipher.' No decipherment noted. Not on DECODE; not in the repo.",
+    "why": "Secret planning by the Company and the Crown for a commercial and military expedition to the Philippines (Balambangan/Sulu context) that was never carried out; the cipher parts would show its targets and scale.",
+    "importance": 3,
+    "solvability": 2,
+    "difficulty": 3,
+    "score_note": "Scored from the archive description during the Oct 2026 Huntington Library sweep (research/us_huntington/); not viewed",
+    "verify": "Request scans; check the British Library IOR Secret Committee letter books (IOR/L/PS/1) and IOR/H for clear copies or the EIC cipher key of the 1770s.",
+    "links": [
+      {
+        "label": "Huntington catalog record",
+        "href": "https://catalog.huntington.org/record=b1815040"
+      }
+    ],
+    "seen": "catalogue",
+    "source": "Huntington Library sweep",
+    "prior_art": "open (checked 28 Oct 2026: catalogue, known.py)",
+    "access": "archive"
+  },
+  {
+    "year": 1803,
+    "date": "20 Sep 1803",
+    "title": "Francis Drake (British minister at Munich) → Charles Stuart, partly in cipher, three pages partly obscured",
+    "correspondents": "Francis Drake → Charles Stuart (later Lord Stuart de Rothesay)",
+    "place": "Munich",
+    "language": "English",
+    "region": "Germany",
+    "period": "1801-1900",
+    "shelfmark": "Huntington Library, Hamond collection (mssHamond), Series 1 Correspondence and Documents 1796-1806, Folder 34 (found in the John Thomas Duckworth material)",
+    "folio_note": "4 pp.; partly in cipher",
+    "cls": "A",
+    "status": "Finding aid: 'partly in cipher with three pages partly obscured.' Unlike its siblings (31 Oct 1803, Folder 36; 14 Feb 1804, Folder 37: 'partly in cipher with Stuart's autograph reading of the cipher') no reading is noted. Not on DECODE; not in the repo.",
+    "why": "Drake ran the Munich secret-service network against Bonaparte in 1803-04 (the Méhée de la Touche affair that exposed him); his cipher letters to Stuart bear on that intrigue and on Corsica/Nelson.",
+    "importance": 3,
+    "solvability": 3,
+    "difficulty": 2,
+    "score_note": "Scored from the archive description during the Oct 2026 Huntington Library sweep (research/us_huntington/); not viewed",
+    "verify": "Request scans of Folders 34, 36, 37; rebuild the Drake-Stuart key from Stuart's readings on 36/37 and apply to 34.",
+    "links": [
+      {
+        "label": "OAC item, Hamond collection Folder 34",
+        "href": "https://oac.cdlib.org/findaid/ark:/13030/c86w9hqc_c03-1-2-6-2-4-35"
+      },
+      {
+        "label": "OAC finding aid, Hamond collection",
+        "href": "https://oac.cdlib.org/findaid/ark:/13030/c86w9hqc"
+      }
+    ],
+    "seen": "catalogue",
+    "source": "Huntington Library sweep",
+    "prior_art": "open (checked 28 Oct 2026: finding aid, known.py)",
+    "access": "archive"
+  },
+  {
+    "year": 1862,
+    "date": "20 Jan-5 Mar 1862",
+    "title": "Joseph Hooker, Army of the Potomac: ciphered telegrams on crossing the lower Potomac",
+    "correspondents": "Joseph Hooker (division commander, lower Potomac) ↔ Army of the Potomac headquarters / War Department",
+    "place": "lower Potomac, Maryland",
+    "language": "English",
+    "region": "Americas",
+    "period": "1801-1900",
+    "shelfmark": "Huntington Library, Joseph Hooker military papers, Box 4, Folder 5 'Crossing the Potomac'",
+    "folio_note": "folder of ciphered telegrams and a hand-drawn map; number not given",
+    "cls": "B",
+    "status": "Finding aid: 'Contains ciphered telegrams and a hand-drawn map of the lower Potomac.' Whether they are the coded originals or operator decodes is not stated. US Military Telegraph route cipher of early 1862; the key family (Stager cipher, Eckert books) is in the Eckert papers (catalogue 648). Not in the repo.",
+    "why": "Hooker's planned crossing against the Confederate Potomac batteries before the Peninsula campaign; the decodes would date and detail the plan.",
+    "importance": 2,
+    "solvability": 2,
+    "difficulty": 2,
+    "score_note": "Scored from the archive description during the Oct 2026 Huntington Library sweep (research/us_huntington/); not viewed",
+    "verify": "Request scans; compare with Official Records I.5 and the Eckert ledgers (mssEC 01-03, 15) for the same messages.",
+    "links": [
+      {
+        "label": "OAC item, Hooker papers",
+        "href": "https://oac.cdlib.org/findaid/ark:/13030/c81r6xwh_aspace_61030d43473b58a9a7250c66594f002a"
+      }
+    ],
+    "seen": "catalogue",
+    "source": "Huntington Library sweep",
+    "prior_art": "not checked against OR (28 Oct 2026)",
+    "access": "archive"
+  },
+  {
+    "year": 1490,
+    "date": "end of the 15th century (after 1485)",
+    "title": "Astrological and medical compilation with occasional words written in cipher",
+    "correspondents": "unknown (English compiler)",
+    "place": "England",
+    "language": "Latin",
+    "region": "England",
+    "period": "15th century",
+    "shelfmark": "Huntington Library, mssHM 64",
+    "folio_note": "196 leaves; cipher words e.g. ff. 50, 102v, 111, 143, 163",
+    "cls": "C",
+    "status": "Catalogue (Dutschke, Guide to Medieval and Renaissance MSS, repeated in HDL record): 'occasional words written in cipher (e.g. ff. 50, 102v, 111, 143, 163)'. No reading given. Probably the common vowel-substitution of English medical manuscripts (cf. HU 1051, where the cataloguer read 'Pr4pt2r 1m4r2m m5l32r3s'). Fully digitised on HDL. Not in the repo.",
+    "why": "Pre-1497 cipher words in a medical-astrological book, probably concealing charm or sexual recipes; small but datable.",
+    "importance": 1,
+    "solvability": 5,
+    "difficulty": 1,
+    "score_note": "Scored from the archive description during the Oct 2026 Huntington Library sweep (research/us_huntington/); not viewed",
+    "verify": "View ff. 50, 102v, 111, 143, 163 on HDL; test vowel-to-digit/dot substitution.",
+    "links": [
+      {
+        "label": "HDL mssHM 64",
+        "href": "https://hdl.huntington.org/digital/collection/p16003coll14/id/1503"
+      }
+    ],
+    "seen": "catalogue",
+    "source": "Huntington Library sweep",
+    "prior_art": "open (checked 28 Oct 2026: catalogue only)"
+  },
+  {
+    "year": 1648,
+    "date": "1648 and 1651",
+    "title": "Owner's notes in cipher dated 1648 and 1651 in a 15th-century Hoccleve/Wyclif miscellany",
+    "correspondents": "unknown 17th-century owner",
+    "place": "England",
+    "language": "English",
+    "region": "England",
+    "period": "1611-1650",
+    "shelfmark": "Huntington Library, mssHM 744 (Hoccleve, didactic pieces, c. 1425-1450), ff. 1r, 16r, 18r",
+    "folio_note": "f. 1r head 'notes in cipher dated 1648'; f. 16r lower margin 'Ms. notes in cipher dated 1651'; f. 18r 'brief ms. note in cipher in right margin of line 1'",
+    "cls": "C",
+    "status": "HDL page notes as quoted. No reading given. Digitised on HDL. Not in the repo.",
+    "why": "Civil-war-era private cipher notes by an owner of a Hoccleve autograph manuscript; could identify the owner in the provenance gap before Ashburnham.",
+    "importance": 1,
+    "solvability": 3,
+    "difficulty": 2,
+    "score_note": "Scored from the archive description during the Oct 2026 Huntington Library sweep (research/us_huntington/); not viewed",
+    "verify": "View ff. 1r, 16r, 18r on HDL (p15150coll7 pages 18373, 18403, 18407); transcribe the signs.",
+    "links": [
+      {
+        "label": "HDL mssHM 744",
+        "href": "https://hdl.huntington.org/digital/collection/p15150coll7/id/18518"
+      }
+    ],
+    "seen": "catalogue",
+    "source": "Huntington Library sweep",
+    "prior_art": "open (checked 28 Oct 2026: HDL notes only)"
+  },
+  {
+    "year": 1853,
+    "date": "c. 1852-1854",
+    "title": "Joseph Cleary's gold-rush voyage journal: a line of monoalphabetic cipher, key on the back blank page, not deciphered",
+    "correspondents": "Joseph Cleary (diarist)",
+    "place": "at sea / California",
+    "language": "English",
+    "region": "Americas",
+    "period": "1801-1900",
+    "shelfmark": "Huntington Library, mssHM 80821",
+    "folio_note": "one line on the front blank page; key written on the back blank page",
+    "cls": "A",
+    "status": "Catalogue (b1820822): 'There is a line of mono alphabetic ciphering on the front blank page with the key written on the back blank page. This line has not been deciphered.' Not in the repo.",
+    "why": "Trivial with the key present, but a documented undeciphered line in a gold-rush journal.",
+    "importance": 1,
+    "solvability": 2,
+    "difficulty": 1,
+    "score_note": "Scored from the archive description during the Oct 2026 Huntington Library sweep (research/us_huntington/); not viewed",
+    "verify": "Request scans of the two blank pages; apply the key.",
+    "links": [
+      {
+        "label": "Huntington catalog record",
+        "href": "https://catalog.huntington.org/record=b1820822"
+      }
+    ],
+    "seen": "catalogue",
+    "source": "Huntington Library sweep",
+    "prior_art": "open (catalogue says not deciphered; checked 28 Oct 2026)",
+    "access": "archive"
+  },
+  {
+    "year": 1890,
+    "date": "1873-before 1929",
+    "title": "Henry Blake Fuller → Louise Lawrence Venus Washburn: a letter fragment written in code",
+    "correspondents": "Henry Blake Fuller (novelist) → Louise Lawrence Venus Washburn",
+    "place": "Chicago (presumably)",
+    "language": "English",
+    "region": "Americas",
+    "period": "1801-1900",
+    "shelfmark": "Huntington Library, Henry Blake Fuller letters to Louise Lawrence Venus Washburn (finding aid c8rn3g52), fragments",
+    "folio_note": "one of eight fragments",
+    "cls": "C",
+    "status": "Finding aid: 'eight fragments (one of which is a letter written in code)'. No reading noted. Not in the repo.",
+    "why": "A private code letter from the Chicago novelist to a lifelong friend; literary-biographical interest only.",
+    "importance": 1,
+    "solvability": 1,
+    "difficulty": 3,
+    "score_note": "Scored from the archive description during the Oct 2026 Huntington Library sweep (research/us_huntington/); not viewed",
+    "verify": "Request a scan of the fragment.",
+    "links": [
+      {
+        "label": "OAC finding aid",
+        "href": "https://oac.cdlib.org/findaid/ark:/13030/c8rn3g52"
+      }
+    ],
+    "seen": "catalogue",
+    "source": "Huntington Library sweep",
+    "prior_art": "open (checked 28 Oct 2026: finding aid)",
+    "access": "archive"
+  },
+  {
+    "year": 1897,
+    "date": "1890s-1900",
+    "title": "Henry E. Huntington ↔ Collis P. Huntington: business letters and telegrams often in code (Southern Pacific / executive cipher books)",
+    "correspondents": "Henry E. Huntington ↔ Collis P. Huntington (also Isaac E. Gates, Isaias W. Hellman, J. D. Bicknell)",
+    "place": "San Francisco / New York / Los Angeles",
+    "language": "English",
+    "region": "Americas",
+    "period": "1801-1900",
+    "shelfmark": "Huntington Library, Henry Edwards Huntington papers, Correspondence series (e.g. Box 276 Folder 1; Box 245 Folders 8-9; Box 272 Folder 7); John Dustin Bicknell papers, Folder 34 ('four ciphers' Nov 1896-Jul 1897)",
+    "folio_note": "many items; finding aid: correspondence 'is often in code and sometimes has a de-coded copy'",
+    "cls": "A",
+    "status": "Finding aid (series note): letters between Henry E. and Collis P. Huntington 'often in code and sometimes has a de-coded copy'. The code books are in the same papers: Southern Pacific Company code book 1892-1897 (Box 307 Folder 35), 'executive cipher book' (Gates letters), 'cypher for translation of telegram' (Hellman letters). Commercial word code. Not in the repo.",
+    "why": "Undecoded telegrams of the Southern Pacific's owners on railway and Los Angeles street-railway deals; readable with the code books filed beside them.",
+    "importance": 2,
+    "solvability": 2,
+    "difficulty": 1,
+    "score_note": "Scored from the archive description during the Oct 2026 Huntington Library sweep (research/us_huntington/); not viewed",
+    "verify": "Request scans of a sample folder and of the Southern Pacific code book (Box 307 F35); list which coded items lack a decoded copy.",
+    "links": [
+      {
+        "label": "OAC finding aid, Henry E. Huntington papers",
+        "href": "https://oac.cdlib.org/findaid/ark:/13030/tf858005xn"
+      }
+    ],
+    "seen": "catalogue",
+    "source": "Huntington Library sweep",
+    "prior_art": "open (checked 28 Oct 2026: finding aid)",
+    "access": "archive"
+  }
+]

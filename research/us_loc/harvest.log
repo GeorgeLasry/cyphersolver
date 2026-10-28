@@ -1,0 +1,6 @@
+cipher 1085 1085 cum 1085
+cypher 201 201 cum 1221
+retry IncompleteRead https://www.loc.gov/manuscripts/?q=ciphered&fo=json&c=100&sp=1
+retry IncompleteRead https://www.loc.gov/manuscripts/?q=ciphered&fo=json&c=100&sp=4
+retry URLError https://www.loc.gov/manuscripts/?q=ciphered&fo=json&c=100&sp=4
+ciphered 1085 1085 cum 1221
