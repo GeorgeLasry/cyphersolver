@@ -177,7 +177,7 @@ Savasse's Maisse) may print a clear text, and Tomokiyo may already have a key th
 Tomokiyo's unsolved list and his French pages for Henri III, Henri IV, Nevers, Mayenne, the League and fr. 4715 (copies
 in `research/gallica_sweep/src/`); his François I era article was **not** fetched (*), so 1520s–1550s entries carry that caveat.
 
-## The 441 open targets, by priority
+## The 440 open targets, by priority
 
 Scores (1–5, judgements made before viewing the leaf, data in `catalogue.json`): **importance** = what a full reading
 would add to the record; **solvability** = odds of a full reading with the material online; **difficulty** = technical
