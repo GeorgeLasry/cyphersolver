@@ -151,3 +151,7 @@ JACAR images and the confusions tested letter by letter against the key, as was 
   for `docs/_validate.py`.
 - Page: `docs/rosamonde1915.html`; figure `docs/rosamonde1915_lead.jpg` (crop of B03050087600 image 52 from the
   contributor's repository); reveal `docs/reveal/rosamonde1915.json`.
+
+## May 1916 forms transcribed by Brice Dudout (28 Oct 2026)
+
+Blind transcriptions of the seven forms, the decryption word by word and a letter-by-letter table of every emendation against the key, as asked in Verification 3: see `dudout/README.md`.
