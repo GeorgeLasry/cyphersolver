@@ -55,6 +55,11 @@
     "replaces": ["targets/ottobon/build_venlm.py (corpus/venlm.o5.sp)"]},
 
 
+  "en-elgar": {"language": "en", "period": "1890-1930", "norm": "modern", "order": 5, "spaces": true,
+    "sources": ["en-gutenberg", "en-elgar-powell1937", "en-elgar-powell1937", "en-elgar-powell1937", "en-elgar-powell1937", "en-elgar-powell1937", "en-elgar-powell1937", "en-elgar-powell1937", "en-elgar-powell1937", "en-elgar-powell1937", "en-elgar-powell1937", "en-elgar-powell1937", "en-elgar-powell1937", "en-elgar-powell1937", "en-elgar-powell1937", "en-elgar-powell1937", "en-elgar-powell1937", "en-elgar-powell1937", "en-elgar-powell1937", "en-elgar-powell1937", "en-elgar-powell1937", "en-elgar-powell1937", "en-elgar-powell1937", "en-elgar-powell1937", "en-elgar-powell1937", "en-elgar-powell1937", "en-elgar-powell1937", "en-elgar-powell1937", "en-elgar-powell1937", "en-elgar-powell1937", "en-elgar-powell1937"], "language_id": false,
+    "use_for": "Elgar's private register (puns, phonetic spellings: wigorously, wunce) at ~10% weight over en-modern; Dorabella",
+    "replaces": []},
+
   "la": {"language": "la", "period": "classical-1600", "norm": "latin", "order": 5, "spaces": true,
     "sources": ["la-gutenberg"], "use_for": "Latin (papal, imperial and humanist correspondence)", "replaces": ["targets/soglia1848/lm5sp_la.bin"]},
   "pt-modern": {"language": "pt", "period": "1800-1920", "norm": "modern", "order": 5, "spaces": true, "sources": ["pt-gutenberg"], "use_for": "Portuguese", "replaces": []},

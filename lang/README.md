@@ -46,6 +46,7 @@ Always normalise candidate plaintext with the same scheme as the model (`models.
 |---|---|---|---|
 | `en-modern` | English 1600–1920 | 24 Gutenberg classics, 15 M | default English |
 | `en-1640s` | English 1640–1700 | Carisbrooke histories + above | Civil War / Restoration |
+| `en-elgar` | English 1890–1930 | Elgar's 23 letters + quoted speech from Powell 1937 (49 k, ×30) over en-gutenberg | Elgar's private register (dorabella) |
 | `fr-modern` | French 1700–1920 | 28 Gutenberg texts, 11 M | later French, language ID |
 | `fr-1530-despatches` | French 1525–1600 | Du Bellay, Nevers, League letters + fr-modern | François I – Henri III despatches |
 | `fr-1600-letters` | French 1570–1640 | Lettres missives de Henri IV, 7.9 M | default for 1570–1640 French |
