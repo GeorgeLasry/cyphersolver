@@ -1,0 +1,7 @@
+# Notes of a conversation with Mr Zea, p. 5: established text
+
+Everett's clear text as written; the deciphered passages in «guillemets»; {x} probable; [x] from sense.
+
+«notion, it seems {fai}{r} to conclude that he is holding, for some particular pu{rp}{ose}, a {lan}guage foreign to his opinions, with the cor-rect {principles}; the ‹1112+› at present the ‹404› of li[ber][al]{ism}. He also {unite}s, I am told, some of the mistakes and prejudices that are frequently {connect}ed with them, {e}[speci]ally a disinclination to the cle{r}{gy}, which {su}its but indifferently with the policy of a Spanish Minister. — He is able and willing to {work} {hard} himself; he told me that he la[bour]ed incessantly the whole of ever[y] day, and two or {three} {night}s in the {week} {besides}. These in[dus]{tri}ous ha{bit}s are very {rar}e among the pub[lic] servants of his Catho[lic] Majesty. I have been somewhat particular in {des}[cri][bing] the person and character of {Mr} {Zea}, not merely because he is the prime Minister here, but because he is {rather} a re{mark}able person among the prime Ministers of Spain and Europe. How much he may be favored by circumstances it is im{poss}ible of course to foresee, and if he should be over{thro}{wn} {pret}ty»
+
+Plain sense: … must be held for a purpose, against his real principles. Said to share the anticlerical prejudices of liberals; works days and several nights a week, rare among the King’s servants; a remarkable man among the prime ministers of Spain and Europe – if he is not soon overthrown…
