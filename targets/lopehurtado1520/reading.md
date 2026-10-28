@@ -18,4 +18,4 @@ El conde de Haro haze el oficio de capitán, como las otras cosas. Como ay aquí
 
 a unos parece que {e} sería bien que el cardenal y algunos del Consejo y contadores viniesen aquí, y que de aquí se usase de justicia e de hazienda ; y que el condestable [e]stuviese [en] lo de Burgos con aquellas montañas, e a otros que este lugar ‹…› proveído, y con la gente que era menester para guardarle ; y que los governadores y Consejo e contadores se junten en Burgos. Para esto ay un gran inconveniente : estar el marqués de Denia, tan mal quisto aquí de los criados de ·lis· y de todo el {pueblo} ; e si {se da a otro}, agraviar sería. Vuestra alteza lo mande mirar todo e mandar proveerlo, que es más a su ‹…› servicio.
 
-Estos grandes, si a r‹…›, tienen tres  : , [ue] les cumple ; y después, poder [con]  ; luego, , si  sin necesidad.  les pesaría  les tuviese.
+Estos grandes, si a r‹…›, tienen tres fynes: lo primero, lo q[ue] les cumple ; y después, poder [con] vra altza ; luego, el bien del rreyno, si ellos quedasen sin necesidad. Creo q no les pesaría de q vra magestad les tuviese.

@@ -10,11 +10,7 @@
    "date": "19 July 1532",
    "year": 1532,
    "country": "Austria",
-   "route": "Fiume -> court of Ferdinand I",
-   "places": {
-    "from": "Fiume (Rijeka)",
-    "to": "court of Ferdinand I"
-   },
+   "route": "Fiume -> Ferdinand I",
    "language": "Italian",
    "pages": 2,
    "cleartext_in_document": "mostly clear",
@@ -122,7 +118,12 @@
    "result": "worked"
   }
  ],
- "outcome": {"validation": {"date": "2026-10-27", "verdict": "not applicable", "notes": "eight nomenclator groups in one letter, each value attested in the glosses of the sibling letters 2-2-9 and 2-2-24; too short for the letter-model test"}, 
+ "outcome": {
+  "validation": {
+   "date": "2026-10-27",
+   "verdict": "not applicable",
+   "notes": "eight nomenclator groups in one letter, each value attested in the glosses of the sibling letters 2-2-9 and 2-2-24; too short for the letter-model test"
+  },
   "class": "read",
   "key": "recovered",
   "method": "key recovered based on adjacent plaintext",
@@ -171,7 +172,13 @@
     "translation": "translation.md",
     "language": "it",
     "state": "read",
-    "summary": "A spy’s letter from the Ragusa network during Süleyman’s campaign: written in clear, it enciphers only eight words — names of people and places, the date and the signature. Once these groups are read, it reveals a plan: to seize the French ambassador at sea on his way back from the sultan."
+    "summary": "A spy’s letter from the Ragusa network during Süleyman’s campaign: written in clear, it enciphers only eight words — names of people and places, the date and the signature. Once these groups are read, it reveals a plan: to seize the French ambassador at sea on his way back from the sultan.",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Opus 5.5 (PR review on merge)",
+     "date": "2026-10-27",
+     "note": "reading.md read paragraph by paragraph against translation.md: every sentence is coherent Venetian Italian and the eight code values fit their clauses (dal loro servitore [Martino Lucio], el bregantino da [Ragusa], [l'ambasciatore] de [Francia], Datta [S. Vito] a di 19 [luglio] [1532]). The only weak spots are four doubtful words of the clear hand (Lanbergher, a peschara, a divotione, ve se avisara); _check_reading's 0.64 counts the bracketed code values as holes."
+    }
    }
   ],
   "key_file": "decryption.txt",

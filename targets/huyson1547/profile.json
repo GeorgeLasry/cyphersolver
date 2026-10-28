@@ -10,10 +10,10 @@
    "date": "1547 (copy sent with Malvezzi's letter of 8 March 1548)",
    "year": 1547,
    "country": "Austria",
-   "route": "Constantinople (Malvezzi) -> Ferdinand I",
+   "route": "Constantinople -> Augsburg",
    "places": {
     "from": "Constantinople",
-    "to": "court of Ferdinand I"
+    "to": "Augsburg"
    },
    "language": "Latin",
    "pages": 7,
@@ -45,7 +45,7 @@
   ],
   "summary": "Malvezzi’s cipher alphabet: homophonic graphic signs (two to four per letter, numbers for double letters), nulls (syllables Dac, Der, Dam… and whole Latin words cum, etiam, porro), a few code words (Bi = King of France, Ras = the Sultan, Ab = the French)",
   "symbol_kind": "digits and symbols",
-  "distinct_symbols": 63,
+  "distinct_symbols": "unknown",
   "diacritics": {
    "used": false
   },
@@ -123,6 +123,12 @@
    "kind": "verification",
    "what": "PR review on merge (Claude Opus 5.5 for Daniel Bourdeau): the DECODE key R367/R386 and the 7-3-20 decipherment credited.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "verification",
+   "what": "Claude Opus 5.5 (PR review on merge): route Constantinople -> Augsburg (Ferdinand at the Diet when Malvezzi sent the copy, 8 Mar 1548), gaps restated, novelty wording, human_check from NOTES, distinct_symbols set unknown (63 not measured); graded A.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -164,7 +170,7 @@
   ],
   "gaps": [
    {
-    "item": "18 unresolved groups (4 in Malvezzi's Italian heading)",
+    "item": "18 unresolved cipher groups in the contributor's count, 4 of them in Malvezzi's Italian heading (27 places marked ‹…› in reading.md, some part-words)",
     "blocker": "illegible"
    }
   ],
@@ -178,10 +184,23 @@
     "translation": "translation.md",
     "language": "la",
     "state": "read",
-    "summary": "In the autumn of 1547 Henry II, king for six months, sent his pantler, the sieur d’Huyson, to Constantinople with a letter of credence for Suleiman and instructions: join the truce that Charles V and Ferdinand had just made with the Porte, but have the king’s allies — the Swiss first — included in it, and expose imperial bad faith. Ferdinand’s resident in Constantinople, Giovanni Maria Malvezzi, got hold of the text, translated it back “from Turkish into Latin, word for word” and sent it to Vienna in cipher, together with a second, longer letter and a third, carried by a captain, about the Diet of Augsburg and asking for the Ottoman fleet. These four ciphered pages had never been read."
+    "summary": "In the autumn of 1547 Henry II, king for six months, sent his pantler, the sieur d’Huyson, to Constantinople with a letter of credence for Suleiman and instructions: join the truce that Charles V and Ferdinand had just made with the Porte, but have the king’s allies — the Swiss first — included in it, and expose imperial bad faith. Ferdinand’s resident in Constantinople, Giovanni Maria Malvezzi, got hold of the text, translated it back “from Turkish into Latin, word for word” and sent it to Vienna in cipher, together with a second, longer letter and a third, carried by a captain, about the Diet of Augsburg and asking for the Ottoman fleet. No earlier decipherment of the cipher is known; the archive's catalogue marks it not deciphered.",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Opus 5.5 (PR review on merge)",
+     "date": "2026-10-27",
+     "note": "Read reading.md (Latin and Italian) against translation.md section by section: the credence, Malvezzi's note, the long letter and the third letter build coherent sentences throughout, with 27 scattered ‹…› holes and 86 probable readings in braces; the weakest passages are the Italian heading (143r ll. 1-2), the three groups after 'ne deceptione' (143v l. 30) and 'imo ‹…› cum ‹…›'. The Latin is a back-translation from Turkish, so its syntax wavers between persons."
+    }
    }
   ],
   "key_file": "key_KC01.json",
-  "provenance": "contributed"
+  "provenance": "contributed",
+  "human_check": {
+   "date": "2026-10-27",
+   "by": "Brice Dudout",
+   "passage": "20 doubtful signs across fols. 143r-146r, shown to him as shapes without interpretation",
+   "result": "confirmed",
+   "note": "19 confirmed, one re-examined (NOTES, method step 5)"
+  }
  }
 }

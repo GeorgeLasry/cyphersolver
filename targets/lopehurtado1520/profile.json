@@ -10,10 +10,10 @@
    "date": "10 December 1520",
    "year": 1520,
    "country": "Spain",
-   "route": "Tordesillas -> Charles V (Flanders/Germany)",
+   "route": "Tordesillas -> Worms",
    "places": {
     "from": "Tordesillas",
-    "to": "court of Charles V"
+    "to": "Worms"
    },
    "language": "Spanish",
    "pages": 2,
@@ -117,9 +117,48 @@
    "what": "Targeted visual review of 12 doubtful signs by Brice Dudout; S = s withdrawn (r38 \"holgado\").",
    "result": "worked"
   },
-  {"date": "2026-10-27", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 3432 tokens, 35 types, es-golden-age order 4: reading -2.139 per letter; random keys -5.439 (z 5.3); key annealed onto shuffled ciphertext best -3.118 (mean -3.141, z 43.3); annealer on the real text -2.091. Verdict: pass.", "result": "worked"}
+  {
+   "date": "2026-10-27",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Statistical validation (docs/_validate.py): 3432 tokens, 35 types, es-golden-age order 4: reading -2.139 per letter; random keys -5.439 (z 5.3); key annealed onto shuffled ciphertext best -3.118 (mean -3.141, z 43.3); annealer on the real text -2.091. Verdict: pass.",
+   "result": "worked"
+  }
  ],
- "outcome": {"validation": {"date": "2026-10-27", "model": "es-golden-age", "file": "validation.tsv", "tokens": 3432, "types": 35, "tokens_per_type": 98.06, "score": -2.139, "nulls": {"random keys": {"n": 200, "mean": -5.439, "sd": 0.623, "max": -4.153, "z": 5.3, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -3.141, "sd": 0.023, "max": -3.118, "z": 43.3, "p": 0.1429}}, "power": -2.091, "verdict": "pass", "notes": "claimed per-occurrence score -2.077; polyphony 0.014; 677 unread tokens left out; annealer on the real text from random keys reached -2.091"}, 
+ "outcome": {
+  "validation": {
+   "date": "2026-10-27",
+   "model": "es-golden-age",
+   "file": "validation.tsv",
+   "tokens": 3432,
+   "types": 35,
+   "tokens_per_type": 98.06,
+   "score": -2.139,
+   "nulls": {
+    "random keys": {
+     "n": 200,
+     "mean": -5.439,
+     "sd": 0.623,
+     "max": -4.153,
+     "z": 5.3,
+     "p": 0.005
+    },
+    "shuffled refit": {
+     "n": 6,
+     "mean": -3.141,
+     "sd": 0.023,
+     "max": -3.118,
+     "z": 43.3,
+     "p": 0.1429
+    }
+   },
+   "power": -2.091,
+   "verdict": "pass",
+   "notes": "claimed per-occurrence score -2.077; polyphony 0.014; 677 unread tokens left out; annealer on the real text from random keys reached -2.091"
+  },
   "class": "read",
   "key": "recovered",
   "method": "key recovered from ciphertext-only",
@@ -132,7 +171,11 @@
   "fraction_read_method": "measured",
   "fraction_read_source": "rate.py on words: 920 cipher words, about 97.7% read, 95.4% certain (without probable readings), about 21 unresolved.",
   "first_break": true,
-  "verification": ["matched control", "historical consistency", "statistical test"],
+  "verification": [
+   "matched control",
+   "historical consistency",
+   "statistical test"
+  ],
   "human_check": {
    "date": "2026-10-28",
    "by": "Brice Dudout",
@@ -163,7 +206,13 @@
     "translation": "translation.md",
     "language": "es",
     "state": "read",
-    "summary": "Five days after Tordesillas was retaken from the Comuneros, Lope Hurtado de Mendoza, Charles V’s confidant with the governors of Castile, wrote two letters on the same day. One, in plain text, tells of the sack of the town and the capture of the Junta’s procurators; Danvila printed it in the late nineteenth century. The other, entirely in cipher, says what could not be written openly: the Admiral hesitates to govern, the Marquis of Denia is hated, the army is “very badly commanded”, and the see of Jaén and every vacancy should be held back to keep loyalties. An archivist’s slip in the bundle said the key was to be found in a letter of 23 September; it was not. We rebuilt it from the letter itself."
+    "summary": "Five days after Tordesillas was retaken from the Comuneros, Lope Hurtado de Mendoza, Charles V’s confidant with the governors of Castile, wrote two letters on the same day. One, in plain text, tells of the sack of the town and the capture of the Junta’s procurators; Danvila printed it in the late nineteenth century. The other, entirely in cipher, says what could not be written openly: the Admiral hesitates to govern, the Marquis of Denia is hated, the army is “very badly commanded”, and the see of Jaén and every vacancy should be held back to keep loyalties. An archivist’s slip in the bundle said the key was to be found in a letter of 23 September; it was not. We rebuilt it from the letter itself.",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Opus 5.5 (PR review on merge)",
+     "date": "2026-10-27",
+     "note": "reading.md read paragraph by paragraph against translation.md and decryption.txt: coherent Spanish throughout with scattered marked holes (about 21 words). Weak spots: 'e no y ase cada dia mill vezes' (r12-13), '{segund el} tiene' (r32), 'la <tar>, que es <...> mejor' (r36), and 'Pues pero esta agora todo, que estava entonces' (v08), where a slip for 'peor' would give the plainer sense. The last paragraph of reading.md has lost its clear-text words (see profile_patches); decryption.txt has them and the sentence holds."
+    }
    }
   ],
   "key_file": "key_K4.tsv",
