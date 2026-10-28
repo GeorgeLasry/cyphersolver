@@ -70,7 +70,12 @@ Read by two agents (`agent_59.md`, `agent_rest.md`); their one confirmed lead wa
     groups, with Bristol's despatches saying they could not be deciphered. Entry 669 (the RG 457 copies, not digitised)
     now points to them.
   - Grimes, Manila 1898-99 (naId 153563607, fetched): the seized cipher papers are not in the file. Van Ness, Madrid
-    1831-32 (naIds 149332001, 188612517): the cipher paragraphs were not found in the M31 vols 30-31 OCR; left open.
+    1832-33: closed, not a row. Livingston (12 Apr 1833, M77 roll 142 f.0024) says two despatches were 'written in a
+    cypher to which we have no key' and sends the new cipher; Van Ness (M31-031-0184) answers that he had used the latest
+    cipher in the legation archives, that each despatch held only 'a paragraph or two in cypher', and sends duplicates.
+    Neither names the despatch numbers. Frames M31-031-0100 and 0113-0141 (Nos. 46-50, Dec 1832 - Feb 1833) were viewed:
+    clear text and translations only; the OCR of vols 30-31 has no figure runs. The passages are not located and are a
+    few lines at most; if found, try targets/jqa/code_table.tsv (the older Madrid code).
 - Other groups (360 items): 249 already covered by slices A-K (all RG 165 and RG 65 items); the unread items they
   touch are catalogue 674-703; card-only MID leads already declined in slice E; RG 38 war diaries about the Navy's own
   undecipherable traffic and ONI ink formulas; RG 94 inventors' systems (Fuller 1878, O'Neill/McManus 1884; Wherry 1878
