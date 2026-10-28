@@ -1,0 +1,110 @@
+{
+ "schema_version": 1,
+ "target": "knorre1462",
+ "title": "Peter Knorre and Rudolf Schenk von Tautenburg to Duke Wilhelm III of Saxony, ciphered embassy reports on the Luxembourg succession, 1462-63 (SächsHStA Dresden, Wittenberger Archiv, Loc. 4356/01; lost 1945)",
+ "documents": [
+  {
+   "id": "A",
+   "shelfmark": "Sächsisches Staatsarchiv, Hauptstaatsarchiv Dresden, 10005 Wittenberger Archiv, Loc. 4356/01, Bl. 380, 490, 494, 530, 531, 538, 540, 564, 565, 572, 574, 575",
+   "date": "Jul 1462 - Mar 1463",
+   "year": 1462,
+   "country": "Germany",
+   "route": "Peter Knorre, Rudolf Schenk von Tautenburg (Brussels, Bruges) -> Wilhelm III, Duke of Saxony",
+   "language": "German",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "The finding aid says part of Bl. 540 was deciphered; the sheet is lost and only the archivist's one-line summary survives.",
+    "partial": true
+   },
+   "length": {
+    "tokens": 0,
+    "unit": "mixed",
+    "measured": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "image_quality": "no images",
+    "notes": "The volume is marked 'Fehlt: Kriegsfolge' (lost 1945) on archiv.sachsen.de, checked 28 Oct 2026. Nothing transcribed. cleartext_in_document is taken from the finding aid ('größtenteils', 'teils chiffriert')."
+   },
+   "read": "not read"
+  }
+ ],
+ "system": {
+  "types": [
+   "undetermined"
+  ],
+  "summary": "unknown: the letters are lost and were never seen by the project.",
+  "symbol_kind": "symbols",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": "unknown"
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": "unknown"
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "not applicable",
+  "notes": "symbol_kind and key_order are placeholders: the schema has no 'unknown' value for them. Nothing about the system is known."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "unknown",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [],
+  "attack": "none",
+  "human_role": "Pasted the catalogue task; no other input. Brice Dudout had reported the loss notes by email on 27 Oct 2026.",
+  "tools": [
+   "Archivportal-D and archiv.sachsen.de (built-in browser)",
+   "web search"
+  ],
+  "models": [
+   "claude-opus-5-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-10-28",
+  "last_date": "2026-10-28"
+ },
+ "solution": [
+  {
+   "date": "2026-10-28",
+   "kind": "access",
+   "what": "Archivportal-D and archiv.sachsen.de records for Bl. 540, 538, 575, 530, the ciphered Befehl and the volume Loc. 4356/01: no images; all marked 'Fehlt: Kriegsfolge'. The volume is lost.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "literature search",
+   "what": "Web searches (Knorre + Wilhelm III + Luxemburg 1462 + chiffriert; Knorre provost of Wetzlar 1463; Würth-Paquet regests) and an Archivportal-D 'Knorre' search: no edition, decipherment or second copy found.",
+   "result": "failed"
+  }
+ ],
+ "outcome": {
+  "class": "offline only",
+  "key": "none",
+  "method": "not applicable",
+  "verification": [
+   "none"
+  ],
+  "contribution": [
+   "none"
+  ],
+  "gaps": [
+   {
+    "item": "all ciphered sheets",
+    "blocker": "needs-physical-access"
+   }
+  ],
+  "notes": "Not attempted on the ciphertext: the originals are recorded as lost in 1945. Only a pre-war film or copy (SächsHStA, AGR/ADN, Weimar) would reopen it."
+ }
+}
