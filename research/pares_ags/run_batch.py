@@ -7,6 +7,9 @@ CAP      hard cap on live requests for the whole batch (all jobs, both passes, e
 JOB      "term"                 the whole term, no year filter
          "term@1500-1549"       one year range (anio1=1500, anio2=1549)
          "term@1500-1599/10"    split into ranges of 10 years: 1500-1509, 1510-1519, ..., 1590-1599
+                                (year jobs are refused: PARES ignores anio1/anio2, README access log)
+         "term#idFI=16"         a PARES facet filter (here: start date in the 16th century; idFI=0 = no
+                                date, idD=S/N = digitised or not); this is the working way to split a term
 FILE     one JOB per line; empty lines and lines starting with # are skipped.
 
 Example (with PARES_RAW set to a scratch folder for the raw pages):
@@ -28,9 +31,12 @@ PAUSE_EVERY, PAUSE_SECS = 50, 600
 
 
 def expand(job):
-    """'term', 'term@a-b' or 'term@a-b/step' -> list of (term, anio1, anio2)."""
+    """'term', 'term#facet', 'term@a-b' or 'term@a-b/step' -> list of (term, anio1, anio2, facet)."""
+    if '#' in job:
+        term, facet = job.split('#', 1)
+        return [(term.strip(), None, None, facet.strip())]
     if '@' not in job:
-        return [(job.strip(), None, None)]
+        return [(job.strip(), None, None, None)]
     term, rng = job.rsplit('@', 1)
     step = None
     if '/' in rng:
@@ -38,8 +44,8 @@ def expand(job):
         step = int(step)
     a, b = (int(x) for x in rng.split('-'))
     if not step:
-        return [(term.strip(), a, b)]
-    return [(term.strip(), y, min(y + step - 1, b)) for y in range(a, b + 1, step)]
+        return [(term.strip(), a, b, None)]
+    return [(term.strip(), y, min(y + step - 1, b), None) for y in range(a, b + 1, step)]
 
 
 def main(argv):
@@ -61,7 +67,7 @@ def main(argv):
     if not todo:
         print('no jobs', file=sys.stderr)
         return 1
-    if any(a1 is not None for _, a1, _ in todo):
+    if any(a1 is not None for _, a1, _, _ in todo):
         # Year-filter bug (README, access log 27 Oct 2026): anio1/anio2 are dropped by the 100-row formBusqueda
         # POST, so every year job re-runs the whole term. Refuse until sweep.open_search sends them in the POST too.
         print('year ranges are not applied by PARES in the 100-row session (README, year-filter bug); '
@@ -71,14 +77,14 @@ def main(argv):
     print(f'{len(todo)} jobs, cap {cap} requests, pause {PAUSE_SECS} s after every {PAUSE_EVERY}', file=sys.stderr)
     code = 0
     try:
-        for term, a1, a2 in todo:
+        for term, a1, a2, fc in todo:
             sweep.ORDER = 8
-            n = sweep.run(term, maxpages, a1, a2)
-            st = sweep.load_progress().get(sweep.key_of(term, a1, a2), {})
+            n = sweep.run(term, maxpages, a1, a2, fc)
+            st = sweep.load_progress().get(sweep.key_of(term, a1, a2, fc), {})
             if st.get('done') and isinstance(st.get('total'), int) and st.get('unique_hits', 0) < st['total']:
                 sweep.ORDER = 0
-                n += sweep.run(term, maxpages, a1, a2)
-            print(f'job {sweep.key_of(term, a1, a2)!r}: {n} new hits, {sweep.NREQ} requests so far', file=sys.stderr)
+                n += sweep.run(term, maxpages, a1, a2, fc)
+            print(f'job {sweep.key_of(term, a1, a2, fc)!r}: {n} new hits, {sweep.NREQ} requests so far', file=sys.stderr)
     except sweep.Blocked as e:
         print('stopped:', e, file=sys.stderr)
         code = 2 if '429' in str(e) else 3
