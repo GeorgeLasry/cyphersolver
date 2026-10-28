@@ -1,0 +1,228 @@
+{
+ "schema_version": 1,
+ "target": "wilkinson1789",
+ "title": "James Wilkinson ('Agent 13') and the Spanish governors of Louisiana, cipher letters c. 1789-1806 (catalogue 761)",
+ "documents": [
+  {
+   "id": "1078",
+   "shelfmark": "Library of Congress, Manuscript Division, reproductions of AGI Papeles de Cuba leg. 2374; the 1078-system pages",
+   "date": "unknown",
+   "year": 1795,
+   "country": "Spain",
+   "route": "Kentucky / Louisiana",
+   "language": "English",
+   "pages": "unknown",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "28 pp of the legajo carry interlinear decipherments (Chu/Valenti/Knight inventory).",
+    "partial": true
+   },
+   "length": {
+    "tokens": 1933,
+    "distinct": 735,
+    "unit": "code groups",
+    "measured": false
+   },
+   "transcription": {
+    "by": "published",
+    "source": "Chu, Valenti, Knight 2020 transcriptions (github c2huc2hu/wilkinson data/unsolved/unsolved.ciphers.1078)",
+    "corrections": 0,
+    "image_quality": "unknown",
+    "notes": "Not re-checked against the scans here."
+   }
+  },
+  {
+   "id": "1096",
+   "shelfmark": "Library of Congress, Manuscript Division, reproductions of AGI Papeles de Cuba leg. 2374; the 1096-system pages",
+   "date": "unknown",
+   "year": 1795,
+   "country": "Spain",
+   "route": "Kentucky / Louisiana",
+   "language": "English",
+   "pages": "unknown",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "separate folio"
+    ],
+    "source": "Decipherments LoC 2975-2989 and 3014-3018 exist; not obtained.",
+    "partial": true
+   },
+   "length": {
+    "tokens": 1475,
+    "distinct": 723,
+    "unit": "code groups",
+    "measured": false
+   },
+   "transcription": {
+    "by": "published",
+    "source": "Chu, Valenti, Knight 2020 transcriptions (github c2huc2hu/wilkinson data/unsolved/unsolved.ciphers.1096)",
+    "corrections": 0,
+    "image_quality": "unknown",
+    "notes": "Not re-checked against the scans here."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "code",
+   "nomenclator"
+  ],
+  "summary": "A numbered table of about 1,240 words ([n]^) plus page.row references into a printed English dictionary, with the column marked by one or two bars. The 1078 and 1096 systems share the table but appear to use two different dictionaries (about 780 pp × 29 rows and about 430 pp × 40 rows).",
+  "symbol_kind": "digits and symbols",
+  "distinct_symbols": "unknown",
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": "unknown",
+   "kinds": [
+    "common words",
+    "names"
+   ],
+   "unread_groups": "unknown"
+  },
+  "nulls": "unknown",
+  "key_order": "alphabetical",
+  "word_division": "kept",
+  "doubled_letters": "unknown",
+  "sibling_key": "1096 dictionary: unidentified. A spelling dictionary of Entick's kind with 40-line columns, a little less dense than the London Entick of 1788-1800 for A-H and much less dense for R; scanned London Entick editions 1772-1800 and the Murray (New York) editions 1804/1812 are ruled out. 1078 dictionary: unidentified.",
+  "notes": "Two-dictionary split inferred from 233 banked page.row pairs (dict_refs_from_wordbank.tsv).",
+  "diacritics": {
+   "used": true,
+   "note": "One or two bars after the row number mark the dictionary column; a caret marks a table entry."
+  }
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "partial",
+   "where": "Chu, Valenti, Knight 2020 (arXiv 2010.04746): 75.1% of tokens on LoC 3044-3045",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "transcription",
+   "published reading"
+  ],
+  "attack": "none",
+  "human_role": "Posed the target from the catalogue task text.",
+  "tools": [
+   "git",
+   "python"
+  ],
+  "models": [
+   "claude-opus-5-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-10-28",
+  "last_date": "2026-10-28"
+ },
+ "solution": [
+  {
+   "date": "2026-10-28",
+   "kind": "literature search",
+   "what": "Checked arXiv 2010.04746, github c2huc2hu/wilkinson and this repo; no full reading found.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "hypothesis",
+   "what": "Extracted 233 page.row→word pairs from the published wordbanks. Page range, row range and alphabetical run split them into two dictionaries.",
+   "result": "partial",
+   "technique": [
+    "key-structure hypothesis"
+   ]
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "sibling key",
+   "technique": [
+    "crib testing"
+   ],
+   "what": "Tested 16 archive.org scans of Entick's New Spelling Dictionary (1766-1800) against the 198 usable page.row anchors by fitting each anchor word's alphabetical position to a page (alpha_fit.py). Best fits: 1772 (46 within ±1 page), 1787/1788/1791 (42-44); all hits fall in the 1096 chain (p. 133-430).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "sibling key",
+   "technique": [
+    "crib testing"
+   ],
+   "what": "Tested Johnson abridgements (1786, 1792, 1802 abstract) and a 785-leaf 1805 English dictionary against the 1078 chain.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "verification",
+   "technique": [
+    "crib testing"
+   ],
+   "what": "Read the page images of Entick NSD 1772, 1788, 1795 and 1800 at the 1096 anchor 163.[26]- glorious / 163.[28]- glory. Glorious is on p. 157 (1772) or p. 167 (1788-1800), col. 2, with 38 lines per column; the cipher needs p. 163, col. 1 and up to 40 rows. All scanned Entick editions are ruled out.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "verification",
+   "technique": [
+    "crib testing"
+   ],
+   "what": "Page images at the glory anchor: Entick 1812 has 40-line columns but glory at about p. 150; Webster Compendious 1806 (F at p. 117) and Perry Royal Standard 1806 (J-K at p. 256) ruled out. The 1096 book is bracketed between Entick 1800 and 1812: probably an Entick printing of c. 1801-1811.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "access",
+   "what": "Searched for Entick NSD printings of 1801-1811: Google Books has none in full view (1803 Crakelt edition listed, no preview); HathiTrust catalogue blocked by a bot check.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "verification",
+   "technique": [
+    "crib testing"
+   ],
+   "what": "Page images of Entick NSD ed. Lindley Murray, New York 1804 (HathiTrust nyp.33433070243435, pp. 151-164, 262-263): glory p. 151 col. 2 row 3, happy p. 157, home p. 162, receive p. 262-263, against the cipher's 163/171/178/303. The gap grows from 12 to 40 pages, so the 1804 Murray edition and its 1812 reprint are ruled out.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "solver",
+   "technique": [
+    "language-model scoring"
+   ],
+   "what": "Interpolating decoder (decode.py): alphabetical interpolation between known table and dictionary values, Gutenberg word-trigram beam search. Held-out LoC 3044-3045: 58.6% of 485 tokens, against Chu et al.'s 75.1%.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "solver",
+   "technique": [
+    "language-model scoring"
+   ],
+   "what": "GPT-2 coordinate-ascent rescoring of the same candidates (rescore.py): 57.9%, no gain; anchors are the bottleneck.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "access",
+   "what": "Looked for more anchors: Chu et al.'s Drive scans and spreadsheets deleted (404/410); no online copy of the LoC reproductions of AGI Cuba leg. 2374.",
+   "result": "failed"
+  }
+ ],
+ "outcome": {
+  "method": "not solved",
+  "method_basis": "In progress: no scans obtained and no dictionary edition tested yet.",
+  "contribution": [
+   "none"
+  ],
+  "class": "unknown",
+  "fraction_read": "unknown",
+  "grades": "unknown",
+  "verification": [],
+  "notes": "Neither dictionary identified; Entick London 1772-1800 and Murray 1804/1812, Webster 1806, Perry 1806 and the Johnson abridgements ruled out by page images or fit."
+ }
+}
