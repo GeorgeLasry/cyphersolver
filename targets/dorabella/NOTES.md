@@ -129,6 +129,38 @@ no repeated 4-gram. Orientation F carries 23/87.
    homophonic: −2.255 / −2.273 (nulls −2.17 to −2.47). Controls 0.92–1.00 (Gutenberg text; Elgar's letters are in
    the model, so no held-out control in his register). **Negative.**
 
+15. **Null signs** (`nulls.py`): each orientation, each arc count, and the six rarest symbols dropped in turn,
+   remainder solved strict on en-modern. Dorabella sits above its shuffles in several drops (F: −2.356 vs
+   −2.54..−2.76; C: −2.487 vs −2.73..−2.86; 1-arc −2.393 vs −2.52..−2.62), the sequential structure again, but every
+   output is gibberish and none reaches its controls. **Negative.**
+16. **Motor signature / "doodle"** (`doodle.py`, 5,000 shuffles). Not a doodle: consecutive signs turn *more* than
+   chance (mean orientation step 2.33 vs 2.01, P = 0.010), no ±45° sweeps at all (longest 1 vs 2.07). **New
+   structure: opposite orientations.** 180° steps 27 vs 12.6 expected (none of 5,000 shuffles ≥ 27, P < 0.0002);
+   90° steps fewer (11 vs 18.4, P = 0.02). Mostly F↔B and C↔G. English under Elgar's own table (the Roe order
+   with most opposition) gives 15.4 (P(≥27) = 0.0005); the best letter→orientation layout for English yields at most
+   24.7 expected over 86 pairs, below Dorabella's 27. Not a pairing artefact: 17 even / 10 odd start positions,
+   longest chain 3. So whatever produced the orientations favours flipping to the opposite side more than any
+   substitution of English can.
+17. **Axis hypothesis** (`axis.py`): orientation mod 4 × arcs = 12 signs, direction ignored, polyphonic (~2 letters per
+   sign), grouping annealed, Viterbi on en-modern order 3. Dorabella −1.983; nulls −1.93..−2.03; controls 0.02–0.30
+   accuracy. **Inconclusive**: a 12-sign polyphonic cipher of 87 signs makes English-like text from anything.
+18. **Word initials** (`initials.py`). (a) Initials model (order 3, 4.9 M words): Dorabella −2.618, nulls −2.61..−2.68,
+   controls −2.47..−2.67 at 0.01–0.48 accuracy: **no power**. IoC of English initials 0.0718 vs Dorabella 0.0585 (running
+   text 0.066): mildly against. (b) Acrostic of a known text: every 87-word window of KJV, Shakespeare, Bulchevy's English
+   verse and en-gutenberg (4.9 M windows): best one-to-one fit 30/87, shuffles 29–34. **Negative** for those texts.
+19. **Pall Mall facsimile systems**: Guise/Condé (3–4 homophones per letter), Charles I's shorthand and the musical
+   cipher are fixed symbol tables, covered by steps 2–3 and 15. Sign pairs as Polybius coordinates: 39 of 43 pairs
+   distinct at either phase, IoC 0.0044 = shuffles (P = 0.35); a pair code for letters would give ~18 distinct.
+   **Negative.**
+20. **Melody crib: the Lullaby Elgar played that week** (`melody_crib.py`). From the Bavarian Highlands op. 27 no. 3,
+   alto solo bars 23–38 ("Sleep, my son … sleep, my son"), 33 notes read by eye from the SHORCHOR 2019 vocal score
+   (D major, 3/4; ties merged; durations shorter/quarter/longer as Hauer). The NWC Scriptorium file (decoded by
+   `nwc_melody.py`; NWC 2 binary) is a 2005 orchestral arrangement whose sections and keys do not match the published
+   score, so it was not used. Every segment ≥ 4 notes at every offset; longest fit explained by one mapping:
+   structured (pitch → orientation, duration → arcs) 5, shuffles 5.0 (P = 0.85), random melodies 5.0; free
+   ((pitch, duration) → symbol) 9, shuffles 10.5, random melodies 9.7. **Negative.** Not tried: the piano
+   introduction theme, Lux Christi, Caractacus (need reading from IMSLP scores).
+
 ## Where it stands (28 Oct 2026)
 
 Not deciphered. Outcome: not solved (attempted, open).
