@@ -87,3 +87,15 @@ no hits) and by grepping catalogue.json and the `nara_*` folders for the naId an
 No non-digitised file was ordered. For M1486 roll 83 only frames 0692-1100 were read in the OCR in detail and two frames viewed;
 the pairing of every circular with a worksheet and the question whether bigram tables 356-400 are filmed is left to the
 `verify` step. Russian consulate rolls other than roll 83 were checked only through the flagged frames in `rg_64_all.jsonl`.
+
+## Second frame pass (main session, 27 Oct 2026)
+
+The review above read only the 60 RG 64 items with most numeric frames. To cover the rest, `corr_frames.py` streamed all
+of `rg_64_all.jsonl` and kept code-like frames (>= 25 number groups, a run of >= 12, words < nums/3) in correspondence
+series only (State Department decimal files, Russian consulates, Naval Records, political and territorial papers): 1,038
+items, 9,320 frames (`out/rg_64_corr.tsv`). `uniform.py` then kept items whose sample frame is mostly uniform 4- or
+5-figure groups with no totals or decimals: 21 items. Of those, 20 are Spanish/Italian official gazettes, serial-number
+lists, 1990s declassification stamps and statistical series; the 21st (M1486 roll 90) is a file-number index. All 60
+Russian consulate items in the list were read by title and snippet (accounts, certificates of origin, indexes,
+calendars), and a grep of every Russian consulate frame in RG 64 for шифр/ключ/депеша found only roll 83 (entry 756).
+No further row. Catalogue 658 (lima1917) was updated with the M336 roll 64 file instead of a new row.
