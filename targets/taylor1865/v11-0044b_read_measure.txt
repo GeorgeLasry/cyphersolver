@@ -1,0 +1,3 @@
+TROOPS AND STORES MUST BE MOVED IN THIS DIRECTION WILL MOVE WESTWARD PROBABLY BY END OF THE WEEK
+
+# Measurement: 18 lexical words; 0 marked uncertainties.

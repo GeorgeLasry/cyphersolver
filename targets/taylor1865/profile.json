@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "target": "taylor1865",
- "title": "Lt. Gen. Richard Taylor's telegram letter-books, Meridian 1865: four telegrams with Confederate Vigenere passages read with the key COME RETRIBUTION (NARA RG 109 ch. II vols. 196 and 11; catalogue 681)",
+ "title": "Richard Taylor telegram letter-books: dated 9 March 1865 keyword-change orders and further January–April readings (catalogue 681; in progress)",
  "documents": [
   {
    "id": "v196-0061",
@@ -148,13 +148,204 @@
     "image_quality": "good",
     "notes": "Read twice, the second time independently; the date line reads 'Meridian April 8th 1865' and the telegram is complete. 2 letters corrected (Z for E, X for W). Measured with docs/_check_profile.py --measure --letters."
    }
+  },
+  {
+   "id": "v10-0049",
+   "read": "read",
+   "shelfmark": "NARA RG 109, ch. II vol. 10, frame 0049, MS p. 92",
+   "date": "9 Jan 1865",
+   "year": 1865,
+   "country": "Confederate States",
+   "route": "Meridian, Mississippi -> Richmond, Virginia",
+   "language": "English",
+   "pages": 1,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "printed edition"
+    ],
+    "source": "OR I/45/2 p. 772; existing printed decipherment used to recover THE NAVY OUR PRIDE.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 94,
+    "distinct": 26,
+    "unit": "letters",
+    "measured": true,
+    "file": "v10-0049_cipher.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Full-resolution NARA JPEG; exact URL in continuation_sources.json",
+    "image_quality": "fair",
+    "notes": "Candidate glyphs preserved separately from reconstructed ciphertext in continuation_alignment.tsv. Counts measure candidates. No independent second reader."
+   }
+  },
+  {
+   "id": "v10-0056",
+   "read": "not read",
+   "shelfmark": "NARA RG 109, ch. II vol. 10, frame 0056, MS p. 107",
+   "date": "18 Jan 1865",
+   "year": 1865,
+   "country": "Confederate States",
+   "route": "Tupelo, Mississippi -> Richmond, Virginia",
+   "language": "English",
+   "pages": 1,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No complete counterpart verified; a secondary quotation remains only a lead."
+   },
+   "length": {
+    "tokens": 259,
+    "distinct": 26,
+    "unit": "letters",
+    "measured": true,
+    "file": "v10-0056_cipher.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Full-resolution NARA JPEG; exact URL in continuation_sources.json",
+    "image_quality": "fair",
+    "notes": "Candidate glyphs preserved separately from reconstructed ciphertext in continuation_alignment.tsv. Counts measure candidates. No independent second reader."
+   }
+  },
+  {
+   "id": "v11-0044b",
+   "read": "read",
+   "shelfmark": "NARA RG 109, ch. II vol. 11, frame 0044, MS p. 84, second telegram",
+   "date": "10 Apr 1865",
+   "year": 1865,
+   "country": "Confederate States",
+   "route": "Meridian, Mississippi -> Mobile, Alabama",
+   "language": "English",
+   "pages": 1,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "printed edition"
+    ],
+    "source": "OR I/49/2 p. 1223, existing printed decipherment.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 79,
+    "distinct": 25,
+    "unit": "letters",
+    "measured": true,
+    "file": "v11-0044b_cipher.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Full-resolution NARA JPEG; exact URL in continuation_sources.json",
+    "image_quality": "fair",
+    "notes": "Candidate glyphs preserved separately from reconstructed ciphertext in continuation_alignment.tsv. Counts measure candidates. No independent second reader."
+   }
+  },
+  {
+   "id": "v11-0076-77a",
+   "read": "read",
+   "shelfmark": "NARA RG 109, ch. II vol. 11, frames 0076–0077, MS pp. 148–149",
+   "date": "20 Apr 1865",
+   "year": 1865,
+   "country": "Confederate States",
+   "route": "Meridian, Mississippi -> Columbus or Macon, Georgia",
+   "language": "English",
+   "pages": 2,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "printed edition"
+    ],
+    "source": "OR I/49/2 p. 1255, existing printed decipherment. Repeats a dispatch of 14 April; only the 20 April cipher witness is transcribed.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 124,
+    "distinct": 26,
+    "unit": "letters",
+    "measured": true,
+    "file": "v11-0076-77a_cipher.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Full-resolution NARA JPEG; exact URL in continuation_sources.json",
+    "image_quality": "fair",
+    "notes": "Candidate glyphs preserved separately from reconstructed ciphertext in continuation_alignment.tsv. Counts measure candidates. No independent second reader."
+   }
+  },
+  {
+   "id": "v196-0055-wirt",
+   "read": "read",
+   "shelfmark": "NARA RG 109, ch. II vol. 196, frame 0055, MS p. 105, Wirt Adams telegram",
+   "date": "9 Mar 1865",
+   "year": 1865,
+   "country": "Confederate States",
+   "route": "Meridian, Mississippi -> Jackson, Mississippi",
+   "language": "English",
+   "pages": 1,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "Complete pencilled interlinear decipherment, writer and date unknown.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 47,
+    "distinct": 22,
+    "unit": "letters",
+    "measured": true,
+    "file": "v196-0055-wirt_cipher.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Full-resolution NARA JPEG; exact URL in continuation_sources.json",
+    "image_quality": "fair",
+    "notes": "Candidate glyphs preserved separately from reconstructed ciphertext in continuation_alignment.tsv. Counts measure candidates. No independent second reader."
+   }
+  },
+  {
+   "id": "v196-0055-dw",
+   "read": "read",
+   "shelfmark": "NARA RG 109, ch. II vol. 196, frame 0055, MS p. 105, D. W. Adams telegram",
+   "date": "9 Mar 1865",
+   "year": 1865,
+   "country": "Confederate States",
+   "route": "Meridian, Mississippi -> Montevallo or Selma, Alabama",
+   "language": "English",
+   "pages": 1,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "separate paragraph"
+    ],
+    "source": "Annotated sibling immediately above on the same page; known COMPLETE VICTORY applied.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 47,
+    "distinct": 22,
+    "unit": "letters",
+    "measured": true,
+    "file": "v196-0055-dw_cipher.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Full-resolution NARA JPEG; exact URL in continuation_sources.json",
+    "image_quality": "fair",
+    "notes": "Candidate glyphs preserved separately from reconstructed ciphertext in continuation_alignment.tsv. Counts measure candidates. No independent second reader."
+   }
   }
  ],
  "system": {
   "types": [
    "polyalphabetic"
   ],
-  "summary": "Confederate Vigenere on the tabula recta with the key COMERETRIBUTION, enciphering only chosen words of otherwise clear telegrams; the key runs over the cipher letters only and restarts at offset 0 with each telegram.",
+  "summary": "Confederate Vigenere with selected words enciphered using COME RETRIBUTION, COMPLETE VICTORY, or THE NAVY OUR PRIDE; the key advances over cipher letters only.",
   "symbol_kind": "letters",
   "distinct_symbols": 26,
   "diacritics": {
@@ -171,13 +362,13 @@
   },
   "key_order": "keyword-derived",
   "word_division": "kept",
-  "sibling_key": "COMERETRIBUTION, one of the three known Confederate keys; COMPLETEVICTORY and MANCHESTERBLUFF tested as controls. The catalogue's OCR triage suggests COMPLETE VICTORY in vol. 10 (not checked here).",
+  "sibling_key": "COME RETRIBUTION fits March–April passages; COMPLETE VICTORY encrypts the two 9 March orders introducing that key; THE NAVY OUR PRIDE is recovered from 9 January external plaintext. Key use varies by recipient.",
   "notes": "Distinct symbols: the 26-letter alphabet of the tabula recta. The clerks' capitals mislead in a few recurring ways (barred E for F, T for F, R for J, N for G, Y for V, X for W, Z for E, U for M, C for B, a U-like glyph for IC); every correction is a single glyph and is listed in alignment.tsv."
  },
  "conditions": {
   "prior_solution": {
    "exists": "partial",
-   "where": "Two of the four telegrams (6 and 8 April 1865) are printed in clear in War of the Rebellion: Official Records, Ser. I vol. 49 pt. 2 (1897), pp. 1209 and 1216. The 12 and 30 March telegrams were not found in OR I/49 pts. 1-2.",
+   "where": "Two of the four telegrams (6 and 8 April 1865) are printed in clear in War of the Rebellion: Official Records, Ser. I vol. 49 pt. 2 (1897), pp. 1209 and 1216. The 12 and 30 March telegrams were not found in OR I/49 pts. 1-2. Further prior plaintext: OR I/45/2 p.772 (9 January), I/49/2 pp.1223 and1255 (10 and20 April), and an undated pencil interlinear decipherment over the 9 March Wirt Adams order.",
    "found": "during attempt",
    "used": true
   },
@@ -187,16 +378,19 @@
    "published key"
   ],
   "attack": "published key",
-  "human_role": "Outside contribution (WAINUT): the operator chose the catalogue item; transcription, decryption, controls and the prior-art search were done by AI language-model agents and checked against the images. No hand correction of readings recorded.",
+  "human_role": "Outside contribution (WAINUT): the operator chose the catalogue item; transcription, decryption, controls and the prior-art search were done by AI language-model agents and checked against the images. No hand correction of readings recorded. Bryan Payne (bdpayne) selected catalogue 681, directed the continuation and authorized submission; transcription, analysis and writing by OpenAI Codex (GPT-6), no subagents or independent human reading review claimed.",
   "tools": [
-   "decrypt.py (Vigenere decryption over alignment.tsv, controls)"
+   "decrypt.py (Vigenere decryption over alignment.tsv, controls)",
+   "continue_analysis.py (candidate/reconstruction alignment and key controls)",
+   "NARA images and catalog OCR; Internet Archive Official Records OCR"
   ],
   "models": [
-   "AI language-model agents (WAINUT)"
+   "AI language-model agents (WAINUT)",
+   "OpenAI Codex (GPT-6)"
   ],
-  "sessions": 1,
+  "sessions": 4,
   "first_date": "2026-10-27",
-  "last_date": "2026-10-27"
+  "last_date": "2026-10-28"
  },
  "solution": [
   {
@@ -258,16 +452,64 @@
    "kind": "reading",
    "what": "The four telegrams written as sentences (<doc>_reading.md). One hole: [?west] in the 12 March telegram, where the cipher gives WEST and the sense wants 'what'.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "literature search",
+   "what": "Located three additional telegrams in OR I/45/2 p.772 and I/49/2 pp.1223,1255; no complete counterpart verified for 18 January. Search failures and limits in WORKLOG.md.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "crib",
+   "technique": [
+    "plaintext matching",
+    "key matching"
+   ],
+   "what": "Matched 9 January ciphertext against OR plaintext to infer THE NAVY OUR PRIDE; 86/94 candidate letters agree. Retrospective partition check is not an independent blind holdout.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "transcription",
+   "what": "Transcribed six continuation telegrams; all candidate glyphs remain distinct from reconstructed cipher letters. Retained partial 18 January and unresolved April passages.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "verification",
+   "technique": [
+    "key matching"
+   ],
+   "what": "Verified two orders dated 9 March to Wirt Adams and D.W. Adams introducing COME RETRIBUTION after this date under COMPLETE VICTORY; 46/47 candidate letters each agree. Wirt copy has complete pencilled decipherment, date/hand unknown.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Replayed alignments; tested alternative known keys/all offsets, 1000 random keys for 9 January, and arithmetic round-trip. No ciphertext-only solver or independent holdout claim.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "reading",
+   "what": "Added five externally/adjacently supported full readings and one provisional 18 January reading. Partial 8 March Brent fragments support earlier key use in another channel; no full transcript claim.",
+   "result": "partial"
   }
  ],
  "outcome": {
   "class": "read in part",
   "key": "recovered",
   "method": "read with known key",
-  "method_basis": "The key COMERETRIBUTION was already identified for this correspondence: catalogue entry 681 had read frame 0061 and the vol. 11 OCR runs with it, and it is the known key of Confederate telegraph traffic in 1864-65. It was applied to each telegram from its first cipher letter, word by word; two of the four telegrams are printed in clear in OR I/49/2.",
+  "method_basis": "The key COMERETRIBUTION was already identified for this correspondence: catalogue entry 681 had read frame 0061 and the vol. 11 OCR runs with it, and it is the known key of Confederate telegraph traffic in 1864-65. It was applied to each telegram from its first cipher letter, word by word; two of the four telegrams are printed in clear in OR I/49/2. Continuation adds known-key readings, existing printed/adjacent decipherments, and the 9 January key inferred from external plaintext; methods distinguished per document.",
   "contribution": [
    "transcription",
-   "catalogue correction"
+   "catalogue correction",
+   "key recovered",
+   "sender or date identified"
   ],
   "fraction_read": "unknown",
   "verification": [
@@ -276,21 +518,27 @@
    "historical consistency"
   ],
   "provenance": "contributed",
-  "notes": "Four telegrams read (350 cipher letters); the 6 April telegram needed 11 of its 57 letters corrected and is settled only with the clear text printed in OR I/49/2 p. 1209; the other cipher passages of vols. 10, 11 and 196 are not read. Two of the four are earlier solutions (OR I/49/2 pp. 1209, 1216); the 12 and 30 March telegrams were not found in print. fraction_read is unknown because the unread passages have not been transcribed or counted.",
+  "notes": "Original four telegrams plus five continuation telegrams have full readings; 18 January remains provisional (decoded, not read). Dated local keyword orders on 9 March do not establish a simultaneous global switch. Overall fraction unknown because remaining passages are not exhaustively inventoried. See REPORT-2026-10-28.md and WORKLOG.md for bounded scope and prior print.",
   "gaps": [
    {
-    "item": "vol. 196, cipher passages other than frame 0061",
+    "item": "Remaining passages in all three volumes",
     "blocker": "not-attempted",
-    "detail": "about 40 OCR runs, noisy; screen the frames visually first"
+    "detail": "No exhaustive inventory; selected six continuation telegrams only. 9 March recipient-specific instructions located."
    },
    {
-    "item": "vol. 11, frames 0041-0046 and 0076-0081",
-    "blocker": "not-attempted"
+    "item": "18 January v10-0056",
+    "blocker": "illegible",
+    "detail": "15 provisional lexical corrections; full prior counterpart not verified."
    },
    {
-    "item": "vol. 10 (naId 16878212)",
+    "item": "v11-0044a / v11-0045b and v196-0052",
+    "blocker": "illegible",
+    "detail": "Unresolved glyph segmentation/key alignment or incomplete transcription; research fragments retained, no completed reading claimed."
+   },
+   {
+    "item": "v11-0077b /0046 and other volume 10/11/196 frames",
     "blocker": "not-attempted",
-    "detail": "the OCR suggests COMPLETE VICTORY; the key-change date is open"
+    "detail": "Prior print pointer or viewed pages, still needing transcription/alignment."
    }
   ],
   "credits": [
@@ -322,6 +570,24 @@
     "role": "prior solution",
     "note": "the 6 and 8 April 1865 telegrams in clear, from the Confederate records, printed in War of the Rebellion: Official Records, Ser. I vol. 49 pt. 2 (1897), pp. 1209 and 1216",
     "source": "https://archive.org/details/warofrebellion014902rootrich"
+   },
+   {
+    "who": "bdpayne",
+    "role": "transcription",
+    "date": "2026-10-28",
+    "note": "Continuation with OpenAI Codex (GPT-6): image transcriptions, explicit glyph uncertainty and reproducible alignments."
+   },
+   {
+    "who": "bdpayne",
+    "role": "identification",
+    "date": "2026-10-28",
+    "note": "Identified dated 9 March recipient-specific keyword orders and additional THE NAVY OUR PRIDE key fit from external plaintext."
+   },
+   {
+    "who": "bdpayne",
+    "role": "pointer",
+    "date": "2026-10-28",
+    "note": "Located further printed decipherments in OR I/45/2 p.772 and I/49/2 pp.1223,1255; preserved prior WAINUT credit."
    }
   ],
   "texts": [
@@ -372,8 +638,113 @@
     "read_share": 1.0,
     "summary": "Surget passes on to Taylor at Demopolis the news, from Northern papers received by General Hodge, that Richmond fell by assault on 3 April 1865.",
     "note": "Earlier solution: OR Ser. I vol. 49 pt. 2 p. 1216. read_share from research/reading_audit/v10_relabel.py: no holes in 31 words."
+   },
+   {
+    "doc": "v10-0049",
+    "label": "Taylor warns Davis against moving Hood’s army before it rests and reorganizes, and explicitly reverts to a former keyword.",
+    "transcription": "v10-0049_transcription.txt",
+    "decryption": "v10-0049_decryption.txt",
+    "reading": "v10-0049_reading.md",
+    "language": "en",
+    "state": "read",
+    "read_share": 1.0,
+    "summary": "Taylor warns Davis against moving Hood’s army before it rests and reorganizes, and explicitly reverts to a former keyword.",
+    "reading_review": {
+     "grade": "A",
+     "by": "OpenAI Codex (GPT-6), model review; no independent human review claimed",
+     "date": "2026-10-28",
+     "note": "Read as sentences with every provisional correction marked; external readings distinguished from raw glyph accuracy."
+    },
+    "note": "OR I/45/2 p. 772; existing printed decipherment used to recover THE NAVY OUR PRIDE. Method: key from external plaintext / existing decipherment. read_share measured on v10-0049_read_measure.txt: 16 words, 0 marked uncertainties; manuscript accuracy is separately recorded in continuation_controls.txt."
+   },
+   {
+    "doc": "v10-0056",
+    "label": "Taylor advocates Johnston’s command and offers subordinate service; fifteen proposed lexical words remain uncertain.",
+    "transcription": "v10-0056_transcription.txt",
+    "decryption": "v10-0056_decryption.txt",
+    "reading": "v10-0056_reading.md",
+    "language": "en",
+    "state": "decoded, not read",
+    "read_share": 0.8649,
+    "summary": "Taylor advocates Johnston’s command and offers subordinate service; fifteen proposed lexical words remain uncertain.",
+    "note": "No complete counterpart verified; a secondary quotation remains only a lead. Method: known key applied; partial. read_share measured on v10-0056_read_measure.txt: 111 words, 15 marked uncertainties; manuscript accuracy is separately recorded in continuation_controls.txt. Conservative submission classification: proposed sentences have too many unconfirmed words; not counted as a completed reading."
+   },
+   {
+    "doc": "v11-0044b",
+    "label": "Surget discusses moving troops and stores and predicts a westward movement by the force assembling at Vicksburg.",
+    "transcription": "v11-0044b_transcription.txt",
+    "decryption": "v11-0044b_decryption.txt",
+    "reading": "v11-0044b_reading.md",
+    "language": "en",
+    "state": "read",
+    "read_share": 1.0,
+    "summary": "Surget discusses moving troops and stores and predicts a westward movement by the force assembling at Vicksburg.",
+    "reading_review": {
+     "grade": "A",
+     "by": "OpenAI Codex (GPT-6), model review; no independent human review claimed",
+     "date": "2026-10-28",
+     "note": "Read as sentences with every provisional correction marked; external readings distinguished from raw glyph accuracy."
+    },
+    "note": "OR I/49/2 p. 1223, existing printed decipherment. Method: existing decipherment checked with known key. read_share measured on v11-0044b_read_measure.txt: 18 words, 0 marked uncertainties; manuscript accuracy is separately recorded in continuation_controls.txt."
+   },
+   {
+    "doc": "v11-0076-77a",
+    "label": "Taylor reports Mobile’s evacuation and asks Richmond to choose between joining Cobb in Georgia and protecting the Alabama/Mississippi supply region.",
+    "transcription": "v11-0076-77a_transcription.txt",
+    "decryption": "v11-0076-77a_decryption.txt",
+    "reading": "v11-0076-77a_reading.md",
+    "language": "en",
+    "state": "read",
+    "read_share": 1.0,
+    "summary": "Taylor reports Mobile’s evacuation and asks Richmond to choose between joining Cobb in Georgia and protecting the Alabama/Mississippi supply region.",
+    "reading_review": {
+     "grade": "A",
+     "by": "OpenAI Codex (GPT-6), model review; no independent human review claimed",
+     "date": "2026-10-28",
+     "note": "Read as sentences with every provisional correction marked; external readings distinguished from raw glyph accuracy."
+    },
+    "note": "OR I/49/2 p. 1255, existing printed decipherment. Repeats a dispatch of 14 April; only the 20 April cipher witness is transcribed. Method: existing decipherment checked with known key. read_share measured on v11-0076-77a_read_measure.txt: 27 words, 0 marked uncertainties; manuscript accuracy is separately recorded in continuation_controls.txt."
+   },
+   {
+    "doc": "v196-0055-wirt",
+    "label": "Bullock instructs Wirt Adams to use COME RETRIBUTION after this date, encrypting the instruction with COMPLETE VICTORY.",
+    "transcription": "v196-0055-wirt_transcription.txt",
+    "decryption": "v196-0055-wirt_decryption.txt",
+    "reading": "v196-0055-wirt_reading.md",
+    "language": "en",
+    "state": "read",
+    "read_share": 1.0,
+    "summary": "Bullock instructs Wirt Adams to use COME RETRIBUTION after this date, encrypting the instruction with COMPLETE VICTORY.",
+    "reading_review": {
+     "grade": "A",
+     "by": "OpenAI Codex (GPT-6), model review; no independent human review claimed",
+     "date": "2026-10-28",
+     "note": "Read as sentences with every provisional correction marked; external readings distinguished from raw glyph accuracy."
+    },
+    "note": "Complete pencilled interlinear decipherment, writer and date unknown. Method: existing adjacent decipherment checked with known key. read_share measured on v196-0055-wirt_read_measure.txt: 7 words, 0 marked uncertainties; manuscript accuracy is separately recorded in continuation_controls.txt."
+   },
+   {
+    "doc": "v196-0055-dw",
+    "label": "The same dated keyword instruction is sent to D. W. Adams; a distinct recipient copy, not an independent key recovery.",
+    "transcription": "v196-0055-dw_transcription.txt",
+    "decryption": "v196-0055-dw_decryption.txt",
+    "reading": "v196-0055-dw_reading.md",
+    "language": "en",
+    "state": "read",
+    "read_share": 1.0,
+    "summary": "The same dated keyword instruction is sent to D. W. Adams; a distinct recipient copy, not an independent key recovery.",
+    "reading_review": {
+     "grade": "A",
+     "by": "OpenAI Codex (GPT-6), model review; no independent human review claimed",
+     "date": "2026-10-28",
+     "note": "Read as sentences with every provisional correction marked; external readings distinguished from raw glyph accuracy."
+    },
+    "note": "Annotated sibling immediately above on the same page; known COMPLETE VICTORY applied. Method: known key applied / annotated sibling. read_share measured on v196-0055-dw_read_measure.txt: 7 words, 0 marked uncertainties; manuscript accuracy is separately recorded in continuation_controls.txt."
    }
   ],
-  "key_file": "key.md"
+  "key_file": [
+   "key.md",
+   "continuation_key.md"
+  ]
  }
 }
