@@ -1,0 +1,118 @@
+{
+ "schema_version": 1,
+ "target": "newcastle1729",
+ "title": "Intelligence report from Port Sainte-Marie in numerical code, enclosed to the Duke of Newcastle, 1729 (Huntington Library mssBLA 191, p. 5)",
+ "documents": [
+  {
+   "id": "report",
+   "shelfmark": "Huntington Library, Blathwayt papers addenda, mssBLA 191, p. 5 (HDL p15150coll7 61005)",
+   "date": "undated (c. July 1729; forwarded 8 Aug 1729)",
+   "year": 1729,
+   "country": "Spain",
+   "route": "El Puerto de Santa María -> 'Cesnok' -> Duke of Newcastle",
+   "language": "French",
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment on the leaf; deciphered sibling enclosures in the same code are in mssBLA 187, 188 and the letters of 14 July and 4 Aug 1729."
+   },
+   "length": {
+    "tokens": "unknown",
+    "unit": "code groups"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "HDL image 61005",
+    "image_quality": "good"
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "code"
+  ],
+  "summary": "Numerical code of three- and four-digit groups, values unknown at the start.",
+  "symbol_kind": "digits",
+  "digit_groups": {
+   "width": "1 to 4",
+   "separation": "dots"
+  },
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": "unknown"
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "none"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "unknown",
+   "where": "Catalogue #826 (checked 28 Oct 2026): no decipherment known for p. 5; sibling letters in the same code carry contemporary interlinear decipherments.",
+   "found": "unknown",
+   "used": "unknown"
+  },
+  "inputs": [
+   "images"
+  ],
+  "attack": "sibling key",
+  "human_role": "Outside contribution: johonn chose the target, set the rules and the plan (rebuild the code from the deciphered sibling enclosures, apply it to p. 5) and approved it; the work was done by Claude Code (Anthropic) under johonn's direction.",
+  "tools": [
+   "curl (HDL IIIF and CONTENTdm API)",
+   "python"
+  ],
+  "models": "unknown",
+  "sessions": 1,
+  "first_date": "2026-10-28",
+  "last_date": "2026-10-28"
+ },
+ "solution": [
+  {
+   "date": "2026-10-28",
+   "kind": "access",
+   "what": "HDL CONTENTdm API listed the pages of mssBLA 191, 187, 188 and the letters of 14 July and 4 Aug 1729; all 39 page images fetched by IIIF.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "statistics",
+   "technique": [
+    "other"
+   ],
+   "what": "Contact sheets of the 39 pages: code pages with a contemporary interlinear decipherment found on 60963, 60916-60920, 60886-60887 and 60907-60909; the interlinear values are syllables and short words, so the system is a syllable-and-word code.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "not read",
+  "method": "not solved",
+  "method_basis": "Work in progress: no key obtained yet.",
+  "verification": [
+   "none"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "johonn",
+    "role": "solution",
+    "note": "Directed Claude Code in rebuilding the code from the deciphered sibling enclosures and applying it to mssBLA 191 p. 5 (catalogue #826).",
+    "date": "2026-10-28"
+   },
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "Interlinear decipherments on the sibling enclosures in mssBLA 187, 188 and the letters of 14 July and 4 Aug 1729 (Huntington Library)."
+   }
+  ]
+ }
+}
