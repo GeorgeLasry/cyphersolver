@@ -1814,3 +1814,30 @@ def round36():
         D = split_solve(SIGNS, cut, 0)
         nulls = [split_solve(s, cut, 100 + j)[0] for j, s in enumerate(shuffles(4))]
         log(36, f'sentence break after sign {cut} (1949 dot)', D[0], nulls, [], D[1])
+
+
+# ------------------------------------------------------------------ round 40: notebook practice phrases; the Lullaby's words
+PRACTICE = ['averyoldcypher', 'averyoldcipher', 'doyougotolondon', 'marcoelgar', 'marco', 'cypher', 'london']
+
+
+@rnd(40)
+def round40():
+    raw = open(_os.path.join(HERE, 'src', 'music', 'lullaby_lyric.txt'), encoding='utf-8').read()
+    raw = re.sub(r'edition and engraving.*?secondary edition', ' ', raw)
+    words = raw.split()
+    dedup = [w for i, w in enumerate(words) if i == 0 or w != words[i - 1]]
+    letters = re.sub(r'[^a-z]', '', ''.join(dedup))
+    print(f'lyric stream {len(letters)} letters', flush=True)
+    T = {'Lullaby lyric': np.frombuffer(letters.encode(), dtype=np.uint8) - 97}
+    D = quote_search(SIGNS, T); nulls = [quote_search(s, T)[0] for s in shuffles(6)]
+    log(40, 'Lullaby lyric as the plaintext (every 87-letter window)', D[0], nulls, [], D[3], f'explains {D[0]}/87')
+    lyric_words = sorted({w for w in re.findall(r'[a-z]{5,}', ' '.join(dedup))})
+    global VISIT
+    saved = VISIT
+    VISIT = PRACTICE + lyric_words
+    try:
+        D = visit_cribs(SIGNS, 0)
+        nulls = [visit_cribs(s, 100 + j)[0] for j, s in enumerate(shuffles(3))]
+    finally:
+        VISIT = saved
+    log(40, f'cribs: notebook practice phrases + {len(lyric_words)} lyric words', D[0], nulls, [], D[1], D[2])

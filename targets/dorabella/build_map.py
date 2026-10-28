@@ -113,7 +113,8 @@ questions = [
              B('Eleven other languages', 'NEG', 'Latin, French, German, Italian, Spanish, Dutch, Portuguese, Danish, Swedish, Welsh, Hungarian.', 'S3 · R9', [9]),
              B('Polish', 'NP', 'Its controls were not recovered.', 'R9', [9]),
              B('A known quotation', 'NEG', "Every 87-letter window of the Bible, Shakespeare, a verse anthology, Longfellow, Tennyson, Browning, Elgar's letters and Powell. Best fit 37 of 87; shuffles 35; a real quotation 80.", 'R18 · R22', [18, 22]),
-             B('Music: the Lullaby', 'NEG', 'The tune Elgar played that week, as cribs. No better than shuffles.', 'S20 · S25'),
+             B('Music: the Lullaby', 'NEG', 'The tune Elgar played that week as melody cribs, and its words (Alice Elgar’s lyric) as the plaintext and as cribs. No better than shuffles.', 'S20 · S25 · R40', [40]),
+             B("Elgar's practice phrases", 'NEG', 'The test sentences in his cipher notebook ("a very old cypher", "do you go to london", "marco elgar") fit nowhere in Dorabella.', 'R40', [40]),
              B('Numbers or a date', 'NP', 'Digits carry no redundancy a test could use.', '—'),
              B('Floating cribs', 'NEG', '50 personal and situational words placed wherever they fit.', 'S7'),
              B('Openings', 'NEG', 'Only "dora" and "dear" fit the first signs, and nothing reads after them.', 'R10', [10], 'first4', 'Highlighted: the first four signs.'),
@@ -181,7 +182,7 @@ cov_rows = [
 ]
 
 frontier = [
-    dict(rank=1, title='Saturation: the fixed-table branches are exhausted here', why='Every fixed-table branch that 87 signs can decide has been run at full power and is negative: English and Elgar (R32), misreads (R33), homophones (R34), five languages (R37), four plaintext forms (R38), the consonant skeleton settled on two criteria (R39).', status='done', ev='R31–R39'),
+    dict(rank=1, title='Saturation: the fixed-table branches are exhausted here', why='Every fixed-table branch that 87 signs can decide has been run at full power and is negative: English and Elgar (R32), misreads (R33), homophones (R34), five languages (R37), four plaintext forms (R38), the consonant skeleton settled on two criteria (R39), the Lullaby lyric and his practice phrases (R40).', status='done', ev='R31–R40'),
     dict(rank=2, title='Undecidable at 87 signs', why='Pair habit vs language (R35), a key that changes partway (R16), ten or more misreads (R27), homophones with misreads. No calculation on this text can separate these from noise.', status='blocked', ev='R16 · R27 · R35'),
     dict(rank=3, title='A second text in the same system', why="The Courage cards and the Sotheby's Microcryptogram. Any surviving key could be checked on two documents; this is the single most valuable item.", status='blocked', ev='outside'),
     dict(rank=4, title='Better images of the plate', why='Greyscale plates from 1946 and 1949 (the 1949 second dot) and the Elgar Museum photo, to settle the 23 doubtful signs.', status='blocked', ev='outside'),
