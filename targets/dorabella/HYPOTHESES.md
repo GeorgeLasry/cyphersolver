@@ -64,6 +64,10 @@ system. A reading must reach the recovered-control range; beating shuffles alone
 
 ## L4 Key layer
 
+**Excluded as a whole by the flips (R 29):** every table-changing layer (periodic dial, Vigenère, autokey, running key,
+Nihilist, progressive dial) drops English-under-a-fixed-flip-table from 24.5 flips to 7.7–11.5, P(≥ 27) ≤ 0.001. Dorabella
+has 27, so it was written with one fixed table throughout. The rows below stay as the direct tests.
+
 | branch | status | evidence |
 |---|---|---|
 | none | NEG (= L3 one letter) | S 2 |
@@ -99,6 +103,21 @@ system. A reading must reach the recovered-control range; beating shuffles alone
 | Lullaby melodies | NEG | S 20, 25 |
 | Playfair (cipher pairs never identical) | X | R 12 |
 | cribs from the July 1897 visit (29 words) | NEG | R 24 |
+
+## Frontier: where to attach next (ranked)
+
+Ranked by how much each could change the verdict, given that the flips force a fixed table (R 29) and that the
+loop's solver recovers real English at 87 signs only ~58% of the time, Elgar's own letters ~42% (R 30).
+
+1. **Search failure or model failure?** On failed Elgar-letter controls, does the true text outscore the solver's
+   answer? (R 31, running.) If search fails, a far larger search could still find a reading.
+2. **A much larger search on Dorabella** — 920 restarts × 60k steps × {en-modern, en-elgar} × {consensus,
+   measured} on 23 cores (R 32, running). Compare the best score with real Elgar text's scores.
+3. **Fixed flip-heavy table as a prior, with misreads** (R 28, running).
+4. **Fixed-table plaintext models not yet tried:** short-note register (greetings, names, dates), word-boundary-free
+   English with Elgar's nicknames (Dorabella, Penny, Alice, Carice …) boosted.
+5. **Untested coverage cells that keep a fixed table:** other languages × misreads; Elgar register × transpositions.
+6. Outside material: Courage cards, greyscale plate.
 
 ## Where the map stands (after 27 rounds)
 

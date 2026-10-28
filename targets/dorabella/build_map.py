@@ -21,6 +21,7 @@ sets = {
     'disputes': sorted(int(k) for k in json.load(open(P('disputes.json')))),
     'merged': sorted(int(k) for k in json.load(open(P('disputes_merged.json')))),
     'measured': [i for i, (a, b) in enumerate(zip(ct, me)) if a != b],
+    'jager': [9, 22, 23, 24, 31, 33, 66, 77, 84, 85],
     'last2': [85, 86], 'first4': [0, 1, 2, 3], 'mother': list(range(47, 53)), 'all': list(range(87)),
 }
 
@@ -49,7 +50,7 @@ with open(P('runs', 'ledger.tsv'), encoding='utf-8') as f:
             D = None
         note = x[7] if len(x) > 7 else ''
         rnd, name, verdict = x[0], x[1], x[5]
-        diag = rnd in ('11', '17', '25', '26') or 'trigram' in name or 'Playfair' in name or verdict == 'excluded'
+        diag = rnd in ('11', '17', '25', '26', '29', '30', '31', '32', '35') or 'trigram' in name or 'Playfair' in name or verdict == 'excluded'
         fix = FIX.get(name)
         if rnd == '5' and verdict == 'no power':
             fix = 'Control encoder bug in this first pass; Dorabella and shuffle scores are valid. The two best were rechecked with valid controls (same round).'
@@ -82,8 +83,9 @@ questions = [
              B('Random scribble', 'X', 'The signs repeat in pairs far more than chance: 19 repeated pairs against 11.2 expected (P = 0.004).', 'S7'),
              B('Hand doodle', 'X', 'A doodling hand turns gradually. Dorabella turns more than chance, with no gradual sweeps at all.', 'S16', signs='flips', signsNote='Highlighted: the signs in opposite flips.'),
              B('Simple pseudo-writer', 'NEG', 'A writer who flips often and sometimes repeats reproduces the flips but not the repeated pairs (9.4 against 19). P = 0.008.', 'R25', [25]),
-             B('English letters', 'DIAG', "On the statistics no key can change, Dorabella is a typical sample of English letters (P 0.84) and of Elgar's own letters (P 0.89).", 'R11', [11]),
+             B('English letters', 'DIAG', "On the statistics no key can change, Dorabella is a typical sample of English letters (P 0.84) and of Elgar's own letters (P 0.89). Caveat from Jager 2026: shuffles that keep Dorabella's adjacent pairs do as well (p = 0.085), so a writer with strong pair habits fits these statistics too.", 'R11 · R20 · Jager 2026', [11]),
              B('The opposite flips', 'DIAG', 'Consecutive signs face opposite ways 27 times against 12.6 expected. English under a key that puts common neighbours on opposite sides reproduces this and the other five statistics at once (P 0.71).', 'R26 · R17 · S16 · S22', [26], 'flips', 'Highlighted: the 49 signs that take part in an opposite flip.'),
+             B('Pair-habit writer', 'NP', "A writer choosing each sign from the last, with strong habits. Shuffles keeping Dorabella's adjacent pairs match it on every statistic tried, including repeats at gaps 2–4 and skip-pairs (R35), and on Jager's tests. With a fixed-table English message now strained (R31–R33), this is the leading alternative: a deliberate sequence with no message.", 'R35 · R20 · Jager 2026', [35], 'flips', 'Highlighted: the flips such a writer would produce by habit.'),
              B('Human fake-cipher data', 'OPEN', 'Needs recordings of people inventing cipher-like squiggles.', '—'),
          ]),
     dict(id='q2', n='Q2', layers='L1', title='Is the transcription right?',
@@ -92,7 +94,9 @@ questions = [
              B('Five-reader consensus', 'NEG', 'The input to every test. Negative under every key and order tried.', 'S2–S8', signs='all', signsNote='Every sign is in play.'),
              B('Disputed readings', 'NEG', 'All 2,048 combinations of the 11 positions where Schmeh and the Elgar-key transcription disagree.', 'S9', signs='disputes', signsNote='Highlighted: the 11 disputed positions.'),
              B('Measured 1937 plate', 'NEG', "Each sign's angle measured on the first-edition scan; 17 reclassified; 23 positions solved jointly.", 'S11', signs='measured', signsNote='Highlighted: the 17 signs the measurement reclassifies.'),
-             B('About six misreads', 'NEG', 'The misread-tolerant solver recovers hidden English at 45–89%; Dorabella stays below every control. Unlikely, not excluded.', 'R21', [21], 'merged', 'Highlighted: the 23 doubtful positions.'),
+             B('Up to six misreads', 'NEG', 'Large parallel search (230 runs per target): Elgar-letter controls with 6 misreads recovered 89–95%; Dorabella −2.548, no better than its shuffles (−2.586) and far below the controls. Excluded with power.', 'R33 · R21', [33, 21], 'merged', 'Highlighted: the 23 doubtful positions.'),
+             B("Jager's 2026 transcription", 'NEG', 'Independent reading with 9 uncertain signs; differs from the consensus at signs 23, 32, 34, 85, 86. Same large search: −2.556, no reading.', 'R33 · Jager 2026', [33], 'jager', "Highlighted: Jager's doubtful signs."),
+             B('The 1949 second dot', 'OPEN', "A second dot at line 2, sign 11 or 12, appears in the 1949 edition but not in the 1947 copy (Belanger, Pelling). Read as a sentence break after sign 40 or 41 it gives nothing (R36); what the dot is remains open until the plates are compared.", 'R36 · Cipher Mysteries thread', [36], [39, 40], 'Highlighted: line 2, signs 11 and 12.'),
              B('Ten or more misreads', 'NP', 'With 48 doubtful positions the solver recovers English only 0–83% of the time. Too much freedom for 87 signs.', 'R27 · S5–S6', [27], 'merged', 'Highlighted: the 23 doubtful positions.'),
              B('Cleaner image', 'OPEN', 'A greyscale plate from the 1946 or 1949 edition would settle the doubtful positions.', '—', signs='merged', signsNote='Highlighted: what a better image would settle.'),
          ]),
@@ -116,11 +120,14 @@ questions = [
              B('Sign-offs', 'X', 'The last two signs differ, so "ee" is impossible, and every longer closing conflicts.', 'R10', [10], 'last2', 'Highlighted: the last two signs, H1 and A3.'),
              B('The July 1897 visit', 'NEG', '29 words from that week: kites, Boscobel, the oak, Caractacus, the lullaby. Best "mother" at sign 48; scraps only.', 'R24', [24], 'mother', 'Highlighted: where "mother" was placed.'),
              B('A second text', 'OPEN', 'The Courage cards. Needs museum access.', '—'),
+             B('The Microcryptogram', 'OPEN', "A short text in the same symbols sold at Sotheby's (lot 92), mentioned by Pelling; not yet located or transcribed.", 'Cipher Mysteries thread'),
+             B("Elgar's prose at 87 signs", 'DIAG', "Enciphered windows of Elgar's own letters are recovered at 90% or better only 42% of the time by the loop's solver (Gutenberg prose 58%). A failed solve is weaker evidence than it looks; round 31 asks whether failures are search or model failures.", 'R30 · R31'),
          ]),
     dict(id='q4', n='Q4', layers='L3 · L4 · L5', title='Which system made the signs?',
          answer="<b>None of the systems tested.</b> Substitution, Elgar's own table, keyed and running-key ciphers, Nihilist, Morse, fractionation and every transposition fail; Playfair and a scrambled version of his table are impossible.",
          branches=[
-             B('One letter each', 'NEG', 'Simple substitution, one-to-one and with homophones.', 'S2–S3 · R7', [7]),
+             B('One letter each', 'NEG', 'Simple substitution under one fixed table. At full power (3,680 long runs) the best is −2.71, below every real Elgar window (−1.80 to −2.56); a real solution would be found ~92% of the time.', 'R31 · R32 · S2–S3', [32, 31]),
+             B('Homophones in a fixed table', 'NEG', 'Up to two signs per letter, 230 long runs per target: Elgar-letter controls with doubled common letters recovered 3 of 4 (83–99%); Dorabella −2.224, level with its shuffles, gibberish.', 'R34 · R7', [34, 7]),
              B("Elgar's own table", 'NEG', 'All 1,081,600 ordered layouts, with shifts and reversals.', 'S1 · R13', [13]),
              B('The turn between signs', 'NEG', 'The change in orientation from one sign to the next as the letter.', 'S21', signs='flips'),
              B('Note names and keyboard', 'NEG', 'Orientation as a–h (40,320 orders); a 3 × 8 keyboard (241,920).', 'R13', [13]),
@@ -143,6 +150,7 @@ questions = [
              B('Word spaces', 'NEG', 'No sign, and no flip, gives English word lengths.', 'R12 · S22', [12]),
              B('Block rearrangement', 'NEG', 'Arcs rotated or reversed inside blocks of 2 to 6.', 'R19', [19]),
              B('Playfair', 'X', 'Two identical signs would land inside one pair under every way of pairing.', 'R12', [], 'doubles', 'Highlighted: the four doubled pairs.'),
+             B('Any table-changing key', 'X', 'Periodic dial, Vigenère, autokey, running key, Nihilist and progressive dial all wash the flips back to chance (7.7–11.5 against 27; P ≤ 0.001). Dorabella was written with one fixed table throughout.', 'R29', [], 'flips', 'Highlighted: the flips a changing key would have destroyed.'),
          ]),
 ]
 for q in questions:
@@ -172,7 +180,14 @@ cov_rows = [
     ['Music', ['NP', E, E, E, E, E, E, E, E, E, E, E, E, 'NEG']],
 ]
 
-data = dict(ct=ct_lines, sets=sets, ledger=ledger, rounds=rounds, questions=questions,
+frontier = [
+    dict(rank=1, title='Saturation: the fixed-table branches are exhausted here', why='Every fixed-table branch that 87 signs can decide has been run at full power and is negative: English and Elgar (R32), misreads (R33), homophones (R34), five languages (R37), four plaintext forms (R38).', status='done', ev='R31–R38'),
+    dict(rank=2, title='Undecidable at 87 signs', why='Pair habit vs language (R35), a key that changes partway (R16), ten or more misreads (R27), homophones with misreads. No calculation on this text can separate these from noise.', status='blocked', ev='R16 · R27 · R35'),
+    dict(rank=3, title='A second text in the same system', why="The Courage cards and the Sotheby's Microcryptogram. Any surviving key could be checked on two documents; this is the single most valuable item.", status='blocked', ev='outside'),
+    dict(rank=4, title='Better images of the plate', why='Greyscale plates from 1946 and 1949 (the 1949 second dot) and the Elgar Museum photo, to settle the 23 doubtful signs.', status='blocked', ev='outside'),
+    dict(rank=5, title='How people fake ciphers', why='Recordings of people inventing cipher-like squiggles, to test the leading alternative directly.', status='blocked', ev='outside'),
+]
+data = dict(frontier=frontier, ct=ct_lines, sets=sets, ledger=ledger, rounds=rounds, questions=questions,
             coverage=dict(cols=cols, rows=cov_rows))
 tpl = open(P('map_template.html'), encoding='utf-8').read()
 out = tpl.replace('/*DATA*/null', json.dumps(data, ensure_ascii=False).replace('</', '<\\/'))

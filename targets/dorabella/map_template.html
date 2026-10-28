@@ -184,6 +184,14 @@ table.cov td.c-none{background:transparent;border:1px dashed var(--rule);color:v
 .tl .ev.c-NEG{color:var(--neg)} .tl .ev.c-NP{color:var(--np)} .tl .ev.c-DIAG{color:var(--diag)} .tl .ev.c-X{color:var(--x)}
 .tl .ev > div{color:var(--ink)}
 
+.front{display:grid;gap:10px}
+.front .item{display:grid;grid-template-columns:44px minmax(0,1fr) 110px;gap:14px;align-items:start;padding:14px 16px}
+.front .rk{font:400 34px/1 var(--display);color:var(--accent)}
+.front h3{font:400 21px/1.2 var(--display)}
+.front p{margin:2px 0 0;color:var(--ink-2);font-size:13.5px}
+.front .stt{justify-self:end;font:500 11px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;padding:6px 9px;border-radius:6px}
+.stt.running{background:var(--np-bg);color:var(--np)} .stt.queued{background:var(--open-bg);color:var(--open)} .stt.done{background:var(--diag-bg);color:var(--diag)} .stt.blocked{background:var(--x-bg);color:var(--x)}
+@media (max-width:560px){.front .item{grid-template-columns:36px minmax(0,1fr)}.front .stt{grid-column:2;justify-self:start}}
 .next{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
 .next .sheet{padding:18px;display:grid;gap:8px}
 .next h3{font:400 22px/1.2 var(--display)}
@@ -225,7 +233,7 @@ footer{margin-top:48px;font-size:12.5px;color:var(--ink-3);max-width:80ch}
 </header>
 
 <nav class="bar" aria-label="Sections"><div class="in">
-  <a href="#questions">Four questions</a><a href="#evidence">Every test</a><a href="#power">Power</a><a href="#coverage">Coverage</a><a href="#timeline">Timeline</a><a href="#next">What next</a>
+  <a href="#questions">Four questions</a><a href="#frontier">Frontier</a><a href="#evidence">Every test</a><a href="#power">Power</a><a href="#coverage">Coverage</a><a href="#timeline">Timeline</a><a href="#next">What next</a>
   <label class="search" for="q"><span class="eyebrow">Search</span><input id="q" type="search" placeholder="Morse, Latin, R12, misread"></label>
 </div></nav>
 
@@ -240,6 +248,15 @@ footer{margin-top:48px;font-size:12.5px;color:var(--ink-3);max-width:80ch}
     <div class="qs" id="qs"></div>
     <aside class="sheet panel" id="panel" aria-live="polite"><span class="eyebrow">Branch</span><p class="empty">Select a branch to see what was tested, every test behind it, and the signs it depends on.</p></aside>
   </div>
+</section>
+
+<section id="frontier">
+  <div class="sec-head">
+    <span class="eyebrow">Frontier</span>
+    <h2>Where the search attaches next</h2>
+    <p class="lede">Ranked by how much each could change the verdict. The flips force one fixed table, so every item keeps the table fixed and asks why it does not solve.</p>
+  </div>
+  <div class="front" id="front"></div>
 </section>
 
 <section id="evidence">
@@ -511,6 +528,10 @@ Object.entries(fv).forEach(([k, n]) => {
   t.innerHTML = html + '</tbody>';
   document.getElementById('covSum').innerHTML = `<span><b>${tested}</b>of ${total} combinations tested</span><span><b>${C.rows[0][1].filter(v => v).length}/${C.cols.length}</b>systems tried on English</span><span>× negative · ? undecidable · — excluded · dashed: not tried</span>`;
 })();
+
+/* ---------- frontier ---------- */
+const fr = document.getElementById('front');
+(DATA.frontier || []).forEach(f => fr.append(h(`<div class="sheet item"><span class="rk">${f.rank}</span><div><h3>${esc(f.title)}</h3><p>${esc(f.why)}</p><p style="font:400 12px var(--mono);color:var(--ink-3)">${esc(f.ev)}</p></div><span class="stt ${f.status}">${esc(f.status)}</span></div>`)));
 
 /* ---------- timeline ---------- */
 const tl = document.getElementById('tl');
