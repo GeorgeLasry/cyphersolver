@@ -218,3 +218,7 @@ Rosamonde telegrams are in `targets/rosamonde1915/`, the 共密/容密/辰密 nu
   The list is at https://bdudout.github.io/wenmi/en/relecture.html; he offers it as a file. Apply once received.
 - **"zehomose…" sender to Ylchang:** he has 29 May and 8 June. We hold only 29 May (frame 55 upper) and 30 May
   (frames 55 lower + 56, opening "honefawepa", same 関正義方 address, w as consonant), which he may not have.
+
+## Brice Dudout's texts and corrections (28 Oct 2026)
+
+`dudout/` holds the 28 corrections as a file (`corrections.tsv`, `relecture.md`), and the full texts of our 99 telegrams in this family's tables (one sub-folder per table). See `dudout/README.md`.
