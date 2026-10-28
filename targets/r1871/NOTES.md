@@ -110,3 +110,7 @@ copied from its neighbour R1872 (Giovanni Michiel, Brussels, 19 Mar 1555, also i
    "[Francesi?]", once) and 114 at L18-L19, where he suspects our transcription rather than the table; at L22 the
    middle of the line is weakest, with 3/5 and 2/0 the likely confusions. Full table and decoding to follow in his
    pull request.
+
+## Block table by Brice Dudout (27 Oct 2026)
+
+The code table, rebuilt from the transcription and Bonavoglia's decipherment (syllables in blocks of five, vowels on X56), is in `dudout/table_blocks.json`; see `dudout/README.md` for the validation and the suspected misreadings at L18-L19 and L22.
