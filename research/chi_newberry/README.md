@@ -6,7 +6,7 @@ coverage.md. Scripts: primo.py (Primo VE JSON search, guest JWT), carli.py (CONT
 Collections item pages).
 
 ## Candidates (best first)
-1. Case MS 7A 4: Burr's autograph letter "largely in cypher" to Wilkinson, 1806 (access: archive). Probably a copy of
+1. Graff f*502: Burr's autograph letter "largely in cypher" to Wilkinson, 1806 (access: archive). Probably a copy of
    the already-published 22 July 1806 cipher letter; the key explanation (Graff 4668) is digitised. Importance 3.
 2. Case MS 5017 characters-table page (access: online, nby_dig/2714): key plus two sample lines, a key lead rather than
    unsolved text; other pages of the volume unchecked.
