@@ -1,0 +1,196 @@
+retry IncompleteRead https://www.loc.gov/collections/abraham-lincoln-papers/?q=cypher&fo=json&c=1
+Abraham Lincoln Papers at the Library of Congress {'cipher': 329, 'cypher': 13, 'decipher': 8}
+Alexander Hamilton Papers {'cipher': 0, 'cypher': 0, 'decipher': 0}
+Alexander Hamilton Stephens Papers {'cipher': 0, 'cypher': 0, 'decipher': 0}
+American Colony in Jerusalem, 1870-2006 {'cipher': 0, 'cypher': 0, 'decipher': 0}
+American Federation of Labor Records {'cipher': 0, 'cypher': 0, 'decipher': 5}
+Andrew Jackson Papers {'cipher': 2, 'cypher': 1, 'decipher': 3}
+Andrew Johnson Papers {'cipher': 0, 'cypher': 0, 'decipher': 0}
+Anna E. Dickinson Papers {'cipher': 16, 'cypher': 6, 'decipher': 9}
+Anna Maria Brodeau Thornton Papers {'cipher': 0, 'cypher': 0, 'decipher': 0}
+Associated Press News Dispatches, 1915-1930 {'cipher': 0, 'cypher': 0, 'decipher': 0}
+The Atlantic World: America and the Netherlands {'cipher': 1, 'cypher': 0, 'decipher': 1}
+Benajah Jay Antrim Journals {'cipher': 0, 'cypher': 0, 'decipher': 0}
+Benjamin Franklin Papers {'cipher': 0, 'cypher': 0, 'decipher': 0}
+Benjamin Harrison Papers {'cipher': 0, 'cypher': 0, 'decipher': 0}
+Betty Herndon Maury Maury Papers {'cipher': 0, 'cypher': 0, 'decipher': 0}
+Blackwell Family Papers {'cipher': 21, 'cypher': 7, 'decipher': 23}
+Blair Family Papers {'cipher': 0, 'cypher': 0, 'decipher': 1}
+Branch Rickey Papers {'cipher': 0, 'cypher': 1, 'decipher': 0}
+Bronislava Nijinska Collection {'cipher': 0, 'cypher': 0, 'decipher': 0}
+Calvin Coolidge Papers {'cipher': 0, 'cypher': 0, 'decipher': 0}
+Carrie Chapman Catt Papers {'cipher': 4, 'cypher': 0, 'decipher': 3}
+retry IncompleteRead https://www.loc.gov/collections/celebrating-chamoru-nobenas/?q=decipher&fo=json&c=1
+Celebrating CHamoru Nobenas {'cipher': 0, 'cypher': 0, 'decipher': 1}
+Charles S. Hamlin Papers {'cipher': 0, 'cypher': 0, 'decipher': 0}
+Charles Wellington Reed Papers, 1776 to 1926 {'cipher': 0, 'cypher': 0, 'decipher': 0}
+Charles William Le Gendre Papers {'cipher': 0, 'cypher': 0, 'decipher': 0}
+Chester Alan Arthur Papers {'cipher': 0, 'cypher': 0, 'decipher': 0}
+Christian A. Fleetwood Papers {'cipher': 0, 'cypher': 0, 'decipher': 0}
+Clara Barton Papers {'cipher': 0, 'cypher': 0, 'decipher': 0}
+Confederate States of America Records {'cipher': 0, 'cypher': 0, 'decipher': 0}
+Donald Benham Civil War Collection {'cipher': 0, 'cypher': 0, 'decipher': 0}
+E. B. Washburne Papers {'cipher': 0, 'cypher': 0, 'decipher': 0}
+Edwin McMasters Stanton Papers, 1818-1921 {'cipher': 0, 'cypher': 0, 'decipher': 0}
+Elizabeth Cady Stanton Papers {'cipher': 1, 'cypher': 1, 'decipher': 0}
+Eltaher Collection {'cipher': 0, 'cypher': 0, 'decipher': 0}
+Eugene Meyer Papers {'cipher': 0, 'cypher': 0, 'decipher': 0}
+France in America {'cipher': 11, 'cypher': 11, 'decipher': 7}
+Franklin Pierce Papers {'cipher': 0, 'cypher': 0, 'decipher': 0}
+Frederick Douglass Papers at the Library of Congress {'cipher': 5, 'cypher': 1, 'decipher': 5}
+Frederick Law Olmsted Papers {'cipher': 1, 'cypher': 2, 'decipher': 1}
+Freedom's Fortress: The Library of Congress, 1939-1953 {'cipher': 0, 'cypher': 0, 'decipher': 0}
+George Brinton McClellan Papers {'cipher': 2, 'cypher': 0, 'decipher': 1}
+George S. Patton Papers: Diaries, 1910-1945 {'cipher': 0, 'cypher': 0, 'decipher': 0}
+retry IncompleteRead https://www.loc.gov/collections/george-washington-papers/?q=cypher&fo=json&c=1
+George Washington Papers {'cipher': 22, 'cypher': 21, 'decipher': 10}
+Gideon Welles Papers {'cipher': 0, 'cypher': 0, 'decipher': 0}
+Grover Cleveland Papers {'cipher': 0, 'cypher': 0, 'decipher': 0}
+Hans Peter Kraus Collection of Spanish American Documents, 1 {'cipher': 0, 'cypher': 0, 'decipher': 0}
+Traceback (most recent call last):
+  File "C:\Users\dbour\cypher-sweep\research\us_loc\loc_collections.py", line 59, in <module>
+    {'list': list_collections, 'count': count}[sys.argv[1]]()
+  File "C:\Users\dbour\cypher-sweep\research\us_loc\loc_collections.py", line 48, in count
+    d = locapi.get(url.rstrip('/') + '/?' + urllib.parse.urlencode({'q': t, 'fo': 'json', 'c': 1}))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dbour\cypher-sweep\research\us_loc\locapi.py", line 33, in get
+    with urllib.request.urlopen(req, timeout=60) as r:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dbour\AppData\Local\Programs\Python\Python312\Lib\urllib\request.py", line 215, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dbour\AppData\Local\Programs\Python\Python312\Lib\urllib\request.py", line 521, in open
+    response = meth(req, response)
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dbour\AppData\Local\Programs\Python\Python312\Lib\urllib\request.py", line 630, in http_response
+    response = self.parent.error(
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dbour\AppData\Local\Programs\Python\Python312\Lib\urllib\request.py", line 559, in error
+    return self._call_chain(*args)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dbour\AppData\Local\Programs\Python\Python312\Lib\urllib\request.py", line 492, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "C:\Users\dbour\AppData\Local\Programs\Python\Python312\Lib\urllib\request.py", line 639, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 525: <none>
+Abraham Lincoln Papers at the Library of Congress {'cipher': 329, 'cypher': 13, 'decipher': 8}
+Alexander Hamilton Papers {'cipher': 0, 'cypher': 0, 'decipher': 0}
+Alexander Hamilton Stephens Papers {'cipher': 0, 'cypher': 0, 'decipher': 0}
+American Colony in Jerusalem, 1870-2006 {'cipher': 0, 'cypher': 0, 'decipher': 0}
+American Federation of Labor Records {'cipher': 0, 'cypher': 0, 'decipher': 5}
+Andrew Jackson Papers {'cipher': 2, 'cypher': 1, 'decipher': 3}
+Andrew Johnson Papers {'cipher': 0, 'cypher': 0, 'decipher': 0}
+Anna E. Dickinson Papers {'cipher': 16, 'cypher': 6, 'decipher': 9}
+Anna Maria Brodeau Thornton Papers {'cipher': 0, 'cypher': 0, 'decipher': 0}
+Associated Press News Dispatches, 1915-1930 {'cipher': 0, 'cypher': 0, 'decipher': 0}
+The Atlantic World: America and the Netherlands {'cipher': 1, 'cypher': 0, 'decipher': 1}
+Benajah Jay Antrim Journals {'cipher': 0, 'cypher': 0, 'decipher': 0}
+Benjamin Franklin Papers {'cipher': 0, 'cypher': 0, 'decipher': 0}
+Benjamin Harrison Papers {'cipher': 0, 'cypher': 0, 'decipher': 0}
+Betty Herndon Maury Maury Papers {'cipher': 0, 'cypher': 0, 'decipher': 0}
+Blackwell Family Papers {'cipher': 21, 'cypher': 7, 'decipher': 23}
+Blair Family Papers {'cipher': 0, 'cypher': 0, 'decipher': 1}
+Branch Rickey Papers {'cipher': 0, 'cypher': 1, 'decipher': 0}
+Bronislava Nijinska Collection {'cipher': 0, 'cypher': 0, 'decipher': 0}
+Calvin Coolidge Papers {'cipher': 0, 'cypher': 0, 'decipher': 0}
+Carrie Chapman Catt Papers {'cipher': 4, 'cypher': 0, 'decipher': 3}
+Celebrating CHamoru Nobenas {'cipher': 0, 'cypher': 0, 'decipher': 1}
+Charles S. Hamlin Papers {'cipher': 0, 'cypher': 0, 'decipher': 0}
+Charles Wellington Reed Papers, 1776 to 1926 {'cipher': 0, 'cypher': 0, 'decipher': 0}
+Charles William Le Gendre Papers {'cipher': 0, 'cypher': 0, 'decipher': 0}
+Chester Alan Arthur Papers {'cipher': 0, 'cypher': 0, 'decipher': 0}
+Christian A. Fleetwood Papers {'cipher': 0, 'cypher': 0, 'decipher': 0}
+Clara Barton Papers {'cipher': 0, 'cypher': 0, 'decipher': 0}
+Confederate States of America Records {'cipher': 0, 'cypher': 0, 'decipher': 0}
+Donald Benham Civil War Collection {'cipher': 0, 'cypher': 0, 'decipher': 0}
+E. B. Washburne Papers {'cipher': 0, 'cypher': 0, 'decipher': 0}
+Edwin McMasters Stanton Papers, 1818-1921 {'cipher': 0, 'cypher': 0, 'decipher': 0}
+Elizabeth Cady Stanton Papers {'cipher': 1, 'cypher': 1, 'decipher': 0}
+Eltaher Collection {'cipher': 0, 'cypher': 0, 'decipher': 0}
+Eugene Meyer Papers {'cipher': 0, 'cypher': 0, 'decipher': 0}
+France in America {'cipher': 11, 'cypher': 11, 'decipher': 7}
+Franklin Pierce Papers {'cipher': 0, 'cypher': 0, 'decipher': 0}
+Frederick Douglass Papers at the Library of Congress {'cipher': 5, 'cypher': 1, 'decipher': 5}
+Frederick Law Olmsted Papers {'cipher': 1, 'cypher': 2, 'decipher': 1}
+Freedom's Fortress: The Library of Congress, 1939-1953 {'cipher': 0, 'cypher': 0, 'decipher': 0}
+George Brinton McClellan Papers {'cipher': 2, 'cypher': 0, 'decipher': 1}
+George S. Patton Papers: Diaries, 1910-1945 {'cipher': 0, 'cypher': 0, 'decipher': 0}
+George Washington Papers {'cipher': 22, 'cypher': 21, 'decipher': 10}
+Gideon Welles Papers {'cipher': 0, 'cypher': 0, 'decipher': 0}
+Grover Cleveland Papers {'cipher': 0, 'cypher': 0, 'decipher': 0}
+Hans Peter Kraus Collection of Spanish American Documents, 1 {'cipher': 0, 'cypher': 0, 'decipher': 0}
+The Heineman Foundation Collection {'cipher': 0, 'cypher': 0, 'decipher': 0}
+Henry Rowe Schoolcraft Papers {'cipher': 0, 'cypher': 0, 'decipher': 0}
+Herndon-Weik Collection of Lincolniana {'cipher': 1, 'cypher': 2, 'decipher': 0}
+Horace Greeley Papers {'cipher': 0, 'cypher': 0, 'decipher': 0}
+Horace H. Lurton Papers {'cipher': 0, 'cypher': 0, 'decipher': 0}
+James A. Garfield Papers {'cipher': 5, 'cypher': 1, 'decipher': 1}
+James Buchanan and Harriet Lane Johnston Papers {'cipher': 0, 'cypher': 0, 'decipher': 0}
+James K. Polk Papers {'cipher': 0, 'cypher': 0, 'decipher': 0}
+James Madison Papers, 1723-1859 {'cipher': 162, 'cypher': 40, 'decipher': 4}
+James Monroe Papers {'cipher': 0, 'cypher': 0, 'decipher': 0}
+Jean Lafitte National Historical Park and Preserve Collectio {'cipher': 0, 'cypher': 0, 'decipher': 0}
+Jedediah Hotchkiss Papers {'cipher': 0, 'cypher': 0, 'decipher': 0}
+John Carvel Arnold Papers {'cipher': 0, 'cypher': 0, 'decipher': 0}
+John G. Nicolay Papers {'cipher': 0, 'cypher': 0, 'decipher': 0}
+John J. Pershing Papers {'cipher': 0, 'cypher': 0, 'decipher': 0}
+John Tyler Papers {'cipher': 0, 'cypher': 0, 'decipher': 0}
+Joseph Holt Papers {'cipher': 17, 'cypher': 4, 'decipher': 5}
+Jubal Anderson Early Papers {'cipher': 0, 'cypher': 0, 'decipher': 0}
+Lessing J. Rosenwald Collection {'cipher': 74, 'cypher': 124, 'decipher': 80}
+Lewis H. Machen Family Papers {'cipher': 0, 'cypher': 0, 'decipher': 0}
+Louis Malesherbes Goldsborough Papers {'cipher': 3, 'cypher': 1, 'decipher': 4}
+Margaret Bayard Smith Papers {'cipher': 0, 'cypher': 0, 'decipher': 0}
+Martin Van Buren Papers, 1787 to 1910 {'cipher': 0, 'cypher': 0, 'decipher': 0}
+Mary Ann Bickerdyke Papers {'cipher': 3, 'cypher': 0, 'decipher': 1}
+Mary Church Terrell Papers {'cipher': 16, 'cypher': 2, 'decipher': 9}
+Matthew Fontaine Maury Papers {'cipher': 0, 'cypher': 0, 'decipher': 0}
+Meeting of Frontiers {'cipher': 6, 'cypher': 1, 'decipher': 10}
+Millard Fillmore Papers {'cipher': 0, 'cypher': 0, 'decipher': 0}
+Miscellaneous Manuscripts Collection {'cipher': 0, 'cypher': 0, 'decipher': 0}
+Montgomery C. Meigs Papers {'cipher': 0, 'cypher': 0, 'decipher': 1}
+Myrtilla Miner Papers {'cipher': 0, 'cypher': 0, 'decipher': 0}
+retry IncompleteRead https://www.loc.gov/collections/naacp-legal-defense-and-educational-fund-records/?q=cipher&fo=json&c=1
+NAACP Legal Defense and Educational Fund Records {'cipher': 8, 'cypher': 15, 'decipher': 8}
+Nathan W. Daniels Diary and Scrapbook {'cipher': 0, 'cypher': 0, 'decipher': 0}
+National American Woman Suffrage Association Records {'cipher': 32, 'cypher': 3, 'decipher': 13}
+Nelson W. Aldrich Papers {'cipher': 0, 'cypher': 0, 'decipher': 0}
+Olmsted Associates Records {'cipher': 0, 'cypher': 0, 'decipher': 0}
+Omar Ibn Said Collection {'cipher': 0, 'cypher': 0, 'decipher': 2}
+Pacific Encounters in Nineteenth-Century Japan {'cipher': 0, 'cypher': 0, 'decipher': 0}
+Parallel Histories: Spain, the United States, and the Americ {'cipher': 0, 'cypher': 0, 'decipher': 0}
+Philip Henry Sheridan Papers {'cipher': 0, 'cypher': 0, 'decipher': 0}
+Phillips/Mathée Collection {'cipher': 0, 'cypher': 0, 'decipher': 0}
+Polish Declarations of Admiration and Friendship for the Uni {'cipher': 0, 'cypher': 0, 'decipher': 0}
+Robert H. Terrell Papers {'cipher': 0, 'cypher': 0, 'decipher': 0}
+Robert Lansing Papers {'cipher': 0, 'cypher': 0, 'decipher': 0}
+Salmon P. Chase Papers {'cipher': 0, 'cypher': 0, 'decipher': 0}
+Samuel J. Gibson Diary and Correspondence {'cipher': 0, 'cypher': 0, 'decipher': 0}
+Shippen Family Papers {'cipher': 0, 'cypher': 0, 'decipher': 0}
+Spanish Legal Documents (15th-19th Centuries) {'cipher': 0, 'cypher': 0, 'decipher': 0}
+Susan B. Anthony Papers {'cipher': 0, 'cypher': 0, 'decipher': 0}
+Thaddeus Stevens Papers {'cipher': 0, 'cypher': 0, 'decipher': 0}
+Theodore Roosevelt Papers {'cipher': 143, 'cypher': 18, 'decipher': 57}
+retry IncompleteRead https://www.loc.gov/collections/thomas-jefferson-papers/?q=cypher&fo=json&c=1
+retry IncompleteRead https://www.loc.gov/collections/thomas-jefferson-papers/?q=decipher&fo=json&c=1
+Thomas Jefferson Papers, 1606-1827 {'cipher': 63, 'cypher': 44, 'decipher': 0}
+Ulysses S. Grant Papers {'cipher': 0, 'cypher': 0, 'decipher': 0}
+The United States and Brazil: Expanding Frontiers, Comparing {'cipher': 0, 'cypher': 0, 'decipher': 0}
+Vietnam-Era Prisoner-of-War/Missing-in-Action Database {'cipher': 0, 'cypher': 0, 'decipher': 0}
+Warren G. Harding-Carrie Fulton Phillips Correspondence {'cipher': 0, 'cypher': 0, 'decipher': 0}
+Washington During the Civil War: The Diary of Horatio Nelson {'cipher': 0, 'cypher': 1, 'decipher': 0}
+William A. Gladstone Afro-American Military Collection {'cipher': 3, 'cypher': 2, 'decipher': 0}
+William Alexander Marshall Papers {'cipher': 0, 'cypher': 0, 'decipher': 0}
+William Farquhar Correspondence {'cipher': 0, 'cypher': 0, 'decipher': 0}
+William H. Taft Papers {'cipher': 0, 'cypher': 0, 'decipher': 0}
+William Henry Harrison Papers {'cipher': 0, 'cypher': 0, 'decipher': 0}
+William McKinley Papers {'cipher': 0, 'cypher': 0, 'decipher': 0}
+William Speiden Journals {'cipher': 0, 'cypher': 0, 'decipher': 0}
+William T. Sherman Papers {'cipher': 0, 'cypher': 0, 'decipher': 0}
+Wm. Oland Bourne Papers {'cipher': 1, 'cypher': 0, 'decipher': 1}
+retry IncompleteRead https://www.loc.gov/collections/woodrow-wilson-papers/?q=cipher&fo=json&c=1
+Woodrow Wilson Papers {'cipher': 1, 'cypher': 0, 'decipher': 0}
+World Digital Library {'cipher': 54, 'cypher': 62, 'decipher': 88}
+Yudin Collection of Russian-American Company Records, 1783-1 {'cipher': 0, 'cypher': 0, 'decipher': 0}
+Zachary Taylor Papers {'cipher': 0, 'cypher': 0, 'decipher': 0}
