@@ -104,8 +104,12 @@ obtained copies of). Most are the Department's own code traffic. The foreign-tra
   traffic, read by the Allies at the time; out of reach and not filed as text here. Not a row.
 - Mexico 1941 (Justice, 812.614 purport M973-559-0637): intercepted radio message Mexico → Germany submitted
   "deciphered and translated". Not a row.
-- Unresolved, purport only, no statement that the text was unread, so not rows: Chile #2431 (Dec 1940), one
-  intercepted code message from the German Embassy Santiago to the Auswärtiges Amt (M973-540-1402); Mexico #10834
-  (19 June 1940), copies of code messages of the Partido Nacional Socialista Mexicano (812.00N/220, M973-537-0643);
-  Spain #784 (1942), messages of Agustín Mutiozábal that "may have been code messages" (M973-534-0750). A NARA
-  catalogue search for the 812.00N purport list timed out on 27 Oct 2026, and no further requests were sent.
+- Resolved on a retry (the catalogue answered again; purport lists naIds 88111461, 88084129, 88074042 fetched):
+  - Mexico 1940 (810.00-N / 812.00N, subs 185 and 220): Ambassador Boal sent a letter from his informant Antonio
+    Ochoa Peredo 'for decoding' and 'two further copies of what is considered may possibly be code messages' of the
+    Partido Nacional Socialista Mexicano. The later purports (subs 292, 300, 318, 353) report Ochoa Peredo's
+    information in plain terms and never mention a code again; whether these were code at all is unknown. Not a row.
+  - Chile #2431 (4 Dec 1940, 810.74 series, sub 870a): one intercepted message from Chile to the Auswärtiges Amt,
+    cited only to show the German Embassy radio was in use 8-15 Oct; no text forwarded as a cipher problem. Not a row.
+  - Spain #784 (4 Feb 1944, 800.20210 Mutiozábal): censorship intercepts of private letters to a suspected Axis
+    maildrop in Havana that 'may have been code messages'; open code at most. Not a row.
