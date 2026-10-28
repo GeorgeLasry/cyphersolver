@@ -1,0 +1,174 @@
+{
+ "schema_version": 1,
+ "target": "lopehurtado1520",
+ "title": "Lope Hurtado de Mendoza to Charles V, Tordesillas, 10 December 1520 (catalogue 626): a letter wholly in cipher, key rebuilt from the letter itself",
+ "documents": [
+  {
+   "id": "ags-ptr-leg2-36-8",
+   "read": "read",
+   "shelfmark": "Archivo General de Simancas, Patronato Real, PTR,LEG,2,36,8, ff. 1r–1v (PARES 12988891). Unpublished in cipher; the plain-text letter of the same day (36,6) is printed by A. Danvila, Historia crítica y documentada de las Comunidades de Castilla, in Memorial histórico español XXXVI, pp. 688–690.",
+   "date": "10 December 1520",
+   "year": 1520,
+   "country": "Spain",
+   "route": "Tordesillas -> Charles V (Flanders/Germany)",
+   "places": {
+    "from": "Tordesillas",
+    "to": "court of Charles V"
+   },
+   "language": "Spanish",
+   "pages": 2,
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment; the plain letter of the same day (Danvila) is a different text."
+   },
+   "length": {
+    "tokens": 3736,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "PARES images",
+    "image_quality": "fair",
+    "notes": "Twelve doubtful signs settled by a targeted visual review (Brice Dudout, 28 Oct 2026)."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "monoalphabetic",
+   "homophonic",
+   "nomenclator"
+  ],
+  "summary": "homophonic letter substitution (≈ 35 signs: barred o = t, cross = s, 9 = a, ſ = g, ⊤ = z…), words separated, a few dotted sigla for persons (·fre·, ·lis·, ·los·, ·lus·, ·ym·); the last words of the letter in mixed plain text",
+  "symbol_kind": "letters and symbols",
+  "distinct_symbols": 37,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "kinds": [
+    "names",
+    "titles"
+   ]
+  },
+  "nulls": {
+   "present": false
+  },
+  "key_order": "random",
+  "word_division": "kept"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "Catalogue 626 open; Danvila prints only the clear letter of the same day; web search 27 Oct 2026.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images"
+  ],
+  "attack": "ciphertext-only",
+  "first_date": "2026-10-27",
+  "last_date": "2026-10-28",
+  "human_role": "Brice Dudout chose the target from the catalogue and set the rules (frozen key before validation, held-out checks, prior-work search the day of publication); AI agents transcribed, solved, checked and wrote up. Doubtful signs were settled by targeted visual review where stated.",
+  "models": [
+   "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout"
+  ]
+ },
+ "solution": [
+  {
+   "date": "2026-10-27",
+   "kind": "access",
+   "what": "Key said by an archivist's slip to be in a letter of 23 September: checked, not there.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "solver",
+   "technique": [
+    "simulated annealing",
+    "language-model scoring",
+    "manual reconstruction"
+   ],
+   "what": "Key rebuilt from the cipher of the letter (K2, K3, then K4).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Held-out lines 1v 11-17 frozen before any value: K4 reads 0.827 of words, shuffled keys median 0.288, max 0.596.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "verification",
+   "what": "Targeted visual review of 12 doubtful signs by Brice Dudout; S = s withdrawn (r38 \"holgado\").",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "read",
+  "key": "recovered",
+  "method": "key recovered from ciphertext-only",
+  "method_basis": "Key rebuilt from the cipher of the letter itself; validated on held-out lines.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "fraction_read": 0.977,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "rate.py on words: 920 cipher words, about 97.7% read, 95.4% certain (without probable readings), about 21 unresolved.",
+  "first_break": true,
+  "verification": [
+   "matched control",
+   "historical consistency"
+  ],
+  "human_check": {
+   "date": "2026-10-28",
+   "by": "Brice Dudout",
+   "passage": "12 doubtful signs (r26, r38, v08, v09, v18, v27, v31, v38)",
+   "result": "corrected"
+  },
+  "credits": [
+   {
+    "who": "dudout",
+    "role": "solution",
+    "note": "key rebuilt from the letter; 920 cipher words read, Spanish text and English translation",
+    "date": "2026-10-28"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "about 21 unresolved words",
+    "blocker": "illegible"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "ags-ptr-leg2-36-8",
+    "label": "Lope Hurtado de Mendoza to Charles V, Tordesillas, 10 December 1520 (AGS PTR,LEG,2,36,8)",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "reading": "reading.md",
+    "translation": "translation.md",
+    "language": "es",
+    "state": "read",
+    "summary": "Five days after Tordesillas was retaken from the Comuneros, Lope Hurtado de Mendoza, Charles V’s confidant with the governors of Castile, wrote two letters on the same day. One, in plain text, tells of the sack of the town and the capture of the Junta’s procurators; Danvila printed it in the late nineteenth century. The other, entirely in cipher, says what could not be written openly: the Admiral hesitates to govern, the Marquis of Denia is hated, the army is “very badly commanded”, and the see of Jaén and every vacancy should be held back to keep loyalties. An archivist’s slip in the bundle said the key was to be found in a letter of 23 September; it was not. We rebuilt it from the letter itself."
+   }
+  ],
+  "key_file": "key_K4.tsv",
+  "provenance": "contributed"
+ }
+}
