@@ -124,9 +124,10 @@
    "kind": "verification",
    "what": "Doubtful numbers checked blind on the image by Brice Dudout; the two copies cross-check (same words, sometimes clear in one copy and cipher in the other).",
    "result": "worked"
-  }
+  },
+  {"date": "2026-10-27", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 638 tokens, 178 types, sv-modern order 4: reading -2.593 per letter; random keys -3.542 (z 7.6); key annealed onto shuffled ciphertext best -2.327 (mean -2.354, z -14.6); annealer on the real text -2.24. Verdict: underdetermined.", "result": "partial"}
  ],
- "outcome": {
+ "outcome": {"validation": {"date": "2026-10-27", "model": "sv-modern", "file": "validation.tsv", "tokens": 638, "types": 178, "tokens_per_type": 3.58, "score": -2.593, "nulls": {"random keys": {"n": 200, "mean": -3.542, "sd": 0.125, "max": -3.292, "z": 7.6, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -2.354, "sd": 0.016, "max": -2.327, "z": -14.6, "p": 1.0}}, "power": -2.24, "verdict": "underdetermined", "notes": "claimed per-occurrence score -2.596; polyphony 0.002; 2 unread tokens left out; annealer on the real text from random keys reached -2.24"}, 
   "class": "read",
   "key": "recovered",
   "method": "key recovered based on adjacent plaintext",
@@ -139,11 +140,7 @@
   "fraction_read_method": "measured",
   "fraction_read_source": "639 of 640 cipher groups read; six probable readings marked on the write-up.",
   "first_break": true,
-  "verification": [
-   "matched control",
-   "independent clear copy",
-   "historical consistency"
-  ],
+  "verification": ["matched control", "independent clear copy", "historical consistency"],
   "human_check": {
    "date": "2026-10-27",
    "by": "Brice Dudout",

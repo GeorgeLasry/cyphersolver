@@ -116,9 +116,10 @@
    "kind": "verification",
    "what": "Targeted visual review of 12 doubtful signs by Brice Dudout; S = s withdrawn (r38 \"holgado\").",
    "result": "worked"
-  }
+  },
+  {"date": "2026-10-27", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 3432 tokens, 35 types, es-golden-age order 4: reading -2.139 per letter; random keys -5.439 (z 5.3); key annealed onto shuffled ciphertext best -3.118 (mean -3.141, z 43.3); annealer on the real text -2.091. Verdict: pass.", "result": "worked"}
  ],
- "outcome": {
+ "outcome": {"validation": {"date": "2026-10-27", "model": "es-golden-age", "file": "validation.tsv", "tokens": 3432, "types": 35, "tokens_per_type": 98.06, "score": -2.139, "nulls": {"random keys": {"n": 200, "mean": -5.439, "sd": 0.623, "max": -4.153, "z": 5.3, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -3.141, "sd": 0.023, "max": -3.118, "z": 43.3, "p": 0.1429}}, "power": -2.091, "verdict": "pass", "notes": "claimed per-occurrence score -2.077; polyphony 0.014; 677 unread tokens left out; annealer on the real text from random keys reached -2.091"}, 
   "class": "read",
   "key": "recovered",
   "method": "key recovered from ciphertext-only",
@@ -131,10 +132,7 @@
   "fraction_read_method": "measured",
   "fraction_read_source": "rate.py on words: 920 cipher words, about 97.7% read, 95.4% certain (without probable readings), about 21 unresolved.",
   "first_break": true,
-  "verification": [
-   "matched control",
-   "historical consistency"
-  ],
+  "verification": ["matched control", "historical consistency", "statistical test"],
   "human_check": {
    "date": "2026-10-28",
    "by": "Brice Dudout",
