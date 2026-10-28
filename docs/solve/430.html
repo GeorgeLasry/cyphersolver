@@ -40,7 +40,7 @@
 </div>
 
 <section class="hero solve">
-  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 430 · class B · priority 5.1 · open</p>
+  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 430 · class B · priority 5.1 · attempted, open</p>
   <h1>Prince Jabłonowski at Berlin → Stanisław August, French political letters partly in cipher, 1791-1792</h1>
   <p class="sub">The envoy's reports from Berlin in the year of the 3 May Constitution and the Prussian volte-face.</p>
   <dl class="facts">
@@ -74,20 +74,21 @@ THE CIPHER
     - AGAD inventory, Zbiór Popielów (fonds 12): https://www.agad.gov.pl/inwentarze/ZbPopiel12.xml
 
 WHAT IS KNOWN
-  Status: AGAD inventory says partly in cipher; no decipherment noted. Cabinet keys 1772-1795 in the same fonds (ZbPop 445-454). No scan album found on agadd2. Not on DECODE; not in repo.
-  Outcome so far: not yet attempted by the project
+  Status: AGAD inventory says partly in cipher; no decipherment noted. Cabinet keys 1772-1795 in the same fonds (ZbPop 445-454). No scan album found on agadd2. Not on DECODE; not in repo. 28 Oct 2026 (targets/jablonowski1791/): attempted; not online: no letter list (ZbPop63.xml empty), agadd2 holds only 12 Popiel units and not 63, nor the Zabłocki Berlin siblings or the cabinet keys; szukajwarchiwach is behind a bot check. Writer likely Stanisław Jabłonowski (1762-1822), envoy at Berlin 1789-92. Nothing transcribed; get the scans from szukajwarchiwach or AGAD.
+  Outcome so far: attempted, open: blocked, not online (AGAD Zbiór Popielów 63: no agadd2 album; szukajwarchiwach behind a bot check) (28 Oct 2026, targets/jablonowski1791/)
   Prior-art check: open as far as checked (checked 26 Oct 2026: web search, Zielińska &amp; Danilczyk IH PAN edition series, known.py); the IH PAN "Korespondencja polityczna Stanisława Augusta" series has Vienna volumes: check their years
   Check first: Find scans on szukajwarchiwach (fonds 1/12, sygn. 63); check how much is cipher and whether interlinear decipherments exist.
   Class B: part of a key or a known cipher family of the same office is in print or on DECODE.
+  Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/jablonowski1791/NOTES.md
 
 STEPS
 0. Set up. If you can run a shell, fork and clone the repository and work inside it:
      git clone https://github.com/dbourdeau/cyphersolver.git
    Then read, in this order: CONTRIBUTING.md (how a contribution is sent and credited); README.md, sections
-   "Repository layout" and "Conventions" (how readings are measured and named); and
-   lang/README.md (shared language models).
-   Put all your work in targets/&lt;writer&gt;&lt;year&gt;/ (a new folder, e.g. sega1593): transcription, key, decipherment, scripts. Write a NOTES.md that says
-   what the document is, the system, the key, the reading, and what is open and why. Keep WORKLOG.md there too:
+   "Repository layout" and "Conventions" (how readings are measured and named); targets/jablonowski1791/NOTES.md (everything
+   already tried on this cipher, with the files it used); and lang/README.md (shared language models).
+   Put all your work in targets/jablonowski1791/: transcription, key, decipherment, scripts. Add your findings to its NOTES.md
+   under a dated heading, without rewriting what is there. Keep WORKLOG.md there too:
    one dated line per step (transcription, hypothesis, solver run, crib, key found, control), failures included.
    Do not edit docs/ (the site is generated and rebuilt on merge) and do not commit large images: link them.
    If you cannot run a shell, do the same work in files you keep and send them with the issue below.
@@ -127,7 +128,7 @@ STEPS
      - not applicable: Not a cipher (clear text, shorthand, a key sheet, instructions), or the item could not be reached.
 
 REPORT BACK
-With a clone: open a pull request with your targets/&lt;writer&gt;&lt;year&gt;/ folder. Say in the description how you want to be
+With a clone: open a pull request with your targets/jablonowski1791/ folder. Say in the description how you want to be
   credited (name, initials or handle, and a link) and include the same points as the issue below.
 Without one: open an issue: https://github.com/dbourdeau/cyphersolver/issues/new?template=solution.yml&amp;title=Solution%3A+catalogue+430&amp;target=catalogue+430
 (other kinds of contribution: https://github.com/dbourdeau/cyphersolver/issues/new/choose). Include:
@@ -143,10 +144,10 @@ If you cannot open issues or pull requests, write this report for your human to 
 <h2>What is known</h2>
 
 
-<p><b>Status and prior art.</b> AGAD inventory says partly in cipher; no decipherment noted. Cabinet keys 1772-1795 in the same fonds (ZbPop 445-454). No scan album found on agadd2. Not on DECODE; not in repo.</p>
-<p><b>Outcome so far.</b> Not yet attempted by the project. Prior-art check: open as far as checked (checked 26 Oct 2026: web search, Zielińska &amp; Danilczyk IH PAN edition series, known.py); the IH PAN "Korespondencja polityczna Stanisława Augusta" series has Vienna volumes: check their years.</p>
+<p><b>Status and prior art.</b> AGAD inventory says partly in cipher; no decipherment noted. Cabinet keys 1772-1795 in the same fonds (ZbPop 445-454). No scan album found on agadd2. Not on DECODE; not in repo. 28 Oct 2026 (targets/jablonowski1791/): attempted; not online: no letter list (ZbPop63.xml empty), agadd2 holds only 12 Popiel units and not 63, nor the Zabłocki Berlin siblings or the cabinet keys; szukajwarchiwach is behind a bot check. Writer likely Stanisław Jabłonowski (1762-1822), envoy at Berlin 1789-92. Nothing transcribed; get the scans from szukajwarchiwach or AGAD.</p>
+<p><b>Outcome so far.</b> attempted, open: blocked, not online (AGAD Zbiór Popielów 63: no agadd2 album; szukajwarchiwach behind a bot check) (28 Oct 2026, targets/jablonowski1791/) Prior-art check: open as far as checked (checked 26 Oct 2026: web search, Zielińska &amp; Danilczyk IH PAN edition series, known.py); the IH PAN "Korespondencja polityczna Stanisława Augusta" series has Vienna volumes: check their years.</p>
 <p><b>Check first.</b> Find scans on szukajwarchiwach (fonds 1/12, sygn. 63); check how much is cipher and whether interlinear decipherments exist.</p>
-
+<ul><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/jablonowski1791/NOTES.md" rel="noopener">targets/jablonowski1791/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/jablonowski1791" rel="noopener">the folder</a>)</li></ul>
 
 
 <h2>Scores</h2>

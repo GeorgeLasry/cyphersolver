@@ -40,7 +40,7 @@
 </div>
 
 <section class="hero solve">
-  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 609 · class A · priority 5.2 · open</p>
+  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 609 · class A · priority 5.2 · attempted, open</p>
   <h1>Prince-bishopric of Münster files: Jesuit Theodor Körler's reports from Vienna partly ciphered (1674-75); partly ciphered letter on munitions and the war on the Lower Rhine (1634-35)</h1>
   <p class="sub">Galen's Münster in the Dutch War.</p>
   <dl class="facts">
@@ -75,20 +75,21 @@ THE CIPHER
     - B 001 Nr. 673: https://www.archivportal-d.de/item/FZIOD6ZQENJ2ILFZ4WJ3EDCCC7ZWOOS7
 
 WHAT IS KNOWN
-  Status: Finding aid as quoted. A Münster cabinet secretary's formula book with 'Verschiedene Schlüssel zur Dechiffrierung diplomatischer Korrespondenz' (1658-59) and a titulary with a decipherment key are digitised. Not digitised.
-  Outcome so far: not yet attempted by the project
-  Prior-art check: open (checked 26 Oct 2026: known.py, quick web search).
-  Check first: Open W 005 Nr. 499 a; order B 001 Nr. 3009.
+  Status: Finding aid as quoted. A Münster cabinet secretary's formula book with 'Verschiedene Schlüssel zur Dechiffrierung diplomatischer Korrespondenz' (1658-59) and a titulary with a decipherment key are digitised. Not digitised. 28 Oct 2026 (targets/koerler1675/): attempted; B 001 Nr. 3009 and 673 have no digital objects. Sibling B 001 Nr. 7801 (Körler alias Dorotheus Diethrichs, Vienna reports 1674, 31 Bl.) also not digitised. Key volumes W 005 Nr. 499 a (keys of ca. 1658-59, incl. a Galen-Volmar-Montecuccoli key) and Nr. 475 (chancellor's key of 24 Feb. 1689) inventoried; none dated to 1634-35 or 1674-75.
+  Outcome so far: attempted, open: blocked, B 001 Nr. 3009 and Nr. 673 are not digitised; Hüttenheim 1974 not yet seen (28 Oct 2026, targets/koerler1675/)
+  Prior-art check: open (checked 28 Oct 2026: repo, DDB, web). Erich Hüttenheim, Die Geheimschriften des Fürstbistums Münster unter Christoph Bernhard von Galen 1650-1678 (Münster 1974) covers this chancery's ciphers and may already give the Körler key; not seen.
+  Check first: See Hüttenheim 1974; order B 001 Nr. 3009, 7801 and 673; test the W 005 Nr. 499 a and 475 keys.
   Class A: a sibling letter with a decipherment is in the same volume or series, so matching it is the first move.
+  Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/koerler1675/NOTES.md
 
 STEPS
 0. Set up. If you can run a shell, fork and clone the repository and work inside it:
      git clone https://github.com/dbourdeau/cyphersolver.git
    Then read, in this order: CONTRIBUTING.md (how a contribution is sent and credited); README.md, sections
-   "Repository layout" and "Conventions" (how readings are measured and named); and
-   lang/README.md (shared language models).
-   Put all your work in targets/&lt;writer&gt;&lt;year&gt;/ (a new folder, e.g. sega1593): transcription, key, decipherment, scripts. Write a NOTES.md that says
-   what the document is, the system, the key, the reading, and what is open and why. Keep WORKLOG.md there too:
+   "Repository layout" and "Conventions" (how readings are measured and named); targets/koerler1675/NOTES.md (everything
+   already tried on this cipher, with the files it used); and lang/README.md (shared language models).
+   Put all your work in targets/koerler1675/: transcription, key, decipherment, scripts. Add your findings to its NOTES.md
+   under a dated heading, without rewriting what is there. Keep WORKLOG.md there too:
    one dated line per step (transcription, hypothesis, solver run, crib, key found, control), failures included.
    Do not edit docs/ (the site is generated and rebuilt on merge) and do not commit large images: link them.
    If you cannot run a shell, do the same work in files you keep and send them with the issue below.
@@ -128,7 +129,7 @@ STEPS
      - not applicable: Not a cipher (clear text, shorthand, a key sheet, instructions), or the item could not be reached.
 
 REPORT BACK
-With a clone: open a pull request with your targets/&lt;writer&gt;&lt;year&gt;/ folder. Say in the description how you want to be
+With a clone: open a pull request with your targets/koerler1675/ folder. Say in the description how you want to be
   credited (name, initials or handle, and a link) and include the same points as the issue below.
 Without one: open an issue: https://github.com/dbourdeau/cyphersolver/issues/new?template=solution.yml&amp;title=Solution%3A+catalogue+609&amp;target=catalogue+609
 (other kinds of contribution: https://github.com/dbourdeau/cyphersolver/issues/new/choose). Include:
@@ -144,10 +145,10 @@ If you cannot open issues or pull requests, write this report for your human to 
 <h2>What is known</h2>
 
 
-<p><b>Status and prior art.</b> Finding aid as quoted. A Münster cabinet secretary's formula book with 'Verschiedene Schlüssel zur Dechiffrierung diplomatischer Korrespondenz' (1658-59) and a titulary with a decipherment key are digitised. Not digitised.</p>
-<p><b>Outcome so far.</b> Not yet attempted by the project. Prior-art check: open (checked 26 Oct 2026: known.py, quick web search)..</p>
-<p><b>Check first.</b> Open W 005 Nr. 499 a; order B 001 Nr. 3009.</p>
-
+<p><b>Status and prior art.</b> Finding aid as quoted. A Münster cabinet secretary's formula book with 'Verschiedene Schlüssel zur Dechiffrierung diplomatischer Korrespondenz' (1658-59) and a titulary with a decipherment key are digitised. Not digitised. 28 Oct 2026 (targets/koerler1675/): attempted; B 001 Nr. 3009 and 673 have no digital objects. Sibling B 001 Nr. 7801 (Körler alias Dorotheus Diethrichs, Vienna reports 1674, 31 Bl.) also not digitised. Key volumes W 005 Nr. 499 a (keys of ca. 1658-59, incl. a Galen-Volmar-Montecuccoli key) and Nr. 475 (chancellor's key of 24 Feb. 1689) inventoried; none dated to 1634-35 or 1674-75.</p>
+<p><b>Outcome so far.</b> attempted, open: blocked, B 001 Nr. 3009 and Nr. 673 are not digitised; Hüttenheim 1974 not yet seen (28 Oct 2026, targets/koerler1675/) Prior-art check: open (checked 28 Oct 2026: repo, DDB, web). Erich Hüttenheim, Die Geheimschriften des Fürstbistums Münster unter Christoph Bernhard von Galen 1650-1678 (Münster 1974) covers this chancery's ciphers and may already give the Körler key; not seen..</p>
+<p><b>Check first.</b> See Hüttenheim 1974; order B 001 Nr. 3009, 7801 and 673; test the W 005 Nr. 499 a and 475 keys.</p>
+<ul><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/koerler1675/NOTES.md" rel="noopener">targets/koerler1675/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/koerler1675" rel="noopener">the folder</a>)</li></ul>
 
 
 <h2>Scores</h2>

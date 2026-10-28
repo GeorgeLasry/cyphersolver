@@ -40,7 +40,7 @@
 </div>
 
 <section class="hero solve">
-  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 464 · class C · priority 5.1 · open</p>
+  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 464 · class C · priority 5.1 · attempted, open</p>
   <h1>Chevalier Lagau → comte de La Marck: intercepted French cipher letters</h1>
   <p class="sub">French diplomacy at the end of the Great Northern War, read (or not) by the Danes; tests whether Copenhagen broke French ciphers.</p>
   <dl class="facts">
@@ -75,20 +75,21 @@ THE CIPHER
     - McCord Museum, Lagau letters (context): https://collections.musee-mccord-stewart.ca/en/objects/475677/compte-rendu-des-lettres-du-chevalier-philippe-de-lagau-sec
 
 WHAT IS KNOWN
-  Status: Daisy series: "Opsnappede chifferbreve" (intercepted cipher letters), Danish contemporary endorsement names Lagau and La Marck. No decipherment noted. Not on DECODE, not in the repo. Date check: La Marck was ambassador in Stockholm 1717-1720 and Lagau his secretary from 1717 (McCord Museum record), so the 1712 dating may be wrong (1719-20?).
-  Outcome so far: not yet attempted by the project
+  Status: Daisy series: "Opsnappede chifferbreve" (intercepted cipher letters), Danish contemporary endorsement names Lagau and La Marck. No decipherment noted. Not on DECODE, not in the repo. Date check: La Marck was ambassador in Stockholm 1717-1720 and Lagau his secretary from 1717 (McCord Museum record), so the 1712 dating may be wrong (1719-20?). 28 Oct 2026 (targets/lagau1712/): attempted; not digitised (Rigsarkivet search gives tilgængelighed "Intet", no image link); no sibling unit, no edition or decipherment found. The system and the true date are undetermined. Order the scans from Rigsarkivet.
+  Outcome so far: attempted, open: blocked, not digitised (Rigsarkivet, TKUA, Danske Kongers Historie fasc. 358; scans to order from Rigsarkivet) (28 Oct 2026, targets/lagau1712/)
   Prior-art check: open (checked 26 Oct 2026: known.py, DECODE list, web search: McCord Museum and TNA SP 78/163 context only)
   Check first: Order a scan (Rigsarkivet reading room or scan-on-demand); check TNA SP 78/163 (La Marck deciphered copies 1719) for the same key.
   Class C: no key and no deciphered sibling is known, so expect a ciphertext-only attack.
+  Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/lagau1712/NOTES.md
 
 STEPS
 0. Set up. If you can run a shell, fork and clone the repository and work inside it:
      git clone https://github.com/dbourdeau/cyphersolver.git
    Then read, in this order: CONTRIBUTING.md (how a contribution is sent and credited); README.md, sections
-   "Repository layout" and "Conventions" (how readings are measured and named); and
-   lang/README.md (shared language models).
-   Put all your work in targets/&lt;writer&gt;&lt;year&gt;/ (a new folder, e.g. sega1593): transcription, key, decipherment, scripts. Write a NOTES.md that says
-   what the document is, the system, the key, the reading, and what is open and why. Keep WORKLOG.md there too:
+   "Repository layout" and "Conventions" (how readings are measured and named); targets/lagau1712/NOTES.md (everything
+   already tried on this cipher, with the files it used); and lang/README.md (shared language models).
+   Put all your work in targets/lagau1712/: transcription, key, decipherment, scripts. Add your findings to its NOTES.md
+   under a dated heading, without rewriting what is there. Keep WORKLOG.md there too:
    one dated line per step (transcription, hypothesis, solver run, crib, key found, control), failures included.
    Do not edit docs/ (the site is generated and rebuilt on merge) and do not commit large images: link them.
    If you cannot run a shell, do the same work in files you keep and send them with the issue below.
@@ -128,7 +129,7 @@ STEPS
      - not applicable: Not a cipher (clear text, shorthand, a key sheet, instructions), or the item could not be reached.
 
 REPORT BACK
-With a clone: open a pull request with your targets/&lt;writer&gt;&lt;year&gt;/ folder. Say in the description how you want to be
+With a clone: open a pull request with your targets/lagau1712/ folder. Say in the description how you want to be
   credited (name, initials or handle, and a link) and include the same points as the issue below.
 Without one: open an issue: https://github.com/dbourdeau/cyphersolver/issues/new?template=solution.yml&amp;title=Solution%3A+catalogue+464&amp;target=catalogue+464
 (other kinds of contribution: https://github.com/dbourdeau/cyphersolver/issues/new/choose). Include:
@@ -144,10 +145,10 @@ If you cannot open issues or pull requests, write this report for your human to 
 <h2>What is known</h2>
 
 
-<p><b>Status and prior art.</b> Daisy series: "Opsnappede chifferbreve" (intercepted cipher letters), Danish contemporary endorsement names Lagau and La Marck. No decipherment noted. Not on DECODE, not in the repo. Date check: La Marck was ambassador in Stockholm 1717-1720 and Lagau his secretary from 1717 (McCord Museum record), so the 1712 dating may be wrong (1719-20?).</p>
-<p><b>Outcome so far.</b> Not yet attempted by the project. Prior-art check: open (checked 26 Oct 2026: known.py, DECODE list, web search: McCord Museum and TNA SP 78/163 context only).</p>
+<p><b>Status and prior art.</b> Daisy series: "Opsnappede chifferbreve" (intercepted cipher letters), Danish contemporary endorsement names Lagau and La Marck. No decipherment noted. Not on DECODE, not in the repo. Date check: La Marck was ambassador in Stockholm 1717-1720 and Lagau his secretary from 1717 (McCord Museum record), so the 1712 dating may be wrong (1719-20?). 28 Oct 2026 (targets/lagau1712/): attempted; not digitised (Rigsarkivet search gives tilgængelighed "Intet", no image link); no sibling unit, no edition or decipherment found. The system and the true date are undetermined. Order the scans from Rigsarkivet.</p>
+<p><b>Outcome so far.</b> attempted, open: blocked, not digitised (Rigsarkivet, TKUA, Danske Kongers Historie fasc. 358; scans to order from Rigsarkivet) (28 Oct 2026, targets/lagau1712/) Prior-art check: open (checked 26 Oct 2026: known.py, DECODE list, web search: McCord Museum and TNA SP 78/163 context only).</p>
 <p><b>Check first.</b> Order a scan (Rigsarkivet reading room or scan-on-demand); check TNA SP 78/163 (La Marck deciphered copies 1719) for the same key.</p>
-
+<ul><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lagau1712/NOTES.md" rel="noopener">targets/lagau1712/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/lagau1712" rel="noopener">the folder</a>)</li></ul>
 
 
 <h2>Scores</h2>
