@@ -1,0 +1,178 @@
+{
+ "schema_version": 1,
+ "target": "anhalt1610",
+ "title": "Johann von Alairt to Prince Johann Georg I of Anhalt-Dessau, Prague 1610-11: upside-down German, deciphered at the time, and an undeciphered slip of November 1611 (catalogue 597)",
+ "documents": [
+  {
+   "id": "slip1611",
+   "shelfmark": "Landesarchiv Sachsen-Anhalt, Z 44 A 9a Ic Nr. 4 Bd. I, image 400 (fol. 383)",
+   "date": "Nov 1611 (received Dessau 23 Nov 1611)",
+   "year": 1611,
+   "country": "Holy Roman Empire",
+   "route": "unsigned, filed with Johann von Alairt's Prague reports -> Johann Georg I of Anhalt-Dessau",
+   "language": "German",
+   "pages": 1,
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No gloss; only the receipt docket 'praes. Dessau den 23. Novemb. 1611'"
+   },
+   "length": {
+    "tokens": "unknown",
+    "measured": false,
+    "unit": "letters"
+   },
+   "transcription": {
+    "by": "unknown",
+    "source": "Not yet transcribed; line 1 provisional here, a partial reading by Brackx (issue #128)",
+    "image_quality": "good"
+   },
+   "read": "not read"
+  },
+  {
+   "id": "letters1610",
+   "shelfmark": "Landesarchiv Sachsen-Anhalt, Z 44 A 9a Ic Nr. 1 Bd. II images 152-153, 177, 197, 241-242; Nr. 1 Bd. III images 41-42, 154, 263",
+   "date": "5 Apr - Aug 1610",
+   "year": 1610,
+   "country": "Holy Roman Empire",
+   "route": "Johann von Alairt, Prague -> Johann Georg I of Anhalt-Dessau",
+   "language": "German",
+   "pages": "unknown",
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "Contemporary decipherment in Kurrent above every cipher line, except the formulas (Brackx; image 241 checked here)"
+   },
+   "length": {
+    "tokens": "unknown",
+    "measured": false,
+    "unit": "letters"
+   },
+   "transcription": {
+    "by": "unknown",
+    "source": "Not yet transcribed; readings of the 18 May letter's opening, date and signature by Brackx (issue #128)",
+    "image_quality": "good"
+   },
+   "read": "not read"
+  }
+ ],
+ "system": {
+  "types": [
+   "other"
+  ],
+  "summary": "German in Latin script with every letter turned top to bottom (b/p, d/q, n/u, m/w trade places; e looks like o, h like y, a like v, i like X, l like j); reflecting a line restores it (Brackx). The prince's own cipher table (sign alphabet and nomenclator 10-70) and a slip nomenclator in the same series are not used by any letter found.",
+  "symbol_kind": "letters",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": "unknown"
+  },
+  "homophones": {
+   "used": false
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "not applicable",
+  "word_division": "kept",
+  "sibling_key": "Nr. 2 Bd. I image 6 (prince's table) and Nr. 2 Bd. II image 184 (slip key), both unused",
+  "notes": "Catalogue 597, from Michael Brackx's issue #128."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "partial",
+   "where": "The 1610 letters were deciphered at the time (interlinear); the Nov 1611 slip has no decipherment. No edition searched for yet.",
+   "found": "before attempt",
+   "used": false
+  },
+  "inputs": [
+   "images"
+  ],
+  "attack": "archive decipherment",
+  "human_role": "Contributed: Michael Brackx searched the series image by image, identified the system and read the slip's first lines with Claude Code; the project owner set up Claude Code and posed the problem.",
+  "tools": [
+   "Brackx's reflection script (issue #128; not in the repository)"
+  ],
+  "models": [
+   "claude-opus-5-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-10-27",
+  "last_date": "2026-10-27"
+ },
+ "solution": [
+  {
+   "date": "2026-10-27",
+   "kind": "access",
+   "what": "Brackx (issue #128): Z 44 A 9a Ic is digitised further than the catalogue row said (Nr. 1 Bd. I-III, Nr. 2 Bd. I-IV, Nr. 3, Nr. 4 Bd. I, Nr. 5, Nr. 6); image URL pattern found.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "key from source",
+   "what": "Brackx described the prince's cipher table (Nr. 2 Bd. I image 6) and a slip nomenclator (Nr. 2 Bd. II image 184); searched about 2,280 images for letters using them; none found.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis"
+   ],
+   "what": "Brackx identified Alairt's cipher as German written upside down; reflected lines of the 18 May 1610 letter read as German and agree with the interlinear decipherment (date line, opening).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "verification",
+   "what": "Here: images 6, 241 and 400 fetched; the table is as described; image 241 flipped top to bottom gives Latin-script German with o for e under the dark gloss; slip line 1 transcribed and read as 'Will der Kayser bericht werden, dass der Hertz-', agreeing with Brackx.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "method": "not solved",
+  "method_basis": "The system is identified and the 1610 letters carry decipherments of the time, but nothing is transcribed or measured yet; the Nov 1611 slip, the one undeciphered piece, is read only in its first lines.",
+  "contribution": [
+   "catalogue correction"
+  ],
+  "class": "not read",
+  "fraction_read": 0,
+  "key": "not applicable",
+  "verification": [
+   "contemporary decipherment"
+  ],
+  "gaps": [
+   {
+    "item": "Nov 1611 slip (Nr. 4 Bd. I image 400)",
+    "blocker": "not-attempted",
+    "detail": "eight lines; workable by reflection; Brackx asked for his reading (issue #128)"
+   },
+   {
+    "item": "1610 letters: decipherments not transcribed or checked against the cipher lines",
+    "blocker": "not-attempted",
+    "detail": "seven letters, images listed in NOTES.md"
+   },
+   {
+    "item": "Nr. 2 Bd. III-IV, Nr. 5-6, Nr. 1 Bd. III image 80 not searched for letters in the prince's table",
+    "blocker": "not-attempted",
+    "detail": "accounts and newsletters; one image would not load"
+   }
+  ],
+  "notes": "In progress: catalogue 597, issue #128.",
+  "credits": [
+   {
+    "who": "brackx",
+    "role": "identification",
+    "note": "searched the series image by image, identified Alairt's upside-down cipher and the undeciphered Nov 1611 slip, described both keys (with Claude Code)",
+    "date": "2026-10-27",
+    "source": "https://github.com/dbourdeau/cyphersolver/issues/128"
+   }
+  ]
+ }
+}

@@ -11508,33 +11508,53 @@
    "counted": true,
    "year": 1607,
    "date": "1604-1611",
-   "title": "Anhalt-Dessau agents in Prague (Johann Loew; \"Johann von Alairt\"; Jacob Quelwitz) → Prince Johann Georg I and secretary Peter Meyer, cipher letters with a cipher table",
-   "correspondents": "Johann Loew; pseudonymous \"Johann von Alairt\"; Jacob Quelwitz → Johann Georg I of Anhalt-Dessau / Peter Meyer",
+   "title": "Anhalt-Dessau agents in Prague → Prince Johann Georg I: Johann von Alairt's letters of 1610-11 in upside-down German, deciphered at the time except a slip of Nov 1611; the prince's cipher table and a slip key are unused",
+   "correspondents": "Johann Loew; \"Johann von Alairt\"; Jacob Quelwitz → Johann Georg I of Anhalt-Dessau / Peter Meyer",
    "place": "Prague",
    "language": "German",
    "region": "Central Europe",
    "period": "1598-1610",
-   "shelfmark": "Landesarchiv Sachsen-Anhalt, Z 44 (Abteilung Dessau) A 9a Ic Nr. 1 and Nr. 2 (Bd. I digitised)",
-   "folio_note": "Nr. 1 'Enthält auch: Chiffrebriefe'; Nr. 2 'ein Tableau der Chiffren Fürst Johann Georgs I.'",
+   "shelfmark": "Landesarchiv Sachsen-Anhalt, Z 44 (Abteilung Dessau) A 9a Ic Nr. 1 Bd. I-III, Nr. 2 Bd. I-IV, Nr. 3, Nr. 4 Bd. I, Nr. 5, Nr. 6 (all digitised)",
+   "folio_note": "Images: https://recherche.landesarchiv.sachsen-anhalt.de/images//Z_44/A_9a_Ic_<volume>/max/Z_44__A_9a_Ic_<volume>__NNNN.jpg (e.g. Nr_2_Bd_I). Keys: Nr. 2 Bd. I image 6, 'Cifra ... Joannis Georgii Principis Anhalt', a sign alphabet a-z and a nomenclator 10-70; Nr. 2 Bd. II image 184, a slip with signs for 11 names and words (37 = Iudaeus, 68 = Einsidell). Alairt's letters from Prague with cipher, deciphered between the lines: Nr. 1 Bd. II images 152-153 (5 Apr 1610), 177 (19 Apr), 197 (4 May), 241-242 (18 May); Nr. 1 Bd. III images 41-42 (May), 154 (July), 263 (Aug). Undeciphered: Nr. 4 Bd. I image 400, an 8-line slip docketed 'praes. Dessau den 23. Novemb. 1611'.",
    "cls": "A",
-   "status": "Finding aid as quoted. Christian I of Anhalt-Bernburg's cipher systems 1608-27 are in Z 18 A 9a Nr. 1/0. Digitised: images in the Archivportal-D/DDB viewer.",
+   "status": "Checked image by image by Michael Brackx (issue #128, 27 Oct 2026); images 6, 241 and 400 confirmed here. The cipher in use is Alairt's: German in Latin script with every letter turned top to bottom (b/p, d/q, n/u, m/w trade places; e looks like o). Every cipher line of his 1610 letters has a decipherment in a second hand above it, except formulas. The Nov 1611 slip has none; its first line reads 'Will der Kayser bericht werden, dass der Hertz[og] von Braun[schweig] ...' (Brackx; agreed here). No letter in Nr. 1 Bd. I-III, Nr. 2 Bd. I-II, Nr. 3 or Nr. 4 Bd. I uses the prince's table or the slip key. Not searched: Nr. 2 Bd. III-IV (accounts), Nr. 5-6 (newsletters), Nr. 1 Bd. III image 80 (would not load). Christian I of Anhalt-Bernburg's cipher systems 1608-27 are in Z 18 A 9a Nr. 1/0. Target folder: targets/anhalt1610/ (in progress).",
    "why": "Intelligence from Rudolf II's Prague for the Calvinist Anhalt princes before the Union.",
    "importance": 3,
-   "solvability": 4,
-   "difficulty": 2,
-   "score_note": "Scored from the archive description during the Oct 2026 Archivportal-D sweep (research/archivportal_d/); not viewed",
-   "verify": "Open Z 44 A 9a Ic Nr. 2 Bd. I; then order Nr. 1.",
+   "solvability": 5,
+   "difficulty": 1,
+   "score_note": "Rescored 27 Oct 2026 after Michael Brackx's check (issue #128): the system is known and the 1610 letters are deciphered at the time; the 1611 slip is the open piece.",
+   "verify": "Read the Nov 1611 slip (Nr. 4 Bd. I image 400) by reflecting it top to bottom; check the 1610 decipherments against the cipher lines. Search Nr. 2 Bd. III-IV and Nr. 5-6 for letters in the prince's table.",
    "links": [
     {
      "label": "Z 44 A 9a Ic Nr. 2 Bd. I",
      "href": "https://www.archivportal-d.de/item/USKMHOEZ5LSPRUCV2665IP2JL6I3JO2Y"
+    },
+    {
+     "label": "Nr. 2 Bd. I image 6 (cipher table)",
+     "href": "https://recherche.landesarchiv.sachsen-anhalt.de/images//Z_44/A_9a_Ic_Nr_2_Bd_I/max/Z_44__A_9a_Ic_Nr_2_Bd_I__0006.jpg"
+    },
+    {
+     "label": "Nr. 1 Bd. II image 241 (18 May 1610)",
+     "href": "https://recherche.landesarchiv.sachsen-anhalt.de/images//Z_44/A_9a_Ic_Nr_1_Bd_II/max/Z_44__A_9a_Ic_Nr_1_Bd_II__0241.jpg"
+    },
+    {
+     "label": "Nr. 4 Bd. I image 400 (Nov 1611 slip)",
+     "href": "https://recherche.landesarchiv.sachsen-anhalt.de/images//Z_44/A_9a_Ic_Nr_4_Bd_I/max/Z_44__A_9a_Ic_Nr_4_Bd_I__0400.jpg"
+    },
+    {
+     "label": "Issue #128",
+     "href": "https://github.com/dbourdeau/cyphersolver/issues/128"
     }
    ],
-   "seen": "catalogue",
+   "seen": "image",
    "source": "Archivportal-D sweep",
    "prior_art": "open (checked 26 Oct 2026: known.py, quick web search).",
    "ark": "",
-   "scored": "sweep"
+   "scored": "sweep",
+   "known": "1610 letters deciphered at the time (interlinear); system identified as upside-down German by Michael Brackx.",
+   "open": "The Nov 1611 slip; whether any letter uses the prince's table or the slip key.",
+   "contributed_by": "brackx",
+   "as_of": "2026-10-27"
   },
   {
    "id": 598,
