@@ -45,6 +45,17 @@ def tf_text(tf, which='corpus'):
         return ''.join(x[:3] for x in w)
     if tf == 'reversed':
         return ''.join(w)[::-1]
+    if tf == 'phon25':                         # CMU pronunciations folded to 25 sound classes, one letter each
+        MERGE = {'AO': 'AA', 'AH': 'AA', 'IY': 'IH', 'UW': 'UH', 'ER': 'R', 'Z': 'S', 'DH': 'TH', 'ZH': 'SH', 'NG': 'N',
+                 'JH': 'CH', 'OY': 'OW', 'AW': 'AY', 'Y': 'IH', 'V': 'F'}
+        cmu = {}
+        for line in open(os.environ['DORA_CMU'], encoding='utf-8', errors='replace'):
+            ww, *ph = line.split('#')[0].split()
+            if '(' not in ww and ww not in cmu:
+                cmu[ww] = [MERGE.get(re.sub(r'\d', '', p), re.sub(r'\d', '', p)) for p in ph]
+        inv = sorted({p for v in cmu.values() for p in v})
+        code = {p: 'abcdefghijklmnopqrstuvwxyz'[i] for i, p in enumerate(inv)}
+        return ''.join(code[p] for x in w if x in cmu for p in cmu[x])
     raise ValueError(tf)
 
 

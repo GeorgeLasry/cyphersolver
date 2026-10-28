@@ -168,3 +168,28 @@ round	hypothesis	D	nulls	controls	verdict	best text	note
 39	consonant skeleton, 230 runs, 8 controls, 6 shuffles	-2.442	-2.607..-2.525	-2.450..-2.087	negative	jpgridvrtmblcwlklldpplwhmhsbnvlvdhrtfrgllgdscvlbldyncwhtthbngndyngwyasngldycn	word-skeleton segmentation -3.24/letter: shuffles -2.91..-3.63, real controls -2.28..-2.80
 40	Lullaby lyric as the plaintext (every 87-letter window)	30.000	30.000..32.000	-	negative	leepdayohcresclullabyaohsleepohsleepmysleepmysleepmysleepmysonafarafarafarafarawayzithe	explains 30/87
 40	cribs: notebook practice phrases + 38 lyric words	-2.889	-3.243..-3.109	-	above nulls	vsnactualdmorwopootssowidigmeuoutialfanoontgruomotherwillimenethenwhygenothregasgetawia	mother@47
+41	Elgar register + misreads (≤6)	-2.585	-2.826..-2.523	-2.487..-1.845	negative	dkrousionwhalfamaaskkatiwitheyalsionboraarstlyahaspelfinniheresperfacteraspletoknesofyo	ctl acc 0.41..0.95
+41	Latin + misreads (≤6)	-2.177	-2.390..-2.282	-2.184..-1.852	negative	qlregnaesomendebeenlleditiumeaeaniescerternunaementendissimerenterdefuerentneueluenedie	score inside control range; Latin-word segmentation 0.70 / -3.02 per letter = shuffles (0.59..0.71); recovered controls 0.83..0.90
+42	homophones Latin	-2.080	-2.213..-2.056	-1.984..-1.826	negative	xcsantsalmdentereetccetumuidesestuallaseestinsedetientullude	word seg -2.99 vs recovered -2.09
+42	homophones French	-2.076	-2.244..-2.168	-2.105..-1.715	above nulls	ulriciditpressepeeillesapatredediaitdireeritsdereilessattare	word seg -3.00 vs recovered -1.86..-1.88
+42	homophones German	-2.082	-2.433..-2.261	-1.846..-1.527	above nulls	bsruhrtundbeinemeerssenadasbetetraunzureerrsiteberdeinannabe	word seg -2.97 vs recovered -1.82..-2.20
+43	phonetic English, 25 classes, full power	-2.853	-3.2..-2.922	-2.347..-1.967	negative	jftcqpncmrulivldllpfflvxrxsuanlnpxcmyctlltpsinlulpwaivxmmxua	3/4 controls
+44	columns, full power	-3.043	-3.1..-2.916	-1.971..-1.814	negative	knigorinsasupersainthabutaywifmorooidiohssofulddonroofsmagog	
+44	each line reversed, full power	-2.695	-2.9..-2.763	-1.971..-1.814	above nulls	asmutuneddreevenhestpocryoldfasuppunhairesechmrleelowpourcec	
+45	Danish, full power	-2.663	-2.9..-2.709	-1.928..-1.556	above nulls	ckrousnoghvadmajaaskkamihilvenansiogforaarsldnavastedmiggive	
+45	Welsh, full power	-2.512	-2.7..-2.560	-2.204..-2.093	above nulls	ktdyfrbynclosgomoorttogwcwelabobrwynhydoodresboloriasgwnnwla	
+46	Elgar register + homophones	-2.221	-2.379..-2.276	-2.119..-1.610	above nulls	bsnextrendmeidefeetssediditmarertienceneenttiremetraidinnima	word seg -3.73 = failed control
+47	singletons as nulls, full power	-2.806	-2.9..-2.798	-1.971..-1.814	negative	dmanualfhegreeendderifishoueunialameemnsguehentogrillihomont	
+48	R48 order ct_diag.txt	-3.035	-	-	negative	zdtsosetrulllapterecschmyepisgoonformssolownlofpotflordindoeoldmpnarryflamenamicarceair	full power; see runs/r48_50.txt for shuffles
+48	R48 order ct_spiral.txt	-2.779	-	-	negative	zdsignhimyreflebeenddelayaortialintodiotfunestopulstuntshehnaimwiseesnofherenutflammart	full power; see runs/r48_50.txt for shuffles
+48	R48 order ct_colsrev.txt	-3.077	-	-	negative	uyuayiwisaaarlladslueofunewnoneysoowohumddowfleedtoootyourtwisksjfhilestpausefthenought	full power; see runs/r48_50.txt for shuffles
+49	R49 measured la	-2.284	-	-	negative	zpzigilisomathanaacpraelouemplaliuisdicaaccetlamadatthussumtibiatchabetiadatthipetiihum	full power; see runs/r48_50.txt for shuffles
+49	R49 measured fr-modern	-3.041	-	-	negative	kgkahlcampnetdefeergquicpoingcucloambareerritcenebestdommonslvlusrduvislebutsdagisladon	full power; see runs/r48_50.txt for shuffles
+49	R49 measured de-modern	-3.179	-	-	negative	xmxaftsalchongobookmpeusciuhmsestialdakookkunsohodorngillihrtzterkgezurtodenrgamurtagih	full power; see runs/r48_50.txt for shuffles
+49	R49 measured it-modern	-3.462	-	-	negative	kbkovtrosplindiziimbycerpuelbrcrtuosgomiimmenriligiandussulathtcamdcheatigcnadobeatodul	full power; see runs/r48_50.txt for shuffles
+49	R49 measured es-modern	-2.914	-	-	negative	gygovrtofhmendebeelyjusthismytutriofcoleellsntemeceandiffimarprualdupsarecunadoysarodim	full power; see runs/r48_50.txt for shuffles
+50	R50 jager la	-2.185	-	-	negative	bxnecsdempriugiliisxxitapatridiusdemoeniinstudiristiugammarinistingtotinistuitextisetce	full power; see runs/r48_50.txt for shuffles
+50	R50 jager fr-modern	-2.667	-	-	negative	bscujalumfdethepeeassenofondiletalumvuceecantledearithommodiciarichryniceartinusniaunju	full power; see runs/r48_50.txt for shuffles
+50	R50 jager de-modern	-2.893	-	-	negative	qsrufigumblenkedeeissehobohlagenigumzureerihngeleitankommolaraitarktphareitnahushaiuhfu	full power; see runs/r48_50.txt for shuffles
+50	R50 jager it-modern	-2.771	-	-	negative	jgcavorandmethebeeoggeludulmiretoranfaceecoltremeosithunnumiciosichspliceostilaglioalva	full power; see runs/r48_50.txt for shuffles
+50	R50 jager es-modern	-2.579	-	-	negative	wpnevsdelfmoutoyoospporifirmadousdelgenoonsrudomoscautillimanascantchranoscuarepraserve	full power; see runs/r48_50.txt for shuffles
