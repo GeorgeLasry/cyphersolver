@@ -1,0 +1,117 @@
+{
+ "schema_version": 1,
+ "target": "lagau1712",
+ "title": "Chevalier Philippe de Lagau to the comte de La Marck, intercepted French cipher letters, Stockholm, dated 1712 by the archive (Rigsarkivet, TKUA, Danske Kongers Historie fasc. 358)",
+ "documents": [
+  {
+   "id": "A",
+   "shelfmark": "Rigsarkivet, Tyske Kancelli, Udenrigske Afdeling, \"Opsnappede chifferbreve fra chevalier Lagau\" (Fremmed proveniens, Frankrig; Danske Kongers Historie, fasc. 358; Daisy heid 3245448)",
+   "date": "12 April - 27 May 1712 (archive dating; possibly 1719-20)",
+   "year": 1712,
+   "country": "Denmark",
+   "route": "Lagau (Stockholm) -> comte de La Marck, intercepted at Copenhagen",
+   "language": "French",
+   "cleartext_in_document": "unknown",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "Rigsarkivet notes no decipherment; the letters have not been seen.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 0,
+    "unit": "mixed",
+    "measured": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "image_quality": "no images",
+    "notes": "Not digitised (soeg.rigsarkivet.dk tilgængelighed 'Intet', 28 Oct 2026). Nothing transcribed. Number of letters unknown."
+   },
+   "read": "not read"
+  }
+ ],
+ "system": {
+  "types": [
+   "undetermined"
+  ],
+  "summary": "unknown: the letters have not been seen.",
+  "symbol_kind": "symbols",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": "unknown"
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": "unknown"
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "not applicable",
+  "notes": "symbol_kind and key_order are placeholders: the schema has no 'unknown' value for them. Nothing about the system is known."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "unknown",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [],
+  "attack": "none",
+  "human_role": "Pasted the catalogue task; no other input.",
+  "tools": [
+   "soeg.rigsarkivet.dk search API (python)",
+   "Daisy series page",
+   "web search"
+  ],
+  "models": [
+   "claude-opus-5-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-10-28",
+  "last_date": "2026-10-28"
+ },
+ "solution": [
+  {
+   "date": "2026-10-28",
+   "kind": "access",
+   "what": "Daisy series page heid 3245448 and soeg API query 'Lagau': one hit, tilgængelighed 'Intet', no image link. Not digitised.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "access",
+   "what": "soeg API queries 'La Marck' and 'Danske Kongers Historie 358' for sibling units: none.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "literature search",
+   "what": "Repo grep and web searches (Lagau, La Marck, Stockholm, chiffre, intercepted). Only the McCord Lagau record (secretary from 1717) and TNA SP 78/163 La Marck letters of Jan 1719; no edition or decipherment. Archive date 1712 conflicts with the 1717-20 embassy.",
+   "result": "failed"
+  }
+ ],
+ "outcome": {
+  "class": "offline only",
+  "key": "none",
+  "method": "not applicable",
+  "verification": [
+   "none"
+  ],
+  "contribution": [
+   "none"
+  ],
+  "gaps": [
+   {
+    "item": "all letters",
+    "blocker": "needs-physical-access"
+   }
+  ],
+  "notes": "Not attempted on the ciphertext: the item could not be reached. Scans must be ordered from Rigsarkivet."
+ }
+}
