@@ -18,3 +18,8 @@
 - 2026-10-27 reading 1814 (`decode_1814.py` -> `reading_1814.txt`): 122/123 = 0.992 have a value; 39 open (unglossed by clerk and Manning).
 - 2026-10-27 re-ran decode.py on 1813 with the corrected key: 161/437 = 0.368 (was 158); still fragments.
 - 2026-10-27 Manning vols. 1-2 searched for other Poinsett letters with code: none decoded besides 1814.
+- 2026-10-28 sibling: M37 roll 1 (Higginson, Bayard, Smith 1811, Shaler 1810-15), all 753 frames surveyed by contact sheet: no numeric code, no key table; Shaler's despatches are clear. Lead closed.
+- 2026-10-28 sibling: M37 roll 2 frames 0025-0600 surveyed by contact sheet: no other frame in this code. Anthony Morris (Cadiz/Madrid 1813-15, frames 0389-0400) is another code (the = 285; 0400 has a decipherment); Jacob Lewis 0462-0463 probably another (no 1355/1397/1554). Rest clear text or tables.
+- 2026-10-28 instructions: M77 vol. 7 (diplomatic instructions 1808-15, naId 149288306, 228 frames) sampled by contact sheet: clear-text copybook of letters to ministers; no code groups, Poinsett (a special agent) not seen. M78 consular instructions 1801-17 (naId 220862827) located, not surveyed.
+- 2026-10-28 sibling: M70 roll 1 (Buenos Aires consular despatches Dec 1811-Nov 1817, 292 frames) surveyed: no code. The only Poinsett letter is clear (0119-0121, "Dear Miller", Santiago, July 1812). No Apr 1814-Jan 1815 despatches on the roll, so Manning's 14 June 1814 source is elsewhere.
+- 2026-10-28 sibling: M37 roll 2 frames 0601-1057 surveyed by thumbnail contact sheets (Rodney/Graham/Bland mission 1817-19, appendices, price tables): no numeric code, no key table, no Poinsett material. Thumbnail scale only; a short number line inside prose could be missed. Roll 2 closed as a source of siblings beyond 0098.

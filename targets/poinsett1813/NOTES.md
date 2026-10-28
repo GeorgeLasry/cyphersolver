@@ -100,6 +100,11 @@ this country ..."; P4 "... of this govern-ment [901] the ..."; P6 "... re-[12]-p
 - [x] siblings (2): Lowry, La Guaira 1810-12, had a cypher for Shaler and Gelston and sent the Department one
   ciphered letter (Manning vol. 2, Lowry to Graham 30 Nov 1816); M84 roll 1 frames 0014-0090 viewed: all clear, no
   code, so that letter is not in the file; Shaler's papers (M37 roll 1) have no code frames (NARA triage)
+- [x] siblings (3), 28 Oct: M37 roll 1 (all 753 frames), M37 roll 2 frames 0025-1057, M70 roll 1 (Buenos Aires consular
+  despatches 1811-17, 292 frames) and M77 vol. 7 (instructions 1808-15, sampled) surveyed by contact sheet: no further
+  frame in this code and no key table. Morris 1813-15 (the = 285) and Lewis 1816 are other codes. Not surveyed: M78
+  consular instructions 1801-17 (naId 220862827); Manning's source for 1814 (consular letters, Buenos Aires, M70 does
+  not hold Apr 1814-Jan 1815)
 - [n/a] retry: no new key values came from the context pass or the sibling searches, so nothing to re-run
 
 ## 5. Next steps
