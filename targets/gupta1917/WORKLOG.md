@@ -5,3 +5,4 @@
 2026-10-27 Found OG 1396 filmed whole on M1085 rolls 284-285 (5 parts). Fetched catalogue OCR: only 284A, 284B, 285C have text. Grep: British evidence digest with "Extracts from Chakravarty's messages to and from Germany" and "Dr. C's draft cipher message of May 1916"; German code telegram reports (Hintze, code 9972). No ciphertext of the target in the OCR'd parts.
 2026-10-27 Local DECODE harvest grepped for Gupta/Chakravarty/Hindu: nothing.
 2026-10-27 NOTES, transcription and profile written. Status: in progress (unviewed OG 1396 frames; Gupta letter needs College Park).
+2026-10-28 NARA Chicago sweep: Chicago trial (Crim. 6082) digitised; Bill of Exceptions pp. 157-158 has Friedman's testimony that Government's Exhibit 'Code' (Gupta letter to Albourge, Territet) was decoded at Riverbank, decipherment read into the record. Gupta letter of 16 Nov 1916 read at the time; MID card 10020-87 not yet matched to it.
