@@ -125,7 +125,10 @@
   },
   {
    "date": "2026-09-17",
-   "kind": "solver", "technique": ["automated search (unspecified)"],
+   "kind": "solver",
+   "technique": [
+    "automated search (unspecified)"
+   ],
    "what": "Blind cluster-to-letter solver in session 1 collapses to a degenerate map.",
    "result": "failed"
   },
@@ -137,7 +140,11 @@
   },
   {
    "date": "2026-09-17",
-   "kind": "solver", "technique": ["hill climbing", "language-model scoring"],
+   "kind": "solver",
+   "technique": [
+    "hill climbing",
+    "language-model scoring"
+   ],
    "what": "Shape-constrained hill-climb over 70/140 clusters with a 6-gram LM gives draft5, about 86 % of letters right.",
    "result": "partial"
   },
@@ -182,7 +189,10 @@
    "kind": "verification",
    "what": "Reading audit (George Lasry's test: can a reader build coherent sentences and translate them?). trans/reading_edited.txt and reading_v3.txt read: nearly every line of pp. 29, 30, 31 and 105 is broken by '…' or (?) ('… de la ca[pi]tulation faicte …', '… court … depuis …'); isolated clauses survive, the sentences cannot be assembled (docs/_check_reading.py: 28-41% of sentences clean). Relabelled decoded, not read; class read in part -> not read, method read with known key -> not solved (key kept as a part); fraction_read 0.87 -> 0.",
    "result": "failed",
-   "technique": ["language-model scoring", "statistical test"]
+   "technique": [
+    "language-model scoring",
+    "statistical test"
+   ]
   },
   {
    "date": "2026-10-23",
@@ -199,7 +209,9 @@
   {
    "date": "2026-10-24",
    "kind": "verification",
-   "technique": ["other"],
+   "technique": [
+    "other"
+   ],
    "what": "Method restored: key obtained by Tomokiyo's 1526 key for the Raince letters, re-measured off his key image (read with known key); text not read, class stays not read. The 22-24 Oct reading audit had set the method to not solved because the class was not read; George Lasry (24 Oct 2026) separates the two.",
    "result": "partial"
   },
@@ -211,6 +223,12 @@
    ],
    "what": "Lead from research/patterns/DEEPER.md: Lasry's GL.htm tables. GL.htm itself lists Raince's own cipher (Tomokiyo's 1526 table), already applied and re-measured here; Lasry's other tables there are other correspondents' ciphers (Gramont, Avranches, Macon). Redundant: the limit is the glyph map, not the key (see Session 2). No run.",
    "result": "ruled out"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "verification",
+   "what": "Claude Opus 5.5 (PR review on merge): Brice Dudout's reading of the 20 Nov 1526 residue (PR #163) recorded: class read in part, part added, credit solution (was verification), provenance mixed, gaps restated (the 13 May pages now workable at full resolution).",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -219,11 +237,10 @@
   "contribution": [
    "transcription"
   ],
-  "class": "not read",
-  "fraction_read": 0.0,
-  "fraction_coherent": 0.0,
-  "fraction_read_method": "measured",
-  "fraction_read_source": "22 Oct 2026, reading audit: the passages do not build sentences, so nothing counts as read (0). Withdrawn as a reading figure: 0.87, measure_sense.py on trans/reading_v3.txt (letters in period-French words over 5,265 non-null tokens), which counted letters in words, not sentences.",
+  "class": "read in part",
+  "fraction_read": 0.4,
+  "fraction_read_method": "estimated",
+  "fraction_read_source": "By cipher lines: the 20 Nov 1526 residue (p. 105 lower 21 lines and p. 106, 35 lines, 56 in all) is read by Brice Dudout at about 98% of words (dudout/reading.md); the 13 May residue (pp. 29-31, about 85 lines) stays decoded, not read; 56 of about 141 residue lines. Estimated on review, 27 Oct 2026. The 22 Oct audit figure for the project's own decode was 0.",
   "key": "partial",
   "codes_open": {
    "open": 2,
@@ -237,22 +254,42 @@
   "notes": "All 106 lines hand-read from the images in session 3; fraction is sense-measured (old 0.66 counted characters). Limit is microfilm resolution.",
   "gaps": [
    {
-    "item": "residual unresolved glyphs, ~13% of letters",
-    "blocker": "illegible",
-    "detail": "every line re-read from the image; B/W microfilm; colour photographs needed"
+    "item": "pp. 29-31 (13 May 1526), decoded, not read",
+    "blocker": "not-attempted",
+    "detail": "Dudout reports that the microfilm resolves at Gallica IIIF full/max on 3x half-line crops, so the earlier illegible verdict (2x token crops) no longer holds; re-reading pp. 29-31 that way is the next step"
    },
    {
-    "item": "two word signs absent from Tomokiyo's key ([X] two-crossbar stem, a person; [Y] cursive ell with circle)",
+    "item": "word signs absent from Tomokiyo's key ([X] two-crossbar stem; ℓ° [Y], three times on pp. 105-106, the one France should break with)",
     "blocker": "no-key-material",
-    "detail": "about 4 occurrences each, no clear copy; the circled cross is now identified as i"
+    "detail": "a few occurrences each, no clear copy"
    }
   ],
   "credits": [
-    {"who": "tomokiyo", "role": "key or decipherment used", "note": "1526 key for the Raince letters of BnF fr. 2984 (cryptiana francis.htm), re-measured off his key image", "date": "2020", "source": "cryptiana francis.htm, 'French Ciphers during the Reign of Francis I', section BnF fr.2984 (1526)"},
-    {"who": "dudout", "role": "verification", "date": "2026-10-28", "note": "20 Nov 1526: lower 21 lines of p. 105 completed and the whole of p. 106 (35 ciphered lines, not treated before) read with the same table; about 98 % of words read, word signs absent from the table left open (dudout/)"}
+   {
+    "who": "tomokiyo",
+    "role": "key or decipherment used",
+    "note": "1526 key for the Raince letters of BnF fr. 2984 (cryptiana francis.htm), re-measured off his key image",
+    "date": "2020",
+    "source": "cryptiana francis.htm, 'French Ciphers during the Reign of Francis I', section BnF fr.2984 (1526)"
+   },
+   {
+    "who": "dudout",
+    "role": "solution",
+    "date": "2026-10-27",
+    "source": "pull request #163",
+    "note": "20 Nov 1526: the lower 21 lines of p. 105 completed and the whole of p. 106 (35 ciphered lines, not treated before) read with Tomokiyo's table as re-measured here; about 98% of words; agrees with the project's p. 105 decode at 95.6% of letters"
+   }
   ],
   "texts": [
-   {"doc": "residue1526", "label": "Raince to Montmorency, Rome, 20 Nov 1526 (BnF fr. 2984 no. 24): p. 105 lower part and p. 106, reading by Brice Dudout", "decryption": "dudout/decryption.txt", "reading": "dudout/reading.md", "language": "fr", "state": "read", "summary": "Two months after the Colonna raid on the Vatican, Clement VII summoned the French king’s agent and spoke “sighing so deeply that there is no heart so hard that it would not have felt the greatest compassion in the world”. He thought of abandoning Rome and fleeing, blamed France for not breaking with the enemy “over there”, and predicted that people in France would soon say: “the Pope has run away”. Nicolas Raince put it all into cipher for Anne de Montmorency, Grand Master of France. The end of page 105 and the whole of page 106 had never been deciphered."},
+   {
+    "doc": "residue1526",
+    "label": "Raince to Montmorency, Rome, 20 Nov 1526 (BnF fr. 2984 no. 24): p. 105 lower part and p. 106, reading by Brice Dudout",
+    "decryption": "dudout/decryption.txt",
+    "reading": "dudout/reading.md",
+    "language": "fr",
+    "state": "read",
+    "summary": "Two months after the Colonna raid on the Vatican, Clement VII summoned the French king’s agent and spoke “sighing so deeply that there is no heart so hard that it would not have felt the greatest compassion in the world”. He thought of abandoning Rome and fleeing, blamed France for not breaking with the enemy “over there”, and predicted that people in France would soon say: “the Pope has run away”. Nicolas Raince put it all into cipher for Anne de Montmorency, Grand Master of France. The end of page 105 and the whole of page 106 had never been deciphered."
+   },
    {
     "doc": "residue1526",
     "label": "BnF fr. 2984 pp. 29-31 (13 May 1526) and p. 105 (20 Nov 1526)",
@@ -274,12 +311,20 @@
   ],
   "parts": [
    {
-    "label": "fr. 2984 pp. 29-31 and 105 (Tomokiyo 1526 key applied; decoded, not read)",
-    "records": "BnF fr. 2984 pp. 29-31, 105",
+    "label": "fr. 2984 pp. 29-31, 13 May 1526 (Tomokiyo 1526 key applied; decoded, not read)",
+    "records": "BnF fr. 2984 pp. 29-31",
     "method": "read with known key",
     "extent": "none",
     "basis": "Tomokiyo's 1526 key re-measured (CALIBRATION.md) on a glyph-by-glyph transcription of the microfilm; clauses broken by unresolved stretches in nearly every line. Decoded, not read (reading audit, 22 Oct 2026)."
+   },
+   {
+    "label": "fr. 2984 p. 105 (lower) and p. 106, 20 Nov 1526 (read by Brice Dudout)",
+    "records": "BnF fr. 2984 pp. 105-106",
+    "method": "read with known key",
+    "extent": "partial",
+    "basis": "Tomokiyo's 1526 table as re-measured here, frozen and applied at full IIIF resolution on half-line crops; about 98% of words read, the rest word signs missing from the table (pull request #163)."
    }
-  ]
+  ],
+  "provenance": "mixed"
  }
 }

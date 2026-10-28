@@ -25,7 +25,7 @@
    "cls": "C",
    "seen": "image",
    "source": "BnF harvest",
-   "status": "Attempted 17 Sept 2026 (targets/raince/): Tomokiyo's 1526 key re-measured off his table image and applied glyph by glyph to the 13 May (pp. 29-31) and 20 Nov 1526 (p. 105) passages. Removed from the catalogue when first claimed read in part; restored 23 Oct 2026: Reading audit 22-23 Oct 2026 (George Lasry's test: a reading must build sentences): the passages decode into clauses broken by unresolved stretches in nearly every line, so nothing counts as read. The other letters of the entry carry contemporary interlinear or printed decipherments (Mignet 1886, Bourrilly 1901, DECODE 3696); the open residue is the unglossed part of no. 7 (13 May) and of no. 24 (20 Nov).",
+   "status": "Attempted 17 Sept 2026 (targets/raince/): Tomokiyo's 1526 key re-measured off his table image and applied glyph by glyph to the 13 May (pp. 29-31) and 20 Nov 1526 (p. 105) passages. Removed from the catalogue when first claimed read in part; restored 23 Oct 2026: Reading audit 22-23 Oct 2026 (George Lasry's test: a reading must build sentences): the passages decode into clauses broken by unresolved stretches in nearly every line, so nothing counts as read. The other letters of the entry carry contemporary interlinear or printed decipherments (Mignet 1886, Bourrilly 1901, DECODE 3696); the open residue is the unglossed part of no. 7 (13 May) and of no. 24 (20 Nov). 27 Oct 2026, Brice Dudout (pull request #163): the 20 Nov residue read, p. 105 lower and the whole of p. 106 (a page of cipher not treated before), about 98% of words with Tomokiyo's table. Entry narrowed: the open residue is the unglossed part of no. 7 (13 May, pp. 29-31).",
    "why": "League of Cognac, the Colonna raid on Rome (Sept 1526), prelude to the Sack; Aug 1529 = Cambrai and Bologna.",
    "importance": 4,
    "solvability": 3,
@@ -36,7 +36,7 @@
    "known": "Tomokiyo's 1526 key fits after re-measuring (raince.html); the clear close of 13 May transcribed.",
    "open": "No. 7 (pp. 29-31) and no. 24 (p. 105), the unglossed lines: unresolved glyphs (~13% of letters) and two word signs absent from Tomokiyo's key; no sentence builds through.",
    "writeup": "raince.html",
-   "as_of": "2026-10-23"
+   "as_of": "2026-10-27"
   },
   {
    "id": 7,
@@ -15626,39 +15626,6 @@
    "scored": "sweep"
   },
   {
-   "id": 724,
-   "counted": true,
-   "year": 1812,
-   "date": "6 Mar 1812",
-   "title": "Colonel Jardet (aide-de-camp) → Marshal Marmont, letter on operations in the war in Spain (intercepted)",
-   "correspondents": "Colonel Jardet → Marshal Marmont",
-   "place": "Spain",
-   "language": "French",
-   "region": "France",
-   "period": "1801-1900",
-   "shelfmark": "AHN, DIVERSOS-COLECCIONES,133,N.29",
-   "folio_note": "single letter; images online (PARES)",
-   "cls": "B",
-   "status": "PARES hit for \"no descifrada\" (27 Oct 2026); full title: \"Carta para el General Marmont a este, dirigida por su ayudante el Coronel Jardet, en la que habla de operaciones y sucesos de la guerra de España\". Images flagged. PARES full-text search seems to match the words, not the phrase (a 1494 lawsuit and Falla letters also hit), so the term match is a pointer, not proof of an undeciphered cipher. not on DECODE or in the repo (known.py: no hits for the signatura or names).",
-   "why": "A letter inside the Army of Portugal headquarters four months before Salamanca, the very traffic Scovell attacked.",
-   "importance": 3,
-   "solvability": 3,
-   "difficulty": 3,
-   "score_note": "Scored from the PARES hit list (title, dates, signatura only) during the 27 Oct 2026 PARES sweep (research/pares_ags/); full description and images not viewed",
-   "verify": "View the images: is any of it in cipher, and is a decipherment attached? If cipher, try the 1811-12 Army of Portugal tables.",
-   "links": [
-    {
-     "label": "PARES 3101366",
-     "href": "https://pares.cultura.gob.es/ParesBusquedas20/catalogo/description/3101366"
-    }
-   ],
-   "seen": "catalogue",
-   "source": "PARES sweep (AHN)",
-   "prior_art": "open as far as checked (27 Oct 2026, one web search: nothing on a Jardet letter; Scovell broke Army of Portugal ciphers in 1811-12, so a contemporary reading may exist in his papers)",
-   "ark": "",
-   "scored": "sweep"
-  },
-  {
    "id": 725,
    "counted": true,
    "year": 1630,
@@ -16670,7 +16637,7 @@
    "shelfmark": "AHNOB, OSUNA,CT.2,D.16; OSUNA,CT.2,D.20(1-3); OSUNA,CT.2,D.32(1-2); OSUNA,CT.11,D.1(1-6); OSUNA,C.1978,D.9; OSUNA,C.1978,D.10; OSUNA,C.1978,D.39; OSUNA,C.1978,D.40; OSUNA,C.1978,D.41; OSUNA,C.1978,D.52; OSUNA,C.1978,D.54; OSUNA,C.1978,D.55(1-2); OSUNA,C.1978,D.56; OSUNA,C.1979,D.12; OSUNA,C.1979,D.13; OSUNA,C.1979,D.15; OSUNA,C.1979,D.17; OSUNA,C.1979,D.18; OSUNA,C.1979,D.20; OSUNA,C.1979,D.21; OSUNA,C.1979,D.22; OSUNA,C.1979,D.23; OSUNA,C.1979,D.33; OSUNA,C.1979,D.37; OSUNA,C.1979,D.38; OSUNA,C.1979,D.50; OSUNA,C.1979,D.58; OSUNA,C.1979,D.59; OSUNA,C.1979,D.60; OSUNA,C.1979,D.64; OSUNA,C.1979,D.72; OSUNA,C.1979,D.80; OSUNA,C.1980,D.22; OSUNA,C.1980,D.23; OSUNA,C.1980,D.25; OSUNA,C.1980,D.26; OSUNA,C.1980,D.27(1-7); OSUNA,C.1981,D.4; OSUNA,C.1981,D.14; OSUNA,C.1981,D.15; OSUNA,C.1981,D.22; OSUNA,C.1981,D.26; OSUNA,C.1981,D.27; OSUNA,C.1981,D.28; OSUNA,C.1981,D.37; OSUNA,C.1981,D.51; OSUNA,C.1981,D.52; OSUNA,C.1981,D.69; OSUNA,C.1981,D.70; OSUNA,C.1981,D.75; OSUNA,C.1981,D.76; OSUNA,C.1981,D.81; OSUNA,C.1981,D.83; OSUNA,C.1981,D.88; OSUNA,C.1981,D.93; OSUNA,C.1981,D.96; OSUNA,C.1981,D.97; OSUNA,C.1981,D.109; OSUNA,C.1981,D.120; OSUNA,C.1981,D.130; OSUNA,C.1981,D.133; OSUNA,C.1982,D.5; OSUNA,C.1982,D.6; OSUNA,C.1982,D.9; OSUNA,C.1982,D.12; OSUNA,C.1982,D.15; OSUNA,C.1982,D.20; OSUNA,C.1983,D.7; OSUNA,C.1983,D.9",
    "folio_note": "69 items; images online for 4 of 69",
    "cls": "C",
-   "status": "PARES hits (27 Oct 2026, \"carta cifrada\"/\"cifrada\"/\"parte en cifra\"). Same Osuna embassy series as the Infantado 1650 row (OSUNA,C.1981,D.113) and the dropped 1642-45 letters with deciphered copies (OSUNA,CT.7; CT.2,D.6, D.8, D.13). PARES full-text search matches words, not the phrase, so a term hit is a pointer; the hit-list title says the letter is in cipher, not whether a decipherment is filed with it. Not in the repo (known.py: no hits for Albornoz, C.1978, C.1979).",
+   "status": "PARES hits (27 Oct 2026, \"carta cifrada\"/\"cifrada\"/\"parte en cifra\"). Same Osuna embassy series as the Infantado 1650 row (OSUNA,C.1981,D.113) and the dropped 1642-45 letters with deciphered copies (OSUNA,CT.7; CT.2,D.6, D.8, D.13). PARES full-text search matches words, not the phrase, so a term hit is a pointer; the hit-list title says the letter is in cipher, not whether a decipherment is filed with it. Not in the repo (known.py: no hits for Albornoz, C.1978, C.1979). 27 Oct 2026, Brice Dudout (pull request #144, targets/albornoz1648): CT.2,D.32 (Philip IV to Albornoz, 24 July 1648) read with key K2 rebuilt from CT.11,D.1 and its plain copy; CT.2,D.16, D.20 and CT.11,D.1 carry plain copies of the time. Entry narrowed to the other shelfmarks, not digitised.",
    "why": "About seventy royal cipher letters to the Rome embassy (conclave, cardinals' pensions, Naples 1647-48); the deciphered siblings make a key rebuild likely.",
    "importance": 3,
    "solvability": 4,
@@ -16959,7 +16926,10 @@
    "source": "PARES sweep (AHNOB)",
    "prior_art": "not searched (title screening only); see the Infantado 1650 row (embassy studied, nothing on its ciphers).",
    "ark": "",
-   "scored": "sweep"
+   "scored": "sweep",
+   "outcome": "attempted, open",
+   "writeup": "albornoz1648.html",
+   "as_of": "2026-10-27"
   },
   {
    "id": 748,
@@ -17065,39 +17035,6 @@
    "seen": "catalogue",
    "source": "PARES sweep (AHN)",
    "prior_art": "not searched (title screening only); French 18th-century diplomatic nomenclators are listed in the Cabinet noir literature (Vaillé).",
-   "ark": "",
-   "scored": "sweep"
-  },
-  {
-   "id": 751,
-   "counted": true,
-   "year": 1812,
-   "date": "1812",
-   "title": "Copy of a cipher letter of Marshal Marmont (duc de Raguse) to Marshal Jourdan on French army movements in the Peninsula, 1812",
-   "correspondents": "Auguste de Marmont, duc de Raguse → Jean-Baptiste Jourdan",
-   "place": "Spain",
-   "language": "French",
-   "region": "Spain",
-   "period": "1801-1900",
-   "shelfmark": "AHN, DIVERSOS-COLECCIONES,134,N.73",
-   "folio_note": "1 items; images online",
-   "cls": "C",
-   "status": "PARES hit (27 Oct 2026, \"carta cifrada\"/\"cifrada\"). The same fonds has \"Traducción de una carta cifrada\" on French army movements, 1812 (DIVERSOS-COLECCIONES,134,N.34, PARES 3156392: a decipherment, crib material) and the Jardet → Marmont row here (133,N.29). PARES full-text search matches words, not the phrase, so a term hit is a pointer; the hit-list title says the letter is in cipher, not whether a decipherment is filed with it. Not in the repo (known.py: no hits for Jourdan; the Marmont hits are the 1807 letter in targets/napoleon).",
-   "why": "A captured French army cipher letter of the Salamanca year; Scovell broke the Army of Portugal ciphers, so the copy may already be read, but this AHN copy is not in the printed lists.",
-   "importance": 3,
-   "solvability": 4,
-   "difficulty": 2,
-   "score_note": "Scored from the PARES hit list (title, dates, signatura only) during the 27 Oct 2026 PARES batch (research/pares_ags/, screen.py + reading of the top of screen_ranked.tsv); full description and images not viewed",
-   "verify": "Open N.73 and N.34; check whether N.34 is the translation of N.73; compare with Scovell papers (TNA WO 37) and Urban, The Man Who Broke Napoleon's Codes (2001).",
-   "links": [
-    {
-     "label": "PARES 3109832 (DIVERSOS-COLECCIONES,134,N.73)",
-     "href": "https://pares.cultura.gob.es/ParesBusquedas20/catalogo/description/3109832"
-    }
-   ],
-   "seen": "catalogue",
-   "source": "PARES sweep (AHN)",
-   "prior_art": "not searched (title screening only); Peninsular War French ciphers: Urban (2001), Scovell papers.",
    "ark": "",
    "scored": "sweep"
   },

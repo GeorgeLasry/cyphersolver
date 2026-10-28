@@ -242,9 +242,16 @@
    ],
    "what": "Both copies of CT.2,D.32 transcribed and decoded with K2; additions K2b (each attested at least twice or fitting a series); copies compared group by group.",
    "result": "worked"
-  }
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "verification",
+   "what": "Claude Opus 5.5 (PR review on merge): the plain copies of the time used to rebuild K1 and K2 credited (contemporary); method kept as plaintext from external sources (the copies are in other files of the Osuna fonds, not beside the 1648 letter).",
+   "result": "worked"
+  },
+  {"date": "2026-10-27", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 636 tokens, 84 types, es-golden-age order 4: reading -2.038 per letter; random keys -3.743 (z 11.3); key annealed onto shuffled ciphertext best -2.535 (mean -2.565, z 19.3); annealer on the real text -2.246. Verdict: pass.", "result": "worked"}
  ],
- "outcome": {
+ "outcome": {"validation": {"date": "2026-10-27", "model": "es-golden-age", "file": "validation.tsv", "tokens": 636, "types": 84, "tokens_per_type": 7.57, "score": -2.038, "nulls": {"random keys": {"n": 200, "mean": -3.743, "sd": 0.15, "max": -3.371, "z": 11.3, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -2.565, "sd": 0.027, "max": -2.535, "z": 19.3, "p": 0.1429}}, "power": -2.246, "verdict": "pass", "notes": "claimed per-occurrence score -2.038; polyphony 0.0; 7 unread tokens left out; annealer on the real text from random keys reached -2.246"}, 
   "class": "read",
   "key": "recovered",
   "method": "key recovered based on plaintext from external sources",
@@ -257,16 +264,19 @@
   "fraction_read_method": "measured",
   "fraction_read_source": "Copy B: 353 of 359 groups with a value (98.3%), about 5 of them probable; 6 unresolved. 6 of 136 words of the cipher portion contain a hole.",
   "first_break": true,
-  "verification": [
-   "matched control",
-   "historical consistency"
-  ],
+  "verification": ["matched control", "historical consistency", "statistical test"],
   "credits": [
    {
     "who": "dudout",
     "role": "solution",
     "note": "keys K1 and K2 rebuilt and validated on held-out text; both cipher copies of the 1648 letter read, Spanish text and English translation",
     "date": "2026-10-28"
+   },
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "date": "2026-10-27",
+    "note": "the plain copies of the time filed with OSUNA,CT.11,D.1 (Haro to Peñaranda, 25 Sept 1649, enciphered for Albornoz; key K2) and with CT.2,D.16 and D.20 (1644-45; key K1)"
    }
   ],
   "gaps": [

@@ -1,5 +1,7 @@
 # Nicolas Raince, Rome, 1526 and 1529 (BnF fr. 2984, fr. 3040, fr. 3091)
 
+Status: in progress (20 Nov 1526: p. 105 and p. 106 read by Brice Dudout, 27 Oct 2026, about 98% of words; the 13 May letter, pp. 29-31, still decoded, not read)
+
 Catalogue item 5 (the "gamble" of the five-item goal list). Two sessions, 17 September 2026.
 Everything below is unvalidated until Daniel reviews it; the evidence for each claim is named.
 
@@ -339,16 +341,17 @@ not tracked; re-fetch with
 `https://gallica.bnf.fr/iiif/ark:/12148/btv1b90598430/f<n>/full/full/0/native.jpg`.
 
 ## Remaining gaps
-- pp. 29-31 (13 May 1526), decoded, not read - blocker: illegible; the unresolved glyphs fall in most lines on the B/W microfilm; colour photographs needed
-- p. 105 (20 Nov 1526), decoded, not read - blocker: illegible; same
-- residual unresolved glyphs, ~13 % of letters, worst on p. 105 ll. 15-17, 20-21, p. 30 ll. 30, 32-34, p. 31 ll. 1-2, 17, 23-24 - blocker: illegible; every line was re-read from the image in session 3 (trans/reading_v3.txt); the remaining glyphs do not resolve on the B/W Gallica microfilm; colour photographs of pp. 29-31 and 105 needed
-- two word signs absent from Tomokiyo's key: bold two-crossbar stem [X] (a person, follows 'son maistre') and ℓ° [Y] (name or title), ~4 occurrences each - blocker: no-key-material; too few occurrences, no clear copy; the circled cross is now identified as i
+- pp. 29-31 (13 May 1526), decoded, not read - blocker: not-attempted; Brice Dudout (27 Oct 2026) found the microfilm resolves at Gallica IIIF full/max on 3x half-line crops, so the illegible verdict of session 3 (2x token crops) no longer holds; re-read pp. 29-31 that way
+- p. 105 and p. 106 (20 Nov 1526): read by Brice Dudout, about 98% of words (`dudout/`, pull request #163); no longer a gap
+- word signs absent from Tomokiyo's key: bold two-crossbar stem [X] (a person, follows 'son maistre') and ℓ° [Y] (three times on pp. 105-106: the one France should break with) - blocker: no-key-material; too few occurrences, no clear copy
+
 ## Escalation
 - [x] siblings: clear duplicate of the 9 June letter (p. 17 ff.) and glossed leaves pp. 25, 41, 121-123 checked; no clear copy of 13 May or 20 Nov found
 - [x] clear-pages: clear close of the 13 May letter on p. 31 transcribed (trans/p31_clear_close.txt); glosses on p. 29 ll. 1-13 and p. 105 top used
 - [x] known-keys: Tomokiyo 1526 key re-measured (CALIBRATION.md); 1529 key noted as a different system
 - [x] print: Mignet 1886, Bourrilly 1901, Tomokiyo, DECODE, Pastor IX (app. 38 = 26 Nov 1526 f.109, parallel wording, not this text) checked; Grethen 1887 not digitised anywhere found
 - [x] key-rebuild: shape-constrained hill climb (solve140.py), per-token classifier htr2.py, 6-gram LM beam decode2.py
+- [x] p. 105-106 read by Brice Dudout at full IIIF resolution (27 Oct 2026, `dudout/`); pp. 29-31 to be retried the same way
 - [x] retry: session 3 re-read all 106 lines off the images (trans/reading_v3.txt); sense measure 0.476 -> 0.850
 - [x] re-read 23 Oct 2026 (batch b32): reading_v3 set out as trans/residue1526_reading.md, 0.513 plain / 0.713 explicit holes; Gallica manifest (still microfilm) and DECODE checked; kept decoded, not read
 
