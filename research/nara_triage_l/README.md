@@ -85,3 +85,31 @@ Read by two agents (`agent_59.md`, `agent_rest.md`); their one confirmed lead wa
 
 Four rows: 757 (Auckland 1918), 758 (Coahuila 1906), 759 (La Paz 1941-42), 760 (Lima 1941); entry 669 unblocked (M316, 1921 Soviet intercepts). With this slice every detector has run over every record group
 and collection of the export.
+
+## Second pass: forwarded and intercepted foreign code telegrams in the purport lists
+
+The negation filter above only kept entries that say a text was unread. The La Paz row showed that the 1940-44 purport
+lists also record legations forwarding "code copies" of foreign telegrams without saying whether they were read, so
+the RG 59 word hits were searched again for code-copy and intercept wording (`axis_copies.txt`, 601 items on a broad
+pattern; 84 on the strict one: code copies of, copies of code/cipher telegrams, intercepted code/cipher/radio,
+obtained copies of). Most are the Department's own code traffic. The foreign-traffic entries:
+
+- Bolivia 1941-42 (862.20224): row 759. The purports add that the FBI identified the La Paz copies as "the German
+  diplomatic code" (Jan 1942) and returned two Bolivia/Argentina → Germany code messages "undecoded" (8 Dec 1941).
+- Paraguay 1933 (Kreeck #995, M973-339-0494): intercepted messages of General Kundt "together with code used to
+  decipher" them. Read at the time; not a row.
+- Navy Dept / USCG 1941-42 (862.20210 purports, M973-590): "Deciphered communications of German secret agents",
+  the clandestine-radio decodes (Coast Guard). Read; not rows.
+- São Paulo 1943 (M973-568-0661): German station DAN traffic, "machine enciphered for submarines": naval Enigma
+  traffic, read by the Allies at the time; out of reach and not filed as text here. Not a row.
+- Mexico 1941 (Justice, 812.614 purport M973-559-0637): intercepted radio message Mexico → Germany submitted
+  "deciphered and translated". Not a row.
+- Resolved on a retry (the catalogue answered again; purport lists naIds 88111461, 88084129, 88074042 fetched):
+  - Mexico 1940 (810.00-N / 812.00N, subs 185 and 220): Ambassador Boal sent a letter from his informant Antonio
+    Ochoa Peredo 'for decoding' and 'two further copies of what is considered may possibly be code messages' of the
+    Partido Nacional Socialista Mexicano. The later purports (subs 292, 300, 318, 353) report Ochoa Peredo's
+    information in plain terms and never mention a code again; whether these were code at all is unknown. Not a row.
+  - Chile #2431 (4 Dec 1940, 810.74 series, sub 870a): one intercepted message from Chile to the Auswärtiges Amt,
+    cited only to show the German Embassy radio was in use 8-15 Oct; no text forwarded as a cipher problem. Not a row.
+  - Spain #784 (4 Feb 1944, 800.20210 Mutiozábal): censorship intercepts of private letters to a suspected Axis
+    maildrop in Havana that 'may have been code messages'; open code at most. Not a row.

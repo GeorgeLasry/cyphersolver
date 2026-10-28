@@ -1869,6 +1869,11 @@ PAGES = [
          blurb='A Spanish letter from Paris during the Estates of the League (BnF fr. 3984 no. 68), in the syllabic cipher of the Duke of Feria and the Count of Mansfeld. Tomokiyo&rsquo;s table, applied to a full transcription, gives Spanish against a shuffled-key control: 224 of 598 groups read as sense. The three-letter word codes have no published table.',
          quote='&ldquo;no estamos desesperados&rdquo;',
          rights='Manuscript images: Biblioth&egrave;que nationale de France'),
+    dict(slug='ellis1839', label='Ellis from Mexico 1836&ndash;39', year='1836&ndash;1839', y=1836.8, place='Mexico City &rarr; Washington', st='found', stt='read at the time',
+         title='Powhatan Ellis to John Forsyth, Mexico, 1836&ndash;1839',
+         blurb='The American envoy in Mexico reported on the Texas war in John Quincy Adams&rsquo;s numerical code of 1811. The State Department deciphered every passage when it arrived, and the decipherments are filmed with the despatches; the one without, 26 October 1836, is printed by Bosch Garc&iacute;a. Michael Brackx and WAINUT transcribed the groups, which decode with the JQA table and confirm each text; three groups missed on frame 0324 and fourteen disputed groups of 1839 are settled here.',
+         quote='&ldquo;A war with Texas under such circumstances will be decidedly popular with a large portion of the Mexican people&rdquo;',
+         rights='Microfilm images: National Archives and Records Administration'),
     dict(slug='zeschau1841', label='Zeschau 1841&ndash;43', year='1841&ndash;1843', y=1841.5, place='Dresden &rarr; St Petersburg', st='stuck', stt='key not found',
          title='Zeschau to Seebach, Dresden to St Petersburg, 1841&ndash;1843',
          blurb='Four Saxon despatches (DECODE R5005&ndash;R5008); the 1841 one was transcribed in full, 3,969 unseparated digits. Traces of an erased contemporary pencil decipherment give seven values and show a two-digit table of letters and syllables. No key survives on DECODE, and ciphertext-only solvers checked on a control produced no French; not solved.',
@@ -3845,6 +3850,7 @@ IMAGES['stafford1586'] = ('stafford1586_f74v_lines.jpg', 'F. 74v: cipher runs gl
 IMAGES['harley1582r8500'] = ('harley1582r8500_f65v_postscript.jpg', 'Harley MS 1582 f. 65v: the postscript with its five cipher runs', 'British Library, Harley MS 1582 f. 65v, via DECODE R8500')
 IMAGES['harley1582r8505'] = ('harley1582r8505_lead.jpg', 'The heading and the first cipher run of f. 263r.', 'British Library, Harley MS 1582 f. 263r, via DECODE R8505')
 IMAGES['harley1582r8504'] = ('harley1582r8504_f76r_princes.jpg', 'Harley MS 1582 f. 76r: the one cipher word, princes', 'British Library, Harley MS 1582 f. 76r, via DECODE R8504')
+IMAGES['ellis1839'] = ('ellis1839_lead.jpg', 'No. 9, 16 November 1839: <em>a war with Texas under such circumstances will be decidedly popular</em>', 'NARA, RG 59, Despatches from US Ministers to Mexico vol. 9, M97 roll 10 frame 0302, via the National Archives Catalog')
 IMAGES['poupet1522'] = ('poupet1522_lead.jpg', 'Passage A in cipher and in the 1522 decipherment: <em>Combien que je vouldroie mectre mon ame en gaige</em>', 'Biblioteca Nacional de Espa&ntilde;a, via DECODE R1187')
 IMAGES['santacroce1552'] = ('santacroce1552_lead.jpg', 'ASV Francia 3 f. 248r (DECODE R9), Paris, 14 December 1553: three cipher lines struck through, the same postscript written in clear beneath', 'Archivio Apostolico Vaticano, Segreteria di Stato, Nunziatura di Francia 3 f. 248r, via DECODE R9')
 IMAGES['walsingham1585'] = ('walsingham1585_lead.jpg', 'Add MS 32657 f. 194, 10 September 1585: &ldquo;The 13 will in no sort neither be [signs] nor otherwise make [signs] a party&rdquo;, the decipherment above blotted out', 'British Library, Add MS 32657 f. 194 (via DECODE R4844)')

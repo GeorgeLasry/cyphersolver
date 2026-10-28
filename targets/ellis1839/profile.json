@@ -1,8 +1,43 @@
 {
  "schema_version": 1,
  "target": "ellis1839",
- "title": "Powhatan Ellis to John Forsyth, No. 9, Mexico, 16 Nov 1839: a coded despatch in the JQA code, with its 1839 clear copy (catalogue 653)",
+ "title": "Powhatan Ellis to John Forsyth, Mexico, 1836-1839: coded despatches in the JQA code, deciphered at the time (catalogue 653)",
  "documents": [
+  {
+   "id": "ellis1836oct26",
+   "read": "read",
+   "shelfmark": "NARA RG 59, Despatches from US Ministers to Mexico vol. 7, M97 roll 8 (naId 189101351), frame 0323 and the top line of 0324 (catalogue 653)",
+   "date": "26 Oct 1836",
+   "year": 1836,
+   "country": "United States",
+   "route": "Mexico City -> Washington",
+   "places": {
+    "from": "Mexico City",
+    "to": "Washington"
+   },
+   "language": "English",
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "printed edition"
+    ],
+    "source": "No decipherment on the film. Bosch García, Documentos de la relación de México con los Estados Unidos III (UNAM, 1984) prints the passage in clear (found by Michael Brackx, issue #120)."
+   },
+   "length": {
+    "tokens": 90,
+    "distinct": 75,
+    "unit": "code groups",
+    "measured": true,
+    "file": "ellis1836oct26_transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "NARA M97 roll 8 frames 0323, 0324",
+    "corrections": 0,
+    "image_quality": "good",
+    "notes": "Transcribed in the maintainer's session (27 Oct 2026) independently of Brackx's ct_f323.txt; the 87 groups on 0323 agree; the 3 groups at the top of 0324 (999 1384 205) are new. Marks under five groups kept as suffixes. Measured with docs/_check_profile.py --measure --digits --drop-first."
+   }
+  },
   {
    "id": "ellis1839",
    "read": "read",
@@ -33,9 +68,9 @@
    "transcription": {
     "by": "llm from images",
     "source": "NARA M97 roll 10 frames 0298, 0299, 0302, 0303",
-    "corrections": 0,
+    "corrections": 5,
     "image_quality": "good",
-    "notes": "Contributed by WAINUT (27 Oct 2026). Every line checked a second time, independently, on full-frame views, about 15 lines on enlarged crops; no disagreement. Counts include 1261 (comma), 1264 (stop) and the inserted groups. Two groups not legible on the film (0303.02 blot, 0303.03 last group). Measured with docs/_check_profile.py --measure --digits --drop-first."
+    "notes": "Contributed by WAINUT (27 Oct 2026). Every line checked a second time, independently, on full-frame views, about 15 lines on enlarged crops; no disagreement. Counts include 1261 (comma), 1264 (stop) and the inserted groups. Two groups not legible on the film (0303.02 blot, 0303.03 last group). Measured with docs/_check_profile.py --measure --digits --drop-first. 27 Oct 2026: the 14 groups where Brackx's independent transcription differed were read on full-resolution crops; 9 stand, 5 corrected to Brackx's reading (0298.09 668, 0299.06 1450, 0299.07 438, 0303.02 833?, 0303.09 731?)."
    }
   }
  ],
@@ -80,7 +115,7 @@
  "conditions": {
   "prior_solution": {
    "exists": "in archive",
-   "where": "The Department's contemporary clear copy of the whole coded passage, words only, on frames 0300-0301 of the same volume (ellis1839_clearcopy.txt). Manning, Inter-American Affairs vol. 8 (1937) may print it: not checked.",
+   "where": "The Department's decipherments filmed with the despatches (M97 rolls 8-10; vol. 9 frames 0300-0301 for 1839), all but 26 Oct 1836; Bosch García, Documentos de la relación de México con los Estados Unidos III (UNAM, 1984) prints the 1836 passages in clear, 26 Oct included. Manning vol. 8 (1937) not checked.",
    "found": "during attempt",
    "used": true
   },
@@ -91,14 +126,16 @@
    "known plaintext"
   ],
   "attack": "sibling key",
-  "human_role": "WAINUT set the task (catalogue 653) and the rules; the AI agents fetched the frames, transcribed, decoded, read and verified. No target-specific human intervention.",
+  "human_role": "WAINUT set the 1839 task for its AI agents; Michael Brackx surveyed and transcribed the 1836-40 pages and fitted values; the maintainer's session (Claude) settled the disputed groups on the frames, transcribed 26 Oct 1836 and merged the two. No target-specific human hint.",
   "tools": [
-   "../appleton1823/decode.py (applies ../jqa/code_table.tsv; wrong-key controls)"
+   "../appleton1823/decode.py (applies ../jqa/code_table.tsv; wrong-key controls)",
+   "Brackx's dec.py and readmeasure.py (gist), read, not run"
   ],
   "models": [
-   "AI language-model agents (WAINUT); a vision-capable language model for the transcription"
+   "AI language-model agents (WAINUT); a vision-capable language model for the transcription",
+   "Claude Opus 5.5 (maintainer session: frame checks, 26 Oct transcription and reading)"
   ],
-  "sessions": 1,
+  "sessions": 2,
   "first_date": "2026-10-27",
   "last_date": "2026-10-27"
  },
@@ -157,8 +194,82 @@
   {
    "date": "2026-10-27",
    "kind": "verification",
-   "technique": ["statistical test"],
+   "technique": [
+    "statistical test"
+   ],
    "what": "Maintainer cross-check with Michael Brackx's independent transcription of the same four frames (issue #120, gist data read with our own script): both 519 groups, 505 agree, 14 single groups differ (0298.07 1551/1557, 0298.09 668/1068, 0299.04 145/45, 0299.06 1450/1430, 0299.07 438/1438 and 1361/1261, 0299.16 1570/1510, 0299.18 and 0299.22 451/457, 0302.04 1001/1501, 0302.18 1070/1075, 0303.02 833/03, 0303.06 1216/416, 0303.09 731/721; Brackx first), to be settled on the frames. Of 11 values both propose 10 agree; 401 n (Brackx) against ican (here) unresolved. Status set to in progress: to be merged with Brackx's 1836-40 material into one Ellis folder and written up then.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "access",
+   "what": "Michael Brackx (issue #120): surveyed M97 rolls 8-10, found the Department's decipherments filmed with every coded despatch of 1836 but 26 Oct, and Bosch García III (1984) printing most of the passages in clear.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "transcription",
+   "what": "Michael Brackx: all 36 coded pages transcribed (4,119 groups as measured here).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "sibling key",
+   "technique": [
+    "key matching"
+   ],
+   "what": "Michael Brackx: decoded with ../jqa/code_table.tsv plus 97 Ellis values fitted on 19 May 1836 (punctuation 1261-1268, digits 952-959, 401 n ...); 19 May words read 0.826 table alone, 0.912 firm values, 0.942 with tentative; other 1836 passages 0.815 -> 0.833. Maintainer reproduced frames 15L-15R: 266/289 groups valued, 289/289 with the values.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "verification",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Michael Brackx: 7 Sept 1836, the three code lines Bosch García calls undeciphered decode with the table ('favor of an over-thr-ow of the present consolidated form of government'); reproduced by the maintainer.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "transcription",
+   "what": "Maintainer session: the 14 disputed 1839 groups read on full-resolution crops of frames 0298-0303: 9 as WAINUT, 5 as Brackx (668, 1450, 438, 833?, 731?); 1557 at 0298.07 kept as written, context needs 1551 o.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "hypothesis",
+   "what": "Maintainer session: 401 = n (Brackx) against ican (WAINUT): n fits fron-n-tier, know-n, America-n (65 = america), campaig-n (26 Oct); settled as n.",
+   "result": "worked",
+   "technique": [
+    "contextual inference"
+   ]
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "transcription",
+   "what": "Maintainer session: 26 Oct 1836 frame 0323 transcribed independently (87 groups, agrees with Brackx's file); three more groups found at the top of frame 0324 (999 1384 205, 'from that power'), missed by the catalogue and by Brackx.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "reading",
+   "what": "Maintainer session: 26 Oct 1836 decoded with the table (85/90 valued) and read: 89/90 groups give sense, 285 open; agrees with Bosch García's printed text; 614 manifest confirmed against Brackx's tentative know.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Maintainer session: decode.py --controls on 26 Oct 1836: function-word rate 0.26 for the table, 0.01-0.07 for shifted groups and permuted tables.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "literature search",
+   "what": "Manning, Inter-American Affairs vol. 8 (1937) still not checked (HathiTrust bot check); Bosch García III (1984) already prints the 1836 texts, so the outcome does not depend on it.",
    "result": "partial"
   }
  ],
@@ -166,17 +277,17 @@
   "class": "already solved",
   "key": "partial",
   "method": "read from existing decipherment",
-  "method_basis": "A complete contemporary clear copy of the whole coded passage (the Department's, frames 0300-0301 of the same volume) exists and was used to fill about 48 groups the table lacks; the work here is the transcription of the groups, their decode with the JQA code table (../jqa/code_table.tsv, applied unchanged) and the alignment with the copy.",
+  "method_basis": "Every coded passage of 1836-39 has a contemporary decipherment: filmed with the despatches (the Department's clean copies, clear copies or interlinear clear; for 1839 the clear copy on vol. 9 frames 0300-0301), or for 26 Oct 1836 in print (Bosch García 1984). The work is the transcription of the groups, their decode with the JQA code table (../jqa/code_table.tsv, unchanged, with Ellis values as an overlay) and the check of each decipherment against them.",
   "contribution": [
    "transcription"
   ],
   "fraction_read_method": "measured",
-  "fraction_read_source": "ellis1839_reading.md: research/reading_audit/v2_score.py hole rate 0.0; every group lines up with a word or syllable of the clear copy; the two groups illegible on the film rest on the clear copy.",
+  "fraction_read_source": "Texts read from the contemporary decipherments (all passages) and the print (26 Oct 1836). Measured decodes: 1839 ellis1839_reading.md hole rate 0.0; 26 Oct 1836 ellis1836oct26_reading.md 89/90 groups give sense (285 open); 19 May 1836 0.942 of words by Brackx's readmeasure.py.",
   "fraction_read": 1.0,
   "codes_open": {
-   "open": 0,
-   "total": 249,
-   "tokens_open": 0
+   "open": 1,
+   "total": "unknown",
+   "tokens_open": 1
   },
   "verification": [
    "contemporary decipherment",
@@ -188,13 +299,13 @@
    {
     "who": "lccompany",
     "role": "solution",
-    "note": "PR: catalogue 653 (Ellis 1839) transcribed, decoded with the JQA code table (../jqa/code_table.tsv) and aligned with the 1839 clear copy",
+    "note": "PR #107: No. 9 of 1839 transcribed, decoded with the JQA code table (../jqa/code_table.tsv) and aligned with the 1839 clear copy",
     "date": "2026-10-27"
    },
    {
     "who": "lccompany",
     "role": "transcription",
-    "note": "653 (519 groups, with the 1839 clear copy) from NARA M97 roll 10",
+    "note": "No. 9 of 1839 (519 groups, with the 1839 clear copy) from NARA M97 roll 10",
     "date": "2026-10-27"
    },
    {
@@ -212,16 +323,63 @@
     "who": "contemporary",
     "role": "prior solution",
     "note": "the State Department's clear copy of Ellis's No. 9 (1839), M97 roll 10 frames 0300-0301, used to fill and check the reading"
+   },
+   {
+    "who": "brackx",
+    "role": "solution",
+    "note": "issue #120: found the 1836 decipherments on the film and in Bosch García; transcribed all 36 coded pages; 97 Ellis values; corrected Bosch García on 7 Sept 1836",
+    "date": "2026-10-27",
+    "source": "https://github.com/dbourdeau/cyphersolver/issues/120"
+   },
+   {
+    "who": "brackx",
+    "role": "transcription",
+    "note": "all coded pages of 1836-40 (M97 rolls 8-10), in his gist",
+    "date": "2026-10-27"
+   },
+   {
+    "who": "contemporary",
+    "role": "prior solution",
+    "note": "the State Department's decipherments of Ellis's 1836 despatches, filmed with them on M97 rolls 8-9"
+   },
+   {
+    "who": "boschgarcia",
+    "role": "prior solution",
+    "note": "Documentos de la relación de México con los Estados Unidos III (UNAM, 1984): the 1836 coded passages printed in clear, 26 Oct included",
+    "source": "Bosch García 1984"
    }
   ],
   "gaps": [
    {
-    "item": "two groups not legible on the film (0303.02, 0303.03)",
+    "item": "1839, last group of 0303.03 (560 or 500)",
     "blocker": "illegible",
-    "detail": "the words rest on the clear copy"
+    "detail": "'enemy' rests on the clear copy"
+   },
+   {
+    "item": "26 Oct 1836, group 285",
+    "blocker": "too-short",
+    "detail": "no table value; probably a null (Brackx), one further context"
    }
   ],
   "texts": [
+   {
+    "doc": "ellis1836oct26",
+    "label": "Ellis to Forsyth, Mexico, 26 Oct 1836, coded close (catalogue 653), M97 roll 8 frames 0323-0324",
+    "transcription": "ellis1836oct26_transcription.txt",
+    "reading": "ellis1836oct26_reading.md",
+    "language": "en",
+    "state": "read",
+    "read_share": 0.989,
+    "summary": "The Mexican officers are confident of the coming campaign against Texas, but panic already runs through the soldiers, and government and people are disappointed because news from England leaves them no hope of help from that power.",
+    "note": "The one coded passage with no decipherment on the film; text printed by Bosch García 1984. Three closing groups found on frame 0324.",
+    "decryption": "ellis1836oct26_decryption.txt",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Opus 5.5 (maintainer session)",
+     "date": "2026-10-27",
+     "note": "Read as sentences against the decode line by line and against Bosch Garcia's printed text; agrees except the groups' extra \"but\"; 285 left open, 1114 marked [?]."
+    }
+   },
    {
     "doc": "ellis1839",
     "label": "Ellis to Forsyth, No. 9, Mexico, 16 Nov 1839 (catalogue 653), M97 roll 10 frames 0298-0303",
@@ -232,11 +390,17 @@
     "state": "read",
     "read_share": 1.0,
     "summary": "The US minister in Mexico reports that Texian troops with disaffected Mexicans have crossed the line, apparently to attack Matamoros, and that the government is sending General Arista to the frontier with 4,000 men; a war with Texas would unite the Mexican parties; the foreign minister Cañedo wants a general congress of the Spanish American states, unlikely to succeed. The Department's 1839 clear copy is in the same file.",
-    "note": "A contemporary decipherment exists (prior solution, used); this entry adds the groups, the decode with the table and the alignment. reading_review left to the maintainer."
+    "note": "A contemporary decipherment exists (prior solution, used); this entry adds the groups, the decode with the table and the alignment. reading_review left to the maintainer.",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Opus 5.5 (maintainer session)",
+     "date": "2026-10-27",
+     "note": "Read as sentences against the decryption and the 1839 clear copy after the 14 disputed groups were settled on the frames; every group lines up with the copy."
+    }
    }
   ],
   "key_file": "../jqa/code_table.tsv",
-  "notes": "Contributed by WAINUT (catalogue 653). Same code as ../jqa; nothing there is changed. Proposed table changes (not applied) are in NOTES.md and ellis1839_pairs.tsv. Manning, Inter-American Affairs vol. 8 (Mexico, 1937) may print the clear text: not checked (the copy was not reachable).",
+  "notes": "Catalogue 653, merged 27 Oct 2026: Brackx's 1836-40 material (issue #120) and WAINUT's No. 9 of 1839 (PR #107). Same code as ../jqa; nothing there is changed. Ellis values are an overlay (ellis1839_pairs.tsv; Brackx's ellis_values.tsv in his gist), not edits to the table. The 1836 passages other than 26 Oct are read from the decipherments on the film and in Bosch Garcia; their group transcriptions are in Brackx's gist, so they have no outcome.texts entry here. The other 1836-37 despatches (about 3,600 groups on M97 rolls 8-9, Brackx) are left out of documents until his files are in the repository.",
   "first_break": "unpublished prior"
  }
 }
