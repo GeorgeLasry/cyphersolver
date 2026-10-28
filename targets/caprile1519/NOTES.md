@@ -139,3 +139,19 @@ Contributor's provisional evidence, not a reading:
 - [x] print: ASMo inventory; nothing printed for R1128 (the letter); for the key, Cremonini 2017 figs. 17.1-17.3 (low resolution) and Somogyi, Kéziratos szöveg(re)produkció p. 237 (system described; reported by Brackx, not checked)
 - [x] key-rebuild: seeded EM on R1133/7c (one letter per column) and R1130/4c (syllabary); factorised syllabary rebuild (failed)
 - [x] retry: R1128 decoded with every 1519 table (2 Oct 2026); nothing reads. Still open as work: the key from R1131/R1132 against 5b/6b
+
+## 28 Oct 2026: Brackx's gist (issue #121), taken in
+
+Copied unchanged into `brackx/` from https://gist.github.com/brackxm/ecaed08322b06c385ed1886a3a1e3692 (revision
+63c1edf1b88b, 28 Oct 2026; he allows copying under the project licence, CC BY 4.0 / MIT, with credit). His tools: OpenAI
+Codex-assisted visual inspection with Python/Pillow; claims checked against the photographs (his statement).
+
+- **Repairs.** `apply_repairs_brackx.py` (our own code) checks his 18 repairs of R1128 L01, L02, L05 and L08 against
+  `t1519.txt`: all 18 `old` readings match token for token (columns counted from 1), no mismatches. The result is
+  `t1519_r1128_repaired.txt` (R1128 only); `t1519.txt` itself is unchanged until the column-shift test below is run.
+- **Column-shift test (his diagnosis that small upper signs were assigned to the next base): not yet run** on the
+  repaired lines; do it before any new key scoring.
+- **His reading** (`brackx/r1128_v30_partial.txt`, nine lines, *meserioa ... uno altro, per il che non mi e parso tempo ...
+  da quel vero et devotessimo suo humil servitore*) is a fitted working hypothesis, not a reading: the values were fitted on
+  the sibling letters with the target in view; the one frozen transfer test (R1134, 40 pairs) gave 32 of 37 assigned,
+  86.5%, below its 95% goal. R1128 stays *not read*.

@@ -127,3 +127,4 @@ L31 T: 15 | m 0 fn br Z w | C9 a oo 1 | do n | no | fn m + | yp D 8 y | 7 1 0 fn
     V: 15=f |=[|] m=i 0=e fn=n br=r Z=m w=e |=[|] C9=t a=o oo=u 1=t |=[|] do=o n=e |=[|] no=que |=[|] fn=n m=i +=e |=[|] yp=p D=u 8=i y=s |=[|] 7=a 1=t 0=e fn=n F=d 111=a a2=n 1=t
     D: f[|]ienrme[|]tout[|]oe[|]que[|]nie[|]puis[|]atendant
 ```
+

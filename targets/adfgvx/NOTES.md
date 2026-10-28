@@ -197,3 +197,11 @@ Closed (taken out of the open list, 23 Oct 2026): b24, 23 Oct 2026: p. 217 (read
 - [x] print: the 2017 Cipherbrain thread consolidated (texts/residue22_decryption.md); 23 Oct 2026: the Sept 2026 p. 217 decipherment found and verified
 - [x] key-rebuild: three damaged key squares repaired; no key-free recovery possible at 84-240 letters
 - [x] retry: deeper search on p. 132 (deep.py); the ten open messages retried with every key
+
+## 28 Oct 2026: issue #181 (Ayush Agarwal), Childs p.89, p.107, p.187
+
+Keys applied by `verify181.py` (our own, not his scripts): the Nov 1-3 transposition and square decrypt p0924 (symbols
+0-289) and p110D, the Nov 13-15 key p190G, letter for letter as he posted them (the stated transposition lists the
+columns by rank; the inverse reading gives noise). Plaintexts are German telegram style (p0924 on Odessa/Nikolajew and
+Eisenbahnlage; p110D to OHL with file numbers Ia 104660, 11118; p190G on the link to Armee Mackensen). Not checked
+against the Childs page images; his transcription is the typed log. Novelty query with Lasry pending (his note).

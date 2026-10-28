@@ -1,0 +1,301 @@
+{
+  "id": "E53_new_page_transfer_comparison",
+  "status": "Completed strict comparison; FAILED assigned-agreement goal.",
+  "scored_utc": "2026-10-27T16:20:33.262493+00:00",
+  "protocol": "experiments/E53_protocol.json",
+  "protocol_sha256": "bbec0c9f5ad08d13c94d0ce6432d78bd5ad5947c4b97191a588cec0ee4eda577",
+  "prediction_file": "experiments/E53_prediction_before_comparison.json",
+  "prediction_sha256": "d4bdbff82aab5cf286621e2238aed00239ecb18dbb2595f3b002037be1030612",
+  "reference_snapshot": "experiments/E53_reference_snapshot.json",
+  "reference_sha256": "c5663d8c9c07be046a04a7a882eb9c359ada94a7e66b95c2da91549573fe5fe2",
+  "source": "images/v1870_01.jpg",
+  "source_sha256": "85861a4aedf64d85a6adbab28bc6ebb00f125ae0cdd58b42329f6b310d7c15be",
+  "copy_source": "images/v1872_33.jpg",
+  "copy_sha256": "a242d6b2e6dc4bb2b764457d6ceac0628ceead285d2332c50db127e902f756f0",
+  "copy_document_url": "https://www.vestigia.hu/documents/1872",
+  "copy_context_box": [
+    1000,
+    1390,
+    2300,
+    1820
+  ],
+  "copy_reading_context": "quel di medesimo essendo a lor parso di licentiarse vedendo non essere fatto quel bon conto",
+  "fixed_span_copy_reading": "mo essendo a lor parso di licentiarse vedendo non essere fatto quel bon conto",
+  "copy_segmentation_limit": "The span starts on MO, the end of medesimo, and stops after CONTO. Pair P30 receives copy RE in ESSERE although source single-letter R may represent ESSER; this is retained as a strict difference, not a validated source RE assignment.",
+  "whole_span": [
+    {
+      "id": "P01",
+      "frozen_emission": "mo",
+      "copy_aligned_value": "mo",
+      "result": "exact_match"
+    },
+    {
+      "id": "P02",
+      "frozen_emission": "e",
+      "copy_aligned_value": "e",
+      "result": "exact_match"
+    },
+    {
+      "id": "P03",
+      "frozen_emission": "ss",
+      "copy_aligned_value": "ss",
+      "result": "exact_match"
+    },
+    {
+      "id": "P04",
+      "frozen_emission": "e",
+      "copy_aligned_value": "e",
+      "result": "exact_match"
+    },
+    {
+      "id": "P05",
+      "frozen_emission": "n",
+      "copy_aligned_value": "n",
+      "result": "exact_match"
+    },
+    {
+      "id": "P06",
+      "frozen_emission": "do",
+      "copy_aligned_value": "do",
+      "result": "exact_match"
+    },
+    {
+      "id": "P07",
+      "frozen_emission": "a",
+      "copy_aligned_value": "a",
+      "result": "exact_match"
+    },
+    {
+      "id": "P08",
+      "frozen_emission": null,
+      "copy_aligned_value": "lo",
+      "result": "frozen_abstention",
+      "postcomparison_candidate": "LO fits the exposed a lor context; not assigned before comparison and not a prospective success."
+    },
+    {
+      "id": "P09",
+      "frozen_emission": "r",
+      "copy_aligned_value": "r",
+      "result": "exact_match"
+    },
+    {
+      "id": "P10",
+      "frozen_emission": "pa",
+      "copy_aligned_value": "pa",
+      "result": "exact_match"
+    },
+    {
+      "id": "P11",
+      "frozen_emission": "r",
+      "copy_aligned_value": "r",
+      "result": "exact_match"
+    },
+    {
+      "id": "P12",
+      "frozen_emission": "so",
+      "copy_aligned_value": "so",
+      "result": "exact_match"
+    },
+    {
+      "id": "P13",
+      "frozen_emission": "de",
+      "copy_aligned_value": "di",
+      "result": "strict_difference",
+      "diagnosis": "DE/DI strict witness difference. Original m-like upper on n-like base agrees with DE controls; 8c copy reads di. Could be spelling/normalization or classification; no global DE-to-DI rewrite or relaxed success."
+    },
+    {
+      "id": "P14",
+      "frozen_emission": "li",
+      "copy_aligned_value": "li",
+      "result": "exact_match"
+    },
+    {
+      "id": "P15",
+      "frozen_emission": "ce",
+      "copy_aligned_value": "ce",
+      "result": "exact_match"
+    },
+    {
+      "id": "P16",
+      "frozen_emission": "i",
+      "copy_aligned_value": "n",
+      "result": "strict_difference",
+      "diagnosis": "I/N recognition confusion: selected upper has a narrow loop/open-looking top and long curved tail, mistaken for forked I. Its physical repetition at P39 also failed. Distinguish tiny loop closure and stem, not tail alone."
+    },
+    {
+      "id": "P17",
+      "frozen_emission": "ti",
+      "copy_aligned_value": "ti",
+      "result": "exact_match"
+    },
+    {
+      "id": "P18",
+      "frozen_emission": "a",
+      "copy_aligned_value": "a",
+      "result": "exact_match"
+    },
+    {
+      "id": "P19",
+      "frozen_emission": "r",
+      "copy_aligned_value": "r",
+      "result": "exact_match"
+    },
+    {
+      "id": "P20",
+      "frozen_emission": "si",
+      "copy_aligned_value": "se",
+      "result": "strict_difference",
+      "diagnosis": "SI/SE strict witness difference. Original s-like upper on bracket was assigned SI; copy reads licentiarse. Morphology or copy normalization unresolved; do not repair SI globally."
+    },
+    {
+      "id": "P21",
+      "frozen_emission": "ve",
+      "copy_aligned_value": "ve",
+      "result": "exact_match"
+    },
+    {
+      "id": "P22",
+      "frozen_emission": "de",
+      "copy_aligned_value": "de",
+      "result": "exact_match"
+    },
+    {
+      "id": "P23",
+      "frozen_emission": "n",
+      "copy_aligned_value": "n",
+      "result": "exact_match"
+    },
+    {
+      "id": "P24",
+      "frozen_emission": "do",
+      "copy_aligned_value": "do",
+      "result": "exact_match"
+    },
+    {
+      "id": "P25",
+      "frozen_emission": "no",
+      "copy_aligned_value": "no",
+      "result": "exact_match"
+    },
+    {
+      "id": "P26",
+      "frozen_emission": "n",
+      "copy_aligned_value": "n",
+      "result": "exact_match"
+    },
+    {
+      "id": "P27",
+      "frozen_emission": "e",
+      "copy_aligned_value": "e",
+      "result": "exact_match"
+    },
+    {
+      "id": "P28",
+      "frozen_emission": "ss",
+      "copy_aligned_value": "ss",
+      "result": "exact_match"
+    },
+    {
+      "id": "P29",
+      "frozen_emission": "e",
+      "copy_aligned_value": "e",
+      "result": "exact_match"
+    },
+    {
+      "id": "P30",
+      "frozen_emission": "r",
+      "copy_aligned_value": "re",
+      "result": "strict_difference",
+      "diagnosis": "R/RE strict witness difference: frozen single-letter R versus copy essere with final E. Copy may expand an original esser, but strict normalization rules do not delete it. Final E is grouped with the last pair of that word for comparison; allocation does not prove a RE cipher class."
+    },
+    {
+      "id": "P31",
+      "frozen_emission": "fa",
+      "copy_aligned_value": "fa",
+      "result": "exact_match"
+    },
+    {
+      "id": "P32",
+      "frozen_emission": null,
+      "copy_aligned_value": "tt",
+      "result": "frozen_abstention",
+      "postcomparison_candidate": "TT fits exposed fatto; not assigned before comparison and not a prospective success."
+    },
+    {
+      "id": "P33",
+      "frozen_emission": "o",
+      "copy_aligned_value": "o",
+      "result": "exact_match"
+    },
+    {
+      "id": "P34",
+      "frozen_emission": "que",
+      "copy_aligned_value": "que",
+      "result": "exact_match"
+    },
+    {
+      "id": "P35",
+      "frozen_emission": "l",
+      "copy_aligned_value": "l",
+      "result": "exact_match"
+    },
+    {
+      "id": "P36",
+      "frozen_emission": null,
+      "copy_aligned_value": "bo",
+      "result": "frozen_abstention",
+      "postcomparison_candidate": "BO fits exposed bon conto; promising future manuscript control for target BO, not promoted to key or target support in this test."
+    },
+    {
+      "id": "P37",
+      "frozen_emission": "n",
+      "copy_aligned_value": "n",
+      "result": "exact_match"
+    },
+    {
+      "id": "P38",
+      "frozen_emission": "co",
+      "copy_aligned_value": "co",
+      "result": "exact_match"
+    },
+    {
+      "id": "P39",
+      "frozen_emission": "i",
+      "copy_aligned_value": "n",
+      "result": "strict_difference",
+      "diagnosis": "I/N recognition confusion, same physical type as P16; do not silently replace the frozen I."
+    },
+    {
+      "id": "P40",
+      "frozen_emission": "to",
+      "copy_aligned_value": "to",
+      "result": "exact_match"
+    }
+  ],
+  "counts": {
+    "exact_match": 32,
+    "strict_difference": 5,
+    "frozen_abstention": 3,
+    "assigned_unscorable": 0
+  },
+  "metrics": {
+    "pairs": 40,
+    "assigned_pairs": 37,
+    "assignment_coverage": 0.925,
+    "assigned_correctness_against_copy": 0.8648648648648649,
+    "assigned_unscorable": 0
+  },
+  "goals": {
+    "pairs_at_least40": true,
+    "coverage_at_least80percent": true,
+    "assigned_agreement_at_least95percent": false,
+    "all_assigned_scored": true,
+    "full_pass": false
+  },
+  "independence": "New original page, prediction frozen before current copy comparison. Historical8b/8c copies viewed in E16; unseen-plaintext status not demonstrated. Not a fully independent or historically naive holdout.",
+  "postcomparison_training_added": 0,
+  "new_target_letters": 0,
+  "new_independent_target_successes": 0,
+  "decision": "Keep frozen failure. Next bounded diagnosis should compare narrow looped N with forked I, and validate the new fitted BO/LO contexts against published cells and native contrasts. No automatic key remap; no target completion."
+}
+

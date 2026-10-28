@@ -22,3 +22,4 @@ depart from this decode are listed in the #92 comment.
 Montaigne's *Essais* I–III (Project Gutenberg 48529, 49168, 58801).
 
 Images: Gallica / BnF IIIF, ark `btv1b9061879d`, canvases 169–172.
+
