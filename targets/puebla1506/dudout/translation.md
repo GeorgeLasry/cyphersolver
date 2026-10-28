@@ -1,0 +1,7 @@
+# English translation
+
+By Martín Sánchez de Zamudio I wrote at length to the King our lord, and the same to Your Grace. […] Doña María de Rojas […]. What I wish to say in this one is that the King of England […] so fair a wind that […] tomorrow […] he will embark. And he also says […] Doña María de Rojas […].
+
+[…] when he pleases; and the departure […] and all the rest greatly please the King of England, and with much reason. […] that, on the part of my lady the Princess, […] is well fitting, as is the increase and {respect} of the King of England and of the Prince; and there will be no one to preach any discontent to her. Those people, for their own interest, were making the Princess write me these letters, which go enclosed herewith.
+
+[…] My lady the Princess’s people I see so well attired that I never thought to see better; but the greed of certain persons is such that even with the treasure of the King of England I doubt they would be content. I trust in the prudence of Your Grace and of the King our lord, who will not allow […]. And because […] is left at the mercy of chance with this one (?). I say no more […] [may Our Lord] increase and prosper the life and estate of Your Grace as you desire. From London, 21 April 1506.
