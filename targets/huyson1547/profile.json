@@ -1,0 +1,169 @@
+{
+ "schema_version": 1,
+ "target": "huyson1547",
+ "title": "Henry II to Suleiman, 1547: Malvezzi's enciphered Latin copy of d'Huyson's credence and two other letters (catalogue 500, HHStA Türkei I 7-2-18)",
+ "documents": [
+  {
+   "id": "turkei-i-7-2-18",
+   "read": "read",
+   "shelfmark": "Österreichisches Staatsarchiv, Haus-, Hof- und Staatsarchiv (Vienna), Staatenabteilungen, Türkei I, box 7, file 2, fols. 143r–146r (“7-2-18”); 207 ciphered lines",
+   "date": "1547 (copy sent with Malvezzi's letter of 8 March 1548)",
+   "year": 1547,
+   "country": "Austria",
+   "route": "Constantinople (Malvezzi) -> Ferdinand I",
+   "places": {
+    "from": "Constantinople",
+    "to": "court of Ferdinand I"
+   },
+   "language": "Latin",
+   "pages": 7,
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "printed edition"
+    ],
+    "source": "Ribier 1666 prints the French credence and instruction (content, not this Latin text)."
+   },
+   "length": {
+    "tokens": 8517,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "AIS native images (veid 6567149)",
+    "image_quality": "fair",
+    "notes": "Read sign by sign in several passes (C12-C15); targeted blind review of doubtful signs by Brice Dudout."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "nomenclator"
+  ],
+  "summary": "Malvezzi’s cipher alphabet: homophonic graphic signs (two to four per letter, numbers for double letters), nulls (syllables Dac, Der, Dam… and whole Latin words cum, etiam, porro), a few code words (Bi = King of France, Ras = the Sultan, Ab = the French)",
+  "symbol_kind": "digits and symbols",
+  "distinct_symbols": 63,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "kinds": [
+    "names",
+    "places",
+    "titles"
+   ]
+  },
+  "nulls": {
+   "present": true
+  },
+  "key_order": "random",
+  "word_division": "kept"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "partial",
+   "where": "Ribier 1666 (French versions of the credence and instruction); AIS \"nicht dechiffriert\".",
+   "found": "during attempt",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "sibling key",
+   "published key"
+  ],
+  "attack": "sibling key",
+  "first_date": "2026-10-27",
+  "last_date": "2026-10-27",
+  "human_role": "Brice Dudout chose the target from the catalogue and set the rules (frozen key before validation, held-out checks, prior-work search the day of publication); AI agents transcribed, solved, checked and wrote up. Doubtful signs were settled by targeted visual review where stated.",
+  "models": [
+   "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout"
+  ]
+ },
+ "solution": [
+  {
+   "date": "2026-10-27",
+   "kind": "sibling key",
+   "technique": [
+    "key matching"
+   ],
+   "what": "Malvezzi alphabet (R367/R386) calibrated on 7-3-20 f. 44 with its contemporary decipherment (f. 45); frozen as K-C01.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "control",
+   "what": "Blind validation of the frozen alphabet (8-3-8).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "transcription",
+   "what": "Sign-by-sign re-reading of all lines in four passes (C12-C15) on the native images.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "reading",
+   "technique": [
+    "manual reconstruction",
+    "contextual inference"
+   ],
+   "what": "About 97.5% of groups read; Latin text of three letters of Henry II and Malvezzi's Italian notes, with English translation; captain Bartolomeo identified from Morvilliers (Charrière II).",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "read",
+  "key": "recovered",
+  "method": "read after matching with key from external sources",
+  "method_basis": "Malvezzi's alphabet from DECODE R367/R386, calibrated on a sibling letter with a contemporary decipherment, frozen, then applied.",
+  "contribution": [
+   "transcription",
+   "key extended or corrected"
+  ],
+  "fraction_read": 0.975,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "Counted group by group: 1,146 groups in the C14-C15 passes 98.1%; whole piece about 97.5%.",
+  "first_break": true,
+  "verification": [
+   "matched control",
+   "historical consistency"
+  ],
+  "credits": [
+   {
+    "who": "dudout",
+    "role": "solution",
+    "note": "Malvezzi's alphabet applied to 7-2-18; about 97.5% of groups read; Latin/Italian text and English translation",
+    "date": "2026-10-27"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "18 unresolved groups (4 in Malvezzi's Italian heading)",
+    "blocker": "illegible"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "turkei-i-7-2-18",
+    "label": "Henry II to Suleiman (credence for d'Huyson and two other letters), Malvezzi's enciphered copy, HHStA Türkei I 7-2-18",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "reading": "reading.md",
+    "translation": "translation.md",
+    "language": "la",
+    "state": "read",
+    "summary": "In the autumn of 1547 Henry II, king for six months, sent his pantler, the sieur d’Huyson, to Constantinople with a letter of credence for Suleiman and instructions: join the truce that Charles V and Ferdinand had just made with the Porte, but have the king’s allies — the Swiss first — included in it, and expose imperial bad faith. Ferdinand’s resident in Constantinople, Giovanni Maria Malvezzi, got hold of the text, translated it back “from Turkish into Latin, word for word” and sent it to Vienna in cipher, together with a second, longer letter and a third, carried by a captain, about the Diet of Augsburg and asking for the Ottoman fleet. These four ciphered pages had never been read."
+   }
+  ],
+  "key_file": "key_KC01.json",
+  "provenance": "contributed"
+ }
+}
