@@ -1,0 +1,527 @@
+<title>The Dorabella Map</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a case file. Cipher at the head; the best-supported explanation; four questions with a sticky evidence
+   panel that redraws the cipher with the signs each branch depends on; then the evidence views: forest plot of every
+   test, power-vs-result scatter, coverage matrix, round timeline. */
+:root{
+  --paper:#f2f4f6; --sheet:#ffffff; --ink:#18212e; --ink-2:#4b5666; --ink-3:#7c8695; --rule:#d9dee5; --rule-2:#eceff3;
+  --accent:#2c4a7a;
+  --neg:#a8432f; --neg-bg:#f6e3de; --x:#525c69; --x-bg:#e7eaee; --np:#9a6a08; --np-bg:#f8edd2;
+  --diag:#1f7a68; --diag-bg:#dcf0ea; --open:#5a3fa8; --open-bg:#e9e3f8;
+  --null:#c9d0d9; --eng:#9fd3c4; --dot:#18212e;
+  --glyph:#18212e; --flip:#c4501f; --hl:#c4501f;
+  --display:"Instrument Serif","Iowan Old Style",Georgia,serif;
+  --body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,"SFMono-Regular",Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#10151d; --sheet:#171e29; --ink:#e7ebf1; --ink-2:#aab3c0; --ink-3:#7d8796; --rule:#2a3442; --rule-2:#1f2733;
+  --accent:#8fb0e6;
+  --neg:#f0907a; --neg-bg:#3a201b; --x:#b9c1cc; --x-bg:#252d39; --np:#e3b54f; --np-bg:#352a12;
+  --diag:#6fd3bb; --diag-bg:#12322c; --open:#b9a2f5; --open-bg:#2a2245;
+  --null:#3a4555; --eng:#2f6e60; --dot:#ffffff;
+  --glyph:#e7ebf1; --flip:#ff8a52; --hl:#ff8a52; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#10151d; --sheet:#171e29; --ink:#e7ebf1; --ink-2:#aab3c0; --ink-3:#7d8796; --rule:#2a3442; --rule-2:#1f2733;
+  --accent:#8fb0e6;
+  --neg:#f0907a; --neg-bg:#3a201b; --x:#b9c1cc; --x-bg:#252d39; --np:#e3b54f; --np-bg:#352a12;
+  --diag:#6fd3bb; --diag-bg:#12322c; --open:#b9a2f5; --open-bg:#2a2245;
+  --null:#3a4555; --eng:#2f6e60; --dot:#ffffff;
+  --glyph:#e7ebf1; --flip:#ff8a52; --hl:#ff8a52; color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{background:var(--paper);color:var(--ink);font:400 15px/1.6 var(--body);
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0 72px}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--paper)}
+.wrap{max-width:1200px;margin:0 auto}
+h1,h2,h3{font-weight:400;text-wrap:balance;margin:0}
+h1{font:400 clamp(40px,6vw,68px)/1.02 var(--display);letter-spacing:-.01em}
+h1 em{font-style:italic;color:var(--accent)}
+h2{font:400 clamp(26px,3.2vw,36px)/1.12 var(--display)}
+.eyebrow{font:500 11px/1.4 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3)}
+.lede{max-width:64ch;color:var(--ink-2);font-size:16px;margin:0}
+.sheet{background:var(--sheet);border:1px solid var(--rule);border-radius:14px}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+header.hero{padding-block:44px 8px;display:grid;gap:18px}
+
+/* nav */
+nav.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--paper);border-bottom:1px solid var(--rule);margin-top:26px}
+nav.bar .in{display:flex;flex-wrap:wrap;align-items:center;gap:6px 18px;padding-block:10px}
+nav.bar a{font:500 13px var(--body);color:var(--ink-2);text-decoration:none;padding:4px 0;border-bottom:2px solid transparent}
+nav.bar a:hover{color:var(--ink);border-color:var(--rule)}
+nav.bar .search{margin-left:auto;display:flex;align-items:center;gap:8px}
+nav.bar input{font:400 13px var(--body);padding:7px 10px;border-radius:8px;border:1px solid var(--rule);background:var(--sheet);color:var(--ink);width:min(240px,60vw)}
+
+/* cipher */
+.cipher{padding:20px 22px 14px;display:grid;gap:10px}
+.cipher-top{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;justify-content:space-between}
+.cipher-lines{overflow-x:auto}
+.cipher-lines svg{display:block;min-width:720px;width:100%;height:auto}
+.glyph path{fill:none;stroke:var(--glyph);stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round;transition:stroke .2s,opacity .2s}
+.glyph rect{fill:transparent}
+.glyph text{font:500 8px var(--mono);fill:var(--ink-3);opacity:0}
+.focus .glyph path{opacity:.22}
+.focus .glyph.hl path{stroke:var(--hl);opacity:1;stroke-width:2.4}
+.focus .glyph.hl text{opacity:1;fill:var(--hl)}
+.bond{stroke:var(--flip);stroke-width:1.4;opacity:0;transition:opacity .2s}
+.show-bonds .bond{opacity:1}
+.glyph:hover path{stroke:var(--accent);opacity:1}
+.readout{font:500 12px var(--mono);color:var(--ink-2);min-height:1.4em}
+.caption{font-size:12.5px;color:var(--ink-3)}
+.seg{display:inline-flex;border:1px solid var(--rule);border-radius:9px;overflow:hidden;flex-wrap:wrap}
+.seg button{border:0;background:transparent;padding:6px 11px;font:500 12.5px var(--body);color:var(--ink-2);cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+
+/* explanation chain */
+.chain{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:0;margin-top:18px;overflow:hidden}
+.chain .step{padding:18px 20px;display:grid;gap:6px;border-right:1px solid var(--rule);position:relative}
+.chain .step:last-child{border-right:0}
+.chain .k{font:500 11px var(--mono);color:var(--accent);letter-spacing:.08em}
+.chain h3{font:400 22px/1.15 var(--display)}
+.chain p{margin:0;color:var(--ink-2);font-size:13.5px}
+.chain .big{font:400 34px/1 var(--display);color:var(--diag)}
+.facts{display:flex;flex-wrap:wrap;gap:10px 28px;margin-top:16px;color:var(--ink-2);font-size:13.5px}
+.facts b{font:400 26px/1 var(--display);color:var(--ink);margin-right:6px}
+.statusbar{display:flex;height:12px;border-radius:6px;overflow:hidden;margin-top:14px;background:var(--rule)}
+
+/* sections */
+section{margin-top:64px;scroll-margin-top:72px}
+.sec-head{display:grid;gap:8px;margin-bottom:18px}
+.legend{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:6px}
+.chip{display:inline-flex;align-items:center;gap:7px;font:500 12.5px/1 var(--body);padding:7px 11px;border-radius:999px;border:1px solid var(--rule);background:var(--sheet);color:var(--ink-2);cursor:pointer}
+.chip i{width:9px;height:9px;border-radius:50%;display:inline-block}
+.chip .n{font-family:var(--mono);color:var(--ink-3)}
+.chip[aria-pressed="true"]{border-color:var(--ink);color:var(--ink)}
+
+/* questions + panel */
+.qgrid{display:grid;grid-template-columns:minmax(0,1fr) 380px;gap:24px;align-items:start}
+.qs{display:grid;gap:14px}
+.q{padding:20px 20px 18px;display:grid;gap:12px;scroll-margin-top:72px}
+.q .qhead{display:grid;gap:4px}
+.q .qn{font:500 12px var(--mono);color:var(--accent);letter-spacing:.06em}
+.q h3{font:400 26px/1.12 var(--display)}
+.q .ans{font-size:14.5px;color:var(--ink);max-width:70ch}
+.q .ans b{font-weight:500}
+.tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:8px}
+.tile{display:grid;gap:6px;padding:9px 11px 8px;border-radius:10px;font:500 13px/1.25 var(--body);cursor:pointer;border:1px solid transparent;text-align:left;transition:transform .12s,box-shadow .12s}
+.tile:hover{transform:translateY(-1px)}
+.tile .top{display:flex;align-items:center;gap:8px}
+.tile .mark{width:15px;height:15px;flex:none}
+.tile[aria-pressed="true"]{box-shadow:0 0 0 2px var(--ink)}
+.tile.dim{opacity:.16}
+.tile .strip{height:10px;width:100%;display:block}
+.st-NEG{background:var(--neg-bg);color:var(--neg)}
+.st-X{background:var(--x-bg);color:var(--x);background-image:repeating-linear-gradient(135deg,transparent 0 6px,color-mix(in srgb,var(--x) 13%,transparent) 6px 7px)}
+.st-NP{background:var(--np-bg);color:var(--np)}
+.st-DIAG{background:var(--diag-bg);color:var(--diag)}
+.st-OPEN{background:var(--open-bg);color:var(--open);border:1px dashed currentColor}
+.panel{position:sticky;top:calc(env(safe-area-inset-top,0px) + 66px);padding:18px 18px 20px;display:grid;gap:11px;max-height:calc(100vh - 90px);overflow:auto}
+.panel .pill{justify-self:start;font:500 11px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;padding:6px 9px;border-radius:6px}
+.panel h3{font:400 27px/1.1 var(--display)}
+.panel p{margin:0;color:var(--ink-2);font-size:14px}
+.panel .mini svg{width:100%;height:auto;display:block}
+.panel .ev{font:400 12px/1.5 var(--mono);color:var(--ink-3);border-top:1px solid var(--rule);padding-top:9px}
+.panel .tests{display:grid;gap:8px}
+.panel .trow{display:grid;gap:3px}
+.panel .tname{font-size:12.5px;color:var(--ink-2)}
+.panel .tfix{font:400 11.5px var(--mono);color:var(--np)}
+.panel .empty{color:var(--ink-3)}
+.panel .link{font:400 11.5px var(--mono);color:var(--ink-3)}
+
+/* forest */
+.forest{padding:16px 18px;display:grid;gap:4px}
+.fhead,.frow{display:grid;grid-template-columns:44px minmax(0,1.3fr) minmax(0,1fr) 92px;gap:12px;align-items:center}
+.fhead{font:500 11px var(--mono);color:var(--ink-3);letter-spacing:.06em;text-transform:uppercase;padding-bottom:6px;border-bottom:1px solid var(--rule)}
+.frow{padding:3px 0;border-bottom:1px solid var(--rule-2);font-size:12.5px}
+.frow .r{font:500 11.5px var(--mono);color:var(--accent)}
+.frow .nm{color:var(--ink-2);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.frow svg{width:100%;height:16px;display:block}
+.frow .v{font:500 11px var(--mono);text-align:right}
+.fgroup{font:500 12px var(--mono);color:var(--ink-3);padding:12px 0 4px;letter-spacing:.06em}
+.fkey{display:flex;flex-wrap:wrap;gap:16px;font-size:12.5px;color:var(--ink-2);margin-bottom:10px}
+.fkey span{display:inline-flex;align-items:center;gap:7px}
+.fkey i{display:inline-block;width:18px;height:8px;border-radius:2px}
+.forest-wrap{overflow-x:auto}
+.forest-in{min-width:640px}
+
+/* scatter */
+.scat{padding:18px;display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:18px;align-items:start}
+.scat svg{width:100%;height:auto;display:block}
+.scat text{font-family:var(--body);fill:var(--ink-2)}
+.scat .num{font-family:var(--mono);font-size:11px}
+.scat .q-label{font:400 15px var(--display);fill:var(--ink-3)}
+.scat .pt{cursor:pointer;transition:r .12s}
+.scat .grid{stroke:var(--rule)}
+.scat-info{display:grid;gap:8px;font-size:13.5px;color:var(--ink-2)}
+.scat-info h3{font:400 22px/1.2 var(--display);color:var(--ink)}
+
+/* coverage */
+.cov-wrap{overflow-x:auto}
+table.cov{border-collapse:separate;border-spacing:3px;font-size:12px;min-width:860px}
+table.cov th{font:500 11.5px/1.25 var(--body);color:var(--ink-2);text-align:left;padding:4px 6px;vertical-align:bottom}
+table.cov thead th{height:92px;white-space:normal;width:58px}
+table.cov td{width:58px;height:30px;border-radius:5px;text-align:center;font:500 10.5px var(--mono)}
+table.cov td.c-NEG{background:var(--neg-bg);color:var(--neg)}
+table.cov td.c-NP{background:var(--np-bg);color:var(--np)}
+table.cov td.c-X{background:var(--x-bg);color:var(--x)}
+table.cov td.c-none{background:transparent;border:1px dashed var(--rule);color:var(--ink-3)}
+.cov-sum{display:flex;flex-wrap:wrap;gap:10px 28px;margin:10px 0 14px;font-size:13.5px;color:var(--ink-2)}
+.cov-sum b{font:400 26px/1 var(--display);color:var(--ink);margin-right:6px}
+
+/* timeline */
+.tl{display:grid;gap:0;border-left:2px solid var(--rule);margin-left:10px}
+.tl .ev{position:relative;padding:0 0 18px 22px;display:grid;grid-template-columns:120px minmax(0,1fr);gap:6px 16px}
+.tl .ev::before{content:"";position:absolute;left:-7px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--sheet);border:2px solid currentColor}
+.tl .ev .when{font:500 12px var(--mono);color:var(--accent)}
+.tl .ev h4{margin:0;font:500 14px var(--body)}
+.tl .ev p{margin:2px 0 0;color:var(--ink-2);font-size:13.5px}
+.tl .ev.c-NEG{color:var(--neg)} .tl .ev.c-NP{color:var(--np)} .tl .ev.c-DIAG{color:var(--diag)} .tl .ev.c-X{color:var(--x)}
+.tl .ev > div{color:var(--ink)}
+
+.next{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.next .sheet{padding:18px;display:grid;gap:8px}
+.next h3{font:400 22px/1.2 var(--display)}
+.next p{margin:0;color:var(--ink-2);font-size:14px}
+footer{margin-top:48px;font-size:12.5px;color:var(--ink-3);max-width:80ch}
+
+@media (max-width:980px){.qgrid{grid-template-columns:1fr}.panel{position:static;max-height:none;order:-1}.scat{grid-template-columns:1fr}}
+@media (max-width:560px){.tl .ev{grid-template-columns:1fr}.chain .step{border-right:0;border-bottom:1px solid var(--rule)}}
+</style>
+
+<div class="wrap">
+<header class="hero" id="top">
+  <span class="eyebrow">Elgar to Dora Penny · 14 July 1897 · 87 signs</span>
+  <h1>The Dorabella <em>map</em></h1>
+  <p class="lede">Every way of reading the cipher that this project has tested, organised by the four questions a reading has to answer, with the numbers behind each result. No reading has come out of it; this page shows how strong each negative is and what has never been tried.</p>
+
+  <div class="sheet cipher">
+    <div class="cipher-top">
+      <span class="eyebrow">The note, redrawn from the five-reader transcription</span>
+      <div class="seg" id="cipherMode" role="group" aria-label="Highlight on the cipher">
+        <button aria-pressed="true" data-m="none">Plain</button>
+        <button aria-pressed="false" data-m="flips">Opposite flips</button>
+        <button aria-pressed="false" data-m="merged">Doubtful signs</button>
+        <button aria-pressed="false" data-m="doubles">Doubled signs</button>
+      </div>
+    </div>
+    <div class="cipher-lines" id="cipher"></div>
+    <div class="readout" id="readout">Hover a sign to read it. Select a branch below and the signs it depends on light up here and in the panel.</div>
+    <div class="caption">One, two or three arcs facing one of eight directions: 24 possible signs, 20 used. Transcription: Hauer et al. 2025, consensus of five readers; doubtful positions from Schmeh 2017, the Elgar-key reading and a measurement of the 1937 plate.</div>
+  </div>
+
+  <div class="sheet chain" aria-label="The best-supported explanation and its evidence">
+    <div class="step"><span class="k">R11 · Source type</span><span class="big">0.84</span><h3>It behaves like English letters</h3><p>On the statistics no key can change, Dorabella is a typical sample of English letters, and of Elgar's own letters (0.89). Speech sounds 0.002, music 0.03.</p></div>
+    <div class="step"><span class="k">R25 · Two simple generators</span><span class="big" style="color:var(--neg)">0.01</span><h3>But not English under any key</h3><p>English under a random key misses the flips (11 against 27). A writer who just flips often misses the repeated pairs. Both fail.</p></div>
+    <div class="step"><span class="k">R26 · Combined</span><span class="big">0.71</span><h3>English under a flip-heavy key fits</h3><p>A key that puts common neighbours on opposite sides of the dial reproduces all six statistics at once. Under such a key a clean transcription would solve about 98% of the time. This one does not.</p></div>
+  </div>
+  <div class="facts" id="facts"></div>
+  <div class="statusbar" id="statusbar" aria-hidden="true"></div>
+</header>
+
+<nav class="bar" aria-label="Sections"><div class="in">
+  <a href="#questions">Four questions</a><a href="#evidence">Every test</a><a href="#power">Power</a><a href="#coverage">Coverage</a><a href="#timeline">Timeline</a><a href="#next">What next</a>
+  <label class="search" for="q"><span class="eyebrow">Search</span><input id="q" type="search" placeholder="Morse, Latin, R12, misread"></label>
+</div></nav>
+
+<section id="questions">
+  <div class="sec-head">
+    <span class="eyebrow">The tree, by question</span>
+    <h2>Four questions, every branch tested</h2>
+    <p class="lede">A reading has to answer all four. Each tile is one branch; the strip under it shows its strongest test on its own scale: grey where shuffled signs land, green where real English lands, the dot where Dorabella lands.</p>
+  </div>
+  <div class="legend" id="legend"></div>
+  <div class="qgrid">
+    <div class="qs" id="qs"></div>
+    <aside class="sheet panel" id="panel" aria-live="polite"><span class="eyebrow">Branch</span><p class="empty">Select a branch to see what was tested, every test behind it, and the signs it depends on.</p></aside>
+  </div>
+</section>
+
+<section id="evidence">
+  <div class="sec-head">
+    <span class="eyebrow">Forest plot</span>
+    <h2>Every calibrated test, one line each</h2>
+    <p class="lede">Each line has its own scale. A reading would put the dot inside the green band. Seven tests were flagged by the first pass and rechecked; the note under each says how they came out.</p>
+  </div>
+  <div class="fkey"><span><i style="background:var(--null)"></i>Shuffled signs</span><span><i style="background:var(--eng)"></i>Real English through the same system</span><span><i style="background:var(--dot);width:8px;border-radius:50%"></i>Dorabella</span></div>
+  <div class="legend" id="fverdicts"></div>
+  <div class="sheet forest forest-wrap"><div class="forest-in" id="forest"></div></div>
+</section>
+
+<section id="power">
+  <div class="sec-head">
+    <span class="eyebrow">Power against result</span>
+    <h2>Could the test have found it, and did it?</h2>
+    <p class="lede">Across: how far real English sits above shuffles in each test, its power to find a reading. Up: where Dorabella lands, from the shuffles (0) to real English (1). A reading would sit top right. That corner is empty.</p>
+  </div>
+  <div class="sheet scat">
+    <svg id="scatter" viewBox="0 0 640 430" role="img" aria-label="Scatter of test power against Dorabella's position between shuffles and English"></svg>
+    <div class="scat-info" id="scatInfo"><h3>Hover a point</h3><p>Each point is one test from the forest plot. Its colour is the final verdict.</p></div>
+  </div>
+</section>
+
+<section id="coverage">
+  <div class="sec-head">
+    <span class="eyebrow">Coverage matrix</span>
+    <h2>Which combinations were never tried</h2>
+    <p class="lede">The layers multiply: a reading needs a plaintext and a system. Most systems were tested only on English. Dashed cells are combinations nobody here has run.</p>
+  </div>
+  <div class="cov-sum" id="covSum"></div>
+  <div class="sheet cov-wrap" style="padding:14px"><table class="cov" id="cov"></table></div>
+</section>
+
+<section id="timeline">
+  <div class="sec-head">
+    <span class="eyebrow">Process</span>
+    <h2>How the search went</h2>
+    <p class="lede">Twenty-five steps before the loop, then twenty-seven calibrated rounds. Each entry says what was tried and what it settled.</p>
+  </div>
+  <div class="tl" id="tl"></div>
+</section>
+
+<section id="next">
+  <div class="sec-head">
+    <span class="eyebrow">What would move it</span>
+    <h2>The open branches</h2>
+    <p class="lede">Everything this computer can decide has been decided. What is left needs new evidence.</p>
+  </div>
+  <div class="next">
+    <div class="sheet"><span class="eyebrow">Second text</span><h3>The Courage cards</h3><p>Elgar's cards at the Elgar Birthplace Museum; the first carries about ten signs in the same system. Any key could then be checked on two documents.</p></div>
+    <div class="sheet"><span class="eyebrow">Better image</span><h3>A greyscale plate</h3><p>The 1946 or 1949 edition of Dora Powell's memoir. The 1937 scan is black and white only, and 23 positions are in doubt.</p></div>
+    <div class="sheet"><span class="eyebrow">Untested combinations</span><h3>Other languages under keyed systems</h3><p>The coverage matrix lists them. These can be run here, but none has a strong prior: every key-invariant test points at English.</p></div>
+  </div>
+</section>
+
+<footer>Built from targets/dorabella/runs/ledger.tsv, runs/loop.md, HYPOTHESES.md and NOTES.md by build_map.py. S = step in NOTES.md, R = round in runs/loop.md.</footer>
+</div>
+
+<script>
+const DATA = /*DATA*/null;
+const NS = 'http://www.w3.org/2000/svg';
+const O8 = 'ABCDEFGH', ANG = {A:0,H:45,G:90,F:135,E:180,D:225,C:270,B:315};
+const OPEN_DIR = {A:'right',B:'down-right',C:'down',D:'down-left',E:'left',F:'up-left',G:'up',H:'up-right'};
+const LBL = {NEG:'Tested, negative', X:'Excluded by logic', NP:'Undecidable at 87 signs', DIAG:'Diagnostic finding', OPEN:'Open'};
+const COLOR = {NEG:'var(--neg)', X:'var(--x)', NP:'var(--np)', DIAG:'var(--diag)', OPEN:'var(--open)'};
+const el = (tag, attrs = {}, parent) => { const e = document.createElementNS(NS, tag); for (const k in attrs) e.setAttribute(k, attrs[k]); if (parent) parent.append(e); return e; };
+const h = (html) => { const t = document.createElement('template'); t.innerHTML = html.trim(); return t.content.firstChild; };
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+/* ---------- cipher ---------- */
+const CT = DATA.ct, FLAT = CT.flat();
+const SETS = DATA.sets;
+function glyphPath(n, r){ let d = `M ${-n * r} 0`; for (let k = 0; k < n; k++) d += ` a ${r} ${r} 0 0 1 ${2 * r} 0`; return d; }
+function drawCipher(host, opts = {}){
+  const W = 1000, gap = W / 32, rowH = opts.rowH || 62, r = opts.r || 5.2;
+  const svg = el('svg', {viewBox: `0 0 ${W} ${rowH * 3 + 14}`, role: 'img', 'aria-label': 'The 87 signs of the Dorabella cipher'});
+  const pos = []; let i = 0;
+  CT.forEach((line, li) => line.forEach((tok, j) => {
+    const cx = gap * (j + 1), cy = rowH * li + rowH / 2 + 4; pos.push([cx, cy, li]);
+    const g = el('g', {class: 'glyph', transform: `translate(${cx} ${cy})`, 'data-i': i}, svg);
+    el('rect', {x: -gap / 2, y: -rowH / 2, width: gap, height: rowH}, g);
+    el('path', {d: glyphPath(+tok[1], r), transform: `rotate(${270 - ANG[tok[0]]})`}, g);
+    const t = el('text', {x: 0, y: rowH / 2 - 4, 'text-anchor': 'middle'}, g); t.textContent = i + 1;
+    if (opts.hover) { const k = i; g.addEventListener('mouseenter', () => {
+      document.getElementById('readout').textContent = `Sign ${k + 1} of 87 · ${tok} · ${tok[1]} arc${tok[1] > 1 ? 's' : ''} opening ${OPEN_DIR[tok[0]]}`; }); }
+    i++;
+  }));
+  for (let k = 1; k < FLAT.length; k++) {
+    const a = pos[k - 1], b = pos[k];
+    if (a[2] !== b[2] || ((O8.indexOf(FLAT[k][0]) - O8.indexOf(FLAT[k - 1][0])) % 8 + 8) % 8 !== 4) continue;
+    el('line', {class: 'bond', x1: a[0], x2: b[0], y1: a[1] + rowH * 0.33, y2: b[1] + rowH * 0.33}, svg);
+  }
+  host.innerHTML = ''; host.append(svg); return svg;
+}
+function highlight(svg, idx, bonds){
+  const set = new Set(idx || []);
+  svg.parentElement.classList.toggle('focus', set.size > 0);
+  svg.parentElement.classList.toggle('show-bonds', !!bonds);
+  svg.querySelectorAll('.glyph').forEach(g => g.classList.toggle('hl', set.has(+g.dataset.i)));
+}
+const mainSvg = drawCipher(document.getElementById('cipher'), {hover: true});
+document.querySelectorAll('#cipherMode button').forEach(b => b.addEventListener('click', () => {
+  document.querySelectorAll('#cipherMode button').forEach(x => x.setAttribute('aria-pressed', 'false'));
+  b.setAttribute('aria-pressed', 'true');
+  const m = b.dataset.m;
+  highlight(mainSvg, m === 'none' ? [] : SETS[m], m === 'flips');
+}));
+
+/* ---------- facts + status ---------- */
+const BR = DATA.questions.flatMap(q => q.branches.map(b => ({...b, q})));
+const counts = {}; BR.forEach(b => counts[b.status] = (counts[b.status] || 0) + 1);
+document.getElementById('facts').innerHTML =
+  `<span><b>${DATA.ledger.length}</b>calibrated tests</span><span><b>27</b>rounds after 25 steps</span><span><b>${BR.length}</b>branches</span><span><b>0</b>readings at the English level</span>`;
+const sb = document.getElementById('statusbar');
+['NEG','X','NP','DIAG','OPEN'].forEach(k => { const d = document.createElement('div'); d.style.cssText = `width:${counts[k] / BR.length * 100}%;background:${COLOR[k]}`; sb.append(d); });
+
+/* ---------- range strip (shared by tiles, panel, forest) ---------- */
+function strip(row, w = 300, ht = 16){
+  const svg = el('svg', {viewBox: `0 0 ${w} ${ht}`, preserveAspectRatio: 'none', class: 'strip', 'aria-hidden': 'true'});
+  if (!row || row.D == null || !row.nulls) return svg;
+  const vals = [row.D, ...row.nulls, ...(row.ctl || [])];
+  let lo = Math.min(...vals), hi = Math.max(...vals); const pad = (hi - lo) * 0.08 || 0.1; lo -= pad; hi += pad;
+  const x = v => (v - lo) / (hi - lo) * w;
+  el('line', {x1: 0, x2: w, y1: ht / 2, y2: ht / 2, stroke: 'var(--rule)', 'stroke-width': 1}, svg);
+  el('rect', {x: x(row.nulls[0]), width: Math.max(2, x(row.nulls[1]) - x(row.nulls[0])), y: ht * 0.22, height: ht * 0.56, rx: 2, fill: 'var(--null)'}, svg);
+  if (row.ctl) el('rect', {x: x(row.ctl[0]), width: Math.max(2, x(row.ctl[1]) - x(row.ctl[0])), y: ht * 0.22, height: ht * 0.56, rx: 2, fill: 'var(--eng)'}, svg);
+  el('circle', {cx: x(row.D), cy: ht / 2, r: Math.min(5, ht * 0.36), fill: 'var(--dot)', stroke: 'var(--sheet)', 'stroke-width': 1.2}, svg);
+  return svg;
+}
+const ledgerByRound = {}; DATA.ledger.forEach(r => (ledgerByRound[r.round] = ledgerByRound[r.round] || []).push(r));
+function rowsFor(b){ return (b.rounds || []).flatMap(n => (ledgerByRound[String(n)] || []).filter(r => r.kind === 'solver')); }
+function bestRow(rows){
+  const pos = r => r.ctl ? (r.D - (r.nulls[0] + r.nulls[1]) / 2) / Math.max(1e-6, (r.ctl[0] + r.ctl[1]) / 2 - (r.nulls[0] + r.nulls[1]) / 2) : -9;
+  return rows.filter(r => r.D != null && r.nulls).sort((a, c) => pos(c) - pos(a))[0];
+}
+
+/* ---------- questions ---------- */
+function markSVG(s){
+  const m = {NEG:'<path d="M4 4l8 8M12 4l-8 8"/>', X:'<path d="M3 8h10"/>', NP:'<circle cx="8" cy="8" r="4.5"/><path d="M8 5.5v3"/>', DIAG:'<path d="M3 8.5l3 3 7-7"/>', OPEN:'<circle cx="8" cy="8" r="4.5"/>'}[s];
+  return `<svg class="mark" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${m}</svg>`;
+}
+const panel = document.getElementById('panel');
+let selected = null, statusFilter = null, searchText = '';
+function openBranch(b, tile){
+  if (selected) selected.setAttribute('aria-pressed', 'false');
+  selected = tile; if (tile) tile.setAttribute('aria-pressed', 'true');
+  const rows = rowsFor(b);
+  panel.innerHTML = `<span class="eyebrow">${esc(b.q.n)} · ${esc(b.q.title)}</span>
+    <span class="pill st-${b.status}">${LBL[b.status]}</span><h3>${esc(b.name)}</h3><p>${esc(b.desc)}</p>
+    <div class="mini"></div>
+    ${b.signs ? `<p style="font-size:12.5px;color:var(--ink-3)">${esc(b.signsNote || '')}</p>` : ''}
+    ${rows.length ? '<span class="eyebrow">Tests behind it</span><div class="tests"></div>' : ''}
+    <div class="ev">Evidence: ${esc(b.ev)}</div><div class="link">Link to this branch: add #${b.id} to the page address</div>`;
+  const mini = drawCipher(panel.querySelector('.mini'), {rowH: 48, r: 5.6});
+  const idx = b.signs ? SETS[b.signs] || b.signs : [];
+  highlight(mini, idx, b.signs === 'flips'); highlight(mainSvg, idx, b.signs === 'flips');
+  document.querySelectorAll('#cipherMode button').forEach(x => x.setAttribute('aria-pressed', 'false'));
+  document.getElementById('readout').textContent = idx.length ? `Showing the signs behind "${b.name}". Choose Plain to clear.` : 'Hover a sign to read it.';
+  const host = panel.querySelector('.tests');
+  if (host) rows.forEach(r => {
+    const d = h(`<div class="trow"><span class="tname">R${r.round} · ${esc(r.name)}</span></div>`);
+    d.append(strip(r, 300, 14));
+    if (r.fix) d.append(h(`<span class="tfix">${esc(r.fix)}</span>`));
+    host.append(d);
+  });
+  try { history.replaceState(null, '', '#' + b.id); } catch (e) {}
+}
+const qsEl = document.getElementById('qs');
+DATA.questions.forEach(q => {
+  const card = h(`<div class="sheet q" id="${q.id}"><div class="qhead"><span class="qn">${esc(q.n)} · ${esc(q.layers)}</span><h3>${esc(q.title)}</h3></div><p class="ans">${q.answer}</p><div class="tiles"></div></div>`);
+  const tiles = card.querySelector('.tiles');
+  q.branches.forEach(b => {
+    const t = h(`<button class="tile st-${b.status}" id="${b.id}" aria-pressed="false"><span class="top">${markSVG(b.status)}<span>${esc(b.name)}</span></span></button>`);
+    t.dataset.s = b.status; t.dataset.text = (b.name + ' ' + b.desc + ' ' + b.ev + ' ' + q.title).toLowerCase();
+    const best = bestRow(rowsFor({...b, q}));
+    if (best) t.append(strip(best, 200, 10));
+    t.addEventListener('click', () => openBranch({...b, q}, t));
+    tiles.append(t);
+  });
+  qsEl.append(card);
+});
+function applyFilters(){
+  document.querySelectorAll('.tile').forEach(t => {
+    const ok = (!statusFilter || t.dataset.s === statusFilter) && (!searchText || t.dataset.text.includes(searchText));
+    t.classList.toggle('dim', !ok);
+  });
+  document.querySelectorAll('#forest .frow').forEach(r => r.hidden = !!searchText && !r.dataset.text.includes(searchText));
+}
+const legend = document.getElementById('legend');
+['NEG','X','NP','DIAG','OPEN'].forEach(k => {
+  const b = h(`<button class="chip" aria-pressed="false"><i style="background:${COLOR[k]}"></i>${LBL[k]} <span class="n">${counts[k] || 0}</span></button>`);
+  b.addEventListener('click', () => { statusFilter = statusFilter === k ? null : k; [...legend.children].forEach(c => c.setAttribute('aria-pressed', 'false')); if (statusFilter) b.setAttribute('aria-pressed', 'true'); applyFilters(); });
+  legend.append(b);
+});
+document.getElementById('q').addEventListener('input', e => {
+  searchText = e.target.value.trim().toLowerCase();
+  const m = searchText.match(/^r(\d+)$/);
+  if (m) searchText = '';
+  applyFilters();
+  if (m) document.querySelectorAll('#forest .frow').forEach(r => r.hidden = r.dataset.round !== m[1]);
+});
+
+/* ---------- forest ---------- */
+const VERD = {negative: ['NEG', 'Negative'], 'above nulls': ['NEG', 'Above shuffles only'], 'no power': ['NP', 'No power'], 'READING?': ['NP', 'Flagged, then overturned'], excluded: ['X', 'Excluded']};
+const forest = document.getElementById('forest');
+forest.append(h(`<div class="fhead"><span>Round</span><span>Test</span><span>Shuffles · English · Dorabella</span><span style="text-align:right">Verdict</span></div>`));
+let lastRound = null; const famOf = {}; DATA.rounds.forEach(r => famOf[r.n] = r.family);
+const fv = {};
+DATA.ledger.filter(r => r.kind === 'solver').forEach(r => {
+  if (r.round !== lastRound) { forest.append(h(`<div class="fgroup">R${r.round} · ${esc(famOf[r.round] || '')}</div>`)); lastRound = r.round; }
+  const v = VERD[r.verdict] || ['NEG', r.verdict]; fv[v[1]] = (fv[v[1]] || 0) + 1;
+  const row = h(`<div class="frow"><span class="r">R${r.round}</span><span class="nm" title="${esc(r.name)}">${esc(r.name)}</span><span class="cell"></span><span class="v" style="color:${COLOR[v[0]]}">${v[1]}</span></div>`);
+  row.dataset.text = (r.name + ' ' + (famOf[r.round] || '') + ' r' + r.round).toLowerCase(); row.dataset.round = r.round; row.dataset.v = v[1];
+  row.querySelector('.cell').append(strip(r, 300, 16));
+  forest.append(row);
+  if (r.fix) forest.append(h(`<div class="frow" style="border:0"><span></span><span class="tfix" style="grid-column:2 / -1;font:400 11.5px var(--mono);color:var(--np)">↳ ${esc(r.fix)}</span></div>`));
+});
+const fvEl = document.getElementById('fverdicts');
+Object.entries(fv).forEach(([k, n]) => {
+  const b = h(`<button class="chip" aria-pressed="false">${esc(k)} <span class="n">${n}</span></button>`);
+  b.addEventListener('click', () => { const on = b.getAttribute('aria-pressed') !== 'true'; [...fvEl.children].forEach(c => c.setAttribute('aria-pressed', 'false')); if (on) b.setAttribute('aria-pressed', 'true');
+    document.querySelectorAll('#forest .frow[data-v]').forEach(r => r.hidden = on && r.dataset.v !== k); });
+  fvEl.append(b);
+});
+
+/* ---------- scatter ---------- */
+(function(){
+  const svg = document.getElementById('scatter'), info = document.getElementById('scatInfo');
+  const L = 56, R = 620, T = 16, B = 380;
+  const pts = DATA.ledger.filter(r => r.kind === 'solver' && r.D != null && r.nulls && r.ctl).map(r => {
+    const nm = (r.nulls[0] + r.nulls[1]) / 2, cm = (r.ctl[0] + r.ctl[1]) / 2;
+    const half = Math.max(0.02, (r.nulls[1] - r.nulls[0]) / 2 + (r.ctl[1] - r.ctl[0]) / 2);
+    let power = (cm - nm) / half; let y = (r.D - nm) / ((cm - nm) || 1e-6);
+    if (cm - nm <= 0) { power = 0; y = 0; }
+    return {r, power: Math.max(0, Math.min(8, power)), y: Math.max(-1, Math.min(1.5, y))};
+  });
+  const X = p => L + p / 8 * (R - L), Y = v => B - (v + 1) / 2.5 * (B - T);
+  el('rect', {x: X(2), y: Y(1.5), width: X(8) - X(2), height: Y(0.75) - Y(1.5), fill: 'var(--diag-bg)'}, svg);
+  el('text', {x: X(5), y: Y(1.25), 'text-anchor': 'middle', class: 'q-label'}, svg).textContent = 'a reading would be here';
+  el('text', {x: X(0.9), y: Y(1.25), 'text-anchor': 'middle', class: 'q-label'}, svg).textContent = 'couldn’t tell';
+  el('text', {x: X(5), y: Y(-0.8), 'text-anchor': 'middle', class: 'q-label'}, svg).textContent = 'real negatives';
+  [0, 2, 4, 6, 8].forEach(v => { el('line', {x1: X(v), x2: X(v), y1: T, y2: B, class: 'grid'}, svg); el('text', {x: X(v), y: B + 18, 'text-anchor': 'middle', class: 'num'}, svg).textContent = v === 8 ? '8+' : v; });
+  [-1, 0, 0.5, 1, 1.5].forEach(v => { el('line', {x1: L, x2: R, y1: Y(v), y2: Y(v), class: 'grid', 'stroke-dasharray': v === 0 || v === 1 ? '' : '3 3'}, svg); el('text', {x: L - 8, y: Y(v) + 4, 'text-anchor': 'end', class: 'num'}, svg).textContent = v; });
+  el('line', {x1: X(2), x2: X(2), y1: T, y2: B, stroke: 'var(--ink-3)', 'stroke-dasharray': '4 4'}, svg);
+  el('text', {x: (L + R) / 2, y: B + 38, 'text-anchor': 'middle', 'font-size': 12}, svg).textContent = 'Power: English above shuffles, in band widths';
+  el('text', {x: L - 44, y: T + 6, 'font-size': 12}, svg).textContent = 'English';
+  el('text', {x: L - 44, y: Y(0) - 8, 'font-size': 12}, svg).textContent = 'Shuffles';
+  pts.forEach(p => {
+    const v = (VERD[p.r.verdict] || ['NEG'])[0];
+    const c = el('circle', {cx: X(p.power), cy: Y(p.y), r: 5, class: 'pt', fill: COLOR[v], 'fill-opacity': .8, stroke: 'var(--sheet)', 'stroke-width': 1}, svg);
+    c.addEventListener('mouseenter', () => { c.setAttribute('r', 8);
+      info.innerHTML = `<span class="eyebrow">R${p.r.round} · ${esc(famOf[p.r.round] || '')}</span><h3>${esc(p.r.name)}</h3>
+        <p>Power ${p.power.toFixed(1)} band widths. Dorabella at ${p.y.toFixed(2)} of the way from shuffles to English.</p>
+        <p style="font-family:var(--mono);font-size:12px">D ${p.r.D} · shuffles ${p.r.nulls.join(' to ')} · English ${p.r.ctl.join(' to ')}</p>${p.r.fix ? `<p style="color:var(--np);font-size:12.5px">${esc(p.r.fix)}</p>` : ''}`; });
+    c.addEventListener('mouseleave', () => c.setAttribute('r', 5));
+  });
+})();
+
+/* ---------- coverage ---------- */
+(function(){
+  const t = document.getElementById('cov'), C = DATA.coverage;
+  let html = '<thead><tr><th></th>' + C.cols.map(c => `<th>${esc(c)}</th>`).join('') + '</tr></thead><tbody>';
+  let tested = 0, total = 0;
+  C.rows.forEach(row => {
+    html += `<tr><th>${esc(row[0])}</th>` + row[1].map(v => { total++; if (v !== '') tested++; return `<td class="c-${v || 'none'}" title="${v ? LBL[v] : 'Not tested'}">${v ? (v === 'NEG' ? '×' : v === 'NP' ? '?' : '—') : ''}</td>`; }).join('') + '</tr>';
+  });
+  t.innerHTML = html + '</tbody>';
+  document.getElementById('covSum').innerHTML = `<span><b>${tested}</b>of ${total} combinations tested</span><span><b>${C.rows[0][1].filter(v => v).length}/${C.cols.length}</b>systems tried on English</span><span>× negative · ? undecidable · — excluded · dashed: not tried</span>`;
+})();
+
+/* ---------- timeline ---------- */
+const tl = document.getElementById('tl');
+DATA.rounds.forEach(r => tl.append(h(`<div class="ev c-${r.status}"><span class="when">${r.n === 'S' ? 'Steps 1–25' : 'Round ' + r.n}</span><div><h4>${esc(r.family)}</h4><p>${esc(r.outcome)}</p></div></div>`)));
+
+/* ---------- deep link ---------- */
+function openHash(){
+  const id = location.hash.slice(1); if (!id) return;
+  const t = document.getElementById(id);
+  if (t && t.classList.contains('tile')) { t.click(); t.scrollIntoView({block: 'center'}); }
+}
+openHash();
+if (!location.hash) { const t = document.getElementById('b-q1-5'); if (t) openBranch({...BR.find(b => b.id === 'b-q1-5')}, t); }
+</script>

@@ -692,8 +692,7 @@ def round10():
         if D[0] < -1e8:                               # no placement passes crib_fit: an exclusion, not a score
             print(f'[R10] fixed cribs: {which}: excluded, no crib fits Dorabella at that position', flush=True)
             with open(LEDGER, 'a', encoding='utf-8') as f:
-                f.write(f'10	fixed cribs: {which}	-	-	-	excluded	no crib fits at that position	
-')
+                f.write(chr(9).join(['10', f'fixed cribs: {which}', '-', '-', '-', 'excluded', 'no crib fits at that position', '']) + chr(10))
             continue
         nulls = [crib_round(s, which, 100 + j)[0] for j, s in enumerate(shuffles(5))]
         nulls = [x for x in nulls if x > -1e8] or [-9.0]
@@ -1584,3 +1583,100 @@ def round27():
             ctl.append(sc); acc.append(np.mean([a == b for a, b in zip(t2, pt)]))
         log(27, f'all plausible readings jointly ({multi} positions), {mid}', D[0], nulls, ctl, D[1],
             f'ctl acc {min(acc):.2f}..{max(acc):.2f}', acc)
+
+
+# ------------------------------------------------------------------ round 28: flip-heavy key as a prior, with misreads
+_BIG = None
+
+
+def bigram_probs():
+    global _BIG
+    if _BIG is None:
+        t = corpus()[:2_000_000]; c = np.zeros((26, 26))
+        a = np.frombuffer(t.encode(), dtype=np.uint8) - 97
+        np.add.at(c, (a[:-1], a[1:]), 1); _BIG = c / c.sum()
+    return _BIG
+
+
+def flip_prior(key):
+    """Expected opposite-orientation steps per pair if English were written with this key (token t has orientation t//3)."""
+    P = bigram_probs(); m = M4
+    orient = np.full(26, -1)
+    for t, li in enumerate(key):
+        ch = m.alpha[li]
+        if ch in AZ and orient[AZ.index(ch)] < 0:
+            orient[AZ.index(ch)] = t // 3
+    ok = orient >= 0
+    O = orient[:, None]; Q = orient[None, :]
+    opp = ((O - Q) % 8 == 4) & ok[:, None] & ok[None, :]
+    return float((P * opp).sum())
+
+
+def prior_misread_solve(seq, K, seed, beta, R=20, lam=4.0):
+    m = M4; rng = random.Random(seed)
+    TOKS = [(o, a) for o in range(8) for a in range(3)]; tid = {t: i for i, t in enumerate(TOKS)}
+    base = np.array([tid[s] for s in seq])
+    def total(key, c):
+        return m.score_idx(key[c]) + beta * (len(c) - 1) * flip_prior(key)
+    def anneal_key(c, key, iters, T0):
+        cur = total(key, c)
+        for i in range(iters):
+            T = T0 * (1 - i / iters) + 0.05
+            k2 = key.copy(); s = rng.randrange(24)
+            if rng.random() < 0.3:
+                free = [a for a in range(m.A) if a not in set(k2.tolist())]; k2[s] = rng.choice(free)
+            else:
+                t = rng.randrange(24); k2[s], k2[t] = k2[t], k2[s]
+            sc = total(k2, c)
+            if sc >= cur or rng.random() < math.exp((sc - cur) / T):
+                key, cur = k2, sc
+        return key, cur
+    best = (-1e18, None, 0)
+    for r in range(R):
+        key = np.array(rng.sample(range(m.A), 24)); c = base.copy(); edits = 0
+        key, cur = anneal_key(c, key, 12000, 3.0)
+        for rd in range(2):
+            while edits < K:
+                b0 = m.score_idx(key[c]); gain = (lam, None)
+                for p in range(len(c)):
+                    if c[p] != base[p]:
+                        continue
+                    for d in (-1, 1):
+                        c2 = c.copy(); c2[p] = tid[nb(TOKS[base[p]], d)]
+                        g = m.score_idx(key[c2]) - b0
+                        if g > gain[0]:
+                            gain = (g, (p, c2[p]))
+                if gain[1] is None:
+                    break
+                c[gain[1][0]] = gain[1][1]; edits += 1
+            key, cur = anneal_key(c, key, 5000, 0.8)
+        lm_part = m.score_idx(key[c])
+        tot = (lm_part - lam * edits) / len(c)
+        if tot > best[0]:
+            best = (tot, ''.join(m.alpha[i] for i in key[c]), edits)
+    return best
+
+
+@rnd(28)
+def round28():
+    pos = {}
+    for o, grp in enumerate(FLIP_LAYOUT):
+        for k, ch in enumerate(grp):
+            pos[ch] = (o, k)
+    pos['j'] = pos['i']; pos['v'] = pos['u']
+    for beta in (0.0, 3.0):
+        rng = random.Random(28); ctl, acc = [], []
+        for j in range(3):
+            pt = english(N, rng); rot = rng.randrange(8); rev = rng.random() < .5
+            sg = [(((pos[c][0] * (-1 if rev else 1)) + rot) % 8, pos[c][1]) for c in pt]
+            for q in rng.sample(range(N), 6):
+                sg[q] = nb(sg[q], rng.choice((-1, 1)))
+            sc, t2, e = prior_misread_solve(sg, 8, 300 + j, beta)
+            ctl.append(sc); acc.append(np.mean([a == b for a, b in zip(t2, pt)]))
+        print(f'  beta {beta}: controls (flip-heavy key, 6 misreads) acc {np.round(acc, 2)}', flush=True)
+        if beta == 0.0:
+            continue
+        D = prior_misread_solve(SIGNS, 8, 0, beta)
+        nulls = [prior_misread_solve(s, 8, 100 + j, beta)[0] for j, s in enumerate(shuffles(3))]
+        log(28, f'flip-heavy key prior (beta {beta}) + misreads <= 8', D[0], nulls, ctl, D[1],
+            f'edits {D[2]}; ctl acc {min(acc):.2f}..{max(acc):.2f}', acc)
