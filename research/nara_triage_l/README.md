@@ -59,13 +59,18 @@ Read by two agents (`agent_59.md`, `agent_rest.md`); their one confirmed lead wa
   wrong tables), about 70 code-administration purport entries, about 40 illegible signatures, about 30 secret-ink
   mentions developed or only summarised, cipher inventors and newspaper puzzles. Pinckney 21 July 1795: deciphered on
   the copy sent to Congress (ASP Foreign Relations 1:534-35).
-- Unconfirmed purport-only leads, ciphertext not seen (left for a later pass; NARA's catalogue answered 502 at the end
-  of this slice, so nothing more was fetched): Soviet radio intercepts forwarded from Constantinople 1921
-  (861.00/8575, /9071, /9130-9133; M316, not in the export scan; purport naId 87657409); German Legation La Paz code
-  messages 1942 that the FBI could not decipher (purport naId 88161456); Peru no. 741 code messages 1942, "cipher
-  tables are not available" (purport naId 88159920); Grimes, Manila 1898-99, seized cipher papers never read (naId
-  153563607, papers not in the file); Van Ness, Madrid 1831-32, "a paragraph or two in cypher" with no key at the
-  Department (naIds 149332001, 188612517; passages not found in the M31 vols 30-31 OCR; try the JQA Madrid code).
+- Purport-only leads, followed up once the catalogue answered again:
+  - **Row: La Paz 1941-42** (862.20224, purport naId 88161456): German, Japanese and French Legation code telegrams
+    copied by informers; the FBI returned the German copies 'unable to decipher'. File not digitised.
+  - **Row: Lima 1941** (862.20210 Transocean, purport naId 88159920): Dr. Otto Joseph's code messages, not decoded 'as
+    cipher tables are not available'. File not digitised.
+  - **Catalogue 669 unblocked**: the Soviet radio intercepts forwarded from Constantinople in 1921 (861.00/8575, 9071,
+    9130-9133; purport naId 87657409) are filmed on M316 rolls 40-48, digitised as RG 64 copies: about 390 frames of
+    typed Soviet and German cipher radiograms (Moscow-Berlin, Stockholm, Christiania, Nikolaev-Kharkov), about 62,000
+    groups, with Bristol's despatches saying they could not be deciphered. Entry 669 (the RG 457 copies, not digitised)
+    now points to them.
+  - Grimes, Manila 1898-99 (naId 153563607, fetched): the seized cipher papers are not in the file. Van Ness, Madrid
+    1831-32 (naIds 149332001, 188612517): the cipher paragraphs were not found in the M31 vols 30-31 OCR; left open.
 - Other groups (360 items): 249 already covered by slices A-K (all RG 165 and RG 65 items); the unread items they
   touch are catalogue 674-703; card-only MID leads already declined in slice E; RG 38 war diaries about the Navy's own
   undecipherable traffic and ONI ink formulas; RG 94 inventors' systems (Fuller 1878, O'Neill/McManus 1884; Wherry 1878
@@ -73,5 +78,5 @@ Read by two agents (`agent_59.md`, `agent_rest.md`); their one confirmed lead wa
 
 ## Result
 
-Two rows (catalogue 1918 Auckland, 1906 Coahuila). With this slice every detector has run over every record group
+Four rows: 757 (Auckland 1918), 758 (Coahuila 1906), 759 (La Paz 1941-42), 760 (Lima 1941); entry 669 unblocked (M316, 1921 Soviet intercepts). With this slice every detector has run over every record group
 and collection of the export.
