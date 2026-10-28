@@ -1,0 +1,210 @@
+{
+ "schema_version": 1,
+ "target": "portstemarie1729",
+ "title": "A British agent at Port Sainte-Marie to the Duke of Newcastle, coded report c. July 1729 (Huntington mssBLA 191 p. 5)",
+ "documents": [
+  {
+   "id": "mssBLA191-p5",
+   "shelfmark": "Huntington Library, William Blathwayt papers addenda, mssBLA 191, p. 5 (HDL p15150coll7 id 61005)",
+   "date": "c. July 1729",
+   "year": 1729,
+   "country": "Spain",
+   "route": "El Puerto de Santa María -> London",
+   "places": {
+    "from": "El Puerto de Santa María",
+    "to": "London"
+   },
+   "language": "French",
+   "pages": 1,
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No gloss on the leaf; the same code is glossed interlinearly on sibling letters in mssBLA 187-191.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 141,
+    "distinct": 102,
+    "unit": "code groups",
+    "measured": true,
+    "file": "ct_p5.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "HDL IIIF image 61005 at 1800 px",
+    "corrections": 0,
+    "image_quality": "good",
+    "notes": "13 lines; one group at the end of line 1 overwritten (386); 702 on line 7 has a blot."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "code"
+  ],
+  "summary": "One-part French numerical code, groups 1-1370, in alphabetical order: letters, syllables, words and names in one sorted list; groups from 1240 up act as separators.",
+  "symbol_kind": "digits",
+  "distinct_symbols": 102,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": 379,
+   "kinds": [
+    "names",
+    "common words",
+    "syllables"
+   ],
+   "unread_groups": 7
+  },
+  "nulls": {
+   "present": true
+  },
+  "key_order": "alphabetical",
+  "word_division": "kept",
+  "doubled_letters": "not applicable",
+  "sibling_key": "Glossed sibling letters in mssBLA 187-191 (23 June, 29 June, 14 July 1729 and later) in the same code; the table was rebuilt from them.",
+  "notes": "Same agent and code as the letter of 29 June 1729 that asks for a new cipher."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "Huntington catalogue: 'in cipher', no decipherment; leaf unglossed (checked 28 Oct 2026). Not on DECODE.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "sibling key"
+  ],
+  "attack": "sibling key",
+  "human_role": "Posed the target from the catalogue with /goal, pointing to the glossed siblings.",
+  "tools": [
+   "HDL IIIF download",
+   "PIL crops",
+   "python code-table decoder"
+  ],
+  "models": [
+   "claude-opus-5-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-10-28",
+  "last_date": "2026-10-28"
+ },
+ "solution": [
+  {
+   "date": "2026-10-28",
+   "kind": "access",
+   "what": "Downloaded the 39 page images of mssBLA 191, 187, 188 and the 14 July and 4 Aug 1729 items from HDL IIIF.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "transcription",
+   "what": "Transcribed p. 5 (141 groups, 13 lines) into ct_p5.txt.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "transcription",
+   "what": "Two subagents transcribed the glossed siblings (60887, 60907-60909, 60917-60920, 60963): 942 code/gloss pairs, 364 distinct codes.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "key from source",
+   "technique": [
+    "key matching"
+   ],
+   "what": "Applied the sibling table to p. 5 (decode.py): 116 of 141 groups read directly; the decode forms French sentences.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "hypothesis",
+   "technique": [
+    "contextual inference",
+    "key-structure hypothesis"
+   ],
+   "what": "Filled 18 groups from context bracketed by the alphabetical order of the code (585 ig in ig-no-re/ig-no-ra-n-ce, 275 dans, 222 conduite, 816 ordre, 1210 six between cinq and sept, 666 lu, 1118 trouver ...).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "verification",
+   "technique": [
+    "contextual inference"
+   ],
+   "what": "Read the decode as sentences and translated it; 134 of 141 groups read, 7 open (6, 274, 254, 937, 1052, 726, 836).",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "method": "key recovered based on adjacent plaintext",
+  "method_basis": "The code table was rebuilt from the interlinear decipherments on five sibling letters of the same agent in the same file and applied to the unglossed p. 5; gaps filled from the code's alphabetical order.",
+  "contribution": [
+   "key recovered",
+   "transcription"
+  ],
+  "class": "read",
+  "key": "partial",
+  "codes_open": {
+   "open": 7,
+   "total": 102,
+   "tokens_open": 7
+  },
+  "fraction_read": 0.95,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "134 of 141 groups of ct_p5.txt read (decode.py with pairs_*.tsv).",
+  "grades": {
+   "H": 116,
+   "C": 6,
+   "M": 12,
+   "I": 7
+  },
+  "verification": [
+   "historical consistency",
+   "contemporary decipherment"
+  ],
+  "validation": {
+   "date": "2026-10-28",
+   "verdict": "not applicable",
+   "notes": "code table read off contemporary glosses, not recovered by search"
+  },
+  "notes": "The agent complains that Keene leaves him without orders during the accommodation and asks Newcastle for instructions.",
+  "credits": [],
+  "texts": [
+   {
+    "doc": "mssBLA191-p5",
+    "label": "mssBLA 191 p. 5, agent at Port Sainte-Marie to Newcastle, c. July 1729",
+    "summary": "The agent thanks 'Milord' for his letter, says he answered on the sixth at the first address, complains that Mr Keene (British envoy at Madrid) has given him no orders for weeks about the accommodation, and asks for orders for his conduct. Written during the negotiations that led to the Treaty of Seville (Nov 1729).",
+    "language": "fr",
+    "state": "read",
+    "transcription": "texts/p5_transcription.txt",
+    "decryption": "texts/p5_decryption.txt",
+    "reading": "texts/p5_reading.md",
+    "translation": "texts/p5_en.md",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-28",
+     "note": "Decode forms coherent French sentences; seven isolated holes, none breaking a sentence's sense."
+    }
+   }
+  ],
+  "key_file": "texts/key.md",
+  "gaps": [
+   {
+    "item": "Code groups 6, 274, 254, 937, 1052, 726, 836",
+    "blocker": "open-codes",
+    "detail": "Not glossed in any sibling; alphabetical neighbours narrow each only to a letter range (274/254 d-, 937 qu-, 1052 s-, 726 m-, 836 p-); 6 is a number."
+   }
+  ]
+ }
+}
