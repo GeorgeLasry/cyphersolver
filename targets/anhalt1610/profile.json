@@ -20,14 +20,17 @@
     "source": "No gloss; only the receipt docket 'praes. Dessau den 23. Novemb. 1611'"
    },
    "length": {
-    "tokens": "unknown",
-    "measured": false,
-    "unit": "letters"
+    "tokens": 242,
+    "distinct": 24,
+    "unit": "letters",
+    "measured": true,
+    "file": "texts/slip1611_transcription.txt"
    },
    "transcription": {
-    "by": "unknown",
-    "source": "Not yet transcribed; line 1 provisional here, a partial reading by Brackx (issue #128)",
-    "image_quality": "good"
+    "by": "llm from images",
+    "source": "Transcribed here from the 2499-px archive image, original line over reflected line (27 Oct 2026); lines 1-2 agree with Brackx (issue #128)",
+    "image_quality": "fair",
+    "notes": "Letters as written, by their look; 242 letter tokens include the marked deletion and blot; several letter forms ambiguous once reflected."
    },
    "read": "not read"
   },
@@ -64,7 +67,7 @@
   "types": [
    "other"
   ],
-  "summary": "German in Latin script with every letter turned top to bottom (b/p, d/q, n/u, m/w trade places; e looks like o, h like y, a like v, i like X, l like j); reflecting a line restores it (Brackx). The prince's own cipher table (sign alphabet and nomenclator 10-70) and a slip nomenclator in the same series are not used by any letter found.",
+  "summary": "Upside-down writing, applied loosely: German in Latin script with every letter turned top to bottom (b/p, d/q, n/u, m/w trade places; e looks like o, h like y, a like v, i like X, l like j); reflecting a line restores it (Brackx). The prince's own cipher table (sign alphabet and nomenclator 10-70) and a slip nomenclator in the same series are not used by any letter found.",
   "symbol_kind": "letters",
   "distinct_symbols": "unknown",
   "diacritics": {
@@ -133,25 +136,42 @@
    "kind": "verification",
    "what": "Here: images 6, 241 and 400 fetched; the table is as described; image 241 flipped top to bottom gives Latin-script German with o for e under the dark gloss; slip line 1 transcribed and read as 'Will der Kayser bericht werden, dass der Hertz-', agreeing with Brackx.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "transcription",
+   "what": "Here: the Nov 1611 slip transcribed line by line from per-line crops with the reflected line under the original (texts/slip1611_transcription.txt, 242 letter tokens measured).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "reading",
+   "technique": [
+    "crib testing"
+   ],
+   "what": "Here: slip read by reflection and context: the Emperor is to be told that the Duke of Brunswick leads a disorderly life with loose women, bought a whole house for a public [?] and had [?] built, so that His Majesty has cast his disfavour on him. The writer is not consistent (W for M in Mayt., w kept in werden; t/f/k alike; u/n and e/o swapped). _check_reading: 50 words, hole rate 0.14, 2 of 5 sentences clean. Five words open; by the sentence measure (2 of 5 clean) the slip stays decoded, not read.",
+   "result": "partial"
   }
  ],
  "outcome": {
-  "method": "not solved",
-  "method_basis": "The system is identified and the 1610 letters carry decipherments of the time, but nothing is transcribed or measured yet; the Nov 1611 slip, the one undeciphered piece, is read only in its first lines.",
+  "method": "key recovered from ciphertext-only",
+  "method_basis": "The Nov 1611 slip has no decipherment of the time; Brackx identified the system (upside-down German) from the deciphered 1610 letters of the same writer, and the slip was read here by reflection, in part. The 1610 letters carry their own decipherments and are not transcribed yet.",
   "contribution": [
-   "catalogue correction"
+   "catalogue correction",
+   "transcription"
   ],
   "class": "not read",
-  "fraction_read": 0,
+  "fraction_read": 0.86,
+  "fraction_read_method": "measured",
   "key": "not applicable",
   "verification": [
-   "contemporary decipherment"
+   "historical consistency"
   ],
   "gaps": [
    {
-    "item": "Nov 1611 slip (Nr. 4 Bd. I image 400)",
-    "blocker": "not-attempted",
-    "detail": "eight lines; workable by reflection; Brackx asked for his reading (issue #128)"
+    "item": "Nov 1611 slip: five words open (noun after 'öffentlichen'; line 6 eqou, gacſſoa, ſi ſeſſou; line 2 ſel)",
+    "blocker": "illegible",
+    "detail": "letter forms ambiguous once reflected at 2499 px, the archive's largest size; Brackx's reading or the literature on Heinrich Julius in Prague may settle them"
    },
    {
     "item": "1610 letters: decipherments not transcribed or checked against the cipher lines",
@@ -164,7 +184,19 @@
     "detail": "accounts and newsletters; one image would not load"
    }
   ],
-  "notes": "In progress: catalogue 597, issue #128.",
+  "notes": "In progress: catalogue 597, issue #128. Slip read in part 27 Oct 2026; 1610 letters not transcribed.",
+  "texts": [
+   {
+    "doc": "slip1611",
+    "label": "Slip, Nov 1611 (received 23 Nov)",
+    "transcription": "texts/slip1611_transcription.txt",
+    "decryption": "texts/slip1611_reading.txt",
+    "summary": "The Emperor is to be told that the Duke of Brunswick leads a disorderly life with loose women and has fallen from favour.",
+    "state": "decoded, not read",
+    "language": "de",
+    "translation": "texts/slip1611_english.txt"
+   }
+  ],
   "credits": [
    {
     "who": "brackx",
