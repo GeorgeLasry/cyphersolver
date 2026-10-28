@@ -19,6 +19,7 @@ import numpy as np
 HERE = os.path.dirname(os.path.abspath(__file__))
 MEL = ('D l, C# q, B l, C# q, D l, C# q, B l, C# q, D l, F# q, A l, A# q, B q, B q, A q, G l, G q, E q, '
        'E q, F# s, G s, D s, C# s, D q, B q, D q, F l, F q, D q, F# q, G l, C# q, D l')
+MEL = os.environ.get('MELODY', MEL)  # override: same 'pitch dur, ...' format
 MEL = [tuple(x.split()) for x in MEL.split(', ')]
 import sys
 MINLEN = int(sys.argv[1]) if len(sys.argv) > 1 else 12

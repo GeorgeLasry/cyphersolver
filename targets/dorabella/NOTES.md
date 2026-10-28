@@ -160,6 +160,26 @@ no repeated 4-gram. Orientation F carries 23/87.
    structured (pitch → orientation, duration → arcs) 5, shuffles 5.0 (P = 0.85), random melodies 5.0; free
    ((pitch, duration) → symbol) 9, shuffles 10.5, random melodies 9.7. **Negative.** Not tried: the piano
    introduction theme, Lux Christi, Caractacus (need reading from IMSLP scores).
+21. **Turn encoding** (`ct_turn_arcs.txt`, `ct_turn_darcs.txt`; `solve.py --ct`): the letter as the change between
+   consecutive signs (orientation step × arcs of the second sign, or × arc change), 86 tokens, 22 types; the commonest
+   turn (180° with 2 arcs) is 16% of the text, e-like. Strict en-modern: −2.941 (nulls −2.80..−3.13) and −3.116
+   (nulls −3.03..−3.52); controls 5/6 ≥ 0.97. **Negative.**
+22. **Flips as word breaks** (`flipwords.py`): split at every 180° step and line end → 29 "words", mean 3.0 signs,
+   24% of length 1 (English: mean 4.1, 6% one-letter). Strict substitution with those spaces, en-modern with spaces:
+   −3.414 ("q ptach dal rm on w …"); nulls −3.61..−3.81; controls with their real spaces recovered word for word
+   (−1.27..−1.46). **Negative.**
+23. **Shorthand**: no source links Elgar to Pitman or any shorthand (searched); Sams 1970 only says the signs suggest
+   it. Pitman's curves are single quarter-arcs in ~4 directions with thick/thin for voicing; Dorabella has 1–3 arcs,
+   8 directions, no weight contrast. The testable content (signs = sounds) is step 24.
+24. **Phonetic English** (`phonetic.py`; CMU Pronouncing Dictionary, en-gutenberg converted word by word, 3.8 M
+   phonemes, no word breaks, order 4). 39 phonemes: Dorabella −3.263, nulls −3.27..−3.68, controls 0.11–0.47
+   accuracy — **no power** (more sounds than signs). Merged to 25 classes (AO/AH→AA, IY/Y→IH, UW→UH, ER→R, Z→S,
+   DH→TH, ZH→SH, NG→N, JH→CH, OY→OW, AW→AY, V→F): controls 6/6 at 0.99–1.00 (−1.74..−2.09); Dorabella −3.011,
+   nulls −2.85..−3.28. **Negative**: the signs are not English sounds under a one-to-one key.
+25. **Second Lullaby crib**: soprano bars 43–46 "Vainly play zithers gay! Here I stay all the day" (F♯ E A | A G♯ B |
+   G♯ F♯ B | F♯ E E, rhythm dotted-quarter/eighth/quarter each bar). Structured fit 4 (shuffles 4.2, P = 0.97);
+   free fit 10 at offset 30 (shuffles 9.1, P = 0.33; random melodies 6.9, P = 0.01 — the tune's own repetition, not
+   Dorabella). **Negative.** The piano introduction is chords and figuration; no single line before bar 9 to read.
 
 ## Where it stands (28 Oct 2026)
 
