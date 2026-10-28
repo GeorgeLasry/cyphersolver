@@ -69,8 +69,8 @@ manuscript decipherment was never printed. Files: `transcription_N73.txt`, `decr
 
 ## Remaining gaps
 
-- N.34: eight numbers restored from the sense (208, 598, 88, 62, 1085, 266, 981, 372): copying errors or unreadable table cells.
-- N.73 (751): about 26 numbers unresolved; a better copy (the original in the Scovell papers, or the French minute) would settle them.
+- N.34: eight numbers restored from the sense (208, 598, 88, 62, 1085, 266, 981, 372) - blocker: illegible; copying errors in the Spanish copy or unreadable cells of the table photographs (88 may be 58 and 62 may be 64, to check on the image)
+- N.73 (751): about 26 numbers unresolved - blocker: needs-physical-access; the Spanish copy is miscopied at these points; the original in the Scovell papers or the French minute would settle them
 
 ## Escalation
 
