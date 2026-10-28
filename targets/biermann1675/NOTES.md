@@ -1,6 +1,6 @@
 # Biermann copybook 1675 (Unsolved Catalogue no. 465)
 
-Status: in progress (the image-55 letters to Høeg and Meyercron read by Brice Dudout, 27 Oct 2026; Gioë, Schröder and the letters without a key open)
+Status: in progress (every image-55 letter to Høeg and Meyercron read, eleven here and 26 by Brice Dudout in `dudout/`; Gioë, Schröder and the letters without a key open)
 
 Conrad Biermann's copybook of outgoing letters from the Danish German Chancery (Tyske Kancelli, Udenrigske
 Afdeling) to Danish envoys abroad, 1675: Rigsarkivet, TKUA Almindelig del, "Conrad Biermanns kopibog over
@@ -110,15 +110,20 @@ of 27 Oct named the same key sheet the day after this folder's key sweep had fou
   ‹35›, ‹37›, ‹53›, ‹29› open, ‹163› and ‹254› unresolved, a few understood from sense. The 2 Jan letter to
   Meyercrone is in another key, as the survey here found.
 
-So the image-55 letters to Høeg and Meyercrone are read elsewhere and are not worth repeating here beyond a check of
-the 23 March letter and the 2 Jan test. What is left for this target: the letters to Gioë in England and Schröder
-(image-55 family, untested), and the letters without a key (next gap). Catalogue 465 narrowed accordingly.
+**Corrected 28 Oct 2026.** This folder had itself read the eleven Høeg letters of 2 Jan - 9 Feb 1675 and the
+Meyercron letter of 23 March on 26 Oct (`reading_1675-01-02_hoeg.md` ... `reading_1675-02-09_hoeg.md`,
+`reading_1675-03-23_meyercron.md`, with their transcriptions); the section above, written 27 Oct, missed them. Those
+twelve were read here and by Dudout independently, with the same key sheet. Dudout's pull request #133 (merged
+28 Oct 2026, `dudout/`) adds the 26 letters not read here: Høeg 13 Feb - 5 June (7) and Meyercrone 16 Feb - 21 June
+(19, with 23 March read on both sides). So every image-55 letter to Høeg and Meyercrone is now read in this folder.
+What is left: the letters to Gioë in England and Schröder (image-55 family, untested), the letters without a key (next
+gap), and a comparison of the twelve letters read on both sides. Catalogue 465 narrowed accordingly.
 
 ## Remaining gaps
 
-- Letters under the image-55 key to Gioë in England and Schröder - blocker: not-attempted; the Høeg and Meyercron letters of this family were read by Brice Dudout (27 Oct 2026, above), so these are what is left of it.
+- Letters under the image-55 key to Gioë in England and Schröder - blocker: not-attempted; every Høeg and Meyercron letter of this family is read (eleven here, 26 more in `dudout/`), so these are what is left of it.
 - Letters without a surviving key (Lilienkron, Gioë in Moscow, Reetz in Spain, Lindenow in Sweden, Klingenberg, Lincker, Meyercron 2 Jan, Høeg 21 June, Lente 21 June) - blocker: not-attempted; the whole key volume was swept and nothing fits (keyhunt.md), so the next move is a key rebuild from the ciphertext (large volumes per family) plus the cribs listed above.
-- 23 March letter to Meyercron, p105.24: one open-square sign, most likely "l" - blocker: open-codes; one occurrence, retry when more Paris letters are read.
+- 23 March letter to Meyercron, p105.24: one open-square sign, most likely "l" - blocker: open-codes; one occurrence; Dudout's reading of the same letter (`dudout/texts/1675-03-23_meyercrone_reading.md`) and his 19 Paris letters are the retry material.
 
 ## Escalation
 

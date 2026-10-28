@@ -203,6 +203,12 @@
    ],
    "what": "Four letters read as Portuguese with English translations; doubtful signs marked.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "verification",
+   "what": "PR review on merge (Claude Opus 5.5 for Daniel Bourdeau): fraction_read measured from the four decryption files (1,952 of 1,953 signs valued), replacing the estimate of 0.97.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -215,9 +221,9 @@
    "key recovered",
    "catalogue correction"
   ],
-  "fraction_read": 0.97,
-  "fraction_read_method": "estimated",
-  "fraction_read_source": "Four letters read at 97-99% of signs, doubtful signs marked on the write-up.",
+  "fraction_read": 0.999,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "texts/*_decryption.txt: 1,952 of 1,953 signs carry a value (one sign unresolved, 13 May L06); about fifteen signs in the 13 May letter are the encipherer's slips, corrected from the sense and marked {x} in the reading. Measured on review, 28 Oct 2026.",
   "first_break": true,
   "verification": [
    "matched control",

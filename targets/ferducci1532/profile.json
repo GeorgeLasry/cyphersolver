@@ -114,13 +114,19 @@
    "kind": "literature search",
    "what": "Catalogue, Cryptiana, web, Gévay: no earlier reading.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "verification",
+   "what": "PR review on merge (Claude Opus 5.5 for Daniel Bourdeau): method changed from external key to adjacent plaintext (the glossed letters are siblings in the same bundle); the glosses credited.",
+   "result": "worked"
   }
  ],
  "outcome": {
   "class": "read",
   "key": "recovered",
-  "method": "read after matching with key from external sources",
-  "method_basis": "Values taken from the contemporary glosses of two sibling letters, frozen, then applied.",
+  "method": "key recovered based on adjacent plaintext",
+  "method_basis": "Values taken from the contemporary glosses of two sibling letters, frozen, then applied. The glosses are decipherments made at the time on two letters of the same writer in the same bundle, so the key comes from adjacent plaintext (method set on review, 28 Oct 2026; submitted as an external key).",
   "contribution": [
    "key recovered",
    "sender or date identified"
@@ -139,6 +145,12 @@
     "who": "dudout",
     "role": "solution",
     "note": "table from the 1532 glosses; all eight groups read; Italian text and English translation",
+    "date": "2026-10-27"
+   },
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "the glosses written at the time over Ferducci's letters 2-2-9 (2 June 1532) and 2-2-24 (18 Sept 1532), HHStA Türkei I, from which the code values were taken",
     "date": "2026-10-27"
    }
   ],
