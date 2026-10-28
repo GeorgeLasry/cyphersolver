@@ -154,11 +154,26 @@ PAGES = [
          blurb='Asko Parpola&rsquo;s Dravidian readings checked on two independent corpora, then 2,364 hypotheses registered before testing (1,224 held, 1,140 failed), with Linear B and Ur III seal legends as controls. The grammar a reading must fit is set out: an ending slot chosen by the name&rsquo;s last sign, line breaks that never split a word unit, numerals fixed with what they count. Seal names are individual compositions, as Linear B personal names are. No sign value is established.',
          quote='255 435 690 740 &middot; 705 33 520 &middot; 2 + fish, not 6 + fish, is the commonest count',
          rights='CISI vol. 1 (Joshi and Parpola 1987); signs drawn in the indus-website font'),
+    dict(slug='lopehurtado1520', label='Lope Hurtado 1520', year='1520', y=1520.94, place='Tordesillas &rarr; Charles V', st='solved', stt='read',
+         title='Lope Hurtado de Mendoza to Charles V, Tordesillas, 10 December 1520',
+         blurb='A letter wholly in cipher, written five days after the governors&rsquo; army retook Tordesillas from the Comuneros and sent with a clear letter of the same day that Danvila printed. An archivist&rsquo;s slip points to the key of a letter of 23 September, which does not fit. Brice Dudout rebuilt the key, a homophonic letter substitution of about 37 signs with dotted sigla for persons, from the ciphertext alone and checked it on lines kept out of the work; about 97.7% of some 920 cipher words give sense. The Admiral wants a settlement with the Junta, the Marquis of Denia is hated, the army is badly commanded, and the vacant sees are to be held back.',
+         quote='&ldquo;la gente muy mal mandada, como es de muchos, que es el mayor temor que tenemos&rdquo;',
+         rights='Manuscript images: Archivo General de Simancas (PARES); text and translation: Brice Dudout, CC BY 4.0'),
+    dict(slug='ferducci1532', label='Ferducci 1532', year='1532', y=1532.55, place='Fiume &rarr; Ferdinand I', st='solved', stt='read',
+         title='Niccol&ograve; Ferducci to Ferdinand I, Fiume, 19 July 1532',
+         blurb='A spy&rsquo;s report in clear Venetian Italian from Ferdinand&rsquo;s agent at Fiume during S&uuml;leyman&rsquo;s campaign of 1532, with eight words in a small nomenclator: names, places, the month, the year and the signature, so that the archive lists the sender as N.N. Brice Dudout took the values from the glosses written at the time over two of Ferducci&rsquo;s other letters in the same bundle, fixed them and applied them; all eight give sense, and his table of Ferducci&rsquo;s 1542 letters agrees on the six groups they share. The letter then names its writer and offers to take a dozen armed men to sea, pretending to go fishing, to seize the French ambassador on his way back from the Sultan.',
+         quote='&ldquo;si fengiremo d&rsquo;andare a peschara, e secretto modo si sforzaremo di averllo&rdquo;',
+         rights='Manuscript: &Ouml;sterreichisches Staatsarchiv, HHStA, StAbt T&uuml;rkei I (AIS; images not reproduced)'),
     dict(slug='augurelio1535', label='Weinmeister 1533', year='1533', y=1533.35, place='Hungary &rarr; the Dukes of Bavaria', st='partial', stt='read in part',
          title='J&ouml;rg Weinmeister to the Dukes of Bavaria, spring 1533',
          blurb='Catalogued as a ciphered letter of &ldquo;Augurellio&rdquo;, it is a report from the Bavarian agent J&ouml;rg Weinmeister, who signs in cipher, on King John&rsquo;s siege of Palota in 1533. The homophonic key of the volume&rsquo;s System A&prime; was recovered from contemporary glosses on a sibling letter and on this one (adjacent plaintext), and 96.7% of the letter&rsquo;s words are deciphered.',
          quote='&ldquo;er sol von solchen sachen des morgens, wan er nuechter sei, mit ime reden&rdquo;',
          rights='Bayerisches Hauptstaatsarchiv, via DECODE R9407'),
+    dict(slug='huyson1547', label='Henry II to Suleiman 1547', year='1547', y=1547.75, place='Constantinople &rarr; Ferdinand I', st='solved', stt='external key matched',
+         title='Henry II to Suleiman, 1547: Malvezzi&rsquo;s enciphered copy',
+         blurb='Ferdinand I&rsquo;s resident at the Porte, Giovanni Maria Malvezzi, sent Vienna an enciphered Latin copy of three letters of Henry II to Suleiman, among them the credence for the sieur d&rsquo;Huyson, with his own Italian notes (HHStA T&uuml;rkei I 7-2-18). Brice Dudout deciphered it with Malvezzi&rsquo;s alphabet from DECODE R367/R386, calibrated on a sibling copy against its decipherment of the time and tested blind on a letter of 1550: about 97.5% of some 1,550 word groups. Henry asks the Sultan to have the Swiss included in the truce with Charles V and Ferdinand, warns against the Cr&eacute;py articles slipped into the Emperor&rsquo;s ratification, and asks for the Ottoman fleet.',
+         quote='&ldquo;tunc michi scripsit literas lusorias et ridicolas&rdquo;',
+         rights='&Ouml;sterreichisches Staatsarchiv, HHStA StAbt T&uuml;rkei I 7-2-18; no image reproduced'),
     dict(slug='philip1574', label='Philip II to Don Juan 1574', year='1574', y=1574.65, place='Madrid &rarr; Don Juan of Austria', st='solved', stt='read',
          title='Philip II to Don Juan of Austria, Madrid, 28 August 1574',
          blurb='A ciphered royal letter in the Koninklijk Huisarchief (G016-A0204) came with a clear version on a separate sheet. Rebuilding the key from the pair (letters near alphabetical order, vowels added as a cross or a dot on the preceding sign) confirms the clear version on the lines checked and corrects it twice. The King sends Don Juan the ransomed ensign Diego de Esquivia and answers Hürrem Bey, the Sultan&rsquo;s chief interpreter.',
@@ -596,6 +611,16 @@ PAGES = [
          title='Fra Giovanni di Lucca to Ferdinand III, 1644',
          blurb='A 231-figure Italian cipher paragraph in a friar&rsquo;s letter to the Emperor (DECODE R2159), a substitution with two figures for each vowel. The key was recovered using the opening words Tomokiyo had published as a crib, and every figure was decrypted; checked against the manuscript, the apparent polyphony turned out to be ten misread 4s and three encipherment slips. The Grand Hetman Koniecpolski offers to keep the Turk from R&aacute;k&oacute;czi, raise Moldavia against him and give two thousand Cossacks.',
          quote='&ldquo;il principe di Bogdania, et li dar&ograve; dumilia Cosachi &hellip; che non faccia pace fin che non l&rsquo;habbi humiliato o vinto&rdquo;'),
+    dict(slug='wasowicz1662', label='W&#261;sowicz to Lubomirski 1662&ndash;1663', year='1662&ndash;1663', y=1662.91, place='W&#261;sowicz &rarr; Aleksander Micha&#322; Lubomirski', st='solved', stt='known key applied',
+         title='Ludwik W&#261;sowicz to Aleksander Micha&#322; Lubomirski, 1662&ndash;1663',
+         blurb='Seven letters from a Mazovian nobleman, the stolnik of &#321;om&#380;a, to the Grand Master of the Horse of the Crown: clear Polish with names and the sentences that matter in two-digit numbers (ANK, AKPot 3227; DECODE R7503&ndash;R7510). Brice Dudout deciphered every cipher passage with the nineteenth-century table filed in the same volume (DECODE R7501), checked blind on the letter of 5 May 1663: 1,561 of 1,587 numbers without doubt, the rest slips or doubtful digits settled by sense. The confederated army at Wolb&oacute;rz waits for its pay, the court strives to keep the agreement with it, and the Marshal, Jerzy Sebastian Lubomirski, is watched two years before his rebellion.',
+         quote='&ldquo;iam ani hetman ani &#380;o&#322;nierz do wiosny&rdquo;',
+         rights='Archiwum Narodowe w Krakowie, Archiwum Krzeszowickie Potockich 3227; DECODE images restricted, none reproduced'),
+    dict(slug='vilaflor1663', label='Afonso VI to Vila Flor 1663', year='1663', y=1663.38, place='Lisbon &rarr; army of the Alentejo', st='solved', stt='read',
+         title='Afonso VI to the Count of Vila Flor, May 1663',
+         blurb='Four cipher letters of Afonso VI, countersigned by Castelo Melhor, to the general of the Alentejo army, written while Don John of Austria besieged and took &Eacute;vora (ANTT, Lu&iacute;s de Miranda Pereira liv. 2). Brice Dudout recovered the substitution key from the ciphertext of the 26 May letter, froze it and tested it on the 13 May letter; second copies with other homophones and a sentence clear in one copy and enciphered in the other confirm it. The court sends cavalry and pay, plans to bring the King to Set&uacute;bal, and orders the relief of &Eacute;vora at all risk, even at the cost of a battle. Catalogued as 1660&ndash;61. Contributed by Brice Dudout.',
+         quote='&ldquo;he socorrer Evora em todo o cazo e a todo o risco&rdquo;',
+         rights='Manuscript rights: Arquivo Nacional Torre do Tombo, via DigitArq'),
     dict(slug='hesse1672', label='Hamburg despatch to Kassel 1672', year='1672', y=1672.4, place='Hamburg &rarr; Kassel', st='partial', stt='key matched, partial',
          title='A Hamburg despatch to the Hessian chancellor, 4/14 May 1672',
          blurb='A German despatch from Hamburg to the chancellor at Kassel (HStAM 4 f D&auml;nemark Nr. 125; HCPortal 494, &ldquo;partially solved&rdquo;), with 26 code numbers glossed by a second hand and two short letter-cipher passages. The letter table of a Hessian key of 1666 filed elsewhere in Marburg (HCPortal key 255) reads both passages; one five-sign word stays without sense. Denmark, Brandenburg and Brunswick in the spring of the Dutch War.',
@@ -1267,6 +1292,11 @@ PAGES = [
          blurb='Four clear letters of Leicester, Burghley and Walsingham, catalogued by DECODE as a cipher from an unknown sender. Code [3] = the Queen was identified from context; the other codes and a nine-symbol cipher run are not deciphered, as no key survives.',
          quote='He wisheth [3] to look well to Scotland',
          rights='British Library, via DECODE R8361'),
+    dict(slug='stade1710', label='Charles XII to the R&aring;det 1710', year='1710', y=1710.32, place='Bender &rarr; Stockholm', st='solved', stt='read',
+         title='Charles XII to the Council of the Realm, Bender, 26 April 1710',
+         blurb='Charles XII&rsquo;s letter from Bender to the Swedish Council of the Realm, with a second copy for his envoys in London and The Hague, in a Swedish nomenclator of about 1,100 numbers in alphabetical order (NLA Stade Rep. 5a Nr. 670). Brice Dudout rebuilt the key from a ciphered troop list and its clear draft in the same file, tested it on letters not used to build it, and deciphered both copies: 639 of 640 groups. After the Danish defeat at Helsingborg the King offers Denmark peace under the mediation of the Maritime Powers and gives the Council a free hand to agree an armistice, even for a whole year. Contributed by Brice Dudout.',
+         quote='&ldquo;s&aring; &auml;re wi ben&auml;gne att inga med Konungen i B.B. en billig fred under Sj&ouml;makternas mediation&rdquo;',
+         rights='Manuscript images: Nieders&auml;chsisches Landesarchiv, Abt. Stade (Public Domain Mark), via Archivportal-D'),
     dict(slug='palm1727', label='Palm 1727', year='1727', y=1727.2, place='London &rarr; Starhemberg', st='stuck', stt='key not found',
          title='Palm to Starhemberg and Visconti, 1727',
          blurb='A German letter of the Emperor&rsquo;s resident in London with fourteen passages in a homophonic cipher with a small nomenclator, a few groups glossed at the time. The key filed beside it belongs to Windischgr&auml;tz and contradicts the glosses. A ciphertext-only solver failed on 162 letter tokens, and a matched control shows the text is too short; not deciphered.',
@@ -3864,3 +3894,9 @@ IMAGES['greenhow1861'] = ('greenhow1861_lead.jpg', 'Side 1, lines 4&ndash;10: &h
 IMAGES['jordan1861'] = ('jordan1861_lead.jpg', 'The left block of the burnt fragment, inverted: HAR with &ldquo;h a r&rdquo; under it, SCOTT, HANS FIELD FORTIFICATION', 'National Archives, RG 59, Seized Correspondence of Rose O&rsquo;Neal Greenhow, naId 6925618, image 1, via the National Archives Catalog; inverted and contrast-stretched here')
 IMAGES['puebla1506'] = None
 IMAGES['comenius1655'] = ('comenius1655_lead.jpg', 'The cipher sentence of 4 August 1655 as printed by Patera', 'A. Patera, Jana Amosa Komensk&eacute;ho korrespondence (Praha 1892), p. 182, via the Internet Archive (bub_gb_xnVMAAAAYAAJ)')
+IMAGES['lopehurtado1520'] = None
+IMAGES['ferducci1532'] = None
+IMAGES['huyson1547'] = None
+IMAGES['wasowicz1662'] = None
+IMAGES['stade1710'] = ('stade1710_f85r.jpg', 'Fol. 85r, the copy for the envoys: the account of the Danish defeat in clear, then the letter&rsquo;s number groups', 'Nieders&auml;chsisches Landesarchiv, Abt. Stade, Rep. 5a Nr. 670 fol. 85r (image 0086), via Archivportal-D')
+IMAGES['vilaflor1663'] = ('vilaflor1663_26may.jpg', 'The letter of 26 May 1663: the greeting in clear, then the order to relieve &Eacute;vora in cipher', 'Arquivo Nacional Torre do Tombo, Lu&iacute;s de Miranda Pereira liv. 2 (PT/TT/LMP/0002), image m0037, via DigitArq')

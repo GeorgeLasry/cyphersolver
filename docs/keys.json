@@ -1,5 +1,11 @@
 {
  "keys": [
+{"id": "k-dudout-vilaflor1663", "label": "Afonso VI-Vila Flor substitution of 1663 (K1-K3), recovered by Brice Dudout", "kind": "scholar's key", "by": "Brice Dudout with Claude Opus 5.5", "year": 1663, "found": 2026, "note": "Letter substitution with homophones on Portuguese: numbers 2-53 and letter-like symbols (barred z = d, delta = i, long-stemmed B = n, barred 7 = h, overlined x = z; cursive x = c, h = l, n = f, r = g, a = p, d = x). K1 (30 symbols) recovered ciphertext-only from the letter of 26 May 1663 and frozen; K2 and K3 add ten homophones set on the 13 May letter. ANTT Luís de Miranda Pereira liv. 2 (targets/vilaflor1663/key_K1.tsv, key_K2.tsv, key_K3.tsv)."},
+{"id": "k-dudout-k1710", "label": "Charles XII field chancery nomenclator K1710, rebuilt by Brice Dudout", "kind": "scholar's key", "by": "Brice Dudout with Claude Opus 5.5", "year": 1710, "found": 2026, "note": "Swedish one-part nomenclator of about 1,100 numbers in alphabetical order: letters 31-98 in two series, syllables 99-182, numbers 183-211, endings 212-304, words and names 310-1102; Denmark, England and Holland written in clear as B.B., LL, ddd. 334 values rebuilt by crib from a ciphered troop list and its clear draft in NLA Stade Rep. 5a Nr. 670 (fols. 73 and 82 against 74), frozen and tested on fols. 100 and 78v-79r (targets/stade1710/key.tsv)."},
+{"id": "k-r7501", "label": "Klucz Wąsowicza (i Kotowicza) do Alex. Lubomirskiego (DECODE R7501, ANK AKPot 3227 p. 81)", "kind": "DECODE key record", "by": "unknown nineteenth-century archivist (reconstruction)", "year": 1662, "note": "A 1-100 grid on ruled paper with only the 25 values used filled in, one two-digit number per letter; a nineteenth-century reconstruction, not the key of the time, probably made at Krzeszowice (Łepkowski or Kluczycki). Checked on R7502, deciphered between the lines, and blind on R7508 by Brice Dudout (27 Oct 2026)."},
+{"id": "k-ferducci1532-glosses", "label": "Ferducci's 1532 nomenclator, from the glosses on his letters 2-2-9 and 2-2-24", "kind": "rebuilt here", "by": "Brice Dudout (with Claude)", "year": 1532, "note": "Three-figure numbers for names and words (543 Ferducci, 547 Martino Lucio, 518 S. Vito, 520 ambasciatore, 521 Francia), Q19 Ragusa, D-groups for months and the year; taken from the glosses written at the time over HHStA Türkei I 2-2-9 (2 June 1532) and 2-2-24 (18 Sept 1532) and frozen before use (targets/ferducci1532/decryption.txt)."},
+{"id": "k-lopehurtado1520-sept", "label": "Key of Lope Hurtado's letter of 23 September 1520 (AGS PTR,LEG,2,36,2)", "kind": "contemporary key", "by": "", "year": 1520, "note": "The letter of 23 Sept 1520 is printed deciphered by Danvila (MHE XXXVI); a slip by the archivist J. Paz in the bundle names it as the key to the 10 December cipher letter."},
+{"id": "k-lopehurtado1520-k4", "label": "Lope Hurtado's Tordesillas cipher, 1520 (key K4, rebuilt from the letter)", "kind": "rebuilt here", "by": "Brice Dudout (with Claude)", "year": 1520, "note": "Homophonic letter substitution of about 37 signs (barred o = t, cross = s, 9 = a, long s = g, a T-shaped sign = z; some signs with two or three values), words kept apart, dotted sigla for persons; rebuilt from AGS PTR,LEG,2,36,8 alone, held-out lines frozen before use (targets/lopehurtado1520/key_K4.tsv)."},
 {"id": "k-bernstorff-0075-1917", "label": "German embassy code (probably 0075), 82 groups from telegram No. 205", "kind": "rebuilt here", "by": "WAINUT", "year": 1917, "note": "Two-part four-figure code with prefix figures; 82 base groups fixed by aligning groups 0-146 of NARA 763.72111/4443 with the German text Bernstorff printed in 1920 (targets/bernstorff1917/codebook.tsv). Attribution to code 0075 probable, not proven."},
 {"id": "k-hintze1903", "label": "Hintze Ribeiro's code to Queen Amelie (1903), values rebuilt here", "kind": "rebuilt here", "by": "cyphersolver", "year": 1903, "note": "Code of up to five figures (1347-67398 seen). 24 values from aligning the 11 May 1903 telegram (ANTT PT/TT/CAM/M15 m0003) with the decode written under it, segment by segment (27 Oct 2026, WAINUT); order alphabetical within page blocks of 100 with the lower pages reversed (hypothesis). targets/hintze1903/code_values.tsv."},
 {"id": "k-lima-1909-code", "label": "Venceslau de Lima's two-part code, 1909 (261 values rebuilt here)", "kind": "rebuilt here", "by": "WAINUT", "year": 1909, "note": "Five-figure two-part (randomised) Portuguese code, 06 full stop, 04 comma; 261 values from the receiver's pencil glosses on the eight telegrams of PT/TT/CAM/M09 (targets/lima1909/code_values.tsv)."},
@@ -2364,6 +2370,12 @@
 {"id": "k-thomson-we007-jay", "label": "Thomson code, Jay's copy (Weber WE007), 1781", "kind": "archive key", "by": "Charles Thomson", "year": 1781, "note": "Printed form with numbers by hand, Columbia RBML Jay Papers ldpd:50144; headed as modified by Livingston 6 July 1782; carries the be-he 600-605 additions in manuscript."}
  ],
  "links": [
+{"key": "k-dudout-vilaflor1663", "target": "vilaflor1663", "how": "rebuilt from", "note": "recovered from the ciphertext of the 26 May letter, frozen and tested on the 13 May letter; deciphers all four letters of 13-26 May 1663"},
+{"key": "k-dudout-k1710", "target": "stade1710", "how": "rebuilt from", "note": "rebuilt by crib from the troop list in the same file; deciphers both copies of the letter of 26 April 1710, 639 of 640 groups"},
+{"key": "k-r7501", "target": "wasowicz1662", "how": "read unchanged", "note": "all seven letters (R7503-R7510); numbers outside the table are the writer's slips (69/96, 36/63, 92/52), settled by sense"},
+{"key": "k-r367", "target": "huyson1547", "how": "adapted", "note": "Malvezzi's alphabet calibrated by Brice Dudout on HHStA Türkei I 7-3-20 f. 44 against its decipherment of the time (f. 45), frozen as K-C01 (targets/huyson1547/key_KC01.json) and tested blind on Türkei I 8-3-8; a few values added in the reading notes"},
+{"key": "k-ferducci1532-glosses", "target": "ferducci1532", "how": "rebuilt from", "note": "values from the sibling letters' glosses, frozen, then applied to the unglossed 2-2-19: 8 of 8 groups"},
+{"key": "k-lopehurtado1520-k4", "target": "lopehurtado1520", "how": "rebuilt from", "note": "rebuilt from the ciphertext alone; held-out verso ll. 11-17 give 0.827 of words against a 0.596 maximum for shuffled keys"},
 {"key": "k-bernstorff-0075-1917", "target": "bernstorff1917", "how": "rebuilt from", "note": "82 code groups recovered from telegram No. 205 against its 1920 print; 69 of the 430 groups of the second text match them, no sentence"},
 {"key": "k-hintze1903", "target": "hintze1903", "how": "rebuilt from", "note": "24 values from the decode of the time on m0003; only 41285 recurs in m0001"},
 {"key": "k-lima-1909-code", "target": "lima1909", "how": "rebuilt from", "note": "values paired from the decodes of the time above the groups; repeated groups agree"},
@@ -3769,6 +3781,9 @@
   }
  ],
  "source_links": [
+{"source": "s-decode", "key": "k-r7501"},
+{"source": "s-cyphersolver", "key": "k-ferducci1532-glosses"},
+{"source": "s-cyphersolver", "key": "k-lopehurtado1520-k4"},
 {"source": "s-cyphersolver", "key": "k-bernstorff-0075-1917"},
 {"source": "s-cyphersolver", "key": "k-hintze1903"},
 {"source": "s-cyphersolver", "key": "k-lima-1909-code"},
@@ -4456,6 +4471,7 @@
   "urquhart": "No cipher key: a rule-based word puzzle, read by applying the stated rule (see the write-up)."
  },
  "tried": [
+{"key": "k-lopehurtado1520-sept", "target": "lopehurtado1520", "note": "named by J. Paz's slip; its values are incompatible with the 10 December cipher (Brice Dudout, 27 Oct 2026)"},
 {"key": "k-sabugosa-code", "target": "carlos1903", "note": "Sabugosa's code of the same weeks is alphabetical; this one is not (38564 ter < 58215 com), and no value carries over"},
 {"key": "k-sabugosa-code", "target": "hintze1903", "note": "no group shared (code.py, part 5)"},
 {"key": "k-lima-1909-code", "target": "hintze1903", "note": "no group shared (code.py, part 5)"},

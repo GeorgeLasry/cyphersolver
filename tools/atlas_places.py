@@ -15,6 +15,7 @@ ATLAS = ROOT / 'docs' / 'atlas.json'
 
 # places added with the 25 Oct 2026 backfill (lat, lon); names are what the atlas shows
 NEW_PLACES = {
+    'Tordesillas': [41.500, -5.000], 'Worms': [49.632, 8.359], 'Bender': [46.83, 29.48], 'Estremoz': [38.844, -7.586],  # Dudout PRs, Oct 2026
     'Monte Estoril': [38.705, -9.397], 'Oran': [35.697, -0.633], 'Bussaco': [40.3775, -8.3692], 'Sintra': [38.7876, -9.3906],  # Portuguese royal telegrams 1903-10
     'Martinique': [14.602, -61.071],  # Fort-Royal (Fort-de-France), seat of the governor and intendant of the Windward Islands
     'Fürstenau': [49.664, 9.003],  # Schloss Fürstenau, Michelstadt (Odenwald)

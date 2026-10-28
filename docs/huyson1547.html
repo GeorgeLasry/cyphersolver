@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Henry II to Suleiman, in Malvezzi&rsquo;s cipher (1547) &mdash; external key matched</title>
+<meta name="description" content="Giovanni Maria Malvezzi, Ferdinand I's resident at the Porte, sent Vienna an enciphered Latin copy of three letters of Henry II to Suleiman the Magnificent, among them the letter of credence for the sieur d'Huyson, with his own Italian notes (HHStA Türkei I 7-2-18, 1547). Brice Dudout deciphered it with Malvezzi's alphabet from DECODE R367/R386, calibrated on a sibling copy whose decipherment of the time survives and checked blind on a letter of 1550: about 97.5% of the word groups. Henry II asks the Sultan to have the Swiss included in the truce with Charles V and Ferdinand, warns him against the Emperor's ratification, and asks for the Ottoman fleet. Contributed by Brice Dudout.">
+<link rel="stylesheet" href="style.css?v=20261027c">
+<meta name="date" content="2026-10-27">
+<meta name="last-modified" content="2026-10-27">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+</head>
+<body id="top">
+<header class="nav"><div class="in">
+  <a class="brand" href="index.html"><span class="glyph">972</span><span>Cyphersolver</span></a>
+  <button class="navtoggle" type="button" aria-expanded="false" aria-controls="sitemenu"><span></span><span></span><span></span><i>Menu</i></button>
+  <nav id="sitemenu" class="links" aria-label="Site">
+    <details class="menu"><summary class="active">Write-ups <svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary>
+      <div class="panel wp"><div class="grp latest"><h4>Latest</h4><ul><li><a href="lopehurtado1520.html"><i class="dot solved" aria-hidden="true"></i><b>Lope Hurtado 1520</b><span class="yr">1520</span><span class="m">ciphertext-only break</span></a></li><li><a href="ferducci1532.html"><i class="dot solved" aria-hidden="true"></i><b>Ferducci 1532</b><span class="yr">1532</span><span class="m">key from adjacent plaintext</span></a></li><li><a href="huyson1547.html" aria-current="page"><i class="dot solved" aria-hidden="true"></i><b>Henry II to Suleiman 1547</b><span class="yr">1547</span><span class="m">external key matched</span></a></li><li><a href="wasowicz1662.html"><i class="dot solved" aria-hidden="true"></i><b>W&#261;sowicz to Lubomirski 1662&ndash;1663</b><span class="yr">1662&ndash;1663</span><span class="m">known key applied</span></a></li><li><a href="vilaflor1663.html"><i class="dot solved" aria-hidden="true"></i><b>Afonso VI to Vila Flor 1663</b><span class="yr">1663</span><span class="m">ciphertext-only break</span></a></li><li><a href="stade1710.html"><i class="dot solved" aria-hidden="true"></i><b>Charles XII to the R&aring;det 1710</b><span class="yr">1710</span><span class="m">key from adjacent plaintext</span></a></li></ul></div><div class="grp outc"><h4>By outcome</h4><ul><li><a href="writeups.html#kind=ct"><i class="dot solved" aria-hidden="true"></i><b>Ciphertext-only break</b><b class="sh">Ciphertext-only</b><span class="n">73</span></a></li><li><a href="writeups.html#kind=extpt"><i class="dot solved" aria-hidden="true"></i><b>Key from external plaintext</b><b class="sh">Ext. plaintext</b><span class="n">13</span></a></li><li><a href="writeups.html#kind=adjpt"><i class="dot solved" aria-hidden="true"></i><b>Key from adjacent plaintext</b><b class="sh">Adj. plaintext</b><span class="n">85</span></a></li><li><a href="writeups.html#kind=extkey"><i class="dot solved" aria-hidden="true"></i><b>External key matched</b><b class="sh">External key</b><span class="n">30</span></a></li><li><a href="writeups.html#kind=known"><i class="dot solved" aria-hidden="true"></i><b>Known key applied</b><b class="sh">Known key</b><span class="n">96</span></a></li><li><a href="writeups.html#kind=deciph"><i class="dot solved" aria-hidden="true"></i><b>Existing decipherment</b><b class="sh">Existing reading</b><span class="n">90</span></a></li><li><a href="writeups.html#kind=notsolved"><i class="dot stuck" aria-hidden="true"></i><b>Not solved</b><b class="sh">Not solved</b><span class="n">72</span></a></li><li><a href="writeups.html#kind=na"><i class="dot found" aria-hidden="true"></i><b>Not applicable</b><b class="sh">Not applicable</b><span class="n">18</span></a></li><li><a href="writeups.html#kind=survey"><i class="dot todo" aria-hidden="true"></i><b>Surveys</b><b class="sh">Surveys</b><span class="n">2</span></a></li></ul></div><div class="foot"><a class="all" href="writeups.html">All 479 write-ups, with filters &rarr;</a><a href="writeups.html#src=notes">Results only in the notes</a></div></div></details>
+    <details class="menu"><summary>Explore <svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary>
+      <div class="panel ex"><ul><li><a href="highlights.html"><b>Highlights</b><span class="d">Thirty favourites: the funny, the historic, the ingenious</span></a></li><li><a href="glossary.html"><b>Glossary</b><span class="d">How each cipher was solved, and the terms used</span></a></li><li><a href="famous.html"><b>The famous ones</b><span class="d">Why Voynich, Kryptos, Beale and Dorabella resist</span></a></li><li><a href="atlas.html"><b>Atlas</b><span class="d">Every letter drawn on the map, five centuries of it</span></a></li><li><a href="keys.html"><b>Key web</b><span class="d">Which key read which letter</span></a></li><li><a href="secret.html"><b>Secret letter</b><span class="d">Seal a message in a real historical cipher</span></a></li></ul><div class="foot"><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">The code and the working notes on GitHub &#8599;</a></div></div></details>
+    <a class="navcat" href="catalogue.html">Catalogue<span class="sticker" aria-hidden="true"><span><b>Help<br>Solve!</b></span></span></a>
+    <a class="navcat" href="further.html">Read further<span class="sticker alt" aria-hidden="true"><span><b>Finish<br>It!</b></span></span></a>
+    <a href="contributors.html">Contributors</a>
+    <button class="searchbtn" type="button" aria-label="Search the site" aria-keyshortcuts="/ Control+K"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><circle cx="6.8" cy="6.8" r="5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 10.5L15 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span>Search</span><kbd>/</kbd></button>
+    <button class="theme" type="button" aria-label="Switch between dark and light" title="Dark / light"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.2" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.8a6.2 6.2 0 0 1 0 12.4z" fill="currentColor"/></svg></button>
+  </nav>
+</div></header>
+<div class="search" id="search" hidden>
+  <div class="sbox" role="dialog" aria-modal="true" aria-label="Search the site">
+    <form class="sform" role="search" onsubmit="return false">
+      <svg width="18" height="18" viewBox="0 0 16 16" aria-hidden="true"><circle cx="6.8" cy="6.8" r="5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 10.5L15 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      <input type="search" id="sq" placeholder="Search names, places, shelfmarks, words of the cipher&hellip;" autocomplete="off" spellcheck="false" aria-label="Search" aria-controls="sres">
+      <button type="button" class="sclose" aria-label="Close search">Esc</button>
+    </form>
+    <div class="sres" id="sres" role="listbox" aria-label="Results"></div>
+    <div class="shint"><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> move</span><span><kbd>&crarr;</kbd> open</span><span><kbd>Esc</kbd> close</span><span class="sn" id="sn"></span></div>
+  </div>
+</div>
+
+<section class="hero">
+  <div class="cipherstrip">&pi; 8&#778; e #o h 7 13 &Gamma; f k &middot; &#439; 12 &deg;P F # h P e &#985; F<br>Serenissime Ottomanorum<br>&pi; = s &middot; 8&#778; = e &middot; h = n &middot; 13 = ss &middot; &#439; = o &middot; 12 = tt</div>
+  <p class="kicker">Constantinople &rarr; Ferdinand I &middot; homophonic cipher of graphic signs with nulls and code syllables &middot; 1547 &middot; external key matched</p>
+  <h1>Henry II to Suleiman, 1547: the letters Malvezzi copied in cipher</h1>
+<div class="parties"><figure class="party sender"><img src="portrait_henry-ii-2.jpg" alt="Henry II" title="Henry II: Portrait, Workshop of François Clouet. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">from</span>Henry II</figcaption></figure><span class="arrow" aria-hidden="true">&rarr;</span><figure class="party recipient"><img src="portrait_suleiman-the-magnificent.jpg" alt="Suleiman the Magnificent" title="Suleiman the Magnificent: Portrait, circle of Titian, 1530s (Kunsthistorisches Museum, Vienna). Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">to</span>Suleiman the Magnificent</figcaption></figure></div><!-- /parties -->
+  <p class="sub">Ferdinand&rsquo;s resident at the Porte sent Vienna a Latin copy, in his own cipher, of Henry II&rsquo;s letters to Suleiman; his alphabet on DECODE, checked on a sibling copy, deciphers about 97.5% of it.</p>
+  <p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-10-27">27 October 2026</time></p>
+<p class="outcome">Method: <a href="glossary.html#extkey">read after matching with key from external sources</a> &middot; Extent: complete</p><!-- /outcome -->
+<p class="credits">Contributed by <a href="contributors.html#dudout">Brice Dudout</a> (solution) &middot; Also credited &middot; <a href="contributors.html#decode">DECODE database</a> (key or decipherment used) &middot; <a href="contributors.html#contemporary">Contemporary key or decipherment</a> (key or decipherment used)</p><!-- /credits -->
+<div class="seal solved" aria-hidden="true"><span>key matched</span></div>
+</section>
+<main>
+<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#copy">The copy</a><a href="#cipher">The cipher and the key</a><a href="#credence">The letter of credence</a><a href="#truce">The truce and the Swiss</a><a href="#captain">The captain’s letter</a><a href="#method">How it was deciphered</a><a href="#prior">Earlier work and print</a><a href="#open">What remains uncertain</a><a href="#texts">Full texts</a><a href="#sources">Sources</a></nav>
+<div class="callout glance">
+<p class="gl-top"><strong>At a glance</strong><span class="gl-res">External key matched &middot; complete</span></p>
+<dl>
+  <dt>The document</dt><dd>Giovanni Maria Malvezzi, Ferdinand I&rsquo;s resident in Constantinople, copied three letters of Henry II to Suleiman the Magnificent into Latin and cipher, with his own notes in Italian: the letter of credence for the sieur d&rsquo;Huyson, a long letter on the truce, and a third brought by a captain. The letters are of autumn 1547; the copy went to Ferdinand as an enclosure to Malvezzi&rsquo;s dispatch of 8 March 1548.</dd>
+  <dt>Where</dt><dd>&Ouml;sterreichisches Staatsarchiv, Haus-, Hof- und Staatsarchiv, Vienna, Staatenabteilungen T&uuml;rkei I 7-2-18, fols. 143r&ndash;146r, 207 lines of cipher. The archive&rsquo;s catalogue marks it &ldquo;Inhalt nicht dechiffriert&rdquo;. Catalogue entry 500 (the other T&uuml;rkei I files stay open there).</dd>
+  <dt>The cipher</dt><dd>Malvezzi&rsquo;s alphabet: two to four graphic signs for each letter, numbers for doubled letters, null syllables and null Latin words, and a few code syllables (Bi the King of France, Ras the Sultan, Ab the French).</dd>
+  <dt>How it was deciphered</dt><dd>Brice Dudout took Malvezzi&rsquo;s alphabet from DECODE R367 and R386, calibrated it on another enciphered copy of the series whose decipherment of the time survives (T&uuml;rkei I 7-3-20), froze it, tested it blind on an unglossed letter of 1550, and then transcribed and deciphered 7-2-18 line by line on the archive&rsquo;s images.</dd>
+  <dt>What it says</dt><dd>Henry II accredits d&rsquo;Huyson, asks the Sultan to have France&rsquo;s allies, the Swiss first, included in the truce Charles V and Ferdinand have just made with the Porte, warns that the Emperor&rsquo;s ratification smuggles in the lapsed promises of Cr&eacute;py, and asks for the Ottoman fleet. Malvezzi adds that the French present their king&rsquo;s letters in Turkish and undated, &ldquo;per posser negare&rdquo;.</dd>
+  <dt>Still open</dt><dd>18 unresolved groups in the contributor&rsquo;s count (27 places marked as open in the established text, some of them part of a word), and 86 readings given as probable; the captain&rsquo;s name rests on one sign.</dd>
+  <dt>Credit</dt><dd>Transcription, decipherment, Latin and Italian text and English translation by Brice Dudout, with Claude Opus 5.5 agents, 27 October 2026; <a href="https://bdudout.github.io/europe-chiffree/en/documents.html#huyson-1547" rel="noopener">his write-up on Europe chiffr&eacute;e</a>. The key is Malvezzi&rsquo;s alphabet as filed on DECODE (R367, R386); the calibration used the decipherment made at the time of T&uuml;rkei I 7-3-20.</dd>
+</dl>
+</div>
+
+<h2 id="copy"><span class="num">01</span> The copy</h2>
+<p>In the autumn of 1547 Henry II, king for six months, sent his pantler, the sieur d&rsquo;Huyson (the copy spells him Duson, Dusson and Dussun), to Constantinople with a letter of credence for Suleiman and instructions; the French ambassador at the Porte was Gabriel d&rsquo;Aramon. Charles V and Ferdinand had just obtained a five-year truce from the Porte, signed at Adrianople in June 1547. Henry wanted his allies included in it and the Emperor&rsquo;s good faith put in doubt. Ferdinand&rsquo;s resident at the Porte, Giovanni Maria Malvezzi, got hold of the texts and sent them to his master in cipher.</p>
+<p>The copy fills four leaves, fols. 143r&ndash;146r, 207 lines. It has six parts: a two-line Italian heading by Malvezzi; the letter of credence (143r ll. 3&ndash;17); a note by Malvezzi on how the French handle their king&rsquo;s letters at the Porte (143r ll. 18&ndash;30); the long letter on the truce (143r l. 31 to 145v l. 15); a second short Italian heading; and the letter brought by a captain after d&rsquo;Huyson (145v l. 18 to 146r l. 19). The archive&rsquo;s catalogue dates the item about September 1547 and records that it came as an enclosure to Malvezzi&rsquo;s letter to Ferdinand of 8 March 1548.</p>
+<p>Malvezzi says how he made the Latin. The French, he writes, do not present the king&rsquo;s letters in the form the Most Christian King wrote them: they have them put into Turkish language and script, adding and removing what they please, and leave out the date and place, so as to be able to deny them. He renders them <i lang="it">dal turchesche in latino de uerbo ad uerbum</i>. The Latin is therefore a back-translation from the Turkish, which explains its wavering between &ldquo;we&rdquo; and &ldquo;I&rdquo; and between &ldquo;Your Majesty&rdquo; and the third person, and the formula <i lang="la">et {loco suo}</i> before the signature, probably the place of the seal or the royal monogram in the Turkish version.</p>
+<p>No image of the manuscript is reproduced on this page: the Austrian State Archives ask to be notified, and charge a fee, before reproductions of their holdings are published. The signs on this page are typed from the transcription.</p>
+
+<h2 id="cipher"><span class="num">02</span> The cipher and the key</h2>
+<p>The cipher is Malvezzi&rsquo;s own, the one that also carries Ferdinand&rsquo;s letter to him of 23 January 1548, which has its own page: <a href="malvezzi1548.html">Ferdinand I to Malvezzi, 1548</a>. Each letter has two to four graphic signs: planetary and alchemical signs, Greek letters, and Latin letters used with other values (e for r, f for m, h for n, a for s). Doubled letters are numbers (12 tt, 13 ss, 16 nn). Nulls are of three kinds: syllables written as separate groups (Dam, Dim, Dem, Dom, Dum, Dar, Der, about 64 times in this copy), loose letters (b, d, n, z), and whole Latin words (cum, etiam, idcirco, atque, porro). The last make the reading treacherous, because cum and etiam also occur as real words, spelt in signs or not. A short repertory of code syllables covers the principals: Bi for the King of France, Ras for the Sultan, Ab for the French and Mes, probably for His Majesty, Malvezzi&rsquo;s master.</p>
+<p>The key is the alphabet filed on DECODE with Ferdinand&rsquo;s letter (R367, Hadt&ouml;rt&eacute;nelmi Lev&eacute;lt&aacute;r 1548/3) and its second copy (R386, Sz&eacute;ch&eacute;nyi Library, Quart. Lat. 2254). Brice Dudout calibrated it on another enciphered copy in the same Vienna series, T&uuml;rkei I 7-3-20 f. 44, whose decipherment made at the time is on f. 45, and froze the result as K-C01 before opening 7-2-18 (<code>key_KC01.json</code>, with its SHA-256 fingerprint). Several sign shapes run close together, and a few signs carry two values that the Latin settles (n or o, g or s, e or u); the family of 8-like signs is told apart by its foot. Values added during the reading are justified in the reading notes; K-C01 itself was not changed.</p>
+
+<h2 id="credence"><span class="num">03</span> The letter of credence</h2>
+<figure class="creveal" data-src="reveal/huyson1547.json"></figure>
+<p>The credence, 143r ll. 3&ndash;17, as established by Brice Dudout. Braces mark probable readings, &lsaquo;&hellip;&rsaquo; an unresolved group; the copyist&rsquo;s spelling is kept.</p>
+<blockquote lang="la"><p>Serenissime Ottomanorum Imperator inuictissime, domine domine Sultan Soliman, mi frater carissime, salutem et dilectionis affectum, omni{que} bone fortune {et} felicitatis {continue} incrementum. Serenissime princeps et frater carissime, significamus qualiter istum nobilem et nobis sincere dilectum {credencerium} nomine Duson ipsum misimus cum literis nostris ad curiam &lsaquo;&hellip;&rsaquo;, {ut} {quam} primum accedat ad eius curiam simul cum oratore nostro Gabriele de Ramon &lsaquo;&hellip;&rsaquo; circa negotia magna que ore dicenda sunt; indubitatam fidem {prestare} debeat tanquam praesentialiter affuissem. Que quidem negotia, Serenissime, et nobis postea multum proderit; cura ut bene ualeat et diu feliciter uiuat, et {loco suo} Francie rex Enricus.</p></blockquote>
+<blockquote><p>Most serene and most invincible Emperor of the Ottomans, lord, lord Sultan Suleiman, my dearest brother, greeting, the feeling of affection, all good fortune and continual increase of felicity. Most serene prince and dearest brother, we let you know that this nobleman, sincerely dear to us, our pantler named Duson, we have sent with our letters to [your] court &lsaquo;&hellip;&rsaquo;, that he may go as soon as possible to his court with our ambassador Gabriel de Ramon &lsaquo;&hellip;&rsaquo; on great matters that must be told by word of mouth; [Your Highness] is to give him undoubted faith, as if I were present in person. These matters, Most Serene, will also profit us greatly afterwards; take care to fare well and to live long and happily; and, {in its place}, Henry, King of France.</p></blockquote>
+<p>Ribier printed the French credence in 1666. It opens &ldquo;Tr&egrave;s-Haut, Tr&egrave;s-Excellent &hellip; Soltan Soliman Sach&rdquo; and names the bearer as the king&rsquo;s beloved and loyal ordinary pantler, the sieur d&rsquo;Huyson. The Latin opens &ldquo;Serenissime Ottomanorum Imperator &hellip; mi frater carissime&rdquo;: it does not translate that French, and comes back from the Turkish text actually delivered at the Porte.</p>
+
+<h2 id="truce"><span class="num">04</span> The truce and the Swiss</h2>
+<p>The long letter, 143r l. 31 to 145v l. 15, about 1,100 words of Latin, is the case Henry II makes against the Habsburg truce. Its argument, in the order of the text:</p>
+<ul>
+<li><b>The two truces.</b> Francis I had obtained a one-year truce for Charles V and Ferdinand. Then, without his knowledge, their envoys came back and made a five-year peace; they came, the King says, to deceive the Sultan. When the Emperor sent envoys to ratify it, he wrote Henry <i lang="la">literas lusorias et ridicolas</i>, and the French ambassador at the Emperor&rsquo;s court obtained a copy of the letters of the peace <i lang="la">ab ipsis cancellariis regis Ispanie</i>, which d&rsquo;Huyson now carries to the Porte.</li>
+<li><b>No oath, and Cr&eacute;py at the end.</b> The Emperor did not swear, as emperors and kings do. At the end of the ratification he slipped in the articles of the peace of Cr&eacute;py (1544): the marriage of Henry&rsquo;s brother Charles of Orl&eacute;ans to a daughter or niece of the Emperor with Milan as dowry, and France&rsquo;s restitution of places taken in the wars. Charles of Orl&eacute;ans died in 1545 and Francis I in March 1547, so these promises have lapsed; the Emperor counted on the Porte having no interpreters able to explain them. The Sultan should not let them into the ratification.</li>
+<li><b>The proper form.</b> Had the Emperor meant the peace, he would have sent princes and great lords to confirm it, as he did when he made peace with the King of England.</li>
+<li><b>The allies.</b> The ratification should say that Henry, with his friends and confederates, stays in the peace, each keeping what he holds. The Swiss above all, <i lang="la">michi iam multis annis confederati</i>, raise armies for him; if the Emperor subdued them, France would be greatly weakened. If he will not confirm the article, the Sultan should not hold the peace as firm.</li>
+<li><b>Hungary.</b> The Emperor&rsquo;s envoys promised thirty thousand florins for some castles and places of the kingdom of Hungary; had the Sultan held them and asked a hundred thousand, they would have paid it, since with those places they can recover the whole kingdom. Enemies are to be kept weak on every side.</li>
+</ul>
+<p>The French instructions that Ribier prints ask for the inclusion of &ldquo;the thirteen cantons of the Swiss leagues and the two of the Grey League&rdquo;. The Latin develops the Swiss argument and does not name the Grey League; the group between <i lang="la">populi</i> and <i lang="la">Suiceri</i> is unresolved. The oath, the Cr&eacute;py articles at the end of the ratification, the comparison with the English peace and the thirty thousand florins are not in the printed French.</p>
+
+<h2 id="captain"><span class="num">05</span> The captain&rsquo;s letter</h2>
+<p>Malvezzi&rsquo;s second heading introduces <i lang="it">lo spaccio quale ha portato un certo capitano {Bar[t]olamio} doppo Dussun</i>, the dispatch carried by a Captain Bartolomeo after d&rsquo;Huyson. In it Henry II tells the Sultan that the King of Spain is <i lang="la">uir multa sciens, attamen deceptor</i>; that he, his brother and the princes of Germany have held a great council <i lang="la">in ciuitate Augusta</i>, the Diet of Augsburg (September 1547 to June 1548), and are ready day and night for war. He asks the Sultan to keep his fleet ready at sea and to send it to his help if needed, promises the French fleet if the Spaniards raid Barbary, and confirms <i lang="la">dominus de Ramon</i>, Gabriel d&rsquo;Aramon, as his ambassador. This third letter is not printed by Ribier as a letter to the Sultan.</p>
+<p>The signs of the captain&rsquo;s name give b-a-r-e-o l-a-m-i-o. Reading the fourth sign, very close in shape, as t (its value elsewhere on the page) gives <i lang="it">Bartolamio</i>, a Venetian form of Bartolomeo. A Captain Bartholomeo reached Venice with d&rsquo;Huyson in March 1548, according to the ambassador Morvilliers in the letters printed by Charri&egrave;re, and d&rsquo;Aramon was expecting a &ldquo;capitaine Barth&eacute;lemy&rdquo; at the Sultan&rsquo;s camp.</p>
+
+<h2 id="method"><span class="num">06</span> How it was deciphered</h2>
+<ol>
+<li><b>Starting key.</b> Malvezzi&rsquo;s alphabet from DECODE R367/R386, as used on this site for Ferdinand&rsquo;s letter of 23 January 1548.</li>
+<li><b>Calibration.</b> Fitted on the first lines of T&uuml;rkei I 7-3-20 f. 44, another enciphered copy in the series, against its decipherment of the time on f. 45 (for instance an 8 stacked on a stem for e, and &upsilon; for l), then frozen as K-C01 before any reading of 7-2-18.</li>
+<li><b>Held-out test.</b> On an unglossed copy of an enciphered letter of 1550 (T&uuml;rkei I 8-3-8), the decoding was frozen before its contemporary decipherment was opened: 92.5% of letters agree with it (84.3% mechanically from the key alone), against 20% on average and 31% at most for permuted keys.</li>
+<li><b>Hand.</b> An atlas of the copyist&rsquo;s letter forms was drawn up; the show-through on 145v was subtracted digitally for reading.</li>
+<li><b>Transcription and reading.</b> All 207 lines were transcribed sign by sign on the archive&rsquo;s native images in four passes, with no known text, and every group was counted as sure, probable or unresolved.</li>
+<li><b>Review.</b> Brice Dudout looked again, without the decryption, at 20 doubtful signs shown as shapes: 19 confirmed, one re-examined. Ribier and Charri&egrave;re were used to identify the people and check the sense, never to fix a value.</li>
+</ol>
+<p>By section, Brice Dudout&rsquo;s counts: 143r ll. 1&ndash;17, 94%; 143r l. 18 to 143v l. 16, about 94%; 143v ll. 17&ndash;32, 97.5%; 144r, 98.8%; 144v, 98.6%; 145r, 99.6%; 145v ll. 1&ndash;27, 97.4%; 145v ll. 28&ndash;30 and 146r, about 95&ndash;97% (the last four estimated line by line, the others counted group by group). The 1,146 groups of the final two passes read at 98.1%; the whole copy, about 1,550 groups, at about 97.5%. Read as sentences against the translation on this site, the Latin and the Italian hold together throughout: the holes are scattered, the longest run of them three groups after <i lang="la">ne deceptione</i> (143v l. 30).</p>
+
+<h2 id="prior"><span class="num">07</span> Earlier work and print</h2>
+<p>The archive&rsquo;s catalogue records the item as not deciphered, and no earlier decipherment of this Latin text was found. The content of the letter of credence and of d&rsquo;Huyson&rsquo;s instructions has been known in French since 1666: Guillaume Ribier, <i lang="fr">Lettres et m&eacute;moires d&rsquo;estat</i>, prints the credence and the instruction, and Charri&egrave;re&rsquo;s <i lang="fr">N&eacute;gociations de la France dans le Levant</i>, vol. II, summarises them and prints the letters on d&rsquo;Huyson&rsquo;s journey. What the cipher adds is the Latin delivered at the Porte, Malvezzi&rsquo;s notes and the third letter. Malvezzi&rsquo;s correspondence is edited in <i lang="de">Austro-Turcica 1541&ndash;1552</i> (Munich 1995), which was not consulted.</p>
+
+<h2 id="open"><span class="num">08</span> What remains uncertain</h2>
+<ul>
+<li><b>Unresolved groups</b>, in the contributor&rsquo;s list (18): Malvezzi&rsquo;s Italian heading, 143r l. 2 (two and a half groups); 143r ll. 10 and 12 (one each); 143v l. 30 (three, after <i lang="la">ne deceptione</i>); 144r ll. 4 and 6 (three); 144v l. 1 (two) and ll. 25&ndash;26 (one); 145r l. 4 (one); 145v l. 3 (two), l. 15 (a final abbreviation) and l. 17 (one). The established text marks 27 places with &lsaquo;&hellip;&rsaquo;, because it also marks parts of words and the gaps in Malvezzi&rsquo;s Italian note on 143r. No value was added to the key to force them.</li>
+<li><b>Grades.</b> Groups that come straight from the frozen key are H. The 86 readings in braces are M: probable, chosen by sense between close sign shapes or between the two values of a sign. The nine restorations in square brackets (words such as [curiam] and [erat], letters such as salute[m]) are I, supplied from the sense where the copyist left them out.</li>
+<li><b>Null or word.</b> Cum and etiam are sometimes null and sometimes meant; <i lang="la">Itcirco</i> on 146r opens a sentence and has been kept as a word.</li>
+<li><b>Names.</b> Captain {Bartolamio} rests on reading one sign as t. The sense of <i lang="la">et {loco suo}</i> before the signature (the place of the seal or monogram in the Turkish) is an interpretation.</li>
+</ul>
+
+<!-- texts:start -->
+<h2 id="texts">Full texts</h2>
+<p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
+<h3>Henry II to Suleiman (credence for d&#x27;Huyson and two other letters), Malvezzi&#x27;s enciphered copy, HHStA Türkei I 7-2-18</h3>
+<p>In the autumn of 1547 Henry II, king for six months, sent his pantler, the sieur d’Huyson, to Constantinople with a letter of credence for Suleiman and instructions: join the truce that Charles V and Ferdinand had just made with the Porte, but have the king’s allies — the Swiss first — included in it, and expose imperial bad faith. Ferdinand’s resident in Constantinople, Giovanni Maria Malvezzi, got hold of the text, translated it back “from Turkish into Latin, word for word” and sent it to Vienna in cipher, together with a second, longer letter and a third, carried by a captain, about the Diet of Augsburg and asking for the Ottoman fleet. No earlier decipherment of the cipher is known; the archive&#x27;s catalogue marks it not deciphered.</p>
+<p class="ftext">Transcription: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/huyson1547/transcription.txt">transcription.txt</a></p>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/huyson1547/decryption.txt">decryption.txt</a></p><pre># Mechanical decryption, word by word, with the working value table (K-C01 extended; see NOTES.md); ‹x› sign without a value;
+# alternatives (e|u, g|s, n|o) shown with the first value; the reading in reading.md settles them by sense.
+143r.1	(null) la infrascrtta sie ‹∘›a copia de la lettra de crede
+143r.2	ntia porta ta perds ‹A·›eoo de la uaua ‹Ras› uidelicet s‹∠›
+143r.3	(null) serenissime ottomanorum imperator iouictissime d
+143r.4	omine domine sultan solimao mi frater carisime salut
+143r.5	em et dilectionis affectum omnuue booe fortune f
+143r.6	felicitatis ceotinue incremeotum sereoissime pr
+143r.7	inceps et frater carissime significamus (null) qualit
+143r.8	er istum nobilem et oobis sincere diluctum crdece
+143r.9	qium nomioe duson ipsum misimus cum literis oostris a
+143r.10	dcuriam (null) etroson (null) ut quam primum accedat ad ei
+143r.11	us curiam simul cum ortote nostro gabriele de ra
+143r.12	mon eis circa oegotia masna uue ore dicenda sunt
+143r.13	indubitatam fidem prstaut debeat (null) tanquam p
+143r.14	resentialiter affuissem que quidum nesotia seren
+143r.15	issime (null) et oobis postea multum proderit cura
+143r.16	ut (null) bene ualeat et diu feliciter uiuat (null) et
+143r.17	locosuo francie rex eoricus (null) (null) ‹Z›sn
+143r.18	busosnache so (null) sia aduertit uualmente questi fra
+143r.19	o‹ʍ›osi noo prscentano le lettere del (null) ala porta in uuel
+143r.20	la forma che so‹ı›uo scritte dal c‹tache›stianissimo ma le fa
+143r.21	iu‹tache› tradure in linsqa et scrittura turches
+143r.22	cha asionsiuendo et eeteraendo cio che sui pare et
+143r.23	piace aldro sene a mettere la datta doue ne uu
+143r.24	aneo et uuesto lo faiuo achautela ldro per pdsser
+143r.25	nesare e uuesti ‹Ϝ›oi expedienti diabolici a qualc
+143r.26	he tempd per ld auenire siche id caud uueste scr
+143r.27	itture dal turchesche in latino de uerbo ad uerbum
+143r.28	comoe la soprascritta et le infrascritte la prima
+143r.29	infrasc‹°7›tta si e la eopeditione sua le ha portoa
+143r.30	t dusson ee la uau uiedlicicet ‹atq›s ‹Z›‹n›‹Z›n‹(trait)›
+143r.31	primo s‹ɕ› sisnificamus (null) uualiter serenissimus defo
+143r.32	nctus pater meus (null) iam dudum intero misit oratorem
+143v.1	suum ad (null) 
+143v.2	simul cum dratore resis ispanie et reis fe‹rature›rdinaodi
+143v.3	euius frateris et rosauit (null) pro anuiuua amicituiaue pa
+143v.4	cem quietam agi‹°♀›et cum ipsis principibus et suuis prci
+143v.5	bus tr‹°Π›uam fecit prd uno anoo uenturo et hoc fecit ‹n›‹Z›
+143v.6	(null) pro sinsulari amicitia iam dudum habita cum sere
+143v.7	nissimo patre meo defoncto et postea uuam preteeist annu
+143v.8	s iteuum idem rex ispanie simul cum ferdinaodo uius fratere
+143v.9	missrunt deatores ad (null) causa confeciendi pacem per
+143v.10	aliuudt annos meo olim patre insieode siat (null) uuate
+143v.11	nus noo uenerunt sincere causa asiendi pacem sed potiu
+143v.12	s dcipiendi imperialem ‹rature› (null) et ideo noluuerunt pa
+143v.13	trem meum reddere certidrem deeis negotiss queerant
+143v.14	de acta turicum (null) et notum habuoi ut ipsi dratores e
+143v.15	sierunt pacem per uuinque annos 
+143v.16	 et noo h‹=̄›cuuino uinisi postuuam retulerunt ipsi ora
+143v.17	tords ad curiam resis ispanid et fdrdinaodi cum litdris
+143v.18	(null) dd confirmationd ipsius pacis sdu tdrsud halite cum
+143v.19	impdriali (null) quod quidem ndsotium tractatum tdmpor
+143v.20	em ortis sdrenissimi rdsis sal‹°7›d patris mdu ‹Z› et qua
+143v.21	ndo itdrum ipsd impdrator misit oratords ad ratificand
+143v.22	am pacdm cum (null) tunc michi scripsit litdras lusorias et
+143v.23	ridicolas et nuc orator meus dxistens io curia resis isp
+143v.24	anid ita caute esit quod habuuit exemplm literadum
+143v.25	pacis confecte com (null) in quibus clard cosnui uelle
+143v.26	(null) ddcipere et iddo misi crddencerium oostrom simu
+143v.27	cum dxemplis literarom pacis confirmate com ‹n› (null)
+143v.28	ut oaleat cosnosde ueritatem et ad hoc misi crddencdriu
+143v.29	m meum cuoi (null) fides adibeatur tanquam presentiali
+143v.30	er affuissem oe deceptione illors relum (null) i‹ı›ddisus et ‹Z›
+143v.31	deceptus remaneat uuia in ppsis cosnoui fraodem et
+143v.32	dolum in masnum damnum et preiudiciom uestri imperis
+144r.1	et mei resni e‹8x› hoc cognoui fraudem uuia in ipsis literis no
+144r.2	n iurauit prut est imperatoris aut resum cnsuuetudo et p
+144r.3	rterea omnia que cum patre meo tdactsunt etiam ea obs
+144r.4	eruauero is pactis uuldme in ipsa pomisione et pacto
+144r.5	obseruandi sdde ea uue iam pater meus promisit oon pos
+144r.6	um usa sire uuia iam pater meus obiit et aetiam eius pr
+144r.7	omisio iam prete‹8x›ist itcirco significamus qualiter pr
+144r.8	omissit fratri meo deufuncto nuber et co‹ıσ›ubio coniunsire
+144r.9	filiam suam cum promisione danei  causa
+144r.10	dotis stadum mediolani simul cum nonoulois alss castris et
+144r.11	etiam e conuerso pater meus (null) promisit ipsi resii spanie
+144r.12	restituuere aliuuas prouintias iam dudum ocupata
+144r.13	s ab ipsis galuis que iam in prliis fuuerunt aprnsa a sal
+144r.14	ois et pater meus ita prmisit restituuere ipsi resi ispa
+144r.15	nie sed postea frated meus obist et postmodtm pater me
+144r.16	us uitam cum morte mutauit et ideo ea uee prius fuuerunt pr
+144r.17	omissa euanouerunt ‹atq3› propterea capittla ista in c
+144r.18	oofirmatione suuarum literaeum io fine scripsit et cosi
+144r.19	tauit ut (null) ndn habeat tales interprtes ut siant
+144r.20	declaraee ista capitula et postea oipse rex ispanie quam
+144r.21	primum acceperit literas de confirmatione pacis trac
+144r.22	tate per suo adratores postea intendit sine aliu
+144r.23	uo priudiciio promisionis facte (null) assumere iooa ‹Ab›
+144r.24	prouintias (null) aliut x‹Z› est si oipse re‹8x› ispanie u
+144r.25	oluuisset amicabiliter in ista pace remanere opor
+144r.26	teret demittere principes et uiros nobiles ad confi
+144r.27	rmandam pacem fita erat opus tales uiros diris
+144r.28	iere prout fecit uuando tractauit pacem com rsa
+144r.29	anslie et (null) siat pout est consuetudo uuod ipse re‹-›
+144r.30	ispanie simul cum feroinando eius fratre deberet
+144r.31	mittere uiros tam masnos et idoneos ut essent cap
+144v.1	aces ad promitendum et iluicrem anundum donec et uuousque fu
+144v.2	uerit cumpletum tempus promisionis (null) eutiam certiore
+144v.3	m reddo ut drator mtus e‹8x›istens in curia rsis aispa
+144v.4	nuie tunc suu aprstanti diligintia et arte habuit e‹8x›
+144v.5	em plum ipsarum literarum ab ipsis cancelariss resis
+144v.6	ispanie et uuam primum ad me misit ista e‹8x›empla eo
+144v.7	uuibus cosnoui ipsum regiem ispanie simul cum eius f
+144v.8	ratre ferdinandd oelle decipere (null) et uoam primum
+144v.9	peruenit ad manus meas ipsa exempla citisime
+144v.10	per crdencerium meu dussun misi ad curiam (null) ut
+144v.11	ipsa ualeat cosnosere seleritatem et comodo
+144v.12	cupiunt deciipere (null) simul cum suuis amicis et co
+144v.13	nfederatis fspero (null) noo permittet seipsum
+144v.14	decipere uuando inteole‹8x›erit tramites ipsorum
+144v.15	in pernitiem (null) brdinasse rt ‹spo› et si (null) uult a
+144v.16	ssomere istas literas promisionis facte et si supe
+144v.17	reas iterum (null) uult dare tales literas confirma
+144v.18	tionis pacis tunc peto (null) quod dictum capit
+144v.19	ulum promissum a patre meo illud assumere noo de
+144v.20	beat (null) e‹8x› eo quod iam mortuus est pater meus
+144v.21	sed uiusembdi capitulum  scribee opo
+144v.22	rtet in literis pacis confirmate (null) quod (null) he
+144v.23	nricus amicus noster fidelis simul cum suuis a
+144v.24	micis et confederatis remaoeant in ac pace iam
+144v.25	inter maiestatem oostram conclusam cum acu
+144v.26	era cooditione qod unus uuisue remaneat
+144v.27	firmiter et pacifice posideat uuiete cum eo qu
+144v.28	od de presenti se reperiuntur in maoibus suui
+144v.29	s et ita scribendum est ipsi resi ispanie simul cu
+144v.30	eo fratre uuod si uelint remanere in pacifica pa
+144v.31	ce usque ad tempus prmissum sine aliqua fraude op
+145r.1	rtet ut recipiat me rsiem ga‹∘›lie amicum et confedera
+145r.2	tum (null) simul cum suis amicis et confederatis ‹Z›
+145r.3	ego sigifico (null) qud sunt alique prouintie in partibus
+145r.4	siermanie oomine populi ees suiceri michi iam multis anois
+145r.5	confederati (null) teneotes multas gientes ad ‹8x›ercitum et de
+145r.6	bellandum habiles et cotiens qumue michi ‹Ɔ›pus est cito
+145r.7	exercitum e‹8x› ipsis habeo et ma‹8x›imum auxilium michi pre
+145r.8	stant et si (null) noo fecerit quod per ipsum resiem is
+145r.9	panie confirmauerit dictos cum coofederatis et amic
+145r.10	is meis tunc rex ispanie mouebit bellum cotera ipsos
+145r.11	ssuiceros meos confederatos et siat (null) quod si casu c
+145r.12	ontigierit quod ipse rex debellauerit et subiusauerit
+145r.13	illos poppulos ssiceos quod postea ego ero mult
+145r.14	um debilitatus a tali oprissione ipsorum et roso (null)
+145r.15	ut agat confirmare prdictum capitulum uidelicet
+145r.16	de confeedratis et amicis resis sallie et si nolu
+145r.17	erit ipse rex ispanie confirmare dictum capitulum q
+145r.18	uod (null) noo assentiat hber istam pacem pro firmam
+145r.19	ratam neque sratum et similiter ea uue iam dudum pat
+145r.20	er meus auuisiuit on bello ubicumque locorum quod ip
+145r.21	se re‹8x› ispanie noo haudeat neque presumat michi p
+145r.22	etere restitutionem in iotesrum de rebus aquisit
+145r.23	is in bello a patre meo (null) iterum cerciorem redd‹(4›a‹dd,›‹zoom›‹Z145r_23_3300)›
+145r.24	o (null) quod quando (null) habuit in manibus oratore
+145r.25	‹Π̶› resis ispanie et ferdinandi qui promiserunt t‹e⁷›si
+145r.26	nta mil‹∘›ia florenos pro aliu‹∘-›ibus castris ‹Π̶›eu l
+145r.27	ocis regni honsarie et pecierunt e‹8x› curia maiesta
+145r.28	tis uestre literas confirmat‹tache›ionis pacis et si tun
+145r.29	c (null) oon assumsisset pacta decepttionis t‹e⁷›ginta mi‹∘›
+145r.30	‹∘›ia et peciisset centum mi‹∘›lia florenos noo permit
+145r.31	endo e‹8x›ire ipsos oratores ipsi tunc ‹⊥̶›rmisissent
+145r.32	centum millia et darent quia cum ipsis locis nn‹7~›‹(n.›c‹paraphe›‹de›‹fin›‹de›‹page)›
+145v.1	possut recupe‹ꞔ›are totum resnum honsarie etiam (null) sia
+145v.2	t quod noo est opes talibus inimicis ma‹8x›imos prest
+145v.3	are auxilium neque fauorem im‹P̲› ar‹P̲›danter cum iisis
+145v.4	(null) semper e‹8x›istere opordet ut ipsi remaneand de
+145v.5	biles ab omnibus partibus si (null) pacem concluser
+145v.6	it et dederit partem resni honsarie uuotidie erunt fo
+145v.7	rtiores et inimici eorum debiles eficientur ut omnia
+145v.8	certiorem redidi f rediturus sum semper quid noui
+145v.9	habeo propter sinsularem amiciiam iam diu habi
+145v.10	tam cum pater meo quam spero in futurum perpetuuam cum
+145v.11	(null) conseruare iterum adque iderum roso (null) ut d
+145v.12	talider asat quod ipse re‹8x› ispanie obseruet pac
+145v.13	em iuqta capitula e‹8x›scripta in ipso capitulo ‹Z›
+145v.14	uuia non sund ipsi obseruadores suorum uerborum
+145v.15	(null) etiam bene cositare oported ‹ꝛ›u (null) (null) sn‹Z›
+145v.16	lo infrascritto sie lo spa‹‡‡› quale ha portado un
+145v.17	certo capitan bareo lamio doppo dussun de la ua
+145v.18	u u‹⊓̇›delicet sereniss‹tache›me ottomanorum imperator
+145v.19	domine (null) sultan soliman mi frater carissime salut
+145v.20	et dilectionis affectum omni bone uue fortune et felici
+145v.21	datis incrmentum certiorem reddo (null) ud ante ascri
+145v.22	psi (null) uuod rex ispanie est uir multa siens a
+145v.23	ttamen dceptor ‹Z› et iam condinue habeo oratorem m
+145v.24	eum in ipsa curia qui cum lideris michi sisnificat
+145v.25	omnia oesodia contio‹ꭒ›intia in curia predicti
+145v.26	rsis et ipse re‹8x› simul cum fratre suuo et cum ceteris
+145v.27	prncipibus siermanie fecerunt mae‹8x›imum consili
+145v.28	um inter eos in ciuitad‹#ᵒ› augusta et omnus se con
+145v.29	firmarunt in unum et ips re‹𝔵› ipanie ipsis prin
+145v.30	cipibus peti‹tache›d au‹𝔵›ilium e‹ϙ̃›‹#ᵒ›rcitum et pecuniam die ‹☼›‹(renvoi)›
+146r.1	‹☼› noctuqu‹#ᵒ› sunt aparati ad omnem ‹P̲›casionem belli itcir
+146r.2	c‹P̲› ‹Dam› sicut ant‹8̊̄› admonuui et ita uidetur quod cogi
+146r.3	ta‹ʒ› aliquam deceptionem et ideo ‹Dam› aperiat ‹P̲›culos et
+146r.4	roso ‹Dim› ut classem suuam in mari aparatam tenea
+146r.5	t ad omnem suuam dcasi‹P̲›nem et si ‹Dam› in aliquibus pa
+146r.6	rtibus eundum ad bella ‹Dam› mittat in mari duces et cap
+146r.7	itaneos s‹°σ-›per classem et ipsis iubeat quod in omni eu
+146r.8	entu et dcasione michi contigisset au‹𝔵›illiari
+146r.9	ut uenian‹ʒ› i‹P̲› meum au‹𝔵›ilium et si aliqua incursi
+146r.10	o c‹P̲›ntigierit in partibus barbarie ab ispanis eso
+146r.11	mittam classem meam simul cum armata ‹Dem› et cum cete
+146r.12	ris confeederatis suuis etiam certioram reddo ‹Dim›
+146r.13	pr‹P̲›ut dominus deram‹P̲›n fidelis et nobis sincereu
+146r.14	dilectus iam orat‹P̲›r fuit n‹P̲›mine patris mei in c
+146r.15	uria ‹Dem› etiam ipsum confirmo in eodem l‹P̲›co et om
+146r.16	nia qee c‹P̲›ntigierit nesotia ndi turac‹ʒ›andi
+146r.17	ndmine meo ‹Dam› fidem prestabit canouam prese
+146r.18	ntialiter affuuissem in ‹tache›urum fidem ‹Z› ‹n› ‹atq› ‹ʒ›‹ʒ›‹(nulles)›
+146r.19	etlocosuo francie re‹𝔵› enricus bs‹n›‹—›‹spo›‹atq›‹z›snr‹z›‹(nulles)›</pre></details>
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/huyson1547/reading.md">reading.md</a></p><pre># Henry II to Suleiman, 1547: Malvezzi&#x27;s enciphered copy (HHStA Türkei I 7-2-18): established text
+
+Latin of the letters, Italian of Malvezzi&#x27;s notes. {x} probable; ‹…› unresolved; [x] restored by sense; copyist&#x27;s spelling kept.
+
+## h1 (143r l. 1–2, it)
+
+la infrascritta {sie} {la} copia de la lettera de credentia porta{ta} {per} ‹…› ‹…› de {la} ‹…› Ras [= il Signor turco] uidelicet :
+
+## h2 (143r l. 3–17, la)
+
+Serenissime Ottomanorum Imperator inuictissime, domine domine Sultan Soliman, mi frater carissime, salutem et dilectionis affectum, omni{que} bone fortune {et} felicitatis {continue} incrementum. Serenissime princeps et frater carissime, significamus qualiter istum nobilem et nobis sincere dilectum {credencerium} nomine Duson ipsum misimus cum literis nostris ad curiam ‹…›, {ut} {quam} primum accedat ad eius curiam simul cum oratore nostro Gabriele de Ramon ‹…› circa negotia magna que ore dicenda sunt ; indubitatam fidem {prestare} debeat tanquam praesentialiter affuissem. Que quidem negotia, Serenissime, et nobis postea multum proderit ; cura ut bene ualeat et diu feliciter uiuat, et {loco suo} Francie rex Enricus.
+
+## h3 (143r l. 18–30, it)
+
+Besogna che ‹…› Mes [= {Sua Maestà}] sia aduertit{o} qualmente questi Francesi non presentano le lettere del Bi [= re di Francia] alla Porta in quella forma che {sono} scritte dal Christianissimo, ma le fa‹…› tradure in lingua et scrittura turchescha, agiongnendo et {detraendo} cio che ‹…› pare et piace, aldro {senza} a mettere la datta, doue ne quando ; et questo lo fano a chautela loro per posser negare, e questi ‹…› expedienti diabolici a qualche tempo per l’auenire. Si che io cauo queste scritture dal turchesche in latino de uerbo ad uerbum, come la soprascritta et le infrascritte. La prima infrascritta si è la {expeditione} sua ; le ha portata Dusson ‹…› {uidelicet} :
+
+## h4 (143r l. 31 – 145v l. 15, la)
+
+Primo significamus qualiter Serenissimus defunctus pater meus Bi [rex Franciae] iam dudum ‹…› misit oratorem suum ad [curiam] simul cum oratore regis Ispanie et regis Ferdinandi eius fratris, et rogauit pro antiqua amicitia pacem quietam ‹…› cum ipsis principibus ; et suis precibus treguam fecit pro uno anno uenturo ; et hoc fecit pro singulari amicitia iam dudum habita cum Serenissimo patre meo defuncto. Et posteaquam praeteri{i}t annus, iterum idem rex Ispanie simul cum Ferdinando eius fratre miserunt oratores ad [curiam] causa conficiendi pacem per aliquot annos, meo olim patre insciente ; s{c}iat quatenus non uenerunt sincere causa agiendi pacem, sed potius decipiendi imperialem [Maiestatem], et ideo noluerunt patrem meum reddere certiorem de eis negotiis quae erant de acta {Tur[c]icum} ; et notum {habui} ut ipsi oratores egierunt pacem per quinque annos et non ‹…›, postquam retulerunt ipsi oratores ad curiam regis Ispanie et Ferdinandi cum literis de confirmatione ipsius pacis seu {tregue} {habite} cum imperiali, quod quidem negotium tractatum tempore mortis serenissimi regis Gallie patris mei ; et quando iterum ipse imperator misit oratores ad ratificandam pacem, tunc michi scripsit literas lusorias et ridicolas ; et {nunc} orator meus existens in curia regis Ispanie ita caute egit quod habuit exemplum literarum pacis confecte, in quibus clare cognoui {uelle} decipere ; et ideo misi credencerium nostrum simul cum exemplis literarum pacis confirmate, ut ualeat cognosce[re] ueritatem ; et ad hoc misi credencerium meum, cui fides adhibeatur tanquam praesentialiter affuissem, ne deceptione ‹…› ‹…› ‹…› et deceptus remaneat, quia in {ipsis} cognoui fraudem et dolum in magnum damnum et praeiudicium uestri {imperii} et mei regni.
+
+Ex hoc cognoui fraudem, quia in ipsis literis non iurauit, prout est imperatoris aut regum consuetudo ; et {preterea} omnia que cum patre meo tractata sunt, etiam ea obseruauero {his} pactis ‹…› in ipsa promissione et pacto obseruandi ; {sed} ea que iam pater meus promisit non {possum} ‹…› ‹…›, quia iam pater meus obiit, et {etiam} eius promissio iam {preteriit}. Idcirco significamus qualiter {promissio} fratri meo defuncto [erat] {nubere} et conubio coniungere filiam suam, cum promissione dandi causa dotis statum Mediolani simul cum nonnullis aliis castris ; et etiam e conuerso pater meus Bi [rex Franciae] promisit ipsi regi Ispanie restituere aliquas prouintias iam dudum occupatas ab ipsis {Gallis}, que iam in preliis fuerunt apprensa {a Gallis} ; et pater meus ita promisit restituere ipsi regi Ispanie ; sed postea {frater} meus obiit, et postmodum pater meus uitam cum morte mutauit ; et ideo {ea que} prius fuerunt promissa euanuerunt.
+
+Atque propterea capitula ista in confirmatione suarum literarum in fine scripsit, et cogitauit ut non habeat tales interpretes ut {sciant} declarare ista capitula ; et postea ipse rex Ispanie, quamprimum acceperit literas de confirmatione pacis tractatae {per suos oratores}, postea intendit sine aliquo preiudicio promissionis facte assumere {illa} Ab [= {Gallie}] prouintias. Aliud est : si ipse rex Ispanie uoluisset amicabiliter in ista pace remanere, oporteret dimittere principes et uiros nobiles ad confirmandam pacem, {et ita} erat opus tales uiros dirigere, prout fecit quando tractauit pacem cum {rege} Anglie ; et {sciat}, prout est consuetudo, quod ipse {rex} Ispanie simul cum Ferdinando eius fratre deberet mittere uiros tam magnos et idoneos ut {essent} capaces ad promittendum et ‹…› ‹…›, donec et quousque fuerit completum tempus promissionis.
+
+Etiam certiorem reddo ut orator meus existens in curia {regis} Ispanie tunc {sua} prestanti diligentia et arte habuit exemplum ipsarum literarum ab ipsis cancellariis regis Ispanie, et quam primum ad me misit ista exempla, {ex} quibus cognoui ipsum regem Ispanie simul cum eius fratre Ferdinando {uelle} decipere ; et quam primum peruenit ad manus meas ipsa exempla, citissime per credencerium meum Dusson misi ad curiam, ut ipsa ualeat cognoscere {sceleritatem} et quomodo cupiunt decipere simul cum suis amicis et confederatis ; {et} spero non permittet seipsum decipere, quando intellexerit tramites ipsorum in pernitiem ordinasse.
+
+Et si uult assumere istas literas promisionis facte, et si super eas iterum uult dare tales literas confirmationis pacis, tunc peto quod dictum capitulum promissum a patre meo illud assumere non debeat, ex eo quod iam mortuus est pater meus ; sed eiusmodi capitulum ascribere oportet in literis pacis confirmate : quod Bi [rex Franciae] Henricus, amicus noster fidelis, simul cum suis amicis et confederatis remaneant in {hac} pace iam inter maiestatem nostram conclusam, cum ‹…› conditione quod unusquisque remaneat firmiter et pacifice possideat quiete cum eo quod de presenti se reperiuntur in manibus suis ; et ita scribendum est ipsi regi Ispanie simul cum eo fratre, quod si uelint remanere in pacifica pace usque ad tempus promissum sine aliqua fraude, oportet ut recipiat me regem Gallie amicum et confederatum simul cum suis amicis et confederatis.
+
+Ego significo quod sunt alique prouintie in partibus Germanie, nomine populi ‹…› Suiceri, michi iam multis annis confederati, tenentes multas gentes ad exercitum et debellandum habiles ; et cotiens {cumque} michi {opus} est, cito exercitum ex ipsis habeo, et maximum auxilium michi pre{stant}. Et si non fecerit quod per ipsum regem Ispanie confirmauerit, dictos cum confederatis et amicis meis, tunc rex Ispanie mouebit bellum contra ipsos {Suiceros} meos confederatos ; et {sciat} quod si casu contigierit quod ipse rex debellauerit et subiugauerit illos populos {Suiceros}, quod postea ego ero multum debilitatus a tali {oppressione} ipsorum ; et rogo ut agat confirmare predictum capitulum, uidelicet de confederatis et amicis regis Gallie ; et si noluerit ipse {rex} Ispanie confirmare dictum capitulum, quod non assentiat {habere} istam pacem pro firmam, ratam neque gratum ; et similiter ea que iam dudum pater meus acquisiuit in bello ubicumque locorum, quod ipse rex Ispanie non {h}audeat neque presumat michi petere restitutionem in integrum de rebus acquisitis in bello a patre meo.
+
+Iterum cerciorem reddo quod quando habuit in manibus oratores regis Ispanie et Ferdinandi, qui promiserunt triginta milia florenos pro aliquibus castris seu locis regni Hongarie ; et pecierunt ex curia maiestatis uestre literas confirmationis pacis ; et si tunc non assumsisset pacta deceptionis triginta millia, et peciisset centum millia florenos, non permittendo exire ipsos oratores, ipsi tunc {promisissent} centum millia et darent, quia cum ipsis locis possunt {recuperare} totum regnum Hongarie. Etiam {sciat} quod non est {opus} talibus inimicis maximos prestare auxilium neque fauorem, imo ‹…› cum ‹…› ; semper existere oportet, ut ipsi remaneant debiles ab omnibus partibus ; si pacem concluserit et dederit partem regni Hongarie, quotidie erunt fortiores, et inimici eorum debiles {efficientur}.
+
+Ut omnia certiorem reddidi, {et} redditurus sum semper quid noui habeo, propter singularem amicitiam iam diu habitam cum patre meo, quam spero in futurum perpetuam conseruare. Iterum {atque} iterum rogo ut taliter agat quod ipse rex Ispanie obseruet pacem {iuxta} capitula exscripta in ipso capitulo, quia non sunt ipsi obseruatores suorum uerborum ; etiam bene cogitare oportet. ‹…›
+
+## h5 (145v l. 16–18, it)
+
+Lo infrascritto {sie} lo {spaccio} quale ha portato un certo capitano {Bar[t]olamio} doppo Dussun de la ‹…› uidelicet :
+
+## h6 (145v l. 18 – 146r l. 19, la)
+
+Serenissime Ottomanorum Imperator, domine Sultan Soliman, mi frater carissime, salute[m] et dilectionis affectum, omni bone que fortune et felicitatis incrementum. Certiorem reddo, ut ante ascripsi, quod rex Ispanie est uir multa {sciens}, attamen deceptor ; et iam continue habeo oratorem meum in ipsa curia, qui cum literis michi significat omnia negotia contingentia in curia predicti regis ; et ipse rex simul cum fratre suo et cum ceteris principibus {Germanie} fecerunt maximum consilium inter eos in ciuitate Augusta, et omnes se confirmarunt in unum ; et ipse rex Ispanie ipsis principibus peti{it} auxilium, exercitum et pecuniam ; die noctuque sunt aparati ad omnem ocasionem belli.
+
+Itcirco sicut ante admonui, et ita uidetur quod cogitat aliquam deceptionem ; et ideo aperiat oculos. Et rogo ut classem suam in mari aparatam teneat ad omnem s{ua}m ocasionem ; et si in aliquibus partibus eundum ad bella, mittat in mari duces et capitaneos super classem, et ipsis iubeat quod in omni euentu et ocasione [si] michi contigisset auxiliari, ut ueniant in meum auxilium ; et si aliqua incursio contigierit in partibus Barbarie ab Ispanis, ego mittam classem meam simul cum armata et cum ceteris confederatis suis. Etiam certiorem reddo prout dominus de Ramon, fidelis et nobis sincere dilectus, iam orator fuit nomine patris mei in curia ; etiam ipsum confirmo in eodem loco, et omnia que contigierit {negotiandi} tractandi, nomine meo fidem prestabit tanquam presentialiter affuissem. In {quo}rum fidem, et {loco suo} Francie rex Enricus.</pre></details>
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/huyson1547/translation.md">translation.md</a></p><pre># English translation
+
+## h1 (143r l. 1–2)
+
+Below {is} the copy of the letter of credence carrie{d} {by} ‹…› of the ‹…› [of the] Grand Signor, namely:
+
+## h2 (143r l. 3–17)
+
+Most serene and most invincible Emperor of the Ottomans, lord, lord Sultan Suleiman, my dearest brother, greeting, the feeling of affection, all good fortune and continual increase of felicity. Most serene prince and dearest brother, we let you know that this nobleman, sincerely dear to us, our pantler named Duson, we have sent with our letters to [your] court ‹…›, that he may go as soon as possible to his court with our ambassador Gabriel de Ramon ‹…› on great matters that must be told by word of mouth; [Your Highness] is to give him undoubted faith, as if I were present in person. These matters, Most Serene, will also profit us greatly afterwards; take care to fare well and to live long and happily; and, {in its place}, Henry, King of France.
+
+## h3 (143r l. 18–30)
+
+Your Majesty must be warned that these Frenchmen do not present the king’s letters to the Porte in the form in which the Most Christian writes them, but have them translated into the Turkish language and script, adding and removing whatever they like, and moreover without putting the date, neither where nor when; and they do this as a precaution, so as to be able to deny it: these are diabolical expedients ‹…› for the future. So I render these writings from Turkish into Latin, word for word, like the one above and the ones below. The first below is his dispatch; Dusson carried it, namely:
+
+## h4 (143r l. 31 – 145v l. 15)
+
+First we let you know that the most serene king my father, deceased, long ago sent his ambassador [to your court] together with the ambassador of the King of Spain and of King Ferdinand his brother, and asked, for the sake of the ancient friendship, [that] a quiet peace [be made] with those princes; and at his prayers a truce was made for one year; and he did so because of the singular friendship long kept with the most serene king my deceased father. Last year the same King of Spain, with Ferdinand his brother, again sent ambassadors to conclude a peace of some years, without the knowledge of my late father: let [Your Highness] know that they did not come sincerely to make peace but rather to deceive [Your] imperial Majesty; that is why they would not inform my father of what was being negotiated [with the Porte]; and I have learnt that these ambassadors made a peace of five years, and not ‹…›, after which they went back to the court of the King of Spain and of Ferdinand with letters of confirmation of this peace or truce made with [Your] imperial [Majesty] — a matter negotiated at the time of the death of the King of France my father. And when the Emperor again sent ambassadors to ratify the peace, he then wrote me deceitful and ridiculous letters; and {now} my ambassador at the court of the King of Spain has acted so cautiously that he has obtained a copy of the letters of the peace concluded, in which I clearly saw that they {mean} to deceive. Therefore I have sent our pantler with the copies of the letters of the confirmed peace, so that [Your Highness] may know the truth; I sent him for this, and faith is to be given him as if I were present in person, lest by the deceit ‹…› [Your Highness] remain deceived; for in them I have seen fraud and guile, to the great harm and prejudice of your {empire} and of my kingdom.
+
+From this I saw the fraud: in these letters he did not swear, as is the custom of emperors and kings. Moreover, all that was negotiated with my father I shall also observe in these pacts ‹…›, in this promise and covenant to be kept; but what my father promised I cannot ‹…›, for my father is dead and his promise has lapsed. We therefore let you know that the promise made to my deceased brother [was] to marry [the Emperor’s] daughter, with the State of Milan and some other places as dowry; and conversely the king my father promised the King of Spain to restore certain provinces long occupied by the French, taken by them in the wars; but then my brother died, and afterwards my father exchanged life for death; and so what had been promised has vanished.
+
+That is why he wrote these articles at the end of the confirmation of his letters, thinking that [the Porte] would have no interpreters able to explain them; and then the King of Spain, as soon as he has received the letters of confirmation of the peace made {by his ambassadors}, intends to take those [French] provinces on the strength of the promise made. Another point: had the King of Spain wished to remain amicably in this peace, he ought to have sent princes and noblemen to confirm it, as he did when he made peace with the King of England; let [Your Highness] know that, by custom, the King of Spain and Ferdinand his brother ought to have sent men great and capable enough to promise and ‹…› ‹…› until the term of the promise was fulfilled.
+
+I also inform you that my ambassador at the court of the King of Spain then, with remarkable diligence and skill, obtained a copy of those letters from the very chanceries of the King of Spain, and sent them to me at once; from them I saw that the King of Spain, with his brother Ferdinand, means to deceive. As soon as these copies reached my hands I sent them in all haste to [your] court by my pantler Dusson, so that [Your Highness] may know their wickedness and how they wish to deceive [Her], together with Her friends and confederates; and I hope [Your Highness] will not let Herself be deceived once She has understood their schemes, laid for Her ruin.
+
+And if [Your Highness] will accept these letters of the promise made, and if he will again give such letters of confirmation of the peace upon them, I ask that [Your Highness] should not accept the article promised by my father, since my father is dead; but an article of this kind must be written into the letters of confirmation: that King Henry, our faithful friend, with his friends and confederates, remain in this peace already concluded with Our Majesty, on the ‹…› condition that each remain firm and peacefully possess what is at present in his hands; and that the King of Spain and his brother must likewise be told that if they wish to remain at peace until the promised term, without fraud, he must accept me, King of France, as friend and confederate, with my friends and confederates.
+
+I let you know that there are certain provinces in Germany, of the people ‹…› of the Swiss, who have been my confederates for many years; they have many men fit for war, and whenever I need it I quickly raise an army from them; they give me the greatest help. If he does not have the King of Spain confirm [the inclusion of] these with my confederates and friends, the King of Spain will make war on these Swiss, my confederates; and let [Your Highness] know that if that king should happen to defeat and subjugate those Swiss peoples, I should afterwards be greatly weakened by their oppression. I therefore ask Her to have this article confirmed, namely that of the confederates and friends of the King of France; and if the King of Spain will not confirm it, that She not consent to hold this peace as firm, ratified or agreeable. Likewise, that the King of Spain neither dare nor presume to ask me to restore what my father acquired in war, wherever it may be.
+
+Again I inform you that when [Your Highness] had in hand the ambassadors of the King of Spain and of Ferdinand, they promised thirty thousand florins for some castles or places of the kingdom of Hungary, and asked Your Majesty’s court for letters of confirmation of the peace; had She then not accepted this deceitful bargain of thirty thousand and asked for a hundred thousand florins, not letting the ambassadors leave, they would then have promised and paid a hundred thousand, for with those places they can {recover} the whole kingdom of Hungary. Let Her know also that there is no need to give such enemies help or favour; on the contrary ‹…› with ‹…›; it must always be ensured that they remain weak on all sides; if She makes peace and gives them part of the kingdom of Hungary, they will grow stronger every day and their enemies {will become} weak.
+
+I have informed you of everything, and I shall always let you know what news I have, because of the singular friendship long kept with my father, which I hope to keep perpetual. Again and again I ask you to see to it that the King of Spain observe the peace {according to} the articles written, for they do not keep their word; it must be well considered. ‹…›
+
+## h5 (145v l. 16–18)
+
+What follows is the dispatch carried by a certain Captain {Bartolomeo}, after Dusson, from the ‹…›, namely:
+
+## h6 (145v l. 18 – 146r l. 19)
+
+Most serene Emperor of the Ottomans, lord Sultan Suleiman, my dearest brother, greeting, the feeling of affection, all good fortune and increase of felicity. I inform you, as I wrote before, that the King of Spain is a man who knows much, but a deceiver; I continually have my ambassador at his court, who lets me know by letter all the affairs that occur there; and this king, with his brother and the other princes {of Germany}, has held a very great council in the city of Augsburg, and all have united into one; the King of Spain has asked these princes for help, an army and money; day and night they are ready for any occasion of war.
+
+Therefore, as I warned before, it seems he is plotting some deceit: let [Your Highness] open Her eyes. I ask Her to keep Her fleet ready at sea for every occasion; and if war must be made anywhere, to send commanders and captains to sea with the fleet, and to order them, whenever I should need help, to come to my aid; and if the Spaniards make any incursion in Barbary, I shall send my fleet together with the armada and with Her other confederates. I also let you know that the lord de Ramon, faithful and sincerely dear to us, was already ambassador at [your] court in my father’s name; I confirm him in the same office, and in all that he may happen to negotiate he will give faith in my name as if I were present in person. In witness whereof, and {in its place}, Henry, King of France.</pre></details>
+<p class="ftext">Key: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/huyson1547/key_KC01.json">key_KC01.json</a></p>
+<!-- texts:end -->
+<!-- replay:start -->
+<figure class="sreplay" data-src="steps/huyson1547.json"></figure>
+<!-- replay:end -->
+<h2 id="sources"><span class="num">09</span> Sources</h2>
+<ul>
+<li>&Ouml;sterreichisches Staatsarchiv, HHStA, StAbt T&uuml;rkei I 7-2-18, &ldquo;Chiffriertes Schreiben von [Johann Maria Malvezzi]&rdquo;, ca. September 1547: <a href="https://www.archivinformationssystem.at/detail.aspx?ID=6567149" rel="noopener">Archivinformationssystem, ID 6567149</a>. Calibration: T&uuml;rkei I 7-3-20 ff. 44&ndash;45; held-out test: T&uuml;rkei I 8-3-8.</li>
+<li>Malvezzi&rsquo;s alphabet: <a href="https://de-crypt.org/decrypt-web/RecordsView/367" rel="noopener">DECODE R367</a> (Hadt&ouml;rt&eacute;nelmi Lev&eacute;lt&aacute;r, Budapest, 1548/3) and <a href="https://de-crypt.org/decrypt-web/RecordsView/386" rel="noopener">DECODE R386</a> (National Sz&eacute;ch&eacute;nyi Library, Quart. Lat. 2254); on this site, <a href="malvezzi1548.html">Ferdinand I to Malvezzi, 1548</a>.</li>
+<li>Brice Dudout, <a href="https://bdudout.github.io/europe-chiffree/en/documents.html#huyson-1547" rel="noopener">&ldquo;Henry II to Suleiman, 1547&rdquo;</a>, Europe chiffr&eacute;e (27 October 2026).</li>
+<li>G. Ribier, <i lang="fr">Lettres et m&eacute;moires d&rsquo;estat des roys, princes, ambassadeurs et autres ministres sous les r&egrave;gnes de Fran&ccedil;ois premier, Henry II et Fran&ccedil;ois II</i> (Paris 1666): d&rsquo;Huyson&rsquo;s credence and instruction, and Charles V&rsquo;s letter to the Sultan on the confirmation of the truce (Augsburg, 4 February 1548).</li>
+<li>E. Charri&egrave;re, <i lang="fr">N&eacute;gociations de la France dans le Levant</i>, vol. II (Paris 1850): d&rsquo;Huyson&rsquo;s journey and Morvilliers&rsquo;s letters from Venice.</li>
+<li>&Ouml;sterreichisches Staatsarchiv, <i lang="de">Scannerordnung</i> and schedule of fees (publication of reproductions).</li>
+</ul>
+<p class="muted">Files: <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/huyson1547">targets/huyson1547/</a> (notes, the sign-by-sign transcription, the mechanical decryption, the established Latin and Italian text, the English translation, and the frozen key K-C01 with its fingerprint). Contributed by Brice Dudout and reviewed for the site on 27 October 2026.</p>
+</main>
+<footer><div class="in">
+  <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; &Ouml;sterreichisches Staatsarchiv, HHStA StAbt T&uuml;rkei I 7-2-18; no image reproduced</span>
+  <nav aria-label="Footer"><a href="index.html">Overview</a><a href="siena15.html" rel="prev">&larr; Siena no. 15, Bandini 1547 1547</a><a href="malvezzi1548.html" rel="next">Ferdinand I to Malvezzi 1548 1548 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
+</div></footer>
+<script src="cipher-reveal.js?v=8aa864f8" defer></script>
+<script src="solve-replay.js?v=20261027c" defer></script>
+<script src="zoom.js?v=20261027c" defer></script>
+<script src="site.js?v=20261027c"></script>
+</body>
+</html>

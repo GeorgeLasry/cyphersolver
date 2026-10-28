@@ -13,7 +13,7 @@
    "route": "Lisbon -> army of the Alentejo",
    "places": {
     "from": "Lisbon",
-    "to": "Alentejo (army headquarters)"
+    "to": "Estremoz"
    },
    "language": "Portuguese",
    "cleartext_in_document": "interspersed",
@@ -45,7 +45,7 @@
    "route": "Lisbon -> army of the Alentejo",
    "places": {
     "from": "Lisbon",
-    "to": "Alentejo (army headquarters)"
+    "to": "Estremoz"
    },
    "language": "Portuguese",
    "cleartext_in_document": "interspersed",
@@ -64,7 +64,8 @@
    "transcription": {
     "by": "llm from images",
     "source": "DigitArq images (1060 px)",
-    "image_quality": "fair"
+    "image_quality": "fair",
+    "notes": "The repository transcription covers only the crib passage (copy 2, image 57, ll. 20-26, 174 symbols); the contributor's full transcriptions of both copies (2,213 and 2,357 symbols) were requested on 27 Oct 2026."
    }
   },
   {
@@ -77,7 +78,7 @@
    "route": "Lisbon -> army of the Alentejo",
    "places": {
     "from": "Lisbon",
-    "to": "Alentejo (army headquarters)"
+    "to": "Estremoz"
    },
    "language": "Portuguese",
    "cleartext_in_document": "interspersed",
@@ -153,7 +154,7 @@
    "present": false
   },
   "key_order": "random",
-  "word_division": "partial"
+  "word_division": "none"
  },
  "conditions": {
   "prior_solution": {
@@ -210,9 +211,54 @@
    "what": "PR review on merge (Claude Opus 5.5 for Daniel Bourdeau): fraction_read measured from the four decryption files (1,952 of 1,953 signs valued), replacing the estimate of 0.97.",
    "result": "worked"
   },
-  {"date": "2026-10-27", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 1139 tokens, 37 types, pt-modern order 4: reading -2.36 per letter; random keys -7.414 (z 6.8); key annealed onto shuffled ciphertext best -3.644 (mean -3.727, z 23.3); annealer on the real text -2.503. Verdict: pass.", "result": "worked"}
+  {
+   "date": "2026-10-27",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Statistical validation (docs/_validate.py): 1139 tokens, 37 types, pt-modern order 4: reading -2.36 per letter; random keys -7.414 (z 6.8); key annealed onto shuffled ciphertext best -3.644 (mean -3.727, z 23.3); annealer on the real text -2.503. Verdict: pass.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "verification",
+   "what": "Claude Opus 5.5 (PR review on merge): places Lisbon -> Estremoz for the 13 and 15 May letters; word division none (editorial); the partial transcription of the long 15 May letter recorded; all four letters graded A. Repository slips noted for the contributor: key_K2.tsv and key_K3.tsv identical; 13 May L02 and L08 put the date numerals on the wrong symbol; 15a L01 4=z F=h should be 4=a F={z}.",
+   "result": "worked"
+  }
  ],
- "outcome": {"validation": {"date": "2026-10-27", "model": "pt-modern", "file": "validation.tsv", "tokens": 1139, "types": 37, "tokens_per_type": 30.78, "score": -2.36, "nulls": {"random keys": {"n": 200, "mean": -7.414, "sd": 0.74, "max": -5.474, "z": 6.8, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -3.727, "sd": 0.059, "max": -3.644, "z": 23.3, "p": 0.1429}}, "power": -2.503, "verdict": "pass", "notes": "claimed per-occurrence score -2.36; polyphony 0.002; 6 unread tokens left out; annealer on the real text from random keys reached -2.503"}, 
+ "outcome": {
+  "validation": {
+   "date": "2026-10-27",
+   "model": "pt-modern",
+   "file": "validation.tsv",
+   "tokens": 1139,
+   "types": 37,
+   "tokens_per_type": 30.78,
+   "score": -2.36,
+   "nulls": {
+    "random keys": {
+     "n": 200,
+     "mean": -7.414,
+     "sd": 0.74,
+     "max": -5.474,
+     "z": 6.8,
+     "p": 0.005
+    },
+    "shuffled refit": {
+     "n": 6,
+     "mean": -3.727,
+     "sd": 0.059,
+     "max": -3.644,
+     "z": 23.3,
+     "p": 0.1429
+    }
+   },
+   "power": -2.503,
+   "verdict": "pass",
+   "notes": "claimed per-occurrence score -2.36; polyphony 0.002; 6 unread tokens left out; annealer on the real text from random keys reached -2.503"
+  },
   "class": "read",
   "key": "recovered",
   "method": "key recovered from ciphertext-only",
@@ -224,9 +270,14 @@
   ],
   "fraction_read": 0.999,
   "fraction_read_method": "measured",
-  "fraction_read_source": "texts/*_decryption.txt: 1,952 of 1,953 signs carry a value (one sign unresolved, 13 May L06); about fifteen signs in the 13 May letter are the encipherer's slips, corrected from the sense and marked {x} in the reading. Measured on review, 27 Oct 2026.",
+  "fraction_read_source": "texts/*_decryption.txt: 1,952 of the 1,953 signs transcribed in the repository carry a value (the long letter of 15 May is transcribed only for its 174-symbol crib passage) (one sign unresolved, 13 May L06); about fifteen signs in the 13 May letter are the encipherer's slips, corrected from the sense and marked {x} in the reading. Measured on review, 27 Oct 2026.",
   "first_break": true,
-  "verification": ["matched control", "independent clear copy", "historical consistency", "statistical test"],
+  "verification": [
+   "matched control",
+   "independent clear copy",
+   "historical consistency",
+   "statistical test"
+  ],
   "credits": [
    {
     "who": "dudout",
@@ -252,7 +303,13 @@
     "translation": "texts/1663-05-13_translation.md",
     "language": "pt",
     "state": "read",
-    "summary": "Written two days after Don John appeared before Estremoz and the day before Évora was invested, the letter first worries about the general’s silence: the courier may have been taken. Then it announces, company by company, the cavalry leaving for the Alentejo."
+    "summary": "Written two days after Don John appeared before Estremoz and the day before Évora was invested, the letter first worries about the general’s silence: the courier may have been taken. Then it announces, company by company, the cavalry leaving for the Alentejo.",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Opus 5.5 (PR review on merge)",
+     "date": "2026-10-27",
+     "note": "Read the decryption line by line against the reading and the translation: coherent Portuguese throughout, the date and troop numbers (10, 9, 203, 56, 55) written in clear. About fifteen slips corrected from the sense on a single copy; weak spots are the one-off ʒ ('{es}te') and 'Lo[bo] ‹aal› de Agalega'."
+    }
    },
    {
     "doc": "lmp2-1663-05-15a",
@@ -263,7 +320,13 @@
     "translation": "texts/1663-05-15a_translation.md",
     "language": "pt",
     "state": "read",
-    "summary": "This is the “other letter of this same date” to which the ciphered note of 15 May refers. Partly in clear and partly in cipher, it keeps for the cipher everything that would inform the enemy: the reinforcements on the way (Beira foot and horse, Lisbon companies), the King’s plan to set up a place of arms at Setúbal or Palmela, the pay money, the help sent to Montemor. Left in clear are the greeting, the doctrine (“an army is there to fight”) and the request for a courier every day."
+    "summary": "This is the “other letter of this same date” to which the ciphered note of 15 May refers. Partly in clear and partly in cipher, it keeps for the cipher everything that would inform the enemy: the reinforcements on the way (Beira foot and horse, Lisbon companies), the King’s plan to set up a place of arms at Setúbal or Palmela, the pay money, the help sent to Montemor. Left in clear are the greeting, the doctrine (“an army is there to fight”) and the request for a courier every day.",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Opus 5.5 (PR review on merge)",
+     "date": "2026-10-27",
+     "note": "The repository decryption is the 174-symbol passage only (copy 2, image 57, ll. 20-26): it reads as one sentence and matches copy 1's clear text (164 of 166 characters). The rest of the long letter reads coherently in reading.md and translation.md but rests on the contributor's transcriptions of both copies, which are not in the repository, so it was not checked symbol by symbol."
+    }
    },
    {
     "doc": "lmp2-1663-05-15",
@@ -274,7 +337,13 @@
     "translation": "texts/1663-05-15_translation.md",
     "language": "pt",
     "state": "read",
-    "summary": "The day after Évora was invested, the King added to a long letter of the same date a note entirely in cipher apart from the greeting and the date. The main question had been “reconsidered”: if the enemy persisted and put the city in danger, Vila Flor was to gather all his forces and relieve it at all risk, “even exposing yourself to the last extremity of a battle”."
+    "summary": "The day after Évora was invested, the King added to a long letter of the same date a note entirely in cipher apart from the greeting and the date. The main question had been “reconsidered”: if the enemy persisted and put the city in danger, Vila Flor was to gather all his forces and relieve it at all risk, “even exposing yourself to the last extremity of a battle”.",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Opus 5.5 (PR review on merge)",
+     "date": "2026-10-27",
+     "note": "Decryption read line by line against the reading: every line forms Portuguese sentences; the five slips of this copy (espera{i}s, a[o], conse[q]uencias, d{o}, q{ue}) are settled by the second copy."
+    }
    },
    {
     "doc": "lmp2-1663-05-26",
@@ -285,7 +354,13 @@
     "translation": "texts/1663-05-26_translation.md",
     "language": "pt",
     "state": "read",
-    "summary": "On 22 May 1663 Évora, one of the chief cities of the kingdom, surrendered to Don John Joseph of Austria. Four days later the court in Lisbon, governed by the Count of Castelo Melhor in the name of the young Afonso VI, wrote to the general of the Alentejo army, the Count of Vila Flor. The letter opens and closes in clear; the whole order is in cipher: relieve Évora “em todo o cazo e a todo o risco”, move the army without delay, show the letter to the commanders, and count on the pay money leaving in two days. Thirteen days later Vila Flor and Schomberg defeated Don John at Ameixial."
+    "summary": "On 22 May 1663 Évora, one of the chief cities of the kingdom, surrendered to Don John Joseph of Austria. Four days later the court in Lisbon, governed by the Count of Castelo Melhor in the name of the young Afonso VI, wrote to the general of the Alentejo army, the Count of Vila Flor. The letter opens and closes in clear; the whole order is in cipher: relieve Évora “em todo o cazo e a todo o risco”, move the army without delay, show the letter to the commanders, and count on the pay money leaving in two days. Thirteen days later Vila Flor and Schomberg defeated Don John at Ameixial.",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Opus 5.5 (PR review on merge)",
+     "date": "2026-10-27",
+     "note": "All 26 lines decode with K1 into the reading's Portuguese, checked symbol by symbol against key_K1.tsv; the only departures are the symbol lost in the tear ([p]ara) and 'parecor' for parecer."
+    }
    }
   ],
   "key_file": [
