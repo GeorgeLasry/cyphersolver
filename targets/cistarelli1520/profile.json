@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "target": "cistarelli1520",
- "title": "Alfonso Cistarelli (Eger) to Cardinal Ippolito I d'Este, 25 July 1520, ASMo Ambasciatori Ungheria b. 4 (DECODE R1137; catalogue 158)",
+ "title": "Alfonso Cistarelli to the Este, 1520: Eger to Cardinal Ippolito I d'Este 25 July (DECODE R1137; catalogue 158) and Kraków to Duke Alfonso I 14 Oct (Vestigia V1908; catalogue 846)",
  "documents": [
   {
    "id": "R1137",
@@ -31,6 +31,41 @@
     "source": "DECODE image, subagent transcription of two-digit groups",
     "image_quality": "fair",
     "notes": "584 numeric groups and 83 other signs; group boundaries inferred (no spaces)."
+   },
+   "read": "not read"
+  },
+  {
+   "id": "V1908",
+   "shelfmark": "ASMo, Ambasciatori, Ungheria b. 4, Alfonso Cistarelli no. 7 (Vestigia 1908; DF 294963); not on DECODE",
+   "date": "14 Oct 1520",
+   "year": 1520,
+   "country": "Poland",
+   "route": "Alfonso Cistarelli (Kraków) -> Duke Alfonso I d'Este (Ferrara)",
+   "places": {
+    "from": "Kraków",
+    "to": "Ferrara"
+   },
+   "language": "Italian",
+   "pages": 1,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "partial": false
+   },
+   "length": {
+    "tokens": 41,
+    "distinct": 41,
+    "unit": "symbols",
+    "measured": false,
+    "file": "targets/cistarelli1520/v1908_transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Vestigia image (photograph of an old photocopy)",
+    "image_quality": "poor",
+    "notes": "Line 7 (34 tokens) and the end of line 27 (7 tokens) legible; lines 28-34, about six lines of cipher, mostly lost in the photocopy's dark bands."
    },
    "read": "not read"
   }
@@ -82,9 +117,9 @@
   "models": [
    "claude-opus-5"
   ],
-  "sessions": 1,
+  "sessions": 2,
   "first_date": "2026-09-21",
-  "last_date": "2026-10-02"
+  "last_date": "2026-10-28"
  },
  "solution": [
   {
@@ -146,11 +181,32 @@
    "kind": "verification",
    "what": "Entry split on 14 Oct 2026 under the one-key rule (George Lasry, 14 Oct 2026) from caprile1519, which had joined three ciphers of the same ASMo file: the 1519 two-tier cipher (caprile1519), the 1520-21 sign cipher (caprile1520) and Cistarelli's figure cipher (cistarelli1520). This profile keeps the documents and steps of Cistarelli's figure cipher (R1137) only.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "access",
+   "what": "Catalogue 846 (Brice Dudout, 28 Oct 2026): Vestigia V1908 image already in caprile1519/img/v/v1908_1.jpg (photo of a photocopy). Clear text shows the addressee is Duke Alfonso I (Vestigia), written from Kraków, reporting the illness and death of 'mio Ill.mo S.re et patrone' (Cardinal Ippolito, d. 3 Sept 1520). Same signs as R1137 (two-digit groups ending 0/5, letters f k u y x h g m), so the same key: joined to this entry.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "transcription",
+   "what": "V1908 line 7 transcribed (34 tokens) and the end of line 27 (7 tokens); lines 28-34 about six cipher lines too faded in the photocopy to transcribe.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "solver",
+   "technique": [
+    "simulated annealing"
+   ],
+   "what": "R1137 anneal key applied to V1908 line 7: 'adlmodegmo?racentogseti?tipodtare'; joint anneal R1137+V1908 (12 x 120k, fixed consensus values): 'adlmodelmoframentossediftiportare', 'dancoar'. Fragments ('portare'), no reading.",
+   "result": "failed"
   }
  ],
  "outcome": {
   "method": "not solved",
-  "method_basis": "Ciphertext-only annealing gives a partly consistent key and scattered phrases but no reading, and crib placement does not separate cribs from controls; no key or decipherment exists, and the only image does not settle the digits.",
+  "method_basis": "Ciphertext-only annealing over both letters gives a partly consistent key and scattered phrases but no reading; no key or decipherment exists, R1137's image does not settle the digits and most of V1908's cipher is lost in the photocopy.",
   "contribution": [
    "transcription"
   ],
@@ -160,14 +216,27 @@
   "fraction_read_method": "measured",
   "fraction_read_source": "No group of R1137 is claimed as read; the anneal fragments (lettere per, presto, saria meglio) are grade M at best and are not a reading (f37_*.txt, r1137_crib_out.txt).",
   "verification": [],
-  "notes": "Attempted, open. Language signal above a shuffled control (-2.69 vs -3.05 per token), but fragments only. Blockers: transcription noise (14 % disagreement on a spot-check) on the only image, no key in the series, archive or decade. Split 14 Oct 2026 from caprile1519.",
+  "notes": "Attempted, open. Language signal above a shuffled control (-2.69 vs -3.05 per token), but fragments only. Blockers: transcription noise (14 % disagreement on a spot-check) on the only image, no key in the series, archive or decade. Split 14 Oct 2026 from caprile1519. 28 Oct 2026: V1908 (catalogue 846) joined, same cipher; not read.",
   "gaps": [
    {
     "item": "R1137, 584 two-digit groups",
     "blocker": "needs-physical-access",
     "detail": "the DECODE image does not settle the digits (13/92 groups disagree between two readings); no key exists; cribs = controls; a better photograph from ASMo (b. 4/26 no. 3) is the next step (judgement, not proven)"
+   },
+   {
+    "item": "V1908 (14 Oct 1520), line 7 and about six cipher lines at the foot",
+    "blocker": "needs-physical-access",
+    "detail": "only a photograph of an old photocopy exists online; lines 28-34 are lost in its dark bands; Brice Dudout has asked ASMo for the original (28 Oct 2026); the R1137 anneal key does not read the legible line"
    }
   ],
-  "credits": []
+  "credits": [
+   {
+    "who": "dudout",
+    "role": "new cipher",
+    "note": "pointed to Vestigia V1908 (catalogue 846), Cistarelli 14 Oct 1520 in the same cipher; has asked ASMo for the original",
+    "date": "2026-10-28",
+    "source": "note to the project, 28 Oct 2026"
+   }
+  ]
  }
 }

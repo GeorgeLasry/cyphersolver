@@ -1128,7 +1128,7 @@ PAGES = [
          rights='Manuscript images: Archivio di Stato di Modena, via DECODE and Vestigia'),
     dict(slug='cistarelli1520', label='Cistarelli 1520', year='1520', y=1520.56, place='Eger &rarr; Ippolito d&rsquo;Este', st='stuck', stt='not solved',
          title='Alfonso Cistarelli, Eger, 25 July 1520',
-         blurb='A page of two-digit figures from Cardinal Ippolito d&rsquo;Este&rsquo;s agent at Eger (DECODE R1137). A ciphertext-only search finds more language than in a shuffled control but only phrases, cribs do no better than control words, and the only photograph does not settle the digits. Attempted, not solved.',
+         blurb='A page of two-digit figures from Cardinal Ippolito d&rsquo;Este&rsquo;s agent at Eger (DECODE R1137). A ciphertext-only search finds more language than in a shuffled control but only phrases, cribs do no better than control words, and the only photograph does not settle the digits. A second letter in the same figures, Krak&oacute;w 14 October 1520 to Duke Alfonso I, survives online only as a photocopy with one legible cipher line. Attempted, not solved.',
          quote='&ldquo;saria meglio&rdquo;, &ldquo;non se poteria&rdquo; &middot; fragments of the ciphertext-only search',
          rights='Manuscript images: Archivio di Stato di Modena, via DECODE and Vestigia'),
     dict(slug='caprile1520', label='Caprile 1520&ndash;21', year='1520&ndash;21', y=1520.6, place='Buda, Esztergom &rarr; Ferrara', st='partial', stt='solved in part',
