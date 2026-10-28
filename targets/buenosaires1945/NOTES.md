@@ -1,6 +1,6 @@
 # Code messages found in the ex-German Embassy archives, Buenos Aires, report of 16 June 1945 (Unsolved Catalogue no. 663)
 
-Status: in progress
+Status: no write-up. Blocked on access: neither NR 2054 (naId 2808583) nor the related NR 1403 (naId 2807843) is digitised.
 
 Blocked on images: no ciphertext is available. Nothing below rests on a sight of a message.
 

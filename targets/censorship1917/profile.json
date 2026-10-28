@@ -1,0 +1,110 @@
+{
+ "schema_version": 1,
+ "target": "censorship1917",
+ "title": "Postal censorship and German espionage: codes and ciphers file, 2 Nov 1917 (NARA RG 457, NR 4458)",
+ "documents": [
+  {
+   "id": "A",
+   "shelfmark": "NARA RG 457, Historic Cryptographic Records, NR 4458 (ZEMA20, 4895A), container 1393 (naId 2811219)",
+   "date": "1917-11-02",
+   "year": 1917,
+   "country": "United States",
+   "route": "unknown (presumed German agents in the US and Mexico, intercepted by postal censorship)",
+   "language": "unknown",
+   "cleartext_in_document": "unknown",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "unknown: contents not seen.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 0,
+    "unit": "mixed",
+    "measured": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "image_quality": "no images",
+    "notes": "Not digitised (NARA catalog: availableOnline 0). Nothing transcribed."
+   },
+   "read": "not read"
+  }
+ ],
+ "system": {
+  "types": [
+   "undetermined"
+  ],
+  "summary": "unknown: the file has not been seen.",
+  "symbol_kind": "symbols",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": "unknown"
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": "unknown"
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "not applicable",
+  "notes": "symbol_kind and key_order are placeholders: the schema has no 'unknown' value for them. Nothing about the system is known."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "unknown",
+   "where": "none found; some MI-8 censorship cases of 1917-18 were solved at the time, but none can be matched to this file unseen",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [],
+  "attack": "none",
+  "human_role": "Pasted the catalogue task; no other input.",
+  "tools": [
+   "NARA catalog API",
+   "web search"
+  ],
+  "models": [
+   "claude-opus-5-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-10-27",
+  "last_date": "2026-10-27"
+ },
+ "solution": [
+  {
+   "date": "2026-10-27",
+   "kind": "access",
+   "what": "NARA catalog API on naId 2811219: paper, container 1393, no digital objects; the other ZEMA20 units (NR 4454-4457) are unrelated and not online.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "literature search",
+   "what": "Web search on the exact title with NR 4458 and on 1917 censorship / MI-8 / Historic Cryptographic Collection: no edition, decipherment or description. NSA Friedman index and RG 165 MI-8 files not searched item by item.",
+   "result": "failed"
+  }
+ ],
+ "outcome": {
+  "class": "offline only",
+  "key": "none",
+  "method": "not applicable",
+  "verification": [
+   "none"
+  ],
+  "contribution": [
+   "none"
+  ],
+  "gaps": [
+   {
+    "item": "whole file",
+    "blocker": "needs-physical-access"
+   }
+  ],
+  "notes": "Not attempted on the ciphertext: the file is not digitised. Next: copy request to NARA College Park (RG 457, container 1393)."
+ }
+}

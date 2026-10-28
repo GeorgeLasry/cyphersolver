@@ -1,6 +1,6 @@
 # The "Tampico message": Riverbank reports it cannot solve it, 27 Aug 1917 (Unsolved Catalogue no. 674)
 
-Status: in progress
+Status: no write-up. Blocked on access: the War College Division file 10020-60 is not scanned; only its M912 index card is online.
 
 Blocked on images: the file is not digitised and has to be ordered from NARA College Park. Nothing below rests
 on a sight of the message.

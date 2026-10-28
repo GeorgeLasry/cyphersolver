@@ -1,0 +1,62 @@
+{
+ "schema_version": 1,
+ "target": "vienna1873",
+ "title": "US minister at Vienna to Secretary of State, cable in the 1867 State Department code (catalogue 634)",
+ "documents": [
+  {
+   "id": "vienna-cable",
+   "shelfmark": "unknown (NARA RG 59 telegrams received or M46 Despatches from Austria; not located)",
+   "date": "c. 1867-1873",
+   "year": 1870,
+   "country": "Austria",
+   "route": "Vienna -> Washington",
+   "language": "English",
+   "cleartext_in_document": "unknown",
+   "plaintext": {
+    "location": ["none"],
+    "source": "Haswell to Fish, 8 Jul 1873, in Weber, Masked Dispatches pp. 106, 131: never deciphered"
+   },
+   "length": {"tokens": "unknown", "distinct": "unknown", "unit": "letters", "measured": false},
+   "transcription": {"by": "unknown", "source": "none: ciphertext not located", "image_quality": "unknown", "notes": "The telegram was never seen."}
+  }
+ ],
+ "system": {
+  "types": ["code"],
+  "summary": "1867 State Department code: words and phrases as letter groups of unequal length, run together by telegraphers.",
+  "symbol_kind": "letters",
+  "distinct_symbols": "unknown",
+  "diacritics": {"used": false},
+  "homophones": {"used": "unknown"},
+  "nomenclator": {"present": "unknown"},
+  "nulls": {"present": "unknown"},
+  "key_order": "unknown",
+  "word_division": "none",
+  "doubled_letters": "unknown",
+  "sibling_key": "unknown",
+  "notes": "Weber prints only a sample page of the codebook, not the full code."
+ },
+ "conditions": {
+  "prior_solution": {"exists": "no", "where": "none found; Haswell says it was never deciphered", "found": "before attempt", "used": false},
+  "inputs": [],
+  "attack": "unknown",
+  "human_role": "Gave the brief and approved the download of the Masked Dispatches PDF.",
+  "tools": ["web search", "PDF text extraction (PyMuPDF)"],
+  "models": ["claude-sonnet-5-5"],
+  "sessions": 1,
+  "first_date": "2026-10-27",
+  "last_date": "2026-10-27"
+ },
+ "solution": [
+  {"kind": "literature search", "what": "Two web searches on Haswell, Fish, the Vienna cable and the 1867 code.", "result": "failed"},
+  {"kind": "access", "what": "Read Masked Dispatches (govinfo PDF) pp. 106, 131, notes and ch. 18: no date, text or archive item for the cable; code printed only as a sample page.", "result": "ruled out"}
+ ],
+ "outcome": {
+  "method": "not solved",
+  "method_basis": "The telegram was not located and the full 1867 codebook is not available; no attack was possible.",
+  "contribution": ["none"],
+  "class": "not read",
+  "fraction_read": 0,
+  "verification": ["none"],
+  "notes": "Blocked from outside: needs the NARA item and the full codebook."
+ }
+}

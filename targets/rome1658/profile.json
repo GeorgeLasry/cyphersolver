@@ -1,0 +1,116 @@
+{
+ "schema_version": 1,
+ "target": "rome1658",
+ "title": "Unidentified writer to the Portuguese ambassador in Rome, 24 April 1658, partly in cipher (ANTT, Condes da Ponte, cx. 8, MT-151)",
+ "documents": [
+  {
+   "id": "A",
+   "shelfmark": "ANTT, Arquivo dos Condes da Ponte, Caixa 8 (Mello e Torres), Doc. MT-151 (PT/TT/CPN/000210)",
+   "date": "24 April 1658",
+   "year": 1658,
+   "country": "Portugal",
+   "route": "unknown -> Portuguese ambassador in Rome",
+   "language": "Italian",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "DigitArq notes no decipherment; the item has not been seen.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 0,
+    "unit": "mixed",
+    "measured": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "image_quality": "no images",
+    "notes": "Not digitised (DigitArq hasImages false, rdigital 0 files, 26 Oct 2026). Nothing transcribed. cleartext_in_document is taken from the catalogue's 'Parcialmente em cifra'."
+   },
+   "read": "not read"
+  }
+ ],
+ "system": {
+  "types": [
+   "undetermined"
+  ],
+  "summary": "unknown: the letter has not been seen.",
+  "symbol_kind": "symbols",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": "unknown"
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": "unknown"
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "not applicable",
+  "notes": "symbol_kind and key_order are placeholders: the schema has no 'unknown' value for them. Nothing about the system is known."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "unknown",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [],
+  "attack": "none",
+  "human_role": "Pasted the catalogue task; no other input.",
+  "tools": [
+   "DigitArq JSON API (curl)",
+   "research/torre_do_tombo crawl files"
+  ],
+  "models": [
+   "claude-opus-5-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-10-26",
+  "last_date": "2026-10-26"
+ },
+ "solution": [
+  {
+   "date": "2026-10-26",
+   "kind": "access",
+   "what": "DigitArq details and rdigital APIs for PT/TT/CPN/000210: hasImages false, 0 scan files. Not digitised.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "access",
+   "what": "Sibling search in the Condes da Ponte crawl (2,713 records, 68 imaged): Orsini/Vieira da Silva cipher letters mç. 17 n.º 1, Mesquita Rome letters mç. 20, Caixa 8 items 1657-59. None imaged.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "literature search",
+   "what": "Repo, DECODE, Cryptoole (known.py) and web searches on the shelfmark, Condes da Ponte/Mello e Torres cifra 1658 and the Portuguese envoy in Rome 1658. No edition or decipherment found; Teatro do Mundo (2025) not checked.",
+   "result": "failed"
+  }
+ ],
+ "outcome": {
+  "class": "offline only",
+  "key": "none",
+  "method": "not applicable",
+  "verification": [
+   "none"
+  ],
+  "contribution": [
+   "none"
+  ],
+  "gaps": [
+   {
+    "item": "whole letter",
+    "blocker": "needs-physical-access"
+   }
+  ],
+  "notes": "Not attempted on the ciphertext: the item could not be reached. Scans must be ordered from ANTT."
+ }
+}

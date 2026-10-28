@@ -1,0 +1,117 @@
+{
+ "schema_version": 1,
+ "target": "orvilliers1759",
+ "title": "Guillouet d'Orvilliers, Le Moyne and Morisse (Cayenne) to the Navy minister, ciphered letters 1751 and 1757-62 (ANOM COL C14 21, 24, 25)",
+ "documents": [
+  {
+   "id": "C14",
+   "shelfmark": "Archives nationales d'outre-mer, COL C14 21, 24, 25 (36 items listed in letters.tsv)",
+   "date": "1751; Apr 1757 - Dec 1762",
+   "year": 1759,
+   "country": "France",
+   "route": "Cayenne -> Versailles",
+   "language": "unknown",
+   "cleartext_in_document": "unknown",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "The ANOM inventory notes no decipherment; several items are marked 'non traduit'. The letters have not been seen.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 0,
+    "unit": "mixed",
+    "measured": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "image_quality": "no images",
+    "notes": "Not digitised online: none of the 227 ANOM notices in the 1757-63 branch, nor the 1751 C14 21 notice, carries a digital object (27 Oct 2026). Nothing transcribed. French expected."
+   },
+   "read": "not read"
+  }
+ ],
+ "system": {
+  "types": [
+   "undetermined"
+  ],
+  "summary": "unknown: the letters have not been seen.",
+  "symbol_kind": "symbols",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": "unknown"
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": "unknown"
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "not applicable",
+  "notes": "symbol_kind and key_order are placeholders: the schema has no 'unknown' value for them. The contemporary Martinique code (catalogue 542, mercier1761) was a numerical two-part nomenclator; whether Cayenne used the same kind is unknown."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "unknown",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [],
+  "attack": "none",
+  "human_role": "Pasted the catalogue task; no other input.",
+  "tools": [
+   "ANOM and FranceArchives in the built-in browser",
+   "research/catalogue_harvest/decode/list.json",
+   "web search"
+  ],
+  "models": [
+   "claude-opus-5-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-10-27",
+  "last_date": "2026-10-27"
+ },
+ "solution": [
+  {
+   "date": "2026-10-27",
+   "kind": "access",
+   "what": "All 227 ANOM notices of the d'Orvilliers 1757-63 branch and the cited FranceArchives records read: 35 items with ciphered text in C14 24-25 plus the 1751 C14 21 letter (letters.tsv); none carries a digital object. 'Autres fonds numérisés' search shows no Guyane C14. Not digitised online.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "sibling key",
+   "what": "DECODE harvest list (10,106 records) searched for Cayenne, Guyane, Guiana, d'Orvilliers, Le Moyne, C14: no record.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "literature search",
+   "what": "Web search on the shelfmark, correspondents, date and 'lettre chiffrée': biography and inventory pages only; no edition or decipherment.",
+   "result": "failed"
+  }
+ ],
+ "outcome": {
+  "class": "offline only",
+  "key": "none",
+  "method": "not applicable",
+  "verification": [
+   "none"
+  ],
+  "contribution": [
+   "none"
+  ],
+  "gaps": [
+   {
+    "item": "all 36 items",
+    "blocker": "needs-physical-access"
+   }
+  ],
+  "notes": "Not attempted on the ciphertext: the items could not be reached online. Reproductions must be ordered from ANOM; key lead AN MAR/G/178, crib lead COL B outgoing dépêches."
+ }
+}

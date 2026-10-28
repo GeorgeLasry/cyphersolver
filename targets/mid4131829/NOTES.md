@@ -1,6 +1,6 @@
 # MID 4131-829: Revolutionary War letter in code (catalogue 682)
 
-Status: in progress (blocked on access: no ciphertext online)
+Status: no write-up. Blocked on access: only the M1194 index card is online (sender Col. H. L. Cavenaugh, Berkeley, 25 July 1934).
 
 ## What the document is
 

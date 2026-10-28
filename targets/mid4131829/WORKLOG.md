@@ -8,3 +8,4 @@
 - 2026-10-27: Found frame 1068 of M1194 roll 42 through the NARA catalog proxy API and read the card: sender
   Col. H. L. Cavenaugh, Berkeley, Calif.; 4131-829 dated 7-25-34; no answer recorded.
 - 2026-10-27: Web searches for Cavenaugh with Berkeley, 1934, Revolutionary War cipher: nothing. Added profile.json.
+2026-10-28 Closed for now as blocked on access (Status: no write-up); catalogue 682 outcome set to 'attempted, open' and the site catalogue rebuilt.

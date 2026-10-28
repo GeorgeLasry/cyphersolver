@@ -1,0 +1,179 @@
+{
+ "schema_version": 1,
+ "target": "union1864",
+ "title": "Union Army cipher telegram books 1864-1868 (NARA RG 107 628803, RG 108 604437, RG 393 4486363/5081118/5131597)",
+ "documents": [
+  {
+   "id": "A",
+   "shelfmark": "NARA RG 107, Telegrams in Cipher (naId 628803), item 3854723: Butler to Biggs, 24 July 1864",
+   "date": "1864-07-24",
+   "year": 1864,
+   "country": "United States",
+   "route": "Maj. Gen. B. F. Butler (Army of the James HQ) -> Lt. Col. Biggs",
+   "language": "English",
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "separate folio",
+     "printed edition"
+    ],
+    "source": "Central Telegraph Office route worksheet filed with the telegram; stamped 'Printed in War Records' (OR vol 40 pt 3 p 432, not checked).",
+    "partial": false
+   },
+   "length": {
+    "tokens": 59,
+    "unit": "code groups",
+    "measured": true,
+    "file": "transcription.md"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "image_quality": "good",
+    "notes": "59 words counted on the form (matches the operator's count 59). Words, not letters: unit 'code groups' stands for cipher words."
+   },
+   "read": "read in part"
+  },
+  {
+   "id": "B",
+   "shelfmark": "NARA RG 107 628803 (rest), RG 108 604437, RG 393 4486363, 5081118, 5131597",
+   "date": "1864/1868",
+   "year": 1865,
+   "country": "United States",
+   "route": "War Department, Grant, Halleck, department commands <-> field commands",
+   "language": "English (expected)",
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "separate folio",
+     "printed edition"
+    ],
+    "source": "RG 107: deciphering worksheets per catalogue scope note; RG 108: fair copies; RG 393 unknown.",
+    "partial": true
+   },
+   "length": {
+    "tokens": 0,
+    "unit": "mixed",
+    "measured": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "image_quality": "no images",
+    "notes": "Not digitised."
+   },
+   "read": "not read"
+  }
+ ],
+ "system": {
+  "types": [
+   "transposition",
+   "code"
+  ],
+  "summary": "Union Army route cipher: plain words written into a 7-column grid, read off by a column route with blind words, code words for names, times and dates.",
+  "symbol_kind": "letters",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": false
+  },
+  "nomenclator": {
+   "present": true
+  },
+  "nulls": {
+   "present": true
+  },
+  "key_order": "not applicable",
+  "notes": "Route for item A: up 1, down 6, up 4, down 2, up 3, down 5, up 7; blind word after each column. The route book in use is not identified."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in archive",
+   "where": "Contemporary worksheet filed with item A; printed in OR Ser. I vol. 40 pt. 3 p. 432 (checked); RG 108 fair copies",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "published reading"
+  ],
+  "attack": "archive decipherment",
+  "human_role": "Pasted the catalogue task; no other input.",
+  "tools": [
+   "NARA catalog proxy API",
+   "web search",
+   "PyMuPDF"
+  ],
+  "models": [
+   "claude-opus-5-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-10-27",
+  "last_date": "2026-10-27"
+ },
+ "solution": [
+  {
+   "date": "2026-10-27",
+   "kind": "access",
+   "what": "NARA proxy API on the five naIds: only item 3854723 (RG 107) is online; RG 108 and RG 393 not digitised. RG 393 naIds duplicate catalogue 680 (army1865).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "transcription",
+   "what": "Transcribed Butler-Biggs 24 July 1864 telegram (59 words) and its 7-column route worksheet.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "verification",
+   "what": "Reconstructed the route from the worksheet (up 1, down 6, up 4, down 2, up 3, down 5, up 7, blind word after each column); reproduces the grid except one cell.",
+   "result": "worked",
+   "technique": [
+    "manual reconstruction"
+   ]
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "literature search",
+   "what": "Web search for the OR text and for RG 108 in print; Huntington Eckert papers identified as route-book source. OR vol 40 pt 3 p 432 not opened.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "literature search",
+   "what": "Opened OR Ser. I vol. 40 pt. 3 p. 432 (archive.org djvu text): Butler to Biggs printed, matches the worksheet word for word; last grid row read as 'This is to be confidential'. Four end-row words, 'unity i' and the opening 'Forward gam gobble' still unread.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "offline only",
+  "key": "partial",
+  "method": "read from existing decipherment",
+  "verification": [
+   "contemporary decipherment",
+   "independent clear copy"
+  ],
+  "contribution": [
+   "transcription"
+  ],
+  "gaps": [
+   {
+    "item": "RG 107 rest, RG 108, RG 393 series",
+    "blocker": "needs-physical-access"
+   },
+   {
+    "item": "item A: 'dont shall walrus knox', 'unity i' and opening 'Forward gam gobble' (code/blind/indicator words)",
+    "blocker": "no-key-material"
+   }
+  ],
+  "notes": "Only one item online; it was deciphered at the time and printed. Rest blocked on access; RG 393 overlaps catalogue 680.",
+  "credits": [
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "War Department Central Telegraph Office route worksheet filed with the telegram (image 3)"
+   }
+  ]
+ }
+}

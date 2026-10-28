@@ -1,0 +1,110 @@
+{
+ "schema_version": 1,
+ "target": "civilwar1862",
+ "title": "American Civil War letters, messages, information, cipher instructions, 1862-1865 (NARA RG 457, NSA historian's source file 9122)",
+ "documents": [
+  {
+   "id": "A",
+   "shelfmark": "NARA RG 457, Archival and Historian's Source Files, item 9122, container 100 (naId 23890756)",
+   "date": "1862/1865",
+   "year": 1862,
+   "country": "United States",
+   "route": "unknown (Union and/or Confederate)",
+   "language": "English (expected)",
+   "cleartext_in_document": "unknown",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "unknown: contents not seen.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 0,
+    "unit": "mixed",
+    "measured": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "image_quality": "no images",
+    "notes": "Not digitised (NARA catalog: availableOnline 0). Nothing transcribed."
+   },
+   "read": "not read"
+  }
+ ],
+ "system": {
+  "types": [
+   "undetermined"
+  ],
+  "summary": "unknown: the file has not been seen.",
+  "symbol_kind": "symbols",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": "unknown"
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": "unknown"
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "not applicable",
+  "notes": "symbol_kind and key_order are placeholders: the schema has no 'unknown' value for them. Nothing about the system is known."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "unknown",
+   "where": "none found; the file may copy Union route-cipher telegrams (read at the time, printed in the Official Records) or Confederate Vigenère messages (known keys), but nothing can be matched unseen",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [],
+  "attack": "none",
+  "human_role": "Pasted the catalogue task; no other input.",
+  "tools": [
+   "NARA catalog API",
+   "web search"
+  ],
+  "models": [
+   "claude-opus-5-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-10-27",
+  "last_date": "2026-10-27"
+ },
+ "solution": [
+  {
+   "date": "2026-10-27",
+   "kind": "access",
+   "what": "NARA catalog API on naId 23890756: loose sheets, container 100, no digital objects; the only other Civil War units in series 6004182 are two photograph units (container 139), not online.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "literature search",
+   "what": "Web search on the exact title with item 9122 and on NSA historian's Civil War cipher material: no edition, decipherment or description. Friedman Collection not searched item by item.",
+   "result": "failed"
+  }
+ ],
+ "outcome": {
+  "class": "offline only",
+  "key": "none",
+  "method": "not applicable",
+  "verification": [
+   "none"
+  ],
+  "contribution": [
+   "none"
+  ],
+  "gaps": [
+   {
+    "item": "whole file",
+    "blocker": "needs-physical-access"
+   }
+  ],
+  "notes": "Not attempted on the ciphertext: the file is not digitised. Next: copy request to NARA College Park (RG 457, Archival and Historian's Source Files, container 100)."
+ }
+}

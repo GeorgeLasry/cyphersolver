@@ -40,7 +40,7 @@
 </div>
 
 <section class="hero solve">
-  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 680 · class B · priority 3.8 · open</p>
+  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 680 · class B · priority 3.8 · attempted, open</p>
   <h1>Army cipher telegrams of the Middle Department (1865), Department of the Gulf and Fifth Military District (1866-68)</h1>
   <p class="sub">Reconstruction-era military government traffic from New Orleans (Sheridan, Hancock) in cipher; probably readable with known route books, adding texts not in the War Department plain copies.</p>
   <dl class="facts">
@@ -76,20 +76,22 @@ THE CIPHER
     - Fifth Mil. Dist. 1868: https://catalog.archives.gov/id/5131597
 
 WHAT IS KNOWN
-  Status: Series level only. If the volumes hold the enciphered texts without plain copies (the 5081118 scope note says they are in cipher), they are Union route-cipher telegrams of Reconstruction, readable with the War Department route books. Overlaps the nara_catalog README "Union Army cipher telegram books" note (not a row there).
-  Outcome so far: not yet attempted by the project
+  Status: Series level only. If the volumes hold the enciphered texts without plain copies (the 5081118 scope note says they are in cipher), they are Union route-cipher telegrams of Reconstruction, readable with the War Department route books. Overlaps the nara_catalog README "Union Army cipher telegram books" note (not a row there). 27 Oct 2026 (targets/army1865/): attempted; none of the three RG 393 series (naIds 4486363, 5081118, 5131597) is digitised; nothing transcribed. Same series as catalogue 632 (targets/union1864/): dedup at merge.
+  Outcome so far: attempted, open: blocked, none of the three RG 393 series is digitised (same naIds as catalogue 632) (27 Oct 2026, targets/army1865/)
   Prior-art check: open (checked 27 Oct 2026: repo known.py, nara_military + nara_catalog READMEs; no published reading found)
   Check first: Order the three series; compare against the RG 107 M473 plain copies and the route books in the Eckert papers / Plum (1882).
   Class B: part of a key or a known cipher family of the same office is in print or on DECODE.
+  Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/army1865/NOTES.md
+  Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/union1864/NOTES.md
 
 STEPS
 0. Set up. If you can run a shell, fork and clone the repository and work inside it:
      git clone https://github.com/dbourdeau/cyphersolver.git
    Then read, in this order: CONTRIBUTING.md (how a contribution is sent and credited); README.md, sections
-   "Repository layout" and "Conventions" (how readings are measured and named); and
-   lang/README.md (shared language models).
-   Put all your work in targets/&lt;writer&gt;&lt;year&gt;/ (a new folder, e.g. sega1593): transcription, key, decipherment, scripts. Write a NOTES.md that says
-   what the document is, the system, the key, the reading, and what is open and why. Keep WORKLOG.md there too:
+   "Repository layout" and "Conventions" (how readings are measured and named); targets/army1865/NOTES.md (everything
+   already tried on this cipher, with the files it used); and lang/README.md (shared language models).
+   Put all your work in targets/army1865/: transcription, key, decipherment, scripts. Add your findings to its NOTES.md
+   under a dated heading, without rewriting what is there. Keep WORKLOG.md there too:
    one dated line per step (transcription, hypothesis, solver run, crib, key found, control), failures included.
    Do not edit docs/ (the site is generated and rebuilt on merge) and do not commit large images: link them.
    If you cannot run a shell, do the same work in files you keep and send them with the issue below.
@@ -129,7 +131,7 @@ STEPS
      - not applicable: Not a cipher (clear text, shorthand, a key sheet, instructions), or the item could not be reached.
 
 REPORT BACK
-With a clone: open a pull request with your targets/&lt;writer&gt;&lt;year&gt;/ folder. Say in the description how you want to be
+With a clone: open a pull request with your targets/army1865/ folder. Say in the description how you want to be
   credited (name, initials or handle, and a link) and include the same points as the issue below.
 Without one: open an issue: https://github.com/dbourdeau/cyphersolver/issues/new?template=solution.yml&amp;title=Solution%3A+catalogue+680&amp;target=catalogue+680
 (other kinds of contribution: https://github.com/dbourdeau/cyphersolver/issues/new/choose). Include:
@@ -145,10 +147,10 @@ If you cannot open issues or pull requests, write this report for your human to 
 <h2>What is known</h2>
 
 
-<p><b>Status and prior art.</b> Series level only. If the volumes hold the enciphered texts without plain copies (the 5081118 scope note says they are in cipher), they are Union route-cipher telegrams of Reconstruction, readable with the War Department route books. Overlaps the nara_catalog README "Union Army cipher telegram books" note (not a row there).</p>
-<p><b>Outcome so far.</b> Not yet attempted by the project. Prior-art check: open (checked 27 Oct 2026: repo known.py, nara_military + nara_catalog READMEs; no published reading found).</p>
+<p><b>Status and prior art.</b> Series level only. If the volumes hold the enciphered texts without plain copies (the 5081118 scope note says they are in cipher), they are Union route-cipher telegrams of Reconstruction, readable with the War Department route books. Overlaps the nara_catalog README "Union Army cipher telegram books" note (not a row there). 27 Oct 2026 (targets/army1865/): attempted; none of the three RG 393 series (naIds 4486363, 5081118, 5131597) is digitised; nothing transcribed. Same series as catalogue 632 (targets/union1864/): dedup at merge.</p>
+<p><b>Outcome so far.</b> attempted, open: blocked, none of the three RG 393 series is digitised (same naIds as catalogue 632) (27 Oct 2026, targets/army1865/) Prior-art check: open (checked 27 Oct 2026: repo known.py, nara_military + nara_catalog READMEs; no published reading found).</p>
 <p><b>Check first.</b> Order the three series; compare against the RG 107 M473 plain copies and the route books in the Eckert papers / Plum (1882).</p>
-
+<ul><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/army1865/NOTES.md" rel="noopener">targets/army1865/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/army1865" rel="noopener">the folder</a>)</li><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/union1864/NOTES.md" rel="noopener">targets/union1864/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/union1864" rel="noopener">the folder</a>)</li></ul>
 
 
 <h2>Scores</h2>

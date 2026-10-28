@@ -1,0 +1,166 @@
+{
+ "schema_version": 1,
+ "target": "army1865",
+ "title": "Army cipher telegrams 1865-68: Middle Department, Department of the Gulf, Fifth Military District (NARA RG 393)",
+ "documents": [
+  {
+   "id": "A",
+   "shelfmark": "NARA RG 393, Middle Department, Press Copies of Cipher Telegrams Sent (naId 4486363)",
+   "date": "1865-01/1865-06",
+   "year": 1865,
+   "country": "United States",
+   "route": "Middle Department (Baltimore) -> War Department and posts",
+   "language": "English",
+   "cleartext_in_document": "unknown",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "unknown: contents not seen.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 0,
+    "unit": "mixed",
+    "measured": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "image_quality": "no images",
+    "notes": "Not digitised (NARA catalog: availableOnline 0). Nothing transcribed."
+   },
+   "read": "not read"
+  },
+  {
+   "id": "B",
+   "shelfmark": "NARA RG 393, Department of the Gulf / Fifth Military District, Telegrams Sent in Cipher (naId 5081118)",
+   "date": "1866-12/1867-04",
+   "year": 1866,
+   "country": "United States",
+   "route": "Department of the Gulf (New Orleans) -> War Department and posts",
+   "language": "English",
+   "cleartext_in_document": "unknown",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "unknown: contents not seen.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 0,
+    "unit": "mixed",
+    "measured": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "image_quality": "no images",
+    "notes": "Not digitised (NARA catalog: availableOnline 0). Nothing transcribed."
+   },
+   "read": "not read"
+  },
+  {
+   "id": "C",
+   "shelfmark": "NARA RG 393, Fifth Military District, Office of Civil Affairs, Cipher Telegrams Sent and Received (naId 5131597)",
+   "date": "1868-02/1868-06",
+   "year": 1868,
+   "country": "United States",
+   "route": "Fifth Military District <-> War Department and posts",
+   "language": "English",
+   "cleartext_in_document": "unknown",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "unknown: contents not seen.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 0,
+    "unit": "mixed",
+    "measured": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "image_quality": "no images",
+    "notes": "Not digitised (NARA catalog: availableOnline 0). Nothing transcribed."
+   },
+   "read": "not read"
+  }
+ ],
+ "system": {
+  "types": [
+   "undetermined"
+  ],
+  "summary": "unknown; expected Union Army route cipher (word transposition with code words) if the books hold enciphered text",
+  "symbol_kind": "symbols",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": "unknown"
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": "unknown"
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "not applicable",
+  "notes": "symbol_kind and key_order are placeholders: the schema has no 'unknown' value for them. Nothing about the system is known."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "unknown",
+   "where": "none found; Union route ciphers are documented (Plum 1882, Bates 1907) but these books were not checked",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [],
+  "attack": "none",
+  "human_role": "Pasted the catalogue task; no other input.",
+  "tools": [
+   "NARA catalog API",
+   "web search"
+  ],
+  "models": [
+   "claude-opus-5-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-10-27",
+  "last_date": "2026-10-28"
+ },
+ "solution": [
+  {
+   "date": "2026-10-27",
+   "kind": "access",
+   "what": "Checked the three RG 393 series: not digitised (the NARA catalog pages could not be read by the fetch tool; same naIds confirmed not online by the union1864 session through the catalog API).",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "literature search",
+   "what": "One web search for a published reading: none found.",
+   "result": "failed"
+  }
+ ],
+ "outcome": {
+  "class": "offline only",
+  "key": "none",
+  "method": "not applicable",
+  "verification": [
+   "none"
+  ],
+  "contribution": [
+   "none"
+  ],
+  "gaps": [
+   {
+    "item": "all three series",
+    "blocker": "needs-physical-access"
+   }
+  ],
+  "notes": "Not attempted on the ciphertext: none of the three series is digitised. Same series as catalogue 632 (targets/union1864). Next: order scans from NARA."
+ }
+}

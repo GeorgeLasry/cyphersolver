@@ -7,3 +7,4 @@
 - 2026-10-26 access: siblings CPN/0017/00001 (Orsini/Vieira da Silva cipher 1657-60), CPN/000210, CPN/002285 (Cifra para Manuel Barreto 1662): none imaged. DigitArq search "conde de Miranda Holanda/Haia", "marquês de Sande cifra": no other imaged item. Failed.
 - 2026-10-26 literature: known.py on "Miranda 1660", "Orsini 1660", "Add MS 38038": no hits ("Sande" only matched Aleksander). Web searches (correspondents, Hague embassy, Cryptiana, Prestage): no edition or decipherment. Found BL Add MS 38038 (Lisbon to Sande 1662-66, cipher with contemporary marginal decipherments; not digitised). Prestage 1928 not checked.
 - 2026-10-26 status: blocked on access. Scans of CPN/0019/00001, MMCG 3L (keys + 15 cipher letters) and CPN/0017/00001 have to be ordered from ANTT.
+2026-10-28 Closed for now as blocked on access (Status: no write-up); catalogue 389 outcome set to 'attempted, open' and the site catalogue rebuilt.

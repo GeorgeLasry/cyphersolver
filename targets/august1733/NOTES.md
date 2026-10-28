@@ -1,6 +1,6 @@
 # August III to Johann Adolf II of Saxe-Weissenfels, siege of Danzig, 1733-34 (Unsolved Catalogue no. 592)
 
-Status: in progress
+Status: no write-up. Blocked on access: not digitised (HStA Dresden 11237 Loc. 10932/09; to order).
 
 Blocked on images: the file is not digitised and has to be ordered from the Hauptstaatsarchiv Dresden. Nothing
 below rests on a sight of the documents.

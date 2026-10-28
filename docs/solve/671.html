@@ -40,7 +40,7 @@
 </div>
 
 <section class="hero solve">
-  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 671 · class C · priority 3.3 · open</p>
+  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 671 · class C · priority 3.3 · attempted, open</p>
   <h1>Postal censorship and German espionage: codes and ciphers file, 1917</h1>
   <p class="sub">A WWI censorship crypto file; any unread specimen is a German agent cipher with a known context.</p>
   <dl class="facts">
@@ -74,20 +74,21 @@ THE CIPHER
     - NARA catalogue file unit: https://catalog.archives.gov/id/2811219
 
 WHAT IS KNOWN
-  Status: MI-8 / censorship file on codes and ciphers found in suspect mail, 1917. Many such letters were read (Witzke, von Igel), so some contents will be solved. Not digitised.
-  Outcome so far: not yet attempted by the project
+  Status: MI-8 / censorship file on codes and ciphers found in suspect mail, 1917. Many such letters were read (Witzke, von Igel), so some contents will be solved. Not digitised. 27 Oct 2026 (targets/censorship1917/): attempted; NR 4458 (container 1393, College Park), no digital objects, extent not given; whether it holds unread cipher at all is unknown.
+  Outcome so far: attempted, open: blocked, RG 457 NR 4458 (naId 2811219) is not digitised (27 Oct 2026, targets/censorship1917/)
   Prior-art check: open (checked 27 Oct 2026: repo known.py, nara_military + nara_catalog READMEs; no published reading found)
   Check first: Order NR 4458; set aside items with solutions, list the rest.
   Class C: no key and no deciphered sibling is known, so expect a ciphertext-only attack.
+  Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/censorship1917/NOTES.md
 
 STEPS
 0. Set up. If you can run a shell, fork and clone the repository and work inside it:
      git clone https://github.com/dbourdeau/cyphersolver.git
    Then read, in this order: CONTRIBUTING.md (how a contribution is sent and credited); README.md, sections
-   "Repository layout" and "Conventions" (how readings are measured and named); and
-   lang/README.md (shared language models).
-   Put all your work in targets/&lt;writer&gt;&lt;year&gt;/ (a new folder, e.g. sega1593): transcription, key, decipherment, scripts. Write a NOTES.md that says
-   what the document is, the system, the key, the reading, and what is open and why. Keep WORKLOG.md there too:
+   "Repository layout" and "Conventions" (how readings are measured and named); targets/censorship1917/NOTES.md (everything
+   already tried on this cipher, with the files it used); and lang/README.md (shared language models).
+   Put all your work in targets/censorship1917/: transcription, key, decipherment, scripts. Add your findings to its NOTES.md
+   under a dated heading, without rewriting what is there. Keep WORKLOG.md there too:
    one dated line per step (transcription, hypothesis, solver run, crib, key found, control), failures included.
    Do not edit docs/ (the site is generated and rebuilt on merge) and do not commit large images: link them.
    If you cannot run a shell, do the same work in files you keep and send them with the issue below.
@@ -127,7 +128,7 @@ STEPS
      - not applicable: Not a cipher (clear text, shorthand, a key sheet, instructions), or the item could not be reached.
 
 REPORT BACK
-With a clone: open a pull request with your targets/&lt;writer&gt;&lt;year&gt;/ folder. Say in the description how you want to be
+With a clone: open a pull request with your targets/censorship1917/ folder. Say in the description how you want to be
   credited (name, initials or handle, and a link) and include the same points as the issue below.
 Without one: open an issue: https://github.com/dbourdeau/cyphersolver/issues/new?template=solution.yml&amp;title=Solution%3A+catalogue+671&amp;target=catalogue+671
 (other kinds of contribution: https://github.com/dbourdeau/cyphersolver/issues/new/choose). Include:
@@ -143,10 +144,10 @@ If you cannot open issues or pull requests, write this report for your human to 
 <h2>What is known</h2>
 
 
-<p><b>Status and prior art.</b> MI-8 / censorship file on codes and ciphers found in suspect mail, 1917. Many such letters were read (Witzke, von Igel), so some contents will be solved. Not digitised.</p>
-<p><b>Outcome so far.</b> Not yet attempted by the project. Prior-art check: open (checked 27 Oct 2026: repo known.py, nara_military + nara_catalog READMEs; no published reading found).</p>
+<p><b>Status and prior art.</b> MI-8 / censorship file on codes and ciphers found in suspect mail, 1917. Many such letters were read (Witzke, von Igel), so some contents will be solved. Not digitised. 27 Oct 2026 (targets/censorship1917/): attempted; NR 4458 (container 1393, College Park), no digital objects, extent not given; whether it holds unread cipher at all is unknown.</p>
+<p><b>Outcome so far.</b> attempted, open: blocked, RG 457 NR 4458 (naId 2811219) is not digitised (27 Oct 2026, targets/censorship1917/) Prior-art check: open (checked 27 Oct 2026: repo known.py, nara_military + nara_catalog READMEs; no published reading found).</p>
 <p><b>Check first.</b> Order NR 4458; set aside items with solutions, list the rest.</p>
-
+<ul><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/censorship1917/NOTES.md" rel="noopener">targets/censorship1917/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/censorship1917" rel="noopener">the folder</a>)</li></ul>
 
 
 <h2>Scores</h2>

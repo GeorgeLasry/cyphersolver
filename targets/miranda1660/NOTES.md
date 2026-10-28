@@ -1,6 +1,6 @@
 # Copy-book of letters to Francisco de Melo (marquês de Sande), 1660-61 (Unsolved Catalogue no. 389)
 
-Status: in progress
+Status: no write-up. Blocked on access: neither the copy-book nor the volume with its keys is digitised (ANTT, Condes da Ponte mç. 19 n.º 1).
 
 Blocked on images: neither the copy-book nor the volume holding its keys is digitised. Both have to be ordered
 from the Torre do Tombo. Nothing below rests on a sight of either volume.

@@ -40,7 +40,7 @@
 </div>
 
 <section class="hero solve">
-  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 543 · class C · priority 4.9 · open</p>
+  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 543 · class C · priority 4.9 · attempted, open</p>
   <h1>Governor Guillouet d'Orvilliers and Lemoyne (Cayenne) → minister: letters 'en majeure partie chiffrée', 'passages chiffrés non traduits'</h1>
   <p class="sub">Defence and famine in French Guiana during the Seven Years' War.</p>
   <dl class="facts">
@@ -76,20 +76,21 @@ THE CIPHER
     - FranceArchives C14 21, 1751: https://francearchives.gouv.fr/fr/facomponent/20409c543d169eee5e9482fe6108a1b5bf02fb64
 
 WHAT IS KNOWN
-  Status: ANOM inventory: 'Lettre en majeure partie chiffrée'; 'Passages chiffrés non traduits'; no transcription noted.
-  Outcome so far: not yet attempted by the project
+  Status: ANOM inventory: 'Lettre en majeure partie chiffrée'; 'Passages chiffrés non traduits'; no transcription noted. 27 Oct 2026 (targets/orvilliers1759/): attempted; all 227 notices of the d'Orvilliers branch of COL C14 swept; 36 items with cipher, none with a digital object online although ANOM flags them "document numérisé". Order images from ANOM.
+  Outcome so far: attempted, open: blocked, none of the 36 C14 items has a digital object on ANOM despite the "numérisé" flag (27 Oct 2026, targets/orvilliers1759/)
   Prior-art check: open (checked 26 Oct 2026: repo known.py, web search)
   Check first: Open the digitised C14 volumes on ANOM IREL; start with the 1759 duplicata in C14 24.
   Class C: no key and no deciphered sibling is known, so expect a ciphertext-only attack.
+  Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/orvilliers1759/NOTES.md
 
 STEPS
 0. Set up. If you can run a shell, fork and clone the repository and work inside it:
      git clone https://github.com/dbourdeau/cyphersolver.git
    Then read, in this order: CONTRIBUTING.md (how a contribution is sent and credited); README.md, sections
-   "Repository layout" and "Conventions" (how readings are measured and named); and
-   lang/README.md (shared language models).
-   Put all your work in targets/&lt;writer&gt;&lt;year&gt;/ (a new folder, e.g. sega1593): transcription, key, decipherment, scripts. Write a NOTES.md that says
-   what the document is, the system, the key, the reading, and what is open and why. Keep WORKLOG.md there too:
+   "Repository layout" and "Conventions" (how readings are measured and named); targets/orvilliers1759/NOTES.md (everything
+   already tried on this cipher, with the files it used); and lang/README.md (shared language models).
+   Put all your work in targets/orvilliers1759/: transcription, key, decipherment, scripts. Add your findings to its NOTES.md
+   under a dated heading, without rewriting what is there. Keep WORKLOG.md there too:
    one dated line per step (transcription, hypothesis, solver run, crib, key found, control), failures included.
    Do not edit docs/ (the site is generated and rebuilt on merge) and do not commit large images: link them.
    If you cannot run a shell, do the same work in files you keep and send them with the issue below.
@@ -129,7 +130,7 @@ STEPS
      - not applicable: Not a cipher (clear text, shorthand, a key sheet, instructions), or the item could not be reached.
 
 REPORT BACK
-With a clone: open a pull request with your targets/&lt;writer&gt;&lt;year&gt;/ folder. Say in the description how you want to be
+With a clone: open a pull request with your targets/orvilliers1759/ folder. Say in the description how you want to be
   credited (name, initials or handle, and a link) and include the same points as the issue below.
 Without one: open an issue: https://github.com/dbourdeau/cyphersolver/issues/new?template=solution.yml&amp;title=Solution%3A+catalogue+543&amp;target=catalogue+543
 (other kinds of contribution: https://github.com/dbourdeau/cyphersolver/issues/new/choose). Include:
@@ -145,10 +146,10 @@ If you cannot open issues or pull requests, write this report for your human to 
 <h2>What is known</h2>
 
 
-<p><b>Status and prior art.</b> ANOM inventory: 'Lettre en majeure partie chiffrée'; 'Passages chiffrés non traduits'; no transcription noted.</p>
-<p><b>Outcome so far.</b> Not yet attempted by the project. Prior-art check: open (checked 26 Oct 2026: repo known.py, web search).</p>
+<p><b>Status and prior art.</b> ANOM inventory: 'Lettre en majeure partie chiffrée'; 'Passages chiffrés non traduits'; no transcription noted. 27 Oct 2026 (targets/orvilliers1759/): attempted; all 227 notices of the d'Orvilliers branch of COL C14 swept; 36 items with cipher, none with a digital object online although ANOM flags them "document numérisé". Order images from ANOM.</p>
+<p><b>Outcome so far.</b> attempted, open: blocked, none of the 36 C14 items has a digital object on ANOM despite the "numérisé" flag (27 Oct 2026, targets/orvilliers1759/) Prior-art check: open (checked 26 Oct 2026: repo known.py, web search).</p>
 <p><b>Check first.</b> Open the digitised C14 volumes on ANOM IREL; start with the 1759 duplicata in C14 24.</p>
-
+<ul><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/orvilliers1759/NOTES.md" rel="noopener">targets/orvilliers1759/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/orvilliers1759" rel="noopener">the folder</a>)</li></ul>
 
 
 <h2>Scores</h2>
