@@ -1,0 +1,9 @@
+# English translation
+
+[Madrid, 28 May 1812. To Marshal the Duke of Dalmatia. Monsieur le Maréchal, the King has just received a letter from Marshal the Duke of Ragusa dated the 26th. This marshal states positively that Lord Wellington is north of the Tagus with his whole army, except Hill’s division. He takes it as certain that around the 8th the whole English army will have moved against him. Two divisions have already crossed the Douro, etc. He is continuing towards Zamora in order to support the army of Galicia, which was preparing to advance.] The Duke of Ragusa has recalled Foy’s division to him, so that there will remain in the Tagus valley only three battalions and about eight hundred horse of the Army of the Centre, under the orders of General Treillard.
+
+[The King is all the more inclined to believe that the Duke of Ragusa is right, as it seems certain that it is General Hill’s division that is making its expedition against the bridge of Almaraz, and that it is well supported by other troops.]
+
+You will feel, Monsieur le Maréchal, that in this situation you must reinforce Count d’Erlon’s corps as much as you can, so as to enable it to beat General Hill’s corps if he stays on the Guadiana. If on the contrary Lord Wellington calls General Hill back to him, then Count d’Erlon must move on Miravete and come to cross the Tagus at the bridge of the Arzobispo, to cover Madrid or to move against the right flank of the English army, as circumstances require. The passage of the bridge of the Arzobispo [is difficult] for the artillery, but it is not impracticable. General d’Erlon should take with him as little [baggage as possible. It is very important that this general put himself in correspondence] with General Treillard, who is to command in the Tagus valley.
+
+[I beg you to accept the assurance of my consideration. The Marshal of the Empire, chief of staff of His Catholic Majesty, Jourdan.]
