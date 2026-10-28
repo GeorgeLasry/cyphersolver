@@ -1,0 +1,295 @@
+{
+ "schema_version": 1,
+ "target": "vilaflor1663",
+ "title": "Afonso VI to the Count of Vila Flor, four cipher letters of 13-26 May 1663 (catalogue 391): substitution with homophones on Portuguese",
+ "documents": [
+  {
+   "id": "lmp2-1663-05-13",
+   "read": "read",
+   "shelfmark": "ANTT, Luís de Miranda Pereira, liv. 2 (PT/TT/LMP/0002), image 87 of the DigitArq digitisation",
+   "date": "1663-05-13",
+   "year": 1663,
+   "country": "Portugal",
+   "route": "Lisbon -> army of the Alentejo",
+   "places": {
+    "from": "Lisbon",
+    "to": "Alentejo (army headquarters)"
+   },
+   "language": "Portuguese",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment in the volume; one sentence clear in one copy and enciphered in the other."
+   },
+   "length": {
+    "tokens": 636,
+    "unit": "symbols",
+    "measured": true,
+    "file": "texts/1663-05-13_transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "DigitArq images (1060 px)",
+    "image_quality": "fair"
+   }
+  },
+  {
+   "id": "lmp2-1663-05-15a",
+   "read": "read",
+   "shelfmark": "ANTT, Luís de Miranda Pereira, liv. 2 (PT/TT/LMP/0002), two ciphered copies: images 53, 54 and 59 (copy 1); images 55, 56 and 57 (copy 2)",
+   "date": "1663-05-15",
+   "year": 1663,
+   "country": "Portugal",
+   "route": "Lisbon -> army of the Alentejo",
+   "places": {
+    "from": "Lisbon",
+    "to": "Alentejo (army headquarters)"
+   },
+   "language": "Portuguese",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment in the volume; one sentence clear in one copy and enciphered in the other."
+   },
+   "length": {
+    "tokens": 174,
+    "unit": "symbols",
+    "measured": true,
+    "file": "texts/1663-05-15a_transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "DigitArq images (1060 px)",
+    "image_quality": "fair"
+   }
+  },
+  {
+   "id": "lmp2-1663-05-15",
+   "read": "read",
+   "shelfmark": "ANTT, Luís de Miranda Pereira, liv. 2 (PT/TT/LMP/0002), image 69 of the DigitArq digitisation; second ciphered copy image 71",
+   "date": "1663-05-15",
+   "year": 1663,
+   "country": "Portugal",
+   "route": "Lisbon -> army of the Alentejo",
+   "places": {
+    "from": "Lisbon",
+    "to": "Alentejo (army headquarters)"
+   },
+   "language": "Portuguese",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment in the volume; one sentence clear in one copy and enciphered in the other."
+   },
+   "length": {
+    "tokens": 509,
+    "unit": "symbols",
+    "measured": true,
+    "file": "texts/1663-05-15_transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "DigitArq images (1060 px)",
+    "image_quality": "fair"
+   }
+  },
+  {
+   "id": "lmp2-1663-05-26",
+   "read": "read",
+   "shelfmark": "Arquivo Nacional Torre do Tombo, Luís de Miranda Pereira, liv. 2 (PT/TT/LMP/0002), image 37 of the DigitArq digitisation; second ciphered copy (“via”) image 39",
+   "date": "1663-05-26",
+   "year": 1663,
+   "country": "Portugal",
+   "route": "Lisbon -> army of the Alentejo",
+   "places": {
+    "from": "Lisbon",
+    "to": "Alentejo (army headquarters)"
+   },
+   "language": "Portuguese",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment in the volume; one sentence clear in one copy and enciphered in the other."
+   },
+   "length": {
+    "tokens": 634,
+    "unit": "symbols",
+    "measured": true,
+    "file": "texts/1663-05-26_transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "DigitArq images (1060 px)",
+    "image_quality": "fair"
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "monoalphabetic",
+   "homophonic"
+  ],
+  "summary": "Simple substitution with a few homophones on Portuguese; digits and letter-like signs; three states of the key.",
+  "symbol_kind": "digits and symbols",
+  "distinct_symbols": 40,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": false
+  },
+  "key_order": "random",
+  "word_division": "partial"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "Catalogue 391 open; Ericeira, Portugal Restaurado, does not print them; web search 27 Oct 2026.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "cleartext context"
+  ],
+  "attack": "ciphertext-only",
+  "first_date": "2026-10-27",
+  "last_date": "2026-10-27",
+  "human_role": "Brice Dudout chose the target from the catalogue and set the rules (frozen key before validation, held-out checks, prior-work search the day of publication); AI agents transcribed, solved, checked and wrote up. Doubtful signs were settled by targeted visual review where stated.",
+  "models": [
+   "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout"
+  ]
+ },
+ "solution": [
+  {
+   "date": "2026-10-27",
+   "kind": "solver",
+   "technique": [
+    "simulated annealing",
+    "language-model scoring"
+   ],
+   "what": "Key recovered from the cipher of the 26 May letter against Portuguese statistics, then completed by hand.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Key frozen and applied to a held-out letter (13 May, image 87): about 97% read; duplicate copies of 15 May agree 0.93 (unrelated text 0.13).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "reading",
+   "technique": [
+    "manual reconstruction",
+    "contextual inference"
+   ],
+   "what": "Four letters read as Portuguese with English translations; doubtful signs marked.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "read",
+  "key": "recovered",
+  "method": "key recovered from ciphertext-only",
+  "method_basis": "Substitution key recovered from the cipher, checked on a held-out letter, duplicate copies and a clear/cipher sentence pair.",
+  "contribution": [
+   "transcription",
+   "key recovered",
+   "catalogue correction"
+  ],
+  "fraction_read": 0.97,
+  "fraction_read_method": "estimated",
+  "fraction_read_source": "Four letters read at 97-99% of signs, doubtful signs marked on the write-up.",
+  "first_break": true,
+  "verification": [
+   "matched control",
+   "independent clear copy",
+   "historical consistency"
+  ],
+  "credits": [
+   {
+    "who": "dudout",
+    "role": "solution",
+    "note": "key recovered; four letters of May 1663 read, Portuguese text and English translation; catalogue date corrected to 1663",
+    "date": "2026-10-27"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "a few doubtful signs per letter",
+    "blocker": "illegible",
+    "detail": "DigitArq serves 1060 px images only"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "lmp2-1663-05-13",
+    "label": "Afonso VI to the Count of Vila Flor, 13 May 1663: the cavalry sent as reinforcements",
+    "transcription": "texts/1663-05-13_transcription.txt",
+    "decryption": "texts/1663-05-13_decryption.txt",
+    "reading": "texts/1663-05-13_reading.md",
+    "translation": "texts/1663-05-13_translation.md",
+    "language": "pt",
+    "state": "read",
+    "summary": "Written two days after Don John appeared before Estremoz and the day before Évora was invested, the letter first worries about the general’s silence: the courier may have been taken. Then it announces, company by company, the cavalry leaving for the Alentejo."
+   },
+   {
+    "doc": "lmp2-1663-05-15a",
+    "label": "Afonso VI to the Count of Vila Flor, 15 May 1663, the other letter: reinforcements, money, and the King at Setúbal",
+    "transcription": "texts/1663-05-15a_transcription.txt",
+    "decryption": "texts/1663-05-15a_decryption.txt",
+    "reading": "texts/1663-05-15a_reading.md",
+    "translation": "texts/1663-05-15a_translation.md",
+    "language": "pt",
+    "state": "read",
+    "summary": "This is the “other letter of this same date” to which the ciphered note of 15 May refers. Partly in clear and partly in cipher, it keeps for the cipher everything that would inform the enemy: the reinforcements on the way (Beira foot and horse, Lisbon companies), the King’s plan to set up a place of arms at Setúbal or Palmela, the pay money, the help sent to Montemor. Left in clear are the greeting, the doctrine (“an army is there to fight”) and the request for a courier every day."
+   },
+   {
+    "doc": "lmp2-1663-05-15",
+    "label": "Afonso VI to the Count of Vila Flor, 15 May 1663: “at the risk of a battle”",
+    "transcription": "texts/1663-05-15_transcription.txt",
+    "decryption": "texts/1663-05-15_decryption.txt",
+    "reading": "texts/1663-05-15_reading.md",
+    "translation": "texts/1663-05-15_translation.md",
+    "language": "pt",
+    "state": "read",
+    "summary": "The day after Évora was invested, the King added to a long letter of the same date a note entirely in cipher apart from the greeting and the date. The main question had been “reconsidered”: if the enemy persisted and put the city in danger, Vila Flor was to gather all his forces and relieve it at all risk, “even exposing yourself to the last extremity of a battle”."
+   },
+   {
+    "doc": "lmp2-1663-05-26",
+    "label": "Afonso VI to the Count of Vila Flor, 26 May 1663: \"my final resolution\"",
+    "transcription": "texts/1663-05-26_transcription.txt",
+    "decryption": "texts/1663-05-26_decryption.txt",
+    "reading": "texts/1663-05-26_reading.md",
+    "translation": "texts/1663-05-26_translation.md",
+    "language": "pt",
+    "state": "read",
+    "summary": "On 22 May 1663 Évora, one of the chief cities of the kingdom, surrendered to Don John Joseph of Austria. Four days later the court in Lisbon, governed by the Count of Castelo Melhor in the name of the young Afonso VI, wrote to the general of the Alentejo army, the Count of Vila Flor. The letter opens and closes in clear; the whole order is in cipher: relieve Évora “em todo o cazo e a todo o risco”, move the army without delay, show the letter to the commanders, and count on the pay money leaving in two days. Thirteen days later Vila Flor and Schomberg defeated Don John at Ameixial."
+   }
+  ],
+  "key_file": [
+   "key_K1.tsv",
+   "key_K2.tsv",
+   "key_K3.tsv"
+  ],
+  "provenance": "contributed"
+ }
+}
