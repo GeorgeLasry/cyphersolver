@@ -1,0 +1,193 @@
+{
+ "schema_version": 1,
+ "target": "stade1710",
+ "title": "Charles XII to the Rådet and his envoys, Bender, 26 April 1710 (catalogue 599): two copies in a Swedish homophonic nomenclator, key rebuilt by crib",
+ "documents": [
+  {
+   "id": "stade-rep5a-670-f83-85",
+   "read": "read",
+   "shelfmark": "Niedersächsisches Landesarchiv, Abt. Stade, Rep. 5a Nr. 670 (old shelfmark Fach 76 Nr. 38), fols. 83–85; file “Diverse chiffrierte Schreiben von und an Generalgouverneur Baron Nils Gyllenstierna”, 1700–1711",
+   "date": "26 April 1710 (Swedish calendar)",
+   "year": 1710,
+   "country": "Germany",
+   "route": "Bender -> Stockholm (Rådet); London and The Hague (envoys); copies to Stade",
+   "places": {
+    "from": "Bender",
+    "to": "Stockholm"
+   },
+   "language": "Swedish",
+   "pages": 5,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No key or decipherment with the copies; the two copies encipher partly different words and check each other."
+   },
+   "length": {
+    "tokens": 640,
+    "unit": "code groups",
+    "measured": true,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Archivportal-D images of Rep. 5a Nr. 670",
+    "image_quality": "good",
+    "notes": "Doubtful numbers checked blind on the image by Brice Dudout."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "nomenclator",
+   "homophonic",
+   "syllabic"
+  ],
+  "summary": "homophonic Swedish nomenclator of about 1,100 numbers in alphabetical order: letters (31–98, two series), syllables (99–182), numbers (183–211), endings (212–304), words and names (310–1102); powers written as sigla in clear: B.B. = Denmark, LL = England, ddd = Holland",
+  "symbol_kind": "digits",
+  "distinct_symbols": 334,
+  "diacritics": {
+   "used": true
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "kinds": [
+    "syllables",
+    "word parts",
+    "common words",
+    "names",
+    "places"
+   ]
+  },
+  "nulls": {
+   "present": false
+  },
+  "key_order": "alphabetical",
+  "word_division": "none"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "Catalogue 599 open; no key in the file; web search 27 Oct 2026.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "crib",
+   "cleartext context"
+  ],
+  "attack": "crib",
+  "first_date": "2026-10-27",
+  "last_date": "2026-10-27",
+  "human_role": "Brice Dudout chose the target from the catalogue and set the rules (frozen key before validation, held-out checks, prior-work search the day of publication); AI agents transcribed, solved, checked and wrote up. Doubtful signs were settled by targeted visual review where stated.",
+  "models": [
+   "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout"
+  ]
+ },
+ "solution": [
+  {
+   "date": "2026-10-27",
+   "kind": "crib",
+   "technique": [
+    "crib testing",
+    "key-structure hypothesis"
+   ],
+   "what": "Ciphered troop list (fols. 73, 82) aligned with its clear draft (fol. 74); totals and officers' names fixed the first values, then the alphabetical structure of the table.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Key frozen, applied to pages never opened before: fol. 100 (German, 93% of words recognised) and fols. 78v-79r (96%); permuted and shuffled control keys at most 77-80%.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "reading",
+   "technique": [
+    "manual reconstruction",
+    "contextual inference"
+   ],
+   "what": "Both copies of the 26 April 1710 letter read and compared; 639 of 640 groups read.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "verification",
+   "what": "Doubtful numbers checked blind on the image by Brice Dudout; the two copies cross-check (same words, sometimes clear in one copy and cipher in the other).",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "read",
+  "key": "recovered",
+  "method": "key recovered based on adjacent plaintext",
+  "method_basis": "Key rebuilt from a ciphered troop list in the same file whose clear draft survives, then frozen and validated on unseen letters.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "fraction_read": 0.998,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "639 of 640 cipher groups read; six probable readings marked on the write-up.",
+  "first_break": true,
+  "verification": [
+   "matched control",
+   "independent clear copy",
+   "historical consistency"
+  ],
+  "human_check": {
+   "date": "2026-10-27",
+   "by": "Brice Dudout",
+   "passage": "doubtful numbers of the two copies",
+   "result": "confirmed"
+  },
+  "credits": [
+   {
+    "who": "dudout",
+    "role": "solution",
+    "note": "key K1710 rebuilt by crib and validated on unseen letters; both copies read, Swedish text and English translation",
+    "date": "2026-10-27"
+   },
+   {
+    "who": "dudout",
+    "role": "transcription",
+    "note": "groups of both copies; doubtful numbers checked blind on the image",
+    "date": "2026-10-27"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "one unresolved group; six probable readings",
+    "blocker": "open-codes"
+   },
+   {
+    "item": "other cipher letters in Rep. 5a Nr. 670",
+    "blocker": "not-attempted"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "stade-rep5a-670-f83-85",
+    "label": "Charles XII, Bender, 26 April 1710: copies for the envoys (fol. 85) and for the Rådet (fols. 83-84)",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "reading": "reading.md",
+    "translation": "translation.md",
+    "language": "sv",
+    "state": "read",
+    "summary": "A refugee at Bender, on Ottoman soil, since Poltava, Charles XII learns of the rout of the Danish army at Helsingborg. In a chancery letter whose sensitive passages are in cipher, he declares himself ready to make peace with Denmark under the mediation of England and the United Provinces, and gives the Council a “free hand” to negotiate and to conclude an armistice, “even for a whole year”. Two ciphered copies, received by the Swedish government of Bremen-Verden, are kept at Stade."
+   }
+  ],
+  "key_file": "key.tsv",
+  "provenance": "contributed"
+ }
+}
