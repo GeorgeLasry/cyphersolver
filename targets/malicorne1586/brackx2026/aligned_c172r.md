@@ -99,3 +99,4 @@ L24 T: te ?z hs 0 4 oo m dx n | 0 1 | Lc do fn | R a 33 0 oo 4 | ?D oo Z ?beta
     V: te=sur ?z=e hs=s 0=e 4=r oo=u m=i dx=s n=e |=[|] 0=e 1=t |=[|] Lc=m do=o fn=n |=[|] R=p a=o 33=nn 0=e oo=u 4=r |=[|] ?D=d oo=u Z=m ?beta=o
     D: sureseruise[|]et[|]mon[|]ponneur[|]dumo
 ```
+

@@ -87,8 +87,10 @@ to 10.3%) and 171 right l. 9 were moved to `Lc`; 162r l. 19 (a looped ℒ) was l
 £ shape throughout (21 tokens on f. 162r/163r/171, plus f. 162v), no split. `cr` (*h*/*s*): crossed p, crossed v and
 dagger forms, none keeping to one value, so no split (the 25 Oct "probable split" withdrawn). `F` (all 19 tokens the
 same barred f) and `y_` (one possible ꝩ flagged) do not split. The decoded text is unchanged by every relabelling.
-The deskewed positions and the relabelled canvas 171 transcription are not yet in the gist (last revised 25 Oct
-22:00): requested.
+The deskewed positions (`brackx2026/shape_check_r3_positions.tsv`, 45 tokens, canvas x/y +-40 px), the relabelled canvas 171
+transcription (`f171_groups_r3.txt`, line 13 token 24 Lb -> Lc) and his notes (`splits_r3.md`) arrived in the gist on 28 Oct
+(07:04) and are copied here; the aligned files, legend and reading_r3.md were refreshed from the same gist. Checked here: the
+file has 20 cipher lines, 3 Lb and 3 Lc tokens, and line 13 token 24 is Lc; the 45 positions are not re-located on the images.
 
 **Split candidates** (Brackx's legend): `F` (*d* / *la*: Tomokiyo draws *la* as the same looped f with a bar, so a bar
 check per token should separate them); `cr` (*h* / *s*: a crossed p and a dagger-like stroke on the canvas 172 tiles);

@@ -1,0 +1,32 @@
+{
+  "id": "E53_R1134_new_original01_40pair_transfer",
+  "created_utc": "2026-10-27T16:11:26.090881+00:00",
+  "source": "images/v1870_01.jpg",
+  "source_sha256": "85861a4aedf64d85a6adbab28bc6ebb00f125ae0cdd58b42329f6b310d7c15be",
+  "source_url": "https://www.vestigia.hu/media/01jzqefsfvrham6krqy53kpct7/conversions/01jzq1q7ap0c5pd7qfxx9n7wa4-1-web.jpg",
+  "document_url": "https://www.vestigia.hu/documents/1870",
+  "selection": "First40 consecutive pairs of the internal row starting t/m at x674,y2547; ends ampersand/bracket at x2175,y2506. No omissions.",
+  "eligibility": "Genuinely distinct full-sheet first recto; absent from177 earlier local image files. Prior original03 shows another sheet and does not contain this face. E52 original02 draft was not frozen because of photographic overlap.",
+  "geometry_precision": "Native component rectangles include local context; no pixel-level masks or exclusive ownership claim. Pair order/count reviewed from full row before comparison.",
+  "reference_snapshot": "experiments/E53_reference_snapshot.json",
+  "key_snapshot": "experiments/E53_key_snapshot.json",
+  "legacy_snapshot": "experiments/E53_legacy_snapshot.json",
+  "independence": "New original page, prediction frozen before current copy comparison. Historical8b/8c copies viewed in E16; unseen-plaintext status not demonstrated. Not a fully independent or historically naive holdout.",
+  "score_rules": {
+    "minimum_pairs": 40,
+    "minimum_coverage": 0.8,
+    "minimum_assigned_correctness": 0.95,
+    "normalization": "Case, whitespace/punctuation and combining accents only. No U/V or I/J folding.",
+    "categories": [
+      "exact_match",
+      "strict_difference",
+      "frozen_abstention",
+      "assigned_unscorable"
+    ],
+    "unscorable_policy": "All assigned pairs must be defensibly aligned/scored for a pass. Retain differences and abstentions; no boundary, spelling or prediction repair after comparison."
+  },
+  "copy_opened_in_this_experiment": false,
+  "precopy_revision": "Corrected center drift and P13 m/n DE; P16/P39 have open forked Y uppers matching I rather than closed9 N. P08 oval/m, P32 m-like/q and P36 d-like/n remain unassigned.",
+  "target_model_changes": 0
+}
+

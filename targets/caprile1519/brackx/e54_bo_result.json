@@ -1,0 +1,172 @@
+{
+  "id": "E54_BO_support_upgrade",
+  "status": "Existing BO retained with fitted manuscript support.",
+  "protocol": "experiments/E54_protocol.json",
+  "geometry": "experiments/E54_reviewed_geometry.json",
+  "geometry_sha256": "953d8526ffe2e9b5dbb61c08bec815541c921b64b74b12f3e0991d700fb6e544",
+  "control": {
+    "id": "R1134_BON_BO",
+    "source": "images/v1870_01.jpg",
+    "source_sha256": "85861a4aedf64d85a6adbab28bc6ebb00f125ae0cdd58b42329f6b310d7c15be",
+    "upper_box": [
+      2006,
+      2467,
+      2028,
+      2508
+    ],
+    "base_box": [
+      1981,
+      2510,
+      2028,
+      2529
+    ],
+    "box_xyxy": [
+      1981,
+      2467,
+      2028,
+      2529
+    ],
+    "value": "bo"
+  },
+  "target": {
+    "id": "L01_08",
+    "source": "images/v1853_01.jpg",
+    "source_sha256": "cbb3cff63f7c8822040fb9fdc4ca8b2be256fb387b912acfe671f5e7b1e89cd6",
+    "upper_box": [
+      994,
+      691,
+      1013,
+      732
+    ],
+    "base_box": [
+      979,
+      734,
+      1007,
+      752
+    ],
+    "box_xyxy": [
+      979,
+      691,
+      1013,
+      752
+    ],
+    "value": "bo"
+  },
+  "contrasts": [
+    {
+      "id": "C26",
+      "source": "images/v1864_04.jpg",
+      "upper_box": [
+        1781,
+        3114,
+        1792,
+        3135
+      ],
+      "base_box": [
+        1757,
+        3138,
+        1794,
+        3157
+      ],
+      "box_xyxy": [
+        1757,
+        3114,
+        1794,
+        3157
+      ],
+      "geometry_file": "paragraph_alignment/prefix_neutral_glyphs.json",
+      "geometry_file_sha256": "9ba667c8534a3d1be200b9d7064318304edc01a983bee1b859a6e20c68028da6",
+      "value": "co"
+    },
+    {
+      "id": "A15",
+      "source": "images/v1864_05.jpg",
+      "upper_box": [
+        1535,
+        904,
+        1553,
+        940
+      ],
+      "base_box": [
+        1513,
+        925,
+        1534,
+        952
+      ],
+      "box_xyxy": [
+        1513,
+        904,
+        1553,
+        952
+      ],
+      "geometry_file": "paragraph_alignment/neutral_glyphs.json",
+      "geometry_file_sha256": "93e0fe3c85a34bca7a3e98eb2c5f070178da78cf599b4f0acd42872d0b18a4ee",
+      "value": "po"
+    },
+    {
+      "id": "C18",
+      "source": "images/v1864_04.jpg",
+      "upper_box": [
+        1458,
+        3112,
+        1482,
+        3151
+      ],
+      "base_box": [
+        1434,
+        3144,
+        1476,
+        3166
+      ],
+      "box_xyxy": [
+        1434,
+        3112,
+        1482,
+        3166
+      ],
+      "geometry_file": "paragraph_alignment/prefix_neutral_glyphs.json",
+      "geometry_file_sha256": "9ba667c8534a3d1be200b9d7064318304edc01a983bee1b859a6e20c68028da6",
+      "value": "go"
+    },
+    {
+      "id": "R1133_VOLENDO_DO",
+      "value": "do",
+      "source": "images/v1867_01.jpg",
+      "source_sha256": "df2971078e6f1fb195a1caca161199746c6cf600aa1fe1d0d3960b3f5b0826a1",
+      "upper_box": [
+        1007,
+        1865,
+        1024,
+        1884
+      ],
+      "base_box": [
+        988,
+        1889,
+        1026,
+        1908
+      ],
+      "box_xyxy": [
+        988,
+        1865,
+        1026,
+        1908
+      ],
+      "status": "Known-copy fitted native components; no prospective credit.",
+      "source_pair_id": "F06",
+      "geometry_file": "experiments/E49_VO_LE_DO_result.json",
+      "geometry_file_sha256": "7763177967931d433def385e3008ecedfc2784c00f8453e7fb89d4c2b6dee4a6"
+    }
+  ],
+  "context": "E53 P36 in BO N CO N TO, supplied8c bon conto; copy8b also retains bon conto.",
+  "context_comparison": "experiments/E53_comparison.json",
+  "second_witness": "experiments/E56_second_witness_result.json",
+  "finding": "Target and control have a tall d-like upper with lower loop and n-like lower with trailing baseline. CO has a short upright upper; DO an oval without the tall ascender; GO a different looped upper; PO a bracket lower. Target loop is faint, so reading remains provisional.",
+  "published_key": "Inherited published BO-cell support retained; no new reading extracted from the tiny reproduction in this round.",
+  "new_reference_class": "G79",
+  "new_reference_records": 1,
+  "new_target_letters": 0,
+  "target_values_changed": 0,
+  "new_prospective_successes": 0,
+  "scope": "Known-copy fitted support upgrade, not independent target validation or person identification."
+}
+

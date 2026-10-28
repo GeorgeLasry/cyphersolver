@@ -1,0 +1,666 @@
+{
+  "line": "L01",
+  "index_basis": "physical image positions; earlier first-line upper/base labels superseded locally",
+  "cipher_image": "images/v1853_01.jpg",
+  "crop_source_box": [
+    700,
+    680,
+    1630,
+    755
+  ],
+  "crop_enlargement": 2,
+  "glyphs": [
+    {
+      "id": "P01",
+      "crop_box": [
+        25,
+        0,
+        105,
+        145
+      ],
+      "source_box": [
+        722,
+        712,
+        761,
+        759
+      ],
+      "sign": "ME_mark",
+      "value": "me",
+      "status": "Existing provisional ME retained against actual R1133MENTE/T18ME with C20/T16NE negatives; old regular box clipped upperright and lowerbase.",
+      "legacy_source_box": [
+        712.5,
+        680,
+        752.5,
+        752.5
+      ],
+      "upper_box": [
+        740,
+        712,
+        761,
+        736
+      ],
+      "base_box": [
+        722,
+        738,
+        752,
+        759
+      ],
+      "evidence": "experiments/E31_ME_NE_result.json"
+    },
+    {
+      "id": "P02",
+      "crop_box": [
+        105,
+        0,
+        180,
+        145
+      ],
+      "source_box": [
+        752.5,
+        680,
+        790.0,
+        752.5
+      ],
+      "sign": "-/[r]",
+      "value": "se",
+      "status": "proposed local image reading"
+    },
+    {
+      "id": "P03",
+      "crop_box": [
+        180,
+        0,
+        260,
+        145
+      ],
+      "source_box": [
+        790.0,
+        680,
+        830.0,
+        752.5
+      ],
+      "sign": "c/7",
+      "value": "r",
+      "status": "proposed local image reading"
+    },
+    {
+      "id": "P04",
+      "crop_box": [
+        260,
+        0,
+        350,
+        145
+      ],
+      "source_box": [
+        830.0,
+        680,
+        875.0,
+        752.5
+      ],
+      "sign": "IO_mark",
+      "value": "io",
+      "status": "proposed local image reading"
+    },
+    {
+      "id": "P05",
+      "crop_box": [
+        350,
+        0,
+        410,
+        145
+      ],
+      "source_box": [
+        875,
+        719,
+        905,
+        758
+      ],
+      "sign": "o/7",
+      "value": "a",
+      "status": "provisional local image reading supported by two A controls and a contrasting B control",
+      "candidate_value": "a",
+      "candidate_sign": "o/7",
+      "reason": "P05 agrees with two separately located A examples and differs from the stemmed B upper in PUBLICATA. The alternate target photograph also retains a rounded upper.",
+      "upper_box": [
+        889,
+        719,
+        905,
+        736
+      ],
+      "base_box": [
+        875,
+        739,
+        900,
+        758
+      ],
+      "alternatives_before_E07": [
+        {
+          "sign": "o/7",
+          "value": "a"
+        },
+        {
+          "sign": "B_mark",
+          "value": "b"
+        }
+      ],
+      "rejected_current_alternative": {
+        "value": "b",
+        "reason": "Stemmed upper in separate PUBLICATA B control differs from target."
+      }
+    },
+    {
+      "id": "P06",
+      "crop_box": [
+        410,
+        0,
+        485,
+        145
+      ],
+      "source_box": [
+        905.0,
+        680,
+        942.5,
+        752.5
+      ],
+      "sign": null,
+      "value": null,
+      "status": "unresolved; contextual candidate separate",
+      "candidate_value": "nn",
+      "candidate_sign": null,
+      "alternatives": [
+        {
+          "value": "nn",
+          "status": "suggested by IOANNI, not established in a separate cipher control"
+        },
+        {
+          "sign": "a/q",
+          "value": "bb",
+          "status": "earlier alternative, not accepted for this local upper"
+        }
+      ],
+      "reason": "Double-letter base is visible; the upper cannot yet be securely assigned from the small printed table. NN remains a contextual candidate."
+    },
+    {
+      "id": "P07",
+      "crop_box": [
+        485,
+        0,
+        555,
+        145
+      ],
+      "source_box": [
+        944,
+        710,
+        978,
+        756
+      ],
+      "sign": "y/7",
+      "value": "i",
+      "status": "Existing value retained after native contrasting controls; fitted support, not independent target validation.",
+      "legacy_source_box": [
+        942.5,
+        680,
+        977.5,
+        752.5
+      ],
+      "upper_box": [
+        960,
+        710,
+        978,
+        737
+      ],
+      "base_box": [
+        944,
+        735,
+        974,
+        756
+      ],
+      "native_component_review": "experiments/E55_I_N_result.json"
+    },
+    {
+      "id": "P08",
+      "crop_box": [
+        555,
+        0,
+        625,
+        145
+      ],
+      "source_box": [
+        979,
+        691,
+        1013,
+        752
+      ],
+      "sign": "BO_mark",
+      "value": "bo",
+      "status": "Existing value retained after native contrasting controls; fitted support, not independent target validation.",
+      "legacy_source_box": [
+        977.5,
+        680,
+        1012.5,
+        752.5
+      ],
+      "upper_box": [
+        994,
+        691,
+        1013,
+        732
+      ],
+      "base_box": [
+        979,
+        734,
+        1007,
+        752
+      ],
+      "native_component_review": "experiments/E54_BO_result.json"
+    },
+    {
+      "id": "P09",
+      "crop_box": [
+        625,
+        0,
+        695,
+        145
+      ],
+      "source_box": [
+        1012.5,
+        680,
+        1047.5,
+        752.5
+      ],
+      "sign": "c/7",
+      "value": "r",
+      "status": "proposed local image reading"
+    },
+    {
+      "id": "P10",
+      "crop_box": [
+        695,
+        0,
+        775,
+        145
+      ],
+      "source_box": [
+        1038,
+        711,
+        1094,
+        750
+      ],
+      "sign": "x/m",
+      "value": "na",
+      "status": "Existing provisional NA strengthened by N09 PERSONA m-base versus GE n-base; old regular source box clipped the upper.",
+      "legacy_source_box": [
+        1047.5,
+        680,
+        1087.5,
+        752.5
+      ],
+      "upper_box": [
+        1072,
+        711,
+        1094,
+        734
+      ],
+      "base_box": [
+        1038,
+        731,
+        1077,
+        750
+      ],
+      "evidence": "experiments/E23_name_context_and_persona_anchor.json"
+    },
+    {
+      "id": "P11",
+      "crop_box": [
+        775,
+        0,
+        835,
+        145
+      ],
+      "source_box": [
+        1088,
+        705,
+        1129,
+        751
+      ],
+      "sign": "s/m",
+      "value": "mi",
+      "status": "Provisional MI retained by native s-upper/m-base match to R1135U08, distinct from ME/NA. Old regular box clipped the upper.",
+      "legacy_source_box": [
+        1087.5,
+        680,
+        1117.5,
+        752.5
+      ],
+      "upper_box": [
+        1109,
+        705,
+        1129,
+        729
+      ],
+      "base_box": [
+        1088,
+        731,
+        1127,
+        751
+      ],
+      "evidence": "experiments/E25_target_control_recheck.json"
+    },
+    {
+      "id": "P12",
+      "crop_box": [
+        835,
+        0,
+        925,
+        145
+      ],
+      "source_box": [
+        1133,
+        693,
+        1179,
+        763
+      ],
+      "sign": "SS_mark",
+      "value": "ss",
+      "status": "Existing provisional SS retained with actual R1132_COVER_SS footedL/double-base control and TT/II negatives.",
+      "legacy_source_box": [
+        1117.5,
+        680,
+        1162.5,
+        752.5
+      ],
+      "upper_box": [
+        1162,
+        693,
+        1179,
+        726
+      ],
+      "base_box": [
+        1133,
+        728,
+        1166,
+        763
+      ],
+      "evidence": "experiments/E30_SS_TE_result.json"
+    },
+    {
+      "id": "P13",
+      "crop_box": [
+        925,
+        0,
+        1020,
+        145
+      ],
+      "source_box": [
+        1176,
+        694,
+        1210,
+        750
+      ],
+      "sign": "A_alt_L7",
+      "value": "a",
+      "status": "provisional local alternate-A classification from R07/J01/published A2",
+      "candidate_value": "a",
+      "candidate_sign": "A_alt_L7",
+      "reason": "Two known-text A contexts and explicitly labeled published A2 have the same L-like upper and7base; plain P control differs.",
+      "alternatives_before_E14": [
+        {
+          "sign": "P_mark",
+          "value": "p"
+        },
+        {
+          "sign": "ZA_mark",
+          "value": "za"
+        }
+      ],
+      "upper_box": [
+        1194,
+        694,
+        1210,
+        723
+      ],
+      "base_box": [
+        1176,
+        726,
+        1206,
+        750
+      ]
+    },
+    {
+      "id": "P14",
+      "crop_box": [
+        1020,
+        0,
+        1120,
+        145
+      ],
+      "source_box": [
+        1210.0,
+        680,
+        1260.0,
+        752.5
+      ],
+      "sign": "a/m",
+      "value": "ha",
+      "status": "proposed local image reading"
+    },
+    {
+      "id": "P15",
+      "crop_box": [
+        1120,
+        0,
+        1210,
+        145
+      ],
+      "source_box": [
+        1260.0,
+        680,
+        1305.0,
+        752.5
+      ],
+      "sign": "1/n",
+      "value": "co",
+      "status": "proposed local image reading"
+    },
+    {
+      "id": "P16",
+      "crop_box": [
+        1210,
+        0,
+        1285,
+        145
+      ],
+      "source_box": [
+        1309,
+        703,
+        1348,
+        744
+      ],
+      "sign": "GE_mark",
+      "value": "ge",
+      "status": "provisional local classification against fitted R04 GE and two negative GI controls",
+      "previous_value": "gi",
+      "previous_sign": "GI_mark",
+      "reason": "R04 has a forked/crossed upper over n-family base, resembling target P16 and the explicitly labeled GE cell; both GI controls instead have a z-like/top-bar upper. One fitted GE context plus the published row and GI negatives supports a provisional replacement, not a universal recognition rule.",
+      "candidate_values": [
+        {
+          "value": "ge",
+          "status": "possible neighboring published-cell reading; requires manuscript control"
+        },
+        {
+          "value": "gi",
+          "status": "historical reading retained as an alternative if a documented allograph is found"
+        }
+      ],
+      "upper_box": [
+        1323,
+        703,
+        1348,
+        724
+      ],
+      "base_box": [
+        1309,
+        725,
+        1338,
+        744
+      ]
+    },
+    {
+      "id": "P17",
+      "crop_box": [
+        1285,
+        0,
+        1375,
+        145
+      ],
+      "source_box": [
+        1342,
+        703,
+        1386,
+        742
+      ],
+      "sign": "-/[&]",
+      "value": "to",
+      "status": "provisional local image classification against C11/D16 TO and F03 PA controls",
+      "candidate_value": "to",
+      "candidate_sign": "-/[&]",
+      "reason": "Target has upper and lower loop regions connected by a crossed/rightward stroke, matching C11 and D16 TO. The PA control has one compact bowl. Both loop regions persist in original RGB and red channel, so the choice does not depend only on contrast enhancement.",
+      "alternatives_before_E10": [
+        {
+          "sign": "-/[&]",
+          "value": "to"
+        },
+        {
+          "sign": "PA_mark",
+          "value": "pa"
+        }
+      ],
+      "upper_box": [
+        1359,
+        705,
+        1386,
+        734
+      ],
+      "base_box": [
+        1342,
+        703,
+        1363,
+        742
+      ]
+    },
+    {
+      "id": "P18",
+      "crop_box": [
+        1375,
+        0,
+        1470,
+        145
+      ],
+      "source_box": [
+        1390,
+        703,
+        1430,
+        742
+      ],
+      "sign": "m/n",
+      "value": "de",
+      "status": "Existing DE retained; one-arch n-like lower against two-arch LE. Opening occurrence faint; review is provisional, not independent target validation.",
+      "upper_box": [
+        1410,
+        703,
+        1430,
+        722
+      ],
+      "base_box": [
+        1390,
+        721,
+        1424,
+        742
+      ],
+      "legacy_source_box": [
+        1387.5,
+        680,
+        1435,
+        752.5
+      ],
+      "native_component_review": "experiments/E50_LE_DE_result.json"
+    }
+  ],
+  "unassigned_suffix_source_box": [
+    1435,
+    680,
+    1630,
+    755
+  ],
+  "conservative_display": "meserioa {?} i bornamissa ha co ge to de…",
+  "candidate": "meser Ioanni Bornamissa ha co…",
+  "candidate_positions": [
+    "P06"
+  ],
+  "supported_runs": [
+    {
+      "ids": [
+        "P08",
+        "P09",
+        "P10",
+        "P11",
+        "P12"
+      ],
+      "emission": "bornamiss"
+    },
+    {
+      "ids": [
+        "P14",
+        "P15"
+      ],
+      "emission": "haco"
+    }
+  ],
+  "limits": [
+    "The capitalization and name division are editorial.",
+    "Candidate NN is not an established table entry.",
+    "The suffix after CO is not completed to contato or another word.",
+    "This is not identification of a person proved by the cipher.",
+    "The literal sequence IO A {?} I does not independently establish the normalization IOANNI.",
+    "E12 withdraws P16 GI: two manuscript GI contexts have a different upper. GE is only a candidate; no replacement accepted.",
+    "No fluent tail word is established.",
+    "E13 provisionally supplies GE at P16 from an actual DILIGENTIA reference. The previous unknown and GI versions are retained.",
+    "E14 provisionally reads P13 as alternate A, yielding proposed BORNAMISSA, without inserting Z or ZA.",
+    "P06 remains unknown. The candidate IOANNI and personal identification are not established."
+  ],
+  "version": "V19 E54 BO support and E55 I review; all target emissions unchanged.",
+  "name_candidate_prefix_ids": [
+    "P01",
+    "P02",
+    "P03",
+    "P04",
+    "P05",
+    "P06",
+    "P07",
+    "P08",
+    "P09",
+    "P10",
+    "P11",
+    "P12",
+    "P13",
+    "P14",
+    "P15"
+  ],
+  "name_candidate_positions": [
+    "P06"
+  ],
+  "tail_display": "HA CO GE TO DE",
+  "tail_if_TO": "HA CO GE TO DE, with GE and TO provisional",
+  "candidate_normalization_rejected": {
+    "proposal": "cogitato",
+    "conditional_emission": "cogito",
+    "required_unrecorded_insertion": "ta",
+    "reason": "Under the candidate TO reading, CO GI TO emits cogito. Cogitato would require an additional TA or an unsupported different value for the bracket. Neither is adopted.",
+    "current_status": "P16 is now unknown, so even the literal COGITO sequence is no longer the current reading."
+  },
+  "parent_sha256": "7be999a9a35f6755b0eb203c87c64d235c46f1d4a8937437e0d7c424bb76ea61",
+  "evidence": "experiments/E14_A_homophone.json",
+  "parent_file": "r1128_opening_v18.json",
+  "previous_name_candidate": "meser Ioanni Bornamissza ha co…"
+}
+

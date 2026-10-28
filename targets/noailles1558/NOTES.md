@@ -1,8 +1,8 @@
 # Noailles (Venice) to the Cardinal de Lorraine, 13 Nov 1558 (BnF fr. 3151 no. 33): catalogue no. 10 (part)
 
-Status: in progress (27 Oct 2026: transcribed and key largely recovered by Michael Brackx, issue #113; files
-requested). Three cipher blocks, 262 signs (his count); the marginal decipherments of the time are partly legible.
-Next step: reproduce his decode from his files, then retry the f. 60v gaps against the outer-margin gloss.
+Status: in progress (28 Oct 2026: Brackx's files of issue #113 copied into `brackx/` and the decode reproduced here by
+`check_brackx.py`; three cipher blocks, 260 non-null signs, 244 valued = 93.8%, 12 on tentative values). Next step: retry
+the f. 60v gaps against the outer-margin gloss and check the key values on the images.
 
 Split on 14 Oct 2026 from `../guiche1551/` under the one-key rule (George Lasry, 14 Oct 2026). Catalogue item 10
 grouped this letter with La Guiche's Rome letter of 1551 (`../guiche1551/`, a 22-sign substitution) and Seure's
@@ -61,3 +61,15 @@ requested.** As he reports it:
 - [x] print: Ribier II has no Nov 1558 Noailles letter (Brackx); Charrière II 505 a parallel phrase only. The Noailles ambassade edition (Vertot, 1763) not yet searched
 - [x] key-rebuild: Brackx, gloss alignment + French 5-gram (Montaigne), 246/262 valued; not yet reproduced here
 - [ ] retry: not done
+
+## 28 Oct 2026: Brackx's gist (issue #113), checked here
+
+Files copied unchanged into `brackx/` from https://gist.github.com/brackxm/c48586b981081bc69a5db8d672eef296 (revision
+a026501dcb23, 28 Oct 2026); he allows copying under the project licence (CC BY 4.0 for text and data, MIT for code), with
+credit. Tools, from his readme: Claude Code with Claude Opus 5.5, directed by him, on the BnF IIIF images (views 61-62).
+His crib_anneal.py and lm_anneal.py are not in the gist (offered on request).
+
+`check_brackx.py` (our own code; it does not run his scripts) applies `key_r5.tsv` to `transcription_f60r_f60v.txt` and
+compares with `decode_tvd_r5.txt`: 274 tokens, 272 agree; the 2 differences are bracketed clear words in the transcription
+([Comme], [tant]). Counts: 262 non-null tokens including those two, 260 sign tokens, 244 with a value (93.8%), 12 tentative:
+his counts, reproduced. Not done: the transcription, positions and the 16 tentative values are not checked on the images.

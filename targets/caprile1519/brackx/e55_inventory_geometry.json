@@ -1,0 +1,4853 @@
+{
+  "key": "paragraph_alignment/visual_key_v21_training.json",
+  "key_sha256": "2a76eb28517d27b64b6afd0160684192b9fd1aca4f52c59b934a5eff378e302b",
+  "status": "E55 two fitted N records:79 groups,75 values,157 records; provenance counts only.",
+  "classes": [
+    {
+      "class_id": "G01",
+      "value": "c",
+      "label_status": "reference-assisted local identification; not held out",
+      "samples": [
+        {
+          "id": "A01",
+          "source": "images/v1864_05.jpg",
+          "upper_box": [
+            1101,
+            917,
+            1114,
+            944
+          ],
+          "base_box": [
+            1078,
+            949,
+            1105,
+            972
+          ],
+          "box_xyxy": [
+            1078,
+            917,
+            1114,
+            972
+          ],
+          "geometry_file": "paragraph_alignment/neutral_glyphs.json",
+          "geometry_file_sha256": "93e0fe3c85a34bca7a3e98eb2c5f070178da78cf599b4f0acd42872d0b18a4ee"
+        },
+        {
+          "id": "A17",
+          "source": "images/v1864_05.jpg",
+          "upper_box": [
+            1597,
+            902,
+            1617,
+            932
+          ],
+          "base_box": [
+            1579,
+            934,
+            1603,
+            957
+          ],
+          "box_xyxy": [
+            1579,
+            902,
+            1617,
+            957
+          ],
+          "geometry_file": "paragraph_alignment/neutral_glyphs.json",
+          "geometry_file_sha256": "93e0fe3c85a34bca7a3e98eb2c5f070178da78cf599b4f0acd42872d0b18a4ee"
+        },
+        {
+          "id": "K08",
+          "source": "images/v1864_05.jpg",
+          "upper_box": [
+            1342,
+            978,
+            1359,
+            1004
+          ],
+          "base_box": [
+            1325,
+            1006,
+            1354,
+            1027
+          ],
+          "box_xyxy": [
+            1325,
+            978,
+            1359,
+            1027
+          ],
+          "geometry_file": "experiments/E11_reference_island.json",
+          "geometry_file_sha256": "6704b863fe763ba816cf2e0d83ba2ad5cde1833106f67232c54bba6ffbfd1c92"
+        },
+        {
+          "id": "U06",
+          "value": "c",
+          "rectified_upper_box": [
+            952,
+            1002,
+            981,
+            1036
+          ],
+          "rectified_base_box": [
+            936,
+            1038,
+            969,
+            1061
+          ],
+          "upper_box": [
+            952,
+            989,
+            981,
+            1025
+          ],
+          "base_box": [
+            936,
+            1025,
+            969,
+            1050
+          ],
+          "box_xyxy": [
+            936,
+            989,
+            981,
+            1050
+          ],
+          "source": "images/v1874_01.jpg",
+          "source_sha256": "cac6303669a378be41bd486705565d1ae0a73543a869965eb75a57ba2ccb8af3",
+          "status": "Known-text-assisted fitted reference; source-native boxes after isolated-cell review.",
+          "geometry_file": "experiments/E24_R1135_local_anchor.json",
+          "geometry_file_sha256": "833d115076137d7fde4dc533593855e6f76047dbef726cb056aa8bb4f24e1f82"
+        }
+      ]
+    },
+    {
+      "class_id": "G02",
+      "value": "he",
+      "label_status": "reference-assisted local identification; not held out",
+      "samples": [
+        {
+          "id": "A02",
+          "source": "images/v1864_05.jpg",
+          "upper_box": [
+            1137,
+            916,
+            1150,
+            948
+          ],
+          "base_box": [
+            1110,
+            949,
+            1137,
+            966
+          ],
+          "box_xyxy": [
+            1110,
+            916,
+            1150,
+            966
+          ],
+          "geometry_file": "paragraph_alignment/neutral_glyphs.json",
+          "geometry_file_sha256": "93e0fe3c85a34bca7a3e98eb2c5f070178da78cf599b4f0acd42872d0b18a4ee"
+        },
+        {
+          "id": "A18",
+          "source": "images/v1864_05.jpg",
+          "upper_box": [
+            1633,
+            900,
+            1649,
+            935
+          ],
+          "base_box": [
+            1607,
+            935,
+            1633,
+            952
+          ],
+          "box_xyxy": [
+            1607,
+            900,
+            1649,
+            952
+          ],
+          "geometry_file": "paragraph_alignment/neutral_glyphs.json",
+          "geometry_file_sha256": "93e0fe3c85a34bca7a3e98eb2c5f070178da78cf599b4f0acd42872d0b18a4ee"
+        },
+        {
+          "id": "K09",
+          "source": "images/v1864_05.jpg",
+          "upper_box": [
+            1377,
+            973,
+            1396,
+            998
+          ],
+          "base_box": [
+            1356,
+            1001,
+            1401,
+            1028
+          ],
+          "box_xyxy": [
+            1356,
+            973,
+            1401,
+            1028
+          ],
+          "geometry_file": "experiments/E11_reference_island.json",
+          "geometry_file_sha256": "6704b863fe763ba816cf2e0d83ba2ad5cde1833106f67232c54bba6ffbfd1c92"
+        },
+        {
+          "id": "U07",
+          "value": "he",
+          "rectified_upper_box": [
+            993,
+            996,
+            1025,
+            1038
+          ],
+          "rectified_base_box": [
+            969,
+            1038,
+            1007,
+            1062
+          ],
+          "upper_box": [
+            993,
+            981,
+            1025,
+            1025
+          ],
+          "base_box": [
+            969,
+            1024,
+            1007,
+            1050
+          ],
+          "box_xyxy": [
+            969,
+            981,
+            1025,
+            1050
+          ],
+          "source": "images/v1874_01.jpg",
+          "source_sha256": "cac6303669a378be41bd486705565d1ae0a73543a869965eb75a57ba2ccb8af3",
+          "status": "Known-text-assisted fitted reference; source-native boxes after isolated-cell review.",
+          "geometry_file": "experiments/E24_R1135_local_anchor.json",
+          "geometry_file_sha256": "833d115076137d7fde4dc533593855e6f76047dbef726cb056aa8bb4f24e1f82"
+        }
+      ]
+    },
+    {
+      "class_id": "G03",
+      "value": "si",
+      "label_status": "reference-assisted local identification; not held out",
+      "samples": [
+        {
+          "id": "A03",
+          "source": "images/v1864_05.jpg",
+          "upper_box": [
+            1161,
+            932,
+            1173,
+            954
+          ],
+          "base_box": [
+            1150,
+            927,
+            1164,
+            965
+          ],
+          "box_xyxy": [
+            1150,
+            927,
+            1173,
+            965
+          ],
+          "geometry_file": "paragraph_alignment/neutral_glyphs.json",
+          "geometry_file_sha256": "93e0fe3c85a34bca7a3e98eb2c5f070178da78cf599b4f0acd42872d0b18a4ee"
+        }
+      ]
+    },
+    {
+      "class_id": "G04",
+      "value": "tro",
+      "label_status": "reference-assisted local identification; not held out",
+      "samples": [
+        {
+          "id": "A04",
+          "source": "images/v1864_05.jpg",
+          "upper_box": [
+            1194,
+            930,
+            1210,
+            948
+          ],
+          "base_box": [
+            1176,
+            946,
+            1197,
+            963
+          ],
+          "box_xyxy": [
+            1176,
+            930,
+            1210,
+            963
+          ],
+          "geometry_file": "paragraph_alignment/neutral_glyphs.json",
+          "geometry_file_sha256": "93e0fe3c85a34bca7a3e98eb2c5f070178da78cf599b4f0acd42872d0b18a4ee"
+        }
+      ]
+    },
+    {
+      "class_id": "G05",
+      "value": "va",
+      "label_status": "reference-assisted local identification; not held out",
+      "samples": [
+        {
+          "id": "A05",
+          "source": "images/v1864_05.jpg",
+          "upper_box": [
+            1215,
+            927,
+            1230,
+            946
+          ],
+          "base_box": [
+            1205,
+            943,
+            1223,
+            964
+          ],
+          "box_xyxy": [
+            1205,
+            927,
+            1230,
+            964
+          ],
+          "geometry_file": "paragraph_alignment/neutral_glyphs.json",
+          "geometry_file_sha256": "93e0fe3c85a34bca7a3e98eb2c5f070178da78cf599b4f0acd42872d0b18a4ee"
+        }
+      ]
+    },
+    {
+      "class_id": "G06",
+      "value": "no",
+      "label_status": "reference-assisted local identification; not held out",
+      "samples": [
+        {
+          "id": "A06",
+          "source": "images/v1864_05.jpg",
+          "upper_box": [
+            1251,
+            919,
+            1270,
+            947
+          ],
+          "base_box": [
+            1226,
+            946,
+            1259,
+            965
+          ],
+          "box_xyxy": [
+            1226,
+            919,
+            1270,
+            965
+          ],
+          "geometry_file": "paragraph_alignment/neutral_glyphs.json",
+          "geometry_file_sha256": "93e0fe3c85a34bca7a3e98eb2c5f070178da78cf599b4f0acd42872d0b18a4ee"
+        },
+        {
+          "id": "C19",
+          "source": "images/v1864_04.jpg",
+          "upper_box": [
+            1514,
+            3102,
+            1546,
+            3143
+          ],
+          "base_box": [
+            1483,
+            3143,
+            1528,
+            3164
+          ],
+          "box_xyxy": [
+            1483,
+            3102,
+            1546,
+            3164
+          ],
+          "geometry_file": "paragraph_alignment/prefix_neutral_glyphs.json",
+          "geometry_file_sha256": "9ba667c8534a3d1be200b9d7064318304edc01a983bee1b859a6e20c68028da6"
+        },
+        {
+          "id": "U14",
+          "value": "no",
+          "rectified_upper_box": [
+            1360,
+            1007,
+            1395,
+            1043
+          ],
+          "rectified_base_box": [
+            1326,
+            1041,
+            1371,
+            1065
+          ],
+          "upper_box": [
+            1360,
+            977,
+            1395,
+            1015
+          ],
+          "base_box": [
+            1326,
+            1012,
+            1371,
+            1039
+          ],
+          "box_xyxy": [
+            1326,
+            977,
+            1395,
+            1039
+          ],
+          "source": "images/v1874_01.jpg",
+          "source_sha256": "cac6303669a378be41bd486705565d1ae0a73543a869965eb75a57ba2ccb8af3",
+          "status": "Known-text-assisted fitted reference; source-native boxes after isolated-cell review.",
+          "geometry_file": "experiments/E24_R1135_local_anchor.json",
+          "geometry_file_sha256": "833d115076137d7fde4dc533593855e6f76047dbef726cb056aa8bb4f24e1f82"
+        }
+      ]
+    },
+    {
+      "class_id": "G07",
+      "value": "a",
+      "label_status": "reference-assisted local identification; not held out",
+      "samples": [
+        {
+          "id": "A07",
+          "source": "images/v1864_05.jpg",
+          "upper_box": [
+            1280,
+            928,
+            1296,
+            946
+          ],
+          "base_box": [
+            1272,
+            948,
+            1291,
+            966
+          ],
+          "box_xyxy": [
+            1272,
+            928,
+            1296,
+            966
+          ],
+          "geometry_file": "paragraph_alignment/neutral_glyphs.json",
+          "geometry_file_sha256": "93e0fe3c85a34bca7a3e98eb2c5f070178da78cf599b4f0acd42872d0b18a4ee"
+        },
+        {
+          "id": "D01",
+          "source": "images/v1861_02.jpg",
+          "upper_box": [
+            1165,
+            2003,
+            1183,
+            2025
+          ],
+          "base_box": [
+            1150,
+            2025,
+            1180,
+            2050
+          ],
+          "box_xyxy": [
+            1150,
+            2003,
+            1183,
+            2050
+          ],
+          "geometry_file": "paragraph_alignment/long_prediction_before_comparison.json",
+          "geometry_file_sha256": "e7e4311848d343fae64cd42a1d8bb51239840a91b1864a3c226944fef973aa3a"
+        }
+      ]
+    },
+    {
+      "class_id": "G08",
+      "value": "la",
+      "label_status": "reference-assisted local identification; not held out",
+      "samples": [
+        {
+          "id": "A08",
+          "source": "images/v1864_05.jpg",
+          "upper_box": [
+            1315,
+            909,
+            1330,
+            939
+          ],
+          "base_box": [
+            1295,
+            946,
+            1324,
+            964
+          ],
+          "box_xyxy": [
+            1295,
+            909,
+            1330,
+            964
+          ],
+          "geometry_file": "paragraph_alignment/neutral_glyphs.json",
+          "geometry_file_sha256": "93e0fe3c85a34bca7a3e98eb2c5f070178da78cf599b4f0acd42872d0b18a4ee"
+        }
+      ]
+    },
+    {
+      "class_id": "G09",
+      "value": "co",
+      "label_status": "reference-assisted local identification; not held out",
+      "samples": [
+        {
+          "id": "A09",
+          "source": "images/v1864_05.jpg",
+          "upper_box": [
+            1347,
+            926,
+            1357,
+            944
+          ],
+          "base_box": [
+            1326,
+            944,
+            1354,
+            961
+          ],
+          "box_xyxy": [
+            1326,
+            926,
+            1357,
+            961
+          ],
+          "geometry_file": "paragraph_alignment/neutral_glyphs.json",
+          "geometry_file_sha256": "93e0fe3c85a34bca7a3e98eb2c5f070178da78cf599b4f0acd42872d0b18a4ee"
+        },
+        {
+          "id": "C26",
+          "source": "images/v1864_04.jpg",
+          "upper_box": [
+            1781,
+            3114,
+            1792,
+            3135
+          ],
+          "base_box": [
+            1757,
+            3138,
+            1794,
+            3157
+          ],
+          "box_xyxy": [
+            1757,
+            3114,
+            1794,
+            3157
+          ],
+          "geometry_file": "paragraph_alignment/prefix_neutral_glyphs.json",
+          "geometry_file_sha256": "9ba667c8534a3d1be200b9d7064318304edc01a983bee1b859a6e20c68028da6"
+        }
+      ]
+    },
+    {
+      "class_id": "G10",
+      "value": "r",
+      "label_status": "reference-assisted local identification; not held out",
+      "samples": [
+        {
+          "id": "A10",
+          "source": "images/v1864_05.jpg",
+          "upper_box": [
+            1368,
+            922,
+            1382,
+            939
+          ],
+          "base_box": [
+            1361,
+            944,
+            1379,
+            960
+          ],
+          "box_xyxy": [
+            1361,
+            922,
+            1382,
+            960
+          ],
+          "geometry_file": "paragraph_alignment/neutral_glyphs.json",
+          "geometry_file_sha256": "93e0fe3c85a34bca7a3e98eb2c5f070178da78cf599b4f0acd42872d0b18a4ee"
+        },
+        {
+          "id": "C15",
+          "source": "images/v1864_04.jpg",
+          "upper_box": [
+            1359,
+            3124,
+            1375,
+            3142
+          ],
+          "base_box": [
+            1344,
+            3146,
+            1370,
+            3170
+          ],
+          "box_xyxy": [
+            1344,
+            3124,
+            1375,
+            3170
+          ],
+          "geometry_file": "paragraph_alignment/prefix_neutral_glyphs.json",
+          "geometry_file_sha256": "9ba667c8534a3d1be200b9d7064318304edc01a983bee1b859a6e20c68028da6"
+        },
+        {
+          "id": "N07",
+          "value": "r",
+          "upper_box": [
+            1446,
+            1978,
+            1463,
+            1994
+          ],
+          "base_box": [
+            1430,
+            1994,
+            1456,
+            2015
+          ],
+          "box_xyxy": [
+            1430,
+            1978,
+            1463,
+            2015
+          ],
+          "source": "images/v1864_04.jpg",
+          "source_sha256": "e5e106f3251ddecf01a3edac932b3e7b86172f6cc5f21b83706b5a0454e2c49f",
+          "status": "Known-text-assisted fitted reference; not prospective.",
+          "geometry_file": "experiments/E23_name_context_and_persona_anchor.json",
+          "geometry_file_sha256": "204e469a66ec4500025714d1488e29a9e8e5914c4694d191eff88509b3de80cc"
+        },
+        {
+          "id": "U23",
+          "value": "r",
+          "rectified_upper_box": [
+            1830,
+            1010,
+            1854,
+            1038
+          ],
+          "rectified_base_box": [
+            1809,
+            1042,
+            1848,
+            1065
+          ],
+          "upper_box": [
+            1830,
+            962,
+            1854,
+            992
+          ],
+          "base_box": [
+            1809,
+            994,
+            1848,
+            1020
+          ],
+          "box_xyxy": [
+            1809,
+            962,
+            1854,
+            1020
+          ],
+          "source": "images/v1874_01.jpg",
+          "source_sha256": "cac6303669a378be41bd486705565d1ae0a73543a869965eb75a57ba2ccb8af3",
+          "status": "Known-text-assisted fitted reference; source-native boxes after isolated-cell review.",
+          "geometry_file": "experiments/E24_R1135_local_anchor.json",
+          "geometry_file_sha256": "833d115076137d7fde4dc533593855e6f76047dbef726cb056aa8bb4f24e1f82"
+        }
+      ]
+    },
+    {
+      "class_id": "G11",
+      "value": "te",
+      "label_status": "reference-assisted local identification; not held out",
+      "samples": [
+        {
+          "id": "A11",
+          "source": "images/v1864_05.jpg",
+          "upper_box": [
+            1396,
+            929,
+            1411,
+            952
+          ],
+          "base_box": [
+            1383,
+            920,
+            1405,
+            959
+          ],
+          "box_xyxy": [
+            1383,
+            920,
+            1411,
+            959
+          ],
+          "geometry_file": "paragraph_alignment/neutral_glyphs.json",
+          "geometry_file_sha256": "93e0fe3c85a34bca7a3e98eb2c5f070178da78cf599b4f0acd42872d0b18a4ee"
+        },
+        {
+          "id": "A13",
+          "source": "images/v1864_05.jpg",
+          "upper_box": [
+            1466,
+            920,
+            1484,
+            945
+          ],
+          "base_box": [
+            1448,
+            915,
+            1467,
+            955
+          ],
+          "box_xyxy": [
+            1448,
+            915,
+            1484,
+            955
+          ],
+          "geometry_file": "paragraph_alignment/neutral_glyphs.json",
+          "geometry_file_sha256": "93e0fe3c85a34bca7a3e98eb2c5f070178da78cf599b4f0acd42872d0b18a4ee"
+        },
+        {
+          "id": "C14",
+          "source": "images/v1864_04.jpg",
+          "upper_box": [
+            1329,
+            3138,
+            1347,
+            3162
+          ],
+          "base_box": [
+            1311,
+            3126,
+            1342,
+            3174
+          ],
+          "box_xyxy": [
+            1311,
+            3126,
+            1347,
+            3174
+          ],
+          "geometry_file": "paragraph_alignment/prefix_neutral_glyphs.json",
+          "geometry_file_sha256": "9ba667c8534a3d1be200b9d7064318304edc01a983bee1b859a6e20c68028da6"
+        },
+        {
+          "id": "U13",
+          "value": "te",
+          "rectified_upper_box": [
+            1300,
+            1018,
+            1331,
+            1045
+          ],
+          "rectified_base_box": [
+            1282,
+            1004,
+            1320,
+            1063
+          ],
+          "upper_box": [
+            1300,
+            991,
+            1331,
+            1020
+          ],
+          "base_box": [
+            1282,
+            977,
+            1320,
+            1039
+          ],
+          "box_xyxy": [
+            1282,
+            977,
+            1331,
+            1039
+          ],
+          "source": "images/v1874_01.jpg",
+          "source_sha256": "cac6303669a378be41bd486705565d1ae0a73543a869965eb75a57ba2ccb8af3",
+          "status": "Known-text-assisted fitted reference; source-native boxes after isolated-cell review.",
+          "geometry_file": "experiments/E24_R1135_local_anchor.json",
+          "geometry_file_sha256": "833d115076137d7fde4dc533593855e6f76047dbef726cb056aa8bb4f24e1f82"
+        }
+      ]
+    },
+    {
+      "class_id": "G12",
+      "value": "pro",
+      "label_status": "reference-assisted local identification; not held out",
+      "samples": [
+        {
+          "id": "A12",
+          "source": "images/v1864_05.jpg",
+          "upper_box": [
+            1439,
+            915,
+            1447,
+            934
+          ],
+          "base_box": [
+            1416,
+            935,
+            1440,
+            956
+          ],
+          "box_xyxy": [
+            1416,
+            915,
+            1447,
+            956
+          ],
+          "geometry_file": "paragraph_alignment/neutral_glyphs.json",
+          "geometry_file_sha256": "93e0fe3c85a34bca7a3e98eb2c5f070178da78cf599b4f0acd42872d0b18a4ee"
+        }
+      ]
+    },
+    {
+      "class_id": "G13",
+      "value": "m",
+      "label_status": "reference-assisted local identification; not held out",
+      "samples": [
+        {
+          "id": "A14",
+          "source": "images/v1864_05.jpg",
+          "upper_box": [
+            1491,
+            911,
+            1511,
+            936
+          ],
+          "base_box": [
+            1479,
+            935,
+            1504,
+            953
+          ],
+          "box_xyxy": [
+            1479,
+            911,
+            1511,
+            953
+          ],
+          "geometry_file": "paragraph_alignment/neutral_glyphs.json",
+          "geometry_file_sha256": "93e0fe3c85a34bca7a3e98eb2c5f070178da78cf599b4f0acd42872d0b18a4ee"
+        }
+      ]
+    },
+    {
+      "class_id": "G14",
+      "value": "po",
+      "label_status": "reference-assisted local identification; not held out",
+      "samples": [
+        {
+          "id": "A15",
+          "source": "images/v1864_05.jpg",
+          "upper_box": [
+            1535,
+            904,
+            1553,
+            940
+          ],
+          "base_box": [
+            1513,
+            925,
+            1534,
+            952
+          ],
+          "box_xyxy": [
+            1513,
+            904,
+            1553,
+            952
+          ],
+          "geometry_file": "paragraph_alignment/neutral_glyphs.json",
+          "geometry_file_sha256": "93e0fe3c85a34bca7a3e98eb2c5f070178da78cf599b4f0acd42872d0b18a4ee"
+        }
+      ]
+    },
+    {
+      "class_id": "G15",
+      "value": "re",
+      "label_status": "reference-assisted local identification; not held out",
+      "samples": [
+        {
+          "id": "A16",
+          "source": "images/v1864_05.jpg",
+          "upper_box": [
+            1559,
+            922,
+            1578,
+            940
+          ],
+          "base_box": [
+            1547,
+            909,
+            1562,
+            952
+          ],
+          "box_xyxy": [
+            1547,
+            909,
+            1578,
+            952
+          ],
+          "geometry_file": "paragraph_alignment/neutral_glyphs.json",
+          "geometry_file_sha256": "93e0fe3c85a34bca7a3e98eb2c5f070178da78cf599b4f0acd42872d0b18a4ee"
+        },
+        {
+          "id": "N02",
+          "value": "re",
+          "upper_box": [
+            1276,
+            1981,
+            1300,
+            2002
+          ],
+          "base_box": [
+            1263,
+            1973,
+            1290,
+            2020
+          ],
+          "box_xyxy": [
+            1263,
+            1973,
+            1300,
+            2020
+          ],
+          "source": "images/v1864_04.jpg",
+          "source_sha256": "e5e106f3251ddecf01a3edac932b3e7b86172f6cc5f21b83706b5a0454e2c49f",
+          "status": "Known-text-assisted fitted reference; not prospective.",
+          "geometry_file": "experiments/E23_name_context_and_persona_anchor.json",
+          "geometry_file_sha256": "204e469a66ec4500025714d1488e29a9e8e5914c4694d191eff88509b3de80cc"
+        }
+      ]
+    },
+    {
+      "class_id": "G16",
+      "value": "ba",
+      "label_status": "reference-assisted identification, checked against local repeated shapes; not held out",
+      "samples": [
+        {
+          "id": "B01",
+          "source": "images/v1864_04.jpg",
+          "upper_box": [
+            2121,
+            3122,
+            2139,
+            3140
+          ],
+          "base_box": [
+            2097,
+            3143,
+            2137,
+            3161
+          ],
+          "box_xyxy": [
+            2097,
+            3122,
+            2139,
+            3161
+          ],
+          "geometry_file": "paragraph_alignment/preceding_neutral_glyphs.json",
+          "geometry_file_sha256": "9663923d584ae417b1f55f755740edf90b091a377be6b15514c9330bd237e1c9"
+        },
+        {
+          "id": "B11",
+          "source": "images/v1864_04.jpg",
+          "upper_box": [
+            2486,
+            3124,
+            2505,
+            3147
+          ],
+          "base_box": [
+            2467,
+            3149,
+            2495,
+            3167
+          ],
+          "box_xyxy": [
+            2467,
+            3124,
+            2505,
+            3167
+          ],
+          "geometry_file": "paragraph_alignment/preceding_neutral_glyphs.json",
+          "geometry_file_sha256": "9663923d584ae417b1f55f755740edf90b091a377be6b15514c9330bd237e1c9"
+        }
+      ]
+    },
+    {
+      "class_id": "G17",
+      "value": "ro",
+      "label_status": "reference-assisted identification, checked against local repeated shapes; not held out",
+      "samples": [
+        {
+          "id": "B02",
+          "source": "images/v1864_04.jpg",
+          "upper_box": [
+            2157,
+            3128,
+            2173,
+            3147
+          ],
+          "base_box": [
+            2137,
+            3112,
+            2160,
+            3164
+          ],
+          "box_xyxy": [
+            2137,
+            3112,
+            2173,
+            3164
+          ],
+          "geometry_file": "paragraph_alignment/preceding_neutral_glyphs.json",
+          "geometry_file_sha256": "9663923d584ae417b1f55f755740edf90b091a377be6b15514c9330bd237e1c9"
+        },
+        {
+          "id": "B12",
+          "source": "images/v1864_04.jpg",
+          "upper_box": [
+            2520,
+            3131,
+            2539,
+            3151
+          ],
+          "base_box": [
+            2506,
+            3116,
+            2527,
+            3167
+          ],
+          "box_xyxy": [
+            2506,
+            3116,
+            2539,
+            3167
+          ],
+          "geometry_file": "paragraph_alignment/preceding_neutral_glyphs.json",
+          "geometry_file_sha256": "9663923d584ae417b1f55f755740edf90b091a377be6b15514c9330bd237e1c9"
+        }
+      ]
+    },
+    {
+      "class_id": "G18",
+      "value": "ni",
+      "label_status": "reference-assisted identification, checked against local repeated shapes; not held out",
+      "samples": [
+        {
+          "id": "B03",
+          "source": "images/v1864_04.jpg",
+          "upper_box": [
+            2204,
+            3117,
+            2229,
+            3143
+          ],
+          "base_box": [
+            2175,
+            3141,
+            2220,
+            3163
+          ],
+          "box_xyxy": [
+            2175,
+            3117,
+            2229,
+            3163
+          ],
+          "geometry_file": "paragraph_alignment/preceding_neutral_glyphs.json",
+          "geometry_file_sha256": "9663923d584ae417b1f55f755740edf90b091a377be6b15514c9330bd237e1c9"
+        },
+        {
+          "id": "B13",
+          "source": "images/v1864_04.jpg",
+          "upper_box": [
+            2562,
+            3116,
+            2599,
+            3151
+          ],
+          "base_box": [
+            2534,
+            3146,
+            2564,
+            3163
+          ],
+          "box_xyxy": [
+            2534,
+            3116,
+            2599,
+            3163
+          ],
+          "geometry_file": "paragraph_alignment/preceding_neutral_glyphs.json",
+          "geometry_file_sha256": "9663923d584ae417b1f55f755740edf90b091a377be6b15514c9330bd237e1c9"
+        },
+        {
+          "id": "K07",
+          "source": "images/v1864_05.jpg",
+          "upper_box": [
+            1303,
+            978,
+            1330,
+            1004
+          ],
+          "base_box": [
+            1288,
+            1002,
+            1323,
+            1022
+          ],
+          "box_xyxy": [
+            1288,
+            978,
+            1330,
+            1022
+          ],
+          "geometry_file": "experiments/E11_reference_island.json",
+          "geometry_file_sha256": "6704b863fe763ba816cf2e0d83ba2ad5cde1833106f67232c54bba6ffbfd1c92"
+        }
+      ]
+    },
+    {
+      "class_id": "G19",
+      "value": "et",
+      "label_status": "reference-assisted identification, checked against local repeated shapes; not held out",
+      "samples": [
+        {
+          "id": "B04",
+          "source": "images/v1864_04.jpg",
+          "upper_box": [
+            2244,
+            3121,
+            2256,
+            3145
+          ],
+          "base_box": [
+            2230,
+            3148,
+            2247,
+            3166
+          ],
+          "box_xyxy": [
+            2230,
+            3121,
+            2256,
+            3166
+          ],
+          "geometry_file": "paragraph_alignment/preceding_neutral_glyphs.json",
+          "geometry_file_sha256": "9663923d584ae417b1f55f755740edf90b091a377be6b15514c9330bd237e1c9"
+        }
+      ]
+    },
+    {
+      "class_id": "G20",
+      "value": "fi",
+      "label_status": "reference-assisted identification, checked against local repeated shapes; not held out",
+      "samples": [
+        {
+          "id": "B05",
+          "source": "images/v1864_04.jpg",
+          "upper_box": [
+            2276,
+            3123,
+            2294,
+            3147
+          ],
+          "base_box": [
+            2254,
+            3147,
+            2288,
+            3166
+          ],
+          "box_xyxy": [
+            2254,
+            3123,
+            2294,
+            3166
+          ],
+          "geometry_file": "paragraph_alignment/preceding_neutral_glyphs.json",
+          "geometry_file_sha256": "9663923d584ae417b1f55f755740edf90b091a377be6b15514c9330bd237e1c9"
+        }
+      ]
+    },
+    {
+      "class_id": "G21",
+      "value": "g",
+      "label_status": "reference-assisted identification, checked against local repeated shapes; not held out",
+      "samples": [
+        {
+          "id": "B06",
+          "source": "images/v1864_04.jpg",
+          "upper_box": [
+            2303,
+            3123,
+            2320,
+            3145
+          ],
+          "base_box": [
+            2297,
+            3147,
+            2313,
+            3172
+          ],
+          "box_xyxy": [
+            2297,
+            3123,
+            2320,
+            3172
+          ],
+          "geometry_file": "paragraph_alignment/preceding_neutral_glyphs.json",
+          "geometry_file_sha256": "9663923d584ae417b1f55f755740edf90b091a377be6b15514c9330bd237e1c9"
+        },
+        {
+          "id": "C29",
+          "source": "images/v1864_04.jpg",
+          "upper_box": [
+            1879,
+            3114,
+            1901,
+            3135
+          ],
+          "base_box": [
+            1871,
+            3141,
+            1887,
+            3165
+          ],
+          "box_xyxy": [
+            1871,
+            3114,
+            1901,
+            3165
+          ],
+          "geometry_file": "paragraph_alignment/prefix_neutral_glyphs.json",
+          "geometry_file_sha256": "9ba667c8534a3d1be200b9d7064318304edc01a983bee1b859a6e20c68028da6"
+        }
+      ]
+    },
+    {
+      "class_id": "G22",
+      "value": "li",
+      "label_status": "reference-assisted identification, checked against local repeated shapes; not held out",
+      "samples": [
+        {
+          "id": "B07",
+          "source": "images/v1864_04.jpg",
+          "upper_box": [
+            2333,
+            3128,
+            2350,
+            3146
+          ],
+          "base_box": [
+            2317,
+            3150,
+            2344,
+            3168
+          ],
+          "box_xyxy": [
+            2317,
+            3128,
+            2350,
+            3168
+          ],
+          "geometry_file": "paragraph_alignment/preceding_neutral_glyphs.json",
+          "geometry_file_sha256": "9663923d584ae417b1f55f755740edf90b091a377be6b15514c9330bd237e1c9"
+        },
+        {
+          "id": "B09",
+          "source": "images/v1864_04.jpg",
+          "upper_box": [
+            2406,
+            3128,
+            2427,
+            3148
+          ],
+          "base_box": [
+            2384,
+            3150,
+            2417,
+            3169
+          ],
+          "box_xyxy": [
+            2384,
+            3128,
+            2427,
+            3169
+          ],
+          "geometry_file": "paragraph_alignment/preceding_neutral_glyphs.json",
+          "geometry_file_sha256": "9663923d584ae417b1f55f755740edf90b091a377be6b15514c9330bd237e1c9"
+        },
+        {
+          "id": "C30",
+          "source": "images/v1864_04.jpg",
+          "upper_box": [
+            1911,
+            3112,
+            1933,
+            3134
+          ],
+          "base_box": [
+            1895,
+            3140,
+            1926,
+            3160
+          ],
+          "box_xyxy": [
+            1895,
+            3112,
+            1933,
+            3160
+          ],
+          "geometry_file": "paragraph_alignment/prefix_neutral_glyphs.json",
+          "geometry_file_sha256": "9ba667c8534a3d1be200b9d7064318304edc01a983bee1b859a6e20c68028da6"
+        },
+        {
+          "id": "C34",
+          "source": "images/v1864_04.jpg",
+          "upper_box": [
+            2078,
+            3119,
+            2096,
+            3138
+          ],
+          "base_box": [
+            2055,
+            3141,
+            2093,
+            3162
+          ],
+          "box_xyxy": [
+            2055,
+            3119,
+            2096,
+            3162
+          ],
+          "geometry_file": "paragraph_alignment/prefix_neutral_glyphs.json",
+          "geometry_file_sha256": "9ba667c8534a3d1be200b9d7064318304edc01a983bee1b859a6e20c68028da6"
+        },
+        {
+          "id": "R03",
+          "source": "images/v1867_01.jpg",
+          "upper_box": [
+            829,
+            794,
+            845,
+            811
+          ],
+          "base_box": [
+            814,
+            816,
+            848,
+            836
+          ],
+          "box_xyxy": [
+            814,
+            794,
+            848,
+            836
+          ],
+          "geometry_file": "experiments/E13_diligentia_GE.json",
+          "geometry_file_sha256": "874d3bfee227e19fcab4234c59cbfab5f1275b634059e8f518369b3480ebadc4"
+        }
+      ]
+    },
+    {
+      "class_id": "G23",
+      "value": "o",
+      "label_status": "reference-assisted identification, checked against local repeated shapes; not held out",
+      "samples": [
+        {
+          "id": "B08",
+          "source": "images/v1864_04.jpg",
+          "upper_box": [
+            2368,
+            3127,
+            2392,
+            3147
+          ],
+          "base_box": [
+            2352,
+            3149,
+            2375,
+            3171
+          ],
+          "box_xyxy": [
+            2352,
+            3127,
+            2392,
+            3171
+          ],
+          "geometry_file": "paragraph_alignment/preceding_neutral_glyphs.json",
+          "geometry_file_sha256": "9663923d584ae417b1f55f755740edf90b091a377be6b15514c9330bd237e1c9"
+        },
+        {
+          "id": "C06",
+          "source": "images/v1864_04.jpg",
+          "upper_box": [
+            1023,
+            3136,
+            1048,
+            3157
+          ],
+          "base_box": [
+            1019,
+            3160,
+            1033,
+            3176
+          ],
+          "box_xyxy": [
+            1019,
+            3136,
+            1048,
+            3176
+          ],
+          "geometry_file": "paragraph_alignment/prefix_neutral_glyphs.json",
+          "geometry_file_sha256": "9ba667c8534a3d1be200b9d7064318304edc01a983bee1b859a6e20c68028da6"
+        },
+        {
+          "id": "C25",
+          "source": "images/v1864_04.jpg",
+          "upper_box": [
+            1738,
+            3109,
+            1773,
+            3132
+          ],
+          "base_box": [
+            1720,
+            3136,
+            1745,
+            3160
+          ],
+          "box_xyxy": [
+            1720,
+            3109,
+            1773,
+            3160
+          ],
+          "geometry_file": "paragraph_alignment/prefix_neutral_glyphs.json",
+          "geometry_file_sha256": "9ba667c8534a3d1be200b9d7064318304edc01a983bee1b859a6e20c68028da6"
+        },
+        {
+          "id": "C31",
+          "source": "images/v1864_04.jpg",
+          "upper_box": [
+            1942,
+            3117,
+            1987,
+            3140
+          ],
+          "base_box": [
+            1929,
+            3140,
+            1956,
+            3163
+          ],
+          "box_xyxy": [
+            1929,
+            3117,
+            1987,
+            3163
+          ],
+          "geometry_file": "paragraph_alignment/prefix_neutral_glyphs.json",
+          "geometry_file_sha256": "9ba667c8534a3d1be200b9d7064318304edc01a983bee1b859a6e20c68028da6"
+        },
+        {
+          "id": "K05",
+          "source": "images/v1864_05.jpg",
+          "upper_box": [
+            1240,
+            990,
+            1264,
+            1009
+          ],
+          "base_box": [
+            1224,
+            1007,
+            1255,
+            1032
+          ],
+          "box_xyxy": [
+            1224,
+            990,
+            1264,
+            1032
+          ],
+          "geometry_file": "experiments/E11_reference_island.json",
+          "geometry_file_sha256": "6704b863fe763ba816cf2e0d83ba2ad5cde1833106f67232c54bba6ffbfd1c92"
+        },
+        {
+          "id": "U20",
+          "value": "o",
+          "rectified_upper_box": [
+            1669,
+            1003,
+            1727,
+            1043
+          ],
+          "rectified_base_box": [
+            1644,
+            1040,
+            1679,
+            1065
+          ],
+          "upper_box": [
+            1669,
+            960,
+            1727,
+            1003
+          ],
+          "base_box": [
+            1644,
+            999,
+            1679,
+            1026
+          ],
+          "box_xyxy": [
+            1644,
+            960,
+            1727,
+            1026
+          ],
+          "source": "images/v1874_01.jpg",
+          "source_sha256": "cac6303669a378be41bd486705565d1ae0a73543a869965eb75a57ba2ccb8af3",
+          "status": "Known-text-assisted fitted reference; source-native boxes after isolated-cell review.",
+          "geometry_file": "experiments/E24_R1135_local_anchor.json",
+          "geometry_file_sha256": "833d115076137d7fde4dc533593855e6f76047dbef726cb056aa8bb4f24e1f82"
+        }
+      ]
+    },
+    {
+      "class_id": "G24",
+      "value": "de",
+      "label_status": "reference-assisted identification, checked against local repeated shapes; not held out",
+      "samples": [
+        {
+          "id": "B10",
+          "source": "images/v1864_04.jpg",
+          "upper_box": [
+            2449,
+            3126,
+            2470,
+            3144
+          ],
+          "base_box": [
+            2428,
+            3148,
+            2458,
+            3166
+          ],
+          "box_xyxy": [
+            2428,
+            3126,
+            2470,
+            3166
+          ],
+          "geometry_file": "paragraph_alignment/preceding_neutral_glyphs.json",
+          "geometry_file_sha256": "9663923d584ae417b1f55f755740edf90b091a377be6b15514c9330bd237e1c9"
+        },
+        {
+          "id": "C08",
+          "source": "images/v1864_04.jpg",
+          "upper_box": [
+            1112,
+            3131,
+            1140,
+            3150
+          ],
+          "base_box": [
+            1093,
+            3155,
+            1116,
+            3175
+          ],
+          "box_xyxy": [
+            1093,
+            3131,
+            1140,
+            3175
+          ],
+          "geometry_file": "paragraph_alignment/prefix_neutral_glyphs.json",
+          "geometry_file_sha256": "9ba667c8534a3d1be200b9d7064318304edc01a983bee1b859a6e20c68028da6"
+        },
+        {
+          "id": "C23",
+          "source": "images/v1864_04.jpg",
+          "upper_box": [
+            1660,
+            3113,
+            1686,
+            3133
+          ],
+          "base_box": [
+            1641,
+            3136,
+            1674,
+            3156
+          ],
+          "box_xyxy": [
+            1641,
+            3113,
+            1686,
+            3156
+          ],
+          "geometry_file": "paragraph_alignment/prefix_neutral_glyphs.json",
+          "geometry_file_sha256": "9ba667c8534a3d1be200b9d7064318304edc01a983bee1b859a6e20c68028da6"
+        },
+        {
+          "id": "R01",
+          "source": "images/v1867_01.jpg",
+          "upper_box": [
+            774,
+            794,
+            795,
+            814
+          ],
+          "base_box": [
+            753,
+            817,
+            788,
+            837
+          ],
+          "box_xyxy": [
+            753,
+            794,
+            795,
+            837
+          ],
+          "geometry_file": "experiments/E13_diligentia_GE.json",
+          "geometry_file_sha256": "874d3bfee227e19fcab4234c59cbfab5f1275b634059e8f518369b3480ebadc4"
+        },
+        {
+          "id": "N10",
+          "value": "de",
+          "upper_box": [
+            1554,
+            1977,
+            1581,
+            1994
+          ],
+          "base_box": [
+            1542,
+            1997,
+            1574,
+            2013
+          ],
+          "box_xyxy": [
+            1542,
+            1977,
+            1581,
+            2013
+          ],
+          "source": "images/v1864_04.jpg",
+          "source_sha256": "e5e106f3251ddecf01a3edac932b3e7b86172f6cc5f21b83706b5a0454e2c49f",
+          "status": "Known-text-assisted fitted reference; not prospective.",
+          "geometry_file": "experiments/E23_name_context_and_persona_anchor.json",
+          "geometry_file_sha256": "204e469a66ec4500025714d1488e29a9e8e5914c4694d191eff88509b3de80cc"
+        }
+      ]
+    },
+    {
+      "class_id": "G25",
+      "value": "tra",
+      "label_status": "reference-assisted local classification; not independently tested in this pass",
+      "samples": [
+        {
+          "id": "C07",
+          "source": "images/v1864_04.jpg",
+          "upper_box": [
+            1075,
+            3121,
+            1092,
+            3154
+          ],
+          "base_box": [
+            1048,
+            3153,
+            1077,
+            3178
+          ],
+          "box_xyxy": [
+            1048,
+            3121,
+            1092,
+            3178
+          ],
+          "geometry_file": "paragraph_alignment/prefix_neutral_glyphs.json",
+          "geometry_file_sha256": "9ba667c8534a3d1be200b9d7064318304edc01a983bee1b859a6e20c68028da6"
+        }
+      ]
+    },
+    {
+      "class_id": "G26",
+      "value": "que",
+      "label_status": "reference-assisted local classification; not independently tested in this pass",
+      "samples": [
+        {
+          "id": "C09",
+          "source": "images/v1864_04.jpg",
+          "upper_box": [
+            1150,
+            3130,
+            1173,
+            3166
+          ],
+          "base_box": [
+            1133,
+            3121,
+            1159,
+            3174
+          ],
+          "box_xyxy": [
+            1133,
+            3121,
+            1173,
+            3174
+          ],
+          "geometry_file": "paragraph_alignment/prefix_neutral_glyphs.json",
+          "geometry_file_sha256": "9ba667c8534a3d1be200b9d7064318304edc01a983bee1b859a6e20c68028da6"
+        },
+        {
+          "id": "U01",
+          "value": "que",
+          "rectified_upper_box": [
+            714,
+            1005,
+            736,
+            1042
+          ],
+          "rectified_base_box": [
+            691,
+            1005,
+            724,
+            1058
+          ],
+          "upper_box": [
+            714,
+            1001,
+            736,
+            1040
+          ],
+          "base_box": [
+            691,
+            1002,
+            724,
+            1057
+          ],
+          "box_xyxy": [
+            691,
+            1001,
+            736,
+            1057
+          ],
+          "source": "images/v1874_01.jpg",
+          "source_sha256": "cac6303669a378be41bd486705565d1ae0a73543a869965eb75a57ba2ccb8af3",
+          "status": "Known-text-assisted fitted reference; source-native boxes after isolated-cell review.",
+          "geometry_file": "experiments/E24_R1135_local_anchor.json",
+          "geometry_file_sha256": "833d115076137d7fde4dc533593855e6f76047dbef726cb056aa8bb4f24e1f82"
+        }
+      ]
+    },
+    {
+      "class_id": "G27",
+      "value": "s",
+      "label_status": "reference-assisted local classification; not independently tested in this pass",
+      "samples": [
+        {
+          "id": "C10",
+          "source": "images/v1864_04.jpg",
+          "upper_box": [
+            1188,
+            3103,
+            1213,
+            3145
+          ],
+          "base_box": [
+            1173,
+            3151,
+            1195,
+            3177
+          ],
+          "box_xyxy": [
+            1173,
+            3103,
+            1213,
+            3177
+          ],
+          "geometry_file": "paragraph_alignment/prefix_neutral_glyphs.json",
+          "geometry_file_sha256": "9ba667c8534a3d1be200b9d7064318304edc01a983bee1b859a6e20c68028da6"
+        },
+        {
+          "id": "U02",
+          "value": "s",
+          "rectified_upper_box": [
+            746,
+            998,
+            779,
+            1037
+          ],
+          "rectified_base_box": [
+            732,
+            1039,
+            765,
+            1062
+          ],
+          "upper_box": [
+            746,
+            993,
+            779,
+            1034
+          ],
+          "base_box": [
+            732,
+            1034,
+            765,
+            1060
+          ],
+          "box_xyxy": [
+            732,
+            993,
+            779,
+            1060
+          ],
+          "source": "images/v1874_01.jpg",
+          "source_sha256": "cac6303669a378be41bd486705565d1ae0a73543a869965eb75a57ba2ccb8af3",
+          "status": "Known-text-assisted fitted reference; source-native boxes after isolated-cell review.",
+          "geometry_file": "experiments/E24_R1135_local_anchor.json",
+          "geometry_file_sha256": "833d115076137d7fde4dc533593855e6f76047dbef726cb056aa8bb4f24e1f82"
+        },
+        {
+          "id": "U17",
+          "value": "s",
+          "rectified_upper_box": [
+            1522,
+            987,
+            1546,
+            1036
+          ],
+          "rectified_base_box": [
+            1496,
+            1037,
+            1536,
+            1064
+          ],
+          "upper_box": [
+            1522,
+            951,
+            1546,
+            1002
+          ],
+          "base_box": [
+            1496,
+            1001,
+            1536,
+            1031
+          ],
+          "box_xyxy": [
+            1496,
+            951,
+            1546,
+            1031
+          ],
+          "source": "images/v1874_01.jpg",
+          "source_sha256": "cac6303669a378be41bd486705565d1ae0a73543a869965eb75a57ba2ccb8af3",
+          "status": "Known-text-assisted fitted reference; source-native boxes after isolated-cell review.",
+          "geometry_file": "experiments/E24_R1135_local_anchor.json",
+          "geometry_file_sha256": "833d115076137d7fde4dc533593855e6f76047dbef726cb056aa8bb4f24e1f82"
+        }
+      ]
+    },
+    {
+      "class_id": "G28",
+      "value": "to",
+      "label_status": "reference-assisted local classification; not independently tested in this pass",
+      "samples": [
+        {
+          "id": "C11",
+          "source": "images/v1864_04.jpg",
+          "upper_box": [
+            1213,
+            3134,
+            1238,
+            3165
+          ],
+          "base_box": [
+            1197,
+            3118,
+            1226,
+            3176
+          ],
+          "box_xyxy": [
+            1197,
+            3118,
+            1238,
+            3176
+          ],
+          "geometry_file": "paragraph_alignment/prefix_neutral_glyphs.json",
+          "geometry_file_sha256": "9ba667c8534a3d1be200b9d7064318304edc01a983bee1b859a6e20c68028da6"
+        },
+        {
+          "id": "D16",
+          "source": "images/v1861_02.jpg",
+          "upper_box": [
+            1770,
+            1970,
+            1805,
+            2009
+          ],
+          "base_box": [
+            1753,
+            1977,
+            1786,
+            2022
+          ],
+          "box_xyxy": [
+            1753,
+            1970,
+            1805,
+            2022
+          ],
+          "geometry_file": "paragraph_alignment/long_prediction_before_comparison.json",
+          "geometry_file_sha256": "e7e4311848d343fae64cd42a1d8bb51239840a91b1864a3c226944fef973aa3a"
+        },
+        {
+          "id": "N05",
+          "value": "to",
+          "upper_box": [
+            1380,
+            1976,
+            1406,
+            2012
+          ],
+          "base_box": [
+            1373,
+            1970,
+            1400,
+            2016
+          ],
+          "box_xyxy": [
+            1373,
+            1970,
+            1406,
+            2016
+          ],
+          "source": "images/v1864_04.jpg",
+          "source_sha256": "e5e106f3251ddecf01a3edac932b3e7b86172f6cc5f21b83706b5a0454e2c49f",
+          "status": "Known-text-assisted fitted reference; not prospective.",
+          "geometry_file": "experiments/E23_name_context_and_persona_anchor.json",
+          "geometry_file_sha256": "204e469a66ec4500025714d1488e29a9e8e5914c4694d191eff88509b3de80cc"
+        }
+      ]
+    },
+    {
+      "class_id": "G29",
+      "value": "i",
+      "label_status": "reference-assisted local classification; not independently tested in this pass",
+      "samples": [
+        {
+          "id": "C12",
+          "source": "images/v1864_04.jpg",
+          "upper_box": [
+            1259,
+            3118,
+            1280,
+            3141
+          ],
+          "base_box": [
+            1244,
+            3149,
+            1270,
+            3176
+          ],
+          "box_xyxy": [
+            1244,
+            3118,
+            1280,
+            3176
+          ],
+          "geometry_file": "paragraph_alignment/prefix_neutral_glyphs.json",
+          "geometry_file_sha256": "9ba667c8534a3d1be200b9d7064318304edc01a983bee1b859a6e20c68028da6"
+        }
+      ]
+    },
+    {
+      "class_id": "G30",
+      "value": "n",
+      "label_status": "Fitted N references include open-looking narrow loops; compare whole morphology, no binary loop rule.",
+      "samples": [
+        {
+          "id": "C13",
+          "source": "images/v1864_04.jpg",
+          "upper_box": [
+            1289,
+            3122,
+            1313,
+            3151
+          ],
+          "base_box": [
+            1275,
+            3149,
+            1306,
+            3179
+          ],
+          "box_xyxy": [
+            1275,
+            3122,
+            1313,
+            3179
+          ],
+          "geometry_file": "paragraph_alignment/prefix_neutral_glyphs.json",
+          "geometry_file_sha256": "9ba667c8534a3d1be200b9d7064318304edc01a983bee1b859a6e20c68028da6"
+        },
+        {
+          "id": "C17",
+          "source": "images/v1864_04.jpg",
+          "upper_box": [
+            1419,
+            3115,
+            1444,
+            3143
+          ],
+          "base_box": [
+            1401,
+            3146,
+            1429,
+            3174
+          ],
+          "box_xyxy": [
+            1401,
+            3115,
+            1444,
+            3174
+          ],
+          "geometry_file": "paragraph_alignment/prefix_neutral_glyphs.json",
+          "geometry_file_sha256": "9ba667c8534a3d1be200b9d7064318304edc01a983bee1b859a6e20c68028da6"
+        },
+        {
+          "id": "C27",
+          "source": "images/v1864_04.jpg",
+          "upper_box": [
+            1806,
+            3109,
+            1826,
+            3136
+          ],
+          "base_box": [
+            1790,
+            3138,
+            1818,
+            3161
+          ],
+          "box_xyxy": [
+            1790,
+            3109,
+            1826,
+            3161
+          ],
+          "geometry_file": "paragraph_alignment/prefix_neutral_glyphs.json",
+          "geometry_file_sha256": "9ba667c8534a3d1be200b9d7064318304edc01a983bee1b859a6e20c68028da6"
+        },
+        {
+          "id": "R05",
+          "source": "images/v1867_01.jpg",
+          "upper_box": [
+            903,
+            785,
+            920,
+            811
+          ],
+          "base_box": [
+            886,
+            813,
+            915,
+            834
+          ],
+          "box_xyxy": [
+            886,
+            785,
+            920,
+            834
+          ],
+          "geometry_file": "experiments/E13_diligentia_GE.json",
+          "geometry_file_sha256": "874d3bfee227e19fcab4234c59cbfab5f1275b634059e8f518369b3480ebadc4"
+        },
+        {
+          "id": "U10",
+          "value": "n",
+          "rectified_upper_box": [
+            1148,
+            1001,
+            1176,
+            1035
+          ],
+          "rectified_base_box": [
+            1130,
+            1039,
+            1167,
+            1062
+          ],
+          "upper_box": [
+            1148,
+            980,
+            1176,
+            1016
+          ],
+          "base_box": [
+            1130,
+            1018,
+            1167,
+            1044
+          ],
+          "box_xyxy": [
+            1130,
+            980,
+            1176,
+            1044
+          ],
+          "source": "images/v1874_01.jpg",
+          "source_sha256": "cac6303669a378be41bd486705565d1ae0a73543a869965eb75a57ba2ccb8af3",
+          "status": "Known-text-assisted fitted reference; source-native boxes after isolated-cell review.",
+          "geometry_file": "experiments/E24_R1135_local_anchor.json",
+          "geometry_file_sha256": "833d115076137d7fde4dc533593855e6f76047dbef726cb056aa8bb4f24e1f82"
+        },
+        {
+          "id": "R1134_LICENTIARSE_N",
+          "source": "images/v1870_01.jpg",
+          "source_sha256": "85861a4aedf64d85a6adbab28bc6ebb00f125ae0cdd58b42329f6b310d7c15be",
+          "upper_box": [
+            1215,
+            2507,
+            1236,
+            2536
+          ],
+          "base_box": [
+            1190,
+            2539,
+            1229,
+            2559
+          ],
+          "box_xyxy": [
+            1190,
+            2507,
+            1236,
+            2559
+          ],
+          "value": "n",
+          "geometry_file": "experiments/E55_I_N_result.json",
+          "geometry_file_sha256": "6672881b29c41399ef9aafc3a3d069f819a119d274710bb62dc82cf3de449f44",
+          "status": "Post-copy fitted N counterexample, frozen E53 emission I unchanged."
+        },
+        {
+          "id": "R1134_CONTO_N",
+          "source": "images/v1870_01.jpg",
+          "source_sha256": "85861a4aedf64d85a6adbab28bc6ebb00f125ae0cdd58b42329f6b310d7c15be",
+          "upper_box": [
+            2125,
+            2486,
+            2149,
+            2512
+          ],
+          "base_box": [
+            2105,
+            2511,
+            2141,
+            2536
+          ],
+          "box_xyxy": [
+            2105,
+            2486,
+            2149,
+            2536
+          ],
+          "value": "n",
+          "geometry_file": "experiments/E55_I_N_result.json",
+          "geometry_file_sha256": "6672881b29c41399ef9aafc3a3d069f819a119d274710bb62dc82cf3de449f44",
+          "status": "Post-copy fitted N counterexample, frozen E53 emission I unchanged."
+        }
+      ]
+    },
+    {
+      "class_id": "G31",
+      "value": "ve",
+      "label_status": "reference-assisted local classification; not independently tested in this pass",
+      "samples": [
+        {
+          "id": "C16",
+          "source": "images/v1864_04.jpg",
+          "upper_box": [
+            1393,
+            3107,
+            1409,
+            3144
+          ],
+          "base_box": [
+            1374,
+            3140,
+            1394,
+            3171
+          ],
+          "box_xyxy": [
+            1374,
+            3107,
+            1409,
+            3171
+          ],
+          "geometry_file": "paragraph_alignment/prefix_neutral_glyphs.json",
+          "geometry_file_sha256": "9ba667c8534a3d1be200b9d7064318304edc01a983bee1b859a6e20c68028da6"
+        },
+        {
+          "id": "K06",
+          "source": "images/v1864_05.jpg",
+          "upper_box": [
+            1271,
+            977,
+            1289,
+            1001
+          ],
+          "base_box": [
+            1255,
+            1001,
+            1289,
+            1028
+          ],
+          "box_xyxy": [
+            1255,
+            977,
+            1289,
+            1028
+          ],
+          "geometry_file": "experiments/E11_reference_island.json",
+          "geometry_file_sha256": "6704b863fe763ba816cf2e0d83ba2ad5cde1833106f67232c54bba6ffbfd1c92"
+        },
+        {
+          "id": "U11",
+          "value": "ve",
+          "rectified_upper_box": [
+            1190,
+            997,
+            1220,
+            1034
+          ],
+          "rectified_base_box": [
+            1174,
+            1028,
+            1205,
+            1062
+          ],
+          "upper_box": [
+            1190,
+            974,
+            1220,
+            1013
+          ],
+          "base_box": [
+            1174,
+            1006,
+            1205,
+            1042
+          ],
+          "box_xyxy": [
+            1174,
+            974,
+            1220,
+            1042
+          ],
+          "source": "images/v1874_01.jpg",
+          "source_sha256": "cac6303669a378be41bd486705565d1ae0a73543a869965eb75a57ba2ccb8af3",
+          "status": "Known-text-assisted fitted reference; source-native boxes after isolated-cell review.",
+          "geometry_file": "experiments/E24_R1135_local_anchor.json",
+          "geometry_file_sha256": "833d115076137d7fde4dc533593855e6f76047dbef726cb056aa8bb4f24e1f82"
+        },
+        {
+          "id": "U15",
+          "value": "ve",
+          "rectified_upper_box": [
+            1420,
+            994,
+            1447,
+            1034
+          ],
+          "rectified_base_box": [
+            1401,
+            1028,
+            1432,
+            1062
+          ],
+          "upper_box": [
+            1420,
+            962,
+            1447,
+            1004
+          ],
+          "base_box": [
+            1401,
+            997,
+            1432,
+            1033
+          ],
+          "box_xyxy": [
+            1401,
+            962,
+            1447,
+            1033
+          ],
+          "source": "images/v1874_01.jpg",
+          "source_sha256": "cac6303669a378be41bd486705565d1ae0a73543a869965eb75a57ba2ccb8af3",
+          "status": "Known-text-assisted fitted reference; source-native boxes after isolated-cell review.",
+          "geometry_file": "experiments/E24_R1135_local_anchor.json",
+          "geometry_file_sha256": "833d115076137d7fde4dc533593855e6f76047dbef726cb056aa8bb4f24e1f82"
+        }
+      ]
+    },
+    {
+      "class_id": "G32",
+      "value": "go",
+      "label_status": "reference-assisted local classification; not independently tested in this pass",
+      "samples": [
+        {
+          "id": "C18",
+          "source": "images/v1864_04.jpg",
+          "upper_box": [
+            1458,
+            3112,
+            1482,
+            3151
+          ],
+          "base_box": [
+            1434,
+            3144,
+            1476,
+            3166
+          ],
+          "box_xyxy": [
+            1434,
+            3112,
+            1482,
+            3166
+          ],
+          "geometry_file": "paragraph_alignment/prefix_neutral_glyphs.json",
+          "geometry_file_sha256": "9ba667c8534a3d1be200b9d7064318304edc01a983bee1b859a6e20c68028da6"
+        }
+      ]
+    },
+    {
+      "class_id": "G33",
+      "value": "l",
+      "label_status": "reference-assisted local classification; not independently tested in this pass",
+      "samples": [
+        {
+          "id": "C21",
+          "source": "images/v1864_04.jpg",
+          "upper_box": [
+            1587,
+            3112,
+            1611,
+            3139
+          ],
+          "base_box": [
+            1574,
+            3141,
+            1604,
+            3162
+          ],
+          "box_xyxy": [
+            1574,
+            3112,
+            1611,
+            3162
+          ],
+          "geometry_file": "paragraph_alignment/prefix_neutral_glyphs.json",
+          "geometry_file_sha256": "9ba667c8534a3d1be200b9d7064318304edc01a983bee1b859a6e20c68028da6"
+        },
+        {
+          "id": "K02",
+          "source": "images/v1864_05.jpg",
+          "upper_box": [
+            1140,
+            984,
+            1167,
+            1005
+          ],
+          "base_box": [
+            1128,
+            1009,
+            1156,
+            1026
+          ],
+          "box_xyxy": [
+            1128,
+            984,
+            1167,
+            1026
+          ],
+          "geometry_file": "experiments/E11_reference_island.json",
+          "geometry_file_sha256": "6704b863fe763ba816cf2e0d83ba2ad5cde1833106f67232c54bba6ffbfd1c92"
+        },
+        {
+          "id": "U04",
+          "value": "l",
+          "rectified_upper_box": [
+            849,
+            1005,
+            890,
+            1039
+          ],
+          "rectified_base_box": [
+            828,
+            1037,
+            866,
+            1057
+          ],
+          "upper_box": [
+            849,
+            995,
+            890,
+            1032
+          ],
+          "base_box": [
+            828,
+            1028,
+            866,
+            1051
+          ],
+          "box_xyxy": [
+            828,
+            995,
+            890,
+            1051
+          ],
+          "source": "images/v1874_01.jpg",
+          "source_sha256": "cac6303669a378be41bd486705565d1ae0a73543a869965eb75a57ba2ccb8af3",
+          "status": "Known-text-assisted fitted reference; source-native boxes after isolated-cell review.",
+          "geometry_file": "experiments/E24_R1135_local_anchor.json",
+          "geometry_file_sha256": "833d115076137d7fde4dc533593855e6f76047dbef726cb056aa8bb4f24e1f82"
+        }
+      ]
+    },
+    {
+      "class_id": "G34",
+      "value": "pre",
+      "label_status": "reference-assisted local classification; not independently tested in this pass",
+      "samples": [
+        {
+          "id": "C22",
+          "source": "images/v1864_04.jpg",
+          "upper_box": [
+            1624,
+            3103,
+            1647,
+            3134
+          ],
+          "base_box": [
+            1606,
+            3137,
+            1634,
+            3159
+          ],
+          "box_xyxy": [
+            1606,
+            3103,
+            1647,
+            3159
+          ],
+          "geometry_file": "paragraph_alignment/prefix_neutral_glyphs.json",
+          "geometry_file_sha256": "9ba667c8534a3d1be200b9d7064318304edc01a983bee1b859a6e20c68028da6"
+        }
+      ]
+    },
+    {
+      "class_id": "G35",
+      "value": "tt",
+      "label_status": "reference-assisted local classification; not independently tested in this pass",
+      "samples": [
+        {
+          "id": "C24",
+          "source": "images/v1864_04.jpg",
+          "upper_box": [
+            1700,
+            3114,
+            1724,
+            3134
+          ],
+          "base_box": [
+            1681,
+            3135,
+            1717,
+            3168
+          ],
+          "box_xyxy": [
+            1681,
+            3114,
+            1724,
+            3168
+          ],
+          "geometry_file": "paragraph_alignment/prefix_neutral_glyphs.json",
+          "geometry_file_sha256": "9ba667c8534a3d1be200b9d7064318304edc01a983bee1b859a6e20c68028da6"
+        }
+      ]
+    },
+    {
+      "class_id": "G36",
+      "value": "se",
+      "label_status": "reference-assisted local classification; not independently tested in this pass",
+      "samples": [
+        {
+          "id": "C28",
+          "source": "images/v1864_04.jpg",
+          "upper_box": [
+            1845,
+            3120,
+            1868,
+            3143
+          ],
+          "base_box": [
+            1822,
+            3106,
+            1859,
+            3162
+          ],
+          "box_xyxy": [
+            1822,
+            3106,
+            1868,
+            3162
+          ],
+          "geometry_file": "paragraph_alignment/prefix_neutral_glyphs.json",
+          "geometry_file_sha256": "9ba667c8534a3d1be200b9d7064318304edc01a983bee1b859a6e20c68028da6"
+        },
+        {
+          "id": "U21",
+          "value": "se",
+          "rectified_upper_box": [
+            1733,
+            1016,
+            1756,
+            1041
+          ],
+          "rectified_base_box": [
+            1712,
+            1005,
+            1756,
+            1066
+          ],
+          "upper_box": [
+            1733,
+            972,
+            1756,
+            999
+          ],
+          "base_box": [
+            1712,
+            961,
+            1756,
+            1024
+          ],
+          "box_xyxy": [
+            1712,
+            961,
+            1756,
+            1024
+          ],
+          "source": "images/v1874_01.jpg",
+          "source_sha256": "cac6303669a378be41bd486705565d1ae0a73543a869965eb75a57ba2ccb8af3",
+          "status": "Known-text-assisted fitted reference; source-native boxes after isolated-cell review.",
+          "geometry_file": "experiments/E24_R1135_local_anchor.json",
+          "geometry_file_sha256": "833d115076137d7fde4dc533593855e6f76047dbef726cb056aa8bb4f24e1f82"
+        }
+      ]
+    },
+    {
+      "class_id": "G37",
+      "value": "tu",
+      "label_status": "reference-assisted local classification; not independently tested in this pass",
+      "samples": [
+        {
+          "id": "C32",
+          "source": "images/v1864_04.jpg",
+          "upper_box": [
+            2004,
+            3118,
+            2021,
+            3139
+          ],
+          "base_box": [
+            1974,
+            3113,
+            2008,
+            3160
+          ],
+          "box_xyxy": [
+            1974,
+            3113,
+            2021,
+            3160
+          ],
+          "geometry_file": "paragraph_alignment/prefix_neutral_glyphs.json",
+          "geometry_file_sha256": "9ba667c8534a3d1be200b9d7064318304edc01a983bee1b859a6e20c68028da6"
+        }
+      ]
+    },
+    {
+      "class_id": "G38",
+      "value": "ti",
+      "label_status": "reference-assisted local classification; not independently tested in this pass",
+      "samples": [
+        {
+          "id": "C33",
+          "source": "images/v1864_04.jpg",
+          "upper_box": [
+            2033,
+            3125,
+            2053,
+            3151
+          ],
+          "base_box": [
+            2014,
+            3113,
+            2036,
+            3160
+          ],
+          "box_xyxy": [
+            2014,
+            3113,
+            2053,
+            3160
+          ],
+          "geometry_file": "paragraph_alignment/prefix_neutral_glyphs.json",
+          "geometry_file_sha256": "9ba667c8534a3d1be200b9d7064318304edc01a983bee1b859a6e20c68028da6"
+        },
+        {
+          "id": "K03",
+          "source": "images/v1864_05.jpg",
+          "upper_box": [
+            1171,
+            994,
+            1192,
+            1011
+          ],
+          "base_box": [
+            1157,
+            986,
+            1183,
+            1027
+          ],
+          "box_xyxy": [
+            1157,
+            986,
+            1192,
+            1027
+          ],
+          "geometry_file": "experiments/E11_reference_island.json",
+          "geometry_file_sha256": "6704b863fe763ba816cf2e0d83ba2ad5cde1833106f67232c54bba6ffbfd1c92"
+        },
+        {
+          "id": "R06",
+          "source": "images/v1867_01.jpg",
+          "upper_box": [
+            937,
+            795,
+            954,
+            818
+          ],
+          "base_box": [
+            922,
+            793,
+            951,
+            834
+          ],
+          "box_xyxy": [
+            922,
+            793,
+            954,
+            834
+          ],
+          "geometry_file": "experiments/E13_diligentia_GE.json",
+          "geometry_file_sha256": "874d3bfee227e19fcab4234c59cbfab5f1275b634059e8f518369b3480ebadc4"
+        },
+        {
+          "id": "U18",
+          "value": "ti",
+          "rectified_upper_box": [
+            1570,
+            1011,
+            1593,
+            1048
+          ],
+          "rectified_base_box": [
+            1544,
+            1004,
+            1588,
+            1064
+          ],
+          "upper_box": [
+            1570,
+            973,
+            1593,
+            1012
+          ],
+          "base_box": [
+            1544,
+            966,
+            1588,
+            1029
+          ],
+          "box_xyxy": [
+            1544,
+            966,
+            1593,
+            1029
+          ],
+          "source": "images/v1874_01.jpg",
+          "source_sha256": "cac6303669a378be41bd486705565d1ae0a73543a869965eb75a57ba2ccb8af3",
+          "status": "Known-text-assisted fitted reference; source-native boxes after isolated-cell review.",
+          "geometry_file": "experiments/E24_R1135_local_anchor.json",
+          "geometry_file_sha256": "833d115076137d7fde4dc533593855e6f76047dbef726cb056aa8bb4f24e1f82"
+        }
+      ]
+    },
+    {
+      "class_id": "G39",
+      "value": "ci",
+      "label_status": "Fitted after viewing the clear copy; not independently validated",
+      "samples": [
+        {
+          "id": "D11",
+          "source": "images/v1861_02.jpg",
+          "upper_box": [
+            1583,
+            1977,
+            1599,
+            2011
+          ],
+          "base_box": [
+            1562,
+            2011,
+            1600,
+            2030
+          ],
+          "box_xyxy": [
+            1562,
+            1977,
+            1600,
+            2030
+          ],
+          "geometry_file": "paragraph_alignment/long_prediction_before_comparison.json",
+          "geometry_file_sha256": "e7e4311848d343fae64cd42a1d8bb51239840a91b1864a3c226944fef973aa3a"
+        }
+      ]
+    },
+    {
+      "class_id": "G40",
+      "value": "ii",
+      "label_status": "Fitted after viewing the clear copy; not independently validated",
+      "samples": [
+        {
+          "id": "D07",
+          "source": "images/v1861_02.jpg",
+          "upper_box": [
+            1428,
+            1982,
+            1452,
+            2016
+          ],
+          "base_box": [
+            1398,
+            2011,
+            1444,
+            2052
+          ],
+          "box_xyxy": [
+            1398,
+            1982,
+            1452,
+            2052
+          ],
+          "geometry_file": "paragraph_alignment/long_prediction_before_comparison.json",
+          "geometry_file_sha256": "e7e4311848d343fae64cd42a1d8bb51239840a91b1864a3c226944fef973aa3a"
+        }
+      ]
+    },
+    {
+      "class_id": "G41",
+      "value": "ce",
+      "label_status": "Fitted after viewing the clear copy; not independently validated",
+      "samples": [
+        {
+          "id": "D14",
+          "source": "images/v1861_02.jpg",
+          "upper_box": [
+            1692,
+            1982,
+            1718,
+            2012
+          ],
+          "base_box": [
+            1672,
+            2007,
+            1719,
+            2028
+          ],
+          "box_xyxy": [
+            1672,
+            1982,
+            1719,
+            2028
+          ],
+          "geometry_file": "paragraph_alignment/long_prediction_before_comparison.json",
+          "geometry_file_sha256": "e7e4311848d343fae64cd42a1d8bb51239840a91b1864a3c226944fef973aa3a"
+        }
+      ]
+    },
+    {
+      "class_id": "G42",
+      "value": "pri",
+      "label_status": "Fitted after viewing the clear copy; not independently validated",
+      "samples": [
+        {
+          "id": "D04",
+          "source": "images/v1861_02.jpg",
+          "upper_box": [
+            1291,
+            1985,
+            1305,
+            2021
+          ],
+          "base_box": [
+            1268,
+            2018,
+            1298,
+            2042
+          ],
+          "box_xyxy": [
+            1268,
+            1985,
+            1305,
+            2042
+          ],
+          "geometry_file": "paragraph_alignment/long_prediction_before_comparison.json",
+          "geometry_file_sha256": "e7e4311848d343fae64cd42a1d8bb51239840a91b1864a3c226944fef973aa3a"
+        }
+      ]
+    },
+    {
+      "class_id": "G43",
+      "value": "gri",
+      "label_status": "Fitted after viewing the clear copy; not independently validated",
+      "samples": [
+        {
+          "id": "D02",
+          "source": "images/v1861_02.jpg",
+          "upper_box": [
+            1211,
+            1998,
+            1227,
+            2018
+          ],
+          "base_box": [
+            1187,
+            2021,
+            1225,
+            2046
+          ],
+          "box_xyxy": [
+            1187,
+            1998,
+            1227,
+            2046
+          ],
+          "geometry_file": "paragraph_alignment/long_prediction_before_comparison.json",
+          "geometry_file_sha256": "e7e4311848d343fae64cd42a1d8bb51239840a91b1864a3c226944fef973aa3a"
+        }
+      ]
+    },
+    {
+      "class_id": "G44",
+      "value": "ne",
+      "label_status": "Reference-assisted corrected class; not independently predicted as NE in either example.",
+      "samples": [
+        {
+          "id": "C20",
+          "source": "images/v1864_04.jpg",
+          "upper_box": [
+            1559,
+            3116,
+            1583,
+            3145
+          ],
+          "base_box": [
+            1533,
+            3141,
+            1567,
+            3162
+          ],
+          "box_xyxy": [
+            1533,
+            3116,
+            1583,
+            3162
+          ],
+          "geometry_file": "paragraph_alignment/prefix_neutral_glyphs.json",
+          "geometry_file_sha256": "9ba667c8534a3d1be200b9d7064318304edc01a983bee1b859a6e20c68028da6"
+        },
+        {
+          "id": "T16",
+          "source": "images/v1861_01.jpg",
+          "upper_box": [
+            1268,
+            2820,
+            1295,
+            2856
+          ],
+          "base_box": [
+            1246,
+            2853,
+            1303,
+            2879
+          ],
+          "box_xyxy": [
+            1246,
+            2820,
+            1303,
+            2879
+          ],
+          "geometry_file": "experiments/E04_prediction_before_comparison.json",
+          "geometry_file_sha256": "df1ee77a5db6e11e504db06bbb83d061c9dfce56abc4820c36579f7cd72416db"
+        }
+      ]
+    },
+    {
+      "class_id": "G45",
+      "value": "me",
+      "label_status": "Reference-assisted fitted example; T18 was unassigned in E04.",
+      "samples": [
+        {
+          "id": "T18",
+          "source": "images/v1861_01.jpg",
+          "upper_box": [
+            1360,
+            2819,
+            1385,
+            2848
+          ],
+          "base_box": [
+            1325,
+            2846,
+            1383,
+            2873
+          ],
+          "box_xyxy": [
+            1325,
+            2819,
+            1385,
+            2873
+          ],
+          "geometry_file": "experiments/E04_prediction_before_comparison.json",
+          "geometry_file_sha256": "df1ee77a5db6e11e504db06bbb83d061c9dfce56abc4820c36579f7cd72416db"
+        },
+        {
+          "id": "R1133_MENTE_ME",
+          "value": "me",
+          "source": "images/v1867_01.jpg",
+          "source_sha256": "df2971078e6f1fb195a1caca161199746c6cf600aa1fe1d0d3960b3f5b0826a1",
+          "upper_box": [
+            455,
+            976,
+            476,
+            997
+          ],
+          "base_box": [
+            437,
+            997,
+            472,
+            1019
+          ],
+          "box_xyxy": [
+            437,
+            976,
+            476,
+            1019
+          ],
+          "status": "New native geometry for previously known-context ME in LA MENTE LORO; manual reference fit.",
+          "geometry_file": "experiments/E31_ME_NE_result.json",
+          "geometry_file_sha256": "9902e4834246beb364551d4fc3dfe973b6c028423ad31d5fc6c3e193f197b3fe"
+        },
+        {
+          "id": "R1132_COVER_ME",
+          "value": "me",
+          "source": "images/v1864_01.jpg",
+          "source_sha256": "a4af1e8e813cbb593281b057814b9d04d07a044e6635b7600c384e650f750469",
+          "upper_box": [
+            1116,
+            1751,
+            1137,
+            1769
+          ],
+          "base_box": [
+            1094,
+            1772,
+            1137,
+            1789
+          ],
+          "box_xyxy": [
+            1094,
+            1751,
+            1137,
+            1789
+          ],
+          "status": "E31 provisional fitted ME after separate MENTE/T18 comparison against two NE controls. Prior unassigned E29version preserved.",
+          "copy_expected_value": "me",
+          "source_pair_id": "H04",
+          "geometry_file": "experiments/E31_ME_NE_result.json",
+          "geometry_file_sha256": "9902e4834246beb364551d4fc3dfe973b6c028423ad31d5fc6c3e193f197b3fe"
+        }
+      ]
+    },
+    {
+      "class_id": "G46",
+      "value": "ma",
+      "label_status": "D06 was a matching prospective prediction; T15 fitted unknown, T37 frozen IO error. Class recognition still not generally validated.",
+      "samples": [
+        {
+          "id": "D06",
+          "source": "images/v1861_02.jpg",
+          "upper_box": [
+            1382,
+            1990,
+            1401,
+            2024
+          ],
+          "base_box": [
+            1351,
+            2017,
+            1397,
+            2037
+          ],
+          "box_xyxy": [
+            1351,
+            1990,
+            1401,
+            2037
+          ],
+          "geometry_file": "paragraph_alignment/long_prediction_before_comparison.json",
+          "geometry_file_sha256": "e7e4311848d343fae64cd42a1d8bb51239840a91b1864a3c226944fef973aa3a"
+        },
+        {
+          "id": "T15",
+          "source": "images/v1861_01.jpg",
+          "upper_box": [
+            1217,
+            2819,
+            1239,
+            2857
+          ],
+          "base_box": [
+            1189,
+            2852,
+            1247,
+            2881
+          ],
+          "box_xyxy": [
+            1189,
+            2819,
+            1247,
+            2881
+          ],
+          "geometry_file": "experiments/E04_prediction_before_comparison.json",
+          "geometry_file_sha256": "df1ee77a5db6e11e504db06bbb83d061c9dfce56abc4820c36579f7cd72416db"
+        },
+        {
+          "id": "T37",
+          "source": "images/v1861_01.jpg",
+          "upper_box": [
+            2187,
+            2805,
+            2210,
+            2829
+          ],
+          "base_box": [
+            2167,
+            2827,
+            2214,
+            2862
+          ],
+          "box_xyxy": [
+            2167,
+            2805,
+            2214,
+            2862
+          ],
+          "geometry_file": "experiments/E04_prediction_before_comparison.json",
+          "geometry_file_sha256": "df1ee77a5db6e11e504db06bbb83d061c9dfce56abc4820c36579f7cd72416db"
+        }
+      ]
+    },
+    {
+      "class_id": "G47",
+      "value": "io",
+      "label_status": "Both values matched the copy after prediction; this does not validate all visually similar uppers.",
+      "samples": [
+        {
+          "id": "H05",
+          "source": "images/v1861_01.jpg",
+          "upper_box": [
+            808,
+            680,
+            820,
+            700
+          ],
+          "base_box": [
+            772,
+            697,
+            827,
+            722
+          ],
+          "box_xyxy": [
+            772,
+            680,
+            827,
+            722
+          ],
+          "geometry_file": "paragraph_alignment/r1131_prediction_before_comparison.json",
+          "geometry_file_sha256": "fff104f1d3820e49f50e28d8e4b5f85f74a67b491f53435614711045cdd67436"
+        },
+        {
+          "id": "T02",
+          "source": "images/v1861_01.jpg",
+          "upper_box": [
+            628,
+            2855,
+            643,
+            2879
+          ],
+          "base_box": [
+            599,
+            2881,
+            647,
+            2904
+          ],
+          "box_xyxy": [
+            599,
+            2855,
+            647,
+            2904
+          ],
+          "geometry_file": "experiments/E04_prediction_before_comparison.json",
+          "geometry_file_sha256": "df1ee77a5db6e11e504db06bbb83d061c9dfce56abc4820c36579f7cd72416db"
+        }
+      ]
+    },
+    {
+      "class_id": "G48",
+      "value": "mo",
+      "label_status": "E11 fitted known-text example; not held out",
+      "samples": [
+        {
+          "id": "K01",
+          "source": "images/v1864_05.jpg",
+          "upper_box": [
+            1116,
+            987,
+            1132,
+            1007
+          ],
+          "base_box": [
+            1087,
+            1008,
+            1128,
+            1027
+          ],
+          "box_xyxy": [
+            1087,
+            987,
+            1132,
+            1027
+          ],
+          "geometry_file": "experiments/E11_reference_island.json",
+          "geometry_file_sha256": "6704b863fe763ba816cf2e0d83ba2ad5cde1833106f67232c54bba6ffbfd1c92"
+        }
+      ]
+    },
+    {
+      "class_id": "G49",
+      "value": "gi",
+      "label_status": "Two fitted manuscript GI contexts; target X-like upper does not yet qualify as the same class.",
+      "samples": [
+        {
+          "id": "K04",
+          "source": "images/v1864_05.jpg",
+          "upper_box": [
+            1205,
+            983,
+            1230,
+            1005
+          ],
+          "base_box": [
+            1188,
+            1005,
+            1231,
+            1025
+          ],
+          "box_xyxy": [
+            1188,
+            983,
+            1231,
+            1025
+          ],
+          "geometry_file": "experiments/E11_reference_island.json",
+          "geometry_file_sha256": "6704b863fe763ba816cf2e0d83ba2ad5cde1833106f67232c54bba6ffbfd1c92"
+        },
+        {
+          "id": "T24",
+          "source": "images/v1861_01.jpg",
+          "upper_box": [
+            1620,
+            2817,
+            1646,
+            2853
+          ],
+          "base_box": [
+            1593,
+            2847,
+            1648,
+            2870
+          ],
+          "box_xyxy": [
+            1593,
+            2817,
+            1648,
+            2870
+          ],
+          "geometry_file": "experiments/E04_prediction_before_comparison.json",
+          "geometry_file_sha256": "df1ee77a5db6e11e504db06bbb83d061c9dfce56abc4820c36579f7cd72416db"
+        }
+      ]
+    },
+    {
+      "class_id": "G50",
+      "value": "ge",
+      "label_status": "Fitted inside DILIGENTIA; target comparison provisional",
+      "samples": [
+        {
+          "id": "R04",
+          "source": "images/v1867_01.jpg",
+          "upper_box": [
+            872,
+            796,
+            891,
+            816
+          ],
+          "base_box": [
+            846,
+            814,
+            887,
+            834
+          ],
+          "box_xyxy": [
+            846,
+            796,
+            891,
+            834
+          ],
+          "geometry_file": "experiments/E13_diligentia_GE.json",
+          "geometry_file_sha256": "874d3bfee227e19fcab4234c59cbfab5f1275b634059e8f518369b3480ebadc4"
+        }
+      ]
+    },
+    {
+      "class_id": "G51",
+      "value": "di",
+      "label_status": "Fitted inside DILIGENTIA; not held out",
+      "samples": [
+        {
+          "id": "R02",
+          "source": "images/v1867_01.jpg",
+          "upper_box": [
+            805,
+            795,
+            821,
+            812
+          ],
+          "base_box": [
+            788,
+            816,
+            824,
+            837
+          ],
+          "box_xyxy": [
+            788,
+            795,
+            824,
+            837
+          ],
+          "geometry_file": "experiments/E13_diligentia_GE.json",
+          "geometry_file_sha256": "874d3bfee227e19fcab4234c59cbfab5f1275b634059e8f518369b3480ebadc4"
+        },
+        {
+          "id": "U19",
+          "value": "di",
+          "rectified_upper_box": [
+            1623,
+            1011,
+            1659,
+            1044
+          ],
+          "rectified_base_box": [
+            1599,
+            1040,
+            1636,
+            1067
+          ],
+          "upper_box": [
+            1623,
+            971,
+            1659,
+            1006
+          ],
+          "base_box": [
+            1599,
+            1000,
+            1636,
+            1030
+          ],
+          "box_xyxy": [
+            1599,
+            971,
+            1659,
+            1030
+          ],
+          "source": "images/v1874_01.jpg",
+          "source_sha256": "cac6303669a378be41bd486705565d1ae0a73543a869965eb75a57ba2ccb8af3",
+          "status": "Known-text-assisted fitted reference; source-native boxes after isolated-cell review.",
+          "geometry_file": "experiments/E24_R1135_local_anchor.json",
+          "geometry_file_sha256": "833d115076137d7fde4dc533593855e6f76047dbef726cb056aa8bb4f24e1f82"
+        }
+      ]
+    },
+    {
+      "class_id": "G52",
+      "value": "a",
+      "label_status": "Fitted in DILIGENTIA and AD EPSO, with explicit published A2 support; distinct homophone from G07",
+      "samples": [
+        {
+          "id": "R07",
+          "source": "images/v1867_01.jpg",
+          "upper_box": [
+            968,
+            778,
+            986,
+            808
+          ],
+          "base_box": [
+            955,
+            810,
+            984,
+            835
+          ],
+          "box_xyxy": [
+            955,
+            778,
+            986,
+            835
+          ],
+          "geometry_file": "experiments/E13_diligentia_GE.json",
+          "geometry_file_sha256": "874d3bfee227e19fcab4234c59cbfab5f1275b634059e8f518369b3480ebadc4"
+        },
+        {
+          "id": "J01",
+          "source": "images/v1867_01.jpg",
+          "upper_box": [
+            468,
+            1897,
+            493,
+            1928
+          ],
+          "base_box": [
+            452,
+            1930,
+            482,
+            1957
+          ],
+          "box_xyxy": [
+            452,
+            1897,
+            493,
+            1957
+          ],
+          "geometry_file": "experiments/E08_comparison_v2.json",
+          "geometry_file_sha256": "28fa99002e581035f3a961e8ff5a88e4f6db69a09a9d8ccce5d823fe3259a3b9"
+        }
+      ]
+    },
+    {
+      "class_id": "G53",
+      "value": "d",
+      "label_status": "Fitted D/I contrast; J02 earlier fitted I corrected",
+      "samples": [
+        {
+          "id": "U_D_ADVISATO",
+          "source": "images/v1867_01.jpg",
+          "upper_box": [
+            977,
+            991,
+            1000,
+            1014
+          ],
+          "base_box": [
+            963,
+            1015,
+            995,
+            1040
+          ],
+          "box_xyxy": [
+            963,
+            991,
+            1000,
+            1040
+          ],
+          "geometry_file": "experiments/E14_A_homophone.json",
+          "geometry_file_sha256": "535ab5742eb4d708d6e637ace3a01d19022428df9bddd47193f9d56db1580a8f"
+        },
+        {
+          "id": "J02",
+          "source": "images/v1867_01.jpg",
+          "upper_box": [
+            498,
+            1901,
+            520,
+            1923
+          ],
+          "base_box": [
+            489,
+            1928,
+            520,
+            1953
+          ],
+          "box_xyxy": [
+            489,
+            1901,
+            520,
+            1953
+          ],
+          "geometry_file": "experiments/E08_comparison_v2.json",
+          "geometry_file_sha256": "28fa99002e581035f3a961e8ff5a88e4f6db69a09a9d8ccce5d823fe3259a3b9"
+        }
+      ]
+    },
+    {
+      "class_id": "G54",
+      "value": "p",
+      "label_status": "Fitted in corrected AD EPSO; not a blind prediction",
+      "samples": [
+        {
+          "id": "J04",
+          "source": "images/v1867_01.jpg",
+          "upper_box": [
+            575,
+            1898,
+            600,
+            1924
+          ],
+          "base_box": [
+            563,
+            1927,
+            590,
+            1951
+          ],
+          "box_xyxy": [
+            563,
+            1898,
+            600,
+            1951
+          ],
+          "geometry_file": "experiments/E08_comparison_v2.json",
+          "geometry_file_sha256": "28fa99002e581035f3a961e8ff5a88e4f6db69a09a9d8ccce5d823fe3259a3b9"
+        }
+      ]
+    },
+    {
+      "class_id": "G55",
+      "value": "e",
+      "label_status": "T13 matched in earlier E04 frozen test; J03 fitted.",
+      "samples": [
+        {
+          "id": "T13",
+          "upper_box": [
+            1124,
+            2829,
+            1155,
+            2856
+          ],
+          "base_box": [
+            1097,
+            2857,
+            1142,
+            2886
+          ],
+          "box_xyxy": [
+            1097,
+            2829,
+            1155,
+            2886
+          ],
+          "source": "images/v1861_01.jpg",
+          "source_sha256": "e88cc54fa27bda54a3605e2047d0ff1cb021304ba11953cbf5d8bfde4e2d09a1",
+          "value": "e",
+          "role": "Previously prospective matched m-like/7 E, different upper form.",
+          "geometry_file": "experiments/E17_controls_and_error_attribution.json",
+          "geometry_file_sha256": "a91ad5b9a551bd68fb8e626344dc90276bc8da91b39ef7d7e4964306e7d228a9"
+        },
+        {
+          "id": "J03",
+          "upper_box": [
+            533,
+            1902,
+            560,
+            1923
+          ],
+          "base_box": [
+            529,
+            1927,
+            559,
+            1951
+          ],
+          "box_xyxy": [
+            529,
+            1902,
+            560,
+            1951
+          ],
+          "source": "images/v1867_01.jpg",
+          "source_sha256": "df2971078e6f1fb195a1caca161199746c6cf600aa1fe1d0d3960b3f5b0826a1",
+          "value": "e",
+          "role": "Previously fitted m-like/7 E, different upper form.",
+          "geometry_file": "experiments/E17_controls_and_error_attribution.json",
+          "geometry_file_sha256": "a91ad5b9a551bd68fb8e626344dc90276bc8da91b39ef7d7e4964306e7d228a9"
+        },
+        {
+          "id": "N01",
+          "value": "e",
+          "upper_box": [
+            1235,
+            1976,
+            1259,
+            1996
+          ],
+          "base_box": [
+            1217,
+            1997,
+            1246,
+            2022
+          ],
+          "box_xyxy": [
+            1217,
+            1976,
+            1259,
+            2022
+          ],
+          "source": "images/v1864_04.jpg",
+          "source_sha256": "e5e106f3251ddecf01a3edac932b3e7b86172f6cc5f21b83706b5a0454e2c49f",
+          "status": "Known-text-assisted fitted reference; not prospective.",
+          "geometry_file": "experiments/E23_name_context_and_persona_anchor.json",
+          "geometry_file_sha256": "204e469a66ec4500025714d1488e29a9e8e5914c4694d191eff88509b3de80cc"
+        }
+      ]
+    },
+    {
+      "class_id": "G56",
+      "value": "e",
+      "label_status": "E17 fitted after E16 copy comparison; frozen abstentions unchanged.",
+      "samples": [
+        {
+          "id": "W17",
+          "upper_box": [
+            1414,
+            2893,
+            1428,
+            2918
+          ],
+          "base_box": [
+            1403,
+            2919,
+            1433,
+            2945
+          ],
+          "box_xyxy": [
+            1403,
+            2893,
+            1433,
+            2945
+          ],
+          "source": "images/v1870_03.jpg",
+          "source_sha256": "4bb9345da39f70155d030b87d0b9ae9b15954b24a5f70452b1a48a154171bdd9",
+          "value": "e",
+          "role": "New fitted s-like/7 E candidate; frozen abstention remains unchanged.",
+          "geometry_file": "experiments/E17_controls_and_error_attribution.json",
+          "geometry_file_sha256": "a91ad5b9a551bd68fb8e626344dc90276bc8da91b39ef7d7e4964306e7d228a9"
+        },
+        {
+          "id": "W33",
+          "upper_box": [
+            2075,
+            2871,
+            2090,
+            2893
+          ],
+          "base_box": [
+            2058,
+            2896,
+            2089,
+            2919
+          ],
+          "box_xyxy": [
+            2058,
+            2871,
+            2090,
+            2919
+          ],
+          "source": "images/v1870_03.jpg",
+          "source_sha256": "4bb9345da39f70155d030b87d0b9ae9b15954b24a5f70452b1a48a154171bdd9",
+          "value": "e",
+          "role": "New fitted s-like/7 E candidate; frozen abstention remains unchanged.",
+          "geometry_file": "experiments/E17_controls_and_error_attribution.json",
+          "geometry_file_sha256": "a91ad5b9a551bd68fb8e626344dc90276bc8da91b39ef7d7e4964306e7d228a9"
+        },
+        {
+          "id": "W41",
+          "upper_box": [
+            2366,
+            2863,
+            2380,
+            2888
+          ],
+          "base_box": [
+            2351,
+            2889,
+            2373,
+            2911
+          ],
+          "box_xyxy": [
+            2351,
+            2863,
+            2380,
+            2911
+          ],
+          "source": "images/v1870_03.jpg",
+          "source_sha256": "4bb9345da39f70155d030b87d0b9ae9b15954b24a5f70452b1a48a154171bdd9",
+          "value": "e",
+          "role": "New fitted s-like/7 E candidate; frozen abstention remains unchanged.",
+          "geometry_file": "experiments/E17_controls_and_error_attribution.json",
+          "geometry_file_sha256": "a91ad5b9a551bd68fb8e626344dc90276bc8da91b39ef7d7e4964306e7d228a9"
+        }
+      ]
+    },
+    {
+      "class_id": "G57",
+      "value": "ra",
+      "label_status": "Two earlier fitted word contexts; W24 conflict excluded from training.",
+      "samples": [
+        {
+          "id": "T23",
+          "upper_box": [
+            1577,
+            2818,
+            1599,
+            2841
+          ],
+          "base_box": [
+            1558,
+            2822,
+            1599,
+            2873
+          ],
+          "box_xyxy": [
+            1558,
+            2818,
+            1599,
+            2873
+          ],
+          "source": "images/v1861_01.jpg",
+          "source_sha256": "e88cc54fa27bda54a3605e2047d0ff1cb021304ba11953cbf5d8bfde4e2d09a1",
+          "value": "ra",
+          "role": "Fitted RA inside RAGIONI; its frozen value was abstention.",
+          "geometry_file": "experiments/E17_controls_and_error_attribution.json",
+          "geometry_file_sha256": "a91ad5b9a551bd68fb8e626344dc90276bc8da91b39ef7d7e4964306e7d228a9"
+        },
+        {
+          "id": "J07",
+          "upper_box": [
+            698,
+            1887,
+            716,
+            1918
+          ],
+          "base_box": [
+            678,
+            1888,
+            717,
+            1943
+          ],
+          "box_xyxy": [
+            678,
+            1887,
+            717,
+            1943
+          ],
+          "source": "images/v1867_01.jpg",
+          "source_sha256": "df2971078e6f1fb195a1caca161199746c6cf600aa1fe1d0d3960b3f5b0826a1",
+          "value": "ra",
+          "role": "Fitted RA inside ORATORE.",
+          "geometry_file": "experiments/E17_controls_and_error_attribution.json",
+          "geometry_file_sha256": "a91ad5b9a551bd68fb8e626344dc90276bc8da91b39ef7d7e4964306e7d228a9"
+        }
+      ]
+    },
+    {
+      "class_id": "G58",
+      "value": "ta",
+      "label_status": "Earlier known-text TA in TAL; new native geometry, not a new value.",
+      "samples": [
+        {
+          "id": "R1133_L05_TA",
+          "upper_box": [
+            724,
+            971,
+            751,
+            996
+          ],
+          "base_box": [
+            707,
+            960,
+            739,
+            1009
+          ],
+          "box_xyxy": [
+            707,
+            960,
+            751,
+            1009
+          ],
+          "source": "images/v1867_01.jpg",
+          "source_sha256": "df2971078e6f1fb195a1caca161199746c6cf600aa1fe1d0d3960b3f5b0826a1",
+          "value": "ta",
+          "role": "New native boxes for previously fitted TA in TAL; known copy visible throughout.",
+          "geometry_file": "experiments/E17_controls_and_error_attribution.json",
+          "geometry_file_sha256": "a91ad5b9a551bd68fb8e626344dc90276bc8da91b39ef7d7e4964306e7d228a9"
+        },
+        {
+          "id": "N04",
+          "value": "ta",
+          "upper_box": [
+            1346,
+            1982,
+            1371,
+            2007
+          ],
+          "base_box": [
+            1338,
+            1972,
+            1366,
+            2018
+          ],
+          "box_xyxy": [
+            1338,
+            1972,
+            1371,
+            2018
+          ],
+          "source": "images/v1864_04.jpg",
+          "source_sha256": "e5e106f3251ddecf01a3edac932b3e7b86172f6cc5f21b83706b5a0454e2c49f",
+          "status": "Known-text-assisted fitted reference; not prospective.",
+          "geometry_file": "experiments/E23_name_context_and_persona_anchor.json",
+          "geometry_file_sha256": "204e469a66ec4500025714d1488e29a9e8e5914c4694d191eff88509b3de80cc"
+        },
+        {
+          "id": "U03",
+          "value": "ta",
+          "rectified_upper_box": [
+            793,
+            1010,
+            835,
+            1043
+          ],
+          "rectified_base_box": [
+            776,
+            1004,
+            811,
+            1058
+          ],
+          "upper_box": [
+            793,
+            1003,
+            835,
+            1038
+          ],
+          "base_box": [
+            776,
+            997,
+            811,
+            1054
+          ],
+          "box_xyxy": [
+            776,
+            997,
+            835,
+            1054
+          ],
+          "source": "images/v1874_01.jpg",
+          "source_sha256": "cac6303669a378be41bd486705565d1ae0a73543a869965eb75a57ba2ccb8af3",
+          "status": "Known-text-assisted fitted reference; source-native boxes after isolated-cell review.",
+          "geometry_file": "experiments/E24_R1135_local_anchor.json",
+          "geometry_file_sha256": "833d115076137d7fde4dc533593855e6f76047dbef726cb056aa8bb4f24e1f82"
+        }
+      ]
+    },
+    {
+      "class_id": "G59",
+      "value": "pu",
+      "label_status": "E23 fitted reference controls; not prospective.",
+      "samples": [
+        {
+          "id": "W22",
+          "value": "pu",
+          "upper_box": [
+            1624,
+            2893,
+            1655,
+            2922
+          ],
+          "base_box": [
+            1607,
+            2887,
+            1640,
+            2936
+          ],
+          "box_xyxy": [
+            1607,
+            2887,
+            1655,
+            2936
+          ],
+          "source": "images/v1870_03.jpg",
+          "source_sha256": "4bb9345da39f70155d030b87d0b9ae9b15954b24a5f70452b1a48a154171bdd9",
+          "status": "Already exposed comparison/context control, not a new prospective success.",
+          "geometry_parent": "experiments/E16_prediction_before_comparison.json",
+          "geometry_parent_sha256": "571a47dc35818ec036768cf2822835947c90a2e9af0769152c59ed3ad047a6ff",
+          "frozen_emission_if_any": null,
+          "geometry_file": "experiments/E23_name_context_and_persona_anchor.json",
+          "geometry_file_sha256": "204e469a66ec4500025714d1488e29a9e8e5914c4694d191eff88509b3de80cc"
+        },
+        {
+          "id": "N03",
+          "value": "pu",
+          "upper_box": [
+            1312,
+            1980,
+            1337,
+            1998
+          ],
+          "base_box": [
+            1300,
+            1971,
+            1330,
+            2020
+          ],
+          "box_xyxy": [
+            1300,
+            1971,
+            1337,
+            2020
+          ],
+          "source": "images/v1864_04.jpg",
+          "source_sha256": "e5e106f3251ddecf01a3edac932b3e7b86172f6cc5f21b83706b5a0454e2c49f",
+          "status": "Known-text-assisted fitted reference; not prospective.",
+          "geometry_file": "experiments/E23_name_context_and_persona_anchor.json",
+          "geometry_file_sha256": "204e469a66ec4500025714d1488e29a9e8e5914c4694d191eff88509b3de80cc"
+        }
+      ]
+    },
+    {
+      "class_id": "G60",
+      "value": "pe",
+      "label_status": "E23 fitted reference controls; not prospective.",
+      "samples": [
+        {
+          "id": "T19",
+          "value": "pe",
+          "upper_box": [
+            1403,
+            2817,
+            1422,
+            2844
+          ],
+          "base_box": [
+            1372,
+            2844,
+            1428,
+            2877
+          ],
+          "box_xyxy": [
+            1372,
+            2817,
+            1428,
+            2877
+          ],
+          "source": "images/v1861_01.jpg",
+          "source_sha256": "e88cc54fa27bda54a3605e2047d0ff1cb021304ba11953cbf5d8bfde4e2d09a1",
+          "status": "Already exposed comparison/context control, not a new prospective success.",
+          "geometry_parent": "experiments/E04_prediction_before_comparison.json",
+          "geometry_parent_sha256": "df1ee77a5db6e11e504db06bbb83d061c9dfce56abc4820c36579f7cd72416db",
+          "frozen_emission_if_any": "va",
+          "geometry_file": "experiments/E23_name_context_and_persona_anchor.json",
+          "geometry_file_sha256": "204e469a66ec4500025714d1488e29a9e8e5914c4694d191eff88509b3de80cc"
+        },
+        {
+          "id": "N06",
+          "value": "pe",
+          "upper_box": [
+            1424,
+            1969,
+            1441,
+            1996
+          ],
+          "base_box": [
+            1407,
+            1972,
+            1433,
+            2018
+          ],
+          "box_xyxy": [
+            1407,
+            1969,
+            1441,
+            2018
+          ],
+          "source": "images/v1864_04.jpg",
+          "source_sha256": "e5e106f3251ddecf01a3edac932b3e7b86172f6cc5f21b83706b5a0454e2c49f",
+          "status": "Known-text-assisted fitted reference; not prospective.",
+          "geometry_file": "experiments/E23_name_context_and_persona_anchor.json",
+          "geometry_file_sha256": "204e469a66ec4500025714d1488e29a9e8e5914c4694d191eff88509b3de80cc"
+        },
+        {
+          "id": "U22",
+          "value": "pe",
+          "rectified_upper_box": [
+            1791,
+            1008,
+            1818,
+            1041
+          ],
+          "rectified_base_box": [
+            1772,
+            1005,
+            1817,
+            1066
+          ],
+          "upper_box": [
+            1791,
+            961,
+            1818,
+            996
+          ],
+          "base_box": [
+            1772,
+            958,
+            1817,
+            1022
+          ],
+          "box_xyxy": [
+            1772,
+            958,
+            1818,
+            1022
+          ],
+          "source": "images/v1874_01.jpg",
+          "source_sha256": "cac6303669a378be41bd486705565d1ae0a73543a869965eb75a57ba2ccb8af3",
+          "status": "Known-text-assisted fitted reference; source-native boxes after isolated-cell review.",
+          "geometry_file": "experiments/E24_R1135_local_anchor.json",
+          "geometry_file_sha256": "833d115076137d7fde4dc533593855e6f76047dbef726cb056aa8bb4f24e1f82"
+        }
+      ]
+    },
+    {
+      "class_id": "G61",
+      "value": "so",
+      "label_status": "E23 fitted reference controls; not prospective.",
+      "samples": [
+        {
+          "id": "J05",
+          "value": "so",
+          "upper_box": [
+            616,
+            1904,
+            635,
+            1928
+          ],
+          "base_box": [
+            605,
+            1892,
+            642,
+            1945
+          ],
+          "box_xyxy": [
+            605,
+            1892,
+            642,
+            1945
+          ],
+          "source": "images/v1867_01.jpg",
+          "source_sha256": "df2971078e6f1fb195a1caca161199746c6cf600aa1fe1d0d3960b3f5b0826a1",
+          "status": "Already exposed comparison/context control, not a new prospective success.",
+          "geometry_parent": "experiments/E08_comparison_v2.json",
+          "geometry_parent_sha256": "28fa99002e581035f3a961e8ff5a88e4f6db69a09a9d8ccce5d823fe3259a3b9",
+          "frozen_emission_if_any": "so",
+          "geometry_file": "experiments/E23_name_context_and_persona_anchor.json",
+          "geometry_file_sha256": "204e469a66ec4500025714d1488e29a9e8e5914c4694d191eff88509b3de80cc"
+        },
+        {
+          "id": "W35",
+          "value": "so",
+          "upper_box": [
+            2150,
+            2878,
+            2170,
+            2900
+          ],
+          "base_box": [
+            2133,
+            2864,
+            2167,
+            2912
+          ],
+          "box_xyxy": [
+            2133,
+            2864,
+            2170,
+            2912
+          ],
+          "source": "images/v1870_03.jpg",
+          "source_sha256": "4bb9345da39f70155d030b87d0b9ae9b15954b24a5f70452b1a48a154171bdd9",
+          "status": "Already exposed comparison/context control, not a new prospective success.",
+          "geometry_parent": "experiments/E16_prediction_before_comparison.json",
+          "geometry_parent_sha256": "571a47dc35818ec036768cf2822835947c90a2e9af0769152c59ed3ad047a6ff",
+          "frozen_emission_if_any": "so",
+          "geometry_file": "experiments/E23_name_context_and_persona_anchor.json",
+          "geometry_file_sha256": "204e469a66ec4500025714d1488e29a9e8e5914c4694d191eff88509b3de80cc"
+        },
+        {
+          "id": "N08",
+          "value": "so",
+          "upper_box": [
+            1474,
+            1979,
+            1491,
+            2000
+          ],
+          "base_box": [
+            1458,
+            1964,
+            1482,
+            2015
+          ],
+          "box_xyxy": [
+            1458,
+            1964,
+            1491,
+            2015
+          ],
+          "source": "images/v1864_04.jpg",
+          "source_sha256": "e5e106f3251ddecf01a3edac932b3e7b86172f6cc5f21b83706b5a0454e2c49f",
+          "status": "Known-text-assisted fitted reference; not prospective.",
+          "geometry_file": "experiments/E23_name_context_and_persona_anchor.json",
+          "geometry_file_sha256": "204e469a66ec4500025714d1488e29a9e8e5914c4694d191eff88509b3de80cc"
+        }
+      ]
+    },
+    {
+      "class_id": "G62",
+      "value": "na",
+      "label_status": "E23 fitted reference controls; not prospective.",
+      "samples": [
+        {
+          "id": "N09",
+          "value": "na",
+          "upper_box": [
+            1510,
+            1968,
+            1539,
+            1995
+          ],
+          "base_box": [
+            1487,
+            1995,
+            1528,
+            2014
+          ],
+          "box_xyxy": [
+            1487,
+            1968,
+            1539,
+            2014
+          ],
+          "source": "images/v1864_04.jpg",
+          "source_sha256": "e5e106f3251ddecf01a3edac932b3e7b86172f6cc5f21b83706b5a0454e2c49f",
+          "status": "Known-text-assisted fitted reference; not prospective.",
+          "geometry_file": "experiments/E23_name_context_and_persona_anchor.json",
+          "geometry_file_sha256": "204e469a66ec4500025714d1488e29a9e8e5914c4694d191eff88509b3de80cc"
+        }
+      ]
+    },
+    {
+      "class_id": "G63",
+      "value": "su",
+      "label_status": "E24 fitted known-context label; no prospective success credit.",
+      "samples": [
+        {
+          "id": "U09",
+          "value": "su",
+          "rectified_upper_box": [
+            1092,
+            1013,
+            1132,
+            1044
+          ],
+          "rectified_base_box": [
+            1082,
+            1007,
+            1115,
+            1060
+          ],
+          "upper_box": [
+            1092,
+            994,
+            1132,
+            1027
+          ],
+          "base_box": [
+            1082,
+            988,
+            1115,
+            1044
+          ],
+          "box_xyxy": [
+            1082,
+            988,
+            1132,
+            1044
+          ],
+          "source": "images/v1874_01.jpg",
+          "source_sha256": "cac6303669a378be41bd486705565d1ae0a73543a869965eb75a57ba2ccb8af3",
+          "status": "Known-text-assisted fitted reference; source-native boxes after isolated-cell review.",
+          "geometry_file": "experiments/E24_R1135_local_anchor.json",
+          "geometry_file_sha256": "833d115076137d7fde4dc533593855e6f76047dbef726cb056aa8bb4f24e1f82"
+        }
+      ]
+    },
+    {
+      "class_id": "G64",
+      "value": "nu",
+      "label_status": "E24 fitted known-context label; no prospective success credit.",
+      "samples": [
+        {
+          "id": "U12",
+          "value": "nu",
+          "rectified_upper_box": [
+            1240,
+            998,
+            1283,
+            1038
+          ],
+          "rectified_base_box": [
+            1209,
+            1040,
+            1270,
+            1063
+          ],
+          "upper_box": [
+            1240,
+            973,
+            1283,
+            1015
+          ],
+          "base_box": [
+            1209,
+            1015,
+            1270,
+            1042
+          ],
+          "box_xyxy": [
+            1209,
+            973,
+            1283,
+            1042
+          ],
+          "source": "images/v1874_01.jpg",
+          "source_sha256": "cac6303669a378be41bd486705565d1ae0a73543a869965eb75a57ba2ccb8af3",
+          "status": "Known-text-assisted fitted reference; source-native boxes after isolated-cell review.",
+          "geometry_file": "experiments/E24_R1135_local_anchor.json",
+          "geometry_file_sha256": "833d115076137d7fde4dc533593855e6f76047dbef726cb056aa8bb4f24e1f82"
+        }
+      ]
+    },
+    {
+      "class_id": "G65",
+      "value": "mi",
+      "label_status": "E24 fitted known-context label; no prospective success credit.",
+      "samples": [
+        {
+          "id": "U08",
+          "value": "mi",
+          "rectified_upper_box": [
+            1047,
+            1004,
+            1082,
+            1038
+          ],
+          "rectified_base_box": [
+            1030,
+            1038,
+            1072,
+            1063
+          ],
+          "upper_box": [
+            1047,
+            987,
+            1082,
+            1023
+          ],
+          "base_box": [
+            1030,
+            1021,
+            1072,
+            1049
+          ],
+          "box_xyxy": [
+            1030,
+            987,
+            1082,
+            1049
+          ],
+          "source": "images/v1874_01.jpg",
+          "source_sha256": "cac6303669a378be41bd486705565d1ae0a73543a869965eb75a57ba2ccb8af3",
+          "status": "Known-text-assisted fitted reference; source-native boxes after isolated-cell review.",
+          "geometry_file": "experiments/E24_R1135_local_anchor.json",
+          "geometry_file_sha256": "833d115076137d7fde4dc533593855e6f76047dbef726cb056aa8bb4f24e1f82"
+        }
+      ]
+    },
+    {
+      "class_id": "G66",
+      "value": "fa",
+      "label_status": "E24 fitted known-context label; no prospective success credit.",
+      "samples": [
+        {
+          "id": "U16",
+          "value": "fa",
+          "rectified_upper_box": [
+            1480,
+            1001,
+            1506,
+            1038
+          ],
+          "rectified_base_box": [
+            1446,
+            1038,
+            1489,
+            1063
+          ],
+          "upper_box": [
+            1480,
+            967,
+            1506,
+            1006
+          ],
+          "base_box": [
+            1446,
+            1004,
+            1489,
+            1032
+          ],
+          "box_xyxy": [
+            1446,
+            967,
+            1506,
+            1032
+          ],
+          "source": "images/v1874_01.jpg",
+          "source_sha256": "cac6303669a378be41bd486705565d1ae0a73543a869965eb75a57ba2ccb8af3",
+          "status": "Known-text-assisted fitted reference; source-native boxes after isolated-cell review.",
+          "geometry_file": "experiments/E24_R1135_local_anchor.json",
+          "geometry_file_sha256": "833d115076137d7fde4dc533593855e6f76047dbef726cb056aa8bb4f24e1f82"
+        }
+      ]
+    },
+    {
+      "class_id": "G67",
+      "value": "tro",
+      "label_status": "E24 fitted known-context label; no prospective success credit.",
+      "samples": [
+        {
+          "id": "U05",
+          "value": "tro",
+          "rectified_upper_box": [
+            914,
+            1002,
+            938,
+            1036
+          ],
+          "rectified_base_box": [
+            878,
+            1031,
+            917,
+            1057
+          ],
+          "upper_box": [
+            914,
+            990,
+            938,
+            1026
+          ],
+          "base_box": [
+            878,
+            1020,
+            917,
+            1049
+          ],
+          "box_xyxy": [
+            878,
+            990,
+            938,
+            1049
+          ],
+          "source": "images/v1874_01.jpg",
+          "source_sha256": "cac6303669a378be41bd486705565d1ae0a73543a869965eb75a57ba2ccb8af3",
+          "status": "Known-text-assisted fitted reference; source-native boxes after isolated-cell review.",
+          "geometry_file": "experiments/E24_R1135_local_anchor.json",
+          "geometry_file_sha256": "833d115076137d7fde4dc533593855e6f76047dbef726cb056aa8bb4f24e1f82"
+        }
+      ]
+    },
+    {
+      "class_id": "G68",
+      "value": "ca",
+      "label_status": "Reference-fitted geometry; stemmedI is an earlier matched control, not new success credit.",
+      "samples": [
+        {
+          "id": "R1133_CIRCA_CA",
+          "value": "ca",
+          "source": "images/v1867_01.jpg",
+          "source_sha256": "df2971078e6f1fb195a1caca161199746c6cf600aa1fe1d0d3960b3f5b0826a1",
+          "upper_box": [
+            691,
+            957,
+            710,
+            987
+          ],
+          "base_box": [
+            676,
+            983,
+            706,
+            999
+          ],
+          "box_xyxy": [
+            676,
+            957,
+            710,
+            999
+          ],
+          "status": "New native geometry for previously fitted CA in CIRCA; not target-derived.",
+          "context": "la mente loro circa tal pratica",
+          "geometry_file": "experiments/E26_L06_prefix_result.json",
+          "geometry_file_sha256": "81ec63e74eef713b093405d3b5dd5885d975aa7663991dcaa3ab7b8a48c8d422"
+        }
+      ]
+    },
+    {
+      "class_id": "G69",
+      "value": "pa",
+      "label_status": "Reference-fitted geometry; stemmedI is an earlier matched control, not new success credit.",
+      "samples": [
+        {
+          "id": "F03_PA",
+          "source": "images/v1867_01.jpg",
+          "upper_box": [
+            623,
+            916,
+            642,
+            938
+          ],
+          "base_box": [
+            612,
+            910,
+            635,
+            956
+          ],
+          "value": "pa",
+          "context": "CO M PA G NI A in supplied in compagnia del; R1133 original line 4.",
+          "box_xyxy": [
+            612,
+            910,
+            642,
+            956
+          ],
+          "source_sha256": "df2971078e6f1fb195a1caca161199746c6cf600aa1fe1d0d3960b3f5b0826a1",
+          "status": "reference-assisted control; not a prospective success",
+          "geometry_file": "experiments/E26_L06_prefix_result.json",
+          "geometry_file_sha256": "81ec63e74eef713b093405d3b5dd5885d975aa7663991dcaa3ab7b8a48c8d422"
+        }
+      ]
+    },
+    {
+      "class_id": "G70",
+      "value": "i",
+      "label_status": "Reference-fitted geometry; stemmedI is an earlier matched control, not new success credit.",
+      "samples": [
+        {
+          "id": "W40",
+          "rectified_upper_box": [
+            2336,
+            2928,
+            2354,
+            2951
+          ],
+          "rectified_base_box": [
+            2318,
+            2952,
+            2348,
+            2976
+          ],
+          "upper_box": [
+            2336,
+            2865,
+            2354,
+            2889
+          ],
+          "base_box": [
+            2318,
+            2889,
+            2348,
+            2915
+          ],
+          "box_xyxy": [
+            2318,
+            2865,
+            2354,
+            2915
+          ],
+          "base_component_hint": "B41",
+          "emission": "i",
+          "status": "FROZEN before R1134 decipherment retrieval; retain unchanged",
+          "assigned": true,
+          "reference_evidence": [
+            "V9 G29:C12 I; fork shape lacks D stem"
+          ],
+          "recognition_note": "Whole pair/base and upper compared with listed fixed reference class.",
+          "confidence": "medium-high",
+          "value": "i",
+          "source": "images/v1870_03.jpg",
+          "source_sha256": "4bb9345da39f70155d030b87d0b9ae9b15954b24a5f70452b1a48a154171bdd9",
+          "geometry_file": "experiments/E26_L06_prefix_result.json",
+          "geometry_file_sha256": "81ec63e74eef713b093405d3b5dd5885d975aa7663991dcaa3ab7b8a48c8d422"
+        }
+      ]
+    },
+    {
+      "class_id": "G71",
+      "value": "hu",
+      "label_status": "E29 known-copy fit, not prospective.",
+      "samples": [
+        {
+          "id": "R1132_COVER_HU",
+          "value": "hu",
+          "source": "images/v1864_01.jpg",
+          "source_sha256": "a4af1e8e813cbb593281b057814b9d04d07a044e6635b7600c384e650f750469",
+          "upper_box": [
+            1001,
+            1746,
+            1027,
+            1774
+          ],
+          "base_box": [
+            969,
+            1776,
+            1008,
+            1792
+          ],
+          "box_xyxy": [
+            969,
+            1746,
+            1027,
+            1792
+          ],
+          "status": "Known-copy-assisted local reference classification, not prospective.",
+          "source_pair_id": "H01",
+          "geometry_file": "experiments/E29_HU_correspondence_result.json",
+          "geometry_file_sha256": "e544a3fb0377db00690692609cdd66d5a06c139507f93ec1e6ff438991a5bcc9"
+        }
+      ]
+    },
+    {
+      "class_id": "G72",
+      "value": "ss",
+      "label_status": "E29 known-copy fit, not prospective.",
+      "samples": [
+        {
+          "id": "R1132_COVER_SS",
+          "value": "ss",
+          "source": "images/v1864_01.jpg",
+          "source_sha256": "a4af1e8e813cbb593281b057814b9d04d07a044e6635b7600c384e650f750469",
+          "upper_box": [
+            1251,
+            1743,
+            1270,
+            1773
+          ],
+          "base_box": [
+            1234,
+            1772,
+            1274,
+            1801
+          ],
+          "box_xyxy": [
+            1234,
+            1743,
+            1274,
+            1801
+          ],
+          "status": "Known-copy-assisted local reference classification, not prospective.",
+          "source_pair_id": "H08",
+          "geometry_file": "experiments/E29_HU_correspondence_result.json",
+          "geometry_file_sha256": "e544a3fb0377db00690692609cdd66d5a06c139507f93ec1e6ff438991a5bcc9"
+        }
+      ]
+    },
+    {
+      "class_id": "G73",
+      "value": "vi",
+      "label_status": "Known-copy fitted reference.",
+      "samples": [
+        {
+          "id": "R1133_ADVISATO_VI",
+          "value": "vi",
+          "source": "images/v1867_01.jpg",
+          "source_sha256": "df2971078e6f1fb195a1caca161199746c6cf600aa1fe1d0d3960b3f5b0826a1",
+          "upper_box": [
+            1019,
+            993,
+            1034,
+            1010
+          ],
+          "base_box": [
+            1003,
+            1010,
+            1030,
+            1035
+          ],
+          "box_xyxy": [
+            1003,
+            993,
+            1034,
+            1035
+          ],
+          "status": "E32 known-copy fitted control, not prospective.",
+          "geometry_file": "experiments/E32_VI_PI_result.json",
+          "geometry_file_sha256": "77b5e03033a68f1fde6f760a24cb3fb4f18ff9e088d6ab99426d11212232229e"
+        }
+      ]
+    },
+    {
+      "class_id": "G74",
+      "value": "pi",
+      "label_status": "Known-copy fitted reference.",
+      "samples": [
+        {
+          "id": "R1133_PIU_PI",
+          "value": "pi",
+          "source": "images/v1867_01.jpg",
+          "source_sha256": "df2971078e6f1fb195a1caca161199746c6cf600aa1fe1d0d3960b3f5b0826a1",
+          "upper_box": [
+            462,
+            1575,
+            478,
+            1596
+          ],
+          "base_box": [
+            442,
+            1566,
+            481,
+            1616
+          ],
+          "box_xyxy": [
+            442,
+            1566,
+            481,
+            1616
+          ],
+          "status": "E32 known-copy fitted control, not prospective.",
+          "geometry_file": "experiments/E32_VI_PI_result.json",
+          "geometry_file_sha256": "77b5e03033a68f1fde6f760a24cb3fb4f18ff9e088d6ab99426d11212232229e"
+        }
+      ]
+    },
+    {
+      "class_id": "G75",
+      "value": "cc",
+      "label_status": "Single known-copy fitted control; overlap caveat.",
+      "samples": [
+        {
+          "id": "R1132_BACCHIA_CC",
+          "upper_box": [
+            1331,
+            2349,
+            1350,
+            2381
+          ],
+          "base_box": [
+            1301,
+            2376,
+            1352,
+            2415
+          ],
+          "box_xyxy": [
+            1301,
+            2349,
+            1352,
+            2415
+          ],
+          "base_family_hint": "double",
+          "status": "Fitted after E35copycomparison; E35S09 stays a frozen abstention.",
+          "value": "cc",
+          "source": "images/v1864_08.jpg",
+          "source_sha256": "bb409c0d82400f08669e22068e6bef1ca7585fa0484725aad9f001700c3faa02",
+          "raw_overlap_region": [
+            1302,
+            2398,
+            1335,
+            2436
+          ],
+          "component_limit": "b-like upper and q-like double-base body are visible; low descender intersects next-row/blemish ink, whose ownership is not fully settled. Raw overlap retained.",
+          "geometry_file": "experiments/E37_CC_result.json",
+          "geometry_file_sha256": "7756020a67b5f8d0e637f459242e0f18ca5ba462c65a7d48a1f5deb4807a6aa0"
+        }
+      ]
+    },
+    {
+      "class_id": "G76",
+      "value": "vo",
+      "label_status": "Known-copy fitted native reference, not heldout.",
+      "samples": [
+        {
+          "id": "R1133_VOLENDO_VO",
+          "value": "vo",
+          "source": "images/v1867_01.jpg",
+          "source_sha256": "df2971078e6f1fb195a1caca161199746c6cf600aa1fe1d0d3960b3f5b0826a1",
+          "upper_box": [
+            897,
+            1863,
+            915,
+            1898
+          ],
+          "base_box": [
+            882,
+            1897,
+            915,
+            1918
+          ],
+          "box_xyxy": [
+            882,
+            1863,
+            915,
+            1918
+          ],
+          "status": "Known-copy fitted native components; no prospective credit.",
+          "source_pair_id": "F03",
+          "geometry_file": "experiments/E49_VO_LE_DO_result.json",
+          "geometry_file_sha256": "7763177967931d433def385e3008ecedfc2784c00f8453e7fb89d4c2b6dee4a6"
+        }
+      ]
+    },
+    {
+      "class_id": "G77",
+      "value": "le",
+      "label_status": "Two known-copy fitted native references; no prospective credit.",
+      "samples": [
+        {
+          "id": "R1133_VOLENDO_LE",
+          "value": "le",
+          "source": "images/v1867_01.jpg",
+          "source_sha256": "df2971078e6f1fb195a1caca161199746c6cf600aa1fe1d0d3960b3f5b0826a1",
+          "upper_box": [
+            928,
+            1874,
+            950,
+            1893
+          ],
+          "base_box": [
+            914,
+            1898,
+            951,
+            1914
+          ],
+          "box_xyxy": [
+            914,
+            1874,
+            951,
+            1914
+          ],
+          "status": "Known-copy fitted native components; no prospective credit.",
+          "source_pair_id": "F04",
+          "geometry_file": "experiments/E49_VO_LE_DO_result.json",
+          "geometry_file_sha256": "7763177967931d433def385e3008ecedfc2784c00f8453e7fb89d4c2b6dee4a6"
+        },
+        {
+          "id": "R1131_PER_LE_T22",
+          "value": "le",
+          "source": "images/v1861_01.jpg",
+          "source_sha256": "e88cc54fa27bda54a3605e2047d0ff1cb021304ba11953cbf5d8bfde4e2d09a1",
+          "upper_box": [
+            1522,
+            2825,
+            1552,
+            2847
+          ],
+          "base_box": [
+            1505,
+            2848,
+            1559,
+            2870
+          ],
+          "box_xyxy": [
+            1505,
+            2825,
+            1559,
+            2870
+          ],
+          "source_pair_id": "T22",
+          "status": "E50 known-copy fitted corroboration after E49 LE control; original DE prediction remains an error.",
+          "geometry_file": "experiments/E50_LE_DE_result.json",
+          "geometry_file_sha256": "8f26e400331886a5f97aaf9120fce6f58b29686f8deb7b69a4e28659ac1a978b"
+        }
+      ]
+    },
+    {
+      "class_id": "G78",
+      "value": "do",
+      "label_status": "Known-copy fitted native reference, not heldout.",
+      "samples": [
+        {
+          "id": "R1133_VOLENDO_DO",
+          "value": "do",
+          "source": "images/v1867_01.jpg",
+          "source_sha256": "df2971078e6f1fb195a1caca161199746c6cf600aa1fe1d0d3960b3f5b0826a1",
+          "upper_box": [
+            1007,
+            1865,
+            1024,
+            1884
+          ],
+          "base_box": [
+            988,
+            1889,
+            1026,
+            1908
+          ],
+          "box_xyxy": [
+            988,
+            1865,
+            1026,
+            1908
+          ],
+          "status": "Known-copy fitted native components; no prospective credit.",
+          "source_pair_id": "F06",
+          "geometry_file": "experiments/E49_VO_LE_DO_result.json",
+          "geometry_file_sha256": "7763177967931d433def385e3008ecedfc2784c00f8453e7fb89d4c2b6dee4a6"
+        }
+      ]
+    },
+    {
+      "class_id": "G79",
+      "value": "bo",
+      "label_status": "Known-copy fitted BO; target occurrence classified separately.",
+      "samples": [
+        {
+          "id": "R1134_BON_BO",
+          "source": "images/v1870_01.jpg",
+          "source_sha256": "85861a4aedf64d85a6adbab28bc6ebb00f125ae0cdd58b42329f6b310d7c15be",
+          "upper_box": [
+            2006,
+            2467,
+            2028,
+            2508
+          ],
+          "base_box": [
+            1981,
+            2510,
+            2028,
+            2529
+          ],
+          "box_xyxy": [
+            1981,
+            2467,
+            2028,
+            2529
+          ],
+          "value": "bo",
+          "geometry_file": "experiments/E54_BO_result.json",
+          "geometry_file_sha256": "6ef479543a3a2bcab9165f66f4b66023bb671f70d1bb12bd3b08e71cc2e86c32",
+          "status": "E53 abstention subsequently fitted to BO in BON CONTO; no prediction success."
+        }
+      ]
+    }
+  ],
+  "missing_geometry": [],
+  "group_count": 78,
+  "sample_count": 153,
+  "unique_sample_ids": 153,
+  "limits": "Fitted labels from key are not the emissions in frozen predictions when those predictions failed; both versions are retained. No accuracy claim.",
+  "parent_file": "experiments/E54_inventory_geometry.json",
+  "parent_sha256": "99a995777531d3110776b1102ee3ed6842a3aa5e53687ff48eec0491872d37e2",
+  "counts": {
+    "groups": 78,
+    "distinct_values": 74,
+    "exemplar_records": 153
+  }
+}
+
