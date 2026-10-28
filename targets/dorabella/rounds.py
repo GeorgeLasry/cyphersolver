@@ -1680,3 +1680,219 @@ def round28():
         nulls = [prior_misread_solve(s, 8, 100 + j, beta)[0] for j, s in enumerate(shuffles(3))]
         log(28, f'flip-heavy key prior (beta {beta}) + misreads <= 8', D[0], nulls, ctl, D[1],
             f'edits {D[2]}; ctl acc {min(acc):.2f}..{max(acc):.2f}', acc)
+
+
+# ------------------------------------------------------------------ round 29: do table-changing ciphers keep the flips?
+@rnd(29)
+def round29():
+    order = [c for grp in FLIP_LAYOUT for c in grp]               # 24 cells in layout order: index = 3*o + a
+    cell = {c: (i // 3, i % 3) for i, c in enumerate(order)}
+    cell['j'] = cell['i']; cell['v'] = cell['u']
+    idx = {c: i for i, c in enumerate(order)}; idx['j'] = idx['i']; idx['v'] = idx['u']
+    rng = random.Random(29)
+    texts = [english(N, rng) for _ in range(2000)]
+    def fl(sg):
+        return sum((b[0] - a[0]) % 8 == 4 for a, b in zip(sg, sg[1:]))
+    systems = {
+        'fixed table (no key layer)': lambda t, r: [cell[c] for c in t],
+        'dial turned by a 5-step periodic key': lambda t, r: (lambda k: [((cell[c][0] + k[i % 5]) % 8, cell[c][1]) for i, c in enumerate(t)])([r.randrange(8) for _ in range(5)]),
+        'Vigenere on the letters, period 5': lambda t, r: (lambda k: [divmod((idx[c] + k[i % 5]) % 24, 3) for i, c in enumerate(t)])([r.randrange(24) for _ in range(5)]),
+        'Vigenere, period 3': lambda t, r: (lambda k: [divmod((idx[c] + k[i % 3]) % 24, 3) for i, c in enumerate(t)])([r.randrange(24) for _ in range(3)]),
+        'autokey (shift by previous letter)': lambda t, r: [divmod((idx[c] + (idx[t[i - 1]] if i else r.randrange(24))) % 24, 3) for i, c in enumerate(t)],
+        'running key from English': lambda t, r: (lambda kt: [divmod((idx[c] + idx[k]) % 24, 3) for c, k in zip(t, kt)])(english(N, r)),
+        'Nihilist (coordinates added, key 7)': lambda t, r: (lambda k: [((cell[c][0] + k[i % 7][0]) % 8, (cell[c][1] + k[i % 7][1]) % 3) for i, c in enumerate(t)])([(r.randrange(8), r.randrange(3)) for _ in range(7)]),
+        'progressive dial (+1 each sign)': lambda t, r: [((cell[c][0] + i) % 8, cell[c][1]) for i, c in enumerate(t)],
+    }
+    for nm, f in systems.items():
+        F = np.array([fl(f(t, rng)) for t in texts])
+        print(f'  {nm:40s} flips mean {F.mean():5.1f}   P(>=27) {np.mean(F >= 27):.3f}', flush=True)
+        log(29, f'flips survive? {nm}', 27.0, [float(F.mean())], [], f'mean flips {F.mean():.1f}, P(>=27) {np.mean(F >= 27):.3f}')
+
+
+# ------------------------------------------------------------------ round 30: is Elgar's own prose solvable at 87 signs?
+@rnd(30)
+def round30():
+    t = lm.norm(open(_os.path.join(HERE, 'src', 'elgar_register.txt'), encoding='utf-8').read(), 'modern', False)
+    rng = random.Random(30)
+    for label, src in (('Elgar\'s letters (not in the model)', t), ('Gutenberg prose (in the model)', None)):
+        accs = []
+        for j in range(12):
+            if src is None:
+                pt = english(N, rng)
+            else:
+                p = rng.randrange(len(src) - N); pt = src[p:p + N]
+            cells = rng.sample([(o, a) for o in range(8) for a in range(3)], 24)
+            key = {c: cells[i % 24] for i, c in enumerate(sorted(set(pt)))}
+            sc, txt, _, _ = solve_tokens([key[c] for c in pt], R=12, seed=500 + j)
+            accs.append(np.mean([a == b for a, b in zip(txt, pt)]))
+        accs = np.array(accs)
+        print(f'  {label:36s} recovered >=90%: {np.mean(accs >= .9):.2f}; median accuracy {np.median(accs):.2f}; '
+              f'{np.round(np.sort(accs), 2)}', flush=True)
+        log(30, f'solvability at 87 signs: {label}', float(np.median(accs)), [0.0], list(accs), f'share >= 90%: {np.mean(accs >= .9):.2f}')
+
+
+# ------------------------------------------------------------------ round 31: search failure or model failure?
+@rnd(31)
+def round31():
+    t = lm.norm(open(_os.path.join(HERE, 'src', 'elgar_register.txt'), encoding='utf-8').read(), 'modern', False)
+    rng = random.Random(30)                            # same windows as round 30
+    rows = []
+    for j in range(12):
+        p = rng.randrange(len(t) - N); pt = t[p:p + N]
+        cells = rng.sample([(o, a) for o in range(8) for a in range(3)], 24)
+        key = {c: cells[i % 24] for i, c in enumerate(sorted(set(pt)))}
+        for R, it in ((12, 12000), (60, 30000)):
+            sc, txt, _, _ = solve_tokens([key[c] for c in pt], R=R, iters=it, seed=500 + j)
+            acc = np.mean([a == b for a, b in zip(txt, pt)])
+            true = M4.per_char(pt)
+            kind = 'solved' if acc >= .9 else ('SEARCH failure (truth scores higher)' if true > sc + 1e-3 else 'MODEL failure (wrong text scores higher)')
+            rows.append((j, R, acc, sc, true, kind))
+            print(f'  window {j:2d} restarts {R:3d}: acc {acc:.2f}  found {sc:.3f}  truth {true:.3f}  {kind}', flush=True)
+    for R in (12, 60):
+        sub = [r for r in rows if r[1] == R]
+        s = sum(r[5] == 'solved' for r in sub); se = sum(r[5].startswith('SEARCH') for r in sub); mo = sum(r[5].startswith('MODEL') for r in sub)
+        log(31, f"Elgar's letters at 87 signs, {R} restarts: solved / search fail / model fail", s / len(sub), [se / len(sub)], [mo / len(sub)],
+            f'solved {s}, search failures {se}, model failures {mo} of {len(sub)}')
+
+
+# ------------------------------------------------------------------ round 35: pair habit or language?
+@rnd(35)
+def round35():
+    """Statistics beyond adjacent pairs: repeats at lag 2/3/4 and repeated skip-grams (a ? b). Pair-keeping shuffles
+    keep every adjacent pair exactly (the null for 'a writer with pair habits only'); English under random keys is
+    the language reference."""
+    def stats(s):
+        n = len(s)
+        lag = [sum(s[i] == s[i + k] for i in range(n - k)) for k in (2, 3, 4)]
+        skip = _C((s[i], s[i + 2]) for i in range(n - 2))
+        rep_skip = sum(v - 1 for v in skip.values() if v > 1)
+        return np.array(lag + [rep_skip])
+    D = stats(SIGNS)
+    Pk = np.array([stats(s) for s in doublet_shuffles(2000)])
+    rng = random.Random(35); E = []
+    for _ in range(2000):
+        t = english(N, rng); cells = rng.sample([(o, a) for o in range(8) for a in range(3)], 24)
+        key = {c: cells[i % 24] for i, c in enumerate(sorted(set(t)))}
+        E.append(stats([key[c] for c in t]))
+    E = np.array(E)
+    names = ['repeats at gap 2', 'repeats at gap 3', 'repeats at gap 4', 'repeated skip-pairs (a ? b)']
+    for i, nm in enumerate(names):
+        print(f'  {nm:28s} Dorabella {D[i]:3d} | pair-keeping shuffles mean {Pk[:, i].mean():5.2f}, P(>=D) {np.mean(Pk[:, i] >= D[i]):.3f} '
+              f'| English mean {E[:, i].mean():5.2f}, P(<=D) {np.mean(E[:, i] <= D[i]):.3f}', flush=True)
+        log(35, f'beyond pairs: {nm}', float(D[i]), list(Pk[:, i].astype(float)), list(E[:, i].astype(float)),
+            f'pair-keeping mean {Pk[:, i].mean():.2f} P(>=D) {np.mean(Pk[:, i] >= D[i]):.3f}; English mean {E[:, i].mean():.2f}')
+
+
+# ------------------------------------------------------------------ round 36: a sentence break at the 1949 dot
+def split_solve(signs, cut, seed, R=20, iters=20000):
+    """One shared one-to-one key; the two parts scored as separate passages (no context across the break)."""
+    m = M4; rng = random.Random(seed)
+    syms = sorted(set(signs)); ct = np.array([syms.index(s) for s in signs])
+    a, b = ct[:cut], ct[cut:]
+    best = (-1e18, '')
+    for r in range(R):
+        key = np.array(rng.sample(range(m.A), len(syms)))
+        cur = m.score_idx(key[a]) + m.score_idx(key[b])
+        for i in range(iters):
+            T = 3.0 * (1 - i / iters) + 0.05
+            k2 = key.copy(); s = rng.randrange(len(syms))
+            if rng.random() < 0.3:
+                free = [x for x in range(m.A) if x not in set(k2.tolist())]; k2[s] = rng.choice(free)
+            else:
+                t = rng.randrange(len(syms)); k2[s], k2[t] = k2[t], k2[s]
+            sc = m.score_idx(k2[a]) + m.score_idx(k2[b])
+            if sc >= cur or rng.random() < math.exp((sc - cur) / T):
+                key, cur = k2, sc
+        if cur > best[0]:
+            best = (cur, ''.join(m.alpha[i] for i in key[a]) + ' | ' + ''.join(m.alpha[i] for i in key[b]))
+    return best[0] / N, best[1]
+
+
+@rnd(36)
+def round36():
+    for cut in (40, 41):                                # dot after sign 40 or 41 (line 2, sign 11 or 12)
+        D = split_solve(SIGNS, cut, 0)
+        nulls = [split_solve(s, cut, 100 + j)[0] for j, s in enumerate(shuffles(4))]
+        log(36, f'sentence break after sign {cut} (1949 dot)', D[0], nulls, [], D[1])
+
+
+# ------------------------------------------------------------------ round 40: notebook practice phrases; the Lullaby's words
+PRACTICE = ['averyoldcypher', 'averyoldcipher', 'doyougotolondon', 'marcoelgar', 'marco', 'cypher', 'london']
+
+
+@rnd(40)
+def round40():
+    raw = open(_os.path.join(HERE, 'src', 'music', 'lullaby_lyric.txt'), encoding='utf-8').read()
+    raw = re.sub(r'edition and engraving.*?secondary edition', ' ', raw)
+    words = raw.split()
+    dedup = [w for i, w in enumerate(words) if i == 0 or w != words[i - 1]]
+    letters = re.sub(r'[^a-z]', '', ''.join(dedup))
+    print(f'lyric stream {len(letters)} letters', flush=True)
+    T = {'Lullaby lyric': np.frombuffer(letters.encode(), dtype=np.uint8) - 97}
+    D = quote_search(SIGNS, T); nulls = [quote_search(s, T)[0] for s in shuffles(6)]
+    log(40, 'Lullaby lyric as the plaintext (every 87-letter window)', D[0], nulls, [], D[3], f'explains {D[0]}/87')
+    lyric_words = sorted({w for w in re.findall(r'[a-z]{5,}', ' '.join(dedup))})
+    global VISIT
+    saved = VISIT
+    VISIT = PRACTICE + lyric_words
+    try:
+        D = visit_cribs(SIGNS, 0)
+        nulls = [visit_cribs(s, 100 + j)[0] for j, s in enumerate(shuffles(3))]
+    finally:
+        VISIT = saved
+    log(40, f'cribs: notebook practice phrases + {len(lyric_words)} lyric words', D[0], nulls, [], D[1], D[2])
+
+
+# ------------------------------------------------------------------ round 51: names and places of Elgar's circle in 1897
+CIRCLE = ['alice', 'carice', 'jaeger', 'august', 'nimrod', 'schuster', 'troyte', 'griffith', 'winifred', 'norbury',
+          'isabel', 'fitton', 'sinclair', 'nevinson', 'townshend', 'arnold', 'baker', 'forli', 'malvern', 'birchwood',
+          'worcester', 'hereford', 'wolverhampton', 'penny', 'edward', 'elgar', 'ladyelgar', 'mrselgar']
+
+
+@rnd(51)
+def round51():
+    global VISIT
+    saved = VISIT; VISIT = CIRCLE
+    try:
+        D = visit_cribs(SIGNS, 0)
+        nulls = [visit_cribs(s, 100 + j)[0] for j, s in enumerate(shuffles(3))]
+    finally:
+        VISIT = saved
+    log(51, "cribs: names and places of Elgar's circle in 1897 (28)", D[0], nulls, [], D[1], D[2])
+
+
+# ------------------------------------------------------------------ round 52: a music model from the Lullaby arrangement
+@rnd(52)
+def round52():
+    """Note events of every staff of the NWC Lullaby arrangement as (staff position mod 7, duration class) tokens
+    (21 symbols); order-3 model; Dorabella solved as a melody (one-to-one sign -> token). Controls: windows of the
+    Treble staff (held out of the model), enciphered; nulls: shuffles."""
+    import json, glob
+    def toks(f):
+        out = []
+        for pos, dur, *_ in json.load(open(f)):
+            if pos is None:
+                continue
+            dc = 0 if dur < 2 else (1 if dur == 2 else 2)
+            out.append(chr(97 + (pos % 7) * 3 + dc))
+        return out
+    files = sorted(glob.glob(_os.path.join(HERE, 'src', 'music', '*.json')))
+    held = [f for f in files if f.lower().endswith('treble.json')]
+    train = ''.join(''.join(toks(f)) for f in files if f not in held)
+    alpha = ''.join(chr(97 + i) for i in range(21))
+    m = lm.DenseLM.build(train, 3, alpha)
+    print(f'music model: {len(train)} note tokens from {len(files) - len(held)} staves', flush=True)
+    def run(tokens, seed):
+        syms = sorted(set(tokens), key=str); ct = np.array([syms.index(t) for t in tokens])
+        sc, key = anneal(ct, len(syms), m, restarts=20, iters=20000, seed=seed, injective=len(syms) <= m.A)
+        return sc / len(ct), ''.join(m.alpha[i] for i in key[ct])
+    D, txt = run(SIGNS, 0)
+    nulls = [run(s, 100 + j)[0] for j, s in enumerate(shuffles(4))]
+    tr = ''.join(toks(held[0])); rng = random.Random(52); ctl, acc = [], []
+    for j in range(3):
+        p = rng.randrange(len(tr) - N); pt = tr[p:p + N]
+        cells = rng.sample([(o, a) for o in range(8) for a in range(3)], 24)
+        key = {c: cells[i] for i, c in enumerate(sorted(set(pt)))}
+        sc, t2 = run([key[c] for c in pt], 200 + j); ctl.append(sc); acc.append(np.mean([a == b for a, b in zip(t2, pt)]))
+    log(52, 'Dorabella as a melody (music model from the Lullaby arrangement)', D, nulls, ctl, txt,
+        f'ctl acc {min(acc):.2f}..{max(acc):.2f}', acc)

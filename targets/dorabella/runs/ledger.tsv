@@ -130,3 +130,67 @@ round	hypothesis	D	nulls	controls	verdict	best text	note
 27	all plausible readings jointly (48 positions), en-modern	-2.437	-2.531..-2.387	-2.353..-1.808	no power	jfjulinutsmyplacryifeagorotmenandoutquiryiithormydrengottomeifiredgrewbirdsheguewedulou	ctl acc 0.00..0.83
 27	all plausible readings jointly (48 positions), en-elgar	-2.312	-2.491..-2.405	-2.567..-2.283	no power	vxvictpilyhepremedtobesayashopeptailwindentsfadhendofcallahonotdonceoroteneforioroticch	ctl acc 0.08..0.29
 24	July 1897 visit cribs (29 words), every fitting offset	-2.889	-3.372..-3.026	-	above nulls	vsnactualdmorwopootssowidigmeuoutialfanoontgruomotherwillimenethenwhygenothregasgetawia	mother@47
+29	flips survive? fixed table (no key layer)	27.000	24.535..24.535	-	above nulls	mean flips 24.5, P(>=27) 0.335	
+29	flips survive? dial turned by a 5-step periodic key	27.000	10.749..10.749	-	above nulls	mean flips 10.7, P(>=27) 0.001	
+29	flips survive? Vigenere on the letters, period 5	27.000	10.867..10.867	-	above nulls	mean flips 10.9, P(>=27) 0.000	
+29	flips survive? Vigenere, period 3	27.000	10.668..10.668	-	above nulls	mean flips 10.7, P(>=27) 0.001	
+29	flips survive? autokey (shift by previous letter)	27.000	11.536..11.536	-	above nulls	mean flips 11.5, P(>=27) 0.001	
+29	flips survive? running key from English	27.000	10.595..10.595	-	above nulls	mean flips 10.6, P(>=27) 0.000	
+29	flips survive? Nihilist (coordinates added, key 7)	27.000	10.809..10.809	-	above nulls	mean flips 10.8, P(>=27) 0.000	
+29	flips survive? progressive dial (+1 each sign)	27.000	7.739..7.739	-	above nulls	mean flips 7.7, P(>=27) 0.000	
+30	solvability at 87 signs: Elgar's letters (not in the model)	0.839	0.000..0.000	0.161..1.000	diagnostic	share >= 90%: 0.42	
+30	solvability at 87 signs: Gutenberg prose (in the model)	0.989	0.000..0.000	0.195..1.000	diagnostic	share >= 90%: 0.58	
+28	flip-heavy key prior (beta 3.0) + misreads <= 8	-2.770	-3.054..-2.771	-2.379..-2.276	above nulls	zymainwalkhetrebeenoyerikishoweinialcameemnstwehendotrillwhomondomrdosomendtosaysonaria	edits 5; ctl acc 0.63..0.91
+32	large search: en-modern, consensus	-2.711	-	-	diagnostic	best of 920 x 60k	top text found 2/920; 10th best -2.745; flat landscape of distinct gibberish optima
+32	large search: en-modern, measured	-2.750	-	-	diagnostic	best of 920 x 60k	top text found 22/920; distinct optima within 0.1
+32	large search: en-elgar, consensus	-2.709	-	-	diagnostic	best of 920 x 60k	top text found 3/920
+32	large search: en-elgar, measured	-2.746	-	-	diagnostic	best of 920 x 60k	top text found 7/920
+31	Elgar's letters at 87 signs, 12 restarts: solved / search fail / model fail	0.417	0.417..0.417	0.167..0.167	no power	solved 5, search failures 5, model failures 2 of 12	
+31	Elgar's letters at 87 signs, 60 restarts: solved / search fail / model fail	0.917	0.083..0.083	0.000..0.000	no power	solved 11, search failures 1, model failures 0 of 12	
+33	misread-tolerant large search (≤6 slips), consensus	-2.548	-2.811..-2.586	-2.381..-1.997	negative	jpnextselfwisdickitapidoforwasistselveniintrysiwithmydollowanathandharanithyarepratedoe	230 runs x 60k; ctl acc 0.89..0.95 (Elgar letters, 6 seeded slips)
+33	misread-tolerant large search (≤6 slips), Jager's transcription	-2.556	-2.811..-2.586	-2.381..-1.997	negative	zpnehusedmyofcologupporamaryisofusedvenoonurssoyoutifcaddayinintinctbrinoutfirepriverhe	4 slips used
+35	beyond pairs: repeats at gap 2	5.000	1.000..13.000	0.000..12.000	no power	pair-keeping mean 6.39 P(>=D) 0.846; English mean 3.83	
+35	beyond pairs: repeats at gap 3	8.000	0.000..17.000	0.000..16.000	no power	pair-keeping mean 5.90 P(>=D) 0.232; English mean 5.37	
+35	beyond pairs: repeats at gap 4	3.000	0.000..13.000	0.000..15.000	negative	pair-keeping mean 5.23 P(>=D) 0.910; English mean 5.32	
+35	beyond pairs: repeated skip-pairs (a ? b)	14.000	5.000..21.000	4.000..45.000	negative	pair-keeping mean 12.67 P(>=D) 0.371; English mean 15.19	
+36	sentence break after sign 40 (1949 dot)	-2.706	-3.041..-2.812	-	above nulls	bstimpringdeycekeepssecogoldarerpoinvite | etplyredephayconnodataphatchflatephyalislapicoi	
+36	sentence break after sign 41 (1949 dot)	-2.639	-3.071..-2.831	-	above nulls	bstimpringheydefeepssedogocharerpoinvitee | tpcyreheplaydonnohataplatdlucateplyaciscapidoi	
+34	homophones (≤2 per letter) large search	-2.224	-2.331..-2.247	-2.011..-1.810	negative	csdidarionheiseheeassestntthererationideedatireheareistoothedearedsratedearietisteaisti	230 runs x 60k; ctl acc 0.83..0.99 on 3 of 4
+37	Latin at full power	-2.241	-2.394..-2.248	-1.915..-1.635	negative	aqnecstemplibridiisqqirapaulititsaemoeniinsubtilisiibrammalinisiinriguinisibiuequiserae	115 runs x 60k; ctl acc 0.83..1.00
+37	French at full power	-2.754	-3.136..-2.911	-2.619..-1.584	negative	kmsoftroncleudeveetmmediciplarertionjoseestpurelethaudinnilasathasdhypasethuapompatodio	ctl acc 0.87..1.00
+37	German at full power	-2.948	-3.291..-3.054	-1.987..-1.490	negative	clrufigundwemsekeeillesodohwagegiounzureerihmgeweitamsonnowaraitarstphareitmahulhaiusou	ctl acc 0.99..1.00
+37	Italian at full power	-2.814	-3.397..-3.162	-2.153..-1.648	negative	fgnadevamplistiziieggitupurloviveuambaniinersviliecostummulonoecontcyroniecsoragroeatua	ctl acc 0.93..1.00
+37	Spanish at full power	-2.653	-3.060..-2.873	-2.670..-1.773	negative	vprownsoftheydebeenppeditilhasesniofmoreernlysehencaydiffiharancardcularencyaloplanodio	ctl acc 0.37..1.00
+38	back-slang at full power	-2.701	-3.169..-2.958	-2.276..-2.057	negative	xfdahstalgwemneveesffenigirwotetsialyadeedsrmtewesuomnilliwodosuodnubrodesumorafrosania	ctl acc 0.86..1.00
+38	consonant skeleton at full power	-2.442	-2.657..-2.525	-2.461..-2.129	negative	jpgridvrtmblcwlklldpplwhmhsbnvlvdhrtfrgllgdscvlbldyncwhtthbngndyngwyasngldycnsrpsndrwhr	ctl acc 0.00..0.97 (2/4); partial power
+38	abbreviations at full power	-2.685	-2.941..-2.767	-2.411..-1.878	negative	jgmobntofclaspawaanggapecerlitatneofhomaamnrstalandispeffelimindimpdurimandsirogrinopeo	ctl acc 0.48..0.97 (2/4)
+38	reversed text at full power	-2.730	-3.199..-2.962	-2.113..-1.937	negative	csdahtwalgfemneveetssenigirfowewtialpadeedtrmwefetuomnillifodotuodnubrodetumorasrotania	ctl acc 0.93..1.00
+39	consonant skeleton, 230 runs, 8 controls, 6 shuffles	-2.442	-2.607..-2.525	-2.450..-2.087	negative	jpgridvrtmblcwlklldpplwhmhsbnvlvdhrtfrgllgdscvlbldyncwhtthbngndyngwyasngldycn	word-skeleton segmentation -3.24/letter: shuffles -2.91..-3.63, real controls -2.28..-2.80
+40	Lullaby lyric as the plaintext (every 87-letter window)	30.000	30.000..32.000	-	negative	leepdayohcresclullabyaohsleepohsleepmysleepmysleepmysleepmysonafarafarafarafarawayzithe	explains 30/87
+40	cribs: notebook practice phrases + 38 lyric words	-2.889	-3.243..-3.109	-	above nulls	vsnactualdmorwopootssowidigmeuoutialfanoontgruomotherwillimenethenwhygenothregasgetawia	mother@47
+41	Elgar register + misreads (≤6)	-2.585	-2.826..-2.523	-2.487..-1.845	negative	dkrousionwhalfamaaskkatiwitheyalsionboraarstlyahaspelfinniheresperfacteraspletoknesofyo	ctl acc 0.41..0.95
+41	Latin + misreads (≤6)	-2.177	-2.390..-2.282	-2.184..-1.852	negative	qlregnaesomendebeenlleditiumeaeaniescerternunaementendissimerenterdefuerentneueluenedie	score inside control range; Latin-word segmentation 0.70 / -3.02 per letter = shuffles (0.59..0.71); recovered controls 0.83..0.90
+42	homophones Latin	-2.080	-2.213..-2.056	-1.984..-1.826	negative	xcsantsalmdentereetccetumuidesestuallaseestinsedetientullude	word seg -2.99 vs recovered -2.09
+42	homophones French	-2.076	-2.244..-2.168	-2.105..-1.715	above nulls	ulriciditpressepeeillesapatredediaitdireeritsdereilessattare	word seg -3.00 vs recovered -1.86..-1.88
+42	homophones German	-2.082	-2.433..-2.261	-1.846..-1.527	above nulls	bsruhrtundbeinemeerssenadasbetetraunzureerrsiteberdeinannabe	word seg -2.97 vs recovered -1.82..-2.20
+43	phonetic English, 25 classes, full power	-2.853	-3.2..-2.922	-2.347..-1.967	negative	jftcqpncmrulivldllpfflvxrxsuanlnpxcmyctlltpsinlulpwaivxmmxua	3/4 controls
+44	columns, full power	-3.043	-3.1..-2.916	-1.971..-1.814	negative	knigorinsasupersainthabutaywifmorooidiohssofulddonroofsmagog	
+44	each line reversed, full power	-2.695	-2.9..-2.763	-1.971..-1.814	above nulls	asmutuneddreevenhestpocryoldfasuppunhairesechmrleelowpourcec	
+45	Danish, full power	-2.663	-2.9..-2.709	-1.928..-1.556	above nulls	ckrousnoghvadmajaaskkamihilvenansiogforaarsldnavastedmiggive	
+45	Welsh, full power	-2.512	-2.7..-2.560	-2.204..-2.093	above nulls	ktdyfrbynclosgomoorttogwcwelabobrwynhydoodresboloriasgwnnwla	
+46	Elgar register + homophones	-2.221	-2.379..-2.276	-2.119..-1.610	above nulls	bsnextrendmeidefeetssediditmarertienceneenttiremetraidinnima	word seg -3.73 = failed control
+47	singletons as nulls, full power	-2.806	-2.9..-2.798	-1.971..-1.814	negative	dmanualfhegreeendderifishoueunialameemnsguehentogrillihomont	
+48	R48 order ct_diag.txt	-3.035	-	-	negative	zdtsosetrulllapterecschmyepisgoonformssolownlofpotflordindoeoldmpnarryflamenamicarceair	full power; see runs/r48_50.txt for shuffles
+48	R48 order ct_spiral.txt	-2.779	-	-	negative	zdsignhimyreflebeenddelayaortialintodiotfunestopulstuntshehnaimwiseesnofherenutflammart	full power; see runs/r48_50.txt for shuffles
+48	R48 order ct_colsrev.txt	-3.077	-	-	negative	uyuayiwisaaarlladslueofunewnoneysoowohumddowfleedtoootyourtwisksjfhilestpausefthenought	full power; see runs/r48_50.txt for shuffles
+49	R49 measured la	-2.284	-	-	negative	zpzigilisomathanaacpraelouemplaliuisdicaaccetlamadatthussumtibiatchabetiadatthipetiihum	full power; see runs/r48_50.txt for shuffles
+49	R49 measured fr-modern	-3.041	-	-	negative	kgkahlcampnetdefeergquicpoingcucloambareerritcenebestdommonslvlusrduvislebutsdagisladon	full power; see runs/r48_50.txt for shuffles
+49	R49 measured de-modern	-3.179	-	-	negative	xmxaftsalchongobookmpeusciuhmsestialdakookkunsohodorngillihrtzterkgezurtodenrgamurtagih	full power; see runs/r48_50.txt for shuffles
+49	R49 measured it-modern	-3.462	-	-	negative	kbkovtrosplindiziimbycerpuelbrcrtuosgomiimmenriligiandussulathtcamdcheatigcnadobeatodul	full power; see runs/r48_50.txt for shuffles
+49	R49 measured es-modern	-2.914	-	-	negative	gygovrtofhmendebeelyjusthismytutriofcoleellsntemeceandiffimarprualdupsarecunadoysarodim	full power; see runs/r48_50.txt for shuffles
+50	R50 jager la	-2.185	-	-	negative	bxnecsdempriugiliisxxitapatridiusdemoeniinstudiristiugammarinistingtotinistuitextisetce	full power; see runs/r48_50.txt for shuffles
+50	R50 jager fr-modern	-2.667	-	-	negative	bscujalumfdethepeeassenofondiletalumvuceecantledearithommodiciarichryniceartinusniaunju	full power; see runs/r48_50.txt for shuffles
+50	R50 jager de-modern	-2.893	-	-	negative	qsrufigumblenkedeeissehobohlagenigumzureerihngeleitankommolaraitarktphareitnahushaiuhfu	full power; see runs/r48_50.txt for shuffles
+50	R50 jager it-modern	-2.771	-	-	negative	jgcavorandmethebeeoggeludulmiretoranfaceecoltremeosithunnumiciosichspliceostilaglioalva	full power; see runs/r48_50.txt for shuffles
+50	R50 jager es-modern	-2.579	-	-	negative	wpnevsdelfmoutoyoospporifirmadousdelgenoonsrudomoscautillimanascantchranoscuarepraserve	full power; see runs/r48_50.txt for shuffles
+51	cribs: names and places of Elgar's circle in 1897 (28)	-3.201	-3.338..-3.196	-	negative	vcpdjawdsthenmebeeaccemitilhowewaidsudpeepalnwehearonmissihopoaropmrflopearnoldcloadmid	arnold@73

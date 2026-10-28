@@ -1,6 +1,6 @@
 # Dorabella cryptogram (Elgar to Dora Penny, July 1897)
 
-Status: no write-up (famous target, attempted, open; see "Where it stands")
+Status: in progress (written up 28 Oct 2026 as not solved, attempted, open; hypothesis loop continuing, see runs/loop.md)
 
 Famous target (`FAMOUS` in `docs/_check_writeup.py`): no profile.json, not in the paper data.
 Survey context: `docs/famous.html` (classed "unprovable"), `research/top50/NOTES.md` row 26.

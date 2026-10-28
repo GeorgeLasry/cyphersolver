@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Elgar&rsquo;s Dorabella cipher (1897) — Attempted</title>
+<meta name="description" content="Edward Elgar's 87-sign note to Dora Penny of 14 July 1897, tested here in 50 calibrated rounds against shuffled copies and real English put through the same systems. The opposite-orientation flips force one fixed table if it is a message; under that table no language, plaintext form, misread allowance or homophone set produces a reading, and the statistics fit a writer with strong pair habits as well as they fit English. Not solved; what remains needs a second text or a better image.">
+<link rel="stylesheet" href="style.css?v=20261027c">
+<meta name="date" content="2026-10-28">
+<meta name="last-modified" content="2026-10-28">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+</head>
+<body id="top">
+<header class="nav"><div class="in">
+  <a class="brand" href="index.html"><span class="glyph">972</span><span>Cyphersolver</span></a>
+  <button class="navtoggle" type="button" aria-expanded="false" aria-controls="sitemenu"><span></span><span></span><span></span><i>Menu</i></button>
+  <nav id="sitemenu" class="links" aria-label="Site">
+    <details class="menu"><summary class="active">Write-ups <svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary>
+      <div class="panel wp"><div class="grp latest"><h4>Latest</h4><ul><li><a href="dorabella.html" aria-current="page"><i class="dot stuck" aria-hidden="true"></i><b>Dorabella, 1897</b><span class="yr">1897</span><span class="m">not solved</span></a></li><li><a href="portstemarie1729.html"><i class="dot solved" aria-hidden="true"></i><b>Port Sainte-Marie 1729</b><span class="yr">1729</span><span class="m">key from adjacent plaintext</span></a></li><li><a href="poinsett1813.html"><i class="dot stuck" aria-hidden="true"></i><b>Poinsett, Santiago 1813</b><span class="yr">1813</span><span class="m">not solved</span></a></li><li><a href="albornoz1648.html"><i class="dot solved" aria-hidden="true"></i><b>Philip IV to Albornoz 1648</b><span class="yr">1648</span><span class="m">key from external plaintext</span></a></li><li><a href="marmont1812.html"><i class="dot partial" aria-hidden="true"></i><b>Jourdan and Marmont 1812</b><span class="yr">1812</span><span class="m">known key applied &middot; partial</span></a></li><li><a href="ellis1839.html"><i class="dot solved" aria-hidden="true"></i><b>Ellis from Mexico 1836&ndash;39</b><span class="yr">1836&ndash;1839</span><span class="m">existing decipherment</span></a></li></ul></div><div class="grp outc"><h4>By outcome</h4><ul><li><a href="writeups.html#kind=ct"><i class="dot solved" aria-hidden="true"></i><b>Ciphertext-only break</b><b class="sh">Ciphertext-only</b><span class="n">73</span></a></li><li><a href="writeups.html#kind=extpt"><i class="dot solved" aria-hidden="true"></i><b>Key from external plaintext</b><b class="sh">Ext. plaintext</b><span class="n">14</span></a></li><li><a href="writeups.html#kind=adjpt"><i class="dot solved" aria-hidden="true"></i><b>Key from adjacent plaintext</b><b class="sh">Adj. plaintext</b><span class="n">86</span></a></li><li><a href="writeups.html#kind=extkey"><i class="dot solved" aria-hidden="true"></i><b>External key matched</b><b class="sh">External key</b><span class="n">30</span></a></li><li><a href="writeups.html#kind=known"><i class="dot solved" aria-hidden="true"></i><b>Known key applied</b><b class="sh">Known key</b><span class="n">97</span></a></li><li><a href="writeups.html#kind=deciph"><i class="dot solved" aria-hidden="true"></i><b>Existing decipherment</b><b class="sh">Existing reading</b><span class="n">91</span></a></li><li><a href="writeups.html#kind=notsolved"><i class="dot stuck" aria-hidden="true"></i><b>Not solved</b><b class="sh">Not solved</b><span class="n">73</span></a></li><li><a href="writeups.html#kind=na"><i class="dot found" aria-hidden="true"></i><b>Not applicable</b><b class="sh">Not applicable</b><span class="n">18</span></a></li><li><a href="writeups.html#kind=other"><i class="dot todo" aria-hidden="true"></i><b>Not yet classified</b><b class="sh">Unclassified</b><span class="n">1</span></a></li><li><a href="writeups.html#kind=survey"><i class="dot todo" aria-hidden="true"></i><b>Surveys</b><b class="sh">Surveys</b><span class="n">2</span></a></li></ul></div><div class="foot"><a class="all" href="writeups.html">All 485 write-ups, with filters &rarr;</a><a href="writeups.html#src=notes">Results only in the notes</a></div></div></details>
+    <details class="menu"><summary>Explore <svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary>
+      <div class="panel ex"><ul><li><a href="highlights.html"><b>Highlights</b><span class="d">Thirty favourites: the funny, the historic, the ingenious</span></a></li><li><a href="glossary.html"><b>Glossary</b><span class="d">How each cipher was solved, and the terms used</span></a></li><li><a href="famous.html"><b>The famous ones</b><span class="d">Why Voynich, Kryptos, Beale and Dorabella resist</span></a></li><li><a href="atlas.html"><b>Atlas</b><span class="d">Every letter drawn on the map, five centuries of it</span></a></li><li><a href="keys.html"><b>Key web</b><span class="d">Which key read which letter</span></a></li><li><a href="secret.html"><b>Secret letter</b><span class="d">Seal a message in a real historical cipher</span></a></li></ul><div class="foot"><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">The code and the working notes on GitHub &#8599;</a></div></div></details>
+    <a class="navcat" href="catalogue.html">Catalogue<span class="sticker" aria-hidden="true"><span><b>Help<br>Solve!</b></span></span></a>
+    <a class="navcat" href="further.html">Read further<span class="sticker alt" aria-hidden="true"><span><b>Finish<br>It!</b></span></span></a>
+    <a href="contributors.html">Contributors</a>
+    <button class="searchbtn" type="button" aria-label="Search the site" aria-keyshortcuts="/ Control+K"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><circle cx="6.8" cy="6.8" r="5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 10.5L15 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span>Search</span><kbd>/</kbd></button>
+    <button class="theme" type="button" aria-label="Switch between dark and light" title="Dark / light"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.2" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.8a6.2 6.2 0 0 1 0 12.4z" fill="currentColor"/></svg></button>
+  </nav>
+</div></header>
+<div class="search" id="search" hidden>
+  <div class="sbox" role="dialog" aria-modal="true" aria-label="Search the site">
+    <form class="sform" role="search" onsubmit="return false">
+      <svg width="18" height="18" viewBox="0 0 16 16" aria-hidden="true"><circle cx="6.8" cy="6.8" r="5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 10.5L15 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      <input type="search" id="sq" placeholder="Search names, places, shelfmarks, words of the cipher&hellip;" autocomplete="off" spellcheck="false" aria-label="Search" aria-controls="sres">
+      <button type="button" class="sclose" aria-label="Close search">Esc</button>
+    </form>
+    <div class="sres" id="sres" role="listbox" aria-label="Results"></div>
+    <div class="shint"><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> move</span><span><kbd>&crarr;</kbd> open</span><span><kbd>Esc</kbd> close</span><span class="sn" id="sn"></span></div>
+  </div>
+</div>
+<section class="hero">
+  <div class="cipherstrip">A2 E3 B2 A3 A1 C2 G1 A3 D1 H2 B3 F2 F1 B1 F2 C3 &hellip;<br>orientation A&ndash;H (opening right, then clockwise) &middot; arcs 1&ndash;3 &middot; 87 signs, 20 of 24 used</div>
+  <p class="kicker">Malvern &rarr; Dora Penny, Wolverhampton &middot; 24 arc signs &middot; 14 July 1897 &middot; not solved</p>
+  <h1>Elgar&rsquo;s Dorabella cipher</h1>
+<div class="parties"><figure class="party sender"><img src="portrait_edward-elgar.jpg" alt="Edward Elgar" title="Edward Elgar: Photograph reproduced in J. Cuthbert Hadden, Modern Musicians (1913). Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">from</span>Edward Elgar</figcaption></figure></div><!-- /parties -->
+  <p class="sub">Edward Elgar&rsquo;s 87-sign note to Dora Penny, tested here in fifty calibrated rounds; no language, key or plaintext form gives a reading, and what is left needs a second text or a better image.</p>
+  <p class="meta">Daniel Bourdeau &middot; attempted <time datetime="2026-10-28">28 October 2026</time></p>
+<div class="seal stuck" aria-hidden="true"><span>not solved</span></div>
+</section>
+
+<main>
+<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#note">The note</a><a href="#signs">What the signs show</a><a href="#method">How it was tested</a><a href="#tried">What was ruled out</a><a href="#flips">The flips and the fixed table</a><a href="#open">Where it stands</a><a href="#finish">What would finish it</a><a href="#sources">Sources</a></nav>
+<div class="callout glance">
+<p class="gl-top"><strong>At a glance</strong><span class="gl-res">Not solved &middot; text not obtained</span></p>
+<dl>
+  <dt>The document</dt><dd>A slip of 87 signs in three lines, dated 14 July 1897, sent by Edward Elgar to Dora Penny inside a letter from Alice Elgar to Dora&rsquo;s stepmother after the Elgars&rsquo; visit to Wolverhampton.</dd>
+  <dt>Where</dt><dd>The original is lost. The source is the plate on p.&nbsp;98 of Dora Powell&rsquo;s <em>Edward Elgar: Memories of a Variation</em> (1937); the 1949 edition differs by a second dot.</dd>
+  <dt>The cipher</dt><dd>Each sign is one, two or three arcs facing one of eight directions: 24 possible signs, 20 of them used. Elgar&rsquo;s notebook key of the 1920s is one ordered layout of these 24 signs.</dd>
+  <dt>How it was tried</dt><dd>Fifty rounds, every hypothesis scored on Dorabella, on shuffled copies of its signs, and on real English put through the same system; a reading has to reach the level the real text reaches.</dd>
+  <dt>What it shows</dt><dd>The signs flip to the opposite direction 27 times, against 12.6 by chance. Any key that changes as it goes would wash that out, so a message would use one fixed table; under one fixed table nothing reads.</dd>
+  <dt>Still open</dt><dd>Whether it is a message at all, or a sequence with strong writing habits; this cannot be decided from 87 signs. A second text in the same system or a cleaner plate would.</dd>
+  <dt>Credit</dt><dd>Transcription: Hauer, Choi, Hindle, Smallwood and Kondrak (2025). Independent tests: Cooper Jager (2026). Prior analysis: Wase (2023), Nick Pelling, Klaus Schmeh.</dd>
+</dl>
+</div>
+
+<h2 id="note"><span class="num">01</span> The note</h2>
+<figure data-credit="Dora M. Powell, Edward Elgar: Memories of a Variation (Oxford University Press, 1937), p. 98, via the Internet Archive (Digital Library of India, in.ernet.dli.2015.155431)"><img src="dorabella_plate1937.jpg" alt="Three lines of small semicircle signs in one, two or three arcs, each facing one of eight directions, with a dot above the first line" loading="lazy"><figcaption>The cipher as printed in the first edition of Dora Penny&rsquo;s memoir, the only source since the original was lost. <span class="credit">Image: Dora M. Powell, Edward Elgar: Memories of a Variation (Oxford University Press, 1937), p. 98, via the Internet Archive (Digital Library of India, in.ernet.dli.2015.155431).</span></figcaption></figure>
+<p>Dora Penny printed the note as an appendix to her memoir of Elgar, saying it was &ldquo;the third letter I had from him, if indeed it is one&rdquo; and that it had come enclosed in a letter from Alice Elgar after the Elgars&rsquo; visit to Wolverhampton in July 1897. On the back was written &ldquo;Miss Penny&rdquo;. She never had an explanation of it. The mark under the third line is a date, 14 July &rsquo;97, not a signature.</p>
+<p>The transcription used throughout is the five-reader consensus of Hauer et al. (2025): each sign is written as its orientation, A to H going clockwise from &ldquo;opens to the right&rdquo;, and its number of arcs, 1 to 3. The three lines have 29, 31 and 27 signs. Twenty of the 24 possible signs occur; the commonest, F2, eleven times. Readers disagree on 11 positions; a measurement of the 1937 scan here reclassifies 17 signs, and Cooper Jager&rsquo;s 2026 reading differs at five. All of these readings were tested.</p>
+
+<h2 id="signs"><span class="num">02</span> What the signs show</h2>
+<p>Three facts hold whatever key is assumed.</p>
+<ul>
+  <li><strong>The order is not random.</strong> The note repeats 19 pairs of adjacent signs; shuffled copies of the same signs repeat 11.2 on average (P&nbsp;=&nbsp;0.004).</li>
+  <li><strong>It behaves like English letters on every statistic no key can change.</strong> Number of distinct signs, index of coincidence (0.059), repeated pairs, doubled signs and singletons together are typical of 87 letters of English (P&nbsp;0.84) and of Elgar&rsquo;s own letters (P&nbsp;0.89), and atypical of speech sounds (0.002), music (0.03) and Latin (0.04).</li>
+  <li><strong>Consecutive signs face opposite ways far too often.</strong> A 180&deg; turn between neighbours occurs 27 times against 12.6 expected; none of 5,000 shuffles reached 27. English under a random key gives 11; under the best layout of letters on the dial, about 25.</li>
+</ul>
+<p>One caution, first made by Jager: shuffles that keep every adjacent pair of the note match it on all of these, and on repeats two to four signs apart. A writer who chooses each sign from the one before, with strong habits, fits the statistics as well as English does. At 87 signs the two cannot be told apart.</p>
+
+<h2 id="method"><span class="num">03</span> How it was tested</h2>
+<p>Every hypothesis was scored three ways: on the note; on copies with its signs shuffled, or shuffled keeping every adjacent pair; and on real text, usually windows of Elgar&rsquo;s own letters to the Pennys, put through exactly the system being tested. A result counts as a reading only if the note reaches the range of the real text and its decode splits into real words of the language; scoring above the shuffles alone only reflects the note&rsquo;s known structure.</p>
+<p>The solver&rsquo;s power was measured, not assumed. With the fast settings used in the first rounds, 87 letters of Elgar&rsquo;s letters were recovered only 42% of the time; the failures were search failures, and with sixty restarts eleven of twelve windows were recovered (93&ndash;100%). From round 31 on, the main branches were run again at that strength or more, up to 920 independent long runs on 23 processor cores.</p>
+
+<h2 id="tried"><span class="num">04</span> What was ruled out</h2>
+<table>
+<thead><tr><th>Branch</th><th>Result</th></tr></thead>
+<tbody>
+<tr><td>Simple substitution in English and in Elgar&rsquo;s own register</td><td>3,680 long runs: best &minus;2.71 per letter, below every real Elgar window (&minus;1.80 to &minus;2.56); a flat field of different gibberish texts</td></tr>
+<tr><td>Up to six misread signs</td><td>Controls with six seeded misreads recovered at 89&ndash;95%; the note no better than its shuffles</td></tr>
+<tr><td>Homophones (two signs for a letter)</td><td>Controls recovered 3 of 4; the note level with its shuffles, decodes segment like failed controls</td></tr>
+<tr><td>Latin, French, German, Italian, Spanish, Dutch, Portuguese, Danish, Swedish, Welsh, Hungarian, Polish</td><td>Own-language controls recovered at 83&ndash;100%; the note at or just above its shuffles in each</td></tr>
+<tr><td>Back-slang, reversed text, abbreviations, English without vowels, phonetic spelling, syllables, word initials</td><td>Negative; the vowel-less form came closest and its decode splits into word skeletons no better than shuffles do</td></tr>
+<tr><td>Elgar&rsquo;s notebook alphabet, every ordered layout (1,081,600)</td><td>Best &minus;5.06 per letter, gibberish</td></tr>
+<tr><td>Keyed systems: Vigen&egrave;re, Beaufort, autokey, running keys from the Bible, Shakespeare, verse and Powell, Nihilist with COURAGE, the Roe grid with all 5,040 group orders</td><td>Negative, and excluded as a class by the flips (section 05)</td></tr>
+<tr><td>Transpositions, reading orders, mirror writing, nulls, word spaces</td><td>Negative; the written order already has the most repeated pairs</td></tr>
+<tr><td>Bacon, Morse, semaphore pairs, note names, Playfair</td><td>Negative; Playfair impossible, since two identical signs would fall inside one pair</td></tr>
+<tr><td>Cribs: openings, sign-offs, the July 1897 visit, Elgar&rsquo;s practice phrases, the Lullaby he played that week (tune and words)</td><td>Negative; no sign-off can end the note, since its last two signs differ</td></tr>
+<tr><td>Known quotations: every 87-letter window of the King James Bible, Shakespeare, Longfellow (including King Olaf), Tennyson, Browning and Elgar&rsquo;s letters</td><td>Best fit 37 of 87; shuffles 35; a real quotation with six misreads 80</td></tr>
+</tbody>
+</table>
+
+<h2 id="flips"><span class="num">05</span> The flips and the fixed table</h2>
+<p>The flips are a property of how letters sit on the dial, so they survive only if the dial stays the same. When English is enciphered with a fixed table that puts common neighbours on opposite sides, the flips come out at 24.5 on average and reach 27 a third of the time; when any changing key is added (a periodic dial turn, Vigen&egrave;re, autokey, a running key, Nihilist), they drop to 8&ndash;12 and reach 27 in at most one sample in a thousand. If the note is a message, Elgar wrote it with one fixed table throughout. English under such a flip-heavy table reproduces all six measured statistics at once (P&nbsp;0.71), which neither a simple pseudo-writer (0.008) nor English under a random key (0.013) does.</p>
+<p>That is what makes the failure informative. With the transcription as it stands, English under one fixed table would be found about nine times in ten; the long search instead returns a flat field of different gibberish texts, none recurring, all below the worst real Elgar window.</p>
+
+<h2 id="open"><span class="num">06</span> Where it stands</h2>
+<p>Under the consensus transcription, the note is not English, Elgar&rsquo;s own register, any of eleven other languages or any of the plaintext forms tried, written with one fixed table, with up to six misreads or with homophones. Two explanations remain, and 87 signs cannot separate them:</p>
+<ul>
+  <li><strong>A message the tests cannot reach</strong>: more misreads than the plate allows to be modelled (ten or more), a key changing partway through, or a plaintext form not tried.</li>
+  <li><strong>No message</strong>: a deliberate sequence written with strong habits (the flips, the repeated pairs), which fits every statistic measured.</li>
+</ul>
+<p>Undecidable at this length: a writer&rsquo;s pair habits against language, a key changing partway, ten or more misreads, sign pairs or word signs standing for letters.</p>
+
+<h2 id="finish"><span class="num">07</span> What would finish it</h2>
+<ul>
+  <li><strong>A second text in the same system.</strong> Elgar&rsquo;s Courage cards (the first carries about ten such signs) and the &ldquo;Microcryptogram&rdquo; sold at Sotheby&rsquo;s (lot 92). Any surviving key could then be checked on two documents.</li>
+  <li><strong>Better images.</strong> The 1946 and 1949 printings of the memoir (the 1949 one has a second dot at line 2, sign 11 or 12) and the Elgar Birthplace Museum&rsquo;s photograph, to settle the 23 doubtful signs.</li>
+  <li><strong>How people fake ciphers.</strong> Recordings of people inventing cipher-like squiggles would test the no-message explanation directly.</li>
+</ul>
+
+<h2 id="sources"><span class="num">08</span> Sources</h2>
+<ul>
+  <li>Dora M. Powell, <em>Edward Elgar: Memories of a Variation</em> (Oxford University Press, 1937), appendix p. 98, <a href="https://archive.org/details/in.ernet.dli.2015.155431">Internet Archive</a>.</li>
+  <li>B. Hauer, C. Choi, A. Hindle, S. Smallwood, G. Kondrak, &ldquo;Dorabella Cipher as Musical Inspiration&rdquo;, <a href="https://arxiv.org/abs/2509.17950">arXiv 2509.17950</a> (2025): the consensus transcription.</li>
+  <li>V. Wase, &ldquo;Dorabella unMASCed&rdquo;, <em>Cryptologia</em> (2023).</li>
+  <li>C. Jager, <a href="https://github.com/cjager13/Dorabella-cipher-tests">Dorabella-cipher-tests</a> (2026): independent calibrated tests and a transcription with nine uncertain signs.</li>
+  <li>N. Pelling, <a href="https://ciphermysteries.com/other-ciphers/the-dorabella-cipher">Cipher Mysteries: The Dorabella Cipher</a>, and its comment thread (2012&ndash;2026).</li>
+  <li>K. Schmeh, <a href="https://scienceblogs.de/klausis-krypto-kolumne/2017/08/03/the-top-50-unsolved-encrypted-messages-26-the-dorabella-cryptogram/">Top 50, no. 26: the Dorabella cryptogram</a> (2017).</li>
+  <li>J. Holt Schooling, &ldquo;Secrets in Cipher&rdquo;, <em>Pall Mall Magazine</em> 8 (1896), parts I&ndash;IV, Internet Archive.</li>
+</ul>
+
+<p class="muted">Everything is in <code>targets/dorabella/</code> in the project repository: <code>NOTES.md</code> (the full record, steps 1&ndash;26), <code>HYPOTHESES.md</code> (the hypothesis map with every branch&rsquo;s status), <code>runs/loop.md</code> and <code>runs/ledger.tsv</code> (all fifty rounds and every number), the test harness (<code>hyp.py</code>, <code>rounds.py</code>, <code>bigsolve.py</code>), the transcriptions (<code>ct.txt</code>, <code>ct_measured.txt</code>, <code>ct_jager.txt</code>) and the interactive map (<code>hypothesis-map.html</code>).</p>
+</main>
+<footer><div class="in">
+  <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; Image: Powell, Memories of a Variation (1937), p. 98, via the Internet Archive</span>
+  <nav aria-label="Footer"><a href="index.html">Overview</a><a href="debosnys.html" rel="prev">&larr; Debosnys 1883</a><a href="army1902.html" rel="next">Japanese Army kana cipher 1902&ndash;04 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
+</div></footer>
+<script src="zoom.js?v=20261027c" defer></script>
+<script src="site.js?v=20261027c"></script>
+</body>
+</html>
