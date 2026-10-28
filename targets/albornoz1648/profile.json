@@ -1,0 +1,294 @@
+{
+ "schema_version": 1,
+ "target": "albornoz1648",
+ "title": "Philip IV to Cardinal Albornoz, Madrid, 24 July 1648 (catalogue 747): keep the nuncio Rospigliosi, the future Clement IX; key rebuilt from a 1649 plain copy",
+ "documents": [
+  {
+   "id": "osuna-ct2-d32",
+   "read": "read",
+   "shelfmark": "AHNOB, OSUNA,CT.2,D.32(1-2) (PARES 3939398), copy A images 2-3, copy B image 5",
+   "date": "24 July 1648",
+   "year": 1648,
+   "country": "Spain",
+   "route": "Madrid -> Rome",
+   "places": {
+    "from": "Madrid",
+    "to": "Rome"
+   },
+   "language": "Spanish",
+   "pages": 3,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment and no plain copy: two cipher copies only."
+   },
+   "length": {
+    "tokens": 359,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "PARES images",
+    "image_quality": "good",
+    "notes": "Copy B transcribed in full and checked group by group against copy A."
+   }
+  },
+  {
+   "id": "osuna-ct11-d1",
+   "read": "not applicable",
+   "shelfmark": "AHNOB, OSUNA,CT.11,D.1(1-6) (PARES 3939336), images 1 and 3",
+   "date": "25 September 1649",
+   "year": 1649,
+   "country": "Spain",
+   "route": "Luis de Haro (Madrid) -> Count of Peñaranda, for Cardinal Albornoz",
+   "language": "Spanish",
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "separate folio"
+    ],
+    "source": "Contemporary plain copy in the same file (image 1); used to rebuild and validate K2."
+   },
+   "length": {
+    "tokens": 376,
+    "unit": "symbols",
+    "measured": true,
+    "file": "keydocs/CT11_cipher.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "PARES images",
+    "image_quality": "good",
+    "notes": "Key document for K2."
+   }
+  },
+  {
+   "id": "osuna-ct2-d16",
+   "read": "not applicable",
+   "shelfmark": "AHNOB, OSUNA,CT.2,D.16 (PARES 3939415), cipher images 2-4, plain copy images 6-8",
+   "date": "12 December 1644",
+   "year": 1644,
+   "country": "Spain",
+   "route": "Philip IV (Madrid) -> Cardinal Albornoz (Rome)",
+   "language": "Spanish",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "separate folio"
+    ],
+    "source": "Contemporary decipherment: complete plain copy in the same file (images 6-8). Existing; used to rebuild K1."
+   },
+   "length": {
+    "tokens": 719,
+    "unit": "symbols",
+    "measured": true,
+    "file": "keydocs/D16_alignment.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "PARES images",
+    "image_quality": "fair",
+    "notes": "Key document for K1."
+   }
+  },
+  {
+   "id": "osuna-ct2-d20",
+   "read": "not applicable",
+   "shelfmark": "AHNOB, OSUNA,CT.2,D.20(1-3) (PARES 3938842), cipher image 2, plain copy image 4",
+   "date": "26 January 1645",
+   "year": 1645,
+   "country": "Spain",
+   "route": "Philip IV (Madrid) -> Cardinal Albornoz (Rome)",
+   "language": "Spanish",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "separate folio"
+    ],
+    "source": "Contemporary decipherment: plain copy (image 4) and plain minute (images 6-9). Existing; used to validate K1."
+   },
+   "length": {
+    "tokens": 242,
+    "unit": "symbols",
+    "measured": true,
+    "file": "keydocs/D20_cipher.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "PARES images",
+    "image_quality": "poor",
+    "notes": "Pale ink. Validation text for K1."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "syllabic",
+   "homophonic",
+   "nomenclator"
+  ],
+  "summary": "syllabic cipher: syllables “disguised” as other syllables (consonant changed, vowel kept: mo = co, ne = de, ra = sa, la = pa, ti = mi), numbers in series of five (35–39 = la le li lo lu; 45–49 = ra…ru; 50–54 = ta…tu), single letters (2 = n, n = s, m = r, g = y/p) and a few code signs (✗ = que, sal = Su Santidad)",
+  "symbol_kind": "digits and letters",
+  "distinct_symbols": 89,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "kinds": [
+    "syllables",
+    "common words",
+    "titles"
+   ]
+  },
+  "nulls": {
+   "present": false
+  },
+  "key_order": "random",
+  "word_division": "none"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "Catalogue 747 open; nothing on the Osuna fonds in this repository; Cryptiana's Spanish ciphers stop about 1519; X. Arriazu García's thesis on Albornoz (2024) cites other Osuna cipher letters, not this one; web search 28 Oct 2026.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "known plaintext"
+  ],
+  "attack": "known plaintext",
+  "first_date": "2026-10-28",
+  "last_date": "2026-10-28",
+  "human_role": "Brice Dudout chose the target from the catalogue and set the rules (frozen key before validation, held-out checks, prior-work search the day of publication); AI agents transcribed, solved, checked and wrote up. Doubtful signs were settled by targeted visual review where stated.",
+  "models": [
+   "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout"
+  ]
+ },
+ "solution": [
+  {
+   "date": "2026-10-28",
+   "kind": "access",
+   "what": "Inventory of the 69 shelfmarks of no. 747 on PARES: four are digitised (CT.2,D.16, CT.2,D.20, CT.2,D.32, CT.11,D.1).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "literature search",
+   "what": "Prior work: catalogue, this repository, Cryptiana, Arriazu García 2024, web: no reading of CT.2,D.32.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "crib",
+   "technique": [
+    "plaintext matching",
+    "manual reconstruction"
+   ],
+   "what": "K1 rebuilt from CT.2,D.16 cipher aligned on its contemporary plain copy; frozen.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "K1 on held-out CT.2,D.20 (transcribed before its plain copy was opened): 0.638 of characters vs control p99 0.550. Family key: number series shifted.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis"
+   ],
+   "what": "K1 applied to CT.2,D.32: the 1648 letter is in a different cipher (syllable tokens ne, mo, ma, so, ri; numbers 2-61).",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "crib",
+   "technique": [
+    "plaintext matching",
+    "repeat/pattern analysis",
+    "manual reconstruction"
+   ],
+   "what": "Same cipher found in CT.11,D.1 image 3 (1649), with its plain copy (image 1); repeat \"dentro de Cataluña y\" opened the alignment; K2 learnt on lines 1-12 and frozen.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "K2 on held-out lines 13-23: 0.859 of characters vs 200 permuted-value controls, median 0.419, p99 0.476.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "reading",
+   "technique": [
+    "contextual inference"
+   ],
+   "what": "Both copies of CT.2,D.32 transcribed and decoded with K2; additions K2b (each attested at least twice or fitting a series); copies compared group by group.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "read",
+  "key": "recovered",
+  "method": "key recovered based on plaintext from external sources",
+  "method_basis": "Key K2 rebuilt from another document in the same cipher (OSUNA,CT.11,D.1, 1649) and its contemporary plain copy, validated on held-out lines, then applied to the 1648 letter.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "fraction_read": 0.983,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "Copy B: 353 of 359 groups with a value (98.3%), about 5 of them probable; 6 unresolved. 6 of 136 words of the cipher portion contain a hole.",
+  "first_break": true,
+  "verification": [
+   "matched control",
+   "historical consistency"
+  ],
+  "credits": [
+   {
+    "who": "dudout",
+    "role": "solution",
+    "note": "keys K1 and K2 rebuilt and validated on held-out text; both cipher copies of the 1648 letter read, Spanish text and English translation",
+    "date": "2026-10-28"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "four code signs (74, underlined A, 124, ✗11) and one group before \"respondió\"",
+    "blocker": "open-codes"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "osuna-ct2-d32",
+    "label": "Philip IV to Cardinal Albornoz, Madrid, 24 July 1648 (AHNOB OSUNA,CT.2,D.32)",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "reading": "reading.md",
+    "translation": "translation.md",
+    "language": "es",
+    "state": "read",
+    "summary": "In 1648 Innocent X was renewing his nuncios. Philip IV wanted to keep his own: Giulio Rospigliosi, Archbishop of Tarsus, nuncio at Madrid since 1644 – the future Pope Clement IX. He wrote so to his ambassador to the Pope, Cardinal Gil de Albornoz, in a cipher nobody had read: “there can be no instrument more suitable” for the service of both courts, so the ambassador must not desist “in any case”. The letter survives in two ciphered copies with no decipherment; the key came from another paper in the same family archive, a chapter of a letter by Luis de Haro enciphered for Albornoz in 1649, whose plain-text copy was kept."
+   }
+  ],
+  "key_file": "key_K2.tsv",
+  "provenance": "contributed"
+ }
+}
