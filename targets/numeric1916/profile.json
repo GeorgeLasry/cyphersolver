@@ -286,8 +286,9 @@
     "notes": "Contributed result checked here, not redone: the keys decode his digits into his texts exactly and his controls rerun as reported. Three different keys in one target, against the one-key rule. 22 Oct 2026, reading audit: gongmi and rongmi decoded, not read (garbled clusters in several telegrams, no translation in the folder); chenmi reads; fraction_read 0.9238 -> 0.11.",
     "provenance": "contributed",
     "credits": [
-      {"who": "dudout", "role": "new cipher with solution", "note": "Three numeric telegraph codes of June–July 1916 (共密, 容密, 辰密): digits re-read on the JACAR scans, keys recovered with Claude (mainly Opus 5.5), translations and historical context", "date": "2026-10-19", "source": "https://bdudout.github.io/wenmi/en/gongmi.html; https://bdudout.github.io/wenmi/en/rongmi.html; https://bdudout.github.io/wenmi/en/chenmi.html; https://bdudout.github.io/wenmi/en/juin1916.html; https://github.com/bdudout/wenmi/tree/main/solver/numeric1916; email 19 Oct 2026", "published": true}
-    ],
+      {"who": "dudout", "role": "new cipher with solution", "note": "Three numeric telegraph codes of June–July 1916 (共密, 容密, 辰密): digits re-read on the JACAR scans, keys recovered with Claude (mainly Opus 5.5), translations and historical context", "date": "2026-10-19", "source": "https://bdudout.github.io/wenmi/en/gongmi.html; https://bdudout.github.io/wenmi/en/rongmi.html; https://bdudout.github.io/wenmi/en/chenmi.html; https://bdudout.github.io/wenmi/en/juin1916.html; https://github.com/bdudout/wenmi/tree/main/solver/numeric1916; email 19 Oct 2026", "published": true},
+      {"who": "dudout", "role": "solution", "note": "N01 (key in the Gaimushō tables, B03050089200 PDF 16) and N09 乾密 read, full texts (dudout/)", "date": "2026-10-28"}
+     ],
     "texts": [
       {
         "doc": "gongmi",
@@ -339,8 +340,10 @@
         },
         "reading": "texts/chenmi_reading.md",
         "state": "read"
-      }
-    ],
+      },
+      {"doc": "dudout-gaimusho", "label": "Japanese Foreign Ministry tables (N01): N01, Brice Dudout", "transcription": "dudout/gaimusho/transcription.txt", "decryption": "dudout/gaimusho/decryption.txt", "reading": "dudout/gaimusho/reading.md", "translation": "dudout/gaimusho/translation.md", "language": "zh", "state": "read", "summary": "Shanghai → Tokyo (青山南町三ノ五三), May 1916; an appeal from the Shanghai friends to Huang Xing. No prefix. The key is given by two decipherment tables on 外務省 paper kept in the same file (JACAR B03050089200, PDF 16, June 1916): it is identical to the key our search had found without them (see the method) ."},
+      {"doc": "dudout-qianmi", "label": "“Qianmi” (乾密) key (C104): N09, Brice Dudout", "transcription": "dudout/qianmi/transcription.txt", "decryption": "dudout/qianmi/decryption.txt", "reading": "dudout/qianmi/reading.md", "translation": "dudout/qianmi/translation.md", "language": "zh", "state": "read", "summary": "Tokyo (青山南町三ノ五三) → Shanghai, 6–9 June 1916; Huang Xing. Renumbered “明密” book: page = written page − 11, columns and rows permuted. Key model: S. Tomokiyo’s idea (Cryptiana) ; key recovered in October 2026 (see the Qianmi page and the method)."}
+     ],
     "key_file": "texts/key.md"
   }
 }

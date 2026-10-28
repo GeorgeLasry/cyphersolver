@@ -146,3 +146,7 @@ word, supplied characters counted as holes): 19/19 sentences clean, 5 holes in 2
 - `ct_gongmi.txt`, `ct_rongmi.txt`, `ct_chenmi.txt` — the cipher groups per code, one telegram per line (measured
   with `_check_profile.py --measure ... --drop-first`: 555 / 1306 / 239 tokens, 330 / 571 / 167 distinct).
 - `decode.py` — independent decoder; `decode_out.txt` — its comparison output.
+
+## N01 and N09 by Brice Dudout (28 Oct 2026)
+
+Full texts of N01 (Gaimushō tables) and N09 乾密 in `dudout/`; see `dudout/README.md`.
