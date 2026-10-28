@@ -23,3 +23,5 @@
 - 2026-10-27 control: same measure with a corrupted ring (neighbour swaps): 2.1%, 0.0%, 0.0% on Nos. 1-3. Measure discriminates.
 - 2026-10-27 reading: reading.md written; decoded.txt has cipher / interlinear / decipherment per line.
 - 2026-10-27 verification: docs/_validate.py on validation.tsv (A, B typed number@setting; C table numbers): reading -2.241 vs random keys -7.258, shuffled refit -4.156; verdict pass. Write-up docs/balfour1781.html; _check_writeup result complete.
+- 2026-10-28 cat. 781 prior art: web search; Saberton JAR 2019 puts Clinton 11 Jul 1781 in Common cipher (CP v.139); Stevens 1888 and Saberton print the Clinton–Cornwallis correspondence in clear. Text likely already known.
+- 2026-10-28 cat. 781 images: Friedman item 796.6 photostats and Clinton Papers originals not digitised; letters not identified. Blocked; no transcription or solver run.
