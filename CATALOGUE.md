@@ -162,9 +162,11 @@ groups, entries 718–721) added cipher samples sent to the Chief Signal Officer
 Justice Department enemy-alien files of 1917–18 (RG 60) and a cypher letter from Leavenworth, 1916 (RG 75), each known
 only from a series description or index card. The 1919 Peace Commission "undeciphered" groups (RG 256) were garbled
 American cables, resent or read; the Nuremberg mentions (RG 238) point to papers not in the files.
-Slice J closed the sweep with the three largest groups: Navy deck logs (RG 24) and census index cards (RG 29) gave
-nothing, and RG 64 gave entry 756, Russian Foreign Ministry cipher circulars to the New York consulate 1888–1910 (M1486
-roll 83), filmed with the instructions and examples for the bigram keys they used.
+Slice J took the three largest groups: Navy deck logs (RG 24) and census index cards (RG 29) gave nothing, and RG 64
+gave entry 756, Russian Foreign Ministry cipher circulars to the New York consulate 1888–1910 (M1486 roll 83), filmed
+with the instructions and examples for the bigram keys they used. Slice K scanned the export's 5,192 donated and
+presidential-library collections (216,000 files) and found no unread cipher: the one real code text, Marshall's 19 June
+1942 telegram to Roosevelt, has its meaning typed below it. Every file of the export has now been scanned.
 
 
 Failure mode first: "avec chiffre" in Omont's inventories means the letter contains cipher, not that it was never
