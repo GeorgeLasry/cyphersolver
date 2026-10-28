@@ -1,0 +1,7 @@
+2026-10-27 Read the task (catalogue 694) and the triage rows (nara_triage_e read_tier2_1 #14/#252, read_tier2_3 #819/#1134). No target folder existed.
+2026-10-27 Web search (Friedman / Hindu conspiracy / book cipher; Gupta cipher letter 1917): Riverbank broke the Chicago letters (Price Collier 1914 book cipher) and the SF messages (1880 German-English dictionary); nothing on 10020-87 or the telegram. NSA Friedman lecture PDFs 403 to scripts.
+2026-10-27 Fetched M1194-091-0195 and M1194-003-0487 (Gupta cards): 10020-87 "Cipher letter of Prince ---", no solution; ciphertext not filmed.
+2026-10-27 Fetched M1085-760-0284..0288: frames 0285-0286 = CPI pamphlet "German Plots and Intrigues" pp. 51-52; the undeciphered telegram is a Chakraberty->Zimmermann telegram of 1916, substance only, no ciphertext.
+2026-10-27 Found OG 1396 filmed whole on M1085 rolls 284-285 (5 parts). Fetched catalogue OCR: only 284A, 284B, 285C have text. Grep: British evidence digest with "Extracts from Chakravarty's messages to and from Germany" and "Dr. C's draft cipher message of May 1916"; German code telegram reports (Hintze, code 9972). No ciphertext of the target in the OCR'd parts.
+2026-10-27 Local DECODE harvest grepped for Gupta/Chakravarty/Hindu: nothing.
+2026-10-27 NOTES, transcription and profile written. Status: in progress (unviewed OG 1396 frames; Gupta letter needs College Park).

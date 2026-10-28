@@ -1,0 +1,140 @@
+{
+ "schema_version": 1,
+ "target": "gupta1917",
+ "title": "Hindu-German conspiracy cipher material: Heramba Lal Gupta's cipher letter (MID 10020-87), the Chakravarty cipher message (BI OG 1396) and a 1916 telegram 'not as yet satisfactorily deciphered'",
+ "documents": [
+  {
+   "id": "A",
+   "shelfmark": "NARA RG 165, MID 10020-87 (also 9771-23); known only from the M1194 roll 91 frame 0195 card (naId 118118268)",
+   "date": "1917-11-07",
+   "year": 1917,
+   "country": "Mexico",
+   "route": "Heramba Lal Gupta (alias J. Parkhall), Mexico City -> unknown",
+   "language": "English (expected)",
+   "cleartext_in_document": "unknown",
+   "plaintext": {
+    "location": ["none"],
+    "source": "No solution on the card.",
+    "partial": false
+   },
+   "length": {"tokens": 0, "unit": "mixed", "measured": false},
+   "transcription": {
+    "by": "llm from images",
+    "image_quality": "no images",
+    "notes": "Only the index card is online; MID correspondence of 1917 is not filmed."
+   },
+   "read": "not read"
+  },
+  {
+   "id": "B",
+   "shelfmark": "NARA RG 65, BI OG 1396 (M1085 index card roll 16, naId 367925077); case file filmed on M1085 rolls 284-285",
+   "date": "1916",
+   "year": 1916,
+   "country": "United States",
+   "route": "Chandra Kanta Chakravarty, New York -> Berlin India Committee / German Foreign Office",
+   "language": "English (expected)",
+   "cleartext_in_document": "unknown",
+   "plaintext": {
+    "location": ["separate collection"],
+    "source": "OG 1396 OCR: British evidence digest 'C. 11 Extracts from Chakravarty's messages to and from Germany' and 'Dr. C's draft cipher message of May 1916'; which message the card means is not yet known.",
+    "partial": true
+   },
+   "length": {"tokens": 0, "unit": "mixed", "measured": false},
+   "transcription": {
+    "by": "llm from images",
+    "image_quality": "unknown",
+    "notes": "Ciphertext not located; about 3,000 frames of M1085 rolls 284-285 have no OCR and are unviewed."
+   },
+   "read": "not read"
+  },
+  {
+   "id": "C",
+   "shelfmark": "M1085 roll 760 frame 0286 (naId 370916833): CPI, German Plots and Intrigues (1918), p. 52",
+   "date": "1916",
+   "year": 1916,
+   "country": "United States",
+   "route": "Chakraberty -> Zimmermann (German Foreign Office), sent through the German Embassy",
+   "language": "English (expected)",
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": ["printed edition"],
+    "source": "Substance only, printed in the pamphlet as 'not as yet satisfactorily deciphered'.",
+    "partial": true
+   },
+   "length": {"tokens": 0, "unit": "mixed", "measured": false},
+   "transcription": {
+    "by": "llm from images",
+    "image_quality": "no images",
+    "notes": "No ciphertext is printed; the pamphlet page is transcribed in transcription.md."
+   },
+   "read": "not read"
+  }
+ ],
+ "system": {
+  "types": ["undetermined"],
+  "summary": "unknown for these items: no ciphertext seen. Family: the conspirators' book ciphers (page-line-word on Price Collier 1914; an 1880 German-English dictionary), broken by Riverbank 1917-18.",
+  "symbol_kind": "digits",
+  "distinct_symbols": "unknown",
+  "diacritics": {"used": "unknown"},
+  "homophones": {"used": "unknown"},
+  "nomenclator": {"present": "unknown"},
+  "nulls": {"present": "unknown"},
+  "key_order": "not applicable",
+  "notes": "symbol_kind is a placeholder (the family uses numbers); nothing about these items' system is confirmed."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "partial",
+   "where": "Sibling messages read by the British and by Riverbank (Friedman) for the 1917 Chicago and 1917-18 San Francisco trials; Chakravarty extracts in the OG 1396 British digest; telegram substance in CPI 1918 p. 52",
+   "found": "before attempt",
+   "used": false
+  },
+  "inputs": [],
+  "attack": "none",
+  "human_role": "Pasted the catalogue task; no other input.",
+  "tools": ["NARA catalog (records and extractedText API)", "web search"],
+  "models": ["claude-opus-5-5"],
+  "sessions": 1,
+  "first_date": "2026-10-27",
+  "last_date": "2026-10-27"
+ },
+ "solution": [
+  {
+   "date": "2026-10-27",
+   "kind": "literature search",
+   "what": "Web search on Friedman / Hindu conspiracy / Gupta cipher letter: Riverbank break of the Chicago letters (Collier 1914) and the SF messages (1880 dictionary) found; nothing on 10020-87 or the undeciphered telegram. NSA Friedman lectures not readable by script (403).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "access",
+   "what": "M1194 cards (roll 91 f.0195, roll 3 f.0487) viewed: 10020-87 cipher letter of 7 Nov 1917, no solution; the letter itself is not filmed.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "access",
+   "what": "M1085 roll 760 f.0285-0286 viewed: CPI pamphlet pp. 51-52; the telegram is a 1916 Chakraberty->Zimmermann telegram in substance only, no ciphertext.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "access",
+   "what": "OG 1396 found filmed on M1085 rolls 284-285; catalogue OCR (parts 284A, 284B, 285C) grepped: British digest with Chakravarty message extracts and 'Dr. C's draft cipher message of May 1916'; no target ciphertext in the OCR'd parts. About 3,000 frames without OCR unviewed.",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "class": "not read",
+  "key": "none",
+  "method": "not applicable",
+  "verification": ["none"],
+  "contribution": ["sender or date identified"],
+  "gaps": [
+   {"item": "A: Gupta cipher letter (MID 10020-87)", "blocker": "needs-physical-access"},
+   {"item": "B: Chakravarty cipher message (OG 1396)", "blocker": "not-attempted"},
+   {"item": "C: the 1916 telegram", "blocker": "needs-physical-access"}
+  ],
+  "notes": "No ciphertext reached yet. Identified the telegram's source (CPI German Plots and Intrigues p. 52, Chakraberty->Zimmermann 1916) and that OG 1396 is filmed on M1085 rolls 284-285. Next: view the unOCR'd OG 1396 frames; College Park for 10020-87."
+ }
+}
