@@ -1,0 +1,9 @@
+3607 harvested; 510 after noise/date filter
+Traceback (most recent call last):
+  File "C:\Users\dbour\cypher-sweep\research\chi_nara\triage.py", line 20, in <module>
+    if o['scope']: print('   C:', o['scope'][:250].replace('\n', ' '))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dbour\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u0103' in position 148: character maps to <undefined>

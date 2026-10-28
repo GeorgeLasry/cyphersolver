@@ -156,8 +156,9 @@ def is_error(h):
     return 'id="error_mensaje"' in h or 'Problema encontrado al realizar la b' in h
 
 
-def key_of(term, anio1=None, anio2=None):
-    return term if anio1 is None and anio2 is None else f'{term}|{anio1 or ""}-{anio2 or ""}'
+def key_of(term, anio1=None, anio2=None, facet=None):
+    k = term if anio1 is None and anio2 is None else f'{term}|{anio1 or ""}-{anio2 or ""}'
+    return k if not facet else f'{k}&{facet}'
 
 
 def save_raw(key, label, h):
@@ -167,13 +168,19 @@ def save_raw(key, label, h):
             fh.write(h)
 
 
-def open_search(op, rawkey, term, anio1=None, anio2=None):
-    """Steps 1-2: start the search in a new session and switch it to PER_PAGE rows. Returns page 1."""
+def open_search(op, rawkey, term, anio1=None, anio2=None, facet=None):
+    """Steps 1-2: start the search in a new session and switch it to PER_PAGE rows. Returns page 1.
+
+    facet: a PARES facet filter from the left column of the result page, e.g. 'idFI=16' (start date in the
+    16th century), 'idFI=0' (no date), 'idD=S' (digitised). anio1/anio2 are NOT applied by PARES (28 Oct 2026:
+    'cifrada' with anio1=1450&anio2=1499 still reports 1,282 rows); the facets are the working date filter."""
     q = {'nm': '', 'texto': term}
     if anio1 is not None:
         q['anio1'] = anio1
     if anio2 is not None:
         q['anio2'] = anio2
+    if facet:
+        q.update(urllib.parse.parse_qsl(facet))
     url = f'{BASE}/find?' + urllib.parse.urlencode(q, encoding='latin-1')
     h0 = fetch(op, url)
     save_raw(rawkey, 'find', h0)
@@ -187,13 +194,13 @@ def open_search(op, rawkey, term, anio1=None, anio2=None):
     return h, banner(h)
 
 
-def run(term, maxpages=20, anio1=None, anio2=None):
-    key = key_of(term, anio1, anio2)
+def run(term, maxpages=20, anio1=None, anio2=None, facet=None):
+    key = key_of(term, anio1, anio2, facet)
     seen = set()
     if os.path.exists(OUT):
         for line in open(OUT, encoding='utf-8'):
             r = json.loads(line)
-            if key_of(r['term'], r.get('anio1'), r.get('anio2')) == key:
+            if key_of(r['term'], r.get('anio1'), r.get('anio2'), r.get('facet')) == key:
                 seen.add(r['id'])
     pkey = key if ORDER == 8 else f'{key}#order{ORDER}'   # a second pass in another order has its own progress
     pr = load_progress()
@@ -204,20 +211,21 @@ def run(term, maxpages=20, anio1=None, anio2=None):
     op = opener()
     req0 = NREQ
     try:
-        n = _pages(op, key, pkey, term, anio1, anio2, start, maxpages, seen, pr)
+        n = _pages(op, key, pkey, term, anio1, anio2, start, maxpages, seen, pr, facet)
     finally:                                # count this run's requests even when it stops on 429 or the cap
         if NREQ > req0:
             pr = load_progress()
-            pr.setdefault(pkey, {})['requests'] = pr[pkey].get('requests', 0) + (NREQ - req0)
+            st = pr.setdefault(pkey, {})
+            st['requests'] = st.get('requests', 0) + (NREQ - req0)
             save_progress(pr)
     return n
 
 
-def _pages(op, key, pkey, term, anio1, anio2, p, maxpages, seen, pr):
+def _pages(op, key, pkey, term, anio1, anio2, p, maxpages, seen, pr, facet=None):
     n, prev, h, b, shown = 0, None, None, None, set()   # shown: ids on earlier pages of this session
     while p <= maxpages:
         if h is None:                       # new session: page 1 of the search
-            h, b = open_search(op, pkey, term, anio1, anio2)
+            h, b = open_search(op, pkey, term, anio1, anio2, facet)
             if p > 1:
                 url = page_link(h, p)
                 if not url:
@@ -241,6 +249,8 @@ def _pages(op, key, pkey, term, anio1, anio2, p, maxpages, seen, pr):
                 r['term'] = term
                 if anio1 is not None or anio2 is not None:
                     r['anio1'], r['anio2'] = anio1, anio2
+                if facet:
+                    r['facet'] = facet
                 fh.write(json.dumps(r, ensure_ascii=False) + '\n')
                 new += 1
         n += new

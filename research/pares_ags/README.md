@@ -77,6 +77,39 @@ Estado, and the Archivo Histórico Nacional (AHN) Estado.
 - Stopped by WAINUT after this batch. Nothing else was requested from PARES. Resume with `run_batch.py` (it picks up
   from `hits_progress.json`) once the year filter is fixed; "cifrada" is still 923 of 1,282, and "cifra" and
   "descifrado" were not run.
+- 28 Oct 2026, 13:06-14:00 UTC (Brice Dudout's machine, another IP; Dan's continuation prompt `sweep_prompt.pdf`):
+  step 0 probe answered 200. **Year filter: `anio1`/`anio2` are not PARES parameters at all** (the plain `find` GET with
+  `anio1=1450&anio2=1499` still reports 1,282 rows for "cifrada"). The working date filter is the facet column of the
+  result page: `idFI=<century>` (start date: `0` no date, `16` = S.XVI…), `idFF=` (end date), `idD=S|N` (digitised or
+  not); facets survive the 100-row `formBusqueda` POST and can be combined (`idFI=0&idD=N`). `sweep.py` /
+  `run_batch.py` now take facet jobs `"term#idFI=16"` (key `term&idFI=16` in `hits_progress.json`, `facet` field on the
+  rows). Fixed in passing: a `KeyError` in `run()` when a job stops on the cap before its first page.
+  Requests: 1 probe + 1 form check + 3 test + 30 + 24 (two capped `run_batch.py` runs, 20 s + 0-10 s jitter, shared
+  stamp), **no 429**. "cifrada" by start century: S.XVI 330/330, S.XVII 183/183, S.XVIII 13, S.XIX 27, S.XV 2, S.XIV 2,
+  S.I 2, S.XX 4, undated digitised 14/14, undated not digitised 673 of 704 (second pass in title order stopped by
+  the cap at page 6). So "cifrada" is now complete except ~31 undated, undigitised rows; it brought only 68 new ids
+  (the 27 Oct pages had most of them). Not run yet: "cifra", "descifrado".
+- 28 Oct 2026, 13:36-14:30 UTC: images of the shortlisted rows only (`catalogo/show/<id>` then `ViewImage.do`,
+  zoom 10), one request at a time with the same spacing and stamp, cap 60, stopped on the cap: 1 + 60 requests, no
+  429. Images are kept on Brice's machine (not in the repo). Note: a second process on the same machine fetched 8
+  more records (PTR,LEG,2,1; EST,LEG,2,2,341-342) with the same script and stamp in the same hour, so spacing held
+  across both, but the hour's total was ~150 requests, the budget's ceiling.
+
+## Screening of the 28 Oct 2026 hits ("cifrada" by century), with images
+
+- `screen.py` rerun: 2,026 unique ids, 68 new. Shortlisted and **images viewed** (not just the title): five rows
+  added to `candidates.json`, best first: EST,LEG,1380,151-154 (1549, cipher copy of a memorandum to Francisco de
+  Eraso: 15 pages of symbol cipher, no decipherment in the unit); EST,LEG,3594,312 (1638, Philip IV's cipher minute
+  to Siruela in Genoa, 3 pages); EST,LEG,1411,238 (1578, minute to Juan Andrea Doria with cipher passages);
+  FRIAS,C.28,D.1 (1645 register, 408 images, cipher extent unknown); FRIAS,C.1442,D.2 (1664 cipher cédula, not
+  digitised).
+- Dropped, already here: EST,LEG,1394,247 (García de Toledo 1565, catalogue row). EST,LEG,3598,290-293 (Juan de
+  Eraso 1643) is being read on Brice's side (`genes-1643`).
+- **New field `needs_archive_scan`** on every row of `candidates.json` (requested by Dan, 28 Oct 2026), so the solving
+  side knows before opening anything whether the images are already online: `no` (every linked PARES id has images
+  in the hit list, or the folio note says images online), `yes` (no linked id has images), `partly`, or `unknown`
+  (rows from printed catalogues with no PARES id: Paz, K legajos). Backfilled from the `images` flag of `hits.jsonl`
+  for the 50 earlier rows: 31 no, 2 yes, 1 partly, 16 unknown.
 
 ## Screening of the 27 Oct 2026 hits (74 rows, hit-list titles only)
 

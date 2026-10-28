@@ -70,6 +70,10 @@ Its card date falls between the Chicago verdict and the San Francisco trial.
   Not read.
 - Not on DECODE: no Gupta, Chakravarty or Hindu entry in the local DECODE harvest (`research/catalogue_harvest/decode`).
 
+## Chicago trial exhibit 'Code' (found 28 Oct 2026, NARA Chicago sweep)
+
+The Chicago trial of the Hindu-German conspiracy (US v. Gupta et al., N.D. Ill., Crim. 6082) is digitised: Bill of Exceptions naId 540798683 (258 pages), Case Documents 540798684 and 540798685. At pp. 157-158 of the Bill the government offers a page from Gupta's address book (M. Albourge, Hotel des Alpes, Territet, Montreux) and William F. Friedman of the Riverbank Laboratories testifies that he has decoded 'the letter handed me', marked Government's Exhibit 'Code', and that 'the decipherment is a true and correct decipherment'; the decipherment is then read into the record (the NARA Chicago sweep reports it as Gupta's letter of 16 Nov 1916 with a key from Price Collier, *Germany and the Germans*; the CPI pamphlet cited above quotes the same letter 'already deciphered'). The numeral sheets themselves are not reproduced in the Bill. So the **Gupta letter of 16 Nov 1916 was read at the time**. Not checked: whether the MID card 10020-87 ('Cipher letter of Prince ---', 7-17 Nov 1917) is this letter or a different one; the dates differ by a year.
+
 ## Remaining gaps
 
 - Gupta cipher letter (MID 10020-87, 9771-23): ciphertext not online. Blocker: needs physical access (RG 165 entry 65, NARA
