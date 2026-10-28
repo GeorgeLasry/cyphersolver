@@ -124,3 +124,24 @@ nor for the Stewart letter. Not on DECODE.
 - Known keys: Saberton's description of the Common cipher (ring, A-key, fillers from 30) matched exactly.
 - Print: The Cornwallis Papers 2010 vols. 3-4 is the place to look for duplicates of A and B.
 - Retry: the open values of C need a better image of pp. 733-734 (the NARA scan is from microfilm).
+
+## 2026-10-28: Unsolved Catalogue no. 781 (Cornwallis ↔ Clinton, Friedman folder 796.6)
+
+Catalogue 781 is the Marshall Foundation folder of Friedman's photostats of Cornwallis–Clinton cipher letters
+from the Clinton Papers (Clements Library), which Sheldon's guide (2014, p. 284) calls "undeciphered". Checked today:
+
+- No images are online. The folder is at the Marshall Foundation (Lexington, VA); the originals are in the Clinton
+  Papers at the Clements Library. The letters in the folder are not identified anywhere online. Getting them needs
+  a scan request to either library: an outside blocker.
+- "Undeciphered" in Sheldon's guide most likely means Friedman's photostats carry no decipherment, not that the text is unknown.
+  The Clinton–Cornwallis dispatches of 1780-81 are in print in clear: Stevens, *The Campaign in Virginia 1781*
+  (1888, archive.org `campaigninvirgin01stevrich`), and Saberton, *The Cornwallis Papers* (2010; e.g. Clinton's
+  11 July 1781 dispatch in the Common cipher, CP v. 139). Both editors printed from deciphered or duplicate copies.
+- System: Saberton (JAR 2019) puts Clinton's July 1781 dispatches in the Common cipher, the ring rebuilt above
+  (`decode.py` RING), so once the images are in hand they should decipher with this key directly. Washington's
+  secretary also deciphered a paragraph of an intercepted Cornwallis→Clinton letter with a captured alphabet
+  (Washington to Lovell, 6 Oct 1781).
+
+Status of 781: attempted, open (blocked: images not online). Next: ask the Marshall Foundation for item 796.6
+scans, or ask the Clements Library for the cipher letters in the Clinton Papers, then run `decode.py` on each and
+compare with Stevens and Saberton (method would be known key applied, checked against the existing printed text).
