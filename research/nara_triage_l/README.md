@@ -113,3 +113,30 @@ obtained copies of). Most are the Department's own code traffic. The foreign-tra
     cited only to show the German Embassy radio was in use 8-15 Oct; no text forwarded as a cipher problem. Not a row.
   - Spain #784 (4 Feb 1944, 800.20210 Mutiozábal): censorship intercepts of private letters to a suspected Axis
     maildrop in Havana that 'may have been code messages'; open code at most. Not a row.
+
+## Enigma recheck (28 Oct 2026)
+
+Slice G had set aside the German Army Enigma traffic in RG 242 as out of scope. With that rule dropped, every RG 242
+item whose OCR has Enigma-like letter groups was rechecked: the T311/T314 reels named in slice G, plus the other
+field-command reels among the 39 RG 242 items with letter-group hits (`enigma_scan.py`: 15+ five-letter groups in one
+case with pooled IC under 0.048; `frames.py` to read neighbours). The detectors ran on each frame's full OCR, so this
+covers every OCR'd frame of RG 242 the letters detector saw; pencil-only forms the OCR cannot read are not covered.
+
+| Reel (naId) | Message(s) | Clear text filed with it | Verdict |
+| --- | --- | --- | --- |
+| T311 roll 42 (271897953) f.0471-0472 | OKH 1. Abt. Gen.St.d.H. Nr. 2050/38, 21 Sept 1938, 3 parts | Deavours & Kruh 1990; decrypted by Weierud | read |
+| T311 roll 123 (272014076) | Ia 602/38 (24 Jun 1938), Ia 1120/38 (1 Aug), OKW order 31 Aug (9 parts), OKH 1240/38 (17 Sept) | clear drafts on the adjacent frames; pencilled start positions | read at the time |
+| T314 roll 35 (316391350) f.0941 | AOK 7 → I. A.K., 3 Aug 1940, 270 letters | f.0940 (received text: 1. Kav.Div. leaves 7. Armee) | read at the time |
+| T314 roll 1102 (317702678) f.0670-0673 | Gen.Kdo. XXXXVII. Pz.Korps → GFM Keitel (OKW), 26 Dec 1941, 2 parts (205 + 128) | f.0674 handwritten clear | read at the time |
+| T314 roll 1285 (472738945) f.1266-1273 | LII. A.K. → 97., 101., 111. Div., 20 Jan 1942, 4 parts, Ia 205/42 g.Kdos | f.1265 clear Fernschreiben to the same divisions | read at the time |
+| T314 roll 1288 (472741441) f.0729-0731 | LII. A.K. → 111. and 370. Div., 5 Jul 1942, 2 parts, Ia 463/42 | f.0727-0728 clear (Heeresgruppe Süd situation) | read at the time |
+| T315 roll 897 (346382670) f.0113-0118 | Gen.Kdo. IX. A.K. → 35. Inf.Div., 6 Jun 1943 (KR GKdos) | f.0112 decrypt on the form grid | read at the time |
+| T315 roll 897 f.0217-0220 | Heeresgruppe → IX. A.K. → 35. Inf.Div., 13 Jun 1943, 2 parts (321 + 357) | f.0215-0216 decrypt (Kluge to be called 'Rittmeister v. Bülow') | read at the time |
+
+False positives (clear teleprinter copies with doubled lines): T314 roll 1285 f.0651, roll 1288 f.0246 and f.1052;
+T312 roll 439, T314 rolls 1234 and 1391, T78 roll 785 (no Enigma frames). Naval traffic on T1022 is catalogue
+705-707 or Hansa-Tafel tables.
+
+Result: every Enigma message found in the digitised captured German records is filed beside its clear text or
+decrypt. The units' war-diary annexes kept both. No catalogue row. The pairs are known-plaintext material for
+1938-43 Army Enigma (T311 roll 123 has the most).
