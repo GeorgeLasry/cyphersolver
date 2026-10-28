@@ -1,0 +1,125 @@
+{
+ "schema_version": 1,
+ "target": "ehingen1525",
+ "title": "Rudolf von Ehingen, Jakob Ramminger and the envoys at Ulm to the Austrian government in Württemberg, letters 'in Chiffren', 21 Apr - 1 May 1525 (HStA Stuttgart H 54)",
+ "documents": [
+  {
+   "id": "H54",
+   "shelfmark": "Landesarchiv Baden-Württemberg, HStA Stuttgart, H 54 Bü 13 Nr. 13 and 18; H 54 Bü 51 Nr. 5",
+   "date": "21 Apr - 1 May 1525",
+   "year": 1525,
+   "country": "Germany",
+   "route": "Ulm -> Stuttgart",
+   "language": "unknown",
+   "cleartext_in_document": "unknown",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "The finding aid notes no decipherment. The letters have not been seen.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 0,
+    "unit": "mixed",
+    "measured": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "image_quality": "no images",
+    "notes": "Not digitised: no digital object on Archivportal-D or in the LABW online finding aid (28 Oct 2026). Nothing transcribed. German expected."
+   },
+   "read": "not read"
+  }
+ ],
+ "system": {
+  "types": [
+   "undetermined"
+  ],
+  "summary": "unknown: the letters have not been seen. The same government's cipher of 11 May 1525 (Baumann 1877 no. 284) was a 20-sign simple substitution with one sign for ei/ie.",
+  "symbol_kind": "symbols",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": "unknown"
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": "unknown"
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "not applicable",
+  "notes": "symbol_kind and key_order are placeholders: the schema has no 'unknown' value for them."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "unknown",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [],
+  "attack": "none",
+  "human_role": "Pasted the catalogue task; no other input.",
+  "tools": [
+   "Archivportal-D",
+   "LABW online finding aid search",
+   "archive.org (Baumann 1877 OCR and page images)",
+   "research/catalogue_harvest/decode/list.json",
+   "web search"
+  ],
+  "models": [
+   "claude-opus-5-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-10-28",
+  "last_date": "2026-10-28"
+ },
+ "solution": [
+  {
+   "date": "2026-10-28",
+   "kind": "access",
+   "what": "Archivportal-D records and LABW online finding aid (search 'Chiffren', with and without the images filter) checked: the three H 54 items have no digital object. Not digitised.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "sibling key",
+   "what": "DECODE harvest list (10,106 records) searched for Württemberg, Truchsess, Waldburg, Ehingen, Ramminger, Stuttgart, Bauernkrieg: nothing relevant. LABW search 'Geheimschrift' found A 2 Bü 9-11 (same government, 1534), digitised with transcriptions: a lead, not compared.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "literature search",
+   "what": "Baumann, Akten zur Geschichte des deutschen Bauernkrieges aus Oberschwaben (1877), full OCR: no regest of the three letters. Web search on correspondents, date and 'Chiffre': nothing.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "key from source",
+   "what": "Baumann 1877 no. 284 (11 May 1525, Statthalter und Regenten at Tübingen to Truchsess Georg) prints the cipher signs of the same government (p. 276): 20-sign simple substitution, u=v, c=k, one sign for ei/ie. Read from the page image into key_baumann1877.tsv as the candidate key; untested because the letters are not online.",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "class": "offline only",
+  "key": "none",
+  "method": "not applicable",
+  "verification": [
+   "none"
+  ],
+  "contribution": [
+   "none"
+  ],
+  "gaps": [
+   {
+    "item": "all three letters",
+    "blocker": "needs-physical-access"
+   }
+  ],
+  "notes": "Not attempted on the ciphertext: the letters could not be reached online. Candidate key: the government's May 1525 cipher printed by Baumann 1877 no. 284. Order reproductions from HStA Stuttgart."
+ }
+}

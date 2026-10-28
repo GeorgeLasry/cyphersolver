@@ -10255,7 +10255,7 @@
    "shelfmark": "Landesarchiv BW, HStA Stuttgart, H 54 Bü 13 Nr. 13 and 18; H 54 Bü 51 Nr. 5",
    "folio_note": "three letters: 'zum Teil in geheimen Chiffren', 'in Chiffren' (1 May 1525), Ramminger's opinion 'in Chiffren'",
    "cls": "C",
-   "status": "Finding aid as quoted; no decipherment noted. Not on DECODE. Not digitised.",
+   "status": "Finding aid as quoted; no decipherment noted. Not on DECODE. Not digitised. 28 Oct 2026 (targets/ehingen1525/): attempted; not digitised (no digital object on Archivportal-D or in the LABW finding aid). Candidate key in print: the same government's cipher of 11 May 1525, a 20-sign simple substitution, in Baumann 1877 no. 284, p. 276 (targets/ehingen1525/key_baumann1877.tsv). Order the three items from HStA Stuttgart and test it.",
    "why": "The Swabian League's war against the peasants (Truchsess Jörg's advance, April-May 1525) seen from the Habsburg regiment.",
    "importance": 4,
    "solvability": 2,
@@ -10278,9 +10278,10 @@
    ],
    "seen": "catalogue",
    "source": "Archivportal-D sweep",
-   "prior_art": "open (checked 26 Oct 2026: known.py, quick web search: no cipher mention found for Ehingen).",
+   "prior_art": "open (checked 26 Oct 2026: known.py, quick web search; 28 Oct 2026: Baumann 1877 has no regest of the three letters, web search nothing).",
    "ark": "",
-   "scored": "sweep"
+   "scored": "sweep",
+   "outcome": "attempted, open: blocked, not digitised (HStA Stuttgart H 54 Bü 13 Nr. 13, 18; Bü 51 Nr. 5); candidate key printed in Baumann 1877 no. 284 (28 Oct 2026, targets/ehingen1525/)"
   },
   {
    "id": 561,
