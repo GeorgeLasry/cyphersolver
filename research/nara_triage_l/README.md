@@ -85,3 +85,27 @@ Read by two agents (`agent_59.md`, `agent_rest.md`); their one confirmed lead wa
 
 Four rows: 757 (Auckland 1918), 758 (Coahuila 1906), 759 (La Paz 1941-42), 760 (Lima 1941); entry 669 unblocked (M316, 1921 Soviet intercepts). With this slice every detector has run over every record group
 and collection of the export.
+
+## Second pass: forwarded and intercepted foreign code telegrams in the purport lists
+
+The negation filter above only kept entries that say a text was unread. The La Paz row showed that the 1940-44 purport
+lists also record legations forwarding "code copies" of foreign telegrams without saying whether they were read, so
+the RG 59 word hits were searched again for code-copy and intercept wording (`axis_copies.txt`, 601 items on a broad
+pattern; 84 on the strict one: code copies of, copies of code/cipher telegrams, intercepted code/cipher/radio,
+obtained copies of). Most are the Department's own code traffic. The foreign-traffic entries:
+
+- Bolivia 1941-42 (862.20224): row 759. The purports add that the FBI identified the La Paz copies as "the German
+  diplomatic code" (Jan 1942) and returned two Bolivia/Argentina → Germany code messages "undecoded" (8 Dec 1941).
+- Paraguay 1933 (Kreeck #995, M973-339-0494): intercepted messages of General Kundt "together with code used to
+  decipher" them. Read at the time; not a row.
+- Navy Dept / USCG 1941-42 (862.20210 purports, M973-590): "Deciphered communications of German secret agents",
+  the clandestine-radio decodes (Coast Guard). Read; not rows.
+- São Paulo 1943 (M973-568-0661): German station DAN traffic, "machine enciphered for submarines": naval Enigma
+  traffic, read by the Allies at the time; out of reach and not filed as text here. Not a row.
+- Mexico 1941 (Justice, 812.614 purport M973-559-0637): intercepted radio message Mexico → Germany submitted
+  "deciphered and translated". Not a row.
+- Unresolved, purport only, no statement that the text was unread, so not rows: Chile #2431 (Dec 1940), one
+  intercepted code message from the German Embassy Santiago to the Auswärtiges Amt (M973-540-1402); Mexico #10834
+  (19 June 1940), copies of code messages of the Partido Nacional Socialista Mexicano (812.00N/220, M973-537-0643);
+  Spain #784 (1942), messages of Agustín Mutiozábal that "may have been code messages" (M973-534-0750). A NARA
+  catalogue search for the 812.00N purport list timed out on 27 Oct 2026, and no further requests were sent.
