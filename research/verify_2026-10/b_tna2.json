@@ -1,0 +1,130 @@
+[
+ {
+  "id": 1144,
+  "verdict": "open",
+  "prior_art": "open (checked 28 Oct 2026: known.py, TNA Discovery API record, web search (cryptiana not re-queried per item))",
+  "evidence": [
+   "https://discovery.nationalarchives.gov.uk/details/r/C7970624"
+  ],
+  "status_update": "TNA record SP 77/32/289 confirmed, dated 6/16 Aug 1659; catalogue says 'in cipher'; not digitised on Discovery. No decipherment found.",
+  "seen": "catalogue",
+  "importance": 3,
+  "solvability": 2,
+  "difficulty": 3,
+  "ciphertext_size": "unknown, single letter",
+  "next_step": "Order copy from Kew or check State Papers Online (Gale); single short letter, probably needs a key from SP 77 siblings.",
+  "scans_online": false
+ },
+ {
+  "id": 1145,
+  "verdict": "open",
+  "prior_art": "open (checked 28 Oct 2026: known.py, TNA Discovery API record, web search (cryptiana not re-queried per item))",
+  "evidence": [
+   "https://discovery.nationalarchives.gov.uk/details/r/C7327886"
+  ],
+  "status_update": "TNA records SP 78/111/93 (20/30 Sep 1642) and /135 (1644) confirmed; not digitised. No decipherment found; listed in oldest hard_targets.",
+  "seen": "catalogue",
+  "importance": 3,
+  "solvability": 2,
+  "difficulty": 3,
+  "ciphertext_size": "2 letters, size unknown",
+  "next_step": "Order copies from Kew; look for sibling decipherments in SP 78/111 and the Paris embassy cipher keys.",
+  "scans_online": false
+ },
+ {
+  "id": 1146,
+  "verdict": "partly_read",
+  "prior_art": "partly known (checked 28 Oct 2026: known.py, TNA Discovery API record, web search (cryptiana not re-queried per item)): Akkerman's edition of Elizabeth Stuart's correspondence (Oxford 2011-15) deciphered Elizabeth's codes (7 cracked); Roe/Gerbier items to her may be printed there, other items (Mansfelt 1625, Stanning 1631, Kendall 1600) not found",
+  "evidence": [
+   "https://universiteitleiden.nl/en/news/2015/09/recently-published-encoded-correspondence---the-correspondence-of-elizabeth-stuart-queen-of-bohemia---edited-by-nadine-akkerman"
+  ],
+  "status_update": "Dates confirmed from Discovery: SP 81/44/225 (July 1638), 81/46/273 (c.1639), 84/130/27 (c.Nov 1625), 77/28/643 (c.1638). Not digitised. Roe/Gerbier passages may already be read in Akkerman's edition; check before ordering.",
+  "seen": "catalogue",
+  "importance": 3,
+  "solvability": 2,
+  "difficulty": 3,
+  "ciphertext_size": "7 items, short passages",
+  "next_step": "Check Akkerman (Correspondence of Elizabeth Stuart, vols 1-2) for these documents; order the rest from Kew.",
+  "scans_online": false
+ },
+ {
+  "id": 1150,
+  "verdict": "partly_read",
+  "prior_art": "partly known (checked 28 Oct 2026: known.py, TNA Discovery API record, web search (cryptiana not re-queried per item); repo stepney THE=454)",
+  "evidence": [
+   "https://discovery.nationalarchives.gov.uk/details/r/C6821830"
+  ],
+  "status_update": "Dates confirmed: SP 105/59/79 (12/22 Jul 1693), SP 105/60/121 (17/27 Nov 1693). Not digitised. Stepney family key is in the repo; match intercepts against it.",
+  "seen": "catalogue",
+  "importance": 3,
+  "solvability": 3,
+  "difficulty": 2,
+  "ciphertext_size": "several passages across 8+ letters",
+  "next_step": "Order SP 105/58-60 copies; apply targets/stepney THE=454 key.",
+  "scans_online": false
+ },
+ {
+  "id": 1151,
+  "verdict": "partly_read",
+  "prior_art": "partly known (checked 28 Oct 2026: known.py, TNA Discovery API record, web search (cryptiana not re-queried per item)): catalogue marks some letters 'partly in cipher', decipherments within the volume for some; nothing published found",
+  "evidence": [
+   "https://discovery.nationalarchives.gov.uk/details/r/C6719644"
+  ],
+  "status_update": "SP 91/5 records confirmed (163: 21 Mar 1708; 108: 10 Aug 1707; 298: 3 Oct 1708); catalogue shows many 'Partly in cipher'. Not digitised. Interlinear/bound decipherments give cribs. BL Add MS 37354-60 hold Whitworth papers.",
+  "seen": "catalogue",
+  "importance": 3,
+  "solvability": 3,
+  "difficulty": 3,
+  "ciphertext_size": "~50 folios, cipher passages partial",
+  "next_step": "Order SP 91/5 copies (or check BL Add MS 37354-60 for decoded copies); build key from the deciphered siblings.",
+  "scans_online": false
+ },
+ {
+  "id": 1152,
+  "verdict": "open",
+  "prior_art": "open (checked 28 Oct 2026: known.py, TNA Discovery API record, web search (cryptiana not re-queried per item); Atterbury-plot literature found does not publish the Plunket cipher letters; Cruickshanks & Erskine-Hill 2004 not examined)",
+  "evidence": [
+   "https://discovery.nationalarchives.gov.uk/details/r/C17214544"
+  ],
+  "status_update": "Dates confirmed: SP 35/45/78 (7 Oct 1723), SP 35/46/59 (c.1723, 'undecyphered'), SP 35/73/52 (Plunket numerals, c.Oct 1722). Not digitised. Keys in same volumes make this tractable.",
+  "seen": "catalogue",
+  "importance": 4,
+  "solvability": 4,
+  "difficulty": 3,
+  "ciphertext_size": "~15 letters",
+  "next_step": "Order SP 35/45-53, 73 copies; apply the Plunket numeral key (35/47/52, 35/73/52).",
+  "scans_online": false
+ },
+ {
+  "id": 1153,
+  "verdict": "open",
+  "prior_art": "open (checked 28 Oct 2026: known.py, TNA Discovery API record, web search (cryptiana not re-queried per item))",
+  "evidence": [
+   "https://discovery.nationalarchives.gov.uk/details/r/C12771598"
+  ],
+  "status_update": "Dates confirmed: SP 36/74/1/60 (19 Nov 1745), SP 54/25/8B (c.27 Apr 1745), SP 54/26/136 (14 Dec 1744?). Not digitised. No decipherment found.",
+  "seen": "catalogue",
+  "importance": 3,
+  "solvability": 2,
+  "difficulty": 3,
+  "ciphertext_size": "unknown, ~8 items",
+  "next_step": "Order copies from Kew; check SP 36/73/3 deciphered O'Brien copy for key hints.",
+  "scans_online": false
+ },
+ {
+  "id": 1157,
+  "verdict": "unreachable",
+  "prior_art": "unknown (checked 28 Oct 2026: web search found nothing on cipher in 38M49)",
+  "evidence": [
+   "https://discovery.nationalarchives.gov.uk/details/r/95a07122-3f60-46b7-8255-9f617e6db81a"
+  ],
+  "status_update": "Hampshire Archives record not fetched (Discovery pages returned empty to WebFetch; no cipher info found in search). Unverified.",
+  "seen": "catalogue",
+  "importance": 2,
+  "solvability": 2,
+  "difficulty": 3,
+  "ciphertext_size": "unknown",
+  "next_step": "Check Hampshire Archives catalogue/visit; look at 38M49/1/141/4 'Plan of a cypher'.",
+  "scans_online": false
+ }
+]

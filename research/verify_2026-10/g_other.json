@@ -1,0 +1,324 @@
+[
+ {
+  "id": 1160,
+  "verdict": "open",
+  "prior_art": "open (checked 28 Oct 2026: known.py; web search Kraus/Rosa/Chart. A 40, nothing; Kalliope records not fetched)",
+  "evidence": [
+   "http://kalliope-verbund.info/DE-611-HS-3435271"
+  ],
+  "status_update": "Re-checked: no decipherment or edition found; key (Bl. 186a) is catalogued in the same volume as the four letters, so a key-plus-text pair is likely. No images online per Kalliope.",
+  "seen": "catalogue",
+  "ciphertext_size": "4 documents, Bl. 187r-203v, plus key sheet; size unknown",
+  "next_step": "Ask Forschungsbibliothek Gotha for scans; test if text is cipher or Deckwoerter; compare targets/grumbach1564",
+  "scans_online": false
+ },
+ {
+  "id": 1245,
+  "verdict": "open",
+  "prior_art": "open (checked 28 Oct 2026: web search; Commons file page of Barlow 1807 letters to Grenville, no decipherment noted)",
+  "evidence": [
+   "https://commons.wikimedia.org/wiki/File:Two_letters_to_Thomas_Grenville_(in_cipher)_and_to_George_Tierney_on_affairs_in_India_-_DPLA_-_e4082bb91cf5f55ec10516bc367df12d_(page_1).jpg"
+  ],
+  "status_update": "Commons page confirms: Cleveland Public Library, Barlow (Governor-General), dated 1807, 'written in a curious cipher with covering letters', public domain, scans online (DPLA, 2 pages for the Grenville/Tierney item). No decipherment noted; image itself not inspected.",
+  "seen": "catalogue",
+  "ciphertext_size": "about 2 pages (page 1 and 2 files)",
+  "next_step": "Open both Commons scans; check numeric/symbol type; look in BL Add MS Grenville/Fortescue papers for a key",
+  "scans_online": true
+ },
+ {
+  "id": 1246,
+  "verdict": "open",
+  "prior_art": "open (checked 28 Oct 2026: web search, Commons file page, Catalan siege literature snippets; nothing says the cipher was read)",
+  "evidence": [
+   "https://commons.wikimedia.org/wiki/File:Sitio-barcelona-1714-carta-codigo-cifrado.jpg"
+  ],
+  "status_update": "Commons: Desvalls to consellers, 22 Aug 1714, recto and verso on one 1055x887 px image, public domain, AHCB Consell de Cent Cartas 1B-X-127; no decipherment stated. Low resolution; ask AHCB for a better scan. Possible lead: Pedralbes 2015 'La darrera carta de Desvalls' (8 Sep 1714), not checked for cipher.",
+  "seen": "catalogue",
+  "ciphertext_size": "1 letter, 2 sides",
+  "next_step": "Get a hi-res scan from AHCB; check Pedralbes 2015 article and AHCB sibling letters for a key",
+  "scans_online": true
+ },
+ {
+  "id": 1249,
+  "verdict": "open",
+  "prior_art": "open (checked 28 Oct 2026: web search; repo huyson1547; Commons page says partial decipherment only)",
+  "evidence": [
+   "https://commons.wikimedia.org/wiki/File:Encoded_letter_of_Gabriel_Luetz_d_Aramon_after_1546_with_partial_deciphering.jpg"
+  ],
+  "status_update": "Commons: 3034x2058 photo (2007) of an exhibit at Ecouen with a museum partial decipherment label; no inventory number on the page. The partial reading is the museum's panel, not a publication.",
+  "seen": "catalogue",
+  "ciphertext_size": "1 letter, photographed exhibit",
+  "next_step": "Read the museum gloss from the photo as cribs; identify the object via Ecouen/Joconde; compare huyson1547",
+  "scans_online": true
+ },
+ {
+  "id": 1250,
+  "verdict": "partly_read",
+  "prior_art": "partly read: Lanark correspondence deciphered and printed (Gardiner, Hamilton Papers, Camden Soc. 1880); overlapping NRS items per targets/hamilton NOTES remain catalogued undeciphered; key lead GD406/1/2197 offline-only (checked 28 Oct 2026)",
+  "evidence": [
+   "repo targets/hamilton/NOTES.md",
+   "https://catalogue.nrscotland.gov.uk/nrsonlinecatalogue/details.aspx?reference=GD406%2f1%2f2197"
+  ],
+  "status_update": "Confirmed overlap: targets/hamilton already lists 2181, 2189, 2191, 2194-2196, 2206, 2232, 2288 as undeciphered and holds the 2197 key lead; new here only 2183, 2184, 2186, 2188, 2190, 2193, 2218 and the numeric-only runs. Key sheets 2197 (5 items) are on-site only; order copies.",
+  "seen": "catalogue",
+  "ciphertext_size": "about 16 letters plus numeric-only letters",
+  "next_step": "Order NRS copies of 2197 and the listed letters in one request; test the key on one printed Gardiner letter first",
+  "scans_online": false
+ },
+ {
+  "id": 1251,
+  "verdict": "open",
+  "prior_art": "open (checked 28 Oct 2026: web search, known.py; NRS catalogue only)",
+  "evidence": [
+   "https://catalogue.nrscotland.gov.uk/nrsonlinecatalogue/details.aspx?reference=GD406%2f1%2f2192"
+  ],
+  "status_update": "Vane, Ulm 1632, wholly in cipher except postscript (NRS); 1632 is outside the c.1645-48 Hamilton key (2197), so it needs its own key. No decipherment found.",
+  "seen": "catalogue",
+  "ciphertext_size": "1 letter",
+  "next_step": "Request scan from NRS; ask whether 2197 holds a 1630s key",
+  "scans_online": false
+ },
+ {
+  "id": 1253,
+  "verdict": "open",
+  "prior_art": "open (checked 28 Oct 2026: web search; GEMMS/Biblissima list 'Rawley's cipher' as a language; no transcription or decipherment found)",
+  "evidence": [
+   "https://gemms.usask.ca/node/802452",
+   "https://cudl.lib.cam.ac.uk/view/MS-LAMBETH-02086/3"
+  ],
+  "status_update": "Commonplace book of Rawley c.1626-41; cipher entries paired with anecdotes; digitised on CUDL and in a Biblissima IIIF manifest. No published reading found. Anecdotes may be cribbable from Bacon apophthegm collections.",
+  "seen": "catalogue",
+  "ciphertext_size": "4+ short entries (fols 1r, 3v, 4v, 9r)",
+  "next_step": "View on CUDL, transcribe symbols, test substitution with Latin/English anecdotes",
+  "scans_online": true
+ },
+ {
+  "id": 1254,
+  "verdict": "unreachable",
+  "prior_art": "not verified: Bodleian archives site is behind Anubis proof-of-work; not bypassed, so record pages could not be opened. Web search found no decipherment of Walsingham-Harborne letters",
+  "evidence": [
+   "https://archives.bodleian.ox.ac.uk/repositories/2/archival_objects/221292"
+  ],
+  "status_update": "Could not open Bodleian records. Catalogue says 'Letter in cipher'; check whether Harborne/Levant Company editions print them deciphered.",
+  "seen": "catalogue",
+  "ciphertext_size": "2 letters (1585, 1587)",
+  "next_step": "Retry Bodleian in a human browser; check Tomokiyo Walsingham pages and State Papers Foreign Turkey calendars",
+  "scans_online": false
+ },
+ {
+  "id": 1255,
+  "verdict": "unreachable",
+  "prior_art": "not verified: Bodleian archives site is behind Anubis proof-of-work; not bypassed, so record pages could not be opened. Birch Thurloe vol. 2 on BHO lists only month sections, no correspondent index; the letters of 14 Aug-13 Nov 1654 may be printed there deciphered",
+  "evidence": [
+   "https://www.british-history.ac.uk/thurloe-papers/vol2",
+   "https://archives.bodleian.ox.ac.uk/repositories/2/archival_objects/820360"
+  ],
+  "status_update": "Search snippets confirm Stouppe to Tarente 14 Aug 1654 and Tarente to Stouppe 1 Oct and 13 Nov 1654 copies exist; Birch not grepped.",
+  "seen": "catalogue",
+  "ciphertext_size": "about 8 letters in A.17-A.20",
+  "next_step": "Full-text grep of Birch vols 2-3 (BHO/archive.org) for Stouppe and Tarente",
+  "scans_online": false
+ },
+ {
+  "id": 1256,
+  "verdict": "unreachable",
+  "prior_art": "not verified: Bodleian archives site is behind Anubis proof-of-work; not bypassed, so record pages could not be opened. Birch not grepped",
+  "evidence": [
+   "https://archives.bodleian.ox.ac.uk/repositories/2/archival_objects/820967"
+  ],
+  "status_update": "Not checked against Birch (vols iv-vi); likely printed deciphered, so probably low value.",
+  "seen": "catalogue",
+  "ciphertext_size": "about 9 letters",
+  "next_step": "Grep Birch vols 4-6 for Mountagu, Pawly, Mayo, Bampfylde",
+  "scans_online": false
+ },
+ {
+  "id": 1258,
+  "verdict": "partly_read",
+  "prior_art": "partly read per Bodleian catalogue ('partly deciphered'); checked 28 Oct 2026 by web search only",
+  "evidence": [
+   "https://archives.bodleian.ox.ac.uk/repositories/2/archival_objects/7831"
+  ],
+  "status_update": "Catalogue itself says substituted-word cipher, partly deciphered; Bodleian blocked, so not examined. Word-substitution code with partial gloss: viable if the gloss pages can be read.",
+  "seen": "catalogue",
+  "ciphertext_size": "70 leaves",
+  "next_step": "View Carte 212 images; compare Carte 50 f.405 key leads",
+  "scans_online": false
+ },
+ {
+  "id": 1259,
+  "verdict": "open",
+  "prior_art": "open (checked 28 Oct 2026: web search, repo grep; NRS catalogue only)",
+  "evidence": [
+   "https://catalogue.nrscotland.gov.uk/nrsonlinecatalogue/details.aspx?reference=GD16%2f34%2f1"
+  ],
+  "status_update": "Copies of three letters in cypher, c.1577-81; no decipherment found. Possible crib via Mary Queen of Scots/Beaton ciphers (not checked).",
+  "seen": "catalogue",
+  "ciphertext_size": "3 letters",
+  "next_step": "Request NRS scans; check Mary Stuart cipher tables",
+  "scans_online": false
+ },
+ {
+  "id": 1261,
+  "verdict": "open",
+  "prior_art": "open (checked 28 Oct 2026: web search only)",
+  "evidence": [
+   "https://catalogue.nrscotland.gov.uk/nrsonlinecatalogue/details.aspx?reference=CH12%2f12%2f1877"
+  ],
+  "status_update": "Cipher copy by Bishop Keith, probably Jacobite 1740s; no decipherment found.",
+  "seen": "catalogue",
+  "ciphertext_size": "1 sheet, unknown",
+  "next_step": "Request scan; check Stuart Papers calendar",
+  "scans_online": false
+ },
+ {
+  "id": 1278,
+  "verdict": "open",
+  "prior_art": "open (checked 28 Oct 2026: Penn finding aid, known.py; no digitisation or transcription mentioned)",
+  "evidence": [
+   "https://findingaids.library.upenn.edu/records/UPENN_RBML_PUSP.MS.COLL.579"
+  ],
+  "status_update": "Finding aid confirms 88 Torcy letters (79 to Gaultier), most wholly or partly in cipher, original coding/decoding keys present; not stated as digitised (copies on request via Kislak). Date range inconsistent in the aid (1702 vs 1711-14). Strong key-plus-text pair; published Torcy-Gaultier edition not checked.",
+  "seen": "catalogue",
+  "ciphertext_size": "79 letters, many pages",
+  "next_step": "Request scans of keys and 3 letters via Kislak; check Affaires etrangeres copies for clear text",
+  "scans_online": false,
+  "importance": 4,
+  "solvability": 4,
+  "difficulty": 2
+ },
+ {
+  "id": 1279,
+  "verdict": "open",
+  "prior_art": "open (checked 28 Oct 2026: web search, known.py; no printed decipherment found)",
+  "evidence": [
+   "https://findingaids.princeton.edu/catalog/C0063_c02861"
+  ],
+  "status_update": "Finding aid says 2 pages undeciphered code; the repo already holds the 1811 State Dept code key (NARA M34 v.16). Princeton site gave a TLS error from here, so the item page was not opened.",
+  "seen": "catalogue",
+  "ciphertext_size": "2 pages",
+  "next_step": "Check NARA M34 v.16 draft of 16 Jun 1812; request Princeton scan",
+  "scans_online": false
+ },
+ {
+  "id": 1280,
+  "verdict": "open",
+  "prior_art": "open, unconfirmed (checked 28 Oct 2026: Founders Online record exists, 99-01-02-08240; fetch returned blank so annotation unseen)",
+  "evidence": [
+   "https://founders.archives.gov/documents/Washington/99-01-02-08240"
+  ],
+  "status_update": "Founders Online has a Washington to Greene letter of 23 Apr 1782 from Newburgh; whether it is the cipher letter or has the decipherment in the notes was not seen. Washington cipher letters are usually printed deciphered, so likely low value.",
+  "seen": "catalogue",
+  "ciphertext_size": "unknown",
+  "next_step": "Open the Founders page in a browser and check for cipher/decipher notes; if printed, mark solved_published",
+  "scans_online": false,
+  "importance": 2,
+  "solvability": 4,
+  "difficulty": 2
+ },
+ {
+  "id": 1281,
+  "verdict": "open",
+  "prior_art": "open (checked 28 Oct 2026: known.py, web search; not rechecked against cryptiana)",
+  "evidence": [
+   "https://hollisarchives.lib.harvard.edu/catalog/hou01258_hou01258c00018"
+  ],
+  "status_update": "Houghton: 'A secret letter, partly in cipher', Louis XIV to Catinat, 29 Aug 1691. Catinat 1691 code reportedly unread (repo row 354). Not viewed.",
+  "seen": "catalogue",
+  "ciphertext_size": "partial, unknown",
+  "next_step": "Check Houghton digitisation; compare with Grand Chiffre and cryptiana louisxiv",
+  "scans_online": false
+ },
+ {
+  "id": 1282,
+  "verdict": "open",
+  "prior_art": "open (checked 28 Oct 2026: known.py, web search)",
+  "evidence": [
+   "https://hollisarchives.lib.harvard.edu/catalog/hou01434_hou01434c00014"
+  ],
+  "status_update": "Charles V to Lope Hurtado, Regensburg 11 Jun 1532, 'partly in code'; no decipherment found. Repo has Hurtado 1522-24 targets; the 1532 table may differ.",
+  "seen": "catalogue",
+  "ciphertext_size": "partial",
+  "next_step": "Ask Houghton for scan; compare Luo 2021 tables",
+  "scans_online": false
+ },
+ {
+  "id": 1283,
+  "verdict": "open",
+  "prior_art": "open (checked 28 Oct 2026: known.py, web search)",
+  "evidence": [
+   "https://hollisarchives.lib.harvard.edu/catalog/hou00671_hou00671c00022"
+  ],
+  "status_update": "Two autograph-album items, 1742 and 1744, 'written in cipher'; album pieces are typically short. No decipherment found.",
+  "seen": "catalogue",
+  "ciphertext_size": "2 short items",
+  "next_step": "Check Houghton digital copies",
+  "scans_online": false
+ },
+ {
+  "id": 1286,
+  "verdict": "open",
+  "prior_art": "open (checked 28 Oct 2026: known.py, web search)",
+  "evidence": [
+   "https://hollisarchives.lib.harvard.edu/catalog/hou01502_hou01502c01297"
+  ],
+  "status_update": "Microform series; folder titles only, so unknown whether cipher texts or decipherments are included. Large and low-value for the cipher project.",
+  "seen": "catalogue",
+  "ciphertext_size": "dozens of folders, unknown",
+  "next_step": "Inspect microform reels at Houghton",
+  "scans_online": false,
+  "importance": 2
+ },
+ {
+  "id": 1299,
+  "verdict": "unreachable",
+  "prior_art": "not verified: inventory page host (bibliotheques-numeriques.defense.gouv.fr) not opened; web search only",
+  "evidence": [
+   "https://bibliotheques-numeriques.defense.gouv.fr/emd/impression/document/2bc715e2-0c87-4ded-899c-253d205989e5"
+  ],
+  "status_update": "Not opened in this pass; sibling Kerlerec items 1756-57 already in catalogue.",
+  "seen": "catalogue",
+  "ciphertext_size": "unknown",
+  "next_step": "Retry the inventory page; match with ANOM C13A clear copies",
+  "scans_online": false
+ },
+ {
+  "id": 1300,
+  "verdict": "partly_read",
+  "prior_art": "partly read: Narvaez, Historia Mexicana 'Los despachos codificados de Pablo Obregon' (2 despatches decoded); others unconfirmed",
+  "evidence": [
+   "https://historiamexicana.colmex.mx/index.php/RHM/article/download/1751/1569"
+  ],
+  "status_update": "Narvaez article not read in this pass; extent of remaining coded despatches and digitisation unknown.",
+  "seen": "catalogue",
+  "ciphertext_size": "unknown",
+  "next_step": "Read Narvaez for the list of coded despatches; ask AHGE",
+  "scans_online": false
+ },
+ {
+  "id": 1301,
+  "verdict": "partly_read",
+  "prior_art": "partly read: Narvaez 2009, Estudios de Historia Moderna y Contemporanea de Mexico 38 (cipher part analysed, code part thin)",
+  "evidence": [
+   "https://moderna.historicas.unam.mx/index.php/ehm/article/download/17768/16948/25169"
+  ],
+  "status_update": "Article not read in this pass.",
+  "seen": "catalogue",
+  "ciphertext_size": "2 notes",
+  "next_step": "Read article for decoded portions; locate images at AHGE",
+  "scans_online": false
+ },
+ {
+  "id": 1302,
+  "verdict": "partly_read",
+  "prior_art": "partly analysed: Narvaez 2011, EHMCM 41 (attribution to Michelena from cryptanalysis)",
+  "evidence": [
+   "https://www.redalyc.org/pdf/941/94120769006.pdf"
+  ],
+  "status_update": "Article not read in this pass; research/latam_mexico notes Narvaez 2008/2011 cover Michelena 1824 and Torrens.",
+  "seen": "catalogue",
+  "ciphertext_size": "1 letter",
+  "next_step": "Read Narvaez 2011 for the extent of the decipherment",
+  "scans_online": false
+ }
+]

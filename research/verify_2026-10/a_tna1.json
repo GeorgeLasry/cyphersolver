@@ -1,0 +1,130 @@
+[
+ {
+  "id": 1135,
+  "verdict": "open",
+  "prior_art": "open-ish (checked 28 Oct 2026: web search, TNA Discovery record text, Saberton JAR 2019 Common Cipher article; Saberton 2010 not checked for these four). TNA record 30/11/3/207-209 says 'In number cipher, not deciphered', 10 Oct 1780, Money to Wemyss (Charlestown)",
+  "evidence": [
+   "https://beta.nationalarchives.gov.uk/catalogue/id/C6671059",
+   "https://allthingsliberty.com/2019/06/decoding-british-ciphers-used-in-the-south-1780-81/"
+  ],
+  "status_update": "TNA catalogue confirms 'number cipher, not deciphered' for 30/11/3/207-209 (Oct 1780). Other three items not opened. Images not confirmed online (order a copy at Kew).",
+  "seen": "catalogue",
+  "importance": 3,
+  "solvability": 3,
+  "difficulty": 2,
+  "ciphertext_size": "unknown (3 folios for first item)",
+  "next_step": "Order TNA copies; test Saberton/balfour1781 Common Cipher ring; grep Saberton 2010 vols for the text.",
+  "scans_online": false
+ },
+ {
+  "id": 1136,
+  "verdict": "unreachable",
+  "prior_art": "partly known (checked 28 Oct 2026: web search, TNA Discovery record text, Saberton 2010 and JAR 2019 exist; no per-letter check of which items are printed)",
+  "evidence": [
+   "https://allthingsliberty.com/2019/06/decoding-british-ciphers-used-in-the-south-1780-81/"
+  ],
+  "status_update": "Not verified item by item; umbrella entry for Cornwallis Papers southern letters. Saberton's 2010 edition (Naval & Military Press) likely prints many decoded; needs a volume check.",
+  "seen": "catalogue",
+  "importance": 3,
+  "solvability": 3,
+  "difficulty": 2,
+  "ciphertext_size": "unknown, many letters",
+  "next_step": "Check Saberton 2010 index per shelfmark; treat as sweep of undecoded leftovers only after that.",
+  "scans_online": false
+ },
+ {
+  "id": 1137,
+  "verdict": "unreachable",
+  "prior_art": "open (checked 28 Oct 2026: web search, TNA Discovery record text, nothing found; no per-item check)",
+  "evidence": [],
+  "status_update": "Not verified: could not open the Carleton Papers records; one description reportedly says 'deciphred'. Mostly pre-1783 Clinton/Cornwallis ciphers likely covered by Saberton's common cipher.",
+  "seen": "catalogue",
+  "importance": 3,
+  "solvability": 3,
+  "difficulty": 3,
+  "ciphertext_size": "unknown",
+  "next_step": "Open the four TNA records; check which say deciphered; film at LAC.",
+  "scans_online": false
+ },
+ {
+  "id": 1138,
+  "verdict": "open",
+  "prior_art": "open (checked 28 Oct 2026: web search, TNA Discovery record text, no published decipherment of Rupert-to-Legge found; Warburton's Memoirs of Prince Rupert prints Rupert-Legge letters 1644-45, so check whether it prints these decoded)",
+  "evidence": [
+   "https://discovery.nationalarchives.gov.uk/details/r/97d2fa62-c169-4938-9a2d-15f33bbf362b"
+  ],
+  "status_update": "Not opened in detail (Discovery pages did not render in WebFetch). Search found no decipherment; Warburton (1849) prints some Rupert-Legge letters and should be grepped before ordering images.",
+  "seen": "catalogue",
+  "importance": 4,
+  "solvability": 3,
+  "difficulty": 2,
+  "ciphertext_size": "unknown, ~23 items",
+  "next_step": "Grep Warburton vol 2/3 and HMC Dartmouth for each item; then request Staffordshire RO images and test Lasry Rupert keys.",
+  "scans_online": false
+ },
+ {
+  "id": 1139,
+  "verdict": "open",
+  "prior_art": "open (checked 28 Oct 2026: web search, TNA Discovery record text, no hit)",
+  "evidence": [
+   "https://discovery.nationalarchives.gov.uk/details/r/6c291438-302c-45c4-94d6-2c707d152818"
+  ],
+  "status_update": "Not opened; search found nothing on a decipherment.",
+  "seen": "catalogue",
+  "importance": 3,
+  "solvability": 3,
+  "difficulty": 2,
+  "ciphertext_size": "unknown",
+  "next_step": "Request Kresen Kernow image; try Rupert keys.",
+  "scans_online": false
+ },
+ {
+  "id": 1140,
+  "verdict": "open",
+  "prior_art": "open (checked 28 Oct 2026: web search, TNA Discovery record text, no hit)",
+  "evidence": [
+   "https://discovery.nationalarchives.gov.uk/details/r/48e366ff-f832-4c69-916d-a0a61056ba32"
+  ],
+  "status_update": "Not opened; no decipherment found. Oglander only appears in the context of Charles I's Isle of Wight escape plans.",
+  "seen": "catalogue",
+  "importance": 3,
+  "solvability": 2,
+  "difficulty": 3,
+  "ciphertext_size": "unknown, partial",
+  "next_step": "Ask IWRO for an image.",
+  "scans_online": false
+ },
+ {
+  "id": 1141,
+  "verdict": "open",
+  "prior_art": "open, but note Newport-period Charles I nomenclator is published (checked 28 Oct 2026: web search, TNA Discovery record text, Schmeh blog 'solved: encrypted letters from Charles I to his son' and the BL cipher key 1646-48 mention 583=Newport). TNA record: copy of cipher letter, 28 Oct 1648",
+  "evidence": [
+   "https://discovery.nationalarchives.gov.uk/details/r/2a186a49-aafd-4561-beff-4f4c43d80828",
+   "https://scienceblogs.de/klausis-krypto-kolumne/solved-the-encrypted-letters-from-charles-i-to-his-son"
+  ],
+  "status_update": "Search confirms record ZSW/554/1 dated 28 Oct 1648, copy of cipher letter; no decipherment found. A nomenclator with Newport=583 is known, so the Newport key may apply; images not seen.",
+  "seen": "catalogue",
+  "importance": 4,
+  "solvability": 3,
+  "difficulty": 2,
+  "ciphertext_size": "1 letter copy, size unknown",
+  "next_step": "Request Northumberland Archives image; test the 1648 Charles I nomenclator (BL Add MS key, Schmeh post).",
+  "scans_online": false
+ },
+ {
+  "id": 1142,
+  "verdict": "open",
+  "prior_art": "open (checked 28 Oct 2026: web search, TNA Discovery record text, no hit). TNA SP 78/114/218 = 'Bamfylde to Mr. Carol (cover only) and cipher letter ? attached', [?1659]",
+  "evidence": [
+   "https://beta.nationalarchives.gov.uk/catalogue/id/C7328450"
+  ],
+  "status_update": "TNA record confirms a cipher letter attached (f.275), ?1659, no decipherment note; /227 and /287 not opened. Images not free online.",
+  "seen": "catalogue",
+  "importance": 3,
+  "solvability": 2,
+  "difficulty": 3,
+  "ciphertext_size": "short; ~6 lines in one item",
+  "next_step": "Order TNA copies or check SPO; compare with Bamfylde royalist ciphers.",
+  "scans_online": false
+ }
+]

@@ -1,0 +1,193 @@
+[
+ {
+  "id": 854,
+  "verdict": "open",
+  "prior_art": "open (checked 28 Oct 2026: Tomokiyo spanish2C.htm (key list), repo known.py; BDH viewer returned HTTP 403 to script, not viewed; Cardona not mentioned on Tomokiyo's page)",
+  "evidence": [
+   "https://cryptiana.web.fc2.com/code/spanish2C.htm"
+  ],
+  "status_update": "Verified 28 Oct: no published reading found; Cardona absent from Tomokiyo's Charles V key list. BDH scans not viewed (403 to script). Note a separate 1513 Cardona cipher entry exists (id 1041).",
+  "seen": "catalogue",
+  "ciphertext_size": "4 letters, partly cipher",
+  "next_step": "View on BDH in a browser; try Kolosova Naples/Charles V keys (Ko.1, Ko.2) on the passages.",
+  "scans_online": null
+ },
+ {
+  "id": 855,
+  "verdict": "open",
+  "prior_art": "open (checked 28 Oct 2026: Tomokiyo spanish2C.htm (key list), repo known.py; BDH viewer returned HTTP 403 to script, not viewed; Sigüenza not mentioned)",
+  "evidence": [
+   "https://cryptiana.web.fc2.com/code/spanish2C.htm"
+  ],
+  "status_update": "Verified 28 Oct: no published reading found. Neighbouring Granvelle-family ciphers PP1/PP3 (Pich-Ponce 2023) may apply; bne_hispana README notes a Gonzaga sibling (bdh0000172697) with decipherment as crib.",
+  "seen": "catalogue",
+  "ciphertext_size": "6 letters, partly cipher",
+  "next_step": "View scans; test PP3 and PP1 (Pich-Ponce 2023) and use the Gonzaga 172697 decipherment as crib.",
+  "scans_online": null,
+  "solvability": 4
+ },
+ {
+  "id": 857,
+  "verdict": "open",
+  "prior_art": "open (checked 28 Oct 2026: Tomokiyo spanish2C.htm (key list), repo known.py; BDH viewer returned HTTP 403 to script, not viewed; Ferdinand/Hostalric 1473 not on Tomokiyo's page)",
+  "evidence": [
+   "https://cryptiana.web.fc2.com/code/spanish2C.htm"
+  ],
+  "status_update": "Verified 28 Oct: no published reading found; interlinear partial decipherment per BNE catalogue (not seen). 1473 would be among the oldest ciphers in the catalogue.",
+  "seen": "catalogue",
+  "ciphertext_size": "1 letter, cipher passages",
+  "next_step": "View BDH scans, transcribe cipher and interlinear glosses; rebuild a key from the pairs.",
+  "scans_online": null,
+  "importance": 4,
+  "solvability": 4
+ },
+ {
+  "id": 1166,
+  "verdict": "unreachable",
+  "prior_art": "open as to the Milan sheets (carried over from the entry; not re-searched beyond the sweep)",
+  "evidence": [
+   "https://www.lombardiabeniculturali.it/archivi/complessi-archivistici/MIBA003F4D/"
+  ],
+  "status_update": "Not re-verified this round: no online images (archive description only). Verdict kept as in the entry.",
+  "seen": "catalogue",
+  "ciphertext_size": "unknown",
+  "next_step": "Contact ASMi; compare with CSP Venetian 1615-17 despatches.",
+  "scans_online": null
+ },
+ {
+  "id": 1167,
+  "verdict": "unreachable",
+  "prior_art": "open (carried over; LBC description only, not re-searched)",
+  "evidence": [
+   "https://www.lombardiabeniculturali.it/archivi/complessi-archivistici/MIBA01C525/"
+  ],
+  "status_update": "Not re-verified this round: no images found, holder not established.",
+  "seen": "catalogue",
+  "ciphertext_size": "unknown",
+  "next_step": "Identify holder and digitisation.",
+  "scans_online": null
+ },
+ {
+  "id": 1265,
+  "verdict": "open",
+  "prior_art": "open (checked 28 Oct 2026: Tomokiyo spanish2C.htm (key list), repo known.py; BDH viewer returned HTTP 403 to script, not viewed; Carpi not mentioned)",
+  "evidence": [
+   "https://cryptiana.web.fc2.com/code/spanish2C.htm"
+  ],
+  "status_update": "Verified 28 Oct: no published reading found. Granvelle-family keys PP1/PP3 are candidates.",
+  "seen": "catalogue",
+  "ciphertext_size": "6 letters, partly cipher",
+  "next_step": "View six letters; test PP1/PP3; look for Gonzaga-style decipherment sheet.",
+  "scans_online": null
+ },
+ {
+  "id": 1266,
+  "verdict": "partly_read",
+  "prior_art": "possible key: Reales Pérez reconstructed Mary of Hungary's 1546 cipher from French letters to Granvelle; Pich-Ponce 2023 give PP3 (Perrenot) and PP1 (checked 28 Oct 2026: Tomokiyo spanish2C.htm (key list), repo known.py; BDH viewer returned HTTP 403 to script, not viewed)",
+  "evidence": [
+   "https://cryptiana.web.fc2.com/code/spanish2C.htm"
+  ],
+  "status_update": "Mary's ciphers to Granvelle have published reconstructions (Reales Pérez; Pich-Ponce PP3), so this letter may be readable with an existing key; no reading of this letter itself found.",
+  "seen": "catalogue",
+  "ciphertext_size": "1 letter",
+  "next_step": "View the ciphered letter; apply Reales Pérez's 1546 cipher and PP3.",
+  "scans_online": null,
+  "solvability": 4
+ },
+ {
+  "id": 1267,
+  "verdict": "open",
+  "prior_art": "open for these letters (checked 28 Oct 2026: Tomokiyo spanish2C.htm (key list), repo known.py; BDH viewer returned HTTP 403 to script, not viewed); Tomokiyo: Sessa used Kolosova's Ko.1, reconstructed from Sánchez/Juan Manuel letters",
+  "evidence": [
+   "https://cryptiana.web.fc2.com/code/spanish2C.htm"
+  ],
+  "status_update": "Verified 28 Oct: no reading of this volume found, but the cipher Ko.1 is known, so a key exists. Check Bergenroth CSP Spain 1525-29 too.",
+  "seen": "catalogue",
+  "ciphertext_size": "20 letters, some partly cipher",
+  "next_step": "View volume; apply Ko.1 and the sessa1523/sessa1524 keys.",
+  "scans_online": null,
+  "solvability": 4
+ },
+ {
+  "id": 1268,
+  "verdict": "open",
+  "prior_art": "open (checked 28 Oct 2026: Tomokiyo spanish2C.htm (key list), repo known.py; BDH viewer returned HTTP 403 to script, not viewed; Diego Hurtado de Mendoza 1547 cipher letter cited from Bertomeu Masià 2009; Luo Lu.32 attributed to Diego de Mendoza)",
+  "evidence": [
+   "https://cryptiana.web.fc2.com/code/spanish2C.htm"
+  ],
+  "status_update": "Verified 28 Oct: no reading found; candidate keys Lu.32 (Luo 2021) and Bertomeu Masià 2009 discussion.",
+  "seen": "catalogue",
+  "ciphertext_size": "1 cipher letter",
+  "next_step": "View first letter; test Lu.32 and the Masià cipher.",
+  "scans_online": null,
+  "solvability": 4
+ },
+ {
+  "id": 1269,
+  "verdict": "open",
+  "prior_art": "open for these letters (checked 28 Oct 2026: Tomokiyo spanish2C.htm (key list), repo known.py; BDH viewer returned HTTP 403 to script, not viewed); Leyva ciphers Ko.12 (1525), Ko.17 (1527), Lu.15 reconstructed by Kolosova/Luo",
+  "evidence": [
+   "https://cryptiana.web.fc2.com/code/spanish2C.htm"
+  ],
+  "status_update": "Verified 28 Oct: keys for Leyva exist (Kolosova Ko.12, Ko.17; Luo Lu.15), plus a decipherment with the letters per BNE, so a reading should be straightforward; check date of the two letters first.",
+  "seen": "catalogue",
+  "ciphertext_size": "2 cipher letters",
+  "next_step": "View the two letters, date them, apply Ko.12/Ko.17/Lu.15 and the in-file decipherment.",
+  "scans_online": null,
+  "solvability": 5
+ },
+ {
+  "id": 1270,
+  "verdict": "partly_read",
+  "prior_art": "partly read: Tomokiyo 2025 (AlonsoSanchez.htm) and Kolosova Ko.2 cover Juan Manuel's 1521-22 letters; 1497 letter is repo catalogue 1014 (read)",
+  "evidence": [
+   "https://cryptiana.web.fc2.com/code/spanish2C.htm",
+   "https://cryptiana.web.fc2.com/code/AlonsoSanchez.htm"
+  ],
+  "status_update": "Overlaps: 1521-22 letters read by Tomokiyo/Kolosova; 1497 letter duplicates catalogue 1014. Only other-dated letters in the seven may be open.",
+  "seen": "catalogue",
+  "ciphertext_size": "7 letters",
+  "next_step": "Date the seven letters on BDH and keep only those outside 1497 and 1521-22.",
+  "scans_online": null
+ },
+ {
+  "id": 1271,
+  "verdict": "open",
+  "prior_art": "open (checked 28 Oct 2026: Tomokiyo spanish2C.htm (key list), repo known.py; BDH viewer returned HTTP 403 to script, not viewed; Mirabel not mentioned)",
+  "evidence": [
+   "https://cryptiana.web.fc2.com/code/spanish2C.htm"
+  ],
+  "status_update": "Verified 28 Oct: no reading found.",
+  "seen": "catalogue",
+  "ciphertext_size": "unknown",
+  "next_step": "View ciphered letters; find Gondomar-era Spanish ambassador cipher.",
+  "scans_online": null
+ },
+ {
+  "id": 1273,
+  "verdict": "open",
+  "prior_art": "open (checked 28 Oct 2026: Tomokiyo spanish2C.htm (key list), repo known.py; BDH viewer returned HTTP 403 to script, not viewed; Olivares to Alba not mentioned)",
+  "evidence": [
+   "https://cryptiana.web.fc2.com/code/spanish2C.htm"
+  ],
+  "status_update": "Verified 28 Oct: no reading found.",
+  "seen": "catalogue",
+  "ciphertext_size": "1 letter, ff.13-15",
+  "next_step": "View ff.13-15 on BDH.",
+  "scans_online": null
+ },
+ {
+  "id": 1274,
+  "verdict": "open",
+  "prior_art": "open for the letters; key copy ('contracifra') in carpeta 8 per BNE; Kolosova Ko.3 reconstructs Nájera's cipher (checked 28 Oct 2026: Tomokiyo spanish2C.htm (key list), repo known.py; BDH viewer returned HTTP 403 to script, not viewed)",
+  "evidence": [
+   "https://cryptiana.web.fc2.com/code/spanish2C.htm"
+  ],
+  "status_update": "Nájera's cipher Ko.3 is reconstructed (Kolosova) and the volume holds a key copy; the letters themselves are not found read. Related repo target lopehurtado1523.",
+  "seen": "catalogue",
+  "ciphertext_size": "34+ letters",
+  "next_step": "View carpeta 8; apply Ko.3 and the copy of the key to the ciphered letters.",
+  "scans_online": null,
+  "solvability": 5
+ }
+]

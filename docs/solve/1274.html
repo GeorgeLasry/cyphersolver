@@ -40,7 +40,7 @@
 </div>
 
 <section class="hero solve">
-  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 1274 · class A · priority 6.5 · open</p>
+  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 1274 · class A · priority 7.4 · open</p>
   <h1>Abbot of Nájera → Charles V: 34+ letters, with a copy of the 'contracifra' (carpeta 8)</h1>
   <p class="sub">A key copy in hand for a 1522 imperial cipher; reads the Nájera letters and may match other 1522 ciphers in the repo.</p>
   <dl class="facts">
@@ -75,21 +75,20 @@ THE CIPHER
     - Europeana record: https://www.europeana.eu/item/2022717/bnesearch_detalle_bdh0000186680
 
 WHAT IS KNOWN
-  Status: BNE catalogue: the 8th folder holds a copy of the key ('contracifra'). Related to the repo's lopehurtado1523 target (its 'Claro' leaf is the Abbot of Nájera's). No decipherment of the ciphered letters noted beyond the key copy; the first 12 letters are in print (Pacheco).
+  Status: BNE catalogue: the 8th folder holds a copy of the key ('contracifra'). Related to the repo's lopehurtado1523 target (its 'Claro' leaf is the Abbot of Nájera's). No decipherment of the ciphered letters noted beyond the key copy; the first 12 letters are in print (Pacheco). Checked 28 Oct 2026: Nájera's cipher Ko.3 is reconstructed (Kolosova) and the volume holds a key copy; the letters themselves are not found read. Related repo target lopehurtado1523.
   Outcome so far: not yet attempted by the project
-  Prior-art check: open (checked 28 Oct 2026: repo known.py, Europeana BNE record, web search for cryptiana; no decipherment found; BDH viewer not reachable by script, not viewed)
-  Check first: View carpeta 8 and the ciphered letters; compare with targets/lopehurtado1523 and the Nájera 'Claro' leaf.
+  Prior-art check: open for the letters; key copy ('contracifra') in carpeta 8 per BNE; Kolosova Ko.3 reconstructs Nájera's cipher (checked 28 Oct 2026: Tomokiyo spanish2C.htm (key list), repo known.py; BDH viewer returned HTTP 403 to script, not viewed)
+  Check first: View carpeta 8; apply Ko.3 and the copy of the key to the ciphered letters.
   Class A: a sibling letter with a decipherment is in the same volume or series, so matching it is the first move.
-  Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/lopehurtado1523/NOTES.md
 
 STEPS
 0. Set up. If you can run a shell, fork and clone the repository and work inside it:
      git clone https://github.com/dbourdeau/cyphersolver.git
    Then read, in this order: CONTRIBUTING.md (how a contribution is sent and credited); README.md, sections
-   "Repository layout" and "Conventions" (how readings are measured and named); targets/lopehurtado1523/NOTES.md (everything
-   already tried on this cipher, with the files it used); and lang/README.md (shared language models).
-   Put all your work in targets/lopehurtado1523/: transcription, key, decipherment, scripts. Add your findings to its NOTES.md
-   under a dated heading, without rewriting what is there. Keep WORKLOG.md there too:
+   "Repository layout" and "Conventions" (how readings are measured and named); and
+   lang/README.md (shared language models).
+   Put all your work in targets/&lt;writer&gt;&lt;year&gt;/ (a new folder, e.g. sega1593): transcription, key, decipherment, scripts. Write a NOTES.md that says
+   what the document is, the system, the key, the reading, and what is open and why. Keep WORKLOG.md there too:
    one dated line per step (transcription, hypothesis, solver run, crib, key found, control), failures included.
    Do not edit docs/ (the site is generated and rebuilt on merge) and do not commit large images: link them.
    If you cannot run a shell, do the same work in files you keep and send them with the issue below.
@@ -129,7 +128,7 @@ STEPS
      - not applicable: Not a cipher (clear text, shorthand, a key sheet, instructions), or the item could not be reached.
 
 REPORT BACK
-With a clone: open a pull request with your targets/lopehurtado1523/ folder. Say in the description how you want to be
+With a clone: open a pull request with your targets/&lt;writer&gt;&lt;year&gt;/ folder. Say in the description how you want to be
   credited (name, initials or handle, and a link) and include the same points as the issue below.
 Without one: open an issue: https://github.com/dbourdeau/cyphersolver/issues/new?template=solution.yml&amp;title=Solution%3A+catalogue+1274&amp;target=catalogue+1274
 (other kinds of contribution: https://github.com/dbourdeau/cyphersolver/issues/new/choose). Include:
@@ -145,16 +144,16 @@ If you cannot open issues or pull requests, write this report for your human to 
 <h2>What is known</h2>
 
 
-<p><b>Status and prior art.</b> BNE catalogue: the 8th folder holds a copy of the key ('contracifra'). Related to the repo's lopehurtado1523 target (its 'Claro' leaf is the Abbot of Nájera's). No decipherment of the ciphered letters noted beyond the key copy; the first 12 letters are in print (Pacheco).</p>
-<p><b>Outcome so far.</b> Not yet attempted by the project. Prior-art check: open (checked 28 Oct 2026: repo known.py, Europeana BNE record, web search for cryptiana; no decipherment found; BDH viewer not reachable by script, not viewed).</p>
-<p><b>Check first.</b> View carpeta 8 and the ciphered letters; compare with targets/lopehurtado1523 and the Nájera 'Claro' leaf.</p>
-<ul><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lopehurtado1523/NOTES.md" rel="noopener">targets/lopehurtado1523/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/lopehurtado1523" rel="noopener">the folder</a>)</li></ul>
+<p><b>Status and prior art.</b> BNE catalogue: the 8th folder holds a copy of the key ('contracifra'). Related to the repo's lopehurtado1523 target (its 'Claro' leaf is the Abbot of Nájera's). No decipherment of the ciphered letters noted beyond the key copy; the first 12 letters are in print (Pacheco). Checked 28 Oct 2026: Nájera's cipher Ko.3 is reconstructed (Kolosova) and the volume holds a key copy; the letters themselves are not found read. Related repo target lopehurtado1523.</p>
+<p><b>Outcome so far.</b> Not yet attempted by the project. Prior-art check: open for the letters; key copy ('contracifra') in carpeta 8 per BNE; Kolosova Ko.3 reconstructs Nájera's cipher (checked 28 Oct 2026: Tomokiyo spanish2C.htm (key list), repo known.py; BDH viewer returned HTTP 403 to script, not viewed).</p>
+<p><b>Check first.</b> View carpeta 8; apply Ko.3 and the copy of the key to the ciphered letters.</p>
+
 
 
 <h2>Scores</h2>
 <dl class="facts">
   <dt>Importance</dt><dd><span class="dots " title="3 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i><i class=""></i></span> 3 of 5</dd>
-  <dt>Solvability</dt><dd><span class="dots " title="4 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></span> 4 of 5</dd>
+  <dt>Solvability</dt><dd><span class="dots " title="5 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span> 5 of 5</dd>
   <dt>Difficulty</dt><dd><span class="dots diff" title="2 of 5"><i class="on"></i><i class="on"></i><i class=""></i><i class=""></i><i class=""></i></span> 2 of 5</dd>
   <dt>Class A</dt><dd>a sibling letter with a decipherment is in the same volume or series, so matching it is the first move</dd>
   <dt>Note</dt><dd>Scored from the BNE catalogue description (via the Europeana record API) during the Oct 2026 BNE/Hispana sweep (research/bne_hispana/); not viewed</dd>

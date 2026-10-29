@@ -1,0 +1,162 @@
+[
+ {
+  "id": 1190,
+  "verdict": "open",
+  "prior_art": "open (checked 28 Oct 2026: known.py ledgers+DECODE, web searches on the names/cipher, Calames/FranceArchives notice; no published decipherment found; cryptiana and HistoCrypt not searched in depth)",
+  "evidence": [
+   "https://calames.abes.fr/pub/ms/IF1B11028"
+  ],
+  "status_update": "Verified 28 Oct 2026 on Calames: f. 120 is a letter of Maurice le Savant to Henri IV, Cassel 28 Mar 1606, original 'en partie chiffré', printed from the minute in Rommel p. 297 (clear minute = likely crib). No decipherment note; no online images found.",
+  "seen": "catalogue",
+  "ciphertext_size": "one letter, partly ciphered, length unknown",
+  "next_step": "Fetch Rommel (Gallica/archive.org) p. 297 for the clear text; request Institut images.",
+  "scans_online": false,
+  "solvability": 4
+ },
+ {
+  "id": 1191,
+  "verdict": "open",
+  "prior_art": "open (checked 28 Oct 2026: known.py ledgers+DECODE, web searches on the names/cipher, Calames/FranceArchives notice; no published decipherment found; cryptiana and HistoCrypt not searched in depth)",
+  "evidence": [
+   "https://calames.abes.fr/pub/ms/IF1B11142"
+  ],
+  "status_update": "Verified 28 Oct 2026 on Calames: f. 50 original 'en partie chiffré'; no decipherment note, no edition cited, no images online found.",
+  "seen": "catalogue",
+  "ciphertext_size": "one letter, partly ciphered",
+  "next_step": "Request Institut images; look for printed Villeroy/La Chatre correspondence.",
+  "scans_online": false
+ },
+ {
+  "id": 1192,
+  "verdict": "open",
+  "prior_art": "open (checked 28 Oct 2026: known.py ledgers+DECODE, web searches on the names/cipher, Calames/FranceArchives notice; no published decipherment found; cryptiana and HistoCrypt not searched in depth)",
+  "evidence": [
+   "https://calames.abes.fr/pub/ms/IF1B11345"
+  ],
+  "status_update": "Verified 28 Oct 2026 on Calames (f. 83 read): 'Original, en partie chiffré'; no decipherment note, no edition cited. Not the repo's jeannin1607 target (that is BnF fr. 3516). Printed Jeannin negotiations may carry clear text (not checked). No online images found.",
+  "seen": "catalogue",
+  "ciphertext_size": "about 10 letters, partly ciphered",
+  "next_step": "Check printed Négociations de Jeannin for clear text; request images.",
+  "scans_online": false
+ },
+ {
+  "id": 1194,
+  "verdict": "open",
+  "prior_art": "open (checked 28 Oct 2026: known.py ledgers+DECODE, web searches on the names/cipher, Calames/FranceArchives notice; no published decipherment found; cryptiana and HistoCrypt not searched in depth)",
+  "evidence": [
+   "https://calames.abes.fr/pub/ms/IF1B11835"
+  ],
+  "status_update": "Verified 28 Oct 2026 on Calames: Feuquières to Rorté, 14 Mar-8 Apr 1634 (ff. 110-117 listed), originals 'en grande partie chiffrés'; no decipherment note. Different from repo targets feuquieres/feuquieres1678. No online images found.",
+  "seen": "catalogue",
+  "ciphertext_size": "six letters, largely ciphered",
+  "next_step": "Request Institut images; check whether Feuquières's 1634 letters are printed with clear text.",
+  "scans_online": false
+ },
+ {
+  "id": 1199,
+  "verdict": "open",
+  "prior_art": "open (checked 28 Oct 2026: known.py ledgers+DECODE, web searches on the names/cipher, Calames/FranceArchives notice; no published decipherment found; cryptiana and HistoCrypt not searched in depth)",
+  "evidence": [
+   "https://francearchives.gouv.fr/fr/facomponent/a20674bd5dc6965a8d721a2fa1eb9fe170ac2ecc"
+  ],
+  "status_update": "Checked 28 Oct 2026: 5 Oct 1745 notice says 'lettre chiffrée en entier', 'document numérisé', but the FranceArchives page shows no image viewer (same as repo orvilliers1759 note: C14 flagged numérisé but no digital object). No decipherment found.",
+  "seen": "catalogue",
+  "ciphertext_size": "four wholly ciphered letters plus passages; lengths unknown",
+  "next_step": "Order reproductions from ANOM or find the digital object on the ANOM site; reuse Cayenne key work of orvilliers1759.",
+  "scans_online": false
+ },
+ {
+  "id": 1200,
+  "verdict": "open",
+  "prior_art": "open (checked 28 Oct 2026: known.py ledgers+DECODE, web searches on the names/cipher, Calames/FranceArchives notice; no published decipherment found; cryptiana and HistoCrypt not searched in depth)",
+  "evidence": [
+   "https://francearchives.gouv.fr/fr/facomponent/6ce8f6c42e9e0e35c6e3272675157a077b7a2ad2"
+  ],
+  "status_update": "Checked 28 Oct 2026: 28 May 1747 'lettre entièrement chiffrée'; page shows no image viewer. No decipherment found.",
+  "seen": "catalogue",
+  "ciphertext_size": "one wholly ciphered letter",
+  "next_step": "Order ANOM reproductions; look for the minister's despatch in COL B.",
+  "scans_online": false
+ },
+ {
+  "id": 1202,
+  "verdict": "open",
+  "prior_art": "open (checked 28 Oct 2026: known.py ledgers+DECODE, web searches on the names/cipher, Calames/FranceArchives notice; no published decipherment found; cryptiana and HistoCrypt not searched in depth)",
+  "evidence": [
+   "https://francearchives.gouv.fr/fr/facomponent/1bd8971212209a5c804b009c94910f186d12a09f"
+  ],
+  "status_update": "Viewed 28 Oct 2026 in the FranceArchives IIIF viewer: COL C8 A 77 f. 88 (17 Sep 1778) is a one-page numeric cipher letter, about 150 numbers, clear salutation only, no interlinear decipherment; calendar says 'non décryptée'. Images online. Repo mercier1761 key (C8 A 64) is the obvious first test.",
+  "seen": "image",
+  "ciphertext_size": "f. 88 about 1 page, ~150 groups; f. 101 with enclosures",
+  "next_step": "Test the mercier1761 nomenclator, then anneal.",
+  "scans_online": true
+ },
+ {
+  "id": 1203,
+  "verdict": "open",
+  "prior_art": "open (checked 28 Oct 2026: known.py ledgers+DECODE, web searches on the names/cipher, Calames/FranceArchives notice; no published decipherment found; cryptiana and HistoCrypt not searched in depth)",
+  "evidence": [
+   "https://francearchives.gouv.fr/fr/facomponent/9dac56c15b6b561cbb340e939888dac36bd9360b"
+  ],
+  "status_update": "Viewed 28 Oct 2026: C8 A 78 no. 363 (11 Oct 1779) loads in the FranceArchives viewer, a page of numeric groups, no interlinear clear seen on the first image. About 18 ciphered letters across C8 A 78-81. No decipherment found.",
+  "seen": "image",
+  "ciphertext_size": "~18 letters, numeric, 1-2 pages each",
+  "next_step": "Test the mercier1761 key on one letter, cluster by date.",
+  "scans_online": true
+ },
+ {
+  "id": 1206,
+  "verdict": "open",
+  "prior_art": "open (checked 28 Oct 2026: known.py ledgers+DECODE, web searches on the names/cipher, Calames/FranceArchives notice; no published decipherment found; cryptiana and HistoCrypt not searched in depth)",
+  "evidence": [
+   "https://francearchives.gouv.fr/fr/facomponent/e053412f6fd38edabea0721a4527bc936933535d"
+  ],
+  "status_update": "Checked 28 Oct 2026: 9 Oct 1755 notice 'Dépêche chiffrée' (Momberault/Abekas news); no image viewer on the page. Pusch, 'Kerlérec's cipher: the code book of Louisiana's last French governor' exists (title only seen via bahf-psl.obspm.fr); could be a key for Kerlérec's cipher, which would change status to key available.",
+  "seen": "catalogue",
+  "ciphertext_size": "three despatches, length unknown",
+  "next_step": "Locate Pusch's article (Louisiana history journal) and ANOM digital object.",
+  "scans_online": false
+ },
+ {
+  "id": 1207,
+  "verdict": "open",
+  "prior_art": "open (checked 28 Oct 2026: known.py ledgers+DECODE, web searches on the names/cipher, Calames/FranceArchives notice; no published decipherment found; cryptiana and HistoCrypt not searched in depth)",
+  "evidence": [
+   "https://francearchives.gouv.fr/fr/facomponent/9d7a69e263014306aaee99be58127ed8ffdcc410"
+  ],
+  "status_update": "Checked 28 Oct 2026: 3 Jul 1759 'Lettre chiffrée', no viewer on page. Pusch's Kerlérec code-book article (title only) is a possible key.",
+  "seen": "catalogue",
+  "ciphertext_size": "about 5 letters, length unknown",
+  "next_step": "Obtain Pusch article and ANOM images.",
+  "scans_online": false
+ },
+ {
+  "id": 1208,
+  "verdict": "unreachable",
+  "prior_art": "open (checked 28 Oct 2026: known.py ledgers+DECODE, web searches on the names/cipher, Calames/FranceArchives notice; no published decipherment found; cryptiana and HistoCrypt not searched in depth)",
+  "evidence": [
+   "https://francearchives.gouv.fr/fr/facomponent/0478865ced1e19277f5fa3bd8b04df6260766dd0"
+  ],
+  "status_update": "Checked 28 Oct 2026: notice only says 'annonçant en chiffres la perte de la colonie' (1760, Moreau de Saint-Méry F3 16); no viewer, and 'en chiffres' may mean figures, not cipher. Possibly the same letter as the Vaudreuil 13 Aug 1760 cipher in research/canada_lac (COL C11A 105).",
+  "seen": "catalogue",
+  "ciphertext_size": "unknown",
+  "next_step": "Compare with canada_lac lead; request the item.",
+  "scans_online": false,
+  "importance": 3,
+  "solvability": 2
+ },
+ {
+  "id": 1213,
+  "verdict": "open",
+  "prior_art": "open (checked 28 Oct 2026: known.py ledgers+DECODE, web searches on the names/cipher, Calames/FranceArchives notice; no published decipherment found; cryptiana and HistoCrypt not searched in depth)",
+  "evidence": [
+   "https://francearchives.gouv.fr/fr/facomponent/5de6fe97979ed9394e893b59b7466b1fbd6daac7",
+   "https://francearchives.gouv.fr/fr/facomponent/88a18913c95936f34a17e808281702af72ed3017"
+  ],
+  "status_update": "Checked 28 Oct 2026: AD Dordogne 2 E 1841-18 inventory says 'correspondance chiffrée de Condé' 1651-52, no images on page. SHD GR 1KT 211 (Papiers Brianson) lists five ciphered Condé letters of 1651 'accompagnées de la transcription et de la méthode de décryptage' (photocopies, cf. 1 Kmi 62): a likely key/crib, not online.",
+  "seen": "catalogue",
+  "ciphertext_size": "unknown, Dordogne file; SHD five letters with transcription",
+  "next_step": "Request SHD 1 Kmi 62 and Dordogne images.",
+  "scans_online": false
+ }
+]
