@@ -3027,6 +3027,7 @@ GROUPS = [(M.KEY[m], M.LABEL[m][0].upper() + M.LABEL[m][1:], M.status_class(m, '
           ('survey', 'Surveys', 'todo', lambda p: p['slug'] in SURVEYS)]
 # the Explore menu: the pages that are not write-ups (slug, label, one line)
 EXPLORE = [('highlights', 'Highlights', 'Thirty favourites: the funny, the historic, the ingenious'),
+           ('archives', 'To the archive', 'Pieces only an archive or a library can supply: take one on'),
            ('glossary', 'Glossary', 'How each cipher was solved, and the terms used'),
            ('famous', 'The famous ones', 'Why Voynich, Kryptos, Beale and Dorabella resist'),
            ('atlas', 'Atlas', 'Every letter drawn on the map, five centuries of it'),
@@ -3516,7 +3517,7 @@ def fold_findings(s, n=RECENT_VISIBLE):
                  f'<button class="showmore" type="button" data-target="findings" data-step="20">Show {len(rest)} earlier finding{"s" if len(rest) != 1 else ""}</button>')
     return s[:m.start(2)] + head + s[m.end(2):]
 
-PAGE_STYLED = {'atlas', 'catalogue', 'further', 'goldbar', 'highlights', 'huangxing', 'keys', 'roosevelt', 'secret', 'sunintercepts', 'sunyatsen'}
+PAGE_STYLED = {'archives', 'atlas', 'catalogue', 'further', 'goldbar', 'highlights', 'huangxing', 'keys', 'roosevelt', 'secret', 'sunintercepts', 'sunyatsen'}
 SHARED_INLINE = ('.why', '.w-yes', '.w-no', '.w-lang', '.w-otp', '.w-short', '.w-fake', '.w-open', '.item', '.item h3', '.item .meta2', '.ct', '.callout', '.callout h3', '.tw')
 
 def credit_figures(s):
@@ -3837,6 +3838,11 @@ if __name__ == '__main__':
     C.build_html()
     import _further_page as F                   # further.html: the readings left partial, from each NOTES.md Remaining gaps
     print('further: %d partial readings' % F.build_html(PAGES))
+    import _archives_page as AR                 # archives.html: requests for archives and libraries, from archive_requests.json
+    print('archives: %d open requests' % AR.build_html(PAGES))
+    sys.path.insert(0, str(HERE.parent / 'tools')); import seed_archive_requests as SAR
+    new, gone = SAR.main(dry=True, quiet=True)
+    if new or gone: print(f'archives: {new} needs-physical-access gaps not in archive_requests.json, {gone} gone from NOTES; run python tools/seed_archive_requests.py')
     for f in sorted(HERE.glob('*.html')):      # date every page before any menu is built: the menu lists the newest
         page_dates(f.stem, f.read_text(encoding='utf-8').lstrip('﻿'))
     (HERE / 'writeups.html').write_text(writeups_html(), encoding='utf-8')

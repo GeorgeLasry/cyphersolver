@@ -246,7 +246,7 @@ def page(pages, profiles, reg, dates, version, today):
 </ul>
 
 <h2 id="further"><span class="num">06</span> Readings to take further</h2>
-<p>{len(fq)} write-ups are read in part. Each lists what is still open in its notes: code groups with no value yet, passages hard to read on the images, letters for which no key is known, pieces that need the original in the archive. Any of these can be pushed towards a fuller reading: a value for a code group, a better reading of a line, a key found in another volume, a look at the manuscript. Those with open code groups come first, as the most workable from the images alone; <a href="contribute.html#further">how to send it</a>. Each one also has its own page with its gaps and instructions to hand an AI agent: <a href="further.html">Read further</a>. The same list, with the summaries, is <a href="writeups.html#extent=partial">on the write-ups page</a>.</p>
+<p>{len(fq)} write-ups are read in part. Each lists what is still open in its notes: code groups with no value yet, passages hard to read on the images, letters for which no key is known, pieces that need the original in the archive. Any of these can be pushed towards a fuller reading: a value for a code group, a better reading of a line, a key found in another volume, a look at the manuscript. Those with open code groups come first, as the most workable from the images alone; <a href="contribute.html#further">how to send it</a>. Each one also has its own page with its gaps and instructions to hand an AI agent: <a href="further.html">Read further</a>. Gaps that need the original or a book out of reach are listed by archive on <a href="archives.html">To the archive</a>, for anyone who can visit or order. The same list, with the summaries, is <a href="writeups.html#extent=partial">on the write-ups page</a>.</p>
 <ul class="list wl cqueue">
 {further_rows}
 </ul>
@@ -271,6 +271,8 @@ def strip(pages, profiles, reg, n=8):
         for c in leads(reg)) + chips
     q = len(queue(pages, profiles))
     fn = sum(p.get('extent') == 'partial' and bool(p.get('folders')) for p in pages)
+    import _archives_page as AR
+    na = sum(r['status'] in AR.LIVE for r in AR.load())
     return f'''<!-- contrib:start -->
 <section class="contribstrip" id="contributors" aria-labelledby="cs-h">
 <h2 id="cs-h"><span class="num">&#9993;</span> A shared ledger</h2>
@@ -283,6 +285,7 @@ def strip(pages, profiles, reg, n=8):
 <li><b>A new unsolved cipher</b>, with its shelfmark and images.</li>
 <li><b>A new cipher with its solution.</b></li>
 <li><b>A verification</b> of a reading already here: {q} are waiting for an independent check.</li>
+<li><b>A visit or a request to an archive</b>: {na} pieces need a reading room, a reproduction order or a library, <a href="archives.html">listed by archive</a>.</li>
 </ul>
 <p class="cs-go"><a class="btn" href="contribute.html">How to contribute &rarr;</a></p>
 </div>

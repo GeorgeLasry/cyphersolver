@@ -1,0 +1,64 @@
+name: Archive request
+description: Take on an archive request (a visit, a reproduction order or a library lookup), report one done, or propose a new one (see archives.html).
+title: "Archive request: <ar-id or archive>"
+labels: [contribution, archive-visit]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The open requests are listed at https://dbourdeau.github.io/cyphersolver/archives.html, each with its id (ar-001, ar-002 ...). One issue per request, or per trip if you will cover several at the same archive.
+  - type: dropdown
+    id: stage
+    attributes:
+      label: What this is
+      options:
+        - I can take this request (claim it)
+        - I asked the archive (reproduction or digitisation order sent)
+        - Done: images, a photograph or the text are attached or linked
+        - The archive says the piece is lost or cannot be reproduced
+        - A new request (a piece the project should see that is not listed)
+    validations: {required: true}
+  - type: input
+    id: request
+    attributes:
+      label: Request id(s)
+      description: From archives.html, e.g. ar-016, ar-036. Leave empty for a new request.
+      placeholder: "ar-0xx"
+  - type: dropdown
+    id: kind
+    attributes:
+      label: How
+      options:
+        - Visit to the reading room
+        - Reproduction order or email to the archive
+        - Library or database access (a book, State Papers Online, HathiTrust ...)
+    validations: {required: true}
+  - type: input
+    id: archive
+    attributes:
+      label: Archive and shelfmark
+      placeholder: "BnF, fr. 4029 ff. 118-128"
+    validations: {required: true}
+  - type: input
+    id: when
+    attributes:
+      label: When (month)
+      description: The month you plan to go or sent the request. A month is enough; it is shown on the public page.
+      placeholder: "2026-11"
+  - type: checkboxes
+    id: photo
+    attributes:
+      label: Photographs
+      options:
+        - label: The archive lets readers photograph, and I can share the photographs with the project
+        - label: The images may be published on the site with a credit line (otherwise they stay in the working files only)
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: For a report, the images or a link, the folios covered, and what you saw (a decipherment bound in, the line ends at the gutter, a missing leaf). For a new request, what is needed and why.
+  - type: input
+    id: credit
+    attributes:
+      label: How to credit you
+      description: Name, initials or handle, and a link if you like. Shown on archives.html and on the write-up the request belongs to.
