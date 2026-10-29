@@ -1,0 +1,216 @@
+{
+ "schema_version": 1,
+ "target": "catinat1702",
+ "title": "Marshal Catinat, coded despatch from the camp of 'Inglesheim', 15 Sept 1702 (Aarau, Zurlauben archive, Dup.ta Nr. 93, f. 238; Cryptoole XX1702-1)",
+ "documents": [
+  {
+   "id": "D1",
+   "shelfmark": "Aarau, Aargauer Kantonsbibliothek, Zurlauben family archive, leaf marked 'Dup.ta', 'Nr. 93', f. 238 (signature unknown)",
+   "date": "15 Sept 1702",
+   "year": 1702,
+   "country": "France",
+   "route": "Camp under Strasbourg ('Ingleshem', probably Lingolsheim beside the HQ at Eckbolsheim) -> probably Beat Jakob II Zurlauben, Zug",
+   "language": "French",
+   "pages": 3,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ]
+   },
+   "length": {
+    "tokens": 591,
+    "distinct": 186,
+    "unit": "code groups",
+    "measured": true,
+    "file": "tokens.json"
+   },
+   "transcription": {
+    "by": "mixed",
+    "source": "Lichtenberger 1 May 2016 (Klausis Krypto Kolumne comment 1) with Norbert's corrections (comment 30); all 47 lines checked against the images 28 Oct 2026, two groups changed",
+    "image_quality": "good",
+    "notes": "Doubtful groups (1.18.14, 1.22.7, 2.01.7, 2.10.9, 2.12.13 cut by the fold, 2.01.13, 2.19.13) listed in ciphertext.txt. Page 2 ends in clear 'Je suis avec plus de verite', continued on p. 3."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "nomenclator",
+   "homophonic",
+   "code"
+  ],
+  "summary": "Numeric nomenclator with figures 3-464, no word division, 43% of tokens below 100 (probably letters); system not established.",
+  "symbol_kind": "digits",
+  "distinct_symbols": 186,
+  "diacritics": {
+   "used": "unknown"
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": "unknown"
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "none",
+  "doubled_letters": "unknown",
+  "sibling_key": "none",
+  "notes": "IC 0.0086, matches Feuquieres 1691 petit chiffre (Norbert 2016), not the Grand Chiffre of 1691 (IC about 0.005). Repeats show homophones 10=17, 22=277, 101=350 (Thomas, Tomokiyo 2016)."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "Klausis Krypto Kolumne 2016 thread and Cryptoole XX1702-1: unsolved",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "transcription",
+   "images"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "Project-level: pasted the catalogue task text and asked for the attempt; no target-specific intervention.",
+  "tools": [
+   "ordered_low.py (annealed block boundaries scored on a French bigram model)",
+   "lang/ fr-grand-siecle model",
+   "grid_test.py / grid_control.py (residue test with control)",
+   "sibling_need.py (coverage estimate)",
+   "targets/feuquieres key_petit_chiffre_1690.tsv"
+  ],
+  "models": [
+   "claude-sonnet-5-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-10-28",
+  "last_date": "2026-10-28"
+ },
+ "solution": [
+  {
+   "date": "2026-10-28",
+   "kind": "access",
+   "what": "Downloaded the three page images and Bazeries-More-Letters.pdf from Klausis Krypto Kolumne; saved the comment thread text.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "literature search",
+   "what": "Read the 2016 thread (46 comments): Tomokiyo's catalogue, IC comparisons, repeats; no decipherment.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "transcription",
+   "what": "Rebuilt ciphertext.txt from Lichtenberger plus Norbert's 17 corrections; 591 tokens, matches Tomokiyo's count; page 1 lines 1-3 compared with the image.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "statistics",
+   "technique": [
+    "frequency analysis"
+   ],
+   "what": "186 distinct, 64 singletons, IC 0.0086, 252 tokens at or below 99.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis",
+    "simulated annealing",
+    "language-model scoring"
+   ],
+   "what": "Low numbers as single letters in alphabetical blocks: annealed 25 block boundaries on a French bigram model over runs of consecutive low numbers.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "control",
+   "what": "Same search on synthetic French enciphered by an ordered block scheme with the real run lengths: letter accuracy 35-40%; and on randomly relabelled numbers as null.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "transcription",
+   "what": "All 47 cipher lines compared with the page images: two groups corrected, seven flagged doubtful.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "sibling key",
+   "technique": [
+    "key matching",
+    "language-model scoring"
+   ],
+   "what": "Applied the project's Pignerol petit chiffre 1690 key (167 groups; same IC and low-number share): covers 247/591 tokens, 4-gram score -3.70 inside the relabelled-null range -2.98 to -4.06.",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "hypothesis",
+   "technique": [
+    "key matching",
+    "frequency analysis"
+   ],
+   "what": "Compared the number-range profile with Tomokiyo's 8B code of 4 Apr 1702: 8B never uses 1-21 (11% here) and has 24% of tokens above 400 (6% here).",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis",
+    "statistical test"
+   ],
+   "what": "Grid layout with column = initial letter (Tomokiyo Item 4/8B): residues of the high groups mod k=5..30 against a permutation null; no k significant.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "control",
+   "what": "Synthetic grid codes (k=10, 13, 18) at 591 tokens: the residue test misses them too, so the real result says nothing.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "crib",
+   "technique": [
+    "repeat/pattern analysis",
+    "crib testing"
+   ],
+   "what": "Homophone constraints from the two long repeats (10=17, 22=277, 101=350) and the five contexts of 41 269: consistent with Norbert's 'l'armee', not testable further without key material.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "statistics",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Resampling estimate: a deciphered sibling in the same code of about 200 tokens would give values for about 70% of this letter, about 1000 tokens for about 97%.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "literature search",
+   "what": "Aargau catalogue (blocked by a browser check), Vault II-III, Tomokiyo, BnF fr. 6204 key list: no sibling, clear copy or key; Vault places the camp at Eckbolsheim from 14 Sept, so 'Ingleshem' is probably Lingolsheim.",
+   "result": "failed"
+  }
+ ],
+ "outcome": {
+  "method": "not solved",
+  "method_basis": "Ciphertext-only attempt with a key-structure hypothesis; the controlled search recovers only 35-40% of letters even when the hypothesis is true, and the real decode is gibberish.",
+  "contribution": [
+   "none"
+  ],
+  "class": "not read",
+  "fraction_read": 0,
+  "verification": [
+   "matched control"
+  ],
+  "notes": "Real data scored -2.35 per token against -2.42 to -2.60 for relabelled nulls, a gap as large as the control's, so ordered low numbers are possible but unproven. No key, no crib."
+ }
+}
