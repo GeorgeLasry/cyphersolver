@@ -275,7 +275,7 @@ CENTURIES = [('1400s', '1400s'), ('1500s', '1500s'), ('1600s', '1600s'), ('1700s
 SOURCES = [('decode', 'DECODE'), ('sweep', 'archive sweeps'), ('cryptoole', 'Cryptoole'), ('bnf', 'BnF / Gallica'),
            ('print', 'print and literature'), ('contributed', 'sent in')]
 STATUSES = [('new', 'not attempted'), ('progress', 'in progress here'), ('attempted', 'attempted here'), ('skipped', 'skipped')]
-ACCESS = [('workable', 'no outside blocker'), ('archive', 'needs archive scans')]
+ACCESS = [('online', 'no archive trip needed'), ('workable', 'no outside blocker'), ('archive', 'needs archive scans')]
 CLASSES = [('A', 'A · sibling deciphered'), ('B', 'B · partial key known'), ('C', 'C · no key')]
 
 
@@ -315,7 +315,7 @@ def filter_keys(e):
     o = e.get('outcome') or ''
     return {'lang': lang_keys(e), 'century': century_key(e), 'region': e['region'], 'cls': e['cls'],
             'status': 'progress' if progress(e) else 'skipped' if 'skipped' in o else 'attempted' if o.startswith('attempted') else 'new',
-            'access': [k for k, on in (('workable', e.get('workable')), ('archive', e.get('access') == 'archive')) if on],
+            'access': [k for k, on in (('online', e.get('access') != 'archive'), ('workable', e.get('workable')), ('archive', e.get('access') == 'archive')) if on],
             'source': source_key(e), 'seen': 'image' if seen_image(e) else 'catalogue',
             'counted': 'counted' if e['counted'] else 'noted'}
 
@@ -441,7 +441,7 @@ qi.addEventListener('input',function(ev){state.q=ev.target.value.trim().toLowerC
 clr.addEventListener('click',function(){state.q='';state.f={};qi.value='';render();});
 document.getElementById('wreset').addEventListener('click',function(){state.sort='prio';state.dir=-1;state.w={imp:D.weights.importance,sol:D.weights.solvability,eas:D.weights.ease};document.getElementById('w_imp').value=state.w.imp*100;document.getElementById('w_sol').value=state.w.sol*100;document.getElementById('w_eas').value=state.w.eas*100;render();});
 var qm=/[?&]q=([^&#]+)/.exec(location.search);if(qm){var qv=decodeURIComponent(qm[1].replace(/\+/g,' '));qi.value=qv;state.q=qv.trim().toLowerCase();}
-if(!(hm&&G[hm[1]]))load();
+if(!(hm&&G[hm[1]])){if(location.hash.indexOf('=')<0)state.f.access=['online'];load();}
 render(!location.hash||hm);
 if(hm&&G[hm[1]])document.getElementById('hashnote').scrollIntoView();
 })();
