@@ -105,6 +105,42 @@ His posts (Nov 2019, Mar 2020) describe Elgar's solution of Schooling's 1896 cip
 
 ---
 
+## Padgett reply, 29 Oct 2026 (live lead: Chris Bennett)
+
+Robert W. Padgett replied and copied Chris Bennett, former curator at the Elgar Birthplace Museum, who gave him the
+high-resolution photographs of Index Card No. 6 and the notebook page. Ask Bennett: where the cards, the notebook and
+the painted box are held now; whether the full card series (cards 5 onward, including the run of arc signs) can be
+photographed; reproduction terms. Padgett has not seen the painted box. His own Spanish reading is tested in NOTES
+step 27 (negative). Bauer, *Unsolved!* ch. 3 prints cards 1-4 (pp. 139-140); the pages after 140 are still to be seen.
+
+Draft reply (not sent; Daniel sends it himself):
+
+> Dear Mr Padgett, dear Mr Bennett,
+>
+> Thank you both, and thank you, Mr Padgett, for copying Mr Bennett in. The higher-resolution "Cryptogram" card on
+> your blog was a real help: at that size its middle line reads as the eight sign directions in order, so I now treat
+> it as an alphabet exercise rather than a message.
+>
+> Mr Bennett, may I ask three things?
+> 1. Where are Elgar's Schooling index cards, the 1920s notebook and the painted box held now, and is there a
+>    catalogue reference I should cite?
+> 2. Could the whole card series be photographed, front and back? I would most like to know whether any card other
+>    than "Cryptogram" carries text in the semicircle signs. Card 6, with the run of arc signs, is the one I am
+>    after first.
+> 3. Does the Birthplace hold anything of Dora Penny's: a better print of the 1937 plate, or the Methuen
+>    photograph of the note?
+>
+> I would credit the museum and you by name, and could share any result before publishing.
+>
+> Mr Padgett, I tested the Spanish reading as carefully as I could: the words are there under the notebook key, but
+> random keys on the same signs give as much Spanish on average, so I could not count it as evidence. The details
+> are on the write-up page, https://dbourdeau.github.io/cyphersolver/dorabella.html, if you would like to see them.
+>
+> With thanks,
+> Daniel Bourdeau
+
+---
+
 ## When something comes back
 
 Put the files in `targets/dorabella/src/incoming/` with a note of the holder, reference, date and the permission terms.
