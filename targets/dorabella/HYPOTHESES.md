@@ -99,6 +99,7 @@ has 27, so it was written with one fixed table throughout. The rows below stay a
 | branch | status | evidence |
 |---|---|---|
 | floating cribs (50 words) | NEG | S 7 |
+| a quotation anywhere in the English corpus (letters or word initials) | NEG | R 18, R 22, R 67 |
 | fixed openings / sign-offs | X for sign-offs; NEG for openings | R 10 |
 | Lullaby melodies | NEG | S 20, 25 |
 | Playfair (cipher pairs never identical) | X | R 12 |

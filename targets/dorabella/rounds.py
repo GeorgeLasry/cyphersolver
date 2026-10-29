@@ -1896,3 +1896,24 @@ def round52():
         sc, t2 = run([key[c] for c in pt], 200 + j); ctl.append(sc); acc.append(np.mean([a == b for a, b in zip(t2, pt)]))
     log(52, 'Dorabella as a melody (music model from the Lullaby arrangement)', D, nulls, ctl, txt,
         f'ctl acc {min(acc):.2f}..{max(acc):.2f}', acc)
+
+
+# ------------------------------------------------------------------ round 67: quotation anywhere in the English corpus
+@rnd(67)
+def round67():
+    raw = corpora.text(['en-gutenberg'])
+    T = {'gutenberg letters': np.frombuffer(lm.norm(raw, 'modern', False).encode(), dtype=np.uint8) - 97}
+    I = {'gutenberg initials': np.array([ord(w[0].lower()) - 97 for w in re.findall(r'[A-Za-z]+', raw)], dtype=np.uint8)}
+    print({k: len(v) for d in (T, I) for k, v in d.items()}, flush=True)
+    for nm, X in (('letters', T), ('word initials', I)):
+        D = quote_search(SIGNS, X)
+        nulls = [quote_search(s, X)[0] for s in shuffles(3)]
+        rng = random.Random(67); ctl = []
+        for j in range(2):
+            k = rng.choice(list(X)); st = rng.randrange(len(X[k]) - N); w = X[k][st:st + N]
+            cells = rng.sample([(o, a) for o in range(8) for a in range(3)], 24)
+            sg = [cells[x % 24] for x in w]
+            for q in rng.sample(range(N), 6):
+                sg[q] = (rng.randrange(8), rng.randrange(3))
+            ctl.append(quote_search(sg, X)[0])
+        log(67, f'quotation anywhere in en-gutenberg 16M ({nm})', D[0], nulls, ctl, D[3], f'{D[1]}@{D[2]} explains {D[0]}/87')
