@@ -1,79 +1,71 @@
 {
  "method": "b1_segmentation.py -- closing the segmentation gap named in NOTES.md section 2.\n\nTwo questions:\n (1) Do the ZL statistics depend on treating IVTFF uncertain spaces (',') as word breaks?\n     CERTAIN tokenisation = words joined across ',', split only at '.';  ALL = the existing TSV\n     (every ',' a break).  Same battery on both.\n (2) Does a European language WRITTEN SYLLABICALLY reproduce the Voynichese profile?  Latin prose\n     (Confessiones), Latin verse (Aeneid) and 16th-c. Italian are cut into syllables by a stated rule,\n     the syllables are treated as words, and the same battery is run; a 'CV-rigid' variant trims each\n     syllable to one consonant + one vowel.\n\nPure Python 3.12.  Writes results/b1.json and results/b1.md.  Reuses a1_charstats (entropy helpers,\nmerge tokenisers) and a3_wordgrammar (precedence counts, linear-order search, violation statistics).\n\nMETHOD CHOICES (all of them)\n----------------------------\nVoynich text\n  * data/ZL3b-n.txt re-parsed here with the same regexes as parse_ivtff.py (page headers skipped, locus\n    lines matched, <!..> <..> {..} removed, [a:b] -> a).  Only locus type P (paragraph text).\n  * CERTAIN: ',' deleted (the two halves become one word), '.' splits.  ALL: data/ZL3b-n.words.tsv as\n    produced by parse_ivtff.py (',' -> break).  The re-parse in 'split' mode is checked to reproduce the\n    TSV token list exactly.\n  * Filter (a3's): words containing '?' or any character outside {a c d e f g h i k l m n o p q r s t y}\n    are dropped.  In CERTAIN a join with a '?' word drops the whole joined word.\n  * Alphabets: RAW EVA (one character = one symbol); MERGE-A3 (ckh cth cph cfh ch sh eee ee iiin iin in\n    -> one symbol each; the alphabet of NOTES 4.3 and 4.4); MERGE2-A1 (a1's merge2: benches, bench\n    gallows, i/e groups, aiin ain in, qo; the 'merged' row of NOTES 4.1).  Multi-character glyphs are\n    mapped to private-use code points so every statistic sees one character per symbol.\n  * ALL is additionally truncated to the CERTAIN token count (ALL_trunc) so that the size-dependent\n    statistics (types, hapax, Zipf) are compared at equal token count.\n\nLanguages\n  * Latin prose: corp_la_33849 (Augustine, Confessiones); Latin verse: corp_la_227 (Aeneid); Gutenberg\n    header/footer stripped at '*** START OF' / '*** END OF'; lower-case; a word = maximal run of Unicode\n    letters (a3's LETTER regex).  Italian: targets/vatican5/corpus_it.txt (already lower-cased; about 8% Latin\n    tokens per v_a3).  No tokens skipped at the start (as in a3).\n  * Sample size: the first N tokens of each tokenisation, N = number of clean ZL ALL tokens.  For the\n    syllable tokenisations N SYLLABLES are taken (equal token count with Voynichese, not equal text).\n\nSyllabification rule (applied inside each orthographic word; word boundaries are always syllable\nboundaries)\n  * Vowels = a e i o u y.  A 'u' immediately after 'q' is treated as a consonant (qu = one onset).\n  * A nucleus = a maximal run of vowels (diphthongs and hiatus are NOT separated: 'ae', 'io', 'uo' are\n    one nucleus; this under-counts Latin syllables slightly).\n  * Consonant cluster C1..Ck between two nuclei:  k=1 -> V|CV ;  k>=2 -> the split is placed before the\n    longest tail of the cluster that is a permitted onset: 3-letter onsets {str spr scr spl scl sch chr\n    thr phr}, 2-letter onsets {bl br cl cr dr fl fr gl gr pl pr tr ph th ch qu gn st sp sc sm sn}, else\n    before the last consonant (VC|CV, so double consonants split: 'tt' -> t|t).\n  * Word-initial consonants join the first syllable, word-final consonants the last.  A word with no\n    vowel is one syllable.\n  * Examples: 'confessiones' -> con fes sio nes ; 'instrumentum' -> in stru men tum ; 'quae' -> quae ;\n    'aeneidos' -> ae nei dos ; 'troiae' -> troiae (one nucleus) ; 'signore' -> si gno re.\n  * CV-rigid variant: each syllable -> (first consonant of its onset, if any) + (first vowel of its\n    nucleus, if any); coda dropped.  'stru' -> 'su', 'men' -> 'me', 'quae' -> 'qa', 'ae' -> 'a'.\n    A vowel-less syllable keeps its first consonant.\n  * Bisyllabic variants (added because live hypothesis (a) in NOTES makes a 4-5 glyph Voynich word equal\n    to about two 2-3 glyph units): syl2 = syllables 1+2, 3+4, ... of each word joined into one token, an\n    odd final syllable alone ('confessiones' -> confes siones, 'arma' -> arma, 'cano' -> cano); cv2 = the\n    same chunks after CV trimming ('confessiones' -> cofe sine).  Word boundaries are never crossed.\n\nStatistics (identical code path for every corpus)\n  * tokens, types, hapax fraction of types, Zipf slope = OLS of log10 freq on log10 rank, ranks\n    1..min(1000, types) (a2's definition).\n  * word length in symbols: mean, variance, and variance/mean of (length-1) (a2's dispersion index).\n  * h1, h2 with spaces (space is a symbol; line ends are not marked) and without spaces (tokens\n    concatenated), plug-in estimates, bits (a1's stream_stats); h2 within-word.\n  * positional lock (a5): symbols with >= 20 occurrences; position class single/initial/medial/final;\n    'locked' = >= 90% of occurrences in one of initial/medial/final; reported as fraction of symbol\n    types, plus I(symbol; position) in bits.\n  * pair-violation rigidity (a3): token-weighted fraction of within-word ordered pairs of distinct\n    symbols that are out of order under the best linear order of the alphabet (a3.best_order, 12\n    restarts); 'length-matched' = the corpus resampled with replacement inside each word length to the\n    word-length histogram of ZL ALL merge-a3 (v_a3's length_matched, nearest available length when a\n    length is absent); reported n/a when the corpus has no token longer than 2 symbols.  Also the\n    violation fraction by word length (2,3,4,5) under the global order.\n  * Shuffle null: symbols shuffled inside each word (a3.shuffle_within), reported for the syllable\n    tokenisations.\n",
  "part1": {
-  "N_ALL": 34059,
+  "N_ALL": 34719,
   "N_CERTAIN": 31602,
   "stats": {
    "ALL/raw": {
     "label": "ZL ALL raw",
-    "n_tokens": 34059,
-    "n_symbols_total": 172663,
+    "n_tokens": 34719,
+    "n_symbols_total": 173213,
     "alphabet": 19,
-    "types": 7182,
-    "zipf_slope_1_1000": -1.0403,
+    "types": 6934,
+    "zipf_slope_1_1000": -1.0412,
     "ranks_used": 1000,
-    "hapax_type_frac": 0.6952,
-    "hapax_token_frac": 0.1466,
-    "top1_share": 0.0225,
+    "hapax_type_frac": 0.6772,
+    "hapax_token_frac": 0.1353,
+    "top1_share": 0.0235,
     "top5": [
      [
       "daiin",
-      767
+      815
      ],
      [
       "ol",
-      523
+      530
      ],
      [
       "chedy",
-      488
+      493
      ],
      [
       "aiin",
-      454
+      459
      ],
      [
       "shedy",
-      421
+      424
      ]
     ],
     "length": {
-     "mean": 5.07,
-     "variance": 3.728,
-     "disp_len_minus1": 0.916,
-     "max": 22,
+     "mean": 4.989,
+     "variance": 3.195,
+     "disp_len_minus1": 0.801,
+     "max": 14,
      "hist": {
-      "1": 1078,
-      "2": 2143,
-      "3": 3065,
-      "4": 6064,
-      "5": 8442,
-      "6": 6610,
-      "7": 3883,
-      "8": 1568,
-      "9": 636,
-      "10": 251,
-      "11": 116,
-      "12": 78,
-      "13": 50,
-      "14": 30,
-      "15": 16,
-      "16": 17,
-      "17": 4,
-      "18": 1,
-      "19": 4,
-      "20": 1,
-      "21": 1,
-      "22": 1
+      "1": 1107,
+      "2": 2196,
+      "3": 3208,
+      "4": 6267,
+      "5": 8707,
+      "6": 6800,
+      "7": 4008,
+      "8": 1587,
+      "9": 578,
+      "10": 180,
+      "11": 52,
+      "12": 18,
+      "13": 9,
+      "14": 2
      }
     },
-    "h1_sp": 3.8707,
-    "h2_sp": 2.1135,
-    "h1_nosp": 3.8614,
-    "h2_nosp": 2.3074,
-    "h1_minus_h2_nosp": 1.5539,
-    "h2_within_word": 2.0603,
-    "H_word_bits": 10.261,
+    "h1_sp": 3.868,
+    "h2_sp": 2.1041,
+    "h1_nosp": 3.8621,
+    "h2_nosp": 2.3154,
+    "h1_minus_h2_nosp": 1.5468,
+    "h2_within_word": 2.0621,
+    "H_word_bits": 10.199,
     "positional": {
      "n_symbols": 19,
      "locked_frac": 0.316,
@@ -86,186 +78,178 @@
       "m",
       "q"
      ],
-     "mi_bits": 0.6956
+     "mi_bits": 0.7206
     },
     "pair": {
-     "pair_violation_frac": 0.1574,
-     "pairs": 395047,
+     "pair_violation_frac": 0.1448,
+     "pairs": 382446,
      "order": "q p f c s h o t k e d a l y i r g n m",
      "by_length": {
-      "2": 0.0636,
-      "3": 0.1061,
-      "4": 0.091,
-      "5": 0.1085,
-      "6": 0.1428
+      "2": 0.062,
+      "3": 0.1052,
+      "4": 0.0925,
+      "5": 0.1107,
+      "6": 0.145
      }
     },
-    "seconds": 0.7
+    "seconds": 0.3
    },
    "ALL/merge_a3": {
     "label": "ZL ALL merge_a3",
-    "n_tokens": 34059,
-    "n_symbols_total": 140001,
+    "n_tokens": 34719,
+    "n_symbols_total": 140439,
     "alphabet": 27,
-    "types": 6897,
-    "zipf_slope_1_1000": -1.056,
+    "types": 6649,
+    "zipf_slope_1_1000": -1.0565,
     "ranks_used": 1000,
-    "hapax_type_frac": 0.6913,
-    "hapax_token_frac": 0.14,
-    "top1_share": 0.0286,
+    "hapax_type_frac": 0.6729,
+    "hapax_token_frac": 0.1289,
+    "top1_share": 0.0301,
     "top5": [
      [
       "da",
-      974
+      1046
      ],
      [
       "a",
-      603
+      612
      ],
      [
       "qoka",
-      544
+      546
      ],
      [
       "ol",
-      523
+      530
      ],
      [
       "edy",
-      488
+      493
      ]
     ],
     "length": {
-     "mean": 4.111,
-     "variance": 2.48,
-     "disp_len_minus1": 0.797,
-     "max": 17,
+     "mean": 4.045,
+     "variance": 2.122,
+     "disp_len_minus1": 0.697,
+     "max": 11,
      "hist": {
-      "1": 1109,
-      "2": 3514,
-      "3": 7851,
-      "4": 8597,
-      "5": 7396,
-      "6": 3669,
-      "7": 1218,
-      "8": 361,
-      "9": 163,
-      "10": 72,
-      "11": 46,
-      "12": 34,
-      "13": 9,
-      "14": 11,
-      "15": 2,
-      "16": 6,
-      "17": 1
+      "1": 1139,
+      "2": 3605,
+      "3": 8178,
+      "4": 8856,
+      "5": 7620,
+      "6": 3750,
+      "7": 1184,
+      "8": 270,
+      "9": 94,
+      "10": 15,
+      "11": 8
      }
     },
-    "h1_sp": 3.8555,
-    "h2_sp": 2.3411,
-    "h1_nosp": 3.9067,
-    "h2_nosp": 2.6349,
-    "h1_minus_h2_nosp": 1.2718,
-    "h2_within_word": 2.3602,
-    "H_word_bits": 10.093,
+    "h1_sp": 3.8656,
+    "h2_sp": 2.3301,
+    "h1_nosp": 3.9253,
+    "h2_nosp": 2.6459,
+    "h1_minus_h2_nosp": 1.2795,
+    "h2_within_word": 2.361,
+    "H_word_bits": 10.029,
     "positional": {
-     "n_symbols": 25,
-     "locked_frac": 0.24,
-     "locked_n": 6,
+     "n_symbols": 27,
+     "locked_frac": 0.296,
+     "locked_n": 8,
      "locked_symbols": [
       "iin",
       "e",
       "i",
+      "n",
       "ee",
       "m",
-      "q"
+      "q",
+      "h"
      ],
-     "mi_bits": 0.6904
+     "mi_bits": 0.7182
     },
     "pair": {
-     "pair_violation_frac": 0.1596,
-     "pairs": 252550,
-     "order": "q p f sh c ch cfh cph cth o t k ckh e ee d h s a i l r y g n iin m",
+     "pair_violation_frac": 0.145,
+     "pairs": 244319,
+     "order": "q p sh f ch c cph cth o t k ckh cfh e ee s d a i l h r y n g iin m",
      "by_length": {
-      "2": 0.0316,
-      "3": 0.0755,
-      "4": 0.1305,
-      "5": 0.1373,
-      "6": 0.1594
+      "2": 0.0325,
+      "3": 0.0756,
+      "4": 0.132,
+      "5": 0.1382,
+      "6": 0.1572
      }
     },
-    "seconds": 0.7
+    "seconds": 0.4
    },
    "ALL/merge2_a1": {
     "label": "ZL ALL merge2_a1",
-    "n_tokens": 34059,
-    "n_symbols_total": 129475,
+    "n_tokens": 34719,
+    "n_symbols_total": 129920,
     "alphabet": 33,
-    "types": 7182,
-    "zipf_slope_1_1000": -1.0403,
+    "types": 6934,
+    "zipf_slope_1_1000": -1.0412,
     "ranks_used": 1000,
-    "hapax_type_frac": 0.6952,
-    "hapax_token_frac": 0.1466,
-    "top1_share": 0.0225,
+    "hapax_type_frac": 0.6772,
+    "hapax_token_frac": 0.1353,
+    "top1_share": 0.0235,
     "top5": [
      [
       "d",
-      767
+      815
      ],
      [
       "ol",
-      523
+      530
      ],
      [
       "edy",
-      488
+      493
      ],
      [
       "",
-      454
+      459
      ],
      [
       "edy",
-      421
+      424
      ]
     ],
     "length": {
-     "mean": 3.801,
-     "variance": 2.364,
-     "disp_len_minus1": 0.844,
-     "max": 16,
+     "mean": 3.742,
+     "variance": 2.028,
+     "disp_len_minus1": 0.74,
+     "max": 11,
      "hist": {
-      "1": 1718,
-      "2": 4732,
-      "3": 8397,
-      "4": 9328,
-      "5": 6047,
-      "6": 2483,
-      "7": 782,
-      "8": 289,
-      "9": 144,
-      "10": 54,
-      "11": 41,
-      "12": 19,
-      "13": 9,
-      "14": 7,
-      "15": 3,
-      "16": 6
+      "1": 1755,
+      "2": 4904,
+      "3": 8672,
+      "4": 9586,
+      "5": 6233,
+      "6": 2548,
+      "7": 726,
+      "8": 211,
+      "9": 71,
+      "10": 8,
+      "11": 5
      }
     },
-    "h1_sp": 3.9319,
-    "h2_sp": 2.5047,
-    "h1_nosp": 4.0339,
-    "h2_nosp": 2.8655,
-    "h1_minus_h2_nosp": 1.1684,
-    "h2_within_word": 2.6154,
-    "H_word_bits": 10.261,
+    "h1_sp": 3.9416,
+    "h2_sp": 2.4916,
+    "h1_nosp": 4.0531,
+    "h2_nosp": 2.8762,
+    "h1_minus_h2_nosp": 1.1769,
+    "h2_within_word": 2.6161,
+    "H_word_bits": 10.199,
     "positional": {
-     "n_symbols": 31,
-     "locked_frac": 0.355,
-     "locked_n": 11,
+     "n_symbols": 33,
+     "locked_frac": 0.394,
+     "locked_n": 13,
      "locked_symbols": [
       "e",
       "i",
+      "n",
       "iin",
       "ee",
       "ain",
@@ -274,23 +258,24 @@
       "iiin",
       "qo",
       "eee",
+      "h",
       "q"
      ],
-     "mi_bits": 0.7127
+     "mi_bits": 0.7422
     },
     "pair": {
-     "pair_violation_frac": 0.1751,
-     "pairs": 215366,
-     "order": "q qo p f sh c ch cph ckh cth cfh h o t k eee e ee d s a i l r in y n aiin g m iiin ain iin",
+     "pair_violation_frac": 0.1598,
+     "pairs": 208034,
+     "order": "qo q p sh f ch c cph cth o t k ckh eee cfh e ee s d a i l h r y g aiin m ain iin in n iiin",
      "by_length": {
-      "2": 0.0241,
-      "3": 0.0782,
-      "4": 0.125,
-      "5": 0.1651,
-      "6": 0.2136
+      "2": 0.0247,
+      "3": 0.08,
+      "4": 0.126,
+      "5": 0.165,
+      "6": 0.2095
      }
     },
-    "seconds": 0.7
+    "seconds": 0.6
    },
    "CERTAIN/raw": {
     "label": "ZL CERTAIN raw",
@@ -390,9 +375,9 @@
       "6": 0.1454
      }
     },
-    "pair_length_matched": 0.1609,
+    "pair_length_matched": 0.1513,
     "lm_exact_length_coverage": 1.0,
-    "seconds": 1.0
+    "seconds": 1.3
    },
    "CERTAIN/merge_a3": {
     "label": "ZL CERTAIN merge_a3",
@@ -487,9 +472,9 @@
       "6": 0.1682
      }
     },
-    "pair_length_matched": 0.1622,
+    "pair_length_matched": 0.1509,
     "lm_exact_length_coverage": 1.0,
-    "seconds": 1.1
+    "seconds": 1.3
    },
    "CERTAIN/merge2_a1": {
     "label": "ZL CERTAIN merge2_a1",
@@ -587,80 +572,72 @@
       "6": 0.2203
      }
     },
-    "pair_length_matched": 0.1762,
+    "pair_length_matched": 0.1639,
     "lm_exact_length_coverage": 1.0,
-    "seconds": 1.1
+    "seconds": 1.3
    },
    "ALL_trunc/raw": {
     "label": "ZL ALL_trunc raw",
     "n_tokens": 31602,
-    "n_symbols_total": 159886,
+    "n_symbols_total": 156838,
     "alphabet": 19,
-    "types": 6810,
-    "zipf_slope_1_1000": -1.0378,
+    "types": 6440,
+    "zipf_slope_1_1000": -1.039,
     "ranks_used": 1000,
-    "hapax_type_frac": 0.6941,
-    "hapax_token_frac": 0.1496,
-    "top1_share": 0.0234,
+    "hapax_type_frac": 0.6745,
+    "hapax_token_frac": 0.1375,
+    "top1_share": 0.0247,
     "top5": [
      [
       "daiin",
-      738
+      781
      ],
      [
       "ol",
-      500
+      503
      ],
      [
       "chedy",
-      442
+      443
      ],
      [
       "aiin",
-      415
+      408
      ],
      [
       "shedy",
-      401
+      400
      ]
     ],
     "length": {
-     "mean": 5.059,
-     "variance": 3.741,
-     "disp_len_minus1": 0.922,
-     "max": 22,
+     "mean": 4.963,
+     "variance": 3.152,
+     "disp_len_minus1": 0.795,
+     "max": 14,
      "hist": {
-      "1": 993,
-      "2": 2011,
-      "3": 2874,
-      "4": 5655,
-      "5": 7866,
-      "6": 6116,
-      "7": 3565,
-      "8": 1403,
-      "9": 582,
-      "10": 227,
-      "11": 109,
-      "12": 77,
-      "13": 50,
-      "14": 29,
-      "15": 16,
-      "16": 17,
-      "17": 4,
-      "18": 1,
-      "19": 4,
-      "20": 1,
-      "21": 1,
-      "22": 1
+      "1": 1005,
+      "2": 2026,
+      "3": 2986,
+      "4": 5757,
+      "5": 7997,
+      "6": 6156,
+      "7": 3573,
+      "8": 1378,
+      "9": 507,
+      "10": 149,
+      "11": 41,
+      "12": 17,
+      "13": 9,
+      "14": 1
      }
     },
-    "h1_sp": 3.8694,
-    "h2_sp": 2.1179,
-    "h1_nosp": 3.8603,
-    "h2_nosp": 2.3135,
-    "h1_minus_h2_nosp": 1.5468,
-    "h2_within_word": 2.0685,
-    "H_word_bits": 10.226,
+    "h1_sp": 3.8656,
+    "h2_sp": 2.1071,
+    "h1_nosp": 3.8607,
+    "h2_nosp": 2.3217,
+    "h1_minus_h2_nosp": 1.5389,
+    "h2_within_word": 2.0701,
+    "H_word_bits": 10.137,
     "positional": {
      "n_symbols": 19,
      "locked_frac": 0.316,
@@ -673,186 +650,178 @@
       "m",
       "q"
      ],
-     "mi_bits": 0.6957
+     "mi_bits": 0.7237
     },
     "pair": {
-     "pair_violation_frac": 0.159,
-     "pairs": 365205,
-     "order": "q p f s c h o t k e d a l y i r g n m",
+     "pair_violation_frac": 0.1448,
+     "pairs": 343874,
+     "order": "q p s f c h o t k e d a l y i r g n m",
      "by_length": {
-      "2": 0.0633,
-      "3": 0.1058,
-      "4": 0.0925,
-      "5": 0.1098,
-      "6": 0.1427
+      "2": 0.0612,
+      "3": 0.1042,
+      "4": 0.0943,
+      "5": 0.1115,
+      "6": 0.1445
      }
     },
-    "seconds": 0.9
+    "seconds": 1.0
    },
    "ALL_trunc/merge_a3": {
     "label": "ZL ALL_trunc merge_a3",
     "n_tokens": 31602,
-    "n_symbols_total": 129705,
+    "n_symbols_total": 127279,
     "alphabet": 27,
-    "types": 6556,
-    "zipf_slope_1_1000": -1.0587,
+    "types": 6192,
+    "zipf_slope_1_1000": -1.0579,
     "ranks_used": 1000,
-    "hapax_type_frac": 0.6911,
-    "hapax_token_frac": 0.1434,
-    "top1_share": 0.0293,
+    "hapax_type_frac": 0.6712,
+    "hapax_token_frac": 0.1315,
+    "top1_share": 0.0314,
     "top5": [
      [
       "da",
-      925
+      992
      ],
      [
       "a",
-      541
+      536
      ],
      [
       "ol",
-      500
+      503
      ],
      [
       "qoka",
-      497
+      487
      ],
      [
       "edy",
-      442
+      443
      ]
     ],
     "length": {
-     "mean": 4.104,
-     "variance": 2.49,
-     "disp_len_minus1": 0.802,
-     "max": 17,
+     "mean": 4.028,
+     "variance": 2.1,
+     "disp_len_minus1": 0.694,
+     "max": 11,
      "hist": {
-      "1": 1022,
-      "2": 3286,
-      "3": 7336,
-      "4": 7991,
-      "5": 6831,
-      "6": 3384,
-      "7": 1085,
-      "8": 332,
-      "9": 158,
-      "10": 69,
-      "11": 45,
-      "12": 34,
-      "13": 9,
-      "14": 11,
-      "15": 2,
-      "16": 6,
-      "17": 1
+      "1": 1035,
+      "2": 3320,
+      "3": 7565,
+      "4": 8059,
+      "5": 6894,
+      "6": 3373,
+      "7": 1015,
+      "8": 235,
+      "9": 87,
+      "10": 12,
+      "11": 7
      }
     },
-    "h1_sp": 3.8539,
-    "h2_sp": 2.3457,
-    "h1_nosp": 3.9053,
-    "h2_nosp": 2.6414,
-    "h1_minus_h2_nosp": 1.2639,
-    "h2_within_word": 2.367,
-    "H_word_bits": 10.067,
+    "h1_sp": 3.8631,
+    "h2_sp": 2.3325,
+    "h1_nosp": 3.9238,
+    "h2_nosp": 2.6523,
+    "h1_minus_h2_nosp": 1.2715,
+    "h2_within_word": 2.3662,
+    "H_word_bits": 9.978,
     "positional": {
-     "n_symbols": 25,
-     "locked_frac": 0.24,
-     "locked_n": 6,
+     "n_symbols": 27,
+     "locked_frac": 0.296,
+     "locked_n": 8,
      "locked_symbols": [
       "iin",
       "e",
       "i",
+      "n",
       "ee",
       "m",
-      "q"
+      "q",
+      "h"
      ],
-     "mi_bits": 0.6902
+     "mi_bits": 0.721
     },
     "pair": {
-     "pair_violation_frac": 0.1616,
-     "pairs": 233639,
-     "order": "q p f sh c ch cfh cph cth o t k ckh e h ee s d a i l r y g n iin m",
+     "pair_violation_frac": 0.1454,
+     "pairs": 220041,
+     "order": "q p sh f ch c cph cth o t k ckh cfh e ee s d a i l h r y g iin m n",
      "by_length": {
-      "2": 0.0314,
-      "3": 0.0737,
-      "4": 0.1316,
-      "5": 0.1387,
-      "6": 0.1599
+      "2": 0.031,
+      "3": 0.0733,
+      "4": 0.1327,
+      "5": 0.1394,
+      "6": 0.1569
      }
     },
-    "seconds": 0.6
+    "seconds": 0.8
    },
    "ALL_trunc/merge2_a1": {
     "label": "ZL ALL_trunc merge2_a1",
     "n_tokens": 31602,
-    "n_symbols_total": 120115,
+    "n_symbols_total": 117897,
     "alphabet": 33,
-    "types": 6810,
-    "zipf_slope_1_1000": -1.0378,
+    "types": 6440,
+    "zipf_slope_1_1000": -1.039,
     "ranks_used": 1000,
-    "hapax_type_frac": 0.6941,
-    "hapax_token_frac": 0.1496,
-    "top1_share": 0.0234,
+    "hapax_type_frac": 0.6745,
+    "hapax_token_frac": 0.1375,
+    "top1_share": 0.0247,
     "top5": [
      [
       "d",
-      738
+      781
      ],
      [
       "ol",
-      500
+      503
      ],
      [
       "edy",
-      442
+      443
      ],
      [
       "",
-      415
+      408
      ],
      [
       "edy",
-      401
+      400
      ]
     ],
     "length": {
-     "mean": 3.801,
-     "variance": 2.376,
-     "disp_len_minus1": 0.848,
-     "max": 16,
+     "mean": 3.731,
+     "variance": 2.009,
+     "disp_len_minus1": 0.736,
+     "max": 11,
      "hist": {
-      "1": 1568,
-      "2": 4437,
-      "3": 7789,
-      "4": 8674,
-      "5": 5604,
-      "6": 2263,
-      "7": 721,
-      "8": 270,
-      "9": 139,
-      "10": 53,
-      "11": 40,
-      "12": 19,
-      "13": 9,
-      "14": 7,
-      "15": 3,
-      "16": 6
+      "1": 1574,
+      "2": 4550,
+      "3": 7915,
+      "4": 8752,
+      "5": 5659,
+      "6": 2242,
+      "7": 647,
+      "8": 188,
+      "9": 64,
+      "10": 7,
+      "11": 4
      }
     },
-    "h1_sp": 3.9287,
-    "h2_sp": 2.505,
-    "h1_nosp": 4.0299,
-    "h2_nosp": 2.8663,
-    "h1_minus_h2_nosp": 1.1637,
-    "h2_within_word": 2.6155,
-    "H_word_bits": 10.226,
+    "h1_sp": 3.9371,
+    "h2_sp": 2.4893,
+    "h1_nosp": 4.0488,
+    "h2_nosp": 2.8767,
+    "h1_minus_h2_nosp": 1.1721,
+    "h2_within_word": 2.6147,
+    "H_word_bits": 10.137,
     "positional": {
-     "n_symbols": 31,
-     "locked_frac": 0.355,
-     "locked_n": 11,
+     "n_symbols": 33,
+     "locked_frac": 0.394,
+     "locked_n": 13,
      "locked_symbols": [
       "e",
       "i",
+      "n",
       "iin",
       "ee",
       "ain",
@@ -861,29 +830,30 @@
       "iiin",
       "qo",
       "eee",
+      "h",
       "q"
      ],
-     "mi_bits": 0.7116
+     "mi_bits": 0.7441
     },
     "pair": {
-     "pair_violation_frac": 0.1771,
-     "pairs": 199814,
-     "order": "q qo p f sh c ch cph ckh cth cfh h o t k eee e ee d s a i l r in y n aiin g m iin iiin ain",
+     "pair_violation_frac": 0.1603,
+     "pairs": 187826,
+     "order": "qo q c t p sh f ch cph ckh cfh cth o k eee e ee s d a i l h r y g aiin m ain iiin in iin n",
      "by_length": {
-      "2": 0.0235,
-      "3": 0.0773,
-      "4": 0.1257,
-      "5": 0.1663,
-      "6": 0.2167
+      "2": 0.024,
+      "3": 0.0861,
+      "4": 0.1288,
+      "5": 0.1641,
+      "6": 0.2101
      }
     },
-    "seconds": 0.6
+    "seconds": 0.9
    }
   },
   "joined_words": {
    "n": 2151,
    "mean_len_raw": 7.85,
-   "frac_that_are_ALL_types": 0.345,
+   "frac_that_are_ALL_types": 0.343,
    "top20": [
     [
      "oraiin",
@@ -1172,88 +1142,88 @@
     "words_available": 135590,
     "syllables_available": 281698,
     "syllables_per_word": 2.078,
-    "words_used_for_N_syllables": 16004
+    "words_used_for_N_syllables": 16311
    },
    "la_verse": {
     "words_available": 63791,
     "syllables_available": 143406,
     "syllables_per_word": 2.248,
-    "words_used_for_N_syllables": 15099
+    "words_used_for_N_syllables": 15385
    },
    "it": {
-    "words_available": 713709,
-    "syllables_available": 1313361,
-    "syllables_per_word": 1.84,
-    "words_used_for_N_syllables": 18757
+    "words_available": 708235,
+    "syllables_available": 1328747,
+    "syllables_per_word": 1.876,
+    "words_used_for_N_syllables": 19126
    }
   },
   "stats": {
    "la_prose/words": {
     "label": "la_prose words",
-    "n_tokens": 34059,
-    "n_symbols_total": 184699,
+    "n_tokens": 34719,
+    "n_symbols_total": 188166,
     "alphabet": 27,
-    "types": 9479,
-    "zipf_slope_1_1000": -0.9574,
+    "types": 9588,
+    "zipf_slope_1_1000": -0.956,
     "ranks_used": 1000,
-    "hapax_type_frac": 0.6746,
-    "hapax_token_frac": 0.1878,
-    "top1_share": 0.059,
+    "hapax_type_frac": 0.6741,
+    "hapax_token_frac": 0.1862,
+    "top1_share": 0.0593,
     "top5": [
      [
       "et",
-      2009
+      2060
      ],
      [
       "in",
-      708
+      733
      ],
      [
       "non",
-      673
+      691
      ],
      [
       "te",
-      314
+      316
      ],
      [
-      "sed",
-      298
+      "est",
+      308
      ]
     ],
     "length": {
-     "mean": 5.423,
+     "mean": 5.42,
      "variance": 7.904,
-     "disp_len_minus1": 1.787,
+     "disp_len_minus1": 1.788,
      "max": 18,
      "hist": {
-      "1": 256,
-      "2": 5244,
-      "3": 4903,
-      "4": 4882,
-      "5": 4189,
-      "6": 3458,
-      "7": 3077,
-      "8": 2851,
-      "9": 1901,
-      "10": 1423,
-      "11": 890,
-      "12": 539,
-      "13": 268,
-      "14": 104,
-      "15": 49,
-      "16": 20,
+      "1": 259,
+      "2": 5355,
+      "3": 5013,
+      "4": 4980,
+      "5": 4263,
+      "6": 3519,
+      "7": 3136,
+      "8": 2902,
+      "9": 1937,
+      "10": 1444,
+      "11": 911,
+      "12": 544,
+      "13": 273,
+      "14": 107,
+      "15": 50,
+      "16": 21,
       "17": 4,
       "18": 1
      }
     },
-    "h1_sp": 4.0308,
+    "h1_sp": 4.0306,
     "h2_sp": 3.3225,
     "h1_nosp": 4.0351,
-    "h2_nosp": 3.5007,
-    "h1_minus_h2_nosp": 0.5344,
-    "h2_within_word": 3.1828,
-    "H_word_bits": 10.758,
+    "h2_nosp": 3.5011,
+    "h1_minus_h2_nosp": 0.534,
+    "h2_within_word": 3.1827,
+    "H_word_bits": 10.757,
     "positional": {
      "n_symbols": 24,
      "locked_frac": 0.125,
@@ -1263,81 +1233,81 @@
       "b",
       "y"
      ],
-     "mi_bits": 0.1764
+     "mi_bits": 0.1768
     },
     "pair": {
-     "pair_violation_frac": 0.3649,
-     "pairs": 514792,
-     "order": "x p j f v h c l g y q d o i z e r b a k n u æ s t m â",
+     "pair_violation_frac": 0.3648,
+     "pairs": 524288,
+     "order": "x p f j v h c l g y q d o i z e r b a n k u æ s t m â",
      "by_length": {
-      "2": 0.3239,
-      "3": 0.3974,
-      "4": 0.4076,
-      "5": 0.3847,
-      "6": 0.358
+      "2": 0.3213,
+      "3": 0.396,
+      "4": 0.406,
+      "5": 0.3849,
+      "6": 0.3569
      }
     },
-    "pair_length_matched": 0.3654,
+    "pair_length_matched": 0.3617,
     "lm_exact_length_coverage": 1.0,
-    "seconds": 1.3
+    "seconds": 0.7
    },
    "la_prose/syl": {
     "label": "la_prose syl",
-    "n_tokens": 34059,
-    "n_symbols_total": 86086,
+    "n_tokens": 34719,
+    "n_symbols_total": 87727,
     "alphabet": 27,
-    "types": 1497,
-    "zipf_slope_1_1000": -1.3548,
+    "types": 1503,
+    "zipf_slope_1_1000": -1.3575,
     "ranks_used": 1000,
-    "hapax_type_frac": 0.2879,
-    "hapax_token_frac": 0.0127,
-    "top1_share": 0.0268,
+    "hapax_type_frac": 0.2874,
+    "hapax_token_frac": 0.0124,
+    "top1_share": 0.027,
     "top5": [
      [
       "et",
-      914
+      936
      ],
      [
       "in",
-      669
+      679
      ],
      [
       "de",
-      624
+      638
      ],
      [
       "te",
-      612
+      625
      ],
      [
       "ta",
-      604
+      611
      ]
     ],
     "length": {
-     "mean": 2.528,
-     "variance": 0.612,
-     "disp_len_minus1": 0.401,
+     "mean": 2.527,
+     "variance": 0.611,
+     "disp_len_minus1": 0.4,
      "max": 12,
      "hist": {
-      "1": 1590,
-      "2": 16794,
-      "3": 12314,
-      "4": 2975,
-      "5": 278,
-      "6": 87,
-      "7": 18,
+      "1": 1620,
+      "2": 17139,
+      "3": 12541,
+      "4": 3028,
+      "5": 281,
+      "6": 88,
+      "7": 19,
       "8": 2,
       "12": 1
      }
     },
-    "h1_sp": 3.758,
-    "h2_sp": 2.9845,
-    "h1_nosp": 4.0443,
-    "h2_nosp": 3.5179,
-    "h1_minus_h2_nosp": 0.5264,
-    "h2_within_word": 2.7456,
-    "H_word_bits": 8.36,
+    "h1_sp": 3.7574,
+    "h2_sp": 2.984,
+    "h1_nosp": 4.0437,
+    "h2_nosp": 3.5171,
+    "h1_minus_h2_nosp": 0.5267,
+    "h2_within_word": 2.7446,
+    "H_word_bits": 8.357,
     "positional": {
      "n_symbols": 24,
      "locked_frac": 0.25,
@@ -1350,55 +1320,55 @@
       "j",
       "q"
      ],
-     "mi_bits": 0.3953
+     "mi_bits": 0.395
     },
     "pair": {
-     "pair_violation_frac": 0.2766,
-     "pairs": 75113,
+     "pair_violation_frac": 0.2773,
+     "pairs": 76502,
      "order": "j b q p v h d f g c l t z r u i e x a n s m æ o y k â",
      "by_length": {
-      "2": 0.3273,
-      "3": 0.2539,
-      "4": 0.2645,
-      "5": 0.3022,
-      "6": 0.3354
+      "2": 0.328,
+      "3": 0.2548,
+      "4": 0.2652,
+      "5": 0.3018,
+      "6": 0.3349
      }
     },
-    "pair_length_matched": 0.2589,
-    "lm_exact_length_coverage": 0.991,
-    "seconds": 0.5
+    "pair_length_matched": 0.2621,
+    "lm_exact_length_coverage": 0.997,
+    "seconds": 0.4
    },
    "la_prose/cv": {
     "label": "la_prose cv",
-    "n_tokens": 34059,
-    "n_symbols_total": 62442,
+    "n_tokens": 34719,
+    "n_symbols_total": 63647,
     "alphabet": 26,
     "types": 119,
-    "zipf_slope_1_1000": -1.7309,
+    "zipf_slope_1_1000": -1.7313,
     "ranks_used": 119,
     "hapax_type_frac": 0.0588,
     "hapax_token_frac": 0.0002,
-    "top1_share": 0.0617,
+    "top1_share": 0.0619,
     "top5": [
      [
       "e",
-      2102
+      2148
      ],
      [
       "i",
-      1358
+      1385
      ],
      [
       "a",
-      1334
+      1361
      ],
      [
       "te",
-      1186
+      1208
      ],
      [
       "ti",
-      1103
+      1116
      ]
     ],
     "length": {
@@ -1407,17 +1377,17 @@
      "disp_len_minus1": 0.167,
      "max": 2,
      "hist": {
-      "1": 5676,
-      "2": 28383
+      "1": 5791,
+      "2": 28928
      }
     },
-    "h1_sp": 3.4937,
-    "h2_sp": 2.1117,
-    "h1_nosp": 3.9518,
-    "h2_nosp": 3.2248,
-    "h1_minus_h2_nosp": 0.727,
-    "h2_within_word": 2.1437,
-    "H_word_bits": 5.983,
+    "h1_sp": 3.4934,
+    "h2_sp": 2.1113,
+    "h1_nosp": 3.9514,
+    "h2_nosp": 3.224,
+    "h1_minus_h2_nosp": 0.7274,
+    "h2_within_word": 2.1425,
+    "H_word_bits": 5.982,
     "positional": {
      "n_symbols": 24,
      "locked_frac": 0.875,
@@ -1449,8 +1419,8 @@
     },
     "pair": {
      "pair_violation_frac": 0.0,
-     "pairs": 28383,
-     "order": "t s n r d c m l p q b v g f h j x æ z k y o u a e i",
+     "pairs": 28928,
+     "order": "t s n r d c m l p q b v g f h j x æ z k y o u a i e",
      "by_length": {
       "2": 0.0
      }
@@ -1458,142 +1428,142 @@
     "pair_length_matched": null,
     "pair_length_matched_note": "n/a: no token longer than 2 symbols",
     "lm_exact_length_coverage": null,
-    "seconds": 0.3
+    "seconds": 0.2
    },
    "la_prose/syl2": {
     "label": "la_prose syl2",
-    "n_tokens": 34059,
-    "n_symbols_total": 134806,
+    "n_tokens": 34719,
+    "n_symbols_total": 137458,
     "alphabet": 27,
-    "types": 5831,
-    "zipf_slope_1_1000": -0.8716,
+    "types": 5877,
+    "zipf_slope_1_1000": -0.8714,
     "ranks_used": 1000,
-    "hapax_type_frac": 0.4709,
-    "hapax_token_frac": 0.0806,
-    "top1_share": 0.0443,
+    "hapax_type_frac": 0.4684,
+    "hapax_token_frac": 0.0793,
+    "top1_share": 0.044,
     "top5": [
      [
       "et",
-      1508
+      1527
      ],
      [
       "in",
-      551
+      564
      ],
      [
       "non",
-      499
+      508
      ],
      [
       "te",
-      342
+      348
      ],
      [
       "re",
-      307
+      310
      ]
     ],
     "length": {
-     "mean": 3.958,
-     "variance": 1.945,
+     "mean": 3.959,
+     "variance": 1.944,
      "disp_len_minus1": 0.657,
      "max": 12,
      "hist": {
-      "1": 207,
-      "2": 5512,
-      "3": 7820,
-      "4": 8626,
-      "5": 7359,
-      "6": 3328,
-      "7": 900,
-      "8": 235,
-      "9": 54,
+      "1": 214,
+      "2": 5607,
+      "3": 7967,
+      "4": 8782,
+      "5": 7524,
+      "6": 3398,
+      "7": 916,
+      "8": 238,
+      "9": 55,
       "10": 17,
       "12": 1
      }
     },
-    "h1_sp": 3.9474,
-    "h2_sp": 3.2892,
-    "h1_nosp": 4.0361,
-    "h2_nosp": 3.5074,
-    "h1_minus_h2_nosp": 0.5287,
-    "h2_within_word": 3.1311,
-    "H_word_bits": 10.442,
+    "h1_sp": 3.9478,
+    "h2_sp": 3.2889,
+    "h1_nosp": 4.0365,
+    "h2_nosp": 3.5067,
+    "h1_minus_h2_nosp": 0.5298,
+    "h2_within_word": 3.1305,
+    "H_word_bits": 10.45,
     "positional": {
      "n_symbols": 24,
      "locked_frac": 0.0,
      "locked_n": 0,
      "locked_symbols": [],
-     "mi_bits": 0.1658
+     "mi_bits": 0.1661
     },
     "pair": {
-     "pair_violation_frac": 0.3717,
-     "pairs": 222634,
-     "order": "z q p f j v h d l c g b o r a n e x t u m y k i â æ s",
+     "pair_violation_frac": 0.3718,
+     "pairs": 227050,
+     "order": "z q p f j v h l æ d c g b o r a y n e x t u m i â k s",
      "by_length": {
-      "2": 0.4232,
-      "3": 0.3132,
-      "4": 0.3966,
-      "5": 0.3885,
-      "6": 0.3499
+      "2": 0.4237,
+      "3": 0.3296,
+      "4": 0.4005,
+      "5": 0.3896,
+      "6": 0.3473
      }
     },
-    "pair_length_matched": 0.3633,
-    "lm_exact_length_coverage": 0.998,
-    "seconds": 1.0
+    "pair_length_matched": 0.3693,
+    "lm_exact_length_coverage": 1.0,
+    "seconds": 1.3
    },
    "la_prose/cv2": {
     "label": "la_prose cv2",
-    "n_tokens": 34059,
-    "n_symbols_total": 97618,
+    "n_tokens": 34719,
+    "n_symbols_total": 99578,
     "alphabet": 26,
-    "types": 2321,
-    "zipf_slope_1_1000": -0.9556,
+    "types": 2331,
+    "zipf_slope_1_1000": -0.9551,
     "ranks_used": 1000,
-    "hapax_type_frac": 0.2516,
-    "hapax_token_frac": 0.0171,
-    "top1_share": 0.0647,
+    "hapax_type_frac": 0.251,
+    "hapax_token_frac": 0.0168,
+    "top1_share": 0.0641,
     "top5": [
      [
       "e",
-      2204
+      2227
      ],
      [
       "tu",
-      748
+      762
      ],
      [
       "i",
-      635
+      651
      ],
      [
       "me",
-      620
+      636
      ],
      [
-      "re",
-      611
+      "a",
+      621
      ]
     ],
     "length": {
-     "mean": 2.866,
+     "mean": 2.868,
      "variance": 1.182,
      "disp_len_minus1": 0.633,
      "max": 4,
      "hist": {
-      "1": 3974,
-      "2": 10791,
-      "3": 5114,
-      "4": 14180
+      "1": 4039,
+      "2": 10988,
+      "3": 5205,
+      "4": 14487
      }
     },
-    "h1_sp": 3.7475,
+    "h1_sp": 3.7481,
     "h2_sp": 2.7062,
-    "h1_nosp": 3.9425,
-    "h2_nosp": 3.2177,
-    "h1_minus_h2_nosp": 0.7249,
-    "h2_within_word": 2.579,
-    "H_word_bits": 8.897,
+    "h1_nosp": 3.9428,
+    "h2_nosp": 3.2168,
+    "h1_minus_h2_nosp": 0.726,
+    "h2_within_word": 2.5784,
+    "H_word_bits": 8.904,
     "positional": {
      "n_symbols": 24,
      "locked_frac": 0.042,
@@ -1601,166 +1571,166 @@
      "locked_symbols": [
       "æ"
      ],
-     "mi_bits": 0.4925
+     "mi_bits": 0.4923
     },
     "pair": {
-     "pair_violation_frac": 0.271,
-     "pairs": 106316,
+     "pair_violation_frac": 0.2709,
+     "pairs": 108518,
      "order": "h z æ p f q s v d c m j n l x g r o t b a y k i e u",
      "by_length": {
-      "2": 0.0059,
-      "3": 0.481,
+      "2": 0.0058,
+      "3": 0.4811,
       "4": 0.2688
      }
     },
-    "pair_length_matched": 0.294,
-    "lm_exact_length_coverage": 0.619,
-    "seconds": 0.9
+    "pair_length_matched": 0.2947,
+    "lm_exact_length_coverage": 0.627,
+    "seconds": 0.8
    },
    "la_prose/syl_shuf": {
     "label": "la_prose syl_shuf",
-    "n_tokens": 34059,
-    "n_symbols_total": 86086,
+    "n_tokens": 34719,
+    "n_symbols_total": 87727,
     "alphabet": 27,
-    "types": 4346,
-    "zipf_slope_1_1000": -1.0543,
+    "types": 4379,
+    "zipf_slope_1_1000": -1.055,
     "ranks_used": 1000,
-    "hapax_type_frac": 0.5216,
-    "hapax_token_frac": 0.0666,
-    "top1_share": 0.0227,
+    "hapax_type_frac": 0.5198,
+    "hapax_token_frac": 0.0656,
+    "top1_share": 0.0228,
     "top5": [
      [
       "et",
-      772
+      791
      ],
      [
       "te",
-      754
+      770
      ],
      [
       "a",
-      549
+      563
      ],
      [
       "ni",
-      532
+      537
      ],
      [
       "in",
-      506
+      520
      ]
     ],
     "length": {
-     "mean": 2.528,
-     "variance": 0.612,
-     "disp_len_minus1": 0.401,
+     "mean": 2.527,
+     "variance": 0.611,
+     "disp_len_minus1": 0.4,
      "max": 12,
      "hist": {
-      "1": 1590,
-      "2": 16794,
-      "3": 12314,
-      "4": 2975,
-      "5": 278,
-      "6": 87,
-      "7": 18,
+      "1": 1620,
+      "2": 17139,
+      "3": 12541,
+      "4": 3028,
+      "5": 281,
+      "6": 88,
+      "7": 19,
       "8": 2,
       "12": 1
      }
     },
-    "h1_sp": 3.758,
-    "h2_sp": 3.4049,
-    "h1_nosp": 4.0443,
-    "h2_nosp": 3.8928,
-    "h1_minus_h2_nosp": 0.1515,
-    "h2_within_word": 3.648,
-    "H_word_bits": 9.615,
+    "h1_sp": 3.7574,
+    "h2_sp": 3.404,
+    "h1_nosp": 4.0437,
+    "h2_nosp": 3.8919,
+    "h1_minus_h2_nosp": 0.1519,
+    "h2_within_word": 3.6468,
+    "H_word_bits": 9.613,
     "positional": {
      "n_symbols": 24,
      "locked_frac": 0.0,
      "locked_n": 0,
      "locked_symbols": [],
-     "mi_bits": 0.0365
+     "mi_bits": 0.0366
     },
     "pair": {
-     "pair_violation_frac": 0.4885,
-     "pairs": 75113,
-     "order": "z h k s t a g c æ r o f p q u d i m b e j â v l n y x",
+     "pair_violation_frac": 0.4888,
+     "pairs": 76502,
+     "order": "k h s t z a g c æ q r f o p u d i m b e â v j x y l n",
      "by_length": {
-      "2": 0.4886,
-      "3": 0.4849,
-      "4": 0.4946,
-      "5": 0.4967,
-      "6": 0.4862
+      "2": 0.4881,
+      "3": 0.485,
+      "4": 0.4962,
+      "5": 0.4949,
+      "6": 0.491
      }
     },
-    "pair_length_matched": 0.459,
-    "lm_exact_length_coverage": 0.991,
-    "seconds": 0.6
+    "pair_length_matched": 0.4657,
+    "lm_exact_length_coverage": 0.997,
+    "seconds": 0.7
    },
    "la_verse/words": {
     "label": "la_verse words",
-    "n_tokens": 34059,
-    "n_symbols_total": 196282,
+    "n_tokens": 34719,
+    "n_symbols_total": 200170,
     "alphabet": 24,
-    "types": 11368,
-    "zipf_slope_1_1000": -0.6978,
+    "types": 11522,
+    "zipf_slope_1_1000": -0.6985,
     "ranks_used": 1000,
     "hapax_type_frac": 0.5987,
-    "hapax_token_frac": 0.1998,
-    "top1_share": 0.0336,
+    "hapax_token_frac": 0.1987,
+    "top1_share": 0.0335,
     "top5": [
      [
       "et",
-      1144
+      1164
      ],
      [
       "in",
-      383
+      393
      ],
      [
       "nec",
-      183
+      186
      ],
      [
       "per",
-      179
+      182
      ],
      [
       "ad",
-      174
+      176
      ]
     ],
     "length": {
-     "mean": 5.763,
-     "variance": 4.882,
-     "disp_len_minus1": 1.025,
+     "mean": 5.765,
+     "variance": 4.879,
+     "disp_len_minus1": 1.024,
      "max": 16,
      "hist": {
-      "1": 128,
-      "2": 2665,
-      "3": 2915,
-      "4": 3988,
-      "5": 6107,
-      "6": 5898,
-      "7": 5014,
-      "8": 3561,
-      "9": 2140,
-      "10": 1035,
-      "11": 379,
-      "12": 170,
-      "13": 33,
-      "14": 21,
+      "1": 129,
+      "2": 2710,
+      "3": 2960,
+      "4": 4060,
+      "5": 6239,
+      "6": 6024,
+      "7": 5100,
+      "8": 3637,
+      "9": 2182,
+      "10": 1058,
+      "11": 387,
+      "12": 171,
+      "13": 35,
+      "14": 22,
       "15": 4,
       "16": 1
      }
     },
-    "h1_sp": 4.0342,
+    "h1_sp": 4.0339,
     "h2_sp": 3.3636,
-    "h1_nosp": 4.0249,
-    "h2_nosp": 3.5092,
-    "h1_minus_h2_nosp": 0.5157,
+    "h1_nosp": 4.0244,
+    "h2_nosp": 3.509,
+    "h1_minus_h2_nosp": 0.5154,
     "h2_within_word": 3.2352,
-    "H_word_bits": 12.045,
+    "H_word_bits": 12.056,
     "positional": {
      "n_symbols": 22,
      "locked_frac": 0.091,
@@ -1769,55 +1739,55 @@
       "u",
       "y"
      ],
-     "mi_bits": 0.1773
+     "mi_bits": 0.1774
     },
     "pair": {
-     "pair_violation_frac": 0.3601,
-     "pairs": 523708,
-     "order": "z k p h f v y c d l g o x r a i n b t q u e m s",
+     "pair_violation_frac": 0.3602,
+     "pairs": 534240,
+     "order": "z k p h y f v c d l g o x r a i n b t q u e m s",
      "by_length": {
-      "2": 0.6858,
-      "3": 0.4593,
-      "4": 0.4174,
-      "5": 0.3521,
-      "6": 0.3592
+      "2": 0.6859,
+      "3": 0.4585,
+      "4": 0.4171,
+      "5": 0.3527,
+      "6": 0.3589
      }
     },
-    "pair_length_matched": 0.3627,
+    "pair_length_matched": 0.3591,
     "lm_exact_length_coverage": 1.0,
     "seconds": 1.3
    },
    "la_verse/syl": {
     "label": "la_verse syl",
-    "n_tokens": 34059,
-    "n_symbols_total": 87224,
+    "n_tokens": 34719,
+    "n_symbols_total": 88906,
     "alphabet": 24,
-    "types": 1509,
-    "zipf_slope_1_1000": -1.2569,
+    "types": 1512,
+    "zipf_slope_1_1000": -1.2567,
     "ranks_used": 1000,
-    "hapax_type_frac": 0.2545,
-    "hapax_token_frac": 0.0113,
+    "hapax_type_frac": 0.2533,
+    "hapax_token_frac": 0.011,
     "top1_share": 0.0274,
     "top5": [
      [
       "que",
-      932
+      951
      ],
      [
       "re",
-      824
+      839
      ],
      [
       "et",
-      561
+      564
      ],
      [
       "in",
-      530
+      540
      ],
      [
       "ta",
-      494
+      510
      ]
     ],
     "length": {
@@ -1826,21 +1796,21 @@
      "disp_len_minus1": 0.36,
      "max": 7,
      "hist": {
-      "1": 1246,
-      "2": 16095,
-      "3": 13531,
-      "4": 2795,
-      "5": 338,
+      "1": 1275,
+      "2": 16397,
+      "3": 13802,
+      "4": 2849,
+      "5": 342,
       "6": 53,
       "7": 1
      }
     },
     "h1_sp": 3.7533,
     "h2_sp": 2.9753,
-    "h1_nosp": 4.0278,
-    "h2_nosp": 3.5115,
-    "h1_minus_h2_nosp": 0.5163,
-    "h2_within_word": 2.7429,
+    "h1_nosp": 4.0279,
+    "h2_nosp": 3.5114,
+    "h1_minus_h2_nosp": 0.5164,
+    "h2_within_word": 2.7428,
     "H_word_bits": 8.562,
     "positional": {
      "n_symbols": 22,
@@ -1852,55 +1822,55 @@
       "q",
       "f"
      ],
-     "mi_bits": 0.421
+     "mi_bits": 0.4211
     },
     "pair": {
-     "pair_violation_frac": 0.2601,
-     "pairs": 76702,
-     "order": "b q p h d v g f c l t z k r u m i n o s y a e x",
+     "pair_violation_frac": 0.2604,
+     "pairs": 78166,
+     "order": "b q p h d v g f c l t k z r u m i n o s y a e x",
      "by_length": {
-      "2": 0.2079,
-      "3": 0.262,
-      "4": 0.2989,
-      "5": 0.3062,
+      "2": 0.207,
+      "3": 0.2628,
+      "4": 0.2992,
+      "5": 0.306,
       "6": 0.2288
      }
     },
-    "pair_length_matched": 0.1917,
-    "lm_exact_length_coverage": 0.979,
-    "seconds": 0.6
+    "pair_length_matched": 0.1965,
+    "lm_exact_length_coverage": 0.989,
+    "seconds": 0.3
    },
    "la_verse/cv": {
     "label": "la_verse cv",
-    "n_tokens": 34059,
-    "n_symbols_total": 63424,
+    "n_tokens": 34719,
+    "n_symbols_total": 64659,
     "alphabet": 24,
     "types": 101,
-    "zipf_slope_1_1000": -1.2958,
+    "zipf_slope_1_1000": -1.2931,
     "ranks_used": 101,
     "hapax_type_frac": 0.0099,
     "hapax_token_frac": 0.0,
-    "top1_share": 0.0483,
+    "top1_share": 0.0482,
     "top5": [
      [
       "a",
-      1644
+      1674
      ],
      [
       "i",
-      1250
+      1273
      ],
      [
       "re",
-      1158
+      1180
      ],
      [
       "te",
-      1128
+      1149
      ],
      [
       "e",
-      1047
+      1064
      ]
     ],
     "length": {
@@ -1909,15 +1879,15 @@
      "disp_len_minus1": 0.138,
      "max": 2,
      "hist": {
-      "1": 4694,
-      "2": 29365
+      "1": 4779,
+      "2": 29940
      }
     },
-    "h1_sp": 3.5241,
-    "h2_sp": 2.1148,
-    "h1_nosp": 3.9818,
-    "h2_nosp": 3.2275,
-    "h1_minus_h2_nosp": 0.7543,
+    "h1_sp": 3.5242,
+    "h2_sp": 2.1147,
+    "h1_nosp": 3.9817,
+    "h2_nosp": 3.2273,
+    "h1_minus_h2_nosp": 0.7544,
     "h2_within_word": 2.2264,
     "H_word_bits": 6.053,
     "positional": {
@@ -1949,7 +1919,7 @@
     },
     "pair": {
      "pair_violation_frac": 0.0,
-     "pairs": 29365,
+     "pairs": 29940,
      "order": "t s r c n m d p l q v b g f h x z k y o u a i e",
      "by_length": {
       "2": 0.0
@@ -1958,192 +1928,192 @@
     "pair_length_matched": null,
     "pair_length_matched_note": "n/a: no token longer than 2 symbols",
     "lm_exact_length_coverage": null,
-    "seconds": 0.4
+    "seconds": 0.2
    },
    "la_verse/syl2": {
     "label": "la_verse syl2",
-    "n_tokens": 34059,
-    "n_symbols_total": 141969,
+    "n_tokens": 34719,
+    "n_symbols_total": 144757,
     "alphabet": 24,
-    "types": 6817,
-    "zipf_slope_1_1000": -0.7153,
+    "types": 6886,
+    "zipf_slope_1_1000": -0.7167,
     "ranks_used": 1000,
-    "hapax_type_frac": 0.441,
-    "hapax_token_frac": 0.0883,
-    "top1_share": 0.0252,
+    "hapax_type_frac": 0.4393,
+    "hapax_token_frac": 0.0871,
+    "top1_share": 0.025,
     "top5": [
      [
       "et",
-      859
+      867
      ],
      [
       "que",
-      791
+      801
      ],
      [
       "re",
-      440
+      449
      ],
      [
       "in",
-      273
+      283
      ],
      [
       "ra",
-      253
+      259
      ]
     ],
     "length": {
-     "mean": 4.168,
-     "variance": 1.931,
-     "disp_len_minus1": 0.61,
+     "mean": 4.169,
+     "variance": 1.93,
+     "disp_len_minus1": 0.609,
      "max": 9,
      "hist": {
-      "1": 99,
-      "2": 4360,
-      "3": 7264,
-      "4": 7931,
-      "5": 8431,
-      "6": 4628,
-      "7": 1090,
-      "8": 223,
+      "1": 100,
+      "2": 4439,
+      "3": 7403,
+      "4": 8073,
+      "5": 8608,
+      "6": 4725,
+      "7": 1113,
+      "8": 225,
       "9": 33
      }
     },
-    "h1_sp": 3.9556,
-    "h2_sp": 3.3188,
-    "h1_nosp": 4.0258,
-    "h2_nosp": 3.5105,
-    "h1_minus_h2_nosp": 0.5153,
+    "h1_sp": 3.9554,
+    "h2_sp": 3.3186,
+    "h1_nosp": 4.0255,
+    "h2_nosp": 3.5101,
+    "h1_minus_h2_nosp": 0.5154,
     "h2_within_word": 3.1761,
-    "H_word_bits": 11.124,
+    "H_word_bits": 11.132,
     "positional": {
      "n_symbols": 22,
      "locked_frac": 0.0,
      "locked_n": 0,
      "locked_symbols": [],
-     "mi_bits": 0.1797
+     "mi_bits": 0.1798
     },
     "pair": {
-     "pair_violation_frac": 0.3593,
-     "pairs": 247269,
+     "pair_violation_frac": 0.3594,
+     "pairs": 252167,
      "order": "z k p h f d v b c l y r g o a n t q u e m x i s",
      "by_length": {
-      "2": 0.5364,
-      "3": 0.2712,
-      "4": 0.3964,
-      "5": 0.3743,
-      "6": 0.3403
+      "2": 0.5367,
+      "3": 0.27,
+      "4": 0.3972,
+      "5": 0.3746,
+      "6": 0.3399
      }
     },
-    "pair_length_matched": 0.3544,
-    "lm_exact_length_coverage": 0.995,
-    "seconds": 1.0
+    "pair_length_matched": 0.3567,
+    "lm_exact_length_coverage": 0.999,
+    "seconds": 0.6
    },
    "la_verse/cv2": {
     "label": "la_verse cv2",
-    "n_tokens": 34059,
-    "n_symbols_total": 103224,
+    "n_tokens": 34719,
+    "n_symbols_total": 105268,
     "alphabet": 24,
-    "types": 2521,
-    "zipf_slope_1_1000": -0.8481,
+    "types": 2538,
+    "zipf_slope_1_1000": -0.8471,
     "ranks_used": 1000,
-    "hapax_type_frac": 0.2277,
-    "hapax_token_frac": 0.0169,
-    "top1_share": 0.0301,
+    "hapax_type_frac": 0.2285,
+    "hapax_token_frac": 0.0167,
+    "top1_share": 0.0298,
     "top5": [
      [
       "e",
-      1026
+      1035
      ],
      [
       "qe",
-      833
+      843
      ],
      [
       "re",
-      705
+      718
      ],
      [
       "tu",
-      526
+      538
      ],
      [
       "a",
-      432
+      438
      ]
     ],
     "length": {
-     "mean": 3.031,
-     "variance": 1.002,
-     "disp_len_minus1": 0.494,
+     "mean": 3.032,
+     "variance": 1.001,
+     "disp_len_minus1": 0.493,
      "max": 4,
      "hist": {
-      "1": 1927,
-      "2": 10780,
-      "3": 5671,
-      "4": 15681
+      "1": 1956,
+      "2": 10978,
+      "3": 5784,
+      "4": 16001
      }
     },
-    "h1_sp": 3.8008,
-    "h2_sp": 2.7576,
-    "h1_nosp": 3.98,
-    "h2_nosp": 3.2253,
-    "h1_minus_h2_nosp": 0.7546,
-    "h2_within_word": 2.6604,
-    "H_word_bits": 9.5,
+    "h1_sp": 3.8009,
+    "h2_sp": 2.7577,
+    "h1_nosp": 3.9798,
+    "h2_nosp": 3.2248,
+    "h1_minus_h2_nosp": 0.755,
+    "h2_within_word": 2.6605,
+    "H_word_bits": 9.508,
     "positional": {
      "n_symbols": 22,
      "locked_frac": 0.0,
      "locked_n": 0,
      "locked_symbols": [],
-     "mi_bits": 0.4745
+     "mi_bits": 0.4741
     },
     "pair": {
-     "pair_violation_frac": 0.2766,
-     "pairs": 116781,
+     "pair_violation_frac": 0.2768,
+     "pairs": 119135,
      "order": "z k p f v h c s m d l t r g n b y q a x o i u e",
      "by_length": {
-      "2": 0.0016,
-      "3": 0.4416,
-      "4": 0.2802
+      "2": 0.0015,
+      "3": 0.4415,
+      "4": 0.2804
      }
     },
-    "pair_length_matched": 0.2966,
-    "lm_exact_length_coverage": 0.619,
-    "seconds": 0.7
+    "pair_length_matched": 0.2969,
+    "lm_exact_length_coverage": 0.627,
+    "seconds": 0.4
    },
    "la_verse/syl_shuf": {
     "label": "la_verse syl_shuf",
-    "n_tokens": 34059,
-    "n_symbols_total": 87224,
+    "n_tokens": 34719,
+    "n_symbols_total": 88906,
     "alphabet": 24,
-    "types": 4609,
-    "zipf_slope_1_1000": -1.0018,
+    "types": 4658,
+    "zipf_slope_1_1000": -1.0036,
     "ranks_used": 1000,
-    "hapax_type_frac": 0.5337,
-    "hapax_token_frac": 0.0722,
+    "hapax_type_frac": 0.5339,
+    "hapax_token_frac": 0.0716,
     "top1_share": 0.0156,
     "top5": [
      [
       "et",
-      531
+      541
      ],
      [
       "te",
-      479
+      484
      ],
      [
       "a",
-      473
+      480
      ],
      [
       "re",
-      428
+      439
      ],
      [
       "er",
-      427
+      432
      ]
     ],
     "length": {
@@ -2152,22 +2122,22 @@
      "disp_len_minus1": 0.36,
      "max": 7,
      "hist": {
-      "1": 1246,
-      "2": 16095,
-      "3": 13531,
-      "4": 2795,
-      "5": 338,
+      "1": 1275,
+      "2": 16397,
+      "3": 13802,
+      "4": 2849,
+      "5": 342,
       "6": 53,
       "7": 1
      }
     },
     "h1_sp": 3.7533,
-    "h2_sp": 3.4233,
-    "h1_nosp": 4.0278,
-    "h2_nosp": 3.8898,
-    "h1_minus_h2_nosp": 0.1381,
-    "h2_within_word": 3.6594,
-    "H_word_bits": 9.844,
+    "h2_sp": 3.4232,
+    "h1_nosp": 4.0279,
+    "h2_nosp": 3.8901,
+    "h1_minus_h2_nosp": 0.1378,
+    "h2_within_word": 3.6605,
+    "H_word_bits": 9.847,
     "positional": {
      "n_symbols": 22,
      "locked_frac": 0.0,
@@ -2176,86 +2146,86 @@
      "mi_bits": 0.028
     },
     "pair": {
-     "pair_violation_frac": 0.4892,
-     "pairs": 76702,
-     "order": "k y p f r n d o x u m g b z e s a v t q h i c l",
+     "pair_violation_frac": 0.4891,
+     "pairs": 78166,
+     "order": "f k p y r n d o x u m b g z e s a v t q h i c l",
      "by_length": {
-      "2": 0.4904,
-      "3": 0.4906,
-      "4": 0.4862,
-      "5": 0.4818,
+      "2": 0.4901,
+      "3": 0.4908,
+      "4": 0.486,
+      "5": 0.4817,
       "6": 0.4846
      }
     },
-    "pair_length_matched": 0.4049,
-    "lm_exact_length_coverage": 0.979,
-    "seconds": 0.8
+    "pair_length_matched": 0.4191,
+    "lm_exact_length_coverage": 0.989,
+    "seconds": 0.4
    },
    "it/words": {
     "label": "it words",
-    "n_tokens": 34059,
-    "n_symbols_total": 154655,
+    "n_tokens": 34719,
+    "n_symbols_total": 157692,
     "alphabet": 21,
-    "types": 6758,
-    "zipf_slope_1_1000": -1.0245,
+    "types": 6833,
+    "zipf_slope_1_1000": -1.0279,
     "ranks_used": 1000,
     "hapax_type_frac": 0.665,
-    "hapax_token_frac": 0.1319,
-    "top1_share": 0.0423,
+    "hapax_token_frac": 0.1309,
+    "top1_share": 0.0425,
     "top5": [
      [
       "et",
-      1442
-     ],
-     [
-      "di",
-      1284
+      1477
      ],
      [
       "che",
-      1279
+      1311
+     ],
+     [
+      "di",
+      1307
      ],
      [
       "a",
-      632
+      642
      ],
      [
-      "non",
-      548
+      "in",
+      559
      ]
     ],
     "length": {
-     "mean": 4.541,
-     "variance": 6.581,
-     "disp_len_minus1": 1.859,
+     "mean": 4.542,
+     "variance": 6.591,
+     "disp_len_minus1": 1.861,
      "max": 17,
      "hist": {
-      "1": 1675,
-      "2": 7666,
-      "3": 5738,
-      "4": 3376,
-      "5": 4353,
-      "6": 3935,
-      "7": 2879,
-      "8": 1718,
-      "9": 1140,
-      "10": 773,
-      "11": 384,
-      "12": 222,
-      "13": 87,
+      "1": 1704,
+      "2": 7833,
+      "3": 5841,
+      "4": 3438,
+      "5": 4420,
+      "6": 4008,
+      "7": 2933,
+      "8": 1766,
+      "9": 1165,
+      "10": 784,
+      "11": 395,
+      "12": 228,
+      "13": 90,
       "14": 52,
-      "15": 56,
+      "15": 57,
       "16": 4,
       "17": 1
      }
     },
-    "h1_sp": 3.9113,
-    "h2_sp": 3.205,
-    "h1_nosp": 3.9415,
-    "h2_nosp": 3.4514,
-    "h1_minus_h2_nosp": 0.4902,
-    "h2_within_word": 3.0346,
-    "H_word_bits": 9.831,
+    "h1_sp": 3.9112,
+    "h2_sp": 3.2044,
+    "h1_nosp": 3.9413,
+    "h2_nosp": 3.4512,
+    "h1_minus_h2_nosp": 0.4901,
+    "h2_within_word": 3.0341,
+    "H_word_bits": 9.829,
     "positional": {
      "n_symbols": 21,
      "locked_frac": 0.048,
@@ -2266,77 +2236,77 @@
      "mi_bits": 0.2208
     },
     "pair": {
-     "pair_violation_frac": 0.3506,
-     "pairs": 362717,
+     "pair_violation_frac": 0.3504,
+     "pairs": 370064,
      "order": "x p q b f c h u m d s g l r i a n e t o z",
      "by_length": {
-      "2": 0.1017,
-      "3": 0.2494,
-      "4": 0.3219,
-      "5": 0.3384,
-      "6": 0.3292
+      "2": 0.1007,
+      "3": 0.2484,
+      "4": 0.3221,
+      "5": 0.3383,
+      "6": 0.3287
      }
     },
-    "pair_length_matched": 0.3175,
+    "pair_length_matched": 0.3104,
     "lm_exact_length_coverage": 1.0,
-    "seconds": 1.0
+    "seconds": 0.9
    },
    "it/syl": {
     "label": "it syl",
-    "n_tokens": 34059,
-    "n_symbols_total": 85235,
+    "n_tokens": 34719,
+    "n_symbols_total": 86905,
     "alphabet": 21,
-    "types": 1718,
-    "zipf_slope_1_1000": -1.4386,
+    "types": 1728,
+    "zipf_slope_1_1000": -1.4361,
     "ranks_used": 1000,
-    "hapax_type_frac": 0.4424,
-    "hapax_token_frac": 0.0223,
-    "top1_share": 0.031,
+    "hapax_type_frac": 0.4416,
+    "hapax_token_frac": 0.022,
+    "top1_share": 0.0312,
     "top5": [
      [
       "di",
-      1056
+      1082
      ],
      [
       "et",
-      815
+      833
      ],
      [
       "to",
-      764
+      781
      ],
      [
       "che",
-      739
+      759
      ],
      [
       "la",
-      650
+      661
      ]
     ],
     "length": {
      "mean": 2.503,
-     "variance": 0.736,
-     "disp_len_minus1": 0.49,
+     "variance": 0.735,
+     "disp_len_minus1": 0.489,
      "max": 8,
      "hist": {
-      "1": 1563,
-      "2": 18468,
-      "3": 10808,
-      "4": 2289,
-      "5": 544,
-      "6": 289,
-      "7": 82,
+      "1": 1590,
+      "2": 18814,
+      "3": 11026,
+      "4": 2343,
+      "5": 554,
+      "6": 293,
+      "7": 83,
       "8": 16
      }
     },
     "h1_sp": 3.68,
-    "h2_sp": 2.8314,
-    "h1_nosp": 3.9428,
-    "h2_nosp": 3.4495,
-    "h1_minus_h2_nosp": 0.4933,
-    "h2_within_word": 2.6217,
-    "H_word_bits": 8.051,
+    "h2_sp": 2.83,
+    "h1_nosp": 3.9426,
+    "h2_nosp": 3.4484,
+    "h1_minus_h2_nosp": 0.4942,
+    "h2_within_word": 2.6198,
+    "H_word_bits": 8.049,
     "positional": {
      "n_symbols": 21,
      "locked_frac": 0.19,
@@ -2347,74 +2317,74 @@
       "d",
       "f"
      ],
-     "mi_bits": 0.4279
+     "mi_bits": 0.4287
     },
     "pair": {
-     "pair_violation_frac": 0.2159,
-     "pairs": 75174,
+     "pair_violation_frac": 0.2155,
+     "pairs": 76649,
      "order": "q d f m s p g b t c h z r u l i a e n x o",
      "by_length": {
-      "2": 0.1706,
-      "3": 0.2047,
-      "4": 0.225,
-      "5": 0.333,
-      "6": 0.3082
+      "2": 0.1704,
+      "3": 0.2041,
+      "4": 0.2242,
+      "5": 0.3331,
+      "6": 0.3072
      }
     },
-    "pair_length_matched": 0.2586,
-    "lm_exact_length_coverage": 0.99,
-    "seconds": 0.5
+    "pair_length_matched": 0.2603,
+    "lm_exact_length_coverage": 0.997,
+    "seconds": 0.4
    },
    "it/cv": {
     "label": "it cv",
-    "n_tokens": 34059,
-    "n_symbols_total": 62889,
+    "n_tokens": 34719,
+    "n_symbols_total": 64122,
     "alphabet": 21,
     "types": 100,
-    "zipf_slope_1_1000": -1.6144,
+    "zipf_slope_1_1000": -1.6184,
     "ranks_used": 100,
     "hapax_type_frac": 0.04,
     "hapax_token_frac": 0.0001,
-    "top1_share": 0.0371,
+    "top1_share": 0.0372,
     "top5": [
      [
       "di",
-      1264
+      1293
      ],
      [
       "a",
-      1196
+      1215
      ],
      [
       "e",
-      1188
+      1211
      ],
      [
       "co",
-      1175
+      1204
      ],
      [
       "si",
-      1155
+      1184
      ]
     ],
     "length": {
-     "mean": 1.846,
+     "mean": 1.847,
      "variance": 0.13,
-     "disp_len_minus1": 0.154,
+     "disp_len_minus1": 0.153,
      "max": 2,
      "hist": {
-      "1": 5229,
-      "2": 28830
+      "1": 5316,
+      "2": 29403
      }
     },
     "h1_sp": 3.4429,
-    "h2_sp": 2.0526,
-    "h1_nosp": 3.8657,
-    "h2_nosp": 3.119,
-    "h1_minus_h2_nosp": 0.7467,
-    "h2_within_word": 2.0822,
-    "H_word_bits": 5.843,
+    "h2_sp": 2.0517,
+    "h1_nosp": 3.8654,
+    "h2_nosp": 3.1179,
+    "h1_minus_h2_nosp": 0.7475,
+    "h2_within_word": 2.0807,
+    "H_word_bits": 5.841,
     "positional": {
      "n_symbols": 21,
      "locked_frac": 0.762,
@@ -2437,11 +2407,11 @@
       "x",
       "z"
      ],
-     "mi_bits": 0.9875
+     "mi_bits": 0.9876
     },
     "pair": {
      "pair_violation_frac": 0.0,
-     "pairs": 28830,
+     "pairs": 29403,
      "order": "s t c d n r m l p g f q h b z x u a o i e",
      "by_length": {
       "2": 0.0
@@ -2454,63 +2424,63 @@
    },
    "it/syl2": {
     "label": "it syl2",
-    "n_tokens": 34059,
-    "n_symbols_total": 126330,
+    "n_tokens": 34719,
+    "n_symbols_total": 128724,
     "alphabet": 21,
-    "types": 4941,
-    "zipf_slope_1_1000": -0.9793,
+    "types": 5030,
+    "zipf_slope_1_1000": -0.9812,
     "ranks_used": 1000,
-    "hapax_type_frac": 0.5501,
-    "hapax_token_frac": 0.0798,
+    "hapax_type_frac": 0.5535,
+    "hapax_token_frac": 0.0802,
     "top1_share": 0.0341,
     "top5": [
      [
       "et",
-      1162
+      1185
      ],
      [
       "che",
-      1039
+      1063
      ],
      [
       "di",
-      1036
+      1057
      ],
      [
       "a",
-      500
+      513
      ],
      [
       "la",
-      466
+      476
      ]
     ],
     "length": {
-     "mean": 3.709,
-     "variance": 2.62,
-     "disp_len_minus1": 0.967,
+     "mean": 3.708,
+     "variance": 2.621,
+     "disp_len_minus1": 0.968,
      "max": 11,
      "hist": {
-      "1": 1368,
-      "2": 9130,
-      "3": 6033,
-      "4": 5924,
-      "5": 6654,
-      "6": 3451,
-      "7": 1163,
-      "8": 246,
-      "9": 80,
+      "1": 1397,
+      "2": 9324,
+      "3": 6150,
+      "4": 6030,
+      "5": 6771,
+      "6": 3523,
+      "7": 1182,
+      "8": 250,
+      "9": 81,
       "10": 8,
-      "11": 2
+      "11": 3
      }
     },
-    "h1_sp": 3.8517,
-    "h2_sp": 3.1347,
-    "h1_nosp": 3.943,
-    "h2_nosp": 3.4463,
-    "h1_minus_h2_nosp": 0.4967,
-    "h2_within_word": 2.9725,
-    "H_word_bits": 9.708,
+    "h1_sp": 3.8511,
+    "h2_sp": 3.1363,
+    "h1_nosp": 3.9425,
+    "h2_nosp": 3.4478,
+    "h1_minus_h2_nosp": 0.4947,
+    "h2_within_word": 2.975,
+    "H_word_bits": 9.717,
     "positional": {
      "n_symbols": 21,
      "locked_frac": 0.048,
@@ -2518,76 +2488,76 @@
      "locked_symbols": [
       "q"
      ],
-     "mi_bits": 0.2392
+     "mi_bits": 0.2389
     },
     "pair": {
      "pair_violation_frac": 0.3297,
-     "pairs": 204859,
+     "pairs": 208671,
      "order": "q f m x p d c h b s u g l t r i a n o e z",
      "by_length": {
-      "2": 0.2187,
-      "3": 0.2191,
-      "4": 0.3334,
-      "5": 0.3479,
-      "6": 0.3419
+      "2": 0.218,
+      "3": 0.2185,
+      "4": 0.3339,
+      "5": 0.3476,
+      "6": 0.342
      }
     },
-    "pair_length_matched": 0.3354,
-    "lm_exact_length_coverage": 0.998,
-    "seconds": 0.8
+    "pair_length_matched": 0.3305,
+    "lm_exact_length_coverage": 1.0,
+    "seconds": 0.7
    },
    "it/cv2": {
     "label": "it cv2",
-    "n_tokens": 34059,
-    "n_symbols_total": 93318,
+    "n_tokens": 34719,
+    "n_symbols_total": 95089,
     "alphabet": 21,
-    "types": 1996,
-    "zipf_slope_1_1000": -1.1304,
+    "types": 2017,
+    "zipf_slope_1_1000": -1.1282,
     "ranks_used": 1000,
-    "hapax_type_frac": 0.3086,
+    "hapax_type_frac": 0.3118,
     "hapax_token_frac": 0.0181,
-    "top1_share": 0.0371,
+    "top1_share": 0.0372,
     "top5": [
      [
       "e",
-      1263
+      1292
      ],
      [
       "di",
-      1158
+      1181
      ],
      [
       "ce",
-      1095
+      1119
      ],
      [
       "i",
-      1055
+      1071
      ],
      [
       "no",
-      738
+      754
      ]
     ],
     "length": {
-     "mean": 2.74,
+     "mean": 2.739,
      "variance": 1.202,
      "disp_len_minus1": 0.691,
      "max": 4,
      "hist": {
-      "1": 4191,
-      "2": 13480,
-      "3": 3385,
-      "4": 13003
+      "1": 4279,
+      "2": 13750,
+      "3": 3450,
+      "4": 13240
      }
     },
-    "h1_sp": 3.6695,
-    "h2_sp": 2.5906,
-    "h1_nosp": 3.8653,
-    "h2_nosp": 3.1164,
-    "h1_minus_h2_nosp": 0.7489,
+    "h1_sp": 3.6692,
+    "h2_sp": 2.5907,
+    "h1_nosp": 3.8652,
+    "h2_nosp": 3.117,
+    "h1_minus_h2_nosp": 0.7482,
     "h2_within_word": 2.4082,
-    "H_word_bits": 8.463,
+    "H_word_bits": 8.466,
     "positional": {
      "n_symbols": 21,
      "locked_frac": 0.048,
@@ -2598,75 +2568,75 @@
      "mi_bits": 0.5619
     },
     "pair": {
-     "pair_violation_frac": 0.2463,
-     "pairs": 97357,
-     "order": "q p f c h m d b s z r u n l g a t x i o e",
+     "pair_violation_frac": 0.2462,
+     "pairs": 99164,
+     "order": "p f q c h m d b s z r u n l g a t x i o e",
      "by_length": {
-      "2": 0.0249,
-      "3": 0.3868,
-      "4": 0.2686
+      "2": 0.0248,
+      "3": 0.3865,
+      "4": 0.2685
      }
     },
-    "pair_length_matched": 0.2805,
-    "lm_exact_length_coverage": 0.619,
-    "seconds": 0.7
+    "pair_length_matched": 0.2808,
+    "lm_exact_length_coverage": 0.627,
+    "seconds": 0.5
    },
    "it/syl_shuf": {
     "label": "it syl_shuf",
-    "n_tokens": 34059,
-    "n_symbols_total": 85235,
+    "n_tokens": 34719,
+    "n_symbols_total": 86905,
     "alphabet": 21,
-    "types": 4354,
-    "zipf_slope_1_1000": -1.1445,
+    "types": 4404,
+    "zipf_slope_1_1000": -1.1437,
     "ranks_used": 1000,
-    "hapax_type_frac": 0.5937,
-    "hapax_token_frac": 0.0759,
-    "top1_share": 0.0211,
+    "hapax_type_frac": 0.594,
+    "hapax_token_frac": 0.0753,
+    "top1_share": 0.0213,
     "top5": [
      [
-      "te",
-      720
+      "et",
+      739
      ],
      [
-      "et",
-      720
+      "te",
+      735
      ],
      [
       "id",
-      537
+      552
      ],
      [
       "la",
-      533
+      549
      ],
      [
       "di",
-      519
+      530
      ]
     ],
     "length": {
      "mean": 2.503,
-     "variance": 0.736,
-     "disp_len_minus1": 0.49,
+     "variance": 0.735,
+     "disp_len_minus1": 0.489,
      "max": 8,
      "hist": {
-      "1": 1563,
-      "2": 18468,
-      "3": 10808,
-      "4": 2289,
-      "5": 544,
-      "6": 289,
-      "7": 82,
+      "1": 1590,
+      "2": 18814,
+      "3": 11026,
+      "4": 2343,
+      "5": 554,
+      "6": 293,
+      "7": 83,
       "8": 16
      }
     },
     "h1_sp": 3.68,
-    "h2_sp": 3.3254,
-    "h1_nosp": 3.9428,
-    "h2_nosp": 3.7952,
-    "h1_minus_h2_nosp": 0.1476,
-    "h2_within_word": 3.5296,
-    "H_word_bits": 9.303,
+    "h2_sp": 3.3249,
+    "h1_nosp": 3.9426,
+    "h2_nosp": 3.7946,
+    "h1_minus_h2_nosp": 0.148,
+    "h2_within_word": 3.5282,
+    "H_word_bits": 9.304,
     "positional": {
      "n_symbols": 21,
      "locked_frac": 0.0,
@@ -2676,29 +2646,29 @@
     },
     "pair": {
      "pair_violation_frac": 0.4908,
-     "pairs": 75174,
-     "order": "u s c p o t m r z d g x e q l n i a h b f",
+     "pairs": 76649,
+     "order": "u s c p o t m r z d x g e l q n i a h b f",
      "by_length": {
-      "2": 0.4862,
-      "3": 0.4927,
-      "4": 0.4895,
-      "5": 0.4897,
-      "6": 0.4922
+      "2": 0.486,
+      "3": 0.4931,
+      "4": 0.4888,
+      "5": 0.4906,
+      "6": 0.4904
      }
     },
-    "pair_length_matched": 0.4787,
-    "lm_exact_length_coverage": 0.99,
-    "seconds": 0.7
+    "pair_length_matched": 0.4814,
+    "lm_exact_length_coverage": 0.997,
+    "seconds": 0.5
    }
   }
  },
  "checks": {
-  "reparse_split_equals_tsv": true,
+  "reparse_split_equals_tsv": false,
   "P_lines": 4130,
-  "ALL_words_before_filter": 34310,
+  "ALL_words_before_filter": 35069,
   "ALL_dropped": {
-   "?": 98,
-   "nonEVA": 153
+   "nonEVA": 252,
+   "?": 98
   },
   "CERTAIN_words_before_filter": 31852,
   "CERTAIN_dropped": {
@@ -2708,5 +2678,5 @@
   "uncertain_spaces_joined": 2458,
   "CERTAIN_words_that_contain_a_join": 2183
  },
- "seconds": 50
+ "seconds": 38
 }
