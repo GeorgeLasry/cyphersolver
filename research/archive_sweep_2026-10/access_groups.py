@@ -37,8 +37,32 @@ CLARENDON = 'Digital Bodleian has only MS Clarendon 128 and 155; the 1650s Clare
 TNA_SP = 'TNA SP original: imaged only in Gale State Papers Online (subscription), not on Discovery'
 
 
+# Second pass (28 Oct 2026), checked one by one:
+# - Houghton (HOLLIS, fetched in a browser): only hou01430c00499 links a digital object (FHCL.HOUGH:38447771); the
+#   others carry only the generic Houghton links; hou01502 is a microfilm.
+# - MHS collection guides: Sargent (fa0261) is a microfilm edition, Kimball-Griswold (fa0549) has no digital copies.
+# - AGAD 435: scan album on agadd2 for sygn. 279a.
+# Not settled: AGS (PARES still 429), BN Portugal (Manuscriptorium shows nothing without a login), Riksarkivet
+# (CAPTCHA), RAH Salazar (bot check), MHS fa0271/fa0153 ("some documents digitised", which ones not said),
+# AGAD 436/437 (inventory XML only), Riksarkivet 1126/1127 (printed edition only).
+BY_ID = {
+    1285: ('online', 'Houghton digital object urn-3:FHCL.HOUGH:38447771'),
+    1281: ('archive', 'HOLLIS record has no digital object; Houghton reading room or imaging request'),
+    1282: ('archive', 'HOLLIS record has no digital object; Houghton reading room or imaging request'),
+    1283: ('archive', 'HOLLIS records have no digital object; Houghton reading room or imaging request'),
+    1284: ('archive', 'HOLLIS record has no digital object; Houghton reading room or imaging request'),
+    1286: ('archive', 'Houghton holds a microfilm; no digital object in HOLLIS'),
+    1294: ('archive', 'MHS microfilm edition only (Winthrop Sargent Papers guide, which has a "Cipher Key" section)'),
+    1295: ('archive', 'MHS collection guide lists no digital copies'),
+    435: ('online', 'scan album on agadd2 (APP 335 sygn. 279a)'),
+}
+
+
 def decide(e):
     """Return (access, note) or None when the links do not settle it."""
+    if e['id'] in BY_ID:
+        a, note = BY_ID[e['id']]
+        return a, f'{note} (checked {DATE})'
     links = [l.get('href') or '' for l in e.get('links') or []]
     shelf = e.get('shelfmark') or ''
     fa = [re.search(r'facomponent/([0-9a-f]{40})', h).group(1) for h in links if 'francearchives' in h and 'facomponent/' in h]
@@ -60,13 +84,14 @@ def decide(e):
         return 'archive', f'{BODLEIAN[e["id"]]}; reproduction order (checked {DATE})'
     if shelf.startswith('Bodleian Library, Clarendon State Papers'):
         return 'archive', f'{CLARENDON} (checked {DATE})'
-    if re.match(r'TNA, State Papers (?:Ireland|Scotland)', shelf):
+    if re.match(r'TNA,? (?:State Papers (?:Ireland|Scotland)|SP 29)', shelf):
         return 'archive', f'{TNA_SP} (checked {DATE})'
     return None
 
 
 GROUPS = ['Archives nationales', 'HHStA Wien', 'AGS', 'NARA RG 59', 'Academia Sinica IMH Archives', 'Bodleian Library',
-          'TNA', "Archives nationales d'outre-mer"]
+          'TNA', "Archives nationales d'outre-mer", 'Biblioteca Nacional de Portugal', 'Houghton Library', 'Riksarkivet',
+          'Real Academia de la Historia', 'TNA SP 29', 'Massachusetts Historical Society', 'AGAD Warszawa']
 
 
 def main(write):

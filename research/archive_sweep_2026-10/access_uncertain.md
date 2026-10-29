@@ -3,7 +3,7 @@
 From `access_backfill.py`: the entry's own fields gave either no access evidence or evidence both ways.
 Set `access` ("archive" or "online") and `access_note` by hand after a look at the links.
 
-12 with conflicting evidence, 243 with none.
+12 with conflicting evidence, 229 with none.
 
 ## Conflicting evidence
 
@@ -67,17 +67,6 @@ usually point to an original that is not online; one decision per group is often
 | 1241 | "Motim de Madrid": narration and court news of the Esquilache riots, final parts in cipher | Biblioteca Nacional de Portugal, PBA. 636, f. 273-359 (cipher at f. 320 and f. 3 | [Manuscriptorium, PBA. 636](https://www.manuscriptorium.com/apps/index.php?direct=record&pid=BNDPL_-BNDPL_PBA636F273351QE2L92-pt) |
 | 1242 | Luís da Cunha (ambassador in France) and Marco António de Azevedo Coutinho: letters with c | Biblioteca Nacional de Portugal, COD. 4417 (p. 33-37 cipher), COD. 1750; COD. 44 | [Manuscriptorium, COD. 4417](https://www.manuscriptorium.com/apps/index.php?direct=record&pid=BNDPL_-BNDPL_COD_4417____1CGQUTB-pt) |
 
-### Houghton Library (6)
-
-| # | Item | Shelfmark | Links |
-|---|---|---|---|
-| 1281 | Louis XIV to Marshal Catinat, 'a secret letter, partly in cipher' | Houghton Library, Harvard: Susan Dwight Bliss autograph collection, 1481-1915, i | [HOLLIS for Archival Discovery](https://hollisarchives.lib.harvard.edu/catalog/hou01258_hou01258c00018) |
-| 1282 | Charles V to Lope Hurtado de Mendoza, Regensburg, partly in code | Houghton Library, Harvard: Autograph File, K, 1717-1968, item 'Karl V, MS.L.s. t | [HOLLIS for Archival Discovery](https://hollisarchives.lib.harvard.edu/catalog/hou01434_hou01434c00014) |
-| 1283 | Chancellor A. P. Bestuzhev-Riumin, two documents written in cipher (the 1742 one also sign | Houghton Library, Harvard: S. I. U. Vitte autograph album, 1723-1889 (Ms., 368 f | [HOLLIS, 20 Mar 1744](https://hollisarchives.lib.harvard.edu/catalog/hou00671_hou00671c00023) [HOLLIS, 1742](https://hollisarchives.lib.harvard.edu/catalog/hou00671_hou00671c00022) |
-| 1284 | Achille Bazaine to Comte Harispe, Miranda de Ebro, letter partly in cipher (First Carlist  | Houghton Library, Harvard: E. B. Washburne autograph collection, 1766-1888, item | [HOLLIS for Archival Discovery](https://hollisarchives.lib.harvard.edu/catalog/hou01549_hou01549c00007) |
-| 1285 | Lord Grantham (British ambassador in Spain) to Thomas Thynne, Marquess of Bath, duplicate, | Houghton Library, Harvard: Autograph File, G, 1641-2009, item 'Grantham ... lett | [HOLLIS for Archival Discovery](https://hollisarchives.lib.harvard.edu/catalog/hou01430_hou01430c00499) |
-| 1286 | Georgian Social-Democratic government in exile: correspondence with the underground in Geo | Houghton Library, Harvard: Georgia (Republic) records [microform], 1914-1958, se | [HOLLIS, example folder](https://hollisarchives.lib.harvard.edu/catalog/hou01502_hou01502c01297) |
-
 ### Riksarkivet (6)
 
 | # | Item | Shelfmark | Links |
@@ -99,25 +88,6 @@ usually point to an original that is not online; one decision per group is often
 | 1089 | Cardinals Carlo and Giovan Carlo de' Medici (Rome, Florence) -> Luis Mendez de Haro, lette | Real Academia de la Historia (Madrid), Coleccion Salazar y Castro, A-109, ff. 13 | [RAH Salazar catalogue (IA full](https://archive.org/details/salazary-castro-22-nov-2016?q=inventario%2016354) |
 | 1090 | Diego de Aragon y Pignatelli, duke of Terranova (Rome) -> Philip IV, letter in cipher | Real Academia de la Historia (Madrid), Coleccion Salazar y Castro, A-97, ff. 215 | [RAH Salazar catalogue (IA full](https://archive.org/details/salazary-castro-22-nov-2016?q=inventario%2015272) |
 
-### TNA SP 29 (5)
-
-| # | Item | Shelfmark | Links |
-|---|---|---|---|
-| 1010 | Hugh Squier to [Williamson?]: postscript in cypher undecyphered | TNA SP 29, CSP Domestic Charles II 1665-66 (Green 1864), p. 457-458, no. 108 | [CSP Domestic Charles II 1665-6](https://archive.org/details/bub_gb_fsAZVYdVK4UC?q=Squier) |
-| 1011 | 'Aug. Mott' to Jo. Bar of Covent Garden: intercepted letter urging a Catholic rising, seve | TNA SP 29 (Vol. CLXXVII), CSP Domestic Charles II 1666-67 (Green 1864), p. 246,  | [CSP Domestic Charles II 1666-6](https://archive.org/details/bub_gb_GnaauK_zSXAC?q=Mott Covent Garden) |
-| 1012 | [S.] Roquet to Sir Philip Frowde: partly in cypher, not decyphered, endorsed in lemon juic | TNA SP 29 (Vol. CLXI, July 1-7 1666), CSP Domestic Charles II 1665-66 (Green 186 | [CSP Domestic Charles II 1665-6](https://archive.org/details/bub_gb_fsAZVYdVK4UC?q=Roquet) |
-| 1013 | Henry Parker to John Thomson [alias Edw. Riggs, to Sec. Bennet], Rotterdam: partly in cyph | TNA SP 29 (Vol. XC, Jan 1-19 1664), CSP Domestic Charles II 1663-64 (Green 1862) | [CSP Domestic Charles II 1663-6](https://archive.org/details/sim_great-britain-public-record-papers-domestic-charles-ii_january-1663-august-1664?q=Parker Thomson) |
-| 1014 | Dr Walles to 'your Highness' [Duke of York?]: French, chiefly in cypher, undecyphered | TNA SP 29 (Vol. LXXXVIII), CSP Domestic Charles II 1663-64 (Green 1862), no. 32 | [CSP Domestic Charles II 1663-6](https://archive.org/details/sim_great-britain-public-record-papers-domestic-charles-ii_january-1663-august-1664?q=Walles) |
-
-### Massachusetts Historical Society (4)
-
-| # | Item | Shelfmark | Links |
-|---|---|---|---|
-| 1293 | Robert Treat Paine's friend 'Lavinia': note in 'undeciphered code' and a reply in shorthan | Massachusetts Historical Society, Papers of Robert Treat Paine vol. 2 (docs RTP2 | [MHS collection guide](https://www.masshist.org/collection-guides/view/fa0271) |
-| 1294 | Winthrop Sargent papers: 'brief cipher notations' among the papers of the Northwest Territ | Massachusetts Historical Society, Winthrop Sargent Papers, 1771-1948 (fa0261) | [MHS collection guide](https://www.masshist.org/collection-guides/view/fa0261) |
-| 1295 | Kimball-Griswold family papers: portions of the diary entries written in code | Massachusetts Historical Society, Kimball-Griswold Family Papers, 1770-1945 (fa0 | [MHS collection guide](https://www.masshist.org/collection-guides/view/fa0549) |
-| 1296 | DeGrasse-Howard papers: a journal 'written in code' | Massachusetts Historical Society, DeGrasse-Howard Papers, 1776-1976 (fa0153) | [MHS collection guide](https://www.masshist.org/collection-guides/view/fa0153) |
-
 ### Writings of John Quincy Adams (4)
 
 | # | Item | Shelfmark | Links |
@@ -126,14 +96,6 @@ usually point to an original that is not online; one decision per group is often
 | 991 | John Quincy Adams (St Petersburg) to Secretary of State Monroe, 2 Nov 1811: cypher passage | Writings of John Quincy Adams, vol. IV 1811-1813 (Ford 1914) - Writings of J. Q. | [Printed volume, full text sear](https://archive.org/details/fordsjohnadams04adamrich?q=cypher+not+decyphered) [Plain-text OCR](https://archive.org/download/fordsjohnadams04adamrich/fordsjohnadams04adamrich_djvu.txt) |
 | 992 | John Quincy Adams (St Petersburg) to Secretary of State Monroe, 27 May 1812: cypher passag | Writings of John Quincy Adams, vol. IV 1811-1813 (Ford 1914) - Writings of J. Q. | [Printed volume, full text sear](https://archive.org/details/fordsjohnadams04adamrich?q=cypher+not+decyphered) [Plain-text OCR](https://archive.org/download/fordsjohnadams04adamrich/fordsjohnadams04adamrich_djvu.txt) |
 | 993 | John Quincy Adams (St Petersburg) to Secretary of State Monroe, 25 Jun 1812: cypher passag | Writings of John Quincy Adams, vol. IV 1811-1813 (Ford 1914) - Writings of J. Q. | [Printed volume, full text sear](https://archive.org/details/fordsjohnadams04adamrich?q=cypher+not+decyphered) [Plain-text OCR](https://archive.org/download/fordsjohnadams04adamrich/fordsjohnadams04adamrich_djvu.txt) |
-
-### AGAD Warszawa (3)
-
-| # | Item | Shelfmark | Links |
-|---|---|---|---|
-| 435 | Letters to Ignacy Potocki left undeciphered or partly undeciphered, 1782 | AGAD Warszawa, Archiwum Publiczne Potockich (zesp. 335), sygn. 279a/480a | [Scans, APP 279a](http://agadd2.home.net.pl/metrykalia/335/sygn.%20279a/indeks.htm) [AGAD inventory, Archiwum Publi](https://www.agad.gov.pl/inwentarze/APP335.xml) |
-| 436 | Garnysz and Małachowski (Deputation for Foreign Affairs) ↔ the Polish envoy at Dresden, pa | AGAD Warszawa, Nabytki I (zesp. 420), sygn. 125 (old Nab. Stan. 53) | [AGAD inventory, Nabytki I](https://www.agad.gov.pl/inwentarze/NabytkI420.xml) |
-| 437 | Emperor Charles VI → Franz Wilhelm Kinner, secretary of the imperial legation at the Polis | AGAD Warszawa, Zbiór dokumentów papierowych (zesp. 2), nr 3001 (old IV 5.4.D. Nr | [AGAD calendar, Zbiór dokumentó](https://www.agad.gov.pl/inwentarze/c02p.xml) |
 
 ### Bibliothèque de la Sorbonne (3)
 
@@ -207,6 +169,13 @@ usually point to an original that is not online; one decision per group is often
 | 1291 | George W. Gift (Confederate naval officer): letter containing a substitution cipher devise | UNC Southern Historical Collection, George W. Gift Papers, 1862-1876 (#1152) | [UNC finding aid](https://finding-aids.lib.unc.edu/catalog/01152) |
 | 1292 | Copy of a coded message from Charles George Gordon (Gordon Pasha) about imperial business | UNC Southern Historical Collection, Jane Hyde Hall Liddell Battle Papers, 1693-1 | [UNC finding aid](https://finding-aids.lib.unc.edu/catalog/02769) |
 
+### AGAD Warszawa (2)
+
+| # | Item | Shelfmark | Links |
+|---|---|---|---|
+| 436 | Garnysz and Małachowski (Deputation for Foreign Affairs) ↔ the Polish envoy at Dresden, pa | AGAD Warszawa, Nabytki I (zesp. 420), sygn. 125 (old Nab. Stan. 53) | [AGAD inventory, Nabytki I](https://www.agad.gov.pl/inwentarze/NabytkI420.xml) |
+| 437 | Emperor Charles VI → Franz Wilhelm Kinner, secretary of the imperial legation at the Polis | AGAD Warszawa, Zbiór dokumentów papierowych (zesp. 2), nr 3001 (old IV 5.4.D. Nr | [AGAD calendar, Zbiór dokumentó](https://www.agad.gov.pl/inwentarze/c02p.xml) |
+
 ### Archives du Ministere des Affaires etrangeres (2)
 
 | # | Item | Shelfmark | Links |
@@ -262,6 +231,13 @@ usually point to an original that is not online; one decision per group is often
 |---|---|---|---|
 | 1275 | Chacón → Morillo: lines in cipher announcing departure for the island of San Bartolomé | Madrid, Real Academia de la Historia, Morillo papers; RAH digital library id 589 | [RAH record](https://bibliotecadigital.rah.es/es/consulta/registro.do?id=5894) |
 | 1276 | Isabel II and ministers: cipher telegram and cipher note (RAH, Xiquena and González Bravo  | Madrid, Real Academia de la Historia, Conde de Xiquena papers; RAH digital libra | [RAH 14495](https://bibliotecadigital.rah.es/es/consulta/registro.do?id=14495) [RAH 15711](https://bibliotecadigital.rah.es/es/consulta/registro.do?id=15711) |
+
+### Massachusetts Historical Society (2)
+
+| # | Item | Shelfmark | Links |
+|---|---|---|---|
+| 1293 | Robert Treat Paine's friend 'Lavinia': note in 'undeciphered code' and a reply in shorthan | Massachusetts Historical Society, Papers of Robert Treat Paine vol. 2 (docs RTP2 | [MHS collection guide](https://www.masshist.org/collection-guides/view/fa0271) |
+| 1296 | DeGrasse-Howard papers: a journal 'written in code' | Massachusetts Historical Society, DeGrasse-Howard Papers, 1776-1976 (fa0153) | [MHS collection guide](https://www.masshist.org/collection-guides/view/fa0153) |
 
 ### NARA RG 165 (2)
 
