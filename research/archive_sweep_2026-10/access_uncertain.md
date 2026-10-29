@@ -3,7 +3,7 @@
 From `access_backfill.py`: the entry's own fields gave either no access evidence or evidence both ways.
 Set `access` ("archive" or "online") and `access_note` by hand after a look at the links.
 
-13 with conflicting evidence, 278 with none.
+12 with conflicting evidence, 243 with none.
 
 ## Conflicting evidence
 
@@ -11,7 +11,6 @@ Set `access` ("archive" or "online") and `access_note` by hand after a look at t
 |---|---|---|---|---|---|
 | 389 | Copy-book of letters to the marquês de Sande in England from the conde de Miranda, Cardina | ANTT, Códice 12; Condes da Ponte, mç. 19, n.º 1 (PT/TT/CPN/0019/00001) | ...-113) nor the volume holding its two 3L keys (ff. 3, 30) is digitised; both must be ordered from ANTT. Nothing transcribed. ; re... | ...ondence is bound in MMCG 3L (key leaves 3L/000003, 000020). Not digitised; not on DECODE. 26 Oct 2026 (targets/miranda1660/): attempt... | [DigitArq PT/TT/CPN/0019/00001](https://digitarq.arquivos.pt/documentDetails/91d7ad9ba8bb41078124b2fca31110fe) |
 | 440 | Michał Kazimierz Radziwiłł, Lithuanian vice-chancellor → Aleksander Lubomirski, letter wit | Archiwum Narodowe w Krakowie, AKPot 3227, pp. 1191-1194 | link DECODE R7512 (https://de-crypt.org/decrypt-web/RecordsView/7512) | ...schenck1706, not worked. 27 Oct 2026, Brice Dudout (email): not online; he has written to the archive for a quote. Log in to DECOD... | [DECODE R7512](https://de-crypt.org/decrypt-web/RecordsView/7512) |
-| 543 | Governor Guillouet d'Orvilliers and Lemoyne (Cayenne) → minister: letters 'en majeure part | Archives nationales d'outre-mer, COL C14 21, 23, 24, 25 (Correspondance à l'arri | ...ANOM flags them "document numérisé". from ANOM. Open the digitised C14 volumes on ANOM IREL; start with the 1759 duplicata in... | ...object online although ANOM flags them "document numérisé". Order images from ANOM. Open the digitised C14 volumes on ANOM IREL; sta... | [FranceArchives C14 25, 1761](https://francearchives.gouv.fr/fr/facomponent/59d9030f7243585500e96dca1119f3ab56358d2f) [FranceArchives passages non tr](https://francearchives.gouv.fr/fr/facomponent/e44100f6fab69aead0ea31697d4d939bd6202e03) |
 | 564 | Wilhelm von Grumbach and Margrave Johann of Küstrin: partly ciphered letters (1551, 1556)  | GStA PK, I. HA GR Rep. 39 Nr. 289 and Nr. 58; Sächsisches Staatsarchiv, HStA Dre | ...tstücke'; Loc. 4414/04: 'Grumbachsche Briefe und Chiffren' (digitised) Finding aid as quoted; the Dresden file holds the ciphers... | ...chivportal-D/DDB viewer. 27 Oct 2026, Brice Dudout (email): not online; he has written to the archive for a quote. Open Loc. 4414/... | [GR Rep. 39 Nr. 289](https://www.archivportal-d.de/item/D2QK4J4NBBM753FACIDVECA42DFQJUHB) [GR Rep. 39 Nr. 58](https://www.archivportal-d.de/item/QKL5XW3OQLRVC4H47HWQEXJM234ONNFZ) |
 | 582 | Bavarian envoy Mörmann in Vienna, reports partly in a large numeric code (drafts 1733 and  | BayHStA, Gesandtschaft Wien 201 and 215 | seen: image | ...itised file. The finding aid's 'Chiffrentabelle' was either not filmed or is a wrong description. Code of about 4,300 values, keyl... | [Gesandtschaft Wien 201](https://www.archivportal-d.de/item/RGYSAX6E75J5EMP3F54X4YHGTJAZPTQA) [Gesandtschaft Wien 215](https://www.archivportal-d.de/item/53KILM6RPXXEBXYGYCYROHUVPUJCKWLM) |
 | 590 | Frederick II ↔ Duke August Wilhelm of Brunswick-Bevern and Field Marshal Schwerin, orders  | GStA PK, VI. HA Nl Braunschweig-Bevern Nr. 3 and 4 (= BArch N 49/3-4); Bundesarc | ...certainly. . Check PC vols. 13-14 for each order; view the digitised Lehwald order. probably printed (Politische Correspondenz)... | ...ng may already exist; the letters to Ulrike less certainly. Not digitised. Check PC vols. 13-14 for each order; view the digitised Le... | [Nl Bevern Nr. 3](https://www.archivportal-d.de/item/4MPTV46CSHGKYXAUERZQBI3RGGYQUXHC) [Nl Schweden Nr. 3](https://www.archivportal-d.de/item/WSP4TTIFBGD6IRXHIL6PWK4XUYCF5OQP) |
@@ -28,40 +27,6 @@ Set `access` ("archive" or "online") and `access_note` by hand after a look at t
 Groups where the item is known only from a printed calendar or catalogue (CSP, L&P, Clarendon, Lope de Soria)
 usually point to an original that is not online; one decision per group is often enough.
 
-### Archives nationales (12)
-
-| # | Item | Shelfmark | Links |
-|---|---|---|---|
-| 534 | Caulaincourt (Congress of Châtillon) → Napoleon: letters in cipher 'sans le déchiffrement' | Archives nationales, AF/IV (Secrétairerie d'État, Relations extérieures), Plaque | [FranceArchives Plaquette 4/III](https://francearchives.gouv.fr/fr/facomponent/e569b2a3fc98fb7877fd81b7baa734e5dffb3e3b) [FranceArchives Plaquette 4/IV](https://francearchives.gouv.fr/fr/facomponent/2525313c4d5b264d1ce379b54b7aa72ee171b009) |
-| 535 | Saint-Marsan (French minister in Berlin) → Maret, despatch 'non déchiffrée' | Archives nationales, AF/IV (Relations extérieures), Prusse dossier 4, no. 233 | [FranceArchives](https://francearchives.gouv.fr/fr/facomponent/3c2b6de1d9e43a05c4248a573641d56ac5b24752) |
-| 536 | Danish diplomatic ciphers intercepted by Napoleon's services, 'non déchiffrée': Bernstorff | Archives nationales, AF/IV (Relations extérieures), Plaquette 1/II no. 79 (f. 15 | [FranceArchives Plaquette 1/II](https://francearchives.gouv.fr/fr/facomponent/0615abe9ec46501b7df56e515612d7fa3184e96a) [FranceArchives Plaquette 2/V](https://francearchives.gouv.fr/fr/facomponent/5a49e40f2227cd90026dface6c2f97a080f59ffb) |
-| 537 | French consuls at St Petersburg and Moscow → secretary of state for the Navy: cipher passa | Archives nationales, AE/B/I/982-989 (Correspondance des consuls de France à Sain | [FranceArchives 1747 non déchif](https://francearchives.gouv.fr/fr/facomponent/a4df7f2c1e602f2544c504ad2d2fa397fd9c9511) [FranceArchives 1747 fin non tr](https://francearchives.gouv.fr/fr/facomponent/7f0d8023f46f1f2c2088a2ebecef8ef981edb8f9) |
-| 538 | Marquis de Villeneuve, French ambassador at Constantinople → Maurepas: letter 'non déchiff | Archives nationales, AE/B/I/414 | [FranceArchives 18 Feb 1737](https://francearchives.gouv.fr/fr/facomponent/c36cd1cab01bc4dc60c5c424543ff6980bedf776) [FranceArchives 2 Apr 1737](https://francearchives.gouv.fr/fr/facomponent/d11cbd8ece2d6230b80487be5f6275e035dfa22b) |
-| 539 | Marquis de Châteauneuf, ambassador at Constantinople → Louis XIV and Pontchartrain: 'la pa | Archives nationales, AE/B/I/376-385 (Correspondance reçue du consulat de Constan | [FranceArchives f. 239](https://francearchives.gouv.fr/fr/facomponent/8eb77e8fd61a9b5ab8a55558fdf53766bac7c9fa) [FranceArchives f. 433](https://francearchives.gouv.fr/fr/facomponent/be9282c9b68f93a61f62f775648c83da46c565da) |
-| 540 | French consul at Algiers → minister: 'document non décrypté pour la partie chiffrée' (f. 1 | Archives nationales, AE/B/I/115-145 (Correspondance reçue du consulat d'Alger),  | [FranceArchives](https://francearchives.gouv.fr/fr/facomponent/6458f171b95a3b3e0f911be1ce222e400b7868d0) |
-| 541 | Partyet, French consul at Cadiz → Conseil de Marine: '[suite en chiffre, non transcrite]' | Archives nationales, AE/B/I/211-240 (Correspondance des consuls de France à Cadi | [FranceArchives](https://francearchives.gouv.fr/fr/facomponent/db83b483c981c3a44e01009691a9b37c749dd5ac) |
-| 545 | Royalist émigré correspondence of the abbé André: 'lettres chiffrées (1799)' | Archives nationales, 444AP/1 no. 1 | [FranceArchives](https://francearchives.gouv.fr/fr/facomponent/703c42fca2ae27caa924d1253b9f7bc737ae6a3e) |
-| 546 | Jean de La Fin, sieur de Beauvoir-La-Nocle → the duke of Bouillon, letter partly ciphered | Archives nationales, 273AP/179 (fonds La Tour d'Auvergne-Bouillon) | [FranceArchives](https://francearchives.gouv.fr/fr/facomponent/34d93784ae27afedad4e69c35b5cf952bb209305) |
-| 547 | Partly ciphered letters in the AN autograph collections: Greffier → marquis de Rambouillet | Archives nationales, AB/XIX/3197; AB/XIX/3327 | [FranceArchives AB/XIX/3197](https://francearchives.gouv.fr/fr/facomponent/136e48e084de84a3335bccc19675d3f51fca7f85) [FranceArchives AB/XIX/3327](https://francearchives.gouv.fr/fr/facomponent/ca375810344b43f66b439acbb6f08ea2fec1cc73) |
-| 551 | Lagny → Martin, chief of the Pondicherry factory: commercial instructions partly in cipher | Archives nationales, MAR/B/7/60 fol. 73v | [FranceArchives](https://francearchives.gouv.fr/fr/facomponent/01d7233706d432e7320e60bf71ac8a1bd4a266e6) |
-
-### HHStA Wien (12)
-
-| # | Item | Shelfmark | Links |
-|---|---|---|---|
-| 504 | Prince Francis II Rákóczi → his envoy in Berlin Johann Michael Klement, ciphered instructi | HHStA Wien, Ungarische Akten 427-51 | [AIS 427-51](https://www.archivinformationssystem.at/detail.aspx?ID=3409316) |
-| 506 | 'Einige chiffrierte Schreiben' filed with the Staatskanzlei cipher keys | HHStA Wien, StK Interiora 14-4-77 | [AIS 14-4-77](https://www.archivinformationssystem.at/detail.aspx?ID=5439282) |
-| 509 | Louis-Guillaume Otto, French ambassador in Vienna → Champagny, intercepted ciphered letter | HHStA Wien, StAbt Frankreich Varia 61-10-21 | [AIS 61-10-21](https://www.archivinformationssystem.at/detail.aspx?ID=7173936) |
-| 510 | Letters to the imperial ambassador in Madrid, Count Pötting, 'teilweise verschlüsselt' (La | HHStA Wien, StAbt Spanien Varia 15-3-21, 18-1-1, 18-1-3, 18-4-2, 19-1-1, 19-2, 2 | [AIS 18-1-3](https://www.archivinformationssystem.at/detail.aspx?ID=4135305) [AIS 19-2 Lamberg](https://www.archivinformationssystem.at/detail.aspx?ID=4143825) |
-| 511 | Letters to the imperial ambassadors in Madrid, Counts Harrach and Trautson, 'teilweise ver | HHStA Wien, StAbt Spanien Varia 29-4-1, 29-6, 30-4-1, 31-2, 31-2-2, 31-3-2, 31-6 | [AIS 31-2](https://www.archivinformationssystem.at/detail.aspx?ID=4183376) [AIS 44-3 Harrach](https://www.archivinformationssystem.at/detail.aspx?ID=4217532) |
-| 512 | Letters to the imperial envoys Grana and Mansfeld in Madrid, 'teilweise verschlüsselt' | HHStA Wien, StAbt Spanien Varia 35-4, 36-3-11, 37-2, 38-3, 38-4, 38-5-6, 38-5-7, | [AIS 37-2 Grana](https://www.archivinformationssystem.at/detail.aspx?ID=4191300) [AIS 38-3 Mansfeld](https://www.archivinformationssystem.at/detail.aspx?ID=4193550) |
-| 513 | Imperial-Spanish correspondence on Flanders, 'verschlüsselt': Archduke Leopold Wilhelm, Ca | HHStA Wien, StAbt Spanien Varia 12-1-48, 12-1-51, 12-1-59, 12-1-60, 12-2-1, 12-2 | [AIS 12-2-1 Castel Rodrigo](https://www.archivinformationssystem.at/detail.aspx?ID=4119425) [AIS 20-4-10 Lisola](https://www.archivinformationssystem.at/detail.aspx?ID=4146307) |
-| 516 | Custrianus from Constantinople, letter partly ciphered (Grafenegg family archive) | HHStA Wien, SB HA Grafenegg Akten 729-10 | [AIS 729-10](https://www.archivinformationssystem.at/detail.aspx?ID=6229750) [GAMS 1624 sibling](https://gams.uni-graz.at/o:kuse.l.hbg.16240126a1) |
-| 519 | Ciphered letters of the correspondent Louitgarde Pauli-Bizonky from London (Foreign Minist | HHStA Wien, MdÄ IB Akten 7/8-2175 | [AIS IB 7/8-2175](https://www.archivinformationssystem.at/detail.aspx?ID=4166372) |
-| 1231 | Ferenc Wesselényi (palatine) → unknown, two letters mostly in cipher, Sztrecsény and Murán | HHStA Wien, Ungarische Akten, Specialia, Verschwörerakten IV (Nádasdysche Akten) | [Hungaricana regest, Nádasdy fi](https://archives.hungaricana.hu/en/lear/BecsSeg/146641/) [Hungaricana search "sifrír*" (](https://www.hungaricana.hu/en/search/results/?query=sifr%C3%ADr*) |
-| 1232 | Fr. Nicolaus Donellan O.Aug. → Ferenc Nádasdy, Latin letter partly in cipher, no decipherm | HHStA Wien, Ungarische Akten, Specialia, Verschwörerakten IV, Fasc. 313 Konv. B  | [Hungaricana search](https://www.hungaricana.hu/en/search/results/?query=sifr%C3%ADr*) |
-| 1234 | Hanns Hofmann → Lower Austrian government, German letter in cipher, key enclosed | HHStA Wien, Ungarische Akten, Allgemeine Akten, Fasc. 5 Konv. B, fol. 133/2-4 (k | [Hungaricana search "sifrír*" (](https://www.hungaricana.hu/en/search/results/?query=sifr%C3%ADr*) |
-
 ### AGS (10)
 
 | # | Item | Shelfmark | Links |
@@ -77,21 +42,6 @@ usually point to an original that is not online; one decision per group is often
 | 627 | Charles V: instruction to the Cardinal of Trent (Madruzzo), entirely in cipher | AGS, Patronato Real (Paz, Catálogo V, no. 1521; PTR legajo/doc to map) | [Paz, Catálogo V (1912), Google](https://books.google.com/books?id=V0hQAQAAMAAJ&pg=PA194&q=cifra) |
 | 896 | Lope Hurtado de Mendoza to Charles V on the Comunidades: one of seven letters in cipher | AGS, Patronato Real (Paz, Catálogo V, no. 189; PTR legajo/doc to map) | [Paz, Catálogo V (1912), Google](https://books.google.com/books?id=V0hQAQAAMAAJ&pg=PA29&q=cifra) |
 
-### NARA RG 59 (10)
-
-| # | Item | Shelfmark | Links |
-|---|---|---|---|
-| 634 | US minister at Vienna → Secretary of State, cable in the 1867 State Department code with t | NARA RG 59, Telegrams received by the Department of State (1867 code period; Ent | [Masked Dispatches (NSA, govinf](https://www.govinfo.gov/content/pkg/GOVPUB-D-PURL-gpo52790/pdf/GOVPUB-D-PURL-gpo52790.pdf) |
-| 635 | German Foreign Office → Bernstorff (Washington), German cipher telegram forwarded through  | NARA RG 59, 1910-29 decimal file (World War I series; FRUS 1916 Supplement doc.  | [FRUS 1916 Supp. doc. 424](https://history.state.gov/historicaldocuments/frus1916Supp/d424) |
-| 637 | John J. Appleton → John Quincy Adams, Cadiz, despatch with an 18-group coded passage on th | NARA RG 59, Despatches from US Ministers to Spain, vol. 22 (20 May 1822-30 Dec 1 | [Manning vol. 3 (archive.org)](https://archive.org/details/diplomaticcorres03mann) [NARA M31 vol. 22](https://catalog.archives.gov/id/188609418) |
-| 639 | Joel Roberts Poinsett → James Monroe, Santiago de Chile, despatch with at least nine ciphe | NARA RG 59, Despatches from Special Agents, vol. 3 (Poinsett 1813-23) = microfil | [Manning vol. 2 (archive.org)](https://archive.org/details/diplomaticcorres02mann) [NARA M37 vol. 3](https://catalog.archives.gov/id/213803757) |
-| 641 | José Rafael Revenga → Colombian Secretary of Foreign Affairs, Madrid, letter partly in cip | NARA RG 59, Despatches from US Ministers to Colombia, vol. 3, enclosure 'No. 4'  | [Manning vol. 2 (archive.org)](https://archive.org/details/diplomaticcorres02mann) |
-| 654 | German Foreign Office → German Legation Stockholm, numeric-code telegrams obtained by the  | NARA RG 59, Decimal File 763.72/11631, 11654, 11668 and enclosures of Stockholm  | [M367 roll 141 (763.72/354-1334](https://catalog.archives.gov/id/27158076) [M367 roll 114 (763.72/11966-12](https://catalog.archives.gov/id/27133946) |
-| 655 | German Foreign Office (Abteilung II) → German Legation Stockholm, five-letter pronounceabl | NARA RG 59, 763.72/11654 (Christiania tel. 1215) and enclosures of Stockholm des | [M367 roll 114, naId 27133946](https://catalog.archives.gov/id/27133946) [M367 roll 122, naId 27140577](https://catalog.archives.gov/id/27140577) |
-| 656 | German Supreme Command (GrHQu, signed Ludendorff) → German military attaché Stockholm, and | NARA RG 59, enclosures of Stockholm despatches 1426 and 1475; Christiania tels.  | [M367 roll 141, naId 27158076](https://catalog.archives.gov/id/27158076) [M367 roll 122, naId 27140577](https://catalog.archives.gov/id/27140577) |
-| 657 | Bernstorff (German Embassy Washington), second code text on the State Department cable of  | NARA RG 59, 763.72111/4443 and related papers; M367 roll 166 (763.72111/4226-450 | [M367 roll 166 (763.72111/4226-](https://catalog.archives.gov/id/27179174) |
-| 658 | German Minister at Lima (Perl) ↔ German legations Santiago, Buenos Aires, Montevideo, Mexi | NARA RG 59, Central Decimal File 1910-29, 862.20223 (German military activities  | [M973 roll 207 purport list 862](https://catalog.archives.gov/id/87662081) [M336 roll 64, 862.20223 file (](https://catalog.archives.gov/id/574876562) |
-
 ### Academia Sinica IMH Archives (9)
 
 | # | Item | Shelfmark | Links |
@@ -105,46 +55,6 @@ usually point to an original that is not online; one decision per group is often
 | 1378 | "密電" telegram registers kept by the Chinese legation in Belgium, incl. Urga telegrams | Academia Sinica IMH Archives, Waijiaobu 駐比使館保存檔案 03-13-043-01-001 (庫倫來往密電, 41 pp | [03-13-043-04-001 (119 pp.)](https://catalog.digitalarchives.tw/item/00/09/52/90.html) [03-13-043-01-001 庫倫來往密電](https://catalog.digitalarchives.tw/item/00/09/52/8a.html) |
 | 1379 | "密電" volumes in Waijiaobu series 03-44-034, filed beside the 新十碼 code books | Academia Sinica IMH Archives, Waijiaobu 03-44-034-01-001 (82 pp.), 03-44-034-02- | [03-44-034-01-001](https://catalog.digitalarchives.tw/item/00/0b/98/91.html) [03-44-035-01-001 新十碼密碼電本](https://catalog.digitalarchives.tw/item/00/0b/98/95.html) |
 | 1380 | Cipher telegrams of the Chinese representative in Moscow (Li Jiaao) | Academia Sinica IMH Archives, Waijiaobu 03-32 「駐莫李代表密電」(12 pp.); 03-32-498 「密電」  | [駐莫李代表密電 (12 pp.)](https://catalog.digitalarchives.tw/item/00/0a/c3/c5.html) [03-32-498 密電 (4 pp.)](https://catalog.digitalarchives.tw/item/00/0a/c3/c9.html) |
-
-### Bodleian Library (9)
-
-| # | Item | Shelfmark | Links |
-|---|---|---|---|
-| 476 | W. P. → William Blathwayt, letter part in cypher on the Franco-Spanish arbitration | Bodleian Library, MS Eng. letters d. 37, fols 106-107 | [EMLO](https://emlo.bodleian.ox.ac.uk/profile/work/5b49f333-6038-4771-a444-bc4b9037644c) |
-| 479 | Captain Thomas Ogle and Sir John Digby → Thomas Devenish, code letters (one a code repeat  | Bodleian Library, MS Tanner 62, fols 498 and 506 | [EMLO f. 498](https://emlo.bodleian.ox.ac.uk/profile/work/df9687f2-bf34-4a09-a3c6-27da1f03652c) [EMLO f. 506](https://emlo.bodleian.ox.ac.uk/profile/work/727caacb-a896-443c-ab52-316f7b523af8) |
-| 1019 | Hyde: instructions for his secretary Edgeman (mission to Scotland), plus two further copie | Bodleian Library, Clarendon State Papers (MS Clarendon; volume not given in the  | [Clar. Cal. vol. II (full text,](https://archive.org/details/calendarofclaren02bodluoft?q=Edgeman+cipher+used+by+the+King) [Plain-text OCR](https://archive.org/download/calendarofclaren02bodluoft/calendarofclaren02bodluoft_djvu.txt) |
-| 1020 | Hyde to Lord Rochester: copy by Edgeman, a few words in undeciphered cipher (Long's case,  | Bodleian Library, Clarendon State Papers; Calendar of the Clarendon State Papers | [Clar. Cal. vol. II (full text,](https://archive.org/details/calendarofclaren02bodluoft?q=undeciphered+cipher+Edgernan) [Plain-text OCR](https://archive.org/download/calendarofclaren02bodluoft/calendarofclaren02bodluoft_djvu.txt) |
-| 1021 | Hyde to Lord Rochester on the King's impending departure from Paris: part in undeciphered  | Bodleian Library, Clarendon State Papers; Calendar of the Clarendon State Papers | [Clar. Cal. vol. II (full text,](https://archive.org/details/calendarofclaren02bodluoft?q=King%27s+impending+departure+undeciphered) [Plain-text OCR](https://archive.org/download/calendarofclaren02bodluoft/calendarofclaren02bodluoft_djvu.txt) |
-| 1022 | Hyde to Lord Rochester (treaty of France with Cromwell; St Malo news): copy by Edgeman, a  | Bodleian Library, Clarendon State Papers; Calendar of the Clarendon State Papers | [Clar. Cal. vol. II (full text,](https://archive.org/details/calendarofclaren02bodluoft?q=A+few+lines+in+undeciphered+cipher) [Plain-text OCR](https://archive.org/download/calendarofclaren02bodluoft/calendarofclaren02bodluoft_djvu.txt) |
-| 1023 | Hyde to Ormonde (letters from Paris intercepted; steal the Duke of Gloucester away): partl | Bodleian Library, Clarendon State Papers; Calendar of the Clarendon State Papers | [Clar. Cal. vol. II (full text,](https://archive.org/details/calendarofclaren02bodluoft?q=undeciphcred+by+Ormonde) [Plain-text OCR](https://archive.org/download/calendarofclaren02bodluoft/calendarofclaren02bodluoft_djvu.txt) |
-| 1024 | Hyde to the Earl of Bristol (Irish regiments, Col. Grace): mention of 'Edgely's' proposed  | Bodleian Library, Clarendon State Papers; Calendar of the Clarendon State Papers | [Clar. Cal. vol. III (full text](https://archive.org/details/calendarofclaren03bodluoft?q=proposed+attempt+in+England+undeciphered) [Plain-text OCR](https://archive.org/download/calendarofclaren03bodluoft/calendarofclaren03bodluoft_djvu.txt) |
-| 1025 | Letter from Mr Ashton ('232'), a royalist agent in England: partly in undeciphered cipher  | Bodleian Library, Clarendon State Papers; Calendar of the Clarendon State Papers | [Clar. Cal. vol. III (full text](https://archive.org/details/calendarofclaren03bodluoft?q=Ashton+partly+in+undeciphered+cipher) [Plain-text OCR](https://archive.org/download/calendarofclaren03bodluoft/calendarofclaren03bodluoft_djvu.txt) |
-
-### TNA (9)
-
-| # | Item | Shelfmark | Links |
-|---|---|---|---|
-| 1029 | Archbishop Laud to the Lord Deputy (Wentworth): copy, Trinity College Dublin visitors' dis | TNA, State Papers Ireland, SP 63/255, ff. 141-143 (two copies); Calendar of the  | [CSP Ireland 1633-47 (full text](https://archive.org/details/cu31924091770887?q=A+passage+in+cipher+follows) [Plain-text OCR](https://archive.org/download/cu31924091770887/cu31924091770887_djvu.txt) |
-| 1030 | Secretary Nicholas to the Earl of Orrery: Declaration of Settlement, partly in cipher | TNA, State Papers Ireland, SP 63/308 (OCR '808'), p. 53 (entry book); Calendar o | [CSP Ireland 1660-62 (full text](https://archive.org/details/cu31924091769566?q=partly+in+cypher+Orrery) [Plain-text OCR](https://archive.org/download/cu31924091769566/cu31924091769566_djvu.txt) |
-| 1031 | Secretary Bennet (Lord Arlington) to the Lord Lieutenant: Irish bill; passage in cypher fo | TNA, State Papers Ireland, SP 63/312 (OCR '812'), pp. 188-189; Calendar of the S | [CSP Ireland 1666-69 (full text](https://archive.org/details/calendarstatepa12offigoog?q=passage+in+cypher+Rennet) [Plain-text OCR](https://archive.org/download/calendarstatepa12offigoog/calendarstatepa12offigoog_djvu.txt) |
-| 1032 | 'John Poingdexter' (name as OCR) to [unnamed], Dublin: Ireland in a desperate condition; a | TNA, State Papers Ireland, SP 63/261 (Vol. CCLXI); Calendar of the State Papers  | [CSP Ireland 1633-47 (full text](https://archive.org/details/calendarofstatep02grea?q=passage+follows+in+cipher) [Plain-text OCR](https://archive.org/download/calendarofstatep02grea/calendarofstatep02grea_djvu.txt) |
-| 1033 | Hanoverian minister to the Regency/Prince Ferdinand on a Duc de Broglie letter of 17 Aug 1 | TNA, Home Office Papers (Domestic Entry Book / Calendar of Home Office Papers of | [Cal. Home Office 1760-65 (full](https://archive.org/details/cu31924091775217?q=Broglio+to+be+deciphered) [Plain-text OCR](https://archive.org/download/cu31924091775217/cu31924091775217_djvu.txt) |
-| 1037 | Fontenay to Nau (Mary Queen of Scots' secretary): cipher letter with an 'illegible interpr | TNA, State Papers Scotland, Mary Queen of Scots (SP 53/16, 'Vol. XVI July-Decemb | [Thorpe Scotland cal. (full tex](https://archive.org/details/calendarstatepa00thorgoog?q=Fontenay+illegible+interpretation) [Plain-text OCR](https://archive.org/download/calendarstatepa00thorgoog/calendarstatepa00thorgoog_djvu.txt) |
-| 1038 | Mr Liggons to the Queen of Scots on his interview with the Prince of Parma and the unpaid  | TNA, State Papers Scotland, Mary Queen of Scots (SP 53/15), nos. 81-82; Calendar | [Thorpe Scotland cal. (full tex](https://archive.org/details/calendarstatepa00thorgoog?q=Another+copy+of+the+same+letter+undeciphered) [Plain-text OCR](https://archive.org/download/calendarstatepa00thorgoog/calendarstatepa00thorgoog_djvu.txt) |
-| 1039 | The French ambassador in England (Chateauneuf) to Courcelles in Scotland, two letters in c | TNA, State Papers Scotland, Mary Queen of Scots (SP 53, Aug-Sept 1586 volume; nu | [Thorpe Scotland cal. (full tex](https://archive.org/details/calendarstatepa00thorgoog?q=French+Ambassador+Courcelles+cipher) [Plain-text OCR](https://archive.org/download/calendarstatepa00thorgoog/calendarstatepa00thorgoog_djvu.txt) |
-| 1040 | Sir Arthur Chichester (Lord Deputy) to the Earl of Salisbury: short numerical cipher passa | TNA, State Papers Ireland, SP 63/223, no. 69; Calendar of the State Papers relat | [CSP Ireland James I 1606-08 (f](https://archive.org/details/calendarofstatep02grea_0?q=To+be+expounded+by+the+cipher) [Plain-text OCR](https://archive.org/download/calendarofstatep02grea_0/calendarofstatep02grea_0_djvu.txt) |
-
-### Archives nationales d'outre-mer (7)
-
-| # | Item | Shelfmark | Links |
-|---|---|---|---|
-| 1201 | Cayenne letters of 1779 with ciphered passages and a ciphered piece 'non traduits' | Archives nationales d'outre-mer (Aix-en-Provence), COL C14 51 (13 Jul 1779; 29 A | [FranceArchives COL C14 51](https://francearchives.gouv.fr/fr/facomponent/981fb09cc409d3dd8837b45b29d5bc2d264f9a19) [FranceArchives COL C14 51](https://francearchives.gouv.fr/fr/facomponent/d8938010dfe31f140338a7c374c4ddf8d9381fec) |
-| 1204 | Martinique despatches '(chiffrée)' in King George's War (11 letters, Longueville and Fort- | Archives nationales d'outre-mer (Aix-en-Provence), COL C8 A 56 ff. 13, 40, 44, 5 | [FranceArchives COL C8 A 56](https://francearchives.gouv.fr/fr/facomponent/b9a6451ece7b0f272aa9896771bfa52d3883f927) [FranceArchives COL C8 A 56](https://francearchives.gouv.fr/fr/facomponent/081b520c51251465e455fe0eef1b5da8f604fe08) |
-| 1205 | Martinique letters 'en partie chiffrée' on the defence of Guadeloupe | Archives nationales d'outre-mer (Aix-en-Provence), COL C8 A 69 ff. 354, 357 | [FranceArchives COL C8 A 69](https://francearchives.gouv.fr/fr/facomponent/192fca363ec4d92bb1b7db8cf826d13c82e353ca) [FranceArchives COL C8 A 69](https://francearchives.gouv.fr/fr/facomponent/89b1a695b08fed97b6694c2befc4dd351755b9c8) |
-| 1209 | Montigny to Baudouin (Poona, India): ciphered passage not translated | Archives nationales d'outre-mer (Aix-en-Provence), COL C5 B 3 (Inde, Pondichéry) | [FranceArchives COL C5 B 3](https://francearchives.gouv.fr/fr/facomponent/c9800087d4d28bbfebb762763918e42d0a19853f) |
-| 1210 | Governor Lavaud's despatches from Tahiti: 'Dépêches chiffrées (1847-1850) avec table des m | Archives nationales d'outre-mer (Aix-en-Provence), OCEA 10 | [FranceArchives OCEA 10](https://francearchives.gouv.fr/fr/facomponent/7584d90ee65422f5ceb0acd4bcb6a6a5f7c4d4cb) |
-| 1211 | The King and Colbert → comte de Blénac, ciphered ministerial despatches (Antilles) | Archives nationales d'outre-mer (Aix-en-Provence), COL B / 201 MIOM 3 (three ite | [FranceArchives 201 MIOM 3](https://francearchives.gouv.fr/fr/facomponent/cd618db07c91bc5d068ebadd5cc6fc8a4a32f0f2) [FranceArchives 201 MIOM 3](https://francearchives.gouv.fr/fr/facomponent/233f5f669bf7eb74dd605f8aa161889edcbb5603) |
-| 1212 | Brazza's mission papers: ciphered correspondence with the Foreign Ministry and the letter  | Archives nationales d'outre-mer (Aix-en-Provence), 16 PA III 4 (Fonds Brazza, Re | [FranceArchives 16 PA III 4](https://francearchives.gouv.fr/fr/facomponent/b33a00fb244dfbc1ef8611ff82ce689b4adb1eee) |
 
 ### Biblioteca Nacional de Portugal (6)
 
@@ -281,6 +191,14 @@ usually point to an original that is not online; one decision per group is often
 | 706 | French consular agent Las Palmas → Marine Casablanca, letter-cipher telegrams ('Nota num.  | NARA RG 242, T1022 roll 2866 (NAID 338542419), frames 505-507 (OKW Ausland IV 30 | [T1022 roll 2866 (NAID 33854241](https://catalog.archives.gov/id/338542419) |
 | 707 | Kriegsmarine Etappendienst / OKW Abwehr IV 'Scheintelegramme' in the W.f.S. (Wörterbuch fü | NARA RG 242, T1022 roll 3391 (NAID 338968820), frames 877-878; system and plain/ | [T1022 roll 3391 (NAID 33896882](https://catalog.archives.gov/id/338968820) [T1022 roll 3367 (NAID 33892841](https://catalog.archives.gov/id/338928415) |
 
+### NARA RG 59 (3)
+
+| # | Item | Shelfmark | Links |
+|---|---|---|---|
+| 634 | US minister at Vienna → Secretary of State, cable in the 1867 State Department code with t | NARA RG 59, Telegrams received by the Department of State (1867 code period; Ent | [Masked Dispatches (NSA, govinf](https://www.govinfo.gov/content/pkg/GOVPUB-D-PURL-gpo52790/pdf/GOVPUB-D-PURL-gpo52790.pdf) |
+| 635 | German Foreign Office → Bernstorff (Washington), German cipher telegram forwarded through  | NARA RG 59, 1910-29 decimal file (World War I series; FRUS 1916 Supplement doc.  | [FRUS 1916 Supp. doc. 424](https://history.state.gov/historicaldocuments/frus1916Supp/d424) |
+| 641 | José Rafael Revenga → Colombian Secretary of Foreign Affairs, Madrid, letter partly in cip | NARA RG 59, Despatches from US Ministers to Colombia, vol. 3, enclosure 'No. 4'  | [Manning vol. 2 (archive.org)](https://archive.org/details/diplomaticcorres02mann) |
+
 ### UNC Southern Historical Collection (3)
 
 | # | Item | Shelfmark | Links |
@@ -295,6 +213,13 @@ usually point to an original that is not online; one decision per group is often
 |---|---|---|---|
 | 1034 | Montereul to Cardinal Mazarin: levies for Spain, effect of the army coup in England; eight | Archives du Ministere des Affaires etrangeres, Paris, Correspondance politique A | [Montereul vol. II (full text, ](https://archive.org/details/diplomaticcorres02mont?q=Eight+lines+undeciphered) [Plain-text OCR](https://archive.org/download/diplomaticcorres02mont/diplomaticcorres02mont_djvu.txt) |
 | 1035 | Bellievre to Brienne (Lord Digby's agent, the King's approach to London): nine lines remai | Archives du Ministere des Affaires etrangeres, Paris, Correspondance politique A | [Montereul vol. II (full text, ](https://archive.org/details/diplomaticcorres02mont?q=Nine+lines+remain+here+undeciphered) [Plain-text OCR](https://archive.org/download/diplomaticcorres02mont/diplomaticcorres02mont_djvu.txt) |
+
+### Baker Library (2)
+
+| # | Item | Shelfmark | Links |
+|---|---|---|---|
+| 1298 | William Parker legal daybooks: several pages of unidentified symbols, possibly a cipher | Baker Library, Harvard Business School: William Parker legal daybooks, and an ac | [HOLLIS for Archival Discovery](https://hollisarchives.lib.harvard.edu/catalog/bak00823) |
+| 1442 | William Parker legal daybooks: several pages filled with unidentified symbols, possibly a  | Baker Library, Harvard Business School, William Parker legal daybooks and an acc | [Harvard Curiosity](https://id.lib.harvard.edu/curiosity/worlds-of-change/149-990146986160203941_HBS.BAKER.GEN:32064577-2017) |
 
 ### Beinecke (2)
 
@@ -387,12 +312,25 @@ usually point to an original that is not online; one decision per group is often
 | 521 | Sieyès's embassy in Berlin: ciphered letters between Talleyrand and Sieyès (Konstanz) and  | Stadtarchiv Konstanz, Wessenberg correspondence P 1839 5, P 1839 21 (Kalliope);  | [Kalliope P 1839 21](https://kalliope-verbund.info/DE-611-HS-2869939) [Kalliope P 1839 5](https://kalliope-verbund.info/DE-611-HS-2869346) |
 | 523 | Joseph Anderwert (Bern) → Ignaz Heinrich von Wessenberg, letter with words 'chiffriert, ab | Stadtarchiv Konstanz, Autographensammlung A 33 12 | [Kalliope 17 Mar 1802](https://kalliope-verbund.info/DE-611-HS-1768183) [Kalliope 25 Feb 1802 sibling](https://kalliope-verbund.info/DE-611-HS-1768865) |
 
+### University of Miami Cuban Heritage Collection (2)
+
+| # | Item | Shelfmark | Links |
+|---|---|---|---|
+| 1427 | Fernández Cavada brothers and Alfaro: Cuban Ten Years' War letters and telegram with ciphe | University of Miami Cuban Heritage Collection, Fernando Fernández-Cavada Collect | [Telegram 12 Jul 1870](http://cdm17191.contentdm.oclc.org/cdm/ref/collection/chc5006/id/2924) [List of secret codes](http://cdm17191.contentdm.oclc.org/cdm/ref/collection/chc5006/id/2876) |
+| 1428 | J. Norma letter on the Cuban independence war effort (subject: Ciphers; Gómez, Máximo) | University of Miami Cuban Heritage Collection, chc0347, item 11716 | [CONTENTdm item](http://cdm17191.contentdm.oclc.org/cdm/ref/collection/chc0347/id/11716) |
+
 ### Universitätsbibliothek Leipzig (2)
 
 | # | Item | Shelfmark | Links |
 |---|---|---|---|
 | 522 | Count Ernst zu Münster (London) → August Kestner, letter 'größerer Teil ... nicht lesbar,  | Universitätsbibliothek Leipzig, Slg. Kestner/III/B/III/38 Nr. 6 | [Kalliope](https://kalliope-verbund.info/DE-611-HS-3044308) |
 | 528 | Johannes Volkelt ↔ Meta Seeliger, engagement letters and postcards with sentences in a pri | Universitätsbibliothek Leipzig, Nachlass Johannes Volkelt NL 270 (about 40 items | [Kalliope postcard 29 Dec 1876](https://kalliope-verbund.info/DE-611-HS-3318630) [Kalliope key note 14 Dec 1876](https://kalliope-verbund.info/DE-611-HS-3322822) |
+
+### AGN México (1)
+
+| # | Item | Shelfmark | Links |
+|---|---|---|---|
+| 1452 | Carta cifrada on a joint Mexican-Colombian expedition to free Cuba from Spain | AGN México, Gobernación, vol. 85, exp. 2 | [AGN Guía record](https://guiageneral.agn.gob.mx/ajax/contenido.php?idref=MX09017AGNCL02SB01FO014GSSC07GOSE01GBUI0085UC0002) |
 
 ### AHDSREM leg. 40-11-3 (1)
 
@@ -490,12 +428,6 @@ usually point to an original that is not online; one decision per group is often
 |---|---|---|---|
 | 900 | Ghinucci (Bishop of Worcester) and colleagues -> Wolsey, Rome despatches, 13/14 and 17 Nov | BL Cotton MS Vitellius B VII/VIII (LP cites "Vit. B. vii/viii" folios; verify ex | [Archive.org scan: LP Henry VII](https://archive.org/details/letterspaperspt104greauoft) [Archive.org scan: LP Henry VII](https://archive.org/details/letterspaperspt204greauoft) |
 
-### Baker Library (1)
-
-| # | Item | Shelfmark | Links |
-|---|---|---|---|
-| 1298 | William Parker legal daybooks: several pages of unidentified symbols, possibly a cipher | Baker Library, Harvard Business School: William Parker legal daybooks, and an ac | [HOLLIS for Archival Discovery](https://hollisarchives.lib.harvard.edu/catalog/bak00823) |
-
 ### Bibliothèque Mazarine (1)
 
 | # | Item | Shelfmark | Links |
@@ -592,6 +524,12 @@ usually point to an original that is not online; one decision per group is often
 |---|---|---|---|
 | 544 | Correspondence from Philadelphia to the French consulate at New Orleans: two despatches 'n | Centre des Archives diplomatiques de Nantes, 340PO/A/183 | [FranceArchives](https://francearchives.gouv.fr/fr/facomponent/40e539e7bfbe84f96db8612d3d0b1f592f16d8d0) |
 
+### Cleveland Public Library (1)
+
+| # | Item | Shelfmark | Links |
+|---|---|---|---|
+| 1429 | Sir George Barlow (Calcutta) → Lord Grenville, official and private reports 'written in a  | Cleveland Public Library, John G. White / Zamboni collection, p4014coll9 id 5090 | [Cleveland Public Library](http://cplorg.contentdm.oclc.org/cdm/ref/collection/p4014coll9/id/50900) |
+
 ### Comune di Milano (1)
 
 | # | Item | Shelfmark | Links |
@@ -609,6 +547,12 @@ usually point to an original that is not online; one decision per group is often
 | # | Item | Shelfmark | Links |
 |---|---|---|---|
 | 525 | Wilhelm von Wolzogen, Württemberg chargé d'affaires in Paris: correspondence and reports,  | Deutsches Literaturarchiv Marbach, A:Wolzogen (HS00180982) | [DLA catalogue](https://www.dla-marbach.de/find/opac/id/HS00180982) |
+
+### Duke University Rubenstein Library (1)
+
+| # | Item | Shelfmark | Links |
+|---|---|---|---|
+| 1444 | George Augustus Elliott papers (Duke): diary with loose items on ciphers and codes | Duke University Rubenstein Library, George Augustus Elliott papers | [Duke finding aid](https://idn.duke.edu/ark:/87924/r4q52nd66) |
 
 ### FHKA Wien (1)
 
@@ -652,6 +596,12 @@ usually point to an original that is not online; one decision per group is often
 |---|---|---|---|
 | 1157 | Wickham papers: foreign correspondence 'some in cipher' | Hampshire Archives 38M49/1/3/1-9; 38M49/1/10/1-51; 38M49/1/141/4 (Plan of a cyph | [TNA Discovery 38M49/1/10/1-51](https://discovery.nationalarchives.gov.uk/details/r/95a07122-3f60-46b7-8255-9f617e6db81a) [TNA Discovery 38M49/1/141/4](https://discovery.nationalarchives.gov.uk/details/r/8959aca6-3352-4d43-b0f3-79dc376e85b0) |
 
+### Hampton National Historic Site (1)
+
+| # | Item | Shelfmark | Links |
+|---|---|---|---|
+| 1436 | John Hay ↔ Henry White: cipher telegrams of 12 Feb 1903 (Tower, Berlin) and 8 Apr 1904 | Hampton National Historic Site (NPS), Hay-White papers, collections.digitalmaryl | [Hay to White 16 Feb 1903](http://collections.digitalmaryland.org/cdm/ref/collection/hawp/id/170) [Hay to White 8 Apr 1904](http://collections.digitalmaryland.org/cdm/ref/collection/hawp/id/216) |
+
 ### Hatfield MS 231 no. 83 (1)
 
 | # | Item | Shelfmark | Links |
@@ -670,11 +620,23 @@ usually point to an original that is not online; one decision per group is often
 |---|---|---|---|
 | 858 | Frederick V (Winter King) → Johann Joachim von Rusdorf: French letter with enciphered name | Heidelberg University Library, Urkunde Lehmann 5918 (Manuscriptorium HUL___URKLE | [Manuscriptorium](http://www.manuscriptorium.com/apps/index.php?direct=record&pid=HUL___-HUL___URKLEHMANN5918PWTN4-de) [Europeana](https://www.europeana.eu/item/92004/object_HUL___URKLEHMANN5918PWTN4) |
 
+### Henry County Historical Society (1)
+
+| # | Item | Shelfmark | Links |
+|---|---|---|---|
+| 1432 | Unknown author → Jacob Ammen, coded letter | Henry County Historical Society (via Ball State Digital Media Repository, LSTACi | [Ball State DMR](http://dmr.bsu.edu/cdm/ref/collection/LSTACivWar/id/2072) |
+
 ### Hessisches Staatsarchiv Darmstadt (1)
 
 | # | Item | Shelfmark | Links |
 |---|---|---|---|
 | 531 | Landgrave Ernst Ludwig of Hesse-Darmstadt, diaries partly ciphered | Hessisches Staatsarchiv Darmstadt, D 4 Nr. 343/1 | [Archivportal-D](https://www.archivportal-d.de/item/HPVPDMGL7RLOHV5NSUORWMAZQOPRAOBN) |
+
+### Historic Newton archives (1)
+
+| # | Item | Shelfmark | Links |
+|---|---|---|---|
+| 1424 | Charles H. Loud → Annette ('Nettie') Carruth, 54 cipher postcards | Historic Newton archives, Charles H. Loud postcards (catalogaccess 10132); DPLA  | [Historic Newton record](https://historicnewton.catalogaccess.com/archives/10132) |
 
 ### Historical Manuscripts Commission (1)
 
@@ -693,6 +655,18 @@ usually point to an original that is not online; one decision per group is often
 | # | Item | Shelfmark | Links |
 |---|---|---|---|
 | 648 | US Military Telegraph (War Department telegraph office) ledgers: enciphered telegrams in t | Huntington Library, Thomas T. Eckert Papers (mssEC), 35 telegram ledgers; cipher | [Huntington: Decoding the Civil](https://www.huntington.org/verso/decoding-civil-war) [Smithsonian on the project](https://www.smithsonianmag.com/smart-news/you-can-help-decode-thousands-top-secret-civil-war-telegrams-180959561/) |
+
+### Indiana Historical Society (1)
+
+| # | Item | Shelfmark | Links |
+|---|---|---|---|
+| 1430 | Unsigned (Cincinnati) → Robert Baldwin c/o H. H. Breckenridge, Pittsburgh: Northwest Terri | Indiana Historical Society, Northwest Territory collection (ONWT) id 1583 | [IHS image](http://images.indianahistory.org/cdm/ref/collection/ONWT/id/1583) |
+
+### Indiana State Library (1)
+
+| # | Item | Shelfmark | Links |
+|---|---|---|---|
+| 1431 | L. P. Milligan coded message, evidence in the 1864 Indianapolis treason trial | Indiana State Library, p16066coll13 id 3133 | [Indiana Memory](http://indianamemory.contentdm.oclc.org/cdm/ref/collection/p16066coll13/id/3133) |
 
 ### Isle of Wight Record Office OG/BB/492 (1)
 
@@ -759,6 +733,12 @@ usually point to an original that is not online; one decision per group is often
 | # | Item | Shelfmark | Links |
 |---|---|---|---|
 | 530 | Holstein-Gottorp diplomatic correspondence 'z.T.' or 'meist chiffriert': Dumont in Paris,  | Landesarchiv Schleswig-Holstein, Abt. 8.1 Nr. 2231-2232, 2247-2249, 2283, 2287,  | [Archivportal-D search 'chiffri](https://www.archivportal-d.de/objekte?query=chiffriert&rows=100) |
+
+### Lehigh University (1)
+
+| # | Item | Shelfmark | Links |
+|---|---|---|---|
+| 1433 | Fitz-John Porter (Falmouth) → G. B. McClellan, letter in code with arithmetic in another h | Lehigh University, I Remain: letter 1862 August 16, 6:30 pm | [Lehigh item](https://preserve.lehigh.edu/digital-special-collections/i-remain/letter-1862-august-16-630-pm-general-gb-mcclellan-washington) |
 
 ### Lehigh University Special Collections (1)
 
@@ -868,6 +848,12 @@ usually point to an original that is not online; one decision per group is often
 |---|---|---|---|
 | 1026 | George Gilpin (Elizabeth's agent) to Lord Robert Dudley: cipher passage undeciphered (Prin | Pepys Library, Magdalene College, Cambridge (Evelyn gift, Leicester papers); Rep | [HMC Pepys (full text, search)](https://archive.org/details/reportonpepys00greauoft?q=Gilpin+Dudley+Brussels) [Plain-text OCR](https://archive.org/download/reportonpepys00greauoft/reportonpepys00greauoft_djvu.txt) |
 
+### Portal to Texas History / Rice University Woodson Research C (1)
+
+| # | Item | Shelfmark | Links |
+|---|---|---|---|
+| 1437 | H. F. Sinclair, Zevely, Stanford, Chandler, Parham, Wahlberg: eight ciphered telegrams in  | Portal to Texas History / Rice University Woodson Research Center, Zevely and Si | [Sinclair to Chandler, 14 Dec 1](https://texashistory.unt.edu/ark:/67531/metapth1891647/) |
+
 ### Private collections (1)
 
 | # | Item | Shelfmark | Links |
@@ -921,6 +907,12 @@ usually point to an original that is not online; one decision per group is often
 | # | Item | Shelfmark | Links |
 |---|---|---|---|
 | 1138 | Prince Rupert to William Legge, letters in code (Dartmouth papers) | Staffordshire Record Office, D(W)1778/I/i/37-59 | [TNA Discovery D(W)1778/I/i/37](https://discovery.nationalarchives.gov.uk/details/r/d17497bb-607e-46c2-881c-6ca4821fb2c1) [TNA Discovery D(W)1778/I/i/39](https://discovery.nationalarchives.gov.uk/details/r/a3e4b66e-6dc7-4690-8761-6fd6ad9e6f27) |
+
+### TNA (1)
+
+| # | Item | Shelfmark | Links |
+|---|---|---|---|
+| 1033 | Hanoverian minister to the Regency/Prince Ferdinand on a Duc de Broglie letter of 17 Aug 1 | TNA, Home Office Papers (Domestic Entry Book / Calendar of Home Office Papers of | [Cal. Home Office 1760-65 (full](https://archive.org/details/cu31924091775217?q=Broglio+to+be+deciphered) [Plain-text OCR](https://archive.org/download/cu31924091775217/cu31924091775217_djvu.txt) |
 
 ### TNA PRO 30/11/3-6 (1)
 
@@ -1030,8 +1022,50 @@ usually point to an original that is not online; one decision per group is often
 |---|---|---|---|
 | 1027 | De Veil to Louis XIV: full account of French attempts to win Poland, partly in cipher, und | Trumbull MSS (Sir William Trumbull), Downshire MSS: Report on the Manuscripts of | [HMC Downshire vol. I pt I (arc](https://archive.org/details/ReportOnTheManuscriptsOfTheMarquessOfDownshireV1Pt1) [Plain-text OCR](https://archive.org/download/ReportOnTheManuscriptsOfTheMarquessOfDownshireV1Pt1/Manuscripts_Marquess_of_Downshire_v1_pt1_djvu.txt) |
 
+### UC Riverside (1)
+
+| # | Item | Shelfmark | Links |
+|---|---|---|---|
+| 1423 | Machain (1878), Decoud (1883) and Perousha (1884) → Juan Silvano Godoi, three Paraguayan l | UC Riverside, Special Collections, Juan Silvano Godoi papers (MS 003), letters o | [Machain 1878 (Calisphere)](https://calisphere.org/item/a49b049d-f02c-43d2-a23e-e587084e63fd) [Decoud 1883 (Calisphere)](https://calisphere.org/item/cd42bc77-7600-420a-85f5-2d45175bbfc2) |
+
 ### ULB Bonn (1)
 
 | # | Item | Shelfmark | Links |
 |---|---|---|---|
 | 1163 | Minna Werner → Gottfried Kinkel, letter of 11 Feb 1860 in Minna's private Geheimschrift, a | ULB Bonn, Nachlass Kinkel, S 2667,1 (1) (13 Feb 1860), S 2673 (16 S. 184-193) (1 | [Kinkel to Minna, 13 Feb 1860](http://kalliope-verbund.info/DE-611-HS-2714700) [Kinkel to Minna, 17 Feb 1860](http://kalliope-verbund.info/DE-611-HS-2714980) |
+
+### University of Delaware Library (1)
+
+| # | Item | Shelfmark | Links |
+|---|---|---|---|
+| 1440 | Charles Herbert, Revolutionary War prisoner's journal (subject heading Cryptography) | University of Delaware Library, Charles Herbert journal (digitalcollections.udel | [Delaware digital collections](https://digitalcollections.udel.edu/documents/detail/302236) |
+
+### University of Idaho Special Collections (1)
+
+| # | Item | Shelfmark | Links |
+|---|---|---|---|
+| 1425 | Bunker Hill & Sullivan Co.: about 35 coded telegrams Burbidge / Bradley / Granger during t | University of Idaho Special Collections, Bunker Hill Company records MG 367 (bun | [bunkerhill122](https://www.lib.uidaho.edu/digital/bunkerhill/items/bunkerhill122.html) [bunkerhill162](https://www.lib.uidaho.edu/digital/bunkerhill/items/bunkerhill162.html) |
+
+### University of Pittsburgh (1)
+
+| # | Item | Shelfmark | Links |
+|---|---|---|---|
+| 1426 | Henry Clay Frick → Andrew Carnegie, 19 coded telegrams (Homestead 1892 among them) | University of Pittsburgh, Historic Pittsburgh: 'Frick wires Carnegie a coded mes | [First record](https://historicpittsburgh.org/islandora/object/pitt%3A31735064659596) [Second record](https://historicpittsburgh.org/islandora/object/pitt%3A31735064659604) |
+
+### University of South Carolina (1)
+
+| # | Item | Shelfmark | Links |
+|---|---|---|---|
+| 1435 | Arthur Lee (Paris) → Henry Laurens, letter in cipher on foreign affairs | University of South Carolina, South Caroliniana Library, amerrevsc id 1888 | [USC item](http://digital.tcl.sc.edu/cdm/ref/collection/amerrevsc/id/1888) [NYPL Lee cipher code 1779](https://digitalcollections.nypl.org/items/37d37320-0e21-0134-db03-00505686d14e) |
+
+### Walters Art Museum (1)
+
+| # | Item | Shelfmark | Links |
+|---|---|---|---|
+| 1439 | Walters Ms. W.88, Book of Hours (Cambrai, c. 1300-10): owner's request for return written  | Walters Art Museum, Ms. W.88, fol. 1v | [Walters Digital](http://www.thedigitalwalters.org/Data/WaltersManuscripts/html/W88) |
+
+### Winterthur Museum (1)
+
+| # | Item | Shelfmark | Links |
+|---|---|---|---|
+| 1443 | D. A. Buckingham's hymn book: two hymns and several signatures written in code | Winterthur Museum, Garden and Library, digitalcollections.winterthur.org documen | [Winterthur](https://digitalcollections.winterthur.org/documents/detail/2310) |
