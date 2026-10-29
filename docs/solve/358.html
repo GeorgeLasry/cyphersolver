@@ -40,7 +40,7 @@
 </div>
 
 <section class="hero solve">
-  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 358 · class B · priority 5.9 · open</p>
+  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 358 · class B · priority 5.9 · in progress</p>
   <h1>Fragments in Girolamo Sirtori's cipher broken by Luis Valle de la Cerda (BNE Mss/994)</h1>
   <p class="sub">Sirtori's own cipher, and a test of the claim by Spain's cipher secretary that he had anticipated it.</p>
   <dl class="facts">
@@ -54,6 +54,7 @@
 </section>
 
 <main>
+<div class="callout blue"><p><strong>In progress here.</strong> <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/sirtori1604/NOTES.md" rel="noopener">targets/sirtori1604</a> is working on this cipher (status: in progress. Attempted 28 Oct 2026 (claude-opus-5-5): system narrowed, nothing read. Waiting on the). Read its NOTES.md before you start, and hand it to your agent with this page: it records what was transcribed, tried and ruled out, and the next step.</p></div>
 <h2>Hand this page to your AI agent</h2>
 <p>Give your agent (Claude, ChatGPT or any assistant that can open web pages) this address and ask it to do the task on the page:</p>
 <p class="urlline">https://dbourdeau.github.io/cyphersolver/solve/358.html</p>
@@ -62,6 +63,10 @@
 This page: https://dbourdeau.github.io/cyphersolver/solve/358.html
 
 You are helping a public research project read historical cipher letters that nobody has read yet.
+
+START HERE: the project is already working on this cipher. Read these notes before anything else and
+build on them; they record what was transcribed, tried and ruled out, and the next step:
+  https://github.com/dbourdeau/cyphersolver/blob/main/targets/sirtori1604/NOTES.md  (status: in progress. Attempted 28 Oct 2026 (claude-opus-5-5): system narrowed, nothing read. Waiting on the)
 
 THE CIPHER
   Title:          Fragments in Girolamo Sirtori's cipher broken by Luis Valle de la Cerda (BNE Mss/994)
@@ -77,22 +82,23 @@ THE CIPHER
     - Cryptoole ITXXXX-1: https://cryptoole.satoru.net/case.html?id=ITXXXX-1
 
 WHAT IS KNOWN
-  Known so far (checked 27 Oct 2026): Broken at the time by Luis Valle de la Cerda (his solution not extant). Transcription by Sara Gómez Hernández; Eloy Caballero's tentative partial Latin reading (2012, Cipher Mysteries) is unverified and not accepted here.
-  Still open: The ciphertext of ff. 85-87 (~800 characters): no verified decipherment or key; needs a fresh transcription keeping the abbreviation marks.
-  History and prior art: Cryptoole ITXXXX-1 (partly solved). Valle broke it and said he had devised the same scheme fifteen years earlier; his solution is not extant. Transcription by Sara Gómez Hernández; partial Latin reading by Eloy Caballero (2012) on Cipher Mysteries. Review 20 Oct 2026: Caballero explicitly presents a tentative interpretation with unspecified abbreviation expansions and acknowledges excess freedom. Its Latin reading is unverified; it is not accepted here as a recovered deterministic key or a verified partial solution. 27 Oct 2026, Brice Dudout (email): the episode is Valladolid 1604, not 1599 (as Cryptiana noted). Valle never says he broke these letters: he says he already had 'la misma' cipher, shown to Philip II fifteen years earlier. The ciphertext is two real letters, to Andrés de Prada (f. 85r) and to Juan Baptista de Tassis (ff. 86r-86v), so Spanish or Italian rather than Latin. Unread; the BDH images (140 ppi) are too coarse, and he has asked the BNE for high-resolution scans.
-  Outcome so far: not yet attempted by the project
+  Known so far (checked 28 Oct 2026): Broken at the time by Luis Valle de la Cerda (his solution not extant). Transcription by Sara Gómez Hernández; Eloy Caballero's tentative partial Latin reading (2012, Cipher Mysteries) is unverified and not accepted here.
+  Still open: The ciphertext of ff. 85r, 86r-86v (747 signs in the 2012 stream): no key. Not a letter substitution of es/it/la (group lengths; controlled solver runs, targets/sirtori1604/). Needs a transcription keeping every dot, comma, arc and loop count from the high-resolution scans Dudout has ordered, and Valle's ff. 83-84, 88-90.
+  History and prior art: Cryptoole ITXXXX-1 (partly solved). Valle broke it and said he had devised the same scheme fifteen years earlier; his solution is not extant. Transcription by Sara Gómez Hernández; partial Latin reading by Eloy Caballero (2012) on Cipher Mysteries. Review 20 Oct 2026: Caballero explicitly presents a tentative interpretation with unspecified abbreviation expansions and acknowledges excess freedom. Its Latin reading is unverified; it is not accepted here as a recovered deterministic key or a verified partial solution. 27 Oct 2026, Brice Dudout (email): the episode is Valladolid 1604, not 1599 (as Cryptiana noted). Valle never says he broke these letters: he says he already had 'la misma' cipher, shown to Philip II fifteen years earlier. The ciphertext is two real letters, to Andrés de Prada (f. 85r) and to Juan Baptista de Tassis (ff. 86r-86v), so Spanish or Italian rather than Latin. Unread; the BDH images (140 ppi) are too coarse, and he has asked the BNE for high-resolution scans. 28 Oct 2026 (targets/sirtori1604/, in progress): system narrowed from the 2012 transcriptions, nothing read. f. 85 has 94 space-separated groups of 1-4 signs (2.19 per group, 59% exactly 2), half the length of Spanish, Italian or Latin words, so not a letter-for-letter substitution; the lengths match Spanish syllables but no vowel set exists (64%, shuffled 60-63%, real syllables 89%); substitution annealing of the Gomez stream fails in es/it/la where same-length controls are recovered. Points to syllable or code signs with meaningful dots and commas; needs the high-resolution scans and Valle's ff. 83-84, 88-90.
+  Outcome so far: In progress here, in targets/sirtori1604/.
   Prior-art check: partial: Eloy Caballero, partial Latin reading in comments on Nick Pelling, 'Girolamo Sirtori cipher mystery', ciphermysteries.com, June-Aug 2012; no full reading found (checked 14 Oct 2026)
   Check first: Download ff. 83-90 from BDH, re-transcribe keeping the abbreviation marks, and test Caballero's partial key against a Latin (and Italian/Spanish) model; read ff. 83-84 and 88-90 for Valle's own description of the scheme.
   Class B: part of a key or a known cipher family of the same office is in print or on DECODE.
+  Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/sirtori1604/NOTES.md
 
 STEPS
 0. Set up. If you can run a shell, fork and clone the repository and work inside it:
      git clone https://github.com/dbourdeau/cyphersolver.git
    Then read, in this order: CONTRIBUTING.md (how a contribution is sent and credited); README.md, sections
-   "Repository layout" and "Conventions" (how readings are measured and named); and
-   lang/README.md (shared language models).
-   Put all your work in targets/&lt;writer&gt;&lt;year&gt;/ (a new folder, e.g. sega1593): transcription, key, decipherment, scripts. Write a NOTES.md that says
-   what the document is, the system, the key, the reading, and what is open and why. Keep WORKLOG.md there too:
+   "Repository layout" and "Conventions" (how readings are measured and named); targets/sirtori1604/NOTES.md (everything
+   already tried on this cipher, with the files it used); and lang/README.md (shared language models).
+   Put all your work in targets/sirtori1604/: transcription, key, decipherment, scripts. Add your findings to its NOTES.md
+   under a dated heading, without rewriting what is there. Keep WORKLOG.md there too:
    one dated line per step (transcription, hypothesis, solver run, crib, key found, control), failures included.
    Do not edit docs/ (the site is generated and rebuilt on merge) and do not commit large images: link them.
    If you cannot run a shell, do the same work in files you keep and send them with the issue below.
@@ -132,7 +138,7 @@ STEPS
      - not applicable: Not a cipher (clear text, shorthand, a key sheet, instructions), or the item could not be reached.
 
 REPORT BACK
-With a clone: open a pull request with your targets/&lt;writer&gt;&lt;year&gt;/ folder. Say in the description how you want to be
+With a clone: open a pull request with your targets/sirtori1604/ folder. Say in the description how you want to be
   credited (name, initials or handle, and a link) and include the same points as the issue below.
 Without one: open an issue: https://github.com/dbourdeau/cyphersolver/issues/new?template=solution.yml&amp;title=Solution%3A+catalogue+358&amp;target=catalogue+358
 (other kinds of contribution: https://github.com/dbourdeau/cyphersolver/issues/new/choose). Include:
@@ -146,12 +152,12 @@ Without one: open an issue: https://github.com/dbourdeau/cyphersolver/issues/new
 If you cannot open issues or pull requests, write this report for your human to send. Credit goes to the person who sends it.</pre></div>
 
 <h2>What is known</h2>
-<p class="ko"><i class="k">known</i> <span class="asof">checked 27 Oct 2026</span> Broken at the time by Luis Valle de la Cerda (his solution not extant). Transcription by Sara Gómez Hernández; Eloy Caballero's tentative partial Latin reading (2012, Cipher Mysteries) is unverified and not accepted here.</p><p class="ko"><i class="o">open</i> The ciphertext of ff. 85-87 (~800 characters): no verified decipherment or key; needs a fresh transcription keeping the abbreviation marks.</p>
+<p class="ko"><i class="k">known</i> <span class="asof">checked 28 Oct 2026</span> Broken at the time by Luis Valle de la Cerda (his solution not extant). Transcription by Sara Gómez Hernández; Eloy Caballero's tentative partial Latin reading (2012, Cipher Mysteries) is unverified and not accepted here.</p><p class="ko"><i class="o">open</i> The ciphertext of ff. 85r, 86r-86v (747 signs in the 2012 stream): no key. Not a letter substitution of es/it/la (group lengths; controlled solver runs, targets/sirtori1604/). Needs a transcription keeping every dot, comma, arc and loop count from the high-resolution scans Dudout has ordered, and Valle's ff. 83-84, 88-90.</p>
 
-<p><b>History and prior art.</b> Cryptoole ITXXXX-1 (partly solved). Valle broke it and said he had devised the same scheme fifteen years earlier; his solution is not extant. Transcription by Sara Gómez Hernández; partial Latin reading by Eloy Caballero (2012) on Cipher Mysteries. Review 20 Oct 2026: Caballero explicitly presents a tentative interpretation with unspecified abbreviation expansions and acknowledges excess freedom. Its Latin reading is unverified; it is not accepted here as a recovered deterministic key or a verified partial solution. 27 Oct 2026, Brice Dudout (email): the episode is Valladolid 1604, not 1599 (as Cryptiana noted). Valle never says he broke these letters: he says he already had 'la misma' cipher, shown to Philip II fifteen years earlier. The ciphertext is two real letters, to Andrés de Prada (f. 85r) and to Juan Baptista de Tassis (ff. 86r-86v), so Spanish or Italian rather than Latin. Unread; the BDH images (140 ppi) are too coarse, and he has asked the BNE for high-resolution scans.</p>
-<p><b>Outcome so far.</b> Not yet attempted by the project. Prior-art check: partial: Eloy Caballero, partial Latin reading in comments on Nick Pelling, 'Girolamo Sirtori cipher mystery', ciphermysteries.com, June-Aug 2012; no full reading found (checked 14 Oct 2026).</p>
+<p><b>History and prior art.</b> Cryptoole ITXXXX-1 (partly solved). Valle broke it and said he had devised the same scheme fifteen years earlier; his solution is not extant. Transcription by Sara Gómez Hernández; partial Latin reading by Eloy Caballero (2012) on Cipher Mysteries. Review 20 Oct 2026: Caballero explicitly presents a tentative interpretation with unspecified abbreviation expansions and acknowledges excess freedom. Its Latin reading is unverified; it is not accepted here as a recovered deterministic key or a verified partial solution. 27 Oct 2026, Brice Dudout (email): the episode is Valladolid 1604, not 1599 (as Cryptiana noted). Valle never says he broke these letters: he says he already had 'la misma' cipher, shown to Philip II fifteen years earlier. The ciphertext is two real letters, to Andrés de Prada (f. 85r) and to Juan Baptista de Tassis (ff. 86r-86v), so Spanish or Italian rather than Latin. Unread; the BDH images (140 ppi) are too coarse, and he has asked the BNE for high-resolution scans. 28 Oct 2026 (targets/sirtori1604/, in progress): system narrowed from the 2012 transcriptions, nothing read. f. 85 has 94 space-separated groups of 1-4 signs (2.19 per group, 59% exactly 2), half the length of Spanish, Italian or Latin words, so not a letter-for-letter substitution; the lengths match Spanish syllables but no vowel set exists (64%, shuffled 60-63%, real syllables 89%); substitution annealing of the Gomez stream fails in es/it/la where same-length controls are recovered. Points to syllable or code signs with meaningful dots and commas; needs the high-resolution scans and Valle's ff. 83-84, 88-90.</p>
+<p><b>Outcome so far.</b> In progress here, in targets/sirtori1604/. Prior-art check: partial: Eloy Caballero, partial Latin reading in comments on Nick Pelling, 'Girolamo Sirtori cipher mystery', ciphermysteries.com, June-Aug 2012; no full reading found (checked 14 Oct 2026).</p>
 <p><b>Check first.</b> Download ff. 83-90 from BDH, re-transcribe keeping the abbreviation marks, and test Caballero's partial key against a Latin (and Italian/Spanish) model; read ff. 83-84 and 88-90 for Valle's own description of the scheme.</p>
-
+<ul><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/sirtori1604/NOTES.md" rel="noopener">targets/sirtori1604/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/sirtori1604" rel="noopener">the folder</a>)</li></ul>
 
 
 <h2>Scores</h2>
