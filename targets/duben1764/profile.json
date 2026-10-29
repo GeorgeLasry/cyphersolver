@@ -127,6 +127,65 @@
     "image_quality": "good",
     "notes": "9 ?; 4 lines on 122R in a thinner pen repeat earlier runs."
    }
+  },
+  {
+   "id": "K259-1764-05",
+   "read": "not read",
+   "shelfmark": "Riksarkivet K 259, A0073297 images 105R, 106L, 107R, 108L",
+   "date": "15 May 1764 (15/4 May notation to reconcile)",
+   "year": 1764,
+   "country": "unknown",
+   "language": "unknown",
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No validated decipherment; adjacent clear material not assumed identical."
+   },
+   "length": {
+    "tokens": 870,
+    "distinct": 327,
+    "unit": "code groups",
+    "measured": true,
+    "file": "payne2026/may1764_cipher.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Riksarkivet IIIF images 105–108",
+    "image_quality": "fair",
+    "notes": "Preliminary: 33 uncertain occurrences; 327 distinct spellings includes uncertainty marks; certain-only distinct labels 296. Measured with --drop-first. Clear portions not transcribed."
+   }
+  },
+  {
+   "id": "Schuck-143-fragments",
+   "read": "not read",
+   "shelfmark": "Schück, Gustav III:s och Lovisa Ulrikas brevväxling I, p.259, letter 143; key K259 image219",
+   "date": "mid-February 1771 (editorial dating)",
+   "year": 1771,
+   "country": "unknown",
+   "language": "French",
+   "cleartext_in_document": "mostly clear",
+   "plaintext": {
+    "location": [
+     "printed edition"
+    ],
+    "partial": true,
+    "source": "Schück identifies 626 Fersen / 665 Breteuil; two other numeric runs explicitly unresolved. Later prior art not exhausted."
+   },
+   "length": {
+    "tokens": 19,
+    "distinct": 18,
+    "unit": "code groups",
+    "measured": true,
+    "file": "payne2026/schuck1771_cipher.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "https://digitalt.kb.se/dark-34918583/part/1/page/595",
+    "image_quality": "good",
+    "notes": "Only printed cipher fragments; full clear letter not transcribed. Superscript footnote 2 excluded. Measured with --drop-first."
+   }
   }
  ],
  "system": {
@@ -156,7 +215,7 @@
   "key_order": "random",
   "word_division": "none",
   "sibling_key": "Three key tables at images 218-220 (a Swedish key naming Senator Düben, Fersen, Ribbing, Horn; the 1770-71 crown prince travel cipher; a 'marque ###' key with Panin, Bestucheff, Solms). Their value ranges do not fit these letters.",
-  "notes": "Image 219 is a later copy of the crown prince's key, printed in Svenska Akademiens Handlingar 29 p. 259 per the note on the sheet."
+  "notes": "Image 219 is a later copy of the crown prince's key, printed in Svenska Akademiens Handlingar 29 p. 259 per the note on the sheet. Payne contribution resolves the citation: Schück I p.259 prints a 1771 letter, not the key itself; key219 matches its numeric fragments. Additional vocabulary key at 162–168. No May key validated."
  },
  "conditions": {
   "prior_solution": {
@@ -171,20 +230,23 @@
    "known plaintext"
   ],
   "attack": "ciphertext-only",
-  "human_role": "Problem posed as a pasted catalogue brief (catalogue 450); no target-specific intervention.",
+  "human_role": "Problem posed as a pasted catalogue brief (catalogue 450); no target-specific intervention. Additional contribution: Bryan Payne supplied URL, requested continuation and PR submission; Codex performed research/transcription; exact model variant not recorded.",
   "tools": [
    "Riksarkivet IIIF",
    "PIL crops",
    "soft-EM forward-backward aligner (fb.py)",
    "hard-EM aligners (wem.py, lem.py; failed their control)",
-   "homophonic annealer homo.py (lang fr-1750-nospace)"
+   "homophonic annealer homo.py (lang fr-1750-nospace)",
+   "OpenAI Codex contribution: scripts and controls in payne2026/NOTES.md",
+   "Z3, OR-Tools 9.15.6755, beam/EM and digit-model diagnostics (limits recorded)"
   ],
   "models": [
-   "claude-opus-5-5"
+   "claude-opus-5-5",
+   "unknown"
   ],
   "sessions": 1,
   "first_date": "2026-10-26",
-  "last_date": "2026-10-27"
+  "last_date": "2026-10-28"
  },
  "solution": [
   {
@@ -399,6 +461,70 @@
    ],
    "what": "Brice Dudout reports that Frederick II's letter of 3 March 1765 in this group is printed in the Politische Correspondenz vol. 24 no. 15458: one letter, a possible crib; Düben's own code letters unaffected. Not yet checked here.",
    "result": "partial"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "access",
+   "what": "Payne/Codex: Surveyed 223 thumbnails; inspected K259 key families, later public F474 38-page PDF and F414 six-page draft.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "transcription",
+   "what": "Payne/Codex: May numeric portions: 870 groups, 33 doubtful; preliminary tables218/219/220:353/504/459 rows; visible French126 with translation.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "hypothesis",
+   "what": "Payne/Codex: Direct/regrouped substitutions, affine/base9/digit permutations optimized coverage, no accepted May reading.",
+   "result": "failed",
+   "technique": [
+    "key matching",
+    "exhaustive search",
+    "key-structure hypothesis"
+   ]
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "control",
+   "what": "Payne/Codex: Fixed 1/2-digit letter-code matched synthetic control recovered; no exact provisional126 match within bounded padding/zero models.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "solver",
+   "what": "Payne/Codex: Z3 timed out; beam/EM failed controls; CP formal fits with control accuracy42.96% unrestricted/80% lexical. No historical values accepted.",
+   "result": "failed",
+   "technique": [
+    "SAT/constraint solving",
+    "beam/DP decoding",
+    "EM alignment"
+   ]
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "literature search",
+   "what": "Payne/Codex: Resolved key219 citation to Schück I p259 letter143, editorially dated mid-Feb1771; editor leaves two numeric runs unresolved.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "key from source",
+   "what": "Payne/Codex: Applied archival key219: two editor-known names match; 15-group phrase starts bonne intelligence entre la; final court/cre expansions uncertain.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "verification",
+   "what": "Payne/Codex: Saved all19 literal mappings and reproduction assertions. No whole-letter read or independent human check claimed.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "literature search",
+   "what": "Payne/Codex: Inspected public F474 portfolio samples, Chifferklaver202/8–10, Muscovitica71 and recipient-side metadata; no accepted May key.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -411,8 +537,8 @@
   "verification": [
    "none"
   ],
-  "provenance": "project",
-  "notes": "In progress: two systems; the 15 Nov 1765 letter carries a positioned contemporary decipherment (36/47 lines), but its values vary through the text (no fixed table), so no key has been rebuilt; system B (2,072 groups) is beyond the Python annealer (control not recovered).",
+  "provenance": "mixed",
+  "notes": "In progress: two systems; the 15 Nov 1765 letter carries a positioned contemporary decipherment (36/47 lines), but its values vary through the text (no fixed table), so no key has been rebuilt; system B (2,072 groups) is beyond the Python annealer (control not recovered). Additional contribution and bounded experiments in payne2026/NOTES.md; separate1771 fragment decode does not change target class or main key state.",
   "credits": [
    {
     "who": "dudout",
@@ -420,7 +546,53 @@
     "date": "2026-10-27",
     "note": "Politische Correspondenz vol. 24 no. 15458 prints Frederick II's 3 March 1765 letter",
     "source": "email to Daniel Bourdeau, 27 Oct 2026"
+   },
+   {
+    "who": "bdpayne",
+    "role": "transcription",
+    "date": "2026-10-28",
+    "source": "https://github.com/bdpayne",
+    "note": "With OpenAI Codex: May transcription, preliminary tables, public key search and Schück fragment match; payne2026/."
+   },
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "source": "https://sok.riksarkivet.se/bildvisning/A0073297_00219",
+    "note": "Unidentified contemporary author of key219, applied only to printed1771 fragments."
+   },
+   {
+    "who": "schuck",
+    "role": "key or decipherment used",
+    "source": "https://digitalt.kb.se/dark-34918583/part/1/page/595",
+    "note": "Edition I p259 letter143, including editor-known Fersen/Breteuil readings and unresolved cipher runs."
    }
+  ],
+  "method_basis": "Main target remains unsolved; separately, an existing archival key219 was applied to the printed1771 fragments, yielding a literal decode with uncertain expansions.",
+  "texts": [
+   {
+    "doc": "K259-1764-05",
+    "label": "May1764 numeric transcription; no decryption",
+    "transcription": "payne2026/may1764_cipher.txt",
+    "state": "not prose",
+    "note": "Ciphertext only, not a reading or worksheet plaintext."
+   },
+   {
+    "doc": "Schuck-143-fragments",
+    "label": "1771 printed fragments: literal decode, not a whole-letter reading",
+    "transcription": "payne2026/schuck1771_cipher.txt",
+    "decryption": "payne2026/schuck1771_reading.tsv",
+    "reading": "payne2026/schuck1771_fragment_fr.md",
+    "translation": "payne2026/schuck1771_fragment_en.md",
+    "state": "decoded, not read",
+    "language": "fr",
+    "summary": "Printed letter discusses Breteuil and relations between courts; only numeric fragments transcribed/decoded.",
+    "note": "Two names already identified by Schück; expansions at end tentative. No fraction of full-letter coherent reading claimed."
+   }
+  ],
+  "key_file": [
+   "payne2026/key218.txt",
+   "payne2026/key219.txt",
+   "payne2026/key220.txt"
   ]
  }
 }

@@ -161,3 +161,7 @@ identify which K 259 images hold the 3 March 1765 letter and compare them with t
   still to do once some values are known.
 - Print: no edition found (web search 26 Oct 2026); check Svenska Akademiens Handlingar 29 and the
   Malmström / Odhner literature on Lovisa Ulrika's 1764-66 intrigues for printed extracts.
+
+## Bryan Payne / Codex contribution, 28 October 2026
+
+Additional research is preserved in [payne2026/NOTES.md](payne2026/NOTES.md), with a concise [report](payne2026/REPORT.md). It adds the 870-group preliminary May transcription, preliminary tables 218–220, samples of the 162–168 vocabulary key, the public F474 page map and archival leads. Key 219 positively matches the separate printed February 1771 fragment cited on the sheet: [source and literal readings](payne2026/KEY219_PROVENANCE.md). This supplies a fragment decode only; neither the May letter nor the whole 1771 letter is claimed read. Existing research above is preserved; the contribution's provisional 126 pairing does not replace the positioned-gloss work above. Failed-control outputs remain unaccepted.

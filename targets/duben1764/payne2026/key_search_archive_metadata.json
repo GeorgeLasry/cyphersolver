@@ -1,0 +1,611 @@
+[
+  {
+    "source": "https://data.riksarkivet.se/archive/SfXY9HOEpqQefZv3xfb3Q3.jsonld",
+    "graph": [
+      {
+        "@id": "http://data.riksarkivet.se/archive/SfXY9HOEpqQefZv3xfb3Q3",
+        "@type": [
+          "schema:ArchiveComponent",
+          "rico:Record"
+        ],
+        "schema:additionalType": {
+          "@id": "http://data.riksarkivet.se/concept/ArchiveUnitType/Volume"
+        },
+        "rico:hasContentOfType": {
+          "@id": "http://data.riksarkivet.se/concept/ArchiveUnitType/Volume"
+        },
+        "schema:identifier": "SE/RA/202/8",
+        "rico:hasOrHadIdentifier": {
+          "@id": "http://data.riksarkivet.se/archive/SfXY9HOEpqQefZv3xfb3Q3#referenceCode"
+        },
+        "rico:hasInstantiation": {
+          "@id": "http://data.riksarkivet.se/archive/SfXY9HOEpqQefZv3xfb3Q3#instantiation_physical"
+        },
+        "schema:isPartOf": {
+          "@id": "http://data.riksarkivet.se/archive/B2MNeBUQrH6d0002H087k3"
+        },
+        "rico:thingIsTargetOfWholePartRelation": {
+          "@id": "http://data.riksarkivet.se/archive/SfXY9HOEpqQefZv3xfb3Q3#isPartOf"
+        },
+        "skos:note": "Chiffernycklar, positiva och resolutiva",
+        "rico:descriptiveNote": "Chiffernycklar, positiva och resolutiva",
+        "dct:coverage": {
+          "@id": "http://data.riksarkivet.se/archive/SfXY9HOEpqQefZv3xfb3Q3#date_01"
+        },
+        "rico:isAssociatedWithDate": {
+          "@id": "http://data.riksarkivet.se/archive/SfXY9HOEpqQefZv3xfb3Q3#date_01"
+        }
+      },
+      {
+        "@id": "http://data.riksarkivet.se/archive/SfXY9HOEpqQefZv3xfb3Q3#referenceCode",
+        "@type": "rico:Identifier",
+        "rico:hasIdentifierType": {
+          "@id": "http://data.riksarkivet.se/concept/IdentifierType/ReferenceCode"
+        },
+        "rico:textualValue": "SE/RA/202/8"
+      },
+      {
+        "@id": "http://data.riksarkivet.se/archive/SfXY9HOEpqQefZv3xfb3Q3#instantiation_physical",
+        "@type": "rico:Instantiation",
+        "rico:instantiationOf": {
+          "@id": "http://data.riksarkivet.se/archive/SfXY9HOEpqQefZv3xfb3Q3"
+        },
+        "rico:hasRepresentationType": {
+          "@id": "http://data.riksarkivet.se/concept/RicoRepresentationType/Analog"
+        }
+      },
+      {
+        "@id": "http://data.riksarkivet.se/archive/SfXY9HOEpqQefZv3xfb3Q3#isPartOf",
+        "@type": "rico:WholePartRelation",
+        "rico:wholePartRelationHasSource": {
+          "@id": "http://data.riksarkivet.se/archive/B2MNeBUQrH6d0002H087k3"
+        },
+        "rico:wholePartRelationHasTarget": {
+          "@id": "http://data.riksarkivet.se/archive/SfXY9HOEpqQefZv3xfb3Q3"
+        }
+      },
+      {
+        "@id": "http://data.riksarkivet.se/archive/SfXY9HOEpqQefZv3xfb3Q3#date_01",
+        "@type": [
+          "dct:PeriodOfTime",
+          "rico:DateRange"
+        ],
+        "schema:additionalType": {
+          "@id": "http://data.riksarkivet.se/concept/DateType/Timespan"
+        },
+        "schema:startDate": "1750t",
+        "rico:textualValue": [
+          "1750t",
+          "1770t"
+        ],
+        "schema:endDate": "1770t"
+      }
+    ]
+  },
+  {
+    "source": "https://data.riksarkivet.se/archive/8DzDWd4HCYBHXlPHDbU1E2.jsonld",
+    "graph": [
+      {
+        "@id": "http://data.riksarkivet.se/archive/8DzDWd4HCYBHXlPHDbU1E2",
+        "@type": [
+          "schema:ArchiveComponent",
+          "rico:Record"
+        ],
+        "schema:additionalType": {
+          "@id": "http://data.riksarkivet.se/concept/ArchiveUnitType/Volume"
+        },
+        "rico:hasContentOfType": {
+          "@id": "http://data.riksarkivet.se/concept/ArchiveUnitType/Volume"
+        },
+        "schema:identifier": "SE/RA/202/9",
+        "rico:hasOrHadIdentifier": {
+          "@id": "http://data.riksarkivet.se/archive/8DzDWd4HCYBHXlPHDbU1E2#referenceCode"
+        },
+        "rico:hasInstantiation": {
+          "@id": "http://data.riksarkivet.se/archive/8DzDWd4HCYBHXlPHDbU1E2#instantiation_physical"
+        },
+        "schema:isPartOf": {
+          "@id": "http://data.riksarkivet.se/archive/B2MNeBUQrH6d0002H087k3"
+        },
+        "rico:thingIsTargetOfWholePartRelation": {
+          "@id": "http://data.riksarkivet.se/archive/8DzDWd4HCYBHXlPHDbU1E2#isPartOf"
+        },
+        "skos:note": "Chiffernycklar, positiva och resolutiva",
+        "rico:descriptiveNote": "Chiffernycklar, positiva och resolutiva",
+        "dct:coverage": {
+          "@id": "http://data.riksarkivet.se/archive/8DzDWd4HCYBHXlPHDbU1E2#date_01"
+        },
+        "rico:isAssociatedWithDate": {
+          "@id": "http://data.riksarkivet.se/archive/8DzDWd4HCYBHXlPHDbU1E2#date_01"
+        }
+      },
+      {
+        "@id": "http://data.riksarkivet.se/archive/8DzDWd4HCYBHXlPHDbU1E2#referenceCode",
+        "@type": "rico:Identifier",
+        "rico:hasIdentifierType": {
+          "@id": "http://data.riksarkivet.se/concept/IdentifierType/ReferenceCode"
+        },
+        "rico:textualValue": "SE/RA/202/9"
+      },
+      {
+        "@id": "http://data.riksarkivet.se/archive/8DzDWd4HCYBHXlPHDbU1E2#instantiation_physical",
+        "@type": "rico:Instantiation",
+        "rico:instantiationOf": {
+          "@id": "http://data.riksarkivet.se/archive/8DzDWd4HCYBHXlPHDbU1E2"
+        },
+        "rico:hasRepresentationType": {
+          "@id": "http://data.riksarkivet.se/concept/RicoRepresentationType/Analog"
+        }
+      },
+      {
+        "@id": "http://data.riksarkivet.se/archive/8DzDWd4HCYBHXlPHDbU1E2#isPartOf",
+        "@type": "rico:WholePartRelation",
+        "rico:wholePartRelationHasSource": {
+          "@id": "http://data.riksarkivet.se/archive/B2MNeBUQrH6d0002H087k3"
+        },
+        "rico:wholePartRelationHasTarget": {
+          "@id": "http://data.riksarkivet.se/archive/8DzDWd4HCYBHXlPHDbU1E2"
+        }
+      },
+      {
+        "@id": "http://data.riksarkivet.se/archive/8DzDWd4HCYBHXlPHDbU1E2#date_01",
+        "@type": [
+          "dct:PeriodOfTime",
+          "rico:DateRange"
+        ],
+        "schema:additionalType": {
+          "@id": "http://data.riksarkivet.se/concept/DateType/Timespan"
+        },
+        "schema:startDate": "1750t",
+        "rico:textualValue": [
+          "1750t",
+          "1770t"
+        ],
+        "schema:endDate": "1770t"
+      }
+    ]
+  },
+  {
+    "source": "https://data.riksarkivet.se/archive/CWJMnfyLXw7TgYfPC7DAB5.jsonld",
+    "graph": [
+      {
+        "@id": "http://data.riksarkivet.se/archive/CWJMnfyLXw7TgYfPC7DAB5",
+        "@type": [
+          "schema:ArchiveComponent",
+          "rico:Record"
+        ],
+        "schema:additionalType": {
+          "@id": "http://data.riksarkivet.se/concept/ArchiveUnitType/Volume"
+        },
+        "rico:hasContentOfType": {
+          "@id": "http://data.riksarkivet.se/concept/ArchiveUnitType/Volume"
+        },
+        "schema:identifier": "SE/RA/202/10",
+        "rico:hasOrHadIdentifier": {
+          "@id": "http://data.riksarkivet.se/archive/CWJMnfyLXw7TgYfPC7DAB5#referenceCode"
+        },
+        "rico:hasInstantiation": {
+          "@id": "http://data.riksarkivet.se/archive/CWJMnfyLXw7TgYfPC7DAB5#instantiation_physical"
+        },
+        "schema:isPartOf": {
+          "@id": "http://data.riksarkivet.se/archive/B2MNeBUQrH6d0002H087k3"
+        },
+        "rico:thingIsTargetOfWholePartRelation": {
+          "@id": "http://data.riksarkivet.se/archive/CWJMnfyLXw7TgYfPC7DAB5#isPartOf"
+        },
+        "skos:note": "Chiffernycklar, positiva och resolutiva",
+        "rico:descriptiveNote": "Chiffernycklar, positiva och resolutiva",
+        "dct:coverage": {
+          "@id": "http://data.riksarkivet.se/archive/CWJMnfyLXw7TgYfPC7DAB5#date_01"
+        },
+        "rico:isAssociatedWithDate": {
+          "@id": "http://data.riksarkivet.se/archive/CWJMnfyLXw7TgYfPC7DAB5#date_01"
+        }
+      },
+      {
+        "@id": "http://data.riksarkivet.se/archive/CWJMnfyLXw7TgYfPC7DAB5#referenceCode",
+        "@type": "rico:Identifier",
+        "rico:hasIdentifierType": {
+          "@id": "http://data.riksarkivet.se/concept/IdentifierType/ReferenceCode"
+        },
+        "rico:textualValue": "SE/RA/202/10"
+      },
+      {
+        "@id": "http://data.riksarkivet.se/archive/CWJMnfyLXw7TgYfPC7DAB5#instantiation_physical",
+        "@type": "rico:Instantiation",
+        "rico:instantiationOf": {
+          "@id": "http://data.riksarkivet.se/archive/CWJMnfyLXw7TgYfPC7DAB5"
+        },
+        "rico:hasRepresentationType": {
+          "@id": "http://data.riksarkivet.se/concept/RicoRepresentationType/Analog"
+        }
+      },
+      {
+        "@id": "http://data.riksarkivet.se/archive/CWJMnfyLXw7TgYfPC7DAB5#isPartOf",
+        "@type": "rico:WholePartRelation",
+        "rico:wholePartRelationHasSource": {
+          "@id": "http://data.riksarkivet.se/archive/B2MNeBUQrH6d0002H087k3"
+        },
+        "rico:wholePartRelationHasTarget": {
+          "@id": "http://data.riksarkivet.se/archive/CWJMnfyLXw7TgYfPC7DAB5"
+        }
+      },
+      {
+        "@id": "http://data.riksarkivet.se/archive/CWJMnfyLXw7TgYfPC7DAB5#date_01",
+        "@type": [
+          "dct:PeriodOfTime",
+          "rico:DateRange"
+        ],
+        "schema:additionalType": {
+          "@id": "http://data.riksarkivet.se/concept/DateType/Timespan"
+        },
+        "schema:startDate": "1760",
+        "rico:textualValue": [
+          "1760",
+          "1770t"
+        ],
+        "schema:endDate": "1770t"
+      }
+    ]
+  },
+  {
+    "source": "https://data.riksarkivet.se/archive/tKVBbqrjL4ke78ui7pI720.jsonld",
+    "graph": [
+      {
+        "@id": "http://data.riksarkivet.se/archive/tKVBbqrjL4ke78ui7pI720",
+        "@type": [
+          "schema:ArchiveComponent",
+          "rico:RecordSet"
+        ],
+        "schema:additionalType": {
+          "@id": "http://data.riksarkivet.se/concept/ArchiveUnitType/Series"
+        },
+        "rico:hasRecordSetType": {
+          "@id": "ric-rst:Series"
+        },
+        "schema:identifier": "SE/RA/2113/2113.1/1/71",
+        "rico:hasOrHadIdentifier": {
+          "@id": "http://data.riksarkivet.se/archive/tKVBbqrjL4ke78ui7pI720#referenceCode"
+        },
+        "rico:hasInstantiation": {
+          "@id": "http://data.riksarkivet.se/archive/tKVBbqrjL4ke78ui7pI720#instantiation_physical"
+        },
+        "schema:name": "Envoyén Carl Wilhelm von Düben",
+        "rico:name": "Envoyén Carl Wilhelm von Düben",
+        "schema:isPartOf": {
+          "@id": "http://data.riksarkivet.se/archive/Cv3IzFUXjIFGKJEExcKJU4"
+        },
+        "rico:thingIsTargetOfWholePartRelation": {
+          "@id": "http://data.riksarkivet.se/archive/tKVBbqrjL4ke78ui7pI720#isPartOf"
+        },
+        "rico:thingIsSourceOfWholePartRelation": {
+          "@id": "http://data.riksarkivet.se/archive/tKVBbqrjL4ke78ui7pI720#hasParts"
+        },
+        "schema:hasPart": [
+          {
+            "@id": "http://data.riksarkivet.se/archive/6KOJv4Zqnqo2sJO7O5vmq0"
+          },
+          {
+            "@id": "http://data.riksarkivet.se/archive/1hPNWgVaeaQSqKsEmNF5f2"
+          },
+          {
+            "@id": "http://data.riksarkivet.se/archive/JzG1WQK0s2DPtqcZvDJpc7"
+          },
+          {
+            "@id": "http://data.riksarkivet.se/archive/kGx7RwUe6Kc9qw5G0QLqs1"
+          },
+          {
+            "@id": "http://data.riksarkivet.se/archive/8nbe7lYgHaICGTfo1vlKt2"
+          },
+          {
+            "@id": "http://data.riksarkivet.se/archive/RBm8qFszBI7UXFZcNyKvE4"
+          },
+          {
+            "@id": "http://data.riksarkivet.se/archive/xzLj3S8poQPETVkmwNbsW0"
+          }
+        ],
+        "dct:coverage": {
+          "@id": "http://data.riksarkivet.se/archive/tKVBbqrjL4ke78ui7pI720#date_01"
+        },
+        "rico:isAssociatedWithDate": {
+          "@id": "http://data.riksarkivet.se/archive/tKVBbqrjL4ke78ui7pI720#date_01"
+        }
+      },
+      {
+        "@id": "http://data.riksarkivet.se/archive/tKVBbqrjL4ke78ui7pI720#referenceCode",
+        "@type": "rico:Identifier",
+        "rico:hasIdentifierType": {
+          "@id": "http://data.riksarkivet.se/concept/IdentifierType/ReferenceCode"
+        },
+        "rico:textualValue": "SE/RA/2113/2113.1/1/71"
+      },
+      {
+        "@id": "http://data.riksarkivet.se/archive/tKVBbqrjL4ke78ui7pI720#instantiation_physical",
+        "@type": "rico:Instantiation",
+        "rico:instantiationOf": {
+          "@id": "http://data.riksarkivet.se/archive/tKVBbqrjL4ke78ui7pI720"
+        },
+        "rico:hasRepresentationType": {
+          "@id": "http://data.riksarkivet.se/concept/RicoRepresentationType/Analog"
+        }
+      },
+      {
+        "@id": "http://data.riksarkivet.se/archive/tKVBbqrjL4ke78ui7pI720#isPartOf",
+        "@type": "rico:WholePartRelation",
+        "rico:wholePartRelationHasSource": {
+          "@id": "http://data.riksarkivet.se/archive/Cv3IzFUXjIFGKJEExcKJU4"
+        },
+        "rico:wholePartRelationHasTarget": {
+          "@id": "http://data.riksarkivet.se/archive/tKVBbqrjL4ke78ui7pI720"
+        }
+      },
+      {
+        "@id": "http://data.riksarkivet.se/archive/tKVBbqrjL4ke78ui7pI720#hasParts",
+        "@type": "rico:WholePartRelation",
+        "rico:wholePartRelationHasSource": {
+          "@id": "http://data.riksarkivet.se/archive/tKVBbqrjL4ke78ui7pI720"
+        },
+        "rico:wholePartRelationHasTarget": [
+          {
+            "@id": "http://data.riksarkivet.se/archive/6KOJv4Zqnqo2sJO7O5vmq0"
+          },
+          {
+            "@id": "http://data.riksarkivet.se/archive/1hPNWgVaeaQSqKsEmNF5f2"
+          },
+          {
+            "@id": "http://data.riksarkivet.se/archive/JzG1WQK0s2DPtqcZvDJpc7"
+          },
+          {
+            "@id": "http://data.riksarkivet.se/archive/kGx7RwUe6Kc9qw5G0QLqs1"
+          },
+          {
+            "@id": "http://data.riksarkivet.se/archive/8nbe7lYgHaICGTfo1vlKt2"
+          },
+          {
+            "@id": "http://data.riksarkivet.se/archive/RBm8qFszBI7UXFZcNyKvE4"
+          },
+          {
+            "@id": "http://data.riksarkivet.se/archive/xzLj3S8poQPETVkmwNbsW0"
+          }
+        ]
+      },
+      {
+        "@id": "http://data.riksarkivet.se/archive/tKVBbqrjL4ke78ui7pI720#date_01",
+        "@type": [
+          "dct:PeriodOfTime",
+          "rico:DateRange"
+        ],
+        "schema:additionalType": {
+          "@id": "http://data.riksarkivet.se/concept/DateType/Timespan"
+        },
+        "schema:startDate": "1763",
+        "rico:textualValue": [
+          "1763",
+          "1766"
+        ],
+        "schema:endDate": "1766"
+      }
+    ]
+  },
+  {
+    "source": "https://data.riksarkivet.se/archive/6rwr4tudIaUl0BlcR403m2.jsonld",
+    "graph": [
+      {
+        "@id": "http://data.riksarkivet.se/archive/6rwr4tudIaUl0BlcR403m2",
+        "@type": [
+          "schema:ArchiveComponent",
+          "rico:RecordSet"
+        ],
+        "schema:additionalType": {
+          "@id": "http://data.riksarkivet.se/concept/ArchiveUnitType/Series"
+        },
+        "rico:hasRecordSetType": {
+          "@id": "ric-rst:Series"
+        },
+        "schema:identifier": "SE/RA/720791/01/II/005/V",
+        "rico:hasOrHadIdentifier": {
+          "@id": "http://data.riksarkivet.se/archive/6rwr4tudIaUl0BlcR403m2#referenceCode"
+        },
+        "rico:hasInstantiation": {
+          "@id": "http://data.riksarkivet.se/archive/6rwr4tudIaUl0BlcR403m2#instantiation_physical"
+        },
+        "schema:name": "Landshövdingen Nils Philip Gyldenstolpes (1734-1810) samling",
+        "rico:name": "Landshövdingen Nils Philip Gyldenstolpes (1734-1810) samling",
+        "schema:isPartOf": {
+          "@id": "http://data.riksarkivet.se/archive/eFBNEkiGla2hGhwzChn0q3"
+        },
+        "rico:thingIsTargetOfWholePartRelation": {
+          "@id": "http://data.riksarkivet.se/archive/6rwr4tudIaUl0BlcR403m2#isPartOf"
+        },
+        "rico:thingIsSourceOfWholePartRelation": {
+          "@id": "http://data.riksarkivet.se/archive/6rwr4tudIaUl0BlcR403m2#hasParts"
+        },
+        "schema:hasPart": [
+          {
+            "@id": "http://data.riksarkivet.se/archive/5tYpcQ7DaqQ8DGljoptgY1"
+          },
+          {
+            "@id": "http://data.riksarkivet.se/archive/pmKz1cy2sH3jkeJG0JM58E"
+          },
+          {
+            "@id": "http://data.riksarkivet.se/archive/QymtoHwyfj7dieMkPokyX5"
+          },
+          {
+            "@id": "http://data.riksarkivet.se/archive/xNQf01vDFKsou1Sp04w633"
+          },
+          {
+            "@id": "http://data.riksarkivet.se/archive/azqGlWqXrQ5Q0mua4Jklm1"
+          },
+          {
+            "@id": "http://data.riksarkivet.se/archive/TrEPu4j2a4zFg1kmEppVy4"
+          },
+          {
+            "@id": "http://data.riksarkivet.se/archive/7R0Evdknw4EH1JftMKDLx3"
+          },
+          {
+            "@id": "http://data.riksarkivet.se/archive/nU4rjhLyeg96u9rzQzyGLj"
+          },
+          {
+            "@id": "http://data.riksarkivet.se/archive/uzpgQMgnz14lR1MsYG789B"
+          },
+          {
+            "@id": "http://data.riksarkivet.se/archive/LSVrDc9IkqzFQJ1AGvl7k2"
+          },
+          {
+            "@id": "http://data.riksarkivet.se/archive/4HCXQSgpWaQsj6OrMREjR1"
+          },
+          {
+            "@id": "http://data.riksarkivet.se/archive/ZzcT6cPlKANGaBqHyYHYl2"
+          },
+          {
+            "@id": "http://data.riksarkivet.se/archive/dloqEHUayg12r4JsGlBQe5"
+          },
+          {
+            "@id": "http://data.riksarkivet.se/archive/yOfmj28r3wBTRCZDnLRXr0"
+          },
+          {
+            "@id": "http://data.riksarkivet.se/archive/6pVvxjAuz2B5zsQUK6JW51"
+          },
+          {
+            "@id": "http://data.riksarkivet.se/archive/jAHlUYZiG4Y2kQxJuxYRk1"
+          },
+          {
+            "@id": "http://data.riksarkivet.se/archive/rL3ulNnbcqEFkC7msX02S1"
+          },
+          {
+            "@id": "http://data.riksarkivet.se/archive/1dtKoFqER4o0VSRBxxV9M1"
+          },
+          {
+            "@id": "http://data.riksarkivet.se/archive/IW0WpEs9fakNeixtFJ6DJ1"
+          },
+          {
+            "@id": "http://data.riksarkivet.se/archive/9wHwzt3RcwPPXkZf3JCiU5"
+          },
+          {
+            "@id": "http://data.riksarkivet.se/archive/JpoWw40xSaUzcEgj02Z2w0"
+          },
+          {
+            "@id": "http://data.riksarkivet.se/archive/8Ia8BReEZqzLKl4M5c1Nu7"
+          },
+          {
+            "@id": "http://data.riksarkivet.se/archive/3SIClAvH7qwmYzcJjZqWy0"
+          },
+          {
+            "@id": "http://data.riksarkivet.se/archive/vU3Ss1TddKsHIzqgnOj7u4"
+          }
+        ],
+        "skos:note": "Brev från kungliga personer i Kungliga biblioteket. Exercitier i Ericsbergsarkivet.\r\n\r\nUlrik Gyldenstolpe 1738-1767\r\nExercitier i Ericsbergsarkivet.",
+        "rico:descriptiveNote": "Brev från kungliga personer i Kungliga biblioteket. Exercitier i Ericsbergsarkivet.\r\n\r\nUlrik Gyldenstolpe 1738-1767\r\nExercitier i Ericsbergsarkivet."
+      },
+      {
+        "@id": "http://data.riksarkivet.se/archive/6rwr4tudIaUl0BlcR403m2#referenceCode",
+        "@type": "rico:Identifier",
+        "rico:hasIdentifierType": {
+          "@id": "http://data.riksarkivet.se/concept/IdentifierType/ReferenceCode"
+        },
+        "rico:textualValue": "SE/RA/720791/01/II/005/V"
+      },
+      {
+        "@id": "http://data.riksarkivet.se/archive/6rwr4tudIaUl0BlcR403m2#instantiation_physical",
+        "@type": "rico:Instantiation",
+        "rico:instantiationOf": {
+          "@id": "http://data.riksarkivet.se/archive/6rwr4tudIaUl0BlcR403m2"
+        },
+        "rico:hasRepresentationType": {
+          "@id": "http://data.riksarkivet.se/concept/RicoRepresentationType/Analog"
+        }
+      },
+      {
+        "@id": "http://data.riksarkivet.se/archive/6rwr4tudIaUl0BlcR403m2#isPartOf",
+        "@type": "rico:WholePartRelation",
+        "rico:wholePartRelationHasSource": {
+          "@id": "http://data.riksarkivet.se/archive/eFBNEkiGla2hGhwzChn0q3"
+        },
+        "rico:wholePartRelationHasTarget": {
+          "@id": "http://data.riksarkivet.se/archive/6rwr4tudIaUl0BlcR403m2"
+        }
+      },
+      {
+        "@id": "http://data.riksarkivet.se/archive/6rwr4tudIaUl0BlcR403m2#hasParts",
+        "@type": "rico:WholePartRelation",
+        "rico:wholePartRelationHasSource": {
+          "@id": "http://data.riksarkivet.se/archive/6rwr4tudIaUl0BlcR403m2"
+        },
+        "rico:wholePartRelationHasTarget": [
+          {
+            "@id": "http://data.riksarkivet.se/archive/5tYpcQ7DaqQ8DGljoptgY1"
+          },
+          {
+            "@id": "http://data.riksarkivet.se/archive/pmKz1cy2sH3jkeJG0JM58E"
+          },
+          {
+            "@id": "http://data.riksarkivet.se/archive/QymtoHwyfj7dieMkPokyX5"
+          },
+          {
+            "@id": "http://data.riksarkivet.se/archive/xNQf01vDFKsou1Sp04w633"
+          },
+          {
+            "@id": "http://data.riksarkivet.se/archive/azqGlWqXrQ5Q0mua4Jklm1"
+          },
+          {
+            "@id": "http://data.riksarkivet.se/archive/TrEPu4j2a4zFg1kmEppVy4"
+          },
+          {
+            "@id": "http://data.riksarkivet.se/archive/7R0Evdknw4EH1JftMKDLx3"
+          },
+          {
+            "@id": "http://data.riksarkivet.se/archive/nU4rjhLyeg96u9rzQzyGLj"
+          },
+          {
+            "@id": "http://data.riksarkivet.se/archive/uzpgQMgnz14lR1MsYG789B"
+          },
+          {
+            "@id": "http://data.riksarkivet.se/archive/LSVrDc9IkqzFQJ1AGvl7k2"
+          },
+          {
+            "@id": "http://data.riksarkivet.se/archive/4HCXQSgpWaQsj6OrMREjR1"
+          },
+          {
+            "@id": "http://data.riksarkivet.se/archive/ZzcT6cPlKANGaBqHyYHYl2"
+          },
+          {
+            "@id": "http://data.riksarkivet.se/archive/dloqEHUayg12r4JsGlBQe5"
+          },
+          {
+            "@id": "http://data.riksarkivet.se/archive/yOfmj28r3wBTRCZDnLRXr0"
+          },
+          {
+            "@id": "http://data.riksarkivet.se/archive/6pVvxjAuz2B5zsQUK6JW51"
+          },
+          {
+            "@id": "http://data.riksarkivet.se/archive/jAHlUYZiG4Y2kQxJuxYRk1"
+          },
+          {
+            "@id": "http://data.riksarkivet.se/archive/rL3ulNnbcqEFkC7msX02S1"
+          },
+          {
+            "@id": "http://data.riksarkivet.se/archive/1dtKoFqER4o0VSRBxxV9M1"
+          },
+          {
+            "@id": "http://data.riksarkivet.se/archive/IW0WpEs9fakNeixtFJ6DJ1"
+          },
+          {
+            "@id": "http://data.riksarkivet.se/archive/9wHwzt3RcwPPXkZf3JCiU5"
+          },
+          {
+            "@id": "http://data.riksarkivet.se/archive/JpoWw40xSaUzcEgj02Z2w0"
+          },
+          {
+            "@id": "http://data.riksarkivet.se/archive/8Ia8BReEZqzLKl4M5c1Nu7"
+          },
+          {
+            "@id": "http://data.riksarkivet.se/archive/3SIClAvH7qwmYzcJjZqWy0"
+          },
+          {
+            "@id": "http://data.riksarkivet.se/archive/vU3Ss1TddKsHIzqgnOj7u4"
+          }
+        ]
+      }
+    ]
+  }
+]
