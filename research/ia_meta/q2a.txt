@@ -1,0 +1,21 @@
+description:(cipher OR cypher OR cryptogram OR "in code") AND (description:(manuscript) OR title:(manuscript)) AND date:[1350-01-01 TO 1920-12-31]
+description:("written in cipher" OR "written in cypher" OR "partly in cipher" OR "partly in cypher" OR "in cipher" OR "in cypher")
+description:("en chiffres" OR "en chiffre" OR "chiffrée" OR "chiffrées" OR "chiffré") AND (lettre OR lettres OR manuscrit)
+description:("en cifra" OR "en cifras" OR "cifrada" OR "cifrado") AND (carta OR cartas OR manuscrito)
+description:("in cifra" OR "cifrata" OR "cifrate" OR "cifrato") AND (lettera OR lettere OR manoscritto)
+description:("in Ziffern" OR chiffriert OR chiffrirt OR Geheimschrift OR Chiffreschrift) AND (Brief OR Briefe OR Handschrift)
+collection:(upenn) AND (cipher OR cryptogram OR cypher OR encoded)
+collection:(folger OR folgerlibrary) AND (cipher OR cypher)
+collection:(smithsonian) AND (cipher OR cypher OR cryptogram)
+collection:(bostonpubliclibrary) AND (cipher OR cypher OR cryptogram)
+collection:(yalebooks OR yale) AND (cipher OR cypher OR cryptogram)
+collection:(nypl) AND (cipher OR cypher OR cryptogram)
+collection:(americana) AND (cipher OR cypher) AND (letter OR manuscript OR correspondence)
+collection:(wellcomelibrary) AND (cipher OR cypher OR cryptogram OR secret)
+collection:(library_of_congress) AND (cipher OR cypher OR cryptogram) AND (letter OR manuscript)
+subject:(cryptography) AND subject:(manuscripts)
+subject:(ciphers) AND subject:(correspondence OR letters)
+subject:("secret writing") AND date:[1350-01-01 TO 1900-12-31]
+title:(cryptogram OR cryptograph) AND date:[1350-01-01 TO 1950-12-31]
+description:("unsolved cipher" OR "unsolved cryptogram" OR "undeciphered cipher" OR "undeciphered code" OR "never been deciphered" OR "has never been solved" OR "not been deciphered")
+description:("coded message" OR "coded letter" OR "encoded message" OR "encrypted letter" OR "encrypted message") AND date:[1350-01-01 TO 1950-12-31]
