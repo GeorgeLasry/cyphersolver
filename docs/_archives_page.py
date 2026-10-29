@@ -118,7 +118,7 @@ def build_html(pages):
 
 <section class="hero">
   <p class="kicker">{len(live)} open requests · {places} archives · {n["claimed"] + n["requested"]} under way · {n["received"] + n["closed"]} done</p>
-  <h1>To the <span class="stk">Archive<a class="sticker alt" href="#list" title="Pick a request below"><span><b>Go<br>Look!</b><small>pick a request</small></span></a></span></h1>
+  <h1>To the <span class="stk">Archive<a class="sticker arc" href="#list" title="Pick a request below"><span><b>Go<br>Look!</b><small>pick a request</small></span></a></span></h1>
   <p class="sub">Some readings stop where the scans stop: a line lost in the binding, a leaf nobody photographed, a decipherment filed in a volume that was never digitised, a book behind a login. Each request below is one of those gaps. If you live near the archive, travel past it, or have a library card that reaches the book, you can close it.</p>
   <ol class="steps"><li><b>1</b>find an archive you can reach</li><li><b>2</b>click &ldquo;I can do this&rdquo;</li><li><b>3</b>look, photograph or order</li><li><b>4</b>send the images; you are credited</li></ol>
 </section>

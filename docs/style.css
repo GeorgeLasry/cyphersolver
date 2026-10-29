@@ -1591,6 +1591,13 @@ a.sticker::after{display:none}
 /* the read-further sticker: same seal, lime and violet */
 .sticker.alt > span{color:#4b0f8c;background:radial-gradient(circle,#c6f54a 0 56%,#fff 56% 59%,#c6f54a 59% 64%,#8fdc1e 64%)}
 .sticker.alt small{color:#2e0857}
+/* the to-the-archive sticker: same seal, sky blue and oxblood */
+.sticker.arc > span{color:#6b0f1a;background:radial-gradient(circle,#7fd8ff 0 56%,#fff 56% 59%,#7fd8ff 59% 64%,#33b4f0 64%)}
+.sticker.arc small{color:#4a0a12}
+.nav .links > a.navcat .sticker.arc{transform:rotate(-4deg);top:calc(100% + .5rem)}
+.nav .links > a.navcat:hover .sticker.arc{transform:rotate(6deg) scale(1.1)}
+body.pg-archives .hero h1 .stk .sticker{--sz:5.8rem;margin:-.5rem 0 -.9rem .7rem}
+@media (max-width:760px){body.pg-archives .hero h1 .stk .sticker{--sz:5.2rem;margin:-1.2rem 0 -1rem .4rem}}
 
 body.pg-catalogue .pill.arch{color:var(--amber);border-color:color-mix(in srgb,var(--amber) 50%,transparent);background:var(--amber-bg)}
 body.pg-catalogue .archnote{margin:1rem 0}
