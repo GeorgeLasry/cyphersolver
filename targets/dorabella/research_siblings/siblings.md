@@ -118,6 +118,17 @@ The middle line appears to step through the eight orientations in order (A…H, 
 
 No solution has been claimed.
 
+**Higher-resolution image (29 Oct 2026).** Padgett's blog post of January 2025 ("The Dorabella Dots: Vague Deed
+Cipher", Ex. 5) has the card at 2527 x 1398 (`downloads/padgett_cryptogram_card_2527.png`, git-ignored; photo from
+Chris Bennett, Elgar Birthplace Museum). Read on it:
+- middle line: `A3 B2 C2 D2 E2 F2 G3 H2 A2 A1`. The orientations run A to H clockwise and back to A, one sign each,
+  with the arc count varying. That is an alphabet or key exercise, not a message (confirms the tentative reading
+  above, with E3 corrected to E2 and G2 to G3).
+- above it: `1 4 - 8, 5 ; · : x` in ink, not aligned one-to-one with the signs.
+- top right: two signs, `A2 A1`. Bottom: about six faint signs, `A3 A3 (o) B2? A1? A1?`.
+- left margin: pencil scribbles and triangles, not signs.
+Padgett's "Index Card No. 6" is this card. It has no message to test a key on.
+
 ### 4. Other leads
 
 - **Pall Mall "Secrets in Cipher" (1896).**
