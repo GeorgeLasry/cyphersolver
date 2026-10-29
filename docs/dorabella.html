@@ -98,6 +98,12 @@
 <tr><td>Bacon, Morse, semaphore pairs, note names, Playfair</td><td>Negative; Playfair impossible, since two identical signs would fall inside one pair</td></tr>
 <tr><td>Cribs: openings, sign-offs, the July 1897 visit, Elgar&rsquo;s practice phrases, the Lullaby he played that week (tune and words)</td><td>Negative; no sign-off can end the note, since its last two signs differ</td></tr>
 <tr><td>Known quotations: every 87-letter window of the King James Bible, Shakespeare, Longfellow (including King Olaf), Tennyson, Browning and Elgar&rsquo;s letters</td><td>Best fit 37 of 87; shuffles 35; a real quotation with six misreads 80</td></tr>
+<tr><td>Spanish words under the notebook key (Padgett): the transcription does contain <em>peca</em>, <em>cerre</em>, <em>sed</em>, <em>ser</em> and others</td><td>Not evidence of Spanish: random keys on the same signs cover as much of the note with Spanish words (30 of 87 against a mean of 29.4, P&nbsp;0.47), and English, French, Italian, Latin and German do no differently</td></tr>
+<tr><td>The published solutions in Bauer, <em>Unsolved!</em> ch. 3 (Sams 1970, Palmer 2007, Roberts 2009), read as keys</td><td>Palmer&rsquo;s fits 83 of 87 signs on one key but reads only after back-slang and respelling; Roberts&rsquo;s fits 58; Sams&rsquo;s has 94 letters for 87 signs</td></tr>
+<tr><td>Elgar&rsquo;s own keywords from his Schooling cards (TRUTH, MERCURY) and other context words</td><td>Negative, far below recovered controls</td></tr>
+<tr><td>The 1886 Liszt fragment as a second text under the same key</td><td>Negative: 105 signs together score inside the shuffles</td></tr>
+<tr><td>Elgar&rsquo;s notebook key with some signs drawn turned round (180&deg;, 90&deg;, mirrored), suggested by the excess of opposite flips</td><td>Negative: controls with a third of their signs turned are recovered; the note does no better than random keys given the same freedom</td></tr>
+<tr><td>Elgar&rsquo;s &ldquo;Cryptogram&rdquo; card, read at full resolution</td><td>Its signs step through the eight directions in order: an alphabet exercise, not a message</td></tr>
 </tbody>
 </table>
 
@@ -116,7 +122,8 @@
 <h2 id="finish"><span class="num">07</span> What would finish it</h2>
 <ul>
   <li><strong>A second text in the same system.</strong> Elgar&rsquo;s Courage cards (the first carries about ten such signs) and the &ldquo;Microcryptogram&rdquo; sold at Sotheby&rsquo;s (lot 92). Any surviving key could then be checked on two documents.</li>
-  <li><strong>Better images.</strong> The 1946 and 1949 printings of the memoir (the 1949 one has a second dot at line 2, sign 11 or 12) and the Elgar Birthplace Museum&rsquo;s photograph, to settle the 23 doubtful signs.</li>
+  <li><strong>The rest of the Schooling cards.</strong> Elgar documented his 1896 solution on a series of index cards at the Elgar Birthplace Museum; cards 1&ndash;4 are printed in Bauer&rsquo;s <em>Unsolved!</em> and the &ldquo;Cryptogram&rdquo; card is an alphabet exercise. Photographs of the whole series would show whether any other card carries text in the signs.</li>
+  <li><strong>Better images.</strong> The 1947 printing is scanned in greyscale on the Internet Archive (lending only); the 1946 and 1949 printings of the memoir (the 1949 one has a second dot at line 2, sign 11 or 12) and the Elgar Birthplace Museum&rsquo;s photograph, to settle the 23 doubtful signs.</li>
   <li><strong>How people fake ciphers.</strong> Recordings of people inventing cipher-like squiggles would test the no-message explanation directly.</li>
 </ul>
 
@@ -128,10 +135,12 @@
   <li>C. Jager, <a href="https://github.com/cjager13/Dorabella-cipher-tests">Dorabella-cipher-tests</a> (2026): independent calibrated tests and a transcription with nine uncertain signs.</li>
   <li>N. Pelling, <a href="https://ciphermysteries.com/other-ciphers/the-dorabella-cipher">Cipher Mysteries: The Dorabella Cipher</a>, and its comment thread (2012&ndash;2026).</li>
   <li>K. Schmeh, <a href="https://scienceblogs.de/klausis-krypto-kolumne/2017/08/03/the-top-50-unsolved-encrypted-messages-26-the-dorabella-cryptogram/">Top 50, no. 26: the Dorabella cryptogram</a> (2017).</li>
+  <li>C. P. Bauer, <em>Unsolved! The History and Mystery of the World&rsquo;s Greatest Ciphers</em> (Princeton University Press, 2017), ch. 3: the attempted solutions, the Liszt fragment, the 1920s notebook and Elgar&rsquo;s Schooling cards.</li>
+  <li>R. W. Padgett, <a href="https://enigmathemeunmasked.blogspot.com/2025/01/the-dorabella-dots-vague-deed-cipher.html">The Dorabella Dots</a> (2025) and <a href="https://enigmathemeunmasked.blogspot.com/2022/02/spotting-spanish-in-elgars-dorabella.html">Spotting Spanish in Elgar&rsquo;s Dorabella</a> (2022); photographs of the notebook and the &ldquo;Cryptogram&rdquo; card from Chris Bennett, Elgar Birthplace Museum.</li>
   <li>J. Holt Schooling, &ldquo;Secrets in Cipher&rdquo;, <em>Pall Mall Magazine</em> 8 (1896), parts I&ndash;IV, Internet Archive.</li>
 </ul>
 
-<p class="muted">Everything is in <code>targets/dorabella/</code> in the project repository: <code>NOTES.md</code> (the full record, steps 1&ndash;26), <code>HYPOTHESES.md</code> (the hypothesis map with every branch&rsquo;s status), <code>runs/loop.md</code> and <code>runs/ledger.tsv</code> (all fifty rounds and every number), the test harness (<code>hyp.py</code>, <code>rounds.py</code>, <code>bigsolve.py</code>), the transcriptions (<code>ct.txt</code>, <code>ct_measured.txt</code>, <code>ct_jager.txt</code>) and the interactive map (<code>hypothesis-map.html</code>).</p>
+<p class="muted">Everything is in <code>targets/dorabella/</code> in the project repository: <code>NOTES.md</code> (the full record, steps 1&ndash;30), <code>HYPOTHESES.md</code> (the hypothesis map with every branch&rsquo;s status), <code>runs/loop.md</code> and <code>runs/ledger.tsv</code> (all fifty rounds and every number), the test harness (<code>hyp.py</code>, <code>rounds.py</code>, <code>bigsolve.py</code>), the transcriptions (<code>ct.txt</code>, <code>ct_measured.txt</code>, <code>ct_jager.txt</code>) and the interactive map (<code>hypothesis-map.html</code>).</p>
 </main>
 <footer><div class="in">
   <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; Image: Powell, Memories of a Variation (1937), p. 98, via the Internet Archive</span>
