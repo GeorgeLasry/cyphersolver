@@ -1,25 +1,29 @@
-"""Render the front-page hero video: a one-minute pixel-art tour of the project.
+"""Render the site's two pixel-art videos: the 30-second front-page cut and the full cut on the contribute page.
 
-    python tools/hero_video/hero_video.py                    # docs/hero.mp4 and docs/hero_poster.png
-    python tools/hero_video/hero_video.py --sheet sheet.png  # contact sheet, one frame every 2 s
-    python tools/hero_video/hero_video.py --still 21.5 f.png # one frame, 2x
-    python tools/hero_video/hero_video.py --audio mix.wav    # with the soundtrack from audio.py
+    python tools/hero_video/hero_video.py                      # the front-page cut: docs/hero.mp4 + poster
+    python tools/hero_video/hero_video.py --cut full           # the contribute page's: docs/hero_full.mp4 + poster
+    python tools/hero_video/hero_video.py --sheet sheet.png    # contact sheet, one frame every 2 s
+    python tools/hero_video/hero_video.py --still 6.5 f.png    # one frame, 2x
+    python tools/hero_video/hero_video.py --audio mix.wav      # with the soundtrack from audio.py (same --cut)
+    python tools/hero_video/hero_video.py --featured marmont1812  # this cipher instead of the week's
 
 Drawn at 320x180 and scaled 4x without smoothing, so every art pixel is a 4x4 block. The counts and the timeline
-dots are read from docs/index.html, so a re-render after a site build shows the current ledger. Needs Pillow,
-numpy, and ffmpeg on PATH.
+dots are read from docs/index.html, so a re-render after a site build shows the current ledger. The cipher the
+video deciphers is a real passage from docs/reveal/, one of featured.json's, a different one each ISO week. The
+narration is burned in as captions, because the page plays the video muted until someone asks for sound. A render
+of a cut also writes its chapters, its links and a fresh ?v= into its page (CUTS[...]['page']). Needs Pillow, numpy,
+and ffmpeg on PATH.
 
-Storyboard (seconds; SCENES below is the source of truth, and audio.py follows it):
-  0-5         archive at night, slow pan to a candle-lit desk: five centuries of secret letters, many still unread
-  5-11.25     the wordmark decodes from its cipher numbers; "unsolved" is struck out
-  11.25-21.25 an AI, a human and a laptop; archive -> transcription -> key -> write-up
-  21.25-28.75 one real line deciphered: Weinmeister 1533, "in the morning, when he is sober"
-  28.75-41.25 the ledger: every dated entry on a timeline, then the headline counts and the paper
-  41.25-55    how to help: pick from the catalogue or Read Further, paste the page's prompt or URL into
-              Claude Code, which reports back; credited by name
-  55-60       pick a cipher, break it, write it up; the address
+Storyboard of the front-page cut (seconds; CUTS below is the source of truth, and audio.py follows it):
+  0-11.25     the week's cipher: the manuscript, then its figures deciphered against the key; the English
+  11.25-21.25 the ledger: the timeline fills while the years of silence count up; the oldest entry and a
+              failure, close up; the counts
+  21.25-26.25 contribute: a cipher handed to Claude Code; credited by name
+  26.25-30    pick a cipher, break it, write it up (the page puts its buttons over the end)
+The full cut adds "how it works" after the cipher, the paper, and the whole contribute walkthrough.
 """
 import argparse
+import datetime
 import html
 import json
 import math
@@ -39,7 +43,8 @@ from assets import FLAMES, FONT, SIGNS, SPRITES, parse  # noqa: E402
 ROOT = Path(__file__).resolve().parents[2]
 HERE = Path(__file__).resolve().parent
 DOCS = ROOT / 'docs'
-W, H, FPS, DUR = 320, 180, 30, 60.0
+W, H, FPS = 320, 180, 30
+DUR = 30.0             # of the cut being rendered; main() sets it from CUTS
 SCALE = 4
 
 
@@ -283,16 +288,23 @@ def ledger():
         keys=r'<b>([\d,]+)</b> keys recovered',
         silence=r'<b>([\d,]+)</b> years of silence',
     ).items()}
-    L['dots'] = sorted((int(y), c) for c, y in re.findall(r'<a class="pt (\w+)"[^>]*?data-year="(\d+)"', s))
-    years = [y for y, _ in L['dots']]
+    dots = []
+    for c, href, lab, y in re.findall(r'<a class="pt (\w+)" href="([^"]+)" aria-label="([^"]*)"[^>]*?data-year="(\d+)"', s):
+        dots.append((int(y), c, caps(html.unescape(lab).split(',')[0]), href))
+    L['dots'] = sorted(dots, key=lambda d: d[0])
+    years = [d[0] for d in L['dots']]
     L['first'], L['last'] = min(years), max(years)
+    # the two entries the ledger scene picks out: the oldest text recovered, and the oldest entry if it failed
+    L['oldest_read'] = next(d for d in L['dots'] if d[1] not in ('notsolved', 'na', 'active'))
+    L['oldest'] = L['dots'][0]
     return L
 
 
 def shown(L):
     """What a render puts on screen from the site's data; update.py compares it with the site to see if it is stale."""
     return {k: L[k] for k in ('entries', 'keys', 'silence', 'open', 'partial', 'first', 'last')} | {
-        'picked': L['cat_rows'][0][0]}
+        'picked': L['cat_rows'][0][0], 'oldest': L['oldest'][3], 'oldest_read': L['oldest_read'][3],
+        'featured': FT['slug'] if FT else None}
 
 
 def lists():
@@ -343,13 +355,36 @@ def floor(s):
 def plus(v):
     return f'{v:,}+'
 
-# one line of Jörg Weinmeister's 1533 letter (targets/augurelio1535, P3 = f. 233r), as transcribed and read
-CIPHER = ['Ezmgnwj+5l@bzyfoIwDwvyuI@wgxmdX9qx9dEw8',
-          'L5Ez8Ezxmg9vIwqLnfqzg8#wEyzvxwl7myu7z',
-          'gw648Ewx6zq3qIwv8LwuqzgAfv@b35xy#4vj+7']
-READING = 'SACHEN DES MORGENS, WAN ER NUECHTER SEI, MIT IME'
-_signs = sorted(set(''.join(CIPHER)))
-SIGN_OF = {ch: i % len(SIGNS) for i, ch in enumerate(_signs)}
+# ---------------------------------------------------------------- the week's cipher
+
+FT = None      # the featured cipher being drawn: featured.json's entry, its tokens and its key, set by main()
+
+
+def featured(slug=None, day=None):
+    """featured.json's entry for slug, or the one for day's ISO week, with its tokens from docs/reveal/."""
+    entries = json.loads((HERE / 'featured.json').read_text(encoding='utf8'))['entries']
+    if slug:
+        e = next((e for e in entries if e['slug'] == slug), None)
+        if not e:
+            sys.exit(f'featured.json has no entry {slug}')
+    else:
+        e = entries[(day or datetime.date.today()).isocalendar()[1] % len(entries)]
+    rev = json.loads((DOCS / 'reveal' / f"{e['slug']}.json").read_text(encoding='utf8'))
+    toks = []
+    for r, (a, b) in enumerate(e['runs']):
+        for i in range(a, b + 1):
+            tk = rev['tokens'][i]
+            if not tk['g'] or tk.get('cls') == 'plain':
+                continue
+            p = caps(tk['p'])
+            if not p or '?' in tk['p']:
+                sys.exit(f"{e['slug']}: token {i} has no reading; pick runs that read in full")
+            toks.append(dict(g=tk['g'], p=p, w=bool(tk.get('w')) or not toks or toks[-1]['run'] != r, run=r))
+    key = {}
+    for tk in toks:
+        key.setdefault(tk['g'], tk['p'])
+    href = f"{e['slug']}.html" + (f"#{rev['anchor']}" if rev.get('anchor') else '')
+    return dict(e, tokens=toks, key=key, href=href)
 
 
 # ---------------------------------------------------------------- the archive (scenes 1 and 7)
@@ -570,87 +605,10 @@ def caption_band(a, y0, level=.62):
     a[m] = C['void']
 
 
-def scene_archive(t):
-    cam = int(round(ease((t - .2) / 4.4) * (WA - W)))
-    a = archive_frame(t, cam)
-    caption_band(a, 138)
-    cv = Cv(a)
-    if t < 2.65:
-        text_lines(cv, ['FIVE CENTURIES OF', 'SECRET LETTERS...'], W // 2, 143, t, .35, C['gold2'], 2, lh=17)
-    else:
-        text_lines(cv, ['...MANY STILL UNREAD.'], W // 2, 151, t, 2.75, C['ink'], 2)
-    return cv.a()
-
-
-# ---------------------------------------------------------------- title
-
-WORD = 'CYPHERSOLVER'
-WORDN = ['14', '61', '37', '22', '05', '48', '53', '30', '26', '71', '09', '44']   # the index page's wordmark numbers
-
-
-def rain(cv, t, col=C['golddk2'], step=20):
-    for i in range(W // step + 1):
-        r = random.Random(i * 31 + 7)
-        sp, ph = 6 + r.random() * 8, r.random() * 200
-        for j in range(-1, H // 14 + 2):
-            y = (j * 14 - (t * sp + ph)) % (H + 28) - 14
-            n = random.Random(i * 1000 + j + int((t * sp + ph) // (H + 28)) * 77).randrange(100)
-            text(cv, f'{n:02d}', 4 + i * step, int(y), col)
-
-
 def night_bg():
     a = np.full((H, W, 3), C['void'], np.uint8)
     dither(a, (_yy / H) * .9, C['night'])
     dither(a, np.clip((_yy / H) - .55, 0, 1) * 1.6, C['night2'])
-    return a
-
-
-def scene_title(t):
-    cv = Cv(night_bg())
-    rain(cv, t)
-    a = cv.a()
-    dither(a, np.clip(1.2 - np.hypot((_xx - W / 2) / 165, (_yy - 84) / 70), 0, .9), C['void'])
-    cv = Cv(a)
-    sc, gap = 3, 4
-    ws = [FONT[ch][1] * sc for ch in WORD]
-    x = (W - (sum(ws) + gap * (len(WORD) - 1))) // 2
-    y = 30
-    for i, ch in enumerate(WORD):
-        ti = .25 + i * .08
-        cx = x + ws[i] // 2
-        if t < ti:
-            text(cv, WORDN[i], cx, y + 7, C['golddk'], 1, 'c')
-        elif t < ti + .14:
-            r = random.Random(int(t * 30) + i)
-            g = r.choice('ABCDEFGHKMNPRSTVXZ0123456789')
-            text(cv, g, cx, y, C['gold2'], sc, 'c')
-        else:
-            flash = t < ti + .22
-            text(cv, ch, x, y, C['goldhi'] if flash else C['gold'], sc, shadow=C['golddk2'])
-            if flash:
-                for k in range(4):
-                    ang = k * math.pi / 2 + t * 9
-                    cv.px(cx + round(math.cos(ang) * 13), y + 10 + round(math.sin(ang) * 13), C['goldhi'])
-        x += ws[i] + gap
-    # underline, growing from the middle
-    p = ease((t - 1.2) / .45)
-    if p > 0:
-        half = int(118 * p)
-        cv.rect(W // 2 - half, 58, 2 * half, 1, C['golddk'])
-        cv.rect(W // 2 - half // 2, 58, half, 1, C['gold'])
-    if t > 1.45:
-        text_lines(cv, ['UNSOLVED'], W // 2, 70, t, 1.45, C['ink'], 2, cursor=False)
-        text_lines(cv, ['HISTORICAL CIPHERS'], W // 2, 88, t, 1.7, C['ink'], 2)
-        p = ease((t - 2.3) / .3)
-        if p > 0:
-            x0 = W // 2 - tw('UNSOLVED', 2) // 2 - 3
-            cv.rect(x0, 76, int((tw('UNSOLVED', 2) + 6) * p), 2, C['red2'])
-    text_lines(cv, ['AN OPEN LEDGER: WHAT WAS DECIPHERED,', 'BY WHOM, AND HOW.'], W // 2, 116, t, 2.75,
-               C['ink2'], 1, lh=10, cps=55)
-    if t > 3.9:
-        text(cv, 'SINCE SEPTEMBER 2026', W // 2, 152, C['golddk'], 1, 'c')
-    a = cv.a()
-    dither(a, VIG, C['void'])
     return a
 
 
@@ -786,13 +744,13 @@ def steps_scene(t):
                 lay.rect(cx - 12 + k * 9, iy + 14 - k % 2, 7, 4, C['parch'])
             blit(lay, 'glass', cx - 14 + round(5 * math.sin(lt * 3)), iy - 2 + round(3 * math.cos(lt * 3)), 2)
         elif i == 1:
-            k = int(lt * 4)
-            ch = CIPHER[1][k % len(CIPHER[1])]
-            lay.rect(cx - 29, iy, 22, 26, C['parch'])
-            m, w = gmask(SIGN_OF[ch], 2, True)
-            lay.im.paste(C['sepia'], (cx - 18 - w, iy + 6), m)
+            # the week's cipher, group by group: the figures on the page, and the letter each stands for
+            singles = [tk for tk in FT['tokens'] if len(tk['p']) == 1] or FT['tokens']
+            tk = singles[int(lt * 4) % len(singles)]
+            lay.rect(cx - 32, iy, 26, 26, C['parch'])
+            text(lay, tk['g'], cx - 19, iy + 10, C['sepia'], 1, 'c')
             text(lay, '→', cx, iy + 10, C['gold'], 1, 'c')
-            text(lay, ch.upper() if ch.isalpha() else ch, cx + 18, iy + 6, C['green'], 2, 'c')
+            text(lay, tk['p'][:1], cx + 18, iy + 6, C['green'], 2, 'c')
         elif i == 2:
             blit(lay, 'key', cx - 16, iy, 2)
             q = clamp(lt / 1.6)
@@ -867,66 +825,158 @@ def parchment():
     return _parch.copy()
 
 
-def cipher_line(cv, s, x, y, col, adv=7):
-    for k, ch in enumerate(s):
-        m, w = gmask(SIGN_OF[ch], 1, True)
-        cv.im.paste(col, (x + k * adv + (5 - w) // 2, y), m)
+# when things happen in the decipher scene (seconds into it); audio.py times its sounds from these
+DEC = dict(snip=3.0, key=3.4, scan=3.9, scan_end=7.7, band=8.0)
+SNIP = (8, 26, 304, 128)          # where the manuscript is shown: x, y, w, h
+_snip = {}
+
+
+def snip_strip():
+    """The write-up's photograph of the passage, cropped and scaled to cover SNIP, in the parchment's colours:
+    its tones mapped onto five browns and Bayer-dithered, so the real page sits in the pixel world."""
+    if FT['slug'] not in _snip:
+        im = Image.open(DOCS / FT['image']).convert('L')
+        if FT.get('crop'):
+            im = im.crop(tuple(FT['crop']))
+        _, _, w, h = SNIP
+        k = max(w / im.width, h / im.height)
+        im = im.resize((max(w, round(im.width * k)), max(h, round(im.height * k))), Image.LANCZOS)
+        g = np.asarray(im, np.float32)
+        lo, hi = np.percentile(g, 3), np.percentile(g, 97)
+        g = np.clip((g - lo) / max(1, hi - lo), 0, 1) ** 1.25
+        ramp = np.array([C['sepia'], C['parchdk'], C['parch3'], C['parch2'], C['parch']], np.uint8)
+        th = tile_th(*g.shape)
+        idx = np.clip(np.floor(g * (len(ramp) - 1) + th), 0, len(ramp) - 1).astype(int)
+        _snip[FT['slug']] = ramp[idx]
+    return _snip[FT['slug']]
+
+
+def snip_frame(t):
+    x0, y0, w, h = SNIP
+    a = night_bg()
+    s = snip_strip()
+    p = ease(t / DEC['snip']) * FT.get('pan', 1)
+    ox, oy = round((s.shape[1] - w) * p), round((s.shape[0] - h) * p)
+    a[y0:y0 + h, x0:x0 + w] = s[oy:oy + h, ox:ox + w]
+    cv = Cv(a)
+    cv.box(x0 - 1, y0 - 1, w + 2, h + 2, C['parchdk'])
+    text(cv, FT['shelf'], x0, 6, C['gold2'], shadow=C['void'])
+    text(cv, FT['date'], x0 + w, 6, C['gold2'], 1, 'r', shadow=C['void'])
+    text(cv, FT['credit'], x0, 15, C['muted'])
+    return cv.a()
+
+
+def token_layout(s=1):
+    """Where each group of the passage goes at scale s: rows across the parchment, the reading above the figures."""
+    out, x, row, maxw = [], 0, 0, 292
+    for k, tk in enumerate(FT['tokens']):
+        w = max(tw(tk['g'], s), tw(tk['p'], s))
+        gap = (9 if tk['run'] != FT['tokens'][k - 1]['run'] else 6 if tk['w'] else 3) * s if k else 0
+        if x + gap + w > maxw:
+            row, x, gap = row + 1, 0, 0
+        out.append((row, x + gap, w))
+        x += gap + w
+    rows = row + 1
+    widths = [max(x + w for r, x, w in out if r == i) for i in range(rows)]
+    return [((W - widths[r]) // 2 + x, r, w) for r, x, w in out], rows
+
+
+def key_cells():
+    """The key, as far as the passage uses it: one cell per figure group, in order of first use, in one ribbon."""
+    cells, x = {}, 0
+    for g, p in FT['key'].items():
+        w = tw(g) + 3 + tw(p) + 6
+        cells[g] = (x, w)
+        x += w + 2
+    return cells, x - 2
 
 
 def scene_decipher(t):
+    if t < DEC['snip']:
+        return snip_frame(t)
     a = parchment()
     cv = Cv(a)
-    adv = 7
-    x0 = (W - len(CIPHER[1]) * adv) // 2
-    text(cv, 'F. 233R, LINE 28', 12, 9, C['parchdk'])
-    text(cv, '1533', W - 12, 9, C['parchdk'], 1, 'r')
-    ys = [26, 58, 88]
-    for k, (s, y) in enumerate(zip(CIPHER, ys)):
-        cipher_line(cv, s, (W - len(s) * adv) // 2, y, C['sepia'] if k == 1 else mix(C['sepia'], C['parch'], .45), adv)
-    span = len(CIPHER[1]) * adv
-    p = clamp((t - .5) / 2.6)
-    sx = x0 + int(span * p)
-    if 0 < p < 1:
-        a = cv.a()
-        m = np.zeros_like(TH, bool)
-        m[55:68, max(0, sx - 9):sx] = TH[55:68, max(0, sx - 9):sx] < .55
-        a[m] = C['gold2']
-        cv.set(a)
-        cv.rect(sx, 55, 1, 13, C['gold'])
-    if p > 0:
-        cv.rect(x0, 67, int(span * p), 1, mix(C['clerk'], C['parch'], .5))
-    # the reading, interlinear, as a clerk would write it
-    rw = tw(READING)
-    rx = x0 + (span - rw) // 2
-    cx = rx
-    for ch in READING:
-        w = 3 if ch == ' ' else FONT[ch][1]
-        if ch != ' ' and cx + w <= sx + 2 and p > 0:
-            text(cv, ch, cx, 45, C['clerk'])
-        cx += w + 1
+    toks = FT['tokens']
+    n = len(toks)
+    # the key, a ribbon across the top: it slides to keep the cell of the group being read in the middle, lit
+    cells, kw = key_cells()
+    ky = 16
+    dt = (DEC['scan_end'] - DEC['scan']) / n
+    cur = int((t - DEC['scan']) / dt) if t >= DEC['scan'] else -1
+    if t >= DEC['key']:
+        q = ease_out((t - DEC['key']) / .4)
+        lay_ = Cv(cv.a())
+
+        def centre(k):
+            x, w = cells[toks[min(max(k, 0), n - 1)]['g']]
+            return x + w / 2
+        if kw <= 268:
+            off = (W - kw) / 2
+        else:                                   # glide from cell to cell as the scan moves
+            f = clamp((t - DEC['scan']) / dt - .5, 0, n - 1)
+            k0 = int(f)
+            c = centre(k0) + (centre(k0 + 1) - centre(k0)) * ease(f - k0)
+            off = clamp(W / 2 - c, W - 26 - kw, 26)
+        lay_.rect(0, ky - 4, W, 15, C['parch3'])
+        lay_.rect(0, ky - 3, W, 13, C['parch2'])
+        for g, (x, w) in cells.items():
+            bx = round(off + x)
+            if bx > W or bx + w < 0:
+                continue
+            lit = 0 <= cur < n and toks[cur]['g'] == g
+            used = any(tk['g'] == g for tk in toks[:max(0, cur)])
+            lay_.rect(bx, ky - 1, w, 9, C['gold2'] if lit else C['parch'])
+            ex = text(lay_, g, bx + 2, ky, C['sepia'])
+            text(lay_, FT['key'][g], ex + 3, ky, C['clerk'] if used or lit else C['parch3'])
+        lay_.rect(0, ky - 3, 24, 13, C['parch3'])
+        text(lay_, 'KEY', 3, ky, C['sepia'])
+        ribbon = lay_.a(), q
+    # the passage: figures in the scribe's ink, the reading written above as the scan passes; twice the size
+    # when it fits in two rows
+    top, bottom = ky + 18, 122
+    lay, rows = token_layout(2)
+    s = 2 if rows <= 2 else 1
+    if s == 1:
+        lay, rows = token_layout(1)
+    rh = 20 * s
+    y0 = top + max(0, (bottom - top - rows * rh) // 2)
+    for k, ((x, r, w), tk) in enumerate(zip(lay, toks)):
+        gy = y0 + r * rh + 9 * s
+        if k == cur:
+            cv.rect(x - 2, gy - 10 * s - 2, w + 4, 17 * s + 4, C['gold2'])
+        text(cv, tk['g'], x + w // 2, gy, C['sepia'], s, 'c')
+        if 0 <= k < cur or (k == cur and t - DEC['scan'] - k * dt > dt * .4):
+            text(cv, tk['p'], x + w // 2, gy - 9 * s, C['clerk'], s, 'c')
+        if k and toks[k - 1]['run'] != tk['run'] and lay[k - 1][1] == r:
+            text(cv, '..', x - 5 * s, gy, C['parch3'], s, 'c')
     a = cv.a()
     dither(a, VIG * .6, C['void'])
-    q = ease_out((t - 3.3) / .45)
+    if t >= DEC['key']:
+        rib, q = ribbon
+        band = slice(ky - 4, ky + 11)
+        m = np.zeros_like(TH, bool)
+        m[band] = TH[band] < q * 1.1
+        a[m] = rib[m]
+    if t < DEC['snip'] + .5:
+        a = dissolve(snip_frame(t), a, (t - DEC['snip']) / .5)
+    q = ease_out((t - DEC['band']) / .45)
     if q > 0:
-        top = H - round(66 * q)
-        box = np.zeros_like(TH, bool)
-        box[top:] = True
-        a[box] = C['night']
+        top = H - round(56 * q)
+        a[top:] = C['night']
         a[top:top + 1, :] = C['gold']
         a[top + 1:top + 2, :] = C['golddk']
         cv = Cv(a)
-        text_lines(cv, ['"...IS TO BE SPOKEN WITH IN THE MORNING,'], W // 2, top + 7, t, 3.7, C['ink'], 1, cps=48)
-        text_lines(cv, ['WHEN HE IS SOBER."'], W // 2, top + 19, t, 4.6, C['gold2'], 2, cps=30)
-        if t > 5.4:
-            text(cv, 'JÖRG WEINMEISTER TO THE DUKES OF BAVARIA, 1533', W // 2, top + 40, C['ink2'], 1, 'c')
-            text(cv, 'KEY REBUILT FROM CONTEMPORARY GLOSSES', W // 2, top + 51, C['green'], 1, 'c')
+        text_lines(cv, FT['en'], W // 2, top + 7, t, DEC['band'] + .3, C['gold2'], 1, lh=10, cps=52)
+        if t > DEC['band'] + 1.9:
+            text(cv, FT['who'], W // 2, top + 31, C['ink2'], 1, 'c')
+            text(cv, FT['how'], W // 2, top + 42, C['green'], 1, 'c')
         a = cv.a()
     return a
 
 
 # ---------------------------------------------------------------- the ledger
 
-X0, X1, BASE = 20, 300, 145
+X0, X1, BASE = 20, 300, 134
 
 
 def yx(year):
@@ -940,22 +990,36 @@ def stacks():
     global _stack
     if _stack is None:
         cols, out = {}, []
-        for year, cat in LG['dots']:
+        for year, cat, lab, href in LG['dots']:
             col = int((yx(year) - X0) // 3)
             k = cols.get(col, 0)
             cols[col] = k + 1
-            out.append((year, cat, X0 + col * 3, BASE - k * 3 - 1))
+            out.append((year, cat, X0 + col * 3, BASE - k * 3 - 1, href))
         _stack = out
     return _stack
 
 
 LEGEND = [('KEY RECOVERED HERE', C['green']), ('EXISTING KEY', CAT['known']), ('OLD DECIPHERMENT', C['amber']),
           ('NOT SOLVED', C['red2'])]
+SWEEP = .3, 3.6          # when the timeline's sweep starts, and how long it takes
+
+
+def landed(x, t):
+    td = SWEEP[0] + (x - X0) / (X1 - X0) * SWEEP[1]
+    return td, t >= td
+
+
+def silence_so_far(t):
+    """The years-of-silence count as the sweep passes: the site's total, shared out over the texts obtained
+    (each weighted by its years to 2026), so it ends on the number the page gives."""
+    w = [(x, 2026 - year) for year, cat, x, _, _ in stacks() if cat not in ('notsolved', 'na', 'active')]
+    tot = sum(v for _, v in w) or 1
+    return LG['silence'] * sum(v for x, v in w if landed(x, t)[1]) / tot
 
 
 def timeline_scene(t):
     cv = Cv(night_bg())
-    for y in range(52, 146, 12):
+    for y in range(46, BASE, 12):
         for x in range(X0, X1, 3):
             cv.px(x, y, C['night2'])
     cv.line(X0 - 4, BASE + 3, X1 + 4, BASE + 3, C['muted'])
@@ -963,33 +1027,93 @@ def timeline_scene(t):
         x = round(yx(yr))
         cv.line(x, BASE + 3, x, BASE + 5, C['muted'])
         text(cv, str(yr), x, BASE + 8, C['muted'], 1, 'c')
-    sweep = .3, 3.6
-    for year, cat, x, y in stacks():
-        td = sweep[0] + (x - X0) / (X1 - X0) * sweep[1]
-        if t < td:
+    for year, cat, x, y, _ in stacks():
+        td, on = landed(x, t)
+        if not on:
             continue
         q = ease_out((t - td) / .2)
         yy = y - round((1 - q) * 10)
         cv.rect(x, yy, 2, 2, C['white'] if t - td < .05 else CAT[cat])
-    p = (t - sweep[0]) / sweep[1]
+    p = (t - SWEEP[0]) / SWEEP[1]
     if 0 <= p <= 1.04:
         x = X0 + round(min(p, 1) * (X1 - X0))
-        for y in range(46, BASE + 2, 2):
+        for y in range(40, BASE + 2, 2):
             cv.px(x, y, C['gold'])
         yr = round(1390 + min(p, 1) * 610)
         yr = max(LG['first'], min(LG['last'], yr))
-        text(cv, str(yr), max(14, min(W - 14, x)), 36, C['gold2'], 1, 'c', shadow=C['void'])
+        text(cv, str(yr), max(14, min(W - 14, x)), 26, C['gold2'], 1, 'c', shadow=C['void'])
     elif p > 1.04:
         s = f"{LG['first']}–{LG['last']}"
-        text(cv, s, W // 2, 36, C['gold2'], 1, 'c', shadow=C['void'])
+        text(cv, s, W // 2, 26, C['gold2'], 1, 'c', shadow=C['void'])
     for k, (s, c) in enumerate(LEGEND):
         if t > .8 + k * .15:
-            cv.rect(192, 55 + k * 11, 5, 5, c)
-            text(cv, s, 201, 54 + k * 11, C['ink2'], shadow=C['void'])
+            cv.rect(22, 37 + k * 10, 5, 5, c)
+            text(cv, s, 31, 36 + k * 10, C['ink2'], shadow=C['void'])
+    # the years of silence, counting up as the texts land
+    if t > SWEEP[0]:
+        n = silence_so_far(t)
+        text(cv, f'{round(n):,}' if p < 1.04 else plus(LG['silence']), 300, 38, C['gold'], 2, 'r', shadow=C['golddk2'])
+        text(cv, 'YEARS OF SILENCE ENDED', 300, 56, C['muted'], 1, 'r', shadow=C['void'])
     return cv.a()
 
 
-def stats_scene(t):
+def zoom(a, z, fx, fy):
+    """a magnified z times about (fx, fy), nearest-neighbour, kept inside the frame; returns it and the mapping."""
+    w, h = W / z, H / z
+    x0, y0 = clamp(fx - w / 2, 0, W - w), clamp(fy - h / 2, 0, H - h)
+    xs = np.clip((x0 + np.arange(W) / z).astype(int), 0, W - 1)
+    ys = np.clip((y0 + np.arange(H) / z).astype(int), 0, H - 1)
+    return a[ys][:, xs], (lambda x, y: (round((x - x0) * z), round((y - y0) * z)))
+
+
+def callout(cv, px, py, lx, ly, lines, col):
+    """A label at (lx, ly) with a stepped leader down or up to the dot at (px, py)."""
+    wd = max(tw(s) for s in lines) + 8
+    hgt = 10 * len(lines) + 4
+    cv.rect(lx - 1, ly - 1, wd + 2, hgt + 2, col)
+    cv.rect(lx, ly, wd, hgt, C['void'])
+    for k, s in enumerate(lines):
+        text(cv, s, lx + 4, ly + 3 + 10 * k, col if k == 0 else C['ink2'])
+    ey = ly + hgt + 1 if py > ly else ly - 2
+    cv.line(lx + 6, ey, lx + 6, (ey + py) // 2, col)
+    cv.line(lx + 6, (ey + py) // 2, px, (ey + py) // 2, col)
+    cv.line(px, (ey + py) // 2, px, py + (-3 if py > ly else 3), col)
+    cv.box(px - 2, py - 2, 6, 6, col)
+
+
+def closeup_scene(t, t_tl):
+    """The left end of the timeline, magnified: the oldest entry and the oldest text recovered, each named."""
+    a = timeline_scene(t_tl)
+    z = 1 + 2 * ease(t / .6)
+    old, rd = LG['oldest'], LG['oldest_read']
+    pos = {href: (x, y) for _, _, x, y, href in stacks()}
+    fx, fy = pos[old[3]]
+    a, m = zoom(a, z, fx + 30, fy - 20)
+    # everything else dims, so the two entries named stand out
+    d = clamp((t - .5) / .4)
+    if d > 0:
+        keep = np.zeros(a.shape[:2], bool)
+        for e in (old, rd):
+            x, y = m(*pos[e[3]])
+            keep[max(0, y):y + round(2 * z), max(0, x):x + round(2 * z)] = True
+        dim = (a * (1 - .62 * d)).astype(np.uint8)
+        a = np.where(keep[..., None], a, dim)
+    cv = Cv(a)
+    items = [(rd, CAT[rd[1]], 'THE OLDEST TEXT RECOVERED')]
+    if old is not rd:
+        failed = old[1] == 'notsolved'
+        items.append((old, C['red2'] if failed else CAT[old[1]],
+                      'NOT SOLVED: THE WRITE-UP SAYS WHY' if failed else 'THE OLDEST ENTRY'))
+    for i, (d, col, tag) in enumerate(items):
+        if t < .7 + i * .9:
+            continue
+        px, py = m(*pos[d[3]])
+        lx, head = 104, f'{d[0]} · '
+        callout(cv, px + 3, py + 1, lx, 30 + 40 * i, [head + fit(d[2], W - 12 - lx - 8 - tw(head)), tag], col)
+    return cv.a()
+
+
+def stats_scene(t, paper=True):
     cv = Cv(night_bg())
     cols = [(LG['entries'], ['ENTRIES', f"{LG['first']}–{LG['last']}"]),
             (LG['keys'], ['KEYS RECOVERED', 'BY CRYPTANALYSIS']),
@@ -1007,25 +1131,33 @@ def stats_scene(t):
         p = ease((t - 1.6) / .4)
         for x in range(160 - int(120 * p), 160 + int(120 * p), 2):
             cv.px(x, 106, C['golddk'])
-    text_lines(cv, ['EVERY ATTEMPT IS RECORDED, FAILURES TOO:', 'THE DATA FOR A PAPER WITH GEORGE LASRY'],
-               W // 2, 120, t, 1.9, C['ink'], 1, lh=11, cps=46)
-    text_lines(cv, ['ON HOW AI PERFORMS AGAINST HISTORICAL CIPHERS'], W // 2, 142, t, 3.65, C['gold2'], 1, cps=46)
+    if paper:
+        text_lines(cv, ['EVERY ATTEMPT IS RECORDED, FAILURES TOO:', 'THE DATA FOR A PAPER WITH GEORGE LASRY'],
+                   W // 2, 116, t, 1.9, C['ink'], 1, lh=11, cps=46)
+        text_lines(cv, ['ON HOW AI PERFORMS AGAINST HISTORICAL CIPHERS'], W // 2, 138, t, 3.65, C['gold2'], 1, cps=46)
+    else:
+        text_lines(cv, ['EVERY ATTEMPT IS RECORDED, FAILURES TOO'], W // 2, 118, t, .9, C['ink'], 1, cps=50)
     return cv.a()
 
 
-def scene_ledger(t):
-    T1 = 5.0
-    if t < T1:
-        a = timeline_scene(t)
-    else:
-        a = stats_scene(t - T1)
-        if t < T1 + .35:
-            a = dissolve(timeline_scene(t), a, (t - T1) / .35)
-    cv = Cv(a)
-    text(cv, 'THE LEDGER SO FAR', W // 2, 10, C['gold2'], 2, 'c', shadow=C['void'])
-    a = cv.a()
-    dither(a, VIG, C['void'])
-    return a
+def ledger_scene(t_close, t_stats, paper):
+    """The ledger in three parts: the timeline fills, the close-up from t_close, the counts from t_stats."""
+    def scene(t):
+        if t < t_close:
+            a = timeline_scene(t)
+        elif t < t_stats:
+            a = closeup_scene(t - t_close, t_close)
+        else:
+            a = stats_scene(t - t_stats, paper)
+            if t < t_stats + .35:
+                a = dissolve(closeup_scene(t - t_close, t_close), a, (t - t_stats) / .35)
+        cv = Cv(a)
+        text(cv, 'THE LEDGER SO FAR', W // 2, 8, C['gold2'], 2, 'c', shadow=C['void'])
+        a = cv.a()
+        dither(a, VIG, C['void'])
+        return a
+    scene.t_close, scene.t_stats = t_close, t_stats      # audio.py times its sounds from these
+    return scene
 
 
 # ---------------------------------------------------------------- contributing
@@ -1071,28 +1203,30 @@ def pick_scene(t):
     text(cv, 'HELPING IS SIMPLE', W // 2, 8, C['gold2'], 2, 'c', shadow=C['void'])
     href, _, name = LG['cat_rows'][0]
     num = re.search(r'(\d+)', href).group(1)
-    row0 = (8 + 70, 32 + 40 + 4)
+    row0 = (100, 28 + 27 + 4)
     if t < PICK['page'] + .3:
         lay = Cv(cv.a())
-        panels = [(8, 'THE CATALOGUE', f"{plus(LG['open'])} NOBODY HAS READ", 'CATALOGUE.HTML', LG['cat_rows'], C['gold']),
-                  (164, 'READ FURTHER', f"{plus(LG['partial'])} LEFT PARTIAL", 'FURTHER.HTML', LG['fur_rows'], C['green'])]
-        for i, (x, title, sub, url, rows, sc) in enumerate(panels):
+        # one above the other, full width, two rows each, so the titles fit
+        panels = [(28, 'THE CATALOGUE', f"{plus(LG['open'])} NOBODY HAS READ", 'CATALOGUE.HTML', LG['cat_rows'], C['gold']),
+                  (92, 'READ FURTHER', f"{plus(LG['partial'])} LEFT PARTIAL", 'FURTHER.HTML', LG['fur_rows'], C['green'])]
+        x, pw = 10, 300
+        for i, (y0, title, sub, url, rows, sc) in enumerate(panels):
             ti = .2 + i * .35
             if t < ti:
                 continue
             q = ease_out((t - ti) / .35)
-            y = 32 + round((1 - q) * 8)
-            browser(lay, x, y, 148, 112, url)
-            text(lay, title, x + 6, y + 16, C['gold2'])
-            text(lay, sub, x + 6, y + 26, C['muted'])
-            for k, (_, score, label) in enumerate(rows):
+            y = y0 + round((1 - q) * 8)
+            browser(lay, x, y, pw, 58, url)
+            sx = text(lay, title, x + 6, y + 15, C['gold2'])
+            text(lay, sub, sx + 8, y + 15, C['muted'])
+            for k, (_, score, label) in enumerate(rows[:2]):
                 if t < ti + .3 + k * .12:
                     break
-                ry = y + 39 + k * 17
+                ry = y + 27 + k * 15
                 picked = i == 0 and k == 0 and t >= PICK['click']
-                lay.rect(x + 3, ry - 3, 142, 14, (C['goldhi'] if t < PICK['click'] + .08 else C['night4']) if picked else C['night'])
-                sx = text(lay, score, x + 6, ry, sc) + 5
-                text(lay, fit(label, x + 142 - sx), sx, ry, C['ink'] if picked else C['ink2'])
+                lay.rect(x + 3, ry - 3, pw - 6, 13, (C['goldhi'] if t < PICK['click'] + .08 else C['night4']) if picked else C['night'])
+                sx = text(lay, score, x + 7, ry, sc) + 5
+                text(lay, fit(label, x + pw - 8 - sx), sx, ry, C['ink'] if picked else C['ink2'])
         cv.set(lay.a())
     if t >= PICK['page']:
         lay = Cv(night_bg())
@@ -1126,8 +1260,6 @@ def pick_scene(t):
             px, py = glide(t, 3.3, 4.1, row0, bxy)
         pressed = abs(t - PICK['click']) < .1 or abs(t - PICK['copy']) < .1
         pointer(cv, px, py, pressed)
-    text_lines(cv, ['PICK ONE · OPEN ITS PAGE · COPY ITS PROMPT OR URL'], W // 2, 157, t, .6, C['ink2'], 1,
-               cps=50, cursor=False)
     return cv.a()
 
 
@@ -1167,7 +1299,6 @@ def agent_scene(t):
         ly = y + 44 + len(AGENT_LINES) * 11 + 2
         blit(cv, 'check', x + 6, ly - 1)
         text(cv, 'SENT BACK: AN ISSUE OR A PULL REQUEST', x + 24, ly, C['green'])
-    text_lines(cv, ['OR ANY AI AGENT THAT CAN OPEN WEB PAGES'], W // 2, 157, t, 1.2, C['muted'], 1, cps=50, cursor=False)
     return cv.a()
 
 
@@ -1179,7 +1310,7 @@ def credit_scene(t):
     cv.rect(x, y, w, h, C['parch'])
     cv.box(x, y, w, h, C['parchdk'])
     text(cv, 'KEY FROM ADJACENT PLAINTEXT', x + 10, y + 9, C['greendk'])
-    text(cv, 'A LETTER IN CIPHER, 1533', x + 10, y + 21, C['sepia'], 1)
+    text(cv, 'A LETTER IN CIPHER, ' + FT['date'][-4:], x + 10, y + 21, C['sepia'], 1)
     blit(cv, 'seal', x + w - 19, y + 7)
     cv.line(x + 10, y + 32, x + w - 10, y + 32, C['parch3'])
     t0 = .5
@@ -1212,8 +1343,8 @@ def credit_scene(t):
             rr = 16 + 3 * math.sin(t * 6)
             if q > .5:
                 cv.px(x + w - 18 + round(math.cos(ang) * rr), y + h - 16 + round(math.sin(ang) * rr), C['goldhi'])
-    text_lines(cv, ['ON THE WRITE-UP AND THE CONTRIBUTORS PAGE'], W // 2, 140, t, 1.1, C['ink'], 1, cps=44)
-    text_lines(cv, ['YOUR NAME, YOUR WAY: FULL, INITIALS OR A HANDLE'], W // 2, 152, t, 2.1, C['muted'], 1,
+    text_lines(cv, ['ON THE WRITE-UP AND THE CONTRIBUTORS PAGE'], W // 2, 134, t, 1.1, C['ink'], 1, cps=44)
+    text_lines(cv, ['YOUR NAME, YOUR WAY: FULL, INITIALS OR A HANDLE'], W // 2, 145, t, 2.1, C['muted'], 1,
                cps=48, cursor=False)
     return cv.a()
 
@@ -1233,72 +1364,254 @@ def scene_contribute(t):
     return a
 
 
-# ---------------------------------------------------------------- the close
+SHORT = dict(credit=2.4)      # seconds into the front-page cut's contribute scene when the credit replaces the hand-off
 
-def scene_cta(t):
-    a = (archive_frame(t + 10, WA - W) * .36).astype(np.uint8)
-    cv = Cv(a)
-    text_lines(cv, ['PICK A CIPHER.'], W // 2, 22, t, .3, C['gold2'], 2)
-    text_lines(cv, ['BREAK IT.'], W // 2, 42, t, 1.0, C['gold2'], 2)
-    text_lines(cv, ['WRITE IT UP.'], W // 2, 62, t, 1.7, C['gold2'], 2)
-    if t > 2.4:
-        q = ease_out((t - 2.4) / .3)
-        url = 'DBOURDEAU.GITHUB.IO/CYPHERSOLVER'
-        bw = tw(url) + 16
-        bx, by = (W - bw) // 2, 96
+
+def handoff_scene(t):
+    """The front-page cut's first beat: one catalogue cipher, as a card, handed to Claude Code, which starts on it."""
+    cv = Cv(night_bg())
+    text(cv, 'PICK A CIPHER', W // 2, 8, C['gold2'], 2, 'c', shadow=C['void'])
+    href, score, name = LG['cat_rows'][0]
+    num = re.search(r'(\d+)', href).group(1)
+    q = ease_out((t - .15) / .4)
+    x, y, w, h = 20, 34 + round((1 - q) * 8), 280, 34
+    if t > .15:
+        cv.rect(x + 3, y + 3, w, h, C['void'])
+        cv.rect(x, y, w, h, C['parch'])
+        cv.box(x, y, w, h, C['parchdk'])
+        text(cv, f'THE CATALOGUE · NO. {num}', x + 8, y + 7, C['clerk'])
+        text(cv, fit(name, w - 16), x + 8, y + 19, C['sepia'])
+    if t > .9:
+        p = ease_out((t - .9) / .3)
+        tx, ty, tw_, th = 40, 82, 240, 60
         lay = Cv(cv.a())
-        lay.rect(bx, by, bw, 17, C['night'])
-        lay.box(bx, by, bw, 17, C['gold'])
-        end = text(lay, url, bx + 8, by + 5, C['gold2'])
-        if int(t * 2.5) % 2 == 0:
-            lay.rect(end + 1, by + 5, 1, 7, C['gold2'])
-        cv.set(dissolve(cv.a(), lay.a(), q * 1.1))
-    if t > 3.0:
-        text_lines(cv, ['THE CATALOGUE IS WAITING · HELP SOLVE!'], W // 2, 124, t, 3.0, C['ink2'], 1, cps=40,
-                   cursor=False)
+        browser(lay, tx, ty, tw_, th, 'CLAUDE CODE', dark=True)
+        text(lay, '>', tx + 8, ty + 17, C['gold'])
+        text(lay, fit(f'.../SOLVE/{num}.HTML', tw_ - 30), tx + 17, ty + 17, C['ink'])
+        for i, s in enumerate(AGENT_LINES[:3]):
+            ti = 1.35 + i * .3
+            if t < ti:
+                break
+            cv_y = ty + 29 + i * 10
+            lay.rect(tx + 9, cv_y + 2, 3, 3, C['green'] if t > ti + .3 else C['gold'])
+            text(lay, s, tx + 17, cv_y, C['ink2'])
+        cv.set(dissolve(cv.a(), lay.a(), p * 1.1))
+        if t < 1.3:
+            for k in range(3):                     # the card's address, flying down into the terminal
+                yy = round(y + h + (82 - y - h) * clamp((t - .9) / .4)) + k * 3
+                cv.rect(150 + k * 8, yy, 4, 2, C['gold'])
     return cv.a()
 
 
-# ---------------------------------------------------------------- timeline
+def scene_contribute_short(t):
+    if t < SHORT['credit']:
+        a = handoff_scene(t)
+    else:
+        a = credit_scene(t - SHORT['credit'])
+        if t < SHORT['credit'] + .35:
+            a = dissolve(handoff_scene(t), a, (t - SHORT['credit']) / .35)
+    dither(a, VIG, C['void'])
+    return a
 
-# scene changes fall on the score's bar lines (96 bpm, 2.5 s a bar, with a bar and a half at bar 7; see
-# audio.py) and leave room for each voiceover line
-SCENES = [(0.0, scene_archive), (5.0, scene_title), (11.25, scene_method), (21.25, scene_decipher),
-          (28.75, scene_ledger), (41.25, scene_contribute), (55.0, scene_cta)]
+
+# ---------------------------------------------------------------- the close
+
+def scene_cta(t):
+    # the page puts its own buttons over the lower half from here, so the frame keeps it clear
+    a = (archive_frame(t + 10, WA - W) * .36).astype(np.uint8)
+    cv = Cv(a)
+    text_lines(cv, ['PICK A CIPHER.'], W // 2, 26, t, .3, C['gold2'], 2)
+    text_lines(cv, ['BREAK IT.'], W // 2, 46, t, 1.0, C['gold2'], 2)
+    text_lines(cv, ['WRITE IT UP.'], W // 2, 66, t, 1.7, C['gold2'], 2)
+    return cv.a()
+
+
+# ---------------------------------------------------------------- the two cuts
+
+# Scene changes fall on the score's bar lines (96 bpm, 2.5 s a bar; audio.py builds each cut's score from 'bars'),
+# and each voiceover line has room. 'vo' is (line id in vo.json, when its speech starts, whether it is captioned):
+# a line the frame already spells out is not captioned again. 'links' are the page's buttons over the video while
+# a stretch plays (FEATURED is the week's cipher's write-up); 'end' are the buttons over the close and after it.
+FEATURED = 'featured'
+CUTS = dict(
+    hero=dict(
+        dur=30.0, page='index.html', out='hero.mp4', poster='hero_poster.png', poster_at=6.4,
+        scenes=[(0.0, scene_decipher, 'decipher'), (11.25, ledger_scene(4.4, 7.0, False), 'ledger'),
+                (21.25, scene_contribute_short, 'contribute_short'), (26.25, scene_cta, 'cta')],
+        vo=[('a1', .6, True), ('a2', 3.1, True), ('b1', 11.6, True), ('e1', 17.75, True), ('f3', 23.75, True),
+            ('g1', 26.6, False)],
+        chapters=[(0, 'The letter'), (11.25, 'The ledger'), (21.25, 'Contribute')],
+        links=[(0, 11.25, FEATURED, ''), (11.25, 21.25, '#scoreboard', 'See the ledger'),
+               (21.25, 26.25, 'catalogue.html', 'Open the catalogue')],
+        end=[('catalogue.html', 'Pick a cipher'), ('#random', 'Random cipher'), ('contribute.html', 'How to contribute')],
+        # (section, chord, length in bars): see audio.py
+        bars=[('intro', 'AM', 1), ('intro', 'F', 1), ('decipher', 'DM', 1), ('decipher', 'E', 1), ('decipher', 'AM', .5),
+              ('ledger', 'AM', 1), ('ledger', 'F', 1), ('ledger', 'C', 1), ('ledger', 'G', 1),
+              ('tune5', 'F', 1), ('tune6', 'G', 1), ('close', 'C', 1.5)]),
+    full=dict(
+        dur=53.75, page='contribute.html', out='hero_full.mp4', poster='hero_full_poster.png', poster_at=6.4,
+        scenes=[(0.0, scene_decipher, 'decipher'), (11.25, scene_method, 'method'),
+                (21.25, ledger_scene(4.6, 8.6, True), 'ledger'), (36.25, scene_contribute, 'contribute'),
+                (50.0, scene_cta, 'cta')],
+        vo=[('a1', .6, True), ('a2', 3.1, True), ('c1', 11.6, False), ('c2', 16.9, True), ('b1', 21.6, True),
+            ('e2', 27.6, True), ('f1', 36.6, True), ('f2', 41.7, True), ('f3', 47.05, True), ('g1', 50.35, False)],
+        chapters=[(0, 'The letter'), (11.25, 'How it works'), (21.25, 'The ledger'), (36.25, 'How to contribute')],
+        links=[(0, 11.25, FEATURED, ''), (36.25, 50.0, 'catalogue.html', 'Open the catalogue')],
+        end=[('catalogue.html', 'Pick a cipher'), ('further.html', 'Read Further')],
+        bars=[('intro', 'AM', 1), ('intro', 'F', 1), ('decipher', 'DM', 1), ('decipher', 'E', 1), ('decipher', 'AM', .5),
+              ('build', 'F', 1), ('build', 'G', 1), ('drive', 'AM', 1), ('drive', 'F', 1),
+              ('ledger', 'AM', 1), ('ledger', 'F', 1), ('ledger', 'C', 1), ('ledger', 'G', 1), ('ledger', 'AM', 1),
+              ('ledger', 'AM', 1),
+              ('tune1', 'F', 1), ('tune2', 'G', 1), ('tune3', 'C', 1), ('tune4', 'AM', 1), ('tune5', 'F', 1),
+              ('tune6', 'G', .5), ('close', 'C', 1.5)]),
+)
+CUT = CUTS['hero']
 TRANS = .4
 
 
+def scene_start(name, cut=None):
+    return next(t for t, _, n in (cut or CUT)['scenes'] if n == name)
+
+
+# ---------------------------------------------------------------- captions
+
+_vo = None
+TEMPO = 1.05           # audio.py plays every take this much faster
+
+
+def vo_lines():
+    """vo.json's lines by id, each with the length of its take as audio.py plays it."""
+    global _vo
+    if _vo is None:
+        _vo = {}
+        for ln in json.loads((HERE / 'vo.json').read_text(encoding='utf8'))['lines']:
+            f = HERE / 'vo' / f"{ln['id']}_{ln['take']}.flac"
+            d = float(subprocess.run(['ffprobe', '-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0',
+                                      str(f)], capture_output=True, text=True, check=True).stdout)
+            _vo[ln['id']] = dict(ln, dur=d / TEMPO)
+    return _vo
+
+
+def wrap(s, width):
+    rows, cur = [], ''
+    for word in s.split():
+        if cur and tw(cur + ' ' + word) > width:
+            rows.append(cur)
+            cur = word
+        else:
+            cur = (cur + ' ' + word).strip()
+    return rows + [cur] if cur else rows
+
+
+_cues = {}
+
+
+def caption_cues(cut=None):
+    """(start, end, rows) for every captioned line: two rows at most on screen, a longer line split in turns."""
+    cut = cut or CUT
+    if id(cut) not in _cues:
+        out = []
+        for lid, at, on in cut['vo']:
+            if not on:
+                continue
+            ln = vo_lines()[lid]
+            rows = wrap(caps(ln['text']), 296)
+            chunks = [rows[i:i + 2] for i in range(0, len(rows), 2)]
+            n = sum(len(' '.join(c)) for c in chunks)
+            t = at
+            for c in chunks:
+                d = ln['dur'] * len(' '.join(c)) / n
+                out.append((t, t + d + (.35 if c is chunks[-1] else 0), c))
+                t += d
+        _cues[id(cut)] = out
+    return _cues[id(cut)]
+
+
+def captions(a, t):
+    cue = next((c for c in caption_cues() if c[0] <= t < c[1]), None)
+    if not cue:
+        return a
+    cv = Cv(a)
+    rows = cue[2]
+    for i, s in enumerate(rows):
+        y = H - 12 - (len(rows) - 1 - i) * 10
+        w = tw(s)
+        cv.rect((W - w) // 2 - 3, y - 2, w + 6, 11, C['void'])
+        text(cv, s, W // 2, y, C['ink'], 1, 'c')
+    return cv.a()
+
+
+# ---------------------------------------------------------------- rendering
+
 def render(t):
-    i = max(k for k in range(len(SCENES)) if t >= SCENES[k][0])
-    t0, fn = SCENES[i]
+    sc = CUT['scenes']
+    i = max(k for k in range(len(sc)) if t >= sc[k][0])
+    t0, fn, _ = sc[i]
     a = fn(t - t0)
     if i and t - t0 < TRANS:
-        pt0, pfn = SCENES[i - 1]
+        pt0, pfn, _ = sc[i - 1]
         a = dissolve(pfn(t - pt0), a, (t - t0) / TRANS)
     if t < .6:
         dither(a, 1 - t / .6, C['void'])
     if t > DUR - .8:
         dither(a, (t - (DUR - .8)) / .7, C['void'])
-    return a
+    return captions(a, t)
 
 
 def up(a, k=SCALE):
     return np.repeat(np.repeat(a, k, 0), k, 1)
 
 
+def page_links(cut):
+    """The page's buttons over the video, as the figure's data-links: [from, to, href, label]; to null = the end."""
+    out = []
+    for a, b, href, label in cut['links']:
+        if href == FEATURED:
+            href, label = FT['href'], FT['label']
+        out.append([a, b, href, label])
+    end = scene_start('cta', cut)
+    return out + [[end, None, href, label] for href, label in cut['end']]
+
+
+def update_page(cut):
+    """Write the cut's chapters, links and a new ?v= into its page, so the page and the file always agree."""
+    page = DOCS / cut['page']
+    s = page.read_text(encoding='utf8')
+    name = re.escape(cut['out'])
+    if not re.search(name + r'\?v=\d+', s):
+        sys.exit(f"{cut['page']}: no <source src=\"{cut['out']}?v=N\"> to update")
+    s = re.sub(name + r'\?v=(\d+)', lambda m: f"{cut['out']}?v={int(m.group(1)) + 1}", s)
+    ts = [t for t, _ in cut['chapters']] + [cut['dur']]
+    btns = ''.join(f'<button type="button" data-t="{t:g}" style="--w:{ts[i + 1] - t:g}">{html.escape(lab)}</button>'
+                   for i, (t, lab) in enumerate(cut['chapters']))
+    s, n = re.subn(r'(<div class="hv-ch"[^>]*>).*?(</div>)', lambda m: m.group(1) + btns + m.group(2), s, count=1)
+    links = html.escape(json.dumps(page_links(cut), ensure_ascii=False), quote=True)
+    s = re.sub(r'(<figure class="herovid[^"]*"[^>]*?) data-links="[^"]*"', r'\1', s, count=1)
+    s, k = re.subn(r'(<figure class="herovid[^"]*")', lambda m: f'{m.group(1)} data-links="{links}"', s, count=1)
+    if not (n and k):
+        sys.exit(f"{cut['page']}: no hero video figure with chapters")
+    page.write_text(s, encoding='utf8')
+
+
 def main():
-    global LG
+    global LG, FT, CUT, DUR
     ap = argparse.ArgumentParser(description=__doc__.split('\n')[0])
-    ap.add_argument('--out', default=str(DOCS / 'hero.mp4'))
-    ap.add_argument('--poster', default=str(DOCS / 'hero_poster.png'))
-    ap.add_argument('--poster-at', type=float, default=10.0)
+    ap.add_argument('--cut', choices=sorted(CUTS), default='hero')
+    ap.add_argument('--featured', help='featured.json slug to decipher (default: the one for this ISO week)')
+    ap.add_argument('--out', help="video file (default: the cut's, in docs/)")
+    ap.add_argument('--poster', help="poster frame (default: the cut's, in docs/)")
+    ap.add_argument('--poster-at', type=float)
     ap.add_argument('--sheet', help='write a contact sheet (one frame every --every seconds) and stop')
     ap.add_argument('--every', type=float, default=2.0)
     ap.add_argument('--still', nargs=2, metavar=('T', 'PNG'), help='write one frame at 2x and stop')
     ap.add_argument('--crf', type=int, default=23)
-    ap.add_argument('--audio', help='soundtrack to mux in (audio.py writes it)')
+    ap.add_argument('--audio', help='soundtrack to mux in (audio.py with the same --cut writes it)')
+    ap.add_argument('--no-page', action='store_true', help="leave the page's chapters, links and ?v= alone")
     args = ap.parse_args()
+    CUT = CUTS[args.cut]
+    DUR = CUT['dur']
     LG = {**ledger(), **lists()}
+    FT = featured(args.featured)
     if args.still:
         Image.fromarray(up(render(float(args.still[0])), 2)).save(args.still[1])
         return
@@ -1314,12 +1627,14 @@ def main():
             lab.text((x + 2, y), f'{t:.1f}s', fill=(220, 220, 220))
         sheet.save(args.sheet)
         return
-    n = int(DUR * FPS)
+    out = args.out or str(DOCS / CUT['out'])
+    poster = args.poster or str(DOCS / CUT['poster'])
+    n = int(round(DUR * FPS))
     cmd = ['ffmpeg', '-y', '-loglevel', 'error', '-f', 'rawvideo', '-pix_fmt', 'rgb24', '-s', f'{W * SCALE}x{H * SCALE}',
            '-r', str(FPS), '-i', '-']
     cmd += ['-i', args.audio, '-map', '0:v', '-map', '1:a', '-c:a', 'aac', '-b:a', '128k'] if args.audio else ['-an']
     cmd += ['-c:v', 'libx264', '-preset', 'slow', '-tune', 'animation', '-crf', str(args.crf), '-pix_fmt', 'yuv420p',
-            '-movflags', '+faststart', args.out]
+            '-movflags', '+faststart', out]
     ff = subprocess.Popen(cmd, stdin=subprocess.PIPE)
     for f in range(n):
         ff.stdin.write(up(render(f / FPS)).tobytes())
@@ -1328,10 +1643,14 @@ def main():
     ff.stdin.close()
     if ff.wait():
         sys.exit('ffmpeg failed')
-    Image.fromarray(up(render(args.poster_at))).save(args.poster, optimize=True)
-    if Path(args.out).resolve() == (DOCS / 'hero.mp4').resolve():
+    at = args.poster_at if args.poster_at is not None else CUT['poster_at']
+    Image.fromarray(up(render(at))).save(poster, optimize=True)
+    default = Path(out).resolve() == (DOCS / CUT['out']).resolve()
+    if default and args.cut == 'hero':
         (HERE / 'shown.json').write_text(json.dumps(shown(LG), indent=1) + '\n', encoding='utf8')
-    print(f'wrote {args.out} and {args.poster}')
+    if default and not args.no_page:
+        update_page(CUT)
+    print(f'wrote {out} and {poster}' + (f", and docs/{CUT['page']}" if default and not args.no_page else ''))
 
 
 if __name__ == '__main__':

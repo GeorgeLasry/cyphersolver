@@ -1,12 +1,14 @@
-"""Keep the front-page video current. Run weekly by .github/workflows/hero-video.yml, or by hand.
+"""Keep the site's two videos current. Run weekly by .github/workflows/hero-video.yml, or by hand.
 
     python tools/hero_video/update.py                       # report only
     python tools/hero_video/update.py --render --notes N.md # if stale, re-render and write a PR description
 
-The video is stale when anything it puts on screen from the site's data (shown.json, written at each render) no
-longer matches the site: a rounded count that has moved up a step, the timeline's span, or the catalogue's top
-cipher. --render then rebuilds the soundtrack from the committed takes, re-renders the video and its poster, and
-bumps the ?v= on the video in docs/index.html so browsers fetch the new file.
+The videos are stale when anything they put on screen from the site's data (shown.json, written at each render of
+the front-page cut) no longer matches the site: a rounded count that has moved up a step, the timeline's span, the
+entries the ledger scene names, the catalogue's top cipher, or the week's featured cipher (featured.json, a new one
+each ISO week). --render then rebuilds both cuts' soundtracks from the committed takes and re-renders both videos
+and their posters; each render writes its chapters, links and a new ?v= into its page (docs/index.html and
+docs/contribute.html), so browsers fetch the new file.
 
 The narration cannot be redone here (it needs the voice model and a GPU). A line whose spoken number has gone out
 of the range in vo.json's "holds" is flagged instead, with the steps in README.md.
@@ -17,7 +19,6 @@ narration flag's text to N.md's sibling narration.md.
 import argparse
 import json
 import os
-import re
 import subprocess
 import sys
 import tempfile
@@ -29,7 +30,8 @@ import hero_video as hv  # noqa: E402
 
 NAMES = dict(entries='entries', keys='keys recovered', silence='years of silence ended', open='open catalogue ciphers',
              partial='readings left partial', first='first year on the timeline', last='last year on the timeline',
-             picked="catalogue cipher the cursor picks")
+             picked="catalogue cipher the cursor picks", oldest='oldest entry, named in the close-up',
+             oldest_read='oldest text recovered, named in the close-up', featured='cipher deciphered on screen')
 
 
 def output(**kw):
@@ -47,6 +49,7 @@ def main():
     args = ap.parse_args()
 
     L = {**hv.ledger(), **hv.lists()}
+    hv.FT = hv.featured()
     now = hv.shown(L)
     was = json.loads((HERE / 'shown.json').read_text(encoding='utf8'))
     moved = [(k, was.get(k), now[k]) for k in now if was.get(k) != now[k]]
@@ -73,19 +76,16 @@ def main():
     if not (moved and args.render):
         return
 
+    slug = hv.FT['slug']                 # both cuts and both soundtracks decipher the same passage
     with tempfile.TemporaryDirectory() as tmp:
-        wav = str(Path(tmp) / 'hero_audio.wav')
-        subprocess.run([sys.executable, str(HERE / 'audio.py'), wav], check=True)
-        subprocess.run([sys.executable, str(HERE / 'hero_video.py'), '--audio', wav], check=True)
-    page = hv.DOCS / 'index.html'
-    s = page.read_text(encoding='utf8')
-    s, n = re.subn(r'hero\.mp4\?v=(\d+)', lambda m: f'hero.mp4?v={int(m.group(1)) + 1}', s)
-    if not n:
-        s, n = re.subn(r'src="hero\.mp4"', 'src="hero.mp4?v=2"', s)
-    page.write_text(s, encoding='utf8')
+        for cut in ('hero', 'full'):
+            wav = str(Path(tmp) / f'{cut}_audio.wav')
+            subprocess.run([sys.executable, str(HERE / 'audio.py'), wav, '--cut', cut, '--featured', slug], check=True)
+            subprocess.run([sys.executable, str(HERE / 'hero_video.py'), '--cut', cut, '--featured', slug,
+                            '--audio', wav], check=True)
     if notes:
         notes.write_text(
-            'The weekly check found the front-page video behind the site, and re-rendered it.\n\n'
+            'The weekly check found the site\'s videos behind the site, and re-rendered both cuts.\n\n'
             '| On screen | Was | Now |\n|---|---|---|\n' +
             ''.join(f'| {NAMES[k]} | {a} | {b} |\n' for k, a, b in moved) +
             '\nThe timeline dots and the catalogue and Read Further rows are redrawn from today\'s pages as well. '

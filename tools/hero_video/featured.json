@@ -1,0 +1,55 @@
+{
+  "_about": "The ciphers the video deciphers on screen, one a week (ISO week number modulo the list; hero_video.py --featured SLUG picks one). Each is a real passage: 'runs' are [first, last] token indexes, inclusive, in docs/reveal/<slug>.json, whose groups and readings the scene draws; tokens without a group (clear text) are skipped. 'image' is the write-up's own credited snip of the same lines (docs/), shown first; 'crop' is [left, top, right, bottom] in its pixels (null for all of it) and 'pan' how much of the overflow the camera crosses. 'en' is the English of the passage, from the write-up; 'who', 'how', 'shelf', 'date' and 'credit' are drawn in the pixel font's capitals. A new entry needs an image on the write-up that shows the passage itself, not another page of the same letter.",
+  "entries": [
+    {
+      "slug": "morosini1588",
+      "runs": [
+        [12, 17],
+        [39, 70]
+      ],
+      "image": "morosini1588_lead.jpg",
+      "crop": [0, 150, 1100, 538],
+      "pan": 1,
+      "shelf": "AAV, FRANCIA 22, F. 308R",
+      "date": "23 DECEMBER 1588",
+      "credit": "IMAGE: ARCHIVIO APOSTOLICO VATICANO, VIA DECODE",
+      "en": ["\"...THE DUKE OF GUISE, IN THE KING'S CHAMBER,", "WAS KILLED WITH DAGGERS BY HIS MAJESTY'S ORDER.\""],
+      "who": "CARDINAL MOROSINI TO ROME, BLOIS 1588",
+      "how": "READ WITH MEISTER'S KEY NO. 40",
+      "label": "Read Morosini's despatch"
+    },
+    {
+      "slug": "marmont1812",
+      "runs": [
+        [14, 32]
+      ],
+      "image": "marmont1812_n34.jpg",
+      "crop": [280, 300, 922, 570],
+      "pan": 1,
+      "shelf": "AHN, DIVERSOS-COLECCIONES 134 N.34",
+      "date": "28 MAY 1812",
+      "credit": "IMAGE: ARCHIVO HISTORICO NACIONAL, VIA PARES",
+      "en": ["\"IN THIS SITUATION YOU MUST REINFORCE", "COUNT D'ERLON'S CORPS.\""],
+      "who": "MARSHAL JOURDAN TO SOULT, MADRID 1812",
+      "how": "READ WITH THE 1812 GRAND CHIFFRE TABLE",
+      "label": "Read Jourdan's letter"
+    },
+    {
+      "slug": "toledo1565",
+      "runs": [
+        [22, 33],
+        [35, 42]
+      ],
+      "image": "toledo1565_f1r_lead.jpg",
+      "crop": null,
+      "pan": 0.5,
+      "shelf": "AGS ESTADO 1394 NO. 247, F. 1R",
+      "date": "16 JULY 1565",
+      "credit": "IMAGE: ARCHIVO GENERAL DE SIMANCAS, VIA PARES",
+      "en": ["\"THE SIX HUNDRED SOLDIERS DON JUAN DE CARDONA", "PUT ASHORE ALL REACHED THE BURGO SAFELY.\""],
+      "who": "GARCIA DE TOLEDO TO PHILIP II, MESSINA 1565",
+      "how": "KEY RECOVERED FROM THE CLEAR TEXT AROUND IT",
+      "label": "Read García de Toledo's letter"
+    }
+  ]
+}

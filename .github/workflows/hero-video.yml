@@ -1,7 +1,8 @@
-# Keep the front-page video current. Once a week, tools/hero_video/update.py compares what the video shows (the
-# rounded counts, the timeline's span, the catalogue's top cipher) with the site. If anything has moved, it
-# re-renders the video from the repository (the narration takes are committed, so no voice model is needed) and
-# this job opens a pull request for review. A narration line whose spoken number the ledger has outgrown is flagged
+# Keep the site's two videos current (the front page's 30-second cut, the contribute page's full cut). Once a week,
+# tools/hero_video/update.py compares what they show (the rounded counts, the timeline's span, the entries named, the
+# catalogue's top cipher, and the week's featured cipher, which changes every week) with the site. If anything has
+# moved, it re-renders both from the repository (the narration takes are committed, so no voice model is needed)
+# and this job opens a pull request for review. A narration line whose spoken number the ledger has outgrown is flagged
 # in an issue instead, because re-recording needs the voice model on a local GPU (tools/hero_video/README.md).
 #
 # Opening the pull request needs "Allow GitHub Actions to create and approve pull requests" (Settings > Actions >
@@ -56,7 +57,7 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898+github-actions[bot]@users.noreply.github.com'
           git checkout -q -b "$branch"
-          git add docs/hero.mp4 docs/hero_poster.png docs/index.html tools/hero_video/shown.json
+          git add docs/hero.mp4 docs/hero_poster.png docs/hero_full.mp4 docs/hero_full_poster.png docs/index.html docs/contribute.html tools/hero_video/shown.json
           git commit -q -m "$title"
           git push -q -f origin "$branch"
           # an older weekly update still open is superseded by this one
