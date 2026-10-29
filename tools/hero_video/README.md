@@ -2,8 +2,8 @@
 
 Two narrated pixel-art videos, cut from the same scenes:
 
-- the **front page's**, 30 seconds: [`docs/hero.mp4`](../../docs/hero.mp4), poster [`docs/hero_poster.png`](../../docs/hero_poster.png);
-- the **contribute page's**, under a minute, with how the work is done and the whole walkthrough of a contribution:
+- the **front page's**, 36 seconds (the cipher, a short ledger, the whole contribute walkthrough): [`docs/hero.mp4`](../../docs/hero.mp4), poster [`docs/hero_poster.png`](../../docs/hero_poster.png);
+- the **contribute page's**, under a minute, adding how the work is done, the headline counts and the paper:
   [`docs/hero_full.mp4`](../../docs/hero_full.mp4), poster [`docs/hero_full_poster.png`](../../docs/hero_full_poster.png).
 
 Both open on a real cipher passage: the write-up's own photograph of it, then its figures deciphered group by group

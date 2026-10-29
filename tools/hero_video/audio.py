@@ -235,12 +235,6 @@ def sfx(cut):
             tr.note(ag + hv.AGENT['first'] + i * hv.AGENT['step'], .03, 79 + 2 * i, 'pulse', .025, d=.02, s=.3, r=.02)
         tr.bell(ag + hv.AGENT['first'] + len(hv.AGENT_LINES) * hv.AGENT['step'], 88, .06)    # sent back
         tr.bell(s + hv.CONTRIB_CREDIT + 1.75, 88, .06)                             # the star
-    if 'contribute_short' in starts:
-        s = starts['contribute_short']
-        tr.note(s + .9, .08, 55, 'tri', .1, d=.06, s=.2, r=.06)                    # handed to Claude Code
-        for i in range(3):
-            tr.note(s + 1.35 + i * .3, .03, 79 + 2 * i, 'pulse', .025, d=.02, s=.3, r=.02)
-        tr.bell(s + hv.SHORT['credit'] + 1.75, 88, .06)                            # the star
     return tr
 
 

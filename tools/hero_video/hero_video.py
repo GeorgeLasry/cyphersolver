@@ -1,4 +1,4 @@
-"""Render the site's two pixel-art videos: the 30-second front-page cut and the full cut on the contribute page.
+"""Render the site's two pixel-art videos: the front page's 36-second cut and the full cut on the contribute page.
 
     python tools/hero_video/hero_video.py                      # the front-page cut: docs/hero.mp4 + poster
     python tools/hero_video/hero_video.py --cut full           # the contribute page's: docs/hero_full.mp4 + poster
@@ -16,11 +16,12 @@ and ffmpeg on PATH.
 
 Storyboard of the front-page cut (seconds; CUTS below is the source of truth, and audio.py follows it):
   0-11.25     the week's cipher: the manuscript, then its figures deciphered against the key; the English
-  11.25-21.25 the ledger: the timeline fills while the years of silence count up; the oldest entry and a
-              failure, close up; the counts
-  21.25-26.25 contribute: a cipher handed to Claude Code; credited by name
-  26.25-30    pick a cipher, break it, write it up (the page puts its buttons over the end)
-The full cut adds "how it works" after the cipher, the paper, and the whole contribute walkthrough.
+  11.25-18.75 the ledger: the timeline fills while the years of silence count up; the oldest entry and a
+              failure, close up
+  18.75-32.5  how to contribute: pick from the catalogue or Read Further, paste the page into Claude Code, which
+              works through it and reports back; credited by name
+  32.5-36.25  pick a cipher, break it, write it up (the page puts its buttons over the end)
+The full cut adds "how it works" after the cipher, the headline counts and the paper.
 """
 import argparse
 import datetime
@@ -1364,56 +1365,6 @@ def scene_contribute(t):
     return a
 
 
-SHORT = dict(credit=2.4)      # seconds into the front-page cut's contribute scene when the credit replaces the hand-off
-
-
-def handoff_scene(t):
-    """The front-page cut's first beat: one catalogue cipher, as a card, handed to Claude Code, which starts on it."""
-    cv = Cv(night_bg())
-    text(cv, 'PICK A CIPHER', W // 2, 8, C['gold2'], 2, 'c', shadow=C['void'])
-    href, score, name = LG['cat_rows'][0]
-    num = re.search(r'(\d+)', href).group(1)
-    q = ease_out((t - .15) / .4)
-    x, y, w, h = 20, 34 + round((1 - q) * 8), 280, 34
-    if t > .15:
-        cv.rect(x + 3, y + 3, w, h, C['void'])
-        cv.rect(x, y, w, h, C['parch'])
-        cv.box(x, y, w, h, C['parchdk'])
-        text(cv, f'THE CATALOGUE · NO. {num}', x + 8, y + 7, C['clerk'])
-        text(cv, fit(name, w - 16), x + 8, y + 19, C['sepia'])
-    if t > .9:
-        p = ease_out((t - .9) / .3)
-        tx, ty, tw_, th = 40, 82, 240, 60
-        lay = Cv(cv.a())
-        browser(lay, tx, ty, tw_, th, 'CLAUDE CODE', dark=True)
-        text(lay, '>', tx + 8, ty + 17, C['gold'])
-        text(lay, fit(f'.../SOLVE/{num}.HTML', tw_ - 30), tx + 17, ty + 17, C['ink'])
-        for i, s in enumerate(AGENT_LINES[:3]):
-            ti = 1.35 + i * .3
-            if t < ti:
-                break
-            cv_y = ty + 29 + i * 10
-            lay.rect(tx + 9, cv_y + 2, 3, 3, C['green'] if t > ti + .3 else C['gold'])
-            text(lay, s, tx + 17, cv_y, C['ink2'])
-        cv.set(dissolve(cv.a(), lay.a(), p * 1.1))
-        if t < 1.3:
-            for k in range(3):                     # the card's address, flying down into the terminal
-                yy = round(y + h + (82 - y - h) * clamp((t - .9) / .4)) + k * 3
-                cv.rect(150 + k * 8, yy, 4, 2, C['gold'])
-    return cv.a()
-
-
-def scene_contribute_short(t):
-    if t < SHORT['credit']:
-        a = handoff_scene(t)
-    else:
-        a = credit_scene(t - SHORT['credit'])
-        if t < SHORT['credit'] + .35:
-            a = dissolve(handoff_scene(t), a, (t - SHORT['credit']) / .35)
-    dither(a, VIG, C['void'])
-    return a
-
-
 # ---------------------------------------------------------------- the close
 
 def scene_cta(t):
@@ -1435,19 +1386,22 @@ def scene_cta(t):
 FEATURED = 'featured'
 CUTS = dict(
     hero=dict(
-        dur=30.0, page='index.html', out='hero.mp4', poster='hero_poster.png', poster_at=6.4,
-        scenes=[(0.0, scene_decipher, 'decipher'), (11.25, ledger_scene(4.4, 7.0, False), 'ledger'),
-                (21.25, scene_contribute_short, 'contribute_short'), (26.25, scene_cta, 'cta')],
-        vo=[('a1', .6, True), ('a2', 3.1, True), ('b1', 11.6, True), ('e1', 17.75, True), ('f3', 23.75, True),
-            ('g1', 26.6, False)],
-        chapters=[(0, 'The letter'), (11.25, 'The ledger'), (21.25, 'Contribute')],
-        links=[(0, 11.25, FEATURED, ''), (11.25, 21.25, '#scoreboard', 'See the ledger'),
-               (21.25, 26.25, 'catalogue.html', 'Open the catalogue')],
+        # the ledger is short here (its counts are on the page under the video); contributing gets the whole
+        # walkthrough, because that is what the front page asks of a visitor
+        dur=36.25, page='index.html', out='hero.mp4', poster='hero_poster.png', poster_at=6.4,
+        scenes=[(0.0, scene_decipher, 'decipher'), (11.25, ledger_scene(4.4, 99, False), 'ledger'),
+                (18.75, scene_contribute, 'contribute'), (32.5, scene_cta, 'cta')],
+        vo=[('a1', .6, True), ('a2', 3.1, True), ('b1', 11.6, True), ('f1', 19.1, True), ('f2', 24.2, True),
+            ('f3', 29.55, True), ('g1', 32.85, False)],
+        chapters=[(0, 'The letter'), (11.25, 'The ledger'), (18.75, 'How to contribute')],
+        links=[(0, 11.25, FEATURED, ''), (11.25, 18.75, '#scoreboard', 'See the ledger'),
+               (18.75, 32.5, 'catalogue.html', 'Open the catalogue')],
         end=[('catalogue.html', 'Pick a cipher'), ('#random', 'Random cipher'), ('contribute.html', 'How to contribute')],
         # (section, chord, length in bars): see audio.py
         bars=[('intro', 'AM', 1), ('intro', 'F', 1), ('decipher', 'DM', 1), ('decipher', 'E', 1), ('decipher', 'AM', .5),
-              ('ledger', 'AM', 1), ('ledger', 'F', 1), ('ledger', 'C', 1), ('ledger', 'G', 1),
-              ('tune5', 'F', 1), ('tune6', 'G', 1), ('close', 'C', 1.5)]),
+              ('ledger', 'AM', 1), ('ledger', 'F', 1), ('ledger', 'G', 1),
+              ('tune1', 'F', 1), ('tune2', 'G', 1), ('tune3', 'C', 1), ('tune4', 'AM', 1), ('tune5', 'F', 1),
+              ('tune6', 'G', .5), ('close', 'C', 1.5)]),
     full=dict(
         dur=53.75, page='contribute.html', out='hero_full.mp4', poster='hero_full_poster.png', poster_at=6.4,
         scenes=[(0.0, scene_decipher, 'decipher'), (11.25, scene_method, 'method'),
