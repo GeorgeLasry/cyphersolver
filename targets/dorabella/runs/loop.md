@@ -73,3 +73,4 @@ structure (repeated bigrams, opposite flips), not a reading; a reading must reac
 | 64 | phonetic English with misreads | 25 sound classes, ≤ 6 slips | no power: 0/3 controls recovered |
 | 65 | columns and line-reversed order with misreads | ≤ 6 slips of either kind | columns negative; line-reversed segments better than its 4 shuffles (−3.22 vs −3.63..−4.88) but far below real English (−2.2..−2.6): rechecked in R65b |
 | 65b | line-reversed recheck | 2 more searches + 8 shuffles | negative: the two searches decode differently, and 2 of 8 shuffles segment better (−3.52, −3.67 vs −3.80, −3.85); R65's edge was chance |
+| 66 | per-line reversals (boustrophedon and the five other mixes) | strict, full power, 8 shuffles; 010 and 101 also with ≤ 6 slips | negative: all six above shuffles (−2.59..−2.79 vs −2.78..−3.10; any order keeps adjacency) but far below controls (−1.81..−1.97); words −3.9..−4.6 strict, −3.5..−3.7 with slips, the range of shuffles |

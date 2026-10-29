@@ -1,6 +1,7 @@
 # Dorabella: getting the Courage cards and Elgar's cipher sheets
 
-Status: drafts, not sent. Checked 29 Oct 2026; contact details from public listings, confirm before sending.
+Status: 28 Oct 2026, Padgett contact form sent (elgarsenigmasexposed.wordpress.com/contact/), awaiting reply. Others not sent yet.
+Contact details from public listings, checked 28 Oct 2026; confirm before sending.
 
 ## Where the material is likely to be
 

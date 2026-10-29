@@ -211,3 +211,11 @@ round	hypothesis	D	nulls	controls	verdict	best text	note
 64	phonetic English (25 classes) + misreads				no power		0/3 controls recovered
 65	columns / line-reversed order + misreads				negative / recheck		line-reversed word seg -3.22 vs 4 shuffles -3.63..-4.88
 65b	line-reversed + misreads recheck (2 searches, 8 more shuffles)	-2.523; -2.476	-2.810..-2.585		negative	orficinessteevengerclawthadsmorillingouterewentdeed	decodes disagree; word seg -3.85/-3.80 vs shuffles -4.89..-3.52 (2 of 8 better)
+66	per-line reversal 010: boustrophedon (line 2 reversed), strict, full power	-2.787	-3.104..-2.775	-1.971..-1.814 (R44)	negative		word seg -4.07 vs shuffles -5.28..-4.05
+66	per-line reversal 101: lines 1+3 reversed, strict, full power	-2.673	-3.104..-2.775	-1.971..-1.814 (R44)	negative		word seg -4.51 vs shuffles -5.28..-4.05
+66	per-line reversal 100: line 1 reversed, strict, full power	-2.69	-3.104..-2.775	-1.971..-1.814 (R44)	negative		word seg -3.89 vs shuffles -5.28..-4.05
+66	per-line reversal 001: line 3 reversed, strict, full power	-2.76	-3.104..-2.775	-1.971..-1.814 (R44)	negative		word seg -4.13 vs shuffles -5.28..-4.05
+66	per-line reversal 110: lines 1+2 reversed, strict, full power	-2.674	-3.104..-2.775	-1.971..-1.814 (R44)	negative		word seg -4.15 vs shuffles -5.28..-4.05
+66	per-line reversal 011: lines 2+3 reversed, strict, full power	-2.587	-3.104..-2.775	-1.971..-1.814 (R44)	negative		word seg -4.64 vs shuffles -5.28..-4.05
+66	boustrophedon 010 + misreads (<=6)	-2.632			negative		word seg -3.68; same range as R65b's non-reading decodes
+66	lines 1+3 reversed 101 + misreads (<=6)	-2.628			negative		word seg -3.49; same range as R65b shuffles (-3.52)
