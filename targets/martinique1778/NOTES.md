@@ -106,7 +106,3 @@ keys make it unnecessary.
 ## Prior art
 
 Catalogue sweep 28 Oct 2026: nothing published, not on DECODE. Not re-searched here.
-
-## Dudout corrections, 29 Oct 2026
-- Related, not this target: the 1778 Bouille letters (ANOM COL C8 A 77 ff. 88, 101; catalogue lead 1202) are reported read by Brice Dudout (455 of 458 words, 28 Oct 2026, reconstructed Bouille code validated on four held-out glossed letters incl. C8 A 80 ff. 113-115). His PR #171 (targets/bouille1778) is hidden while his GitHub account is suspended; the files have not reached this repository. The minister's minutes C8 A 77 ff. 31, 43 are in a different code (code M). The 1765 d'Ennery key (mercier1761) was corrected the same day.
-(Brice Dudout, research/dudout_2026-10-29/; his findings, not re-checked here.)
