@@ -1,0 +1,81 @@
+{
+ "1318": {
+  "vetting": {
+   "date": "2026-10-29",
+   "by": "claude vetting batch 03",
+   "seen": {
+    "kind": "scan",
+    "where": "BnF Gallica italien 1584, IIIF canvas f6 (= folio 2) via openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b100373864/f6 (full and zoomed crops viewed 29 Oct 2026); canvas f7 is its reverse/address leaf",
+    "extent": "One letter, about 14 lines, headed '1447 3 Januarii Urbini', signed Federicus Comes; clear Italian with two ciphered passages of about 2 lines each (mixed digit and letter-like signs, no word division)",
+    "cipher": "Short ciphered passages inside a clear Italian letter; a few interlinear glosses in a later hand over some cipher groups (e.g. 'novelle', 'bene', 'me'), but no continuous decipherment written on the leaf or on its reverse (address only: 'Illustri domino ... Francisco Sforcie vicecomiti')."
+   },
+   "prior_art": {
+    "decode": "Not on DECODE: known.py hits only repo candidate lists (research/venice_milan_print) and no DECODE view record for ital. 1584; Sforza ital. 1583 slips are R7899-R7908, not this folio.",
+    "tomokiyo": "No cryptiana page on 1447 Sforza/Montefeltro letters found by web search (results concerned only the 1478 Montefeltro conspiracy cipher).",
+    "lasry": "No Lasry paper or GL.htm entry on 1447 Sforza correspondence known to the repo or found by web search.",
+    "edition": "Web search found no edition of this letter; Mazzatinti 1887 inventory only lists it 'In cifre'. Printed Sforza regesta were not checked page by page.",
+    "literature": "Web search (Italian) for Federico da Montefeltro 1447 cifrata returned only Simonetta's 1478 conspiracy cipher and Parisi's work on Montefeltro tables (1451/1459, BAV Urb. lat.); nothing on this letter."
+   },
+   "key_check": "Parisi's Montefeltro keys (BAV Urb. lat. 998, DECODE R1413-R1468 in the repo) are 1450s and later and for the Count's own correspondence; not tried against these passages. The contemporary Sforza keys (Simonetta, 1440s) are not held. No key reads it on present evidence; passages are too short for a solver, so the lead stays open as a key-lookup/crib target.",
+   "duplicates": "known.py 'Montefeltro', 'Urbino', 'btv1b100373864': only the lead's own candidate row (research/venice_milan_print) and unrelated Montefeltro/Urbino hits (florence1429, oldest CANDIDATES for 1451/1459/1478); no catalogue or DECODE record for this letter.",
+   "verdict": "open"
+  }
+ },
+ "894": {
+  "unvetted": "Seen only AIS catalogue records (fetched 29 Oct): 6-1-26 Adorno to Ferdinand 21 Feb 1545 'teilweise chiffriert', printed in Austro-Turcica 1541-1552 pp.47-48 and Petritsch Regesten no.84 (edition may print the decipherment; not checked); 7-2-23 Zapolya 11 Nov 1547 'urspruenglich chiffriert, chiffriertes Schreiben liegt bei'; 6-1-28 Mailath 8 Mar 1545 and 3-1-11 news sheet 8 May 1533 'teilweise chiffriert'. Images are viewer-only (Reservatbestand, no script access); no scan viewed, so not vetted. Multi-item lead; would need splitting."
+ },
+ "895": {
+  "unvetted": "Article zobodat MGSL_125_0395-0399.pdf blocked by bot check (Anubis 'Making sure you're not a bot'); repository and shelfmark unknown, so nothing could be seen or searched; access is archive but cipher description is only a web summary."
+ },
+ "1265": {
+  "unvetted": "BDH viewer returned 403 and Europeana a Cloudflare challenge to scripts; no scan seen. Needs Chrome pass. Searches for a published reading found nothing, but not enough to close."
+ },
+ "1266": {
+  "unvetted": "BDH 403 / Europeana challenge; no scan seen. Prior art lead: Reales Perez and Pich-Ponce PP3 keys for Mary of Hungary, not yet tried; needs Chrome pass."
+ },
+ "1267": {
+  "unvetted": "BDH 403 / Europeana challenge; no scan seen. Web search found no reading of this volume; Sessa 1523-24 keys in repo (sessa1523, sessa1524) not yet tried against it."
+ },
+ "1268": {
+  "unvetted": "BDH 403 / Europeana challenge; no scan seen. Needs Chrome pass; candidate keys Lu.32 (Luo 2021), Bertomeu Masia 2009."
+ },
+ "1269": {
+  "unvetted": "BDH 403 / Europeana challenge; no scan seen. BNE says decipherment sits with the letters; unverified."
+ },
+ "1270": {
+  "unvetted": "BDH 403 / Europeana challenge; no scan seen. Lead notes overlap with Tomokiyo AlonsoSanchez.htm (1521-22) and catalogue 1014 (1497); needs per-letter dating before vetting."
+ },
+ "1271": {
+  "unvetted": "BDH 403 / Europeana challenge; no scan seen. Web search found no decipherment of Mirabel-Gondomar 1621-24; an Avisos 2023 article cites Mirabel letters as BNE Mss 18428 (different volume), shelfmark Mss/18619 unchecked."
+ },
+ "1272": {
+  "unvetted": "BDH 403 / Europeana challenge; no scan seen; no search done beyond ledgers."
+ },
+ "1273": {
+  "unvetted": "BDH 403 / Europeana challenge; no scan seen (ff. 13-15)."
+ },
+ "1274": {
+  "unvetted": "BDH 403 / Europeana challenge; no scan seen. Kolosova's thesis/2024 book on Charles V ciphers 1521-27 is the prior-art check still owed; web search could not confirm Ko.3 or readings of these letters."
+ },
+ "1275": {
+  "unvetted": "RAH record page blocked by bot check (Anubis); no record or scan seen. Rodriguez Villa edition not checked."
+ },
+ "1276": {
+  "unvetted": "RAH records blocked by bot check (Anubis); not seen."
+ },
+ "1277": {
+  "unvetted": "UB CONTENTdm page loads only as a JS shell (225 KB); no image or description of the cipher seen."
+ },
+ "1312": {
+  "unvetted": "Gallica ital. 1584 manifest is reachable (openapi.bnf.fr v3, 409 canvases, canvas = folio + about 4: f.2 on canvas 6) but folios 15-102 were not located or viewed in this session; the lead already notes f.16 is likely its decipherment, which needs checking per slip."
+ },
+ "1315": {
+  "unvetted": "Not viewed in this session (ital. 1584 ff. 163-296 would need canvas-by-canvas location); lead itself says the visible letters look clear."
+ },
+ "1316": {
+  "unvetted": "Not viewed in this session (ital. 1584 / 1585 folios not located); Amidani attribution unchecked."
+ },
+ "1317": {
+  "unvetted": "Not viewed in this session (ital. 1584 f.353, ital. 1585 ff. 28-71 not located); Domnina 2018 overlap unresolved."
+ }
+}

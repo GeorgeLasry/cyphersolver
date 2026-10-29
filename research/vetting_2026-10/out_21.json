@@ -1,0 +1,402 @@
+{
+ "1099": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 21",
+  "seen": {
+   "kind": "not online",
+   "where": "BRAH 98 (Jan-Mar 1931) pp. 363ff, Ibarra y Rodriguez, 'Catalogo del archivo de Lope de Soria', archive.org/details/boletindelareala98madr, plain-text OCR downloaded and read 29 Oct 2026 (entry text checked in the OCR); manuscript not online",
+   "extent": "3 leaves (3 hoj. fol.), 'casi toda en cifra'; Naples 29 Jan 1536",
+   "cipher": "BRAH 98 item 99: 'Casi toda en cifra; sin traducir', 3 leaves, original with autograph signature, seal; subject talks with the Venetian ambassadors. Printed catalogue only; no decipherment recorded with it."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE: known.py (Lope de Soria, Soria, plus the correspondent) searched the DECODE view dumps, Cryptoole snapshot and ledgers; the only DECODE Soria records are R9488-R9498 (Soria's outgoing 1523 letters, RAH Salazar A-28) and R9487; none is a letter to Soria. A web search for DECODE + Lope de Soria + cipher found no record of this archive.",
+   "tomokiyo": "Tomokiyo's 'Spanish ciphers during the reign of Charles V' page (copy in this repo, targets/vasto1527/prior/spanish2C_now.htm) read 29 Oct 2026: it lists Ko.6 (Soria, to the Emperor, 1523-27), Soria's Cipher 2 (Galende Diaz) and Luo's Lu.32 (Soria / Charles V / Comendador Mayor, 1532-39); no letter of this archive is read or cited. Web search (Tomokiyo + Lope de Soria + Venice/Genoa) found nothing further.",
+   "lasry": "No Lasry or HistoCrypt item on Lope de Soria's incoming correspondence found: searched DECODE + Lope de Soria + Ferdinand/Charles V 1535 and Lasry/Tomokiyo + Charles V + Soria; the Lasry-solved Charles V material found concerns 1547 Saint-Mauris and Renard, not this archive.",
+   "edition": "The 1931 catalogue itself says the cipher part is not translated ('sin traducir'). Rodriguez Villa, Italia desde la batalla de Pavia (1525-27) and Memorias para el saco de Roma print Soria letters of other years; Calendar of State Papers Spain (British History Online) calendars Soria's own despatches (e.g. 1528, 1535, May 1537), not this incoming letter. No edition of this letter found.",
+   "literature": "Galende Diaz, 'La correspondencia cifrada del embajador Lope de Soria', Hispania LII/181 (1992) pp. 493-520, is the study of his ciphers (listed in the RAH DBE entry and by Tomokiyo); not read here (no access), so whether it reproduces any of these letters is unknown. RAH DBE records the archive as RAH Coleccion Lope de Soria 9/1951-1954 and 9/7517-7520 with copies in Salazar, BNE ms. 917, Simancas and BL Add MS 28590 ff. (Soria-Charles V copies 1525-38); present location of the 1931 offered originals is therefore plausibly RAH, but not confirmed."
+  },
+  "key_check": "Held here: Soria's own keys A and B (targets/soria1523, soria1527; 1523-27, Soria to the Emperor), which are the wrong direction and years for an incoming letter, and not applied (no images). Named but not held (print only): Luo's Lu.32, used by Lope de Soria and Charles V in 1532-39 (Tomokiyo's page), and Galende Diaz's Soria cipher 2 (1992 appendix); Lu.32 is the first candidate once images are had. Not tested: no scan exists to test against.",
+  "duplicates": "known.py run on 'Lope de Soria' and 'Charles V': hits are only sibling leads of the same 1931 catalogue (other item numbers) and the outgoing-direction targets soria1523/soria1527 (Soria to Charles V), none the same letter; catalogue.json has no Soria incoming letter. Lead 1099 is item 99 only; item 103 (lead 1100) is a different letter (1537).",
+  "verdict": "open"
+ },
+ "1100": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 21",
+  "seen": {
+   "kind": "not online",
+   "where": "BRAH 98 (Jan-Mar 1931) pp. 363ff, Ibarra y Rodriguez, 'Catalogo del archivo de Lope de Soria', archive.org/details/boletindelareala98madr, plain-text OCR downloaded and read 29 Oct 2026 (entry text checked in the OCR); manuscript not online",
+   "extent": "2 leaves, 'casi toda en cifra'; Valladolid 21 Mar 1537",
+   "cipher": "BRAH 98 item 103: 'Casi toda en cifra, sin traduccion', original with autograph signature, 2 leaves, seal. Printed catalogue only; no decipherment recorded."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE: known.py (Lope de Soria, Soria, plus the correspondent) searched the DECODE view dumps, Cryptoole snapshot and ledgers; the only DECODE Soria records are R9488-R9498 (Soria's outgoing 1523 letters, RAH Salazar A-28) and R9487; none is a letter to Soria. A web search for DECODE + Lope de Soria + cipher found no record of this archive.",
+   "tomokiyo": "Tomokiyo's 'Spanish ciphers during the reign of Charles V' page (copy in this repo, targets/vasto1527/prior/spanish2C_now.htm) read 29 Oct 2026: it lists Ko.6 (Soria, to the Emperor, 1523-27), Soria's Cipher 2 (Galende Diaz) and Luo's Lu.32 (Soria / Charles V / Comendador Mayor, 1532-39); no letter of this archive is read or cited. Web search (Tomokiyo + Lope de Soria + Venice/Genoa) found nothing further.",
+   "lasry": "No Lasry or HistoCrypt item on Lope de Soria's incoming correspondence found: searched DECODE + Lope de Soria + Ferdinand/Charles V 1535 and Lasry/Tomokiyo + Charles V + Soria; the Lasry-solved Charles V material found concerns 1547 Saint-Mauris and Renard, not this archive.",
+   "edition": "The 1931 catalogue itself says the cipher part is not translated ('sin traducir'). Rodriguez Villa, Italia desde la batalla de Pavia (1525-27) and Memorias para el saco de Roma print Soria letters of other years; Calendar of State Papers Spain (British History Online) calendars Soria's own despatches (e.g. 1528, 1535, May 1537), not this incoming letter. No edition of this letter found.",
+   "literature": "Galende Diaz, 'La correspondencia cifrada del embajador Lope de Soria', Hispania LII/181 (1992) pp. 493-520, is the study of his ciphers (listed in the RAH DBE entry and by Tomokiyo); not read here (no access), so whether it reproduces any of these letters is unknown. RAH DBE records the archive as RAH Coleccion Lope de Soria 9/1951-1954 and 9/7517-7520 with copies in Salazar, BNE ms. 917, Simancas and BL Add MS 28590 ff. (Soria-Charles V copies 1525-38); present location of the 1931 offered originals is therefore plausibly RAH, but not confirmed."
+  },
+  "key_check": "Held here: Soria's own keys A and B (targets/soria1523, soria1527; 1523-27, Soria to the Emperor), which are the wrong direction and years for an incoming letter, and not applied (no images). Named but not held (print only): Luo's Lu.32, used by Lope de Soria and Charles V in 1532-39 (Tomokiyo's page), and Galende Diaz's Soria cipher 2 (1992 appendix); Lu.32 is the first candidate once images are had. Not tested: no scan exists to test against.",
+  "duplicates": "known.py run on 'Lope de Soria' and 'Charles V': hits are only sibling leads of the same 1931 catalogue (other item numbers) and the outgoing-direction targets soria1523/soria1527 (Soria to Charles V), none the same letter; catalogue.json has no Soria incoming letter. Item 103 only; item 99 is lead 1099.",
+  "verdict": "open"
+ },
+ "1101": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 21",
+  "seen": {
+   "kind": "not online",
+   "where": "BRAH 98 (Jan-Mar 1931) pp. 363ff, Ibarra y Rodriguez, 'Catalogo del archivo de Lope de Soria', archive.org/details/boletindelareala98madr, plain-text OCR downloaded and read 29 Oct 2026 (entry text checked in the OCR); manuscript not online",
+   "extent": "2 leaves cut down ('recortadas'); part cipher; Znaim last day of Feb 1535",
+   "cipher": "BRAH 98 item 120: 'Parte en cifra, sin traducir; en la 1a plana hay una linea en cifra con traduccion' (one cipher line translated on p. 1). That one line is a ready crib if the leaf is ever seen; the rest is untranslated."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE: known.py (Lope de Soria, Soria, plus the correspondent) searched the DECODE view dumps, Cryptoole snapshot and ledgers; the only DECODE Soria records are R9488-R9498 (Soria's outgoing 1523 letters, RAH Salazar A-28) and R9487; none is a letter to Soria. A web search for DECODE + Lope de Soria + cipher found no record of this archive.",
+   "tomokiyo": "Tomokiyo's 'Spanish ciphers during the reign of Charles V' page (copy in this repo, targets/vasto1527/prior/spanish2C_now.htm) read 29 Oct 2026: it lists Ko.6 (Soria, to the Emperor, 1523-27), Soria's Cipher 2 (Galende Diaz) and Luo's Lu.32 (Soria / Charles V / Comendador Mayor, 1532-39); no letter of this archive is read or cited. Web search (Tomokiyo + Lope de Soria + Venice/Genoa) found nothing further.",
+   "lasry": "No Lasry or HistoCrypt item on Lope de Soria's incoming correspondence found: searched DECODE + Lope de Soria + Ferdinand/Charles V 1535 and Lasry/Tomokiyo + Charles V + Soria; the Lasry-solved Charles V material found concerns 1547 Saint-Mauris and Renard, not this archive.",
+   "edition": "The 1931 catalogue itself says the cipher part is not translated ('sin traducir'). Rodriguez Villa, Italia desde la batalla de Pavia (1525-27) and Memorias para el saco de Roma print Soria letters of other years; Calendar of State Papers Spain (British History Online) calendars Soria's own despatches (e.g. 1528, 1535, May 1537), not this incoming letter. No edition of this letter found.",
+   "literature": "Galende Diaz, 'La correspondencia cifrada del embajador Lope de Soria', Hispania LII/181 (1992) pp. 493-520, is the study of his ciphers (listed in the RAH DBE entry and by Tomokiyo); not read here (no access), so whether it reproduces any of these letters is unknown. RAH DBE records the archive as RAH Coleccion Lope de Soria 9/1951-1954 and 9/7517-7520 with copies in Salazar, BNE ms. 917, Simancas and BL Add MS 28590 ff. (Soria-Charles V copies 1525-38); present location of the 1931 offered originals is therefore plausibly RAH, but not confirmed."
+  },
+  "key_check": "Held here: Soria's keys A/B (1523-27), wrong direction and period, not applied. No key for Ferdinand's cipher to the imperial ambassador at Venice in 1535-37 is held or known to me: Tomokiyo's page lists Ferdinand only as a later user of Charles V's cipher (1540s-50s). Candidates to try once images exist: Lu.32 (Soria / Charles V 1532-39) and the Figueroa-Leyva Lu.15. Not tested: no scan.",
+  "duplicates": "known.py run on 'Lope de Soria' and 'Ferdinand King of the Romans': hits are only sibling leads of the same 1931 catalogue (other item numbers) and the outgoing-direction targets soria1523/soria1527 (Soria to Charles V), none the same letter; catalogue.json has no Soria incoming letter. Item 120 only.",
+  "verdict": "open"
+ },
+ "1102": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 21",
+  "seen": {
+   "kind": "not online",
+   "where": "BRAH 98 (Jan-Mar 1931) pp. 363ff, Ibarra y Rodriguez, 'Catalogo del archivo de Lope de Soria', archive.org/details/boletindelareala98madr, plain-text OCR downloaded and read 29 Oct 2026 (entry text checked in the OCR); manuscript not online",
+   "extent": "4 leaves (1 blank), part cipher; Vienna 9 Apr 1535; separate translation sheet of 2 leaves",
+   "cipher": "BRAH 98 item 121: 'Parte en cifra, sin traducir' but followed by 'Traduccion en pliego aparte, 2 hoj. (1 en blanco)': the catalogue does not say what the separate sheet translates (the cipher or a non-Spanish part of the letter), so a decipherment sheet may exist with the letter; unresolved from the printed text alone."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE: known.py (Lope de Soria, Soria, plus the correspondent) searched the DECODE view dumps, Cryptoole snapshot and ledgers; the only DECODE Soria records are R9488-R9498 (Soria's outgoing 1523 letters, RAH Salazar A-28) and R9487; none is a letter to Soria. A web search for DECODE + Lope de Soria + cipher found no record of this archive.",
+   "tomokiyo": "Tomokiyo's 'Spanish ciphers during the reign of Charles V' page (copy in this repo, targets/vasto1527/prior/spanish2C_now.htm) read 29 Oct 2026: it lists Ko.6 (Soria, to the Emperor, 1523-27), Soria's Cipher 2 (Galende Diaz) and Luo's Lu.32 (Soria / Charles V / Comendador Mayor, 1532-39); no letter of this archive is read or cited. Web search (Tomokiyo + Lope de Soria + Venice/Genoa) found nothing further.",
+   "lasry": "No Lasry or HistoCrypt item on Lope de Soria's incoming correspondence found: searched DECODE + Lope de Soria + Ferdinand/Charles V 1535 and Lasry/Tomokiyo + Charles V + Soria; the Lasry-solved Charles V material found concerns 1547 Saint-Mauris and Renard, not this archive.",
+   "edition": "The 1931 catalogue itself says the cipher part is not translated ('sin traducir'). Rodriguez Villa, Italia desde la batalla de Pavia (1525-27) and Memorias para el saco de Roma print Soria letters of other years; Calendar of State Papers Spain (British History Online) calendars Soria's own despatches (e.g. 1528, 1535, May 1537), not this incoming letter. No edition of this letter found.",
+   "literature": "Galende Diaz, 'La correspondencia cifrada del embajador Lope de Soria', Hispania LII/181 (1992) pp. 493-520, is the study of his ciphers (listed in the RAH DBE entry and by Tomokiyo); not read here (no access), so whether it reproduces any of these letters is unknown. RAH DBE records the archive as RAH Coleccion Lope de Soria 9/1951-1954 and 9/7517-7520 with copies in Salazar, BNE ms. 917, Simancas and BL Add MS 28590 ff. (Soria-Charles V copies 1525-38); present location of the 1931 offered originals is therefore plausibly RAH, but not confirmed."
+  },
+  "key_check": "Held here: Soria's keys A/B (1523-27), wrong direction and period, not applied. No key for Ferdinand's cipher to the imperial ambassador at Venice in 1535-37 is held or known to me: Tomokiyo's page lists Ferdinand only as a later user of Charles V's cipher (1540s-50s). Candidates to try once images exist: Lu.32 (Soria / Charles V 1532-39) and the Figueroa-Leyva Lu.15. Not tested: no scan.",
+  "duplicates": "known.py run on 'Lope de Soria' and 'Ferdinand King of the Romans': hits are only sibling leads of the same 1931 catalogue (other item numbers) and the outgoing-direction targets soria1523/soria1527 (Soria to Charles V), none the same letter; catalogue.json has no Soria incoming letter. Item 121 only.",
+  "verdict": "open"
+ },
+ "1103": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 21",
+  "seen": {
+   "kind": "not online",
+   "where": "BRAH 98 (Jan-Mar 1931) pp. 363ff, Ibarra y Rodriguez, 'Catalogo del archivo de Lope de Soria', archive.org/details/boletindelareala98madr, plain-text OCR downloaded and read 29 Oct 2026 (entry text checked in the OCR); manuscript not online",
+   "extent": "2 leaves, one cipher passage ('trozo en cifra'); Vienna 28 May 1535",
+   "cipher": "BRAH 98 item 124: 'Trozo en cifra, sin traducir', original with autograph signature, 2 leaves. Subject: questioning of the protonotary Casal, Corsino and other prisoners. Printed catalogue only."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE: known.py (Lope de Soria, Soria, plus the correspondent) searched the DECODE view dumps, Cryptoole snapshot and ledgers; the only DECODE Soria records are R9488-R9498 (Soria's outgoing 1523 letters, RAH Salazar A-28) and R9487; none is a letter to Soria. A web search for DECODE + Lope de Soria + cipher found no record of this archive.",
+   "tomokiyo": "Tomokiyo's 'Spanish ciphers during the reign of Charles V' page (copy in this repo, targets/vasto1527/prior/spanish2C_now.htm) read 29 Oct 2026: it lists Ko.6 (Soria, to the Emperor, 1523-27), Soria's Cipher 2 (Galende Diaz) and Luo's Lu.32 (Soria / Charles V / Comendador Mayor, 1532-39); no letter of this archive is read or cited. Web search (Tomokiyo + Lope de Soria + Venice/Genoa) found nothing further.",
+   "lasry": "No Lasry or HistoCrypt item on Lope de Soria's incoming correspondence found: searched DECODE + Lope de Soria + Ferdinand/Charles V 1535 and Lasry/Tomokiyo + Charles V + Soria; the Lasry-solved Charles V material found concerns 1547 Saint-Mauris and Renard, not this archive.",
+   "edition": "The 1931 catalogue itself says the cipher part is not translated ('sin traducir'). Rodriguez Villa, Italia desde la batalla de Pavia (1525-27) and Memorias para el saco de Roma print Soria letters of other years; Calendar of State Papers Spain (British History Online) calendars Soria's own despatches (e.g. 1528, 1535, May 1537), not this incoming letter. No edition of this letter found.",
+   "literature": "Galende Diaz, 'La correspondencia cifrada del embajador Lope de Soria', Hispania LII/181 (1992) pp. 493-520, is the study of his ciphers (listed in the RAH DBE entry and by Tomokiyo); not read here (no access), so whether it reproduces any of these letters is unknown. RAH DBE records the archive as RAH Coleccion Lope de Soria 9/1951-1954 and 9/7517-7520 with copies in Salazar, BNE ms. 917, Simancas and BL Add MS 28590 ff. (Soria-Charles V copies 1525-38); present location of the 1931 offered originals is therefore plausibly RAH, but not confirmed."
+  },
+  "key_check": "Held here: Soria's keys A/B (1523-27), wrong direction and period, not applied. No key for Ferdinand's cipher to the imperial ambassador at Venice in 1535-37 is held or known to me: Tomokiyo's page lists Ferdinand only as a later user of Charles V's cipher (1540s-50s). Candidates to try once images exist: Lu.32 (Soria / Charles V 1532-39) and the Figueroa-Leyva Lu.15. Not tested: no scan.",
+  "duplicates": "known.py run on 'Lope de Soria' and 'Ferdinand King of the Romans': hits are only sibling leads of the same 1931 catalogue (other item numbers) and the outgoing-direction targets soria1523/soria1527 (Soria to Charles V), none the same letter; catalogue.json has no Soria incoming letter. Item 124 only (item 125 of 5 June 1535 is a Latin letter, not cipher).",
+  "verdict": "open"
+ },
+ "1104": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 21",
+  "seen": {
+   "kind": "not online",
+   "where": "BRAH 98 (Jan-Mar 1931) pp. 363ff, Ibarra y Rodriguez, 'Catalogo del archivo de Lope de Soria', archive.org/details/boletindelareala98madr, plain-text OCR downloaded and read 29 Oct 2026 (entry text checked in the OCR); manuscript not online",
+   "extent": "2 leaves, part cipher; Vienna 15 Jul 1535",
+   "cipher": "BRAH 98 item 126: 'Parte en cifra, sin traducir', 2 leaves, seal. Subject: Venetian intentions, arbitration, Montalcone and the Isonzo. Printed catalogue only."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE: known.py (Lope de Soria, Soria, plus the correspondent) searched the DECODE view dumps, Cryptoole snapshot and ledgers; the only DECODE Soria records are R9488-R9498 (Soria's outgoing 1523 letters, RAH Salazar A-28) and R9487; none is a letter to Soria. A web search for DECODE + Lope de Soria + cipher found no record of this archive.",
+   "tomokiyo": "Tomokiyo's 'Spanish ciphers during the reign of Charles V' page (copy in this repo, targets/vasto1527/prior/spanish2C_now.htm) read 29 Oct 2026: it lists Ko.6 (Soria, to the Emperor, 1523-27), Soria's Cipher 2 (Galende Diaz) and Luo's Lu.32 (Soria / Charles V / Comendador Mayor, 1532-39); no letter of this archive is read or cited. Web search (Tomokiyo + Lope de Soria + Venice/Genoa) found nothing further.",
+   "lasry": "No Lasry or HistoCrypt item on Lope de Soria's incoming correspondence found: searched DECODE + Lope de Soria + Ferdinand/Charles V 1535 and Lasry/Tomokiyo + Charles V + Soria; the Lasry-solved Charles V material found concerns 1547 Saint-Mauris and Renard, not this archive.",
+   "edition": "The 1931 catalogue itself says the cipher part is not translated ('sin traducir'). Rodriguez Villa, Italia desde la batalla de Pavia (1525-27) and Memorias para el saco de Roma print Soria letters of other years; Calendar of State Papers Spain (British History Online) calendars Soria's own despatches (e.g. 1528, 1535, May 1537), not this incoming letter. No edition of this letter found.",
+   "literature": "Galende Diaz, 'La correspondencia cifrada del embajador Lope de Soria', Hispania LII/181 (1992) pp. 493-520, is the study of his ciphers (listed in the RAH DBE entry and by Tomokiyo); not read here (no access), so whether it reproduces any of these letters is unknown. RAH DBE records the archive as RAH Coleccion Lope de Soria 9/1951-1954 and 9/7517-7520 with copies in Salazar, BNE ms. 917, Simancas and BL Add MS 28590 ff. (Soria-Charles V copies 1525-38); present location of the 1931 offered originals is therefore plausibly RAH, but not confirmed."
+  },
+  "key_check": "Held here: Soria's keys A/B (1523-27), wrong direction and period, not applied. No key for Ferdinand's cipher to the imperial ambassador at Venice in 1535-37 is held or known to me: Tomokiyo's page lists Ferdinand only as a later user of Charles V's cipher (1540s-50s). Candidates to try once images exist: Lu.32 (Soria / Charles V 1532-39) and the Figueroa-Leyva Lu.15. Not tested: no scan.",
+  "duplicates": "known.py run on 'Lope de Soria' and 'Ferdinand King of the Romans': hits are only sibling leads of the same 1931 catalogue (other item numbers) and the outgoing-direction targets soria1523/soria1527 (Soria to Charles V), none the same letter; catalogue.json has no Soria incoming letter. Item 126 only.",
+  "verdict": "open"
+ },
+ "1105": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 21",
+  "seen": {
+   "kind": "not online",
+   "where": "BRAH 98 (Jan-Mar 1931) pp. 363ff, Ibarra y Rodriguez, 'Catalogo del archivo de Lope de Soria', archive.org/details/boletindelareala98madr, plain-text OCR downloaded and read 29 Oct 2026 (entry text checked in the OCR); manuscript not online",
+   "extent": "2 leaves (1 blank), part cipher; Vienna 12 Oct 1535",
+   "cipher": "BRAH 98 item 129: 'Parte en cifra, sin traducir', original with autograph signature, 2 leaves. Subject: Turkish messengers, Hungarian truce, Trent sentence. Printed catalogue only."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE: known.py (Lope de Soria, Soria, plus the correspondent) searched the DECODE view dumps, Cryptoole snapshot and ledgers; the only DECODE Soria records are R9488-R9498 (Soria's outgoing 1523 letters, RAH Salazar A-28) and R9487; none is a letter to Soria. A web search for DECODE + Lope de Soria + cipher found no record of this archive.",
+   "tomokiyo": "Tomokiyo's 'Spanish ciphers during the reign of Charles V' page (copy in this repo, targets/vasto1527/prior/spanish2C_now.htm) read 29 Oct 2026: it lists Ko.6 (Soria, to the Emperor, 1523-27), Soria's Cipher 2 (Galende Diaz) and Luo's Lu.32 (Soria / Charles V / Comendador Mayor, 1532-39); no letter of this archive is read or cited. Web search (Tomokiyo + Lope de Soria + Venice/Genoa) found nothing further.",
+   "lasry": "No Lasry or HistoCrypt item on Lope de Soria's incoming correspondence found: searched DECODE + Lope de Soria + Ferdinand/Charles V 1535 and Lasry/Tomokiyo + Charles V + Soria; the Lasry-solved Charles V material found concerns 1547 Saint-Mauris and Renard, not this archive.",
+   "edition": "The 1931 catalogue itself says the cipher part is not translated ('sin traducir'). Rodriguez Villa, Italia desde la batalla de Pavia (1525-27) and Memorias para el saco de Roma print Soria letters of other years; Calendar of State Papers Spain (British History Online) calendars Soria's own despatches (e.g. 1528, 1535, May 1537), not this incoming letter. No edition of this letter found.",
+   "literature": "Galende Diaz, 'La correspondencia cifrada del embajador Lope de Soria', Hispania LII/181 (1992) pp. 493-520, is the study of his ciphers (listed in the RAH DBE entry and by Tomokiyo); not read here (no access), so whether it reproduces any of these letters is unknown. RAH DBE records the archive as RAH Coleccion Lope de Soria 9/1951-1954 and 9/7517-7520 with copies in Salazar, BNE ms. 917, Simancas and BL Add MS 28590 ff. (Soria-Charles V copies 1525-38); present location of the 1931 offered originals is therefore plausibly RAH, but not confirmed."
+  },
+  "key_check": "Held here: Soria's keys A/B (1523-27), wrong direction and period, not applied. No key for Ferdinand's cipher to the imperial ambassador at Venice in 1535-37 is held or known to me: Tomokiyo's page lists Ferdinand only as a later user of Charles V's cipher (1540s-50s). Candidates to try once images exist: Lu.32 (Soria / Charles V 1532-39) and the Figueroa-Leyva Lu.15. Not tested: no scan.",
+  "duplicates": "known.py run on 'Lope de Soria' and 'Ferdinand King of the Romans': hits are only sibling leads of the same 1931 catalogue (other item numbers) and the outgoing-direction targets soria1523/soria1527 (Soria to Charles V), none the same letter; catalogue.json has no Soria incoming letter. Item 129 only.",
+  "verdict": "open"
+ },
+ "1106": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 21",
+  "seen": {
+   "kind": "not online",
+   "where": "BRAH 98 (Jan-Mar 1931) pp. 363ff, Ibarra y Rodriguez, 'Catalogo del archivo de Lope de Soria', archive.org/details/boletindelareala98madr, plain-text OCR downloaded and read 29 Oct 2026 (entry text checked in the OCR); manuscript not online",
+   "extent": "2 leaves (1 blank), one passage 'en clave'; Prague 26 Apr 1537",
+   "cipher": "BRAH 98 item 137: 'Trozo en clave sin traducir', original with autograph signature (Ferdinandus), 2 leaves, seal. Printed catalogue only."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE: known.py (Lope de Soria, Soria, plus the correspondent) searched the DECODE view dumps, Cryptoole snapshot and ledgers; the only DECODE Soria records are R9488-R9498 (Soria's outgoing 1523 letters, RAH Salazar A-28) and R9487; none is a letter to Soria. A web search for DECODE + Lope de Soria + cipher found no record of this archive.",
+   "tomokiyo": "Tomokiyo's 'Spanish ciphers during the reign of Charles V' page (copy in this repo, targets/vasto1527/prior/spanish2C_now.htm) read 29 Oct 2026: it lists Ko.6 (Soria, to the Emperor, 1523-27), Soria's Cipher 2 (Galende Diaz) and Luo's Lu.32 (Soria / Charles V / Comendador Mayor, 1532-39); no letter of this archive is read or cited. Web search (Tomokiyo + Lope de Soria + Venice/Genoa) found nothing further.",
+   "lasry": "No Lasry or HistoCrypt item on Lope de Soria's incoming correspondence found: searched DECODE + Lope de Soria + Ferdinand/Charles V 1535 and Lasry/Tomokiyo + Charles V + Soria; the Lasry-solved Charles V material found concerns 1547 Saint-Mauris and Renard, not this archive.",
+   "edition": "The 1931 catalogue itself says the cipher part is not translated ('sin traducir'). Rodriguez Villa, Italia desde la batalla de Pavia (1525-27) and Memorias para el saco de Roma print Soria letters of other years; Calendar of State Papers Spain (British History Online) calendars Soria's own despatches (e.g. 1528, 1535, May 1537), not this incoming letter. No edition of this letter found.",
+   "literature": "Galende Diaz, 'La correspondencia cifrada del embajador Lope de Soria', Hispania LII/181 (1992) pp. 493-520, is the study of his ciphers (listed in the RAH DBE entry and by Tomokiyo); not read here (no access), so whether it reproduces any of these letters is unknown. RAH DBE records the archive as RAH Coleccion Lope de Soria 9/1951-1954 and 9/7517-7520 with copies in Salazar, BNE ms. 917, Simancas and BL Add MS 28590 ff. (Soria-Charles V copies 1525-38); present location of the 1931 offered originals is therefore plausibly RAH, but not confirmed."
+  },
+  "key_check": "Held here: Soria's keys A/B (1523-27), wrong direction and period, not applied. No key for Ferdinand's cipher to the imperial ambassador at Venice in 1535-37 is held or known to me: Tomokiyo's page lists Ferdinand only as a later user of Charles V's cipher (1540s-50s). Candidates to try once images exist: Lu.32 (Soria / Charles V 1532-39) and the Figueroa-Leyva Lu.15. Not tested: no scan.",
+  "duplicates": "known.py run on 'Lope de Soria' and 'Ferdinand King of the Romans': hits are only sibling leads of the same 1931 catalogue (other item numbers) and the outgoing-direction targets soria1523/soria1527 (Soria to Charles V), none the same letter; catalogue.json has no Soria incoming letter. Item 137 only.",
+  "verdict": "open"
+ },
+ "1107": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 21",
+  "seen": {
+   "kind": "not online",
+   "where": "BRAH 98 (Jan-Mar 1931) pp. 363ff, Ibarra y Rodriguez, 'Catalogo del archivo de Lope de Soria', archive.org/details/boletindelareala98madr, plain-text OCR downloaded and read 29 Oct 2026 (entry text checked in the OCR); manuscript not online",
+   "extent": "4 leaves (1 blank), 'gran parte en clave, no descifrada'; Naples 10 Sep 1523",
+   "cipher": "BRAH 98 item 173: 'Gran parte en clave, no descifrada', original with autograph signature, 4 leaves, seal; news of the war, payment of Soria's salary, 3,000 ducats sent. The catalogue prints the year as 'XDXXIII' (OCR/typo for MDXXIII). Printed catalogue only."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE: known.py (Lope de Soria, Soria, plus the correspondent) searched the DECODE view dumps, Cryptoole snapshot and ledgers; the only DECODE Soria records are R9488-R9498 (Soria's outgoing 1523 letters, RAH Salazar A-28) and R9487; none is a letter to Soria. A web search for DECODE + Lope de Soria + cipher found no record of this archive.",
+   "tomokiyo": "Tomokiyo's 'Spanish ciphers during the reign of Charles V' page (copy in this repo, targets/vasto1527/prior/spanish2C_now.htm) read 29 Oct 2026: it lists Ko.6 (Soria, to the Emperor, 1523-27), Soria's Cipher 2 (Galende Diaz) and Luo's Lu.32 (Soria / Charles V / Comendador Mayor, 1532-39); no letter of this archive is read or cited. Web search (Tomokiyo + Lope de Soria + Venice/Genoa) found nothing further.",
+   "lasry": "No Lasry or HistoCrypt item on Lope de Soria's incoming correspondence found: searched DECODE + Lope de Soria + Ferdinand/Charles V 1535 and Lasry/Tomokiyo + Charles V + Soria; the Lasry-solved Charles V material found concerns 1547 Saint-Mauris and Renard, not this archive.",
+   "edition": "The 1931 catalogue itself says the cipher part is not translated ('sin traducir'). Rodriguez Villa, Italia desde la batalla de Pavia (1525-27) and Memorias para el saco de Roma print Soria letters of other years; Calendar of State Papers Spain (British History Online) calendars Soria's own despatches (e.g. 1528, 1535, May 1537), not this incoming letter. No edition of this letter found.",
+   "literature": "Galende Diaz, 'La correspondencia cifrada del embajador Lope de Soria', Hispania LII/181 (1992) pp. 493-520, is the study of his ciphers (listed in the RAH DBE entry and by Tomokiyo); not read here (no access), so whether it reproduces any of these letters is unknown. RAH DBE records the archive as RAH Coleccion Lope de Soria 9/1951-1954 and 9/7517-7520 with copies in Salazar, BNE ms. 917, Simancas and BL Add MS 28590 ff. (Soria-Charles V copies 1525-38); present location of the 1931 offered originals is therefore plausibly RAH, but not confirmed."
+  },
+  "key_check": "Held here: Soria's own keys A and B (targets/soria1523, soria1527; 1523-27, Soria to the Emperor), which are the wrong direction and years for an incoming letter, and not applied (no images). Named but not held (print only): Kolosova's Ko.5, Charles de Lannoy's own cipher as viceroy of Naples 1523-24 (her book pp. 251-277, per Tomokiyo's page), the obvious candidate since this is a Lannoy autograph of Sep 1523; also Luo's Lu.32, used by Lope de Soria and Charles V in 1532-39 (Tomokiyo's page), and Galende Diaz's Soria cipher 2 (1992 appendix); Lu.32 is the first candidate once images are had. Not tested: no scan exists to test against.",
+  "duplicates": "known.py run on 'Lope de Soria' and 'Lannoy': hits are only sibling leads of the same 1931 catalogue (other item numbers) and the outgoing-direction targets soria1523/soria1527 (Soria to Charles V), none the same letter; catalogue.json has no Soria incoming letter. Item 173 only; Lannoy's instruction to Soria is the next item (174), not cipher.",
+  "verdict": "open"
+ },
+ "1108": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 21",
+  "seen": {
+   "kind": "not online",
+   "where": "BRAH 98 (Jan-Mar 1931) pp. 363ff, Ibarra y Rodriguez, 'Catalogo del archivo de Lope de Soria', archive.org/details/boletindelareala98madr, plain-text OCR downloaded and read 29 Oct 2026 (entry text checked in the OCR); manuscript not online",
+   "extent": "2 leaves (1 blank), 'en cifra y sin traducir'; Antonio de Leyva, 11 Jul 1528, place not given",
+   "cipher": "BRAH 98 item 204: 'En cifra y sin traducir', original with autograph signature, 2 leaves. Printed catalogue only; nothing else about content."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE: known.py (Lope de Soria, Soria, plus the correspondent) searched the DECODE view dumps, Cryptoole snapshot and ledgers; the only DECODE Soria records are R9488-R9498 (Soria's outgoing 1523 letters, RAH Salazar A-28) and R9487; none is a letter to Soria. A web search for DECODE + Lope de Soria + cipher found no record of this archive.",
+   "tomokiyo": "Tomokiyo's 'Spanish ciphers during the reign of Charles V' page (copy in this repo, targets/vasto1527/prior/spanish2C_now.htm) read 29 Oct 2026: it lists Ko.6 (Soria, to the Emperor, 1523-27), Soria's Cipher 2 (Galende Diaz) and Luo's Lu.32 (Soria / Charles V / Comendador Mayor, 1532-39); no letter of this archive is read or cited. Web search (Tomokiyo + Lope de Soria + Venice/Genoa) found nothing further.",
+   "lasry": "No Lasry or HistoCrypt item on Lope de Soria's incoming correspondence found: searched DECODE + Lope de Soria + Ferdinand/Charles V 1535 and Lasry/Tomokiyo + Charles V + Soria; the Lasry-solved Charles V material found concerns 1547 Saint-Mauris and Renard, not this archive.",
+   "edition": "The 1931 catalogue itself says the cipher part is not translated ('sin traducir'). Rodriguez Villa, Italia desde la batalla de Pavia (1525-27) and Memorias para el saco de Roma print Soria letters of other years; Calendar of State Papers Spain (British History Online) calendars Soria's own despatches (e.g. 1528, 1535, May 1537), not this incoming letter. No edition of this letter found.",
+   "literature": "Galende Diaz, 'La correspondencia cifrada del embajador Lope de Soria', Hispania LII/181 (1992) pp. 493-520, is the study of his ciphers (listed in the RAH DBE entry and by Tomokiyo); not read here (no access), so whether it reproduces any of these letters is unknown. RAH DBE records the archive as RAH Coleccion Lope de Soria 9/1951-1954 and 9/7517-7520 with copies in Salazar, BNE ms. 917, Simancas and BL Add MS 28590 ff. (Soria-Charles V copies 1525-38); present location of the 1931 offered originals is therefore plausibly RAH, but not confirmed."
+  },
+  "key_check": "Held here: Soria's keys A/B (1523-27), wrong correspondent, not applied. Named but not held (print only): Kolosova's Ko.17 (Leyva's syllabic cipher, 1527) and Ko.12 (1525), Luo's Lu.15 'Figueroa-Leyva' cipher (Leyva, Soria, Cifuentes, 1528-36 per Tomokiyo's page); Ko.17/Lu.15 are the first candidates. Not tested: no scan.",
+  "duplicates": "known.py run on 'Lope de Soria' and 'Leyva': hits are only sibling leads of the same 1931 catalogue (other item numbers) and the outgoing-direction targets soria1523/soria1527 (Soria to Charles V), none the same letter; catalogue.json has no Soria incoming letter. Item 204 only; the other Leyva leads (Charles V to Leyva 7 Aug 1527, the BNE twelve-letter set) are different documents.",
+  "verdict": "open"
+ },
+ "1109": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 21",
+  "seen": {
+   "kind": "not online",
+   "where": "BRAH 98 (Jan-Mar 1931) pp. 363ff, Ibarra y Rodriguez, 'Catalogo del archivo de Lope de Soria', archive.org/details/boletindelareala98madr, plain-text OCR downloaded and read 29 Oct 2026 (entry text checked in the OCR); manuscript not online",
+   "extent": "2 leaves (1 blank), one cipher passage; Marseille 2 Nov 1533",
+   "cipher": "BRAH 98 item 212: 'Trozo en cifra, sin traducir', 2 leaves, seal. Subject: consummation of the Pope's niece's marriage to the Duke of Orleans. Printed catalogue only."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE: known.py (Lope de Soria, Soria, plus the correspondent) searched the DECODE view dumps, Cryptoole snapshot and ledgers; the only DECODE Soria records are R9488-R9498 (Soria's outgoing 1523 letters, RAH Salazar A-28) and R9487; none is a letter to Soria. A web search for DECODE + Lope de Soria + cipher found no record of this archive.",
+   "tomokiyo": "Tomokiyo's 'Spanish ciphers during the reign of Charles V' page (copy in this repo, targets/vasto1527/prior/spanish2C_now.htm) read 29 Oct 2026: it lists Ko.6 (Soria, to the Emperor, 1523-27), Soria's Cipher 2 (Galende Diaz) and Luo's Lu.32 (Soria / Charles V / Comendador Mayor, 1532-39); no letter of this archive is read or cited. Web search (Tomokiyo + Lope de Soria + Venice/Genoa) found nothing further.",
+   "lasry": "No Lasry or HistoCrypt item on Lope de Soria's incoming correspondence found: searched DECODE + Lope de Soria + Ferdinand/Charles V 1535 and Lasry/Tomokiyo + Charles V + Soria; the Lasry-solved Charles V material found concerns 1547 Saint-Mauris and Renard, not this archive.",
+   "edition": "The 1931 catalogue itself says the cipher part is not translated ('sin traducir'). Rodriguez Villa, Italia desde la batalla de Pavia (1525-27) and Memorias para el saco de Roma print Soria letters of other years; Calendar of State Papers Spain (British History Online) calendars Soria's own despatches (e.g. 1528, 1535, May 1537), not this incoming letter. No edition of this letter found.",
+   "literature": "Galende Diaz, 'La correspondencia cifrada del embajador Lope de Soria', Hispania LII/181 (1992) pp. 493-520, is the study of his ciphers (listed in the RAH DBE entry and by Tomokiyo); not read here (no access), so whether it reproduces any of these letters is unknown. RAH DBE records the archive as RAH Coleccion Lope de Soria 9/1951-1954 and 9/7517-7520 with copies in Salazar, BNE ms. 917, Simancas and BL Add MS 28590 ff. (Soria-Charles V copies 1525-38); present location of the 1931 offered originals is therefore plausibly RAH, but not confirmed."
+  },
+  "key_check": "Held here: Soria's keys A/B, wrong correspondent and years, not applied; nothing for Cifuentes-to-Soria. Named but not held (print only): Luo's Lu.15 'Figueroa-Leyva' cipher, used by Cifuentes in 1533-36 (Tomokiyo's page), and Lu.7 (Cifuentes to Charles V, 1534, which Tomokiyo identified on R9963). Lu.15 is the first candidate. Not tested: no scan.",
+  "duplicates": "known.py run on 'Lope de Soria' and 'Cifuentes': hits are only sibling leads of the same 1931 catalogue (other item numbers) and the outgoing-direction targets soria1523/soria1527 (Soria to Charles V), none the same letter; catalogue.json has no Soria incoming letter. Item 212 only; targets/cifuentes1534 is a different letter (Cifuentes to Charles V, Rome 3 Sep 1534, AGS Estado 862, DECODE R9963).",
+  "verdict": "open"
+ },
+ "1110": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 21",
+  "seen": {
+   "kind": "not online",
+   "where": "BRAH 98 (Jan-Mar 1931) pp. 363ff, Ibarra y Rodriguez, 'Catalogo del archivo de Lope de Soria', archive.org/details/boletindelareala98madr, plain-text OCR downloaded and read 29 Oct 2026 (entry text checked in the OCR); manuscript not online",
+   "extent": "4 leaves (2 blank); several cipher passages, some translated in the margin; Rome 19 Aug 1536",
+   "cipher": "BRAH 98 item 214: 'Trozos en cifra, algunos sin traducir, otros traducidos al margen', original with autograph signature, 4 leaves (2 blank). Margin translations give cribs for the translated passages; the untranslated passages are the open part. Printed catalogue only; verdict stays open because the extent of the untranslated part is unknown without a scan."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE: known.py (Lope de Soria, Soria, plus the correspondent) searched the DECODE view dumps, Cryptoole snapshot and ledgers; the only DECODE Soria records are R9488-R9498 (Soria's outgoing 1523 letters, RAH Salazar A-28) and R9487; none is a letter to Soria. A web search for DECODE + Lope de Soria + cipher found no record of this archive.",
+   "tomokiyo": "Tomokiyo's 'Spanish ciphers during the reign of Charles V' page (copy in this repo, targets/vasto1527/prior/spanish2C_now.htm) read 29 Oct 2026: it lists Ko.6 (Soria, to the Emperor, 1523-27), Soria's Cipher 2 (Galende Diaz) and Luo's Lu.32 (Soria / Charles V / Comendador Mayor, 1532-39); no letter of this archive is read or cited. Web search (Tomokiyo + Lope de Soria + Venice/Genoa) found nothing further.",
+   "lasry": "No Lasry or HistoCrypt item on Lope de Soria's incoming correspondence found: searched DECODE + Lope de Soria + Ferdinand/Charles V 1535 and Lasry/Tomokiyo + Charles V + Soria; the Lasry-solved Charles V material found concerns 1547 Saint-Mauris and Renard, not this archive.",
+   "edition": "The 1931 catalogue itself says the cipher part is not translated ('sin traducir'). Rodriguez Villa, Italia desde la batalla de Pavia (1525-27) and Memorias para el saco de Roma print Soria letters of other years; Calendar of State Papers Spain (British History Online) calendars Soria's own despatches (e.g. 1528, 1535, May 1537), not this incoming letter. No edition of this letter found.",
+   "literature": "Galende Diaz, 'La correspondencia cifrada del embajador Lope de Soria', Hispania LII/181 (1992) pp. 493-520, is the study of his ciphers (listed in the RAH DBE entry and by Tomokiyo); not read here (no access), so whether it reproduces any of these letters is unknown. RAH DBE records the archive as RAH Coleccion Lope de Soria 9/1951-1954 and 9/7517-7520 with copies in Salazar, BNE ms. 917, Simancas and BL Add MS 28590 ff. (Soria-Charles V copies 1525-38); present location of the 1931 offered originals is therefore plausibly RAH, but not confirmed."
+  },
+  "key_check": "Held here: Soria's keys A/B, not applied (wrong correspondent). Named but not held (print only): Luo's Lu.15 (Cifuentes 1533-36). The margin translations would let Lu.15 be verified in one passage. Not tested: no scan.",
+  "duplicates": "known.py run on 'Lope de Soria' and 'Cifuentes': hits are only sibling leads of the same 1931 catalogue (other item numbers) and the outgoing-direction targets soria1523/soria1527 (Soria to Charles V), none the same letter; catalogue.json has no Soria incoming letter. Item 214 only; item 213 (31 Jan 1536, Cifuentes to Soria) is not marked cipher.",
+  "verdict": "open"
+ },
+ "1111": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 21",
+  "seen": {
+   "kind": "not online",
+   "where": "Cauchie and Van der Essen, Inventaire des archives farnesiennes de Naples (Brussels 1911), archive.org/details/inventairedesarc00cauc, plain-text OCR downloaded and read 29 Oct 2026 (entry, fascio heading and introduction on fascio 397/1624 checked); Naples manuscript not online",
+   "extent": "entry 104 (fascio 187): one very long letter of 20 Apr 1583 and Farnese's reply, 'chiffrees entierement, sans dechiffre'; in 1582 also ciphered minutes by Farnese",
+   "cipher": "Inventory entry 104: 'une tres longue lettre de l'ambassadeur et la reponse de Farnese, chiffrees entierement, sans dechiffre'. Printed inventory only; the inventory says no decipherment is with the letters."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE: known.py (Tassis, Farnese, Archivio di Stato di Napoli Carte Farnesiane) searched the DECODE view dumps, Cryptoole snapshot and repo ledgers with no record; web search 'DECODE Farnese cipher' found no Naples Carte Farnesiane holdings in DECODE.",
+   "tomokiyo": "Tomokiyo's Cryptiana pages in this repo (spanish2C_now.htm, GL.htm in targets/vasto1527/prior) searched 29 Oct 2026 for Farnese, Tassis, Mendoza, Parma: only Odoardo Farnese 1637 (BnF Baluze 156) and a Tassis 1594 BnF list appear; nothing on Alexander Farnese's Naples correspondence. Web search found no Tomokiyo page on it.",
+   "lasry": "No Lasry or HistoCrypt work on the Carte Farnesiane found: web searches (Farnese Naples cipher decipherment; Mendoza/Tassis/Farnese cipher; Philip II to Farnese 1590 cipher) returned only Cardinal Alessandro Farnese's 1540s ciphers (Vatican Challenge, Klee) and Mendoza's Simancas cipher (Jensen), not these items.",
+   "edition": "Cauchie and Van der Essen 1911 describe the series; Gachard, Correspondance de Philippe II and the Correspondance d'Alexandre Farnese publish other letters, not these; I did not find a printed text of this item. Gachard's Farnese-archive notes (Bull. Comm. royale d'histoire) were not checked.",
+   "literature": "J.-B. de Tassis, Spanish ambassador in Paris 1581-84, appears in Cauchie/Van der Essen; a web search (Tassis Farnese 1583 chiffre) found no study of the cipher itself."
+  },
+  "key_check": "Fascio 397 (per the inventory introduction and its items 232-245) holds interpretive tables for Margaret of Parma's correspondence, Alava (Paris), Parsons, Hugh Owen, Armenteros/Figueroa and Octavio Farnese: none is listed for Tassis (Paris), so no named key covers this item; nothing held in this repo either (not on DECODE). Cribs to look at: Brussels Manuscrits divers 874 (Tassis to Parma, 12 Jun 1584 decipherment) and 665, named in research/belgium_lux/README.md; not read here, so the Tassis cipher is not confirmed to be the same.",
+  "duplicates": "known.py run on Tassis, Farnese: hits are this lead, the BnF fr. 3029/lebel/sessa mentions of Tassis (other letters) and research/belgium_lux/README.md noting Brussels Manuscrits divers 874 (a 19th-century decipherment of Tassis to Parma 12 Jun 1584) and 665 (copy of Tassis to Philip II 1581-83); no duplicate of this letter.",
+  "verdict": "open"
+ },
+ "1112": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 21",
+  "seen": {
+   "kind": "not online",
+   "where": "Cauchie and Van der Essen, Inventaire des archives farnesiennes de Naples (Brussels 1911), archive.org/details/inventairedesarc00cauc, plain-text OCR downloaded and read 29 Oct 2026 (entry, fascio heading and introduction on fascio 397/1624 checked); Naples manuscript not online",
+   "extent": "entry 107 (fascio 187): three letters of 1588 'entierement chiffrees, non dechiffrees' within the Mendoza series 1587-88",
+   "cipher": "Inventory entry 107 (Mendoza 1587-88 series): 'Il y a trois lettres de 1588 entierement chiffrees, non dechiffrees.' Printed inventory only; the exact days are not given."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE: known.py (Mendoza, Farnese, Archivio di Stato di Napoli Carte Farnesiane) searched the DECODE view dumps, Cryptoole snapshot and repo ledgers with no record; web search 'DECODE Farnese cipher' found no Naples Carte Farnesiane holdings in DECODE.",
+   "tomokiyo": "Tomokiyo's Cryptiana pages in this repo (spanish2C_now.htm, GL.htm in targets/vasto1527/prior) searched 29 Oct 2026 for Farnese, Tassis, Mendoza, Parma: only Odoardo Farnese 1637 (BnF Baluze 156) and a Tassis 1594 BnF list appear; nothing on Alexander Farnese's Naples correspondence. Web search found no Tomokiyo page on it.",
+   "lasry": "No Lasry or HistoCrypt work on the Carte Farnesiane found: web searches (Farnese Naples cipher decipherment; Mendoza/Tassis/Farnese cipher; Philip II to Farnese 1590 cipher) returned only Cardinal Alessandro Farnese's 1540s ciphers (Vatican Challenge, Klee) and Mendoza's Simancas cipher (Jensen), not these items.",
+   "edition": "Cauchie and Van der Essen 1911 describe the series; Gachard, Correspondance de Philippe II and the Correspondance d'Alexandre Farnese publish other letters, not these; I did not find a printed text of this item. Gachard's Farnese-archive notes (Bull. Comm. royale d'histoire) were not checked.",
+   "literature": "Jensen (1964) deciphered Mendoza's Simancas despatches; nothing found on his letters in the Naples Farnese papers (web search 'Mendoza Farnese 1588 cipher Naples')."
+  },
+  "key_check": "Fascio 397 (per the inventory introduction and its items 232-245) holds interpretive tables for Margaret of Parma's correspondence, Alava (Paris), Parsons, Hugh Owen, Armenteros/Figueroa and Octavio Farnese: none is listed for Mendoza (Paris), so no named key covers this item; nothing held in this repo either (not on DECODE). Related but not applied: Mendoza's cipher with Philip II (Cg.13, 1587 general cipher) is partly held here in targets/mendoza1589/key_cg13_partial.tsv; whether Mendoza used Cg.13 with Farnese is unknown, and there is no scan to test it on. Jensen, Diplomacy and Dogmatism (1964) appendix explains a Mendoza code (1584-85), not held.",
+  "duplicates": "known.py run on Mendoza, Farnese: repo hits are targets/mendoza1589 (Philip II to Mendoza, BnF fr. 3641, 1589; the other direction, different documents) and unrelated Mendoza entries; no duplicate.",
+  "verdict": "open"
+ },
+ "1113": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 21",
+  "seen": {
+   "kind": "not online",
+   "where": "Cauchie and Van der Essen, Inventaire des archives farnesiennes de Naples (Brussels 1911), archive.org/details/inventairedesarc00cauc, plain-text OCR downloaded and read 29 Oct 2026 (entry, fascio heading and introduction on fascio 397/1624 checked); Naples manuscript not online",
+   "extent": "entry 109 (fascio 187): letters of 1588 from Rouen, entirely cipher; the inventory does not say whether deciphered",
+   "cipher": "Inventory entry 109: 'Lettres de Juan Yniguez a Alexandre Farnese (1588). Originaux. Ces lettres, ecrites de Rouen, sont entierement chiffrees.' No mention of a decipherment either way. Printed inventory only."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE: known.py (Yniguez, Farnese, Archivio di Stato di Napoli Carte Farnesiane) searched the DECODE view dumps, Cryptoole snapshot and repo ledgers with no record; web search 'DECODE Farnese cipher' found no Naples Carte Farnesiane holdings in DECODE.",
+   "tomokiyo": "Tomokiyo's Cryptiana pages in this repo (spanish2C_now.htm, GL.htm in targets/vasto1527/prior) searched 29 Oct 2026 for Farnese, Tassis, Mendoza, Parma: only Odoardo Farnese 1637 (BnF Baluze 156) and a Tassis 1594 BnF list appear; nothing on Alexander Farnese's Naples correspondence. Web search found no Tomokiyo page on it.",
+   "lasry": "No Lasry or HistoCrypt work on the Carte Farnesiane found: web searches (Farnese Naples cipher decipherment; Mendoza/Tassis/Farnese cipher; Philip II to Farnese 1590 cipher) returned only Cardinal Alessandro Farnese's 1540s ciphers (Vatican Challenge, Klee) and Mendoza's Simancas cipher (Jensen), not these items.",
+   "edition": "Cauchie and Van der Essen 1911 describe the series; Gachard, Correspondance de Philippe II and the Correspondance d'Alexandre Farnese publish other letters, not these; I did not find a printed text of this item. Gachard's Farnese-archive notes (Bull. Comm. royale d'histoire) were not checked.",
+   "literature": "Web search 'Juan Yniguez Rouen 1588 Farnese' found nothing on the man or his letters."
+  },
+  "key_check": "Fascio 397 (per the inventory introduction and its items 232-245) holds interpretive tables for Margaret of Parma's correspondence, Alava (Paris), Parsons, Hugh Owen, Armenteros/Figueroa and Octavio Farnese: none is listed for Yniguez (Rouen), so no named key covers this item; nothing held in this repo either (not on DECODE). Yniguez's cipher is unidentified; nothing to try.",
+  "duplicates": "known.py run on Yniguez, Farnese: only this lead (and its ia_pass2_c candidates.json copy); no other Yniguez record in the repo or DECODE dumps.",
+  "verdict": "open"
+ },
+ "1114": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 21",
+  "seen": {
+   "kind": "not online",
+   "where": "Cauchie and Van der Essen, Inventaire des archives farnesiennes de Naples (Brussels 1911), archive.org/details/inventairedesarc00cauc, plain-text OCR downloaded and read 29 Oct 2026 (entry, fascio heading and introduction on fascio 397/1624 checked); Naples manuscript not online",
+   "extent": "entry 133 (fascio 258): one letter of Philip II from the Pardo, 8 Oct 1584, 'entierement chiffree, sans dechiffre'",
+   "cipher": "Inventory entry 133: 'une lettre de Philippe II ecrite du Pardo, le 8 octobre 1584. Elle est entierement chiffree, sans dechiffre.' Printed inventory only."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE: known.py (Philip II, Farnese, Archivio di Stato di Napoli Carte Farnesiane) searched the DECODE view dumps, Cryptoole snapshot and repo ledgers with no record; web search 'DECODE Farnese cipher' found no Naples Carte Farnesiane holdings in DECODE.",
+   "tomokiyo": "Tomokiyo's Cryptiana pages in this repo (spanish2C_now.htm, GL.htm in targets/vasto1527/prior) searched 29 Oct 2026 for Farnese, Tassis, Mendoza, Parma: only Odoardo Farnese 1637 (BnF Baluze 156) and a Tassis 1594 BnF list appear; nothing on Alexander Farnese's Naples correspondence. Web search found no Tomokiyo page on it.",
+   "lasry": "No Lasry or HistoCrypt work on the Carte Farnesiane found: web searches (Farnese Naples cipher decipherment; Mendoza/Tassis/Farnese cipher; Philip II to Farnese 1590 cipher) returned only Cardinal Alessandro Farnese's 1540s ciphers (Vatican Challenge, Klee) and Mendoza's Simancas cipher (Jensen), not these items.",
+   "edition": "Cauchie and Van der Essen 1911 describe the series; Gachard, Correspondance de Philippe II and the Correspondance d'Alexandre Farnese publish other letters, not these; I did not find a printed text of this item. Gachard's Farnese-archive notes (Bull. Comm. royale d'histoire) were not checked. A BnF fr. 3620 note found in search lists 73 Philip II letters to Farnese 1590-93 with only one encrypted, a different series.",
+   "literature": "Philip II to Farnese 1584 (Pardo, after the fall of Ghent) not found in the Correspondance de Philippe II editions I could search; nothing on the cipher."
+  },
+  "key_check": "Fascio 397 (per the inventory introduction and its items 232-245) holds interpretive tables for Margaret of Parma's correspondence, Alava (Paris), Parsons, Hugh Owen, Armenteros/Figueroa and Octavio Farnese: none is listed for Philip II to Farnese, so no named key covers this item; nothing held in this repo either (not on DECODE). Philip II's general cipher of the period is Cg.13 (1587; Tomokiyo, Devos 1950): the partial table held in targets/mendoza1589/key_cg13_partial.tsv postdates this letter by three years and cannot be assumed; not applied, no scan.",
+  "duplicates": "known.py run on Philip II, Farnese, Pardo 1584: no other record of this letter; catalogue.json 621 (Alexander Farnese to Philip II, 1582-83) is the opposite direction and different years.",
+  "verdict": "open"
+ },
+ "1115": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 21",
+  "seen": {
+   "kind": "not online",
+   "where": "Cauchie and Van der Essen, Inventaire des archives farnesiennes de Naples (Brussels 1911), archive.org/details/inventairedesarc00cauc, plain-text OCR downloaded and read 29 Oct 2026 (entry, fascio heading and introduction on fascio 397/1624 checked); Naples manuscript not online",
+   "extent": "entry 136 (fascio 258): two long letters, 1 Oct and 11 Nov 1590, 'chiffrees, sans dechiffre (triplicada)'",
+   "cipher": "Inventory: 'Deux longues lettres du roi (1er octobre et 11 novembre 1590), chiffrees, sans dechiffre (triplicada).' Triplicate copies mean the same text three times, which helps any key reconstruction. Printed inventory only."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE: known.py (Philip II, Farnese, Archivio di Stato di Napoli Carte Farnesiane) searched the DECODE view dumps, Cryptoole snapshot and repo ledgers with no record; web search 'DECODE Farnese cipher' found no Naples Carte Farnesiane holdings in DECODE.",
+   "tomokiyo": "Tomokiyo's Cryptiana pages in this repo (spanish2C_now.htm, GL.htm in targets/vasto1527/prior) searched 29 Oct 2026 for Farnese, Tassis, Mendoza, Parma: only Odoardo Farnese 1637 (BnF Baluze 156) and a Tassis 1594 BnF list appear; nothing on Alexander Farnese's Naples correspondence. Web search found no Tomokiyo page on it.",
+   "lasry": "No Lasry or HistoCrypt work on the Carte Farnesiane found: web searches (Farnese Naples cipher decipherment; Mendoza/Tassis/Farnese cipher; Philip II to Farnese 1590 cipher) returned only Cardinal Alessandro Farnese's 1540s ciphers (Vatican Challenge, Klee) and Mendoza's Simancas cipher (Jensen), not these items.",
+   "edition": "Cauchie and Van der Essen 1911 describe the series; Gachard, Correspondance de Philippe II and the Correspondance d'Alexandre Farnese publish other letters, not these; I did not find a printed text of this item. Gachard's Farnese-archive notes (Bull. Comm. royale d'histoire) were not checked.",
+   "literature": "Search 'Philip II Farnese October 1590 cipher Pardo' found Viete's 1590 break of a different Spanish cipher and the BnF fr. 3620 note; no study of these two letters."
+  },
+  "key_check": "Fascio 397 (per the inventory introduction and its items 232-245) holds interpretive tables for Margaret of Parma's correspondence, Alava (Paris), Parsons, Hugh Owen, Armenteros/Figueroa and Octavio Farnese: none is listed for Philip II to Farnese, so no named key covers this item; nothing held in this repo either (not on DECODE). Cg.13 partial table (targets/mendoza1589) is from 1587-89 and could be the right family; not applied, no scan. Triplicate copies are an extra check for any attempt.",
+  "duplicates": "known.py run on Philip II, Farnese, 1590: no other record of these letters; the BnF fr. 3620 Philip II to Farnese series (1590-93) found by search is a separate copy set whose cipher status was not checked.",
+  "verdict": "open"
+ },
+ "1116": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 21",
+  "seen": {
+   "kind": "not online",
+   "where": "Cauchie and Van der Essen, Inventaire des archives farnesiennes de Naples (Brussels 1911), archive.org/details/inventairedesarc00cauc, plain-text OCR downloaded and read 29 Oct 2026 (entry, fascio heading and introduction on fascio 397/1624 checked); Naples manuscript not online",
+   "extent": "entry 260 (fascio 404): three letters of 1576-1584, 'chiffrees, mais le dechiffre est perdu'",
+   "cipher": "Inventory entry 260: 'Trois lettres sont chiffrees, mais le dechiffre est perdu.' Alexander Farnese to Cardinal Farnese, 1576-84, Netherlands matters. Printed inventory only; individual dates are not given."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE: known.py (Alexander Farnese, Farnese, Archivio di Stato di Napoli Carte Farnesiane) searched the DECODE view dumps, Cryptoole snapshot and repo ledgers with no record; web search 'DECODE Farnese cipher' found no Naples Carte Farnesiane holdings in DECODE.",
+   "tomokiyo": "Tomokiyo's Cryptiana pages in this repo (spanish2C_now.htm, GL.htm in targets/vasto1527/prior) searched 29 Oct 2026 for Farnese, Tassis, Mendoza, Parma: only Odoardo Farnese 1637 (BnF Baluze 156) and a Tassis 1594 BnF list appear; nothing on Alexander Farnese's Naples correspondence. Web search found no Tomokiyo page on it.",
+   "lasry": "No Lasry or HistoCrypt work on the Carte Farnesiane found: web searches (Farnese Naples cipher decipherment; Mendoza/Tassis/Farnese cipher; Philip II to Farnese 1590 cipher) returned only Cardinal Alessandro Farnese's 1540s ciphers (Vatican Challenge, Klee) and Mendoza's Simancas cipher (Jensen), not these items.",
+   "edition": "Cauchie and Van der Essen 1911 describe the series; Gachard, Correspondance de Philippe II and the Correspondance d'Alexandre Farnese publish other letters, not these; I did not find a printed text of this item. Gachard's Farnese-archive notes (Bull. Comm. royale d'histoire) were not checked.",
+   "literature": "Search 'Alexander Farnese cardinal Farnese letters cipher 1576-1584' found nothing on these letters."
+  },
+  "key_check": "Fascio 397 (per the inventory introduction and its items 232-245) holds interpretive tables for Margaret of Parma's correspondence, Alava (Paris), Parsons, Hugh Owen, Armenteros/Figueroa and Octavio Farnese: none is listed for Farnese to his uncle, so no named key covers this item; nothing held in this repo either (not on DECODE). Farnese's own cipher with his mother (fascio 1624, 1578-79, with decipherments preserved in the fascio) could be tested against these letters if the 1578-79 key is photographed; not held.",
+  "duplicates": "known.py run on Alexander Farnese, Cardinal Farnese, 1576-1584: hits are the unrelated Vatican Challenge Part 5 (Cardinal Alessandro Farnese 1541-42, targets/vatican5) and catalogue 621 (Farnese to Philip II); not the same material.",
+  "verdict": "open"
+ },
+ "1117": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 21",
+  "seen": {
+   "kind": "not online",
+   "where": "Cauchie and Van der Essen, Inventaire des archives farnesiennes de Naples (Brussels 1911), archive.org/details/inventairedesarc00cauc, plain-text OCR downloaded and read 29 Oct 2026 (entry, fascio heading and introduction on fascio 397/1624 checked); Naples manuscript not online",
+   "extent": "entry 1101 (fascio 1671): voluminous bundle of billets from Paris, 1588, 'entierement chiffres, sans dechiffre'",
+   "cipher": "Inventory: 'Liasse volumineuse de billets de Mazio, adresses a Farnese, de Paris (1588). Originaux. Entierement chiffres, sans dechiffre.' Printed inventory only. A bundle of billets would be a good statistical sample if ever imaged."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE: known.py (Mazio, Farnese, Archivio di Stato di Napoli Carte Farnesiane) searched the DECODE view dumps, Cryptoole snapshot and repo ledgers with no record; web search 'DECODE Farnese cipher' found no Naples Carte Farnesiane holdings in DECODE.",
+   "tomokiyo": "Tomokiyo's Cryptiana pages in this repo (spanish2C_now.htm, GL.htm in targets/vasto1527/prior) searched 29 Oct 2026 for Farnese, Tassis, Mendoza, Parma: only Odoardo Farnese 1637 (BnF Baluze 156) and a Tassis 1594 BnF list appear; nothing on Alexander Farnese's Naples correspondence. Web search found no Tomokiyo page on it.",
+   "lasry": "No Lasry or HistoCrypt work on the Carte Farnesiane found: web searches (Farnese Naples cipher decipherment; Mendoza/Tassis/Farnese cipher; Philip II to Farnese 1590 cipher) returned only Cardinal Alessandro Farnese's 1540s ciphers (Vatican Challenge, Klee) and Mendoza's Simancas cipher (Jensen), not these items.",
+   "edition": "Cauchie and Van der Essen 1911 describe the series; Gachard, Correspondance de Philippe II and the Correspondance d'Alexandre Farnese publish other letters, not these; I did not find a printed text of this item. Gachard's Farnese-archive notes (Bull. Comm. royale d'histoire) were not checked.",
+   "literature": "Search 'Mazio Paris 1588 Farnese billets' found nothing on him in the Ligue literature reachable by search."
+  },
+  "key_check": "Fascio 397 (per the inventory introduction and its items 232-245) holds interpretive tables for Margaret of Parma's correspondence, Alava (Paris), Parsons, Hugh Owen, Armenteros/Figueroa and Octavio Farnese: none is listed for Mazio, so no named key covers this item; nothing held in this repo either (not on DECODE). Mazio is otherwise unknown to me, so no cipher family is suggested.",
+  "duplicates": "known.py run on Mazio, Farnese, Paris 1588: only this lead and its candidates.json copy.",
+  "verdict": "open"
+ },
+ "1118": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 21",
+  "seen": {
+   "kind": "not online",
+   "where": "Cauchie and Van der Essen, Inventaire des archives farnesiennes de Naples (Brussels 1911), archive.org/details/inventairedesarc00cauc, plain-text OCR downloaded and read 29 Oct 2026 (entry, fascio heading and introduction on fascio 397/1624 checked); Naples manuscript not online",
+   "extent": "entry 1162 (fascio 1678): letters of 1592 from Spa, 'chiffrees, non dechiffrees'",
+   "cipher": "Inventory: 'Lettres d'Adonio Salvi, a Farnese (Spa, 1592). Chiffrees, non dechiffrees.' Printed inventory only; Salvi also has a non-cipher entry 1729 (letters 1592-93, private matters)."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE: known.py (Salvi, Farnese, Archivio di Stato di Napoli Carte Farnesiane) searched the DECODE view dumps, Cryptoole snapshot and repo ledgers with no record; web search 'DECODE Farnese cipher' found no Naples Carte Farnesiane holdings in DECODE.",
+   "tomokiyo": "Tomokiyo's Cryptiana pages in this repo (spanish2C_now.htm, GL.htm in targets/vasto1527/prior) searched 29 Oct 2026 for Farnese, Tassis, Mendoza, Parma: only Odoardo Farnese 1637 (BnF Baluze 156) and a Tassis 1594 BnF list appear; nothing on Alexander Farnese's Naples correspondence. Web search found no Tomokiyo page on it.",
+   "lasry": "No Lasry or HistoCrypt work on the Carte Farnesiane found: web searches (Farnese Naples cipher decipherment; Mendoza/Tassis/Farnese cipher; Philip II to Farnese 1590 cipher) returned only Cardinal Alessandro Farnese's 1540s ciphers (Vatican Challenge, Klee) and Mendoza's Simancas cipher (Jensen), not these items.",
+   "edition": "Cauchie and Van der Essen 1911 describe the series; Gachard, Correspondance de Philippe II and the Correspondance d'Alexandre Farnese publish other letters, not these; I did not find a printed text of this item. Gachard's Farnese-archive notes (Bull. Comm. royale d'histoire) were not checked.",
+   "literature": "Search 'Adonio Salvi Spa 1592 Farnese cipher' found nothing on Salvi or the letters."
+  },
+  "key_check": "Fascio 397 (per the inventory introduction and its items 232-245) holds interpretive tables for Margaret of Parma's correspondence, Alava (Paris), Parsons, Hugh Owen, Armenteros/Figueroa and Octavio Farnese: none is listed for Salvi, so no named key covers this item; nothing held in this repo either (not on DECODE). Nothing held for Salvi.",
+  "duplicates": "known.py run on Salvi, Adonio Salvi, Farnese, Spa 1592: only this lead (other Salvi hits are the unrelated Salviati targets).",
+  "verdict": "open"
+ }
+}

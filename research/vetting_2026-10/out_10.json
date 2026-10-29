@@ -1,0 +1,98 @@
+{
+ "1428": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 10",
+  "seen": {
+   "kind": "scan",
+   "where": "CONTENTdm IIIF images of chc0347 item 11716 (pageptr 11714, 11715), cdm17191.contentdm.oclc.org, both pages viewed 29 Oct 2026",
+   "extent": "2 pages of letter in plain Spanish, signed J. Norma, 56 New St., New York; about 20 lines of key on page 2",
+   "cipher": "No ciphertext on either page: the letter is in clear Spanish and ends with a sheet headed 'Clave' that lists code words in clear (Habana = Maximo Gomez, Matanzas = Presidente Cisneros o Gobierno, Cardenas = Rafael Cabrera, Nioto/Nispero/Nivel/Nido/Noche/Dia/Zafra/Nocivo/Abundancia/Escaso = stock sentences), a name-and-phrase nomenclator for later messages; the key is on the same sheet, no decipherment needed."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE; known.py (chc0347, Norma) found only this lead in leads.json and the DPLA sweep files.",
+   "tomokiyo": "No Cuban independence-war page on Tomokiyo cryptiana turned up in web searches of 29 Oct 2026 on Norma, Clave, Gomez.",
+   "lasry": "No Lasry/HistoCrypt item on 1890s Cuban revolutionary codes found in the same searches.",
+   "edition": "Searches (Norma Clave Gomez 1894 Estrada Palma Castillo; CHC finding aid chc0347.pdf in results) found no edition printing this letter or its clave.",
+   "literature": "Three web searches (Cuban Heritage Collection Norma clave; Gomez Estrada Palma 1894 cifrada; Fernandez Cavada codes) found no study of this letter; catalogue tag 'Ciphers' reflects the clave sheet only."
+  },
+  "key_check": "Nothing to apply: the clave is written out in clear on the same leaf and covers only a few city/person substitutions and ten stock phrases; no ciphertext group exists that a key would read.",
+  "duplicates": "known.py 'chc0347' 'Norma': only the lead itself and access_uncertain.md; no catalogue or DECODE twin; correspondents Norma/Gomez not in ledgers.",
+  "verdict": "not_cipher",
+  "closed": "Both pages viewed: plain Spanish letter with a nomenclator list given in clear (a clave), no enciphered text; nothing to solve."
+ },
+ "1435": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 10",
+  "seen": {
+   "kind": "scan",
+   "where": "CONTENTdm IIIF images of amerrevsc item 1888 (pageptr 1886, 1887), digital.tcl.sc.edu, both pages viewed 29 Oct 2026",
+   "extent": "2 pages; about 12 numeric code groups on page 1 and 5 on page 2 (arabic number + a/b + Roman numeral, e.g. '134,a,VI'), the rest plain English",
+   "cipher": "English letter of Paris 7 Dec 1778 with a numeric/Roman-numeral nomenclator; above every code group a contemporary hand has written the plaintext word in ink (e.g. 'friends', 'plunder', 'Consulship', 'Congress', 'brother', 'overture'), so the decipherment is interlined on the leaf."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE; known.py 'Laurens' 'Arthur Lee' found no record for this letter (only unrelated Laurens mentions in targets/lovell1781, pcc1780).",
+   "tomokiyo": "Web search 29 Oct 2026 on Lee cipher letters 1778 found no Tomokiyo page for this letter.",
+   "lasry": "No Lasry item on Arthur Lee's 1778 cipher turned up in searches of 29 Oct 2026.",
+   "edition": "Interlinear plaintext on the original; Papers of Henry Laurens vol. 14 (catalogued as covering Jul-Dec 1778) is the probable printed edition, not opened; Founders Online search did not return the letter.",
+   "literature": "Three web searches (Lee-Laurens 7 Dec 1778 cipher; Lee cipher Roman numerals interlined; Burnett Letters of Members) found only background on Lee's ciphers (Franklin Papers note on Lee's pocket-dictionary cipher, Burnett key manuscript)."
+  },
+  "key_check": "No key needed: the plaintext is written over the code groups, so the vocabulary can be read off the leaf. Lee's 1779 'cipher code' (NYPL) and Burnett's collected Lee keys not applied here; the held repo keys (targets/lovell1781, pcc1780: Adams/Laurens/Franklin/Jay alphabets) are a different (letter-column) system.",
+  "duplicates": "known.py 'Laurens' 'Arthur Lee' 'amerrevsc': only the lead itself and unrelated Laurens mentions; no catalogue entry for the 7 Dec 1778 letter.",
+  "verdict": "read",
+  "closed": "Decipherment already interlined on the original by a contemporary hand and probably printed in the Laurens Papers; nothing left to solve without a key hunt."
+ },
+ "1427": {
+  "unvetted": "Viewed 29 Oct 2026: key sheet 2876 (CHC IIIF, 2 pp: five numbered symbol alphabets A-Z with homophones, hand-drawn, a genuine cipher key) and telegram 2924 (plain English; only says despatches 'in cyphers' of 25 June arrived). Not viewed: the four tagged letters 1719, 1956, 2200, 2543 and list 2912 (no pageptr via API), so extent and whether coded passages are present or already glossed is unknown. Search snippet from CHC finding aid says some Fernandez Cavada letters 'written in code' have been transcribed and use the code name 'Netts' for Emilio: prior art on these letters must be checked in chc5006.pdf before the block is written."
+ },
+ "1430": {
+  "unvetted": "Viewed page 2 of 4 (ONWT 1580) only: plain English letter, no code groups on that leaf; the coded names and their glosses are on the address side (page 3/4) which was not viewed. Only one searched check done (known.py)."
+ },
+ "1431": {
+  "unvetted": "Viewed front (p16066coll13 3131): a halftone of a printed plate (infernal-machine woodcuts) with about 6 lines of a symbol cipher below, i.e. a printed reproduction from a published trial account, not the original manuscript; back (3132) not viewed; Pittman's 1865 Trials for Treason at Indianapolis likely prints and reads it but was not opened; two web searches found no decipherment."
+ },
+ "1429": {
+  "unvetted": "CPL images 50874-50885 returned 404 from IIIF; scans not seen, access not archive; Zamboni note and Cleveland description read (cipher letters 1807 Barlow to Grenville). Grenville/Dropmore not searched. Only known.py run for this lead in this batch; fewer than the three required searches done."
+ },
+ "1432": {
+  "unvetted": "BSU repository IIIF returned 501, scan not seen; only title 'Coded letter' (29 Sep 1864 per image labels HCHS_L_18640929, not 1862) known. Only known.py run for this lead in this batch; fewer than the three required searches done."
+ },
+ "1433": {
+  "unvetted": "Lehigh page returned 429 and no image obtained; not viewed. Only known.py run for this lead in this batch; fewer than the three required searches done."
+ },
+ "1434": {
+  "unvetted": "ldr.lafayette.edu returned 403 to curl; scans not seen; PGW print not searched. Only known.py run for this lead in this batch; fewer than the three required searches done."
+ },
+ "1436": {
+  "unvetted": "digitalmaryland IIIF returned 501/404; images not seen; FRUS 1903 not checked. Only known.py run for this lead in this batch; fewer than the three required searches done."
+ },
+ "1437": {
+  "unvetted": "texashistory.unt.edu page fetched (200) but eight telegram images and the commercial code not examined. Only known.py run for this lead in this batch; fewer than the three required searches done."
+ },
+ "1438": {
+  "unvetted": "NYPL item returned 951 bytes (JS shell); image not seen; Greek literature not searched. Only known.py run for this lead in this batch; fewer than the three required searches done."
+ },
+ "1439": {
+  "unvetted": "Walters W88 page fetched (large HTML) but fol. 1v image not opened or searched. Only known.py run for this lead in this batch; fewer than the three required searches done."
+ },
+ "1440": {
+  "unvetted": "udel returned 403; not seen. Only known.py run for this lead in this batch; fewer than the three required searches done."
+ },
+ "1441": {
+  "unvetted": "Harvard Curiosity returned 202 empty; not seen. Only known.py run for this lead in this batch; fewer than the three required searches done."
+ },
+ "1442": {
+  "unvetted": "Harvard Curiosity returned 202 empty; not seen. Only known.py run for this lead in this batch; fewer than the three required searches done."
+ },
+ "1443": {
+  "unvetted": "Winterthur returned 403; not seen. Only known.py run for this lead in this batch; fewer than the three required searches done."
+ },
+ "1444": {
+  "unvetted": "Duke finding aid only (5 KB); no scans, low value. Only known.py run for this lead in this batch; fewer than the three required searches done."
+ },
+ "995": {
+  "unvetted": "Calendar volume on archive.org not read here (OCR entry 595 and original Clarendon MS not checked); ran known.py only. Only known.py run for this lead in this batch; fewer than the three required searches done."
+ },
+ "996": {
+  "unvetted": "CSP Dom. 1588-91 p.318 OCR not read; entry number, correspondents and original SP shelfmark still unknown; ran known.py only. Only known.py run for this lead in this batch; fewer than the three required searches done."
+ }
+}

@@ -1,0 +1,85 @@
+{
+ "1306": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 34",
+  "seen": {
+   "kind": "facsimile",
+   "where": "https://scienceblogs.de/klausis-krypto-kolumne/2019/02/24/an-unsolved-cryptogram-published-by-herbert-yardley/ (image Yardley-Challenge.png, caption 'A Type of Love Letter Held Up by the Censor', with 'QUE' hint)",
+   "extent": "One printed facsimile page of about 17 lines of symbol text, about 200 px wide in the blog copy; the Saturday Evening Post issue itself was not found or opened.",
+   "cipher": "Monoalphabetic symbol substitution (hearts, bars, crosses, dots), Spanish plaintext; Yardley prints 'que' as a hint. No decipherment is printed on the page (the pencil ticks and '900 QUE' are annotations on this reader's copy)."
+  },
+  "prior_art": {
+   "decode": "Not a DECODE-type archival record (1930s magazine puzzle); no DECODE entry expected, none looked up.",
+   "tomokiyo": "Not searched on cryptiana (outside its scope); web search for the Spanish opening 'Hace tres dias' + Yardley found nothing beyond the Schmeh post.",
+   "lasry": "No Lasry item known; web search for Yardley Post Spanish cryptogram returned none.",
+   "edition": "Issue of the Saturday Evening Post not identified (Yardley's 1931 series); no printed solution found by web search.",
+   "literature": "Schmeh blog 24 Feb 2019: commenters Norbert, Tony and Thomas give a Spanish reading ('Hace tres dias que estoy en esta simpatica hacienda ... imborrables recuerdos ... detalles ...'), symbols for rr and ch proposed; Thomas offers a fuller reading with unresolved letters. The comments were read only in summary."
+  },
+  "key_check": "No key held in the repo; a simple symbol substitution has no external key. The commenters' readings were not tested here because the symbols are only visible at about 200 px and the Post original is not found.",
+  "duplicates": "known.py run for 'Saturday Evening Post' and 'Yardley': only the lead itself and unrelated NARA/Mauborgne entries; the other Yardley cryptogram on the same blog page (American Black Chamber, 1931) is a different text.",
+  "verdict": "partly_read",
+  "closed": "Read in blog comments (Spanish, Norbert/Tony/Thomas 2019) but never confirmed as a complete plaintext; a simple-substitution training puzzle, not an archival cipher; promote only as a transcription check if wanted."
+ },
+ "880": {
+  "unvetted": "DECODE R5625 record page is public (WebFetch: ASV_i1025_SdS_Francia_346_1, status N/A, 9 pages, two thumbnails, no attachments, 'Available Documents: Paper') but the page images need a DECODE login, so I could not see whether R5625-R5686 are ciphertext, key sheets or clear copies. Web searches (Lasry Francia 346 / Ceva key, Barberini Ceva cipher) found no publication of these letters; known.py shows only targets/ceva1632 (R74-R84) and bagno1652 NOTES. Needs a logged-in look at a few images and a test of the ceva1632 key."
+ },
+ "881": {
+  "unvetted": "DECODE R5612-R5621 images need a DECODE login; not viewed. known.py: only CATALOGUE.md and vat_vatican notes ('Meister and morosini1588 keys to try'), no repo target. Web search for Sega 1590 Francia 32 found no edition and suggests Sega went to France with Legate Caetani in Oct 1589, so the shelfmark/correspondent in the lead should be checked on the record before promotion. Keys (morosini1588, Meister) not applied because no ciphertext was seen."
+ },
+ "882": {
+  "unvetted": "DECODE R5624 (Spagna 22, Sega, Madrid 1579) images need a DECODE login; not viewed, so no seen block. known.py: only vat_vatican notes and ormanetto NOTES mention it. The Ormanetto 1576 cifra ordinaria (targets/ormanetto1576) is the key to test once an image is in hand; web searches found no decipherment or edition."
+ },
+ "883": {
+  "unvetted": "DECODE R5623 (Francia 173, Ranuzzi 1684-85, 17 pp.) images not viewed (login). An edition exists: Bruno Neveu, Correspondance du nonce en France Angelo Ranuzzi 1683-1689, Acta Nuntiaturae Gallicae 10-11 (Rome/Paris 1973; library records and JEH review found), and the repo's SOLVED_CATALOGUE already lists 'Ranuzzi's 1684-85 letters (ANG 10)' as read in print. Not confirmed that the volume prints the ciphered passages deciphered (volume not online); likely verdict duplicate/read once ANG 10 is checked."
+ },
+ "1245": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 34",
+  "seen": {
+   "kind": "scan",
+   "where": "Commons file 'Two letters to Thomas Grenville (in cipher) and to George Tierney ... DPLA e4082bb91cf5f55ec10516bc367df12d (page 1)', 1111x1373 px, DPLA/Cleveland Public Library scan",
+   "extent": "Looked at page 1 (annotated '3') of 26 page images; about 14 lines, English clear words interleaved with runs of comma-separated 2-digit numbers (e.g. 98,90,12,45,22,15,13,10 ... 44,60,40), with plain figures 1100 and 2200 written clear.",
+   "cipher": "Partial numeric substitution inside English text: two-digit numbers (about 10-98) with heavy repetition (60, 44, 40, 66, 70, 85 recur), probably a letter/syllable or word table for sensitive words. No decipherment, interlining or key is written on this page; the other 25 pages were not opened."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE (known.py 'Barlow' and 'Cleveland' finds no such record).",
+   "tomokiyo": "No cryptiana page on Barlow/Grenville/Tierney 1807 found; web search returned none.",
+   "lasry": "No Lasry item on British East India Company ciphers found by web search.",
+   "edition": "No edition: web searches found a SNAC record describing the Cleveland item ('Two letters to Thomas Grenville (in cipher) and to George Tierney on affairs in India', 26 pages) and BL Add MS 41855-59 Grenville papers listing Tierney letters 1807-12, but no printed decipherment.",
+   "literature": "Searched Barlow Governor-General 1807 cipher / Grenville / Zamboni: only catalogue notes ('curious cipher'); no study found."
+  },
+  "key_check": "No Barlow or East India Company key is held in the repo or known in print; the Grenville papers at the BL (Add MS 41855-59) and Dropmore/Fortescue papers are where a key might be, not checked online. No other 1807 numeric key in the repo was applied because none shares this table.",
+  "duplicates": "known.py run for 'Cleveland' and 'Barlow': only the unrelated Eustis to Joel Barlow 1812 entry and the sweep README; DPLA item id e4082bb91cf5f55ec10516bc367df12d appears only in this lead.",
+  "verdict": "open"
+ },
+ "1246": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 34",
+  "seen": {
+   "kind": "scan",
+   "where": "https://commons.wikimedia.org/wiki/File:Sitio-barcelona-1714-carta-codigo-cifrado.jpg (1055x887 px, AHCB Consell de Cent Cartas 1B-X-127)",
+   "extent": "Recto and verso side by side: about 22 lines of 2-digit number runs on the left page, a 10-line cipher passage on the right, signed 'El Marques del Poal' (Antoni Desvalls), dated 1714.",
+   "cipher": "Numeric code of 2-digit groups (about 11-50) with separators. Letters are written above many number runs (fragments such as 'rubi', 'tindr', 'embarasarme', 'Villarroel' are visible), i.e. an interlinear decipherment of unknown date and hand is on the leaf; whether it covers every line could not be judged."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE (lead status; no Catalan 1714 record found).",
+   "tomokiyo": "No cryptiana entry for Desvalls/Poal 1714 found.",
+   "lasry": "None found.",
+   "edition": "Web searches (Catalan: Desvalls carta xifrada 1714, Marques del Poal, consellers) returned only context: Camprubi, Pedralbes 35 (2015) on Poal's 1714 campaign; no edition of this letter's text located.",
+   "literature": "No article on its cipher found; Dovella and Pedralbes articles on Poal's August-September 1714 movements give context only."
+  },
+  "key_check": "No Austriacist 1714 key is held in the repo; the visible interlinear letters act as a partial key but 1055 px is too coarse to transcribe the number-letter pairs reliably, so no key was tested.",
+  "duplicates": "known.py for 'Desvalls' and 'Barcelona': only the sweep README/candidate; no other Desvalls or Consell de Cent 1714 cipher entry in the ledgers.",
+  "verdict": "partly_read",
+  "closed": "The leaf carries an interlinear decipherment above many number runs, so it is not a blank cryptogram; completeness cannot be judged at 1055 px. Reopen only with an AHCB hi-res scan."
+ },
+ "1247": {
+  "unvetted": "Only the Commons category (Category:Skoropis) was reached; the Ostermann/Kalushkin file could not be located by Commons API search, so nothing was seen. Russian web search (Ostermann Kalushkin 1737 rescript, GAAO f. 394) found no description of the leaf (fond 178 holds Kalushkin 1739 reports, a different series). No key, no scan, no prior-art result."
+ },
+ "1248": {
+  "unvetted": "Image seen (Commons Letter_of_Alexis_of_Russia.JPG, 678x1193, from Kutepov vol. 2 p. 104): 11 lines of Cyrillic cursive with titlos, consonant clusters with vowels kept, consistent with the fixed tarabarshchina consonant-swap table (the only candidate key). I did not apply the table because the cursive is not reliably transcribable at this size. Searches (Russian: tarabarshchina + Alexis/Matyushkin/Kutepov) found no published reading; Kutepov vol. 2 text and Bartenev's edition of the tsar's letters were not opened. Needs the Kutepov page text or a legible transcription."
+ },
+ "1249": {
+  "unvetted": "Commons photo seen (3034x2058, 2007 exhibit photo): an open bound volume with lines of cipher signs (crosses, bars, numerals) mixed with clear French; it is a register page, not a single letter, and no museum label or inventory number is legible. Object not identified at Ecouen (web search found only the 'boite a chiffrer' of Henri II, unrelated); huyson1547 code words not applied because the signs cannot be transcribed from a display photo. A photo is not a scan, so no seen block; needs the Ecouen/Joconde record or the catalogue of the 2009-10 Francois I and Soliman exhibition."
+ }
+}
