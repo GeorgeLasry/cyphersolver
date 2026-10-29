@@ -155,3 +155,227 @@ remaining passages are read (mechanical with the known key; vol. 10 probably COM
 - `alignment.tsv`: each cipher word as read, corrected, and its plaintext, with the glyph notes.
 - `<doc>_decryption.txt`: line by line; `<doc>_reading.md`: the telegram as sentences.
 - `key.md`; `decrypt.py`; `controls.txt`.
+
+## 28 October 2026 — continuation: January volume, an additional key and prior print
+
+This section adds to, and does not replace, WAINUT's 27 October work above.
+Work by OpenAI Codex (GPT-6); no subagents. Scope: vol. 10 frames 0049, 0054,
+0056 visually inspected; 0049 and 0056 transcribed. No claim to have screened
+all frames of any of the three volumes.
+
+### 9 January, Taylor to Davis: existing decipherment located; different key
+
+Vol. 10 fr. 0049, MS p. 92 is printed in clear in **OR I/45/2 p. 772**,
+Internet Archive `warofrebellion014502rootrich` (printed page header checked
+in OCR; scan-page image not independently checked). The printed text warns
+that moving Hood's army before rest, consolidation and reorganization will
+make it worthless, and explicitly says Taylor is using a former keyword for
+prudential reasons. See `v10-0049_reading.md` for the full telegram.
+
+Matching the manuscript against that plaintext yields the 15-letter key
+**THENAVYOURPRIDE / THE NAVY OUR PRIDE**, offset 0, cipher letters only.
+This key is absent from the original three-key tests. The final working
+candidate transcription gives 86/94 letters directly; eight discrepancies
+remain explicit (C/G, U/V, E/F, V/Y and T/F forms). This is **key from external
+plaintext**, together with **existing decipherment** for the text, not a
+ciphertext-only solution or a new historical plaintext. The first 39 letters
+contain a key candidate; it predicts 51/55 remaining letters. This is a
+retrospective partition check after key/transcription refinement, not an
+independent blind holdout. All other key
+rotations were tested: best COMPLETE VICTORY 18/94, COME RETRIBUTION 25/94,
+MANCHESTER BLUFF 14/94. OUR NAVY OUR PRIDE gives 67/94 and is distinct.
+
+A related OUR NAVY OUR PRIDE phrase is reported for Chisolm's Beauregard
+apparatus in *The Civil War in 50 Objects*, object 20. NYHS MS 670.5 holds
+the apparatus. No key sheet with the exact THE NAVY OUR PRIDE phrase was
+found here. Do not substitute the related phrase for the recovered string
+or claim that this key was previously unknown. See `continuation_key.md`.
+
+### 18 January, Taylor to Davis: provisional known-key reading
+
+Vol. 10 fr. 0056, MS p. 107 substantially reads with COMPLETE VICTORY at
+zero offset. Taylor asks for Johnston to command the Army of Tennessee,
+proposes Beauregard in Carolina and Johnston here, and offers service in the
+Trans-Mississippi or any subordinate capacity. Full transcription and
+provisional coherent reading: `v10-0056_transcription.txt` and
+`v10-0056_reading.md`. 239/259 candidate cipher letters agree with the proposed
+plaintext; 20 differences affect 15 lexical words. Those words are marked
+[?] until another visual pass or external plaintext settles them. This is
+partial, below the project's word bar, and must not be counted as complete.
+No matching full plaintext was located in OR I/45/2's normalized OCR.
+A modern alternate-history forum quotes matching clauses with the same date
+(https://civilwartalk.com/threads/gibraltar-dream-%E2%80%93-what-if-fort-fisher-held-firm.201713/).
+That is a prior-print LEAD only: do not rely on its hypothetical narrative.
+Find its underlying Taylor/Davis source before making a novelty claim.
+
+### Reproduction and limits
+
+`python3 continue_analysis.py` writes both word alignments and controls from
+`continuation.json`. It separates candidate glyphs from re-enciphered
+reconstructions. `continuation_alignment.tsv` never silently replaces raw
+ciphertext with letters inferred from a desired reading. `continuation_sources.json`
+records exact image URLs and the upstream tree commit. Images are external.
+Arithmetic round-trip control passes; 1000 random 15-letter keys achieve at
+most 28/94 matches for 9 January. This is an alignment check, not a trained
+solver, so no language model was needed.
+
+The initial three-key trial on 9 January failed. A speculative THE NATIONS
+PRIDE guess from noisy C-P letters was rejected; the repeated alignment
+supports THE NAVY OUR PRIDE instead. Raw palaeography remains the limiting
+factor. Fr. 0054 is faint and was inspected but not claimed transcribed/read.
+
+### Remaining work after this continuation
+
+- Retain all earlier gaps above: the target is still in progress.
+- Resolve the eight candidate-letter differences in 0049 on independent crops;
+  inspect the OR printed scan page; look for the exact key in contemporary key material.
+- Resolve 0056's 15 proposed words and locate its earlier printed source.
+- Transcribe 0054 and visually screen the other volume-10 frames. The OCR run
+  list does not establish exhaustive coverage.
+- Screen the remaining vols. 11/196 passages as previously listed.
+- Record key use per telegram. The 9 January reversion to an older key means
+  observations cannot establish one universal chronological replacement date.
+
+`REPORT-2026-10-28.md` is the ready-to-review continuation report. Nothing
+has been submitted externally; existing `profile.json` and earlier alignments
+are retained unchanged pending review.
+
+## 28 October 2026 — second continuation: April passages and more prior print
+
+Two further telegrams now have full readings backed by printed decipherments:
+
+| document | manuscript | earlier plaintext | cipher letters | raw candidates agreeing |
+|---|---|---|---:|---:|
+| v11-0044b | 10 Apr, Surget to Maury, fr. 0044 p. 84, second telegram | OR I/49/2 p. 1223 | 79 | 74 |
+| v11-0076-77a | 20 Apr, Taylor to Secretary of War, frs. 0076–0077 pp. 148–149 | OR I/49/2 p. 1255 | 124 | 114 |
+
+Both use COME RETRIBUTION. Cipher-letter numbering continues across clear
+prose and, for the 20 April message, across the frame boundary. The 20 April
+message explicitly repeats a dispatch of 14 April; these are not two separately
+transcribed cipher witnesses. All 18 and 27 lexical cipher words respectively
+have printed plaintext; the listed candidate-glyph differences stay explicit.
+Full `<doc>_transcription.txt`, `<doc>_reading.md`, and generated alignments are
+included. Method: existing decipherment, checked using the known key. Printed
+page numbers are verified from OCR headers; print scan images remain unchecked.
+
+The 10 April telegram says troops and stores must move toward headquarters
+and predicts that the force assembling at Vicksburg will move westward before
+the week's end. The 20 April telegram reports Mobile's evacuation and asks
+whether to unite with Cobb in Georgia or protect the Alabama/Mississippi
+supply region. It says Taylor cannot decide without knowing government policy.
+
+A second 20 April telegram, on p. 149 below that message, is ALSO printed in
+clear on OR p. 1255. It reports completion of equipment of Mobile's garrison
+and no indication of decided enemy movement. Its flowing cipher capitals were
+not in the original capital-run hits. Beginning GEGMGQX agrees with COME
+RETRIBUTION, but it is not yet fully aligned. See `v11-0077b_prior-print.md`.
+
+Two other passages were transcribed provisionally and remain partial:
+- `v11-0044a_transcription.txt`: a Maury quotation about Blakely and evacuation.
+  The first passage's key alignment/letter count is unresolved; the second
+  passage gives TROOPS AND STORES MUST BE MOVED IN THIS DIRECTION at key
+  offset 3, with glyph corrections still proposed. No nulls are asserted.
+- `v11-0045b_transcription.txt`: TROOPS SHOULD NOT BE SENT TO DEMOPOLIS AND
+  PORTION OF THE ... is probable, but the final FX EVWJ JMNCH remains unread.
+  An initially inserted false C in XCYKG shifted the rest of the text; correcting
+  the word length restores AND PORTION OF. No ending has been invented.
+
+Frame 0046 was viewed as a full page but is not yet transcribed; no reading
+is claimed. These additional gaps are kept separate from the completed items.
+
+### January source checks in this session
+
+Taylor's *Destruction and Reconstruction* (Gutenberg 23747) and Alfred Roman,
+*Military Operations of General Beauregard*, vol. II (IA
+`milloperations02romarich`) were searched in normalized full text. The expected
+18 January clauses were not found. This is a bounded OCR/text search, not proof
+of absence from all editions. The January 18 reading retains its 15 uncertain
+words. The previously speculative forum quotation remains only a lead.
+
+### Reproduction and next work
+
+`python3 continue_analysis.py` now checks four continuation items and writes
+the updated TSV and controls. The two original January candidate streams and
+all upstream WAINUT files except append-only NOTES remain unchanged. Sources
+and JPEG references are recorded in `continuation_sources.json`. No generated
+site files or original profile were changed; nothing was submitted externally.
+
+Next: resolve 0044a/0045b, transcribe 0046 and 0077b, then continue screening
+vol. 196. The three-volume target remains in progress; neither the OCR hit list
+nor these selected frames constitute exhaustive volume coverage.
+
+## 28 October 2026 — third continuation: dated orders introducing COME RETRIBUTION
+
+**New evidence for the key chronology:** vol. 196 fr.0055, MS p.105 has two
+telegrams dated **9 March 1865**, sent by W.F. Bullock Jr. AAG from Meridian,
+"By order," to (1) Wirt Adams, Jackson, Mississippi, and (2) D.W. Adams,
+Montevallo or Selma, Alabama. Both read:
+
+> In sending cipher dispatches after this date use the following key word,
+> "Come Retribution." Acknowledge receipt.
+
+The orders themselves use **COMPLETE VICTORY**, with the key running only over
+cipher letters from offset zero. The cipher-only plaintext sequence is
+CIPHER DISPATCHES FOLLOWING KEY WORD COME RETRIBUTION: seven lexical words,
+47 letters per copy. Each candidate transcription agrees directly at 46/47
+places, with one N/M ambiguity in NXM/MXM (=KEY). No other correction is needed.
+
+The Wirt Adams copy has the complete decipherment pencilled above the cipher
+words. This is existing adjacent plaintext; the pencil annotator and date are
+unknown. The D.W. Adams copy is unannotated but duplicates the instruction.
+Method: existing adjacent decipherment checked with known key (Wirt); known
+key applied and checked against annotated sibling (D.W.). Neither is a new
+ciphertext-only break. Both are distinct documents for coverage, but not
+independent key recoveries. Full files: `v196-0055-wirt_*`, `v196-0055-dw_*`.
+
+`KEY-CHANGE-1865-03-09.md` is the focused evidence report with the exact primary
+image link. `continue_analysis.py` now reproduces six continuation alignments
+and key controls for the two orders. COMPLETE VICTORY gives 46/47 matches;
+COME RETRIBUTION only 20/47 (its partially shared letters), with no other offset
+improving that. The three other keys/all offsets do not fit the orders.
+
+### Scope of the historical result
+
+This establishes an instruction **issued on 9 March to these two recipients**,
+with implementation phrased "after this date." It does not establish receipt
+time, a precise first-use day elsewhere, or a simultaneous global switch.
+The 9 January older-key reversion remains relevant. OCR-only 8 March traffic
+that appears to fit COME RETRIBUTION still needs image checking, so do not
+force all channels into one switch chronology.
+
+Normalized OR I/49/1 and I/49/2 OCR searches returned no match for retribution,
+"after this date use," key-word or keyword. This bounded search is not proof
+that the orders were never printed elsewhere; the pencilled decipherment
+already shows they were read before this session.
+
+### Other work in this session
+
+Re-inspected the troublesome 0045b ending and 0044a alignment. They remain
+unresolved; no guessed ending or null was promoted into the text. Viewed vol.11
+0046 again; its faint cipher remains untranscribed. Fetched vol.196 metadata
+and OCR, screened OCR for frs.0010,0018,0022,0052,0053,0055,0056,0064,0065,0071,
+and viewed full images 0010,0055 (and downloaded 0056). OCR screening is not a
+visual survey of those frames. Fr.0010 has additional ciphertext, including
+flowing capitals in the left telegram; no full reading is claimed.
+
+The April partials and January uncertainties are still open. The overall
+three-volume target remains in progress. Priority next step is to check
+8 March key usage on images against the 9 March instructions, then finish
+unread telegrams and the page-by-page inventory. No public submission made.
+
+### Third-session follow-up: 8 March channel checked on the image
+
+After the key-change report above, downloaded and viewed vol.196 fr.0052,
+MS p.99, dated **8 March 1865**, Taylor to Col. George Wm. Brent at Augusta.
+The opening cipher candidates `GBQQP EN CMBNM BKRPHK XYSNJIOX` give ENEMY AU
+LEATT TWENTY THOUSAND with COME RETRIBUTION, or ENEMY AT LEAST TWENTY THOUSAND
+with two N/M candidate ambiguities (24/26 letters direct). The closing
+`DSOZVH ZKWA AQFFL` gives MOVING FROM NORTH exactly at local key offset 4.
+The middle remains untranscribed and full key continuity is not established;
+`v196-0052_partial.txt` is explicitly partial. This image check replaces the
+"OCR only" status of that lead above, not its incomplete coverage status.
+
+Thus COME RETRIBUTION is supported in the Brent channel on 8 March, while
+the 9 March orders tell Wirt Adams and D.W. Adams to adopt it. The recipient-
+specific chronology is essential: the orders do not date its first use at
+headquarters, much less the entire Confederacy.
