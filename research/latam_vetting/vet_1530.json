@@ -1,0 +1,27 @@
+{
+ "id": 1530,
+ "vetting": {
+  "date": "2026-10-28",
+  "by": "Claude session (LatAm vetting, 28 Oct 2026)",
+  "seen": {
+   "kind": "not online",
+   "where": "NOT SEEN. The images are online on PARES (description 62186), but PARES answered HTTP 429 to every request from this machine on 28 Oct 2026, both by script and in the built-in browser, and no Wayback copy exists. The kind 'not online' is used only because the schema has no 'blocked' value: the item is online and should be re-vetted on the scans.",
+   "extent": "Unknown: the description page could not be read. The PARES hit list (research/pares_ags/hits.jsonl) gives only the title 'Gobernador Habana sobre noticias de Gaceta de Nueva York', date 1819-05-25, images: true.",
+   "cipher": "Galende Díaz 2000, p. 66 n. 52 (read in full here) says that captain-general José Cienfuegos proposed in 1817 a cipher that replaces the vowels by digits (A=5, E=3, I=1, O=2, U=4) with consonants unchanged, and cites 'el criptograma que remite desde La Habana, el 25 de mayo de 1819, al marqués de Casa-Irujo. Archivo General de Indias, Estado, 12, documento 14' as an example. Whether a decipherment is on or with the leaf could not be checked."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE: known.py found no hit for Cienfuegos (other than an unrelated Cuban lead), Casa-Irujo or ESTADO,12 in the DECODE dumps.",
+   "tomokiyo": "Not in Tomokiyo's cryptiana: the crypto.htm index (fetched 28 Oct 2026) has no Cuban or 1819 Spanish colonial page.",
+   "lasry": "Nothing by Lasry on 19th-century Spanish colonial ciphers was found; the repository copies of GL.htm have no Cienfuegos or Irujo entry.",
+   "edition": "No edition of this despatch is known; Galende 2000 prints the cipher rule and the reference but not the text.",
+   "literature": "Galende Díaz 2000 (Revista Complutense de Historia de América 26, pp. 57-71) was read: it gives the system and cites this document. A web search for Galende + Cienfuegos 1817 + Casa-Irujo found no other paper on it; Galende's other papers were not searched further."
+  },
+  "key_check": "The system is in print: Galende 2000 n. 52 gives the full rule (vowels A=5 E=3 I=1 O=2 U=4, consonants unchanged) and names this very document as written in it. That makes it a key lookup on the published evidence; it could not be confirmed on the scan, and no opening reading can be given because the images were not opened.",
+  "duplicates": "known.py was run on 'Cienfuegos', 'Casa-Irujo', 'Casa Irujo', 'ESTADO,12' and 'Estado 12': the hits are this lead (research/leads.json, research/latam_north), an unrelated Cienfuegos (Cuba, place) lead and an unrelated AGS Estado 12 reference in targets/ayala1516. No duplicate.",
+  "verdict": "key_lookup"
+ },
+ "lead_updates": {
+  "status_append": "Vetting 28 Oct 2026: images not seen (PARES 429 from this IP, script and browser). Galende 2000 n. 52 names this document as written in Cienfuegos's 1817 vowel-digit cipher, so it is a key lookup on the printed evidence; confirm and read on the scans when PARES answers.",
+  "prior_art": "system and this document's use of it published (Galende 2000, n. 52); text not printed; scans not seen (PARES 429, 28 Oct 2026)"
+ }
+}

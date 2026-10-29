@@ -23165,13 +23165,13 @@
    "place": "Rio de Janeiro → Fortaleza",
    "period": "1901-1950",
    "shelfmark": "CPDOC/FGV, Arquivo Fernando Setembrino de Carvalho, FSC pce 1914.03.10/4",
-   "folio_note": "12 documents, 16 ff.; digitised (DocReader, bib FSC_PACEARA). First telegram (Rio → Fortaleza, received 11 Mar 1914): about 18 letter groups of 4-11 letters ('OSNVOJ QEUQ NLXHE OMLVRTCJ ...'), clear tail 'responda amanhã que só resolverei depois sua opinião = E Pamplona', cipher repeated as a service check below",
+   "folio_note": "16 images (DocReader bib FSC_PACEARA pagfis 1317-1332): 12 telegrams 10 Mar - 20 May 1914, 10 with cipher (~200 words, most repeated as service check), from Pamplona, Vespasiano de Albuquerque and Rego Barros. Pencil decipherment of the whole cipher text on the 14 Mar telegram (pagfis 1319); pencil attempt on two words of pagfis 1326. Transcription sample: research/latam_vetting/1470_sample.txt.",
    "cls": "A",
-   "status": "CPDOC summary 'Telegramas cifrados a Setembrino de Carvalho'. Image of the first telegram viewed 28 Oct 2026: letter cipher, no decipherment on the sheet. Cribs in the same digitised fonds: FSC cont 1914.10.07/2 (two War Ministry cipher words glossed) and FSC pce 1914.02.19/2 (typed clear copies of Vespasiano's telegrams to Setembrino, one acknowledging 'mais dois cifrados'). Not on DECODE, not in the repo.",
+   "status": "CPDOC summary 'Telegramas cifrados a Setembrino de Carvalho'. Image of the first telegram viewed 28 Oct 2026: letter cipher, no decipherment on the sheet. Cribs in the same digitised fonds: FSC cont 1914.10.07/2 (two War Ministry cipher words glossed) and FSC pce 1914.02.19/2 (typed clear copies of Vespasiano's telegrams to Setembrino, one acknowledging 'mais dois cifrados'). Not on DECODE, not in the repo. Vetted 28 Oct 2026: Vigenère, 8-letter key restarted per word; key MFTDBSJV rebuilt from the pencil decipherment on pagfis 1319 reads the Mar-Apr telegrams; 10 Mar (LETCARIV, garbled) and 20 May (about 10-letter key) broke ciphertext-only in minutes. Verdict key_lookup: a small, quick reading, worth doing as a target (key recovered from adjacent plaintext / ciphertext-only), not a catalogue entry.",
    "why": "Government cipher traffic during the 1914 federal intervention against the Juazeiro (Padre Cícero) rising in Ceará; Brazilian army/government cipher of 1914 otherwise unknown.",
    "importance": 3,
-   "solvability": 4,
-   "difficulty": 3,
+   "solvability": 5,
+   "difficulty": 1,
    "score_note": "Scored from the CPDOC description and one image during the Oct 2026 Brazil sweep (research/latam_brazil/)",
    "verify": "Page through the 16 images in DocReader; transcribe the groups; test periodic polyalphabetic (Vigenère/Beaufort, Portuguese) and code hypotheses; look for decipherments in neighbouring FSC pce 1914 folders.",
    "links": [
@@ -23185,11 +23185,32 @@
     }
    ],
    "source": "CPDOC/FGV sweep",
-   "prior_art": "open (checked 28 Oct 2026: repo ledgers and DECODE list via known.py, web search; nothing found)",
+   "prior_art": "no prior reading found except the contemporary pencil decipherment of the 14 Mar telegram (checked 28 Oct 2026: DECODE dumps, known.py, web search)",
    "needs_archive_scan": "no",
    "access_note": "digitised on CPDOC DocReader (free)",
    "ark": "",
-   "scored": "sweep"
+   "scored": "sweep",
+   "vetting": {
+    "date": "2026-10-28",
+    "by": "Claude session (LatAm vetting, 28 Oct 2026)",
+    "seen": {
+     "kind": "scan",
+     "where": "https://www.docvirt.com/docreader.net/docreader.aspx?bib=FSC_PACEARA&pasta=FSC%20pce%201914.03.10/4 (pagfis 1317-1332, all 16 images viewed and downloaded at 1663 px wide on 28 Oct 2026); related telegram FSC cont 1914.10.07/2 at bib FSC_CONTEST pagfis 587.",
+     "extent": "16 images, 12 telegrams of 10 Mar - 20 May 1914 to Setembrino de Carvalho: 10 with cipher (about 200 cipher words in all, most sent twice, body and service repeat), one clear (pagfis 1318) and one clear signature sheet (1323). Senders: E. Pamplona (1317, 1327), the Minister of War Vespasiano de Albuquerque (1319-1323, 1329) and his aide 1o Ten. Rego Barros (1324-1326, 1328, 1330-1332). Longest: 18 Mar, three sheets; 20 May, about 40 cipher words mixed with clear.",
+     "cipher": "Letter cipher in telegraph words; found during vetting to be a Vigenère (standard alphabet) with an 8-letter key restarted at every word, so cipher words keep the plaintext word lengths. The telegram of 14 Mar (pagfis 1319) carries a contemporary pencil decipherment of its whole cipher text ('Pessoa que me parece bem informada diz saber por parente Rabelo que palacio está cuidadosamente minado'); pagfis 1326 has a pencil attempt 'complot ambici...' on its two words. The other telegrams have no decipherment on or with them."
+    },
+    "prior_art": {
+     "decode": "Searched the DECODE dumps in research/catalogue_harvest/decode/ for Brazil, Brasil, Ceará, Setembrino and Paraguay: no record; not on DECODE.",
+     "tomokiyo": "No cryptiana page on Brazilian 20th-century or army ciphers was found by web search (site:cryptiana.web.fc2.com Brazil), and nothing in the repo's Tomokiyo-derived ledgers (known.py).",
+     "lasry": "No Lasry paper or GL.htm entry on Brazilian telegrams is known to the repo (known.py on Setembrino, Vespasiano, Pamplona, Rego Barros hits only the lead itself) and none was found by web search.",
+     "edition": "No printed edition of these telegrams was found: Portuguese web searches on 'telegramas cifrados Setembrino de Carvalho 1914', the Juazeiro sedition and the War Ministry cipher returned only general accounts of the sedition. Setembrino's memoirs and the printed Juazeiro document collections were not seen directly, so a printed clear text of some telegrams cannot be excluded; the pencil decipherment of 14 Mar is the only reading seen.",
+     "literature": "Web searches in Portuguese and English (criptografia exército 1914, telegrama cifrado Ministério da Guerra, Vigenère) found nothing on this traffic; the nearest work is the SciELO article on the Canudos (1896-97) cipher telegrams of the Arquivo Histórico do Exército, a different file."
+    },
+    "key_check": "The 1471 crib (CFIIOIZUPDYBSUDX SBHBCUDJ AFTGC = restabelecimento harmonia Pedro, all three glossed in pencil) is a Vigenère with key LBQPOHVJ restarted per word; that October key does NOT read 1470. But the decipherment pencilled on the 14 Mar telegram (pagfis 1319) gives the key MFTDBSJV in minutes, and it reads the telegrams of 14, 18, 19, 24, 29 Mar and 17 Apr directly, e.g. 18 Mar: 'dr marques porto declarou me seguinte foi feito movimento de terras nos baixos do edificio palacio governo ...'; 17 Apr: 'parece conveniente responder juiz Pernambuco dizendo que apesar nao julgar identicos casos citados contudo acatando sua decisao aguarda solucao definitiva supremo tribunal'. The 10 Mar telegram fits LETCARIV with garbles ('... chefe ... deu parte doente ... confiança'), and the 20 May telegram broke ciphertext-only to a 10-letter key in a short hill climb ('amigo sincero parente dever lealdade avisar general ...'; key not yet settled). Since a key on the file reads most of it in minutes, this is a key lookup, not an open cipher.",
+    "duplicates": "known.py run on 'Setembrino', 'FSC pce 1914', 'FSC cont 1914', 'Pamplona', 'Vespasiano', 'Juazeiro', 'Rego Barros': the only hits are this lead and 1471 themselves (research/leads.json, research/latam_brazil candidates and README); no catalogue entry, target or DECODE id covers these telegrams.",
+    "verdict": "key_lookup",
+    "closed": "Pencil decipherment of the 14 Mar 1914 telegram on the file gives the per-word Vigenère key MFTDBSJV, which reads six more telegrams; see research/latam_vetting/1470_sample.txt"
+   }
   },
   {
    "id": 1471,
@@ -23205,9 +23226,9 @@
    "place": "Rio de Janeiro",
    "period": "1901-1950",
    "shelfmark": "CPDOC/FGV, Arquivo Fernando Setembrino de Carvalho, FSC cont 1914.10.07/2",
-   "folio_note": "1 f.; digitised (DocReader bib FSC_CONTEST, pagfis 587). Clear text with cipher groups CFIIOIZUPDYBSUDX - SBHBCUDJ - ... AFTGC, repeated as a service check; pencil gloss 'restabelecimento harmonia' over the first two groups",
+   "folio_note": "1 f.; DocReader bib FSC_CONTEST pagfis 587. Clear telegram with cipher words CFIIOIZUPDYBSUDX - SBHBCUDJ - AFTGC, repeated as service check; pencil glosses 'restabelecimento', 'harmonia', 'Pedro' over all three.",
    "cls": "A",
-   "status": "Image viewed 28 Oct 2026: two of three cipher groups glossed at the time (16 and 8 letters = 'restabelecimento', 'harmonia', letter for letter, polyalphabetic since e has four different equivalents); the last group AFTGC is not glossed. Not on DECODE, not in the repo.",
+   "status": "Image viewed 28 Oct 2026: two of three cipher groups glossed at the time (16 and 8 letters = 'restabelecimento', 'harmonia', letter for letter, polyalphabetic since e has four different equivalents); the last group AFTGC is not glossed. Not on DECODE, not in the repo. Vetted 28 Oct 2026: all three cipher words glossed at the time (AFTGC = 'Pedro'); key LBQPOHVJ, Vigenère restarted per word; it does not read 1470 (different key). Verdict read; useful only as evidence of the system.",
    "why": "A plaintext-ciphertext pair in the 1914 War Ministry letter cipher, enough to test the system on the unglossed Ceará telegrams (FSC pce 1914.03.10/4).",
    "importance": 2,
    "solvability": 4,
@@ -23225,11 +23246,32 @@
     }
    ],
    "source": "CPDOC/FGV sweep",
-   "prior_art": "read in part at the time (gloss); open otherwise (checked 28 Oct 2026: repo ledgers and DECODE list via known.py, web search)",
+   "prior_art": "read at the time (pencil glosses on the sheet)",
    "needs_archive_scan": "no",
    "access_note": "digitised on CPDOC DocReader (free)",
    "ark": "",
-   "scored": "sweep"
+   "scored": "sweep",
+   "vetting": {
+    "date": "2026-10-28",
+    "by": "Claude session (LatAm vetting, 28 Oct 2026)",
+    "seen": {
+     "kind": "scan",
+     "where": "https://www.docvirt.com/docreader.net/docreader.aspx?bib=FSC_CONTEST&pasta=FSC%20cont%201914.10.07/2 (pagfis 587, viewed and downloaded 28 Oct 2026).",
+     "extent": "One telegram form, Rio no. 1454, received Curitiba 7 Oct 1914: three cipher words (16, 8 and 5 letters) in a clear telegram, repeated once as a service check.",
+     "cipher": "Vigenère with the key restarted per word; all three cipher words carry a pencil gloss on the sheet: 'restabelecimento', 'harmonia' and 'Pedro' (the last one, over AFTGC, was missed in the lead record)."
+    },
+    "prior_art": {
+     "decode": "Searched the DECODE dumps for Brazil, Brasil and Setembrino: not on DECODE.",
+     "tomokiyo": "Nothing on cryptiana for Brazilian 1914 army ciphers (web search) and nothing in the repo ledgers.",
+     "lasry": "No Lasry paper or GL.htm entry covers it (known.py and web search).",
+     "edition": "No printed edition known; the reading is the contemporary pencil gloss on the telegram itself.",
+     "literature": "Web searches (Portuguese and English) on 1914 War Ministry cipher telegrams and the Contestado war found nothing on this telegram."
+    },
+    "key_check": "The glosses give the key LBQPOHVJ (Vigenère, standard alphabet, restarted per word) consistently for all three words; letter 15 of the first word is a transmission slip. Nothing in it is unread. The key does not read the Ceará telegrams of lead 1470, which use other keys.",
+    "duplicates": "known.py on 'FSC cont 1914', 'Vespasiano', 'Setembrino': hits only on this lead and 1470; no catalogue entry, target or DECODE id.",
+    "verdict": "read",
+    "closed": "All three cipher words glossed in pencil on the sheet (key LBQPOHVJ, per-word Vigenère)"
+   }
   },
   {
    "id": 1472,
@@ -24323,45 +24365,6 @@
    "scored": "sweep"
   },
   {
-   "id": 1500,
-   "counted": true,
-   "year": 1850,
-   "date": "13 Feb 1850 (letter in a file of 1849-1853)",
-   "title": "Benito Varela, Paraguayan foreign minister → Manuel Moreira de Castro, consul general in Rio: letter with numeric cipher passages",
-   "correspondents": "Benito Varela (Ministro de Relaciones Exteriores, Paraguay, under Carlos Antonio López) → Manuel Moreira de Castro (consul general, later plenipotentiary of Paraguay at the court of Brazil)",
-   "place": "Asunción",
-   "language": "Spanish",
-   "region": "Americas",
-   "period": "1801-1900",
-   "shelfmark": "Asunción, Archivo Nacional de Asunción, Colección Rio Branco, ANA-AHRP-PY-558-1-31 (ex Biblioteca Nacional do Rio de Janeiro I-29,25,23), item 13",
-   "folio_note": "PDF of 98 images; the cipher letter is on images 41-42 (0-based 41/42): clear Spanish with about 12 runs of dot-separated numbers (1-116, e.g. '9.27.7.33.15.3', '37.3.1.27.7.33.9'), roughly 60-80 cipher tokens, plus a sign like a barred circle. Other letters in the file are clear.",
-   "cls": "C",
-   "status": "ANA description, item 13: 'se refiere a otros asuntos que no pueden ser identificados por estar escritos en código cifrado' (i.e. the cataloguer could not read it). Viewed on the scan 28 Oct 2026: numeric substitution (letters or syllables) inside a clear letter about Brazil, Rio Grande and Buenos Aires. Not on DECODE, not in the repo.",
-   "why": "Cipher of Carlos Antonio López's foreign ministry with its agent in Rio on the eve of the 1850 Paraguay-Brazil alliance against Rosas; Paraguayan state ciphers of this period are hardly known.",
-   "importance": 3,
-   "solvability": 3,
-   "difficulty": 2,
-   "score_note": "Scored from the archive description during the Oct 2026 South Cone/Andes sweep (research/latam_southcone/); the cipher page was viewed on the scan.",
-   "verify": "Transcribe images 41-42 of the PDF; small numbers mostly odd suggest a letter table with homophones or a syllabary; context (Rosas, Brazil, Rio Grande, Urquiza) gives cribs. Look for further Varela/Moreira letters in the Rio Branco collection (ANA-AHRP 558-*) using the same numbers.",
-   "links": [
-    {
-     "label": "ANA catalogue record",
-     "href": "https://riobranco.archivonacional.gov.py/index.php/correspondencia-entre-el-ministro-de-relaciones-exteriores-de-la-republica-del-paraguay-y-el-senor-manuel-moreira-de-castro-primeramente-consul-y-despues-plenipotenciario-del-paraguay"
-    },
-    {
-     "label": "PDF of the file (98 images)",
-     "href": "https://riobranco.archivonacional.gov.py/uploads/r/archivo-nacional-de-asuncion/8/3/5/8353484cf68d7a80d9ddbfe3c3bee098b13c26efaa58f1bacbc368e0c6755294/ANA-AHRP-PY_-_558-1-31.compressed.pdf"
-    }
-   ],
-   "seen": "image",
-   "source": "South Cone / Andes archives sweep",
-   "prior_art": "open (checked 28 Oct 2026: repo ledgers, DECODE list, Cryptoole snapshot; web search on Paraguayan/López ciphers found nothing)",
-   "needs_archive_scan": "no",
-   "access_note": "PDF of the whole file online at the Archivo Nacional de Asunción (cipher on images 41-42)",
-   "ark": "",
-   "scored": "sweep"
-  },
-  {
    "id": 1501,
    "counted": true,
    "year": 1880,
@@ -25194,42 +25197,6 @@
    "scored": "sweep"
   },
   {
-   "id": 1523,
-   "counted": true,
-   "region": "Americas",
-   "source": "AGN Colombia DataViva sweep",
-   "seen": "catalogue",
-   "score_note": "Scored from the archive description during the Oct 2026 Colombia/Caribbean/Central America sweep (research/latam_north/); not viewed",
-   "decode_ids": [],
-   "year": 1819,
-   "date": "1819 (London; letters to Bolívar at Angostura)",
-   "title": "Luis López Méndez (London) → Simón Bolívar, letter on the Gambier expedition, part in a secret key",
-   "correspondents": "Luis López Méndez, Venezuelan agent in London → Simón Bolívar (with letters of Hurry, Powles & Hurry and of Herring/Safpray in the same unit)",
-   "place": "London",
-   "language": "Spanish (some items English)",
-   "period": "1801-1900",
-   "shelfmark": "Archivo General de la Nación (Bogotá), Sección Archivo Anexo, Grupo I, Historia, HISTORIA.SAA-I.17,25,D.24",
-   "folio_note": "ff. 222-233 (blank 225, 229); 24 images online in DataViva. How much is in cipher is not stated",
-   "cls": "C",
-   "status": "AGN description: López Méndez reports the sailing of the schooner Gambier (Capt. Peter Paxtor) with men, arms and powder, that the East India Company ships were not bought and the loan not raised, and 'otras informaciones se hallan consignadas bajo el código de una clave secreta'. No decipherment mentioned. Not on DECODE; known.py: López Méndez no hits.",
-   "why": "The independence agents' cipher between London and Angostura in the year of Boyacá; a key here would be the earliest Gran Colombian diplomatic cipher, and a possible ancestor of Revenga's 1822 London-Madrid key (targets/revenga1822).",
-   "importance": 4,
-   "solvability": 3,
-   "difficulty": 3,
-   "verify": "Open the 24 images in DataViva (detail page) and locate the cipher lines; then check O'Leary, Memorias (Correspondencia / Documentos) and the Archivo del Libertador for a printed or interlined decipherment.",
-   "links": [
-    {
-     "label": "DataViva record",
-     "href": "https://dataviva.archivogeneral.gov.co/explore/agn/detail/66b0cd4f151c9d47762a2382"
-    }
-   ],
-   "prior_art": "open as far as checked (28 Oct 2026: web search for López Méndez cipher/clave 1819; cryptiana not checked for this item; O'Leary not grepped)",
-   "needs_archive_scan": "no",
-   "access_note": "24 images online in AGN Colombia DataViva (free)",
-   "ark": "",
-   "scored": "sweep"
-  },
-  {
    "id": 1524,
    "counted": true,
    "region": "Americas",
@@ -25308,7 +25275,7 @@
    "counted": true,
    "region": "Americas",
    "source": "AGN Colombia DataViva sweep",
-   "seen": "catalogue",
+   "seen": "image",
    "score_note": "Scored from the archive description during the Oct 2026 Colombia/Caribbean/Central America sweep (research/latam_north/); not viewed",
    "decode_ids": [],
    "year": 1932,
@@ -25319,13 +25286,13 @@
    "language": "Spanish",
    "period": "1901-1950",
    "shelfmark": "Archivo General de la Nación (Bogotá), Archivos Privados, Fondo General Amadeo Rodríguez Vergara, Asuntos militares, CO.AGN.AP.GARV..2.2.4",
-   "folio_note": "ff. 85-177; 96 images online in DataViva; \"Telegramas y comunicaciones en clave ... Telegramas cifrados sobre la posibilidad de conflicto con Ecuador\"",
+   "folio_note": "ff. 85-177; 96 images; cipher telegrams at ff. 103, 104, 106, 107, 116, 126, 134, 138-141, 149, 151 (numeric), 153, 154. Key: GARV..1.1.4 ff. 43r-44r; Presidency key GARV..2.2.1 ff. 6v, 8, 10.",
    "cls": "A",
-   "status": "AGN description names cipher telegrams; the same fonds holds the key description (GARV..1.1.4, \"la criptografía y descripción de claves para enviar comunicaciones\", 1931) and more cipher telegrams in GARV..2.2.1 (June 1932, pliego de clave for the Presidency), GARV..2.3.1 (Oct 1932, \"Comunicaciones a Presidencia en clave con traducción\", radio-operator correspondence on transmission keys), GARV..2.3.2 (Oct 1932: report of Major Velasco en clave, telegrams en clave from the War Minister and Presidency) and GARV..2.4.1 (Nov 1932, \"Telegramas en clave con traducción adjunta\"). So the fonds has key, ciphertexts and translations, all imaged. Not on DECODE; known.py: Rodríguez Vergara no hits.",
+   "status": "AGN description names cipher telegrams; the same fonds holds the key description (GARV..1.1.4, \"la criptografía y descripción de claves para enviar comunicaciones\", 1931) and more cipher telegrams in GARV..2.2.1 (June 1932, pliego de clave for the Presidency), GARV..2.3.1 (Oct 1932, \"Comunicaciones a Presidencia en clave con traducción\", radio-operator correspondence on transmission keys), GARV..2.3.2 (Oct 1932: report of Major Velasco en clave, telegrams en clave from the War Minister and Presidency) and GARV..2.4.1 (Nov 1932, \"Telegramas en clave con traducción adjunta\"). So the fonds has key, ciphertexts and translations, all imaged. Not on DECODE; known.py: Rodríguez Vergara no hits. Vetted 28 Oct 2026 on the scans: the telegrams of GARV..2.2.4 read with the day-of-week key of GARV..1.1.4 (f. 44r, 31 Jan 1931), e.g. f. 149 (cañonero to Caucayá, 126 men) and f. 153 (a regiment of 600 infantry and mountain artillery sent to Loreto). A second key (Presidency, June 1932) is in GARV..2.2.1 ff. 6v-10. One numeric telegram (f. 151, No. 143) is in another system and was not tested. Key lookup, not an open target.",
    "why": "Colombian military cipher of the Leticia war (Colombia-Peru 1932-33), with the key sheet in the same private archive and images online.",
    "importance": 3,
-   "solvability": 4,
-   "difficulty": 2,
+   "solvability": 5,
+   "difficulty": 1,
    "verify": "View images of GARV..1.1.4 (14 images: the key) and GARV..2.2.4 / 2.3.2; check whether the telegrams carry decipherments.",
    "links": [
     {
@@ -25353,11 +25320,32 @@
      "href": "https://dataviva.archivogeneral.gov.co/explore/agn/detail/68e57666a1660dc4d1aa35f0"
     }
    ],
-   "prior_art": "open (28 Oct 2026: nothing found on the Rodríguez Vergara cipher)",
+   "prior_art": "key in the same fonds (GARV..1.1.4); no publication found (28 Oct 2026)",
    "needs_archive_scan": "no",
    "access_note": "96 images online in AGN Colombia DataViva (free)",
    "ark": "",
-   "scored": "sweep"
+   "scored": "sweep",
+   "vetting": {
+    "date": "2026-10-28",
+    "by": "Claude session (LatAm vetting, 28 Oct 2026)",
+    "seen": {
+     "kind": "scan",
+     "where": "AGN Colombia DataViva: GARV..2.2.4 (68e57156a1660dc4d1aa35ed, all 96 images downloaded and viewed as contact sheets, telegrams at ff. 149, 151 and 153 read at full size), GARV..1.1.4 (68e56895a1660dc4d1aa35dd, all 14 images; key on ff. 43r-44r = images 9-10) and GARV..2.2.1 (68e57156a1660dc4d1aa35ea, all 48 images as contact sheets). GARV..2.3.1, 2.3.2 and 2.4.1 were not opened.",
+     "extent": "GARV..2.2.4 holds at least 15 telegrams wholly or partly in cipher (ff. 103, 104, 106, 107, 116, 126, 134, 138, 139, 140, 141, 149, 151, 153, 154), each a few lines to half a page of letter groups; f. 151 (No. 143, 25 Sept 1932) is about 160 numbers in a different numeric system.",
+     "cipher": "Most telegrams are in the Colombian army's 1931 day-of-week substitution: seven alphabets (Lunes to Domingo), vowels to vowels and consonants to consonants, words forwards or reversed, with the day and D/R written in clear at the head. Cipher words are often mixed with clear words. No decipherment is written on the telegrams read here; the AGN descriptions say GARV..2.3.1 and 2.4.1 carry telegrams 'con traducción'."
+    },
+    "prior_art": {
+     "decode": "Not on DECODE: known.py found no hit for Rodríguez Vergara, GARV or Olaya, and the only Leticia hit is an unrelated Peruvian 1930s catalogue entry.",
+     "tomokiyo": "Not in Tomokiyo's cryptiana: the index (crypto.htm, fetched 28 Oct 2026) has no Colombian, Leticia or 1930s Latin-American military item.",
+     "lasry": "Nothing by Lasry on 20th-century Colombian military ciphers; his papers and GL.htm (grepped in the repository copies) cover early-modern European ciphers.",
+     "edition": "No edition of the Rodríguez Vergara papers or of these telegrams was found; FRUS 1932 vol. V prints US diplomatic telegrams on the Leticia dispute, not Colombian army traffic.",
+     "literature": "Web search (Rodríguez Vergara 1932 telegramas cifrados clave Leticia Puerto Asís) found only general histories of the Leticia war (Camacho Arango; Wikipedia/Wikiwand) and nothing on the Colombian cipher or this fonds."
+    },
+    "key_check": "The key held in the same fonds reads the telegrams. GARV..1.1.4 f. 44r ('CRIPTOGRAFIA', Bogotá 31 Jan 1931, Sección I) with the rules on f. 43r was transcribed (research/latam_vetting/1526_key_garv114.tsv). With the Lunes alphabet, f. 153 (Minguerra to Rodríguez, 26 Sept 1932) gives 'vapor Santa María ... informo ... despacharon para provincia Loreto un regimiento de infantería de seiscientos hombres y [otro] de artillería de montaña', and f. 149 (No. 141, Puerto Asís 24 Sept 1932) gives 'a la una p.m. zarpará cañonero dirección Caucayá llevando dos oficiales, ciento veintiséis tropa, noventa cajas gasolina, cincuenta galones glice[rina]'. A Sábado telegram (f. 106) gives Manao[s] and Tocantins with some typing slips. GARV..2.2.1 holds a second key, the June 1932 Presidency key (ff. 6v, 8 and 10: a 5-column letter table explained by telegraphist José Rafael Ramírez). The numeric telegram f. 151 was not tested against either key. Translations: none were seen in 2.2.4; the AGN descriptions put 'traducción' with the telegrams of GARV..2.3.1 and 2.4.1, not opened.",
+    "duplicates": "known.py was run on 'Rodríguez Vergara', 'GARV', 'Leticia' and 'Olaya': the hits are this lead (research/leads.json, research/latam_north) and catalogue/CATALOGUE.md's unrelated Peruvian 1930s code entry. No duplicate.",
+    "verdict": "key_lookup",
+    "closed": "Day-of-week key on GARV..1.1.4 ff. 43r-44r reads the GARV..2.2.4 telegrams; key in research/latam_vetting/1526_key_garv114.tsv"
+   }
   },
   {
    "id": 1527,
@@ -25492,7 +25480,7 @@
    "shelfmark": "Archivo General de Indias, ESTADO,12,N.14",
    "folio_note": "images on PARES; length not known",
    "cls": "B",
-   "status": "PARES title 'Gobernador Habana sobre noticias de Gaceta de Nueva York', found under 'en cifra' and 'no descifrada'. Galende Díaz (Rev. Complutense de Historia de América 26, 2000, p. 66 n. 52) cites this very document as an example of Cienfuegos's 1817 cipher, which replaces the vowels by digits (A=5, E=3, I=1, O=2, U=4) and keeps the consonants. In research/pares_ags hits (screen_ranked score 5) but not taken there as a candidate. Not on DECODE.",
+   "status": "PARES title 'Gobernador Habana sobre noticias de Gaceta de Nueva York', found under 'en cifra' and 'no descifrada'. Galende Díaz (Rev. Complutense de Historia de América 26, 2000, p. 66 n. 52) cites this very document as an example of Cienfuegos's 1817 cipher, which replaces the vowels by digits (A=5, E=3, I=1, O=2, U=4) and keeps the consonants. In research/pares_ags hits (screen_ranked score 5) but not taken there as a candidate. Not on DECODE. Vetting 28 Oct 2026: images not seen (PARES 429 from this IP, script and browser). Galende 2000 n. 52 names this document as written in Cienfuegos's 1817 vowel-digit cipher, so it is a key lookup on the printed evidence; confirm and read on the scans when PARES answers. Vetting stopped 28 Oct 2026: PARES refused every request (HTTP 429), so the scans were not seen; the draft checks are in research/latam_vetting/vet_1530.json. Re-vet on the images.",
    "why": "Havana intelligence on insurgent and US news in 1819, in a cipher whose rule is in print; a quick full reading and a check of the system on a real despatch.",
    "importance": 2,
    "solvability": 5,
@@ -25504,7 +25492,7 @@
      "href": "https://pares.cultura.gob.es/ParesBusquedas20/catalogo/description/62186"
     }
    ],
-   "prior_art": "system published (Galende 2000, n. 52); this letter's text not known to be printed (checked 28 Oct 2026: Galende only)",
+   "prior_art": "system and this document's use of it published (Galende 2000, n. 52); text not printed; scans not seen (PARES 429, 28 Oct 2026)",
    "needs_archive_scan": "no",
    "access_note": "images on PARES (free)",
    "ark": "",
@@ -25528,7 +25516,7 @@
    "shelfmark": "Archivo General de Indias, ESTADO,64,N.46",
    "folio_note": "images on PARES; length not known",
    "cls": "C",
-   "status": "PARES title 'Expedición a favor de insurgentes de Venezuela y Colombia' found under both 'en cifra' and 'no descifrada', so the description says the cipher is not deciphered. In research/pares_ags hits (screen_ranked score 5) but not taken there. Not on DECODE.",
+   "status": "PARES title 'Expedición a favor de insurgentes de Venezuela y Colombia' found under both 'en cifra' and 'no descifrada', so the description says the cipher is not deciphered. In research/pares_ags hits (screen_ranked score 5) but not taken there. Not on DECODE. Vetting 28 Oct 2026 blocked: PARES returned 429 to script and browser, so neither the description nor the images of ESTADO,64,N.46 were seen. Not vetted; verdict left as not_seen (outside the gate's list on purpose, so it cannot be promoted). Vetting stopped 28 Oct 2026: PARES refused every request (HTTP 429), so the scans were not seen; the draft checks are in research/latam_vetting/vet_1531.json. Re-vet on the images.",
    "why": "Spanish intelligence on a foreign (probably British or Irish Legion) expedition to Bolívar in 1820; the undeciphered part is the operative intelligence.",
    "importance": 3,
    "solvability": 3,
@@ -25540,7 +25528,7 @@
      "href": "https://pares.cultura.gob.es/ParesBusquedas20/catalogo/description/65951"
     }
    ],
-   "prior_art": "open (checked 28 Oct 2026: nothing found; description not read)",
+   "prior_art": "open as far as checked (28 Oct 2026: DECODE, cryptiana, Galende 2000, web); description and scans not seen (PARES 429)",
    "needs_archive_scan": "no",
    "access_note": "images on PARES (free)",
    "ark": "",

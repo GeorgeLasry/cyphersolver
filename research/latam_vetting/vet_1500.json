@@ -1,0 +1,28 @@
+{
+ "id": 1500,
+ "vetting": {
+  "date": "2026-10-28",
+  "by": "Claude session (LatAm vetting, 28 Oct 2026)",
+  "seen": {
+   "kind": "scan",
+   "where": "https://riobranco.archivonacional.gov.py/uploads/r/archivo-nacional-de-asuncion/8/3/5/8353484cf68d7a80d9ddbfe3c3bee098b13c26efaa58f1bacbc368e0c6755294/ANA-AHRP-PY_-_558-1-31.compressed.pdf (PDF of 98 images downloaded 28 Oct 2026; item 13 on images 41-42, 0-based, sheets numbered 586-587, BN Rio I-29,25,23 no. 13).",
+   "extent": "One letter of two pages (Asunción, 13 Feb 1850, signed Benito Varela, to the Consul General in Rio): 12 runs of dot-separated numbers, about 90 cipher tokens, plus single numbers standing for persons (25 twice, 1 twice, 116) and one barred-circle sign; the rest of the letter is clear Spanish.",
+   "cipher": "Numeric substitution, almost all values odd and below 50 (plus 98 and 116), in runs of 2-16 numbers embedded in clear text: a letter table with homophones or a small syllabary, plus a few name numbers. No decipherment, interlining or key is written on or with the letter (images 38-45 checked)."
+  },
+  "prior_art": {
+   "decode": "Searched the DECODE dumps in research/catalogue_harvest/decode/ for Paraguay, Asunción and Brazil: no record; not on DECODE.",
+   "tomokiyo": "No cryptiana page on Paraguayan or Río de la Plata 19th-century ciphers was found (web search), and the repo's ledgers have none (known.py).",
+   "lasry": "No Lasry paper or GL.htm entry on Paraguayan ciphers is known to the repo or found by web search.",
+   "edition": "No edition of the Varela - Moreira de Castro correspondence was found: web searches for the correspondents with 'correspondencia cifrada' returned only the ANA AtoM catalogue records (Moreira de Castro letters of 1853, Varela's appointment); the ANA description of item 13 itself says the passages could not be identified because they are 'escritos en código cifrado'. Printed Paraguayan diplomatic collections were not checked page by page.",
+   "literature": "Web searches in Spanish and English on Carlos Antonio López's diplomatic ciphers (cifra diplomática Paraguay, clave cifrada siglo XIX, criptografía) found no study of a Paraguayan state cipher of this period."
+  },
+  "key_check": "No Paraguayan key of the López era is held in the repo or known in print. The sibling diplomatic files of the Rio Branco collection skimmed in the South Cone sweep (Gelly in Rio 1849-52, Decoud 1853, F. S. López 1853, Varela - Derqui 1852) showed no number runs at thumbnail size, and the other 96 images of this file were not paged through for a key in this session. Quick checks here: the repeated runs (9.27.7.33.15.3 twice; 9.13.1.37.3.1?.7.9.33 twice before '[Rio?] Grande') do not fit a plain one-value-per-letter alphabet with an obvious crib ('provincia' would need two values for i and one value for both r and n), so no simple key tried reads it. Not a key lookup on present evidence.",
+  "duplicates": "known.py on 'Moreira de Castro', 'Benito Varela', '558-1-31', 'Carlos Antonio', 'Paraguay', 'Asunci': no catalogue entry, target or DECODE record for this letter; the only other Paraguay hit is the unrelated Godoi exile letters of 1878-84 (research/dpla_smithsonian).",
+  "verdict": "open"
+ },
+ "lead_updates": {
+  "folio_note": "PDF of 98 images; item 13 on images 41-42 (0-based), sheets 586-587: 12 runs of dot-separated numbers (~90 tokens, values mostly odd 1-49, also 98 and 116), name numbers 25, 1, 116 and a barred-circle sign, in a clear Spanish letter. Transcription: research/latam_vetting/1500_sample.txt.",
+  "status_append": "Vetted 28 Oct 2026: scan transcribed; no decipherment on or with it; no key known; not on DECODE, no edition or study found. Verdict open. Next: page through the other 96 images of 558-1-31 and the sibling López-era files for a key or a deciphered copy.",
+  "prior_art": "open (checked 28 Oct 2026: DECODE dumps, known.py, web search for edition and literature; nothing found)"
+ }
+}
