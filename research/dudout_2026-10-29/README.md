@@ -16,7 +16,7 @@ Findings are his, not re-checked here unless a line below says so. Credit him wh
   ours; credit the three; wait for Brice's corrected series after he has read Ono.
 - **castaldo1552 (1332)**: the corrections file says the letter of 15 Oct 1552 is read; his email withdraws it (validation 0.731 of words).
   Hold until he confirms. Neither a branch nor a target exists here.
-- **bouille1778 (1202)**: he reports it read (455/458 words, "PR #171"); no such PR on this repository and no target folder. Ask for a patch.
+- **bouille1778 (1202)**: he reports it read (455/458 words); his PR #171 is hidden while his GitHub account is suspended, so it is not here. Ask for the files or a patch by email.
 - Branches awaited as patch files: harley1582r8505, asang1662 (Krakow 443), rubio1913 (Mexico 1468), biglia1565, sega1590, perez1578,
   desnoyers1659 and the rest of the list in his email. None applied yet; each is re-measured against the read bar when it arrives.
 
