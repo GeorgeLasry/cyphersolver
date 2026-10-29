@@ -1,0 +1,104 @@
+{
+  "source": "Qatar Digital Library (qdl.qa), British Library India Office Records and Private Papers, free IIIF images",
+  "swept": "2026-10-28",
+  "record_url_prefix": "https://www.qdl.qa/en/archive/81055/",
+  "iiif_image_prefix": "https://iiif.qdl.qa/iiif/images/81055/",
+  "candidates": [
+    {
+      "ref": "IOR/R/15/2/450",
+      "title": "File 10/23 Code Messages - BAPCO",
+      "dates": "24 May 1944 - 2 Mar 1946",
+      "images": 196,
+      "vdc": "vdc_100000000241.0x000271",
+      "seen_on_image": true,
+      "tier": "A",
+      "what": "Typed BAPCO cables Bahrain <-> New York in 5-letter cipher groups (e.g. f. 4r: COSLE QQQQQ BABIX UDWWP ZAHBT ... signed WARD ANDERSON). The file also holds the plain-language 'Outward cable / Service: CODE' copies that the company had to give the censor (e.g. f. 7: No. 733, 15 Jun 1944, change of address to A.P.O. 816).",
+      "system": "Company cypher approved Jan 1944 'on the understanding that the pad is not worked through more than once' (IOR/R/15/2/423 f. 41r OCR): a pad-based letter cipher, vetted by the P.A.I.C. security officer as offering 'small resistance to organized cryptography'.",
+      "key_material": "Plain-language censor copies in the same file (pairs). The code itself was lent to the Political Agent 19 Oct 1943 and returned in 1946 (423, ff. 48-49): not in the file.",
+      "next": "Transcribe the cipher cables and match them to the censor copies by cable number and date; recover the system from the pairs; test whether any pad stretch was reused (that is the only way into unpaired messages).",
+      "already_read": "The paired messages were read at the time (censor copies). No modern work found."
+    },
+    {
+      "ref": "IOR/R/15/2/423",
+      "title": "File 10/5 BAPCO CODES",
+      "dates": "4 Apr 1943 - 18 Feb 1946",
+      "images": 108,
+      "vdc": "vdc_100000000241.0x000236",
+      "seen_on_image": true,
+      "tier": "key",
+      "what": "Correspondence on BAPCO's request to use its cypher in wartime: approval conditions (plain-language copy to the censor), the security officer's verdict, the 'pad' condition, the 1945-46 return to the pre-war commercial code. Typed and OCR'd on QDL.",
+      "system": "See IOR/R/15/2/450.",
+      "key_material": "Describes the system; no key tables seen in the first 26 images.",
+      "next": "Read all of it alongside 450.",
+      "already_read": "n/a (clear correspondence)"
+    },
+    {
+      "ref": "IOR/R/15/2/955",
+      "title": "206 Cypher Codes. Correspondence re.",
+      "dates": "18 Oct 1918 - 16 Mar 1926",
+      "images": 40,
+      "vdc": "vdc_100000000241.0x0001ca",
+      "seen_on_image": true,
+      "tier": "A",
+      "what": "Handwritten Indo-European Telegraph Department forms in code words. f. 3r: Bushire -> Political Bahrain, 18 Oct 1918, 13 ten-letter code words (Ekatsimybu Oytnessone ...), no gloss. f. 11 (image 21): Muscat -> Political Bahrain, March 1920, mixed clear and code ('lasagnotto jacamine' glossed 'your memorandum 9th March' in pencil).",
+      "system": "Government Telegraph Code and Indian Word Code (catalogue description). Commercial-style codebooks: a ten-letter word may be two five-letter code words.",
+      "key_material": "Pencil glosses on some telegrams. IOR/R/15/2/1466-1467 (QDL, 710 images) hold the IWC 1924 supplements, but only addressee code words (QUYAD...) seen, not the vocabulary.",
+      "next": "Contact-sheet all 40 images; list glossed and unglossed telegrams; collect gloss pairs; look for the Government Telegraph Code / Indian Word Code books (BL IOR/L/PS/... or printed copies).",
+      "already_read": "Partly glossed at the time. No modern work found."
+    },
+    {
+      "ref": "IOR/R/15/2/1466",
+      "title": "File 15/23 List of holders of Indian Word Code etc & rules relating thereto",
+      "dates": "1 Apr 1924 - 3 Oct 1933",
+      "images": 686,
+      "vdc": "vdc_100000000282.0x0000c9",
+      "seen_on_image": false,
+      "tier": "key",
+      "what": "Supplements to the Indian Word Code 1924 holder lists and the Economical Code distribution lists; OCR shows addressee code words (QUYADMEO, QUYADORT ...).",
+      "system": "Indian Word Code 6th ed. 1924; Government Telegraph Code 1922.",
+      "key_material": "Addressee code words only, as far as sampled (images 10, 40, 120, 300).",
+      "next": "Only useful for 955 if its later telegrams address officials by code word.",
+      "already_read": "n/a"
+    },
+    {
+      "ref": "IOR/L/PS/10/405/1",
+      "title": "File 3294/1913 Pt 1 Turco-Persian Frontier Commission: Expenditure",
+      "dates": "1913-1916",
+      "images": 904,
+      "vdc": "vdc_100043693217.0x000001",
+      "seen_on_image": true,
+      "tier": "C",
+      "what": "Catalogue says 'a secret cipher is used to transmit a number of telegraphs (e.g. folio 375 and folio 376)'. ff. 374-377 (images 752-759) are printed telegram copies and a typed draft with red decypher marks: clear text, no code groups seen.",
+      "system": "unknown",
+      "key_material": "n/a",
+      "next": "None unless code groups turn up elsewhere in the 904 images.",
+      "already_read": "Decyphered copies in the file."
+    }
+  ],
+  "out_of_range_leads": [
+    {
+      "ref": "IOR/L/PS/9/76/212 and /217",
+      "dates": "c 1802 (212 docketed 'Enclosed in Sir Har[ford Jones's letter] to the Chairman ... 20 Jany 1802')",
+      "images": "8 + 4",
+      "vdc": ["vdc_100109378870.0x000001", "vdc_100109378875.0x000001"],
+      "seen_on_image": true,
+      "tier": "A",
+      "what": "English 'Translation ad sensum' of letters from Jones's informant, with the sensitive words replaced by underlined numeric groups of the form page,word (212 f. 1r: 'in the Suite of 1,1. 281. 93. 66. 398,16 ...'; 217 f. 1r: 'I had the honor to 337,65. 440,54 ...'). Clear context all round. No decipherment written in. Both headings open 'Translation ad sensum of 1,1. 221,25 from 213,8. 1,1. 305,25 ...', so the shared groups are the heading formula.",
+      "system": "Book or nomenclator code, groups page,word (or page,line); '1,1' is frequent and fits 'a' in the headings.",
+      "key_material": "IOR/L/PS/9/76/49 (Jones -> Dundas, Baghdad 17 Dec 1798, vdc_100109378677.0x000001) is in the same page,word form ('11,9. 383,10. 215,13. 1,1. 101,68 ...'), and IOR/L/PS/9/76/51 (vdc_100109378680.0x000001) is its copy headed 'Copy - Original in Cypher. Secret.' ('I had this Morning a very long and ...'). That is a full plaintext-ciphertext pair. Whether 1798 and 1802 use the same book is not yet tested. IOR/L/PS/9/76/214 (1801-02, 'dates in cypher') is a further sibling, not viewed.",
+      "next": "Transcribe 49 and align it with 51 to get a page,word -> word table; apply it to 212/217; if the book is the same, identify the book from the page,word positions (the arXiv 2010.04746 approach for 18th-c. book codes).",
+      "already_read": "212/217: no reading found (web search 29 Oct 2026). 49: read at the time (51)."
+    },
+    {
+      "ref": "IOR/R/15/1/134 f 32",
+      "dates": "17 Jun 1852",
+      "images": 2,
+      "vdc": "vdc_100023673703.0x000014",
+      "seen_on_image": true,
+      "tier": "not a cipher (probably)",
+      "what": "Catalogued 'written in cypher and unreadable'. On the image it is Armenian cursive (notrgir) with Western-digit dates (1849, 1852): Ameer Khan Johannes at Isfahan replying to Kemball's clear English letter of 13 May 1852 (same volume f. 26). Plain Armenian, or English in Armenian letters; needs an Armenian reader, not cryptanalysis.",
+      "already_read": "unknown"
+    },
+    {"ref": "Mss Eur F126/86, ff 33-34", "dates": "12 Mar 1875", "images": 4, "vdc": "vdc_100023550603.0x00000f", "what": "Viceroy Northbrook -> Pelly, cypher telegram with decoded copy (read at the time); not viewed"}
+  ]
+}
