@@ -161,7 +161,7 @@ qi.addEventListener('input',function(ev){state.q=ev.target.value.trim().toLowerC
 clr.addEventListener('click',function(){state.q='';state.f={};qi.value='';render();});
 document.getElementById('wreset').addEventListener('click',function(){state.sort='prio';state.dir=-1;state.w={imp:D.weights.importance,sol:D.weights.solvability,eas:D.weights.ease};document.getElementById('w_imp').value=state.w.imp*100;document.getElementById('w_sol').value=state.w.sol*100;document.getElementById('w_eas').value=state.w.eas*100;render();});
 var qm=/[?&]q=([^&#]+)/.exec(location.search);if(qm){var qv=decodeURIComponent(qm[1].replace(/\+/g,' '));qi.value=qv;state.q=qv.trim().toLowerCase();}
-if(!(hm&&G[hm[1]])){if(location.hash.indexOf('=')<0)state.f.access=['online'];load();}
+if(!(hm&&G[hm[1]])){if(location.hash.indexOf('=')<0){state.f.access=['online'];state.f.status=['new'];}load();}
 render(!location.hash||hm);
 if(hm&&G[hm[1]])document.getElementById('hashnote').scrollIntoView();
 })();
