@@ -1,0 +1,115 @@
+{
+ "schema_version": 1,
+ "target": "hm64",
+ "title": "Astrological and medical compilation with occasional cipher words (Huntington HM 64)",
+ "documents": [
+  {
+   "id": "HM64",
+   "shelfmark": "Huntington Library, mssHM 64; ff. 50, 102v, 111, 143, 163",
+   "date": "end of 15th century (after 1485)",
+   "year": 1490,
+   "country": "England",
+   "route": "unknown (compiler)",
+   "language": "Latin and English",
+   "cleartext_in_document": "mostly clear",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "unknown"
+   },
+   "length": {
+    "tokens": "unknown",
+    "distinct": "unknown",
+    "unit": "letters",
+    "measured": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "HDL IIIF images, ff. 163r and 111r viewed",
+    "image_quality": "good",
+    "notes": "Two candidate cipher words recorded in transcription.txt; ff. 50, 102v, 143 not searched."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "unknown"
+  ],
+  "summary": "Occasional single words in odd letter-like signs inside clear text; catalogue says vowels replaced by numbers, not confirmed on the two words seen.",
+  "symbol_kind": "unknown",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": "unknown"
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": "unknown"
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "none",
+  "doubled_letters": "unknown",
+  "sibling_key": "none",
+  "notes": ""
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "none found (catalogue only)",
+   "found": "during attempt",
+   "used": false
+  },
+  "inputs": [
+   "images"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "Posed the problem with /goal; no target-specific intervention recorded.",
+  "tools": [
+   "HDL IIIF image fetch",
+   "Pillow crops"
+  ],
+  "models": [
+   "claude-sonnet-5-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-10-28",
+  "last_date": "2026-10-28"
+ },
+ "solution": [
+  {
+   "kind": "access",
+   "what": "Fetched the HDL IIIF manifest and eight folio images.",
+   "result": "worked",
+   "date": "2026-10-28"
+  },
+  {
+   "kind": "literature search",
+   "what": "Catalogue, DS9605 and web search: no reading; Verso page 429.",
+   "result": "partial",
+   "date": "2026-10-28"
+  },
+  {
+   "kind": "transcription",
+   "what": "Located and transcribed candidate cipher words on ff. 163r and 111r; red hatched boxes on 163r identified as crosses, not cipher.",
+   "result": "partial",
+   "date": "2026-10-28"
+  }
+ ],
+ "outcome": {
+  "method": "not solved",
+  "method_basis": "Short first pass: two candidate words located, no key, no solver run (too little ciphertext).",
+  "contribution": [
+   "transcription"
+  ],
+  "class": "not read",
+  "fraction_read": 0,
+  "verification": [],
+  "notes": "Remaining folios unsearched; see NOTES.md.",
+  "credits": []
+ }
+}
