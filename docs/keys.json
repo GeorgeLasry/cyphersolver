@@ -1,5 +1,9 @@
 {
  "keys": [
+{"id": "k-r5323", "label": "Filippo Maria Duca di Milano (ASMi Carteggio Sforzesco cart. 1597 no. 23, DECODE R5323)", "kind": "DECODE key record", "by": "Visconti chancery (18th-century archive copy)", "year": 1446, "note": "Homophonic alphabet with up to six signs a letter, a full vowel-consonant syllable table, twelve word signs, about fourteen name signs and twelve nulls. Catalogued on DECODE with no names; identified for the Duke's 1446-47 slips in BnF ital. 1583-1584 (Oct 2026)."},
+{"id": "k-r5324", "label": "Filippo Maria Duca di Milano, second key (ASMi Carteggio Sforzesco cart. 1597 no. 24, DECODE R5324)", "kind": "DECODE key record", "by": "Visconti chancery (18th-century archive copy)", "year": 1447, "note": "Homophonic alphabet with one to four signs a letter, word signs, code words for names and common words, six nulls. Catalogued on DECODE with no names; reads BnF ital. 1584 f. 15 (Oct 2026)."},
+{"id": "k-augur1874", "label": "Department of Texas route tables 1874 (rebuilt from the telegrams)", "kind": "rebuilt here", "by": "cyphersolver", "year": 1874, "note": "Three word routes: no indicator (7 columns 1d 7u 4d 6u 2d 5u 3d), Baltic (9 columns 2,4,6,8,9,7,5,3,1 down), Dresden (7 columns 1d 7u 6u 2d 5u 4d 3d); arbitraries not recovered."},
+{"id": "k-fifthmd1869", "label": "Fifth Military District cipher example, Austin 1869", "kind": "archive key", "by": "L. V. Caziare", "year": 1869, "note": "Worked example of the route cipher with the indicator Pleasure, check words and arbitraries (Newberry, Grierson papers Ayer MS 3039 box 3 f. 153); gives the method, not the route tables."},
 {"id": "k-r1857", "label": "Marcolinus de Barbavara et Symon Arrigonus - Petrus de Pusterla (DECODE R1857 image 11, ASMi Potenze sovrane 1592 Cifrari)", "kind": "DECODE key record", "by": "Milanese chancery (late archive copy)", "year": 1447, "note": "Homophonic alphabet, vowel-consonant syllable signs, word signs, nulls and a dozen code signs; several cells blotted. Identified for BnF ital. 1584 f. 69 by Satoshi Tomokiyo (2024)."},
 {"id": "k-portstemarie1729", "label": "Port Sainte-Marie agent code 1729 (rebuilt from glossed siblings)", "kind": "rebuilt here", "by": "cyphersolver", "year": 1729, "note": "One-part alphabetical French code, 379 values read off interlinear glosses in Huntington mssBLA 187-191."},
 {"id": "k-grandchiffre1812-shd", "label": "Grand Chiffre of 1812 (the Great Paris Cipher), deciphering table SHD B n° 30", "kind": "archive key", "by": "", "year": 1812, "note": "Repertory of 1,200 numbers for letters, syllables and words, extended to 1,400 with additions for Spain (1211 the Army of the Centre, 1214 the English army, 1300 Lord Wellington, 1383 the Tagus), several numbers for frequent words. The French deciphering table is at the Service historique de la Défense (B n° 30); photographs published by Jean-François Bouchaudy (jfbouch.fr/crypto/napoleon). Cells used for these letters read by Brice Dudout, 226 of them first for King Joseph’s letter of December 1812 (bdudout.github.io/joseph-napoleon): targets/marmont1812/key_1812_entries.tsv. Photographs not reproduced."},
@@ -2376,6 +2380,9 @@
 {"id": "k-poinsett1814", "label": "Poinsett's numbered code (the = 1355), values from the 1814 clerk's decipherment", "kind": "rebuilt here", "by": "", "year": 1813, "note": "95 values from the clerk's interlinear decipherment of Poinsett to Monroe, 14 June 1814 (NARA M37 roll 2 frame 0098); targets/poinsett1813/key_1814.tsv."}
  ],
  "links": [
+{"key": "k-r5323", "target": "visconti1446", "how": "read unchanged", "note": "reads all twenty R5323 slips of Nov 1446 - Mar 1447; checked against the translations ff. 6 and 9 (96.5%, 96.9%); name signs and a few homophones added from use"},
+{"key": "k-r5324", "target": "visconti1447", "how": "read unchanged", "note": "reads f. 15; checked against the clear text f. 16 (96.0%); three code words not on the copy added"},
+{"key": "k-augur1874", "target": "augur1874", "how": "rebuilt from", "note": "routes recovered from the four telegrams by word-bigram scoring and column-order DP"},
 {"key": "k-r1857", "target": "barbavara1447", "how": "partial", "note": "spot checks of the copied letters, the glossed runs of ff. 135 and 143, and the copyist's blank code signs (Duca di Ferrara, Veneziani, qui)"},
 {"key": "k-portstemarie1729", "target": "portstemarie1729", "how": "rebuilt from", "note": "table from five glossed sibling letters, applied to the unglossed p. 5"},
 {"key": "k-grandchiffre1812-shd", "target": "marmont1812", "how": "read unchanged", "note": "cells read by Brice Dudout on Bouchaudy’s photographs and frozen before decoding; Jourdan to Soult (N.34, held out) 259 of 267 numbers with 8 restored from the sense, Marmont to Jourdan (N.73) about 85%"},
@@ -3798,6 +3805,7 @@
   }
  ],
  "source_links": [
+{"source": "s-cyphersolver", "key": "k-augur1874"},
 {"source": "s-cyphersolver", "key": "k-portstemarie1729"},
 {"source": "s-decode", "key": "k-r7501"},
 {"source": "s-cyphersolver", "key": "k-bernstorff-0075-1917"},
@@ -4489,6 +4497,9 @@
   "urquhart": "No cipher key: a rule-based word puzzle, read by applying the stated rule (see the write-up)."
  },
  "tried": [
+{"key": "k-r5324", "target": "visconti1446", "note": "its e signs are not the slips' e signs; does not fit the R5323 slips"},
+{"key": "k-r5323", "target": "visconti1447", "note": "does not fit f. 15 from its first signs"},
+{"key": "k-fifthmd1869", "target": "augur1874", "note": "same family (columns, indicator, arbitraries) but with check words; none of its arbitraries recur in the 1874 telegrams"},
 {"key": "k-dudout-albornoz-k1", "target": "albornoz1648", "note": "the royal cipher of 1644-45, rebuilt from CT.2,D.16 and tested on D.20; the 1648 letter uses syllable groups (ne, mo, ma, so, ri) and numbers 2-61 that K1 does not have (Brice Dudout, Oct 2026)"},
 {"key": "k-lopehurtado1520-sept", "target": "lopehurtado1520", "note": "named by J. Paz's slip; its values are incompatible with the 10 December cipher (Brice Dudout, 27 Oct 2026)"},
 {"key": "k-sabugosa-code", "target": "carlos1903", "note": "Sabugosa's code of the same weeks is alphabetical; this one is not (38564 ter < 58215 com), and no value carries over"},
