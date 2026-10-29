@@ -219,7 +219,12 @@ no repeated 4-gram. Orientation F carries 23/87.
    (step 12, Roe grid), but the arc counts it uses are not the 1-2-3 order, so it gives no key values. Closes the
    "second text" lead for this card. Bauer's cards 1-4 (pp. 139-140) are the Schooling solution; this is card 6.
 
-## Where it stands (28 Oct 2026)
+## Where it stands (29 Oct 2026)
+
+Unchanged by rounds 68-72 (Padgett's reply, Bauer ch. 3): every branch decidable with the material in hand is NEG, X
+or NP. Next movement needs a better image of the note or a second text, both outside this checkout.
+
+### As of 28 Oct 2026
 
 Not deciphered. Outcome: not solved (attempted, open).
 
@@ -239,7 +244,8 @@ What this session establishes, beyond Wase 2023:
   original is lost; the 1937 first-edition scan is binarised. A greyscale scan of the 1937/1946/1949 plate
   would sharpen the angle measurement. Found 29 Oct 2026: archive.org `edwardelgarmemor0000mrsr` is the 1947 edition,
   scanned 2022 in greyscale JP2 (196 images), lending-only (access-restricted); a borrowed view can be screenshotted
-  for the plate, then `measure.py`.
+  for the plate, then `measure.py`. Tried 29 Oct 2026: the archive.org sign-in did not complete in the user's Chrome, and
+  the user closed this route. Still open for a later session; the plate would only refine the 1937 measurement.
 - Second texts: Liszt fragment (step 28, negative jointly) and Cryptogram card (step 29, an alphabet exercise); the rest of
   the nine-card Schooling series untranscribed. Blocker: no
   text long enough to check a key on two documents; the Courage cards need museum access.
