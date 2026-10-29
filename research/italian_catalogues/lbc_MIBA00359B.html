@@ -1,0 +1,286 @@
+
+
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Ambasciatori, agenti (1516 -  1751)  &ndash; Archivi storici  &ndash;  Lombardia Beni Culturali</title>
+    <meta name="description" content="Serie compresa in: Dicasteri (1330 -  1802). Conservatore: Comune di Milano. Archivio storico civico - Biblioteca Trivulziana (Milano, MI).">
+    <meta name="author" content="Codex, Pavia (IT) - https://www.codexcoop.it">
+    <meta name="copyright" content="Copyright (c) 2002-2026 Lombardia Beni Culturali">
+        <!-- css -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/master-v2019.css">
+    <!-- css specifici della sezione archivi -->
+    <link rel="stylesheet" type="text/css" href="/css/dtree.css">
+    <link rel="stylesheet" type="text/css" href="/css/resize.css">
+    <!-- javascripts -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/common.js"></script>
+    <!-- javascripts specifici della sezione archivi -->
+    <script type="text/javascript" src="/js/dtree.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript">
+      $(function() {
+
+        function setBgPosition() {
+          var size = $('#tree-wrap').width() + 29;
+          $('#content').css('background', 'url(/img/bg-line.gif) repeat-y ' + size + 'px 0');
+        }
+
+        $("#open, #close").click(function () {
+          $('#tree-wrap').css('height','auto');
+        });
+
+        if ($('.col-fond').width() > 720 && $('.col-fond').width() == $('#content').width()) {
+
+          $("#tree-wrap").resizable({
+            handles : { 'e': "#tree-handle" },
+            maxWidth: 600, // 694
+            minWidth: 346, // 346
+          });
+
+          $("#tree-wrap").on("resize", function(event, ui) {
+            $('#record-wrap').css('width', $('#content').width() - $("#tree-wrap").width());
+          });
+
+          $('#tree-wrap').css('width', '33.33333333%');
+          $('#record-wrap').css('width', '62.66666667%'); // 66.6% - 4% di tolleranza
+          setBgPosition();
+
+        } else {
+          $("#tree-wrap").resizable({
+            disabled: true
+          });
+          $('#content').css('background', 'none');
+        }
+
+        $(window).resize(function() {
+          if ($('#content').width() <= 720) {
+            $('.col-fond').css('width', '100%');
+            $('#tree-wrap').resizable({
+              disabled: true
+            });
+            $('#content').css('background', 'none');
+          } else {
+            $('#tree-wrap').resizable({
+              disabled: false
+            });
+            if ($('.col-fond').width() == $('#content').width()) {
+              $('#tree-wrap').css('width', '33.33333333%');
+              $('#record-wrap').css('width', '66.66666667%');
+              setBgPosition();
+            } else {
+              $('#tree-wrap').css('width', ($('#tree-wrap').width() / ($('#tree-wrap').width() + $('#record-wrap').width())) * $('#content').width());
+              $('#record-wrap').css('width', $('#content').width() - $('#tree-wrap').width() - 15);
+              setBgPosition();
+            }
+          }
+        });
+
+      });
+    </script>
+  </head>
+
+    <body id="fond">
+  <div id="wrap">
+
+    <div id="top-bar">
+      <div class="container">
+        <a id="logo-rl-bianco" class="d-md-none" href="https://www.regione.lombardia.it" target="_blank">
+          <img src="/img/logo-rl-bianco.png" style="height: 40px; border: 0;" alt="Regione Lombardia">
+        </a>
+      </div>
+    </div>
+
+    <div id="logo-bar">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-8">
+            <a id="logo-rl" class="d-none d-md-inline-block" href="https://www.regione.lombardia.it" target="_blank">
+              <img src="/img/logo-regione-lombardia.png" style="width: 182px; height: 54px; border: 0;" alt="Regione Lombardia">
+            </a>
+            <a id="logo-lbc" href="/" title="Homepage">LombardiaBeniCulturali</a>
+          </div>
+          <div id="logo-bar-right" class="col-xs-4">
+            <button type="button" class="toggler toggler-search d-inline-block d-md-none collapsed" data-toggle="collapse" data-target="#sm-sitesearch-form">
+              <span class="fa fa-search"></span>
+            </button>
+
+            <button type="button" class="toggler toggler-hamburger d-inline-block d-md-none collapsed" data-toggle="collapse" data-target="#menu">
+              <span class="hamburger">
+                <!-- <span class="sr-only">Mostra / nascondi navigazione</span> -->
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
+            </button>
+
+                          <form class="form-inline d-none d-md-block" action="/ricerca/" method="get">
+                <div class="input-group">
+  <input type="text" class="form-control" name="q" autocomplete="off" spellcheck="false" placeholder="Cerca nel sito" title="Cerca nel sito">
+  <div class="input-group-btn">
+    <button type="submit" class="btn btn-default"><span class="fa fa-search"></span></button>
+  </div>
+</div>
+
+              </form>
+                      </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="sm-sitesearch-form" class="collapse d-md-none">
+      <div class="container">
+        <form class="form-inline" action="/ricerca/" method="get">
+          <div class="input-group">
+  <input type="text" class="form-control" name="q" autocomplete="off" spellcheck="false" placeholder="Cerca nel sito" title="Cerca nel sito">
+  <div class="input-group-btn">
+    <button type="submit" class="btn btn-default"><span class="fa fa-search"></span></button>
+  </div>
+</div>
+
+        </form>
+      </div>
+    </div>
+
+      <nav class="navbar navbar-default">
+<div class="container">
+  <div id="menu" class="navbar-collapse collapse">
+    <ul class="nav navbar-nav">
+      <li class="dropdown">
+        <a href="/beni-culturali/" class="parent-link">Beni Culturali</a>
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" title="Mostra / nascondi sottomenu"><span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/architetture/">Architetture</a></li>
+          <li><a href="/opere-arte/">Opere e oggetti d'arte</a></li>
+          <li><a href="/opere-arte-contemporanea/">Opere d'arte contemporanea</a></li>
+          <li><a href="/fotografie/">Fotografie</a></li>
+          <li><a href="/stampe/">Stampe e incisioni</a></li>
+          <li><a href="/reperti-archeologici/">Reperti archeologici</a></li>
+          <li><a href="/numismatica/">Numismatica</a></li>
+          <li><a href="/beni-etnoantropologici/">Beni etnoantropologici</a></li>
+          <li><a href="/scienza-tecnologia/">Patrimonio scientifico e tecnologico</a></li>
+          <li><a href="/militaria/">Patrimonio storico militare</a></li>
+          <li class="divider"></li>
+          <li><a href="/botanica/">Botanica</a></li>
+          <li><a href="/mineralogia/">Mineralogia</a></li>
+          <li><a href="/paleontologia/">Paleontologia</a></li>
+          <li><a href="/zoologia/">Zoologia</a></li>
+          <li class="divider"></li>
+          <li class="dropdown-header">Progetti speciali</li>
+          <li><a href="/architetture900/">Architettura in Lombardia dal 1945 ad oggi</a></li>
+          <li><a href="/sireg/">Patrimonio culturale degli enti sanitari lombardi</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="/storia-e-documenti/" class="parent-link">Storia e Documenti</a>
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" title="Mostra / nascondi sottomenu"><span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/istituzioni/">Istituzioni storiche</a></li>
+          <li><a href="/archivi/">Archivi storici</a></li>
+          <li><a href="/fonti/">Fonti documentarie</a></li>
+        </ul>
+      </li>
+      <li><a href="/blog/istituti/">Luoghi della Cultura</a></li>
+      <li><a href="/blog/">In evidenza</a></li>
+      <li><a href="/blog/percorsi/">Approfondimenti</a></li>
+      <li><a href="/blog/categoria/notizie/">Notizie</a></li>
+    </ul>
+  </div>
+</div>
+</nav>
+
+
+      <div id="breadcrumbs" class="container">
+        Sei in: <a href="/">Home</a> &rsaquo; <a href='/archivi/'>Archivi storici</a>  &rsaquo; <a href='/archivi/complessi-archivistici/'>Complessi archivistici</a>  &rsaquo; <a href='/archivi/complessi-archivistici/MIBA003597/'>Dicasteri</a> &rsaquo;       </div>
+
+      <div id="content" class="container">
+        <div class="row">
+        <div id="record-wrap" class="col-fond">
+            <h2>Ambasciatori, agenti <span class='subtitle'>(1516 -  1751)</span></h2>
+<p class='small'><em>serie</em> | <span>livello: 2</span></p><ul class='nav nav-tabs'><li class='active'><a href='/archivi/complessi-archivistici/MIBA00359B/'>descrizione</a></li><li><a href='/archivi/complessi-archivistici/MIBA00359B/?tab=unita'>unit&agrave; (125)</a></li></ul>
+<div class='resume'>
+<p><strong>Produttore fondo</strong>:
+<a href='/archivi/soggetti-produttori/selezione/MIPZ000ACB/'>Milano, Comune di Milano (sec. XII - )</a></p><p><strong>Contenuto</strong>: La sottoserie(1) è costituita dalla documentazione relativa alle missioni, estemporanee o permanenti, inviate soprattutto da Milano, dal ducato e dallo stato al principe(2) durante la dominazione spagnola ed il primo cinquantennio di quella austriaca; trova un seguito nelle sottoserie "Delegazioni a Vienna"(3) e "Deputati a Vienna"(4). Gli incaricati della missione sono in genere patrizi milanesi, membri delle magistrature cittadine; talvolta la legazione a Madrid costituisce l'occasione per incarichi in quella corte(5); solo intorno alla metà del sec. XVII si hanno legazioni condotte da religiosi(6). I legati sono nominati dal consiglio dei sessanta decurioni o dal tribunale di provvisione, se operano per conto della città di Milano, e dalla congregazione del ducato o dello stato se di questi sono rappresentanti; è necessaria la licenza del governatore per inviare la legazione e spesso se ne trova l'esplicita richiesta da parte delle magistrature interessate. Scopo essenziale di quasi tutte le missioni è fare presente all'autorità sovrana la precaria condizione economica della città e dello stato; sono ricorrenti le lamentele per le eccessive imposizioni, per i disagi provocati dalla presenza di soldati, per il mancato rispetto di privilegi della città di Milano (ad es. circa gli alloggiamenti militari); altrettanto spesso vengono inoltrate sollecitazioni per cariche vacanti civili ed ecclesiastiche (pure qui non mancano richiami a privilegi in passato concessi, come quello di Carlo V a sancire che i canonicati di S. Maria della Scala siano assegnati a cittadini milanesi). La documentazione della sottoserie è quantitativamente e qualitativamente diversa a seconda del periodo e delle singole unità archivistiche, costituite ciascuna dagli atti relativi ad una legazione (compiuta generalmente da un solo legato), atti raccolti in un fascicolo o in una o più buste, fino ad un massimo di sette nel caso del marchese Giovanni Battista Airoldi(7). Alcuni fascicoli sono costituiti dalla sola ordinazione di nomina, altri dalla richiesta di risarcimento delle spese; nei più completi si trovano le istruzioni al legato e la corrispondenza dello stesso con la magistratura inviante la legazione (ed è proprio la corrispondenza a costituire la parte più consistente degli atti). Fino al sec. XVII in. interlocutori del legato milanese sono il consiglio dei sessanta e il tribunale di provvisione, poi comincia ad essere più frequente la corrispondenza con la congregazione del patrimonio (un organo municipale più ristretto esistente dal 1599); in questo stesso periodo diventano più ricorrenti le legazioni a nome di tutto lo stato e la corrispondenza è con la rispettiva congregazione. Dall'inizio del sec. XVII circa si trova spesso la trascrizione, fatta nelle cancellerie milanesi, delle lettere provenienti da Madrid; delle lettere inviate da Milano  (solamente o congiuntamente dal consiglio dei sessanta, dal tribunale di provvisione, dalla congregazione del patrimonio, da quella dello stato o altre magistrature) restano generalmente le minute o le copie. Sempre nel sec. XVII è frequente l'uso, soprattutto nelle lettere del legato, di un linguaggio cifrato, per parti limitate o ampie della lettera, delle quali a volte si ha il testo trascritto in chiaro dagli uffici destinatari di Milano. La corrispondenza tratta degli sviluppi della legazione, ma spesso anche della situazione politica italiana ed europea, soprattutto nel caso di conflitti in corso o di particolari tensioni diplomatiche. Alla partenza da Milano il legato porta con sè una certa documentazione: lettere credenziali, istruzioni (di entrambe restano spesso copie o minute), oltre quanto serve per legittimare determinate richieste, come indicano gli "elenchi di scritture" anch'essi, talvolta, conservati tra gli atti. Le credenziali sono indirizzate al re, talvolta alla regina, a diversi dignitari di corte, a membri del consiglio di stato e a reggenti del supremo consiglio d'Italia; in qualche caso la corrispondenza con questi ultimi si protrae durante e dopo la legazione. Le istruzioni, non sempre conservate, forniscono, in genere, un elenco dei diversi oggetti della legazione, suddivisi in capitoli. Memoriali e relazioni, da presentare a corte, attestano, insieme alle lettere e, talvolta, dispacci reali, gli sviluppi dell'ambasceria, nonchè i contatti tra il legato e l'istituzione o le istituzioni promotrici della legazione; spesso alle lettere dell'ambasciatore sono allegate le traduzioni in spagnolo dei memoriali presentati a corte, oppure dispacci reali sugli argomenti trattati; molto più rare sono le relazioni conclusive compilate dall'ambasciatore(8). Oltre a ciò si hanno: lettere inviate e ricevute da persone diverse, carte relative alle spese di legazione, ordinazioni delle diverse magistrature. L'ordinamento attuale della sottoserie non esclude una diversa disposizione delle carte in passato: la divisione degli atti per legazione in ordine cronologico (rispettoso dell'unità archivistica costituita da tutti gli atti, anche in più buste, di una legazione) fa pensare ad un ordinamento peroniano, come è avvenuto per gli altri fondi dell'archivio. Le carte furono, presumibilmente, ordinate in questo modo dopo essere state estratte dagli archivi delle diverse magistrature che promossero le legazioni e che corrispondevano con il legato. A. Salomoni, autore su questa sottoserie, nel 1802, di un'opera in cui per molte legazioni pubblica trascrizioni di documenti (prevalentemente le istruzioni, talora oggi non più presenti), nell'introduzione(9) fa riferimenti all'ordinamento dell'archivio compiuto da Luca Peroni e parla della sottoserie degli ambasciatori come già costituita e comprendente, come fa lui stesso nella sua opera, anche le citate "Delegazioni a Vienna" e i "Deputati a Vienna". Anche Gentile Pagani, archivista dell'archivio civico, in una sua pubblicazione illustrativa della storia e dei fondi dell'archivio ripete il Salomoni per quello che riguarda la sottoserie in questione(10). Per i criteri seguiti nel riordino e inventariazione, vale quanto già detto a proposito dell'archivio storico civico di Milano e di questo fondo. Nella schedatura si è proceduto come segue: i titoli delle unità archivistiche se desunti dalla camicia del fascicolo o dalla busta sono posti tra virgolette; si sono poi indicati distintamente il fine della legazione e la documentazione che compone l'unità (come tale si sono impropriamente considerate, sia per comodità, sia per rispetto dell'inventario sinora in uso, le singole buste di una stessa legazione), con la forzata eccezione delle legazioni di cui sia rimasto un solo documento. E' da segnalare, infine, la schedatura di alcune legazioni che non figurano nell'inventario "Dicasteri".<br /><br />1. Denominata così nell'inventario "Dicasteri" di C. Santoro,  e generalmente indicata "oratori, ambasciatori, agenti". Non sembra ci siano, comunque, differenze nelle funzioni dei suddetti; si può unicamente notare che l'oratore agisce in genere per conto della città, l'ambasciatore, l'agente, il legato, il rappresentante, l'inviato anche per conto dello stato.<br /><br />2. Con le seguenti eccezioni: ambascerie presso il governatore di Milano (unità 183, 185, 186 e unità 232 - 233); ambascerie presso il papa (unità 206, 209), (unità 251), (unità 279).<br /><br />3. Fondo "Dicasteri", bb. 178 - 180.<br /><br />4. Fondo "Dicasteri", bb. 181 - 191.<br /><br />5. E' il caso di Carlo Sirtori (bb. 149 - 150, unità 234 - 235), il quale nel 1641 viene nominato da Filippo IV segretario della cancelleria segreta, vedi A. Salomoni, "Memorie storico-diplomatiche...", cit., p. 310.<br /><br />6. Cfr. Giovanni Paolo Nazari (unità 224); Gerolamo Marinone (unità 230), (la missione è preparata ma non attuata); Giuseppe Radaelli (unità 231), Felice Casati (unità 238), Tobia Biumo (unità 239); (in questa busta si trova un dispaccio di Filippo IV, 15 dicembre 1646, Madrid, al governatore di Milano di disapprovazione verso le legazioni condotte da religiosi); Giovanni Battista Rabbia (unità 243); Andrea Radaelli (unità 252). <br /><br />7. (unità 263 - 269).<br /><br />8. Giulio Cesare Ruginelli (cfr. unità 213); Giovanni Paolo Nazari (cfr. unità 224); Fabrizio Bossi (cfr. unità 227); Gerolamo Legnano (Cfr. unità 240). Altre relazioni si trovano nella sottoserie 3 del "Consiglio generale".<br /><br />9. A. Salomoni, "Memorie ...", cit., pp. VII - XX. L'opera del Salomoni, la sola reperita che considera la sottoserie, risultato indiretto del suo impiego presso l'archivio civico agli inizi del secolo scorso, delinea il profilo di ogni singolo ambasciatore, specie per la sua origine familiare ed estrazione sociale; il profilo è preceduto da documenti pubblicati, nella gran parte dei casi appartenenti all'archivio civico; meno consistente la parte più specificatamente storica ed archivistica. Le legazioni trattate nel volume non coincidono completamente con quelle i cui atti sono conservati in archivio: alcune non vengono considerate dall'autore, altre da lui esaminate non sono più conservate. Ciò fa presuppore uno spostamento o dispersione di carte dal secolo scorso ad oggi.<br /><br />10. G. Pagani, "L'archivio civico...", cit., p. 30.</p>
+</div>
+<p class="record-permalink">Link risorsa: <a href="https://www.lombardiabeniculturali.it/archivi/complessi-archivistici/MIBA00359B/">https://www.lombardiabeniculturali.it/archivi/complessi-archivistici/MIBA00359B/</a></p>        </div> <!-- /#record-wrap -->
+        <div id="tree-wrap" class="col-fond">
+          <div id="tree-inner">
+          <script type='text/javascript'>
+d = new dTree('d');
+d.add(1, -1, 'Dicasteri','/archivi/complessi-archivistici/MIBA003597/','Dicasteri');
+d.add(12840, 1, 'Funzionari','/archivi/complessi-archivistici/MIBA003598/','Funzionari');
+d.add(14320, 1, 'Senato','/archivi/complessi-archivistici/MIBA003599/','Senato');
+d.add(14711, 1, 'Consiglio Generale','/archivi/complessi-archivistici/MIBA00359A/','Consiglio Generale');
+d.add(15365, 1, 'Ambasciatori, agenti','/archivi/complessi-archivistici/MIBA00359B/','Ambasciatori, agenti');
+d.add(16281, 1, 'Delegazioni a Vienna','/archivi/complessi-archivistici/MIBA00359C/','Delegazioni a Vienna');
+d.add(16752, 1, 'Deputati a Vienna','/archivi/complessi-archivistici/MIBA00359D/','Deputati a Vienna');
+d.add(17301, 1, 'Tribunale di Provvisione: provvidenze generali e appuntamenti','/archivi/complessi-archivistici/MIBA00359E/','Tribunale di Provvisione: provvidenze generali e appuntamenti');
+d.add(17525, 1, 'Tribunale di Provvisione: registri','/archivi/complessi-archivistici/MIBA00359F/','Tribunale di Provvisione: registri');
+d.add(17713, 1, 'Tribunale di Provvisione: membri','/archivi/complessi-archivistici/MIBA0035A0/','Tribunale di Provvisione: membri');
+d.add(17846, 1, 'Municipalit&agrave;','/archivi/complessi-archivistici/MIBA0035A1/','Municipalit&agrave;');
+d.add(17897, 1, 'Amministrazione Provvisoria','/archivi/complessi-archivistici/MIBA0035A2/','Amministrazione Provvisoria');
+d.add(18043, 1, 'Congregazione Delegata','/archivi/complessi-archivistici/MIBA0035A3/','Congregazione Delegata');
+d.add(18131, 1, 'Amministrazione Dipartimentale','/archivi/complessi-archivistici/MIBA0035A4/','Amministrazione Dipartimentale');
+d.add(18242, 1, 'Congregazione dello Stato','/archivi/complessi-archivistici/MIBA0035A5/','Congregazione dello Stato');
+d.add(18316, 1, 'Congregazione del Ducato','/archivi/complessi-archivistici/MIBA0035A6/','Congregazione del Ducato');
+d.add(18404, 1, 'Sanit&agrave; (magistrato di sanit&agrave;)','/archivi/complessi-archivistici/MIBA0035A7/','Sanit&agrave; (magistrato di sanit&agrave;)');
+d.add(18452, 1, 'Strade (giudice delle strade)','/archivi/complessi-archivistici/MIBA0035A8/','Strade (giudice delle strade)');
+d.add(18490, 1, 'Vettovaglie (giudice delle vettovaglie)','/archivi/complessi-archivistici/MIBA0035A9/','Vettovaglie (giudice delle vettovaglie)');
+document.write(d);
+d.closeAll();
+d.openTo(15365, true);
+</script>
+          <p style="font-size: 10px;"> <a id="open" href="javascript: d.openAll();">espandi</a> | <a id="close" href="javascript: d.closeAll();">riduci</a></p>
+          </div> <!-- /#tree-inner -->
+          <div id="tree-handle" class="ui-resizable-handle hidden-xs"></div>
+        </div>
+      </div> <!-- /.row -->
+    </div> <!-- /#content -->
+
+    <div class="container">
+      <div class="alert alert-warning"><p><strong>NOTA BENE</strong>: qualsiasi richiesta di consultazione, informazioni, ricerche, studi (nonch&eacute; documentazione fotografica in alta risoluzione) relativa ai beni culturali di interesse descritti in Lombardia Beni Culturali deve essere inoltrata direttamente ai soggetti pubblici o privati che li detengono e/o gestiscono (soggetto o istituto di conservazione).</p></div>    </div>
+
+    
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div id="footer-title" class="col-12 my-4 font-weight-bold">
+        LombardiaBeniCulturali
+      </div>
+    </div>
+
+    <div class="row">
+      <p>
+        <a href="/progetto/">Progetto</a> <span style="padding: 0 5px;">|</span>
+        <a href="/mappa/">Mappa del sito</a> <span style="padding: 0 5px;">|</span>
+        <a href="/contatti/">Contatti</a> <span style="padding: 0 5px;">|</span>
+        <a href="/privacy/">Privacy</a> <span style="padding: 0 5px;">|</span>
+        <a href="/note-legali/">Note legali</a> <span style="padding: 0 5px;">|</span>
+        <a href="/cookie-policy/">Cookie policy</a>
+      </p>
+    </div>
+
+    <div class="row">
+      <div id="footer-copy" class="col-12 my-3">
+        <span class="d-inline-block">&copy; Copyright Regione Lombardia</span>
+        <span class="d-inline-block"> - tutti i diritti riservati</span>
+        <span class="d-inline-block"> - C.F. 80050050154</span>
+        <span class="d-inline-block"> - Piazza Citt&agrave; di Lombardia 1</span>
+        <span class="d-inline-block"> - 20124 Milano</span>
+      </div>
+    </div>
+  </div>
+</footer>
+    </div> <!-- /#wrap -->
+
+    <a href="#" id="back-to-top" title="Torna su"><span class="fa fa-angle-up"></span></a>
+  </body>
+</html>

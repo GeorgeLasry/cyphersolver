@@ -1,0 +1,56 @@
+import json
+S = "Literature-and-web sweep of American war and intelligence ciphers (research/us_wars/)"
+def row(**k):
+    base = dict(region="Americas", seen="catalogue", source="US wars literature sweep", decode_ids=[])
+    base.update(k); return base
+rows = [
+ row(year=1934, date="July 1934 (Ask Adventure column, p. 124)",
+  title="Adventure magazine, 'Ask Adventure': 90-digit numeric cryptogram sent in by T. F. Ridell, found in old papers",
+  correspondents="unknown → T. F. Ridell (Champaign, Illinois), who asked the column for help", place="Champaign, Illinois (sender); message origin unknown",
+  language="unknown (English presumed)", period="1901-1950",
+  shelfmark="Adventure (pulp magazine), July 1934, p. 124; reprinted in Cryptologia 1988 no. 4; full scan of the issue on archive.org (linked from Schmeh's post)",
+  folio_note="three lines of 30 digits (90 digits): 942293906259174689397998395946 / 345881905863899824252317537919 / 637962463489466213872262807539",
+  cls="C", status="Unsolved per Schmeh (Cipherbrain 22 Apr 2018, revisiting a 2015 German post); analyses by Stefan Wagner and Norbert Biermann found nothing; a reader's 'Poe codebook' solution was built to fit and was rejected in the thread. Not on DECODE. known.py: no hit.",
+  why="A found-in-old-papers numeric message of unknown date and origin; could be a code, a book cipher or noise.",
+  importance=1, solvability=1, difficulty=5, score_note="Scored from Schmeh's blog post during the Oct 2026 US wars literature sweep (research/us_wars/); the magazine scan was not viewed",
+  verify="Check the archive.org scan of Adventure July 1934 for the original printing and any context (where the papers were found); test as 3-digit codes and as digit-pair book cipher",
+  links=[{"label":"Schmeh, Cipherbrain 22 Apr 2018","href":"https://scienceblogs.de/klausis-krypto-kolumne/2018/04/22/revisited-an-unsolved-message-from-a-pulp-magazine"}],
+  prior_art="open (checked 28 Oct 2026: Cipherbrain post and comments; Cryptologia 1988 reprint reported no solution)"),
+ row(year=1865, date="26 Jan (year not stated; after Rawlings enlisted 26 Mar 1864, so Jan 1865)",
+  title="Confederate cipher on the back of a cover addressed to James M. Rawlings, Rockbridge Artillery (Hardaway's Battery), Army of Northern Virginia",
+  correspondents="unknown → [reuse of the envelope for a note]", place="Keswick Depot, Virginia (postmark)", language="English",
+  period="1861-1865" if False else "1801-1900",
+  shelfmark="Private cover offered by americanstampdealer.com (Scott CSA 12, KESWICK DEPOT/VA/26 JAN postmark); owner not named",
+  folio_note="one short numeric cryptogram on the back (about 23 distinct numbers, 1-23) plus '1st.12.7.9' on the front",
+  cls="C", status="Partly read. A partial decipherment on the cover itself reads 'caisson, canteen, Spotteswood, louse, pirated'; commenters on Schmeh's post (20 Dec 2018) proposed 'Spotsylvania Court House' or 'Spotteswood House' and a number table (1 = s, 2 = p, 17 = r, 23 = e; 6 and 16 missing); the final word 'trevy' is unexplained. Probably a keyword substitution with several numbers per letter. No DECODE record.",
+  why="A rare Confederate field-ranks cipher on a real cover; its system (homophonic table vs. Vigenère) is undecided.",
+  importance=1, solvability=3, difficulty=2, score_note="Scored from the dealer page and Schmeh's post during the Oct 2026 US wars literature sweep (research/us_wars/); not viewed on the image",
+  verify="Obtain the image from the dealer page or Schmeh's post; transcribe all numbers; build the table from the cover's own partial decipherment and complete it",
+  links=[{"label":"Dealer page","href":"https://www.americanstampdealer.com/SubMenu/A_Mysterious_Confederate_Cipher_Cover.aspx?id=267"},{"label":"Schmeh, Cipherbrain 20 Dec 2018","href":"https://scienceblogs.de/klausis-krypto-kolumne/2018/12/20/a-mysterious-confederate-cipher-cover/"}],
+  prior_art="partly open (checked 28 Oct 2026: Cipherbrain comments propose a table; no verified full reading; Tomokiyo's unsolved list does not carry it)"),
+ row(year=1931, date="published 1931 (message c. 1912-18, undated)",
+  title="Yardley, The American Black Chamber: a Mexican-related cryptogram printed without plaintext ('MEXICO CITY ... WE ARE DOING')",
+  correspondents="unknown → unknown", place="Mexico City (per partial reading)", language="English (partial reading)",
+  period="1901-1950", shelfmark="H. O. Yardley, The American Black Chamber (Bobbs-Merrill, 1931), cryptogram plate; Friedman's annotated copy is at the Marshall Library",
+  folio_note="short; the printing is an image only (no transcription online)",
+  cls="C", status="Partly read in Schmeh's comments (Armin Krauss and Jan, Feb 2019): 'MEXICO CITY', 'WE ARE DOING', gaps remain; a commenter reports Friedman's pencil attempt in his copy and suggests an eight-character word could be a 1912 date. Not in the repo.",
+  why="A cryptogram from the MI-8 era that Yardley himself left unsolved on the page.",
+  importance=2, solvability=3, difficulty=2, score_note="Scored from Schmeh's post during the Oct 2026 US wars literature sweep (research/us_wars/); not viewed",
+  verify="Scan the book plate (HathiTrust/archive.org may have the 1931 edition for search-only); transcribe and finish the partial reading",
+  links=[{"label":"Schmeh, Cipherbrain 24 Feb 2019","href":"https://scienceblogs.de/klausis-krypto-kolumne/2019/02/24/an-unsolved-cryptogram-published-by-herbert-yardley/"}],
+  prior_art="partly open (checked 28 Oct 2026: Cipherbrain thread only)"),
+ row(year=1931, date="Saturday Evening Post article by Yardley (year not stated, c. 1930-31)",
+  title="Yardley in the Saturday Evening Post: Spanish cryptogram from a hacienda letter ('Hace tres dias que ...')",
+  correspondents="unknown → unknown", place="unknown (hacienda, presumably Mexico)", language="Spanish",
+  period="1901-1950", shelfmark="Saturday Evening Post, Yardley article (issue not identified)",
+  folio_note="image only; probably a simple monoalphabetic substitution",
+  cls="C", status="Largely read by Schmeh's commenters (Norbert, Tony, Thomas) as Spanish; no complete plaintext confirmed on the page. Treat as nearly solved.",
+  why="Another Yardley-published training cryptogram; likely only a transcription check from complete.",
+  importance=1, solvability=4, difficulty=1, score_note="Scored from Schmeh's post during the Oct 2026 US wars literature sweep (research/us_wars/); not viewed",
+  verify="Find the issue (Saturday Evening Post archive), transcribe, and test the commenters' reading",
+  links=[{"label":"Schmeh, Cipherbrain 24 Feb 2019","href":"https://scienceblogs.de/klausis-krypto-kolumne/2019/02/24/an-unsolved-cryptogram-published-by-herbert-yardley/"}],
+  prior_art="mostly read in comments (checked 28 Oct 2026)"),
+]
+for r in rows: assert r["period"] in ("1801-1900","1901-1950")
+json.dump(rows, open("candidates.json","w",encoding="utf-8"), ensure_ascii=False, indent=1)
+print(len(rows))

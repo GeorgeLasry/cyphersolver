@@ -1,0 +1,44 @@
+import json
+L = "https://www.lombardiabeniculturali.it/archivi/complessi-archivistici/%s/"
+SC = "Scored from the archive description during the Oct 2026 Italian catalogues sweep (research/italian_catalogues/); not viewed"
+base = dict(region="Italy", seen="catalogue", source="Italian catalogues sweep (Lombardia Beni Culturali)", decode_ids=[])
+c = [
+ dict(year=1615, date="1615",
+  title="Giovanni Rizzardo (Venetian secretary, London) to the Inquisitori di Stato, ciphered despatches with cipher keys, loose in Melzi's Marescalchi rosso",
+  correspondents="Giovanni Rizzardo → Inquisitori di Stato, Venice", place="London", language="Italian", period="1611-1650",
+  shelfmark="Archivio di Stato di Milano, Vicepresidenza della Repubblica italiana, Marescalchi rosso (ASMI1520020003), b. 1, fasc. D",
+  folio_note="one fascicolo; amount of cipher not stated; keys (chiavi di cifrario) filed with the ciphertext", cls="B",
+  status="LBC description: 'documentazione cifrata del sec. XVII con chiavi di cifrario', attributed on the folder to Rizzardo's despatches from London to the Inquisitori di Stato, 1615; probably set aside for an 'espurgo' of the Venetian Inquisitors' archive and gathered by Melzi. Not on DECODE; no repo hit (known.py: Rizzardo, Marescalchi, Inquisitori di Stato). CSP Venetian calendars the ASVe copies of Rizzardo's Sept 1615 despatches as deciphered, so the Milan sheets may duplicate a known text.",
+  why="A stray piece of the dispersed Inquisitori di Stato archive: Venetian intelligence on the English court at the time of the Foscarini affair, with its own keys, so a reading is a key-matching job.",
+  importance=3, solvability=3, difficulty=2, score_note=SC,
+  verify="Ask ASMi for the fascicolo or look for images; compare dates with the Rizzardo despatches in CSP Venetian 1615-17 and ASVe Inquisitori di Stato.",
+  links=[{"label": "LBC description of the series", "href": L % "MIBA003F4D"}],
+  prior_art="open as to the Milan sheets (checked 28 Oct 2026: web search Rizzardo + Marescalchi, nothing; CSP Venetian lists the ASVe despatches as deciphered)"),
+ dict(year=1700, date="1683-1720",
+  title="Archinto nuncio volumes: letters of Giuseppe Archinto (nuncio Florence, Venice, Madrid) and Gerolamo Archinto (Florence, Cologne, Poland), with ciphered letters",
+  correspondents="Giuseppe and Gerolamo Archinto, nuncios → unknown", place="Florence / Venice / Madrid / Cologne / Poland", language="Italian", period="1651-1700",
+  shelfmark="Archivio Archinto (Milan), Volumi di corrispondenza, 21 vols, segnatura B LXXIV (LBC MIBA01C525)",
+  folio_note="21 volumes, chronological; which volumes carry cipher is not stated", cls="C",
+  status="LBC: 'si segnala la presenza di lettere cifrate e di missive in lingua spagnola e francese'. No decipherment mentioned. Not in repo (known.py: Archinto, no hits). The holding institution was not read off the page.",
+  why="Nunciature correspondence 1683-1720 (Madrid under Charles II, Poland and Cologne in the Spanish Succession years); nunciature ciphers of the period are partly in print, so a key may exist.",
+  importance=3, solvability=2, difficulty=3, score_note=SC,
+  verify="Find the fonds' holder and any digitisation; look in the Vatican nunciature series (Madrid, Venezia, Firenze, Polonia, Colonia) for matching keys.",
+  links=[{"label": "LBC description", "href": L % "MIBA01C525"}],
+  prior_art="open (checked 28 Oct 2026: LBC description, web search; nothing on the Archinto ciphers)"),
+ dict(year=1650, date="1516-1751",
+  title="Milanese legates to the Spanish court and other princes: letters partly in cipher, sometimes with a clear transcription",
+  correspondents="Milanese legati → Consiglio dei sessanta / Tribunale di provvisione / Congregazione dello Stato", place="Madrid / Vienna", language="Italian", period="1611-1650",
+  shelfmark="Comune di Milano, Dicasteri, Ambasciatori, agenti (1516-1751), 125 units (LBC MIBA00359B)",
+  folio_note="'frequent' in the 17th c.; clear copy sometimes present", cls="C",
+  status="LBC: in the 17th c. the legates often write 'in linguaggio cifrato, per parti limitate o ampie della lettera, delle quali a volte si ha il testo trascritto in chiaro dagli uffici destinatari'. Where the clear copy exists the letter is read; elsewhere open. Not in repo.",
+  why="City and state of Milan's embassies to Madrid; ciphers of a civic embassy are rarely studied.",
+  importance=2, solvability=2, difficulty=3, score_note=SC,
+  verify="Open the unit-level inventory (125 units) and pick units with ciphered passages and no clear copy.",
+  links=[{"label": "LBC description", "href": L % "MIBA00359B"}],
+  prior_art="open (checked 28 Oct 2026: LBC description only)"),
+]
+for r in c:
+    for k, v in base.items():
+        r.setdefault(k, v)
+json.dump(c, open("candidates.json", "w", encoding="utf8"), ensure_ascii=False, indent=1)
+print(len(c))

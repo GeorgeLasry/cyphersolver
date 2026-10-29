@@ -1,0 +1,281 @@
+
+
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Patenti, credenziali, istruzioni (1701 -  1718)  &ndash; Archivi storici  &ndash;  Lombardia Beni Culturali</title>
+    <meta name="description" content="Sottoserie compresa in: Carteggi consolari (1701 -  1741), Carteggio Molinari. Conservatore: Archivio di Stato di Milano (Milano, MI).">
+    <meta name="author" content="Codex, Pavia (IT) - https://www.codexcoop.it">
+    <meta name="copyright" content="Copyright (c) 2002-2026 Lombardia Beni Culturali">
+        <!-- css -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/master-v2019.css">
+    <!-- css specifici della sezione archivi -->
+    <link rel="stylesheet" type="text/css" href="/css/dtree.css">
+    <link rel="stylesheet" type="text/css" href="/css/resize.css">
+    <!-- javascripts -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/common.js"></script>
+    <!-- javascripts specifici della sezione archivi -->
+    <script type="text/javascript" src="/js/dtree.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript">
+      $(function() {
+
+        function setBgPosition() {
+          var size = $('#tree-wrap').width() + 29;
+          $('#content').css('background', 'url(/img/bg-line.gif) repeat-y ' + size + 'px 0');
+        }
+
+        $("#open, #close").click(function () {
+          $('#tree-wrap').css('height','auto');
+        });
+
+        if ($('.col-fond').width() > 720 && $('.col-fond').width() == $('#content').width()) {
+
+          $("#tree-wrap").resizable({
+            handles : { 'e': "#tree-handle" },
+            maxWidth: 600, // 694
+            minWidth: 346, // 346
+          });
+
+          $("#tree-wrap").on("resize", function(event, ui) {
+            $('#record-wrap').css('width', $('#content').width() - $("#tree-wrap").width());
+          });
+
+          $('#tree-wrap').css('width', '33.33333333%');
+          $('#record-wrap').css('width', '62.66666667%'); // 66.6% - 4% di tolleranza
+          setBgPosition();
+
+        } else {
+          $("#tree-wrap").resizable({
+            disabled: true
+          });
+          $('#content').css('background', 'none');
+        }
+
+        $(window).resize(function() {
+          if ($('#content').width() <= 720) {
+            $('.col-fond').css('width', '100%');
+            $('#tree-wrap').resizable({
+              disabled: true
+            });
+            $('#content').css('background', 'none');
+          } else {
+            $('#tree-wrap').resizable({
+              disabled: false
+            });
+            if ($('.col-fond').width() == $('#content').width()) {
+              $('#tree-wrap').css('width', '33.33333333%');
+              $('#record-wrap').css('width', '66.66666667%');
+              setBgPosition();
+            } else {
+              $('#tree-wrap').css('width', ($('#tree-wrap').width() / ($('#tree-wrap').width() + $('#record-wrap').width())) * $('#content').width());
+              $('#record-wrap').css('width', $('#content').width() - $('#tree-wrap').width() - 15);
+              setBgPosition();
+            }
+          }
+        });
+
+      });
+    </script>
+  </head>
+
+    <body id="fond">
+  <div id="wrap">
+
+    <div id="top-bar">
+      <div class="container">
+        <a id="logo-rl-bianco" class="d-md-none" href="https://www.regione.lombardia.it" target="_blank">
+          <img src="/img/logo-rl-bianco.png" style="height: 40px; border: 0;" alt="Regione Lombardia">
+        </a>
+      </div>
+    </div>
+
+    <div id="logo-bar">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-8">
+            <a id="logo-rl" class="d-none d-md-inline-block" href="https://www.regione.lombardia.it" target="_blank">
+              <img src="/img/logo-regione-lombardia.png" style="width: 182px; height: 54px; border: 0;" alt="Regione Lombardia">
+            </a>
+            <a id="logo-lbc" href="/" title="Homepage">LombardiaBeniCulturali</a>
+          </div>
+          <div id="logo-bar-right" class="col-xs-4">
+            <button type="button" class="toggler toggler-search d-inline-block d-md-none collapsed" data-toggle="collapse" data-target="#sm-sitesearch-form">
+              <span class="fa fa-search"></span>
+            </button>
+
+            <button type="button" class="toggler toggler-hamburger d-inline-block d-md-none collapsed" data-toggle="collapse" data-target="#menu">
+              <span class="hamburger">
+                <!-- <span class="sr-only">Mostra / nascondi navigazione</span> -->
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
+            </button>
+
+                          <form class="form-inline d-none d-md-block" action="/ricerca/" method="get">
+                <div class="input-group">
+  <input type="text" class="form-control" name="q" autocomplete="off" spellcheck="false" placeholder="Cerca nel sito" title="Cerca nel sito">
+  <div class="input-group-btn">
+    <button type="submit" class="btn btn-default"><span class="fa fa-search"></span></button>
+  </div>
+</div>
+
+              </form>
+                      </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="sm-sitesearch-form" class="collapse d-md-none">
+      <div class="container">
+        <form class="form-inline" action="/ricerca/" method="get">
+          <div class="input-group">
+  <input type="text" class="form-control" name="q" autocomplete="off" spellcheck="false" placeholder="Cerca nel sito" title="Cerca nel sito">
+  <div class="input-group-btn">
+    <button type="submit" class="btn btn-default"><span class="fa fa-search"></span></button>
+  </div>
+</div>
+
+        </form>
+      </div>
+    </div>
+
+      <nav class="navbar navbar-default">
+<div class="container">
+  <div id="menu" class="navbar-collapse collapse">
+    <ul class="nav navbar-nav">
+      <li class="dropdown">
+        <a href="/beni-culturali/" class="parent-link">Beni Culturali</a>
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" title="Mostra / nascondi sottomenu"><span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/architetture/">Architetture</a></li>
+          <li><a href="/opere-arte/">Opere e oggetti d'arte</a></li>
+          <li><a href="/opere-arte-contemporanea/">Opere d'arte contemporanea</a></li>
+          <li><a href="/fotografie/">Fotografie</a></li>
+          <li><a href="/stampe/">Stampe e incisioni</a></li>
+          <li><a href="/reperti-archeologici/">Reperti archeologici</a></li>
+          <li><a href="/numismatica/">Numismatica</a></li>
+          <li><a href="/beni-etnoantropologici/">Beni etnoantropologici</a></li>
+          <li><a href="/scienza-tecnologia/">Patrimonio scientifico e tecnologico</a></li>
+          <li><a href="/militaria/">Patrimonio storico militare</a></li>
+          <li class="divider"></li>
+          <li><a href="/botanica/">Botanica</a></li>
+          <li><a href="/mineralogia/">Mineralogia</a></li>
+          <li><a href="/paleontologia/">Paleontologia</a></li>
+          <li><a href="/zoologia/">Zoologia</a></li>
+          <li class="divider"></li>
+          <li class="dropdown-header">Progetti speciali</li>
+          <li><a href="/architetture900/">Architettura in Lombardia dal 1945 ad oggi</a></li>
+          <li><a href="/sireg/">Patrimonio culturale degli enti sanitari lombardi</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="/storia-e-documenti/" class="parent-link">Storia e Documenti</a>
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" title="Mostra / nascondi sottomenu"><span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/istituzioni/">Istituzioni storiche</a></li>
+          <li><a href="/archivi/">Archivi storici</a></li>
+          <li><a href="/fonti/">Fonti documentarie</a></li>
+        </ul>
+      </li>
+      <li><a href="/blog/istituti/">Luoghi della Cultura</a></li>
+      <li><a href="/blog/">In evidenza</a></li>
+      <li><a href="/blog/percorsi/">Approfondimenti</a></li>
+      <li><a href="/blog/categoria/notizie/">Notizie</a></li>
+    </ul>
+  </div>
+</div>
+</nav>
+
+
+      <div id="breadcrumbs" class="container">
+        Sei in: <a href="/">Home</a> &rsaquo; <a href='/archivi/'>Archivi storici</a>  &rsaquo; <a href='/archivi/complessi-archivistici/'>Complessi archivistici</a>  &rsaquo; <a href='/archivi/complessi-archivistici/MIBA0024D5/'>Carteggi consolari</a> &rsaquo;       </div>
+
+      <div id="content" class="container">
+        <div class="row">
+        <div id="record-wrap" class="col-fond">
+            <h2>Patenti, credenziali, istruzioni <span class='subtitle'>(1701 -  1718)</span></h2>
+<p class='small'><em>sottoserie</em> | <span>livello: 3</span></p>
+<div class='resume'>
+<p><strong>Codice</strong>: ASMI1140010001</p>
+<p><strong>Consistenza</strong>: regg. 2 </p>
+<p><strong>Contenuto</strong>: "Cifrari, cerimoniali alla corte di Genova, patenti, credenziali ed istruzioni" e "istanze alla repubblica e risposte, passaporti, certificati, attestati e patenti" (FERORELLI, Il Carteggio Molinari, p. 193).<br />
+Reg. n. 1: dal 1701 al 1718<br />
+Reg. n. 2: dal 1704 al 1718<br /><br /></p>
+<p><strong>Informazioni sulla numerazione</strong>: pezzi 1 e 2</p>
+<p><strong>Compilatori</strong><br />
+prima redazione:&nbsp;Eleonora Saita, archivista&nbsp;1999/07/12<br /></p></div>
+<p class="record-permalink">Link risorsa: <a href="https://www.lombardiabeniculturali.it/archivi/complessi-archivistici/MIBA0024D7/">https://www.lombardiabeniculturali.it/archivi/complessi-archivistici/MIBA0024D7/</a></p>        </div> <!-- /#record-wrap -->
+        <div id="tree-wrap" class="col-fond">
+          <div id="tree-inner">
+          <script type='text/javascript'>
+d = new dTree('d');
+d.add(1, -1, 'Carteggi consolari','/archivi/complessi-archivistici/MIBA0024D5/','Carteggi consolari');
+d.add(17765, 1, 'Carteggio Molinari','/archivi/complessi-archivistici/MIBA0024D6/','Carteggio Molinari');
+d.add(18533, 1, 'Carteggio Guicciardi','/archivi/complessi-archivistici/MIBA0024DB/','Carteggio Guicciardi');
+d.add(110242, 17765, 'Patenti, credenziali, istruzioni','/archivi/complessi-archivistici/MIBA0024D7/','Patenti, credenziali, istruzioni');
+d.add(111138, 17765, 'Lettere del Molinari da Genova','/archivi/complessi-archivistici/MIBA0024D8/','Lettere del Molinari da Genova');
+d.add(112132, 17765, 'Lettere al Molinari','/archivi/complessi-archivistici/MIBA0024D9/','Lettere al Molinari');
+d.add(112821, 17765, 'Corrispondenza varia','/archivi/complessi-archivistici/MIBA0024DA/','Corrispondenza varia');
+d.add(110152, 18533, 'Lettere del Guicciardi da Genova','/archivi/complessi-archivistici/MIBA0024DC/','Lettere del Guicciardi da Genova');
+d.add(111135, 18533, 'Lettere al Guicciardi','/archivi/complessi-archivistici/MIBA0024DD/','Lettere al Guicciardi');
+document.write(d);
+d.closeAll();
+d.openTo(110242, true);
+</script>
+          <p style="font-size: 10px;"> <a id="open" href="javascript: d.openAll();">espandi</a> | <a id="close" href="javascript: d.closeAll();">riduci</a></p>
+          </div> <!-- /#tree-inner -->
+          <div id="tree-handle" class="ui-resizable-handle hidden-xs"></div>
+        </div>
+      </div> <!-- /.row -->
+    </div> <!-- /#content -->
+
+    <div class="container">
+      <div class="alert alert-warning"><p><strong>NOTA BENE</strong>: qualsiasi richiesta di consultazione, informazioni, ricerche, studi (nonch&eacute; documentazione fotografica in alta risoluzione) relativa ai beni culturali di interesse descritti in Lombardia Beni Culturali deve essere inoltrata direttamente ai soggetti pubblici o privati che li detengono e/o gestiscono (soggetto o istituto di conservazione).</p></div>    </div>
+
+    
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div id="footer-title" class="col-12 my-4 font-weight-bold">
+        LombardiaBeniCulturali
+      </div>
+    </div>
+
+    <div class="row">
+      <p>
+        <a href="/progetto/">Progetto</a> <span style="padding: 0 5px;">|</span>
+        <a href="/mappa/">Mappa del sito</a> <span style="padding: 0 5px;">|</span>
+        <a href="/contatti/">Contatti</a> <span style="padding: 0 5px;">|</span>
+        <a href="/privacy/">Privacy</a> <span style="padding: 0 5px;">|</span>
+        <a href="/note-legali/">Note legali</a> <span style="padding: 0 5px;">|</span>
+        <a href="/cookie-policy/">Cookie policy</a>
+      </p>
+    </div>
+
+    <div class="row">
+      <div id="footer-copy" class="col-12 my-3">
+        <span class="d-inline-block">&copy; Copyright Regione Lombardia</span>
+        <span class="d-inline-block"> - tutti i diritti riservati</span>
+        <span class="d-inline-block"> - C.F. 80050050154</span>
+        <span class="d-inline-block"> - Piazza Citt&agrave; di Lombardia 1</span>
+        <span class="d-inline-block"> - 20124 Milano</span>
+      </div>
+    </div>
+  </div>
+</footer>
+    </div> <!-- /#wrap -->
+
+    <a href="#" id="back-to-top" title="Torna su"><span class="fa fa-angle-up"></span></a>
+  </body>
+</html>

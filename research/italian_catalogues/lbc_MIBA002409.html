@@ -1,0 +1,354 @@
+
+
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Potenze sovrane (1450 -  1555)  &ndash; Archivi storici  &ndash;  Lombardia Beni Culturali</title>
+    <meta name="description" content="Serie compresa in: Carteggio Visconteo Sforzesco (1282 -  sec. XVII), Carteggio Sforzesco. Conservatore: Archivio di Stato di Milano (Milano, MI).">
+    <meta name="author" content="Codex, Pavia (IT) - https://www.codexcoop.it">
+    <meta name="copyright" content="Copyright (c) 2002-2026 Lombardia Beni Culturali">
+        <!-- css -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/master-v2019.css">
+    <!-- css specifici della sezione archivi -->
+    <link rel="stylesheet" type="text/css" href="/css/dtree.css">
+    <link rel="stylesheet" type="text/css" href="/css/resize.css">
+    <!-- javascripts -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/common.js"></script>
+    <!-- javascripts specifici della sezione archivi -->
+    <script type="text/javascript" src="/js/dtree.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript">
+      $(function() {
+
+        function setBgPosition() {
+          var size = $('#tree-wrap').width() + 29;
+          $('#content').css('background', 'url(/img/bg-line.gif) repeat-y ' + size + 'px 0');
+        }
+
+        $("#open, #close").click(function () {
+          $('#tree-wrap').css('height','auto');
+        });
+
+        if ($('.col-fond').width() > 720 && $('.col-fond').width() == $('#content').width()) {
+
+          $("#tree-wrap").resizable({
+            handles : { 'e': "#tree-handle" },
+            maxWidth: 600, // 694
+            minWidth: 346, // 346
+          });
+
+          $("#tree-wrap").on("resize", function(event, ui) {
+            $('#record-wrap').css('width', $('#content').width() - $("#tree-wrap").width());
+          });
+
+          $('#tree-wrap').css('width', '33.33333333%');
+          $('#record-wrap').css('width', '62.66666667%'); // 66.6% - 4% di tolleranza
+          setBgPosition();
+
+        } else {
+          $("#tree-wrap").resizable({
+            disabled: true
+          });
+          $('#content').css('background', 'none');
+        }
+
+        $(window).resize(function() {
+          if ($('#content').width() <= 720) {
+            $('.col-fond').css('width', '100%');
+            $('#tree-wrap').resizable({
+              disabled: true
+            });
+            $('#content').css('background', 'none');
+          } else {
+            $('#tree-wrap').resizable({
+              disabled: false
+            });
+            if ($('.col-fond').width() == $('#content').width()) {
+              $('#tree-wrap').css('width', '33.33333333%');
+              $('#record-wrap').css('width', '66.66666667%');
+              setBgPosition();
+            } else {
+              $('#tree-wrap').css('width', ($('#tree-wrap').width() / ($('#tree-wrap').width() + $('#record-wrap').width())) * $('#content').width());
+              $('#record-wrap').css('width', $('#content').width() - $('#tree-wrap').width() - 15);
+              setBgPosition();
+            }
+          }
+        });
+
+      });
+    </script>
+  </head>
+
+    <body id="fond">
+  <div id="wrap">
+
+    <div id="top-bar">
+      <div class="container">
+        <a id="logo-rl-bianco" class="d-md-none" href="https://www.regione.lombardia.it" target="_blank">
+          <img src="/img/logo-rl-bianco.png" style="height: 40px; border: 0;" alt="Regione Lombardia">
+        </a>
+      </div>
+    </div>
+
+    <div id="logo-bar">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-8">
+            <a id="logo-rl" class="d-none d-md-inline-block" href="https://www.regione.lombardia.it" target="_blank">
+              <img src="/img/logo-regione-lombardia.png" style="width: 182px; height: 54px; border: 0;" alt="Regione Lombardia">
+            </a>
+            <a id="logo-lbc" href="/" title="Homepage">LombardiaBeniCulturali</a>
+          </div>
+          <div id="logo-bar-right" class="col-xs-4">
+            <button type="button" class="toggler toggler-search d-inline-block d-md-none collapsed" data-toggle="collapse" data-target="#sm-sitesearch-form">
+              <span class="fa fa-search"></span>
+            </button>
+
+            <button type="button" class="toggler toggler-hamburger d-inline-block d-md-none collapsed" data-toggle="collapse" data-target="#menu">
+              <span class="hamburger">
+                <!-- <span class="sr-only">Mostra / nascondi navigazione</span> -->
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
+            </button>
+
+                          <form class="form-inline d-none d-md-block" action="/ricerca/" method="get">
+                <div class="input-group">
+  <input type="text" class="form-control" name="q" autocomplete="off" spellcheck="false" placeholder="Cerca nel sito" title="Cerca nel sito">
+  <div class="input-group-btn">
+    <button type="submit" class="btn btn-default"><span class="fa fa-search"></span></button>
+  </div>
+</div>
+
+              </form>
+                      </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="sm-sitesearch-form" class="collapse d-md-none">
+      <div class="container">
+        <form class="form-inline" action="/ricerca/" method="get">
+          <div class="input-group">
+  <input type="text" class="form-control" name="q" autocomplete="off" spellcheck="false" placeholder="Cerca nel sito" title="Cerca nel sito">
+  <div class="input-group-btn">
+    <button type="submit" class="btn btn-default"><span class="fa fa-search"></span></button>
+  </div>
+</div>
+
+        </form>
+      </div>
+    </div>
+
+      <nav class="navbar navbar-default">
+<div class="container">
+  <div id="menu" class="navbar-collapse collapse">
+    <ul class="nav navbar-nav">
+      <li class="dropdown">
+        <a href="/beni-culturali/" class="parent-link">Beni Culturali</a>
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" title="Mostra / nascondi sottomenu"><span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/architetture/">Architetture</a></li>
+          <li><a href="/opere-arte/">Opere e oggetti d'arte</a></li>
+          <li><a href="/opere-arte-contemporanea/">Opere d'arte contemporanea</a></li>
+          <li><a href="/fotografie/">Fotografie</a></li>
+          <li><a href="/stampe/">Stampe e incisioni</a></li>
+          <li><a href="/reperti-archeologici/">Reperti archeologici</a></li>
+          <li><a href="/numismatica/">Numismatica</a></li>
+          <li><a href="/beni-etnoantropologici/">Beni etnoantropologici</a></li>
+          <li><a href="/scienza-tecnologia/">Patrimonio scientifico e tecnologico</a></li>
+          <li><a href="/militaria/">Patrimonio storico militare</a></li>
+          <li class="divider"></li>
+          <li><a href="/botanica/">Botanica</a></li>
+          <li><a href="/mineralogia/">Mineralogia</a></li>
+          <li><a href="/paleontologia/">Paleontologia</a></li>
+          <li><a href="/zoologia/">Zoologia</a></li>
+          <li class="divider"></li>
+          <li class="dropdown-header">Progetti speciali</li>
+          <li><a href="/architetture900/">Architettura in Lombardia dal 1945 ad oggi</a></li>
+          <li><a href="/sireg/">Patrimonio culturale degli enti sanitari lombardi</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="/storia-e-documenti/" class="parent-link">Storia e Documenti</a>
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" title="Mostra / nascondi sottomenu"><span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/istituzioni/">Istituzioni storiche</a></li>
+          <li><a href="/archivi/">Archivi storici</a></li>
+          <li><a href="/fonti/">Fonti documentarie</a></li>
+        </ul>
+      </li>
+      <li><a href="/blog/istituti/">Luoghi della Cultura</a></li>
+      <li><a href="/blog/">In evidenza</a></li>
+      <li><a href="/blog/percorsi/">Approfondimenti</a></li>
+      <li><a href="/blog/categoria/notizie/">Notizie</a></li>
+    </ul>
+  </div>
+</div>
+</nav>
+
+
+      <div id="breadcrumbs" class="container">
+        Sei in: <a href="/">Home</a> &rsaquo; <a href='/archivi/'>Archivi storici</a>  &rsaquo; <a href='/archivi/complessi-archivistici/'>Complessi archivistici</a>  &rsaquo; <a href='/archivi/complessi-archivistici/MIBA002400/'>Carteggio Visconteo Sforzesco</a> &rsaquo;       </div>
+
+      <div id="content" class="container">
+        <div class="row">
+        <div id="record-wrap" class="col-fond">
+            <h2>Potenze sovrane <span class='subtitle'>(1450 -  1555)</span></h2>
+<p class='small'><em>serie</em> | <span>livello: 3</span></p><p><strong>Altre denominazioni</strong>:<br /><em>Denominazione in GG II 927</em>:  Potenze sovrane</p>
+<div class='resume'>
+<p><strong>Produttore fondo</strong>:
+<a href='/archivi/soggetti-produttori/ente/MIDB0002E7/'>Milano, Cancelleria ducale (sec. XV - sec. XVI)</a></p><p><strong>Codice</strong>: ASMI0500040001</p>
+<p><strong>Consistenza</strong>: scatole 179 (in GG: 32 scatole)</p>
+<p><strong>Note alla data</strong>: In GG: 1450 - 1535.<br />
+Nella valutazione degli estremi cronologici non sono stati considerati i documenti identificati quali falsi seicenteschi di Carlo Galluzzi.</p>
+<p><strong>Contenuto</strong>: La serie contiene oltre alle Potenze Sovrane vere e proprie (cioè alla documentazione relativa alla famiglia ducale e alla vita di corte) anche altre voci, che raggruppano documenti diversi per tipologia e per contenuto. In questa descrizione non si è seguito rigorosamente l'ordine di successione delle scatole così come è riportato in Inventario di Sala, ma si è preferito procedere per singole voci accorpando le unità archivistiche per contenuto. Per esempio, la scat. 1627 (Carteggio della duchessa), che in Inventario è collocata tra le ultime voci dopo gli Atti e le scritture Camerali, si è ritenuto segnalarla in questa descrizione insieme alle Potenze Sovrane vere e proprie, perché facente parte della documentazione propriamente relativa alla famiglia ducale.<br />
+Le Potenze Sovrane comprendono il carteggio fra il 1386 e il 1555 relativo ai duchi e alle duchesse di Milano (scatt. 1455 - 1486): Francesco I Sforza, Bianca Maria Visconti, Galeazzo Maria Sforza, Bona di Savoia, Giangaleazzo Maria Sforza, Ascanio Maria Sforza, Isabella d'Aragona, Bianca Maria Sforza (figlia di Galeazzo Maria), Ludovico il Moro, Beatrice d'Este, Francesco II Sforza, Cristina di Danimarca, Massimiliano Sforza, Luigi XII re di Francia e duca di Milano; documentazione relativa al casato sforzesco e alla vita di corte (feste, giochi, spettacoli, cacce, suppellettili, gioielli, residenze ducali etc.). A questo gruppo è riferibile anche la scat. 1627 (1451 - 1461) contenente la corrispondenza della duchessa Bianca Maria Visconti moglie di Francesco I.<br />
+Nella serie sono inoltre presenti:<br />
+- Decreti, lettere patenti, suppliche (scatt. 1487 - 1490);<br />
+- Atti, ordinazioni ducali e atti ducali - gride (scatt. 1491 - 1511): raccolte di atti dell'autorità sovrana, comprendenti i decreti veri e propri (che ebbero valore di legge), le ordinazioni (ossia sentenze di contenzioso civile e anche criminale, passate dal Consiglio Segreto o dal Consiglio di Giustizia all'udienza del principe o di un suo delegato, come il luogotenente o il primo segretario), bandi, grida e provvisioni in genere;<br />
+- Trattati e atti già indicati come in filza nei secoli XVII - XVIII (scatt. 1521 - 1559): documenti relativi all'amministrazione dello Stato provenienti dall'archivio della Cancelleria segreta e del Magistrato camerale; Natale ritenne che fossero stati estrapolati "per impinguare le voci curiose ed interessanti della Miscellanea Storica";<br />
+- Sommari della Cancelleria segreta (scatt. 1560 - 1568): atti relativi a Bologna, Francia, Genova, Germania, Lucca, Lunigiana, Oltrepò, Pisa, Roma, Piemonte, Savoia, Siena, Spagna, Svizzera, Venezia, e "sommari di oratori diversi" (sec. XV);<br />
+- Miscellanea, astrologia, occultismo, superstizione etc. (scat. 1569);<br />
+- Carteggio generale (scatt. 1572 - 1584), sec. XV: lettere pervenute e spedite dalla cancelleria ducale sia all'interno che all'esterno del ducato;<br />
+- Atti e scritture giudiziali - Carte dell'Auditore (scatt. 1585 - 1588): carte relative all'Auditore ducale, figura interna alla Cancelleria sforzesca alla quale erano principalmente affidate mansioni relative al settore giudiziario, specialmente in relazione al contatto e al controllo continuo mantenuto dagli organi centrali con e sugli organi periferici del dominio;<br />
+- Istrumenti (scatt. 1589 - 1590), sec. XV: rogiti di notai camerali;<br />
+- Cancelleria segreta - Chiavi e cifrari (scatt. 1591, 1597 - 1598): la documentazione è stata utilizzata da Lidia Cerioni nella sua edizione dei cifrari segreti della diplomazia sforzesca (CERIONI, La diplomazia sforzesca);<br />
+- Documenti guasti (scatt. 1592 - 1593, 1596);<br />
+- Atti e scritture camerali (scatt. 1601 - 1604, 1608, 1612, 1620, 1624 - 1626): per lo più scritture finanziarie dello stato Sforzesco, tra cui i preventivi di entrata e di spesa (talvolta riferiti anche all'esercito) studiati da Franca Leverotti (LEVEROTTI, Scritture);<br />
+- Cancelleria segreta - Archivio - Libri - Biblioteche - Stampatori (scatt. 1606 - 1607): atti relativi all'attività quotidiana della cancelleria ducale, compilazione di sommari delle lettere ricevute, provviste d'ufficio (carta, inchiostro etc.), archivio; sono compresi anche documenti relativi alla biblioteca ducale del Castello di Pavia;<br />
+- Atti giudiziari (scat. 1605);<br />
+- Documenti non datati (scatt. 1609 - 1611, 1613 - 1619, 1621): ascrivibili ai secc. XV - XVI, tra i quali si trovano anche documenti riguardanti la guerra con Venezia (1452 - 1454).<br />
+La scatola 1455 comprende anche dei falsi (secc. XI - XVI), opera del noto falsario seicentesco Carlo Galluzzi.</p>
+<p><strong>Storia archivistica</strong>: Nel formare la serie di Potenze Sovrane, Pietro Ghinzoni (1828 - 1895), che ne fu il primo ordinatore, prendendo a modello l'Archivio di Casa e di Corte di Vienna raccolse i documenti relativi ai signori e duchi dello Stato milanese e dei loro familiari. Si tratta dunque di una serie chiaramente artificiosa, ordinata per materia secondo i criteri dell'omonima serie conservata nel fondo Atti di governo (BAZZI, La Corte, pp. 141 - 142; sul metodo di ordinamento per materia anche LODOLINI, Storia dell'archivistica italiana, p. 160; NATALE, L'Archivio di Stato di Milano, p. 73).<br />
+Il Carteggio generale (scatt. 1572 - 1584) fu abbondantemente scorporato nel corso dei lavori di riordino intrapresi agli inizi del secolo XX sotto la direzione del Fumi; il programma era di "riordinare il Carteggio per provenienza e destinazione delle carte: e ciò in ragione di quanto sembrò fosse l'ordinamento dell'Archivio della Cancelleria segreta". I vari documenti vennero raggruppati secondo "gli uffici, la qualità e le provenienze" (Annuario 4 / 1914, p. 34), assegnandoli alle singole voci "secondo la provenienza se trattasi di lettere pervenute alla cancelleria ducale, secondo la destinazione se di lettere spedite" (Annuario 5 / 1915, p. 75), dando vita a fondi e serie particolari quali ad esempio il Carteggio interno e Potenze estere. Rimangono in Potenze Sovrane alcuni nuclei di documentazione riferibili alle Potenze Estere (Lucca, scat. 1594 - 1595) e al Carteggio interno (Alessandria e Como, scatt. 1622 e 1632; Cremona, scatt. 1623 e 1633; Geradadda, Lodi, Novara, scat. 1634; Parma, Pavia, scatt. 1635 - 1636; Piacenza, Tortona, scat. 1637).<br />
+La scat. 1641, originariamente in questa serie, si trova attualmente in Potenze estere, Napoli scat. 253.<br />
+Gli atti e le scritture camerali (scatt. 1601 - 1604, 1608, 1612, 1620, 1624 - 1626) sfuggirono alla ricostruzione dell'Archivio ducale da parte del Fumi, dato l'argomento che difficilmente poteva essere inserito nelle serie da lui create quali Carteggio interno o Potenze estere. Fu solo ad opera del Natale che le cartelle contenenti questo materiale, dopo aver subito alcuni riordinamenti, furono inserite in Potenze Sovrane e altre voci.<br />
+Alcune scatole provengono dal fondo Miscellanea storica e sono le seguenti: scat. 1485 (1476 - 1555) ex Miscellanea storica 28; scat. 1608 (1398 - 1498) ex Miscellanea storica 27; scat. 1612 (1450 - 1531) ex Miscellanea storica 12; scat. 1620 (1450 con s.d.) ex Miscellanea storica 17; scat. 1624 (1462) ex Miscellanea storica 5; scat. 1625 (1451) ex Miscellanea storica 19; scat. 1626 (1453) anch'essa precedentemente collocata in Miscellanea storica.</p>
+<p><strong>Informazioni sulla numerazione</strong>: pezzi da 1455 a 1640 con salti di numerazione (hanno un bis le scatt. 1489, 1521, 1566, 1567, 1587, 1610; sono accorpate le scatt. 1510 e 1511 e le scatt. 1579 e 1581); sono vuote le scatt. 1575 - 1576, 1583, 1599, 1615, 1630 - 1631, 1638 - 1640).</p>
+<p><strong>Strumenti di ricerca</strong></p>
+<dl><dt><em><a href='http://www.archiviodistatomilano.it/strumenti-di-ricerca-sala-studio/3/'>Potenze sovrane (e altre voci)</a></em></dt><dd>terzo quarto sec. XX -  ultimo quarto sec. XX</dd><dd>inventario sommario</dd><dd>Inventario di sala VS 2 (già n. 2), copia dattiloscritta (con integrazioni manoscritte) dell'inventario redatto da Natale e datato 1972.</dd><dd>Autori: Natale Alfio Rosario (archivista di Stato)</dd></dl><p><strong>Documentazione correlata</strong>:<br />
+- <strong>Atti di governo</strong>&nbsp;Potenze sovrane post 1535 (scatt. 1 - 2; 122 - 125) AS MI<br />- <strong>Carteggio Sforzesco, Carteggio Interno</strong>&nbsp;Alessandria, Como, Cremona, Geradadda, Lodi, Novara, Parma, Pavia, Piacenza e Tortona AS MI<br />- <strong>Carteggio Sforzesco, Potenze estere</strong>&nbsp;Lucca, Venezia AS MI<br />- <strong>Carte di Carlo Gonzaga</strong>&nbsp; AS MI<br /></p><p><strong>Bibliografia</strong>:<br />
+- <strong>Annuario AS MI  (1911 - 1919)</strong>, vol. 5 / 1915, 75 = Annuario del Regio Archivio di Stato in Milano, Perugia, Unione Tipografico Cooperativa, voll. 1 - 9, 1911 - 1919<br />- <strong>Annuario AS MI  (1911 - 1919)</strong>, vol. 4 / 1914, 34 = Annuario del Regio Archivio di Stato in Milano, Perugia, Unione Tipografico Cooperativa, voll. 1 - 9, 1911 - 1919<br />- <strong>ARCANGELI, Esperimenti di governo</strong>, 255 - 339 = ARCANGELI L., "Esperimenti di governo: politica fiscale e consenso a Milano nell'età di Luigi XII", in ARCANGELI L. (a cura di), "Milano e Luigi XII. Ricerche sul primo dominio francese in Lombardia (1499 - 1512)", Milano 2002, pp. 255 - 339<br />- <strong>BAZZI, La corte</strong>, 141 - 142 = BAZZI A., "La Corte Visconteo - Sforzesca. Le fonti dell'Archivio di Stato di Milano", in "Cheiron", I, 2 (1983), (n. mon. "La corte in Europa. Fedeltà, favori, pratiche di governo", a cura di M. CATTINI e M.A. ROMANI ), pp. 141 - 149<br />- <strong>CERIONI, La diplomazia Sforzesca</strong> = CERIONI L., "La diplomazia Sforzesca nella seconda metà del Quattrocento e i suoi cifrari segreti", 2 voll., Roma 1970<br />- <strong>GG II</strong>, 927 = MINISTERO PER I BENI CULTURALI E AMBIENTALI - UFFICIO CENTRALE PER I BENI ARCHIVISTICI, Guida Generale degli Archivi di Stato italiani, dir. P. D'ANGIOLINI, C. PAVONE, vol. II, Roma 1983<br />- <strong>LEVEROTTI, Scritture</strong> = LEVEROTTI F., "Scritture finanziarie dell'età Sforzesca", in "Squarci d'archivio Sforzesco", Catalogo della mostra, Archivio di Stato di Milano 1981, pp. 121 - 137<br />- <strong>NATALE, L'Archivio di Stato di Milano, I</strong>, 73 segg. = NATALE A.R. (a cura di), "L'Archivio di Stato di Milano. Manuale storico archivistico, I. Guide e cronache dell'Ottocento", Milano 1976<br /></p><p><strong>Compilatori</strong><br />
+prima redazione:&nbsp;Eleonora Saita, archivista&nbsp;1998/06/29<br />rielaborazione:&nbsp;Flora Santorelli, archivista&nbsp;2007/06<br /></p></div>
+<p class="record-permalink">Link risorsa: <a href="https://www.lombardiabeniculturali.it/archivi/complessi-archivistici/MIBA002409/">https://www.lombardiabeniculturali.it/archivi/complessi-archivistici/MIBA002409/</a></p>        </div> <!-- /#record-wrap -->
+        <div id="tree-wrap" class="col-fond">
+          <div id="tree-inner">
+          <script type='text/javascript'>
+d = new dTree('d');
+d.add(1, -1, 'Carteggio Visconteo Sforzesco','/archivi/complessi-archivistici/MIBA002400/','Carteggio Visconteo Sforzesco');
+d.add(17766, 1, 'Carteggio Visconteo','/archivi/complessi-archivistici/MIBA002401/','Carteggio Visconteo');
+d.add(18532, 1, 'Carte di Carlo Gonzaga','/archivi/complessi-archivistici/MIBA002406/','Carte di Carlo Gonzaga');
+d.add(18729, 1, 'Archivio Sforzesco avanti il Principato','/archivi/complessi-archivistici/MIBA002407/','Archivio Sforzesco avanti il Principato');
+d.add(18846, 1, 'Carteggio Sforzesco','/archivi/complessi-archivistici/MIBA002408/','Carteggio Sforzesco');
+d.add(109979, 17766, 'Decreti e lettere patenti','/archivi/complessi-archivistici/MIBA002402/','Decreti e lettere patenti');
+d.add(110817, 17766, 'Carteggio interno','/archivi/complessi-archivistici/MIBA002403/','Carteggio interno');
+d.add(111847, 17766, 'Carteggio e atti extra dominium','/archivi/complessi-archivistici/MIBA002404/','Carteggio e atti extra dominium');
+d.add(112908, 17766, 'Frammenti di atti di notai e istrumenti vari','/archivi/complessi-archivistici/MIBA002405/','Frammenti di atti di notai e istrumenti vari');
+d.add(110271, 18846, 'Potenze sovrane','/archivi/complessi-archivistici/MIBA002409/','Potenze sovrane');
+d.add(110818, 18846, 'Carteggio interno','/archivi/complessi-archivistici/MIBA00240A/','Carteggio interno');
+d.add(112340, 18846, 'Potenze estere','/archivi/complessi-archivistici/MIBA002417/','Potenze estere');
+d.add(1020546, 110818, 'Alessandria','/archivi/complessi-archivistici/MIBA00240B/','Alessandria');
+d.add(1023160, 110818, 'Como','/archivi/complessi-archivistici/MIBA00240C/','Como');
+d.add(1025147, 110818, 'Cremona','/archivi/complessi-archivistici/MIBA00240D/','Cremona');
+d.add(1027078, 110818, 'Geradadda','/archivi/complessi-archivistici/MIBA00240E/','Geradadda');
+d.add(1028297, 110818, 'Lodi','/archivi/complessi-archivistici/MIBA00240F/','Lodi');
+d.add(1029262, 110818, 'Milano citt&agrave; e ducato','/archivi/complessi-archivistici/MIBA002410/','Milano citt&agrave; e ducato');
+d.add(1029986, 110818, 'Novara','/archivi/complessi-archivistici/MIBA002411/','Novara');
+d.add(1030547, 110818, 'Parma','/archivi/complessi-archivistici/MIBA002412/','Parma');
+d.add(1031013, 110818, 'Pavia','/archivi/complessi-archivistici/MIBA002413/','Pavia');
+d.add(1031348, 110818, 'Piacenza','/archivi/complessi-archivistici/MIBA002414/','Piacenza');
+d.add(1031682, 110818, 'Tortona','/archivi/complessi-archivistici/MIBA002415/','Tortona');
+d.add(1031818, 110818, 'Residui','/archivi/complessi-archivistici/MIBA002416/','Residui');
+d.add(1020545, 112340, 'Alemagna e Danimarca','/archivi/complessi-archivistici/MIBA002418/','Alemagna e Danimarca');
+d.add(1024553, 112340, 'Spagna e Portogallo','/archivi/complessi-archivistici/MIBA002419/','Spagna e Portogallo');
+d.add(1024792, 112340, 'Asti e Ceva','/archivi/complessi-archivistici/MIBA00241A/','Asti e Ceva');
+d.add(1026590, 112340, 'Borgogna e Fiandra','/archivi/complessi-archivistici/MIBA00241B/','Borgogna e Fiandra');
+d.add(1027833, 112340, 'Carpi','/archivi/complessi-archivistici/MIBA00241C/','Carpi');
+d.add(1028930, 112340, 'Correggio','/archivi/complessi-archivistici/MIBA00241D/','Correggio');
+d.add(1029735, 112340, 'Ferrara','/archivi/complessi-archivistici/MIBA00241E/','Ferrara');
+d.add(1030415, 112340, 'Firenze e Pisa','/archivi/complessi-archivistici/MIBA00241F/','Firenze e Pisa');
+d.add(1030928, 112340, 'Francia','/archivi/complessi-archivistici/MIBA002420/','Francia');
+d.add(1031246, 112340, 'Genova','/archivi/complessi-archivistici/MIBA002421/','Genova');
+d.add(1031544, 112340, 'Guastalla','/archivi/complessi-archivistici/MIBA002422/','Guastalla');
+d.add(1031742, 112340, 'Inghilterra e Scozia','/archivi/complessi-archivistici/MIBA002423/','Inghilterra e Scozia');
+d.add(1031951, 112340, 'Lucca','/archivi/complessi-archivistici/MIBA002424/','Lucca');
+d.add(1032024, 112340, 'Lunigiana','/archivi/complessi-archivistici/MIBA002425/','Lunigiana');
+d.add(1032107, 112340, 'Mantova','/archivi/complessi-archivistici/MIBA002426/','Mantova');
+d.add(1032182, 112340, 'Marca','/archivi/complessi-archivistici/MIBA002427/','Marca');
+d.add(1032238, 112340, 'Mirandola e Concordia','/archivi/complessi-archivistici/MIBA002428/','Mirandola e Concordia');
+d.add(1032283, 112340, 'Miscellanea','/archivi/complessi-archivistici/MIBA002429/','Miscellanea');
+d.add(1032329, 112340, 'Monaco e Mentone','/archivi/complessi-archivistici/MIBA00242A/','Monaco e Mentone');
+d.add(1032368, 112340, 'Monferrato','/archivi/complessi-archivistici/MIBA00242B/','Monferrato');
+d.add(1032404, 112340, 'Napoli','/archivi/complessi-archivistici/MIBA00242C/','Napoli');
+d.add(1032440, 112340, 'Piombino','/archivi/complessi-archivistici/MIBA00242D/','Piombino');
+d.add(1032472, 112340, 'Roma','/archivi/complessi-archivistici/MIBA00242E/','Roma');
+d.add(1032498, 112340, 'Romagna','/archivi/complessi-archivistici/MIBA00242F/','Romagna');
+d.add(1032521, 112340, 'Savoia','/archivi/complessi-archivistici/MIBA002430/','Savoia');
+d.add(1032540, 112340, 'Siena','/archivi/complessi-archivistici/MIBA002431/','Siena');
+d.add(1032556, 112340, 'Stato Pallavicino','/archivi/complessi-archivistici/MIBA002432/','Stato Pallavicino');
+d.add(1032573, 112340, 'Svizzera','/archivi/complessi-archivistici/MIBA002433/','Svizzera');
+d.add(1032587, 112340, 'Tenda e Ceva','/archivi/complessi-archivistici/MIBA002434/','Tenda e Ceva');
+d.add(1032601, 112340, 'Umbria e Sabina','/archivi/complessi-archivistici/MIBA002435/','Umbria e Sabina');
+d.add(1032615, 112340, 'Venezia','/archivi/complessi-archivistici/MIBA002436/','Venezia');
+d.add(1032617, 112340, 'Cancelleria ducale','/archivi/complessi-archivistici/MIBA00360A/','Cancelleria ducale');
+document.write(d);
+d.closeAll();
+d.openTo(110271, true);
+</script>
+          <p style="font-size: 10px;"> <a id="open" href="javascript: d.openAll();">espandi</a> | <a id="close" href="javascript: d.closeAll();">riduci</a></p>
+          </div> <!-- /#tree-inner -->
+          <div id="tree-handle" class="ui-resizable-handle hidden-xs"></div>
+        </div>
+      </div> <!-- /.row -->
+    </div> <!-- /#content -->
+
+    <div class="container">
+      <div class="alert alert-warning"><p><strong>NOTA BENE</strong>: qualsiasi richiesta di consultazione, informazioni, ricerche, studi (nonch&eacute; documentazione fotografica in alta risoluzione) relativa ai beni culturali di interesse descritti in Lombardia Beni Culturali deve essere inoltrata direttamente ai soggetti pubblici o privati che li detengono e/o gestiscono (soggetto o istituto di conservazione).</p></div>    </div>
+
+    
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div id="footer-title" class="col-12 my-4 font-weight-bold">
+        LombardiaBeniCulturali
+      </div>
+    </div>
+
+    <div class="row">
+      <p>
+        <a href="/progetto/">Progetto</a> <span style="padding: 0 5px;">|</span>
+        <a href="/mappa/">Mappa del sito</a> <span style="padding: 0 5px;">|</span>
+        <a href="/contatti/">Contatti</a> <span style="padding: 0 5px;">|</span>
+        <a href="/privacy/">Privacy</a> <span style="padding: 0 5px;">|</span>
+        <a href="/note-legali/">Note legali</a> <span style="padding: 0 5px;">|</span>
+        <a href="/cookie-policy/">Cookie policy</a>
+      </p>
+    </div>
+
+    <div class="row">
+      <div id="footer-copy" class="col-12 my-3">
+        <span class="d-inline-block">&copy; Copyright Regione Lombardia</span>
+        <span class="d-inline-block"> - tutti i diritti riservati</span>
+        <span class="d-inline-block"> - C.F. 80050050154</span>
+        <span class="d-inline-block"> - Piazza Citt&agrave; di Lombardia 1</span>
+        <span class="d-inline-block"> - 20124 Milano</span>
+      </div>
+    </div>
+  </div>
+</footer>
+    </div> <!-- /#wrap -->
+
+    <a href="#" id="back-to-top" title="Torna su"><span class="fa fa-angle-up"></span></a>
+  </body>
+</html>
