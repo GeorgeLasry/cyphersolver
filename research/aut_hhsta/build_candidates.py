@@ -1,0 +1,178 @@
+# -*- coding: utf-8 -*-
+"""Builds candidates.json for the Austria sweep (AIS = archivinformationssystem.at). Edit rows here."""
+import json
+AIS = "https://www.archivinformationssystem.at/detail.aspx?ID="
+SN = "Scored from the archive description during the Oct 2026 Austria (OeStA/HHStA) sweep (research/aut_hhsta/); not viewed"
+PA = "open (checked 28 Oct 2026: repo ledgers, DECODE list, research/central_archives; no decipherment found in the AIS description)"
+
+
+def row(**k):
+    d = dict(region="Central Europe", seen="catalogue", source="Austria sweep (OeStA AIS)", prior_art=PA,
+             score_note=SN, access="online")
+    d.update(k)
+    return d
+
+
+def L(label, i):
+    return {"label": label, "href": AIS + str(i)}
+
+
+R = []
+R.append(row(
+    year=1608, date="ca. 1608",
+    title="Three ciphered German letters in the Rudolf II / Matthias dispute (to Archduke Ferdinand)",
+    correspondents="unknown -> Archduke Ferdinand (of Inner Austria), Bruderzwist file", place="unknown",
+    language="German", period="1598-1610",
+    shelfmark="HHStA Wien, HausA Familienakten 2-3 (AIS ID 3483953)",
+    folio_note="fol. 1-6; 3 'chiffrierte Briefe'; images online in AIS. Viewed the cover and the first letter page: a ciphered block of letter-like signs, with a German passage below it that may be a contemporary decipherment, partly struck out",
+    cls="A",
+    status="AIS: 'Streitigkeiten zwischen Kaiser Rudolf II. und seinem Bruder Erzherzog Mathias'; Enthaelt: 3 chiffrierte Briefe; no decipherment is mentioned. Not on DECODE; not in the repo (known.py: no hits for Familienakten).",
+    why="Ciphered letters from the Habsburg Bruderzwist of 1608 (Rudolf II against Matthias), at the moment of the Hungarian-Austrian rebellion.",
+    importance=3, solvability=4, difficulty=2,
+    verify="Open the AIS viewer (3 letters, fol. 1-6); transcribe the cipher block of letter 1; check whether the German text under it is a decipherment (a crib) before any key search.",
+    links=[L("AIS Familienakten 2-3", 3483953)], seen="image",
+    score_note="Scored during the Oct 2026 Austria (OeStA/HHStA) sweep (research/aut_hhsta/); first two images viewed (cover and first letter page), the rest not viewed"))
+R.append(row(
+    year=1548, date="1 Jun - 22 Jul 1548",
+    title="Sigismund August of Poland, Frater Georg Martinuzzi and Queen Isabella to Ibrahim Pasha: ciphered copies with a Latin exemplar",
+    correspondents="Sigismund II August; Georg Martinuzzi; Isabella Zapolya -> Ibrahim Pasha (copies sent to Ferdinand I by Malvezzi)",
+    place="Constantinople", language="Latin", period="1497-1559",
+    shelfmark="HHStA Wien, StAbt Tuerkei I 7-4-4 (ID 7040827), 7-4-5 (ID 7040824), 7-4-9 (ID 7040845)",
+    folio_note="fol. 28-30, 31-34, 51-59; 7-4-4 '2 chiffrierte Exemplare, 1 lateinisches Exemplar'; 7-4-5 '3 chiffrierte Exemplare, 1 lateinisches Exemplar'; 7-4-9 has two enclosed ciphered copies",
+    cls="A",
+    status="AIS: the cipher copies are not described as deciphered, but each letter has a Latin exemplar of the same text. Malvezzi's covering letters are edited in Austro-Turcica 1541-1552 (7-4-9: pp. 276-278); the edition may not print the enclosures. Not on DECODE; not in the repo (known.py: '7-4-5' no hits).",
+    why="Three-fold parallel text (cipher copies plus the Latin) for the Polish, Transylvanian and Isabella channels to the Porte in 1548, so a clean known-plaintext break.",
+    importance=3, solvability=5, difficulty=1,
+    verify="View fol. 28-34 in AIS; check whether the Latin exemplar is the plaintext of the cipher copies; align and read; test the key on the Laski 1541 and Malvezzi 1548 cipher items.",
+    links=[L("AIS 7-4-4", 7040827), L("AIS 7-4-5", 7040824), L("AIS 7-4-9", 7040845)]))
+R.append(row(
+    year=1514, date="29 May 1513 - 31 Aug 1515",
+    title="Alberto Pio da Carpi's reports from Rome to Maximilian I, partly ciphered",
+    correspondents="Alberto Pio, Prince of Carpi -> Maximilian I", place="Rome", language="Latin", period="1497-1559",
+    shelfmark="HHStA Wien, RK Maximiliana 29-2-50 (ID 4601578), 29-2-57 (4601585), 29-2-94 (4601622), 29-3-9 (4602070), 33-2-3 (4628586), 34-1-41 (4661947)",
+    folio_note="Six letters of 2-8 folios, 1513-15; images online in AIS; the AIS search for 'Kryptographie' also hits 29-2-57",
+    cls="C",
+    status="AIS search 'chiffriert' lists them as ciphered; the descriptions give no decipherment. Not on DECODE; the repo's maximiliana1510 target covers de Burgo, Veit von Fuerst, Paulus de Laude and Gattinara, not Carpi (known.py: Alberto Pio only as a recipient of de Burgo letters).",
+    why="The imperial ambassador at Rome in 1513-15 (Lateran Council, Leo X, the League against France); a different cipher hand from de Burgo's.",
+    importance=3, solvability=3, difficulty=3,
+    verify="View the AIS images of 29-2-57 and 29-2-94; check whether Carpi used one sign system; try de Burgo's key (targets/maximiliana1510/key_deburgo.md) as a first test, then a statistics-only attack.",
+    links=[L("AIS 29-2-57", 4601585), L("AIS 29-2-94", 4601622), L("AIS 33-2-3", 4628586), L("AIS 34-1-41", 4661947)]))
+R.append(row(
+    year=1511, date="22 Dec 1511 - 21 Aug 1517",
+    title="Maximilian I's Rome agents Giovanni Colla (1511) and Stephanus Rosinus (1517), partly ciphered, and two Bannisio letters",
+    correspondents="Giovanni Colla -> Maximilian I; Stephanus Rosinus -> Jacopo de Bannisio; Bannisio -> Carpi; Antonio Rosario -> Bannisio",
+    place="Rome", language="Latin", period="1497-1559",
+    shelfmark="HHStA Wien, RK Maximiliana 26-2-39 (ID 4435434), 37-1-67 (4700739), 29-3-23 (4602084), 31-2-57 (4606680)",
+    folio_note="26-2-39 fol. 65-87 (22-30 Dec 1511); 37-1-67 fol. 137-147; 29-3-23 fol. 50-51; 31-2-57 fol. 83-87; images online",
+    cls="C",
+    status="Listed by the AIS search 'chiffriert' with no decipherment noted. Not on DECODE. Colla is named in the repo's Maximiliana row (22-2-51 family) but 26-2-39 is not in its shelfmark list (known.py).",
+    why="Roman reports to the emperor around the Council of Pisa (Dec 1511) and the Fifth Lateran Council (1517).",
+    importance=3, solvability=3, difficulty=3,
+    verify="View 26-2-39 images; compare the sign set with Veit von Fuerst's and de Burgo's keys in targets/maximiliana1510/.",
+    links=[L("AIS 26-2-39", 4435434), L("AIS 37-1-67", 4700739)]))
+R.append(row(
+    year=1514, date="16 Nov 1513 - 23 Apr 1514",
+    title="Cardinal Matthaeus Lang, Bishop of Gurk, to Maximilian I and Bannisio on the peace with Venice, partly ciphered",
+    correspondents="Matthaeus Lang -> Maximilian I / Jacopo de Bannisio", place="Rome", language="Latin",
+    period="1497-1559",
+    shelfmark="HHStA Wien, RK Maximiliana 30-2-27 (ID 4602280), 31-1-45 (4605957), 31-2-24 (4606647), 31-2-50 (4606673)",
+    folio_note="fol. 66-68, 79-80, 33-34, 70-71; images online",
+    cls="C",
+    status="Listed by the AIS 'chiffriert' search; no decipherment noted. Not on DECODE; not in the repo.",
+    why="The emperor's chief minister on the 1514 truce with Venice and the peace with France.",
+    importance=3, solvability=3, difficulty=3,
+    verify="View the images; the Lang ciphers may be one system with the 'Moronus' letter 42-1-9-3 already in the repo.",
+    links=[L("AIS 31-2-24", 4606647), L("AIS 31-2-50", 4606673), L("AIS 31-1-45", 4605957)]))
+R.append(row(
+    year=1513, date="22 Jun 1511 - 17 Apr 1516",
+    title="Andrea de Burgo's further ciphered reports to Maximilian I (Valencia, Blois, Milan, Brussels), not yet in the repo",
+    correspondents="Andrea de Burgo -> Maximilian I / Bannisio", place="Valencia, Blois, Milan, Brussels",
+    language="Latin", period="1497-1559",
+    shelfmark="HHStA Wien, RK Maximiliana 24-4-32 (ID 5464533), 24-4-39 (5464821), 25-1-26 (4426761), 25-3-50 (4833496), 25-4-53 (4857263), 29-3-19 (4602080), 29-3-65 (4602126), 30-2-5 (4602258), 30-2-45 (4602298), 31-1-73 (4605985), 31-2-5 (4606628), 32-1-4 (4608638), 32-2-6 (4622394), 32-3-24 (4624026), 33-2-29 (4628612), 35-2-23 (4696232), 35-3-24 (4696853)",
+    folio_note="17 items, each 1-15 folios; images online; no decipherment noted",
+    cls="A",
+    status="AIS 'chiffriert'; the repo has de Burgo's key partly rebuilt (targets/maximiliana1510/key_deburgo.md) from 22-3-18, 25-2-25 and 25-2-27, but these 17 shelfmarks are not in the ledgers (known.py).",
+    why="Spanish, French, Milanese and Brabant intelligence of the emperor's best-informed agent, 1511-16.",
+    importance=3, solvability=4, difficulty=2,
+    verify="Apply key_deburgo.md to each; sort by how much reads; the Milan 1514 letters (31-1-73, 32-2-6) first.",
+    links=[L("AIS 25-3-50", 4833496), L("AIS 31-1-73", 4605985), L("AIS 35-3-24", 4696853)]))
+R.append(row(
+    year=1512, date="17 Jan 1512 - 14 Sep 1514",
+    title="Miscellaneous ciphered Maximiliana items: Sernteiner, Ychard (Brescia), N.N. war reports, Titioni extract, the Paul von Liechtenstein letter",
+    correspondents="Zyprian Sernteiner -> N. Sprenz; Aluys Ychard (?) -> Maximilian; N.N.; Bartholomaeus Titioni -> de Burgo; Maximilian -> Paul von Liechtenstein",
+    place="Italy / unknown", language="Latin", period="1497-1559",
+    shelfmark="HHStA Wien, RK Maximiliana 26-3-26 (ID 4427889), 35-4-12 (4696952), 25-4-69 (4857279), 29-3-40 (4602101), 32-2-20 (4622408), 42-1-7-107 (4868154), 42-2-2-8 (4869451)",
+    folio_note="1-4 folios each; images online",
+    cls="C",
+    status="AIS 'chiffriert'; no decipherment noted; short items. Not in the repo's ledgers (known.py by shelfmark).",
+    why="Short military and diplomatic notes of the Venetian war; useful as extra material for the Maximiliana sign systems rather than on their own.",
+    importance=2, solvability=2, difficulty=3,
+    verify="View the images and pair each with a sign system found in the de Burgo, Veit and Laude keys.",
+    links=[L("AIS 26-3-26", 4427889), L("AIS 35-4-12", 4696952), L("AIS 42-1-7-107", 4868154)]))
+R.append(row(
+    year=1548, date="8 Mar 1548 - Dec 1548",
+    title="Malvezzi's 1548 despatches from Constantinople to Ferdinand I that carry ciphered passages, beyond those already listed",
+    correspondents="Giovanni Maria Malvezzi -> Ferdinand I / Adam Carl", place="Constantinople", language="Italian",
+    period="1497-1559",
+    shelfmark="HHStA Wien, StAbt Tuerkei I 7-3-21 (ID 7039364), 7-3-32 (7039495), 7-3-38 (7039554), 7-4-38 (7041818), 7-4-42 (7041832), 7-4-43 (7041835)",
+    folio_note="fol. 55-60, 96-98, 115-117, 171-172, 180-181, 182; images online; Austro-Turcica edits the despatches (not necessarily the enclosed cipher)",
+    cls="A",
+    status="AIS 'chiffriert' search; descriptions give no decipherment. The repo reads Ferdinand->Malvezzi 1548 (targets/malvezzi1548, DECODE R366 with key R367) and lists other Malvezzi items 7-1-4, 7-2-18, 7-2-25, 7-3-39 (research/central_archives); these six are not listed.",
+    why="The resident's own cipher traffic in 1548 (Transylvanian, Polish, Persian news), closely tied to the key already read.",
+    importance=3, solvability=4, difficulty=2,
+    verify="Check which passages are ciphered, then test the R367 nomenclator and the central_archives Malvezzi row's alphabet.",
+    links=[L("AIS 7-3-21", 7039364), L("AIS 7-4-38", 7041818), L("AIS 7-4-42", 7041832)]))
+R.append(row(
+    year=1550, date="24 Mar - 3 Oct 1550",
+    title="Ferdinand I's ciphered despatches to his resident Malvezzi, and Malvezzi's replies, spring-autumn 1550",
+    correspondents="Ferdinand I -> Johann Maria Malvezzi; Malvezzi -> Ferdinand I", place="Vienna / Constantinople",
+    language="Italian", period="1497-1559",
+    shelfmark="HHStA Wien, StAbt Tuerkei I 8-2-22 (ID 7048237), 8-2-24 (7048241), 8-3-10 (7048434), 8-3-12 (7048437), 9-1-2 (7079699)",
+    folio_note="fol. 111-114/119-122, 123-124, 160-161, 167-171, 166-167; 8-2-22 has 1 Ausfertigung and 1 Abschrift, 8-3-12 1 Ausfertigung and 1 Duplikat; images online; Austro-Turcica prints the despatches",
+    cls="A",
+    status="AIS 'chiffriert'; no decipherment. Ferdinand->Malvezzi was read for 1548 (malvezzi1548, R366/R367); the 1550 outgoing letters are not in the repo, and several have two copies (a check on copyist errors).",
+    why="Same key family as the 1548 reading, so a test of whether the cipher stayed unchanged through 1550.",
+    importance=3, solvability=4, difficulty=1,
+    verify="Apply the malvezzi1548 key to 8-2-24; the paired copies give a transcription check.",
+    links=[L("AIS 8-2-24", 7048241), L("AIS 8-3-12", 7048437), L("AIS 9-1-2", 7079699)]))
+R.append(row(
+    year=1550, date="8 May - 16 Aug 1550",
+    title="Sinckmoser, Petrovics and Queen Isabella letters of 1550 (Constantinople / Transylvania), ciphered",
+    correspondents="Markus Sinckmoser -> Ferdinand I; Peter Petrovics -> Suleiman I; Isabella -> Rustem Pasha; news from the Venetian bailo",
+    place="Constantinople / Transylvania", language="Italian / Latin", period="1497-1559",
+    shelfmark="HHStA Wien, StAbt Tuerkei I 8-3-14 (ID 7048570), 8-3-21 (7048578), 8-3-30 (7048600), 8-4-16 (7079529), 8-4-17 (7079536)",
+    folio_note="fol. 174-175, 205-206, 238-239, 113, 114; images online; the first two are printed in Austro-Turcica",
+    cls="B",
+    status="AIS 'chiffriert'; no decipherment. The 8-4-16 and 8-4-17 pair are the Transylvanian side to the Porte. Not in the repo; Petrovics appears only in the unrelated R1212 note.",
+    why="Transylvanian and Hungarian letters to Constantinople in the year of Martinuzzi's secret talks.",
+    importance=3, solvability=3, difficulty=3,
+    verify="View the images; compare the signs with Isabella's and Martinuzzi's enclosures in 7-4-4 to 7-4-9 and 8-3-8 (central_archives).",
+    links=[L("AIS 8-3-14", 7048570), L("AIS 8-4-16", 7079529), L("AIS 8-4-17", 7079536)]))
+R.append(row(
+    year=1545, date="1533 - 1547",
+    title="Miscellaneous ciphered Tuerkei I items: Adorno 1545, Mailath 1545, Zapolya to Charles V 1547, a Constantinople news sheet 1533",
+    correspondents="Hieronymus Adorno -> Ferdinand I; Stefan Mailath -> Adorno; John Sigismund Zapolya -> Charles V; unknown",
+    place="Constantinople / Hungary", language="Latin / Italian", period="1497-1559",
+    shelfmark="HHStA Wien, StAbt Tuerkei I 6-1-26 (ID 6463908), 6-1-28 (6463981), 7-2-23 (7007473), 3-1-11 (6198373)",
+    folio_note="fol. 62-64, 71, 164-166, 31; images online; 6-1-26 is printed in Austro-Turcica",
+    cls="C",
+    status="AIS 'chiffriert'; no decipherment noted. Not in the repo.",
+    why="Single ciphered letters of the Zapolya and Ferdinand courts; each needs a sibling in the same hand to be broken.",
+    importance=2, solvability=2, difficulty=3,
+    verify="View the images; look for shared alphabets with the Laski (1541) and Ragusa (1530-32) rows.",
+    links=[L("AIS 6-1-26", 6463908), L("AIS 7-2-23", 7007473)]))
+R.append(row(
+    year=1526, date="19 May 1526",
+    title="Archbishop Matthaeus Lang of Salzburg to Burkhard von Ems, cipher letter of the Peasants' War, discussed as undeciphered",
+    correspondents="Matthaeus Lang -> Burkhard von Ems", place="Salzburg", language="German", period="1497-1559",
+    access="archive",
+    shelfmark="Location not stated in the snippet; article: Karl-Heinz Ludwig, 'Geheimschrift im Bauernkrieg', Mitteilungen der Gesellschaft fuer Salzburger Landeskunde 125, pp. 395-399",
+    folio_note="one letter; held at an Austrian archive (probably Salzburg or Vorarlberg), not identified",
+    cls="C",
+    status="Found through a web-search summary of the article; zobodat.at returned 403 to a script, so the article was not read. Whether the letter was deciphered is unknown.",
+    why="Cipher use by the Archbishop-Cardinal during the 1526 Salzburg uprising.",
+    importance=3, solvability=2, difficulty=3,
+    verify="Read the zobodat PDF in a browser (https://www.zobodat.at/pdf/MGSL_125_0395-0399.pdf) to get the repository, shelfmark and whether Ludwig deciphered it.",
+    links=[{"label": "Ludwig, MGSL 125, 395-399 (zobodat)", "href": "https://www.zobodat.at/pdf/MGSL_125_0395-0399.pdf"}]))
+json.dump(R, open('candidates.json', 'w', encoding='utf8'), ensure_ascii=False, indent=1)
+print(len(R), sum(r['access'] == 'online' for r in R))

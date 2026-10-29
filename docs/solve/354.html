@@ -40,7 +40,7 @@
 </div>
 
 <section class="hero solve">
-  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 354 · class C · priority 3.5 · open</p>
+  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 354 · class C · priority 3.5 · attempted, open</p>
   <h1>Marshal Catinat, coded despatch from the camp of 'Inglesheim' (duplicate copy)</h1>
   <p class="sub">Catinat's last campaign: written days after the fall of Landau while the Bavarian junction was failing, to the Swiss correspondent in Zug.</p>
   <dl class="facts">
@@ -79,19 +79,20 @@ WHAT IS KNOWN
   Known so far (checked 21 Oct 2026): Nothing deciphered. Tomokiyo showed the 1691 Grand Chiffre, the 1702 d'Usson code and Catinat's unread 1691 code do not fit (louisxiv.htm §9). Transcriptions by Lichtenberger and Norbert on Klausis Krypto Kolumne (2016).
   Still open: The whole despatch (~591 numbers, max 464): not deciphered; no key; archival signature unknown; a minute or clear copy at SHD Vincennes A1 not sought.
   History and prior art: Cryptoole XX1702-1 (open). About 591 number tokens, highest 464, 43% below 100 (Tomokiyo). The 1691 Grand Chiffre, the 1702 d'Usson code and Catinat's 1691 unread code do not fit (Tomokiyo, louisxiv.htm §9).
-  Outcome so far: not yet attempted by the project
+  Outcome so far: attempted, open: transcription checked against the images; petit chiffre 1690 and 8B 1702 keys do not fit; ciphertext-only tests underpowered on controls; needs a sibling (Aargau AH 167) (28 Oct 2026, targets/catinat1702/)
   Prior-art check: open (checked 14 Oct 2026): Klausis Krypto Kolumne 2016 thread unsolved (Lichtenberger and Norbert transcriptions, Tomokiyo statistics)
   Check first: Get the signature and sibling Catinat-Zurlauben letters from the Aargau Zurlauben catalogue (kbaargau.visual-library.de); look for the minute or a clear copy at SHD Vincennes A1 for Sept 1702; transcribe the three Klausis images and test the low-number alphabet against a French model.
   Class C: no key and no deciphered sibling is known, so expect a ciphertext-only attack.
+  Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/catinat1702/NOTES.md
 
 STEPS
 0. Set up. If you can run a shell, fork and clone the repository and work inside it:
      git clone https://github.com/dbourdeau/cyphersolver.git
    Then read, in this order: CONTRIBUTING.md (how a contribution is sent and credited); README.md, sections
-   "Repository layout" and "Conventions" (how readings are measured and named); and
-   lang/README.md (shared language models).
-   Put all your work in targets/&lt;writer&gt;&lt;year&gt;/ (a new folder, e.g. sega1593): transcription, key, decipherment, scripts. Write a NOTES.md that says
-   what the document is, the system, the key, the reading, and what is open and why. Keep WORKLOG.md there too:
+   "Repository layout" and "Conventions" (how readings are measured and named); targets/catinat1702/NOTES.md (everything
+   already tried on this cipher, with the files it used); and lang/README.md (shared language models).
+   Put all your work in targets/catinat1702/: transcription, key, decipherment, scripts. Add your findings to its NOTES.md
+   under a dated heading, without rewriting what is there. Keep WORKLOG.md there too:
    one dated line per step (transcription, hypothesis, solver run, crib, key found, control), failures included.
    Do not edit docs/ (the site is generated and rebuilt on merge) and do not commit large images: link them.
    If you cannot run a shell, do the same work in files you keep and send them with the issue below.
@@ -131,7 +132,7 @@ STEPS
      - not applicable: Not a cipher (clear text, shorthand, a key sheet, instructions), or the item could not be reached.
 
 REPORT BACK
-With a clone: open a pull request with your targets/&lt;writer&gt;&lt;year&gt;/ folder. Say in the description how you want to be
+With a clone: open a pull request with your targets/catinat1702/ folder. Say in the description how you want to be
   credited (name, initials or handle, and a link) and include the same points as the issue below.
 Without one: open an issue: https://github.com/dbourdeau/cyphersolver/issues/new?template=solution.yml&amp;title=Solution%3A+catalogue+354&amp;target=catalogue+354
 (other kinds of contribution: https://github.com/dbourdeau/cyphersolver/issues/new/choose). Include:
@@ -148,9 +149,9 @@ If you cannot open issues or pull requests, write this report for your human to 
 <p class="ko"><i class="k">known</i> <span class="asof">checked 21 Oct 2026</span> Nothing deciphered. Tomokiyo showed the 1691 Grand Chiffre, the 1702 d'Usson code and Catinat's unread 1691 code do not fit (louisxiv.htm §9). Transcriptions by Lichtenberger and Norbert on Klausis Krypto Kolumne (2016).</p><p class="ko"><i class="o">open</i> The whole despatch (~591 numbers, max 464): not deciphered; no key; archival signature unknown; a minute or clear copy at SHD Vincennes A1 not sought.</p>
 
 <p><b>History and prior art.</b> Cryptoole XX1702-1 (open). About 591 number tokens, highest 464, 43% below 100 (Tomokiyo). The 1691 Grand Chiffre, the 1702 d'Usson code and Catinat's 1691 unread code do not fit (Tomokiyo, louisxiv.htm §9).</p>
-<p><b>Outcome so far.</b> Not yet attempted by the project. Prior-art check: open (checked 14 Oct 2026): Klausis Krypto Kolumne 2016 thread unsolved (Lichtenberger and Norbert transcriptions, Tomokiyo statistics).</p>
+<p><b>Outcome so far.</b> attempted, open: transcription checked against the images; petit chiffre 1690 and 8B 1702 keys do not fit; ciphertext-only tests underpowered on controls; needs a sibling (Aargau AH 167) (28 Oct 2026, targets/catinat1702/) Prior-art check: open (checked 14 Oct 2026): Klausis Krypto Kolumne 2016 thread unsolved (Lichtenberger and Norbert transcriptions, Tomokiyo statistics).</p>
 <p><b>Check first.</b> Get the signature and sibling Catinat-Zurlauben letters from the Aargau Zurlauben catalogue (kbaargau.visual-library.de); look for the minute or a clear copy at SHD Vincennes A1 for Sept 1702; transcribe the three Klausis images and test the low-number alphabet against a French model.</p>
-
+<ul><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/catinat1702/NOTES.md" rel="noopener">targets/catinat1702/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/catinat1702" rel="noopener">the folder</a>)</li></ul>
 
 
 <h2>Scores</h2>

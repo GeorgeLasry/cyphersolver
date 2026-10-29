@@ -40,7 +40,7 @@
 </div>
 
 <section class="hero solve">
-  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 835 · class C · priority 6.0 · open</p>
+  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 835 · class C · priority 6.0 · attempted, open</p>
   <h1>Astrological and medical compilation with occasional words written in cipher</h1>
   <p class="sub">Pre-1497 cipher words in a medical-astrological book, probably concealing charm or sexual recipes; small but datable.</p>
   <dl class="facts">
@@ -74,20 +74,21 @@ THE CIPHER
     - HDL mssHM 64: https://hdl.huntington.org/digital/collection/p16003coll14/id/1503
 
 WHAT IS KNOWN
-  Status: Catalogue (Dutschke, Guide to Medieval and Renaissance MSS, repeated in HDL record): 'occasional words written in cipher (e.g. ff. 50, 102v, 111, 143, 163)'. No reading given. Probably the common vowel-substitution of English medical manuscripts (cf. HU 1051, where the cataloguer read 'Pr4pt2r 1m4r2m m5l32r3s'). Fully digitised on HDL. Not in the repo.
-  Outcome so far: not yet attempted by the project
-  Prior-art check: open (checked 28 Oct 2026: catalogue only)
+  Status: Catalogue (Dutschke, Guide to Medieval and Renaissance MSS, repeated in HDL record): 'occasional words written in cipher (e.g. ff. 50, 102v, 111, 143, 163)'. No reading given. Probably the common vowel-substitution of English medical manuscripts (cf. HU 1051, where the cataloguer read 'Pr4pt2r 1m4r2m m5l32r3s'). Fully digitised on HDL. Not in the repo. First pass 28 Oct 2026 (targets/hm64/): ff. 163r and 111r viewed on HDL; the red hatched boxes on 163r/163v are crosses in Latin charms, not cipher; two candidate cipher words located (163r heading 'T R y 6 z l e t h', 111r heading 'S C G e G N T'), neither read; ff. 50r and 143r show none; f. 102v and the versos unviewed. Vowel-to-number substitution not confirmed.
+  Outcome so far: attempted, open
+  Prior-art check: open (checked 28 Oct 2026: catalogue, DS9605, web search; no reading)
   Check first: View ff. 50, 102v, 111, 143, 163 on HDL; test vowel-to-digit/dot substitution.
   Class C: no key and no deciphered sibling is known, so expect a ciphertext-only attack.
+  Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/hm64/NOTES.md
 
 STEPS
 0. Set up. If you can run a shell, fork and clone the repository and work inside it:
      git clone https://github.com/dbourdeau/cyphersolver.git
    Then read, in this order: CONTRIBUTING.md (how a contribution is sent and credited); README.md, sections
-   "Repository layout" and "Conventions" (how readings are measured and named); and
-   lang/README.md (shared language models).
-   Put all your work in targets/&lt;writer&gt;&lt;year&gt;/ (a new folder, e.g. sega1593): transcription, key, decipherment, scripts. Write a NOTES.md that says
-   what the document is, the system, the key, the reading, and what is open and why. Keep WORKLOG.md there too:
+   "Repository layout" and "Conventions" (how readings are measured and named); targets/hm64/NOTES.md (everything
+   already tried on this cipher, with the files it used); and lang/README.md (shared language models).
+   Put all your work in targets/hm64/: transcription, key, decipherment, scripts. Add your findings to its NOTES.md
+   under a dated heading, without rewriting what is there. Keep WORKLOG.md there too:
    one dated line per step (transcription, hypothesis, solver run, crib, key found, control), failures included.
    Do not edit docs/ (the site is generated and rebuilt on merge) and do not commit large images: link them.
    If you cannot run a shell, do the same work in files you keep and send them with the issue below.
@@ -127,7 +128,7 @@ STEPS
      - not applicable: Not a cipher (clear text, shorthand, a key sheet, instructions), or the item could not be reached.
 
 REPORT BACK
-With a clone: open a pull request with your targets/&lt;writer&gt;&lt;year&gt;/ folder. Say in the description how you want to be
+With a clone: open a pull request with your targets/hm64/ folder. Say in the description how you want to be
   credited (name, initials or handle, and a link) and include the same points as the issue below.
 Without one: open an issue: https://github.com/dbourdeau/cyphersolver/issues/new?template=solution.yml&amp;title=Solution%3A+catalogue+835&amp;target=catalogue+835
 (other kinds of contribution: https://github.com/dbourdeau/cyphersolver/issues/new/choose). Include:
@@ -143,10 +144,10 @@ If you cannot open issues or pull requests, write this report for your human to 
 <h2>What is known</h2>
 
 
-<p><b>Status and prior art.</b> Catalogue (Dutschke, Guide to Medieval and Renaissance MSS, repeated in HDL record): 'occasional words written in cipher (e.g. ff. 50, 102v, 111, 143, 163)'. No reading given. Probably the common vowel-substitution of English medical manuscripts (cf. HU 1051, where the cataloguer read 'Pr4pt2r 1m4r2m m5l32r3s'). Fully digitised on HDL. Not in the repo.</p>
-<p><b>Outcome so far.</b> Not yet attempted by the project. Prior-art check: open (checked 28 Oct 2026: catalogue only).</p>
+<p><b>Status and prior art.</b> Catalogue (Dutschke, Guide to Medieval and Renaissance MSS, repeated in HDL record): 'occasional words written in cipher (e.g. ff. 50, 102v, 111, 143, 163)'. No reading given. Probably the common vowel-substitution of English medical manuscripts (cf. HU 1051, where the cataloguer read 'Pr4pt2r 1m4r2m m5l32r3s'). Fully digitised on HDL. Not in the repo. First pass 28 Oct 2026 (targets/hm64/): ff. 163r and 111r viewed on HDL; the red hatched boxes on 163r/163v are crosses in Latin charms, not cipher; two candidate cipher words located (163r heading 'T R y 6 z l e t h', 111r heading 'S C G e G N T'), neither read; ff. 50r and 143r show none; f. 102v and the versos unviewed. Vowel-to-number substitution not confirmed.</p>
+<p><b>Outcome so far.</b> attempted, open Prior-art check: open (checked 28 Oct 2026: catalogue, DS9605, web search; no reading).</p>
 <p><b>Check first.</b> View ff. 50, 102v, 111, 143, 163 on HDL; test vowel-to-digit/dot substitution.</p>
-
+<ul><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/hm64/NOTES.md" rel="noopener">targets/hm64/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/hm64" rel="noopener">the folder</a>)</li></ul>
 
 
 <h2>Scores</h2>
