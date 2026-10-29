@@ -7,7 +7,7 @@
 <meta name="description" content="Statistical tests on the Voynich manuscript (Beinecke MS 408); no text was obtained. The book is a genuine 15th-century object. Plaintext, simple substitution, transposition and abjad renderings of eleven European languages are excluded by character entropy across three transliterations; a verbose encoding and slot-preserving meaningless generation remain, about even. With the statistics tables, the generator comparison, the Currier A/B analysis and five tests that would decide the question.">
 <link rel="stylesheet" href="style.css?v=20261027c">
 <meta name="date" content="2026-09-15">
-<meta name="last-modified" content="2026-10-26">
+<meta name="last-modified" content="2026-10-28">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -43,7 +43,7 @@
   <p class="kicker">Beinecke MS 408 &middot; unknown script &middot; early 15th century &middot; working notes, September&ndash;October 2026</p>
   <h1>The Voynich manuscript: tests of the language, cipher and meaningless-text hypotheses</h1>
   <p class="sub">A genuine early-15th-century book. No text was obtained, and no published decipherment survives blind testing. Statistical tests on the transliteration exclude plaintext and simple substitution, transposition or abjad renderings of eleven European languages. Real ciphers used in 15th-century Italy, measured the same way, look nothing like it. What remains is an encoding of rigid glyph groups (a verbose cipher) or structured meaningless text; the evidence leans slightly to meaningless text.</p>
-  <p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-09-15">15 September 2026</time> &middot; updated <time datetime="2026-10-26">26 October 2026</time></p>
+  <p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-09-15">15 September 2026</time> &middot; updated <time datetime="2026-10-28">28 October 2026</time></p>
 <p class="outcome">Method: <a href="glossary.html#notsolved">not solved</a> &middot; Extent: text not obtained</p><!-- /outcome -->
 <div class="seal stuck" aria-hidden="true"><span>not solved</span></div>
 </section>
@@ -1891,6 +1891,17 @@
 <li><strong>The neural network.</strong> Its recurrent network (GRU) finds that hiding an earlier look-alike word hurts prediction more in Voynichese (0.0055 nats per glyph) than in Latin or a Markov chain, and slightly less than in Timm&rsquo;s copy generator. That is the self-citation signal of the table above, measured another way. The table shows that most of it survives shuffling the words within each page (0.238 of 0.269), and that the part depending on order (+0.031) is the size of Danish verse (+0.024). The post&rsquo;s controls were prose Latin and Esperanto. A within-page shuffle of Voynichese, verse, and a formulaic genre such as recipes or herbals would separate copying from page vocabulary. That test is not run here (section 12).</li>
 </ul>
 
+<h3 id="b5">Two generators built to pass, scored on items they never saw (b5, 28 October 2026)</h3>
+<p>The rules came first: <code>b5_PREREG.md</code> was committed before any generator code, and the tuned parameters were committed before scoring. Each candidate has five free parameters, tuned only on 17 <em>fit</em> items (character entropies, word length, vocabulary, glyph slots). It is then scored once on the other 20 <em>held-out</em> items (adjacent repeats, self-citation, line position, long range, predictability, page level, drift), with five seeds. Neither generator reads Voynich word types or counts. The bar is the real text disagreeing with itself: the Currier A pages alone match 15 of the 20 held-out items when scored against the whole text. Every analysis was first re-run on a corrected transliteration parse (drawing-interruption marks read as word breaks, ligature groups kept; 34,774 tokens). Headline values moved by less than 0.01 bit (S: b5).</p>
+<table>
+<tr><th>candidate</th><th class="n">fit items (of 17)</th><th class="n">held-out, full text (of 20)</th><th class="n">held-out, 10,053 tokens</th></tr>
+<tr><td>C: verbose slot cipher of Pliny&rsquo;s Latin (books in section order, one table per Currier language, nomenclator)</td><td class="n">15&ndash;16</td><td class="n">10.8 (9&ndash;13)</td><td class="n">8.2</td></tr>
+<tr><td>G: copy-and-modify with section-local sources and per-scribe habits</td><td class="n">5&ndash;6</td><td class="n">8.4 (6&ndash;11)</td><td class="n">9.6</td></tr>
+<tr><td>Timm &amp; Schinner&rsquo;s autocopist, as published</td><td class="n">5&ndash;8</td><td class="n">5&ndash;6</td><td class="n">4&ndash;5</td></tr>
+<tr><td>Voynich, Currier A pages alone (the bar)</td><td class="n">15</td><td class="n">15</td><td class="n">19</td></tr>
+</table>
+<p><strong>Neither reproduces the held-out structure.</strong> The cipher fits the character and vocabulary statistics with a handful of parameters; the copy-and-modify family cannot, because its character entropy and word-length spread come from the inherited modification rules. Both fail, on every seed, the same three things: adjacent repeats; vocabulary shared by neighbouring pages (excess Jaccard 0.037 real, 0.011 cipher, 0.007 copy); and the drift between the first and second halves of the book (JSD 0.062 real, 0.003 cipher, 0.013 copy). Enciphering a topic-ordered Latin text also wipes out the long-range peak (0.045 bit against 0.31). This favours neither meaning nor nonsense. What it does is name the target: any account, cipher or hoax, has to produce those three page-level patterns. Results in <code>results/b5.md</code>.</p>
+
 <h2 id="period"><span class="num">07</span> Real ciphers of the period</h2>
 <p>The cipher hypotheses are usually argued from what 15th-century cryptography could have done: Alberti&rsquo;s polyalphabet of 1467, nomenclators, Naibbe-style tables. This project has transcribed actual ciphertexts of the period, so <code>c3</code> measures them directly. It takes every cipher passage of 250 signs or more transcribed sign by sign from the manuscript: Mantua 1428&ndash;30 (<a href="r1854.html">R1854</a>), Siena&rsquo;s file of letters in cipher (<a href="siena1421.html">Concistoro 2308</a>), the Sforza ciphers of 1446 (<a href="it1583.html">BnF italien 1583</a>) and Buda 1490 (<a href="buda1489.html">Sforzesco, Ungheria</a>). Most write no word division, so h2 is measured without spaces. Plug-in h2 falls with sample length and rises with alphabet size, so each text is set against random stretches of Voynichese and of Latin of exactly its own length (S: c3).</p>
 <figure class="vfig">
@@ -2143,9 +2154,9 @@
 <p>The consequence is symmetric. A meaningless-text account must be a 1420s production on fresh calfskin by several collaborating scribes who kept one slot grammar and one A/B switch consistent across 200-plus pages, a cost no statistic addresses. A cipher account must explain why the scribe rather than the subject matter sets the language (section 09).</p>
 
 <h2 id="settle"><span class="num">12</span> What would settle the rest</h2>
-<p>Done since September: the battery bake-off (section 06, b3 and c1), illustration-to-text information and page adjacency (section 08, b2), re-tokenisation and syllabic Latin and Italian (section 02, b1), and real period ciphers (section 07, c3). Still open:</p>
+<p>Done since September: the battery bake-off (section 06, b3 and c1), the pre-registered generator round b5 (section 06), illustration-to-text information and page adjacency (section 08, b2), re-tokenisation and syllabic Latin and Italian (section 02, b1), and real period ciphers (section 07, c3). Still open:</p>
 <ol>
-<li><strong>A hybrid generator</strong> built to pass the battery as a whole. Either a Naibbe-like table that changes between A and B and encodes a text with real topic structure, or an autocopist with a tighter glyph grammar and a source that drifts page by page. Whichever family can be made to pass first gains; neither has been built.</li>
+<li><strong>A generator that produces the page-level patterns.</strong> Attempted on 28 October (b5, section 06): a verbose cipher of Latin and a drifting copy-and-modify generator, each tuned on 17 items, scored 10.8 and 8.4 of 20 held-out items, against a bar of 15. Both fail adjacent repeats, neighbouring-page vocabulary overlap and the A-to-B drift. The next round should pre-register mechanisms for exactly those three, with the same fit/held-out split.</li>
 <li><strong>Manuscript-length human gibberish</strong> written over weeks with illustrations and sections, the open test named by Gaskell &amp; Bowern (2022) (L).</li>
 <li><strong>RBA&rsquo;s masking test with the missing controls:</strong> Voynichese shuffled within each page, verse, a formulaic Latin herbal or recipe text, and the Naibbe ciphertext. This would show whether the look-alike effect is copying order or page vocabulary.</li>
 <li><strong>The f and p rules and the line-initial effect</strong> as battery items, defined so that they apply to any alphabet.</li>
