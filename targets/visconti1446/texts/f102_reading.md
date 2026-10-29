@@ -1,0 +1,3 @@
+# BnF italien 1584 f. 102: cipher slip, Filippo Maria Visconti to Francesco Sforza, Milan 23 Mar 1447: reading
+
+Illustris[?] fili noster carissime. Perché[?] nui intendemo pur el novo PAPA non inclinarse ad volere fare que[e][?] debe, dicemo che a nui pare, et cosi ve confortiamo et pregamo ve voglate intendere RE DE RAGONA al[qu]a[?]le havemo scripto el simile, e quando vedereti esso papa non volere fare quel debe, [che] desidera esso RE et VUY, intendandove la Maiest[?]ate soa et vui insieme ve as[..]talmente de li [f]acti soi et provediati e faciati con effecto inanci che esso papa abia piu firmato l[i] pedi, per modo et per manera che se ben [..16 signs..]-trare non posa. Data Mediolani vigesimo tertio marti(i), et[?] duplicata [..] vigesimo [..] [..]
