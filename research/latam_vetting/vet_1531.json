@@ -1,0 +1,27 @@
+{
+ "id": 1531,
+ "vetting": {
+  "date": "2026-10-28",
+  "by": "Claude session (LatAm vetting, 28 Oct 2026)",
+  "seen": {
+   "kind": "not online",
+   "where": "NOT SEEN. The images are online on PARES (description 65951), but PARES answered HTTP 429 to every request from this machine on 28 Oct 2026, both by script and in the built-in browser, and no Wayback copy exists. The kind 'not online' is used only because the schema has no 'blocked' value: the item is online and must be vetted on the scans before any verdict.",
+   "extent": "Unknown: neither the description page nor the images could be read. The PARES hit list gives only the title 'Expedición a favor de insurgentes de Venezuela y Colombia', date 1820, images: true.",
+   "cipher": "Unknown. The only evidence is that the PARES full-text search for 'en cifra' and for 'no descifrada' both returned this record (research/pares_ags/hits.jsonl); the description text itself, which would say whether part is undeciphered, was not read."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE: known.py found no hit for ESTADO,64 N.46 or 'insurgentes de Venezuela' in the DECODE dumps.",
+   "tomokiyo": "Not in Tomokiyo's cryptiana: the crypto.htm index (fetched 28 Oct 2026) has no Spanish colonial page of the 1820s.",
+   "lasry": "Nothing by Lasry on Spanish ciphers of 1820 was found; the repository copies of GL.htm have no such entry.",
+   "edition": "No edition known; not searched beyond the web, because sender and addressee are unknown until the description is read.",
+   "literature": "Galende Díaz 2000 (read in full) does not cite AGI Estado 64; a web search for AGI Estado 64 + 1820 expedition + insurgentes + cifra found nothing."
+  },
+  "key_check": "Not done: without the ciphertext no system could be tested, so neither simple substitution nor Cienfuegos's vowel-digit rule (Galende 2000 n. 52) was tried. Both should be the first tests once the scans are open, followed by the Spanish legation keys of 1819-20 if the sender is a diplomat.",
+  "duplicates": "known.py was run on 'ESTADO,64', 'Estado 64' and 'insurgentes de Venezuela': the hits are this lead itself and an unrelated AGS Estado 6446/6452 catalogue entry. No duplicate found, but sender and date are unknown so the search is weak.",
+  "verdict": "not_seen"
+ },
+ "lead_updates": {
+  "status_append": "Vetting 28 Oct 2026 blocked: PARES returned 429 to script and browser, so neither the description nor the images of ESTADO,64,N.46 were seen. Not vetted; verdict left as not_seen (outside the gate's list on purpose, so it cannot be promoted).",
+  "prior_art": "open as far as checked (28 Oct 2026: DECODE, cryptiana, Galende 2000, web); description and scans not seen (PARES 429)"
+ }
+}

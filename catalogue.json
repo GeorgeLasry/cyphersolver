@@ -21814,6 +21814,127 @@
    "scored": "sweep"
   },
   {
+   "id": 1500,
+   "counted": true,
+   "year": 1850,
+   "date": "13 Feb 1850 (letter in a file of 1849-1853)",
+   "title": "Benito Varela, Paraguayan foreign minister → Manuel Moreira de Castro, consul general in Rio: letter with numeric cipher passages",
+   "correspondents": "Benito Varela (Ministro de Relaciones Exteriores, Paraguay, under Carlos Antonio López) → Manuel Moreira de Castro (consul general, later plenipotentiary of Paraguay at the court of Brazil)",
+   "place": "Asunción",
+   "language": "Spanish",
+   "region": "Americas",
+   "period": "1801-1900",
+   "shelfmark": "Asunción, Archivo Nacional de Asunción, Colección Rio Branco, ANA-AHRP-PY-558-1-31 (ex Biblioteca Nacional do Rio de Janeiro I-29,25,23), item 13",
+   "folio_note": "PDF of 98 images; item 13 on images 41-42 (0-based), sheets 586-587: 12 runs of dot-separated numbers (~90 tokens, values mostly odd 1-49, also 98 and 116), name numbers 25, 1, 116 and a barred-circle sign, in a clear Spanish letter. Transcription: research/latam_vetting/1500_sample.txt.",
+   "cls": "C",
+   "status": "ANA description, item 13: 'se refiere a otros asuntos que no pueden ser identificados por estar escritos en código cifrado' (i.e. the cataloguer could not read it). Viewed on the scan 28 Oct 2026: numeric substitution (letters or syllables) inside a clear letter about Brazil, Rio Grande and Buenos Aires. Not on DECODE, not in the repo. Vetted 28 Oct 2026: scan transcribed; no decipherment on or with it; no key known; not on DECODE, no edition or study found. Verdict open. Next: page through the other 96 images of 558-1-31 and the sibling López-era files for a key or a deciphered copy.",
+   "why": "Cipher of Carlos Antonio López's foreign ministry with its agent in Rio on the eve of the 1850 Paraguay-Brazil alliance against Rosas; Paraguayan state ciphers of this period are hardly known.",
+   "importance": 3,
+   "solvability": 3,
+   "difficulty": 2,
+   "score_note": "Scored from the archive description during the Oct 2026 South Cone/Andes sweep (research/latam_southcone/); the cipher page was viewed on the scan.",
+   "verify": "Transcribe images 41-42 of the PDF; small numbers mostly odd suggest a letter table with homophones or a syllabary; context (Rosas, Brazil, Rio Grande, Urquiza) gives cribs. Look for further Varela/Moreira letters in the Rio Branco collection (ANA-AHRP 558-*) using the same numbers.",
+   "links": [
+    {
+     "label": "ANA catalogue record",
+     "href": "https://riobranco.archivonacional.gov.py/index.php/correspondencia-entre-el-ministro-de-relaciones-exteriores-de-la-republica-del-paraguay-y-el-senor-manuel-moreira-de-castro-primeramente-consul-y-despues-plenipotenciario-del-paraguay"
+    },
+    {
+     "label": "PDF of the file (98 images)",
+     "href": "https://riobranco.archivonacional.gov.py/uploads/r/archivo-nacional-de-asuncion/8/3/5/8353484cf68d7a80d9ddbfe3c3bee098b13c26efaa58f1bacbc368e0c6755294/ANA-AHRP-PY_-_558-1-31.compressed.pdf"
+    }
+   ],
+   "seen": "image",
+   "source": "South Cone / Andes archives sweep",
+   "prior_art": "open (checked 28 Oct 2026: DECODE dumps, known.py, web search for edition and literature; nothing found)",
+   "needs_archive_scan": "no",
+   "access_note": "PDF of the whole file online at the Archivo Nacional de Asunción (cipher on images 41-42)",
+   "ark": "",
+   "scored": "vetted",
+   "access": "online",
+   "vetting": {
+    "date": "2026-10-28",
+    "by": "Claude session (LatAm vetting, 28 Oct 2026)",
+    "seen": {
+     "kind": "scan",
+     "where": "https://riobranco.archivonacional.gov.py/uploads/r/archivo-nacional-de-asuncion/8/3/5/8353484cf68d7a80d9ddbfe3c3bee098b13c26efaa58f1bacbc368e0c6755294/ANA-AHRP-PY_-_558-1-31.compressed.pdf (PDF of 98 images downloaded 28 Oct 2026; item 13 on images 41-42, 0-based, sheets numbered 586-587, BN Rio I-29,25,23 no. 13).",
+     "extent": "One letter of two pages (Asunción, 13 Feb 1850, signed Benito Varela, to the Consul General in Rio): 12 runs of dot-separated numbers, about 90 cipher tokens, plus single numbers standing for persons (25 twice, 1 twice, 116) and one barred-circle sign; the rest of the letter is clear Spanish.",
+     "cipher": "Numeric substitution, almost all values odd and below 50 (plus 98 and 116), in runs of 2-16 numbers embedded in clear text: a letter table with homophones or a small syllabary, plus a few name numbers. No decipherment, interlining or key is written on or with the letter (images 38-45 checked)."
+    },
+    "prior_art": {
+     "decode": "Searched the DECODE dumps in research/catalogue_harvest/decode/ for Paraguay, Asunción and Brazil: no record; not on DECODE.",
+     "tomokiyo": "No cryptiana page on Paraguayan or Río de la Plata 19th-century ciphers was found (web search), and the repo's ledgers have none (known.py).",
+     "lasry": "No Lasry paper or GL.htm entry on Paraguayan ciphers is known to the repo or found by web search.",
+     "edition": "No edition of the Varela - Moreira de Castro correspondence was found: web searches for the correspondents with 'correspondencia cifrada' returned only the ANA AtoM catalogue records (Moreira de Castro letters of 1853, Varela's appointment); the ANA description of item 13 itself says the passages could not be identified because they are 'escritos en código cifrado'. Printed Paraguayan diplomatic collections were not checked page by page.",
+     "literature": "Web searches in Spanish and English on Carlos Antonio López's diplomatic ciphers (cifra diplomática Paraguay, clave cifrada siglo XIX, criptografía) found no study of a Paraguayan state cipher of this period."
+    },
+    "key_check": "No Paraguayan key of the López era is held in the repo or known in print. The sibling diplomatic files of the Rio Branco collection skimmed in the South Cone sweep (Gelly in Rio 1849-52, Decoud 1853, F. S. López 1853, Varela - Derqui 1852) showed no number runs at thumbnail size, and the other 96 images of this file were not paged through for a key in this session. Quick checks here: the repeated runs (9.27.7.33.15.3 twice; 9.13.1.37.3.1?.7.9.33 twice before '[Rio?] Grande') do not fit a plain one-value-per-letter alphabet with an obvious crib ('provincia' would need two values for i and one value for both r and n), so no simple key tried reads it. Not a key lookup on present evidence.",
+    "duplicates": "known.py on 'Moreira de Castro', 'Benito Varela', '558-1-31', 'Carlos Antonio', 'Paraguay', 'Asunci': no catalogue entry, target or DECODE record for this letter; the only other Paraguay hit is the unrelated Godoi exile letters of 1878-84 (research/dpla_smithsonian).",
+    "verdict": "open"
+   }
+  },
+  {
+   "id": 1523,
+   "counted": true,
+   "region": "Americas",
+   "source": "AGN Colombia DataViva sweep",
+   "seen": "image",
+   "score_note": "Scored from the archive description during the Oct 2026 Colombia/Caribbean/Central America sweep (research/latam_north/); not viewed",
+   "decode_ids": [],
+   "year": 1819,
+   "date": "29 Jan 1819 (London)",
+   "title": "Luis López Méndez (London) → Simón Bolívar, letter on the Gambier expedition, part in a secret key",
+   "correspondents": "Luis López Méndez, Venezuelan agent in London → Simón Bolívar (with letters of Hurry, Powles & Hurry and of Herring/Safpray in the same unit)",
+   "place": "London",
+   "language": "Spanish (some items English)",
+   "period": "1801-1900",
+   "shelfmark": "Archivo General de la Nación (Bogotá), Sección Archivo Anexo, Grupo I, Historia, HISTORIA.SAA-I.17,25,D.24",
+   "folio_note": "ff. 222-233 (blank 225, 229); the cipher is in López Méndez's letter of 29 Jan 1819, ff. 226-228: 15 underlined cipher words (about 70 letters) on f. 227v and f. 228r (DataViva gallery index 11-12). The rest of the unit is clear English and Spanish and a printed loan certificate.",
+   "cls": "C",
+   "status": "AGN description: López Méndez reports the sailing of the schooner Gambier (Capt. Peter Paxtor) with men, arms and powder, that the East India Company ships were not bought and the loan not raised, and 'otras informaciones se hallan consignadas bajo el código de una clave secreta'. No decipherment mentioned. Not on DECODE; known.py: López Méndez no hits. Vetted 28 Oct 2026 on the scans: the cipher is a letter table with superscript row digits (1-7), 15 words in a clear letter. Not printed in the O'Leary volumes on archive.org. Most of it was recovered from context during vetting: López Méndez was jailed five months and freed on bail; MacGregor 'ha causado un perjuicio indecible a nuestra causa'; MacGregor plans to go to Santafé (sample file research/latam_vetting/1523_sample.txt).",
+   "why": "The independence agents' cipher between London and Angostura in the year of Boyacá; a key here would be the earliest Gran Colombian diplomatic cipher, and a possible ancestor of Revenga's 1822 London-Madrid key (targets/revenga1822).",
+   "importance": 3,
+   "solvability": 5,
+   "difficulty": 1,
+   "verify": "Open the 24 images in DataViva (detail page) and locate the cipher lines; then check O'Leary, Memorias (Correspondencia / Documentos) and the Archivo del Libertador for a printed or interlined decipherment.",
+   "links": [
+    {
+     "label": "DataViva record",
+     "href": "https://dataviva.archivogeneral.gov.co/explore/agn/detail/66b0cd4f151c9d47762a2382"
+    },
+    {
+     "label": "DataViva gallery, f. 227v (index 11)",
+     "href": "https://dataviva.archivogeneral.gov.co/gallery/66b0cd4f151c9d47762a2382?index=11"
+    }
+   ],
+   "prior_art": "open as checked 28 Oct 2026: not on DECODE or cryptiana; not in 15 O'Leary volumes on archive.org; Bákula 1949 and the Archivo del Libertador not reached",
+   "needs_archive_scan": "no",
+   "access_note": "24 images online in AGN Colombia DataViva (free)",
+   "ark": "",
+   "scored": "vetted",
+   "access": "online",
+   "vetting": {
+    "date": "2026-10-28",
+    "by": "Claude session (LatAm vetting, 28 Oct 2026)",
+    "seen": {
+     "kind": "scan",
+     "where": "AGN Colombia DataViva, record 66b0cd4f151c9d47762a2382 (https://dataviva.archivogeneral.gov.co/explore/agn/detail/66b0cd4f151c9d47762a2382); all 24 images were downloaded through the public API (POST /api/records/public/<unit>/pages with the file's record_id) and viewed. The cipher is on gallery index 11 (f. 227v) and index 12 (f. 228r), in López Méndez's letter of 29 Jan 1819 (ff. 226-228).",
+     "extent": "Fifteen underlined cipher words, about 70 letters, inside a Spanish clear-text letter: ten words on f. 227v lines 20-22, two words on f. 227v line 27, two words split across f. 227v (last line) and f. 228r (line 1), and one word on f. 228r lines 5-6. Everything else in the unit is in clear (ff. 222-224 Hurry, Powles & Hurry; ff. 230-231 Herring and Saffray; ff. 232-233 a printed loan certificate; ff. 225 and 229 blank).",
+     "cipher": "A letter substitution in ordinary lowercase letters in which many letters carry a small superscript digit 1-7; the same letter with different digits stands for different plaintext letters (e1=b, e2=f, e3=l, e4=r, e5=t, e7=y), so it is a table cipher of letter plus row number, not a plain monoalphabet. No decipherment is written over or beside the cipher words and the unit holds no key and no clear copy."
+    },
+    "prior_art": {
+     "decode": "Not on DECODE: known.py found no hit for López Méndez, Lopez Mendez, MacGregor, Gambier or the shelfmark SAA-I.17 in the DECODE view dumps; only this lead itself.",
+     "tomokiyo": "Not in Tomokiyo's cryptiana: the index page crypto.htm (fetched 28 Oct 2026) has no Bolívar, Gran Colombia or 1819 London page; its only Spanish-American items are a Jesuit cipher from Peru (1601) and a line-segment memorial from Peru (1604).",
+     "lasry": "Nothing by Lasry on this cipher: the GL.htm copies in the repository (targets/gramont1529, targets/vasto1527/prior, targets/esp318/lit/crypt) have no Bolívar, López Méndez or Colombia entry, and his published work is on Spanish and other European ciphers of the 16th-18th centuries.",
+     "edition": "Not found printed. Fifteen volumes of O'Leary's Memorias on archive.org (tomos I, II, VI, IX, XVI, XXII, XXIV, XXV, XXVI, XXVIII pt 2, XXIX, XXX, XXXI and the narrative) were grepped for Paxtor/Paxton, Gambier, 'perjuicio indecible', 'salido con fianza', 'cinco meses' and López Méndez: the only López Méndez letter is a Lima letter of 1826 (tomo IX). The O'Leary volumes of correspondence not on archive.org, Lecuna's Cartas del Libertador (Bolívar's own letters, not letters to him) and the Archivo del Libertador online (did not answer earlier in the sweep) were not checked.",
+     "literature": "Web searches in Spanish and English (López Méndez + Bolívar 1819 + cifra/clave/Gambier/Peter Paxtor; the deciphered phrases 'perjuicio indecible', 'preso', 'fianza' with Mac Gregor) found nothing on this cipher; a Cambridge article on Bolívar's British networks (JLAS 2024) cites López Méndez letters of 1817 but not this one. Galende Díaz 2000 (read in full) summarises Bákula 1949: Bolívar's key 'revealed by O'Leary' is a simple substitution whose only difficulty is the word division, unlike this superscript table. Bákula 1949 itself was not reachable."
+    },
+    "key_check": "No held key reads it. The Revenga 1822 key (targets/revenga1822) is a monoalphabetic substitution with a = word space and no superscripts, and Crawford 1813 is the JQA numeric code, so neither fits. Bolívar's key as Galende 2000 n. 41 describes it after Bákula (simple substitution) and Santander's (two interleaved half-alphabets, n. 45) are single alphabets and cannot give one letter several values by superscript. Without a key, most of the passage was recovered here from context and the clear text alone: 'que he estado preso cinco meses y he salido con fianza', 'Mac Gregor', 'para Mar...caibo?' and 'ir á Santafé' (sample in research/latam_vetting/1523_sample.txt). The structure of the table (letter plus row digit) and four values (plain e, m6, r1, plain t) remain open.",
+    "duplicates": "known.py was run on 'López Méndez', 'Lopez Mendez', 'SAA-I.17', 'MacGregor' and 'Gambier': the only hits are this lead in research/leads.json and research/latam_north (README, candidates.json). No DECODE id, catalogue entry or target folder covers López Méndez to Bolívar, 29 Jan 1819.",
+    "verdict": "open"
+   }
+  },
+  {
    "id": 1533,
    "counted": true,
    "year": 1801,
