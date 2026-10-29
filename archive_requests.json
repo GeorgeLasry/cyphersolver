@@ -1,0 +1,2311 @@
+{
+ "_about": "Ledger of requests to archives and libraries: a leaf to photograph, a reproduction to order, a book or database the project cannot reach. Seeded from the 'blocker: needs-physical-access' gaps in targets/*/NOTES.md by tools/seed_archive_requests.py (re-run it to add new gaps; hand edits are kept). kind: visit | order | library. status: open -> claimed (a volunteer has it) -> requested (asked the archive) -> received (images or text in hand) -> closed (the gap is closed in NOTES.md); or unavailable (the archive says it is lost or cannot be reproduced). Every change adds a history line {date, status, who, note}. volunteer: {name, contributor (id in contributors.json), month (YYYY-MM, never a day)}. issue: the GitHub issue number. Requests not tied to a target take target null. docs/archives.html is built from this file.",
+ "requests": [
+  {
+   "id": "ar-001",
+   "target": "adfgvx",
+   "kind": "visit",
+   "archive": "unknown",
+   "city": "",
+   "shelfmark": "James Rives Childs transcription, pages 73-217",
+   "need": "three partly read messages (p. 164 F-G-X, p. 164 VFGAG, VGADA p. 215)",
+   "why": "marked transmission gaps (44, 44, 11 letters, a line missing from the p. 164 transcript); VGADA's 2017 text is part emendation (20 letters against the cells)",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-002",
+   "target": "alessandrino1568",
+   "kind": "library",
+   "archive": "A library or database",
+   "city": "",
+   "shelfmark": "ASV, Segreteria di Stato, Spagna 6/I, item 1, f. 006r",
+   "need": "Serrano, Correspondencia diplomatica ... Pio V (1914): not checked",
+   "why": "HathiTrust 403 from here, not on archive.org",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-003",
+   "target": "ancel1577",
+   "kind": "visit",
+   "archive": "Bibliothèque nationale de France",
+   "city": "Paris",
+   "shelfmark": "BnF Cinq Cents de Colbert 398 pp. 524 end-526",
+   "need": "Line ends lost in the binding shadow on p. 562",
+   "why": "the Gallica scan stops at the gutter",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-004",
+   "target": "army1902",
+   "kind": "visit",
+   "archive": "National Institute for Defense Studies (via JACAR)",
+   "city": "Tokyo",
+   "shelfmark": "JACAR C09122911500",
+   "need": "C09122909900 pair 2 (17 for イ)",
+   "why": "the image shows 七, writer's or transmission error; binarised JBIG2 scan cannot settle the head of column 2 either",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-005",
+   "target": "astrea1799",
+   "kind": "visit",
+   "archive": "Massachusetts Historical Society",
+   "city": "Boston",
+   "shelfmark": "MHS, Adams Family Papers, Adams Papers microfilm reel 393",
+   "need": "Rozier no. 1 (6 Brumaire VII) and no. 2 (2 Frimaire VII, with postscript and Hédouville extract), the ciphertext",
+   "why": "only on MHS microfilm reel 393 (slip 100399) or in an unlocated RG 59 file; no image online.",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-006",
+   "target": "astrea1799",
+   "kind": "visit",
+   "archive": "U.S. National Archives (NARA)",
+   "city": "College Park / Washington",
+   "shelfmark": "MHS, Adams Family Papers, Adams Papers microfilm reel 393",
+   "need": "Rozier's cypher and his plain copies",
+   "why": "shown to Pickering in June 1799, location not recorded (Pickering Papers, RG 59 Miscellaneous Letters and the French consular series are the candidates).",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-007",
+   "target": "balbases1677",
+   "kind": "visit",
+   "archive": "Archives générales du Royaume",
+   "city": "Brussels",
+   "shelfmark": "AGR Brussels, Secrétairerie d'État et de Guerre 2559",
+   "need": "the same four: stretches where the homophones do not segment and the 1616-px greyscale scans do not settle the doubtful figures (struck, overwritten)",
+   "why": "originals at the AGR Brussels, SEG 2559",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-008",
+   "target": "baner1640",
+   "kind": "visit",
+   "archive": "Riksarkivet",
+   "city": "Stockholm",
+   "shelfmark": "Archivio della Pontificia Università Gregoriana, APUG 568 f. 239r-v",
+   "need": "S2 name after \"Johann\" (11 tokens, read \"ohrspacbuet\", plus the lone n after [513])",
+   "why": "the figures are confirmed on the manuscript and every value is fixed by other words (12 = p since 5 Oct), so the only known copy is corrupt; the sent original or a register copy in Banér's papers (Riksarkivet) is needed and is not digitised.",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-009",
+   "target": "baner1640",
+   "kind": "visit",
+   "archive": "Archivio della Pontificia Università Gregoriana",
+   "city": "Rome",
+   "shelfmark": "Archivio della Pontificia Università Gregoriana, APUG 568 f. 239r-v",
+   "need": "S5 \"eisen o vi rechte\" (14 tokens), \"o ?\" before \"ein guten\" (2), the stray e in \"sobaldt e ich\" (1)",
+   "why": "figures confirmed on the manuscript, values fixed elsewhere, so the copy is corrupt; only another witness would settle them.",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-010",
+   "target": "battier1686",
+   "kind": "visit",
+   "archive": "Nationaal Archief",
+   "city": "The Hague",
+   "shelfmark": "Nationaal Archief 3.01.18 inv. 401, scans 31R, 32L",
+   "need": "States General parallel set NA 1.01.02 inv. 12588.120–125",
+   "why": "not digitised",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-011",
+   "target": "benedict1399",
+   "kind": "visit",
+   "archive": "Arxiu Capitular de Barcelona",
+   "city": "Barcelona",
+   "shelfmark": "Arxiu Capitular de Barcelona, Cisma d'Occident paper series",
+   "need": "Any further cipher pieces among the ~1,532 paper documents that Puig did not print, and those not returned after 1920–30",
+   "why": "",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-012",
+   "target": "benedict1399",
+   "kind": "visit",
+   "archive": "Arxiu Capitular de Barcelona",
+   "city": "Barcelona",
+   "shelfmark": "Arxiu Capitular de Barcelona, Cisma d'Occident paper series",
+   "need": "The key applies to the other nine letters of Benedict of 1399–1403 (it was built by Puig from Climent's lines on three of them), but their ciphertext is not imaged anywhere",
+   "why": "",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-013",
+   "target": "benedict1399",
+   "kind": "library",
+   "archive": "A library or database",
+   "city": "",
+   "shelfmark": "Arxiu Capitular de Barcelona, Cisma d'Occident paper series",
+   "need": "Puig's printed text of the ten letters, not in the repository",
+   "why": "Google Books blocks automated access and HathiTrust 100676638 is behind a Cloudflare challenge",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-014",
+   "target": "bethune",
+   "kind": "visit",
+   "archive": "Bibliothèque nationale de France",
+   "city": "Paris",
+   "shelfmark": "BnF fr. 3484 no. 8, f. 34r-v",
+   "need": "clear copies in BnF Cinq cents de Colbert 346",
+   "why": "copy register 23 Aug 1601 - 22 Nov 1602, not digitised (Gallica SRU no record)",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-015",
+   "target": "bilia1527",
+   "kind": "visit",
+   "archive": "Bibliothèque nationale de France",
+   "city": "Paris",
+   "shelfmark": "BnF Français 3013 no. 43, ff. 102r-v",
+   "need": "f. 102v line ends at the gutter (one or two signs a line)",
+   "why": "only the BnF microfilm scan is online, the last signs curve into the binding",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-016",
+   "target": "breves1603",
+   "kind": "visit",
+   "archive": "Bibliothèque nationale de France",
+   "city": "Paris",
+   "shelfmark": "BnF fr. 3541 ff. 60-104",
+   "need": "the nine further letters of 1603 (fr. 3541 ff. 69-104): only Berger's summaries in the repository",
+   "why": "full clear text in BnF fr. 4029 ff. 118-128, ciphertext in fr. 3541; neither is digitised",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-017",
+   "target": "burgo1527",
+   "kind": "library",
+   "archive": "A library or database",
+   "city": "",
+   "shelfmark": "AGS Estado leg. 1563 fol. 572",
+   "need": "Burgo → Gattinara letter, Ferrara, 26 Oct 1527",
+   "why": "not on R9970, not itemised on PARES, not in CSP Spain III.2 or Tomokiyo; locating it needs the AGS inventory of Estado or Carmona 1894 (BNE, HTTP 403)",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-018",
+   "target": "burgo1527",
+   "kind": "library",
+   "archive": "A library or database",
+   "city": "",
+   "shelfmark": "AGS Estado leg. 1563 fol. 572",
+   "need": "the minute's year and the specific Fugger asiento",
+   "why": "not on the leaves; needs Carande or the AGS Contaduría records",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-019",
+   "target": "castelcicala1816",
+   "kind": "visit",
+   "archive": "Archivio di Stato di Napoli",
+   "city": "Naples",
+   "shelfmark": "ASNa, Ministero degli affari esteri, busta 2337",
+   "need": "the 1816-19 Cifra della Segreteria di Stato codebook",
+   "why": "not on DECODE (R9532-R9541 are 1859-60 keys); ASNa Esteri",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-020",
+   "target": "catokwacopa",
+   "kind": "library",
+   "archive": "A library or database",
+   "city": "",
+   "shelfmark": "The Standard, p. 1 col. 2, 8 and 20 May 1875",
+   "need": "re-transcription",
+   "why": "originals only on the paywalled British Newspaper Archive; the blog images are re-typeset from the old text",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-021",
+   "target": "ceva1632",
+   "kind": "visit",
+   "archive": "Archivio Apostolico Vaticano",
+   "city": "Vatican City",
+   "shelfmark": "ASV, i. 1025, Segretario di Stato, Francia, doss. 346-2",
+   "need": "element values carried by one decipherment only (357 Schomberg, 581 Card. Richelieu, 197, 844 Gostavo, 930/957 Mons.r Nuntio ...)",
+   "why": "no dossier nomenclator on DECODE, would need the ASV",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-022",
+   "target": "cistarelli1520",
+   "kind": "visit",
+   "archive": "Archivio di Stato di Modena",
+   "city": "Modena",
+   "shelfmark": "ASMo, Ambasciatori, Ungheria b. 4, Cistarelli no. 3",
+   "need": "R1137 Cistarelli, 584 two-digit groups",
+   "why": "the only image (DECODE, whole spread at 3240 px, digits about 25 px, faded) does not settle the digit readings: a second reading of P2 L04-L07 disagrees with `r1137_transcription.txt` on 13 of 92 groups (14 %), and the single \"0\"/\"5\" groups may be halves of groups; no key exists anywhere (series, archive, correspondent, decade); ciphertext-only anneal and crib placement do not separate cribs from controls; my judgement, not proven, is that transcription noise is what stops the solve, so a better photograph from ASMo (b. 4/26 no. 3) is the next step",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-023",
+   "target": "cistarelli1520",
+   "kind": "order",
+   "archive": "Archivio di Stato di Modena",
+   "city": "Modena",
+   "shelfmark": "ASMo, Ambasciatori, Ungheria b. 4, Cistarelli no. 3",
+   "need": "V1908 (14 Oct 1520), line 7 and about six cipher lines at the foot",
+   "why": "the only online image is a photograph of an old photocopy and lines 28-34 are lost in its dark bands; Brice Dudout has asked ASMo for the original (28 Oct 2026); the R1137 anneal key gives fragments on the legible line",
+   "status": "requested",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    },
+    {
+     "date": "2026-10-28",
+     "status": "requested",
+     "who": "Brice Dudout",
+     "note": "asked the ASMo for the original"
+    }
+   ]
+  },
+  {
+   "id": "ar-024",
+   "target": "comenius1655",
+   "kind": "visit",
+   "archive": "Hungarian National Archives (MNL OL)",
+   "city": "Budapest",
+   "shelfmark": "MNL OL",
+   "need": "6 Sept 1655, the secret-script passages",
+   "why": "printed only as plaintext (Patera p. 183, Szilágyi 1890 pp. 393-394); the ciphertext is on the original only",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-025",
+   "target": "comenius1655",
+   "kind": "visit",
+   "archive": "Hungarian National Archives (MNL OL)",
+   "city": "Budapest",
+   "shelfmark": "MNL OL",
+   "need": "the 4th letter of CmCasda (a, read as a by the printed decipherment, m by the table)",
+   "why": "both prints agree, only the original can show whether the writer slipped",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-026",
+   "target": "comuel1415",
+   "kind": "visit",
+   "archive": "Arxiu Capitular de Barcelona",
+   "city": "Barcelona",
+   "shelfmark": "Arxiu Capitular de Barcelona, Cisma d'Occident paper series",
+   "need": "The ciphertext itself (no image, not transcribed)",
+   "why": "the reading is Puig's, complete as printed (he marks nothing as unread); the cipher and its key could be checked only on the ACB original",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-027",
+   "target": "comuel1416",
+   "kind": "visit",
+   "archive": "Arxiu Capitular de Barcelona",
+   "city": "Barcelona",
+   "shelfmark": "Arxiu Capitular de Barcelona, Cisma d'Occident paper series",
+   "need": "The ciphertext itself (no image, not transcribed)",
+   "why": "the reading is Puig's, complete as printed (he marks nothing as unread); the cipher and its key could be checked only on the ACB original",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-028",
+   "target": "dana1783",
+   "kind": "visit",
+   "archive": "U.S. National Archives (NARA)",
+   "city": "College Park / Washington",
+   "shelfmark": "NARA RG 360, Papers of the Continental Congress, item 89 vol. 2",
+   "need": "The letters supplied at the ends of lines 2, 5 and 7 rest on the key phase only",
+   "why": "The frame edge cuts the lines on the microfilm; the original sheet (or the original and duplicate of No. 23) would settle them.",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-029",
+   "target": "deswart1782",
+   "kind": "visit",
+   "archive": "Nationaal Archief",
+   "city": "The Hague",
+   "shelfmark": "Nationaal Archief 3.01.25",
+   "need": "R1040 first part, 2,259 groups (images 5453-5458, 5459 groups 1-179, and 5474)",
+   "why": "a different, missing Rechteren-family code, probably NA 1.02.13 inv. 158, not scanned online; crib transfers from R2032/R2051/R2052 cover 2-3% and give no prose",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-030",
+   "target": "dubellay",
+   "kind": "library",
+   "archive": "A library or database",
+   "city": "",
+   "shelfmark": "BnF fr. 3078 no. 3, p. 21",
+   "need": "22 Oct 1529 opening (fr. 3005 ff. 165r-166r): read in part 23 Oct 2026 (texts/22oct1529_reading.md); f. 165v ll. 21-35, f. 166r ll. 1-5 and the word signs ꝑ, ℋ, ꝏ, # left open",
+   "why": "Scheurer t. I (1969) prints the whole opening (snippet view only) and Friedmann's key NAF 4206 no. 5 is not imaged",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-031",
+   "target": "emery1636",
+   "kind": "visit",
+   "archive": "Bibliothèque nationale de France",
+   "city": "Paris",
+   "shelfmark": "BnF Français 5190 no. 171",
+   "need": "Français 5190 nos. 171–172",
+   "why": "the supplied Gallica digitization stops at p. 80.",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-032",
+   "target": "esp318",
+   "kind": "visit",
+   "archive": "Real Academia de la Historia",
+   "city": "Madrid",
+   "shelfmark": "BnF Espagnol 318 no. 92, f. 116r-v",
+   "need": "six code groups (bog ×3, zeb, xob, zer, zog, bue ×2; zems = Ostia settled 23 Oct 2026)",
+   "why": "they do not fit Galende's printed values in context; his plates misprint others, and the manuscript BRAH 9/15 ff. 7-9, not digitised, would settle them",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-033",
+   "target": "esterhazy1744",
+   "kind": "order",
+   "archive": "Slovenský národný archív",
+   "city": "Bratislava",
+   "shelfmark": "Slovenský národný archív, Bratislava, fond Esterházi - čeklíska vetva, box no. 636",
+   "need": "the six box-636 documents (only 176 groups of one shown in print)",
+   "why": "the archive's scans are unpublished; order images of fond Esterházi - čeklíska vetva, box 636 from the Slovenský národný archív, Drotárska cesta 42, Bratislava",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-034",
+   "target": "exea1408",
+   "kind": "visit",
+   "archive": "Arxiu Capitular de Barcelona",
+   "city": "Barcelona",
+   "shelfmark": "Arxiu Capitular de Barcelona, Cisma d'Occident paper series",
+   "need": "The ciphertext itself (no image, not transcribed)",
+   "why": "the reading is Puig's, complete as printed (he marks nothing as unread); the cipher and its key could be checked only on the ACB original",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-035",
+   "target": "ferdinand1634",
+   "kind": "order",
+   "archive": "Státní oblastní archiv v Plzni",
+   "city": "Klášter u Nepomuka",
+   "shelfmark": "SOA Plzeň, pracoviště Klášter u Nepomuka, Rodinný archiv Trauttmansdorffů, karton 6, inv. č. 68",
+   "need": "the whole letter (kart. 6, inv. č. 68)",
+   "why": "no image exists online or in print; scans must be ordered from SOA Plzeň (a draft request was prepared 26 Oct 2026)",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps; a draft request to SOA Plzeň was prepared 26 Oct 2026, not yet sent"
+    }
+   ]
+  },
+  {
+   "id": "ar-036",
+   "target": "fleury1585",
+   "kind": "visit",
+   "archive": "Bibliothèque nationale de France",
+   "city": "Paris",
+   "shelfmark": "BnF Cinq cents de Colbert 427 f. 325r",
+   "need": "fr. 16026 f. 99 and pp. 130-130bis (the targets) and the deciphered siblings f. 120, f. 126, p. 129",
+   "why": "not digitised, consultation by authorisation",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-037",
+   "target": "fleury1585",
+   "kind": "visit",
+   "archive": "Bibliothèque nationale de France",
+   "city": "Paris",
+   "shelfmark": "BnF Cinq cents de Colbert 427 f. 325r",
+   "need": "fr. 17020 ff. 134-139 (contemporary summary of fr. 16026)",
+   "why": "probably not digitised (Brackx, Europeana search); Colbert 427 f. 353 checked, not a crib",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-038",
+   "target": "geertruidenberg",
+   "kind": "visit",
+   "archive": "Archives diplomatiques",
+   "city": "La Courneuve",
+   "shelfmark": "BL Add MS 61575 ff. 38-41",
+   "need": "Torcy 3 Apr 1710, cipher part (f.38v-41r, 690 groups)",
+   "why": "no key on DECODE, in Add MS 61575 or in print; the French copy is in AE CP Hollande t. 223 (La Courneuve, not digitised), and 690 groups of an 800-value two-part code are too few to rebuild",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-039",
+   "target": "harley1582r8499",
+   "kind": "visit",
+   "archive": "British Library",
+   "city": "London",
+   "shelfmark": "BL Harley MS 1582 ff. 8-10",
+   "need": "the whole letter decoded, not read (3,152 tokens)",
+   "why": "holes in most sentences after eight key/transcription passes (reading audit 22 Oct 2026); the contemporary clear copy, Harley 1582 art. 2 (ff. 5r-7v), is digitised by the BL but its images are unavailable (ark:/81055/vdc_100162940894.0x000001, checked 23 Oct 2026); it would settle it",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-040",
+   "target": "harley1582r8499",
+   "kind": "order",
+   "archive": "British Library",
+   "city": "London",
+   "shelfmark": "BL Harley MS 1582 ff. 8-10",
+   "need": "Unread, tentative and nonsense stretches, about 31% of non-null signs measured for sense (5 Oct 2026; p1.13 run, p1.24 \"(fy)ve hundrid\", p2.25 tail, p6.13-14, p3.14) (names p2.25 and p6.27, the code Ie, runs p1.13-15, 1.18, 1.24)",
+   "why": "the contemporary decipherment Harley MS 1582 ff. 5r-7v is not digitised by the BL or DECODE; BL imaging order submitted 26 Oct 2026, images awaited",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-041",
+   "target": "harley286",
+   "kind": "visit",
+   "archive": "British Library",
+   "city": "London",
+   "shelfmark": "BL Harley MS 286 f. 61",
+   "need": "line 30 (last line, about 6 words, only \"...am nonam\" visible)",
+   "why": "trimmed under the mount, needs the leaf lifted",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-042",
+   "target": "ilten1705",
+   "kind": "visit",
+   "archive": "Gottfried Wilhelm Leibniz Bibliothek",
+   "city": "Hanover",
+   "shelfmark": "GWLB Ms XXIII 1245:7 ff. 201r-204r",
+   "need": "B/C/D: several groups at the right margin run into the binding (70?, 5?, 50?, 9?, 112?, 36?, 124?, 6?, 74?)",
+   "why": "the glosses over them are legible, so the reading does not depend on them",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-043",
+   "target": "ilten1743",
+   "kind": "visit",
+   "archive": "Gottfried Wilhelm Leibniz Bibliothek",
+   "city": "Hanover",
+   "shelfmark": "GWLB Ms XXIII 1234:29,2 pp. 73-75",
+   "need": "Letter 1 p. 74 l. 3: group 75? (last digit lost in the binding; 751, a null, fits the stroke) and the 283 (r) before it, \"consument avec r.. même bonne discipline\"",
+   "why": "the digit is inside the gutter on the scan",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-044",
+   "target": "jafet1400",
+   "kind": "visit",
+   "archive": "Arxiu Capitular de Barcelona",
+   "city": "Barcelona",
+   "shelfmark": "Arxiu Capitular de Barcelona, Cisma d'Occident paper series",
+   "need": "The rest of the letter (doc. 1043), which Puig cites but does not print",
+   "why": "Not printed; the ACB original is not digitised, and may be among the papers Puig did not return.",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-045",
+   "target": "joachim1530",
+   "kind": "visit",
+   "archive": "Bibliothèque nationale de France",
+   "city": "Paris",
+   "shelfmark": "BnF Clairambault 331, ff. 156r-157v",
+   "need": "A page and three lines explicitly omitted by the copyist",
+   "why": "(or an independent complete digital copy). These are not present in the supplied manuscript. No token denominator or plaintext can be manufactured for them.",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-046",
+   "target": "jqa",
+   "kind": "visit",
+   "archive": "Massachusetts Historical Society",
+   "city": "Boston",
+   "shelfmark": "NARA M35 reel 3 frame 0206",
+   "need": "rem88 seven groups with lost digits (142x, 21x, 15xx, 11xx, 10xx, 55x, 13xx)",
+   "why": "cut by the binding gutter on the microfilm of frame 0207 (every line end); the original and duplicate of No. 88 are not on reel 3, and JQA's letterbook copy (MHS) is not online. Context fixes most of them (in-, pre-, sa-id, tem-p-t) but they are counted unread",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-047",
+   "target": "kauderbach1754",
+   "kind": "visit",
+   "archive": "Koninklijk Huisarchief",
+   "city": "The Hague",
+   "shelfmark": "KHA The Hague, Prins Willem V inv. 201",
+   "need": "R1954 (March 1756, 1,621 groups): decoded, not read",
+   "why": "re-read 23 Oct 2026 (b29): uncertain digits resolved, seven places corrected on the images, partial reading 0.549; the remaining runs (f. 2 ll. 6, 8, 13; f. 4 ll. 6-10, 17-25) read legibly but do not decode, copyist slips; the original in HStA Dresden is not online",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-048",
+   "target": "king1801",
+   "kind": "visit",
+   "archive": "U.S. National Archives (NARA)",
+   "city": "College Park / Washington",
+   "shelfmark": "NARA RG 59, Diplomatic Despatches, Great Britain, vol. 9",
+   "need": "the code groups of both duplicates (NARA RG 59 M30 roll 9)",
+   "why": "microfilm not online",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-049",
+   "target": "king1801",
+   "kind": "visit",
+   "archive": "U.S. National Archives (NARA)",
+   "city": "College Park / Washington",
+   "shelfmark": "NARA RG 59, Diplomatic Despatches, Great Britain, vol. 9",
+   "need": "King's code key",
+   "why": "rebuildable from the printed crib once the code groups are seen",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-050",
+   "target": "kurtz1639",
+   "kind": "visit",
+   "archive": "Státní oblastní archiv v Plzni",
+   "city": "Klášter u Nepomuka",
+   "shelfmark": "SOA Plzeň, Klášter u Nepomuka, RA Trauttmansdorffů, inv. č. 200, kart. 9",
+   "need": "R4645: a leaf between P2 (\"quae ergo\") and P6",
+   "why": "not among the nine DECODE records",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-051",
+   "target": "lineara",
+   "kind": "library",
+   "archive": "A library or database",
+   "city": "",
+   "shelfmark": "",
+   "need": "Salgarella 2025 check for HT 34",
+   "why": "closed-access Cambridge Element, library copy needed",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-052",
+   "target": "lineara",
+   "kind": "visit",
+   "archive": "Heraklion Archaeological Museum",
+   "city": "Heraklion",
+   "shelfmark": "",
+   "need": "a photograph of HT 34 line 3",
+   "why": "only the Heraklion Museum (HM 22) can supply it",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-053",
+   "target": "lineara",
+   "kind": "visit",
+   "archive": "Heraklion Archaeological Museum",
+   "city": "Heraklion",
+   "shelfmark": "",
+   "need": "readings of the 5 totals that cannot be reconciled in any window (HT13, HT25b, HT102, HT122b, PH(?)31a)",
+   "why": "the editions agree, only autopsy of the tablets can say whether the scribe or the transcription erred",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-054",
+   "target": "lopehurtado",
+   "kind": "library",
+   "archive": "Real Academia de la Historia",
+   "city": "Madrid",
+   "shelfmark": "RAH, Signatura 9/26, f. 237-243",
+   "need": "Doubtful signs in the spelled words of R9634, R9645, R9646, R9656 (8/ϑ, ∂ s/p/t, ε l/g, the looped sign)",
+   "why": "DECODE has no larger file, the RAH Biblioteca Digital is behind a bot check (Daniel in a browser)",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-055",
+   "target": "lopehurtado1523",
+   "kind": "library",
+   "archive": "Real Academia de la Historia",
+   "city": "Madrid",
+   "shelfmark": "RAH, Signatura 9/28, f. 6-9",
+   "need": "R9846 ff. 130v-132v beyond the crib third",
+   "why": "f. 133v, the rest of the clerk's clear, is not imaged on DECODE; RAH Biblioteca Digital (bot check), Salazar A-30",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-056",
+   "target": "lorraine1592",
+   "kind": "visit",
+   "archive": "Archives départementales de Meurthe-et-Moselle",
+   "city": "Nancy",
+   "shelfmark": "BnF fr. 3621 no. 97, fol. 109",
+   "need": "A key or duplicate in the Lorraine ducal archive (Archives départementales de Meurthe-et-Moselle)",
+   "why": "not consulted",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-057",
+   "target": "maisse1592",
+   "kind": "visit",
+   "archive": "Bibliothèque nationale de France",
+   "city": "Paris",
+   "shelfmark": "BnF fr. 16093 f. 370",
+   "need": "f. 370: read 23 Oct 2026; figures aligned with the copy (r2f). Line ends of f. 370v hidden in the binding gutter (about 147 copy letters, the copy is the only witness there)",
+   "why": "group 90 at the end of f. 370r l. 1, probably a null - blocker: too-short",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-058",
+   "target": "marechaux1520",
+   "kind": "visit",
+   "archive": "Bibliothèque nationale de France",
+   "city": "Paris",
+   "shelfmark": "BnF, Français 3081, ff. 41-42",
+   "need": "The rest of the articles after f. 41v",
+   "why": "fr. 3081 unseen beyond ff. 41-42, the text breaks off, f. 42 blank.",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-059",
+   "target": "marmont1812",
+   "kind": "visit",
+   "archive": "Archivo Histórico Nacional",
+   "city": "Madrid",
+   "shelfmark": "AHN, DIVERSOS-COLECCIONES,134,N.34",
+   "need": "N.73 (751): about 26 numbers unresolved",
+   "why": "the Spanish copy is miscopied at these points; the original in the Scovell papers or the French minute would settle them",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-060",
+   "target": "mercier1761",
+   "kind": "visit",
+   "archive": "Archives nationales d’outre-mer",
+   "city": "Aix-en-Provence",
+   "shelfmark": "Archives nationales d'outre-mer, COL C8 A 64 f° 1",
+   "need": "The 1761 key itself, COL B 113/114, MAR/G/178",
+   "why": "not digitised",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-061",
+   "target": "morosini1588",
+   "kind": "visit",
+   "archive": "Archivio Apostolico Vaticano",
+   "city": "Vatican City",
+   "shelfmark": "AAV Segr. Stato Francia 22, items 22/1-28, 22/30-31, 22/34-37",
+   "need": "Rome's decipherments of these ciphers (ASV Segr. Stato Francia 27, cited by Hübner 1870)",
+   "why": "not imaged online",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-062",
+   "target": "morosini1588",
+   "kind": "visit",
+   "archive": "Archivio Apostolico Vaticano",
+   "city": "Vatican City",
+   "shelfmark": "AAV Segr. Stato Francia 22, items 22/1-28, 22/30-31, 22/34-37",
+   "need": "missing leaves (R46 between 382v and 383r, R47 after 385v; R17 233v and R22's last leaf not imaged)",
+   "why": "",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-063",
+   "target": "morosini1588",
+   "kind": "visit",
+   "archive": "Archivio Apostolico Vaticano",
+   "city": "Vatican City",
+   "shelfmark": "AAV Segr. Stato Francia 22, items 22/1-28, 22/30-31, 22/34-37",
+   "need": "item 22/29",
+   "why": "no DECODE record for it; not imaged, so its key is not known",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-064",
+   "target": "navarre1586",
+   "kind": "order",
+   "archive": "Bibliothèque nationale de France",
+   "city": "Paris",
+   "shelfmark": "BnF 500 de Colbert 401 f. 333",
+   "need": "f. 321 figure-level transcription",
+   "why": "the decipherer's strike-through runs through every figure on the scan; the leaf or a raking-light image would be needed",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-065",
+   "target": "nevers1593",
+   "kind": "visit",
+   "archive": "Bibliothèque nationale de France",
+   "city": "Paris",
+   "shelfmark": "BnF fr. 3985 no. 116, f. 209",
+   "need": "f. 168 decoded, not read (272 tokens)",
+   "why": "re-read on the image 22 Oct 2026 (14 corrections, lines 1-3 and 6-7 now sentences); the holes left in lines 4, 5 and the last line are corrupt figures in the register copy, legible but wrong, and only a second witness (Pisany's original, not located) could restore them",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-066",
+   "target": "nevers1593",
+   "kind": "visit",
+   "archive": "Bibliothèque nationale de France",
+   "city": "Paris",
+   "shelfmark": "BnF fr. 3985 no. 116, f. 209",
+   "need": "f. 209 decoded, not read (123 tokens; v3 check 23 Oct 2026, 0.33 explicit holes)",
+   "why": "passages 1 and 3 rest on wrong figures in the register copy (re-checked on the image), and only a second witness (the letter as sent, not located) could restore them",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-067",
+   "target": "noailles1558",
+   "kind": "visit",
+   "archive": "Bibliothèque nationale de France",
+   "city": "Paris",
+   "shelfmark": "BnF fr. 3151 no. 33, ff. 60r-60v",
+   "need": "start of each marginal gloss line on f. 60r",
+   "why": "swallowed by the binding; needs the page opened flat",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-068",
+   "target": "norreys1567",
+   "kind": "library",
+   "archive": "The National Archives",
+   "city": "Kew, London",
+   "shelfmark": "BL Add MS 4136 f. 161",
+   "need": "siblings 1567-68 decoded word by word, no sentences (v3 check 23 Oct 2026)",
+   "why": "Forbes copied only the ciphered words; the originals with their clear text are TNA SP 70/96-97 (State Papers Online, not reached)",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-069",
+   "target": "numeric1916",
+   "kind": "library",
+   "archive": "National Institute for Defense Studies (via JACAR)",
+   "city": "Tokyo",
+   "shelfmark": "JACAR B03050089300, B03050089400, B03050089500, B03050090000: N17, N18, N23, N27, N30, N32, N33, N35, V4E",
+   "need": "V4B (容密, 265 groups): only 4 of its 22 sheets re-read blind; framing repairs in V4B, V4D, V4E still to be checked on the scans",
+   "why": "contributor's re-reading of the JACAR scans, not done here",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-070",
+   "target": "nuncio1566",
+   "kind": "library",
+   "archive": "A library or database",
+   "city": "",
+   "shelfmark": "ASV, Segreteria di Stato, Spagna 1, item 1, f. 165r",
+   "need": "Serrano, Correspondencia diplomatica ... Pio V (1914): not checked",
+   "why": "HathiTrust 403 from here, not on archive.org",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-071",
+   "target": "nunzio1736",
+   "kind": "visit",
+   "archive": "Archivio Apostolico Vaticano",
+   "city": "Vatican City",
+   "shelfmark": "ASV, Segr. Stato, Spagna 423, item 1",
+   "need": "11 nomenclator groups seen once in letters that read (1200, 1335, 1960, 1985 in 423/2; 1232, 1469, 1698, 1942 in 423/7; 1636 in 423/8)",
+   "why": "no copy of 423/2, 7, 8 is among the DECODE attachments, the copies or minutes would have to be found in Spagna 423 itself",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-072",
+   "target": "nunzio1736",
+   "kind": "visit",
+   "archive": "Archivio Apostolico Vaticano",
+   "city": "Vatican City",
+   "shelfmark": "ASV, Segr. Stato, Spagna 423, item 1",
+   "need": "the minutes of these letters (Archivio della Nunziatura di Madrid)",
+   "why": "",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-073",
+   "target": "ormanetto1576",
+   "kind": "visit",
+   "archive": "Archivio Apostolico Vaticano",
+   "city": "Vatican City",
+   "shelfmark": "ASV Segr. Stato Spagna 10, f. 365",
+   "need": "the year of the letter and the writer \"Clementino\"",
+   "why": "the register of Como's ciphers to Spain or the Spagna 10 index would date it",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-074",
+   "target": "ormond1678",
+   "kind": "visit",
+   "archive": "National Library of Ireland",
+   "city": "Dublin",
+   "shelfmark": "National Library of Ireland, Ormonde MSS",
+   "need": "An interlinear or marginal gloss on the sent letter or on Ormond's retained copy",
+   "why": "NLI MSS 2335-2362 (Ormonde papers 1665-80), letter of 24 Jan 1677/8 in the bundle catalogued as MS UR 006261; not digitised. Arran's own papers (Bodleian Carte MSS, e.g. Carte 216-217, NLI microfilm MS UR 076819) may hold the letter as received, perhaps deciphered by Arran.",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-075",
+   "target": "ottobon",
+   "kind": "order",
+   "archive": "Biblioteca Nacional de España",
+   "city": "Madrid",
+   "shelfmark": "BNE Mss/994 ff. 34-38",
+   "need": "ff.35v-36v, 316 tokens (f.35v ll.3-6, 10-11, 15, 20; f.36r ll.4, 6, 8-11, 14-16; f.36v ll.2-3, 5-6, and gaps in the read lines)",
+   "why": "the only images (BNE scan, ~130 dpi in the PDF, ~1.4x on DECODE) do not separate 2/7, 3/5/8, 0/8 and the bleed-through is heavy; a 400-dpi BNE reproduction of ff.35-38 or the register copy (ASVe, Senato Secreta, Deliberazioni Francia 1589, 27 April) is needed.",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-076",
+   "target": "ottobon",
+   "kind": "visit",
+   "archive": "British Library",
+   "city": "London",
+   "shelfmark": "BNE Mss/994 ff. 34-38",
+   "need": "ff.37r-38r (decoded, not read since 23 Oct 2026), 199 unread tokens (f.37r ll.1-2, 7, 10, 22, 24; f.37v ll.1, 3; gaps in read lines) and 155 tokens valued by the crib fit on sense alone",
+   "why": "unresolved digits and gutter losses; the text of this second piece (the Senate's answer to the French ambassador) should be in de Maisse's letter-book \"avec les responses\", BL Add MS 30635 (not digitised), and in the ASVe register.",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-077",
+   "target": "papai1706",
+   "kind": "library",
+   "archive": "A library or database",
+   "city": "",
+   "shelfmark": "MNL OL G15 Caps. C Fasc. 33, pp. 34-37",
+   "need": "Benda (ed.), Pápai János törökországi naplói (1963)",
+   "why": "not online",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-078",
+   "target": "r2276",
+   "kind": "order",
+   "archive": "Bibliothèque nationale de France",
+   "city": "Paris",
+   "shelfmark": "BnF fr. 20974 pp. 1-3",
+   "need": "about 80 unread words of two or more signs (listed as `?` in reading.txt; worst lines t1.16, t1.22-26, t1.33, t1.38-39, t2.2-3, t2.10, t2.13-16, t2.19, t2.21, t2.39, t3.1, t3.5, t3.9)",
+   "why": "no French word fits both the signs and the sentence after six reading rounds, a full alignment of the sibling fr. 4715 f. 2 and candidate search over a 30k-word lexicon; several contain signs with no attested value (Z with overline, 8 with superscript t, U, W, q, k); neither the DECODE PNGs nor the Gallica IIIF scan resolves the signs, so the only remaining route is a new high-resolution colour scan or the manuscript itself (BnF fr. 20974 pp. 1-3)",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-079",
+   "target": "r8356",
+   "kind": "visit",
+   "archive": "The National Archives",
+   "city": "Kew, London",
+   "shelfmark": "BL Harley MS 260 ff. 112v-113r",
+   "need": "sent original in TNA SP 70 (CSP For. ix 1821)",
+   "why": "not online, may carry a decipherment",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-080",
+   "target": "r9319",
+   "kind": "visit",
+   "archive": "Bayerisches Hauptstaatsarchiv",
+   "city": "Munich",
+   "shelfmark": "BayHStA Kurbayern Äußeres Archiv 4591",
+   "need": "R9319, a dot-by-dot transcription aligned with Leighton's text",
+   "why": "f.115 is not imaged on DECODE and the printed text is in copyright; the reading is Leighton's",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-081",
+   "target": "r9658",
+   "kind": "visit",
+   "archive": "Real Academia de la Historia",
+   "city": "Madrid",
+   "shelfmark": "RAH, Signatura 9/26",
+   "need": "The whole cipher text of ff. 371r-375v",
+   "why": "the contemporary decipherment in Salazar A-26 is not imaged on DECODE; content known from CSP Spain ii 510",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-082",
+   "target": "rakoczi1704",
+   "kind": "visit",
+   "archive": "Hungarian National Archives (MNL OL)",
+   "city": "Budapest",
+   "shelfmark": "MNL OL G15 Caps. C. Fasc. 39, pp. 346-347",
+   "need": "clear letter under the R922 sheet (fascicle p. 350)",
+   "why": "not imaged on DECODE",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-083",
+   "target": "rakoczi1707",
+   "kind": "order",
+   "archive": "Hungarian National Archives (MNL OL)",
+   "city": "Budapest",
+   "shelfmark": "MNL OL, G15 Caps. C. Fasc. 39, pp. 277-279",
+   "need": "Grade-C corrections (12) rest on context, not on the image",
+   "why": "image resolution (2448 px for the page); a higher-resolution scan from MNL OL would settle them",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-084",
+   "target": "ranzo1528",
+   "kind": "visit",
+   "archive": "Bibliothèque nationale de France",
+   "city": "Paris",
+   "shelfmark": "BnF fr. 2988 ff. 2r-v",
+   "need": "letter 4 (fr. 4050): Biermann's figures not checked on an image",
+   "why": "fr. 4050 is not digitised: BnF notice ark:/12148/cc504711/cd0e497 has no Gallica link",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-085",
+   "target": "rohan1636",
+   "kind": "visit",
+   "archive": "Bibliothèque nationale de France",
+   "city": "Paris",
+   "shelfmark": "BnF Français 5190 no. 214",
+   "need": "Français 5190 nos. 214–215, the cipher",
+   "why": "the supplied Gallica digitization stops at p. 80.",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-086",
+   "target": "rusdorff1625",
+   "kind": "visit",
+   "archive": "Riksarkivet",
+   "city": "Stockholm",
+   "shelfmark": "Riksarkivet, Oxenstiernska samlingen",
+   "need": "first page of the 26 February letter, subscription of the 15/25 February letter, rest of the third letter",
+   "why": "not among the DECODE photographs of E 701",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-087",
+   "target": "sabran1633",
+   "kind": "visit",
+   "archive": "Archives diplomatiques",
+   "city": "La Courneuve",
+   "shelfmark": "BnF Baluze 155 f. 79r-v",
+   "need": "the originals as received (Archives diplomatiques, Correspondance politique, Gênes)",
+   "why": "not digitised",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-088",
+   "target": "sanchez1522",
+   "kind": "visit",
+   "archive": "Real Academia de la Historia",
+   "city": "Madrid",
+   "shelfmark": "RAH, Signatura 9/26, f. 299-301",
+   "need": "R9653 second copy (f. 300v) and R9654 (ff. 301-302, same date)",
+   "why": "f. 300v only as faint bleed-through, R9654 not imaged on DECODE (rechecked 23 Oct 2026)",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-089",
+   "target": "santacruz1399",
+   "kind": "visit",
+   "archive": "Arxiu Capitular de Barcelona",
+   "city": "Barcelona",
+   "shelfmark": "Arxiu Capitular de Barcelona, Cisma d'Occident paper series",
+   "need": "The ciphertext itself (no image, not transcribed)",
+   "why": "the reading is Puig's, complete as printed (he marks nothing as unread); the cipher and its key could be checked only on the ACB original",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-090",
+   "target": "santacruz1399",
+   "kind": "library",
+   "archive": "A library or database",
+   "city": "",
+   "shelfmark": "Arxiu Capitular de Barcelona, Cisma d'Occident paper series",
+   "need": "Puig's printed text of the letter (pp. 469-470), not in the repository",
+   "why": "Google Books blocks automated access, HathiTrust is behind a Cloudflare challenge, archive.org has no copy",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-091",
+   "target": "schiner1516",
+   "kind": "order",
+   "archive": "British Library",
+   "city": "London",
+   "shelfmark": "BL Cotton MS Vitellius B XIX f. 131",
+   "need": "the 88-word reading is Büchi's and cannot be checked sign by sign against the cipher",
+   "why": "the leaf (now f. 129, old f. 131) is not digitised, a BL imaging order is needed",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-092",
+   "target": "schiner1516",
+   "kind": "visit",
+   "archive": "British Library",
+   "city": "London",
+   "shelfmark": "BL Cotton MS Vitellius B XIX f. 131",
+   "need": "the key and sign inventory, never printed",
+   "why": "needs the leaf, or the Dec 1516 letter f. 342 with its interlinear decipherment as a crib",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-093",
+   "target": "sessa1523",
+   "kind": "visit",
+   "archive": "Real Academia de la Historia",
+   "city": "Madrid",
+   "shelfmark": "RAH Colección Salazar y Castro A-27",
+   "need": "R9660 decipherment (of this duplicate or of the first copy), if it survives",
+   "why": "RAH volume 9/27, not imaged (seven DECODE records only; RAH Biblioteca Digital refuses automated access)",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-094",
+   "target": "sessa1523",
+   "kind": "visit",
+   "archive": "Real Academia de la Historia",
+   "city": "Madrid",
+   "shelfmark": "RAH Colección Salazar y Castro A-27",
+   "need": "R9661-R9664 cipher text re-read (CSP 534, 540, 541, 544)",
+   "why": "read at the time and calendared by Bergenroth; the full decipherments are those same unimaged leaves",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-095",
+   "target": "sessa1523",
+   "kind": "visit",
+   "archive": "Real Academia de la Historia",
+   "city": "Madrid",
+   "shelfmark": "RAH Colección Salazar y Castro A-27",
+   "need": "groups open in the sessa1524 key (vo, per, hay)",
+   "why": "inherited, no attestation in any decipherment on DECODE",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-096",
+   "target": "sg1629",
+   "kind": "order",
+   "archive": "Nationaal Archief",
+   "city": "The Hague",
+   "shelfmark": "Nationaal Archief, 1.01.02",
+   "need": "NA 1.01.02 inv. 12579.26, every cipher note",
+   "why": "not digitised (NA scan-on-request order or reading-room visit)",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-097",
+   "target": "siena11",
+   "kind": "library",
+   "archive": "A library or database",
+   "city": "",
+   "shelfmark": "Archivio di Stato di Siena, Concistoro 2308 fasc. 2 no. 11",
+   "need": "whether the Gonzaga condotta was concluded",
+   "why": "George Lasry: unchecked in Rubinstein, Lettere di Lorenzo de' Medici III (1977), not online here",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-098",
+   "target": "siena2023",
+   "kind": "visit",
+   "archive": "Archivio di Stato di Siena",
+   "city": "Siena",
+   "shelfmark": "Archivio di Stato di Siena, Concistoro 2308 fasc. 2 no. 20",
+   "need": "Nulls, compound segmentation and editorial emendations",
+   "why": "Occurrence-level checks of the CTTS transcription against the original leaves; the DECODE photographs are the only images and already the basis of George's edition. A nearly complete alphabetic assignment is not a completely verified reading.",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-099",
+   "target": "siena8",
+   "kind": "visit",
+   "archive": "Archivio di Stato di Siena",
+   "city": "Siena",
+   "shelfmark": "Archivio di Stato di Siena, Concistoro 2308 fasc. 2, no. 8",
+   "need": "the cipher behind paragraphs 1-4 of the memorandum",
+   "why": "that cipher is in a covering letter not on this sheet and not among the DECODE photographs; its decipherment is on the memorandum.",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-100",
+   "target": "sinzendorff1578",
+   "kind": "order",
+   "archive": "Haus-, Hof- und Staatsarchiv",
+   "city": "Vienna",
+   "shelfmark": "ÖStA HHStA StAbt Türkei I 37-2",
+   "need": "the whole despatch, Türkei I 37-2 ff. 1-8 (3-7 Sept 1578)",
+   "why": "not digitised, not on DECODE, HHStA reproduction order required",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-101",
+   "target": "smith1562",
+   "kind": "library",
+   "archive": "The National Archives",
+   "city": "Kew, London",
+   "shelfmark": "BL Add MS 4136 f. 157",
+   "need": "nos. 07 and 10 decoded, not read (v3 check 23 Oct 2026: 0.4; 0.345 by run)",
+   "why": "the originals in TNA SP 70 carry the contemporary decipherment ('portions in cipher deciphered', CSP Foreign vii 103, 714); Forbes copied the cipher only; State Papers Online not reached",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-102",
+   "target": "sp106r722",
+   "kind": "visit",
+   "archive": "The National Archives",
+   "city": "Kew, London",
+   "shelfmark": "TNA, SP 106/10, ff. 193-195",
+   "need": "another letter in the same code",
+   "why": "the Venetian correspondence of 1625 (ASVe, or SP 99 at Kew) and the unimaged SP 106/10 leaves are not online",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-103",
+   "target": "sp106r725",
+   "kind": "visit",
+   "archive": "The National Archives",
+   "city": "Kew, London",
+   "shelfmark": "TNA, SP 106/10, ff. 128-138",
+   "need": "the intercepts in this system",
+   "why": "none among the imaged SP 106/10 records; the unimaged leaves of the box may hold them",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-104",
+   "target": "sp106r924",
+   "kind": "visit",
+   "archive": "Bodleian Library",
+   "city": "Oxford",
+   "shelfmark": "TNA SP 106/10 ff. 235-236",
+   "need": "Eric Sams's decipherment (1976)",
+   "why": "filed in the Bodleian per his letter to R. A. Sayce (9 Oct 1976)",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-105",
+   "target": "sp95box136",
+   "kind": "library",
+   "archive": "The National Archives",
+   "city": "Kew, London",
+   "shelfmark": "TNA SP 95/136, Supplementary: Letters not deciphered",
+   "need": "SP 95/136, every letter",
+   "why": "not digitised free (Gale SPO or TNA copy order only)",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-106",
+   "target": "sp95box136",
+   "kind": "library",
+   "archive": "The National Archives",
+   "city": "Kew, London",
+   "shelfmark": "TNA SP 95/136, Supplementary: Letters not deciphered",
+   "need": "SP 87/24/33 ff. 96-97, del Puerto 19 Mar 1748",
+   "why": "not digitised free (Gale SPO or TNA copy order only)",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-107",
+   "target": "sweden4306",
+   "kind": "visit",
+   "archive": "Riksarkivet",
+   "city": "Stockholm",
+   "shelfmark": "Riksarkivet, Stockholm, Chifferklaver låda II:133",
+   "need": "Year and sender",
+   "why": "the letter names neither, and the wrapper date (1600–) and pencilled 1632? are archivists' estimates. Recipient read as Mr ?ilick (Wilick?), Amsterdam; only Riksarkivet provenance records could date it.",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-108",
+   "target": "toulon1803",
+   "kind": "order",
+   "archive": "Nationaal Archief",
+   "city": "The Hague",
+   "shelfmark": "Nationaal Archief 1.02.13 Legatie Rusland, inv. nr. 208",
+   "need": "the whole letter's reading",
+   "why": "the Croiset Correspondentiecijffer (Museum B1 392) must be scanned",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-109",
+   "target": "vetesi1705",
+   "kind": "library",
+   "archive": "A library or database",
+   "city": "",
+   "shelfmark": "Ráday Archives, C64-4d2-10, 92-95",
+   "need": "Ráday Pál iratai I (1955) item 102 n. 1 not compared",
+   "why": "not online; Szaktárs paywalled",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-110",
+   "target": "vich1515",
+   "kind": "order",
+   "archive": "Archivo Histórico Nacional",
+   "city": "Madrid",
+   "shelfmark": "AHN Estado 8715 N.73",
+   "need": "look-alike readings 3.09% of letters, five over the 3% limit (`sin`/`sim` minims, `X` = r/s/z outside ll. 9-31)",
+   "why": "PARES serves 1,147 px, a high-resolution copy from the AHN would settle them",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-111",
+   "target": "vich1515",
+   "kind": "library",
+   "archive": "A library or database",
+   "city": "",
+   "shelfmark": "AHN Estado 8715 N.73",
+   "need": "lines outside the quoted stretch",
+   "why": "the minute or Doussinague 1944",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-112",
+   "target": "vico1398",
+   "kind": "visit",
+   "archive": "Arxiu Capitular de Barcelona",
+   "city": "Barcelona",
+   "shelfmark": "Arxiu Capitular de Barcelona, Documentos inéditos del obispo Çapera",
+   "need": "The cipher line of 4 Dec 1398",
+   "why": "not printed by Puig, no image; the ACB original is not digitised and may be among the papers Puig did not return",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-113",
+   "target": "visser1917",
+   "kind": "visit",
+   "archive": "U.S. National Archives (NARA)",
+   "city": "College Park / Washington",
+   "shelfmark": "NARA RG 65, Bureau of Investigation, Old German Files",
+   "need": "The left half of the key strip",
+   "why": "Too faint on the film; the photostats in RG 65 or a new scan would settle it.",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-114",
+   "target": "visser1917",
+   "kind": "visit",
+   "archive": "U.S. National Archives (NARA)",
+   "city": "College Park / Washington",
+   "shelfmark": "NARA RG 65, Bureau of Investigation, Old German Files",
+   "need": "The 1917 Bureau reading in MID 9140-103 / 4131-44",
+   "why": "(RG 165, not digitised).",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  },
+  {
+   "id": "ar-115",
+   "target": "waldeck1744",
+   "kind": "visit",
+   "archive": "Hessisches Staatsarchiv Marburg",
+   "city": "Marburg",
+   "shelfmark": "Hessisches Staatsarchiv Marburg, HStAM 118 a Nr. 3954, ff. 3r-4r",
+   "need": "further traffic or a deciphered copy in HStAM 118 a Nr. 1973 (Feldzug 1744 Bd. 1) and Nr. 1969-1972, 2044, 2047",
+   "why": "undigitised",
+   "status": "open",
+   "volunteer": null,
+   "issue": null,
+   "history": [
+    {
+     "date": "2026-10-28",
+     "status": "open",
+     "note": "from the NOTES.md Remaining gaps"
+    }
+   ]
+  }
+ ]
+}

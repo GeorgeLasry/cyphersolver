@@ -1,0 +1,128 @@
+"""Candidate rows from BnF italien 1583-1596 (Archivio Sforzesco), found through Mazzatinti 1887 (parse_mazzatinti.py)."""
+G = "https://gallica.bnf.fr/ark:/12148/"
+MAZ = "https://archive.org/details/InventarioDeiManoscrittiItalianiT2"
+ARK = {1584: "btv1b100373864", 1585: "btv1b52525947w", 1586: "btv1b10037387k", 1587: "btv1b10033686w",
+       1588: "btv1b100373881", 1589: "btv1b10037389g", 1590: "btv1b10037390v", 1591: "btv1b100373919",
+       1592: "btv1b10037392r", 1593: "btv1b100373936", 1594: "btv1b10037394n"}
+SRC = "BnF italien (Archivio Sforzesco) via Mazzatinti 1887"
+SN = ("Scored from Mazzatinti, Inventario dei mss. italiani II (1887) pp. 285-509, during the Oct 2026 "
+      "venice_milan_print sweep (research/venice_milan_print/, sforza_list.txt)")
+PA = ("open as far as checked (28 Oct 2026: cryptiana unsolved.htm mentions only ital. 1584 f. 68/69 and key DECODE R1857; "
+      "DECODE has only ital. 1583 ff. 68-158, R7898-R7915; known.py no hit for ital. 1584-1591). Many leaves carry "
+      "interlinear or filed contemporary decipherments that Mazzatinti does not always note (seen: 1584 f. 15 followed by an "
+      "unlisted clear f. 16 of the same date; a cipher block on canvas 235 has interlinear glosses), so 'read at the time' "
+      "must be ruled out leaf by leaf.")
+
+
+def sf(cod, **kw):
+    links = [{"label": f"Gallica ital. {cod} (microfilm)", "href": G + ARK[cod]}] if cod in ARK else []
+    links.append({"label": "Mazzatinti 1887 inventory", "href": MAZ})
+    row = dict(region="Italy", period="15th century", language="Italian", cls="A", seen="catalogue",
+               source=SRC, score_note=SN, links=links, prior_art=PA)
+    row.update(kw)
+    return row
+
+
+ROWS = [
+ sf(1584, year=1447, date="Nov 1446 - 23 Mar 1447",
+    title="Filippo Maria Visconti → Francesco Sforza, ducal cipher slips on parchment (the last months of the Visconti duke)",
+    correspondents="Filippo Maria Visconti, Duke of Milan → Francesco Sforza", place="Milan / Abbiategrasso / Cusago",
+    shelfmark="BnF italien 1584 (Archivio Sforzesco II), ff. 15, 23, 24, 30-31, 36-37, 64-65, 72, 83, 94, 102; also ital. 1583 ff. 110, 136, 162 (1446)",
+    folio_note="about 14 parchment slips entirely in cipher, c. 10-15 lines each (f. 5 seen: c. 15 lines of letters and signs, no word division); siblings ff. 5/6 and 8/9 (ital. 1584) and 130/131 (ital. 1583) have the decipherment filed on the next leaf",
+    status="Mazzatinti: 'In cifre: membran.' for each; 'Traduzione della lettera precedente' only after ff. 5, 8 (1584) and 130 (1583). Image check: f. 15 is followed by a clear f. 16 of the same date (probably its decipherment, unlisted). ital. 1583 ff. 110, 136 are DECODE R7902, R7907 (Non-decrypted).",
+    why="The Visconti chancery archive and its ciphers were destroyed in 1447; these slips, with three filed decipherments, are the route to Filippo Maria's own cipher and the 1447 negotiations that brought Sforza to Milan; anything read before 1449 would also be the oldest reading in the project.",
+    importance=5, solvability=4, difficulty=2, seen="image",
+    verify="View each slip on Gallica (canvas = folio + 2 to 4 at the start) and note whether a decipherment follows; rebuild the key from ff. 5/6 and 8/9; read the slips without one.",
+    decode_ids=[7902, 7907]),
+ sf(1584, year=1447, date="21 Jan - 10 Mar 1447",
+    title="Pietro Pusterla → Francesco Sforza, the ducal envoy's cipher letters from Gualdo, Ferrara and Milan",
+    correspondents="Pietro Pusterla, ducal procurator → Francesco Sforza", place="Gualdo / Ferrara / Reggio",
+    shelfmark="BnF italien 1584, ff. 13, 27, 32, 47, 67, 71, 77, 81",
+    folio_note="8 letters; f. 13 seen (canvas 15): clear opening then cipher lines, no gloss visible at 1100 px; sibling f. 42 (Milan 16 Feb) has its 'Traduzione' on f. 43",
+    status="Mazzatinti 'In cifre'; decipherment noted only for f. 42.",
+    why="Pusterla negotiated the January 1447 capitoli between the Duke and Sforza; his Ferrara reports cover the Venetian war and the league.",
+    importance=4, solvability=4, difficulty=2, seen="image",
+    verify="Key from f. 42/43; check each leaf for an interlinear decipherment."),
+ sf(1584, year=1447, date="13 Feb - 4 May 1447",
+    title="Marcolino Barbavara → Francesco Sforza, the ducal secretary's cipher letters from Rimini and Rome",
+    correspondents="Marcolino Barbavara, ducal secretary → Francesco Sforza", place="Rimini / Rome",
+    shelfmark="BnF italien 1584, ff. 40, 56, 62, 75, 135, 143",
+    folio_note="6 letters; f. 49 (Rome 27 Feb) has its 'Traduzione' on f. 50; Tomokiyo identifies the key of an ital. 1584 letter deciphered on the facing leaf as DECODE R1857 ('Marcolinus de Barbavara')",
+    status="Mazzatinti 'In cifre'; key on DECODE (R1857).",
+    why="Rome at the death of Eugenius IV and the election of Nicholas V (Feb-Mar 1447), from the Milanese secretary at the curia.",
+    importance=4, solvability=5, difficulty=1,
+    verify="Apply DECODE key R1857; check each leaf for an interlinear decipherment.",
+    prior_art=PA + " Key: DECODE R1857 (Tomokiyo, unsolved.htm)."),
+ sf(1584, year=1447, date="27 May - 6 Sept 1447",
+    title="Nicolò Guarna → Francesco Sforza, letters from Milan at the Duke's death and the Ambrosian Republic",
+    correspondents="Nicolò Guarna → Francesco Sforza", place="Milan",
+    shelfmark="BnF italien 1584, ff. 163-64, 232, 235, 238, 245, 259, 263, 268, 272, 286, 296",
+    folio_note="about 11 letters, several on parchment; canvases 226-235 seen: the Guarna letters there look clear (humanist hand) and a neighbouring letter of 14 Aug has short cipher passages with interlinear glosses, so the cipher may be short passages, partly glossed",
+    status="Mazzatinti 'In cifre'; no filed decipherment noted. Image glance suggests interlinear decipherments on some.",
+    why="Eyewitness reports from Milan in August 1447 (Filippo Maria's death on 13 Aug; the Ambrosian Republic) to Sforza.",
+    importance=4, solvability=3, difficulty=2, seen="image",
+    verify="Zoom each leaf; list the cipher passages without glosses; key from the glossed ones."),
+ sf(1584, year=1447, date="1447 (several undated) - Nov 1447; Feb 1448",
+    title="Vincenzo Amidani → Francesco Sforza, cipher letters from Milan, 1447-48",
+    correspondents="Vincenzo Amidani → Francesco Sforza", place="Milan",
+    shelfmark="BnF italien 1584, ff. 148, 206, 229, 365, 366, 367, 371, 375, 387, 391, 396, 413; italien 1585 ff. 14-15, 26, 33 (attribution of the 'del medesimo' entries to Amidani is Mazzatinti's sequence, to be checked)",
+    folio_note="about 15 letters, several undated; Amidani's 4 May 1446 letter (ital. 1583 f. 70, DECODE R7899) was read in part here (targets/it1583), and R7900/R7901 give a 'Cum cifra Vincentii' despatch with its explication",
+    status="Mazzatinti 'In cifre'; no decipherment noted. Same correspondent as the repo's it1583 target.",
+    why="Sforza's agent in Milan through the Ambrosian Republic; extends the it1583 key over many more letters.",
+    importance=3, solvability=4, difficulty=2,
+    verify="Test the it1583 f. 70 key and the R7900/R7901 'cifra Vincentii' on f. 148; check glosses.",
+    prior_art=PA + " Related: targets/it1583 (R7899, R7900/R7901)."),
+ sf(1585, year=1448, date="14 Oct 1447 - 18 Jun 1449",
+    title="Nicodemo Tranchedini da Pontremoli → Francesco Sforza, cipher letters from Florence, 1447-49",
+    correspondents="Nicodemo Tranchedini → Francesco Sforza", place="Florence",
+    shelfmark="BnF italien 1584 f. 353; italien 1585 ff. 28, 30, 35, 71",
+    folio_note="5 letters; Tranchedini's 1452 cipher (BnF ital. 2242) is the repo target tranchedini1452; his Nov 1446 letters are ital. 1583 ff. 133-139 (DECODE R7905, R7906, R7908)",
+    status="Mazzatinti 'In cifre'; no decipherment noted. Domnina 2018 read one Tranchedini postscript of 23 Feb 1449 (research/oldest/CANDIDATES.md); whether it is one of these is not known.",
+    why="The Florentine embassy to Cosimo de' Medici at the turn to the Sforza-Medici alliance.",
+    importance=4, solvability=3, difficulty=3, cls="B",
+    verify="Compare signs with the tranchedini1452 key and Domnina 2018; view leaves for glosses.",
+    prior_art=PA + " Domnina 2018 (one 1449 postscript)."),
+ sf(1584, year=1447, date="3 Jan 1447",
+    title="Federico da Montefeltro, Count of Urbino → Francesco Sforza, cipher letter",
+    correspondents="Federico da Montefeltro → Francesco Sforza", place="Urbino",
+    shelfmark="BnF italien 1584, f. 2", folio_note="one letter (not located on canvas 7; probably canvas 6 or 8)",
+    status="Mazzatinti 'In cifre'; no decipherment noted.",
+    why="An early Montefeltro cipher; Parisi read Montefeltro ciphers of 1451/1459 with the keys of BAV Urb. lat. 998.",
+    importance=3, solvability=3, difficulty=3, cls="B",
+    verify="Locate f. 2 on Gallica; test the Urb. lat. 998 keys (Parisi 2021-22)."),
+ sf(1584, year=1447, date="19 Apr - 12 Sept 1447",
+    title="Minor envoys → Francesco Sforza, cipher letters (Pietro di Monferrato at Tivoli; R. Pugnelli and Antonio Guidobono at Ferrara)",
+    correspondents="Pietro di Monferrato; R. Pugnelli; Antonio (Guidobono?) → Francesco Sforza", place="Tivoli / Ferrara",
+    shelfmark="BnF italien 1584, ff. 125, 198, 295, 299, 306",
+    folio_note="5 letters, ff. 299 and 306 on parchment", status="Mazzatinti 'In cifre'; no decipherment noted.",
+    why="Alfonso of Aragon's camp at Tivoli and Ferrarese diplomacy in the succession crisis of 1447.",
+    importance=3, solvability=3, difficulty=3,
+    verify="View the leaves; check for glosses; test the Duke's and Pusterla's keys."),
+ sf(1590, year=1464, date="s.d. and 8 Sept 1464",
+    title="Antonio da Trezzo → Cicco Simonetta and → the Duke, cipher letters from King Ferrante's camp",
+    correspondents="Antonio da Trezzo, Milanese ambassador at Naples → Cicco Simonetta / Francesco Sforza",
+    place="Kingdom of Naples (royal camp)", shelfmark="BnF italien 1590, ff. 285, 392",
+    folio_note="2 letters with no noted decipherment; Trezzo's ital. 1590 ff. 193, 283-84 and ital. 1589 ff. 193, 245, 288 have filed 'Traduzione' leaves",
+    status="Mazzatinti 'In cifre'; siblings deciphered on the next leaf.",
+    why="Ferrante's war with the Angevin barons; small, but a clean class-A pair.",
+    importance=2, solvability=4, difficulty=1,
+    verify="Check Dispacci sforzeschi da Napoli (volume for 1464) for these letters; otherwise key from the siblings.",
+    prior_art=PA + " Not checked: Dispacci sforzeschi da Napoli, 1464 volume."),
+ sf(1591, year=1466, date="6 Jun 1466",
+    title="Giovanni Bianco → the Duke of Milan, cipher letter from Lyon",
+    correspondents="Giovanni Bianco → Galeazzo Maria Sforza", place="Lyon",
+    shelfmark="BnF italien 1591, f. 348", folio_note="one letter", status="Mazzatinti 'In cifre'; no decipherment noted.",
+    why="Milanese reporting from France after the War of the Public Weal.",
+    importance=2, solvability=2, difficulty=3, cls="B",
+    verify="Check Mandrot, Dépêches des ambassadeurs milanais IV (1923); test the Panigarola/Maletta keys (ital. 1593 'Traduzioni').",
+    prior_art=PA + " Not checked: Mandrot IV."),
+ sf(1594, year=1447, date="1447 (s.d.)",
+    title="Copy of 'domino Michele's' letters in cipher to Foschino (Attendoli) and Angelo (Simonetta), Sforza register",
+    correspondents="'dominus Michael' (Michele Attendoli?) → Foschino degli Attendoli and Angelo Simonetta", place="unknown (Marche)",
+    shelfmark="BnF italien 1594 (Registri originali di lettere ducali), f. 31",
+    folio_note="register copy; size unknown",
+    status="Mazzatinti: 'Copia literarum domini Michaelis in cifra ad Fuschinum et dominum Angelum (s. d.)'; whether the copy is in cipher or the clear text of a cipher letter is not stated.",
+    why="Sforza's own register; if the cipher is copied it ties to the 1446-47 family above.",
+    importance=2, solvability=2, difficulty=3, cls="B",
+    verify="View ital. 1594 f. 31 on Gallica; if clear, it is a crib for a cipher letter of Michele Attendoli in ital. 1583-84."),
+]
