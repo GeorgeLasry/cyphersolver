@@ -1,0 +1,114 @@
+{
+ "1468": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch c04",
+  "seen": {
+   "kind": "scan",
+   "where": "CEHM viewer opened in Chrome 29 Oct 2026: https://www.cehm.org.mx/Buscador/VisorArchivoDigital?jzd=/janium/JZD/DLXXIII/1/30/17-49/DLXXIII.1.30.17-49.jzd&fn=137860 (page 1 of 2) and key sheet .../DLXXIII/1/28/14-23/DLXXIII.1.28.14-23.jzd&fn=137804",
+   "extent": "Telegram DLXXIII.1.30.17-49 (Lampazos to Monterrey, 19 Jul 1913): about 6 lines of the first page carry hyphenated numbers (141-165-173-69, 88-79-176-34, 114-112-26-74 ...) inside clear Spanish; about 20 items in the lead",
+   "cipher": "Printed telegraph form, clear Spanish ('Honrame participar a Ud ... la orden del C. Presidente de la Republica para') with numeric code groups of 1-3 digits (values up to at least 176) for the operative words; no decipherment or gloss written on the leaf; CEHM says 'transcribe en clave', no translation. Key sheet 1.28.14-23 (Secretaria de Guerra y Marina, Clave num. 109) seen: a printed grid numbered 1-160 of letters, syllables and military words (urge, march, Secretaria, Gobernador, Batallon ...)."
+  },
+  "prior_art": {
+   "decode": "known.py on Rubio Navarrete, DLXXIII and the shelfmarks: no DECODE record, ledger or target hit, only this lead and research/latam_mexico/candidates.json.",
+   "tomokiyo": "Web search (Rubio Navarrete, clave 1913, Huerta cipher) found nothing; Tomokiyo's cryptiana does not cover CEHM-Carso fondos as far as searched.",
+   "lasry": "No Lasry or DECODE entry for Mexican 1913 federal-army ciphers found by search or known.py.",
+   "edition": "No printed decipherment of any DLXXIII telegram found; CEHM records carry no translation.",
+   "literature": "Searched Angel & Morales-Luna 2008 (revista.unam.mx vol.9 num3 art18, cryptography to 1913 then Carranza) and Narvaez (Constitutionalist cases 1914-15): neither names fondo DLXXIII in the snippets seen; full texts not read."
+  },
+  "key_check": "Clave 109 viewed and compared with the telegram: its table stops at 160 while the telegram uses numbers up to 176 and groups such as 141-165-173, so it is not the key of this message (not decoded with it). The other key sheets named (1.28.8-23 alphabet and syllables, 1.29.15-30) were not opened; no key in repo or DECODE.",
+  "duplicates": "known.py for 'Rubio Navarrete', 'DLXXIII' and the lead shelfmarks: no catalogue, ledger or DECODE duplicate.",
+  "verdict": "open"
+ },
+ "1469": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch c04",
+  "seen": {
+   "kind": "scan",
+   "where": "CEHM viewer in Chrome 29 Oct 2026: CLXXXVI.9.869 (fn=507915, 6 pages), CLXXXVI.5.403 (fn=507445, 1 page), CLXXXVI.7.632 (fn=507676, 1 page); the other items (5.431, 5.435, 5.445, 9.860, 9.861, 12.1195, 15.1448) were not opened",
+   "extent": "Three items viewed: a 6-page typed letter (pages 1 and 5 read), a 1-page cable copy, a 1-page key sheet",
+   "cipher": "9.869 (Palomar y Vizcarra, 3 Jul 1929) is a clear typed letter with numbered footnote markers (1)-(11) explained at the end (e.g. (11) the Asociacion Catolica de la Juventud Mexicana ...), a name list, not a cipher; 5.403 (San Antonio 21 Jul 1927) is a clear Italian cable with cover words ('Way', 'fratelli', 'Leopoldo', 'Delegato') and a typed note 'Con este cable obtuve que Roma detuviera a los Obispos'; 7.632 'Claves para mensajes' (5 Jul 1928) is a 19-line table of meanings against prearranged innocent phrases (1 Exito en la empresa = Partimos Paris; 17 Suspendan trabajos = Cierren operacion)."
+  },
+  "prior_art": {
+   "decode": "known.py on 'Liga Nacional Defensora' and 'Rius Facius': only this lead and research/latam_mexico; no DECODE record.",
+   "tomokiyo": "Web search on Liga Nacional Defensora cifrados/claves found nothing in Tomokiyo's cryptiana; Cristero material not covered there as far as searched.",
+   "lasry": "No Lasry entry for Cristero Liga cables found by search or known.py.",
+   "edition": "Web search found only general LNDLR histories (Wikipedia, a UNAM thesis on its propaganda, a Colmex article); no edition of the claves or decipherments.",
+   "literature": "Searched for Cristiada cipher/clave scholarship (Rius Facius, Bustos): none found; the 1928 claves sheet is itself the cover-phrase key."
+  },
+  "key_check": "The key of the 1928 message code is on the record itself (CLXXXVI.7.632), a phrase-for-meaning table of 19 entries; applying it needs no analysis. The cable and letter seen use cover words and footnote numbers over plain text, so no key search applies.",
+  "duplicates": "known.py on 'Liga Nacional Defensora', 'Rius Facius' and the fondo: no catalogue, ledger or DECODE duplicate.",
+  "verdict": "key_lookup",
+  "closed": "Of the three items seen, one is clear text with footnote numbers, one a cover-word cable and one the cover-phrase key sheet itself, so no open cipher problem appears in them; the remaining items were not opened and could still hold true ciphertext."
+ },
+ "1476": {
+  "unvetted": "a translation / translated telegram set exists at CPDOC (microfilm only); may already be read; needs the translation compared"
+ },
+ "1479": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch c04",
+  "seen": {
+   "kind": "not online",
+   "where": "CPDOC/FGV record page (WebFetch 29 Oct 2026): .../LC/textual/telegramas-cifrados-sobre-a-necessidade-de-marcar-a-data-do-inicio-da-revolucao-s-l (LC c 1930.09.00: 2 documents, 3 folhas, microfilm roll 1 frames 1010-1011, no translation, no digitisation noted)",
+   "extent": "about 19 telegrams, 1-3 ff. each, 1927-30; microfilm only",
+   "cipher": "CPDOC: 'Telegramas cifrados sobre a necessidade de marcar a data do inicio da revolucao', 'Telegramas cifrados de Getulio Vargas a Lindolfo Collor'; most summaries give content (possibly deciphered on the sheet) but LC c 1930.09.00 mentions no translation; no scan seen."
+  },
+  "prior_art": {
+   "decode": "known.py (Lindolfo Collor): only the catalogue.json entry for the 1932 Collor telegrams and research/latam_brazil; no DECODE record.",
+   "tomokiyo": "Search (Collor telegramas cifrados Borges de Medeiros Vargas) found nothing in Tomokiyo's cryptiana.",
+   "lasry": "No Lasry entry for Brazilian 1930 revolution ciphers found.",
+   "edition": "Search found Collor biographies, UFRGS NUPERGS telegram summaries and a 2013 Dialogos article citing CPDOC; no printed decipherment.",
+   "literature": "No cipher scholarship on the Collor telegrams found by search."
+  },
+  "key_check": "Code lists LC c 1930/1932.00.00/11 and OA cp 1926/1929.00.00 are at CPDOC only; not held here, not tried.",
+  "duplicates": "known.py on 'Lindolfo Collor' and the shelfmarks: hits only this lead, the separate 1932 Collor catalogue entry (LC c 1932.07.05/4 etc., different documents) and Brazil sweep notes; no duplicate.",
+  "verdict": "open"
+ },
+ "1484": {
+  "unvetted": "a translation / translated telegram set exists at CPDOC (microfilm only); may already be read; needs the translation compared"
+ },
+ "1481": {
+  "unvetted": "CPDOC lead link is the generic acervo page; the RS c 1923.03.08/3 record page was not reached, so no description or microfilm check; web searches for Raul Soares code telegrams found no cipher material; the Raul Soares code lists (RS sp 1919.01.00/4) are CPDOC-only."
+ },
+ "1483": {
+  "unvetted": "CPDOC record page for the JD c 1929 telegram returned HTTP 404 to WebFetch (29 Oct 2026), so no description verified; the lead's summaries suggest the six telegrams were read at the time; needs the CPDOC record or a scan before any verdict."
+ },
+ "1488": {
+  "unvetted": "CPDOC DocReader scan for GV c 1946.03.09/2 not reached: lead link is the generic acervo page, www18.fgv.br/cpdoc/acervo/arquivo-pessoal/GV gives a 404 in Chrome, and web searches found no record; access is 'online' so 'not online' is not allowed."
+ },
+ "1171": {
+  "unvetted": "Montpellier H 258 no. 268 (Terlon, 1671): Calames notice is catalogue text only, with no image link or digital copy found (WebFetch and web search 29 Oct 2026), and the lead's access field is empty, so 'not online' is not valid and no leaf was seen. Web search for Medic@ digitisation of H 258 returned nothing; sibling no. 233 'mise en clair' not viewed; known.py only shows the Biermann 1675 note listing Terlon as a name sign."
+ },
+ "1173": {
+  "unvetted": "Montpellier H 258 no. 354 key sheet: Calames notice is catalogue text only, with no image link or digital copy found (WebFetch and web search 29 Oct 2026), and the lead's access field is empty, so 'not online' is not valid and no leaf was seen. It is a key lead without ciphertext of its own; sibling catalogue entries 1169/1170/1172 are the same volume."
+ },
+ "1176": {
+  "unvetted": "Chantilly Ms 2080: Calames notice is catalogue text only, with no image link or digital copy found (WebFetch and web search 29 Oct 2026), and the lead's access field is empty, so 'not online' is not valid and no leaf was seen. Catalogue mentions only a decipherment table (p. 389, hand of Gustave Macon); that the bulletins are ciphered is inference; the Salon francais letters of Ms 1988/2079 are already a catalogue entry."
+ },
+ "1177": {
+  "unvetted": "Chantilly Ms 1905: Calames notice is catalogue text only, with no image link or digital copy found (WebFetch and web search 29 Oct 2026), and the lead's access field is empty, so 'not online' is not valid and no leaf was seen. Web search for Vendome/Campistron 1698 cipher found nothing; the Calames title only says 'avec une table de dechiffrement'."
+ },
+ "1182": {
+  "unvetted": "Sorbonne MSRIC 43 ff. 177-179, 240-241: Calames notice is catalogue text only, with no image link or digital copy found (WebFetch and web search 29 Oct 2026), and the lead's access field is empty, so 'not online' is not valid and no leaf was seen. Sibling MSRIC 41-43 Hospital letters are already catalogue 1181."
+ },
+ "1183": {
+  "unvetted": "Sorbonne MSRIC 58 ff. 72-74: Calames notice is catalogue text only, with no image link or digital copy found (WebFetch and web search 29 Oct 2026), and the lead's access field is empty, so 'not online' is not valid and no leaf was seen. Web search for the Hamburg 1757 letter found only campaign histories and the printed Correspondance of Richelieu (1789), not checked page by page."
+ },
+ "1184": {
+  "unvetted": "Sorbonne MSRIC 37 ff. 135-137: Calames notice is catalogue text only, with no image link or digital copy found (WebFetch and web search 29 Oct 2026), and the lead's access field is empty, so 'not online' is not valid and no leaf was seen. Catalogue gives only 'Lettre chiffree [1773]'."
+ },
+ "1187": {
+  "unvetted": "Godefroy 261 f. 48 (Berthier to Henri III, 22 Jan 1586, 'en partie chiffre'): Calames notice is catalogue text only, with no image link or digital copy found (WebFetch and web search 29 Oct 2026), and the lead's access field is empty, so 'not online' is not valid and no leaf was seen. Printed-edition check (Charriere, Negociations dans le Levant) not done."
+ },
+ "1193": {
+  "unvetted": "Godefroy 268 ff. 73 and 175: Calames notice is catalogue text only, with no image link or digital copy found (WebFetch and web search 29 Oct 2026), and the lead's access field is empty, so 'not online' is not valid and no leaf was seen. Calames confirms f. 73 (Puysieulx to Villeroy, 14 Jan 1616, 'en partie chiffre', no decipherment mentioned) but showed no entry for f. 175; sibling ff. 83-104 are catalogue 1192."
+ },
+ "1195": {
+  "unvetted": "BULAC MS.ARA.52 item 14 (Hauy 1781): Calames record read 29 Oct 2026: 1 folio, 278x200 mm, 'Texte chiffre', note that the solution will appear in the Journal de Paris; it gives no digital link (the lead's 'digitised' claim is unconfirmed) and a web search for the Journal de Paris solution found nothing; needs the BULAC digital library or Gallica Journal de Paris June-July 1781."
+ },
+ "1196": {
+  "unvetted": "Institut Ms 5892 II pieces 189-190 (Mizon despatch 1893): Calames notice is catalogue text only, with no image link or digital copy found (WebFetch and web search 29 Oct 2026), and the lead's access field is empty, so 'not online' is not valid and no leaf was seen. Web search (Mizon Dalziel Porto-Novo) found only Mizon biographies; likely a commercial telegraph code."
+ },
+ "1197": {
+  "unvetted": "Sainte-Genevieve Ms 2571: Calames record read 29 Oct 2026: unsigned letter of one ecclesiastic to another at fol. 58, dated 1713 (the lead says 1752), mentioning the religious of Moustiers, chevalier Chappe, M. Masson, cardinal de Rohan, marquis de La Valliere; no decipherment or digitisation noted; no scan seen and access field empty, so not vetted."
+ }
+}

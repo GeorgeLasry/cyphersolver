@@ -1,0 +1,300 @@
+{
+ "1346": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 24",
+  "seen": {
+   "kind": "not online",
+   "where": "Ambrosiana OPAC records ambro:catalog:76119 (text) and 76120 (key), fetched 29 Oct 2026; neither page shows images or a digital-library link.",
+   "extent": "62 leaves (ff. 1r-62v) of text in secret script, plus a separate key unit (ff. 30b, 36b).",
+   "cipher": "OPAC: 'Theorica in lapide philosophico quae intitulatur mare magnum', note at f. 1r gives the Italian title, 'in scrittura segreta'; second unit titled 'Chiave di lettura della scrittura segreta'. No decipherment noted on the record."
+  },
+  "prior_art": {
+   "decode": "Repo DECODE dumps searched through known.py ('Theorica in lapide', 'Mare magnum', 'Ambrosiana I 31 sup'): no record; not on DECODE.",
+   "tomokiyo": "cryptiana (Tomokiyo) site-restricted web searches on the topic returned no pages (the index of that site is thin, so this is weak evidence); general web searches for the shelfmark/topic + cifra/cipher/decipher found no Tomokiyo mention.",
+   "lasry": "Web searches (title, shelfmark, Lasry) found no Lasry or HistoCrypt analysis of this manuscript; the Lang/Zotov/Piorko 'Sources of Alchemical Cryptography' (HistoCrypt 2024) survey exists but its full text (dspace.ut.ee) was unreachable, so whether it lists I 31 sup. is unchecked.",
+   "edition": "No edition or transcription found by web search on the title plus Ambrosiana; Thorndike-Kibre col. 305 is the Latin incipit entry only.",
+   "literature": "Searches 'Theorica in lapide philosophico Ambrosiana scrittura segreta', 'I 31 sup alchemical Mare magnum cipher', 'Thorndike Kibre ... Italian translation cipher': nothing on this volume."
+  },
+  "key_check": "Key is held in the same volume (unit 2, ff. 30b/36b), so the system is likely readable once both units are imaged; no key is held in this repo. Nothing tried because no images are online.",
+  "duplicates": "known.py on 'Ambrosiana I 31 sup', 'Theorica in lapide', 'Mare magnum': hits only this lead and research/milan_archives/candidates.json (its source). No catalogue, DECODE or NOTES hit.",
+  "verdict": "open"
+ },
+ "1347": {
+  "unvetted": "Access is 'online' (codex said to be digitised) but I could not open the Ambrosiana digital images at f. 154r; only the OPAC record (ambro:catalog:25605: 'Carme cifrato', 154r, guard-leaf insert, no decipherment) was read. Searches for the incipit found nothing, but the leaf itself was not seen, so it stays a lead."
+ },
+ "1348": {
+  "unvetted": "Access is 'online' but the Trivulziana/Manus record and any scan of Triv. 1054 cc. 221v-222v were not viewed (Trivulziana site unreachable in the earlier sweep; Manus detail page does not load for scripts). known.py found only self-hits. Cannot judge whether there is any real cipher text."
+ },
+ "1349": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 24",
+  "seen": {
+   "kind": "not online",
+   "where": "Manus Online CNMD 0000275429 (manus.iccu.sbn.it detail/669339): page fetched 29 Oct 2026 but returned only a navigation shell; description taken from the lead's earlier read of the record. No scan found.",
+   "extent": "Four pages (pp. 972-975) of a notebook (MMB 210, 1838-41), listed again in the author's index at p. 1148.",
+   "cipher": "Manus record: 'A pp. 972-975 testo in alfabeto cifrato' (text in a cipher alphabet); no decipherment noted."
+  },
+  "prior_art": {
+   "decode": "Repo DECODE dumps searched through known.py ('MMB 210', 'Mazzucotelli', 'Gorle'): no record; not on DECODE.",
+   "tomokiyo": "cryptiana (Tomokiyo) site-restricted web searches on the topic returned no pages (the index of that site is thin, so this is weak evidence); general web searches for the shelfmark/topic + cifra/cipher/decipher found no Tomokiyo mention.",
+   "lasry": "No Lasry/Megyesi/HistoCrypt item found by web search on Mazzucotelli, Gorle or Biblioteca Mai cipher alphabets.",
+   "edition": "No edition found: searches 'Mazzucotelli parroco di Gorle manoscritto MMB 210' and '... zibaldone diario 1838 1841 edizione' returned nothing relevant.",
+   "literature": "Two web searches on the priest and the shelfmark found no literature mentioning the cipher pages."
+  },
+  "key_check": "No key in repo or print for a private parish-priest alphabet; likely a simple substitution but untestable without images.",
+  "duplicates": "known.py on 'MMB 210', 'Mazzucotelli', 'Gorle': only this lead and its milan_archives source. No catalogue/DECODE/NOTES hit.",
+  "verdict": "open"
+ },
+ "1489": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 24",
+  "seen": {
+   "kind": "not online",
+   "where": "NUPERGS record(s) fetched 29 Oct 2026 (ufrgs.br/nupergs detalhe-acervo): text summary only; the pages carry no scan, only a generic site image identical across records.",
+   "extent": "Eight+ telegrams of the 1923 revolution (records 2499, 2836, 2845, 2888, 2906, 2909, 2927, 2931...), plus record 6208 on the code set-up.",
+   "cipher": "Record 2845 (10 May 1923, Malakoff to Arc, fetched): 'Codificado em numeros com especie de traducao no final', i.e. a numeric code with a kind of translation at the end; record 2499 is said to hold a clear version. A crib pair therefore exists in the archive but has not been seen."
+  },
+  "prior_art": {
+   "decode": "Repo DECODE dumps searched through known.py (names/NUPERGS); web search 'DECODE Brazil cipher Portuguese 19th-20th century' found no Brazilian 19th/20th-century record (only 1640s Dutch-Brazil items); not on DECODE.",
+   "tomokiyo": "cryptiana (Tomokiyo) site-restricted web searches on the topic returned no pages (the index of that site is thin, so this is weak evidence); general web searches for the shelfmark/topic + cifra/cipher/decipher found no Tomokiyo mention.",
+   "lasry": "Web search (DECODE, Lasry, Tomokiyo, Brazilian diplomatic code) found no Lasry work on Brazilian 19th-20th-century ciphers; known.py no ledger hit.",
+   "edition": "No edition of the coded telegrams found by web search (NUPERGS catalogue only).",
+   "literature": "Web searches on the 1923 revolt, Malakoff/Arc/Noedo found only NUPERGS catalogue records and general history; no study of the code."
+  },
+  "key_check": "No key held here; the archive's own partial translation (rec. 2845) and clear version (2499) are the crib to request, not a key.",
+  "duplicates": "known.py on 'Assis Brasil', 'Malakoff', 'Noedo', 'Alipio Teixeira': hits only sibling NUPERGS leads (1490-1498) and the latam_brazil sweep; the one catalogue.json hit is an unrelated CPDOC lead.",
+  "verdict": "open"
+ },
+ "1490": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 24",
+  "seen": {
+   "kind": "not online",
+   "where": "NUPERGS record(s) fetched 29 Oct 2026 (ufrgs.br/nupergs detalhe-acervo): text summary only; the pages carry no scan, only a generic site image identical across records.",
+   "extent": "About 8 docs (46, 48, 51-53, 55, 56, 58; records 6041-6053), Dec 1893 - Mar 1894.",
+   "cipher": "Doc 55 (20 Feb 1894, Floriano Peixoto to Assis Brasil, record 6050, fetched): 'Correspondencia cifrada, escrita com palavras decifradoras', flagged IMPORTANTE; the decipherment words are not transcribed on the page. Other docs: 'Correspondencia cifrada' with no content."
+  },
+  "prior_art": {
+   "decode": "Repo DECODE dumps searched through known.py (names/NUPERGS); web search 'DECODE Brazil cipher Portuguese 19th-20th century' found no Brazilian 19th/20th-century record (only 1640s Dutch-Brazil items); not on DECODE.",
+   "tomokiyo": "cryptiana (Tomokiyo) site-restricted web searches on the topic returned no pages (the index of that site is thin, so this is weak evidence); general web searches for the shelfmark/topic + cifra/cipher/decipher found no Tomokiyo mention.",
+   "lasry": "Web search (DECODE, Lasry, Tomokiyo, Brazilian diplomatic code) found no Lasry work on Brazilian 19th-20th-century ciphers; known.py no ledger hit.",
+   "edition": "No edition found; web search for the Floriano-Assis Brasil telegrams returned only the NUPERGS records and Naval Revolt histories.",
+   "literature": "Search on Assis Brasil in Buenos Aires 1893-94 and the naval revolt found context only (redalyc, aacademica), none on the cipher."
+  },
+  "key_check": "No key held; doc 55's decipherment words are the starting crib and need the image.",
+  "duplicates": "known.py on 'Floriano Peixoto', 'Assis Brasil', 'NUPERGS': sibling leads 1491-1494 and 1489 only; no catalogue/DECODE hit for this series.",
+  "verdict": "open"
+ },
+ "1491": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 24",
+  "seen": {
+   "kind": "not online",
+   "where": "NUPERGS record(s) fetched 29 Oct 2026 (ufrgs.br/nupergs detalhe-acervo): text summary only; the pages carry no scan, only a generic site image identical across records.",
+   "extent": "Docs 60-80 (records 6055-6075), Nov 1893 - Apr 1894.",
+   "cipher": "NUPERGS: 'Correspondencia cifrada' / 'Parte cifrada' (partly ciphered telegrams); no decipherment noted on the summaries seen in search results (records 6055/6057 not fetched individually)."
+  },
+  "prior_art": {
+   "decode": "Repo DECODE dumps searched through known.py (names/NUPERGS); web search 'DECODE Brazil cipher Portuguese 19th-20th century' found no Brazilian 19th/20th-century record (only 1640s Dutch-Brazil items); not on DECODE.",
+   "tomokiyo": "cryptiana (Tomokiyo) site-restricted web searches on the topic returned no pages (the index of that site is thin, so this is weak evidence); general web searches for the shelfmark/topic + cifra/cipher/decipher found no Tomokiyo mention.",
+   "lasry": "Web search (DECODE, Lasry, Tomokiyo, Brazilian diplomatic code) found no Lasry work on Brazilian 19th-20th-century ciphers; known.py no ledger hit.",
+   "edition": "No edition found by web search.",
+   "literature": "Context searches (Federalist war, Assis Brasil, Buenos Aires) found no study of these ministry telegrams' cipher."
+  },
+  "key_check": "No key held; same ministry system as 1490, so a decipherment from doc 55 could apply, untestable without images.",
+  "duplicates": "known.py on 'Cassiano do Nascimento', 'Assis Brasil': sibling NUPERGS leads only.",
+  "verdict": "open"
+ },
+ "1492": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 24",
+  "seen": {
+   "kind": "not online",
+   "where": "NUPERGS record(s) fetched 29 Oct 2026 (ufrgs.br/nupergs detalhe-acervo): text summary only; the pages carry no scan, only a generic site image identical across records.",
+   "extent": "Docs 8-14 etc. (records about 6003-6010), 31 Dec 1893 - 21 Mar 1894.",
+   "cipher": "NUPERGS: 'Correspondencia cifrada'; doc 8 has a gist (authorisation from Bernardino, 'prestes a agir'). Record 6005 not fetched individually."
+  },
+  "prior_art": {
+   "decode": "Repo DECODE dumps searched through known.py (names/NUPERGS); web search 'DECODE Brazil cipher Portuguese 19th-20th century' found no Brazilian 19th/20th-century record (only 1640s Dutch-Brazil items); not on DECODE.",
+   "tomokiyo": "cryptiana (Tomokiyo) site-restricted web searches on the topic returned no pages (the index of that site is thin, so this is weak evidence); general web searches for the shelfmark/topic + cifra/cipher/decipher found no Tomokiyo mention.",
+   "lasry": "Web search (DECODE, Lasry, Tomokiyo, Brazilian diplomatic code) found no Lasry work on Brazilian 19th-20th-century ciphers; known.py no ledger hit.",
+   "edition": "No edition found by web search.",
+   "literature": "Searches on Victorino Monteiro / Montevideo / Assis Brasil found only NUPERGS catalogue pages."
+  },
+  "key_check": "No key held; unknown whether Monteiro used the government system or a private one.",
+  "duplicates": "known.py on 'Victorino Monteiro', 'Assis Brasil': only this lead's sources and siblings.",
+  "verdict": "open"
+ },
+ "1493": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 24",
+  "seen": {
+   "kind": "not online",
+   "where": "NUPERGS record(s) fetched 29 Oct 2026 (ufrgs.br/nupergs detalhe-acervo): text summary only; the pages carry no scan, only a generic site image identical across records.",
+   "extent": "Docs 84-86+ (record 6079...), Feb - Mar 1894.",
+   "cipher": "NUPERGS: 'Correspondencia cifrada' / 'Parte cifrada'. A search listing shows a telegram from Assis Brasil to Costallat recalling undecipherable telegrams (doc 42), i.e. transmission garbling. Record 6079 not fetched individually."
+  },
+  "prior_art": {
+   "decode": "Repo DECODE dumps searched through known.py (names/NUPERGS); web search 'DECODE Brazil cipher Portuguese 19th-20th century' found no Brazilian 19th/20th-century record (only 1640s Dutch-Brazil items); not on DECODE.",
+   "tomokiyo": "cryptiana (Tomokiyo) site-restricted web searches on the topic returned no pages (the index of that site is thin, so this is weak evidence); general web searches for the shelfmark/topic + cifra/cipher/decipher found no Tomokiyo mention.",
+   "lasry": "Web search (DECODE, Lasry, Tomokiyo, Brazilian diplomatic code) found no Lasry work on Brazilian 19th-20th-century ciphers; known.py no ledger hit.",
+   "edition": "No edition found.",
+   "literature": "Web search on the Costallat/Vieira/Araripe telegrams found only catalogue records."
+  },
+  "key_check": "No key held; garbling reported by the recipient lowers solvability.",
+  "duplicates": "known.py on 'Costallat', 'Araripe', 'Manoel Vieira': only this lead and its latam_brazil source.",
+  "verdict": "open"
+ },
+ "1494": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 24",
+  "seen": {
+   "kind": "not online",
+   "where": "NUPERGS record(s) fetched 29 Oct 2026 (ufrgs.br/nupergs detalhe-acervo): text summary only; the pages carry no scan, only a generic site image identical across records.",
+   "extent": "Docs 31, 38 (record 6026...), 1893-94.",
+   "cipher": "NUPERGS: 'Correspondencia cifrada' / 'Refugiados fugiram. Mensagem cifrada' (Assis Brasil to the President). Record 6026 not fetched individually."
+  },
+  "prior_art": {
+   "decode": "Repo DECODE dumps searched through known.py (names/NUPERGS); web search 'DECODE Brazil cipher Portuguese 19th-20th century' found no Brazilian 19th/20th-century record (only 1640s Dutch-Brazil items); not on DECODE.",
+   "tomokiyo": "cryptiana (Tomokiyo) site-restricted web searches on the topic returned no pages (the index of that site is thin, so this is weak evidence); general web searches for the shelfmark/topic + cifra/cipher/decipher found no Tomokiyo mention.",
+   "lasry": "Web search (DECODE, Lasry, Tomokiyo, Brazilian diplomatic code) found no Lasry work on Brazilian 19th-20th-century ciphers; known.py no ledger hit.",
+   "edition": "No edition found.",
+   "literature": "Searches on Assis Brasil's reports to Floriano found only NUPERGS records."
+  },
+  "key_check": "No key held; outgoing direction may use the same system as 1490/1491.",
+  "duplicates": "known.py on 'Assis Brasil', 'Floriano Peixoto': siblings only.",
+  "verdict": "open"
+ },
+ "1495": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 24",
+  "seen": {
+   "kind": "not online",
+   "where": "NUPERGS record(s) fetched 29 Oct 2026 (ufrgs.br/nupergs detalhe-acervo): text summary only; the pages carry no scan, only a generic site image identical across records.",
+   "extent": "Docs 257-305 (records 6418-6467), 1905-1908, plus a 12 Jan 1908 item (record 1138).",
+   "cipher": "NUPERGS: 'Texto cifrado' with no content; search listings show Oct 1908 telegrams of which part is in cipher and the rest in clear. Records not fetched individually."
+  },
+  "prior_art": {
+   "decode": "Repo DECODE dumps searched through known.py (names/NUPERGS); web search 'DECODE Brazil cipher Portuguese 19th-20th century' found no Brazilian 19th/20th-century record (only 1640s Dutch-Brazil items); not on DECODE.",
+   "tomokiyo": "cryptiana (Tomokiyo) site-restricted web searches on the topic returned no pages (the index of that site is thin, so this is weak evidence); general web searches for the shelfmark/topic + cifra/cipher/decipher found no Tomokiyo mention.",
+   "lasry": "Web search (DECODE, Lasry, Tomokiyo, Brazilian diplomatic code) found no Lasry work on Brazilian 19th-20th-century ciphers; known.py no ledger hit.",
+   "edition": "No edition found. The 1908 'telegrama no. 9' lead (Rio Branco publishing a cipher telegram and its decipherment) was searched ('Rio Branco Zeballos telegrama n 9 cifra decifrado publicado'): no source found, so the key lead is unverified.",
+   "literature": "Web search found only NUPERGS records and unrelated FRUS; nothing on the Itamaraty code of 1905-08."
+  },
+  "key_check": "No Itamaraty code held or found in print; the telegrama no. 9 publication remains an unverified key lead.",
+  "duplicates": "known.py on 'Rio Branco', 'Zeballos', 'Assis Brasil': hits are an unrelated Asuncion Rio Branco collection lead (catalogue) and the NUPERGS siblings; no duplicate.",
+  "verdict": "open"
+ },
+ "1496": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 24",
+  "seen": {
+   "kind": "not online",
+   "where": "NUPERGS record(s) fetched 29 Oct 2026 (ufrgs.br/nupergs detalhe-acervo): text summary only; the pages carry no scan, only a generic site image identical across records.",
+   "extent": "Docs 17, 312, 479, 483, 881, 1032, 1055, 1129 (cipher telegrams), doc 203 + 202 (a 1923 plaintext/ciphertext pair), docs 993-994 (code sheets).",
+   "cipher": "NUPERGS: 'Telegrama cifrado' (four with no content, three with gists). Code sheet doc 993 (record 5912, fetched): declaration to Flores da Cunha, 'Codigos para cifrar e decifrar documentos', contents not described. Search listing: a 1923 coded copy of telegram 202 exists, and a letter sends 'uma chave telegrafica' from Honorio Lemos's archive."
+  },
+  "prior_art": {
+   "decode": "Repo DECODE dumps searched through known.py (names/NUPERGS); web search 'DECODE Brazil cipher Portuguese 19th-20th century' found no Brazilian 19th/20th-century record (only 1640s Dutch-Brazil items); not on DECODE.",
+   "tomokiyo": "cryptiana (Tomokiyo) site-restricted web searches on the topic returned no pages (the index of that site is thin, so this is weak evidence); general web searches for the shelfmark/topic + cifra/cipher/decipher found no Tomokiyo mention.",
+   "lasry": "Web search (DECODE, Lasry, Tomokiyo, Brazilian diplomatic code) found no Lasry work on Brazilian 19th-20th-century ciphers; known.py no ledger hit.",
+   "edition": "No edition found.",
+   "literature": "Searches on Flores da Cunha / Honorio Lemos found only NUPERGS records."
+  },
+  "key_check": "The archive's own code sheets (docs 993-994) and the 202/203 pair are the key and crib; none was seen. Not a key lookup yet.",
+  "duplicates": "known.py on 'Flores da Cunha', 'Borges de Medeiros', 'NUPERGS': hits are catalogue.json entries for CPDOC Aranha-Flores da Cunha leads (different archive, different letters) and this lead; the code sheets appear there as a key lead, not as a duplicate.",
+  "verdict": "open"
+ },
+ "1497": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 24",
+  "seen": {
+   "kind": "not online",
+   "where": "NUPERGS record(s) fetched 29 Oct 2026 (ufrgs.br/nupergs detalhe-acervo): text summary only; the pages carry no scan, only a generic site image identical across records.",
+   "extent": "Docs 314, 315, 348, 649, 654 (records 328, 329, 363, 4172, 4177), 1931-33.",
+   "cipher": "Record 4172 (doc 649, Raul Pilla to Joao Neves da Fontoura, fetched): 'Carta cifrada' with a gist (links among exiles, war with Argentina); the clear gist was apparently read, but no cipher text or key is shown."
+  },
+  "prior_art": {
+   "decode": "Repo DECODE dumps searched through known.py (names/NUPERGS); web search 'DECODE Brazil cipher Portuguese 19th-20th century' found no Brazilian 19th/20th-century record (only 1640s Dutch-Brazil items); not on DECODE.",
+   "tomokiyo": "cryptiana (Tomokiyo) site-restricted web searches on the topic returned no pages (the index of that site is thin, so this is weak evidence); general web searches for the shelfmark/topic + cifra/cipher/decipher found no Tomokiyo mention.",
+   "lasry": "Web search (DECODE, Lasry, Tomokiyo, Brazilian diplomatic code) found no Lasry work on Brazilian 19th-20th-century ciphers; known.py no ledger hit.",
+   "edition": "No edition found.",
+   "literature": "Searches on Raul Pilla / Frente Unica exiles found catalogue summaries (CEDAP, NUPERGS) and no study of coded letters."
+  },
+  "key_check": "No key held; if the gist came from a decipherment it may be on the document, unverified.",
+  "duplicates": "known.py on 'Raul Pilla', 'Frente Unica', 'NUPERGS': only this lead and its latam_brazil source.",
+  "verdict": "open"
+ },
+ "1498": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 24",
+  "seen": {
+   "kind": "not online",
+   "where": "NUPERGS record(s) fetched 29 Oct 2026 (ufrgs.br/nupergs detalhe-acervo): text summary only; the pages carry no scan, only a generic site image identical across records.",
+   "extent": "Docs 325, 326, 342, 343 (records 6487, 6488...), Nov - Dec 1924, about 4-6 telegrams.",
+   "cipher": "Record 6487 (12 Nov 1924, Conceicao to Anacleto Firpo, Artigas, fetched): 'Telegrama cifrado da Conceicao para o Firpo', no content; search listing shows 7-8 Dec 1924 telegrams from Brasil Viana and Santos described as 'Mensagem em codigo'."
+  },
+  "prior_art": {
+   "decode": "Repo DECODE dumps searched through known.py (names/NUPERGS); web search 'DECODE Brazil cipher Portuguese 19th-20th century' found no Brazilian 19th/20th-century record (only 1640s Dutch-Brazil items); not on DECODE.",
+   "tomokiyo": "cryptiana (Tomokiyo) site-restricted web searches on the topic returned no pages (the index of that site is thin, so this is weak evidence); general web searches for the shelfmark/topic + cifra/cipher/decipher found no Tomokiyo mention.",
+   "lasry": "Web search (DECODE, Lasry, Tomokiyo, Brazilian diplomatic code) found no Lasry work on Brazilian 19th-20th-century ciphers; known.py no ledger hit.",
+   "edition": "No edition found.",
+   "literature": "Searches found the NUPERGS records and general 1924-25 revolt history only."
+  },
+  "key_check": "No key held; may share the 1923 code of lead 1489 (same Assis Brasil circle), untested.",
+  "duplicates": "known.py on 'Anacleto Firpo', 'Urbano Garcia', 'Brasil Viana': only this lead and its source.",
+  "verdict": "open"
+ },
+ "1405": {
+  "unvetted": "Access is 'online' (digitised) but NAA RecordSearch returned HTTP 403 to my fetch, so I could not look at the pages myself; the earlier 28 Oct look is the lead's own. Web search on the Fanning Island 1918 unknown-signal episode found nothing. Left as a lead."
+ },
+ "1406": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 24",
+  "seen": {
+   "kind": "not online",
+   "where": "NAA RecordSearch item page for the barcode (HTTP 403 to scripts on 29 Oct 2026, a bot check; not bypassed); catalogue title taken from the lead's earlier record.",
+   "extent": "One telegram, 1902-03.",
+   "cipher": "Catalogue title: 'Telegram in cypher from London untranslated' (Governor-General's Office). Code words mixed with clear; not digitised."
+  },
+  "prior_art": {
+   "decode": "Repo DECODE dumps searched through known.py; no Australian record; not on DECODE.",
+   "tomokiyo": "cryptiana (Tomokiyo) site-restricted web searches on the topic returned no pages (the index of that site is thin, so this is weak evidence); general web searches for the shelfmark/topic + cifra/cipher/decipher found no Tomokiyo mention.",
+   "lasry": "No Lasry work on Australian archive intercepts found by web search; known.py no ledger hit.",
+   "edition": "No edition found; searches on A6662/50 and Hopetoun-era cypher telegrams returned nothing on this item.",
+   "literature": "Web search found NAA's learning resource on a decoded 1914 Governor-General message, a different item."
+  },
+  "key_check": "Colonial Office cypher/code books are listed in NAA (A12000, A11804, B197, A9553) but none was opened or applied; edition and date match to the telegram unknown.",
+  "duplicates": "known.py on 'A6662', 'Governor-General', 'cypher untranslated': only this lead and oceania_naa sources; no duplicate.",
+  "verdict": "open"
+ },
+ "1407": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 24",
+  "seen": {
+   "kind": "not online",
+   "where": "NAA RecordSearch item page for the barcode (HTTP 403 to scripts on 29 Oct 2026, a bot check; not bypassed); catalogue title taken from the lead's earlier record.",
+   "extent": "File J427 in C443, about 3 cm of papers (box 9).",
+   "cipher": "Catalogue: 'Japanese messages in code' from papers kept by the Japanese Consul General; unknown whether code text, code-word lists or plain Japanese."
+  },
+  "prior_art": {
+   "decode": "Repo DECODE dumps searched through known.py; no Australian record; not on DECODE.",
+   "tomokiyo": "cryptiana (Tomokiyo) site-restricted web searches on the topic returned no pages (the index of that site is thin, so this is weak evidence); general web searches for the shelfmark/topic + cifra/cipher/decipher found no Tomokiyo mention.",
+   "lasry": "No Lasry work on Australian archive intercepts found by web search; known.py no ledger hit.",
+   "edition": "No edition found.",
+   "literature": "Ball and Tamura, Breaking Japanese Diplomatic Codes (ANU 2013, open access) covers D Special Section; web search did not show it discussing this file, and the book text was not read."
+  },
+  "key_check": "No Japanese consular code is held in the repo; LA-type consular codes are described in the literature as broken, but nothing was applied.",
+  "duplicates": "known.py on 'C443', 'Japanese Consul General': only this lead and its source. Sibling C443 items (e.g. J45, J290) exist at NAA but are different files.",
+  "verdict": "open"
+ },
+ "1408": {
+  "unvetted": "title-only / content unknown / possibly plain text; needs a look at the item before promotion"
+ },
+ "1409": {
+  "unvetted": "title-only / content unknown / possibly plain text; needs a look at the item before promotion"
+ },
+ "1410": {
+  "unvetted": "title-only / content unknown / possibly plain text; needs a look at the item before promotion"
+ }
+}

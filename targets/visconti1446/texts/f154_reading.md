@@ -1,0 +1,36 @@
+# BnF italien 1583 f. 154 -- Filippo Maria Visconti to Francesco Sforza, Milan 12 Dec 1446 (cipher slip): reading
+
+Novamente è zonto qui Donino da P[..]mago[?], el quale havemo conferito et ben inteso tuto quelo ve n[..]ha [dicto]
+da parte vostra; o[?] che responderò[?] che ne havemo scripto opportunamente a Pedro da Pusterla et Antonio da
+Trezo, che se transferiano da vui secretamente, et vedrano alcune cose come nostra parte, et poi quale de loro più ve
+piacerà [..] dal [..] dal [Re de Ragona], et gli d[..]ata come nostra parte. Tuto quelo vui li cometeriti, et faza
+integramente [..] loro, come vui gli haveriti imposto[?] el comandato; et così [..] comprendere come quelo [..]
+[..]ripto Pedro da Pusterla più [..] vegna [..] trovarse co' el [<] et co' el [Re de Ragona?] [..] con loro,
+secondo l'inpositione. Gli [..] facto se a vui [..] che quelo è facto [..] nostro satisfaza [..] che st[..] haver[..]
+facto de mandare uno deli nostri da vui [..] transferirsi dal [..] dal [Re de Ragona], et [..] da mandare dal [Re de
+Ragona] bene qui [..] piace; se ve parire che gli havemo a mandare altri o [..] altramente, voglat[i] [..] subito
+avisare; [..] che faremo quelo et come ve parirà et piacerà; et [..] Donino de [..] dev[..]pectare de venire [..]
+[..] sia havuta resposta dal [Papa] et dal [Re de Ragona] e dal [Duca di Ferrara?] de quelo vorano fare, diremo
+così, che, confidiando ben in [..] che termini stano li facti nostri, et quegli sia non solamente bisogno ma più che
+necesario prestisima provisione; et confidiando [..] nelle che [..] sia da fare [..] pensio[..] quelo sia d[..]e tra
+vui et avisoli senza che [..] altri gli [..] alcuno, et che [..] de haver[e] la negativa da lor[o] [..] che [..]
+condescenderano, et tuto quelo [..] haverà sia d'avanzo; che [..] non cesaremo [..] de continuare et solicitare [..]
+che ve parirà, come indurli ancora loro; et, come dicto, sino[?] certi gli condescenderano. Pur [..] penserò che vui
+[..] sino soli a che sto, si che ve confortiamo et pregamo che vui voglati deliberare de venire ali effecti et [..]
+conclusione senza alcuna [..] de tempo; et s'el [..] che la cosa stere secreta fino se havere havuta la resposta da
+loro, [..] contenti se ne faza come [..]; et così che voglati vedere se che lo ve havemo mandato [..] et scripto fino
+a qui; ve pare satisfaza a che lo se [..]; et così se habi[..] più oltra, e più una cosa che un'altra [..]. Havemo
+deliberato metterve in le mane [..] et la [..] nostra, che [..]osati fare [..] ve disponere al vostro modo, come [..]
+come [..] altre nostre ve[..] come [..] [..]gente el dicto Donino, et le cose meglio s[..] [..] et continuare. Ne pare
+che tegnati modo de mandar[..] da [..] del [..] vostri [..] fidati ch[..] mostra [..] da [..] partirse altramente senza
+licentia, e vegna qui da nui, et lo retegnaremo qui; et [..] che [..] appetiti intendere tuto che cose farà ordinando
+[..] a Cotignola, che tute le lettere [..] [che] vo mandate da le parte de pa[..] andarle a vui s[..]ito, ve se
+oportate; et così quele vui voriti mandare de pace [..] a Cotignola [..] ordine che siano die[..] [..] de le nostri
+stia [..] haveremo [..] de mandare secretamente [..] Cotignola; et così [..] haveriti de mandare da vui a Cotignola
+senza suspecto alcuno. Et questo ordine ne[?] pare se habia a t[..] [..] che tuto quelo se farà qui ve sia noto, et
+man[..]to; et oltra de questo che l[..] [..] cosa alcuna, noma co' vostro sentimento ne se f[..]a, noma quelo vui
+voriti. Et così ve confortiamo et pregamo mand[ar]li da nui che lo vostro, come è dicto, [..] vui rechediti che mandino
+uno del nostri [..] secretamente apreso a vui; e dicemo che lo faremo volontera, ma volemo che vui nominati chi più
+[..] vero mandaremo; et [..] guardati e pensati che [..] mandino alcuno fino vui haveriti rechesto in specialitate chi
+più ve piace: [..] non deliberamo mandarvelo a[l]tramente[?]. Data Mediolani die duodecimo Decembris. Filipus Maria
+Anglus [Dux Mediolani] et cetera, Papie Anglerieque Comes ac Ianue Dominus.

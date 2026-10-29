@@ -1,0 +1,80 @@
+{
+ "879": {
+  "unvetted": "TNA Discovery record not opened (no scan, not digitised); no per-lead search of Holland 1656 cipher editions (Thurloe/Birch) done beyond known.py, which finds only the sweep's own files"
+ },
+ "1254": {
+  "unvetted": "Bodleian archives site is behind a proof-of-work check (not bypassed); Harborne/Walsingham editions (CSP Foreign, Levant Company) and cryptiana not searched item by item; only known.py run"
+ },
+ "1255": {
+  "unvetted": "Bodleian records not opened; Birch Thurloe vol. II prints three Stouppe/Tarente letters with unresolved figure groups (per sweep), but Rawlinson copies, keys and cryptiana Thurloe-agents post (cryptiana.blogspot.com 2024/03) not checked; web search found Bodleian records only, no decipherment"
+ },
+ "1256": {
+  "unvetted": "Bodleian records not opened; a search snippet says the Pawly 30 Aug 1656 record carries a deciphered copy, which would make it read or duplicate, but Birch vols iv-vi and the Mountagu/Ins/Bampfylde items were not checked"
+ },
+ "1257": {
+  "unvetted": "Bodleian blocked; Whitworth/Wich despatches not searched in Robinson correspondence editions; only known.py (Whitworth hits are SP 91 Moscow items, a different series) run"
+ },
+ "1258": {
+  "unvetted": "Bodleian Carte 212 not opened; catalogue says partly deciphered; no search for Macpherson/Stuart Papers prints or key leads (Carte 50 f.405) done"
+ },
+ "1253": {
+  "unvetted": "Cambridge Digital Library and Biblissima manifest not reachable from scripts (CUDL returned an HTML shell, Biblissima no JSON), so the leaves were not viewed; web search (GEMMS lists 'Rawley's cipher' as a language) found no reading; needs a viewed folio and Rawley/Bacon edition check"
+ },
+ "1264": {
+  "unvetted": "ArchiveSearch record not opened and Dd.6.4 not viewed; could be Arabic/Ethiopic rather than a cipher; no search of Castell/Lexicon Heptaglotton correspondence literature"
+ },
+ "1250": {
+  "unvetted": "NRS pages return 403 to WebFetch; overlap with targets/hamilton and Gardiner's Hamilton Papers print not resolved item by item; needs per-item split of which of the ~14 are not already in targets/hamilton"
+ },
+ "1251": {
+  "unvetted": "NRS GD406/1/2192 returned 403, not viewed; known.py finds only sweep files; no search of Vane's 1632 Ulm despatches in Gardiner/Hamilton papers or CSP Domestic done"
+ },
+ "1259": {
+  "unvetted": "NRS GD16/34/1 not opened (403); no search of Beaton/Ogilvy 1577-81 cipher letters in Mary Stuart cipher literature (Lasry/Tomokiyo/Cryptool) done"
+ },
+ "1260": {
+  "unvetted": "NRS GD124/15/1256 not opened (403); the 'note of the cipher' may make it a key sheet; HMC Mar and Kellie Supplementary Report not searched"
+ },
+ "1261": {
+  "unvetted": "NRS CH12/12/1877 not opened (403); no search of Keith's Jacobite cipher copies (Lyon, Tomokiyo Jacobite pages) done"
+ },
+ "1262": {
+  "unvetted": "NRS Breadalbane items not opened (403) and not individually checked for decipherment; no search of Argyll/Forrester cipher letters done"
+ },
+ "1263": {
+  "unvetted": "NRS GD124/15/975 items not opened (403); may only mention a key; HMC Mar and Kellie Supplementary Report not searched"
+ },
+ "1278": {
+  "unvetted": "Penn finding aid not opened (certificate error); web search (finding aid, SNAC) confirms 79 Torcy letters mostly in cipher with keys present, no decipherment or transcription found, but no scan seen, no check of Torcy-Gaultier prints (Affaires etrangeres) and no key applied"
+ },
+ "1279": {
+  "unvetted": "Princeton finding aid unreachable (certificate error), item not digitised; State Department 1812 code (Barlow 1811 interlinear at NARA M34) not applied; no print search beyond known.py"
+ },
+ "1280": {
+  "unvetted": "Founders Online 99-01-02-08240 exists (letter Washington to Greene, 23 Apr 1782, Head Quarters Newburgh) but the fetch came back empty so its source note, whether decoded, was not seen; Princeton item not viewed. Likely already printed deciphered"
+ },
+ "1281": {
+  "unvetted": "Houghton HOLLIS record not opened; web search found no mention of the 29 Aug 1691 Bliss item; Catinat 1691 code is unread per Tomokiyo (louisxiv.htm s.9, cited in catalogue 354) and Bazeries Grand chiffre 1691 not applied; scan not seen"
+ },
+ "1252": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 32",
+  "seen": {
+   "kind": "scan",
+   "where": "Wellcome MS.309 (b19695561) via iiif.wellcomecollection.org IIIF manifest (337 canvases), canvas 21 (page 18) viewed at 1000 px; catalogue text at wellcomecollection.org/works/vq9e75rz",
+   "extent": "pp. 1-178 entirely in cipher per catalogue (about 170 pages of small-format cipher, 51 symbols); page 18 seen as a full page of about 25 lines of sign groups, word-spaced with commas, no interlinear gloss",
+   "cipher": "Single-sign substitution (51 symbols, nulls/word dividers by comma) on German alchemical text; no decipherment written on the leaf; the volume holds a loose manuscript key by Julius Kohn (London, Nov 1889) and his reversed alphabet on pp. 260-261, so a key exists but is a 19th-century modern key"
+  },
+  "prior_art": {
+   "decode": "Not on DECODE (known.py 'Gerlach' finds only Ungnad/Gerlach Tage-Buch notes and the sweep files, no record for Wellcome MS 309).",
+   "tomokiyo": "cryptiana search (web) for Gerlach returned nothing; not in the cryptiana unsolved list as far as the searches show.",
+   "lasry": "No Lasry paper found by web search on Gerlach or Wellcome MS 309.",
+   "edition": "No edition found; Wellcome catalogue lists work as Occulta scripta chymica, 1572-76, Gottersdorf/Naumburg, colophon naming pastor Severinus Drescherus.",
+   "literature": "Two web searches (Gerlach + Kohn key; alchemical cipher keys) found a 2024 Tartu survey 'Sources of Alchemical Cryptography' and a blog noting Wellcome alchemical keys are often incomplete; no published reading of MS 309 found, so whether Kohn's key was ever applied is unknown."
+  },
+  "key_check": "Kohn's key is bound in the volume (not transcribed here); not applied because the key page and the sign inventory were not extracted in this session. Repo holds no Gerlach key (known.py). Next step: transcribe Kohn's key and test it on a page.",
+  "duplicates": "known.py 'Gerlach' and 'Wellcome 309': only research/oldest/scan_2026-09-23/france_england_mss.md and uk_libraries README mention MS 309; not in catalogue.json or DECODE; no duplicate.",
+  "verdict": "key_lookup",
+  "closed": "Cipher pages 1-178 come with a bound-in key (Julius Kohn, 1889); the job is applying that key, not a ciphertext-only attack. Reading status of Kohn's key unverified."
+ }
+}

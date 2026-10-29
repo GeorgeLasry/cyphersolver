@@ -1,0 +1,131 @@
+{
+ "1282": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 33",
+  "seen": {
+   "kind": "not online",
+   "where": "HOLLIS record hou01434c00014 (Houghton Autograph File K); HOLLIS Archival Discovery page is a JavaScript shell that WebFetch returned empty, so only the finding-aid wording carried in the lead was available; the lead's access note says the record has no digital object.",
+   "extent": "One letter signed, Regensburg 11 Jun 1532; amount of cipher not stated ('Partly in code').",
+   "cipher": "HOLLIS description: 'Partly in code.' No decipherment or clear copy mentioned; leaf not seen."
+  },
+  "prior_art": {
+   "decode": "known.py on 'Karl V','Ratisbone','Lope Hurtado' found only repo leads and targets lopehurtado1522/1523, no DECODE record for 1532.",
+   "tomokiyo": "Not searched on cryptiana directly; web search for 1532 Regensburg Lope Hurtado cipher returned nothing from Tomokiyo.",
+   "lasry": "No Lasry/DECODE item for this letter found by known.py or web search.",
+   "edition": "CSP Spain vol. 4 pt 2 (1531-33) calendars Ratisbone letters of April 1532 (nos. 939-940) but a search found nothing for this 11 Jun item; Houghton autograph not likely calendared.",
+   "literature": "Web search 'Charles V Lope Hurtado 1532 Regensburg cipher letter decipherment' found only the 1547 Saint-Mauris letter and unrelated Hurtado items."
+  },
+  "key_check": "Repo keys for Hurtado (lopehurtado1522, lopehurtado1523, Luo 2021 Charles V tables) are 1520s ciphers; none applied because no ciphertext was seen.",
+  "duplicates": "known.py 'Karl V','Ratisbone','Lope Hurtado','1532' and a CSP Spain search: no duplicate of this Houghton item; siblings are the 1520-24 Hurtado leads.",
+  "verdict": "open"
+ },
+ "1283": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 33",
+  "seen": {
+   "kind": "not online",
+   "where": "HOLLIS records hou00671c00022 and c00023 (Houghton Vitte autograph album); HOLLIS Archival Discovery page is a JavaScript shell that WebFetch returned empty, so only the finding-aid wording carried in the lead was available; the lead's access note says the record has no digital object.",
+   "extent": "Two album items (1742, 20 Mar 1744), each 'written in cipher'; length unknown, album pieces usually short.",
+   "cipher": "HOLLIS: 'Written in cipher' for both Bestuzhev-Riumin items; no decipherment noted; leaves not seen."
+  },
+  "prior_art": {
+   "decode": "known.py 'Bestuzhev','Vitte' found no DECODE record; only a French consular code row and the lead itself.",
+   "tomokiyo": "Web search found no cryptiana page on Russian 1740s ciphers.",
+   "lasry": "Nothing found.",
+   "edition": "Web search (Bestuzhev cipher 1744 Houghton Vitte) found no edition or facsimile of the album items.",
+   "literature": "Searches on Russian chancery cipher tables of the 1740s returned history of perlustration but no description or decipherment of Bestuzhev's own tables."
+  },
+  "key_check": "No Russian 1740s cipher key held in repo or DECODE (known.py); none to test.",
+  "duplicates": "known.py 'Bestuzhev','Vorontsov','Vitte': only Central Archives French consular row (different matter); no duplicate.",
+  "verdict": "open"
+ },
+ "1284": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 33",
+  "seen": {
+   "kind": "not online",
+   "where": "HOLLIS record hou01549c00007 (Houghton Washburne autograph collection); HOLLIS Archival Discovery page is a JavaScript shell that WebFetch returned empty, so only the finding-aid wording carried in the lead was available; the lead's access note says the record has no digital object.",
+   "extent": "One autograph letter, Miranda de Ebro 9 Jan 1837; extent of cipher unknown ('Partly in cipher').",
+   "cipher": "HOLLIS: 'Partly in cipher.' No decipherment noted; leaf not seen."
+  },
+  "prior_art": {
+   "decode": "known.py 'Harispe' hit only the lead; no DECODE record.",
+   "tomokiyo": "No cryptiana entry found in searches.",
+   "lasry": "Nothing found.",
+   "edition": "Searched French/English for Bazaine-Harispe 1837 chiffre: no edition or printed decipherment found.",
+   "literature": "Web search found only background on Bazaine in the Carlist War and Harispe's Legion command; nothing on this letter."
+  },
+  "key_check": "Repo holds Bazaine's 1866 Mexican cable only; no 1830s French army key held, so none applied.",
+  "duplicates": "known.py 'Harispe' and 'Bazaine' terms: no duplicate of this letter.",
+  "verdict": "open"
+ },
+ "1298": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 33",
+  "seen": {
+   "kind": "not online",
+   "where": "Lead 1442 in research/leads.json (Harvard Library Curiosity record) and HOLLIS bak00823 as cited by 1298",
+   "extent": "Several pages of symbols in the William Parker daybooks (same finding aid wording).",
+   "cipher": "Finding aid wording identical in both leads: 'several pages filled with unidentified symbols, possibly a cipher'."
+  },
+  "prior_art": {
+   "decode": "known.py found no DECODE record.",
+   "tomokiyo": "No cryptiana entry; not searched beyond known.py.",
+   "lasry": "None.",
+   "edition": "None known.",
+   "literature": "Not searched further, since the lead is a duplicate."
+  },
+  "key_check": "No key held; closed as duplicate before key testing.",
+  "duplicates": "known.py 'William Parker','bak00823' finds lead 1442 (Baker Library, William Parker legal daybooks, same description, Hollis 990146986160203941) and research/dpla_smithsonian/candidates.json: same item.",
+  "verdict": "duplicate",
+  "closed": "same item as lead 1442 (William Parker legal daybooks, Baker Library)"
+ },
+ "1285": {
+  "unvetted": "known.py found only tna_discovery/uk_tna notes (Grantham-Robinson L 30/15/54 private family code); no web search done and the Houghton item (access online) was not opened."
+ },
+ "1286": {
+  "unvetted": "known.py clean and 2 searches (Georgian exile cipher telegrams; Houghton) found no decipherment, but the extent is unknown: microform, dozens of folders marked 'in cipher', HOLLIS page not renderable; needs the folder list and film images."
+ },
+ "1287": {
+  "unvetted": "Finding aid and PMA records fetched: ledgers 'written primarily in code', not deciphered (2006), key said to be a Social Security number based key in the 'Word and number puzzles' series; all pages digitised but no scan was opened; ledgers run 1935-1959 so mostly past 1950. Needs a look at digital object 22426 and the puzzles series."
+ },
+ "1288": {
+  "unvetted": "known.py found only the lead and access_uncertain.md; no search or finding-aid fetch done beyond that; likely commercial telegraph code."
+ },
+ "1289": {
+  "unvetted": "known.py only; no searches done on Joel Cadbury 1856 letter."
+ },
+ "1290": {
+  "unvetted": "known.py only; no searches done on McIntosh letters."
+ },
+ "1291": {
+  "unvetted": "known.py only; no searches done on Gift cipher letter."
+ },
+ "1292": {
+  "unvetted": "known.py only; Gordon 1877 coded message not searched."
+ },
+ "1293": {
+  "unvetted": "known.py only; MHS Paine edition not searched."
+ },
+ "1294": {
+  "unvetted": "known.py clean; web search found no cipher content beyond the lead's guide wording (the guide has a 'Cipher Key' section, not read); collection-level only, extent unknown."
+ },
+ "1295": {
+  "unvetted": "known.py clean; web search could not confirm the coded diary beyond the lead's guide text; diary volume not located."
+ },
+ "1296": {
+  "unvetted": "known.py only; DeGrasse-Howard journal not searched."
+ },
+ "1297": {
+  "unvetted": "known.py only; Keegan 1919 journal pages not searched."
+ },
+ "1303": {
+  "unvetted": "Schmeh page read (90 digits, 3 lines of 30, July 1934 Adventure p.124, unsolved; Poe codebook claim unverified); known.py no hit; but the issue scan on archive.org was not opened so the digits were not seen first-hand. Likely open; needs the scan."
+ },
+ "1304": {
+  "unvetted": "Schmeh post read (cover image only, no character count; polyalphabetic suspected; partial plaintext 'caisson, canteen, Spotteswood, louse, pirated' on the cover itself); cover image and dealer page not examined; partly read, so needs the image before a verdict."
+ },
+ "1305": {
+  "unvetted": "Schmeh post read: gaps remain in a reader partial solution ('MEXICO CITY', 'WE ARE DOING'), Friedman pencil attempt noted; image of the plate not seen, so extent and verdict not settled."
+ }
+}

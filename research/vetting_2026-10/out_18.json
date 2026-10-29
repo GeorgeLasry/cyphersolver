@@ -1,0 +1,407 @@
+{
+ "1017": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 18",
+  "seen": {
+   "kind": "not online",
+   "where": "archive.org letterspapersfor17greauoft (LP Henry VIII vol. 17, OCR read 29 Oct 2026): no. 1051, p. 590-591 with footnote; Haynes, State Papers 1542-1570 (IA bim_eighteenth-century_a-collection-of-state-pa_1740) OCR searched; Hatfield MS 231 no. 83 itself not online",
+   "extent": "first two lines of a letter of about a page; the rest is in clear English",
+   "cipher": "LP footnote: 'The first two lines are described by the transcriber as being in cipher undeciphered.' The calendar (not the MS) is the evidence; the Haynes OCR has the same Norfolk/Suffolk/Browne letter to Hertford printed (pp. 1-2) but the OCR is too poor to tell how the two cipher lines were printed."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE: known.py has no hit for Hatfield MS 231, Haynes or the Hertford letter; Hatfield House is not a DECODE series.",
+   "tomokiyo": "Tomokiyo's cryptiana pages do not index Henry VIII border correspondence of 1542; web search (Norfolk Hertford 1542 cipher Hatfield 231) returned only BHO calendar pages, no cipher commentary.",
+   "lasry": "No Lasry or DECODE item on Henry VIII border letters found (web search and known.py).",
+   "edition": "Printed twice: Haynes 1740 pp. 1-2 and calendared in LP Henry VIII 17 no. 1051; the transcriber's note says the cipher lines were not read, so neither edition gives a decipherment.",
+   "literature": "HMC Salisbury Pt I no. 79 is the calendar of the Cecil MS; the BHO cross-references for neighbouring letters (LP 1016, 1077) mention no cipher key; no study found."
+  },
+  "key_check": "No key for the Norfolk/Suffolk/Browne border-command cipher of Nov 1542 is held in the repo or known; Paget's offer to devise a cipher for Hertford (Haynes, March 1543) is a different, later exchange. Only two lines, so no statistical attack is possible even with the image.",
+  "duplicates": "known.py on 'Hatfield MS 231', 'Hertford', 'Haynes' and the LP number: hits only the lead itself, research/ia_pass2_a and unrelated Oxford text; no catalogue entry or DECODE record.",
+  "verdict": "open"
+ },
+ "1018": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 18",
+  "seen": {
+   "kind": "not online",
+   "where": "archive.org calendarofletter0003pasc (CSP Spanish III part 2, Gayangos 1873, OCR read 29 Oct 2026), no. 609 pp. 1002-1003 and footnote; RAH Salazar catalogue OCR searched for 1526.11.16",
+   "extent": "about 2 pages, 'scarcely one half' legible per the calendar; torn",
+   "cipher": "Calendar footnote: 'The letter is almost entirely in cipher, but so torn and mutilated that scarcely one half of it can be read. No deciphering, however, is appended.' Original draft pp. 14 per the calendar; the repository stamp is garbled in the OCR (the next entry, no. 610, is RAH Salazar A. 39 ff. 114, 116). The manuscript was not seen."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE: known.py has no record for the Abbot of Najera 1526 except lopehurtado1523 (a different Najera clear leaf of 1523); Salazar A-39 is not among the DECODE volumes.",
+   "tomokiyo": "Tomokiyo's Charles V pages not checked page by page; web search (Emperor Abbot of Najera 16 Nov 1526 cipher) returned only the BHO calendar and Charles V news (1547 Saint-Mauris), nothing on this item.",
+   "lasry": "No Lasry item on Najera/Charles V 1526 found in two web searches.",
+   "edition": "Calendared by Gayangos (1873) with the readable half printed; the RAH catalogue lists a clear copy of an Emperor to Fernando Marin, abbot of Najera letter of 16 Nov 1526 (Granada) made by Uztarroz in 1653 at A-45 ff. 293v-294 (inventory 7104; Lannoy at Cartagena, Leyva a good servant) which may be a clear text of this chancery letter; not compared.",
+   "literature": "Najera's own 1526 despatches carry contemporary decipherments (many in the calendar), but the Emperor-to-Najera letter 609 does not; no study found."
+  },
+  "key_check": "Charles V's Italian-army cipher of 1526 (the one Najera received) is not held; sibling letters of the series have contemporary decipherments in the calendar, so a crib may exist, but no key table for it is in the repo. Not applied: the leaf is not imaged and the repository is unresolved.",
+  "duplicates": "known.py on 'CSP Spanish vol. III', 'Najera': hits only the lead, research/ia_pass2_a and the lopehurtado1523 note (a different 1523 clear leaf). No duplicate catalogue entry. Possible clear counterpart at RAH A-45 ff. 293v-294 noted above.",
+  "verdict": "open"
+ },
+ "1041": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 18",
+  "seen": {
+   "kind": "not online",
+   "where": "archive.org/details/salazary-castro-22-nov-2016 (RAH Salazar y Castro catalogue, OCR text downloaded and read 29 Oct 2026, A-10, f. 3, no. inventory no. 952); no scan located: RAH Biblioteca Digital is bot-blocked for scripts and an earlier session (targets/garcilaso1498) found no A-11 letters there; Europeana API search for the correspondents gave 0 hits",
+   "extent": "one letter of one folio: a clear opening ('do not take as a joke what I ask') and then 'sigue la carta en cifra'; cipher length unknown",
+   "cipher": "RAH entry: 'Carta de Fernando el Catolico a su padre, Juan II de Aragon, pidiendole no tome a broma lo que solicita; y sigue la carta en cifra. Original, con la firma del Principe.' No decipherment mentioned, and the neighbouring entries (nos. 951, 953) are clear letters."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE: known.py (DECODE views dumps, Cryptoole snapshot) has no hit for this shelfmark or the correspondents; DECODE holds Salazar volumes 9/8, 9/17, 9/23-9/31, 9/34 and the 9/15 key records R9815-R9832, and from 9/7-9/8 only R9483-R9485 / R9591 (Ferriz 1475, Leonor 1476, Despuig 1478, Claver 1500), none this letter.",
+   "tomokiyo": "Tomokiyo's Spanish page (spanish.htm, local copy in targets/esp318/lit/crypt and garcilaso1498/lit) grepped for Salazar and the correspondents (Despuig, Claver, Figueroa, Garcilaso, Fonseca, Belmonte): it mentions only the Alonso de Silva-Garcilaso key (RAH 9/15 ff. 11-14) and Parisi 2004; nothing on this letter.",
+   "lasry": "No Lasry paper or GL.htm entry on this letter: two web searches (correspondents + cifra + Salazar y Castro; Gran Capitan/CNI) found only the CNI 2018 decipherment of the Maqueda letters 1502-03 and Lasry's Espagnol 318 work, a different archive and cipher.",
+   "edition": "Galende Diaz 1993-94 ('La escritura cifrada durante el reinado de los Reyes Catolicos y Carlos V', local text targets/esp318/lit/galende1994.txt) lists cipher letters of BRAH 9/7, 9/8, 9/11, 9/12 but not this one; Parisi 2004 and Parisi 2019 (ASPN 137, five Claver letters 1500-02) do not cover it.",
+   "literature": "Web searches (correspondents + cifra; Salazar y Castro + descifrado; Galende/Parisi) found no study or edition of this letter."
+  },
+  "key_check": "Keys held: Cifra general (BRAH 9/15 ff. 7-10, DECODE R9821) and the other 9/15 sheets R9815-R9832 were compared in targets/garcilaso1498 and esp318 only against other letters; not applied here because no image of the leaf is available. No key for this sender is known. A 1472 prince's cipher predates the cifra general (c. 1480s+).",
+  "duplicates": "known.py on 'Salazar y Castro A-10', 'Ferdinand', 'inventario 952': no catalogue entry; lead 1043 (A-10 f. 9, 1478) is a separate letter; research/oldest CANDIDATES (B4) lists 9/7-9/8 only.",
+  "verdict": "open"
+ },
+ "1042": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 18",
+  "seen": {
+   "kind": "not online",
+   "where": "archive.org/details/salazary-castro-22-nov-2016 (RAH Salazar y Castro catalogue, OCR text downloaded and read 29 Oct 2026, A-7, ff. 219-220, no. inventory no. 675); no scan located: RAH Biblioteca Digital is bot-blocked for scripts and an earlier session (targets/garcilaso1498) found no A-11 letters there; Europeana API search for the correspondents gave 0 hits",
+   "extent": "one letter, two folios, entirely in cipher",
+   "cipher": "RAH entry: 'Carta del maestre de Montesa, Luis Despuig, a Juan II de Aragon, y a Fernando el Catolico. En cifra. Original.' No decipherment noted (the 'no existe el texto descifrado' remark in the OCR attaches to Despuig's 1478 letter, f. 236, inventory 681)."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE: known.py (DECODE views dumps, Cryptoole snapshot) has no hit for this shelfmark or the correspondents; DECODE holds Salazar volumes 9/8, 9/17, 9/23-9/31, 9/34 and the 9/15 key records R9815-R9832, and from 9/7-9/8 only R9483-R9485 / R9591 (Ferriz 1475, Leonor 1476, Despuig 1478, Claver 1500), none this letter.",
+   "tomokiyo": "Tomokiyo's Spanish page (spanish.htm, local copy in targets/esp318/lit/crypt and garcilaso1498/lit) grepped for Salazar and the correspondents (Despuig, Claver, Figueroa, Garcilaso, Fonseca, Belmonte): it mentions only the Alonso de Silva-Garcilaso key (RAH 9/15 ff. 11-14) and Parisi 2004; nothing on this letter.",
+   "lasry": "No Lasry paper or GL.htm entry on this letter: two web searches (correspondents + cifra + Salazar y Castro; Gran Capitan/CNI) found only the CNI 2018 decipherment of the Maqueda letters 1502-03 and Lasry's Espagnol 318 work, a different archive and cipher.",
+   "edition": "Galende Diaz 1993-94 ('La escritura cifrada durante el reinado de los Reyes Catolicos y Carlos V', local text targets/esp318/lit/galende1994.txt) lists cipher letters of BRAH 9/7, 9/8, 9/11, 9/12 but not this one; Parisi 2004 and Parisi 2019 (ASPN 137, five Claver letters 1500-02) do not cover it. Galende gives Despuig's letter of 3 Dec 1478 (9/7 f. 236) but not this one of 7 Nov 1477.",
+   "literature": "Web searches (correspondents + cifra; Salazar y Castro + descifrado; Galende/Parisi) found no study or edition of this letter. Biographies of Despuig (DBE, Enciclopedia Catalana) do not mention the cipher."
+  },
+  "key_check": "Keys held: Cifra general (BRAH 9/15 ff. 7-10, DECODE R9821) and the other 9/15 sheets R9815-R9832 were compared in targets/garcilaso1498 and esp318 only against other letters; not applied here because no image of the leaf is available. No key for this sender is known. Despuig 1478 (R9483-R9485 series) is a different leaf; its sign system was not compared.",
+  "duplicates": "known.py on 'Despuig', 'Salazar y Castro A-7': hits Despuig 1478 (f. 236, 9/7) in research/oldest/CANDIDATES.md B4 and ia_pass2_c README, a different letter (3 Dec 1478); not a duplicate of 7 Nov 1477 (ff. 219-220).",
+  "verdict": "open"
+ },
+ "1043": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 18",
+  "seen": {
+   "kind": "not online",
+   "where": "archive.org/details/salazary-castro-22-nov-2016 (RAH Salazar y Castro catalogue, OCR text downloaded and read 29 Oct 2026, A-10, f. 9, no. inventory no. 958); no scan located: RAH Biblioteca Digital is bot-blocked for scripts and an earlier session (targets/garcilaso1498) found no A-11 letters there; Europeana API search for the correspondents gave 0 hits",
+   "extent": "one letter, one folio, entirely in cipher, signed by the King",
+   "cipher": "RAH entry: 'Carta de Fernando el Catolico al rey Juan II, su padre, en cifra. Original, con la firma del Rey' (Madrid, April 1478). No decipherment noted."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE: known.py (DECODE views dumps, Cryptoole snapshot) has no hit for this shelfmark or the correspondents; DECODE holds Salazar volumes 9/8, 9/17, 9/23-9/31, 9/34 and the 9/15 key records R9815-R9832, and from 9/7-9/8 only R9483-R9485 / R9591 (Ferriz 1475, Leonor 1476, Despuig 1478, Claver 1500), none this letter.",
+   "tomokiyo": "Tomokiyo's Spanish page (spanish.htm, local copy in targets/esp318/lit/crypt and garcilaso1498/lit) grepped for Salazar and the correspondents (Despuig, Claver, Figueroa, Garcilaso, Fonseca, Belmonte): it mentions only the Alonso de Silva-Garcilaso key (RAH 9/15 ff. 11-14) and Parisi 2004; nothing on this letter.",
+   "lasry": "No Lasry paper or GL.htm entry on this letter: two web searches (correspondents + cifra + Salazar y Castro; Gran Capitan/CNI) found only the CNI 2018 decipherment of the Maqueda letters 1502-03 and Lasry's Espagnol 318 work, a different archive and cipher.",
+   "edition": "Galende Diaz 1993-94 ('La escritura cifrada durante el reinado de los Reyes Catolicos y Carlos V', local text targets/esp318/lit/galende1994.txt) lists cipher letters of BRAH 9/7, 9/8, 9/11, 9/12 but not this one; Parisi 2004 and Parisi 2019 (ASPN 137, five Claver letters 1500-02) do not cover it.",
+   "literature": "Web searches (correspondents + cifra; Salazar y Castro + descifrado; Galende/Parisi) found no study or edition of this letter."
+  },
+  "key_check": "Keys held: Cifra general (BRAH 9/15 ff. 7-10, DECODE R9821) and the other 9/15 sheets R9815-R9832 were compared in targets/garcilaso1498 and esp318 only against other letters; not applied here because no image of the leaf is available. No key for this sender is known. Closest known systems: Ferriz 1475 / Leonor 1476 (R9483-R9485), compared by no one for this leaf.",
+  "duplicates": "known.py on 'Ferdinand', 'Salazar y Castro A-10', 'inventario 958': no catalogue entry or lead other than 1041 (different date and folio).",
+  "verdict": "open"
+ },
+ "1044": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 18",
+  "seen": {
+   "kind": "not online",
+   "where": "archive.org/details/salazary-castro-22-nov-2016 (RAH Salazar y Castro catalogue, OCR text downloaded and read 29 Oct 2026, A-7, f. 237, no. inventory no. 682); no scan located: RAH Biblioteca Digital is bot-blocked for scripts and an earlier session (targets/garcilaso1498) found no A-11 letters there; Europeana API search for the correspondents gave 0 hits",
+   "extent": "one folio, a draft (borrador) in clear for later enciphering",
+   "cipher": "RAH entry: 'Carta de Juan II de Aragon a Fernando el Catolico diciendole que si la reina Isabel tuviera un hijo varon ... Borrador manuscrito, al parecer, preparado para ser trasladado en cifra.' The catalogue describes a plaintext draft, not ciphertext, and gives its content; the 'no existe el texto descifrado' remark belongs to the preceding entry (no. 681)."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE: known.py (DECODE views dumps, Cryptoole snapshot) has no hit for this shelfmark or the correspondents; DECODE holds Salazar volumes 9/8, 9/17, 9/23-9/31, 9/34 and the 9/15 key records R9815-R9832, and from 9/7-9/8 only R9483-R9485 / R9591 (Ferriz 1475, Leonor 1476, Despuig 1478, Claver 1500), none this letter.",
+   "tomokiyo": "Tomokiyo's Spanish page (spanish.htm, local copy in targets/esp318/lit/crypt and garcilaso1498/lit) grepped for Salazar and the correspondents (Despuig, Claver, Figueroa, Garcilaso, Fonseca, Belmonte): it mentions only the Alonso de Silva-Garcilaso key (RAH 9/15 ff. 11-14) and Parisi 2004; nothing on this letter.",
+   "lasry": "No Lasry paper or GL.htm entry on this letter: two web searches (correspondents + cifra + Salazar y Castro; Gran Capitan/CNI) found only the CNI 2018 decipherment of the Maqueda letters 1502-03 and Lasry's Espagnol 318 work, a different archive and cipher.",
+   "edition": "Galende Diaz 1993-94 ('La escritura cifrada durante el reinado de los Reyes Catolicos y Carlos V', local text targets/esp318/lit/galende1994.txt) lists cipher letters of BRAH 9/7, 9/8, 9/11, 9/12 but not this one; Parisi 2004 and Parisi 2019 (ASPN 137, five Claver letters 1500-02) do not cover it.",
+   "literature": "Web searches (correspondents + cifra; Salazar y Castro + descifrado; Galende/Parisi) found no study or edition of this letter."
+  },
+  "key_check": "No key needed: the leaf is described as a clear draft; the enciphered fair copy (if any) is not in this volume per the neighbouring entries 681 and 683.",
+  "duplicates": "known.py on 'Salazar y Castro A-7', 'Juan II Ferdinand 1478': no other record; the sibling Despuig letter of 3 Dec 1478 (f. 237 neighbour f. 236) is a different item.",
+  "verdict": "not_cipher",
+  "closed": "RAH catalogue entry 682 describes a clear draft 'preparado para ser trasladado en cifra', i.e. plaintext; judged on the archive's own description (leaf not seen)."
+ },
+ "1045": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 18",
+  "seen": {
+   "kind": "not online",
+   "where": "archive.org/details/salazary-castro-22-nov-2016 (RAH Salazar y Castro catalogue, OCR text downloaded and read 29 Oct 2026, A-11, ff. 127-129, no. inventory no. 1078); no scan located: RAH Biblioteca Digital is bot-blocked for scripts and an earlier session (targets/garcilaso1498) found no A-11 letters there; Europeana API search for the correspondents gave 0 hits",
+   "extent": "3 folios of cipher (f. 130 blank); 'hoy ilegible, a causa de la humedad'",
+   "cipher": "RAH entry: 'Carta de Antonio de Fonseca a los Reyes Catolicos ... En cifra. Original. Hoy ilegible, a causa de la humedad.' No decipherment noted. A clear letter of the same date (Milan 14 Jan 1497, Fonseca asks leave to return to Spain for his health) is A-8 f. 141 (inventory 766), printed by Suarez Fernandez, Politica internacional V pp. 207-208; Claver 2025 n. 162 suggests the cipher letter 'quiza' was transcribed in it."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE: known.py (DECODE views dumps, Cryptoole snapshot) has no hit for this shelfmark or the correspondents; DECODE holds Salazar volumes 9/8, 9/17, 9/23-9/31, 9/34 and the 9/15 key records R9815-R9832, and from 9/7-9/8 only R9483-R9485 / R9591 (Ferriz 1475, Leonor 1476, Despuig 1478, Claver 1500), none this letter.",
+   "tomokiyo": "Tomokiyo's Spanish page (spanish.htm, local copy in targets/esp318/lit/crypt and garcilaso1498/lit) grepped for Salazar and the correspondents (Despuig, Claver, Figueroa, Garcilaso, Fonseca, Belmonte): it mentions only the Alonso de Silva-Garcilaso key (RAH 9/15 ff. 11-14) and Parisi 2004; nothing on this letter.",
+   "lasry": "No Lasry paper or GL.htm entry on this letter: two web searches (correspondents + cifra + Salazar y Castro; Gran Capitan/CNI) found only the CNI 2018 decipherment of the Maqueda letters 1502-03 and Lasry's Espagnol 318 work, a different archive and cipher.",
+   "edition": "Galende Diaz 1993-94 ('La escritura cifrada durante el reinado de los Reyes Catolicos y Carlos V', local text targets/esp318/lit/galende1994.txt) lists cipher letters of BRAH 9/7, 9/8, 9/11, 9/12 but not this one; Parisi 2004 and Parisi 2019 (ASPN 137, five Claver letters 1500-02) do not cover it. Galende lists this letter among BRAH 9/11 cipher items (ff. 127-129) without a decipherment.",
+   "literature": "Web searches (correspondents + cifra; Salazar y Castro + descifrado; Galende/Parisi) found no study or edition of this letter. Villanueva Morte & Fernandez de Cordova, El embajador Claver (2025) n. 162 cites it."
+  },
+  "key_check": "Keys held: Cifra general (BRAH 9/15 ff. 7-10, DECODE R9821) and the other 9/15 sheets R9815-R9832 were compared in targets/garcilaso1498 and esp318 only against other letters; not applied here because no image of the leaf is available. No key for this sender is known. Possible crib: A-8 f. 141 (9/8, on DECODE) is the probable clear counterpart.",
+  "duplicates": "known.py on 'Fonseca', 'Salazar A-11': no catalogue entry. Status: damp-illegible and possibly already in clear, so low value; kept open only because the cipher leaf itself was not seen.",
+  "verdict": "open"
+ },
+ "1046": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 18",
+  "seen": {
+   "kind": "not online",
+   "where": "archive.org/details/salazary-castro-22-nov-2016 (RAH Salazar y Castro catalogue, OCR text downloaded and read 29 Oct 2026, N-23, ff. 34-35, no. inventory no. 60896); no scan located: RAH Biblioteca Digital is bot-blocked for scripts and an earlier session (targets/garcilaso1498) found no A-11 letters there; Europeana API search for the correspondents gave 0 hits",
+   "extent": "one letter, two folios, in cipher, autograph signature",
+   "cipher": "RAH entry: 'Carta de Lorenzo Suarez de Figueroa, embajador ... en Venecia ... en cifra. Original, con firma autografa' (Venice 17 Apr 1497). No decipherment noted in the entry or its neighbours (nos. 60895, 60897)."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE: known.py (DECODE views dumps, Cryptoole snapshot) has no hit for this shelfmark or the correspondents; DECODE holds Salazar volumes 9/8, 9/17, 9/23-9/31, 9/34 and the 9/15 key records R9815-R9832, and from 9/7-9/8 only R9483-R9485 / R9591 (Ferriz 1475, Leonor 1476, Despuig 1478, Claver 1500), none this letter.",
+   "tomokiyo": "Tomokiyo's Spanish page (spanish.htm, local copy in targets/esp318/lit/crypt and garcilaso1498/lit) grepped for Salazar and the correspondents (Despuig, Claver, Figueroa, Garcilaso, Fonseca, Belmonte): it mentions only the Alonso de Silva-Garcilaso key (RAH 9/15 ff. 11-14) and Parisi 2004; nothing on this letter.",
+   "lasry": "No Lasry paper or GL.htm entry on this letter: two web searches (correspondents + cifra + Salazar y Castro; Gran Capitan/CNI) found only the CNI 2018 decipherment of the Maqueda letters 1502-03 and Lasry's Espagnol 318 work, a different archive and cipher.",
+   "edition": "Galende Diaz 1993-94 ('La escritura cifrada durante el reinado de los Reyes Catolicos y Carlos V', local text targets/esp318/lit/galende1994.txt) lists cipher letters of BRAH 9/7, 9/8, 9/11, 9/12 but not this one; Parisi 2004 and Parisi 2019 (ASPN 137, five Claver letters 1500-02) do not cover it.",
+   "literature": "Web searches (correspondents + cifra; Salazar y Castro + descifrado; Galende/Parisi) found no study or edition of this letter. Figueroa's Venice letters of 1497 are cited in Suarez Fernandez, Politica internacional V, but no printed decipherment of this letter was found."
+  },
+  "key_check": "Keys held: Cifra general (BRAH 9/15 ff. 7-10, DECODE R9821) and the other 9/15 sheets R9815-R9832 were compared in targets/garcilaso1498 and esp318 only against other letters; not applied here because no image of the leaf is available. No key for this sender is known. Figueroa's later cipher (Esp 318 no. 93-94, 1504) is a different date; the Venice cipher of 1497 is not held.",
+  "duplicates": "known.py on 'Figueroa', 'Salazar N-23': Lorenzo Suarez de Figueroa appears only in catalogue Esp 318 no. 93 (1504) and in leads 1046-1047; different letters.",
+  "verdict": "open"
+ },
+ "1047": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 18",
+  "seen": {
+   "kind": "not online",
+   "where": "archive.org/details/salazary-castro-22-nov-2016 (RAH Salazar y Castro catalogue, OCR text downloaded and read 29 Oct 2026, N-23, f. 40, no. inventory no. 60900); no scan located: RAH Biblioteca Digital is bot-blocked for scripts and an earlier session (targets/garcilaso1498) found no A-11 letters there; Europeana API search for the correspondents gave 0 hits",
+   "extent": "one letter, one folio (f. 41 blank), in cipher",
+   "cipher": "RAH entry: 'Carta de Lorenzo Suarez de Figueroa a los Reyes Catolicos ... en cifra. Original, con firma autografa' (Venice 23 May 1497). No decipherment noted."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE: known.py (DECODE views dumps, Cryptoole snapshot) has no hit for this shelfmark or the correspondents; DECODE holds Salazar volumes 9/8, 9/17, 9/23-9/31, 9/34 and the 9/15 key records R9815-R9832, and from 9/7-9/8 only R9483-R9485 / R9591 (Ferriz 1475, Leonor 1476, Despuig 1478, Claver 1500), none this letter.",
+   "tomokiyo": "Tomokiyo's Spanish page (spanish.htm, local copy in targets/esp318/lit/crypt and garcilaso1498/lit) grepped for Salazar and the correspondents (Despuig, Claver, Figueroa, Garcilaso, Fonseca, Belmonte): it mentions only the Alonso de Silva-Garcilaso key (RAH 9/15 ff. 11-14) and Parisi 2004; nothing on this letter.",
+   "lasry": "No Lasry paper or GL.htm entry on this letter: two web searches (correspondents + cifra + Salazar y Castro; Gran Capitan/CNI) found only the CNI 2018 decipherment of the Maqueda letters 1502-03 and Lasry's Espagnol 318 work, a different archive and cipher.",
+   "edition": "Galende Diaz 1993-94 ('La escritura cifrada durante el reinado de los Reyes Catolicos y Carlos V', local text targets/esp318/lit/galende1994.txt) lists cipher letters of BRAH 9/7, 9/8, 9/11, 9/12 but not this one; Parisi 2004 and Parisi 2019 (ASPN 137, five Claver letters 1500-02) do not cover it.",
+   "literature": "Web searches (correspondents + cifra; Salazar y Castro + descifrado; Galende/Parisi) found no study or edition of this letter."
+  },
+  "key_check": "Keys held: Cifra general (BRAH 9/15 ff. 7-10, DECODE R9821) and the other 9/15 sheets R9815-R9832 were compared in targets/garcilaso1498 and esp318 only against other letters; not applied here because no image of the leaf is available. No key for this sender is known. Same sender and cipher as lead 1046 (17 Apr 1497); neither is deciphered, so no crib across the pair.",
+  "duplicates": "known.py on 'Figueroa': only leads 1046-1047 and catalogue Esp 318 no. 93; separate letters.",
+  "verdict": "open"
+ },
+ "1048": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 18",
+  "seen": {
+   "kind": "not online",
+   "where": "archive.org/details/salazary-castro-22-nov-2016 (RAH Salazar y Castro catalogue, OCR text downloaded and read 29 Oct 2026, A-11, ff. 131-133, no. inventory no. 1079-1080); no scan located: RAH Biblioteca Digital is bot-blocked for scripts and an earlier session (targets/garcilaso1498) found no A-11 letters there; Europeana API search for the correspondents gave 0 hits",
+   "extent": "letter of 2 folios (ff. 131-132) with some paragraphs in cipher, plus f. 133 'los parrafos en cifra de la carta' on a separate contemporary sheet",
+   "cipher": "RAH entries 1079 ('Original, con algunos parrafos en cifra') and 1080 (f. 133, 'Los parrafos en cifra de la carta resenada ... Manuscrito de letra de la epoca'). The wording suggests f. 133 is a contemporary clear transcription of the cipher paragraphs, but the catalogue does not say 'descifrado'; the leaf was not seen."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE: known.py (DECODE views dumps, Cryptoole snapshot) has no hit for this shelfmark or the correspondents; DECODE holds Salazar volumes 9/8, 9/17, 9/23-9/31, 9/34 and the 9/15 key records R9815-R9832, and from 9/7-9/8 only R9483-R9485 / R9591 (Ferriz 1475, Leonor 1476, Despuig 1478, Claver 1500), none this letter.",
+   "tomokiyo": "Tomokiyo's Spanish page (spanish.htm, local copy in targets/esp318/lit/crypt and garcilaso1498/lit) grepped for Salazar and the correspondents (Despuig, Claver, Figueroa, Garcilaso, Fonseca, Belmonte): it mentions only the Alonso de Silva-Garcilaso key (RAH 9/15 ff. 11-14) and Parisi 2004; nothing on this letter.",
+   "lasry": "No Lasry paper or GL.htm entry on this letter: two web searches (correspondents + cifra + Salazar y Castro; Gran Capitan/CNI) found only the CNI 2018 decipherment of the Maqueda letters 1502-03 and Lasry's Espagnol 318 work, a different archive and cipher.",
+   "edition": "Printed: Claver 2025 n. 183 says the Claver report of 23 June 1497 (A-11 ff. 131r-132r and 134) is published by L. Suarez Fernandez, Politica internacional, vol. V docs 29-30 pp. 187-191; whether the cipher paragraphs appear in that print was not checked.",
+   "literature": "Galende 1993-94 lists the letter as cipher (BRAH 9/11 fols. 131-133). Parisi 2019 covers Claver's 1500-02 letters only. Web searches (correspondents + cifra; Salazar y Castro + descifrado; Galende/Parisi) found no study or edition of this letter."
+  },
+  "key_check": "No key needed if f. 133 is the decipherment; Claver's 1497 cipher is not held.",
+  "duplicates": "known.py on 'Claver', 'Salazar A-11': no catalogue entry for this letter; Claver letters of 1500-1502 (leads 1054, 1055, 1057) are separate. Parisi/Claver 2025 appendix docs 18, 19, 22 do not include 23 June 1497.",
+  "verdict": "partly_read",
+  "closed": "Contemporary clear sheet of the cipher paragraphs (A-11 f. 133, catalogue 1080) and a published edition (Suarez Fernandez V docs 29-30) mean the content is known; not confirmed from the leaf that f. 133 is a decipherment."
+ },
+ "1049": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 18",
+  "seen": {
+   "kind": "not online",
+   "where": "archive.org/details/salazary-castro-22-nov-2016 (RAH Salazar y Castro catalogue, OCR text downloaded and read 29 Oct 2026, N-23, f. 36, no. inventory no. 60897); no scan located: RAH Biblioteca Digital is bot-blocked for scripts and an earlier session (targets/garcilaso1498) found no A-11 letters there; Europeana API search for the correspondents gave 0 hits",
+   "extent": "one letter, one folio, in cipher, autograph signature",
+   "cipher": "RAH entry: 'Carta de Juan Manuel, senor de Belmonte, embajador ... en Roma ... en cifra. Original, con firma autografa' (Rome 23 Jun 1497). No decipherment noted. (DBE places Juan Manuel's well-known Roman embassy in 1520-22; the 1497 attribution is the catalogue's.)"
+  },
+  "prior_art": {
+   "decode": "Not on DECODE: known.py (DECODE views dumps, Cryptoole snapshot) has no hit for this shelfmark or the correspondents; DECODE holds Salazar volumes 9/8, 9/17, 9/23-9/31, 9/34 and the 9/15 key records R9815-R9832, and from 9/7-9/8 only R9483-R9485 / R9591 (Ferriz 1475, Leonor 1476, Despuig 1478, Claver 1500), none this letter.",
+   "tomokiyo": "Tomokiyo's Spanish page (spanish.htm, local copy in targets/esp318/lit/crypt and garcilaso1498/lit) grepped for Salazar and the correspondents (Despuig, Claver, Figueroa, Garcilaso, Fonseca, Belmonte): it mentions only the Alonso de Silva-Garcilaso key (RAH 9/15 ff. 11-14) and Parisi 2004; nothing on this letter.",
+   "lasry": "No Lasry paper or GL.htm entry on this letter: two web searches (correspondents + cifra + Salazar y Castro; Gran Capitan/CNI) found only the CNI 2018 decipherment of the Maqueda letters 1502-03 and Lasry's Espagnol 318 work, a different archive and cipher.",
+   "edition": "Galende Diaz 1993-94 ('La escritura cifrada durante el reinado de los Reyes Catolicos y Carlos V', local text targets/esp318/lit/galende1994.txt) lists cipher letters of BRAH 9/7, 9/8, 9/11, 9/12 but not this one; Parisi 2004 and Parisi 2019 (ASPN 137, five Claver letters 1500-02) do not cover it.",
+   "literature": "Web searches (correspondents + cifra; Salazar y Castro + descifrado; Galende/Parisi) found no study or edition of this letter. DBE biography of Juan Manuel (Belmonte) found by search but says nothing about a 1497 cipher letter."
+  },
+  "key_check": "Keys held: Cifra general (BRAH 9/15 ff. 7-10, DECODE R9821) and the other 9/15 sheets R9815-R9832 were compared in targets/garcilaso1498 and esp318 only against other letters; not applied here because no image of the leaf is available. No key for this sender is known. Roman cipher of 1497: only the Garcilaso family keys (R9822-R9824) concern Rome 1495-96, not compared for lack of an image.",
+  "duplicates": "known.py on 'Belmonte', 'Salazar N-23': only this lead. The same date, 23 Jun 1497, is Claver's Milan report (lead 1048), unrelated.",
+  "verdict": "open"
+ },
+ "1050": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 18",
+  "seen": {
+   "kind": "not online",
+   "where": "archive.org/details/salazary-castro-22-nov-2016 (RAH Salazar y Castro catalogue, OCR text downloaded and read 29 Oct 2026, N-23, ff. 68-70, no. inventory no. 60912); no scan located: RAH Biblioteca Digital is bot-blocked for scripts and an earlier session (targets/garcilaso1498) found no A-11 letters there; Europeana API search for the correspondents gave 0 hits",
+   "extent": "one letter, three folios, in cipher, autograph signature (Rome, 31 Dec 1497)",
+   "cipher": "RAH entry: 'Carta de Garci Lasso de la Vega a los Reyes Catolicos ... en cifra. Original, con firma autografa.' No decipherment noted. Garcilaso's own cipher is the one 'not yet deciphered' per Parisi 2004 n. 13 (targets/garcilaso1498)."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE: known.py (DECODE views dumps, Cryptoole snapshot) has no hit for this shelfmark or the correspondents; DECODE holds Salazar volumes 9/8, 9/17, 9/23-9/31, 9/34 and the 9/15 key records R9815-R9832, and from 9/7-9/8 only R9483-R9485 / R9591 (Ferriz 1475, Leonor 1476, Despuig 1478, Claver 1500), none this letter.",
+   "tomokiyo": "Tomokiyo's Spanish page (spanish.htm, local copy in targets/esp318/lit/crypt and garcilaso1498/lit) grepped for Salazar and the correspondents (Despuig, Claver, Figueroa, Garcilaso, Fonseca, Belmonte): it mentions only the Alonso de Silva-Garcilaso key (RAH 9/15 ff. 11-14) and Parisi 2004; nothing on this letter.",
+   "lasry": "No Lasry paper or GL.htm entry on this letter: two web searches (correspondents + cifra + Salazar y Castro; Gran Capitan/CNI) found only the CNI 2018 decipherment of the Maqueda letters 1502-03 and Lasry's Espagnol 318 work, a different archive and cipher.",
+   "edition": "Parisi 2004 (Pedralbes) prints Garcilaso's letters from ACA but leaves his cipher undeciphered; Claver 2025 n. 152 cites A-11 ff. 121-125 (31 Dec 1496) with its decipherment on ff. 125rv, a different letter.",
+   "literature": "Web searches (correspondents + cifra; Salazar y Castro + descifrado; Galende/Parisi) found no study or edition of this letter. targets/garcilaso1498 documents the same gap."
+  },
+  "key_check": "Probable key: the deciphered Garcilaso letters RAH A-11 ff. 109-111 and 121-125v (1496), not online; the Silva-Garcilaso key R9822 and other 9/15 sheets were tested against catalogue 349 and excluded (targets/garcilaso1498 NOTES). So no key held; N-23 ff. 68-70 is three folios of Garcilaso's cipher and would add ciphertext to the open catalogue 349.",
+  "duplicates": "known.py on 'Garcilaso', 'Lasso de la Vega': catalogue 349 / targets/garcilaso1498 (ACA 31 Aug 1498, a different letter); lead 1051 same sender. Not a duplicate.",
+  "verdict": "open"
+ },
+ "1051": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 18",
+  "seen": {
+   "kind": "not online",
+   "where": "archive.org/details/salazary-castro-22-nov-2016 (RAH Salazar y Castro catalogue, OCR text downloaded and read 29 Oct 2026, N-23, ff. 57-58, no. inventory no. 60906); no scan located: RAH Biblioteca Digital is bot-blocked for scripts and an earlier session (targets/garcilaso1498) found no A-11 letters there; Europeana API search for the correspondents gave 0 hits",
+   "extent": "one letter, two folios, in cipher, autograph signature (Rome, 17 Aug 1498)",
+   "cipher": "RAH entry: 'Carta de Garci Lasso de la Vega al rey Fernando V el Catolico, en cifra. Original, con firma autografa.' No decipherment noted."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE: known.py (DECODE views dumps, Cryptoole snapshot) has no hit for this shelfmark or the correspondents; DECODE holds Salazar volumes 9/8, 9/17, 9/23-9/31, 9/34 and the 9/15 key records R9815-R9832, and from 9/7-9/8 only R9483-R9485 / R9591 (Ferriz 1475, Leonor 1476, Despuig 1478, Claver 1500), none this letter.",
+   "tomokiyo": "Tomokiyo's Spanish page (spanish.htm, local copy in targets/esp318/lit/crypt and garcilaso1498/lit) grepped for Salazar and the correspondents (Despuig, Claver, Figueroa, Garcilaso, Fonseca, Belmonte): it mentions only the Alonso de Silva-Garcilaso key (RAH 9/15 ff. 11-14) and Parisi 2004; nothing on this letter.",
+   "lasry": "No Lasry paper or GL.htm entry on this letter: two web searches (correspondents + cifra + Salazar y Castro; Gran Capitan/CNI) found only the CNI 2018 decipherment of the Maqueda letters 1502-03 and Lasry's Espagnol 318 work, a different archive and cipher.",
+   "edition": "As lead 1050: Parisi 2004 leaves Garcilaso's own cipher undeciphered; this letter, two weeks before the ACA Ferdinand-to-Garcilaso letter of 31 Aug 1498 (catalogue 349), is the closest dated ciphertext in the same system.",
+   "literature": "Web searches (correspondents + cifra; Salazar y Castro + descifrado; Galende/Parisi) found no study or edition of this letter."
+  },
+  "key_check": "Same as lead 1050: Garcilaso's key is in RAH A-11 ff. 109-111 / 121-125 (not online); R9822-R9824 excluded in targets/garcilaso1498.",
+  "duplicates": "known.py on 'Garcilaso': catalogue 349 and its target folder; separate letter (Garcilaso to the king, not Ferdinand to Garcilaso).",
+  "verdict": "open"
+ },
+ "1052": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 18",
+  "seen": {
+   "kind": "not online",
+   "where": "archive.org/details/salazary-castro-22-nov-2016 (RAH Salazar y Castro catalogue, OCR text downloaded and read 29 Oct 2026, A-11, f. 194, no. inventory no. 1127); no scan located: RAH Biblioteca Digital is bot-blocked for scripts and an earlier session (targets/garcilaso1498) found no A-11 letters there; Europeana API search for the correspondents gave 0 hits",
+   "extent": "one letter, one folio, in cipher (Avignon, 7 Sep 1498)",
+   "cipher": "RAH entry: 'Carta de Inigo de Cordoba y del doctor Ponce a Fernando el Catolico, en cifra. Original.' No decipherment noted."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE: known.py (DECODE views dumps, Cryptoole snapshot) has no hit for this shelfmark or the correspondents; DECODE holds Salazar volumes 9/8, 9/17, 9/23-9/31, 9/34 and the 9/15 key records R9815-R9832, and from 9/7-9/8 only R9483-R9485 / R9591 (Ferriz 1475, Leonor 1476, Despuig 1478, Claver 1500), none this letter.",
+   "tomokiyo": "Tomokiyo's Spanish page (spanish.htm, local copy in targets/esp318/lit/crypt and garcilaso1498/lit) grepped for Salazar and the correspondents (Despuig, Claver, Figueroa, Garcilaso, Fonseca, Belmonte): it mentions only the Alonso de Silva-Garcilaso key (RAH 9/15 ff. 11-14) and Parisi 2004; nothing on this letter.",
+   "lasry": "No Lasry paper or GL.htm entry on this letter: two web searches (correspondents + cifra + Salazar y Castro; Gran Capitan/CNI) found only the CNI 2018 decipherment of the Maqueda letters 1502-03 and Lasry's Espagnol 318 work, a different archive and cipher.",
+   "edition": "Galende Diaz 1993-94 ('La escritura cifrada durante el reinado de los Reyes Catolicos y Carlos V', local text targets/esp318/lit/galende1994.txt) lists cipher letters of BRAH 9/7, 9/8, 9/11, 9/12 but not this one; Parisi 2004 and Parisi 2019 (ASPN 137, five Claver letters 1500-02) do not cover it.",
+   "literature": "Web searches (correspondents + cifra; Salazar y Castro + descifrado; Galende/Parisi) found no study or edition of this letter. Search for Inigo de Cordoba / doctor Ponce / Avignon 1498 found nothing relevant."
+  },
+  "key_check": "Keys held: Cifra general (BRAH 9/15 ff. 7-10, DECODE R9821) and the other 9/15 sheets R9815-R9832 were compared in targets/garcilaso1498 and esp318 only against other letters; not applied here because no image of the leaf is available. No key for this sender is known.",
+  "duplicates": "known.py on 'Iñigo de Córdoba', 'Ponce', 'Salazar A-11': no hits beyond this lead.",
+  "verdict": "open"
+ },
+ "1053": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 18",
+  "seen": {
+   "kind": "not online",
+   "where": "archive.org/details/salazary-castro-22-nov-2016 (RAH Salazar y Castro catalogue, OCR text downloaded and read 29 Oct 2026, A-11, ff. 247-248, no. inventory no. 1143); no scan located: RAH Biblioteca Digital is bot-blocked for scripts and an earlier session (targets/garcilaso1498) found no A-11 letters there; Europeana API search for the correspondents gave 0 hits",
+   "extent": "one letter, two folios, partly in cipher (Mechelen, 1 Mar 1500)",
+   "cipher": "RAH entry: 'Carta del obispo de Hirache al secretario Miguel Perez de Almazan, preguntandole la forma en que deberia efectuar el pago de transporte de la correspondencia. Parte de la carta se halla en cifra. Original.' No decipherment noted."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE: known.py (DECODE views dumps, Cryptoole snapshot) has no hit for this shelfmark or the correspondents; DECODE holds Salazar volumes 9/8, 9/17, 9/23-9/31, 9/34 and the 9/15 key records R9815-R9832, and from 9/7-9/8 only R9483-R9485 / R9591 (Ferriz 1475, Leonor 1476, Despuig 1478, Claver 1500), none this letter.",
+   "tomokiyo": "Tomokiyo's Spanish page (spanish.htm, local copy in targets/esp318/lit/crypt and garcilaso1498/lit) grepped for Salazar and the correspondents (Despuig, Claver, Figueroa, Garcilaso, Fonseca, Belmonte): it mentions only the Alonso de Silva-Garcilaso key (RAH 9/15 ff. 11-14) and Parisi 2004; nothing on this letter.",
+   "lasry": "No Lasry paper or GL.htm entry on this letter: two web searches (correspondents + cifra + Salazar y Castro; Gran Capitan/CNI) found only the CNI 2018 decipherment of the Maqueda letters 1502-03 and Lasry's Espagnol 318 work, a different archive and cipher.",
+   "edition": "Galende Diaz 1993-94 ('La escritura cifrada durante el reinado de los Reyes Catolicos y Carlos V', local text targets/esp318/lit/galende1994.txt) lists cipher letters of BRAH 9/7, 9/8, 9/11, 9/12 but not this one; Parisi 2004 and Parisi 2019 (ASPN 137, five Claver letters 1500-02) do not cover it.",
+   "literature": "Web searches (correspondents + cifra; Salazar y Castro + descifrado; Galende/Parisi) found no study or edition of this letter. Search for 'obispo de Hirache' Malinas 1500 Almazan found nothing; the bishop's see name is unidentified."
+  },
+  "key_check": "Keys held: Cifra general (BRAH 9/15 ff. 7-10, DECODE R9821) and the other 9/15 sheets R9815-R9832 were compared in targets/garcilaso1498 and esp318 only against other letters; not applied here because no image of the leaf is available. No key for this sender is known. Small partial cipher: low value.",
+  "duplicates": "known.py on 'Hirache', 'Almazán': no catalogue entry (Almazan hits are Puebla/Jordan material, unrelated).",
+  "verdict": "open"
+ },
+ "1054": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 18",
+  "seen": {
+   "kind": "not online",
+   "where": "archive.org/details/salazary-castro-22-nov-2016 (RAH Salazar y Castro catalogue, OCR text downloaded and read 29 Oct 2026, A-11, ff. 258-259, no. inventory no. 1151); no scan located: RAH Biblioteca Digital is bot-blocked for scripts and an earlier session (targets/garcilaso1498) found no A-11 letters there; Europeana API search for the correspondents gave 0 hits",
+   "extent": "one letter, two folios, wholly in cipher (Naples, 2 Jul 1500)",
+   "cipher": "RAH entry: 'Carta de micer Juan Claver ... a Fernando el Catolico, en cifra. Original.' Deciphered by Ivan Parisi (ASPN 137, 2019, pp. 221-224) and printed as Apendice doc. 18 of Villanueva Morte & Fernandez de Cordova, El embajador Claver (Zaragoza 2025); the note says the letter is completely in cipher and the decipherment has a few bracketed guesses because of a stain."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE: known.py (DECODE views dumps, Cryptoole snapshot) has no hit for this shelfmark or the correspondents; DECODE holds Salazar volumes 9/8, 9/17, 9/23-9/31, 9/34 and the 9/15 key records R9815-R9832, and from 9/7-9/8 only R9483-R9485 / R9591 (Ferriz 1475, Leonor 1476, Despuig 1478, Claver 1500), none this letter.",
+   "tomokiyo": "Tomokiyo's Spanish page (spanish.htm, local copy in targets/esp318/lit/crypt and garcilaso1498/lit) grepped for Salazar and the correspondents (Despuig, Claver, Figueroa, Garcilaso, Fonseca, Belmonte): it mentions only the Alonso de Silva-Garcilaso key (RAH 9/15 ff. 11-14) and Parisi 2004; nothing on this letter.",
+   "lasry": "No Lasry paper or GL.htm entry on this letter: two web searches (correspondents + cifra + Salazar y Castro; Gran Capitan/CNI) found only the CNI 2018 decipherment of the Maqueda letters 1502-03 and Lasry's Espagnol 318 work, a different archive and cipher.",
+   "edition": "Parisi 2019 and Claver 2025 doc. 18 (read here in the local text targets/garcilaso1498/lit/claver2025.txt).",
+   "literature": "Parisi, 'La decrittazione di cinque lettere cifrate di Juan Claver' (ASPN CXXXVII 2019) is the primary decipherment; my web search did not find the article online."
+  },
+  "key_check": "Not needed: Parisi's decipherment is in print; the Claver cipher itself is not held in the repo.",
+  "duplicates": "known.py on 'Claver': leads 1055 and 1057 are siblings (other dates), no catalogue entry; no duplicate.",
+  "verdict": "read",
+  "closed": "Deciphered by Parisi 2019 and printed in Claver 2025 appendix doc. 18 (A-11 ff. 258r-259v)."
+ },
+ "1055": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 18",
+  "seen": {
+   "kind": "not online",
+   "where": "archive.org/details/salazary-castro-22-nov-2016 (RAH Salazar y Castro catalogue, OCR text downloaded and read 29 Oct 2026, A-11, ff. 263-264, no. inventory no. 1155); no scan located: RAH Biblioteca Digital is bot-blocked for scripts and an earlier session (targets/garcilaso1498) found no A-11 letters there; Europeana API search for the correspondents gave 0 hits",
+   "extent": "one letter, two folios, cipher (Naples, 22 Jul 1500)",
+   "cipher": "RAH entry: 'Carta de Juan Claver ... El resto de la carta esta en cifra. Original.' Deciphered by Parisi (ASPN 2019, pp. 224-227) and printed as Apendice doc. 19 of Claver 2025 (which describes the letter as completely in cipher)."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE: known.py (DECODE views dumps, Cryptoole snapshot) has no hit for this shelfmark or the correspondents; DECODE holds Salazar volumes 9/8, 9/17, 9/23-9/31, 9/34 and the 9/15 key records R9815-R9832, and from 9/7-9/8 only R9483-R9485 / R9591 (Ferriz 1475, Leonor 1476, Despuig 1478, Claver 1500), none this letter.",
+   "tomokiyo": "Tomokiyo's Spanish page (spanish.htm, local copy in targets/esp318/lit/crypt and garcilaso1498/lit) grepped for Salazar and the correspondents (Despuig, Claver, Figueroa, Garcilaso, Fonseca, Belmonte): it mentions only the Alonso de Silva-Garcilaso key (RAH 9/15 ff. 11-14) and Parisi 2004; nothing on this letter.",
+   "lasry": "No Lasry paper or GL.htm entry on this letter: two web searches (correspondents + cifra + Salazar y Castro; Gran Capitan/CNI) found only the CNI 2018 decipherment of the Maqueda letters 1502-03 and Lasry's Espagnol 318 work, a different archive and cipher.",
+   "edition": "Parisi 2019 and Claver 2025 doc. 19 (read in the local text).",
+   "literature": "Parisi 2019, as lead 1054."
+  },
+  "key_check": "Not needed: decipherment in print.",
+  "duplicates": "known.py on 'Claver': sibling letters leads 1054, 1057; no catalogue entry.",
+  "verdict": "read",
+  "closed": "Deciphered by Parisi 2019 and printed in Claver 2025 appendix doc. 19 (A-11 ff. 263r-264v)."
+ },
+ "1056": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 18",
+  "seen": {
+   "kind": "not online",
+   "where": "archive.org/details/salazary-castro-22-nov-2016 (RAH Salazar y Castro catalogue, OCR text downloaded and read 29 Oct 2026, A-11, f. 270, no. inventory no. 1159); no scan located: RAH Biblioteca Digital is bot-blocked for scripts and an earlier session (targets/garcilaso1498) found no A-11 letters there; Europeana API search for the correspondents gave 0 hits",
+   "extent": "one letter, one folio, entirely in cipher (21 Sep 1500, written on the carrack Camillas)",
+   "cipher": "RAH entry: 'Carta de Gonzalo Fernandez de Cordoba, el Gran Capitan, al secretario Miguel Perez de Almazan, escrita toda ella en cifra. Original.' No decipherment noted. Not among Parisi's five Claver letters."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE: known.py (DECODE views dumps, Cryptoole snapshot) has no hit for this shelfmark or the correspondents; DECODE holds Salazar volumes 9/8, 9/17, 9/23-9/31, 9/34 and the 9/15 key records R9815-R9832, and from 9/7-9/8 only R9483-R9485 / R9591 (Ferriz 1475, Leonor 1476, Despuig 1478, Claver 1500), none this letter.",
+   "tomokiyo": "Tomokiyo's Spanish page (spanish.htm, local copy in targets/esp318/lit/crypt and garcilaso1498/lit) grepped for Salazar and the correspondents (Despuig, Claver, Figueroa, Garcilaso, Fonseca, Belmonte): it mentions only the Alonso de Silva-Garcilaso key (RAH 9/15 ff. 11-14) and Parisi 2004; nothing on this letter.",
+   "lasry": "No Lasry paper or GL.htm entry on this letter: two web searches (correspondents + cifra + Salazar y Castro; Gran Capitan/CNI) found only the CNI 2018 decipherment of the Maqueda letters 1502-03 and Lasry's Espagnol 318 work, a different archive and cipher.",
+   "edition": "Galende Diaz 1993-94 ('La escritura cifrada durante el reinado de los Reyes Catolicos y Carlos V', local text targets/esp318/lit/galende1994.txt) lists cipher letters of BRAH 9/7, 9/8, 9/11, 9/12 but not this one; Parisi 2004 and Parisi 2019 (ASPN 137, five Claver letters 1500-02) do not cover it. Galende lists Great Captain letters of 1502-05 (9/11 ff. 332, 416-417, 422; 9/12 f. 1) but not this one.",
+   "literature": "Web: CNI 2018 (Maqueda letters 1502-03, Gran Cifra) and cipher-history notes say the Great Captain used the Cifra general in 1500 (Esp 318 no. 92) and other ciphers with Claver and Almazan; no source on this leaf."
+  },
+  "key_check": "Best candidate key: the Cifra general (BRAH 9/15 ff. 7-10, DECODE R9821) that read BnF Espagnol 318 no. 92 (Great Captain, Aug 1500, targets/esp318); not applied to this leaf because no image is available. Claver's cipher of 1500 (Parisi) is a different system.",
+  "duplicates": "known.py on 'Gran Capitan' / 'Almazan': related catalogue entry Esp 318 no. 92 (Great Captain 1500, same writer, read in part); not a duplicate.",
+  "verdict": "open"
+ },
+ "1057": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 18",
+  "seen": {
+   "kind": "not online",
+   "where": "archive.org/details/salazary-castro-22-nov-2016 (RAH Salazar y Castro catalogue, OCR text downloaded and read 29 Oct 2026, A-11, f. 332, no. inventory no. 1204); no scan located: RAH Biblioteca Digital is bot-blocked for scripts and an earlier session (targets/garcilaso1498) found no A-11 letters there; Europeana API search for the correspondents gave 0 hits",
+   "extent": "one letter, one folio (r and v), autograph of Claver, wholly in cipher; a stain hides the end",
+   "cipher": "RAH entry: 'Carta de Gonzalo Fernandez de Cordoba, el Gran Capitan, y de Juan Claver ... toda en cifra. Original.' Deciphered by Parisi (ASPN 2019, pp. 232-234) and printed as Apendice doc. 22 of Claver 2025, which dates it c. 23-28 Nov 1502 (Claver's autograph; marginal 'del duque de Terranova y Claver XXIII de noviembre de DII') rather than 28 Dec."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE: known.py (DECODE views dumps, Cryptoole snapshot) has no hit for this shelfmark or the correspondents; DECODE holds Salazar volumes 9/8, 9/17, 9/23-9/31, 9/34 and the 9/15 key records R9815-R9832, and from 9/7-9/8 only R9483-R9485 / R9591 (Ferriz 1475, Leonor 1476, Despuig 1478, Claver 1500), none this letter.",
+   "tomokiyo": "Tomokiyo's Spanish page (spanish.htm, local copy in targets/esp318/lit/crypt and garcilaso1498/lit) grepped for Salazar and the correspondents (Despuig, Claver, Figueroa, Garcilaso, Fonseca, Belmonte): it mentions only the Alonso de Silva-Garcilaso key (RAH 9/15 ff. 11-14) and Parisi 2004; nothing on this letter.",
+   "lasry": "No Lasry paper or GL.htm entry on this letter: two web searches (correspondents + cifra + Salazar y Castro; Gran Capitan/CNI) found only the CNI 2018 decipherment of the Maqueda letters 1502-03 and Lasry's Espagnol 318 work, a different archive and cipher.",
+   "edition": "Parisi 2019 and Claver 2025 doc. 22 (read in the local text); Galende lists the letter as BRAH 9/11 fol. 332.",
+   "literature": "Parisi 2019."
+  },
+  "key_check": "Not needed: decipherment in print.",
+  "duplicates": "known.py on 'Claver': siblings only; no catalogue entry.",
+  "verdict": "read",
+  "closed": "Deciphered by Parisi 2019 and printed in Claver 2025 appendix doc. 22 (A-11 f. 332r-v)."
+ },
+ "1058": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 18",
+  "seen": {
+   "kind": "not online",
+   "where": "archive.org/details/salazary-castro-22-nov-2016 (RAH Salazar y Castro catalogue, OCR text downloaded and read 29 Oct 2026, A-11, f. 366, no. inventory no. 1222); no scan located: RAH Biblioteca Digital is bot-blocked for scripts and an earlier session (targets/garcilaso1498) found no A-11 letters there; Europeana API search for the correspondents gave 0 hits",
+   "extent": "one letter, one folio, mostly clear with some cipher paragraphs (Barletta, 21 Mar 1503)",
+   "cipher": "RAH entry: 'Carta de Gonzalo Fernandez de Cordoba, el Gran Capitan ... comunicandoles diversas noticias de caracter militar, y entre ellas la union de las tropas francesas en Canosa ... Original, con algunos parrafos en cifra.' No decipherment noted; the next entry (1223, f. 367) is a different, clear copy letter."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE: known.py (DECODE views dumps, Cryptoole snapshot) has no hit for this shelfmark or the correspondents; DECODE holds Salazar volumes 9/8, 9/17, 9/23-9/31, 9/34 and the 9/15 key records R9815-R9832, and from 9/7-9/8 only R9483-R9485 / R9591 (Ferriz 1475, Leonor 1476, Despuig 1478, Claver 1500), none this letter.",
+   "tomokiyo": "Tomokiyo's Spanish page (spanish.htm, local copy in targets/esp318/lit/crypt and garcilaso1498/lit) grepped for Salazar and the correspondents (Despuig, Claver, Figueroa, Garcilaso, Fonseca, Belmonte): it mentions only the Alonso de Silva-Garcilaso key (RAH 9/15 ff. 11-14) and Parisi 2004; nothing on this letter.",
+   "lasry": "No Lasry paper or GL.htm entry on this letter: two web searches (correspondents + cifra + Salazar y Castro; Gran Capitan/CNI) found only the CNI 2018 decipherment of the Maqueda letters 1502-03 and Lasry's Espagnol 318 work, a different archive and cipher.",
+   "edition": "Galende Diaz 1993-94 ('La escritura cifrada durante el reinado de los Reyes Catolicos y Carlos V', local text targets/esp318/lit/galende1994.txt) lists cipher letters of BRAH 9/7, 9/8, 9/11, 9/12 but not this one; Parisi 2004 and Parisi 2019 (ASPN 137, five Claver letters 1500-02) do not cover it. The Claver 2025 text has no mention of f. 366 or Canosa 21 Mar 1503.",
+   "literature": "Web searches (correspondents + cifra; Salazar y Castro + descifrado; Galende/Parisi) found no study or edition of this letter. CNI 2018 deciphered Great Captain/Ferdinand letters of 1502-03 from the Maqueda archive (Museo del Ejercito), a different series."
+  },
+  "key_check": "Keys held: Cifra general (BRAH 9/15 ff. 7-10, DECODE R9821) and the other 9/15 sheets R9815-R9832 were compared in targets/garcilaso1498 and esp318 only against other letters; not applied here because no image of the leaf is available. No key for this sender is known. The CNI Gran Cifra table (88 symbols, 237 letter codes) covers the Maqueda letters; whether the Great Captain used it in this outgoing letter is unknown and the table is not held.",
+  "duplicates": "known.py on 'Gran Capitán', 'Canosa': no catalogue entry for this letter; Esp 318 and Garcilaso entries are other items.",
+  "verdict": "open"
+ }
+}

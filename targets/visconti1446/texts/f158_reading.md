@@ -1,0 +1,11 @@
+# BnF italien 1583 f. 158 -- Filippo Maria Visconti to Francesco Sforza, Cusago 31 Dec 1446 (cipher slip): reading
+
+Illustris gener et fili noster carissime. Perché vui sapiate che [..] in le cose nostre dezà, ve[?] aviso che, come
+le [gente d'arme] nostre furono rote, mandasemo Thomase da [Roma] in Franza come[?] domandare soccorso; el quale,
+esendo prima[?] andato dal duca de Savoia, non havise [se] non parole. Dapoi, vedendo [..], che l'andase dal Dalfino,
+et lo trovò benisimo disposito de darne bono et groso [s]occorso. [..] sapevamo che se gli [..] no dificultate
+alcuna [..] come despecto[?] [..], gli facevemo proferire che, dandone el dicto soccorso, gli daresemo Ast in le
+mane soe; et così cred[i]to[?] che 'l dicto Thomase concludeva a nostro nome in quela forma. Ulterius ve avisamo
+come li Francesi cercano [..] havere [..], et siamo quasi certi che, stando le cose come le stano, [..] gli capitarà
+in le mane. [..]ve confortamo et pregamo che ne vogliati avisare del parere vostro circa che è dicto. Data Cusaghi
+die ultimo Decembris. Filipus Maria Anglus Dux Mediolani et cetera, Papie Anglerieque Comes ac Ianue Dominus.

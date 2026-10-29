@@ -1,0 +1,215 @@
+{
+ "1319": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 04",
+  "seen": {
+   "kind": "scan",
+   "where": "Gallica ital. 1584 (ark btv1b100373864) via openapi.bnf.fr IIIF, canvases 120, 190-191, 287-288, 293 viewed at 1000-1300 px; canvas offset to stamped folio is -5/-6 (canvas 120 = f. 125, 190/191 = f. 198, 288 = ff. 293/295, 293 = f. 299)",
+   "extent": "f. 125 (19 Apr 1447, Tivoli, Pietro di Monferrato): about 9 lines of cipher inside a clear Latin/Italian letter, no gloss. f. 198 (8 July 1447, Ferrara, Raphael Pugnelus): clear opening, then almost the whole page in cipher with small interlinear/marginal glosses over some groups (names such as 'Pietro da Pistoia', 'cardinale' in a small hand), so a partial contemporary decipherment of name groups; a clear sheet of the same date sits on the facing leaf (f. 197) but I could not tell whether it is a copy of f. 198. f. 295 (6 Sept 1447, Ferrara): about 12 lines of pure cipher signs, no gloss; the 5 Sept letter f. 294 beside it has a clear leaf f. 293 of the same date in a late italic hand (probably a decipherment copy of f. 294, not of f. 295). f. 299 parchment: one full page of cipher signs, no gloss seen. f. 306 not individually inspected (sheet at canvas ~300 is a parchment page of cipher signs).",
+   "cipher": "Symbol ciphers (several sign repertoires: round/cursive Greek-like forms on f. 125, angular +/U/3/9 forms on f. 198) mixed into clear Italian; f. 198 carries partial interlinear name glosses, f. 125/295/299 none seen. The late-hand clear copies filed in this volume for Barbavara/Pusterla (see targets/barbavara1447/NOTES.md) make a copy for individual leaves possible; ff. 125, 295, 299 show none beside them."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE: known.py finds only ital. 1583 ff. 68-158 (R7898-R7915) and key R1857 (Barbavara/Pusterla), nothing for these writers.",
+   "tomokiyo": "cryptiana unsolved.htm names only ital. 1584 ff. 68/69 and key R1857; Pietro di Monferrato, Pugnelli, Guidobono not mentioned (sweep recorded in research/venice_milan_print/README.md).",
+   "lasry": "No Lasry paper or GL.htm entry on these writers; WebSearch 'BnF italien 1584 Sforza 1447 cipher Pusterla Barbavara' returned nothing relevant (only Simonetta's rules in ital. 1595).",
+   "edition": "Only Mazzatinti 1887 ('In cifre'); WebSearch for Pietro di Monferrato/Tivoli 1447 and for Mazzatinti with Pugnelli/Guidobono found no edition or decipherment.",
+   "literature": "Searched 29 Oct 2026 (WebSearch, several queries per lead). Queries on Pietro di Monferrato Tivoli 1447, Pugnelli/Guidobono Ferrara, ital. 1584 cipher; nothing specific found."
+  },
+  "key_check": "Keys held: R1857 (Barbavara/Pusterla sign table, targets/barbavara1447/key_R1857_codes.tsv). Not applied: these are different correspondents (Monferrato, Pugnelli, Guidobono) whose leaves visibly use other sign repertoires than Pusterla's, so no cipher-sign overlap was assumed; applying R1857 to f. 198 and f. 295 is the first test to run.",
+  "duplicates": "known.py 'italien 1584', 'Pugnelli', 'Guidobono' hit only research/venice_milan_print/candidates.json and other Sforza leads for different folios; no catalogue or DECODE entry for ff. 125, 198, 295, 299, 306. Caveat: f. 198 has partial interlinear name glosses.",
+  "verdict": "open"
+ },
+ "1320": {
+  "unvetted": "Seen: ital. 1590 (btv1b10037390v) canvas 393 = f. 392, Antonio da Trezzo, s.d., a full block of unglossed cipher signs (no interlinear text). Not done: f. 285 not identified (canvases 284-289 show ff. 283-288 of 16-18 July 1464, f. 283 cipher, f. 285 a slip I could not read), and the printed edition (Dispacci sforzeschi da Napoli vol. 6, Jan 1464-Jul 1465, which should print Trezzo's ciphered despatches from the Milan originals) could not be found or checked by search, so 'read in print' is not ruled out."
+ },
+ "1321": {
+  "unvetted": "Seen: ital. 1591 (btv1b100373919) canvas 358 = f. 348, 6 June 1466 Lyon: clear text then about 12 lines of cipher at the end, no gloss visible. Not done: the printed editions (Mandrot-Samaran, Depeches des ambassadeurs milanais en France IV, 1465-66, and Ilardi, Dispatches ... Milanese ambassadors in France III, 11 Mar-29 Jun 1466) were not accessible and WebSearch found no text of them; they likely print or calendar this despatch with its decipherment, so 'read in print' is not ruled out."
+ },
+ "1322": {
+  "unvetted": "Seen: ital. 1594 (btv1b10037394n) canvases 28-36 viewed at 800-1300 px: all clear register copies; canvas 34 is f. 31, a Latin munitions inventory signed 'Don Angelus', not a copy of Michele's cipher letters, so Mazzatinti's folio does not match what is on the leaf and the cipher item could not be located. Not enough to call it not_cipher."
+ },
+ "1329": {
+  "unvetted": "Not digitised or no ark found; BnF italien volume not seen; access is not 'archive', so no block without a view."
+ },
+ "1330": {
+  "unvetted": "Not digitised or no ark found; BnF italien volume not seen; access is not 'archive', so no block without a view."
+ },
+ "1331": {
+  "unvetted": "Not digitised or no ark found; BnF italien volume not seen; access is not 'archive', so no block without a view."
+ },
+ "1323": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 04",
+  "seen": {
+   "kind": "not online",
+   "where": "British Library catalogue record fetched 29 Oct 2026 (searcharchives.bl.uk); Digitised Content field blank, no viewer link, items consulted in London only",
+   "extent": "One volume; extent of cipher not stated by the BL.",
+   "cipher": "BL description: 'Partly in cipher; keys to which are prefixed.' Original letters of 'Pellegrino' / 'Il Solito' / 'Del Luoco Antico' to an agent (apparently Giovanni Maria Massara; see fol. 93) of Cardinal Alonso de la Cueva, 20 Jan-19 May 1629. No decipherings mentioned."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE (known.py: only venice_milan_print/candidates.json).",
+   "tomokiyo": "Not in cryptiana pages crawled in the venice_milan_print sweep; WebSearch 'Add MS 18662 Il Solito Massara' returns only the BL record.",
+   "lasry": "No Lasry or Histocrypt item found; searches returned only unrelated Venetian-cipher papers (Ottavian Medici, Suriano).",
+   "edition": "No edition found; searched Add MS 18662, Pellegrino/Il Solito, Cardinal de la Cueva 1629 Venice Inquisitors; only the BL record and Bedmar biographies.",
+   "literature": "Searched 29 Oct 2026 (WebSearch, several queries per lead). Three queries (shelfmark; cardinal and Massara; Inquisitors' secretary leak 1629); the leak itself is undocumented in what I found."
+  },
+  "key_check": "Keys are prefixed in the volume itself (BL), so a key exists in situ; no other key held in repo or DECODE; not applied since images are not online.",
+  "duplicates": "known.py on 'Add MS 18662', 'Pellegrino', 'Massara' returns only research/venice_milan_print (README, candidates.json); no ledger, DECODE or catalogue entry.",
+  "verdict": "open"
+ },
+ "1324": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 04",
+  "seen": {
+   "kind": "not online",
+   "where": "British Library catalogue record fetched 29 Oct 2026 (searcharchives.bl.uk); Digitised Content field blank, no viewer link, items consulted in London only",
+   "extent": "One volume; extent unknown. Ponce de Leon's drafts may give context.",
+   "cipher": "BL description: 'The letters of the Marquis are originals, partly in cipher; those of Don Luis are drafts.' Marques de la Fuente (Gaspar Teves Tello de Guzman) to Luis Ponce de Leon, 25 Dec 1665-28 May 1666. No decipherings mentioned."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE (known.py); a WebSearch for a DECODE key for the Marques de la Fuente 1666 found none.",
+   "tomokiyo": "Not in the cryptiana pages crawled earlier; no hit for Egerton 2050.",
+   "lasry": "No Lasry item; search returned Histocrypt papers on other 17th-c. French/Spanish ciphers only.",
+   "edition": "The monograph Relaciones entre Espana y Francia desde la Paz de los Pirineos hasta la Guerra de Devolucion: la embajada del Marques de la Fuente exists (polifemo.com listing); whether it prints cipher passages is not checked; DBE biography found.",
+   "literature": "Searched 29 Oct 2026 (WebSearch, several queries per lead). Queries on shelfmark and names, Spanish-language query, DECODE key query; no decipherment found."
+  },
+  "key_check": "No Spanish key of the 1660s for this correspondence is held here; DECODE not searched by record for Spanish Milan/Paris keys beyond known.py (no hit). Not applied, images not online.",
+  "duplicates": "known.py 'Egerton MS 2050' returns only research/venice_milan_print; no duplicate or ledger entry.",
+  "verdict": "open"
+ },
+ "1325": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 04",
+  "seen": {
+   "kind": "not online",
+   "where": "British Library catalogue record fetched 29 Oct 2026 (searcharchives.bl.uk); Digitised Content field blank, no viewer link, items consulted in London only",
+   "extent": "One volume of holograph letters; extent unknown.",
+   "cipher": "BL description: 'Holograph; many in cipher'; Count Antonio Azzurini Conti, castellan of Faenza, to Cardinal Gualterio, 17 Jul 1708-3 Aug 1712, some under cover to Domenico Lucci and Antonio della Sapetta; also copies of Gualterio's replies. The record does not mention decipherings (other Gualterio volumes say 'with decipherings')."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE (known.py).",
+   "tomokiyo": "Not in cryptiana pages crawled earlier.",
+   "lasry": "None found; search on Azzurini Conti, Gualterio and Add MS 20504 returned only BL catalogue records.",
+   "edition": "No edition or study of the Azzurini Conti letters found (two Italian/English searches).",
+   "literature": "Searched 29 Oct 2026 (WebSearch, several queries per lead). Three queries (shelfmark with decipherment; Italian query with Stuart/Pretendente; Gualterio cipher tables); nothing beyond BL records."
+  },
+  "key_check": "BL Add MS 20582 (Gualterio's cipher tables) fetched from the BL record: it lists no Azzurini, Faenza, Pomponne, Torcy or Grimani entries, so it does not obviously carry this key; Add MS 20244 not found. No key applied since images are not online.",
+  "duplicates": "known.py on 'Add MS 20504', 'Azzurini' returns only research/venice_milan_print.",
+  "verdict": "open"
+ },
+ "1326": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 04",
+  "seen": {
+   "kind": "not online",
+   "where": "British Library catalogue record fetched 29 Oct 2026 (searcharchives.bl.uk); Digitised Content field blank, no viewer link, items consulted in London only",
+   "extent": "At least seven cipher passages at the folios listed by the BL.",
+   "cipher": "BL description: three volumes of letter-books, 1670-72, 'English and Italian (some with English translations), Latin and cipher'; the record lists ciphers in Add MS 4717 ff. 3, 30, 47b, 49, 50, 74b and Add MS 4718 f. 84b; no decipherings mentioned."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE (known.py).",
+   "tomokiyo": "Not in cryptiana pages crawled earlier.",
+   "lasry": "No Lasry, Histocrypt or GL.htm item found for this series; WebSearch 29 Oct 2026 returned only BL catalogue records and unrelated papers.",
+   "edition": "No edition of the letter-books found; the Royal Society holds Dodington's letters to Oldenburg (clear), unrelated.",
+   "literature": "Searched 29 Oct 2026 (WebSearch, several queries per lead). Queries on Dodington letter-books, 'Dodington's cypher' SP 99/48; nothing on a decipherment."
+  },
+  "key_check": "TNA SP 99/48/233 'Dodington's cypher' (from the earlier sweep) is the likely key; not reached (TNA Discovery not checked here), so not applied.",
+  "duplicates": "known.py 'Add MS 4716', 'Dodington' returns only research/venice_milan_print.",
+  "verdict": "open"
+ },
+ "1327": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 04",
+  "seen": {
+   "kind": "not online",
+   "where": "British Library catalogue record fetched 29 Oct 2026 (searcharchives.bl.uk); Digitised Content field blank, no viewer link, items consulted in London only",
+   "extent": "Two volumes; many despatches in cipher; extent not counted by the BL.",
+   "cipher": "BL description: 'ORIGINAL DISPATCHES, many of which are in cypher', Torcy (and Louis XIV) to the Abbe de Pomponne at Venice, 15 Apr 1706-17 Feb 1710, two folio volumes from the Sussex collection; no decipherings mentioned (Pomponne's own letters to Gualterio, Add MS 20338-20339, are 'with decipherings')."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE (known.py); DECODE holds few French keys.",
+   "tomokiyo": "Tomokiyo's blog on British codebreakers' keys of French ciphers noted in search; no mention of this volume found.",
+   "lasry": "No Lasry, Histocrypt or GL.htm item found for this series; WebSearch 29 Oct 2026 returned only BL catalogue records and unrelated papers.",
+   "edition": "No edition found; SNAC lists the despatches in cypher with no published decipherment.",
+   "literature": "Searched 29 Oct 2026 (WebSearch, several queries per lead). Queries in English and French on Torcy/Pomponne despatches; only BL and SNAC records."
+  },
+  "key_check": "No French chiffre for Torcy-Pomponne is held here; Add MS 20582 does not list Pomponne or Torcy. Not applied.",
+  "duplicates": "known.py 'Add MS 15284', 'Pomponne' returns only research/venice_milan_print.",
+  "verdict": "open"
+ },
+ "1328": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 04",
+  "seen": {
+   "kind": "not online",
+   "where": "British Library catalogue record fetched 29 Oct 2026 (searcharchives.bl.uk); Digitised Content field blank, no viewer link, items consulted in London only",
+   "extent": "Two volumes; number of ciphered enclosures unknown.",
+   "cipher": "BL description: drafts of letters from the Comte de Froulay, French ambassador at Venice, to the Secretary of State, 'with enclosures in cypher', 1734-36 (Add MS 17688) and 1739-43 (Add MS 17689); no decipherings mentioned."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE (known.py).",
+   "tomokiyo": "Not in cryptiana pages crawled earlier.",
+   "lasry": "No Lasry, Histocrypt or GL.htm item found for this series; WebSearch 29 Oct 2026 returned only BL catalogue records and unrelated papers.",
+   "edition": "No edition found; TNA holds Froulay's Venice despatches (SP 78/215) in clear, unrelated.",
+   "literature": "Searched 29 Oct 2026 (WebSearch, several queries per lead). Query in French on Froulay and the shelfmark; nothing about the ciphered enclosures."
+  },
+  "key_check": "No French 1730s Venice key held; the clear drafts may serve as a crib. Not applied, images not online.",
+  "duplicates": "known.py 'Add MS 17688', 'Froulay' returns only research/venice_milan_print.",
+  "verdict": "open"
+ },
+ "1538": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 04",
+  "seen": {
+   "kind": "not online",
+   "where": "Chicago History Museum finding aid (CARLI CONTENTdm id 2106); originals in the museum's Research Center, a 1976 microfilm exists; not viewed",
+   "cipher": "Finding-aid calendar entry: 'Routine: officer transfers; part of message in cypher' (Eustis to Wilkinson, 10 May 1809, vol. 3 p. 67 item 93). No decipherment noted.",
+   "extent": "One letter; extent of the cypher unknown."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE (known.py: no Eustis/Wilkinson cipher of 1809; catalogue 847 and 2374 are other Wilkinson items).",
+   "tomokiyo": "No Tomokiyo page for Wilkinson-Eustis found.",
+   "lasry": "None; the Chu-Valenti-Knight work (EMNLP 2020) covers Wilkinson's Spanish codes, not War Department ciphers.",
+   "edition": "No edition; Founders Online prints Wilkinson-Madison 1809 letters but search found no Eustis cipher message.",
+   "literature": "Searched 29 Oct 2026 (WebSearch, several queries per lead). Three queries (Eustis/Wilkinson 1809 cipher; Chu-Valenti-Knight; CHM microfilm calendar); nothing."
+  },
+  "key_check": "No War Department-Wilkinson cipher key held here or on DECODE; the Chu-Valenti-Knight Wilkinson code is a Spanish dictionary code and does not apply. Not applied, text not online.",
+  "duplicates": "known.py 'Wilkinson' hits catalogue 847 (Burr-Wilkinson cypher letter, Newberry) and 2374 (Wilkinson Spanish codes); neither is a Chicago Eustis item.",
+  "verdict": "open"
+ },
+ "1539": {
+  "unvetted": "Calendar says only 'receipt of ciphered message' (4 May 1809, item 91): it may be a clear acknowledgement with no cipher in it, and the leaf is not online, so no block."
+ },
+ "1540": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 04",
+  "seen": {
+   "kind": "not online",
+   "where": "Chicago History Museum finding aid (CARLI CONTENTdm id 2106); originals in the museum's Research Center, a 1976 microfilm exists; not viewed",
+   "cipher": "Finding-aid calendar entry: 'Fragment; report of conversation avowing allegiance to U.S. rather than Britain; contains numerical cypher notations' (vol. 4 p. 125 item 174, undated).",
+   "extent": "One fragment; amount of numerical notation unknown."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE (known.py: no Eustis/Wilkinson cipher of 1809; catalogue 847 and 2374 are other Wilkinson items).",
+   "tomokiyo": "No Tomokiyo page for Wilkinson-Eustis found.",
+   "lasry": "None; the Chu-Valenti-Knight work (EMNLP 2020) covers Wilkinson's Spanish codes, not War Department ciphers.",
+   "edition": "No edition; Founders Online prints Wilkinson-Madison 1809 letters but search found no Eustis cipher message.",
+   "literature": "Searched 29 Oct 2026 (WebSearch, several queries per lead). Three queries (Eustis/Wilkinson 1809 cipher; Chu-Valenti-Knight; CHM microfilm calendar); nothing."
+  },
+  "key_check": "No War Department-Wilkinson cipher key held here or on DECODE; the Chu-Valenti-Knight Wilkinson code is a Spanish dictionary code and does not apply. Not applied, text not online.",
+  "duplicates": "known.py 'Wilkinson' hits catalogue 847 (Burr-Wilkinson cypher letter, Newberry) and 2374 (Wilkinson Spanish codes); neither is a Chicago Eustis item.",
+  "verdict": "open"
+ },
+ "1445": {
+  "unvetted": "CEHM-Carso scan is behind its digital viewer (VisorArchivoDigital); the record page (checked for 1446: Carta cifrada, 'Sin traduccion', Formato Digital link) shows no image, my fetch of the viewer was blocked by the sandbox, so the leaf was not seen; access is not 'archive'."
+ },
+ "1446": {
+  "unvetted": "CEHM-Carso scan is behind its digital viewer (VisorArchivoDigital); the record page (checked for 1446: Carta cifrada, 'Sin traduccion', Formato Digital link) shows no image, my fetch of the viewer was blocked by the sandbox, so the leaf was not seen; access is not 'archive'."
+ },
+ "1447": {
+  "unvetted": "CEHM-Carso scan is behind its digital viewer (VisorArchivoDigital); the record page (checked for 1446: Carta cifrada, 'Sin traduccion', Formato Digital link) shows no image, my fetch of the viewer was blocked by the sandbox, so the leaf was not seen; access is not 'archive'."
+ },
+ "1448": {
+  "unvetted": "CEHM-Carso scan is behind its digital viewer (VisorArchivoDigital); the record page (checked for 1446: Carta cifrada, 'Sin traduccion', Formato Digital link) shows no image, my fetch of the viewer was blocked by the sandbox, so the leaf was not seen; access is not 'archive'."
+ }
+}

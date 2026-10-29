@@ -1,0 +1,97 @@
+{
+ "1302": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 09",
+  "seen": {
+   "kind": "facsimile",
+   "where": "Narvaez, 'Una carta cifrada atribuible a Jose Mariano Michelena (1824)', Estudios de Historia Moderna y Contemporanea de Mexico 41 (2011) pp. 119-133, PDF from redalyc.org/pdf/941/94120769006.pdf (text read, fig. 2 viewed); archive: AHDSREM leg. 40-11-3, no folio numbers.",
+   "extent": "One letter of 6 Oct 1824 (cryptogram, described in the Calendar of the Hernandez y Davalos collection, Univ. of Texas, Benson); a plain-text sheet of the same message sits in the same legajo.",
+   "cipher": "Cryptogram not seen directly: the article reproduces a detail of it (fig. 1) and of the plain-text original (fig. 2, a clear Spanish hand text, viewed). Narvaez states the catalogue compilers did not decipher it but drew on the plain-text copy, which precedes the cryptogram in leg. 40-11-3 ('Claves para la correspondencia de la Legacion de Mexico en Inglaterra'). No decipherment of the cryptogram itself is published."
+  },
+  "prior_art": {
+   "decode": "known.py (Michelena, AHDSREM, leg. 40-11-3): hits only in research/leads.json and the canada_latam/latam_mexico READMEs; not on DECODE per the DECODE list dumps searched by known.py.",
+   "tomokiyo": "No cryptiana page for Mexican 1824 diplomatic ciphers found in web searches (Narvaez + Michelena + Obregon + Torrens searches, 29 Oct 2026).",
+   "lasry": "No Lasry paper or GL.htm entry on Mexican 1820s ciphers found; none known to the repo ledgers.",
+   "edition": "A plain-text version of the same message is in leg. 40-11-3 and was used by the compilers of A calendar of the Juan E. Hernandez y Davalos manuscript collection (1954) for the attribution to Michelena; the calendar summarises the content.",
+   "literature": "Narvaez 2011 (read: abstract, pp. 119-124 text, figures) argues attribution to Michelena by cryptanalysis and analogy; his articles on Obregon 1825 (Historia Mexicana 231, 2009) and Torrens (EHMCM 38, 2009) concern other letters."
+  },
+  "key_check": "Keys filed in the same legajo ('Claves para la correspondencia de la Legacion de Mexico en Inglaterra') are not held in the repo; no Michelena/Alaman table is in repo or DECODE per known.py. None could be applied; the plain-text sheet is the crib instead.",
+  "duplicates": "known.py for Michelena, AHDSREM, 40-11-3, Alaman: only the lead itself and the Mexican sweep READMEs; not in catalogue.json. Narvaez's Obregon (1300) and Torrens (1301) leads are different letters.",
+  "verdict": "partly_read",
+  "closed": "A plain-text original of the same message is filed with the cryptogram in AHDSREM leg. 40-11-3 and was used by the 1954 calendar compilers, so the content is known and the cryptogram is a known-plaintext check, not an open cipher; Narvaez 2011 does not publish a decipherment."
+ },
+ "1536": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 09",
+  "seen": {
+   "kind": "transcription",
+   "where": "https://collections.newberry.org/asset-management/2KXJ8ZSFQY9EQ (Newberry digital item, Ayer MS 3008 box 2 item 45) with its volunteer transcription, read 29 Oct 2026; the image itself was not viewed by this batch.",
+   "extent": "One letter-book page; two telegram copies read here (12 Jan 1874 to Sheridan; 17 Jan 1874 to Maj. G. B. Russell, Austin), each marked 'Official Copy by mail', signed C. C. Augur; the lead records a third on the same page; each about 50-60 words.",
+   "cipher": "Transcribed as scrambled English word strings with code words (Dresden, Cheyenne, Houston, Waco), e.g. 'Dresden I persons to it fussy unauthorized forward have may self...' and a stray 'Cypher': word transposition with some code words, as the 18 Feb 1869 Grierson letter (Ayer MS 3039) describes for army cypher in Texas. No plaintext or decipherment appears in the transcription."
+  },
+  "prior_art": {
+   "decode": "known.py (Augur, Ayer MS 3008, Sheridan 1874): hits only in research/leads.json and CATALOGUE.md; not on DECODE.",
+   "tomokiyo": "No cryptiana page on 1870s US Army department telegram ciphers found (web searches 29 Oct 2026: Augur/Texas/1874 cipher; Newberry Ayer MS 3008).",
+   "lasry": "No Lasry work on US Army post-war route ciphers found; none in the repo ledgers.",
+   "edition": "No edition found: three searches (Augur + cipher 1874, Ayer MS 3008 finding aid, army route cipher 1870s) returned only Newberry item pages and unrelated Huntington Civil War cipher volumes; Official Records stop at 1865.",
+   "literature": "Plum 1882 and the Eckert/Stager War Department route ciphers cover the Civil War; the 1886 Gregory/Slater codes are later; no source for the 1873-74 Department of Texas cipher was found."
+  },
+  "key_check": "No Department of Texas or Division of the Missouri key for 1874 is held in the repo or on DECODE; the repo's Union route ciphers (targets/union1864, army1865) are Civil War War Department keys and were not applied because the 1874 page uses its own code-word list.",
+  "duplicates": "known.py hits are the lead and CATALOGUE.md entries for Augur; not the same as catalogue 632/680 (NARA Union and Reconstruction series); no other Newberry Augur telegram in catalogue.json.",
+  "verdict": "open"
+ },
+ "1543": {
+  "unvetted": "finding aid says only \"possibly in code\"; cipher unconfirmed"
+ },
+ "1218": {
+  "unvetted": "FranceArchives page is JS-only (fetch returned empty); 1 web search on Pelissier telegraphic cipher found nothing; no scan reachable; known.py hits only the lead. Needs the SHD inventory text and a look at 1 M 2294 D. 4."
+ },
+ "1219": {
+  "unvetted": "FranceArchives record not retrievable (empty page); web search for Landanger/129 J found nothing; cannot say whether the sheets are cipher or business shorthand; needs the Haute-Marne inventory or scans."
+ },
+ "1299": {
+  "unvetted": "Defense library host refused connections (ECONNREFUSED); only a search snippet ('some of them in cipher', Aug 1758-Jun 1759 despatches) seen; Pusch 2008 Louisiana History article (Kerlerec cipher reconstruction) not read, so key and duplicate status of C13A 41/42 unresolved."
+ },
+ "1300": {
+  "unvetted": "Narvaez Historia Mexicana article returned 403 (not read); searches confirm he decoded despatches nos. 3 and 14 (and a separate 1826 one) from AHDSREM but not how many coded despatches remain; no scan found online."
+ },
+ "1301": {
+  "unvetted": "Narvaez 2009 (EHMCM 38, read in part) concerns Torrens's 'Diario reservado no. 18' (1829, AHDSREM L-E-1700); the 2007-08 Memorias article on reserved notes 2 and 3 of 1826 was not found or read; need that article before judging."
+ },
+ "1307": {
+  "unvetted": "DECODE records need authentication (R7902 metadata only: Non-decrypted, graphic signs+alphabet+numerals, 1446-11-10); images not seen by this batch. Repo notes (targets/it1583) say an earlier session viewed R7900-R7915 and found none in the ff. 68/70 alphabet; Gallica f. 131 not opened here."
+ },
+ "1308": {
+  "unvetted": "DECODE images need login, not seen here; no web prior art found for Tranchedini/Alamanni Nov 1446 ciphers; Lasry's 1452 Tranchedini key not applied by this batch."
+ },
+ "1309": {
+  "unvetted": "DECODE images not accessible without login; the Stavoli/Simonetta key (cart. 1597 no. 14) not applied here; amount of cipher in R7912 not checked."
+ },
+ "1310": {
+  "unvetted": "DECODE images need login; the cipher-versus-key-sample question for cart. 1597 (59 records) was not checked by this batch; only R5430 was seen by an earlier session."
+ },
+ "1311": {
+  "unvetted": "DECODE images need login; cart. 1598/1591 thumbnails not seen by this batch; the 'Da cifra' leaf is unverified."
+ },
+ "1423": {
+  "unvetted": "Calisphere item page returned nothing; finding-aid text only via the lead; no search for the Paraguayan letters' code done beyond known.py (no Godoi hits)."
+ },
+ "1424": {
+  "unvetted": "Historic Newton catalogue returned 403; one web search (Loud/Carruth postcards) found no coverage and no Schmeh/Klausis page; cards not seen, so crib card and extent unverified."
+ },
+ "1425": {
+  "unvetted": "UIdaho item pages give catalogue text only ('Telegram written in code', 3 scans); images not viewed; searches found no codebook or decipherment but fewer than three were specific to the series."
+ },
+ "1426": {
+  "unvetted": "Pitt digital pages hit a bot check; searches show Pitt hosts a classroom 'Decoding the Homestead Strike' lesson that decodes a July 1892 Frick-Carnegie telegram with a decoding book ('small plunge' = Homestead), so some of the 19 are readable with a known code; the code book and per-item status could not be opened, so the verdict (read/partly_read/key_lookup) is undecided."
+ },
+ "1537": {
+  "unvetted": "Newberry page not fetched; transcription names a cipher but no ciphertext located; neighbouring box 106 folders not searched, so there is nothing to vet as a cipher yet."
+ },
+ "1541": {
+  "unvetted": "CHM Primo record is JS-only; the Bodleian Goodricke papers (MS. Eng. hist. c. 62, 'some in cypher with transliteration') could not be itemised (Anubis bot check), so a decipherment of this very letter may exist; TNA SP 78/278/57 is Walpole's 8 Jun 1769 despatch to Weymouth, no cipher noted."
+ },
+ "1542": {
+  "unvetted": "Primo record JS-only; only the catalogue wording ('military telegraph cipher notebooks') seen; likely route-cipher keys (Plum 1882 prints the Union ciphers; cf. catalogue 632/680, targets/union1864) but not confirmed, so left a lead."
+ }
+}

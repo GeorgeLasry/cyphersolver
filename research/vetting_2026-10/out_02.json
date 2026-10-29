@@ -1,0 +1,343 @@
+{
+ "1351": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 02",
+  "seen": {
+   "kind": "not online",
+   "where": "https://www.archiviodistatovenezia.it/images/Inventari/311%20ter_Archivi%20propri%20ambasciatori%20e%20ambasciate.pdf",
+   "extent": "One letter (a \"replica\") wholly in cipher, length unknown; not scanned online.",
+   "cipher": "Inventory 311 ter: \"qualche altra lettera isolata ... altra «replica» tutta in cifra\"; no decipherment mentioned."
+  },
+  "prior_art": {
+   "decode": "Grepped DECODE harvest for Corner, Dolfin, Garzoni, Tiepolo: only an unrelated \"corner\" substring hit; not on DECODE.",
+   "tomokiyo": "Web search found no cryptiana page for Venetian inter-embassy ciphers of 1706; none known.",
+   "lasry": "No Lasry paper or record on this bundle found by web search.",
+   "edition": "No edition of the Corner/Inghilterra 4 bundle found by web search.",
+   "literature": "Web search (Venetian ambassadors 1706 cipher replica) returned nothing; the ASVe inventory is the only description."
+  },
+  "key_check": "No Venetian ambassador-to-ambassador key is held in the repo; known.py for Corner and Garzoni gave only the lead itself; CX Cifre chiavi not consulted online.",
+  "duplicates": "known.py for Corner, Garzoni: only leads.json/venice_archives rows (the same lead); no catalogue entry.",
+  "verdict": "open"
+ },
+ "1352": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 02",
+  "seen": {
+   "kind": "not online",
+   "where": "https://www.archiviodistatovenezia.it/images/Inventari/311%20ter_Archivi%20propri%20ambasciatori%20e%20ambasciate.pdf",
+   "extent": "Group of ducali in cipher, mostly in two or three copies, 1620-21; not scanned.",
+   "cipher": "Inventory note 201: \"un gruppo di altre ducali in cifra ... in gran parte duplicate o triplicate\"; no decipherment mentioned."
+  },
+  "prior_art": {
+   "decode": "Grepped DECODE harvest for Lionello: no record; not on DECODE.",
+   "tomokiyo": "No cryptiana page on Venetian Swiss-resident ciphers found by web search.",
+   "lasry": "No Lasry work on this series found by web search.",
+   "edition": "Web search for Lionello/Svizzeri 1620 ducali found no edition (only the English-calendar Lionello, a different posting).",
+   "literature": "No literature on these ducali found by web search; Senate clear drafts in Senato Secreta are a possible crib, not a decipherment."
+  },
+  "key_check": "Resident cipher keys in ASVe CX Cifre b. 1-2 (Suriano a=z10) are not held in the repo; none tried.",
+  "duplicates": "known.py Lionello: only the lead and venice_archives candidates (same item).",
+  "verdict": "open"
+ },
+ "1353": {
+  "unvetted": "UTSC/DRRP page returned 403 to WebFetch and no cipher page is confirmed; the registers carry interlined decipherments, so nothing can be said without browsing the page images."
+ },
+ "1381": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 02",
+  "seen": {
+   "kind": "not online",
+   "where": "https://anri.go.id/download/inventaris-arsip-tekstual-algemene-secretarie-v.d.-nederlandsindische-regering-en-gedeponeerde-archieven-19421950-1641884401",
+   "extent": "1 omslag of telegrams; original kept in Jakarta, not scanned.",
+   "cipher": "Finding aid: \"De teksten zijn niet gedecodeerd en volstrekt onbegrijpelijk\"; no decipherment known."
+  },
+  "prior_art": {
+   "decode": "Grepped DECODE harvest for Soerjotjondro: no record; not on DECODE.",
+   "tomokiyo": "No cryptiana page on Indonesian 1948 telegram codes known; web search for Epidnation returned nothing.",
+   "lasry": "No Lasry work on Indonesian revolution codes found.",
+   "edition": "No edition found; web search for Soerjotjondro/Epidnation gave only unrelated 1948 DFAT cablegrams.",
+   "literature": "Nothing found by web search; Epidnation is probably the Singapore epidemiological bureau address, so the code may be a published epidemiological telegraph code (unverified)."
+  },
+  "key_check": "No epidemiological or Republican code book is held in the repo; the published epidemiological code is the key lead, not yet obtained.",
+  "duplicates": "known.py Epidnation, Soerjotjondro, 2.10.14: only the lead and research/asia_anri; no catalogue duplicate.",
+  "verdict": "open"
+ },
+ "1382": {
+  "unvetted": "Finding aid says only \"veelal cryptisch\" and the lead itself guesses clear telegrams with code words; no evidence either way that cipher text exists, and not scanned."
+ },
+ "1383": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 02",
+  "seen": {
+   "kind": "not online",
+   "where": "https://www.nationaalarchief.nl/onderzoeken/archief/2.10.17",
+   "extent": "Intercepted telegrams plus decipherment papers; size unknown; physical only.",
+   "cipher": "Description: \"Onderschepte republikeinse telegrammen en andere buitgemaakte documenten, deels in code, met stukken over het ontcijferen van deze codes\"."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE (local harvest grepped for Republic/Indonesia terms: no record).",
+   "tomokiyo": "No cryptiana page on Dutch-Indies Republican codes known.",
+   "lasry": "No Lasry work found.",
+   "edition": "No edition found.",
+   "literature": "No literature found by web search (NEFIS/NA 2.10.17 search returned only other fonds)."
+  },
+  "key_check": "Contemporary decipherment papers are attached per the description; no repo key relevant.",
+  "duplicates": "known.py 2.10.17: only the lead; sibling inventory 2.10.62 items 1384-1387 are different documents.",
+  "verdict": "partly_read",
+  "closed": "The NA description says the file includes papers on deciphering these codes, so contemporary decipherment exists (extent unknown)."
+ },
+ "1384": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 02",
+  "seen": {
+   "kind": "not online",
+   "where": "https://www.nationaalarchief.nl/onderzoeken/archief/2.10.62",
+   "extent": "One coded telegram with original and translation; physical only, not scanned.",
+   "cipher": "Description: \"met gecodeerd telegram\"; a translation is present but may cover only the report."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE (local harvest grepped: no NEFIS/Indonesia record).",
+   "tomokiyo": "No cryptiana page on NEFIS-captured Republican codes known.",
+   "lasry": "No Lasry work found.",
+   "edition": "No edition found; web search for 2.10.62 found only the sibling NEFIS inventory 2.10.37.02.",
+   "literature": "No literature found by web search on these captured documents."
+  },
+  "key_check": "No Republican TNI code sheets held in repo; key leads (2.10.62 inv. 5470, 2.13.132 inv. 938) are unobtained. ",
+  "duplicates": "known.py \"2.10.62\": only the sibling leads 1384-1387; no catalogue duplicate.",
+  "verdict": "open"
+ },
+ "1385": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 02",
+  "seen": {
+   "kind": "not online",
+   "where": "https://www.nationaalarchief.nl/onderzoeken/archief/2.10.62",
+   "extent": "One coded message with original and translation; physical only.",
+   "cipher": "Description: \"en gecodeerd bericht\"; decoding not mentioned."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE (local harvest grepped: no NEFIS/Indonesia record).",
+   "tomokiyo": "No cryptiana page on NEFIS-captured Republican codes known.",
+   "lasry": "No Lasry work found.",
+   "edition": "No edition found; web search for 2.10.62 found only the sibling NEFIS inventory 2.10.37.02.",
+   "literature": "No literature found by web search on these captured documents."
+  },
+  "key_check": "No Republican TNI code sheets held in repo; key leads (2.10.62 inv. 5470, 2.13.132 inv. 938) are unobtained. ",
+  "duplicates": "known.py \"2.10.62\": only the sibling leads 1384-1387; no catalogue duplicate.",
+  "verdict": "open"
+ },
+ "1386": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 02",
+  "seen": {
+   "kind": "not online",
+   "where": "https://www.nationaalarchief.nl/onderzoeken/archief/2.10.62",
+   "extent": "Captured Bandjermasin documents, partly in code; physical only.",
+   "cipher": "Description: \"met intelligence-informatie (deels in code)\"; original and translation."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE (local harvest grepped: no NEFIS/Indonesia record).",
+   "tomokiyo": "No cryptiana page on NEFIS-captured Republican codes known.",
+   "lasry": "No Lasry work found.",
+   "edition": "No edition found; web search for 2.10.62 found only the sibling NEFIS inventory 2.10.37.02.",
+   "literature": "No literature found by web search on these captured documents."
+  },
+  "key_check": "No Republican TNI code sheets held in repo; key leads (2.10.62 inv. 5470, 2.13.132 inv. 938) are unobtained. Code found at Sampit (inv. 4693) may be the key.",
+  "duplicates": "known.py \"2.10.62\": only the sibling leads 1384-1387; no catalogue duplicate.",
+  "verdict": "open"
+ },
+ "1387": {
+  "unvetted": "Description (\"stukken betreffende ... coderingen\") may be code tables only; no evidence that ciphertext exists, not scanned."
+ },
+ "884": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 02",
+  "seen": {
+   "kind": "scan",
+   "where": "https://www.archivinformationssystem.at/detail.aspx?ID=3483953 (AIS images 1-3 of 16 downloaded 29 Oct 2026)",
+   "extent": "Three ciphered letters, fol. 1-6; I viewed the cover, a blank verso and letter 1 (fol. 1r).",
+   "cipher": "Letter 1 (headed \"An Erzh. Ferdinand, um 1608\"): a block of 14 lines of letter-like cipher, and below it a German text in a different hand with deletions that reads as the decipherment (Kaiser, Böhmen, König Matthias, Religion). Letters 2 and 3 not viewed."
+  },
+  "prior_art": {
+   "decode": "Searched the local DECODE harvest (research/catalogue_harvest/decode/*.jsonl) for the names and shelfmark: no record for this item; not on DECODE.",
+   "tomokiyo": "No cryptiana page on this 1608 Habsburg file found by web search.",
+   "lasry": "No Lasry work found.",
+   "edition": "No edition of the file found by web search.",
+   "literature": "Web search found only the Bruderzwist background and a different Habsburg cipher series (Ferdinand to Leopold 1609-10); nothing on this file."
+  },
+  "key_check": "No key held; not needed for letter 1 since a contemporary rendering sits beneath the cipher.",
+  "duplicates": "known.py Familienakten: only this lead and the aut_hhsta candidate; no catalogue duplicate.",
+  "verdict": "partly_read",
+  "closed": "Letter 1 carries what appears to be a contemporary German decipherment under the cipher block; letters 2-3 not checked."
+ },
+ "885": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 02",
+  "seen": {
+   "kind": "scan",
+   "where": "https://www.archivinformationssystem.at/detail.aspx?ID=7040827 (AIS 7-4-4 image 3 downloaded and viewed)",
+   "extent": "7-4-4 (fol. 28-30), 7-4-5 (fol. 31-34), 7-4-9 (fol. 51-59): 2-3 ciphered copies each plus a Latin exemplar.",
+   "cipher": "7-4-4 image 3 is a full page of symbol cipher (about 13 lines, marked A, \"Dupl. 1548\") with nothing written over or under it; the AIS describes a separate Latin exemplar of the same text, which is not marked as a decipherment."
+  },
+  "prior_art": {
+   "decode": "Searched the local DECODE harvest (research/catalogue_harvest/decode/*.jsonl) for the names and shelfmark: no record for this item; not on DECODE. DECODE R366/R367 are Ferdinand-to-Malvezzi 1548, a different correspondent.",
+   "tomokiyo": "No cryptiana page on Polish/Transylvanian letters to Ibrahim Pasha found by web search.",
+   "lasry": "No Lasry work found.",
+   "edition": "AIS lists Austro-Turcica 1541-1552 pp. 276-278 for the Malvezzi cover letter of 7-4-9 only; whether the enclosures are printed is not verified (no access to the book).",
+   "literature": "Web search for Martinuzzi/Sigismund August ciphers to Ibrahim found nothing; Hungarian literature not searched."
+  },
+  "key_check": "Malvezzi key R367 serves Ferdinand-Malvezzi traffic; these are other correspondents ciphers, so no held key applies.",
+  "duplicates": "known.py 7-4-5: none; central_archives row for Malvezzi lists other items only.",
+  "verdict": "open"
+ },
+ "886": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 02",
+  "seen": {
+   "kind": "scan",
+   "where": "https://www.archivinformationssystem.at/detail.aspx?ID=4601585 (AIS 29-2-57 image 2 viewed; detail pages of all 6 read)",
+   "extent": "Six Carpi reports 1513-15 (fol. 73-78, 93-94, 179-182, 17-20, 4-9, 106-111).",
+   "cipher": "29-2-57 shows cipher with interlinear Latin writing above the cipher groups."
+  },
+  "prior_art": {
+   "decode": "Searched the local DECODE harvest (research/catalogue_harvest/decode/*.jsonl) for the names and shelfmark: no record for this item; not on DECODE.",
+   "tomokiyo": "No cryptiana page on Carpi found by web search.",
+   "lasry": "No Lasry work found.",
+   "edition": "AIS 29-2-57 cites Anton Walder, Kryptographie unter Kaiser Maximilian I. (Dipl.Arb. Innsbruck 2014) \"mit Entschlüsselung\"; thesis not found online.",
+   "literature": "AIS notes: 29-2-50, 29-2-94, 29-3-9, 33-2-3 \"teilweise chiffriert und dechiffriert\"; only 34-1-41 is \"teilweise chiffriert\" alone."
+  },
+  "key_check": "de Burgo key (targets/maximiliana1510/key_deburgo.md) not tried; not needed, five of six carry contemporary decipherments.",
+  "duplicates": "known.py Alberto Pio: only recipient of de Burgo letters; no duplicate.",
+  "verdict": "partly_read",
+  "closed": "Five of six items carry interlinear/contemporary decipherment and 29-2-57 is covered by Walder 2014; only 34-1-41 is unannotated."
+ },
+ "887": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 02",
+  "seen": {
+   "kind": "scan",
+   "where": "https://www.archivinformationssystem.at/detail.aspx?ID=4435434 (AIS 26-2-39 image 5 viewed; detail pages read)",
+   "extent": "Four items: 26-2-39 fol. 65-87, 37-1-67, 29-3-23, 31-2-57.",
+   "cipher": "26-2-39 image 5 is a 19th-century cipher key table headed for the Colla correspondence with Maximilian I, 1511."
+  },
+  "prior_art": {
+   "decode": "Searched the local DECODE harvest (research/catalogue_harvest/decode/*.jsonl) for the names and shelfmark: no record for this item; not on DECODE.",
+   "tomokiyo": "No cryptiana page found by web search.",
+   "lasry": "No Lasry work found.",
+   "edition": "No edition found.",
+   "literature": "AIS: 26-2-39 includes a 19th-century key and copies; 31-2-57 and 37-1-67 \"teilweise chiffriert und dechiffriert\"; 29-3-23 only \"teilweise chiffriert\"."
+  },
+  "key_check": "A 19th-century key for Colla is bound with 26-2-39; catalogue 495 holds Colla items in the same series.",
+  "duplicates": "known.py Colla: catalogue 495 names Colla (other shelfmarks, e.g. 26-5-10); these four shelfmarks are not in it.",
+  "verdict": "partly_read",
+  "closed": "Three of four items have a decipherment or key with them; only 29-3-23 (fol. 50-51, Bannisio to Carpi) lacks one."
+ },
+ "888": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 02",
+  "seen": {
+   "kind": "scan",
+   "where": "https://www.archivinformationssystem.at/detail.aspx?ID=4606647 (AIS 31-2-24 image 3 viewed; detail pages read)",
+   "extent": "Four Lang letters 1513-14, fol. 66-68, 79-80, 33-34, 70-71.",
+   "cipher": "31-2-24 shows cipher lines with bold interlinear writing above them."
+  },
+  "prior_art": {
+   "decode": "Searched the local DECODE harvest (research/catalogue_harvest/decode/*.jsonl) for the names and shelfmark: no record for this item; not on DECODE.",
+   "tomokiyo": "No cryptiana page on Lang 1513-14 found by web search.",
+   "lasry": "No Lasry work found.",
+   "edition": "No edition found.",
+   "literature": "AIS gives all four as \"teilweise chiffriert und dechiffriert\"."
+  },
+  "key_check": "No key needed; decipherments already on the leaves.",
+  "duplicates": "known.py Matthaeus Lang: only the lead and the 1526 Salzburg lead; no duplicate.",
+  "verdict": "read",
+  "closed": "All four items are marked chiffriert und dechiffriert in the AIS and the one viewed is interlinear."
+ },
+ "889": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 02",
+  "seen": {
+   "kind": "scan",
+   "where": "https://www.archivinformationssystem.at/detail.aspx?ID=4608638 (AIS 32-1-4 image 5 viewed; detail pages of 17 items read)",
+   "extent": "17 de Burgo reports 1511-16.",
+   "cipher": "Viewed page was clear Latin text of 32-1-4; the cipher is elsewhere in the item. Not all pages viewed."
+  },
+  "prior_art": {
+   "decode": "Searched the local DECODE harvest (research/catalogue_harvest/decode/*.jsonl) for the names and shelfmark: no record for this item; not on DECODE.",
+   "tomokiyo": "No cryptiana page found by web search.",
+   "lasry": "No Lasry work found.",
+   "edition": "No edition found.",
+   "literature": "AIS: 9 items \"dechiffriert\" (incl. Voltelini 1890s decipherments for 30-2-45 and 31-1-73); unannotated: 25-1-26, 29-3-19, 30-2-5, 32-1-4, 32-2-6, 33-2-29, 24-4-32 (\"großteils chiffriert\")."
+  },
+  "key_check": "key_deburgo.md is held in the repo and the glossed siblings give the key; it was not applied here.",
+  "duplicates": "catalogue 495 holds other de Burgo shelfmarks (22-3-18, 25-2-25/27); these 17 are not listed.",
+  "verdict": "partly_read",
+  "closed": "Ten of 17 carry decipherments and the de Burgo key is already partly rebuilt in the repo; the unannotated seven are a key_lookup."
+ },
+ "890": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 02",
+  "seen": {
+   "kind": "scan",
+   "where": "https://www.archivinformationssystem.at/detail.aspx?ID=4622408 (AIS 32-2-20 image 3 viewed; detail pages read)",
+   "extent": "Seven short items 1511-16.",
+   "cipher": "32-2-20 (Titioni extract) shows an unglossed cipher block; others annotated."
+  },
+  "prior_art": {
+   "decode": "Searched the local DECODE harvest (research/catalogue_harvest/decode/*.jsonl) for the names and shelfmark: no record for this item; not on DECODE.",
+   "tomokiyo": "No cryptiana page found by web search.",
+   "lasry": "No Lasry work found.",
+   "edition": "No edition found.",
+   "literature": "AIS: 29-3-40, 35-4-12, 25-4-69, 42-2-2-8 \"chiffriert und dechiffriert\"; 26-3-26 a Konzept; 32-2-20 and 42-1-7-107 not annotated."
+  },
+  "key_check": "de Burgo and Veit keys in targets/maximiliana1510 not tried; Titioni wrote to de Burgo so the de Burgo key is the first candidate.",
+  "duplicates": "known.py Sernteiner: only the lead; no catalogue duplicate.",
+  "verdict": "partly_read",
+  "closed": "Four of seven are marked dechiffriert; 32-2-20 and 42-1-7-107 are unannotated but short, and 26-3-26 is a draft."
+ },
+ "891": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 02",
+  "seen": {
+   "kind": "scan",
+   "where": "https://www.archivinformationssystem.at/detail.aspx?ID=7039364 (AIS 7-3-21 image 4 viewed; detail pages read)",
+   "extent": "Six Malvezzi despatches 1548 (fol. 55-60 ... 182).",
+   "cipher": "7-3-21 image 4 shows an Italian despatch with cipher passages; I could not tell from the thumbnail whether any gloss is written over them."
+  },
+  "prior_art": {
+   "decode": "Searched the local DECODE harvest (research/catalogue_harvest/decode/*.jsonl) for the names and shelfmark: no record for this item; not on DECODE. R366/R367 relate to Ferdinand-Malvezzi 1548.",
+   "tomokiyo": "No separate cryptiana page found by web search.",
+   "lasry": "No Lasry work found.",
+   "edition": "AIS: 7-3-21, 7-3-32, 7-3-38, 7-4-38 are in Austro-Turcica 1541-1552 (Nehring); whether ciphered passages are rendered is not verified.",
+   "literature": "AIS: 7-4-38, 7-4-42, 7-4-43 \"interlinear dechiffriert\"; 7-3-21, 7-3-32, 7-3-38 only \"teilweise chiffriert\"."
+  },
+  "key_check": "Malvezzi key R367 (malvezzi1548 target) is held and is the first test for the three unannotated items.",
+  "duplicates": "catalogue 500 lists other Malvezzi shelfmarks (7-1-4, 7-2-25, 7-3-39 ...); these six are not in it.",
+  "verdict": "partly_read",
+  "closed": "Three items have interlinear decipherment and four are in the Austro-Turcica edition; the rest is a key_lookup with R367."
+ },
+ "892": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 02",
+  "seen": {
+   "kind": "scan",
+   "where": "https://www.archivinformationssystem.at/detail.aspx?ID=7048241 (AIS 8-2-24 image availability checked; detail pages read)",
+   "extent": "Five items 1550, fol. 111-171, 166-167.",
+   "cipher": "Image 3 of 8-2-24 not available (item has 2 images); cipher text not viewed."
+  },
+  "prior_art": {
+   "decode": "Searched the local DECODE harvest (research/catalogue_harvest/decode/*.jsonl) for the names and shelfmark: no record for this item; not on DECODE. R366/R367 relate to the 1548 series.",
+   "tomokiyo": "No cryptiana page found by web search.",
+   "lasry": "No Lasry work found.",
+   "edition": "AIS: all five printed in Austro-Turcica 1541-1552; edition not accessible to check whether cipher passages are given.",
+   "literature": "AIS: 8-3-12 has a 19th-century decipherment enclosed; 8-2-24 has an uncoded draft at 8-2-10 fol. 74 (a crib)."
+  },
+  "key_check": "malvezzi1548 key R367 is held and is the first test; not applied here.",
+  "duplicates": "catalogue 500 lists 8-3-8, 8-3-11, 8-4-6, 9-1-8, not these five.",
+  "verdict": "partly_read",
+  "closed": "Printed in Austro-Turcica, one with a 19th-century decipherment and one with a plain draft; the rest is a key_lookup against R367."
+ },
+ "893": {
+  "unvetted": "Two items are in Austro-Turcica 1541-1552 and I could not check whether it prints the ciphered passages; the Isabella/Petrovics enclosures (8-4-16/17) had no viewable image page. Needs the edition before it is vetted."
+ }
+}

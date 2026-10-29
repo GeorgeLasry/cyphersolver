@@ -1,0 +1,250 @@
+{
+ "1319": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 04",
+  "seen": {
+   "kind": "scan",
+   "where": "https://openapi.bnf.fr/iiif/presentation/v3/ark:/12148/btv1b100373864/manifest.json (Gallica btv1b100373864, canvases 120-122, 127-129, 296-299, 304-307 viewed at 800 px)",
+   "extent": "Only partly checked: canvas 121 shows ff. 124 (19 Apr 1447, Tivoli) with two lines of cipher signs inside a clear letter and f. 125 (21 Apr, Tivoli); canvases around ff. 295-306 show clear-text letters of 13-14 Sept 1447 with cipher spots. The five listed folios were not each individually confirmed at this resolution.",
+   "cipher": "Symbol/sign cipher lines embedded in Italian clear text on Sforza correspondence leaves; no interlinear decipherment and no filed 'Traduzione' leaf seen on the canvases viewed (f. 125 next to ff. 124/126, ff. 296-307)."
+  },
+  "prior_art": {
+   "decode": "DECODE holds only ital. 1583 ff. 68-158 (R7898-R7915) per the repo dumps and known.py; no ital. 1584 record found.",
+   "tomokiyo": "Tomokiyo unsolved.htm names only ital. 1584 ff. 68/69 (key DECODE R1857) per the earlier sweep (research/venice_milan_print/README.md); not these letters.",
+   "lasry": "No Lasry paper or GL.htm entry on these 1447 envoys found by web search on Pietro di Monferrato, Tivoli, Sforza.",
+   "edition": "Mazzatinti 1887 marks the letters 'In cifre' without a decipherment; no edition of them found by web search (Dispacci sforzeschi cover Naples, not these).",
+   "literature": "Searched this session (WebSearch, 29 Oct 2026) with the correspondents and shelfmark; nothing relevant found."
+  },
+  "key_check": "Keys held here: Pusterla/Barbavara keys (DECODE R1857, ital. 1584 ff. 42/43) not applied; their sign sets were not compared with these envoys' leaves, so no key ruled in or out.",
+  "duplicates": "known.py 'italien 1584' hits only other leads in leads.json and the venice_milan_print sweep (different folios); no ledger or DECODE record for these letters.",
+  "verdict": "open"
+ },
+ "1322": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 04",
+  "seen": {
+   "kind": "scan",
+   "where": "https://openapi.bnf.fr/iiif/presentation/v3/ark:/12148/btv1b10037394n/manifest.json (Gallica btv1b10037394n, canvases 33-35 viewed at 800 px)",
+   "extent": "Register leaf at about canvas 34-35 (marked 31): a few lines of clear Latin/Italian text headed 'Copia ... domini Michaelis', plus a list of items on the next leaf; no run of cipher signs seen.",
+   "cipher": "The register copy appears to be ordinary clear text (a copy of the letter), not enciphered; at 800 px I saw no cipher characters. It is at most a crib for a cipher letter of Michele Attendoli, not a cipher in itself."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE (only ital. 1583 ff. 68-158 held).",
+   "tomokiyo": "Not in Tomokiyo's unsolved.htm per the earlier sweep.",
+   "lasry": "No Lasry entry known.",
+   "edition": "Mazzatinti 1887 lists the copy; no edition found.",
+   "literature": "Searched this session (WebSearch, 29 Oct 2026) with the correspondents and shelfmark; nothing relevant found."
+  },
+  "key_check": "No key needed: the leaf is clear text.",
+  "duplicates": "known.py 'italien 1594' hits only this lead and its candidates.json copy.",
+  "verdict": "not_cipher",
+  "closed": "register copy looks like clear text, no cipher signs on f. 31 as viewed"
+ },
+ "1323": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 04",
+  "seen": {
+   "kind": "not online",
+   "where": "BL catalogue record (see lead links), no viewer link; not viewed",
+   "extent": "One volume (or set) as described by the BL; extent of cipher unknown.",
+   "cipher": "BL: original letters of 'Pellegrino'/'Il Solito'/'Del Luoco Antico' to an agent apparently Giovanni Maria Massara of Cardinal Alonso de la Cueva, 20 Jan-19 May 1629, 'partly in cipher; the keys are prefixed' (confirmed on the BL record via web search)."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE (repo dumps via known.py).",
+   "tomokiyo": "Not in the Tomokiyo pages grepped in the earlier venice_milan_print sweep (cryptiana crawl).",
+   "lasry": "No Lasry entry found by known.py or web search.",
+   "edition": "No edition found by web search; see volume description.",
+   "literature": "Searched this session (WebSearch, 29 Oct 2026) with the correspondents and shelfmark; nothing relevant found."
+  },
+  "key_check": "Keys are prefixed in the volume itself; no other key held here. Not applied since images not seen.",
+  "duplicates": "known.py on the shelfmark returns only the lead itself and venice_milan_print/candidates.json.",
+  "verdict": "open"
+ },
+ "1324": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 04",
+  "seen": {
+   "kind": "not online",
+   "where": "BL catalogue record (see lead links), no viewer link; not viewed",
+   "extent": "One volume (or set) as described by the BL; extent of cipher unknown.",
+   "cipher": "BL: 'The letters of the Marquis are originals, partly in cipher; those of Don Luis are drafts.' No decipherment noted by the BL."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE (known.py).",
+   "tomokiyo": "Not in the Tomokiyo pages grepped in the earlier venice_milan_print sweep (cryptiana crawl).",
+   "lasry": "No Lasry entry found by known.py or web search.",
+   "edition": "No edition found by web search; see volume description.",
+   "literature": "Searched this session (WebSearch, 29 Oct 2026) with the correspondents and shelfmark; nothing relevant found."
+  },
+  "key_check": "No key held here; Fuente's embassy 1661-67 (Yetano Laguna 2009) not checked for cipher tables.",
+  "duplicates": "known.py on the shelfmark returns only the lead itself and venice_milan_print/candidates.json.",
+  "verdict": "open"
+ },
+ "1325": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 04",
+  "seen": {
+   "kind": "not online",
+   "where": "BL catalogue record (see lead links), no viewer link; not viewed",
+   "extent": "One volume (or set) as described by the BL; extent of cipher unknown.",
+   "cipher": "BL: 'Holograph; many in cipher.' No decipherings noted, unlike Gualterio's other volumes described 'with decipherings'."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE; DECODE holds Gualterio-Botti Add MS 20443 only.",
+   "tomokiyo": "Not in the Tomokiyo pages grepped in the earlier venice_milan_print sweep (cryptiana crawl).",
+   "lasry": "No Lasry entry found by known.py or web search.",
+   "edition": "No edition found by web search; see volume description.",
+   "literature": "Searched this session (WebSearch, 29 Oct 2026) with the correspondents and shelfmark; nothing relevant found."
+  },
+  "key_check": "Possible keys: Gualterio cipher tables BL Add MS 20582 and 20244; not examined.",
+  "duplicates": "known.py on the shelfmark returns only the lead itself and venice_milan_print/candidates.json.",
+  "verdict": "open"
+ },
+ "1326": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 04",
+  "seen": {
+   "kind": "not online",
+   "where": "BL catalogue record (see lead links), no viewer link; not viewed",
+   "extent": "One volume (or set) as described by the BL; extent of cipher unknown.",
+   "cipher": "BL: letter-books 'English and Italian (some with English translations), Latin and cipher'; whether cipher passages are glossed is not stated."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE (known.py).",
+   "tomokiyo": "Not in the Tomokiyo pages grepped in the earlier venice_milan_print sweep (cryptiana crawl).",
+   "lasry": "No Lasry entry found by known.py or web search.",
+   "edition": "No edition found by web search; see volume description.",
+   "literature": "Searched this session (WebSearch, 29 Oct 2026) with the correspondents and shelfmark; nothing relevant found."
+  },
+  "key_check": "TNA SP 99/48/233 'Dodington's cypher' is a key in the same series; not fetched.",
+  "duplicates": "known.py on the shelfmark returns only the lead itself and venice_milan_print/candidates.json.",
+  "verdict": "open"
+ },
+ "1327": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 04",
+  "seen": {
+   "kind": "not online",
+   "where": "BL catalogue record (see lead links), no viewer link; not viewed",
+   "extent": "One volume (or set) as described by the BL; extent of cipher unknown.",
+   "cipher": "BL: 'Original dispatches, many of which are in cypher'; no decipherings noted; recipient's interlinear decipherments are possible."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE (known.py).",
+   "tomokiyo": "Not in the Tomokiyo pages grepped in the earlier venice_milan_print sweep (cryptiana crawl).",
+   "lasry": "No Lasry entry found by known.py or web search.",
+   "edition": "No edition found by web search; see volume description.",
+   "literature": "Searched this session (WebSearch, 29 Oct 2026) with the correspondents and shelfmark; nothing relevant found."
+  },
+  "key_check": "No key held here; compare Pomponne volumes Add MS 20338-20339 'with decipherings'.",
+  "duplicates": "known.py on the shelfmark returns only the lead itself and venice_milan_print/candidates.json.",
+  "verdict": "open"
+ },
+ "1328": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 04",
+  "seen": {
+   "kind": "not online",
+   "where": "BL catalogue record (see lead links), no viewer link; not viewed",
+   "extent": "One volume (or set) as described by the BL; extent of cipher unknown.",
+   "cipher": "BL: 'DRAFTS of letters ... with enclosures in cypher'; clear drafts may give the plaintext."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE (known.py).",
+   "tomokiyo": "Not in the Tomokiyo pages grepped in the earlier venice_milan_print sweep (cryptiana crawl).",
+   "lasry": "No Lasry entry found by known.py or web search.",
+   "edition": "No edition found by web search; see volume description.",
+   "literature": "Searched this session (WebSearch, 29 Oct 2026) with the correspondents and shelfmark; nothing relevant found."
+  },
+  "key_check": "No key held here.",
+  "duplicates": "known.py on the shelfmark returns only the lead itself and venice_milan_print/candidates.json.",
+  "verdict": "open"
+ },
+ "1538": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 04",
+  "seen": {
+   "kind": "not online",
+   "where": "https://collections.carli.illinois.edu/digital/collection/chm_fa/id/2106 (finding-aid calendar only; item itself not online)",
+   "extent": "One item; extent of cipher unknown.",
+   "cipher": "Finding-aid calendar: 'Routine: officer transfers; part of message in cypher'. Not seen."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE (known.py 'Wilkinson' returns only the LoC Wilkinson codes, catalogue 847 and others).",
+   "tomokiyo": "Not found in cryptiana pages in the earlier sweep.",
+   "lasry": "No Lasry entry found.",
+   "edition": "No edition found; Chu-Valenti-Knight Wilkinson project covers the Spanish codes only.",
+   "literature": "Searched this session (WebSearch, 29 Oct 2026) with the correspondents and shelfmark; nothing relevant found."
+  },
+  "key_check": "No key held here; War Department key in Eustis/Dearborn letterbooks (NARA RG 107) not checked.",
+  "duplicates": "known.py 'Wilkinson' hits catalogue 847 (Burr) and the Spanish-code entry, not this item.",
+  "verdict": "open"
+ },
+ "1539": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 04",
+  "seen": {
+   "kind": "not online",
+   "where": "https://collections.carli.illinois.edu/digital/collection/chm_fa/id/2106 (finding-aid calendar only; item itself not online)",
+   "extent": "One item; extent of cipher unknown.",
+   "cipher": "Finding-aid calendar: 'receipt of ciphered message'; may only acknowledge a cipher in clear text. Not seen."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE (known.py 'Wilkinson' returns only the LoC Wilkinson codes, catalogue 847 and others).",
+   "tomokiyo": "Not found in cryptiana pages in the earlier sweep.",
+   "lasry": "No Lasry entry found.",
+   "edition": "No edition found; Chu-Valenti-Knight Wilkinson project covers the Spanish codes only.",
+   "literature": "Searched this session (WebSearch, 29 Oct 2026) with the correspondents and shelfmark; nothing relevant found."
+  },
+  "key_check": "No key held here; War Department key in Eustis/Dearborn letterbooks (NARA RG 107) not checked.",
+  "duplicates": "known.py 'Wilkinson' hits catalogue 847 (Burr) and the Spanish-code entry, not this item.",
+  "verdict": "open"
+ },
+ "1540": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 04",
+  "seen": {
+   "kind": "not online",
+   "where": "https://collections.carli.illinois.edu/digital/collection/chm_fa/id/2106 (finding-aid calendar only; item itself not online)",
+   "extent": "One item; extent of cipher unknown.",
+   "cipher": "Finding-aid calendar: 'contains numerical cypher notations'. Not seen."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE (known.py 'Wilkinson' returns only the LoC Wilkinson codes, catalogue 847 and others).",
+   "tomokiyo": "Not found in cryptiana pages in the earlier sweep.",
+   "lasry": "No Lasry entry found.",
+   "edition": "No edition found; Chu-Valenti-Knight Wilkinson project covers the Spanish codes only.",
+   "literature": "Searched this session (WebSearch, 29 Oct 2026) with the correspondents and shelfmark; nothing relevant found."
+  },
+  "key_check": "No key held here; War Department key in Eustis/Dearborn letterbooks (NARA RG 107) not checked.",
+  "duplicates": "known.py 'Wilkinson' hits catalogue 847 (Burr) and the Spanish-code entry, not this item.",
+  "verdict": "open"
+ },
+ "1320": {
+  "unvetted": "Gallica canvases around ff. 285/392 viewed but the target folios and their cipher not individually identified at 800 px."
+ },
+ "1321": {
+  "unvetted": "Gallica canvases near f. 348 viewed but the cipher leaf was not identified at this resolution."
+ },
+ "1329": {
+  "unvetted": "No digitised copy found (no ark), access not archive-described; not seen."
+ },
+ "1330": {
+  "unvetted": "No digitised copy found; not seen."
+ },
+ "1331": {
+  "unvetted": "No digitised copy found; not seen; 'in cifre' may mean numerals only."
+ },
+ "1445": {
+  "unvetted": "CEHM scans need a reader account; not seen."
+ },
+ "1446": {
+  "unvetted": "CEHM scans need a reader account; not seen."
+ },
+ "1447": {
+  "unvetted": "CEHM scan needs a reader account; not seen."
+ },
+ "1448": {
+  "unvetted": "CEHM scan needs a reader account; not seen."
+ }
+}

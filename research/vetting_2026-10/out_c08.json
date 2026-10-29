@@ -1,0 +1,120 @@
+{
+ "1032": {
+  "vetting": {
+   "date": "2026-10-29",
+   "by": "claude vetting batch c08",
+   "seen": {
+    "kind": "not online",
+    "where": "archive.org calendarofstatep02grea (Calendar of State Papers Ireland 1633-1647, Mahaffy 1901), djvu text downloaded and read in context 29 Oct 2026, entry 6146; TNA SP 63/261 no. 1 is imaged only in Gale State Papers Online (subscription), not on Discovery",
+    "extent": "one holograph letter of 2.75 pp. (S.P. Ireland 261, 1); one passage after 'The King's army' is in cipher, length not stated",
+    "cipher": "Calendar: 'John Poingdexter to [blank]. Dublin. 2 Jan. ... The King's army [a passage follows in cipher]. This place is blockaded by the Parliament ships'. The entry sits after the 26 and 30 Dec 1645 items of vol. CCLXI, so the year is 1645/6; no decipherment is mentioned and the calendar omits the passage."
+   },
+   "prior_art": {
+    "decode": "known.py 'Poingdexter', 'SP 63/261', 'Glamorgan': no DECODE record or ledger hit for this letter (only unrelated Glamorgan-treaty catalogue entries).",
+    "tomokiyo": "Web searches for Poingdexter/Dublin January 1646 cipher and the Irish 1640s ciphers returned no cryptiana page on this letter; Tomokiyo's unsolved list (mirrored in the repo) has no entry for it.",
+    "lasry": "No Lasry/DECODE decipherment of a Dublin 1646 letter is known to the repo (known.py) or found by web search (searches of 29 Oct 2026).",
+    "edition": "The Mahaffy calendar itself is the edition and omits the cipher; the neighbouring entries were read for a decipherment note: none. Sender name looks garbled ('Poingdexter', possibly Poyntz) and the recipient is blank in print.",
+    "literature": "Web search on the sender, the passage wording and 'State Papers Ireland cipher 1646' found only unrelated Dublin 1646 letters (Crouther to Lenthall, Du to Le Tellier)."
+   },
+   "key_check": "No key for a Dublin 1645-46 correspondent is held in the repo or on DECODE; the Ormond-Digby ciphers of the same years (targets/rupert, Add MS 18983) were not tried because no image of the leaf exists.",
+   "duplicates": "known.py 'Poingdexter', 'SP 63/261', 'Glamorgan': no catalogue entry or lead is this letter; other Glamorgan-period hits are separate letters.",
+   "verdict": "open"
+  }
+ },
+ "1066": {
+  "vetting": {
+   "date": "2026-10-29",
+   "by": "claude vetting batch c08",
+   "seen": {
+    "kind": "not online",
+    "where": "archive.org salazary-castro-22-nov-2016 (RAH Salazar y Castro catalogue; SalazaryCastro_22_nov_2016_djvu.txt downloaded and read at the entry 29 Oct 2026, inventory no. 970); no scan located (RAH Biblioteca Digital gave nothing usable for Salazar items in batches 18-19)",
+    "extent": "one folio (A-10 f. 21); the letter is clear for the bulls and then 'el resto de la carta en cifra'; length unknown",
+    "cipher": "RAH entry: 'Carta de Fernando el Catolico a don Francisco de Rojas, su embajador en Roma, mandandole remitiera urgentemente las bulas para la provision de las tres iglesias de la isla espanola de Santo Domingo; el resto de la carta en cifra. Original, mandada escribir por el Rey.' No decipherment, translation or 'Publicada' note."
+   },
+   "prior_art": {
+    "decode": "A-10 is not among the Salazar volumes on DECODE (9/8, 9/17, 9/23-9/31, 9/34 only); known.py 'A-10', 'Francisco de Rojas', 'Santo Domingo' found no record for this letter.",
+    "tomokiyo": "Tomokiyo's Spanish page and unsolved list (repo mirror) mention no Ferdinand-Rojas letter of 1504; web search for Rojas 1504 cifra found nothing from cryptiana.",
+    "lasry": "No Lasry paper or GL.htm entry on Ferdinand's letters to Rojas; two web searches (Toro 16 Dec 1504 Santo Domingo cifra; Rojas Rome cartas cifradas) found only the CNI 2018 Maqueda/Great Captain letters 1502-03.",
+    "edition": "The catalogue entry carries only an Observaciones note on the first three bishops, no 'Publicada por'; Rodriguez Villa's 1896 study of Rojas (BRAH) was found in search but not checked for this letter, so a printed copy is not excluded.",
+    "literature": "Web searches for Rojas as ambassador (Pascual Molina and Fiz Fuertes 2015; Fernandez de Cordoba Miralles 2014) surfaced studies of the man, none of this cipher letter."
+   },
+   "key_check": "Cifra general of the Catholic Monarchs (BRAH 9/15, DECODE R9815-R9832) is the likely system for a royal letter to Rome in 1504 but cannot be applied without an image of the leaf; no key for the Ferdinand-Rojas correspondence is held here.",
+   "duplicates": "known.py 'A-10', 'Francisco de Rojas', 'Santo Domingo': only sibling Salazar A-10 entries (inv. 952, 958) of earlier batches, which are other letters.",
+   "verdict": "open"
+  }
+ },
+ "1033": {
+  "vetting": {
+   "date": "2026-10-29",
+   "by": "claude vetting batch c08",
+   "seen": {
+    "kind": "transcription",
+    "where": "archive.org cu31924091775217 (Calendar of Home Office Papers 1760-65, Redington 1878), djvu text downloaded and read, no. 301",
+    "extent": "the calendared item is a 1-page French translation of a Hanoverian minister's letter; it contains no cipher groups",
+    "cipher": "Calendar no. 301: 'Translation of a letter from the minister of Hanover to Prince Ferdinand. It relates to a letter from the Duc de Broglio, of the 17th past, which his Serene Highness had sent to London to be deciphered, but the contents of which they had not then succeeded in wholly making out. (French.) 1 p.' The ciphered Broglie letter is not the calendared document."
+   },
+   "prior_art": {
+    "decode": "known.py 'Broglie', 'Prince Ferdinand', 'Regencies': no DECODE record or ledger entry for this item (only a Broglie sentence in a README and a Calames list).",
+    "tomokiyo": "Web search (Broglie 1760 lettre chiffree interceptee, Ferdinand) found no cryptiana page; none known.",
+    "lasry": "No Lasry/DECODE item for Broglie 1760 found by known.py or by the web searches of 29 Oct 2026.",
+    "edition": "Redington's calendar is the only print; it gives the translation's gist and does not print the cipher. A web search of TNA Discovery found intercepted Broglie letters of Aug 1760 in SP 87/38 (e.g. SP 87/38/48, /50, /52), none described as cipher.",
+    "literature": "Web searches for the 17 Aug 1760 Broglie letter and its decipherment found nothing beyond those SP 87/38 catalogue lines."
+   },
+   "key_check": "No French army key of 1760 is held in the repo or DECODE; nothing to apply because there is no cipher leaf in the calendared item.",
+   "duplicates": "known.py 'Broglie' 'Prince Ferdinand' 'Regencies': no catalogue entry; the SP 87/38 intercepts could be a separate lead.",
+   "verdict": "not_cipher",
+   "closed": "The calendared document (Home Office no. 301) is a clear French translation about a Broglie letter sent to London for deciphering; the ciphered Broglie letter is not identified. The SP 87/38 intercepted Broglie letters of Aug 1760 would need their own lead."
+  }
+ },
+ "1023": {
+  "unvetted": "Calendar II no. 2092 read in the archive.org OCR ('Partly in cipher, undeciphered by Ormonde. With small omissions, Cl. S. P. vol. iii. p. 259'); web searches found no study. Blocker: the printed Clarendon State Papers vol. iii (1786) that may carry the cipher or its decipher is not on archive.org by search (only a 1773 vol. 2 found); the MS is not online (Digital Bodleian has only Clarendon 128 and 155); MS Clarendon 94 (sixteen royalist ciphers) not checked. Retry with the 1786 volume on Google Books or HathiTrust."
+ },
+ "1024": {
+  "unvetted": "Calendar III pp. 194-5 read in OCR: only a parenthetical '(in undeciphered cipher)' about Edgely's proposed attempt; extent unknown, web searches found nothing on 'Edgely' or Hyde-Bristol Nov 1656. Blocker: no image (Clarendon MS not on Digital Bodleian) and the mention is too short to judge; check printed Clarendon State Papers vol. iii and MS Clarendon 94."
+ },
+ "1025": {
+  "unvetted": "Calendar III no. 874 read in OCR ('partly in undeciphered cipher', Ashton '232', 6 May 1657); web searches found no study or edition. Blocker: the printed Clarendon State Papers vol. iii (1786) was not located online, the MS is not imaged, and the royalist key list (MS Clarendon 94, 16 ciphers) was not checked."
+ },
+ "1026": {
+  "unvetted": "HMC Pepys p. 7 read in OCR: footnote 'Cipher undeciphered' after a letter of about a page; the Pepys MS (Magdalene) is not online and access is not 'archive', so 'not online' is not allowed; extent of cipher unknown. Needs a Magdalene/Pepys Library catalogue check or a scan."
+ },
+ "1027": {
+  "unvetted": "HMC Downshire I.1 read in OCR (XXVII, 24: 'partly in cipher, undeciphered, copy'); the Trumbull MS (Berkshire RO) is not online and the French original (AAE Pologne) not located; access is not 'archive'. Blocker: no leaf seen."
+ },
+ "1030": {
+  "unvetted": "CSP Ireland 1660-62 p. 353 read in OCR ('partly in cypher. Entry', SP 63/308 p. 53); web searches found only the NLI 'Four ciphers used by the Earl of Orrery' record (not examined). Blocker: entry-book copy imaged only in Gale State Papers Online (subscription); extent unknown; the Calendar of Orrery Papers (irishmanuscripts.ie PDF) was not checked."
+ },
+ "1031": {
+  "unvetted": "CSP Ireland 1666-69 p. 815 read in OCR ('The King is informed that - [a passage in cypher follows]', SP 63/312 pp. 188-9); web searches only gave Carte MS catalogue records (Carte 36, 46, 215, 219-221). Blocker: Gale-only image; a decipher in the Bodleian Carte MSS (Arlington to Ormond) not checked, so prior art stays open."
+ },
+ "1034": {
+  "unvetted": "Fotheringham vol. II p. 165 n. 1 read in OCR ('Eight lines ... remain undeciphered'); the editor says the Montereul-Brienne letters are nearly identical to those to Mazarin so the lines may be recoverable, but that comparison and the AAE Corr. pol. Angleterre original (not online) were not done; access is not 'archive'."
+ },
+ "1035": {
+  "unvetted": "Fotheringham vol. II p. 170 n. 1 read in OCR ('Nine lines remain here undeciphered', letter CLVII, Bellievre to Brienne, date given in print as late June 1647); only the printed note seen, AAE original not online, access not 'archive'."
+ },
+ "899": {
+  "unvetted": "LP IV 1524 notes (30 Oct and 13 Nov) are calendar notes only; sender Sampson per an earlier check, TNA SP 1 shelfmark and cipher extent unestablished and no image online; access is not 'archive'. Blocker: no leaf, no shelfmark."
+ },
+ "901": {
+  "unvetted": "LP X no. 451 note ('three passages in cipher undeciphered', Add MS 28588 f. 226) is Hannart to the Empress, Lyons 10 Mar 1536, not an English agent; CSP Spain v.5 pt 2 no. 36 summarises it, cipher status unsettled; BL manuscript not online, access not 'archive'. Needs a BL image or CSP Spain check."
+ },
+ "903": {
+  "unvetted": "Bundle of three different items (Allen 28 Jan, 'J. to A.' 14 Mar, Wicham/Sterrell 1 Jun) from different volumes with inconsistent dates; it must be split into one lead per item before it can be vetted."
+ },
+ "907": {
+  "unvetted": "Aggregate of unnamed entries in CSP Dom. 1655-56, not one item; needs one lead per specific entry (volume, number, date); the Lamplugh letters contain no cipher per the earlier read."
+ },
+ "1063": {
+  "unvetted": "RAH Salazar catalogue (archive.org OCR) read 29 Oct 2026: the entry carries 'Publicada por Torre y R. Pascual, ob. cit.' (Cartas y documentos relativos al Gran Capitan, Revista de Archivos, 1916-24 series). Web searches did not locate the installment; archive.org Revista de Archivos vols. 37 and 44-46 searched for Pedrosa/1504 with no hit (vol. 43 download failed; 34-36 and 38-42 not on IA under that id). Blocker: whether the cipher is printed deciphered is unknown, so it cannot be called open; needs the Revista de Archivos installment (series pp. 33-35)."
+ },
+ "1064": {
+  "unvetted": "RAH Salazar catalogue (archive.org OCR) read 29 Oct 2026: the entry carries 'Publicada por Torre y R. Pascual, ob. cit.' (Cartas y documentos relativos al Gran Capitan, Revista de Archivos, 1916-24 series). Web searches did not locate the installment; archive.org Revista de Archivos vols. 37 and 44-46 searched for Pedrosa/1504 with no hit (vol. 43 download failed; 34-36 and 38-42 not on IA under that id). Blocker: whether the cipher is printed deciphered is unknown, so it cannot be called open; needs the Revista de Archivos installment (series pp. 33-35)."
+ },
+ "1068": {
+  "unvetted": "RAH Salazar catalogue (archive.org OCR) read 29 Oct 2026: the entry carries 'Publicada por Torre y R. Pascual, ob. cit.' (Cartas y documentos relativos al Gran Capitan, Revista de Archivos, 1916-24 series). Web searches did not locate the installment; archive.org Revista de Archivos vols. 37 and 44-46 searched for Pedrosa/1504 with no hit (vol. 43 download failed; 34-36 and 38-42 not on IA under that id). Blocker: whether the cipher is printed deciphered is unknown, so it cannot be called open; needs the Revista de Archivos installment (series pp. 33-35)."
+ },
+ "1090": {
+  "unvetted": "RAH catalogue entry no. 15272 read in OCR ('Original, en cifra', A-97 ff. 215-217, Terranova to Philip IV, Rome 12 Sep 1654); access is not 'archive', so 'not online' is not allowed; no scan and no edition found. Needs an access flag for the lead or a RAH image."
+ }
+}

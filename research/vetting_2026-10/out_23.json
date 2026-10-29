@@ -1,0 +1,165 @@
+{
+ "1332": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 23",
+  "seen": {
+   "kind": "scan",
+   "where": "Ambrosiana IIIF image G 275 inf. c. 10r (digitallibrary.unicatt.it/veneranda/0b02da828027c8d4), downloaded and viewed 29 Oct 2026",
+   "extent": "four Latin letters, ff. 9-15, 34-36, 37-42, 43-48, about 25 leaves; c. 10r is a full page of about 25 lines of symbol cipher",
+   "cipher": "c. 10r: lines of arbitrary signs (crosses, loops, Greek-like and numeral-like characters) set between clear Latin lines, with a contemporary Latin decipherment of part of the cipher written in the left margin (not a decipherment of the whole page); c. 35r per the sweep has none"
+  },
+  "prior_art": {
+   "decode": "not on DECODE: known.py on Castaldo and G 275 finds only the Milan sweep README and this lead; no DECODE record in the dumps",
+   "tomokiyo": "no Castaldo or Ambrosiana G 275 page on cryptiana found; two web searches (G 275 decipherment; Italian Castaldo cifra decifrazione) returned nothing on the cipher",
+   "lasry": "no Lasry publication or DECODE entry on Castaldo found in web searches or in the repo",
+   "edition": "Veress, Documente privitoare la istoria Ardealului vol. I (1929) prints Castaldo-period documents; a web search for a ciphered letter there found nothing, but the volume text was not read; Carpentieri 2012 (Verbum 13/2) and Domokos 2025 treat the codex language only",
+   "literature": "three web searches found no study of the cipher passages; Somogyi 2025 on segmenting chancery letters appeared in results but its relevance to Castaldo is not shown"
+  },
+  "key_check": "No key held in the repo or on DECODE for Ferdinand I to Castaldo 1552; the only key material is the partial marginal decipherment on c. 10r, to be extended to the unglossed pages; no held Habsburg key was tried.",
+  "duplicates": "known.py 'Castaldo' and 'G 275': only the milan_archives sweep README; web searches for the same letters found no other record; the four OPAC records are one codex, no duplicate found.",
+  "verdict": "open"
+ },
+ "1339": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 23",
+  "seen": {
+   "kind": "not online",
+   "where": "Ambrosiana OPAC records ambro:catalog:629216, 629334, 629221 (Pergamene 9137, 9150, 9151, 9363); no images online",
+   "extent": "four parchment letters 1452-53; names or short words in cipher, 9363 has cipher words and three pasted slips",
+   "cipher": "OPAC description: 9137 'cifra'; 9150 one name in cipher; 9151 names in cipher; 9363 cipher words at the end with three pasted slips (possibly decipherments)"
+  },
+  "prior_art": {
+   "decode": "not on DECODE: known.py Tranchedini and Z 219 give only the repo's tranchedini1452 target (BnF ital. 2242) and the Milan sweep, no Ambrosiana record",
+   "tomokiyo": "no Tomokiyo page on the Ambrosiana pergamene found in searches for Nicodemo Tranchedini cipher and Z 219",
+   "lasry": "Lasry's reading of Tranchedini's 28 Jun 1452 letter is the repo target tranchedini1452; nothing on these four pergamene",
+   "edition": "no edition of the Ambrosiana pergamene found; Cerioni 1970 (La diplomazia sforzesca ... e i suoi cifrari segreti) is the keys reference, citation only seen",
+   "literature": "Domnina 2018 HistoCrypt 'Nicodemo Tranchedini's Diplomatic Cipher: New Evidence' exists (key table, a 1449 letter), full text not read; Cipher Mysteries 2011 post on Milanese enciphered letters"
+  },
+  "key_check": "Candidate keys: Domnina 2018 (Nicodemo's cipher), the repo's tranchedini1452 key, and the deciphered siblings 9138-9 and 9631; not applied because no images are online.",
+  "duplicates": "known.py 'Tranchedini', 'Z 219', 'Nicodemo'; three web searches (Nicodemo cipher Ambrosiana, shelfmark with numbers, Domnina); only the other Tranchedini target found, a different document.",
+  "verdict": "open"
+ },
+ "1340": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 23",
+  "seen": {
+   "kind": "not online",
+   "where": "Ambrosiana OPAC ambro:catalog:629655, 630029, 629591, 630017 (Pergamene 9290, 9372, 9405, 9532); no images online",
+   "extent": "short cipher passages: three lines (9290), one phrase (9372), cipher words (9405), one section of a Sforza minute (9532)",
+   "cipher": "OPAC description: 9290 'three lines in cipher'; 9372 one cipher phrase whose explanation slip is missing; 9405 cipher words; 9532 minute with a section to be deciphered by Carretto alone"
+  },
+  "prior_art": {
+   "decode": "not on DECODE: known.py 'Carreto' and 'Carretto' find no DECODE or repo record",
+   "tomokiyo": "no cryptiana page on Carretto found in web searches (Carretto cipher Sforza 1458; Lasry/Tomokiyo/DECODE query)",
+   "lasry": "nothing found linking Lasry to Carretto",
+   "edition": "Carretto's 14 Aug 1458 letter is printed plain (Pastor transcription on csun.edu) with no cipher; Cerioni 1970 (citation only, not read) is the keys reference",
+   "literature": "Cipher Mysteries 2011 post; a forum note that Milanese cipher records were largely lost and keys survive via copies elsewhere (unverified)"
+  },
+  "key_check": "Keys would come from the deciphered sibling pergamene of 1457-58 (9297-9309, 9464-5, 9287, 9404, 9454, 9373) and Cerioni's published keys; not applied since these four items have no images online.",
+  "duplicates": "known.py 'Carreto', 'Z 219'; three web searches (Carretto cipher, Carretto Lasry/Tomokiyo/DECODE, Cerioni); no duplicate found.",
+  "verdict": "open"
+ },
+ "1341": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 23",
+  "seen": {
+   "kind": "not online",
+   "where": "Ambrosiana OPAC ambro:catalog:630000 and 630039 (Pergamene 9202, 9408); no images online",
+   "extent": "two letters of 1464 with cipher passages inside clear text, 9202 with a pasted postscript",
+   "cipher": "OPAC description: 9202 'passi cifrati' with pasted postscript; 9408 'periodi cifrati'"
+  },
+  "prior_art": {
+   "decode": "not on DECODE: known.py 'Nardini' finds only the Milan sweep README",
+   "tomokiyo": "no cryptiana page on Nardini found in a web search on his 1464 letters to Sforza",
+   "lasry": "nothing found on Nardini ciphers",
+   "edition": "no edition of Nardini's 1464 letters found; Cerioni 1970 cited only",
+   "literature": "web searches on Nardini 1464 and on Cerioni/Z 219 give biography and general Milanese-cipher posts only; Cipher Mysteries 2011 does not name him"
+  },
+  "key_check": "Keys would come from the deciphered Z 219 siblings and Cerioni 1970; not applicable until images exist; no key shown to read these.",
+  "duplicates": "known.py 'Nardini', 'Z 219'; three web searches (Nardini 1464, Cerioni with names, Z 219 numbers); no duplicate.",
+  "verdict": "open"
+ },
+ "1342": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 23",
+  "seen": {
+   "kind": "not online",
+   "where": "Ambrosiana OPAC ambro:catalog:629465 (Pergamena 9446); no images online",
+   "extent": "one slip, 1455",
+   "cipher": "OPAC description: 'Polliza in litteris D. Albrici Malette', 'dal Duca di Milano, in cifra'"
+  },
+  "prior_art": {
+   "decode": "not on DECODE: known.py 'Maletta' hits only other agents' France 1463-65 rows and oldest/CANDIDATES B6, different documents",
+   "tomokiyo": "no cryptiana page on this slip found",
+   "lasry": "nothing found",
+   "edition": "no edition of this slip; Cerioni 1970 includes Sforza keys for Maletta (per the lead; citation only seen)",
+   "literature": "Cipher Mysteries 2011 post cites a 26 Jul 1455 Naples letter 'in cifre' from Maletta (ASMi, not this slip) and a Tranchedino ledger folio 'Cum Francisco Maleta'; the link is unverified"
+  },
+  "key_check": "Candidate key: the Maletta table in the Tranchedino ledger (Vienna Cod. 2398 f. 20v) and Cerioni; not applied because the slip is not online.",
+  "duplicates": "known.py 'Maletta'; three web searches (Maletta 1455, Cerioni, Tranchedini siblings); the Naples 1455 letter is a different document in ASMi.",
+  "verdict": "open"
+ },
+ "1404": {
+  "date": "2026-10-29",
+  "by": "claude vetting batch 23",
+  "seen": {
+   "kind": "transcription",
+   "where": "McGill PDF MUAMG1022-6-126 (111 pages, 52 MB), downloaded and its whole OCR text layer searched for cipher/cypher/code on 29 Oct 2026",
+   "extent": "111 pages of 1892 Dawson-Tupper-Sherwood correspondence; cipher mentioned on about 10 pages",
+   "cipher": "typed transcripts of cables headed 'Message received in cipher' / 'Sent in cipher' (pp. 49, 53, 55, 57, 59, 67, 84, 110) and Dawson's remark about a '200 cypher' code; the messages are plain English, no ciphertext groups anywhere"
+  },
+  "prior_art": {
+   "decode": "not on DECODE: known.py 'MG1022' hits only the canada_lac sweep README",
+   "tomokiyo": "not a Tomokiyo subject (1892 telegraph code); no page",
+   "lasry": "not applicable, no ciphertext in the file",
+   "edition": "the telegrams belong to the Bering Sea cable series; a Canadiana command paper 'Telegraphic correspondence respecting seal fishing in Behring's Sea 1892' exists, not read",
+   "literature": "three web searches on Dawson, Tupper, Sherwood and the Bering Sea commission found background only, no study of cipher content"
+  },
+  "key_check": "No key needed: the cables are already deciphered transcripts of 1892 telegraph-code messages (Dawson's 'cypher (200)' is a code book).",
+  "duplicates": "known.py 'MG1022'; web searches show no duplicate; the same fonds holds File 166 (1894) Behring Sea papers, a separate file.",
+  "verdict": "not_cipher",
+  "closed": "McGill PDF holds only plain-text transcripts of cipher cables, no ciphertext; read in full through the OCR text layer"
+ },
+ "1161": {
+  "unvetted": "Kalliope/DDB item not viewed; one search for N.103 found no record; SLUB scans of the sign pages not opened, so cipher vs alphabet table is undecided"
+ },
+ "1162": {
+  "unvetted": "only one web search (nothing on a Silbermann cipher); Schaefer 1994 not consulted; SLUB scans not viewed; access uncertain"
+ },
+ "1163": {
+  "unvetted": "one web search only; Minna's letter of 11 Feb 1860 not located and the Bonn scans not opened"
+ },
+ "1164": {
+  "unvetted": "not viewed; one incidental search result (DDB lists J.345 as alchemical texts dated 1601); Bl. 248 scan not opened"
+ },
+ "1165": {
+  "unvetted": "not viewed; e-manuscripta scan not found or opened; no web search beyond known.py"
+ },
+ "1333": {
+  "unvetted": "scan not re-viewed this batch and only a generic web search on F 100 inf. found nothing; needs viewing of f. 103r plus two more distinct searches"
+ },
+ "1334": {
+  "unvetted": "scan not re-viewed this batch; no search specific to F 46 inf. 275 or a 1573 Borromeo cipher"
+ },
+ "1335": {
+  "unvetted": "key F 57 inf. n. 275 not applied (image faint, code groups not transcribed); only a generic Bascape search done; a key lookup still to be run"
+ },
+ "1336": {
+  "unvetted": "scans not viewed this batch; one Speciano search found only English Milan calendar references for other letters; edition status of these letters unchecked"
+ },
+ "1337": {
+  "unvetted": "scans not viewed this batch; short cipher of names; only the generic Speciano search was done"
+ },
+ "1338": {
+  "unvetted": "scan not re-viewed; Nuntiaturberichte II/5 (Dengel 1926) not read for a printed decipherment of Biglia's Oct 1565 letters, which is the key check"
+ },
+ "1343": {
+  "unvetted": "only one search (nothing found); OPAC titles may be clear copies of cipher letters, not ciphertext; not digitised"
+ },
+ "1344": {
+  "unvetted": "only one search (nothing found); not digitised; cannot tell ciphertext from decipherment"
+ },
+ "1345": {
+  "unvetted": "only one search (nothing found on the Lyon interception); not digitised; may be a decipherment or copy"
+ }
+}

@@ -1,0 +1,119 @@
+{
+ "1142": {
+  "vetting": {
+   "date": "2026-10-29",
+   "by": "claude vetting batch 30",
+   "seen": {
+    "kind": "not online",
+    "where": "TNA Discovery API records C7328450, C7328459, C7328519 (SP 78/114/218, /227, /287); fetched 29 Oct 2026, digitised=False, no images online (State Papers Online is paywalled)",
+    "extent": "Three items: f.275 a cipher letter attached to Bamfylde's cover to Mr Carol, [?1659]; f.311 a cipher letter enclosed in N.B.'s letter of 21/31 Jul 1659 (cover for Col. Whitby); f.368 six lines, mostly cipher, 7 Sep 1659. Group counts unknown.",
+    "cipher": "Archive description quoted: 'Bamfylde to Mr. Carol (cover only) - and cipher letter ? attached (f 275)'; 'Cipher letter enclosed in letter of N.B. at f.292 above'; 'Six lines, mostly cipher.' No decipherment is mentioned in any of the three records; system not seen."
+   },
+   "prior_art": {
+    "decode": "known.py over the DECODE dumps (views.jsonl/_b/_c) and the repo ledgers: no record for this shelfmark; not on DECODE.",
+    "tomokiyo": "Web search on Tomokiyo/cryptiana for 1659 royalist ciphers (Bamfylde, Mordaunt, N.B.) found only his Thurloe-agent and BL cipher-key pages, nothing on these folios.",
+    "lasry": "Web search 'Lasry Biermann royalist 1659' surfaced only the 2025 Perwich decipherment (other period); nothing on SP 78/114.",
+    "edition": "Searched Calendar of State Papers Domestic 1659-60 / Thurloe State Papers (Birch 1742) and the Mordaunt Letter-Book hit via web search for Bamfylde, 'Mr Carol', Whitby: no calendar entry or printed decipherment found; not checked page by page.",
+    "literature": "Web searches (Bamfylde, Mordaunt 1659, Camden notes) found only context: Mordaunt-Hyde 1658-59 letters in partly deciphered cipher; no study of these letters."
+   },
+   "key_check": "No key held in the repo or DECODE for the Mordaunt/Bamfylde royalist network of 1659 (known.py on 'Bamfylde', 'SP 78/114'); BL cipher-key volume of Thurloe/royalist keys (searcharchives 040-002109623) noted but not available as images, so no key tried.",
+   "duplicates": "known.py on 'SP 78/114', 'Bamfylde': only this lead and the TNA candidates file; no duplicate in catalogue.json, DECODE dumps or ledgers.",
+   "verdict": "open"
+  }
+ },
+ "1144": {
+  "vetting": {
+   "date": "2026-10-29",
+   "by": "claude vetting batch 30",
+   "seen": {
+    "kind": "not online",
+    "where": "TNA Discovery API record C7970624 (SP 77/32/289), fetched 29 Oct 2026; digitised=False; no images online",
+    "extent": "One leaf (f.289), Nicholas to 'Sir L.R.' at St Sebastian, 6/16 Aug 1659; amount of cipher unknown, catalogue says the letter is in cipher.",
+    "cipher": "Archive description quoted: 'Nicholas to Sir L.R. at St. Sebastian - in cipher.' No decipherment is mentioned; system not seen."
+   },
+   "prior_art": {
+    "decode": "known.py over the DECODE dumps (views.jsonl/_b/_c) and the repo ledgers: no record for this shelfmark; not on DECODE.",
+    "tomokiyo": "Cryptiana searches (Interregnum/Thurloe agents page; BL key volume for Nicholas ciphers 1646-58) found no page on this letter; the BL key range ends in 1658 and does not obviously cover Aug 1659.",
+    "lasry": "No Lasry/Biermann work on Nicholas's 1659 letters found by web search.",
+    "edition": "Nicholas Papers vol. IV (Warner, Camden 1920) searched on the earlier 28 Oct pass and again by web search: it prints letters to Nicholas and does not contain this item; no other edition located.",
+    "literature": "Web search 'Nicholas August 1659 San Sebastian Sir L. R.' returned only the Nicholas Papers editions and BL key records; recipient 'L.R.' (possibly Sir Lewis Robartes) unverified."
+   },
+   "key_check": "Nicholas ciphers of 1646-58 exist as BL keys (Egerton 2550 / Add MS 32256 per catalogue.json hits) but are not held as images here and the date is later than their range, so none tried or ruled in.",
+   "duplicates": "known.py on 'SP 77/32', 'San Sebastian', 'Nicholas': no duplicate; only unrelated Nicholas Wotton/1645 entries in catalogue.json.",
+   "verdict": "open"
+  }
+ },
+ "1145": {
+  "vetting": {
+   "date": "2026-10-29",
+   "by": "claude vetting batch 30",
+   "seen": {
+    "kind": "not online",
+    "where": "TNA Discovery API records C7327886 and C7327928 (SP 78/111/93 f.212 and /135 f.300), fetched 29 Oct 2026; digitised=False; no images online",
+    "extent": "Two single letters: f.212 (20/30 Sep 1642) and f.300 (1644), each a whole letter in cipher; length unknown.",
+    "cipher": "Archive description quoted: 'Letter entirely in cipher.' (f.212) and 'Letter in cipher.' (f.300). No decipherment is noted; system, language (French per lead) and cipher type not seen."
+   },
+   "prior_art": {
+    "decode": "known.py over the DECODE dumps (views.jsonl/_b/_c) and the repo ledgers: no record for this shelfmark; not on DECODE. Also listed only in research/oldest hard_targets.",
+    "tomokiyo": "Searched cryptiana for 1642-44 Paris embassy ciphers: no page covers SP 78/111.",
+    "lasry": "No Lasry paper or GL.htm entry for English Paris embassy ciphers of 1642-44 found by web search.",
+    "edition": "No edition located: web search on SP 78/111, Leicester/Northumberland Paris embassy and cipher found only the TNA series description and Perwich (1669-77) despatches, which are a later period.",
+    "literature": "TNA series description (SP 78/111 covers 1641-49) read via search; no secondary study of these two letters found."
+   },
+   "key_check": "No key for the 1642-44 Paris embassy is held in the repo or DECODE (known.py 'SP 78/111'); neighbouring folios of SP 78/111 were not viewed, so sibling decipherments could not be checked.",
+   "duplicates": "known.py on 'SP 78/111': only the lead itself, the TNA candidates file and oldest hard_targets; no catalogue.json or DECODE duplicate.",
+   "verdict": "open"
+  }
+ },
+ "1137": {
+  "unvetted": "Not seen (no access path). Discovery text of the four linked records (fetched 29 Oct) shows 55/16/146-147 are Haldimand's May 1779 PROPOSED CYPHER (a key, not a ciphertext), 55/19/98 a Clinton-Haldimand cipher letter of 22 Oct 1779, and 55/24/76 a 1780 letter 'found by comparison to be the same as one at British Museum' (so a decipherment exists). The lead's Yorktown/Cornwallis claim is not supported by these records; the other 21 items were not opened. Needs per-item review and Saberton/Haldimand-edition check."
+ },
+ "1138": {
+  "unvetted": "Not seen; Staffordshire RO images not online. Earlier checks (in the lead status) show six of twelve items printed with plaintext in Warburton 1849; I did not re-verify those pages. Discovery text (29 Oct) confirms /37, /39, /45 'In code'. Should be split into the unprinted items (/46-49, /53, /55, /59) and re-submitted; Lasry Rupert keys not yet tried."
+ },
+ "1139": {
+  "unvetted": "Not seen: Kresen Kernow RS/1/1054 has no images online. Discovery (29 Oct) confirms 15 Aug 1644, 'mainly in code'. Web searches found no decipherment, but the BL index of Rupert's papers lists other Richmond-Rupert letters 'with some use of cipher' (3 Aug 1645) that might be a sibling; not checked. Access is not 'archive', so cannot be passed as not online."
+ },
+ "1140": {
+  "unvetted": "Not seen: IWRO OG/BB/492 (6 Nov 1648, 'Letter partly in code', no. 78/5) has no images; extent of code unknown. Web searches (Oglander, Newport treaty) found no edition or decipherment but nothing on the item either."
+ },
+ "1143": {
+  "unvetted": "Not seen; access is not 'archive'. Discovery (29 Oct): 'Despatch largely in cipher from [Wm. Swyfte]', 24 Feb 1657, f.106. Thurloe State Papers (Birch 1742) for Feb 1657 on British History Online were not grepped, so a printed decipherment is not excluded."
+ },
+ "1146": {
+  "unvetted": "Seven items from four archives and different decades (1625-39); only four Discovery records read (29 Oct): 'postscript in cipher', 'portion in cipher', 'cipher letter on Taylor's accusations'. Akkerman's Elizabeth of Bohemia edition vol. II (1632-42, 7 ciphers reconstructed) and the Calendars of State Papers were not checked per item, so printed decipherment is not excluded. Needs splitting by item."
+ },
+ "1147": {
+  "unvetted": "Not seen; Discovery: 'Letter in cipher from 159', [?1622], SP 99/24/251, SP 99 only on paywalled SPO. Venetian cipher keys in SP 106/10 not tried; no per-item prior-art searches done."
+ },
+ "1148": {
+  "unvetted": "Not seen. Discovery: PRO 30/25/6 'Letter, partly in cipher, without name or address; dated Venice', 26 Aug 1634. Warwickshire CR 2017/C89 (Feilding/Morton cypher 1635) exists but its record has no description and was not opened; no check whether that key fits."
+ },
+ "1149": {
+  "unvetted": "Not seen. Discovery: PRO 30/50/70/8 14 Jan 1600, 'partly in cipher, enclosure to 70/7'; Neville papers edition/HMC not searched, 70/7 not checked for a decipherment."
+ },
+ "1150": {
+  "unvetted": "Seen only as catalogue text (29 Oct): SP 105/59/79 describes two intercepted French letters; SP 105/60/7 says earlier papers' cipher 'cannot be understood' and should go to Dr Wallis, citing SP 105/59 f.152 (a decipherment lead). Repo Stepney work (targets/stepney) concerns the 1702 THE=454 cypher, not 1693, so no key applies; about 15 items not individually checked."
+ },
+ "1151": {
+  "unvetted": "Mixed set of ~50 folios. Discovery (29 Oct): SP 91/5/298 is an 'undeciphered duplicate of folio 294 (deciphered version)', so some items already have plaintext in the volume; SP 91/5/163 and /108 descriptions are summaries without cipher status. Which folios lack a bound decipherment, and the Russian/BL Add MS 37354-60 editions, were not checked."
+ },
+ "1152": {
+  "unvetted": "Not vetted per item: SP 35/45/78 (letter in cypher to Thomas Compton, 7 Oct 1723), SP 35/46/59 ('Undecyphered paper') and SP 35/73/52 (Plunket numerals, whose record says a transcript is printed in the Layer Committee report) are in the Discovery text (29 Oct); contemporary decipherers and Howell State Trials partly printed results. Searches (Cruickshanks/Erskine-Hill, Lasry) found nothing on the figure strings, but the decipherment status of each letter is unresolved."
+ },
+ "1153": {
+  "unvetted": "Mixed items (SP 36/74 Ball letter 19 Nov 1745; SP 54/25/8B letters from 'Burnet' found on Sir Hector MacLean; SP 54/26/136 Moor-Gager number cipher). Only three Discovery records read; web search for a decipherment or state-trials printing found nothing, but trial and Jacobite-indictment editions (e.g. Prince Charlie's Friends) were not grepped."
+ },
+ "1154": {
+  "unvetted": "Not seen. Discovery SP 84/165/75 (22 Mar 1662, Chauran to Williamson 'Transmits ciphers... Partly in cipher', 'Missing at transfer') and /36 (de Bacquoy 'Additions to the cipher'); the set contains keys as well as cipher letters and 'missing at transfer' means one item may not exist. Needs per-folio review."
+ },
+ "1155": {
+  "unvetted": "Not seen. Discovery: SP 34/10/120A is an extract of Baron Malknecht 'partly in cipher (French)'; /122 is only Blencowe's covering letter about cipher letters. Translations at SP 34/24/84-85 may cover them; SP 34/24/86-87 not read."
+ },
+ "1156": {
+  "unvetted": "Only /674 (Jackson to Drake, 1804, 'Letter in cypher') read via Discovery; the other four items (/398, /453, /661, /701) have no fetched record. Web search found nothing on a decipherment of these Drake papers (the Genoa diplomat Sir Francis Drake is a different person). The key link to catalogue id 833 not tested."
+ },
+ "1157": {
+  "unvetted": "Not seen. Discovery: 38M49/1/10/1-51 'With enclosures, some in cipher' (a 51-item run, no cipher item identified); 38M49/1/141/4 has no description. Web searches found no cipher content statement or decipherment; the item-level cipher letters and 'Plan of a cypher' key lead are unverified."
+ }
+}

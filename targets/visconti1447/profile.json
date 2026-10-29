@@ -1,0 +1,105 @@
+{
+ "schema_version": 1,
+ "target": "visconti1447",
+ "title": "Filippo Maria Visconti to Francesco Sforza, Cusago 23 Jan 1447, in the Duke's second key (BnF italien 1584 f. 15; key DECODE R5324)",
+ "documents": [
+  {
+   "id": "f15",
+   "shelfmark": "BnF italien 1584 f. 15 (Archivio Sforzesco, 1447), Gallica btv1b100373864 canvas 17",
+   "date": "23 Jan 1447",
+   "year": 1447,
+   "country": "Duchy of Milan",
+   "route": "Filippo Maria Visconti, Duke of Milan (Cusago) -> Francesco Sforza (the Marche)",
+   "places": {"from": "Cusago", "to": "Pesaro"},
+   "language": "Italian",
+   "pages": 1,
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": ["separate folio"],
+    "source": "f. 16, mounted below the slip: the same letter in clear, a parallel minute (96.0% token agreement, wording variants)",
+    "partial": false
+   },
+   "length": {
+    "tokens": 722,
+    "distinct": 87,
+    "unit": "symbols",
+    "measured": true,
+    "file": "texts/f15_signs.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Gallica IIIF full-size image of canvas 17, deskewed and tiled (worker A, a subagent of the session)",
+    "image_quality": "good",
+    "notes": "15 cipher lines; 722 sign tokens including 22 nulls. Sign shapes calibrated against the clear text f. 16, which was in view."
+   },
+   "read": "read"
+  }
+ ],
+ "system": {
+  "types": ["homophonic", "nomenclator"],
+  "summary": "Homophonic substitution (one to four signs per letter) with word signs (et, que, qui, in, de, con, qua, da, che, per, come, ciò), name and word codes (Dux Mediolani, lettere, date, havemo, Papa, Re de Ragona, Ambassadore, questo, cosa, vuy) and six nulls; no word division.",
+  "symbol_kind": "letters and symbols",
+  "distinct_symbols": 87,
+  "diacritics": {"used": "unknown"},
+  "homophones": {"used": true},
+  "nomenclator": {"present": true, "kinds": ["common words", "names", "titles"]},
+  "nulls": {"present": true, "count": 6},
+  "key_order": "random",
+  "word_division": "none",
+  "sibling_key": "The Duke's other key, ASMi cart. 1597 no. 23 (DECODE R5323), reads his twenty other slips of Nov 1446 - Mar 1447 (targets/visconti1446); it does not fit f. 15."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in archive",
+   "where": "f. 16, the clear text of the same letter, mounted below the slip in BnF ital. 1584",
+   "found": "during attempt",
+   "used": true
+  },
+  "inputs": ["images", "key from archive", "cleartext context"],
+  "attack": "key from archive",
+  "human_role": "The project chose the target from the Oct 2026 Venice/Milan sweep and asked for it to be read; the model found the key, transcribed, deciphered and checked it (worker subagents under the main session).",
+  "tools": ["Gallica IIIF image API", "DECODE authenticated record and image download", "PIL tiling and deskew"],
+  "models": ["claude-opus-5-5"],
+  "sessions": 1,
+  "first_date": "2026-10-28",
+  "last_date": "2026-10-29"
+ },
+ "solution": [
+  {"date": "2026-10-28", "kind": "literature search", "what": "Mazzatinti's inventory of the Archivio Sforzesco (BnF ital. 1583-1596) lists f. 15 as the Duke to Sforza, Cusago 23 Jan 1447, 'In cifre: membran.'", "result": "worked"},
+  {"date": "2026-10-28", "kind": "access", "what": "Gallica's viewer and manifest refuse scripts; the IIIF image API at openapi.bnf.fr serves full-size canvases. Canvas 17 carries the slip with the clear f. 16 below it.", "result": "worked"},
+  {"date": "2026-10-28", "kind": "key from source", "technique": ["key matching"], "what": "Fetched the 15th-c. key records of ASMi Carteggio Sforzesco cart. 1597 from DECODE (R5301-R5340) and read their headings: nos. 23 and 24 are headed 'Filippo Maria Duca di Milano'. R5323 fits the Duke's other slips but not f. 15.", "result": "partial"},
+  {"date": "2026-10-28", "kind": "key from source", "technique": ["key matching"], "what": "R5324 fits f. 15 from the first words ('Per vostre lettere date a undece del presente havemo inteso ...').", "result": "worked"},
+  {"date": "2026-10-28", "kind": "transcription", "what": "Deskewed and tiled the slip; transcribed 15 lines, 722 sign tokens (87 distinct), sign by sign.", "result": "worked"},
+  {"date": "2026-10-28", "kind": "reading", "technique": ["contextual inference"], "what": "Deciphered with R5324: 686 of 722 tokens read (98.0% of non-null tokens). Code words not on the key copy read in context: cab = quello, ba = Conte, cel = se. The slip ends with the Duke's full title in cipher.", "result": "worked"},
+  {"date": "2026-10-28", "kind": "verification", "technique": ["plaintext matching"], "what": "Compared token by token with the clear text f. 16: 604 of 629 text tokens agree (96.0%); the rest are wording and spelling variants, so f. 16 is a parallel minute.", "result": "worked"}
+ ],
+ "outcome": {
+  "class": "read",
+  "method": "read after matching with key from external sources",
+  "method_basis": "The key is an unlabelled DECODE key record (ASMi cart. 1597 no. 24, R5324) matched to the slip; the reading was checked against the clear text f. 16.",
+  "contribution": ["transcription", "catalogue correction"],
+  "key": "not applicable",
+  "fraction_read": 0.95,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "texts/f15_tokens.tsv, all 722 cipher tokens (nulls counted as not read)",
+  "verification": ["independent clear copy", "key confirms"],
+  "first_break": false,
+  "provenance": "project",
+  "notes": "The letter was never unread: its clear text f. 16 is on the same mount. New here: the key identified (R5324 is anonymous on DECODE) and checked against a clear text. Split from targets/visconti1446 (R5323) on 29 Oct 2026.",
+  "credits": [
+   {"who": "contemporary", "role": "prior solution", "note": "clear text f. 16 on the same mount", "date": "1447"},
+   {"who": "decode", "role": "key or decipherment used", "note": "key record R5324 (ASMi cart. 1597 no. 24), uploaded 2023", "date": "2023-07", "source": "https://de-crypt.org/decrypt-web/RecordsView/5324"},
+   {"who": "mazzatinti", "role": "identification", "note": "inventory entry for f. 15", "date": "1883", "source": "Mazzatinti, Inventario delle carte dell'archivio sforzesco, Archivio storico lombardo 1883"}
+  ],
+  "gaps": [
+   {"item": "five signs between the date and the title, seven after the title", "blocker": "too-short"},
+   {"item": "two signs at the slip's edge (l. 8 first, l. 9 last)", "blocker": "illegible"}
+  ],
+  "texts": [
+   {"doc": "f15", "label": "f. 15, Cusago 23 Jan 1447", "transcription": "texts/f15.md", "decryption": "texts/f15_reading.md", "translation": "texts/f15_en.md", "state": "read",
+    "summary": "Duke Filippo Maria thanks Sforza for his letters of the 11th and his counsel and, following it, will send another ambassador to the Pope and the King of Aragon, besides Pietro da Pusterla and Antonio da Trezzo, to act for the Count and take his orders. Written seven months before the Duke's death, while he was courting his son-in-law against Venice.",
+    "reading_review": {"grade": "A", "by": "claude-opus-5-5", "date": "2026-10-29", "note": "Coherent throughout; read against the clear text f. 16."}}
+  ],
+  "key_file": "key.md"
+ }
+}

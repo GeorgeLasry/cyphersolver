@@ -1,0 +1,99 @@
+{
+ "1312": {
+  "unvetted": "only one leaf seen (canvas 34); other listed folios not located"
+ },
+ "1320": {
+  "unvetted": "Leaf seen (ital. 1590 canvas 393 = f. 392, Antonio da Trezzo, one slip of about 9 lines of pure cipher signs, no gloss; viewed in Chrome 29 Oct 2026) but not vettable: Trezzo's Naples despatches of 1464 are very probably printed with decipherment in Senatore et al., Dispacci sforzeschi da Napoli vol. VI (Jan 1464 - Jul 1465), which I could not reach (web search found only catalogue entries), and BnF ital. 1589/1590 hold filed 'Traduzioni' of his 1463-64 despatches (venice_milan_print README) that would be the key. f. 285 not located. Check Dispacci VI for 8 Sept 1464 first."
+ },
+ "1321": {
+  "unvetted": "Leaf seen (ital. 1591 canvas 358, f. 348, Lyon 6 June 1466: clear text then about 12 lines of cipher figures, no gloss; viewed in Chrome 29 Oct 2026) but the printed-edition check could not be done: Mandrot-Samaran t. IV (1923) and Ilardi, Dispatches vol. III (11 Mar - 29 Jun 1466, 1981) cover exactly this date and are not on archive.org (only t. 1-3 found), so a printed decipherment is likely and unchecked."
+ },
+ "1322": {
+  "unvetted": "f. 31 is a munitions inventory, not the lead's letters; the listed folio does not match; locate the real cipher leaf"
+ },
+ "1275": {
+  "vetting": {
+   "date": "2026-10-29",
+   "by": "claude vetting batch c02",
+   "seen": {
+    "kind": "scan",
+    "where": "RAH Biblioteca Digital record id=5894 (Sig. 9/7668, leg. 25, k, f. 564), image opened in the RAH viewer in Chrome 29 Oct 2026 (the Anubis check passes automatically in Chrome)",
+    "extent": "One folio, Chacon to Morillo, Golfo de Guiria 10 May 1818: clear Spanish letter with a single line of about 13 numeric groups ('+. 16. +60. 00. +. 14. 16. 11. 5. 11. 80. 1.') inserted in the text",
+    "cipher": "A short numeric/sign code line; the words 'a San Bartolome' are written above the groups in the same hand, so the decipherment is written on the leaf, and the record title says the lines announce the departure for San Bartolome"
+   },
+   "prior_art": {
+    "decode": "Not searched on DECODE (login wall); not a DECODE-held record as far as known.py shows.",
+    "tomokiyo": "No cryptiana page on Chacon/Morillo 1818 found (web search not productive for this record).",
+    "lasry": "No Lasry entry found for Chacon or Morillo 1818.",
+    "edition": "Rodriguez Villa's Morillo edition not checked; the record itself carries the reading.",
+    "literature": "RAH record title states the content of the cipher lines; nothing further found."
+   },
+   "key_check": "No key needed: the interlinear gloss reads the single line; no larger code is represented.",
+   "duplicates": "known.py 'Chacon' and 'Morillo' found no other record of this letter in the repo.",
+   "verdict": "read",
+   "closed": "Decipherment written above the cipher line on the leaf itself ('a San Bartolome'); a single short line, nothing left to read."
+  }
+ },
+ "1276": {
+  "vetting": {
+   "date": "2026-10-29",
+   "by": "claude vetting batch c02",
+   "seen": {
+    "kind": "scan",
+    "where": "RAH Biblioteca Digital records id=14495 (Sig. 9/6958, Legajo XIX no. 117, 5 pages) and id=15711 (Sig. 9/6963, Legajo XXIV no. 158, 8 pages), pages viewed in the RAH viewer in Chrome 29 Oct 2026",
+    "extent": "id=14495: Gonzalez Bravo to Isabel II, Madrid 18 Nov 1869, enclosing a ciphered note of the Conde de la Canada, about 25 cipher lines on p. 4 and 5 lines on p. 5. id=15711 (3 May 1868): the 1350-group cipher telegram to the minister in Munich, preserved only as a clear 'copia conforme' signed by Xiquena, 8 pages, no cipher groups",
+    "cipher": "id=14495: sign and figure substitution (+, ~, bars, digits) with the full Spanish decipherment written line by line above the cipher; id=15711: no cipher on any page, only the plain text of the telegram"
+   },
+   "prior_art": {
+    "decode": "Not searched on DECODE (login wall); no sign of these records there.",
+    "tomokiyo": "No cryptiana page on Isabel II / Xiquena / Gonzalez Bravo found.",
+    "lasry": "No Lasry entry found for these records.",
+    "edition": "No edition searched beyond the RAH records; the 1868 telegram text is the 'copia' itself.",
+    "literature": "Nothing found on the cipher; the lead's date (1868) fits only id=15711, the 1869 note is a different record."
+   },
+   "key_check": "No key needed for id=14495 because the interlinear reading is complete; id=15711 has nothing to decipher.",
+   "duplicates": "known.py 'Xiquena' and 'Gonzalez Bravo' found no other record in the repo.",
+   "verdict": "read",
+   "closed": "Cipher note read at the time (interlinear decipherment on the leaf) and the telegram survives only as clear text; nothing to solve."
+  }
+ },
+ "1269": {
+  "unvetted": "Cipher letters not located: BDH viewer is now bnedigital.bne.es (card oid=0000186678, MSS/20212/43/1-12, 12 letters, 33 sheets; works in Chrome, the old bdh-rd viewer URL hangs). Notes say 'Dos de las cartas parcialmente cifradas, con la cifra en documento aparte e interlineal' but not which two; only letter 1 (Lisbon 25 Oct 1512, clear) was opened. Needs the other 11 letters paged, then Kolosova Ko.12/Ko.17 and Luo Lu.15 applied."
+ },
+ "1270": {
+  "unvetted": "Not viewed: BNE card oid=0000186690 reachable via bnedigital.bne.es in Chrome but the seven letters were not paged; the lead already overlaps Tomokiyo AlonsoSanchez.htm (1521-22) and catalogue 1014 (1497), so the unread letters must be identified first."
+ },
+ "1271": {
+  "unvetted": "Not viewed; web search found a 2023 Avisos article (Herrero Garcia) on Mirabel's 1622 letters to Gondomar citing BNE Mss. 18428, not Mss/18619, so the shelfmark may be wrong; BNE card oid=0000141369 not paged."
+ },
+ "1272": {
+  "unvetted": "Not viewed and not searched beyond the ledgers; BNE card oid=0000064262 is reachable on bnedigital.bne.es but is a multi-letter volume with unknown cipher locations."
+ },
+ "1273": {
+  "unvetted": "Cipher letter not located: BNE 'Papeles varios' (oid=0000042230, bnedigital.bne.es, 64 images) opened in Chrome; images 8-12 are clear letters to the Duke of Alba (1623-28) and the 1630 Olivares letter with cipher was not reached; the lead's ff. 13-15 do not map to image numbers."
+ },
+ "1274": {
+  "unvetted": "Not viewed: BNE card oid=0000186680 (34+ Najera letters and the contracifra copy) not paged; Kolosova's thesis/2024 book still to be checked, and the repo's own Najera/Claro f. 34r material (lopehurtado1523, soria1527 notes) must be compared first."
+ },
+ "1277": {
+  "unvetted": "Seen but not vettable: UB BiPaDi Ms 40 (Receptari xifrat, 1687, Catalan, 518+40 p., id 89503) opens in Chrome; p. 7 (text p. 1) shows a letter-for-letter substitution of Catalan recipes. The catalogue cites J.R. de Luanco, La Alquimia en Espana I pp. 25-47 ('Anonimo Catalan') and Miquel Rosell vol. 1 pp. 45-46; the OCR of archive.org laalquimiaenesp01luangoog has no such section, so whether Luanco printed a key or transcription is unchecked."
+ },
+ "1315": {
+  "unvetted": "Folio not located: ital. 1584 canvas numbering is not a fixed offset from folio numbers (canvas 6 = f. 2 but canvas 167 shows a leaf numbered about 175); canvas 167 holds a Guarna letter (Milan 1 June 1447, clear) and a June 1447 letter with cipher paragraphs, not the ff. 163-64 asked for. Needs a folio-by-folio walk."
+ },
+ "1316": {
+  "unvetted": "Folio not located: canvas 152 of ital. 1584 is a clear letter numbered about 157, not f. 148; the offset between canvas and folio drifts, and Amidani's attribution is unchecked. Ital. 1585 not opened."
+ },
+ "1317": {
+  "unvetted": "Folios not located: canvas 349 and 357 of ital. 1584 are clear 1447 letters numbered about 355-363, not f. 353; ital. 1585 ff. 28-71 not opened; Domnina 2018 overlap unresolved."
+ },
+ "1329": {
+  "unvetted": "BnF italien 258 not digitised or no ark found: only Mazzatinti I (archive.org) lists it; a BnF Archives et manuscrits search for the volume was not done in this pass and access is not 'archive', so there is no view and no basis for a block."
+ },
+ "1330": {
+  "unvetted": "BnF italien 314 not digitised or no ark found: only Mazzatinti I (archive.org) lists it; a BnF Archives et manuscrits search for the volume was not done in this pass and access is not 'archive', so there is no view and no basis for a block."
+ },
+ "1331": {
+  "unvetted": "BnF italien 1636 not digitised or no ark found: only Mazzatinti I (archive.org) lists it; a BnF Archives et manuscrits search for the volume was not done in this pass and access is not 'archive', so there is no view and no basis for a block."
+ }
+}

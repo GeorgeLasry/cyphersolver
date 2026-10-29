@@ -1,0 +1,101 @@
+{
+ "1391": {
+  "unvetted": "LAC/ANOM image server (central.bac-lac.gc.ca) still not serving: in Chrome on 29 Oct 2026 the nouvelle-france.org viewer for item 27665 (the others in this series behave the same; ids in the lead's link) rendered an empty dark pane with blank thumbnails; the record page gives only the title and 'Lettre chiffrée ... Lieu de rédaction'. Nothing of the cipher seen, so not vetted; retry when the image server is back."
+ },
+ "1392": {
+  "unvetted": "Blocked: LAC/ANOM image server down (blank viewer in Chrome on 29 Oct 2026, record 27542); title-only description is not evidence of cipher content. Retry later."
+ },
+ "1393": {
+  "unvetted": "Blocked: LAC/ANOM image server down (blank viewer in Chrome on 29 Oct 2026, record 12539); title-only description is not evidence of cipher content. Retry later."
+ },
+ "1394": {
+  "unvetted": "Blocked: LAC/ANOM image server down (blank viewer in Chrome on 29 Oct 2026, record 11102); title-only description is not evidence of cipher content. Retry later."
+ },
+ "1395": {
+  "unvetted": "Blocked: LAC/ANOM image server down (blank viewer in Chrome on 29 Oct 2026, record 11107); title-only description is not evidence of cipher content. Retry later."
+ },
+ "1396": {
+  "unvetted": "Blocked: LAC/ANOM image server down (blank viewer in Chrome on 29 Oct 2026, record 10538); title-only description is not evidence of cipher content. Retry later."
+ },
+ "1397": {
+  "unvetted": "Blocked: LAC/ANOM image server down (blank viewer in Chrome on 29 Oct 2026, record 23886); title-only description is not evidence of cipher content. Retry later."
+ },
+ "1398": {
+  "unvetted": "Blocked: LAC/ANOM image server down (blank viewer in Chrome on 29 Oct 2026, record 23887); title-only description is not evidence of cipher content. Retry later."
+ },
+ "1399": {
+  "unvetted": "Blocked: LAC/ANOM image server down (blank viewer in Chrome on 29 Oct 2026, record 25047); title-only description is not evidence of cipher content. Retry later."
+ },
+ "1400": {
+  "unvetted": "Blocked: LAC/ANOM image server down (blank viewer in Chrome on 29 Oct 2026, record 23892); title-only description is not evidence of cipher content. Retry later."
+ },
+ "1401": {
+  "unvetted": "Blocked: LAC/ANOM image server down (blank viewer in Chrome on 29 Oct 2026, record 25163); title-only description is not evidence of cipher content. Retry later."
+ },
+ "1402": {
+  "unvetted": "Blocked: LAC/ANOM image server down (blank viewer in Chrome on 29 Oct 2026, record 25164); title-only description is not evidence of cipher content. Retry later."
+ },
+ "1403": {
+  "unvetted": "Blocked: LAC/ANOM image server down (blank viewer in Chrome on 29 Oct 2026, record 24031); title-only description is not evidence of cipher content. Retry later."
+ },
+ "1530": {
+  "unvetted": "PARES answered 429 Too Many Requests in Chrome as well as to scripts on 29 Oct 2026, so neither description nor images were seen (description/62186). Galende 2000 n.52 names this document as an example of Cienfuegos's 1817 vowel-digit cipher (key_lookup likely) but it must be seen first."
+ },
+ "1531": {
+  "unvetted": "PARES answered 429 Too Many Requests in Chrome as well as to scripts on 29 Oct 2026, so neither description nor images were seen (description/65951); sender and cipher unknown."
+ },
+ "1532": {
+  "unvetted": "PARES answered 429 Too Many Requests in Chrome as well as to scripts on 29 Oct 2026, so neither description nor images were seen (description/1747718); signatura and the context of 'sin descifrar' unknown."
+ },
+ "896": {
+  "unvetted": "Paz Catálogo V no. 189 not mapped to a PARES PTR record, and PARES is blocked (429 in Chrome, 29 Oct 2026); nothing seen of the cipher letter, so not vetted."
+ },
+ "1513": {
+  "unvetted": "Volume-level lead: Chrome view of ARNES 000050868 (29 Oct 2026) shows only 'oficios, circulares, telegramas y criptogramas reservados y confidenciales' for a whole volume of 1926-27 communications; no individual cipher item is identified and none is online, so a cipher cannot be shown. Needs item-level selection at the Archivo Nacional; searches on Chilean 1920s-30s ministry ciphers found no study."
+ },
+ "1545": {
+  "vetting": {
+   "date": "2026-10-29",
+   "by": "claude vetting batch c12",
+   "seen": {
+    "kind": "not online",
+    "where": "https://archives.newberry.org/repositories/2/archival_objects/146916 (finding aid read in Chrome on 29 Oct 2026, Cloudflare check passed on its own, no CAPTCHA clicked); folders not digitised",
+    "extent": "2 folders (Box 615, Folders 8192-8193), ca. 1878-1882 (dated 1877-1879 in the tree)",
+    "cipher": "Finding aid scope note: 'Ciphers, or telegraph codes were used to shorten long telegraph messages ... They utilized a number of code words which were used to replace complicated or regularly used phrases. This group contains several ciphers used in telegrams between Perkins and other CB&Q officials.' So the folders hold code-word lists (keys), not ciphered messages."
+   },
+   "prior_art": {
+    "decode": "Not on DECODE; known.py 'Newberry CB&Q Perkins cipher' and 'Perkins' found only this lead, research/chi_chrome_pass and the unrelated NARA G. B. Perkins 1875 counterfeiters item.",
+    "tomokiyo": "Web search (cryptiana railroad telegraph code Burlington, Tomokiyo, Lasry, DECODE) returned nothing on CB&Q or American railroad codes; no cryptiana page known.",
+    "lasry": "No Lasry or DECODE item on railroad telegraph codes found in the searches.",
+    "edition": "No edition; the Newberry finding aid is the only description. The related 'Telegraph cipher code, 1897' (mms.newberry.org archival_objects/148339) is also a bare title.",
+    "literature": "Searches on Perkins/Gould secret telegrams and railroad cipher codes found only general code-book material (ARA 1906 Standard Cipher Code, Canadian Pacific mining code); nothing on these folders."
+   },
+   "key_check": "These folders are themselves the keys (commercial telegraph code-word lists), not ciphertext; no ciphered CB&Q telegrams are held here or online to apply them to. Their use would be on telegrams in subseries 3 P4.6-P4.8, which are not digitised.",
+   "duplicates": "known.py 'Newberry CB&Q Perkins cipher', 'Burlington Perkins telegraph code', 'Perkins': only this lead and its chi_chrome_pass source; no catalogue duplicate.",
+   "verdict": "key_lookup",
+   "closed": "The subseries is a set of telegraph code books (keys), not ciphertext; no cryptogram to read unless the ciphered telegrams in P4.6-P4.8 are found and imaged."
+  }
+ },
+ "1503": {
+  "vetting": {
+   "date": "2026-10-29",
+   "by": "claude vetting batch c12",
+   "seen": {
+    "kind": "not online",
+    "where": "http://www.bncatalogo.cl/F/?func=direct&local_base=ARNES&doc_number=000011403 (full record viewed in Chrome 29 Oct 2026; no image or digital link)",
+    "extent": "2 p. telegram, Lima, 1 Jun 1882, Lynch to Santa María, with an attached copy",
+    "cipher": "Archive description (ARNES): 'Telegrama, 1882 jun. 1, Lima al Presidente (Domingo Santa María González), Santiago ... Texto en clave, adjunta copia.' 2 p. No transcription is noted; whether the attached 'copia' is a clear decipherment or a second cipher copy cannot be told from the record."
+   },
+   "prior_art": {
+    "decode": "Not on DECODE: known.py 'Patricio Lynch', 'Santa Maria' found only the sibling catalogue rows 1502/1504/1507/1508 and the southcone sweep; no Chilean 19th-century DECODE record.",
+    "tomokiyo": "Web searches (Lynch telegrama en clave Santa María; Guerra del Pacífico cifras claves) found nothing on cryptiana for Chilean War of the Pacific ciphers.",
+    "lasry": "No Lasry item on 19th-century Chilean ciphers found in the web searches.",
+    "edition": "No edition of the Archivo Santa María telegrams found; results were only general Lynch biography, McEvoy 2006 (Revista de Indias) on the Chilean state's communications, and Parvex's book on the secret service.",
+    "literature": "Searches found no study that deciphers these telegrams; McEvoy and Parvex are possible unchecked sources for the key sheets' existence."
+   },
+   "key_check": "Keys held in repo: none for Chile. The same fonds holds A3039 'Código para escribir en clave' (ca. 1880) and B4931 'Claves telegráficas a utilizar con Lynch, Altamirano, Novoa...' (ca. 1883, 10 p.), neither digitised, so no key could be applied; the ciphertext is not online either.",
+   "duplicates": "known.py 'Patricio Lynch', 'Santa Maria': siblings 1502 (29 May 1882), 1504, 1507, 1508 differ by date and shelfmark (this is B1403, 1 Jun 1882); no duplicate.",
+   "verdict": "open"
+  }
+ }
+}
