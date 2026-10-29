@@ -6,7 +6,7 @@ FIELDS = ["year", "date", "title", "correspondents", "place", "language", "regio
           "cls", "status", "why", "importance", "solvability", "difficulty", "score_note", "verify", "links", "seen",
           "source", "prior_art", "decode_ids"]
 rows = []
-for mod in ["rows_sforza", "rows_print", "rows_outside"]:
+for mod in ["rows_sforza", "rows_print", "rows_outside", "rows_extra"]:
     if os.path.exists(os.path.join(HERE, mod + ".py")):
         rows += importlib.import_module(mod).ROWS
 out = []
