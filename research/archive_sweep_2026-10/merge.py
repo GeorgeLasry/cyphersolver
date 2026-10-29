@@ -5,7 +5,8 @@
 
 Each sweep folder's candidates.json follows BRIEF.md. Rows are checked for the required fields and allowed
 vocabularies, dropped if their shelfmark or a DECODE id is already in catalogue.json, given the next free ids,
-and tagged counted / scored "sweep". merged.json records which sweep row became which id.
+and tagged counted / scored "sweep". A row with needs_archive_scan "yes" becomes access "archive" (the site's
+"needs archive scans" pill). merged.json records which sweep row became which id.
 """
 import json, os, re, sys
 
@@ -73,6 +74,11 @@ def main(write):
             e = {'id': next_id, 'counted': True}
             e.update({k: r[k] for k in r if k not in ('id', 'counted')})
             e.setdefault('ark', '')
+            # needs_archive_scan "yes" = nothing to work from online: the site shows the "needs archive scans" pill
+            if r.get('needs_archive_scan') == 'yes':
+                e.setdefault('access', 'archive')
+            elif 'needs_archive_scan' not in r:
+                log.append(f'{sweep}[{i}] has no needs_archive_scan: archive access not recorded')
             e['scored'] = 'sweep'
             entries.append(e)
             have_shelf.add(norm(r['shelfmark']))
