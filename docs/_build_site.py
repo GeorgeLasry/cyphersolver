@@ -3027,7 +3027,6 @@ GROUPS = [(M.KEY[m], M.LABEL[m][0].upper() + M.LABEL[m][1:], M.status_class(m, '
           ('survey', 'Surveys', 'todo', lambda p: p['slug'] in SURVEYS)]
 # the Explore menu: the pages that are not write-ups (slug, label, one line)
 EXPLORE = [('highlights', 'Highlights', 'Thirty favourites: the funny, the historic, the ingenious'),
-           ('archives', 'To the archive', 'Pieces only an archive or a library can supply: take one on'),
            ('glossary', 'Glossary', 'How each cipher was solved, and the terms used'),
            ('famous', 'The famous ones', 'Why Voynich, Kryptos, Beale and Dorabella resist'),
            ('atlas', 'Atlas', 'Every letter drawn on the map, five centuries of it'),
@@ -3079,6 +3078,7 @@ def nav_html(current):
         f'      <div class="panel ex">{explore}</div></details>\n'
         f'    <a class="navcat" href="catalogue.html"{cur("catalogue")}>Catalogue<span class="sticker" aria-hidden="true"><span><b>Help<br>Solve!</b></span></span></a>\n'
         f'    <a class="navcat" href="further.html"{cur("further")}>Read further<span class="sticker alt" aria-hidden="true"><span><b>Finish<br>It!</b></span></span></a>\n'
+        f'    <a class="navcat" href="archives.html"{cur("archives")}>To the archive<span class="sticker arc" aria-hidden="true"><span><b>Go<br>Look!</b></span></span></a>\n'
         f'    <a href="contributors.html"{cur("contributors")}>Contributors</a>\n'
         f'    <button class="searchbtn" type="button" aria-label="Search the site" aria-keyshortcuts="/ Control+K"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><circle cx="6.8" cy="6.8" r="5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 10.5L15 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span>Search</span><kbd>/</kbd></button>\n'
         f'    <button class="theme" type="button" aria-label="Switch between dark and light" title="Dark / light"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.2" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.8a6.2 6.2 0 0 1 0 12.4z" fill="currentColor"/></svg></button>\n'
