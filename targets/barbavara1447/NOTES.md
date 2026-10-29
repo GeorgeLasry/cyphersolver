@@ -63,9 +63,12 @@ These are gaps in the old decipherments. Nothing in this folder is a new reading
   before "bisognasse" was not resolved here. Blocker: open-codes. The key copy has blotted signs, and a sign-level
   transcription would be needed.
 - ff. 55v and 74v: a code sign the copyist drew in the margin as ꝺ+÷ is left blank three times ("li xx m del ___", "el
-  ___ non ne pagasse", "el manda dal Signore ___ per quelli vinti millia ducati"). R1857 labels this sign "Ducati", but
-  the context needs a person. Blocker: open-codes. The sign occurs only in this series, and the label on the late key
-  copy may be misplaced.
+  ___ non ne pagasse", "el manda dal Signore ___ per quelli vinti millia ducati"). **Identified from context, 28 Oct
+  2026 (see `targets/pusterla1447/`): ꝺ+÷ = the lord (Marquis) of Ferrara, Leonello d'Este [?].** Pusterla's f. 27
+  copy (Ferrara, 6 Feb) leaves the same sign blank twice: "Ista mane giunsi quà, e subito fui col ___" and "quelo fuse
+  utile ad eso ___". Pusterla goes to the lord of Ferrara on arrival there, and Barbavara's King undertakes to make
+  "him" pay his 20,000 ducats; Leonello was Alfonso's son-in-law. On the R1857 copy the labels "Ducati" and
+  "Ferrara" are crowded together over this sign and the next. This rests on context only: no clear copy writes it out.
 - f. 68 "Monsignore da Cologna": Parentucelli was cardinal of Bologna, so this is probably a copying or decipherment
   slip, B read as C. The cipher at that word was not checked. Blocker: none (workable).
 - f. 61: two underlined blanks around "de la morte dal Papa" and blots in the margin. Not compared with f. 62.
