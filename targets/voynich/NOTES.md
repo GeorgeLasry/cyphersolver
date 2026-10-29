@@ -11,6 +11,34 @@ marked with an asterisk. Two independent baseline scripts (`baseline.py`, `basel
 the agents ran reproduce the a1/a2 headline numbers (h2 2.32 raw EVA without spaces, Zipf slope -1.04,
 adjacent repeats 0.81%).
 
+## 0a. 28 Oct 2026: corrected parse re-run; b5 pre-registered generator bake-off
+
+**Parse fix propagated.** `parse_ivtff.py` now treats `<->` as a word break and keeps `{..}` groups. ZL locus P:
+34,774 tokens (was 34,116). All a/b/c scripts re-run (results/*.md and *.json overwritten; old values in git).
+Headlines barely move: h2 with space 2.107 (was 2.117), raw EVA no space 2.319 (2.311). b3 needed one
+change (shipped Naibbe ciphertext is 10 tokens short of the new N; wrapped). b3 on the new parse: Naibbe
+19-23/37, autocopist 11-13, Rugg 12-18, languages 13-16, gibberish 10, voynich_B 32. Sections below still
+quote September figures where not corrected here.
+
+**b5 (b5_PREREG.md committed a1b6821ce before any code; parameters frozen 3f1087039 before scoring).** Two
+candidates, five free parameters each, tuned on 17 fit items (groups a b c f) only, scored once on 20
+held-out items (d e g h i j k), seeds 1-5. Calibration: voynich_A scores 15/20 held-out against the whole text.
+- **C, verbose slot cipher of Pliny's Latin** (books by section, one table per Currier language, 1,349-word
+  nomenclator, 23 homophones per unit): fit 15-16/17; **held-out 10.8 (9-13)**, short 8.2.
+- **G, drifting-source autocopist** (Timm & Schinner plus section-local sources, exact reuse, scribe habits):
+  fit 5-6/17 (its parameters cannot move the character entropies or word-length spread inherited from the
+  morph rules); **held-out 8.4 (6-11)**, short 9.6. Timm's original: 5-6.
+- Neither reproduces (pre-registered outcome 4). **Failed by every seed of both:** exact and LD<=1 adjacent
+  repeats, adjacent-page vocabulary overlap (Jaccard excess 0.037 real; G 0.007, C 0.011), and first-half vs
+  second-half glyph-bigram drift (JSD 0.062 real; G 0.013, C 0.003). C also fails self-citation coverage and
+  ratio and the MZ peak height (0.045 vs 0.31: a topic-ordered Latin source still gives no long-range peak
+  once enciphered); G fails gallows placement, token and character predictability, and the MZ peak position.
+- Reading*: the cipher family reaches the character and vocabulary statistics with a few parameters, the
+  copy-and-modify family does not; neither reaches the page-level structure. The decisive targets are now
+  three held-out items both fail: adjacent repeats, adjacent-page overlap, and the A-to-B drift. Next round
+  (b6) should pre-register mechanisms for exactly those (a page-level reuse pool for the cipher; a drift in
+  the table between scribes), with the same fit/held-out discipline. Results: results/b5.md, results/b5.json.
+
 ## 0. October 2026 update (11 Oct): b1-b4 folded in, c1-c3 added, site page rewritten
 
 Prompted by RBA's post "Not deciphering the Voynich manuscript" (goflaw.substack.com, 22 Sept 2026) and

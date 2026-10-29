@@ -3,7 +3,9 @@
 Output (for each input file X.txt): data/X.words.tsv with columns
   folio  line_id  locus_type  lang  hand  illus  quire  para_start  para_end  line_words
 where line_words is the space-separated list of words after cleaning:
-  - inline comments <!...>, <%>, <$>, <~>, <->, {...} removed ({...} ligature/comment markers)
+  - inline comments <!...>, <%>, <$>, <~> removed; <-> (drawing interruption) = word break;
+    {...} ligature groups kept as their glyphs (braces dropped).  Before 28 Oct 2026 both <-> and {...}
+    were deleted, gluing 655 false compounds and losing 394 groups (v_b1).
   - alternatives [a:b] -> first reading a;  uncertain glyph ? kept as ? (words containing ? are flagged)
   - '.' = word break; ',' = uncertain word break, treated as a break
 Page metadata comes from the page header  <f1r> <! $Q=A $P=A $F=a $B=1 $I=T $L=A $H=1 ...>
@@ -22,8 +24,9 @@ def parse(path):
         folio, ln, tag, ltype, sub, text = m.groups()
         pstart = '<%>' in text; pend = '<$>' in text
         t = re.sub(r'<![^>]*>', '', text)
+        t = t.replace('<->', '.')
         t = re.sub(r'<[^>]*>', '', t)
-        t = re.sub(r'\{[^}]*\}', '', t)
+        t = re.sub(r'\{([^}]*)\}', r'\1', t)
         t = re.sub(r'\[([^\]:]*):[^\]]*\]', r'\1', t)
         t = t.replace(',', '.')
         words = [w for w in t.split('.') if w]

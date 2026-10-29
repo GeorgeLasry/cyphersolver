@@ -616,8 +616,8 @@ def main():
     # naibbe shipped
     shipped = read_cipher_lines(os.path.join(NAIBBE_DIR, 'encrypted_nathist_output_ciphertext.txt'))
     shipped_words = [w for ws, _ in shipped for w in ws]
-    assert len(shipped_words) >= N, f'shipped naibbe has only {len(shipped_words)} tokens'
-    corpora['naibbe_pliny'] = a4.pour(shipped_words[:N], skel)
+    # the corrected parse (28 Oct 2026) made ZL longer than the shipped ciphertext; wrap the shortfall (<1 %)
+    corpora['naibbe_pliny'] = a4.pour(cycle_to(shipped_words, N), skel)
     corpora['naibbe_pliny_lines'] = lines_into_pages(shipped, skel, N)
     # naibbe regenerated
     nb = Naibbe(os.path.join(NAIBBE_DIR, 'references_naibbe_tables.csv'), seed=19)
