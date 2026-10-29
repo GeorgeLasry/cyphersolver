@@ -67,4 +67,16 @@ None of the four outcomes settles meaning. The site page will say so.
 
 ## Deviations
 
-(none yet)
+28 Oct 2026, while building the generators and before any held-out item was computed:
+
+1. G has 5 free parameters, not 6: the line-initial gallows rate is dropped (fixed at Timm's values),
+   because its only targets (gallows init / mid) are held-out items, so it could not be tuned.
+2. C has 5 free parameters, not 6: the line-final group rate is dropped (fixed at 0) for the same reason
+   (its targets, len first / len last, are held out).
+3. C's plaintext: Pliny NH from Latin Wikisource (raw wikitext, `data/corpora/pliny/`). Books 28-30 are not on
+   Wikisource, so the pharmaceutical section uses books 32 then 31; the T (text-only) section uses the herbal
+   stream; j folded into i.
+4. C's slot inventory (PREFIX, CORE, SUFFIX in `b5_generators.py`) is a hand list in a fixed order with
+   geometric weights 0.6^rank, written from the glyph grammar already in a4 (no Voynich counts read).
+5. Fit items are computed by `b5_tune.fit_items`, a copy of the a/b/c/f code in `b3.battery`, so that tuning
+   never computes a held-out item. Tuning seed 101; scoring seeds 1-5.
