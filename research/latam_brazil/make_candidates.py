@@ -1,0 +1,489 @@
+"""Build candidates.json for the Brazil sweep (Oct 2026) from hand-checked rows.
+Sources: CPDOC/FGV Accessus (cpdoc_hits.tsv), NUPERGS/UFRGS (nupergs_hits_*.json)."""
+import json
+
+CPDOC = "https://www18.fgv.br/cpdoc/acervo/arquivo-pessoal/"
+NUP = "https://www.ufrgs.br/nupergs/index.php/acervos/detalhe-acervo/"
+CHK = "checked 28 Oct 2026: repo ledgers and DECODE list via known.py, web search"
+SN_CP = "Scored from the CPDOC Accessus description during the Oct 2026 Brazil sweep (research/latam_brazil/); not viewed"
+SN_NUP = "Scored from the NUPERGS catalogue summary during the Oct 2026 Brazil sweep (research/latam_brazil/); not viewed"
+
+
+def row(**k):
+    base = dict(region="Americas", language="Portuguese", decode_ids=[], seen="catalogue")
+    base.update(k)
+    return base
+
+
+C = []
+
+# ---------------- CPDOC (FGV, Rio de Janeiro) ----------------
+C.append(row(
+    year=1914, date="10 Mar - 20 May 1914",
+    title="Cipher telegrams to Setembrino de Carvalho, federal commander in Ceará (Juazeiro sedition)",
+    correspondents="Rio de Janeiro (Pamplona and others) → Fernando Setembrino de Carvalho",
+    place="Rio de Janeiro → Fortaleza",
+    period="1901-1950",
+    shelfmark="CPDOC/FGV, Arquivo Fernando Setembrino de Carvalho, FSC pce 1914.03.10/4",
+    folio_note="12 documents, 16 ff.; digitised (DocReader, bib FSC_PACEARA). First telegram (Rio → Fortaleza, received 11 Mar 1914): about 18 letter groups of 4-11 letters ('OSNVOJ QEUQ NLXHE OMLVRTCJ ...'), clear tail 'responda amanhã que só resolverei depois sua opinião = E Pamplona', cipher repeated as a service check below",
+    cls="A",
+    status="CPDOC summary 'Telegramas cifrados a Setembrino de Carvalho'. Image of the first telegram viewed 28 Oct 2026: letter cipher, no decipherment on the sheet. Cribs in the same digitised fonds: FSC cont 1914.10.07/2 (two War Ministry cipher words glossed) and FSC pce 1914.02.19/2 (typed clear copies of Vespasiano's telegrams to Setembrino, one acknowledging 'mais dois cifrados'). Not on DECODE, not in the repo.",
+    why="Government cipher traffic during the 1914 federal intervention against the Juazeiro (Padre Cícero) rising in Ceará; Brazilian army/government cipher of 1914 otherwise unknown.",
+    importance=3, solvability=4, difficulty=3,
+    score_note="Scored from the CPDOC description and one image during the Oct 2026 Brazil sweep (research/latam_brazil/)",
+    verify="Page through the 16 images in DocReader; transcribe the groups; test periodic polyalphabetic (Vigenère/Beaufort, Portuguese) and code hypotheses; look for decipherments in neighbouring FSC pce 1914 folders.",
+    links=[{"label": "CPDOC record", "href": CPDOC + "FSC/textual/telegramas-cifrados-a-setembrino-de-carvalho-rio-de-janeiro"},
+           {"label": "DocReader images", "href": "https://www.docvirt.com/docreader.net/docreader.aspx?bib=FSC_PACEARA&pasta=FSC%20pce%201914.03.10/4"}],
+    seen="image", source="CPDOC/FGV sweep", prior_art="open (" + CHK + "; nothing found)"))
+
+C.append(row(
+    year=1914, date="7 Oct 1914",
+    title="Vespasiano de Albuquerque → Setembrino de Carvalho, telegram with two cipher words glossed (Contestado war); crib for the 1914 army cipher",
+    correspondents="Vespasiano Gonçalves de Albuquerque e Silva (Minister of War) → Fernando Setembrino de Carvalho",
+    place="Rio de Janeiro", period="1901-1950",
+    shelfmark="CPDOC/FGV, Arquivo Fernando Setembrino de Carvalho, FSC cont 1914.10.07/2",
+    folio_note="1 f.; digitised (DocReader bib FSC_CONTEST, pagfis 587). Clear text with cipher groups CFIIOIZUPDYBSUDX - SBHBCUDJ - ... AFTGC, repeated as a service check; pencil gloss 'restabelecimento harmonia' over the first two groups",
+    cls="A",
+    status="Image viewed 28 Oct 2026: two of three cipher groups glossed at the time (16 and 8 letters = 'restabelecimento', 'harmonia', letter for letter, polyalphabetic since e has four different equivalents); the last group AFTGC is not glossed. Not on DECODE, not in the repo.",
+    why="A plaintext-ciphertext pair in the 1914 War Ministry letter cipher, enough to test the system on the unglossed Ceará telegrams (FSC pce 1914.03.10/4).",
+    importance=2, solvability=4, difficulty=2,
+    score_note="Scored from the CPDOC description and the image during the Oct 2026 Brazil sweep (research/latam_brazil/)",
+    verify="Derive the key stream from the 24 glossed letters (Vigenère/Beaufort/Gronsfeld tests); read AFTGC; apply to FSC pce 1914.03.10/4.",
+    links=[{"label": "CPDOC record", "href": CPDOC + "FSC/textual/telegrama-de-vespasiano-goncalves-de-albuquerque-e-silva-cifrado-sobre-restabelecimento-da-harmonia-rio-de-janeiro"},
+           {"label": "DocReader image", "href": "https://www.docvirt.com/docreader.net/docreader.aspx?bib=FSC_CONTEST&pasta=FSC%20cont%201914.10.07/2"}],
+    seen="image", source="CPDOC/FGV sweep", prior_art="read in part at the time (gloss); open otherwise (" + CHK + ")"))
+
+C.append(row(
+    year=1930, date="27 Apr - 20 Dec 1930",
+    title="Oswaldo Aranha papers: 354 cipher telegrams without translation, 1930 revolution",
+    correspondents="Oswaldo Aranha and allies (Porto Alegre, Rio de Janeiro, Recife, etc.)",
+    place="Porto Alegre, Rio de Janeiro, Recife and others", period="1901-1950",
+    shelfmark="CPDOC/FGV, Arquivo Oswaldo Aranha, OA cp 1930.04.27/2",
+    folio_note="354 documents, 580 ff.; not digitised online",
+    cls="B",
+    status="CPDOC: 'Telegramas cifrados, sem tradução, relativos provavelmente a acontecimentos políticos do ano de 1930 ...'. Explicitly untranslated. The same fonds holds keys (OA cp 1926/1929.00.00 'em anexo, chaves de cifras') and Lindolfo Collor's code lists (LC c 1930/1932.00.00/11).",
+    why="The coded traffic of the conspirators who prepared the October 1930 revolution that brought Vargas to power; the archivists could not read it.",
+    importance=4, solvability=2, difficulty=3, score_note=SN_CP,
+    verify="Request scans or consult at CPDOC (Praia de Botafogo); try the keys in OA cp 1926/1929.00.00 and LC c 1930/1932.00.00/11, and the translated Klinger telegrams (BK ger 1932.08.27/1) for system type.",
+    links=[{"label": "CPDOC record", "href": CPDOC + "OA/textual/telegramas-cifrados-sem-traducao-relativos-provavelmente-a-acontecimentos-politicos-do-ano-de-1930-como-os-preparativos-e-o-desenrolar-do-movime"}],
+    source="CPDOC/FGV sweep", prior_art="open (" + CHK + "; the 1930 revolution literature uses translated telegrams only)"))
+
+C.append(row(
+    year=1929, date="30 Oct 1929 - 7 Mar 1930",
+    title="Oswaldo Aranha papers: 16 cipher telegrams without translation, Liberal Alliance campaign",
+    correspondents="Liberal Alliance leaders → Oswaldo Aranha (Itaqui, Rio de Janeiro, etc.)",
+    place="Itaqui, Rio de Janeiro and others", period="1901-1950",
+    shelfmark="CPDOC/FGV, Arquivo Oswaldo Aranha, OA cp 1929.10.30/3",
+    folio_note="16 documents, 19 ff.; not digitised online",
+    cls="B",
+    status="CPDOC: 'Telegramas cifrados, sem tradução, relativos à atuação da Aliança Liberal na campanha eleitoral e nas eleições presidenciais de 1º de março de 1930'. Keys in the same fonds (OA cp 1926/1929.00.00).",
+    why="Coded traffic of the Vargas/Aranha campaign for the 1930 presidential election.",
+    importance=3, solvability=2, difficulty=3, score_note=SN_CP,
+    verify="As OA cp 1930.04.27/2: scans from CPDOC, then the keys in OA cp 1926/1929.00.00.",
+    links=[{"label": "CPDOC record", "href": CPDOC + "OA/textual/telegramas-cifrados-sem-traducao-relativos-a-atuacao-da-alianca-liberal-na-campanha-eleitoral-e-nas-eleicoes-presidenciais-de-1-de-marco-de-1930-i"}],
+    source="CPDOC/FGV sweep", prior_art="open (" + CHK + ")"))
+
+C.append(row(
+    year=1928, date="1926-1929",
+    title="Oswaldo Aranha → Flores da Cunha, cipher telegram with the cipher keys attached",
+    correspondents="Oswaldo Aranha → José Antônio Flores da Cunha",
+    place="Porto Alegre", period="1901-1950",
+    shelfmark="CPDOC/FGV, Arquivo Oswaldo Aranha, OA cp 1926/1929.00.00",
+    folio_note="1 document, 3 ff.; 'Em anexo, chaves de cifras'",
+    cls="A",
+    status="CPDOC: 'Telegrama cifrado de Oswaldo Aranha a Flores da Cunha. Porto Alegre. Em anexo, chaves de cifras.' Ciphertext with its keys; the keys are the main lead for OA cp 1929.10.30/3 and 1930.04.27/2.",
+    why="The key sheet of the Aranha-Flores da Cunha cipher, the likely system of the untranslated 1929-30 telegrams.",
+    importance=3, solvability=3, difficulty=1, score_note=SN_CP,
+    verify="Order a copy; transcribe the keys and test them on the untranslated OA and Flores da Cunha (FC tp 1927.01.13) telegrams.",
+    links=[{"label": "CPDOC search (OA cp 1926/1929.00.00)", "href": "https://www18.fgv.br/cpdoc/acervo/arquivo"}],
+    source="CPDOC/FGV sweep", prior_art="open (" + CHK + ")"))
+
+C.append(row(
+    year=1933, date="18 May 1933 - 17 Feb 1938",
+    title="Oswaldo Aranha papers: 12 cipher documents, 1933-38",
+    correspondents="unknown → Oswaldo Aranha (ambassador in Washington from 1934)",
+    place="unknown", period="1901-1950",
+    shelfmark="CPDOC/FGV, Arquivo Oswaldo Aranha, OA cd 1933.05.18",
+    folio_note="12 documents, 24 ff.; series cd; not digitised online",
+    cls="C",
+    status="CPDOC: 'Documentos cifrados.' No content summary, so probably untranslated. Not on DECODE, not in the repo.",
+    why="Aranha was Minister of Finance (1931-34) and ambassador in Washington (1934-37); private cipher traffic of this period is unstudied.",
+    importance=3, solvability=2, difficulty=3, score_note=SN_CP,
+    verify="Ask CPDOC for scans; check whether these are diplomatic (Itamaraty code) or private cipher.",
+    links=[{"label": "CPDOC record", "href": CPDOC + "OA/textual/documentos-cifrados"}],
+    source="CPDOC/FGV sweep", prior_art="open (" + CHK + ")"))
+
+C.append(row(
+    year=1931, date="Oct 1929 - 1937",
+    title="Oswaldo Aranha papers: single cipher telegrams with content summaries (Fernandes, Paim, Collor, Flores da Cunha, Bouças)",
+    correspondents="Otacílio Fernandes → Miguel Tostes; Firmino Paim Filho → Paim Neto (intercepted); Lindolfo Collor, Flores da Cunha, Valentim Bouças → Oswaldo Aranha",
+    place="Pelotas, Porto Alegre, Rio de Janeiro", period="1901-1950",
+    shelfmark="CPDOC/FGV, Arquivo Oswaldo Aranha, OA cp 1929.10.28; OA cp 1930.03.00/1; OA cp 1930.05.07/1; OA cp 1931.03.20/1 (translation attached); OA cp 1931.09.08/3; OA cp 1935.08.21; OA cp 1937.00.00/2",
+    folio_note="7 items, 1-3 ff. each; not digitised online",
+    cls="A",
+    status="CPDOC summaries give the content of each, and OA cp 1931.03.20/1 says 'tradução anexa': these were probably read at the time, so they are cribs for the untranslated OA series rather than open targets.",
+    why="Plaintext-ciphertext pairs in the Aranha cipher, the way into the 370 untranslated telegrams of 1929-30.",
+    importance=2, solvability=3, difficulty=2, score_note=SN_CP,
+    verify="Check each sheet for an interlinear or attached decipherment; use as cribs.",
+    links=[{"label": "OA cp 1931.03.20/1", "href": CPDOC + "OA/textual/telegrama-cifrado-traducao-anexa-de-jose-antonio-flores-da-cunha-a-oswaldo-aranha-informando-estar-ciente-da-posicao-do-chefe-da-legiao-e-do-catal"},
+           {"label": "OA cp 1930.03.00/1", "href": CPDOC + "OA/textual/telegrama-de-firmino-paim-filho-a-paim-neto-cifrado-e-interceptado-informando-que-o-governo-confia-nas-forcas-armadas-e-que-reina-a-ordem-no-pais-"}],
+    source="CPDOC/FGV sweep", prior_art="probably read at the time (" + CHK + ")"))
+
+C.append(row(
+    year=1930, date="13 Jan 1927 - 19 Aug 1937",
+    title="Flores da Cunha papers: 32 cipher telegrams, 1927-37",
+    correspondents="José Antônio Flores da Cunha and correspondents",
+    place="Porto Alegre and others", period="1901-1950",
+    shelfmark="CPDOC/FGV, Arquivo Flores da Cunha, FC tp 1927.01.13",
+    folio_note="32 documents, 60 ff.; not digitised online",
+    cls="B",
+    status="CPDOC: 'Telegramas cifrados.' No content summary. Flores da Cunha's own code sheets are in NUPERGS (UFRGS), Flores da Cunha archive, docs 993-994 ('Códigos para cifrar e decifrar documentos').",
+    why="Cipher traffic of the governor of Rio Grande do Sul (1930-37), Vargas's ally and then rival up to his exile in 1937.",
+    importance=3, solvability=2, difficulty=3, score_note=SN_CP,
+    verify="Scans from CPDOC; test the NUPERGS code sheets (docs 993-994) and the Aranha keys (OA cp 1926/1929.00.00).",
+    links=[{"label": "CPDOC record", "href": CPDOC + "FC/textual/telegramas-cifrados"}],
+    source="CPDOC/FGV sweep", prior_art="open (" + CHK + ")"))
+
+C.append(row(
+    year=1932, date="5-9 Jul 1932",
+    title="Lindolfo Collor papers: 21 cipher telegrams on the eve of the Constitutionalist Revolution",
+    correspondents="São Paulo and Rio de Janeiro conspirators (Collor, Morato, Mesquita Filho and others)",
+    place="Rio de Janeiro, São Paulo", period="1901-1950",
+    shelfmark="CPDOC/FGV, Arquivo Lindolfo Collor, LC c 1932.07.05/4 (11 docs, 17 ff.); LC c 1932.07.06 (10 docs, 14 ff.); LC c 1932.07.09/4 (Morato → Mesquita Filho, 2 ff.)",
+    folio_note="22 documents, 33 ff.; not digitised online",
+    cls="A",
+    status="CPDOC: 'Telegramas cifrados' / 'sobre os acontecimentos que antecederam à revolução constitucionalista'; only LC c 1932.07.09/4 has a content summary. Collor's code lists (pseudonyms, codes) are in the same fonds: LC c 1930/1932.00.00/11 (12 docs, 22 ff.).",
+    why="Coded messages of the July 1932 São Paulo rising against Vargas, with the key material in the same archive.",
+    importance=3, solvability=3, difficulty=2, score_note=SN_CP,
+    verify="Order scans of the three LC 1932 items and LC c 1930/1932.00.00/11; apply the code lists.",
+    links=[{"label": "LC c 1932.07.05/4", "href": CPDOC + "LC/textual/telegramas-cifrados-rio-de-janeiro-sao-paulo"},
+           {"label": "LC c 1932.07.06", "href": CPDOC + "LC/textual/telegramas-cifrados-sobre-os-acontecimentos-que-antecederam-a-revolucao-constitucioanlista-s-l"}],
+    source="CPDOC/FGV sweep", prior_art="open (" + CHK + ")"))
+
+C.append(row(
+    year=1929, date="14 May 1927 - Sept 1930",
+    title="Lindolfo Collor papers: cipher telegrams from Borges de Medeiros, Vargas and Aranha, 1927-30",
+    correspondents="Borges de Medeiros, Getúlio Vargas, Oswaldo Aranha and others → Lindolfo Collor (federal deputy)",
+    place="Porto Alegre, Belo Horizonte, Rio de Janeiro", period="1901-1950",
+    shelfmark="CPDOC/FGV, Arquivo Lindolfo Collor, LC c 1927.05.14 (3 docs); LC c 1927.06.18; LC c 1927/1928.00.00 (4 fragments); LC c 1929.06.15; LC c 1929.10.03/2 (2); LC c 1930.02.03 (2); LC c 1930.02.15/1; LC c 1930.02.24; LC c 1930.02.25; LC c 1930.08.00/2; LC c 1930.09.00 (2)",
+    folio_note="about 19 telegrams, 1-3 ff. each; not digitised online",
+    cls="A",
+    status="Most CPDOC summaries give the content (so likely deciphered on the sheet); LC c 1930.02.03 and LC c 1930.09.00 do not. Key material in LC c 1930/1932.00.00/11.",
+    why="Gaúcho party and Liberal Alliance cipher traffic from Vargas and Borges de Medeiros to their man in Rio, 1927-30.",
+    importance=3, solvability=3, difficulty=2, score_note=SN_CP,
+    verify="Scans from CPDOC; separate read (content summarised) from unread items; use the read ones as cribs.",
+    links=[{"label": "LC c 1929.10.03/2", "href": CPDOC + "LC/textual/telegramas-cifrados-de-getulio-vargas-a-lindolfo-collor-porto-alegre"},
+           {"label": "LC c 1930.09.00", "href": CPDOC + "LC/textual/telegramas-cifrados-sobre-a-necessidade-de-marcar-a-data-do-inicio-da-revolucao-s-l"}],
+    source="CPDOC/FGV sweep", prior_art="partly read at the time? (" + CHK + ")"))
+
+C.append(row(
+    year=1921, date="Jan 1919 - Oct 1923",
+    title="Raul Soares papers: cipher and code telegrams of the Minas Gerais leadership (Bernardes, João Luís Alves, Aurelino Leal)",
+    correspondents="Artur Bernardes, João Luís Alves, Alaôr Prata, Cristiano Machado, Aurelino Leal, Sebastião Maggi Salomon → Raul Soares",
+    place="Belo Horizonte, Rio de Janeiro, Bahia", period="1901-1950",
+    shelfmark="CPDOC/FGV, Arquivo Raul Soares, RS c 1919.01.17/2; RS c 1920.03.14/1; RS c 1920.05.12; RS c 1920.07.03/1; RS c 1921.09.12/1; RS c 1922.00.00/4; RS sp 1922.01.03/5 (code, 'sem a tradução'); RS c 1923.02.06/1; RS c 1923.08.21/2; RS c 1923.10.02",
+    folio_note="10 items, 1-2 ff. each; not digitised online",
+    cls="A",
+    status="Content summaries on four (Bernardes 1920 x2, Prata 1923, Rangel 1923); RS c 1922.00.00/4, RS c 1921.09.12/1, RS c 1920.05.12, RS c 1919.01.17/2 and RS sp 1922.01.03/5 have none ('sem a tradução' on the last). Keys in the same fonds: RS c 1918.00.00/1 (names of Minas politicians with their codes) and RS sp 1919.01.00/4 ('Códigos de Raul Soares e João Luís Alves', 2 docs, 3 ff.).",
+    why="Coded traffic of Artur Bernardes's circle in Minas (he was president of Brazil 1922-26) during the 1922 succession crisis; keys in the same archive.",
+    importance=3, solvability=3, difficulty=2, score_note=SN_CP,
+    verify="Order scans of the telegrams and of RS c 1918.00.00/1 and RS sp 1919.01.00/4; read with the codes.",
+    links=[{"label": "RS c 1922.00.00/4", "href": CPDOC + "RS/textual/telegrama-cifrado-s-l"},
+           {"label": "RS c 1918 code list", "href": CPDOC + "RS/textual/lista-de-nome-de-politicos-mineiros-com-os-respectivos-codigos-para-fins-de-correspondencia-cifrada-s-l"}],
+    source="CPDOC/FGV sweep", prior_art="open (" + CHK + ")"))
+
+C.append(row(
+    year=1923, date="8 Mar - 6 Jul 1923",
+    title="Code telegrams of northeastern politicians to Seabra, Solon de Lucena and others, partial translation attached",
+    correspondents="Elói de Sousa, João Lira, J. Chaves, Álvaro de Carvalho and others → J. J. Seabra, Solon de Lucena, Augusto Leopoldo, Tavares Lira and others",
+    place="unknown (Northeast / Rio de Janeiro)", period="1901-1950",
+    shelfmark="CPDOC/FGV, Arquivo Raul Soares, RS c 1923.03.08/3",
+    folio_note="27 documents, 28 ff.; not digitised online",
+    cls="A",
+    status="CPDOC: 'em código (cuja tradução parcial se encontra anexa)'. Partial decipherment noted, so the rest is open.",
+    why="Political code traffic on the 1923 Bahia succession and northeastern alliances, apparently intercepted or copied for Raul Soares (Minister of the Navy 1922).",
+    importance=3, solvability=3, difficulty=2, score_note=SN_CP,
+    verify="Scans from CPDOC; extend the partial translation to the rest.",
+    links=[{"label": "CPDOC search (RS c 1923.03.08/3)", "href": "https://www18.fgv.br/cpdoc/acervo/arquivo"}],
+    source="CPDOC/FGV sweep", prior_art="partial decipherment attached (" + CHK + ")"))
+
+C.append(row(
+    year=1902, date="30 Aug 1898 - 1 Oct 1932",
+    title="João Francisco papers: cipher telegrams from Borges de Medeiros and Júlio de Castilhos (1898-1907) and Vargas (1932)",
+    correspondents="Antônio Augusto Borges de Medeiros, Júlio de Castilhos, Getúlio Vargas → João Francisco Pereira de Souza",
+    place="Porto Alegre, Rio de Janeiro", period="1901-1950",
+    shelfmark="CPDOC/FGV, Arquivo João Francisco, JF c 1898.08.30; JF c 1902.08.21 (4 ff., 'em sua maior parte cifrada'); JF c 1902.08.26 ('quase todo cifrado'); JF c 1902.09.09 (4 ff.); JF c 1907.10.11; JF c 1932.10.01",
+    folio_note="6 telegrams, 1-4 ff.; not digitised online",
+    cls="B",
+    status="Summaries give gists (vigilance, arms, conspiracies), so some may carry decipherments. JF c 1907.10.14 (Bitencourt to João Francisco on the ciphers to use) is a key lead in the same fonds; NUPERGS also lists Castilhos telegrams to João Francisco (1897).",
+    why="Republican Party of Rio Grande do Sul cipher with its frontier strongman, the 'hiena do Cati', during the post-1893 border conflicts.",
+    importance=3, solvability=2, difficulty=3, score_note=SN_CP,
+    verify="Scans from CPDOC; check for interlinear decipherments; compare with Assis Brasil 1893-94 government ciphers (NUPERGS).",
+    links=[{"label": "JF c 1902.08.21", "href": CPDOC + "JF/textual/telegrama-de-antonio-augusto-borges-de-medeiros-a-joao-francisco-em-sua-maior-parte-cifrada-pedindo-vigilancia-sobre-o-movimento-dos-inimigos-port"}],
+    source="CPDOC/FGV sweep", prior_art="open (" + CHK + ")"))
+
+C.append(row(
+    year=1929, date="24 Jun 1929 - 1 Oct 1930",
+    title="Daudt d'Oliveira papers: cipher telegrams of the Liberal Alliance and the 1930 revolution",
+    correspondents="Felipe Daudt d'Oliveira → Vitor Bastian; Elisiário Paim Filho → Daudt d'Oliveira; unsigned → João Neves",
+    place="Rio de Janeiro, Porto Alegre, Cachoeira", period="1901-1950",
+    shelfmark="CPDOC/FGV, Arquivo João Daudt d'Oliveira, JD c 1929.06.24; JD c 1929.06.26; JD c 1929.07.06/2; JD c 1929.10.11; JD c 1930.03.23/1 (4 ff.); JD c 1930.10.01",
+    folio_note="6 telegrams; not digitised online",
+    cls="A",
+    status="All six summaries give content, so these were probably read at the time (decipherment on the sheet). Cribs for the untranslated Aranha series rather than open targets; listed for completeness.",
+    why="Gaúcho cipher traffic of 1929-30 with plaintext known.",
+    importance=2, solvability=3, difficulty=2, score_note=SN_CP,
+    verify="Check sheets for decipherments; use as cribs.",
+    links=[{"label": "JD c 1930.10.01", "href": CPDOC + "JD/textual/telegrama-cifrado-informando-que-a-revolucao-eclodira-esta-semana-e-que-o-rio-grande-esta-unido-como-um-so-homem-cachoeira-"}],
+    source="CPDOC/FGV sweep", prior_art="probably read at the time (" + CHK + ")"))
+
+C.append(row(
+    year=1932, date="30 Jun 1931 - 30 Apr 1933",
+    title="Bertoldo Klinger papers: cipher letters, telegrams and radio messages (1932 revolution and exile)",
+    correspondents="Bertoldo Klinger ↔ Democrito Barbosa, Edgar Batista Pereira, Basílio Taborda, the Coxim council and others",
+    place="Campo Grande, Cuiabá, Uberaba, Buenos Aires", period="1901-1950",
+    shelfmark="CPDOC/FGV, Arquivo Bertoldo Klinger, BK ger 1931.06.30; BK ger 1932.04.07 (3 ff.); BK ger 1932.09.00/5 (11 radios, some cipher); BK ger 1932.11.16 (3 ff.); BK ger 1933.04.28; BK ger 1933.04.30",
+    folio_note="about 16 documents; not digitised online",
+    cls="A",
+    status="Summaries give content for most. BK ger 1932.08.27/1 in the same fonds holds 34 'telegramas cifrados e traduzidos' (45 ff.), a ready crib set for the Klinger system.",
+    why="Coded traffic of the military commander of the 1932 Constitutionalist Revolution and of the exiles in Buenos Aires.",
+    importance=3, solvability=3, difficulty=2, score_note=SN_CP,
+    verify="Order scans; rebuild the key from the 34 translated telegrams (BK ger 1932.08.27/1) and apply to the rest.",
+    links=[{"label": "BK ger 1932.11.16", "href": CPDOC + "BK/textual/carta-cifrada-de-edgar-batista-pereira-a-bertoldo-klinger-sobre-a-rearticulacao-do-movimento-em-sao-paulo-e-rio-grande-do-sul-s-l"},
+           {"label": "BK ger 1932.09.00/5", "href": CPDOC + "BK/textual/radios-alguns-cifrados-sobre-noticias-diversas-uberaba-itapira"}],
+    source="CPDOC/FGV sweep", prior_art="partly read at the time (" + CHK + ")"))
+
+C.append(row(
+    year=1930, date="18 Jun 1930 - 15 Feb 1933",
+    title="Pedro Ernesto papers: coded telegrams of the 1930 revolutionary conspiracy (João Alberto, Estillac Leal, Luzardo)",
+    correspondents="João Alberto Lins de Barros, Nilton Estillac Leal, Virgílio de Melo Franco and others ↔ Pedro Ernesto Batista",
+    place="Porto Alegre, Belo Horizonte, Rio de Janeiro, Itaqui", period="1901-1950",
+    shelfmark="CPDOC/FGV, Arquivo Pedro Ernesto Batista, PEB c 1930.06.18/1; 1930.06.19; 1930.06.24/1; 1930.06.25/1; 1930.06.26; 1930.07.07; 1930.07.08/2 (6 docs); 1930.09.19; 1933.02.15",
+    folio_note="about 14 documents; not digitised online",
+    cls="A",
+    status="Summaries give content (so translations are probably attached). Key in the same fonds: PEB c 1930/1932.00.00/3 'Relação de cifras' (18 ff.).",
+    why="Tenentista coded traffic of June-Sept 1930, the military side of the revolution, with an 18-page cipher list in the same archive.",
+    importance=3, solvability=3, difficulty=2, score_note=SN_CP,
+    verify="Order scans of the telegrams and of PEB c 1930/1932.00.00/3; check which are already translated.",
+    links=[{"label": "PEB c 1930.07.08/2", "href": CPDOC + "PEB/textual/telegrama-codificado-de-nilton-estillac-leal-a-pedro-ernesto-dizendo-ter-recebido-seu-telegrama-e-estar-veloso-em-paso-de-los-libres-acertando-a-chefia-da-acao-futura-po"}],
+    source="CPDOC/FGV sweep", prior_art="probably read at the time (" + CHK + ")"))
+
+C.append(row(
+    year=1931, date="1931",
+    title="Virgílio de Melo Franco papers: intercepted cipher radio messages",
+    correspondents="unknown (intercepted)",
+    place="unknown", period="1901-1950",
+    shelfmark="CPDOC/FGV, Arquivo Virgílio de Melo Franco, VMF c 1931.00.00/1",
+    folio_note="1 document, 1 f.; key words for cipher correspondence in VMF c 1932.00.00/1 (2 ff.)",
+    cls="B",
+    status="CPDOC: 'Rádios cifrados interceptados. s.l.' No content given. Not on DECODE, not in the repo.",
+    why="Radio intercepts kept by a leader of the 1930 revolution in Minas; who sent them is unknown.",
+    importance=2, solvability=2, difficulty=3, score_note=SN_CP,
+    verify="Order a copy; compare with the 1932 key words (VMF c 1932.00.00/1).",
+    links=[{"label": "CPDOC record", "href": CPDOC + "VMF/textual/radios-cifrados-interceptados-s-l"}],
+    source="CPDOC/FGV sweep", prior_art="open (" + CHK + ")"))
+
+C.append(row(
+    year=1930, date="Sep 1930 - Jan 1931",
+    title="1930 revolution dossiers with cipher correspondence (AD dossier, Cristiano Machado, Aranha to Santo Ângelo)",
+    correspondents="Revolutionary command (Aranha and others) → regional leaders; messages to Cel. Couto, Cristiano Machado, Pedro Ernesto",
+    place="Porto Alegre, Passa Quatro (MG)", period="1901-1950",
+    shelfmark="CPDOC/FGV, AD c 1930.09.28 (90 docs, 436 ff., 'correspondência inclusive cifrada'); CM c 1930.10.00 (2 docs, 'Mensagens cifradas'); AAP rev30 1930.10.01 (Aranha → Ulisses Rodrigues, 3 ff.)",
+    folio_note="mixed dossiers; the number of cipher pieces in AD c 1930.09.28 is not stated; not digitised online",
+    cls="B",
+    status="CPDOC summaries; AAP rev30 1930.10.01 has a content gist (date and hour of the rising), the CM messages have none.",
+    why="Field cipher messages of the October 1930 revolution.",
+    importance=3, solvability=2, difficulty=3, score_note=SN_CP,
+    verify="Ask CPDOC how many cipher pieces AD c 1930.09.28 holds; order the CM messages.",
+    links=[{"label": "CPDOC search", "href": "https://www18.fgv.br/cpdoc/acervo/arquivo"}],
+    source="CPDOC/FGV sweep", prior_art="open (" + CHK + ")"))
+
+C.append(row(
+    year=1946, date="9 Mar 1946",
+    title="João Goulart → Getúlio Vargas, telegram in code",
+    correspondents="João Belchior Marques Goulart → Getúlio Vargas",
+    place="São Borja", period="1901-1950",
+    shelfmark="CPDOC/FGV, Arquivo Getúlio Vargas, GV c 1946.03.09/2",
+    folio_note="1 document, 1 f.; digitised (DocReader). Vargas's code lists of 1946-50 are in the same fonds: GV c 1946/1950.00.00/5, GV c 1950.02.00/1 (code with Amaral Peixoto)",
+    cls="A",
+    status="CPDOC: 'Telegrama em código'. No content given. Keys for Vargas's post-1945 correspondence are in the same fonds and digitised.",
+    why="Private code between the deposed Vargas and his protégé Goulart in 1946.",
+    importance=2, solvability=4, difficulty=1, score_note=SN_CP,
+    verify="View in DocReader; apply GV c 1946/1950.00.00/5 and GV c 1950.02.00/1.",
+    links=[{"label": "CPDOC search (GV c 1946.03.09/2)", "href": "https://www18.fgv.br/cpdoc/acervo/arquivo"}],
+    source="CPDOC/FGV sweep", prior_art="open (" + CHK + ")"))
+
+# ---------------- NUPERGS (UFRGS, Porto Alegre) ----------------
+C.append(row(
+    year=1923, date="15 Apr - 15 May 1923",
+    title="1923 Libertador revolution: coded telegrams between Alipio Teixeira, Carlos Noedo, 'Malakoff' and 'Arc'",
+    correspondents="Alipio Teixeira ↔ Carlos Noedo; 'Malakoff' → 'Arc'; Collaço → Alipio Teixeira; Alipio Teixeira → Assis Brasil",
+    place="Rio Grande do Sul (rebel zone)", period="1901-1950",
+    shelfmark="Porto Alegre, UFRGS, NUPERGS acervo documental, Assis Brasil papers (microfilm set, 'arquivo 0'), records 2499, 2836, 2845, 2888, 2906, 2909, 2927, 2931",
+    folio_note="8 telegrams; 2845 and 2909 'codificado em números', 2845 'com espécie de tradução no final'; 2499 has its clear text in the record",
+    cls="A",
+    status="NUPERGS summaries: 'Codificado' / 'Codificado em números'. Record 2845 carries a partial translation, record 2499 a clear version; record 6208 (Tibúrcio de Azevedo → Assis Brasil, 5 Apr 1923) sets up 'um código e nomes falsos'. Not on DECODE, not in the repo.",
+    why="Numeric code of the rebels of the 1923 civil war in Rio Grande do Sul (Assis Brasil against Borges de Medeiros), with a crib in the same set.",
+    importance=3, solvability=2, difficulty=2, score_note=SN_NUP,
+    verify="Ask NUPERGS for images (microfilm); rebuild the code from 2845's translation and 2499's clear text.",
+    links=[{"label": "record 2845", "href": NUP + "2845"}, {"label": "record 2909", "href": NUP + "2909"}, {"label": "record 6208 (code set-up)", "href": NUP + "6208"}],
+    source="NUPERGS/UFRGS sweep", prior_art="open (" + CHK + ")"))
+
+SH_AB = "Porto Alegre, UFRGS, NUPERGS acervo documental, Joaquim Francisco de Assis Brasil papers (arquivo 1)"
+C.append(row(
+    year=1893, date="6 Dec 1893 - 1 Mar 1894",
+    title="President Floriano Peixoto → Assis Brasil, minister in Buenos Aires, cipher telegrams (Federalist war and naval revolt)",
+    correspondents="Floriano Peixoto (President of Brazil) → Joaquim Francisco de Assis Brasil (Brazilian minister, Buenos Aires)",
+    place="Rio de Janeiro", period="1801-1900",
+    shelfmark=SH_AB + ", docs 46, 48, 51, 52, 53, 55, 56, 58 (records 6041-6053; duplicates 917, 933, 937)",
+    folio_note="8 telegrams, 1 p. each where stated; doc 55 (20 Feb 1894) 'cifrada (mas escrita palavras decifradoras), (IMPORTANTE)'",
+    cls="A",
+    status="NUPERGS summaries: 'Correspondência cifrada' with no content. Doc 55 has deciphering words written on it (a partial crib). Not on DECODE, not in the repo.",
+    why="The president's own cipher instructions to the envoy watching the Federalist rebels and the rebel fleet in the Plate during the 1893-94 civil war.",
+    importance=4, solvability=2, difficulty=3, score_note=SN_NUP,
+    verify="Ask NUPERGS whether the Assis Brasil papers are digitised or can be photographed; start with doc 55 (partial decipherment).",
+    links=[{"label": "doc 55 record", "href": NUP + "6050"}, {"label": "doc 46 record", "href": NUP + "6041"}],
+    source="NUPERGS/UFRGS sweep", prior_art="open (" + CHK + ")"))
+
+C.append(row(
+    year=1893, date="23 Nov 1893 - 13 Apr 1894",
+    title="Foreign and Navy ministers (Cassiano do Nascimento) → Assis Brasil, cipher telegrams",
+    correspondents="Ministro do Exterior (Cassiano do Nascimento), Ministro da Marinha → Assis Brasil (Buenos Aires)",
+    place="Rio de Janeiro", period="1801-1900",
+    shelfmark=SH_AB + ", docs 60, 61, 62, 64, 66, 67, 68, 70, 80 (records 6055-6075; duplicates 952, 997, 1013)",
+    folio_note="9 telegrams; docs 61 and 80 partly cipher",
+    cls="C",
+    status="NUPERGS: 'Correspondência cifrada' / 'Parte cifrada'. No decipherment noted. Not on DECODE.",
+    why="Itamaraty cipher of the early Republic, 1893-94, to the Buenos Aires legation during the civil war.",
+    importance=3, solvability=2, difficulty=3, score_note=SN_NUP,
+    verify="As the Floriano row; compare with Itamaraty code books at the Arquivo Histórico do Itamaraty.",
+    links=[{"label": "doc 60 record", "href": NUP + "6055"}, {"label": "doc 62 record", "href": NUP + "6057"}],
+    source="NUPERGS/UFRGS sweep", prior_art="open (" + CHK + ")"))
+
+C.append(row(
+    year=1894, date="31 Dec 1893 - 21 Mar 1894",
+    title="Victorino Monteiro (Montevideo) → Assis Brasil, cipher telegrams",
+    correspondents="Victorino Monteiro → Assis Brasil (Buenos Aires)",
+    place="Montevideo", period="1801-1900",
+    shelfmark=SH_AB + ", docs 8, 10, 11, 14, 16, 18, 19 (records 6003-6014; duplicates 954, 967-969, 996, 1006, 947)",
+    folio_note="7 telegrams, 1-2 pp.",
+    cls="C",
+    status="NUPERGS: 'Correspondência cifrada'; doc 8 has a gist ('recebeu autorização de Bernardino ... prestes a agir'). Not on DECODE.",
+    why="Republican agent in Montevideo reporting on the Federalist rebels to the Buenos Aires legation, 1893-94.",
+    importance=3, solvability=2, difficulty=3, score_note=SN_NUP,
+    verify="As the Floriano row.",
+    links=[{"label": "doc 10 record", "href": NUP + "6005"}],
+    source="NUPERGS/UFRGS sweep", prior_art="open (" + CHK + ")"))
+
+C.append(row(
+    year=1894, date="2 Feb - 7 Mar 1894",
+    title="General Costallat, Manoel Vieira, Fernando Araripe → Assis Brasil, cipher telegrams",
+    correspondents="Gen. Costallat (War Ministry), Manoel Vieira (Montevideo), Fernando Araripe → Assis Brasil",
+    place="Rio de Janeiro, Montevideo", period="1801-1900",
+    shelfmark=SH_AB + ", docs 84, 85, 86, 87, 89, 90, 93 (records 6079-6088; duplicates 904, 942, 943, 1000)",
+    folio_note="7 telegrams, partly or wholly cipher",
+    cls="C",
+    status="NUPERGS: 'Correspondência cifrada' / 'Parte cifrada'. Assis Brasil complained of 'telegramas indecifráveis' (doc 42, 19 Feb 1894), so the system was garbled in transmission. Not on DECODE.",
+    why="War Ministry cipher traffic on arms purchases and the rebel campaign, 1894.",
+    importance=3, solvability=2, difficulty=3, score_note=SN_NUP,
+    verify="As the Floriano row.",
+    links=[{"label": "doc 84 record", "href": NUP + "6079"}],
+    source="NUPERGS/UFRGS sweep", prior_art="open (" + CHK + ")"))
+
+C.append(row(
+    year=1893, date="9 Dec 1893 - 9 Apr 1894",
+    title="Assis Brasil → the President, cipher telegrams from Buenos Aires",
+    correspondents="Assis Brasil → Floriano Peixoto",
+    place="Buenos Aires", period="1801-1900",
+    shelfmark=SH_AB + ", docs 31, 38 (records 6026, 6033; duplicate 951)",
+    folio_note="2 drafts or copies, 1 p.",
+    cls="C",
+    status="NUPERGS: 'Correspondência cifrada' / 'Refugiados fugiram. Mensagem cifrada'. Not on DECODE.",
+    why="The envoy's side of the 1893-94 exchange; drafts may carry the plaintext.",
+    importance=3, solvability=2, difficulty=3, score_note=SN_NUP,
+    verify="As the Floriano row; drafts may show the plaintext.",
+    links=[{"label": "doc 31 record", "href": NUP + "6026"}],
+    source="NUPERGS/UFRGS sweep", prior_art="open (" + CHK + ")"))
+
+C.append(row(
+    year=1907, date="9 Jan 1905 - 7 Oct 1908",
+    title="Rio Branco → Assis Brasil, cipher telegrams (Zeballos crisis)",
+    correspondents="José Maria da Silva Paranhos Jr., Baron of Rio Branco (Foreign Minister) → Assis Brasil (minister in Buenos Aires)",
+    place="Rio de Janeiro, Petrópolis", period="1901-1950",
+    shelfmark=SH_AB + ", docs 257, 287, 288, 296, 297, 298, 304, 305 (records 6418-6467); Assis Brasil → Ministério do Exterior, 12 Jan 1908 (record 1138)",
+    folio_note="9 telegrams/letters; most 'Texto cifrado', docs 257/287/305 partly",
+    cls="B",
+    status="NUPERGS: 'Texto cifrado' with no content. Prior art: in the 1908 'telegrama nº 9' affair Rio Branco published a cipher telegram of 17 June 1908 to Santiago with its decipherment to refute Zeballos; if the Itamaraty code of 1908 was published then, it is a key lead (not verified).",
+    why="Rio Branco's own cipher instructions to his envoy during the 1906-08 naval arms race and the Zeballos crisis with Argentina.",
+    importance=4, solvability=2, difficulty=2, score_note=SN_NUP,
+    verify="Check the 1908 telegram nº 9 publication for the code; ask NUPERGS for images; compare with Itamaraty code books (AHI, Rio).",
+    links=[{"label": "doc 288 record", "href": NUP + "6450"}, {"label": "doc 257 record", "href": NUP + "6418"}],
+    source="NUPERGS/UFRGS sweep", prior_art="open (" + CHK + "; telegram nº 9 of 1908 is a published sibling)"))
+
+SH_FC = "Porto Alegre, UFRGS, NUPERGS acervo documental, José Antônio Flores da Cunha papers (arquivo 3)"
+C.append(row(
+    year=1932, date="16 Jan 1923 - 13 Dec 1934",
+    title="Flores da Cunha papers (NUPERGS): cipher telegrams from Borges de Medeiros, Vargas, Aranha, Sinval Saldanha, Gen. Pessoa",
+    correspondents="Borges de Medeiros, Getúlio Vargas, Oswaldo Aranha, Sinval Saldanha, Gen. Pantaleão Pessoa → Flores da Cunha",
+    place="Porto Alegre, Rio de Janeiro", period="1901-1950",
+    shelfmark=SH_FC + ", docs 17, 312, 479, 483, 881, 1032, 1055, 1129 (records 5632, 1413, 1592, 1596, 2635, 5544, 5555, 549); doc 203 (record 1338)",
+    folio_note="9 telegrams; doc 483 partly cipher; doc 203 (1923) is 'probably the code copy of the preceding telegram (202)', a plaintext-ciphertext pair",
+    cls="A",
+    status="NUPERGS: 'Telegrama cifrado' (docs 17, 479, 881, 1129 with no content; 312, 483, 1055 with gists). Doc 203 + doc 202 form a plaintext-ciphertext pair (1923). Doc 133 (9 Dec 1923) sends 'uma chave telegráfica do arquivo de Honório Lemos'. Key sheets in the same archive: docs 993-994 'Códigos para cifrar e decifrar documentos' (records 5912-5913).",
+    why="Gaúcho cipher traffic of Vargas's ally and later rival, with his own code sheets.",
+    importance=3, solvability=2, difficulty=2, score_note=SN_NUP,
+    verify="Ask NUPERGS for images of docs 993-994 and the telegrams; see also CPDOC FC tp 1927.01.13.",
+    links=[{"label": "doc 17 record", "href": NUP + "5632"}, {"label": "code sheet doc 993", "href": NUP + "5912"}],
+    source="NUPERGS/UFRGS sweep", prior_art="open (" + CHK + ")"))
+
+C.append(row(
+    year=1932, date="30 Nov 1931 - 20 Jul 1933",
+    title="Raul Pilla papers (NUPERGS): cipher letters and telegrams of the Frente Única exiles",
+    correspondents="Marcial → Dr. Massa; Mário/Adriano, Mário Amaro, Noemia → Raul Pilla / Ofelia; Raul Pilla → João Neves da Fontoura",
+    place="São Paulo, Porto Alegre, exile", period="1901-1950",
+    shelfmark="Porto Alegre, UFRGS, NUPERGS acervo documental, Raul Pilla papers (arquivo 2), docs 314, 315, 348, 649, 654 (records 328, 329, 363, 4172, 4177)",
+    folio_note="5 items; letters with cipher passages ('informações cifradas', 'destinatários cifrados'), one cipher telegram",
+    cls="B",
+    status="NUPERGS summaries give gists, so the clear parts at least were read; the cipher parts may not be. Not on DECODE.",
+    why="Clandestine correspondence of the gaúcho opposition after the 1932 defeat.",
+    importance=2, solvability=2, difficulty=3, score_note=SN_NUP,
+    verify="Ask NUPERGS for images; check which parts are in cipher.",
+    links=[{"label": "doc 649 record", "href": NUP + "4172"}, {"label": "doc 348 record", "href": NUP + "363"}],
+    source="NUPERGS/UFRGS sweep", prior_art="open (" + CHK + ")"))
+
+C.append(row(
+    year=1924, date="12 Nov - 8 Dec 1924",
+    title="'Conceição', Brasil Viana, Santos → Anacleto Firpo and Urbano Garcia, cipher and code messages from Artigas (1924 rising)",
+    correspondents="Conceição → Anacleto Firpo; Conceição → Urbano Garcia; Brasil Viana, Santos → Anacleto Firpo",
+    place="Artigas (Uruguay)", period="1901-1950",
+    shelfmark="Porto Alegre, UFRGS, NUPERGS acervo documental, Assis Brasil papers (arquivo 1), docs 325, 326, 342, 343 (records 6487, 6488, 6504, 6505; duplicate 2701)",
+    folio_note="2 telegrams (12 Nov) and 2 'mensagem em código' (7-8 Dec 1924)",
+    cls="C",
+    status="NUPERGS: 'Telegrama cifrado' with no content. Not on DECODE.",
+    why="Rebel (libertador) traffic from the Uruguayan border during the November 1924 rising in Rio Grande do Sul.",
+    importance=2, solvability=2, difficulty=3, score_note=SN_NUP,
+    verify="Ask NUPERGS for images.",
+    links=[{"label": "doc 325 record", "href": NUP + "6487"}, {"label": "doc 326 record", "href": NUP + "6488"}],
+    source="NUPERGS/UFRGS sweep", prior_art="open (" + CHK + ")"))
+
+# ---------------- APESP (Arquivo Público do Estado de São Paulo), IHGSP collection ----------------
+APESP = "https://atom.arquivoestado.sp.gov.br/"
+C.append(row(
+    year=1926, date="16 Jan 1924 - 17 Sep 1926",
+    title="Juarez and Fernando Távora → Major Alfredo de Simas Enéas Junior, letters in code (tenentista conspiracy, 1924 revolution and exile)",
+    correspondents="Juarez do Nascimento Fernandes Távora (4 letters, 1924 and s.d.); Fernando do Nascimento Fernandes Távora (9 letters/postcard, 1926) → Major Alfredo de Simas Enéas Junior",
+    place="s.l. (1924); Paso de los Libres, Corrientes, Argentina (1926)", period="1901-1950",
+    shelfmark="São Paulo, APESP, Instituto Histórico e Geográfico de São Paulo collection, Revolução de 1924, BR_SPAPESP_IHGSPCOM_REVO1924_D000087, D000088, D000089, D000090 (Juarez Távora) and D000387, D000389, D000390, D000391, D000400, D000409, D000410, D000423, D000431 (Fernando Távora)",
+    folio_note="13 items; D000087 is 3 ff. ('Carta com escrita codificada'); APESP holds PDF copies of each ('digital: 1 unid. ... formato PDF')",
+    cls="C",
+    status="APESP AtoM records: summary 'Carta com escrita codificada', subject headings 'Criptografia', 'Informações codificadas', 'Informações secretas (militares)'. No decipherment noted. Not on DECODE, not in the repo.",
+    why="Coded letters of Juarez Távora, a leader of the 1924 São Paulo rising and the Prestes Column, and of his brother from the exile base on the Argentine border.",
+    importance=3, solvability=3, difficulty=3,
+    score_note="Scored from the APESP AtoM description during the Oct 2026 Brazil sweep (research/latam_brazil/); not viewed",
+    verify="Ask APESP for the PDFs (or check the AtoM digital object when logged-out viewing is enabled); transcribe; tenentista ciphers of 1924-26 were often simple substitutions or name codes.",
+    links=[{"label": "D000087 (Juarez, 16 Jan 1924)", "href": APESP + "br-spapesp-ihgspcom-revo1924-d000087-txt-man"},
+           {"label": "D000409 (Fernando, 30 Jun 1926)", "href": APESP + "br-spapesp-ihgspcom-revo1924-d000409-txt-man"}],
+    source="APESP sweep", prior_art="open (" + CHK + ")"))
+
+json.dump(C, open('candidates.json', 'w', encoding='utf8'), ensure_ascii=False, indent=1)
+print(len(C))

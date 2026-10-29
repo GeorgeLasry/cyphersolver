@@ -141,7 +141,7 @@ def build_html(pages):
 <tbody>
 {"".join(row(e) for e in E)}
 </tbody></table></div>
-<div class="legend"><span>click a column to sort, a row for its page</span><span>Read: share of the cipher tokens that give sense now</span><span><span class="gap w">gold</span> can be done now: the images and the key are online</span><span><span class="gap">grey</span> needs a new source first: a key, a better scan, an edition or the archive</span></div>
+<div class="legend"><span>click a column to sort, a row for its page</span><span>Read: share of the cipher tokens that give sense now</span><span><span class="gap w">gold</span> can be done now: the images and the key are online</span><span><span class="gap">grey</span> needs a new source first: a key, a better scan, an edition or the archive (<a href="archives.html">archive requests, by archive</a>)</span></div>
 
 <h2>What counts as further</h2>
 <p>One closed gap is a contribution: a value for a code group with every place it occurs, a passage re-read at the image, a key or a clear copy found in another volume or in print, a photograph from the archive. A reading becomes <b>complete</b> when at least 95% of its cipher tokens give sense, measured from a reading file, no gap is left untried, every letter is covered, and what stays open is scattered code groups or pieces blocked from outside (README, Conventions). Each step is credited on the write-up. How to send it: <a href="contribute.html#further">contribute</a>.</p>
@@ -247,6 +247,19 @@ SOLVE_JS = ('<script>(function(){var b=document.querySelector(\'.agentbox .copy\
             'function(){var r=document.createRange();r.selectNodeContents(p);var s=getSelection();s.removeAllRanges();s.addRange(r);});});})();</script>')
 
 
+def archive_html(e):
+    """The reading's open archive requests (archive_requests.json), so a visitor near the archive can take one."""
+    import _archives_page as AR
+    rs = [r for f in e['folders'] for r in AR.requests_for(f)]
+    if not rs: return ''
+    def take(r):
+        return f', <a href="{html.escape(AR.issue_url(r))}" rel="noopener">I can do this</a>' if r['status'] == 'open' else ''
+    li = ''.join(f'<li><b>{r["id"]}</b> {esc(r["archive"])}{(", " + esc(r["city"])) if r.get("city") else ""}: {esc(r["need"])} '
+                 f'({AR.STATUS[r["status"]]}{take(r)})</li>' for r in rs)
+    return (f'<h2>Needs the archive</h2><p>These gaps can only be closed from the original or a book out of reach. '
+            f'If you can visit or order, take one: <a href="archives.html">all archive requests</a>.</p><ul class="gaplist">{li}</ul>')
+
+
 def one_page(e, shell):
     p = e['p']
     url = SITE + href(e)
@@ -278,6 +291,7 @@ def one_page(e, shell):
 <p><span class="gap w">gold</span> can be done now: the images and the key are online, it needs only work. <span class="gap">grey</span> needs a new source first: a key, a better scan, an edition or the archive.</p>
 <ul class="gaplist">{gaps}</ul>
 {f'<h2>Already tried</h2><ul class="esc">{escl}</ul>' if escl else ''}
+{archive_html(e)}
 
 <h2>Send a result</h2>
 <p>One closed gap counts: a code group valued, a passage re-read, a key or clear copy found elsewhere. It is credited to you on the write-up.</p>

@@ -33,7 +33,7 @@ def tdir(folder):
     return TARGETS / folder if (TARGETS / folder).is_dir() or not (ROOT / folder).is_dir() else ROOT / folder
 SITE = 'https://dbourdeau.github.io/cyphersolver/'
 SURVEYS = {'famous', 'solved', 'highlights'}
-TOOL_PAGES = {'atlas', 'keys', 'secret', 'indus-bench', 'glossary', 'contributors', 'contribute'}   # interactive and reference pages, not write-ups
+TOOL_PAGES = {'atlas', 'keys', 'secret', 'indus-bench', 'glossary', 'contributors', 'contribute', 'further', 'archives'}   # interactive and reference pages, not write-ups
 # The famous undeciphered targets (Indus script, Voynich, Beale, Kryptos ...) are written up on the site but keep no
 # profile.json and stay out of the LLM-performance paper data (owner's rule, 23 Sept 2026).
 FAMOUS = {'indus', 'voynich', 'beale', 'kryptos', 'dorabella', 'zodiac', 'z340', 'z13', 'linear_a', 'lineara',
@@ -574,6 +574,13 @@ def audit(brief=False):
     for n, cs in stopped:
         print(f'   #{n} {str(entries[n].get("title", ""))[:50]}  <- ' + ', '.join(f'targets/{f}/ ({st})' for f, st, _ in cs))
     problems += len(stopped)
+    # 12. the catalogue vetting gate (_check_catalogue.py): entries from GATE_ID on need a complete vetting block
+    import _check_catalogue
+    fail, line = _check_catalogue.summary()
+    print(f'L. Catalogue vetting (README Conventions, "Catalogue vetting bar"): {line}')
+    for e in fail:
+        print(f'   #{e["id"]} {str(e.get("title", ""))[:50]}  (move to research/leads.json or vet it)')
+    problems += len(fail)
     return problems, gaps
 
 # ---------------------------------------------------------------------------

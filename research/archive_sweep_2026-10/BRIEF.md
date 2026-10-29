@@ -1,7 +1,9 @@
 # Archive sweep, Oct 2026: shared brief for each sweep agent
 
 Goal: find historical ciphertexts (European classical ciphers, 1350-1950) that are **unsolved or possibly
-unsolved** and that are not yet in this repository, so they can be added to `catalogue.json`. Each sweep covers
+unsolved** and that are not yet in this repository. What a sweep finds is a **lead**: `merge.py` puts it in
+`research/leads.json`, and it reaches `catalogue.json` only after vetting (README Conventions, "Catalogue vetting
+bar"; `python docs/_check_catalogue.py --lead <id>` lists what a lead still lacks). Each sweep covers
 one archive or portal. Volume matters: list every plausible item, scored honestly, rather than a handful of
 polished ones. But each row must be a real, identifiable item (shelfmark or stable URL), never invented.
 
@@ -18,15 +20,21 @@ polished ones. But each row must be a real, identifiable item (shelfmark or stab
 
 ## Dedup: run before writing a row
 
-`research/archive_sweep_2026-10/known.py "<term>"` greps catalogue.json, SOLVED_CATALOGUE.md, README.md, CATALOGUE.md,
+`research/archive_sweep_2026-10/known.py "<term>"` greps catalogue.json, research/leads.json, SOLVED_CATALOGUE.md, README.md, CATALOGUE.md,
 `targets/*/NOTES.md`, the Cryptoole snapshot and the DECODE list (10,106 records) for a shelfmark, name or
 R-number. If an item is on DECODE (any status), give its R-number in `decode_ids` and say so in `status`. Keep it
 only if DECODE marks it Non-decrypted, Partially decrypted, or N/A *and* it is not already in the repo.
 
-Prior art. For the strongest candidates (importance 3 or more), do a quick web search for a published
-decipherment: Tomokiyo's cryptiana (cryptiana.web.fc2.com), Lasry's papers, HistoCrypt proceedings, the
-relevant printed calendar or edition. Record what was checked in `prior_art`, e.g. "open (checked 26 Oct 2026:
-cryptiana, HistoCrypt)". "Cipher undeciphered" in an old calendar usually means the editor deciphered it himself.
+Prior art. For every row, do a quick web search for a published decipherment: Tomokiyo's cryptiana
+(cryptiana.web.fc2.com), Lasry's papers, HistoCrypt proceedings, the relevant printed calendar or edition. Record
+what was checked in `prior_art`, e.g. "open (checked 26 Oct 2026: cryptiana, HistoCrypt)". "Cipher undeciphered" in
+an old calendar usually means the editor deciphered it himself.
+
+Vetting, if you can go further. A row can carry a `vetting` block (fields in `docs/_check_catalogue.py`): the scan
+viewed (where, how much cipher, no decipherment with it), each of DECODE, Tomokiyo, Lasry, the edition and the
+literature searched with its result, held keys ruled out, duplicates searched, verdict `open`. Rows with a complete
+block can be promoted straight after merge; rows without one wait in `research/leads.json`. A few well-vetted rows
+are worth more to the catalogue than many unviewed ones, but list the unviewed ones too: they are the leads queue.
 
 ## Output (write incrementally, after every few finds, so nothing is lost if you are cut off)
 
@@ -65,7 +73,7 @@ In your folder `research/<your_folder>/`:
 `needs_archive_scan` is required on every row: `no` = the ciphertext images are online (a login or account still
 counts as online; say so in `access_note`); `yes` = nothing to work from without the archive (reading room, scan
 order, e-mail request); `partly` = some pieces online, others not (or an online index only); `unknown` = not
-determined. At merge, `yes` becomes `access: "archive"` in catalogue.json, which shows the "needs archive scans"
+determined. At merge, `yes` becomes `access: "archive"` on the lead; once promoted, the catalogue shows the "needs archive scans"
 pill on the catalogue page.
 
 Scores: importance = historical weight (a ruler's or ambassador's despatch on a major affair 4-5; routine

@@ -41,6 +41,16 @@ reading. The checker and the Stop hook enforce the `## Remaining gaps` and `## E
 If a target is genuinely not finished, or deliberately not written up (found solved by others with nothing added
 here), put `Status: in progress` or `Status: no write-up` in the first forty lines of its `NOTES.md`.
 
+## The catalogue holds vetted leads only
+
+New finds are leads, not catalogue entries. Sweeps write `research/<sweep>/candidates.json`, and
+`research/archive_sweep_2026-10/merge.py --write` merges them into `research/leads.json`, never into `catalogue.json`.
+A lead enters the catalogue only through `python docs/_check_catalogue.py --promote <id>`, which refuses it until its
+`vetting` block meets the vetting bar in README Conventions: ciphertext seen, prior art searched in DECODE, Tomokiyo,
+Lasry, the edition and the literature, held keys ruled out, duplicates searched, verdict `open`. Never add an entry to
+`catalogue.json` by hand or by script around the gate. `python docs/_check_catalogue.py` must print `result: valid`
+before a commit that touches `catalogue.json`. The SessionStart audit (section L) lists any entry that fails.
+
 ## Outcome method and priorities
 
 Every profile carries `outcome.method`, George Lasry's categories (`docs/_methods.py`, `docs/glossary.html`): key
@@ -64,6 +74,19 @@ the model was given, the solution steps and the outcome (`profile.schema.json`; 
 - Measure lengths with `python docs/_check_profile.py --measure <file>`; do not copy counts from memory.
 - Record whether a reading already existed anywhere and when it was found: that is the contamination question.
 - `python docs/_check_profile.py <folder>` must print `result: valid`. `_check_writeup.py` requires it too.
+
+## Archive sweeps blocked by a bot check
+
+When a sweep or a fetch from an archive (Gallica, DECODE, PARES, HathiTrust, a library catalogue ...) hits a bot
+check (a 403 to curl/WebFetch, a Cloudflare or "verify you are human" page, a CAPTCHA, an empty JS-only shell), do
+not stop the sweep and do not mark the source as unavailable. Switch to Claude in Chrome (`mcp__claude-in-chrome__*`,
+the user's real Chrome) and continue the sweep there; read pages with `get_page_text` / `read_page`.
+
+- Try a known script-friendly route first if one exists (e.g. Gallica's `openapi.bnf.fr` IIIF URLs), then Chrome.
+- Never solve or click through a CAPTCHA yourself. If Chrome shows one, ask the user to clear it in that tab, then
+  carry on.
+- Keep the request rate polite (no parallel tab floods); the user's own session is on the line.
+- Note in the sweep's notes which source needed Chrome, so the next sweep goes straight there.
 
 ## Working in the shared checkout
 

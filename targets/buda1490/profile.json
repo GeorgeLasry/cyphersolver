@@ -1,0 +1,144 @@
+{
+ "schema_version": 1,
+ "target": "buda1490",
+ "title": "Maffeo da Treviglio to Tamas Bakocz, Buda 30 Nov 1490 (MNL OL DL 46150): four pages in secret writing",
+ "documents": [
+  {
+   "id": "DL46150",
+   "shelfmark": "MNL OL DL 46150 (Q 10, Veghely; Hungaricana charters 228061; catalogue 1235)",
+   "date": "1490-11-30",
+   "year": 1490,
+   "country": "Hungary",
+   "route": "Buda -> Tamas Bakocz, bishop of Gyor (Latin original with seal)",
+   "language": "Latin",
+   "pages": 4,
+   "cleartext_in_document": "unknown",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "none: Hungaricana regest only; no publication found in the 28 Oct 2026 verification",
+    "partial": false
+   },
+   "length": {
+    "tokens": "unknown",
+    "unit": "symbols",
+    "measured": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Hungaricana viewer images (orig_1, orig_2 spread of pp. 2-3, orig_3)",
+    "image_quality": "poor",
+    "notes": "Not transcribed. The viewer's tile requests fail in the built-in browser (CORS) and only 829 px thumbnails are reachable."
+   },
+   "read": "not read"
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "syllabic",
+   "nomenclator"
+  ],
+  "summary": "Italian monoalphabetic-homophonic cipher of letter-like signs, figures and marks, with vowel homophones, nulls, geminate and syllable signs and a small nomenclator.",
+  "symbol_kind": "letters and symbols",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": true,
+   "note": "Superscript a/e/o/u/t/s, macron, stroke and dot turn a base sign into a syllable or another letter (q^e = re, m^a = sa, m-macron = b)."
+  },
+  "homophones": {
+   "used": true,
+   "per_letter": {
+    "n": 5
+   }
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": 6,
+   "kinds": [
+    "syllables",
+    "common words",
+    "names",
+    "titles"
+   ],
+   "unread_groups": "unknown"
+  },
+  "nulls": {
+   "present": true,
+   "count": 5
+  },
+  "key_order": "unknown",
+  "word_division": "none",
+  "doubled_letters": "special sign",
+  "sibling_key": "none",
+  "notes": "Per Somogyi 2016: 21 letters, 5 nulls, et/in/che signs, 5 geminates, 32 syllable signs, 6 nomenclator entries. Her key is numeric only; glyphs were pinned here via Vestigia 267/268. Unidentified signs remain (q^s+x-bar, a capital-E sign, a wavy null)."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "none found (28 Oct 2026 verification)",
+   "found": "before attempt",
+   "used": false
+  },
+  "inputs": [
+   "images"
+  ],
+  "attack": "published key",
+  "human_role": "none",
+  "tools": [
+   "built-in browser",
+   "Hungaricana viewer"
+  ],
+  "models": [
+   "claude-sonnet-5-5"
+  ],
+  "sessions": "unknown",
+  "first_date": "2026-10-28",
+  "last_date": "2026-10-28"
+ },
+ "solution": [
+  {
+   "date": "2026-10-28",
+   "kind": "literature search",
+   "what": "Read targets/buda1489 (key_R5411.md, Somogyi key, NOTES) and the verification record for catalogue 1235; planned to test key R5411 on DL 46150.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "transcription",
+   "what": "Opened the Hungaricana charter record and viewer (archives.hungaricana.hu/en/charters/view/228061/). Five images: ceteri (colour target), orig_1 (p. 1, 3668x3739), orig_2 (spread of pp. 2-3), orig_3 (p. 4), sigil. The viewer's main pane stays blank: its XHR to the tile CDN is blocked by CORS in this browser and tile URLs are encrypted client-side. Only /tile/thumb (829x512 for the spread) is reachable; no sign is legible at that size. The captcha/proof-of-work was not involved and nothing was bypassed.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "transcription",
+   "what": "Looked at the 829 px thumbnail of the pp. 2-3 spread: about 26 closely written cipher lines per page, no clear text visible; layout only.",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "method": "not solved",
+  "method_basis": "No transcription could be made: the image viewer is not usable here, so no key was tested.",
+  "contribution": [
+   "none"
+  ],
+  "class": "not read",
+  "fraction_read": 0.0,
+  "verification": [],
+  "notes": "Attempted, open. Blocker is image access (illegible at thumbnail size). Same hand and period as buda1489, so R5411 and Somogyi's key are the first things to test on proper images.",
+  "key": "unknown",
+  "gaps": [
+   {
+    "item": "all four cipher pages of DL 46150",
+    "blocker": "illegible",
+    "detail": "viewer tiles blocked by CORS in the built-in browser; only 829 px thumbnails"
+   }
+  ],
+  "credits": [],
+  "texts": [],
+  "key_file": [],
+  "fraction_read_method": "estimated",
+  "fraction_read_source": "Nothing read."
+ }
+}

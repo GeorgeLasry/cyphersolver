@@ -1,10 +1,13 @@
-"""Merge the Oct 2026 archive sweeps' candidates.json files into catalogue.json.
+"""Merge the archive sweeps' candidates.json files into research/leads.json (not catalogue.json).
 
     python research/archive_sweep_2026-10/merge.py            # dry run: report what would be added
-    python research/archive_sweep_2026-10/merge.py --write    # append to catalogue.json
+    python research/archive_sweep_2026-10/merge.py --write    # append to research/leads.json
 
-Each sweep folder's candidates.json follows BRIEF.md. Rows are checked for the required fields and allowed
-vocabularies, dropped if their shelfmark or a DECODE id is already in catalogue.json, given the next free ids,
+Sweep rows are leads, not catalogue entries: a lead reaches catalogue.json only through the vetting gate
+(python docs/_check_catalogue.py --promote <id>; README Conventions, "Catalogue vetting bar"). This script never
+writes catalogue.json. Each sweep folder's candidates.json follows BRIEF.md. Rows are checked for the required
+fields and allowed vocabularies, dropped if their shelfmark or a DECODE id is already in catalogue.json or
+research/leads.json, given the next free ids (shared with the catalogue),
 and tagged counted / scored "sweep". A row with needs_archive_scan "yes" becomes access "archive" (the site's
 "needs archive scans" pill). merged.json records which sweep row became which id.
 """
@@ -15,7 +18,7 @@ ROOT = os.path.dirname(os.path.dirname(HERE))
 SWEEPS = ['nationaal_archief', 'torre_do_tombo', 'pares_ags', 'polish_archives', 'scandinavia', 'medici_bia',
           'founders_emlo', 'central_archives', 'archivportal_d', 'nara_catalog', 'nara_state', 'nara_military',
           'nara_triage_a', 'nara_triage_b', 'nara_triage_c', 'nara_triage_d', 'nara_triage_e',
-          'nara_triage_f', 'nara_triage_g', 'nara_triage_h', 'nara_triage_i', 'nara_triage_j', 'nara_triage_k', 'nara_triage_l', 'us_loc', 'us_clements', 'us_friedman', 'us_beinecke_folger', 'us_huntington', 'chi_newberry', 'chi_nara', 'chi_polish', 'chi_riverbank', 'chi_uchicago', 'vat_vatican', 'aut_hhsta', 'uk_tna', 'jacar', 'ia_meta', 'ia_fulltext', 'hathitrust', 'europeana', 'ia_pass2_a', 'ia_pass2_b', 'ia_pass2_c', 'venice_milan_decode', 'venice_milan_print', 'milan_archives', 'venice_archives']
+          'nara_triage_f', 'nara_triage_g', 'nara_triage_h', 'nara_triage_i', 'nara_triage_j', 'nara_triage_k', 'nara_triage_l', 'us_loc', 'us_clements', 'us_friedman', 'us_beinecke_folger', 'us_huntington', 'chi_newberry', 'chi_nara', 'chi_polish', 'chi_riverbank', 'chi_uchicago', 'chi_consortium', 'chi_carli_uic', 'chi_pritzker_chm_cpl', 'chi_northwestern', 'chi_chrome_pass', 'vat_vatican', 'aut_hhsta', 'uk_tna', 'jacar', 'ia_meta', 'ia_fulltext', 'hathitrust', 'europeana', 'ia_pass2_a', 'ia_pass2_b', 'ia_pass2_c', 'venice_milan_decode', 'venice_milan_print', 'milan_archives', 'venice_archives', 'asia_india', 'asia_sinica', 'asia_anri', 'canada_lac', 'oceania_naa', 'latam_mexico', 'latam_brazil', 'latam_southcone', 'latam_north', 'qdl']
 REQUIRED = ['year', 'date', 'title', 'correspondents', 'place', 'language', 'region', 'period', 'shelfmark',
             'folio_note', 'cls', 'status', 'why', 'importance', 'solvability', 'difficulty', 'score_note', 'verify',
             'links', 'seen', 'source']
@@ -30,9 +33,11 @@ def norm(s):
 
 
 def main(write):
-    cat_path = os.path.join(ROOT, 'catalogue.json')
-    cat = json.load(open(cat_path, encoding='utf-8'))
-    entries = cat['entries']
+    cat = json.load(open(os.path.join(ROOT, 'catalogue.json'), encoding='utf-8'))
+    leads_path = os.path.join(ROOT, 'research', 'leads.json')
+    ld = json.load(open(leads_path, encoding='utf-8'))
+    leads = ld['leads']
+    entries = cat['entries'] + leads              # dedup and id allocation see both; only leads are written
     mp = os.path.join(HERE, 'merged.json')
     prev = json.load(open(mp, encoding='utf-8')) if os.path.exists(mp) else []
     done = {(m['sweep'], m['row']) for m in prev}  # merged once; if since closed and removed, not re-added
@@ -80,7 +85,7 @@ def main(write):
             elif 'needs_archive_scan' not in r:
                 log.append(f'{sweep}[{i}] has no needs_archive_scan: archive access not recorded')
             e['scored'] = 'sweep'
-            entries.append(e)
+            leads.append(e)
             have_shelf.add(norm(r['shelfmark']))
             have_decode |= set(r.get('decode_ids') or [])
             added.append({'id': next_id, 'sweep': sweep, 'row': i, 'title': r['title']})
@@ -91,8 +96,8 @@ def main(write):
     for l in log: print(l)
     print(f'total new: {len(added)}' + ('' if write else ' (dry run)'))
     if write and added:
-        with open(cat_path, 'w', encoding='utf-8') as fh:
-            json.dump(cat, fh, ensure_ascii=False, indent=1)
+        with open(leads_path, 'w', encoding='utf-8') as fh:
+            json.dump(ld, fh, ensure_ascii=False, indent=1)
             fh.write('\n')
         json.dump(prev + added, open(mp, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
 

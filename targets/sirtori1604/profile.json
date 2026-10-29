@@ -1,0 +1,238 @@
+{
+ "schema_version": 1,
+ "target": "sirtori1604",
+ "title": "Two letters in Girolamo Sirtori's cipher (to Andres de Prada and to Juan Baptista de Tassis), Valladolid 1604, in Luis Valle de la Cerda's papers (BNE Mss/994 ff. 85r, 86r-86v; Cryptoole ITXXXX-1)",
+ "documents": [
+  {
+   "id": "D1",
+   "shelfmark": "Madrid, Biblioteca Nacional, Mss/994, ff. 85r (letter, margin 'Andres de Prada') and 86r-86v (letter, margin 'Juan Baptista de Tassis'); BDH bdh0000174344",
+   "date": "1604",
+   "year": 1604,
+   "country": "Spain",
+   "route": "unknown writer using Sirtori's cipher -> Andres de Prada and Juan Baptista de Tassis (Dudout 2026); papers passed to Luis Valle de la Cerda by a secretary of the Council of State",
+   "language": "unknown",
+   "pages": 3,
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "none"
+    ]
+   },
+   "length": {
+    "tokens": 747,
+    "distinct": 29,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription/gomez2012_stream.txt"
+   },
+   "transcription": {
+    "by": "published",
+    "source": "Sara Gomez Hernandez's 27-symbol stream (via Pelling, Cipher Mysteries, 14 June 2012); Eloy Caballero's word-divided f. 85 (Cipher Mysteries comment, 31 July 2012)",
+    "image_quality": "poor",
+    "notes": "747 signs counted by solve_stream.py (631 letters + 116 digits; _check_profile.py --letters gives 631). The stream drops word divisions, dots, commas, arcs and loop counts. Images: Pelling's 2012 web copies, about 950 x 1480 px; the BDH copy (140 ppi per Dudout) was behind a browser check."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "undetermined"
+  ],
+  "summary": "Cursive invented signs (about 20-27) in space-separated groups of 1-4 signs, almost every group followed by a dot or comma, with tall strokes and loop chains; not a letter-for-letter substitution.",
+  "symbol_kind": "symbols",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": "unknown"
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": "unknown"
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "kept",
+  "doubled_letters": "unknown",
+  "sibling_key": "none",
+  "notes": "Groups on f. 85: 94, with 206 signs (2.19 per group), lengths 1/2/3/4 = 13/59/26/3%. Spanish syllables 8/56/29/6% (Italian 7/55/31/5%), but no set of signs occurs once per group (64%, shuffled 60-63%, real Spanish syllables 89%). Word division 'kept' means space-separated groups; whether a group is a word is not established."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "partial",
+   "where": "Eloy Caballero, tentative Latin reading of f. 85, Cipher Mysteries comments 31 July - 1 Aug 2012; not accepted (catalogue review 20 Oct 2026)",
+   "found": "before attempt",
+   "used": false
+  },
+  "inputs": [
+   "transcription",
+   "images"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "Project-level: pasted the catalogue task text; no target-specific intervention.",
+  "tools": [
+   "solve_stream.py (many-to-one substitution anneal with matched controls)",
+   "vowel_set_test.py (exhaustive vowel-set search with shuffled control)",
+   "lang/ es-golden-age, it-cinquecento, la corpora"
+  ],
+  "models": [
+   "claude-opus-5-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-10-28",
+  "last_date": "2026-10-28"
+ },
+ "solution": [
+  {
+   "date": "2026-10-28",
+   "kind": "access",
+   "what": "BDH / bnedigital.bne.es: HTTP 403 to scripts and a Cloudflare human check in the browser, not passed. Took Pelling's 2012 copies of ff. 85, 86r, 86v and Gomez's sign key.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "literature search",
+   "what": "Cryptiana valle.htm (folios, f. 90 dated 7 Oct 1604) and the Cipher Mysteries post with comments (Gomez stream, Caballero's Latin and his caveats): no decipherment.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "transcription",
+   "what": "Copied Gomez's 747-sign stream and Caballero's word-divided f. 85; counted the words of f. 85 on the image (94, the same as Caballero's division).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "statistics",
+   "technique": [
+    "frequency analysis"
+   ],
+   "what": "Gomez stream: IC 1.84 (x26); the tall stroke '3' follows F or B 76 of 85 times, so F3/B3 are better single signs.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis",
+    "statistical test"
+   ],
+   "what": "Signs per word: f. 85 has 2.19 signs per group against 4.27 (es), 4.69 (it), 5.68 (la) letters per word. Letter-for-letter substitution of whole words excluded; Latin too long even as a consonant skeleton (3.03).",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis",
+    "statistical test"
+   ],
+   "what": "Consonant signs with vowels in the marks: mean fits Spanish (2.22 consonants per word) but the distribution does not (f. 85: 98% of groups 1-3 signs, none over 4; Spanish consonant counts 17% at 4 or more).",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis",
+    "exhaustive search",
+    "statistical test"
+   ],
+   "what": "Groups as syllables spelled letter for letter: length distribution matches Spanish syllables (13/59/26/3% vs 8/56/29/6%), but no set of 4-6 signs occurs exactly once per group (best 64%, shuffled controls 60-63%, real Spanish syllables 89%).",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "solver",
+   "technique": [
+    "simulated annealing",
+    "language-model scoring"
+   ],
+   "what": "First many-to-one substitution anneal collapsed to 'iiii' (Roman numerals in the corpora); then swap-only moves could not reach keys with more homophones than the start. Fixed: numeral tokens dropped, reassignment moves, no letter above twice its share.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "solver",
+   "technique": [
+    "simulated annealing",
+    "language-model scoring"
+   ],
+   "what": "Many-to-one substitution anneal of the Gomez stream (raw and F3/B3 merged) on letters-only order-4 es-golden-age, it-cinquecento and la models: real scores -2.78 (es), -2.70 (it), -2.65 (la) per char on the raw stream, gibberish.",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "control",
+   "what": "Same-length passages enciphered with the same number of signs: recovered 99% (es), 100% (it), 99% (la) on the raw setting, scores -1.81/-1.78/-2.15. Merged: la 99%, es 48%, it 0%.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "control",
+   "what": "Consonant-skeleton models (vowels deleted): controls recovered only 3-24%, so the skeleton runs on the real stream say nothing.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "statistics",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "position_test.py: signs prefer the start or end of a group (skew 0.41; shuffled median 0.24, 99th percentile 0.33).",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "method": "not solved",
+  "method_basis": "Ciphertext-only tests on the 2012 transcription; the system was narrowed (not letter substitution, not letter-spelled syllables), no key.",
+  "contribution": [
+   "none"
+  ],
+  "class": "not read",
+  "fraction_read": 0,
+  "key": "none",
+  "verification": [
+   "matched control"
+  ],
+  "credits": [
+   {
+    "who": "gomezhernandez",
+    "role": "transcription",
+    "note": "27-symbol stream of ff. 85-86v used for the solver runs",
+    "source": "https://ciphermysteries.com/2012/06/14/girolamo-sirtori-cipher-mystery",
+    "published": true
+   },
+   {
+    "who": "caballero",
+    "role": "transcription",
+    "note": "word-divided f. 85 used for group counts; his Latin reading not used",
+    "source": "https://ciphermysteries.com/2012/06/14/girolamo-sirtori-cipher-mystery",
+    "published": true
+   },
+   {
+    "who": "dudout",
+    "role": "identification",
+    "note": "the ciphertext is two letters, to Andres de Prada and to J. B. de Tassis; Valladolid 1604; Valle did not claim to break them",
+    "date": "2026-10-27",
+    "source": "email",
+    "published": false
+   },
+   {
+    "who": "tomokiyo",
+    "role": "pointer",
+    "note": "f. 90 dated 7 Oct 1604; folio breakdown of Mss/994",
+    "source": "https://cryptiana.web.fc2.com/code/valle.htm",
+    "published": true
+   }
+  ],
+  "gaps": [
+   {
+    "item": "ff. 85r, 86r, 86v, whole text",
+    "blocker": "illegible"
+   }
+  ],
+  "notes": "Not read. The marks and loop counts the system seems to depend on cannot be read from the available images; Dudout has asked the BNE for high-resolution scans."
+ }
+}

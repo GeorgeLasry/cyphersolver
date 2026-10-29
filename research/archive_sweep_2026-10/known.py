@@ -8,7 +8,7 @@ record id 1234 in the list/view dumps.
 import glob, os, re, sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-FILES = ['catalogue.json', 'CATALOGUE.md', 'SOLVED_CATALOGUE.md', 'SOLVED_RANKING.md', 'README.md',
+FILES = ['catalogue.json', 'research/leads.json', 'CATALOGUE.md', 'SOLVED_CATALOGUE.md', 'SOLVED_RANKING.md', 'README.md',
          'decode_updates/queue.json', 'research/cryptoole/snapshot.json',
          'research/catalogue_harvest/decode/views.jsonl', 'research/catalogue_harvest/decode/views_b.jsonl',
          'research/catalogue_harvest/decode/views_c.jsonl', 'research/catalogue_harvest/hcportal/index.json']

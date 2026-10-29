@@ -1,0 +1,85 @@
+[
+ {
+  "id": 1138,
+  "finding": "partly_printed",
+  "citation": "Eliot Warburton, Memoirs of Prince Rupert and the Cavaliers (1849), 3 vols, Rupert-Legge letters 'from the Earl of Dartmouth's MSS': vol. II pp. 406-408 (April 1644, flagged 'In Cipher', Master of the Horse; letters of 18 and 23 Apr 1644); vol. III pp. 27-28 (Oct 1644, flagged '[In cipher]'); pp. 63-64 and 69-70 (March 1645); pp. 73-74 (Hereford, 31 Mar 1645); p. 100 (Daventry, 8 June 1645); pp. 125-128 (Digby to Legge, answering Legge's of 22 June; Legge's reply, pp. 128-131, cites Digby's letter of 30 June 1645); pp. 151-156 (Bristol, 28-29 July 1645).",
+  "evidence_urls": [
+   "https://archive.org/details/memoirsofprincer02warbuoft",
+   "https://archive.org/details/memoirsofprincer03warbuoft",
+   "https://archive.org/details/manuscriptsofear01greauoft"
+  ],
+  "note": "Staffordshire item dates from the TNA Discovery API (28 Oct 2026): /37 = 30 Apr 1644 (Master of the Horse; matches Warburton II 406-408, whose letters are dated 18 and 23 Apr, so date mismatch), /39 = 10 Oct 1644 (Warburton III 27-28), /41 = 8 Mar 1645 (III 63-64, matched on content), /45 = 31 Mar 1645 (III 73-74, exact date), /54 = 8 June 1645 (III p.100, exact), /56 = Digby 30 June 1645 (III 125-128, printed in full as plain text; the 'coded part not deciphered' is therefore deciphered in print). So six of the twelve items are printed in 1849 with plaintext. Warburton leaves Rupert's own name and some name-cipher groups as '[cipher]' or bare numbers (e.g. '92, 352' in the 29 July 1645 letter, III p.156) and says (II p.471 fn) that he gives uninterpreted ciphers only where he cannot read them. Not located in Warburton: /46 /47 /48 /49 /53 /55 (dates not retrieved) and /59 (Rupert, 9 Aug 1645, 'not deciphered'; the last printed Rupert-Legge letter is 29 July 1645). HMC Dartmouth (1887) calendars only Rupert-Legge letters of 1661. Verdict: lead is mostly closed for 37/39/41/45/54/56; items 59 and probably 46-49, 53, 55 remain unprinted, and the printed ones give plaintext cribs for the Rupert-Legge key."
+ },
+ {
+  "id": 1141,
+  "finding": "printed_deciphered",
+  "citation": "Thomas Carte, A Collection of Original Letters and Papers, concerning the Affairs of England, from the year 1641 to 1660, found among the Duke of Ormonde's Papers (1739), vol. I pp. 185-186: 'The King's Letter inclosed. Newport, in the Isle of Wight, Oct. 28, 1648. Ormonde, Lest you might be misled by false reports ...' (obey my Wife's commands; do not obey any command of mine until I send word I am free; be not startled at my great concessions concerning Ireland, they will come to nothing). Enclosed in a letter whose writer refers to 'these inclosed in cypher'.",
+  "evidence_urls": [
+   "https://archive.org/details/collectionoforig01cart"
+  ],
+  "note": "Plaintext printed, no figure string given. Northumberland ZSW/554/1 (copy of cipher letter, 28 Oct 1648) is this letter; closed as printed. Side lead Richmond to Rupert 15 Aug 1644: Warburton vol. I appendix calendar lists 'Richmond, Boconnock, to Prince Rupert, Aug 15 - does not believe in plots at Court against Prince Rupert; letter in cipher relates to' and vol. III p.35 says three Richmond letters are 'almost unintelligible from ciphers'; the text is not printed (Digby's Boconnock 15 Aug 1644 letter is, III pp.13-14), so that one is not_found."
+ },
+ {
+  "id": 1135,
+  "finding": "partly_printed",
+  "citation": "Charles Ross, Correspondence of Charles, first Marquis Cornwallis (1859), vol. I, ch. IV (c. p. 98): Rawdon to Cornwallis after Hobkirk's Hill, with the cipher passage printed as '[In Cipher.] May 2. Greene is still at Bugeley's ... Our action cost us 220 men'.",
+  "evidence_urls": [
+   "https://archive.org/details/correspondencec01rossgoog"
+  ],
+  "note": "TNA item records (Discovery API): PRO 30/11/6/25-26 = Camden, Rawdon to Cornwallis, 2 May 1781, 'in cipher and undeciphered' -> printed deciphered in Ross I (match on sender, place, date, content). PRO 30/11/6/54 (Craig, Wilmington, 5 May 1781, 'most cipher and undeciphered'), 30/11/6/23-24 (Craig, 2 May 1781, 'mostly in cipher') and 30/11/3/207-209 (Money to Wemyss, Oct 1780) not found in Ross vol. I (grepped Money, Wemyss, Balfour, Craig, Wilmington). Ross prints mostly Cornwallis's own letters. Saberton's 2010 edition is not reachable online (edition_unreachable for that source). So 1 of the 4 letters is closed, 3 remain."
+ },
+ {
+  "id": 1136,
+  "finding": "partly_printed",
+  "citation": "Ross 1859 vol. I (Rawdon 2 May 1781 cipher passage printed deciphered); the other cipher-marked items in PRO 30/11/3-6, 68-69, 81-87 not checked individually.",
+  "evidence_urls": [
+   "https://archive.org/details/correspondencec01rossgoog"
+  ],
+  "note": "Umbrella entry. Ross is a selection and prints few letters to Cornwallis, with only a handful of '[In Cipher]' passages in vol. I, so most of the 63 items are not in it. Saberton 2010 unreachable. No per-item concordance made."
+ },
+ {
+  "id": 1152,
+  "finding": "partly_printed",
+  "citation": "T. B. Howell, A Complete Collection of State Trials, vol. XVI (A.D. 1722-1725), Proceedings against Bishop Atterbury: Report of the Committee of the Lords on Plunkett's cypher and the numerical cypher 1378 = Atterbury ('Illington' / 'Jones'); glosses of cant names (e.g. 'barrels' = army, 'brokers' = lord Marr); decipherers' evidence incl. Mr Willes admitting that one number, 44, could not be deciphered (col. c. 506); the Bishop's defence on Plunkett's cypher (col. c. 560).",
+  "evidence_urls": [
+   "https://archive.org/details/10394025bsb"
+  ],
+  "note": "The trial volume prints the committee's findings, the interpretations of cant names and the decipherers' testimony, but not the SP 35 letters as figure strings with plaintext, nor the numeral cypher tables of SP 35/47/52 or 35/73/52 as tables (glosses only). SP 35/46/59 'undecyphered paper' is not identified in it. Cruickshanks and Erskine-Hill 2004 not accessible online. OCR of the BSB scan is poor. Lead stays open for the figure-string letters; the printed glosses are a partial vocabulary for Plunket's cypher."
+ },
+ {
+  "id": 1255,
+  "finding": "printed_with_cipher",
+  "citation": "Thomas Birch, A Collection of the State Papers of John Thurloe (1742), vol. II: Stouppe to the prince of Tarente, Aug 1654, p. 498 (says 'I do send you a cypher'); prince of Tarente to Stouppe, Hague 21 Aug 1654 N.S., p. 537 (received the cypher with Stouppe's letter of the 14th); Stouppe to Tarente, London 25 Aug 1654, pp. 565-566, with figure groups left in the French text ('Quelques uns croyent qu'il y pourroit 15. 73. 10. 24 ...'), i.e. cipher numbers printed but unresolved. Birch cites the source as Thurloe vol. xvii (= Rawl. A. 17) p. 62.",
+  "evidence_urls": [
+   "https://archive.org/details/collectionofstat02thur"
+  ],
+  "note": "Rawl. A.17 p.63 corresponds to the Tarente letter (p.537). The other Rawlinson pages (A.18 pp.159, 282, 422; A.19 pp.81, 361, 497; A.20 p.31), covering Oct-Nov 1654, do not appear in Birch (only three Stouppe/Tarente letters in vol. II). The 25 Aug letter with unresolved figure strings would make a crib set if the Rawlinson copy supplies the key. Not closed."
+ },
+ {
+  "id": 1256,
+  "finding": "partly_printed",
+  "citation": "Birch, Thurloe State Papers (1742), vol. V (1656): George Pawly, Madrid, letters of 15 Jul (headed 'The same decypherd', p. 86), 27 Jul, 13, 16, 23, 27 Sep and 25 Oct 1656; Mountagu's letters from the fleet (June-Sept 1656). Mayo: only a 1654 address line 'A Monsieur Mayo chez Monsieur Huese' (vol. II) found.",
+  "evidence_urls": [
+   "https://archive.org/details/collectionofstat05thur",
+   "https://archive.org/details/collectionofstat06thur"
+  ],
+  "note": "Birch prints Pawly's Madrid despatches, including decyphered versions, so the Pawly items are probably printed. Bodleian per-item dates were not available (site behind Anubis), so matching to Rawl. A.42 p.323 (Mountagu 11 Sep 1656), A.41, A.55, A.46, A.40, A.62 was not possible. No Mountagu letter of 11 Sep 1656 found in vol. V. Ins, Bampfylde, Mayo, Allen not matched."
+ },
+ {
+  "id": 1144,
+  "finding": "not_found",
+  "citation": "Warner (ed.), The Nicholas Papers vol. IV (Camden Society 1920) searched for Aug 1659, San Sebastian, 'Sir L. R.'.",
+  "evidence_urls": [
+   "https://archive.org/details/nicholaspapers04nich",
+   "https://archive.org/details/publications31royauoft"
+  ],
+  "note": "SP 77/32/289 (Nicholas, 6/16 Aug 1659, to Sir L. R. at San Sebastian) is not in Nicholas Papers IV, which prints letters to Nicholas. No other edition found. Stays open."
+ },
+ {
+  "id": 1145,
+  "finding": "not_found",
+  "citation": "No edition identified for TNA SP 78/111/93 (20/30 Sep 1642) and /135 (1644).",
+  "evidence_urls": [],
+  "note": "No searchable printed edition located (archive.org title search only). Stays open."
+ }
+]

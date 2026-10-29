@@ -1,0 +1,31 @@
+{
+ "id": 1526,
+ "vetting": {
+  "date": "2026-10-28",
+  "by": "Claude session (LatAm vetting, 28 Oct 2026)",
+  "seen": {
+   "kind": "scan",
+   "where": "AGN Colombia DataViva: GARV..2.2.4 (68e57156a1660dc4d1aa35ed, all 96 images downloaded and viewed as contact sheets, telegrams at ff. 149, 151 and 153 read at full size), GARV..1.1.4 (68e56895a1660dc4d1aa35dd, all 14 images; key on ff. 43r-44r = images 9-10) and GARV..2.2.1 (68e57156a1660dc4d1aa35ea, all 48 images as contact sheets). GARV..2.3.1, 2.3.2 and 2.4.1 were not opened.",
+   "extent": "GARV..2.2.4 holds at least 15 telegrams wholly or partly in cipher (ff. 103, 104, 106, 107, 116, 126, 134, 138, 139, 140, 141, 149, 151, 153, 154), each a few lines to half a page of letter groups; f. 151 (No. 143, 25 Sept 1932) is about 160 numbers in a different numeric system.",
+   "cipher": "Most telegrams are in the Colombian army's 1931 day-of-week substitution: seven alphabets (Lunes to Domingo), vowels to vowels and consonants to consonants, words forwards or reversed, with the day and D/R written in clear at the head. Cipher words are often mixed with clear words. No decipherment is written on the telegrams read here; the AGN descriptions say GARV..2.3.1 and 2.4.1 carry telegrams 'con traducción'."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE: known.py found no hit for Rodríguez Vergara, GARV or Olaya, and the only Leticia hit is an unrelated Peruvian 1930s catalogue entry.",
+   "tomokiyo": "Not in Tomokiyo's cryptiana: the index (crypto.htm, fetched 28 Oct 2026) has no Colombian, Leticia or 1930s Latin-American military item.",
+   "lasry": "Nothing by Lasry on 20th-century Colombian military ciphers; his papers and GL.htm (grepped in the repository copies) cover early-modern European ciphers.",
+   "edition": "No edition of the Rodríguez Vergara papers or of these telegrams was found; FRUS 1932 vol. V prints US diplomatic telegrams on the Leticia dispute, not Colombian army traffic.",
+   "literature": "Web search (Rodríguez Vergara 1932 telegramas cifrados clave Leticia Puerto Asís) found only general histories of the Leticia war (Camacho Arango; Wikipedia/Wikiwand) and nothing on the Colombian cipher or this fonds."
+  },
+  "key_check": "The key held in the same fonds reads the telegrams. GARV..1.1.4 f. 44r ('CRIPTOGRAFIA', Bogotá 31 Jan 1931, Sección I) with the rules on f. 43r was transcribed (research/latam_vetting/1526_key_garv114.tsv). With the Lunes alphabet, f. 153 (Minguerra to Rodríguez, 26 Sept 1932) gives 'vapor Santa María ... informo ... despacharon para provincia Loreto un regimiento de infantería de seiscientos hombres y [otro] de artillería de montaña', and f. 149 (No. 141, Puerto Asís 24 Sept 1932) gives 'a la una p.m. zarpará cañonero dirección Caucayá llevando dos oficiales, ciento veintiséis tropa, noventa cajas gasolina, cincuenta galones glice[rina]'. A Sábado telegram (f. 106) gives Manao[s] and Tocantins with some typing slips. GARV..2.2.1 holds a second key, the June 1932 Presidency key (ff. 6v, 8 and 10: a 5-column letter table explained by telegraphist José Rafael Ramírez). The numeric telegram f. 151 was not tested against either key. Translations: none were seen in 2.2.4; the AGN descriptions put 'traducción' with the telegrams of GARV..2.3.1 and 2.4.1, not opened.",
+  "duplicates": "known.py was run on 'Rodríguez Vergara', 'GARV', 'Leticia' and 'Olaya': the hits are this lead (research/leads.json, research/latam_north) and catalogue/CATALOGUE.md's unrelated Peruvian 1930s code entry. No duplicate.",
+  "verdict": "key_lookup"
+ },
+ "lead_updates": {
+  "seen": "image",
+  "status_append": "Vetted 28 Oct 2026 on the scans: the telegrams of GARV..2.2.4 read with the day-of-week key of GARV..1.1.4 (f. 44r, 31 Jan 1931), e.g. f. 149 (cañonero to Caucayá, 126 men) and f. 153 (a regiment of 600 infantry and mountain artillery sent to Loreto). A second key (Presidency, June 1932) is in GARV..2.2.1 ff. 6v-10. One numeric telegram (f. 151, No. 143) is in another system and was not tested. Key lookup, not an open target.",
+  "folio_note": "ff. 85-177; 96 images; cipher telegrams at ff. 103, 104, 106, 107, 116, 126, 134, 138-141, 149, 151 (numeric), 153, 154. Key: GARV..1.1.4 ff. 43r-44r; Presidency key GARV..2.2.1 ff. 6v, 8, 10.",
+  "solvability": 5,
+  "difficulty": 1,
+  "prior_art": "key in the same fonds (GARV..1.1.4); no publication found (28 Oct 2026)"
+ }
+}
