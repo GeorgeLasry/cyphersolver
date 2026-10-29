@@ -1,0 +1,120 @@
+{
+ "895": {
+  "vetting": {
+   "date": "2026-10-29",
+   "by": "claude vetting batch c01",
+   "seen": {
+    "kind": "facsimile",
+    "where": "https://www.zobodat.at/pdf/MGSL_125_0395-0399.pdf (read in Chrome 29 Oct 2026, Anubis proof-of-work passed automatically): K.-H. Ludwig, 'Geheimschrift im Bauernkrieg', Mitt. Ges. Salzburger Landeskunde 125 (1985), pp. 395-399; letter held at Salzburger Landesarchiv (SLA), Geh. Arch. XVI/1",
+    "extent": "One letter of Archbishop Matthaeus Lang, Salzburg, 19 May 1526 (Pfingstsamstag), about 15 lines, ciphered in the passage from 'Wir ... Zwayer vandl' onwards, printed in facsimile-style transcription on p. 397",
+    "cipher": "Monoalphabetic substitution with Latin-letter/figure/sign symbols, one symbol per letter with a few doubles (e: 2 and 8; f/v, u/w, b/p, i/j/y merged); Ludwig broke it by hand and prints the full 'Salzburger Code von 1526' table and a verbatim plain-text transcription on p. 399 (read also independently by Hofrat Herbert Klein after WWII)."
+   },
+   "prior_art": {
+    "decode": "Not searched on DECODE's own site (login wall); known.py for Burkhard von Ems / Matthaeus Lang / Salzburger Landesarchiv found only the lead itself and an unrelated 1513-14 Lang item already marked read; not a DECODE-held record as far as the repo dumps show.",
+    "tomokiyo": "No cryptiana page on this letter found by web search (Salzburg 1526 Geheimschrift searches 29 Oct 2026).",
+    "lasry": "No Lasry paper or GL.htm entry on it found by web search.",
+    "edition": "The letter is printed in Ludwig 1985 itself: cipher transcription p. 397 and the deciphered text p. 399; his footnote 4 only says the letter belongs to the context of Vogt's 1883 edition of the Artzt correspondence (ZHVSN 10, p. 168), not that Vogt printed it.",
+    "literature": "Ludwig 1985 (read in full, 5 pp.); the lead's description 'discussed as undeciphered' was a misreading of the web summary, the article opens with the failed computer attempt and then solves the letter."
+   },
+   "key_check": "No outside key needed: Ludwig reconstructs the key from the letter itself (frequency analysis plus the 'sch/ch' crib) and publishes it; checked it is a complete a-z table, so nothing further to apply.",
+   "duplicates": "known.py searched 'Burkhard von Ems', 'Matthaeus Lang', 'Salzburger Landesarchiv', 'Bauernkrieg': no other record of this letter in leads, catalogue or targets (Ehingen 1525 is a different Swabian file).",
+   "verdict": "read",
+   "closed": "Deciphered and the key and plain text printed by Ludwig, MGSL 125 (1985) pp. 395-399; nothing left to decipher."
+  }
+ },
+ "1265": {
+  "vetting": {
+   "date": "2026-10-29",
+   "by": "claude vetting batch c01",
+   "seen": {
+    "kind": "scan",
+    "where": "https://bnedigital.bne.es/bd/card?oid=0000172678&site=bdh (BNE Digital card read in Chrome; MSS/20210/15/1-6, six PDFs; viewer https://bnedigital.bne.es/bd/es/viewer?id=c6e2f3bd-f5fa-4361-9f37-0dc19caa95f0 opened for MSS/20210/15/1, f.1 read at full width)",
+    "extent": "Six letters, Rome, 6 Aug 1548 to Dec 1550, 12 leaves; only the first letter (3 images) was opened. Its first leaf carries 9 full lines of cipher figures, the other letters are described by the BNE as 'seis cartas parcialmente cifradas'.",
+    "cipher": "Italian letter (6 Aug 1548) in clear with a block of continuous digit strings (no separators, one- and two-digit values, about 9 lines) after 'con tutto il core'; between the cipher lines there is no interlinear decipherment and nothing written in the margins of that leaf (the clear marginal notes are summary headings of the letter). Letters 2-6 not individually opened."
+   },
+   "prior_art": {
+    "decode": "Not on DECODE as far as checked: repo DECODE dumps hold no record for Carpi or Granvelle in 1548 and known.py 'Rodolfo Pio', 'Carpi', '20210/15' found only the lead itself and unrelated Alberto Pio 1513 items.",
+    "tomokiyo": "cryptiana searches (Granvelle ciphers post of March 2026 on Pich-Ponce's PP1-PP3, Carpi, Gayangos) found nothing on Carpi's cipher.",
+    "lasry": "No Lasry paper or GL.htm entry on Carpi or Madrid-held Granvelle letters found by web search.",
+    "edition": "Weiss, Papiers d'etat du cardinal de Granvelle (1841-52) draws on the Besancon papers, not these Madrid copies; no edition of the Carpi letters found; Van Durme 1956 'Notes sur la correspondance de Granvelle conservee a Madrid' (BCRH) is cited on the card and not read.",
+    "literature": "Web searches (Carpi + cipher + Granvelle, Papiers d'etat, cryptiana) found only Pich-Ponce 2023/2025 on Granvelle's own ciphers with Renard (1553-56); nothing on the Roman cardinal's 1548-50 cipher."
+   },
+   "key_check": "No key held: Pich-Ponce PP1/PP3 are Granvelle-Renard/Perrenot ciphers of 1553-56 and not in repo; Carpi's numeric cipher is a cardinal's own, no table known in print or on DECODE, so none was applied.",
+   "duplicates": "known.py for Rodolfo Pio, Carpi, Granvelle, 20210/15, Mary of Hungary and Hurtado de Mendoza: only sibling leads 1266-1268 (same BNE Granvelle series) and the 1554 Sigüenza item; no duplicate of these six letters.",
+   "verdict": "open"
+  }
+ },
+ "1266": {
+  "unvetted": "marginal note may be a decipherment / may be code tables rather than messages; needs closer look before promotion"
+ },
+ "1268": {
+  "vetting": {
+   "date": "2026-10-29",
+   "by": "claude vetting batch c01",
+   "seen": {
+    "kind": "scan",
+    "where": "https://bnedigital.bne.es/bd/card?oid=0000172694&site=bdh (BNE Digital card, MSS/20212/29/1-6); viewer for MSS/20212/29/1 (id 1eaa4bb7-4272-4363-8fb3-c46855f34c46) opened in Chrome 29 Oct 2026, f.1 read at 0.8 scale",
+    "extent": "MSS/20212/29/1: letter of Diego Hurtado de Mendoza, Rome, 29 March 1548 (date at top right of f.1), three images; f.1 is a full page of about 20 lines wholly in symbol cipher (roughly 600 signs). The remaining letters 2-5 are the card's other Mendoza letters (May 1548-Nov 1551) and a 1551 unsigned letter from Schwaz; not opened.",
+    "cipher": "Whole-page substitution in non-Latin signs and Greek-like letters with word-dividing dots, not a clear letter with a cipher passage; no decipherment, interlinear text or key is written on f.1 (only faint show-through of the verso)."
+   },
+   "prior_art": {
+    "decode": "Not on DECODE: repo DECODE dumps and known.py ('Diego Hurtado', '20212/29', 'Hurtado de Mendoza Granvelle') hold no record of these BNE letters.",
+    "tomokiyo": "The lead's earlier check of Tomokiyo spanish2C.htm lists a Luo 'Lu.32' attributed to Diego de Mendoza; no cryptiana page reads this letter (web searches 29 Oct 2026 on Hurtado de Mendoza + cifra + Granvela).",
+    "lasry": "No Lasry paper or GL.htm entry on Hurtado de Mendoza's Rome cipher found by web search.",
+    "edition": "Real Biblioteca note (Avisos 2007) says Granvela's correspondence holds 94 Mendoza letters and 98 copies of his Rome letters, with no mention of cipher; no edition of this BNE letter found; Bertomeu Masia's books (Granvela and the Parma-Piacenza question; Bucchia) are the likely printed context and were not read.",
+    "literature": "Bucure 2025, Estudios Romanicos 'Napoles 1547: cartas cifradas y secretos de Estado' (Mendoza as ambassador in Rome writing to Charles V, four Simancas letters, a Naples-period cipher) is the closest published cipher analysis; not read in full."
+   },
+   "key_check": "Candidate keys not applied: Luo Lu.32 (attributed to Diego de Mendoza) is only in the Tomokiyo list as a key name, no table is held in the repo; the 1547 cipher in Bucure 2025 is the right-period candidate and its table was not transcribed. So the whole-page cipher is untested against any key.",
+   "duplicates": "known.py: only the bne_hispana candidate and an unrelated Guiche 1551 note; sibling leads 1265-1267 are other volumes; no duplicate of this letter or of Mendoza's 1548 Rome letters in catalogue.json.",
+   "verdict": "open"
+  }
+ },
+ "1387": {
+  "unvetted": "marginal note may be a decipherment / may be code tables rather than messages; needs closer look before promotion"
+ },
+ "1452": {
+  "unvetted": "Cipher not seen: AGN Guia record 1825 read in Chrome (Gobernacion vol. 85 'Circular impresa...', exp. 2: one-line description only, no images); the Historia Mexicana article that may partly transcribe the Feb 1825 Alaman letter is behind a Cloudflare 'Just a moment' check (historiamexicana.colmex.mx download 1751/1569; not clicked through); Documenta & Instrumenta 2011 hit is about Madero 1910, unrelated."
+ },
+ "1372": {
+  "unvetted": "Blocked: catalog.digitalarchives.tw (Academia Sinica union catalogue) shows an 'your IP has been blocked' page in Chrome too (29 Oct 2026), and the IMH archive images need a reader account; file not seen. Do not retry from this IP."
+ },
+ "1373": {
+  "unvetted": "Blocked: catalog.digitalarchives.tw serves an IP-block page to this machine (29 Oct 2026, same as 1372); IMH images need a reader account; file not seen."
+ },
+ "1374": {
+  "unvetted": "Blocked: catalog.digitalarchives.tw serves an IP-block page to this machine (29 Oct 2026, same as 1372); IMH images need a reader account; file not seen."
+ },
+ "1375": {
+  "unvetted": "Blocked: catalog.digitalarchives.tw serves an IP-block page to this machine (29 Oct 2026, same as 1372); IMH images need a reader account; file not seen."
+ },
+ "1376": {
+  "unvetted": "Blocked: catalog.digitalarchives.tw serves an IP-block page to this machine (29 Oct 2026, same as 1372); IMH images need a reader account; file not seen."
+ },
+ "1377": {
+  "unvetted": "Blocked: catalog.digitalarchives.tw serves an IP-block page to this machine (29 Oct 2026, same as 1372); IMH images need a reader account; file not seen."
+ },
+ "1378": {
+  "unvetted": "Blocked: catalog.digitalarchives.tw serves an IP-block page to this machine (29 Oct 2026, same as 1372); IMH images need a reader account; file not seen."
+ },
+ "1379": {
+  "unvetted": "Blocked: catalog.digitalarchives.tw serves an IP-block page to this machine (29 Oct 2026, same as 1372); IMH images need a reader account; file not seen."
+ },
+ "1380": {
+  "unvetted": "Blocked: catalog.digitalarchives.tw serves an IP-block page to this machine (29 Oct 2026, same as 1372); IMH images need a reader account; file not seen."
+ },
+ "1353": {
+  "unvetted": "UTSC DRRP record for register 5 (drrp.digital.utsc.utoronto.ca/61220/utsc65994) opens in Chrome but is a metadata-only record ('Page Total 1 item', no page images, no cipher flag); register 7 node not opened; no cipher page can be confirmed, and ASVe scans would need an order."
+ },
+ "1382": {
+  "unvetted": "No evidence a cipher exists: ANRI finding aid for inv. 24 says only 'veelal cryptisch' (not seen in Chrome; PDF inventory only), no scan, held in Jakarta; the ANRI microfilm inventory lists real 'codetelegrammen' for other 1945 items but not this one. Needs an ANRI reply on whether code groups are present."
+ },
+ "893": {
+  "unvetted": "Images not accessible: AIS 8-3-14 (ID 7048570) opened in Chrome shows 2-image thumbnails only, 'Kein Zugang (Reservatbestand)', 'Ausgewaehlte Archivmitarbeiter' only; comment 'teilweise chiffriert'; printed in Austro-Turcica 1541-1552 pp. 438-439 (not available to read). 8-4-16/17 not opened. Cipher extent and whether the edition prints the decipherment unknown."
+ },
+ "894": {
+  "unvetted": "Images not accessible: AIS records are Reservatbestand with thumbnails only (checked 8-3-14 sibling page in Chrome 29 Oct 2026); multi-item lead (4 shelfmarks, 4 writers) that needs splitting; Austro-Turcica 1541-1552 pp. 47-48 and Petritsch Regesten no. 84 not readable here."
+ },
+ "1267": {
+  "unvetted": "Cipher letters not located: BNE card MSS/20214/52 (20 Sessa letters 1524-29, note 'algunas cartas con texto parcialmente cifrado'); first leaves of 52/1, 2, 3, 4, 4b opened in Chrome: no cipher on them, but 52/1 is headed 'Claro' (a clear text, probably the decipherment of a cipher letter, so some of these are already read); remaining 15 PDFs not opened. Repo Sessa 1523-24 keys (Ko.1) untested."
+ }
+}

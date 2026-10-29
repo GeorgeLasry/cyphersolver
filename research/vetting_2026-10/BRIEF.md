@@ -19,3 +19,15 @@ A block is promoted into the catalogue on your word, so do the checks per lead, 
 least three distinct searches per lead (series/shelfmark + decipher, correspondents + cipher, edition/calendar), and apply any key you name.
 If you could not do a check, write the lead as {"unvetted": "what is missing"} rather than a thin "open". Never give not_cipher/read on a
 low-resolution glance. Prefer fewer, solid blocks to twenty weak ones.
+
+## Chrome pass (in_cNN.json -> out_cNN.json)
+These leads were left unvetted because scripts were blocked. Use Claude in Chrome (mcp__claude-in-chrome__*, load via ToolSearch in ONE call; read the
+chrome-browser skill first). One tab at a time, polite pace, never solve/click through a CAPTCHA (ask the user to clear it), no logins or account
+creation. Read pages with get_page_text/read_page; look at the actual leaf where a viewer renders. Same block format and Quality rule; an unvetted
+entry must name the blocker so it is not retried blindly.
+Chrome notes (from c02): bdh-rd.bne.es redirects to bnedigital.bne.es (get_page_text empty there; use screenshots). RAH Biblioteca Digital: Anubis passes in
+Chrome; get_page_text works on records; page images via "Objeto digital" then thumbnail. Gallica: direct openapi.bnf.fr IIIF image URL opens in a tab; use
+pct: crops at 1600 px. In ital. 1584 canvas = folio + ~4 at the start but drifts. Do NOT navigate any existing tab you did not open (another session's tabs).
+Block output format: {id: block} or {id: {"unvetted": reason}} (apply.py also accepts {"vetting": block}).
+CEHM-Carso scans DO open in Chrome with no login (c03): https://www.cehm.org.mx/Buscador/VisorArchivoDigital?jzd=/janium/JZD/<FONDO>/<seg>/<seg>/<item>/<CLASS>.jzd&fn=<record id>
+(e.g. /DLI/2/292/1/DLI.2.292.1.jzd&fn=112619); or click "Formato Digital" on a FichaBasica page. Zoom into cipher leaves before judging.

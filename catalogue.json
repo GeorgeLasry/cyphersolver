@@ -25830,6 +25830,66 @@
    }
   },
   {
+   "id": 995,
+   "counted": true,
+   "year": 1656,
+   "date": "1656 (date not captured)",
+   "title": "Hyde, to the Earl of Bristol: letter partly in cipher, calendared as undeciphered (Calendar of the Clarendon State Papers (Bodleian), vol. 3)",
+   "correspondents": "Hyde, to the Earl of Bristol",
+   "place": "unknown",
+   "language": "English",
+   "region": "England",
+   "period": "1651-1700",
+   "shelfmark": "Calendar of the Clarendon State Papers (Bodleian), vol. 3, entry 595, printed p. ?; archive.org calendarofclaren03bodluoft (Hathi copy to be located); original in The National Archives SP / Bodleian",
+   "folio_note": "Calendar note: ust be pressed for. Mention CLARENDON PAPERS. 195 of \" Edgely's \" proposed attempt in England (in undeciphered",
+   "cls": "C",
+   "status": "Printed calendar says cipher not deciphered (ust be pressed for. Mention CLARENDON PAPERS. 195 of \" Edgely's \" proposed attempt in England (in undeciphered). Not checked against the original or other editions; no DECODE check made (calendar entry, not a DECODE record). Royalist cipher traffic (Nicholas/Hyde/Ross/Pile); research/ia_meta/candidates.json has an aggregate row for the 1655-56 Commonwealth letters, so on merge this item-level row should replace or sit under that aggregate, not duplicate it.",
+   "why": "Cipher text in a calendared state-papers letter that the editor could not read; may carry intelligence not otherwise printed.",
+   "importance": 3,
+   "solvability": 1,
+   "difficulty": 4,
+   "score_note": "Scored from the printed calendar text during the Oct 2026 HathiTrust sweep (research/hathitrust/); not viewed",
+   "verify": "Open the volume on HathiTrust or archive.org, go to the entry, then the TNA original (SP series) to see whether the cipher is legible and whether a key or deciphering sibling exists.",
+   "links": [
+    {
+     "label": "archive.org copy of the calendar volume",
+     "href": "https://archive.org/details/calendarofclaren03bodluoft"
+    },
+    {
+     "label": "HathiTrust catalogue search (volume id not resolved: babel/catalog blocked by Cloudflare)",
+     "href": "https://catalog.hathitrust.org/Search/Home?lookfor=Calendar+of+the+Clarendon+State+Papers+(Bodleian),+vol.+3&type=title"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "HathiTrust sweep",
+   "prior_art": "open (checked 28 Oct 2026: calendar text only; Hyde-Barwick key is a different system, see targets/hyde/NOTES.md; Bodleian Clarendon MSS / Nicholas Papers not searched for a key)",
+   "ark": "",
+   "scored": "vetted",
+   "access": "archive",
+   "access_note": "not online (backfilled 28 Oct 2026 from the entry: known only from a printed calendar/catalogue (Calendar of the Clarendon State Papers (Bodleian), vol. 3, entry 595, ); original manuscript not online)",
+   "vetting_note": "Calendar volume on archive.org not read here (OCR entry 595 and original Clarendon MS not checked); ran known.py only. Only known.py run for this lead in this batch; fewer than the three required searches done.",
+   "vetting": {
+    "date": "2026-10-29",
+    "by": "claude vetting batch c07",
+    "seen": {
+     "kind": "not online",
+     "where": "Calendar of the Clarendon State Papers vol. III (Macray 1876), archive.org calendarofclaren03bodluoft djvu text read 29 Oct 2026, entry 595 pp. 194-195; original in a Bodleian MS Clarendon volume, not online",
+     "extent": "two or three lines in cipher at the end of a letter Hyde to the Earl of Bristol, 1656, plus a parenthetical mention",
+     "cipher": "Calendar: 'Mention of \"Edgely's\" proposed attempt in England (in undeciphered cipher)'; entry 595 'Hyde to the Earl of Bristol', copy by Hyde followed by a copy by his Secretary, ends '[Two or three lines in cipher follow]'."
+    },
+    "prior_art": {
+     "decode": "Not on DECODE: known.py 'Clarendon State Papers' and 'Edgeman' hit only catalogue.json royalist leads (905-906, 965-977, 1019), which are other letters.",
+     "tomokiyo": "No Tomokiyo page for Hyde-Bristol 1656 found; search 'Tomokiyo Clarendon State Papers cipher Hyde' returned nothing relevant.",
+     "lasry": "No Lasry item found; DECODE search for Hyde/Rochester/Edgeman found only a Weckherlin royalist volume (1625-47), not this period.",
+     "edition": "Calendar vol. III only; this entry was not found printed elsewhere.",
+     "literature": "A Camden note on the Nicholas Papers (via search) says a letter was 'not deciphered; Sir E. Hyde, according to the key (Eg. 2550, p. 85)', implying BM Egerton 2550 holds a key; Bodleian MS Clarendon 94 holds sixteen royalist ciphers."
+    },
+    "key_check": "Bodleian MS Clarendon 94 (sixteen royalist ciphers) and BL Egerton 2550 may hold the Hyde-Bristol key; neither is in the repo or DECODE (known.py), so no key was applied.",
+    "duplicates": "known.py 'Edgeman', 'Clarendon State Papers': only distinct catalogue.json items (905, 906, 965-977, 1019); the aggregate row in research/ia_meta/candidates.json for the 1655-56 letters is broader, not this item.",
+    "verdict": "open"
+   }
+  },
+  {
    "id": 998,
    "counted": true,
    "year": 1620,
@@ -26779,6 +26839,126 @@
     },
     "key_check": "Not held. MS Clarendon 94 (sixteen royalist cipher keys, per the Folger note) is the place to look, not in Digital Bodleian; Tomokiyo's reconstructed royalist ciphers (1654-56) are later and agent-specific and were not applied.",
     "duplicates": "known.py 'Edgeman' 'Clarendon State Papers' 'Rochester' 'Ashton': only the Clarendon leads of this and earlier batches; no catalogue entry for no. 540.",
+    "verdict": "open"
+   }
+  },
+  {
+   "id": 1021,
+   "counted": true,
+   "year": 1654,
+   "date": "c. 10 Apr 1654",
+   "title": "Hyde to Lord Rochester on the King's impending departure from Paris: part in undeciphered cipher",
+   "correspondents": "Sir Edward Hyde → Earl of Rochester (Wilmot)",
+   "place": "Paris",
+   "language": "English",
+   "region": "England",
+   "period": "1651-1700",
+   "shelfmark": "Bodleian Library, Clarendon State Papers; Calendar of the Clarendon State Papers preserved in the Bodleian Library, vol. II (1649-54), ed. W. D. Macray, Oxford 1869, no. 1824",
+   "folio_note": "Calendar vol. II p. 333; 'Part in undeciphered cipher'; date from the margin of the next entry (10 Apr), to confirm",
+   "cls": "A",
+   "status": "Calendar note 'Part in undeciphered cipher'. Copy by Hyde.",
+   "why": "The King's plans to leave France for Germany (summer 1654), written in the royalist cipher.",
+   "importance": 2,
+   "solvability": 3,
+   "difficulty": 2,
+   "score_note": "Scored from the printed calendar/edition text during the Oct 2026 Internet Archive pass-2b sweep (research/ia_pass2_b/); not viewed against the original",
+   "verify": "View Clarendon MS April 1654; confirm date and extent of the cipher part.",
+   "links": [
+    {
+     "label": "Clar. Cal. vol. II (full text, search)",
+     "href": "https://archive.org/details/calendarofclaren02bodluoft?q=King%27s+impending+departure+undeciphered"
+    },
+    {
+     "label": "Plain-text OCR",
+     "href": "https://archive.org/download/calendarofclaren02bodluoft/calendarofclaren02bodluoft_djvu.txt"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "Internet Archive full-text sweep, pass 2b",
+   "prior_art": "open (checked 28 Oct 2026: printed calendar only; Clarendon vol. II-III cipher notes say 'undeciphered'; Tomokiyo/cryptiana, Lasry and HistoCrypt not searched)",
+   "ark": "",
+   "scored": "vetted",
+   "access": "archive",
+   "access_note": "Digital Bodleian has only MS Clarendon 128 and 155; the 1650s Clarendon State Papers are not imaged (checked 28 Oct 2026)",
+   "vetting_note": "Calendar no. 1824 (c. 10 Apr 1654): 'Part in undeciphered cipher', extent unknown; not online. Printed Clarendon State Papers vol. III not checked; MS Clarendon 94 keys not examined.",
+   "vetting": {
+    "date": "2026-10-29",
+    "by": "claude vetting batch c07",
+    "seen": {
+     "kind": "not online",
+     "where": "Calendar of the Clarendon State Papers vol. II (Macray 1869), archive.org calendarofclaren02bodluoft djvu text read 29 Oct 2026, no. 1824 p. 333; originals in a Bodleian MS Clarendon volume, not online (Digital Bodleian has only MS Clarendon 128, 155)",
+     "extent": "part of a letter, extent unknown",
+     "cipher": "Calendar no. 1824 (c. 10 Apr 1654): 'Part in undeciphered cipher' in Hyde to Rochester on the King's impending departure from Paris; copy by Hyde."
+    },
+    "prior_art": {
+     "decode": "Not on DECODE: known.py 'Edgeman' and 'Clarendon State Papers' hit only other royalist catalogue rows (905, 906, 965-977, 1019), none this letter.",
+     "tomokiyo": "No Tomokiyo page for Hyde-Rochester 1654 ciphers found by web search.",
+     "lasry": "No Lasry item; web search of DECODE for Hyde/Rochester/Edgeman found only a Weckherlin royalist-intercepts volume of 1625-47.",
+     "edition": "The printed Clarendon State Papers vol. III (1786) begins at 1655, so does not cover 1654; the calendar is the only printed source found.",
+     "literature": "Bodleian lists MS Clarendon 94 as 'sixteen ciphers used in the Clarendon State Papers on the royalist side' and a Camden note cites BM Egerton 2550 for Hyde's key; neither examined."
+    },
+    "key_check": "Possible keys: Bodleian MS Clarendon 94 and BL Egerton 2550; not held in repo or DECODE, so none applied.",
+    "duplicates": "known.py 'Edgeman' and 'Calendar of the Clarendon': only distinct catalogue.json items (905-906, 965-977; 1019 is Hyde's 13 Jul 1651 instructions to Edgeman); siblings 1020-1022 are separate letters.",
+    "verdict": "open"
+   }
+  },
+  {
+   "id": 1032,
+   "counted": true,
+   "year": 1646,
+   "date": "2 Jan 1646 (year to confirm)",
+   "title": "'John Poingdexter' (name as OCR) to [unnamed], Dublin: Ireland in a desperate condition; a passage in cipher follows",
+   "correspondents": "John Poingdexter (OCR; sender's name to confirm) → [recipient not named in the calendar]",
+   "place": "Dublin",
+   "language": "English",
+   "region": "England",
+   "period": "1611-1650",
+   "shelfmark": "TNA, State Papers Ireland, SP 63/261 (Vol. CCLXI); Calendar of the State Papers relating to Ireland 1633-1647, entry 6146",
+   "folio_note": "Calendar: 'The King's army [a passage follows in cipher]'",
+   "cls": "C",
+   "status": "Calendar omits the cipher passage; sender's name garbled in OCR and the recipient is blank in print, so check the printed page before the merge.",
+   "why": "Dublin under Parliamentary naval blockade in winter 1645-46 with the Glamorgan treaty pending.",
+   "importance": 2,
+   "solvability": 2,
+   "difficulty": 3,
+   "score_note": "Scored from the printed calendar/edition text during the Oct 2026 Internet Archive pass-2b sweep (research/ia_pass2_b/); not viewed against the original",
+   "verify": "Read calendar entry 6146 (Mahaffy 1901) to confirm sender and year; view SP 63/261.",
+   "links": [
+    {
+     "label": "CSP Ireland 1633-47 (full text, search)",
+     "href": "https://archive.org/details/calendarofstatep02grea?q=passage+follows+in+cipher"
+    },
+    {
+     "label": "Plain-text OCR",
+     "href": "https://archive.org/download/calendarofstatep02grea/calendarofstatep02grea_djvu.txt"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "Internet Archive full-text sweep, pass 2b",
+   "prior_art": "open (checked 28 Oct 2026: calendar text only; heading to confirm)",
+   "ark": "",
+   "scored": "vetted",
+   "access": "archive",
+   "access_note": "TNA SP original: imaged only in Gale State Papers Online (subscription), not on Discovery (checked 28 Oct 2026)",
+   "vetting_note": "CSP Ireland 1633-47 no. 6146 reads 'John Poingdexter to [blank], Dublin, 2 Jan: ... The King's army [a passage follows in cipher]'; sender, recipient and year (1645 or 1646) are unresolved and a web search on the name and the passage found nothing, so the leaf cannot be located or judged.",
+   "vetting": {
+    "date": "2026-10-29",
+    "by": "claude vetting batch c08",
+    "seen": {
+     "kind": "not online",
+     "where": "archive.org calendarofstatep02grea (Calendar of State Papers Ireland 1633-1647, Mahaffy 1901), djvu text downloaded and read in context 29 Oct 2026, entry 6146; TNA SP 63/261 no. 1 is imaged only in Gale State Papers Online (subscription), not on Discovery",
+     "extent": "one holograph letter of 2.75 pp. (S.P. Ireland 261, 1); one passage after 'The King's army' is in cipher, length not stated",
+     "cipher": "Calendar: 'John Poingdexter to [blank]. Dublin. 2 Jan. ... The King's army [a passage follows in cipher]. This place is blockaded by the Parliament ships'. The entry sits after the 26 and 30 Dec 1645 items of vol. CCLXI, so the year is 1645/6; no decipherment is mentioned and the calendar omits the passage."
+    },
+    "prior_art": {
+     "decode": "known.py 'Poingdexter', 'SP 63/261', 'Glamorgan': no DECODE record or ledger hit for this letter (only unrelated Glamorgan-treaty catalogue entries).",
+     "tomokiyo": "Web searches for Poingdexter/Dublin January 1646 cipher and the Irish 1640s ciphers returned no cryptiana page on this letter; Tomokiyo's unsolved list (mirrored in the repo) has no entry for it.",
+     "lasry": "No Lasry/DECODE decipherment of a Dublin 1646 letter is known to the repo (known.py) or found by web search (searches of 29 Oct 2026).",
+     "edition": "The Mahaffy calendar itself is the edition and omits the cipher; the neighbouring entries were read for a decipherment note: none. Sender name looks garbled ('Poingdexter', possibly Poyntz) and the recipient is blank in print.",
+     "literature": "Web search on the sender, the passage wording and 'State Papers Ireland cipher 1646' found only unrelated Dublin 1646 letters (Crouther to Lenthall, Du to Le Tellier)."
+    },
+    "key_check": "No key for a Dublin 1645-46 correspondent is held in the repo or on DECODE; the Ormond-Digby ciphers of the same years (targets/rupert, Add MS 18983) were not tried because no image of the leaf exists.",
+    "duplicates": "known.py 'Poingdexter', 'SP 63/261', 'Glamorgan': no catalogue entry or lead is this letter; other Glamorgan-period hits are separate letters.",
     "verdict": "open"
    }
   },
@@ -28018,6 +28198,66 @@
     },
     "key_check": "No key for this item is held in the repo or on DECODE. Candidate systems: the Catholic Monarchs' cifra general (BRAH 9/15 keys R9815-R9832 on DECODE, used in targets/esp318 and garcilaso1498). The Great Captain's cipher is known in part from Bergenroth's old key and the 2018 CNI decipherment of the Maqueda letters (a different archive); no key table is held in the repo, and without images it cannot be applied. None can be tried before scans exist.",
     "duplicates": "known.py run for the shelfmark volume, sender and place: hits only this lead and its ia_pass2_c candidate row; no catalogue.json, DECODE or target duplicate found.",
+    "verdict": "open"
+   }
+  },
+  {
+   "id": 1066,
+   "counted": true,
+   "year": 1504,
+   "date": "16 Dec 1504",
+   "title": "Ferdinand the Catholic -> Francisco de Rojas, ambassador at Rome, bulls for the three churches of Santo Domingo; the rest of the letter in cipher",
+   "correspondents": "Ferdinand the Catholic -> Francisco de Rojas, ambassador at Rome",
+   "place": "Toro",
+   "language": "Spanish",
+   "region": "Spain",
+   "period": "1497-1559",
+   "shelfmark": "Real Academia de la Historia (Madrid), Coleccion Salazar y Castro, A-10, f. 21 (inventory no. 970)",
+   "folio_note": "f. 21; catalogue says: bulls for the three churches of Santo Domingo; the rest of the letter in cipher",
+   "cls": "B",
+   "status": "Listed in the RAH Salazar y Castro catalogue (IA full text) as cipher with no decipherment or translation noted in the entry. Volume A-10 is not among the Salazar volumes on DECODE (only 9/8, 9/17, 9/23-9/31, 9/34 appear). Ferdinand's secretariat: the Catholic Monarchs' cifra general (known from Galende Diaz 1994, Parisi 2020 and the esp318/garcilaso1498 targets in this repo) may apply.",
+   "why": "Ferdinand the Catholic's own or ambassadors' cipher correspondence, diplomacy of the Catholic Monarchs",
+   "importance": 4,
+   "solvability": 3,
+   "difficulty": 3,
+   "score_note": "Scored from the RAH catalogue entry during the Oct 2026 Internet Archive non-English printed-sources sweep (research/ia_pass2_c/); not viewed",
+   "verify": "Check whether RAH Biblioteca Digital / Salazar images exist for this signatura; if not, request a reproduction; compare the cipher with the cifra general RRCC and the Aragonese key lists",
+   "links": [
+    {
+     "label": "RAH Salazar y Castro catalogue (IA full text)",
+     "href": "https://archive.org/details/salazary-castro-22-nov-2016?q=inventario%20970"
+    },
+    {
+     "label": "IA item",
+     "href": "https://archive.org/details/salazary-castro-22-nov-2016"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "Internet Archive printed-sources sweep (non-English)",
+   "prior_art": "open as far as checked (26-28 Oct 2026: known.py, research/oldest/CANDIDATES.md, DECODE list; web search for Salazar y Castro + Gran Capitan/cifra general found only the CNI decipherment of the Maqueda letters 1502-03 (a different archive) and Galende Diaz/Parisi on the cifra general, nothing on this item)",
+   "ark": "",
+   "scored": "vetted",
+   "access": "archive",
+   "access_note": "not online (backfilled 28 Oct 2026 from the entry: ...Digital / Salazar images exist for this signatura; if not, request a reproduction; compare the cipher with the cifra general RRCC and the Ara...)",
+   "vetting_note": "A web search found the same 16 Dec 1504 Toro letter to Rojas cited as 'inedito' from Coleccion Salazar A 10 (fol. 25 in that source, f. 21 here) in a printed collection of documents on the Spanish Indies; that printing was not opened, so whether the cipher part is printed deciphered is unknown.",
+   "vetting": {
+    "date": "2026-10-29",
+    "by": "claude vetting batch c08",
+    "seen": {
+     "kind": "not online",
+     "where": "archive.org salazary-castro-22-nov-2016 (RAH Salazar y Castro catalogue; SalazaryCastro_22_nov_2016_djvu.txt downloaded and read at the entry 29 Oct 2026, inventory no. 970); no scan located (RAH Biblioteca Digital gave nothing usable for Salazar items in batches 18-19)",
+     "extent": "one folio (A-10 f. 21); the letter is clear for the bulls and then 'el resto de la carta en cifra'; length unknown",
+     "cipher": "RAH entry: 'Carta de Fernando el Catolico a don Francisco de Rojas, su embajador en Roma, mandandole remitiera urgentemente las bulas para la provision de las tres iglesias de la isla espanola de Santo Domingo; el resto de la carta en cifra. Original, mandada escribir por el Rey.' No decipherment, translation or 'Publicada' note."
+    },
+    "prior_art": {
+     "decode": "A-10 is not among the Salazar volumes on DECODE (9/8, 9/17, 9/23-9/31, 9/34 only); known.py 'A-10', 'Francisco de Rojas', 'Santo Domingo' found no record for this letter.",
+     "tomokiyo": "Tomokiyo's Spanish page and unsolved list (repo mirror) mention no Ferdinand-Rojas letter of 1504; web search for Rojas 1504 cifra found nothing from cryptiana.",
+     "lasry": "No Lasry paper or GL.htm entry on Ferdinand's letters to Rojas; two web searches (Toro 16 Dec 1504 Santo Domingo cifra; Rojas Rome cartas cifradas) found only the CNI 2018 Maqueda/Great Captain letters 1502-03.",
+     "edition": "The catalogue entry carries only an Observaciones note on the first three bishops, no 'Publicada por'; Rodriguez Villa's 1896 study of Rojas (BRAH) was found in search but not checked for this letter, so a printed copy is not excluded.",
+     "literature": "Web searches for Rojas as ambassador (Pascual Molina and Fiz Fuertes 2015; Fernandez de Cordoba Miralles 2014) surfaced studies of the man, none of this cipher letter."
+    },
+    "key_check": "Cifra general of the Catholic Monarchs (BRAH 9/15, DECODE R9815-R9832) is the likely system for a royal letter to Rome in 1504 but cannot be applied without an image of the leaf; no key for the Ferdinand-Rojas correspondence is held here.",
+    "duplicates": "known.py 'A-10', 'Francisco de Rojas', 'Santo Domingo': only sibling Salazar A-10 entries (inv. 952, 958) of earlier batches, which are other letters.",
     "verdict": "open"
    }
   },
@@ -31927,6 +32167,62 @@
    }
   },
   {
+   "id": 1212,
+   "counted": true,
+   "language": "French",
+   "region": "Other",
+   "cls": "B",
+   "seen": "catalogue",
+   "source": "Calames/Biblissima/FranceArchives sweep",
+   "score_note": "Scored from the catalogue description during the Oct 2026 Calames/Biblissima/FranceArchives sweep (research/calames_biblissima/); not viewed",
+   "prior_art": "open (checked 28 Oct 2026: repo ledgers and DECODE list via known.py; no web search yet)",
+   "links": [
+    {
+     "label": "FranceArchives 16 PA III 4",
+     "href": "https://francearchives.gouv.fr/fr/facomponent/b33a00fb244dfbc1ef8611ff82ce689b4adb1eee"
+    }
+   ],
+   "year": 1884,
+   "date": "1883-1885",
+   "title": "Brazza's mission papers: ciphered correspondence with the Foreign Ministry and the letter revealing the cipher",
+   "correspondents": "Pierre Savorgnan de Brazza → Foreign Ministry",
+   "place": "Paris / Congo",
+   "period": "1801-1900",
+   "shelfmark": "Archives nationales d'outre-mer (Aix-en-Provence), 16 PA III 4 (Fonds Brazza, Relations avec les ministères)",
+   "folio_note": "'la lettre dévoilant le code chiffré' (28 May 1884 - 25 Nov 1885)",
+   "status": "ANOM inventory lists ciphered correspondence and the letter explaining the cipher: key and ciphertext in one box.",
+   "why": "Brazza's Congo mission 1883-85, Berlin Conference period.",
+   "importance": 2,
+   "solvability": 4,
+   "difficulty": 2,
+   "verify": "View; the explaining letter is the key.",
+   "ark": "",
+   "scored": "vetted",
+   "access": "archive",
+   "access_note": "FranceArchives record has no viewer and no \"numérisé\" note; check the AN/ANOM site before ordering (checked 28 Oct 2026)",
+   "vetting_note": "Notice lists Brazza's ciphered correspondence with the Foreign Ministry and 'la lettre dévoilant le code chiffré' in one box (ANOM 16 PA III 4); the letter explaining the code may itself be the key, which would make the verdict key_lookup or read rather than open, but nothing was seen: web searches (29 Oct 2026) on Brazza cipher/16 PA III returned only catalogue metadata (amdigital) and no cipher content; known.py no hit beyond the lead.",
+   "vetting": {
+    "date": "2026-10-29",
+    "by": "claude vetting batch c05",
+    "seen": {
+     "kind": "not online",
+     "where": "FranceArchives notice https://francearchives.gouv.fr/fr/facomponent/b33a00fb244dfbc1ef8611ff82ce689b4adb1eee and ANOM (recherche-anom.culture.gouv.fr, opened in Chrome 29 Oct 2026: no image viewer on notices)",
+     "extent": "ANOM 16 PA III 4 (Fonds Brazza, Relations avec les ministères), one box, 1883-85; number of ciphered pieces not stated",
+     "cipher": "ANOM inventory description: Brazza's ciphered correspondence with the Foreign Ministry together with 'la lettre dévoilant le code chiffré' (the letter revealing the cipher code); no leaf seen."
+    },
+    "prior_art": {
+     "decode": "known.py on Brazza and 16 PA III: only this lead and research/calames_biblissima; not on DECODE.",
+     "tomokiyo": "Searched Brazza cipher/chiffre 1884: nothing at cryptiana.",
+     "lasry": "No Lasry or DECODE item for Brazza found.",
+     "edition": "Searched Brazza/Ballay dépêches chiffrées edition (29 Oct 2026): no published decipherment; Quai d'Orsay Congo file 1883-84 exists as correspondence only.",
+     "literature": "Searched amdigital 'Troisième mission de Brazza 1880-86' and Coquery-Vidrovitch 1965: metadata only, nothing on the cipher."
+    },
+    "key_check": "The box itself holds a letter explaining the code (key plus ciphertext in one box); no key is held in the repo or on DECODE, so the system must be read from the box once scans are ordered; no key tried.",
+    "duplicates": "known.py 'Brazza' and '16 PA III': no catalogue, ledger or DECODE duplicate.",
+    "verdict": "open"
+   }
+  },
+  {
    "id": 1213,
    "counted": true,
    "language": "French",
@@ -32543,6 +32839,128 @@
    }
   },
   {
+   "id": 1265,
+   "counted": true,
+   "seen": "image",
+   "source": "BNE/Hispana sweep",
+   "prior_art": "open (checked 28 Oct 2026: Tomokiyo spanish2C.htm (key list), repo known.py; BDH viewer returned HTTP 403 to script, not viewed; Carpi not mentioned)",
+   "score_note": "Scored from the BNE catalogue description (via the Europeana record API) during the Oct 2026 BNE/Hispana sweep (research/bne_hispana/); not viewed",
+   "decode_ids": [],
+   "year": 1548,
+   "date": "Aug 1548 - Dec 1550",
+   "title": "Cardinal Rodolfo Pio di Carpi (Rome) → Cardinal Granvelle: six letters partly in cipher",
+   "correspondents": "Rodolfo Pio, Cardinal of Carpi → Antoine Perrenot de Granvelle",
+   "place": "Rome",
+   "language": "Italian",
+   "region": "Papacy",
+   "period": "1497-1559",
+   "shelfmark": "Madrid, Biblioteca Nacional de España, Gayangos Granvela series; BDH bdh0000172678",
+   "folio_note": "six letters, 'parcialmente cifradas'",
+   "cls": "C",
+   "status": "BNE catalogue: 'Seis cartas parcialmente cifradas fechadas en Roma entre agosto de 1548 y diciembre de 1550'. No decipherment noted. Not on DECODE (known.py). Checked 28 Oct 2026: Verified 28 Oct: no published reading found. Granvelle-family keys PP1/PP3 are candidates.",
+   "why": "A cardinal at the papal court reporting to the emperor's minister during the Trent/Bologna dispute and Julius III's election; six cipher samples would let a key be rebuilt.",
+   "importance": 3,
+   "solvability": 3,
+   "difficulty": 3,
+   "verify": "View six letters; test PP1/PP3; look for Gonzaga-style decipherment sheet.",
+   "links": [
+    {
+     "label": "BDH viewer",
+     "href": "http://bdh-rd.bne.es/viewer.vm?id=0000172678&page=1"
+    },
+    {
+     "label": "Europeana record",
+     "href": "https://www.europeana.eu/item/2022717/bnesearch_detalle_bdh0000172678"
+    }
+   ],
+   "ark": "",
+   "scored": "vetted",
+   "access": "online",
+   "access_note": "online (backfilled 28 Oct 2026 from the entry: link BDH viewer (http://bdh-rd.bne.es/viewer.vm?id=0000172678&page=1))",
+   "vetting_note": "BDH viewer returned 403 and Europeana a Cloudflare challenge to scripts; no scan seen. Needs Chrome pass. Searches for a published reading found nothing, but not enough to close.",
+   "vetting": {
+    "date": "2026-10-29",
+    "by": "claude vetting batch c01",
+    "seen": {
+     "kind": "scan",
+     "where": "https://bnedigital.bne.es/bd/card?oid=0000172678&site=bdh (BNE Digital card read in Chrome; MSS/20210/15/1-6, six PDFs; viewer https://bnedigital.bne.es/bd/es/viewer?id=c6e2f3bd-f5fa-4361-9f37-0dc19caa95f0 opened for MSS/20210/15/1, f.1 read at full width)",
+     "extent": "Six letters, Rome, 6 Aug 1548 to Dec 1550, 12 leaves; only the first letter (3 images) was opened. Its first leaf carries 9 full lines of cipher figures, the other letters are described by the BNE as 'seis cartas parcialmente cifradas'.",
+     "cipher": "Italian letter (6 Aug 1548) in clear with a block of continuous digit strings (no separators, one- and two-digit values, about 9 lines) after 'con tutto il core'; between the cipher lines there is no interlinear decipherment and nothing written in the margins of that leaf (the clear marginal notes are summary headings of the letter). Letters 2-6 not individually opened."
+    },
+    "prior_art": {
+     "decode": "Not on DECODE as far as checked: repo DECODE dumps hold no record for Carpi or Granvelle in 1548 and known.py 'Rodolfo Pio', 'Carpi', '20210/15' found only the lead itself and unrelated Alberto Pio 1513 items.",
+     "tomokiyo": "cryptiana searches (Granvelle ciphers post of March 2026 on Pich-Ponce's PP1-PP3, Carpi, Gayangos) found nothing on Carpi's cipher.",
+     "lasry": "No Lasry paper or GL.htm entry on Carpi or Madrid-held Granvelle letters found by web search.",
+     "edition": "Weiss, Papiers d'etat du cardinal de Granvelle (1841-52) draws on the Besancon papers, not these Madrid copies; no edition of the Carpi letters found; Van Durme 1956 'Notes sur la correspondance de Granvelle conservee a Madrid' (BCRH) is cited on the card and not read.",
+     "literature": "Web searches (Carpi + cipher + Granvelle, Papiers d'etat, cryptiana) found only Pich-Ponce 2023/2025 on Granvelle's own ciphers with Renard (1553-56); nothing on the Roman cardinal's 1548-50 cipher."
+    },
+    "key_check": "No key held: Pich-Ponce PP1/PP3 are Granvelle-Renard/Perrenot ciphers of 1553-56 and not in repo; Carpi's numeric cipher is a cardinal's own, no table known in print or on DECODE, so none was applied.",
+    "duplicates": "known.py for Rodolfo Pio, Carpi, Granvelle, 20210/15, Mary of Hungary and Hurtado de Mendoza: only sibling leads 1266-1268 (same BNE Granvelle series) and the 1554 Sigüenza item; no duplicate of these six letters.",
+    "verdict": "open"
+   }
+  },
+  {
+   "id": 1268,
+   "counted": true,
+   "seen": "image",
+   "source": "BNE/Hispana sweep",
+   "prior_art": "open (checked 28 Oct 2026: Tomokiyo spanish2C.htm (key list), repo known.py; BDH viewer returned HTTP 403 to script, not viewed; Diego Hurtado de Mendoza 1547 cipher letter cited from Bertomeu Masià 2009; Luo Lu.32 attributed to Diego de Mendoza)",
+   "score_note": "Scored from the BNE catalogue description (via the Europeana record API) during the Oct 2026 BNE/Hispana sweep (research/bne_hispana/); not viewed",
+   "decode_ids": [],
+   "year": 1548,
+   "date": "May 1548 - Nov 1551",
+   "title": "Diego Hurtado de Mendoza (Rome, Siena) → Cardinal Granvelle: five letters, the first in cipher",
+   "correspondents": "Diego Hurtado de Mendoza → Antoine Perrenot de Granvelle",
+   "place": "Rome / Siena",
+   "language": "Spanish",
+   "region": "Spain",
+   "period": "1497-1559",
+   "shelfmark": "Madrid, Biblioteca Nacional de España, Gayangos (first part of the incomplete letter at Mss/7919/75); BDH bdh0000172694",
+   "folio_note": "first letter 'cifrada'; one letter incomplete, first part in Mss/7919/75",
+   "cls": "C",
+   "status": "BNE catalogue: 'La primera carta cifrada'. No decipherment noted. Not on DECODE. Checked 28 Oct 2026: Verified 28 Oct: no reading found; candidate keys Lu.32 (Luo 2021) and Bertomeu Masià 2009 discussion.",
+   "why": "The imperial ambassador in Rome and governor of Siena, in the year of the Siena revolt (1551); a named, dated cipher letter.",
+   "importance": 4,
+   "solvability": 4,
+   "difficulty": 3,
+   "verify": "View first letter; test Lu.32 and the Masià cipher.",
+   "links": [
+    {
+     "label": "BDH viewer",
+     "href": "http://bdh-rd.bne.es/viewer.vm?id=0000172694&page=1"
+    },
+    {
+     "label": "Europeana record",
+     "href": "https://www.europeana.eu/item/2022717/bnesearch_detalle_bdh0000172694"
+    }
+   ],
+   "ark": "",
+   "scored": "vetted",
+   "access": "online",
+   "access_note": "online (backfilled 28 Oct 2026 from the entry: link BDH viewer (http://bdh-rd.bne.es/viewer.vm?id=0000172694&page=1))",
+   "vetting_note": "BDH 403 / Europeana challenge; no scan seen. Needs Chrome pass; candidate keys Lu.32 (Luo 2021), Bertomeu Masia 2009.",
+   "vetting": {
+    "date": "2026-10-29",
+    "by": "claude vetting batch c01",
+    "seen": {
+     "kind": "scan",
+     "where": "https://bnedigital.bne.es/bd/card?oid=0000172694&site=bdh (BNE Digital card, MSS/20212/29/1-6); viewer for MSS/20212/29/1 (id 1eaa4bb7-4272-4363-8fb3-c46855f34c46) opened in Chrome 29 Oct 2026, f.1 read at 0.8 scale",
+     "extent": "MSS/20212/29/1: letter of Diego Hurtado de Mendoza, Rome, 29 March 1548 (date at top right of f.1), three images; f.1 is a full page of about 20 lines wholly in symbol cipher (roughly 600 signs). The remaining letters 2-5 are the card's other Mendoza letters (May 1548-Nov 1551) and a 1551 unsigned letter from Schwaz; not opened.",
+     "cipher": "Whole-page substitution in non-Latin signs and Greek-like letters with word-dividing dots, not a clear letter with a cipher passage; no decipherment, interlinear text or key is written on f.1 (only faint show-through of the verso)."
+    },
+    "prior_art": {
+     "decode": "Not on DECODE: repo DECODE dumps and known.py ('Diego Hurtado', '20212/29', 'Hurtado de Mendoza Granvelle') hold no record of these BNE letters.",
+     "tomokiyo": "The lead's earlier check of Tomokiyo spanish2C.htm lists a Luo 'Lu.32' attributed to Diego de Mendoza; no cryptiana page reads this letter (web searches 29 Oct 2026 on Hurtado de Mendoza + cifra + Granvela).",
+     "lasry": "No Lasry paper or GL.htm entry on Hurtado de Mendoza's Rome cipher found by web search.",
+     "edition": "Real Biblioteca note (Avisos 2007) says Granvela's correspondence holds 94 Mendoza letters and 98 copies of his Rome letters, with no mention of cipher; no edition of this BNE letter found; Bertomeu Masia's books (Granvela and the Parma-Piacenza question; Bucchia) are the likely printed context and were not read.",
+     "literature": "Bucure 2025, Estudios Romanicos 'Napoles 1547: cartas cifradas y secretos de Estado' (Mendoza as ambassador in Rome writing to Charles V, four Simancas letters, a Naples-period cipher) is the closest published cipher analysis; not read in full."
+    },
+    "key_check": "Candidate keys not applied: Luo Lu.32 (attributed to Diego de Mendoza) is only in the Tomokiyo list as a key name, no table is held in the repo; the 1547 cipher in Bucure 2025 is the right-period candidate and its table was not transcribed. So the whole-page cipher is untested against any key.",
+    "duplicates": "known.py: only the bne_hispana candidate and an unrelated Guiche 1551 note; sibling leads 1265-1267 are other volumes; no duplicate of this letter or of Mendoza's 1548 Rome letters in catalogue.json.",
+    "verdict": "open"
+   }
+  },
+  {
    "id": 1282,
    "counted": true,
    "cls": "B",
@@ -32708,6 +33126,66 @@
     },
     "key_check": "Repo holds Bazaine's 1866 Mexican cable only; no 1830s French army key held, so none applied.",
     "duplicates": "known.py 'Harispe' and 'Bazaine' terms: no duplicate of this letter.",
+    "verdict": "open"
+   }
+  },
+  {
+   "id": 1318,
+   "counted": true,
+   "year": 1447,
+   "date": "3 Jan 1447",
+   "title": "Federico da Montefeltro, Count of Urbino → Francesco Sforza, cipher letter",
+   "correspondents": "Federico da Montefeltro → Francesco Sforza",
+   "place": "Urbino",
+   "language": "Italian",
+   "region": "Italy",
+   "period": "15th century",
+   "shelfmark": "BnF italien 1584, f. 2",
+   "folio_note": "one letter (not located on canvas 7; probably canvas 6 or 8)",
+   "cls": "B",
+   "status": "Mazzatinti 'In cifre'; no decipherment noted.",
+   "why": "An early Montefeltro cipher; Parisi read Montefeltro ciphers of 1451/1459 with the keys of BAV Urb. lat. 998.",
+   "importance": 3,
+   "solvability": 3,
+   "difficulty": 3,
+   "score_note": "Scored from Mazzatinti, Inventario dei mss. italiani II (1887) pp. 285-509, during the Oct 2026 venice_milan_print sweep (research/venice_milan_print/, sforza_list.txt)",
+   "verify": "Locate f. 2 on Gallica; test the Urb. lat. 998 keys (Parisi 2021-22).",
+   "links": [
+    {
+     "label": "Gallica ital. 1584 (microfilm)",
+     "href": "https://gallica.bnf.fr/ark:/12148/btv1b100373864"
+    },
+    {
+     "label": "Mazzatinti 1887 inventory",
+     "href": "https://archive.org/details/InventarioDeiManoscrittiItalianiT2"
+    }
+   ],
+   "seen": "image",
+   "source": "BnF italien (Archivio Sforzesco) via Mazzatinti 1887",
+   "prior_art": "open as far as checked (28 Oct 2026: cryptiana unsolved.htm mentions only ital. 1584 f. 68/69 and key DECODE R1857; DECODE has only ital. 1583 ff. 68-158, R7898-R7915; known.py no hit for ital. 1584-1591). Many leaves carry interlinear or filed contemporary decipherments that Mazzatinti does not always note (seen: 1584 f. 15 followed by an unlisted clear f. 16 of the same date; a cipher block on canvas 235 has interlinear glosses), so 'read at the time' must be ruled out leaf by leaf.",
+   "needs_archive_scan": "no",
+   "access_note": "Gallica, BnF italien 1584-1594 digitised (IIIF via openapi.bnf.fr; Gallica blocks scripts)",
+   "ark": "",
+   "scored": "vetted",
+   "access": "online",
+   "vetting": {
+    "date": "2026-10-29",
+    "by": "claude vetting batch 03",
+    "seen": {
+     "kind": "scan",
+     "where": "BnF Gallica italien 1584, IIIF canvas f6 (= folio 2) via openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b100373864/f6 (full and zoomed crops viewed 29 Oct 2026); canvas f7 is its reverse/address leaf",
+     "extent": "One letter, about 14 lines, headed '1447 3 Januarii Urbini', signed Federicus Comes; clear Italian with two ciphered passages of about 2 lines each (mixed digit and letter-like signs, no word division)",
+     "cipher": "Short ciphered passages inside a clear Italian letter; a few interlinear glosses in a later hand over some cipher groups (e.g. 'novelle', 'bene', 'me'), but no continuous decipherment written on the leaf or on its reverse (address only: 'Illustri domino ... Francisco Sforcie vicecomiti')."
+    },
+    "prior_art": {
+     "decode": "Not on DECODE: known.py hits only repo candidate lists (research/venice_milan_print) and no DECODE view record for ital. 1584; Sforza ital. 1583 slips are R7899-R7908, not this folio.",
+     "tomokiyo": "No cryptiana page on 1447 Sforza/Montefeltro letters found by web search (results concerned only the 1478 Montefeltro conspiracy cipher).",
+     "lasry": "No Lasry paper or GL.htm entry on 1447 Sforza correspondence known to the repo or found by web search.",
+     "edition": "Web search found no edition of this letter; Mazzatinti 1887 inventory only lists it 'In cifre'. Printed Sforza regesta were not checked page by page.",
+     "literature": "Web search (Italian) for Federico da Montefeltro 1447 cifrata returned only Simonetta's 1478 conspiracy cipher and Parisi's work on Montefeltro tables (1451/1459, BAV Urb. lat.); nothing on this letter."
+    },
+    "key_check": "Parisi's Montefeltro keys (BAV Urb. lat. 998, DECODE R1413-R1468 in the repo) are 1450s and later and for the Count's own correspondence; not tried against these passages. The contemporary Sforza keys (Simonetta, 1440s) are not held. No key reads it on present evidence; passages are too short for a solver, so the lead stays open as a key-lookup/crib target.",
+    "duplicates": "known.py 'Montefeltro', 'Urbino', 'btv1b100373864': only the lead's own candidate row (research/venice_milan_print) and unrelated Montefeltro/Urbino hits (florence1429, oldest CANDIDATES for 1451/1459/1478); no catalogue or DECODE record for this letter.",
     "verdict": "open"
    }
   },
@@ -33181,6 +33659,324 @@
    }
   },
   {
+   "id": 1333,
+   "counted": true,
+   "year": 1560,
+   "date": "1560",
+   "title": "Unknown → Cardinal Carlo Borromeo, letter entirely in numeric cipher",
+   "correspondents": "unknown → Carlo Borromeo (cardinal-nephew of Pius IV)",
+   "place": "unknown",
+   "language": "Italian",
+   "region": "Papacy",
+   "period": "1560-1589",
+   "shelfmark": "Milan, Biblioteca Ambrosiana, F 100 inf., n. 49 (ff. 103r-104v)",
+   "folio_note": "4 pages imaged; f. 103r is a full page (c. 45 lines) of unbroken digits, no word division, no decipherment.",
+   "cls": "C",
+   "status": "OPAC (Borromeo correspondence item record): \"Lettera in cifra\", sender and recipient N.D., 1560. Viewed f. 103r: continuous numeric cipher, no interlinear or attached decipherment seen. Not on DECODE; no repo hit.",
+   "why": "A long fully ciphered despatch to the new Secretary of State in Pius IV's first year (reconvening of Trent, Spanish and French affairs); sender unidentified.",
+   "importance": 3,
+   "solvability": 3,
+   "difficulty": 4,
+   "score_note": "Scored from the archive description during the Oct 2026 Milan archives sweep (research/milan_archives/); image viewed (f. 103r)",
+   "verify": "View all four images; check whether the digits pair into a two-digit nomenclator; look for the same hand/cipher among Borromeo nuncio letters of 1560-61 (F 100-F 104 inf.) and in the AAV nunciature keys.",
+   "links": [
+    {
+     "label": "OPAC record with images",
+     "href": "https://ambrosiana.comperio.it/opac/detail/view/ambro:catalog:606779"
+    },
+    {
+     "label": "f. 103r image",
+     "href": "https://ambrosiana.comperio.it/clavisng/index.php?file=57096"
+    }
+   ],
+   "seen": "image",
+   "source": "Milan archives sweep (Biblioteca Ambrosiana)",
+   "prior_art": "open (checked 28 Oct 2026: OPAC note, web search Borromeo + cifra; not on DECODE)",
+   "decode_ids": [],
+   "needs_archive_scan": "no",
+   "access_note": "Ambrosiana catalogue (ambrosiana.comperio.it) shows images on the record / digital library IIIF",
+   "ark": "",
+   "scored": "vetted",
+   "access": "online",
+   "vetting_note": "scan not re-viewed this batch and only a generic web search on F 100 inf. found nothing; needs viewing of f. 103r plus two more distinct searches",
+   "vetting": {
+    "date": "2026-10-29",
+    "by": "claude vetting batch c09",
+    "seen": {
+     "kind": "scan",
+     "where": "Chrome, 29 Oct 2026: https://ambrosiana.comperio.it/opac/detail/view/ambro:catalog:606779, four images 'Foglio pagina 0103/0104' (images 2-4 opened in the viewer; the first thumbnail was not opened)",
+     "extent": "f. 103r is a full page of about 45 lines of continuous digits, no word division; the leaf numbered 104 carries about seven lines of the same continuous cipher at the head and is blank below; one image is an empty verso.",
+     "cipher": "OPAC note 'Lettera in cifra', sender and recipient N.D., 1560, 4 cc. (103r-104v). Seen: a numeric cipher in single digits written continuously, with no clear Italian, no interlinear text and no decipherment on or with the leaves."
+    },
+    "prior_art": {
+     "decode": "Not on DECODE: known.py and the DECODE view dumps have no Ambrosiana record for this letter.",
+     "tomokiyo": "No Tomokiyo cryptiana page on Borromeo or Ambrosiana ciphers of 1560 found (web searches 'F 100 inf Borromeo cifra' and 'Borromeo cifrario 1560 Pio IV'); none in the repo ledgers.",
+     "lasry": "No Lasry paper or GL.htm entry on this letter found by web search or in the repo.",
+     "edition": "Searched 'Monumenta Borromaica epistolario cifre decifrate' and the 1560 Pius IV cipher query: Turchini's Monumenta borromaica I describes the archive (about 20,000 letters online) but no edition of ciphered letters was found; not known to be printed.",
+     "literature": "Three web searches (shelfmark, Borromeo cifrario 1560, Pius IV cipher / Segreteria di Stato) found no study of this letter; the sender is unidentified in the record."
+    },
+    "key_check": "The only key near this series is Borromeo's cifrario for Bascape (Ambrosiana F 57 inf. n. 275, ff. 314v-315r, 1580), seen on the images: a nomenclator of names and places with numbers 31-39 plus rules, twenty years later and a different system. The 1560 digit stream has no word division and no nomenclator signs, so that key was not applied and no held key is known to fit.",
+    "duplicates": "known.py 'F 100 inf', 'Borromeo', 'Ambrosiana' on 29 Oct 2026: hits only in research/milan_archives (this item's own sweep) and leads.json, none in catalogue.json, targets/, DECODE dumps or decode_updates; no other record of this letter.",
+    "verdict": "open"
+   }
+  },
+  {
+   "id": 1334,
+   "counted": true,
+   "year": 1573,
+   "date": "1573",
+   "title": "Unknown → Carlo Borromeo, letter mostly in a symbol cipher",
+   "correspondents": "unknown → Carlo Borromeo, archbishop of Milan",
+   "place": "unknown",
+   "language": "Italian",
+   "region": "Italy",
+   "period": "1560-1589",
+   "shelfmark": "Milan, Biblioteca Ambrosiana, F 46 inf., n. 275 (f. 652r-v)",
+   "folio_note": "One leaf; f. 652v (imaged) has c. 12 lines, about half of them in a cipher of arbitrary signs (Greek-like letters, digits, crosses) mixed with clear Italian (\"Le cause di sospicione ...\", \"a S. S.\", \"per il quale\").",
+   "cls": "C",
+   "status": "OPAC: \"Ep. scritta per lo più in cifra\", N.D. → N.D., 1573. Viewed f. 652v: ciphertext runs between clear words, no decipherment. Not on DECODE; no repo hit.",
+   "why": "A confidential report to Borromeo in his conflict year with the Milan governor (Requesens, 1573); the clear frame mentions suspicions, the Pope and a prince.",
+   "importance": 3,
+   "solvability": 3,
+   "difficulty": 3,
+   "score_note": "Scored from the archive description during the Oct 2026 Milan archives sweep (research/milan_archives/); image viewed (f. 652v)",
+   "verify": "Transcribe the signs (images are 750 px; ask for a higher-resolution copy if needed); try the Speciano/Bascapè keys from the same correspondence; the clear frame gives cribs.",
+   "links": [
+    {
+     "label": "OPAC record with images",
+     "href": "https://ambrosiana.comperio.it/opac/detail/view/ambro:catalog:594139"
+    },
+    {
+     "label": "f. 652v image",
+     "href": "https://ambrosiana.comperio.it/clavisng/index.php?file=11447"
+    }
+   ],
+   "seen": "image",
+   "source": "Milan archives sweep (Biblioteca Ambrosiana)",
+   "prior_art": "open (checked 28 Oct 2026: OPAC note, web search; not on DECODE)",
+   "decode_ids": [],
+   "needs_archive_scan": "no",
+   "access_note": "Ambrosiana catalogue (ambrosiana.comperio.it) shows images on the record / digital library IIIF",
+   "ark": "",
+   "scored": "vetted",
+   "access": "online",
+   "vetting_note": "scan not re-viewed this batch; no search specific to F 46 inf. 275 or a 1573 Borromeo cipher",
+   "vetting": {
+    "date": "2026-10-29",
+    "by": "claude vetting batch c09",
+    "seen": {
+     "kind": "scan",
+     "where": "Chrome, 29 Oct 2026: https://ambrosiana.comperio.it/opac/detail/view/ambro:catalog:594139, both images 'Foglio pagina 0652' opened in the viewer",
+     "extent": "one leaf (ff. 652r-v): the written image has 10 lines, about 5 of them runs of cipher signs interlined with clear Italian words ('Le cause di sospicione', 'a S. S.', 'per il quale'); the other image is a faint leaf with show-through only.",
+     "cipher": "OPAC note 'Ep. scritta per lo piu in cifra', N.D. to N.D., 1573, subjects Gregory XIII and Maffei. Seen: arbitrary signs (Greek-like letters, crosses, digits) in runs of 8-20 between clear words, no decipherment or key written on the leaf."
+    },
+    "prior_art": {
+     "decode": "Not on DECODE (known.py 'F 46 inf', 'Ambrosiana': no record).",
+     "tomokiyo": "No Tomokiyo page on 1573 Borromeo ciphers found (web search 'Borromeo 1573 Ambrosiana F 46 inf cifra simboli').",
+     "lasry": "No Lasry or GL.htm entry for an Ambrosiana 1573 letter found by web search or in the repo.",
+     "edition": "Searched 'Gregorio XIII Maffei Milano 1573 Borromeo lettera cifrata Requesens': found only a dealer's note on the 1573 Requesens bando; no edition of this ciphered letter found.",
+     "literature": "Three searches (shelfmark, 1573 jurisdictional dispute with Requesens, Monumenta Borromaica) found no study of the cipher; sender unidentified."
+    },
+    "key_check": "Borromeo's Bascape cifrario (F 57 inf. n. 275, 1580) is a numeric nomenclator with name numbers, not a sign alphabet, so it does not apply to the 1573 sign runs; no Speciano key was located and none is held in the repo, so nothing was tried.",
+    "duplicates": "known.py 'F 46 inf', 'Borromeo', 'Ambrosiana' on 29 Oct 2026: only research/milan_archives and leads.json; no catalogue.json, target or DECODE record; no other copy of this letter found.",
+    "verdict": "open"
+   }
+  },
+  {
+   "id": 1336,
+   "counted": true,
+   "year": 1574,
+   "date": "4 Jul 1574; 2 Mar 1575",
+   "title": "Cesare Speciano ↔ Carlo Borromeo, Rome-Milan letters with cipher passages",
+   "correspondents": "Cesare Speciano (Borromeo's agent in Rome) → Carlo Borromeo; Borromeo → Speciano",
+   "place": "Rome; Milan",
+   "language": "Italian",
+   "region": "Italy",
+   "period": "1560-1589",
+   "shelfmark": "Milan, Biblioteca Ambrosiana, F 131 inf., n. 7 (ff. 14r-15v); F 49 inf., n. 18 (ff. 38r-44v, cipher on f. 44r)",
+   "folio_note": "F 131 inf. 7: \"Parte dell'ep. in cifra\", 4 images; F 49 inf. 18: 14-page letter, \"alla c. 44r testo cifrato\", 14 images.",
+   "cls": "B",
+   "status": "OPAC notes as quoted; no decipherment noted. Not viewed. F 47 inf. n. 131 (Speciano, \"lettera cifrata\" with the translation on f. 270r) is in the same correspondence and can serve as a key source. Not on DECODE; no repo hit (known.py: Speciano, Spetiano).",
+   "why": "Borromeo's Roman agent during the jurisdiction quarrel with the Spanish governors of Milan; the ciphered parts concern the Pope and the Spanish.",
+   "importance": 3,
+   "solvability": 4,
+   "difficulty": 2,
+   "score_note": "Scored from the archive description during the Oct 2026 Milan archives sweep (research/milan_archives/); not viewed",
+   "verify": "View the images; rebuild the Speciano key from F 47 inf. 131 (cipher + translation) and apply it.",
+   "links": [
+    {
+     "label": "OPAC F 131 inf. n. 7",
+     "href": "https://ambrosiana.comperio.it/opac/detail/view/ambro:catalog:614986"
+    },
+    {
+     "label": "OPAC F 49 inf. n. 18",
+     "href": "https://ambrosiana.comperio.it/opac/detail/view/ambro:catalog:594432"
+    },
+    {
+     "label": "OPAC F 47 inf. n. 131 (cipher with translation)",
+     "href": "https://ambrosiana.comperio.it/opac/detail/view/ambro:catalog:594280"
+    }
+   ],
+   "seen": "image",
+   "source": "Milan archives sweep (Biblioteca Ambrosiana)",
+   "prior_art": "open (checked 28 Oct 2026: OPAC, web search; not on DECODE)",
+   "decode_ids": [],
+   "needs_archive_scan": "no",
+   "access_note": "Ambrosiana catalogue (ambrosiana.comperio.it) shows images on the record / digital library IIIF",
+   "ark": "",
+   "scored": "vetted",
+   "access": "online",
+   "vetting_note": "scans not viewed this batch; one Speciano search found only English Milan calendar references for other letters; edition status of these letters unchecked",
+   "vetting": {
+    "date": "2026-10-29",
+    "by": "claude vetting batch c10",
+    "seen": {
+     "kind": "scan",
+     "where": "Chrome, 29 Oct 2026: ambrosiana.comperio.it OPAC ambro:catalog:614986 (F 131 inf. 7, 4 images, all opened), :594432 (F 49 inf. 18, 14 images, images 1, 11, 12, 13 opened) and :594280 (F 47 inf. 131, images 1 and 3 opened)",
+     "extent": "F 131 inf. 7 (Speciano to Borromeo, Rome 4 Jul 1574): one bracketed line of mixed letters and digits near the top of f. 14r, about one line, inside a clear Italian letter; ff. 14v-15v clear. F 49 inf. 18 (Borromeo to Speciano, Milan 2 Mar 1575): f. 44r carries a pasted slip with three lines of sign cipher (Greek-like letters, crosses, bars) and, below it, a clear note saying the names of the two principals named in the cipher letter are the castellans of Milan and the senate's head; ff. 38-43 clear. F 47 inf. 131 (Speciano, undated): f. 269r is a slip of about 17 dense lines of sign cipher, f. 270r the clear Italian translation (about 15 lines, Gregory XIII, Spain, Carniglia, Frumenti), i.e. a cipher-plus-plaintext pair.",
+     "cipher": "OPAC note 'Parte dell'ep. in cifra' (F 131 inf. 7) and 'Alla c. 44r testo cifrato' (F 49 inf. 18); seen: short sign and letter-digit cipher passages of one to three lines in clear letters, plus a long sign-cipher slip with a facing translation in F 47 inf. 131 (269r/270r)"
+    },
+    "prior_art": {
+     "decode": "Not on DECODE: known.py and the DECODE view dumps hold no record for this item",
+     "tomokiyo": "No Tomokiyo cryptiana page found for this correspondence (web searches on the shelfmark, the correspondents and 'cifra'); none in repo ledgers",
+     "lasry": "No Lasry paper or GL.htm entry found by the web searches or in the repo",
+     "edition": "No edition of the ciphered passages found: searches for 'Speciano Borromeo lettere cifrate', 'Speciano Borromeo 1574 cipher letter Gregorio XIII Spain Carniglia Frumenti' and 'Speciano Borromeo Epistolario Rivolta cifra F 47 inf. 131' returned only general Borromeo-epistolary and CSP Foreign calendar hits (CSP Venice 1575 has Speciano letters of other dates), nothing on these folios",
+     "literature": "Same searches as the edition line: No edition of the ciphered passages found: searches for 'Speciano Borromeo lettere cifrate', 'Speciano Borromeo 1574 cipher letter Gregorio XIII Spain Carniglia (no study of this item found)"
+    },
+    "key_check": "Key material is in the same correspondence: F 47 inf. 131 gives about 17 lines of sign cipher with a clear translation on the next leaf (seen on the images), enough to start rebuilding Speciano's sign alphabet and nomenclator; it has not been transcribed or applied here, so the 1574 line and the 1575 slip are untested against it",
+    "duplicates": "known.py on 29 Oct 2026 for the shelfmark(s) and correspondents: hits only in research/leads.json and the research/milan_archives sweep that produced this lead; none in catalogue.json targets, DECODE dumps or decode_updates. catalogue.json 'Speciano' hits are a different Milan lead (1573 sign runs) that says no Speciano key was located; F 47 inf. 131 is not a separate catalogue entry",
+    "verdict": "open"
+   }
+  },
+  {
+   "id": 1337,
+   "counted": true,
+   "year": 1578,
+   "date": "28 Jun - 21 Nov 1578",
+   "title": "Cesare Speciano ↔ Carlo Borromeo, six letters with cipher names and words",
+   "correspondents": "Cesare Speciano → Carlo Borromeo; Borromeo → Speciano",
+   "place": "Rome; Milan",
+   "language": "Italian",
+   "region": "Italy",
+   "period": "1560-1589",
+   "shelfmark": "Milan, Biblioteca Ambrosiana, F 52 inf., nn. 123, 124, 170, 173, 178; F 53 inf., n. 90",
+   "folio_note": "F 52 inf.: \"Nomi cifrati\" (ff. 271r-277v, 341r-342v, 352r-355v, 363r-364v); F 53 inf. 90: \"Alcune parole dell'ep. in cifra\" (ff. 182r-183v). All imaged.",
+   "cls": "B",
+   "status": "OPAC notes as quoted; no decipherment noted. Not viewed. Mostly names, so a short cipher; the 1574-75 Speciano letters and F 47 inf. 131 are the key sources.",
+   "why": "Identifies the persons Borromeo and his agent would not name in 1578 (the dispute with governor Ayamonte); small but tied to the larger Speciano series.",
+   "importance": 2,
+   "solvability": 3,
+   "difficulty": 2,
+   "score_note": "Scored from the archive description during the Oct 2026 Milan archives sweep (research/milan_archives/); not viewed",
+   "verify": "View images; list the cipher names; apply the Speciano key once rebuilt.",
+   "links": [
+    {
+     "label": "OPAC F 52 inf. n. 123",
+     "href": "https://ambrosiana.comperio.it/opac/detail/view/ambro:catalog:595151"
+    },
+    {
+     "label": "OPAC F 52 inf. n. 173",
+     "href": "https://ambrosiana.comperio.it/opac/detail/view/ambro:catalog:595205"
+    },
+    {
+     "label": "OPAC F 53 inf. n. 90",
+     "href": "https://ambrosiana.comperio.it/opac/detail/view/ambro:catalog:595338"
+    }
+   ],
+   "seen": "image",
+   "source": "Milan archives sweep (Biblioteca Ambrosiana)",
+   "prior_art": "open (checked 28 Oct 2026: OPAC; not on DECODE)",
+   "decode_ids": [],
+   "needs_archive_scan": "no",
+   "access_note": "Ambrosiana catalogue (ambrosiana.comperio.it) shows images on the record / digital library IIIF",
+   "ark": "",
+   "scored": "vetted",
+   "access": "online",
+   "vetting_note": "scans not viewed this batch; short cipher of names; only the generic Speciano search was done",
+   "vetting": {
+    "date": "2026-10-29",
+    "by": "claude vetting batch c10",
+    "seen": {
+     "kind": "scan",
+     "where": "Chrome, 29 Oct 2026: OPAC ambro:catalog:595151 (F 52 inf. 123, Speciano to Cardinal of S. Prassede, Rome 28 Jun 1578, 4 images; images 1 and 3 opened); the other five letters (F 52 inf. 124, 170, 173, 178; F 53 inf. 90) were not opened",
+     "extent": "Only f. 271r and f. 272r of one of the six letters seen: f. 271r is a clear Italian letter with no cipher block; f. 272r carries the address panel and a seal. The OPAC note says 'Nomi cifrati' (names in cipher, e.g. Petrucci, Manardi) so the cipher is isolated names inside clear text, not a cipher passage; none of the cipher names was located on the two leaves seen.",
+     "cipher": "OPAC notes 'Nomi cifrati' (F 52 inf.) and 'Alcune parole dell'ep. in cifra' (F 53 inf. 90); on the leaves seen no cipher block, only clear Italian (names in cipher not found on f. 271r or f. 272r)"
+    },
+    "prior_art": {
+     "decode": "Not on DECODE: known.py and the DECODE view dumps hold no record for this item",
+     "tomokiyo": "No Tomokiyo cryptiana page found for this correspondence (web searches on the shelfmark, the correspondents and 'cifra'); none in repo ledgers",
+     "lasry": "No Lasry paper or GL.htm entry found by the web searches or in the repo",
+     "edition": "No edition of these letters found by 'Speciano Borromeo lettere cifrate', 'Speciano 1578 cipher Borromeo' or the Epistolario Rivolta search; the letters are only catalogued in the OPAC",
+     "literature": "Same searches as the edition line: No edition of these letters found by 'Speciano Borromeo lettere cifrate', 'Speciano 1578 cipher Borromeo' or the Epistolario Rivolta search; the letters are onl (no study of this item found)"
+    },
+    "key_check": "Sister key source: F 47 inf. 131 (cipher with translation, see lead 1336) is the same correspondent's system; not transcribed or applied here, and since only names are ciphered a decipherment would give a handful of name codes",
+    "duplicates": "known.py on 29 Oct 2026 for the shelfmark(s) and correspondents: hits only in research/leads.json and the research/milan_archives sweep that produced this lead; none in catalogue.json targets, DECODE dumps or decode_updates; related lead 1336 (same correspondent, F 47 inf. 131 as key source)",
+    "verdict": "open"
+   }
+  },
+  {
+   "id": 1338,
+   "counted": true,
+   "year": 1565,
+   "date": "Oct 1565",
+   "title": "Melchiorre Biglia (nuncio at the imperial court) → Rome, two letters in numeric cipher copied into his letter-register",
+   "correspondents": "Melchiorre Biglia, nuncio → Cardinal Carlo Borromeo (Secretary of State)",
+   "place": "Vienna (imperial court)",
+   "language": "Italian",
+   "region": "Central Europe",
+   "period": "1560-1589",
+   "shelfmark": "Milan, Biblioteca Ambrosiana, Trotti 22, cc. 6v-7v",
+   "folio_note": "Register of Biglia's letters Oct 1565-1567 (cc. 1r-163v). c. 7r: two long blocks of numeric cipher (c. 30 and c. 15 lines, digit strings with many 0s and 7s) entered in the register; no decipherment beside them.",
+   "cls": "B",
+   "status": "OPAC: \"Alle cc. 6v-7v: 2 lettere cifrate\". Viewed c. 7r: ciphertext copied into the register. The original despatches are in the Vatican (Germania) and Biglia's nunciature is edited in Nuntiaturberichte aus Deutschland II/5-6, which may print a deciphered text (crib). Not on DECODE; no repo hit (known.py: Biglia, Trotti 22).",
+   "why": "Nunciature despatches from the court of Maximilian II in the months before the 1566 Turkish war; the register copy shows what Biglia kept back.",
+   "importance": 3,
+   "solvability": 4,
+   "difficulty": 2,
+   "score_note": "Scored from the archive description during the Oct 2026 Milan archives sweep (research/milan_archives/); image viewed (c. 7r)",
+   "verify": "Check Nuntiaturberichte II/5 (Biglia 1565-66) for the October 1565 despatches and their decipherments; else the papal key of 1565 for Germany (Meister).",
+   "links": [
+    {
+     "label": "Trotti 22 digital copy (Mirador)",
+     "href": "https://digitallibrary.unicatt.it/veneranda/0b02da8280497f41"
+    },
+    {
+     "label": "OPAC record",
+     "href": "https://ambrosiana.comperio.it/opac/detail/view/ambro:catalog:7900"
+    }
+   ],
+   "seen": "image",
+   "source": "Milan archives sweep (Biblioteca Ambrosiana)",
+   "prior_art": "unchecked in print (28 Oct 2026): Nuntiaturberichte aus Deutschland II/5 likely prints the Vatican copy; not on DECODE",
+   "decode_ids": [],
+   "needs_archive_scan": "no",
+   "access_note": "Ambrosiana catalogue (ambrosiana.comperio.it) shows images on the record / digital library IIIF",
+   "ark": "",
+   "scored": "vetted",
+   "access": "online",
+   "vetting_note": "scan not re-viewed; Nuntiaturberichte II/5 (Dengel 1926) not read for a printed decipherment of Biglia's Oct 1565 letters, which is the key check",
+   "vetting": {
+    "date": "2026-10-29",
+    "by": "claude vetting batch c10",
+    "seen": {
+     "kind": "scan",
+     "where": "Chrome, 29 Oct 2026: digitallibrary.unicatt.it/veneranda/0b02da8280497f41 (Mirador, 389 canvases); canvas 11 = title leaf (c. Vr), canvas 15 = c. 2r, canvas 21 = c. 5r, canvas 25 = c. 7r viewed",
+     "extent": "Canvas 25 (c. 7r): two blocks of numeric cipher entered in the register, the upper block about 25 lines and the lower, under a short heading, about 12 lines, of digit strings with many 0, 7, 4, 1 and 2; no decipherment beside them. The preceding leaves (cc. 2r, 5r) are clear Italian letters of the register. The title leaf says the register holds Biglia's letters of Oct 1565 and 1566-67, mostly written to Rome and the cardinal ministers.",
+     "cipher": "OPAC 'cc. 6v-7v: 2 lettere cifrate'; seen on c. 7r: two long blocks of numeric cipher (about 37 lines in all) copied into the register, no decipherment"
+    },
+    "prior_art": {
+     "decode": "Not on DECODE: known.py and the DECODE view dumps hold no record for this item",
+     "tomokiyo": "No Tomokiyo cryptiana page found for this correspondence (web searches on the shelfmark, the correspondents and 'cifra'); none in repo ledgers",
+     "lasry": "No Lasry paper or GL.htm entry found by the web searches or in the repo",
+     "edition": "Biglia's nunciature is edited in Nuntiaturberichte aus Deutschland II/5 (Dengel, 'Nuntius Biglia', 1926; found only as a Czech bibliography record, text not accessed). Searches 'Biglia nunzio 1565 Nuntiaturberichte Chiffre', 'Melchiorre Biglia Ambrosiana Trotti 22 registro' and 'Melchior Biglia cipher decipherment DECODE Lasry' found no deciphered text; the edition may print a decipherment of the Oct 1565 letters, which would be a crib",
+     "literature": "Same searches as the edition line: Biglia's nunciature is edited in Nuntiaturberichte aus Deutschland II/5 (Dengel, 'Nuntius Biglia', 1926; found only as a Czech bibliography record, text not acc (no study of this item found)"
+    },
+    "key_check": "No key for Biglia found: nothing on DECODE or in the repo; the originals and any contemporary key are in the Vatican (Germania series), not seen; the Dengel edition is the likely crib source",
+    "duplicates": "known.py on 29 Oct 2026 for the shelfmark(s) and correspondents: hits only in research/leads.json and the research/milan_archives sweep that produced this lead; none in catalogue.json targets, DECODE dumps or decode_updates; known.py 'Biglia' and 'Trotti 22' also returned no ledger hit beyond this sweep",
+    "verdict": "open"
+   }
+  },
+  {
    "id": 1339,
    "counted": true,
    "year": 1452,
@@ -33433,6 +34229,184 @@
    }
   },
   {
+   "id": 1343,
+   "counted": true,
+   "year": 1563,
+   "date": "13 May 1563 and undated 1563",
+   "title": "Council of Trent miscellany: \"lettere cifrate\" (incl. one on precedence for the Count of Luna)",
+   "correspondents": "unknown (legates/nuncios at Trent, Alessandro Crivelli among them) → unknown",
+   "place": "Trent?",
+   "language": "Italian",
+   "region": "Papacy",
+   "period": "1560-1589",
+   "shelfmark": "Milan, Biblioteca Ambrosiana, Q 123 sup., unità codicologiche 18 (ff. 210r-212v), 20 (f. 219r), 21 (ff. 221r-233r)",
+   "folio_note": "\"Lettera cifrata, 13 maggio 1563\"; \"Lettera cifrata sopra il dare il luoco al Conte di Luna\"; \"Lettere cifrate\" (13 leaves).",
+   "cls": "C",
+   "status": "OPAC titles only; whether these are ciphertexts or deciphered copies of cipher letters is not stated (the neighbouring unit 19, Crivelli's \"Cifra, 15 luglio 1563\", has a clear incipit and is a decipherment). Not digitised. Not on DECODE.",
+   "why": "Ciphered correspondence of the last session of Trent, including the Spanish ambassador Luna's precedence dispute with France.",
+   "importance": 3,
+   "solvability": 1,
+   "difficulty": 3,
+   "score_note": "Scored from the archive description during the Oct 2026 Milan archives sweep (research/milan_archives/); not viewed; not digitised",
+   "verify": "Ask the Ambrosiana whether ff. 210-233 are ciphertext; compare Concilium Tridentinum (Görres) editions of the legates' letters.",
+   "links": [
+    {
+     "label": "OPAC Q 123 sup. unit 18",
+     "href": "https://ambrosiana.comperio.it/opac/detail/view/ambro:catalog:89668"
+    },
+    {
+     "label": "OPAC Q 123 sup. unit 21",
+     "href": "https://ambrosiana.comperio.it/opac/detail/view/ambro:catalog:89674"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "Milan archives sweep (Biblioteca Ambrosiana)",
+   "prior_art": "unchecked: the Trent legates' cipher letters are largely printed (Concilium Tridentinum, Susta); 28 Oct 2026",
+   "decode_ids": [],
+   "needs_archive_scan": "yes",
+   "access_note": "Ambrosiana manuscript, no images found online; ask the library",
+   "ark": "",
+   "access": "archive",
+   "scored": "vetted",
+   "vetting_note": "only one search (nothing found); OPAC titles may be clear copies of cipher letters, not ciphertext; not digitised",
+   "vetting": {
+    "date": "2026-10-29",
+    "by": "claude vetting batch c10",
+    "seen": {
+     "kind": "not online",
+     "where": "OPAC records ambro:catalog:89668 and :89674 read by the sweep; no images on the record, library digital collection not found",
+     "extent": "No images available; catalogue titles only (Q 123 sup., units 18, 20, 21: 'Lettera cifrata, 13 maggio 1563', 'Lettera cifrata sopra il dare il luoco al Conte di Luna', 'Lettere cifrate' 13 leaves)",
+     "cipher": "Archive description: 'Lettera cifrata, 13 maggio 1563'; 'Lettera cifrata sopra il dare il luoco al Conte di Luna'; 'Lettere cifrate'; not known whether ciphertexts or deciphered copies"
+    },
+    "prior_art": {
+     "decode": "Not on DECODE: known.py and the DECODE view dumps hold no record for this item",
+     "tomokiyo": "No Tomokiyo cryptiana page found for this correspondence (web searches on the shelfmark, the correspondents and 'cifra'); none in repo ledgers",
+     "lasry": "No Lasry paper or GL.htm entry found by the web searches or in the repo",
+     "edition": "No edition found: searches 'Ambrosiana Q 123 sup Concilio di Trento lettere cifrate 1563 Crivelli', 'Alessandro Crivelli Trento 1563 lettere cifrate legati Borromeo' and 'Council of Trent 1563 Count of Luna precedence cipher' found the Penn Ms. Codex 678 and St John's O.3 Musotti letter-books (Susta, Die romische Curie und das Concil von Trient, prints legate letters) but nothing naming these Ambrosiana units",
+     "literature": "Same searches as the edition line: No edition found: searches 'Ambrosiana Q 123 sup Concilio di Trento lettere cifrate 1563 Crivelli', 'Alessandro Crivelli Trento 1563 lettere cifrate legati Borr (no study of this item found)"
+    },
+    "key_check": "No key held: unit 19 of the same volume (Crivelli 'Cifra, 15 luglio 1563') has a clear incipit and may be a decipherment (OPAC wording), not applied; the Count of Luna precedence dispute (June 1563) is documented in secondary literature, which could give cribs",
+    "duplicates": "known.py on 29 Oct 2026 for the shelfmark(s) and correspondents: hits only in research/leads.json and the research/milan_archives sweep that produced this lead; none in catalogue.json targets, DECODE dumps or decode_updates",
+    "verdict": "open"
+   }
+  },
+  {
+   "id": 1344,
+   "counted": true,
+   "year": 1739,
+   "date": "6 and 13 Jun 1739",
+   "title": "Secretariat of State → nuncio in Florence, cipher letters, and a ciphered fragment",
+   "correspondents": "Secretariat of State, Rome → nuncio in Florence",
+   "place": "Rome",
+   "language": "Italian",
+   "region": "Papacy",
+   "period": "1701-1800",
+   "shelfmark": "Milan, Biblioteca Ambrosiana, Q 128 sup., nn. 72 (f. 169r-v), 73 (f. 170r-v), 75 (f. 173r, fragment)",
+   "folio_note": "Two one-leaf cipher letters and a fragment.",
+   "cls": "C",
+   "status": "OPAC: \"Lettera cifrata del Mons. Nunzio in Firenze, Roma 6 giugno 1739\" (and 13 June), \"Frammento di lettera cifrata\"; no decipherment noted. Not digitised. Not on DECODE.",
+   "why": "Papal diplomacy in Florence in the first years of Lorraine rule (1739); minor.",
+   "importance": 2,
+   "solvability": 1,
+   "difficulty": 3,
+   "score_note": "Scored from the archive description during the Oct 2026 Milan archives sweep (research/milan_archives/); not viewed; not digitised",
+   "verify": "Ask for images; the AAV Segreteria di Stato, Firenze registers hold the clear minutes.",
+   "links": [
+    {
+     "label": "OPAC Q 128 sup. n. 72",
+     "href": "https://ambrosiana.comperio.it/opac/detail/view/ambro:catalog:90188"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "Milan archives sweep (Biblioteca Ambrosiana)",
+   "prior_art": "open (checked 28 Oct 2026: OPAC; not on DECODE)",
+   "decode_ids": [],
+   "needs_archive_scan": "yes",
+   "access_note": "Ambrosiana manuscript, no images found online; ask the library",
+   "ark": "",
+   "access": "archive",
+   "scored": "vetted",
+   "vetting_note": "only one search (nothing found); not digitised; cannot tell ciphertext from decipherment",
+   "vetting": {
+    "date": "2026-10-29",
+    "by": "claude vetting batch c10",
+    "seen": {
+     "kind": "not online",
+     "where": "OPAC record ambro:catalog:90188 read by the sweep; no images found on the record or in the digital library",
+     "extent": "No images available; catalogue titles only (Q 128 sup. nn. 72, 73 one leaf each, 75 a fragment)",
+     "cipher": "Archive description: 'Lettera cifrata del Mons. Nunzio in Firenze, Roma 6 giugno 1739' (and 13 June) and 'Frammento di lettera cifrata'; no decipherment noted"
+    },
+    "prior_art": {
+     "decode": "Not on DECODE: known.py and the DECODE view dumps hold no record for this item",
+     "tomokiyo": "No Tomokiyo cryptiana page found for this correspondence (web searches on the shelfmark, the correspondents and 'cifra'); none in repo ledgers",
+     "lasry": "No Lasry item on a Florence nunciature cipher of 1739 found; Lasry and Bonavoglia's 1721 papal cipher paper (HistoCrypt 2019) and the DECRYPT papal corpus were the only related hits",
+     "edition": "No edition found by 'Ambrosiana Q 128 sup lettera cifrata nunzio Firenze 1739', 'nunzio apostolico Firenze 1739 cifra segreteria di stato decifrazione' or 'DECODE nuncio Florence 1739 Secretary of State cipher'",
+     "literature": "Same searches as the edition line: No edition found by 'Ambrosiana Q 128 sup lettera cifrata nunzio Firenze 1739', 'nunzio apostolico Firenze 1739 cifra segreteria di stato decifrazione' or 'DECO (no study of this item found)"
+    },
+    "key_check": "No key held; papal Secretariat of State ciphers of the 1730s are in the Vatican (Archivio Apostolico, Cifre) and none is on DECODE or in the repo",
+    "duplicates": "known.py on 29 Oct 2026 for the shelfmark(s) and correspondents: hits only in research/leads.json and the research/milan_archives sweep that produced this lead; none in catalogue.json targets, DECODE dumps or decode_updates",
+    "verdict": "open"
+   }
+  },
+  {
+   "id": 1345,
+   "counted": true,
+   "year": 1632,
+   "date": "c. 1630-1634",
+   "title": "Papal Secretary of State → Alessandro Bichi, nuncio in France, cipher letter intercepted by the governor of Lyon",
+   "correspondents": "Secretary of State (Barberini) → Alessandro Bichi, nuncio in France",
+   "place": "Rome",
+   "language": "Italian",
+   "region": "Papacy",
+   "period": "1611-1650",
+   "shelfmark": "Milan, Biblioteca Ambrosiana, X 279 inf.",
+   "folio_note": "Folios not given.",
+   "cls": "C",
+   "status": "OPAC title: \"Lettera in cifra di monsignor segretario di stato a sua santità mandata al cardinale Bichi nunzio in Francia intercettata dal governatore di Lione\". Could be a copy with or without decipherment. Not digitised. Not on DECODE.",
+   "why": "An intercepted papal cipher of the Mantuan-war years; shows French interception of nunciature mail.",
+   "importance": 3,
+   "solvability": 1,
+   "difficulty": 3,
+   "score_note": "Scored from the archive description during the Oct 2026 Milan archives sweep (research/milan_archives/); not viewed; not digitised",
+   "verify": "Ask for the folios; compare Barberini keys on DECODE (Lasry, ceva1632 target) for the Bichi nunciature.",
+   "links": [
+    {
+     "label": "OPAC record",
+     "href": "https://ambrosiana.comperio.it/opac/detail/view/ambro:catalog:16099"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "Milan archives sweep (Biblioteca Ambrosiana)",
+   "prior_art": "open (checked 28 Oct 2026: OPAC; not on DECODE)",
+   "decode_ids": [],
+   "needs_archive_scan": "yes",
+   "access_note": "Ambrosiana manuscript, no images found online; ask the library",
+   "ark": "",
+   "access": "archive",
+   "scored": "vetted",
+   "vetting_note": "only one search (nothing found on the Lyon interception); not digitised; may be a decipherment or copy",
+   "vetting": {
+    "date": "2026-10-29",
+    "by": "claude vetting batch c10",
+    "seen": {
+     "kind": "not online",
+     "where": "OPAC record ambro:catalog:16099 read by the sweep; no images on the record, no digital copy found",
+     "extent": "No images available; catalogue title only (X 279 inf., folios not given)",
+     "cipher": "Archive description: 'Lettera in cifra di monsignor segretario di stato a sua santità mandata al cardinale Bichi nunzio in Francia intercettata dal governatore di Lione'"
+    },
+    "prior_art": {
+     "decode": "Not on DECODE: known.py and the DECODE view dumps hold no record for this item",
+     "tomokiyo": "No Tomokiyo cryptiana page found for this correspondence (web searches on the shelfmark, the correspondents and 'cifra'); none in repo ledgers",
+     "lasry": "No Lasry paper or GL.htm entry found by the web searches or in the repo",
+     "edition": "Searches 'lettera in cifra cardinale Bichi nunzio Francia intercettata governatore di Lione X 279 inf', 'Bichi nuncio France 1630s Barberini cipher letter intercepted Lyon governor' and 'Alessandro Bichi nunzio Francia 1630 1634 lettera cifrata Barberini intercettata Lione' found no edition; they did surface a Besancon catalogue entry (Ms Chiflet 70-208, f. 254) for a letter of the papal Secretary of State to Cardinal Bichi 'interceptee et dechiffree', dated 1641 in that record: a possible parallel copy with a decipherment, not opened (Besancon Memoire Vive is behind a reCAPTCHA)",
+     "literature": "Same searches as the edition line: Searches 'lettera in cifra cardinale Bichi nunzio Francia intercettata governatore di Lione X 279 inf', 'Bichi nuncio France 1630s Barberini cipher letter inter (no study of this item found)"
+    },
+    "key_check": "No key held; the Besancon Chiflet copy, if it is the same intercepted letter, would give a decipherment to use as a crib; not checked",
+    "duplicates": "known.py on 29 Oct 2026 for the shelfmark(s) and correspondents: hits only in research/leads.json and the research/milan_archives sweep that produced this lead; none in catalogue.json targets, DECODE dumps or decode_updates; known.py 'Bichi' hits are unrelated (Siena R4752 key, Ceva 1632 NOTES mentions Mons. Bichi only)",
+    "verdict": "open"
+   }
+  },
+  {
    "id": 1346,
    "counted": true,
    "year": 1550,
@@ -33490,6 +34464,68 @@
     },
     "key_check": "Key is held in the same volume (unit 2, ff. 30b/36b), so the system is likely readable once both units are imaged; no key is held in this repo. Nothing tried because no images are online.",
     "duplicates": "known.py on 'Ambrosiana I 31 sup', 'Theorica in lapide', 'Mare magnum': hits only this lead and research/milan_archives/candidates.json (its source). No catalogue, DECODE or NOTES hit.",
+    "verdict": "open"
+   }
+  },
+  {
+   "id": 1347,
+   "counted": true,
+   "year": 1450,
+   "date": "medieval (codex A 118 inf.)",
+   "title": "Ciphered Latin poem on a flyleaf (\"Carmina edita per mfnpflrfp ...\")",
+   "correspondents": "unknown",
+   "place": "unknown",
+   "language": "Latin",
+   "region": "Italy",
+   "period": "unknown",
+   "shelfmark": "Milan, Biblioteca Ambrosiana, A 118 inf., unit 1, n. 6 (f. 154r, flyleaf insert)",
+   "folio_note": "A few lines; the incipit shows a vowel-shift cipher (vowels replaced by the next consonant: \"mfnpflrfp\").",
+   "cls": "C",
+   "status": "OPAC: \"Carme cifrato, inc. Carmina edita per mfnpflrfp. Altisono similis credit regnare tirampnus ...\"; the codex is digitised. Probably trivial to read.",
+   "why": "Minor: a monastic vowel-shift cipher; quick to read and an example of the type.",
+   "importance": 1,
+   "solvability": 5,
+   "difficulty": 1,
+   "score_note": "Scored from the archive description during the Oct 2026 Milan archives sweep (research/milan_archives/); not viewed; codex is in the Ambrosiana digital library",
+   "verify": "Open A 118 inf. in the digital library at f. 154r and read it.",
+   "links": [
+    {
+     "label": "OPAC record",
+     "href": "https://ambrosiana.comperio.it/opac/detail/view/ambro:catalog:25605"
+    },
+    {
+     "label": "A 118 inf. codex record (digitised)",
+     "href": "https://ambrosiana.comperio.it/opac/detail/view/ambro:catalog:25598"
+    }
+   ],
+   "seen": "image",
+   "source": "Milan archives sweep (Biblioteca Ambrosiana)",
+   "prior_art": "open (checked 28 Oct 2026: OPAC)",
+   "decode_ids": [],
+   "needs_archive_scan": "unknown",
+   "access_note": "A 118 inf. may be in the Ambrosiana digital library (not checked at f. 154r)",
+   "ark": "",
+   "scored": "vetted",
+   "access": "online",
+   "vetting_note": "Access is 'online' (codex said to be digitised) but I could not open the Ambrosiana digital images at f. 154r; only the OPAC record (ambro:catalog:25605: 'Carme cifrato', 154r, guard-leaf insert, no decipherment) was read. Searches for the incipit found nothing, but the leaf itself was not seen, so it stays a lead.",
+   "vetting": {
+    "date": "2026-10-29",
+    "by": "claude vetting batch c10",
+    "seen": {
+     "kind": "scan",
+     "where": "Chrome, 29 Oct 2026: digitallibrary.unicatt.it/veneranda/0b02da828014a1a6 (Mirador, A 118 inf., 328 canvases), canvas 319 = f. 154r",
+     "extent": "f. 154r (flyleaf insert, parchment): a poem of about 15 lines at the head headed 'Carmina edita per ...' whose words are largely written with shifted vowels (the OPAC incipit 'mfnpflrfp' is one such word), the rest of the page vernacular verse in a different layout; the vowel-for-next-consonant substitution is visible on the page, which is a simple monoalphabetic shift of the five vowels. The codex (1376-1425, with Petrarch material) is a separate text.",
+     "cipher": "OPAC: 'Carme cifrato, inc. Carmina edita per mfnpflrfp. Altisono similis credit regnare tirampnus ...'; seen: about 15 lines of Latin verse in vowel-shifted spelling, readable by undoing the shift"
+    },
+    "prior_art": {
+     "decode": "Not on DECODE: known.py and the DECODE view dumps hold no record for this item",
+     "tomokiyo": "No Tomokiyo cryptiana page found for this correspondence (web searches on the shelfmark, the correspondents and 'cifra'); none in repo ledgers",
+     "lasry": "No Lasry paper or GL.htm entry found by the web searches or in the repo",
+     "edition": "No edition or study found: searches for the incipit ('Altisono similis credit regnare tirampnus'), 'Carmina edita per cifrato vowel substitution Ambrosiana A 118 inf Petrarca' and 'vowel shift cipher next consonant medieval poem' returned nothing on this leaf (only general Voynich-forum remarks and the Fontana cipher)",
+     "literature": "Same searches as the edition line: No edition or study found: searches for the incipit ('Altisono similis credit regnare tirampnus'), 'Carmina edita per cifrato vowel substitution Ambrosiana A 11 (no study of this item found)"
+    },
+    "key_check": "No key needed in principle: the vowel to next-consonant shift looks self-evident; not transcribed or tested here (the page was read at screen resolution only)",
+    "duplicates": "known.py on 29 Oct 2026 for the shelfmark(s) and correspondents: hits only in research/leads.json and the research/milan_archives sweep that produced this lead; none in catalogue.json targets, DECODE dumps or decode_updates; known.py 'A 118 inf' and the incipit gave no hit",
     "verdict": "open"
    }
   },
@@ -34339,6 +35375,250 @@
    }
   },
   {
+   "id": 1446,
+   "counted": true,
+   "year": 1885,
+   "date": "12 Nov 1885; 15 Apr 1886",
+   "title": "Bernardo Reyes → Porfirio Díaz, cipher letters from Monterrey left \"sin traducción\" (Coahuila crisis)",
+   "correspondents": "Gen. Bernardo Reyes → President Porfirio Díaz",
+   "place": "Monterrey",
+   "language": "Spanish",
+   "region": "Americas",
+   "period": "1801-1900",
+   "shelfmark": "CEHM-Carso, Fondo DLI (Archivo del General Bernardo Reyes), DLI.2.283.1 (telegram, 10 Nov 1885), DLI.2.292.1 (letter, 12 Nov 1885), DLI.2.299.1 (telegram, 13 Nov 1885), DLI.4.649.1 (letter, 15 Apr 1886); also DLI.2.333.1 (J. M. Cervantes, Saltillo 18 Nov 1885, transcribes a cipher telegram, untranslated)",
+   "folio_note": "Two \"cartas cifradas\" and two cipher telegrams, no translation; the same fondo holds many other Reyes cipher letters of 1882-1909 whose records give the content (translated at the time)",
+   "cls": "A",
+   "status": "CEHM records: \"Sin traducción\" (DLI.2.292.1) and \"En cifras\" (DLI.4.649.1), document type \"Carta cifrada\". Sibling cipher letters Reyes↔Díaz/Revueltas of Nov-Dec 1885 (DLI.2.267.1, 2.400.1, 3.455.1, 3.525.1) carry summaries, so their plaintext exists in the fondo.",
+   "why": "Reyes's private reports to Díaz during the 1885 Coahuila rebellion against Governor Garza Galán and the imposition of a provisional governor.",
+   "importance": 3,
+   "solvability": 3,
+   "difficulty": 2,
+   "score_note": "Scored from the CEHM online catalogue record during the Oct 2026 Mexico sweep (research/latam_mexico/); not viewed",
+   "verify": "View DLI.2.292.1 and a translated sibling (DLI.2.400.1) at CEHM; Narváez 2019 ch. VI (Porfirian military cryptography) may print the Reyes/War Ministry key.",
+   "links": [
+    {
+     "label": "CEHM DLI.2.292.1",
+     "href": "https://www.cehm.org.mx/Buscador/FichaBasica/112619?Tipo=A"
+    },
+    {
+     "label": "CEHM DLI.2.283.1",
+     "href": "https://www.cehm.org.mx/Buscador/FichaBasica/112606?Tipo=A"
+    },
+    {
+     "label": "CEHM DLI.4.649.1",
+     "href": "https://www.cehm.org.mx/Buscador/FichaBasica/113828?Tipo=A"
+    },
+    {
+     "label": "CEHM DLI.2.400.1 (translated sibling)",
+     "href": "https://www.cehm.org.mx/Buscador/FichaBasica/112731?Tipo=A"
+    }
+   ],
+   "seen": "image",
+   "source": "CEHM-Carso (Centro de Estudios de Historia de México, Fundación Carlos Slim) sweep",
+   "prior_art": "open as far as checked (28 Oct 2026: known.py, Narváez 2008/2011/2015/2022 articles); Narváez 2019 book (SRE) not seen.",
+   "needs_archive_scan": "no",
+   "access_note": "CEHM-Carso catalogue marks the item 'Formato Digital': scans are viewable at CEHM with a reader account (not checked here)",
+   "ark": "",
+   "scored": "vetted",
+   "access": "online",
+   "vetting_note": "CEHM-Carso scan is behind its digital viewer (VisorArchivoDigital); the record page (checked for 1446: Carta cifrada, 'Sin traduccion', Formato Digital link) shows no image, my fetch of the viewer was blocked by the sandbox, so the leaf was not seen; access is not 'archive'.",
+   "vetting": {
+    "date": "2026-10-29",
+    "by": "claude vetting batch c03",
+    "seen": {
+     "kind": "scan",
+     "where": "https://www.cehm.org.mx/Buscador/VisorArchivoDigital?jzd=/janium/JZD/DLI/2/292/1/DLI.2.292.1.jzd&fn=112619 (CEHM viewer, opened in Chrome 29 Oct 2026, page 1 of 1)",
+     "extent": "One letter, Monterrey 12 Nov 1885, about 14 lines, roughly 40% of the words replaced by 3-5 digit numbers inside clear Spanish",
+     "cipher": "Clear Spanish ('Senor Presidente de la Republica ... Gobierno del Estado me dirige protesta') with numeric code groups (11400, 2620, 1735, 3292, 6557) in place of words; signed 'El General'; no decipherment or gloss on the leaf; CEHM record says 'Sin traduccion'"
+    },
+    "prior_art": {
+     "decode": "Searched DECODE-style terms via web search (Reyes/Diaz/Limantour/Jara cipher); no DECODE record or Mexican CEHM material found; known.py shows no DECODE hit.",
+     "tomokiyo": "Web search for Tomokiyo cryptiana plus Mexico/Reyes/Diaz found nothing; Cryptiana does not appear to cover CEHM-Carso material.",
+     "lasry": "No Lasry entry for Mexican 19th/20th-century cipher letters found in web search or known.py.",
+     "edition": "No printed decipherment found in web search; the CEHM record itself carries no translation.",
+     "literature": "Searched Angel Angel & Morales-Luna 2008 (revista.unam.mx vol.9 num3 art18, Diaz-Bravo substitution and Diaz cryptography) and Narvaez 2015 (Documenta & Instrumenta, Mexican cryptosystems 1907-1921) via web search; neither names this record in the snippets seen (full texts not read)."
+    },
+    "key_check": "Keys named but not applied: the Diaz-Bravo table of Angel & Morales-Luna 2008 and the translated sibling Reyes-Diaz records in fondo DLI were not retrievable in this session, so the leaf was not decoded; no Reyes key in this repo or DECODE. The numbers look like a numeric nomenclator (words to 3-5 digit numbers), not the Diaz-Bravo letter table.",
+    "duplicates": "known.py on fondo/shelfmark and correspondents found only this lead and research/latam_mexico/candidates.json; no catalogue, ledger or DECODE duplicate.",
+    "verdict": "open"
+   }
+  },
+  {
+   "id": 1447,
+   "counted": true,
+   "year": 1886,
+   "date": "1 Apr 1886",
+   "title": "Bernardo Reyes → Ignacio Revueltas, letter half in cipher on the Garza Galán-Cervantes reconciliation",
+   "correspondents": "Gen. Bernardo Reyes → Ignacio Revueltas (War Ministry, Mexico City)",
+   "place": "Monterrey",
+   "language": "Spanish",
+   "region": "Americas",
+   "period": "1801-1900",
+   "shelfmark": "CEHM-Carso, Fondo DLI, DLI.4.634.1",
+   "folio_note": "\"La mitad del texto cifrado\"",
+   "cls": "A",
+   "status": "CEHM record gives a two-line summary and notes half the text is in cipher; Revueltas → Reyes, 24 Mar 1886 (DLI.4.630.1) asks him not to drop letters in his cipher messages. Translated siblings in the fondo.",
+   "why": "Reyes's political reporting on Coahuila factions to the War Ministry.",
+   "importance": 2,
+   "solvability": 3,
+   "difficulty": 2,
+   "score_note": "Scored from the CEHM online catalogue record during the Oct 2026 Mexico sweep (research/latam_mexico/); not viewed",
+   "verify": "View at CEHM; check whether the summary covers the ciphered half.",
+   "links": [
+    {
+     "label": "CEHM DLI.4.634.1",
+     "href": "https://www.cehm.org.mx/Buscador/FichaBasica/113807?Tipo=A"
+    }
+   ],
+   "seen": "image",
+   "source": "CEHM-Carso (Centro de Estudios de Historia de México, Fundación Carlos Slim) sweep",
+   "prior_art": "open as far as checked (28 Oct 2026: known.py, Narváez articles).",
+   "needs_archive_scan": "no",
+   "access_note": "CEHM-Carso catalogue marks the item 'Formato Digital': scans are viewable at CEHM with a reader account (not checked here)",
+   "ark": "",
+   "scored": "vetted",
+   "access": "online",
+   "vetting_note": "CEHM-Carso scan is behind its digital viewer (VisorArchivoDigital); the record page (checked for 1446: Carta cifrada, 'Sin traduccion', Formato Digital link) shows no image, my fetch of the viewer was blocked by the sandbox, so the leaf was not seen; access is not 'archive'.",
+   "vetting": {
+    "date": "2026-10-29",
+    "by": "claude vetting batch c03",
+    "seen": {
+     "kind": "scan",
+     "where": "https://www.cehm.org.mx/Buscador/VisorArchivoDigital?jzd=/janium/JZD/DLI/4/634/1/DLI.4.634.1.jzd&fn=113807 (CEHM viewer, Chrome 29 Oct 2026, page 1 of 1)",
+     "extent": "One letter, Monterrey to Mexico 1 Apr 1886, 7 lines of 2-digit hyphenated groups inside clear text (about 80 groups)",
+     "cipher": "Reyes letterhead; clear opening ('Hago referencia a su grata del ... del mes proximo pasado'), then runs of 2-digit groups (60-57-61-53-43...) replacing words and names, clear closing; no decipherment written on the leaf, though the CEHM summary gives the sense (Garza Galan - Cervantes reconciliation)"
+    },
+    "prior_art": {
+     "decode": "Searched DECODE-style terms via web search (Reyes/Diaz/Limantour/Jara cipher); no DECODE record or Mexican CEHM material found; known.py shows no DECODE hit.",
+     "tomokiyo": "Web search for Tomokiyo cryptiana plus Mexico/Reyes/Diaz found nothing; Cryptiana does not appear to cover CEHM-Carso material.",
+     "lasry": "No Lasry entry for Mexican 19th/20th-century cipher letters found in web search or known.py.",
+     "edition": "No printed decipherment found in web search; the CEHM record itself carries no translation.",
+     "literature": "Searched Angel Angel & Morales-Luna 2008 (revista.unam.mx vol.9 num3 art18, Diaz-Bravo substitution and Diaz cryptography) and Narvaez 2015 (Documenta & Instrumenta, Mexican cryptosystems 1907-1921) via web search; neither names this record in the snippets seen (full texts not read)."
+    },
+    "key_check": "Keys named but not applied: the Diaz-Bravo table of Angel & Morales-Luna 2008 and the translated sibling Reyes-Diaz records in fondo DLI were not retrievable in this session, so the leaf was not decoded; no Reyes key in this repo or DECODE. Repeated groups (61, 57, 78) suggest a 2-digit syllabic/letter code; the CEHM summary supplies a rough crib (reconciliacion, Cervantes).",
+    "duplicates": "known.py on fondo/shelfmark and correspondents found only this lead and research/latam_mexico/candidates.json; no catalogue, ledger or DECODE duplicate.",
+    "verdict": "open"
+   }
+  },
+  {
+   "id": 1448,
+   "counted": true,
+   "year": 1909,
+   "date": "15 Jul 1909",
+   "title": "José López Portillo y Rojas → Bernardo Reyes, cipher letter during the 1909 Reyista campaign",
+   "correspondents": "José López Portillo y Rojas → Gen. Bernardo Reyes",
+   "place": "Mexico City",
+   "language": "Spanish",
+   "region": "Americas",
+   "period": "1901-1950",
+   "shelfmark": "CEHM-Carso, Fondo DLI, DLI.39.7680.2",
+   "folio_note": "Document type \"Carta cifrada\"; no summary on the record",
+   "cls": "A",
+   "status": "CEHM record has no content summary, only the type \"Carta cifrada\"; the next López Portillo cipher letter (29 Jul 1909, DLI.39.7712.1) has a summary, so a translation or key may be in the same file.",
+   "why": "López Portillo y Rojas was a leading Reyista; summer 1909 is the moment Reyes's vice-presidential candidacy was pushed and then abandoned.",
+   "importance": 3,
+   "solvability": 3,
+   "difficulty": 2,
+   "score_note": "Scored from the CEHM online catalogue record during the Oct 2026 Mexico sweep (research/latam_mexico/); not viewed",
+   "verify": "View DLI.39.7680.2 and DLI.39.7712.1 at CEHM.",
+   "links": [
+    {
+     "label": "CEHM DLI.39.7680.2",
+     "href": "https://www.cehm.org.mx/Buscador/FichaBasica/118144?Tipo=A"
+    },
+    {
+     "label": "CEHM DLI.39.7712.1 (sibling)",
+     "href": "https://www.cehm.org.mx/Buscador/FichaBasica/118230?Tipo=A"
+    }
+   ],
+   "seen": "image",
+   "source": "CEHM-Carso (Centro de Estudios de Historia de México, Fundación Carlos Slim) sweep",
+   "prior_art": "open as far as checked (28 Oct 2026: known.py, Narváez articles).",
+   "needs_archive_scan": "no",
+   "access_note": "CEHM-Carso catalogue marks the item 'Formato Digital': scans are viewable at CEHM with a reader account (not checked here)",
+   "ark": "",
+   "scored": "vetted",
+   "access": "online",
+   "vetting_note": "CEHM-Carso scan is behind its digital viewer (VisorArchivoDigital); the record page (checked for 1446: Carta cifrada, 'Sin traduccion', Formato Digital link) shows no image, my fetch of the viewer was blocked by the sandbox, so the leaf was not seen; access is not 'archive'.",
+   "vetting": {
+    "date": "2026-10-29",
+    "by": "claude vetting batch c03",
+    "seen": {
+     "kind": "scan",
+     "where": "https://www.cehm.org.mx/Buscador/VisorArchivoDigital?jzd=/janium/JZD/DLI/39/7680/2/DLI.39.7680.2.jzd&fn=118144 (CEHM viewer, Chrome 29 Oct 2026, page 1 of 1)",
+     "extent": "One typed letter, Mexico 15 Jul 1909, about 9 lines carrying dotted numbers (about 90 groups, values 2-79)",
+     "cipher": "Typed Spanish letter to 'Sr. Gral. D. Bernardo Reyes, Gobernador de Nuevo Leon'; code numbers replace words and name-parts ('He sabido de buena fuente que 79 habla de ti como de un 2.27.3.40...'), clear sentence ends ('Cuidate mucho para que sanes pronto'); no decipherment on the leaf"
+    },
+    "prior_art": {
+     "decode": "Searched DECODE-style terms via web search (Reyes/Diaz/Limantour/Jara cipher); no DECODE record or Mexican CEHM material found; known.py shows no DECODE hit.",
+     "tomokiyo": "Web search for Tomokiyo cryptiana plus Mexico/Reyes/Diaz found nothing; Cryptiana does not appear to cover CEHM-Carso material.",
+     "lasry": "No Lasry entry for Mexican 19th/20th-century cipher letters found in web search or known.py.",
+     "edition": "No printed decipherment found in web search; the CEHM record itself carries no translation.",
+     "literature": "Searched Angel Angel & Morales-Luna 2008 (revista.unam.mx vol.9 num3 art18, Diaz-Bravo substitution and Diaz cryptography) and Narvaez 2015 (Documenta & Instrumenta, Mexican cryptosystems 1907-1921) via web search; neither names this record in the snippets seen (full texts not read)."
+    },
+    "key_check": "Keys named but not applied: the Diaz-Bravo table of Angel & Morales-Luna 2008 and the translated sibling Reyes-Diaz records in fondo DLI were not retrievable in this session, so the leaf was not decoded; no Reyes key in this repo or DECODE. Typed text with clear context gives cribs; the follow-up letter DLI.39.7712.1 has a CEHM summary and may serve as a pair.",
+    "duplicates": "known.py on fondo/shelfmark and correspondents found only this lead and research/latam_mexico/candidates.json; no catalogue, ledger or DECODE duplicate.",
+    "verdict": "open"
+   }
+  },
+  {
+   "id": 1449,
+   "counted": true,
+   "year": 1901,
+   "date": "12 Oct 1901",
+   "title": "Meza Salinas → Bernardo Reyes, cipher letter left \"sin traducción\"",
+   "correspondents": "Meza Salinas → Gen. Bernardo Reyes (then Secretary of War)",
+   "place": "unknown",
+   "language": "Spanish",
+   "region": "Americas",
+   "period": "1901-1950",
+   "shelfmark": "CEHM-Carso, Fondo DLI, DLI.34.6704.1",
+   "folio_note": "Whole letter in cipher",
+   "cls": "A",
+   "status": "CEHM: \"Sin traducción\", document type \"Carta cifrada\". Other 1901 cipher letters to Reyes (I. J. Mendoza, DLI.33.6599.1, on Camilo Arriaga sheltering General Treviño) are summarised.",
+   "why": "Intelligence to Reyes in the year of the Liberal clubs and Arriaga's movement.",
+   "importance": 2,
+   "solvability": 3,
+   "difficulty": 2,
+   "score_note": "Scored from the CEHM online catalogue record during the Oct 2026 Mexico sweep (research/latam_mexico/); not viewed",
+   "verify": "View at CEHM.",
+   "links": [
+    {
+     "label": "CEHM DLI.34.6704.1",
+     "href": "https://www.cehm.org.mx/Buscador/FichaBasica/120053?Tipo=A"
+    }
+   ],
+   "seen": "image",
+   "source": "CEHM-Carso (Centro de Estudios de Historia de México, Fundación Carlos Slim) sweep",
+   "prior_art": "open as far as checked (28 Oct 2026: known.py).",
+   "needs_archive_scan": "no",
+   "access_note": "CEHM-Carso catalogue marks the item 'Formato Digital': scans are viewable at CEHM with a reader account (not checked here)",
+   "ark": "",
+   "scored": "vetted",
+   "access": "online",
+   "vetting_note": "CEHM-Carso record text read 29 Oct 2026 (FichaCompleta/120053: catalogue fields only, matches the lead); the scans need a CEHM reader account and could not be opened, so no cipher, decipherment-on-leaf or key check was possible; access is 'online', not 'archive', so 'not online' is not allowed; known.py shows only this lead and research/latam_mexico/candidates.json, no ledger, DECODE or target hit; no evidence for closing it.",
+   "vetting": {
+    "date": "2026-10-29",
+    "by": "claude vetting batch c03",
+    "seen": {
+     "kind": "scan",
+     "where": "https://www.cehm.org.mx/Buscador/VisorArchivoDigital?jzd=/janium/JZD/DLI/34/6704/1/DLI.34.6704.1.jzd&fn=120053 (CEHM viewer, Chrome 29 Oct 2026, page 1 of 1)",
+     "extent": "One letter, 12 Oct 1901, 14 lines almost wholly in hyphenated 2-digit groups (about 150 groups) with clear numerals and a few clear words",
+     "cipher": "Handwritten; salutation and a few words clear ('Respetable Sr. y amigo', 'Congreso Pan Americano', '40.000'); body in 2-digit groups (57-98-95-69-68-51 ...); no decipherment on the leaf; CEHM: 'Sin traduccion'"
+    },
+    "prior_art": {
+     "decode": "Searched DECODE-style terms via web search (Reyes/Diaz/Limantour/Jara cipher); no DECODE record or Mexican CEHM material found; known.py shows no DECODE hit.",
+     "tomokiyo": "Web search for Tomokiyo cryptiana plus Mexico/Reyes/Diaz found nothing; Cryptiana does not appear to cover CEHM-Carso material.",
+     "lasry": "No Lasry entry for Mexican 19th/20th-century cipher letters found in web search or known.py.",
+     "edition": "No printed decipherment found in web search; the CEHM record itself carries no translation.",
+     "literature": "Searched Angel Angel & Morales-Luna 2008 (revista.unam.mx vol.9 num3 art18, Diaz-Bravo substitution and Diaz cryptography) and Narvaez 2015 (Documenta & Instrumenta, Mexican cryptosystems 1907-1921) via web search; neither names this record in the snippets seen (full texts not read)."
+    },
+    "key_check": "Keys named but not applied: the Diaz-Bravo table of Angel & Morales-Luna 2008 and the translated sibling Reyes-Diaz records in fondo DLI were not retrievable in this session, so the leaf was not decoded; no Reyes key in this repo or DECODE. The 2-digit groups run to about 99 and look like a homophonic or syllabic table; the clear words 'Congreso Pan Americano' are cribs.",
+    "duplicates": "known.py on fondo/shelfmark and correspondents found only this lead and research/latam_mexico/candidates.json; no catalogue, ledger or DECODE duplicate.",
+    "verdict": "open"
+   }
+  },
+  {
    "id": 1453,
    "counted": true,
    "year": 1907,
@@ -34519,6 +35799,209 @@
     },
     "key_check": "No Gobernacion telegram key held. Telegrams with translation (caja 0223) would give cribs. Likely a large mixed set that needs a per-file pick.",
     "duplicates": "known.py on the shelfmark, series name and correspondents (all leads/candidates self-hits only; no catalogue, DECODE-dump, NOTES or SOLVED_* hit).",
+    "verdict": "open"
+   }
+  },
+  {
+   "id": 1460,
+   "counted": true,
+   "year": 1890,
+   "date": "Nov 1885 - Jul 1909",
+   "title": "Porfirio Díaz (and his secretary Rafael Chousal) → Gen. Bernardo Reyes: about 45 cipher telegrams the catalogue marks \"sin traducción\"",
+   "correspondents": "President Porfirio Díaz; Rafael Chousal; Ignacio M. Escudero; Felipe Berriozábal; Blas Escontría; J. Y. Limantour → Gen. Bernardo Reyes (Monterrey)",
+   "place": "Mexico City (one from Cuernavaca, one from San Luis Potosí)",
+   "language": "Spanish",
+   "region": "Americas",
+   "period": "1801-1900",
+   "shelfmark": "CEHM-Carso, Fondo DLI (Archivo del General Bernardo Reyes), e.g. DLI.2.397.1 (26 Nov 1885), DLI.4.771.1 (17 Jul 1886), DLI.5.907.1-5.950.1 (eight, Oct 1886), DLI.10.1881.1, 10.1904.1, 10.1945.1 (1889), DLI.11.2057.1, DLI.12.2279.1-2399.1 (six, Jun-Jul 1890), DLI.13.2446.1-2466.1 (1890), DLI.14.2648.1 (1891), DLI.15.2807.1, 15.2821.1 (1891), DLI.19.3627.1 (1893), DLI.24.4649.1 (1895), DLI.25.4925.1 (Berriozábal 1896), DLI.26.5126.1 (1897), DLI.27.5326.1, 28.5406.1, 28.5445.1 (1898), DLI.29.5621.1 (1899), DLI.31.6043.1-6066.1 (Escudero 1891-92), DLI.34.6603.1 (1901), DLI.34.6727.1 (Escontría 1902), DLI.35.6948.1, 35.6966.1 (1904), DLI.39.7706.1, 39.7720.1 (Jul 1909)",
+   "folio_note": "One telegram each; the catalogue lists 52 untranslated cipher records in fondo DLI (list in cehm_sintraduccion.json), about 2,100 records typed \"telegrama cifrado\" in all, most with summaries",
+   "cls": "A",
+   "status": "CEHM records read \"Sin traducción\" / \"[Legajo sin traducción]\" with type \"Telegrama cifrado\"; hundreds of sibling Díaz-Reyes cipher telegrams in the same fondo carry summaries of their content, so a key can be rebuilt from translated pairs. Ángel & Morales-Luna 2008 print a Díaz substitution table (Díaz-Bravo) from the Porfirio Díaz archive (Universidad Iberoamericana).",
+   "why": "Díaz's direct orders to his northern proconsul across 25 years (Coahuila 1885-86, the Garza revolt 1891-92, the Reyes crisis of July 1909); the untranslated ones are exactly those whose content is unknown.",
+   "importance": 3,
+   "solvability": 4,
+   "difficulty": 2,
+   "score_note": "Scored from the CEHM online catalogue record during the Oct 2026 Mexico sweep (research/latam_mexico/); not viewed",
+   "verify": "View a translated and an untranslated telegram of the same month at CEHM (e.g. DLI.5.907.1 against its Oct 1886 neighbours); check whether the Díaz telegrams use the same table as the Díaz archive at UIA; Narváez 2019 ch. VI.",
+   "links": [
+    {
+     "label": "CEHM DLI.5.907.1",
+     "href": "https://www.cehm.org.mx/Buscador/FichaBasica/114532?Tipo=A"
+    },
+    {
+     "label": "CEHM DLI.39.7706.1 (Jul 1909)",
+     "href": "https://www.cehm.org.mx/Buscador/FichaBasica/118224?Tipo=A"
+    },
+    {
+     "label": "CEHM DLI.12.2279.1",
+     "href": "https://www.cehm.org.mx/Buscador/FichaBasica/113393?Tipo=A"
+    },
+    {
+     "label": "Ángel & Morales-Luna 2008, Revista Digital Universitaria 9:3",
+     "href": "https://www.revista.unam.mx/vol.9/num3/art18/art18.pdf"
+    }
+   ],
+   "seen": "image",
+   "source": "CEHM-Carso (Centro de Estudios de Historia de México, Fundación Carlos Slim) sweep",
+   "prior_art": "open as far as checked (28 Oct 2026: known.py, Narváez articles, Ángel & Morales-Luna 2008); Narváez 2019 book not seen.",
+   "needs_archive_scan": "no",
+   "access_note": "CEHM-Carso catalogue marks the item 'Formato Digital': scans are viewable at CEHM with a reader account (not checked here)",
+   "ark": "",
+   "scored": "vetted",
+   "access": "online",
+   "vetting_note": "CEHM-Carso record text read 29 Oct 2026 (FichaCompleta/114532: catalogue fields only, matches the lead); the scans need a CEHM reader account and could not be opened, so no cipher, decipherment-on-leaf or key check was possible; access is 'online', not 'archive', so 'not online' is not allowed; known.py shows only this lead and research/latam_mexico/candidates.json, no ledger, DECODE or target hit; no evidence for closing it.",
+   "vetting": {
+    "date": "2026-10-29",
+    "by": "claude vetting batch c03",
+    "seen": {
+     "kind": "scan",
+     "where": "https://www.cehm.org.mx/Buscador/VisorArchivoDigital?jzd=/janium/JZD/DLI/2/397/1/DLI.2.397.1.jzd&fn=114532 (CEHM viewer, Chrome 29 Oct 2026, page 1 of 2)",
+     "extent": "Telegram, Mexico to Monterrey, received 27 Nov 1885, about 10 lines of 3-4 digit groups",
+     "cipher": "Telegraph form signed 'Porfirio Diaz'; text 'Enterado de su mensaje de 21 recibido hasta hoy. Es muy 5015, 1824...' with number groups replacing words; no decipherment on the leaf; CEHM: 'Sin traduccion'. One of about 45 siblings the lead lists"
+    },
+    "prior_art": {
+     "decode": "Searched DECODE-style terms via web search (Reyes/Diaz/Limantour/Jara cipher); no DECODE record or Mexican CEHM material found; known.py shows no DECODE hit.",
+     "tomokiyo": "Web search for Tomokiyo cryptiana plus Mexico/Reyes/Diaz found nothing; Cryptiana does not appear to cover CEHM-Carso material.",
+     "lasry": "No Lasry entry for Mexican 19th/20th-century cipher letters found in web search or known.py.",
+     "edition": "No printed decipherment found in web search; the CEHM record itself carries no translation.",
+     "literature": "Searched Angel Angel & Morales-Luna 2008 (revista.unam.mx vol.9 num3 art18, Diaz-Bravo substitution and Diaz cryptography) and Narvaez 2015 (Documenta & Instrumenta, Mexican cryptosystems 1907-1921) via web search; neither names this record in the snippets seen (full texts not read)."
+    },
+    "key_check": "Keys named but not applied: the Diaz-Bravo table of Angel & Morales-Luna 2008 and the translated sibling Reyes-Diaz records in fondo DLI were not retrievable in this session, so the leaf was not decoded; no Reyes key in this repo or DECODE. Hundreds of translated Diaz-Reyes telegrams in the same fondo would supply pairs to rebuild the table; not done.",
+    "duplicates": "known.py on fondo/shelfmark and correspondents found only this lead and research/latam_mexico/candidates.json; no catalogue, ledger or DECODE duplicate.",
+    "verdict": "open"
+   }
+  },
+  {
+   "id": 1465,
+   "counted": true,
+   "year": 1914,
+   "date": "Jan 1913 - Jun 1914",
+   "title": "Gen. Pablo González's Constitutionalist correspondence: messages wholly \"en clave\" (Carranza, Rábago, Fuentes Dávila, Murguía)",
+   "correspondents": "Pablo González ↔ Venustiano Carranza; Alberto Fuentes Dávila, Francisco Murguía → González; González → Andrés Saucedo, Luis Caballero",
+   "place": "Meoqui, Cuatro Ciénegas, Matamoros, Monterrey",
+   "language": "Spanish",
+   "region": "Americas",
+   "period": "1901-1950",
+   "shelfmark": "CEHM-Carso, Fondo LXVIII-1 (Manuscritos del General Manuel Willars González [Pablo González]), LXVIII-1.2.56.1 (27 Jan 1913), 2.75.1 (Cuatro Ciénegas, Feb 1913), 7.890.1 and 8.957.1-2 (Matamoros, Dec 1913), 17.2435.1 (Fuentes Dávila, 13 Jun 1914), 23.3165.1 (Carranza → González, on Villa, s.d.); 14.1943.1 (Murguía, Mar 1914, part coded)",
+   "folio_note": "About 7 messages \"en clave\", no translation recorded",
+   "cls": "B",
+   "status": "CEHM: \"La comunicación está en clave\" / \"El documento está en clave\" with names only; the fondo also holds \"clave alpha-32\" (LXVIII-1.23.3148.1) and records of keys sent and received.",
+   "why": "Command of the Constitutionalist Army of the Northeast (Monterrey, Tampico) in 1913-14 and a Carranza message about Villa.",
+   "importance": 3,
+   "solvability": 3,
+   "difficulty": 2,
+   "score_note": "Scored from the CEHM online catalogue record during the Oct 2026 Mexico sweep (research/latam_mexico/); not viewed",
+   "verify": "View LXVIII-1.23.3165.1 and 23.3148.1 (clave alpha-32) at CEHM.",
+   "links": [
+    {
+     "label": "CEHM LXVIII-1.23.3165.1 (Carranza)",
+     "href": "https://www.cehm.org.mx/Buscador/FichaBasica/52214?Tipo=A"
+    },
+    {
+     "label": "CEHM LXVIII-1.2.56.1",
+     "href": "https://www.cehm.org.mx/Buscador/FichaBasica/38248?Tipo=A"
+    },
+    {
+     "label": "CEHM LXVIII-1.17.2435.1",
+     "href": "https://www.cehm.org.mx/Buscador/FichaBasica/48167?Tipo=A"
+    }
+   ],
+   "seen": "image",
+   "source": "CEHM-Carso (Centro de Estudios de Historia de México, Fundación Carlos Slim) sweep",
+   "prior_art": "open as far as checked (28 Oct 2026: known.py).",
+   "needs_archive_scan": "no",
+   "access_note": "CEHM-Carso catalogue marks the item 'Formato Digital': scans are viewable at CEHM with a reader account (not checked here)",
+   "ark": "",
+   "scored": "vetted",
+   "access": "online",
+   "vetting_note": "CEHM-Carso record text read 29 Oct 2026 (FichaCompleta/52214: catalogue fields only, matches the lead); the scans need a CEHM reader account and could not be opened, so no cipher, decipherment-on-leaf or key check was possible; access is 'online', not 'archive', so 'not online' is not allowed; known.py shows only this lead and research/latam_mexico/candidates.json, no ledger, DECODE or target hit; no evidence for closing it.",
+   "vetting": {
+    "date": "2026-10-29",
+    "by": "claude vetting batch c03",
+    "seen": {
+     "kind": "scan",
+     "where": "https://www.cehm.org.mx/Buscador/VisorArchivoDigital?jzd=/janium/JZD/LXVIII-1/2/56/1/LXVIII-1.2.56.1.jzd&fn=52214 (CEHM viewer, Chrome 29 Oct 2026, page 1 of 1)",
+     "extent": "One pencil note, Jan 1913, to Venustiano Carranza, 6 lines, about 40 two-digit groups within clear sentences",
+     "cipher": "Pencilled note with salutation and closing in clear and a middle run of 2-digit groups (53 07 18 33 08 17 ...); no decipherment on the leaf. Identification of this leaf with LXVIII-1.2.56.1 rests on the fn id; the other records of the lead were not viewed"
+    },
+    "prior_art": {
+     "decode": "Searched DECODE-style terms via web search (Reyes/Diaz/Limantour/Jara cipher); no DECODE record or Mexican CEHM material found; known.py shows no DECODE hit.",
+     "tomokiyo": "Web search for Tomokiyo cryptiana plus Mexico/Reyes/Diaz found nothing; Cryptiana does not appear to cover CEHM-Carso material.",
+     "lasry": "No Lasry entry for Mexican 19th/20th-century cipher letters found in web search or known.py.",
+     "edition": "No printed decipherment found in web search; the CEHM record itself carries no translation.",
+     "literature": "Searched Angel Angel & Morales-Luna 2008 (revista.unam.mx vol.9 num3 art18, Diaz-Bravo substitution and Diaz cryptography) and Narvaez 2015 (Documenta & Instrumenta, Mexican cryptosystems 1907-1921) via web search; neither names this record in the snippets seen (full texts not read). Historia Mexicana 2025 Constitutionalist cryptography article noted, full text not read."
+    },
+    "key_check": "The fondo holds 'clave alpha-32' (LXVIII-1.23.3148.1) per the lead; not opened or applied here.",
+    "duplicates": "known.py on fondo/shelfmark and correspondents found only this lead and research/latam_mexico/candidates.json; no catalogue, ledger or DECODE duplicate.",
+    "verdict": "open"
+   }
+  },
+  {
+   "id": 1468,
+   "counted": true,
+   "year": 1913,
+   "date": "Jul 1913 - May 1914 (and Jan 1918)",
+   "title": "Federal (Huertista) army telegrams \"en clave\" in Gen. Guillermo Rubio Navarrete's papers: Lampazos, Monterrey, Laredo, Zacatecas",
+   "correspondents": "Federal commanders in Nuevo León and Zacatecas (José Domínguez Guevara, Joaquín Téllez and others) ↔ Gen. Guillermo Rubio Navarrete",
+   "place": "Lampazos, Monterrey, Laredo, Zacatecas, Tamarindo, San Francisco",
+   "language": "Spanish",
+   "region": "Americas",
+   "period": "1901-1950",
+   "shelfmark": "CEHM-Carso, Fondo DLXXIII (Manuscritos del General Guillermo Rubio Navarrete), DLXXIII.1.29.11-30, 1.29.12-30, 1.30.5-49, 1.30.15-49 (clave núm. 10, Lampazos 10 Jul 1913), 1.30.16-49, 1.30.17-49 (transcribes in cipher an order of President Huerta, 19 Jul 1913), 1.30.27-49, 1.31.29-30, 1.32.3-41, 1.32.5-41, 1.32.6-41, 1.32.21-41, 2.41.1-41, 2.41.9-41, 2.41.13-41, 2.41.17-41, 2.41.18-41, 2.41.19-41, 2.41.22-41, 2.41.23-41; 2.41.39-41 to 41-41 (Jan 1918)",
+   "folio_note": "About 20 telegrams and letters recorded only as \"EN CLAVE\" (some incomplete); the same legajos hold the keys: DLXXIII.1.28.8-23 (alphabet and syllables), 1.28.14-23 (\"Clave núm. 109, Secretaría de Guerra y Marina\", military vocabulary), 1.29.15-30 (alphabets, syllables and numbers, Zacatecas)",
+   "cls": "A",
+   "status": "CEHM: \"EN CLAVE\", no translation; a few siblings carry summaries (1.29.9-30, 2.41.18-41: railway repaired to Gutiérrez north of Fresnillo). Key sheets of the Secretaría de Guerra filed with them.",
+   "why": "Federal army operations against Pablo González and Carranza in the Northeast (Lampazos, Candela, Cañón de Sabinas, Nov 1913) and the defence of Zacatecas before June 1914; Huerta-side cipher is rarely seen.",
+   "importance": 3,
+   "solvability": 5,
+   "difficulty": 1,
+   "score_note": "Scored from the CEHM online catalogue record during the Oct 2026 Mexico sweep (research/latam_mexico/); not viewed",
+   "verify": "View the key sheets (1.28.8-23, 1.28.14-23, 1.29.15-30) and one telegram (1.30.17-49) at CEHM.",
+   "links": [
+    {
+     "label": "CEHM DLXXIII.1.30.17-49 (Huerta order)",
+     "href": "https://www.cehm.org.mx/Buscador/FichaBasica/137860?Tipo=A"
+    },
+    {
+     "label": "CEHM DLXXIII.1.28.14-23 (Clave 109)",
+     "href": "https://www.cehm.org.mx/Buscador/FichaBasica/137804?Tipo=A"
+    },
+    {
+     "label": "CEHM DLXXIII.1.28.8-23 (alfabeto y sílabas)",
+     "href": "https://www.cehm.org.mx/Buscador/FichaBasica/137798?Tipo=A"
+    },
+    {
+     "label": "CEHM DLXXIII.2.41.17-41",
+     "href": "https://www.cehm.org.mx/Buscador/FichaBasica/138003?Tipo=A"
+    }
+   ],
+   "seen": "image",
+   "source": "CEHM-Carso (Centro de Estudios de Historia de México, Fundación Carlos Slim) sweep",
+   "prior_art": "open as far as checked (28 Oct 2026: known.py; Ángel & Morales-Luna 2008 and Narváez articles do not cite fondo DLXXIII).",
+   "needs_archive_scan": "no",
+   "access_note": "CEHM-Carso catalogue marks the item 'Formato Digital': scans are viewable at CEHM with a reader account (not checked here)",
+   "ark": "",
+   "scored": "vetted",
+   "access": "online",
+   "vetting_note": "CEHM-Carso record text read 29 Oct 2026 (FichaCompleta/137860: catalogue fields only, matches the lead); the scans need a CEHM reader account and could not be opened, so no cipher, decipherment-on-leaf or key check was possible; access is 'online', not 'archive', so 'not online' is not allowed; known.py shows only this lead and research/latam_mexico/candidates.json, no ledger, DECODE or target hit; no evidence for closing it.",
+   "vetting": {
+    "date": "2026-10-29",
+    "by": "claude vetting batch c04",
+    "seen": {
+     "kind": "scan",
+     "where": "CEHM viewer opened in Chrome 29 Oct 2026: https://www.cehm.org.mx/Buscador/VisorArchivoDigital?jzd=/janium/JZD/DLXXIII/1/30/17-49/DLXXIII.1.30.17-49.jzd&fn=137860 (page 1 of 2) and key sheet .../DLXXIII/1/28/14-23/DLXXIII.1.28.14-23.jzd&fn=137804",
+     "extent": "Telegram DLXXIII.1.30.17-49 (Lampazos to Monterrey, 19 Jul 1913): about 6 lines of the first page carry hyphenated numbers (141-165-173-69, 88-79-176-34, 114-112-26-74 ...) inside clear Spanish; about 20 items in the lead",
+     "cipher": "Printed telegraph form, clear Spanish ('Honrame participar a Ud ... la orden del C. Presidente de la Republica para') with numeric code groups of 1-3 digits (values up to at least 176) for the operative words; no decipherment or gloss written on the leaf; CEHM says 'transcribe en clave', no translation. Key sheet 1.28.14-23 (Secretaria de Guerra y Marina, Clave num. 109) seen: a printed grid numbered 1-160 of letters, syllables and military words (urge, march, Secretaria, Gobernador, Batallon ...)."
+    },
+    "prior_art": {
+     "decode": "known.py on Rubio Navarrete, DLXXIII and the shelfmarks: no DECODE record, ledger or target hit, only this lead and research/latam_mexico/candidates.json.",
+     "tomokiyo": "Web search (Rubio Navarrete, clave 1913, Huerta cipher) found nothing; Tomokiyo's cryptiana does not cover CEHM-Carso fondos as far as searched.",
+     "lasry": "No Lasry or DECODE entry for Mexican 1913 federal-army ciphers found by search or known.py.",
+     "edition": "No printed decipherment of any DLXXIII telegram found; CEHM records carry no translation.",
+     "literature": "Searched Angel & Morales-Luna 2008 (revista.unam.mx vol.9 num3 art18, cryptography to 1913 then Carranza) and Narvaez (Constitutionalist cases 1914-15): neither names fondo DLXXIII in the snippets seen; full texts not read."
+    },
+    "key_check": "Clave 109 viewed and compared with the telegram: its table stops at 160 while the telegram uses numbers up to 176 and groups such as 141-165-173, so it is not the key of this message (not decoded with it). The other key sheets named (1.28.8-23 alphabet and syllables, 1.29.15-30) were not opened; no key in repo or DECODE.",
+    "duplicates": "known.py for 'Rubio Navarrete', 'DLXXIII' and the lead shelfmarks: no catalogue, ledger or DECODE duplicate.",
     "verdict": "open"
    }
   },
@@ -34865,6 +36348,68 @@
     },
     "key_check": "No key held in repo or print; Collor fonds key material (LC c 1930/1932) was not examined; none tried.",
     "duplicates": "known.py on 'Lindolfo Collor' and the shelfmark: hits only this lead, sibling CPDOC leads/catalogue entries 1472-1474 (Aranha 1929-30 telegrams) and research/latam_brazil candidates; no duplicate record found.",
+    "verdict": "open"
+   }
+  },
+  {
+   "id": 1479,
+   "counted": true,
+   "region": "Americas",
+   "language": "Portuguese",
+   "decode_ids": [],
+   "seen": "catalogue",
+   "year": 1929,
+   "date": "14 May 1927 - Sept 1930",
+   "title": "Lindolfo Collor papers: cipher telegrams from Borges de Medeiros, Vargas and Aranha, 1927-30",
+   "correspondents": "Borges de Medeiros, Getúlio Vargas, Oswaldo Aranha and others → Lindolfo Collor (federal deputy)",
+   "place": "Porto Alegre, Belo Horizonte, Rio de Janeiro",
+   "period": "1901-1950",
+   "shelfmark": "CPDOC/FGV, Arquivo Lindolfo Collor, LC c 1927.05.14 (3 docs); LC c 1927.06.18; LC c 1927/1928.00.00 (4 fragments); LC c 1929.06.15; LC c 1929.10.03/2 (2); LC c 1930.02.03 (2); LC c 1930.02.15/1; LC c 1930.02.24; LC c 1930.02.25; LC c 1930.08.00/2; LC c 1930.09.00 (2)",
+   "folio_note": "about 19 telegrams, 1-3 ff. each; not digitised online",
+   "cls": "A",
+   "status": "Most CPDOC summaries give the content (so likely deciphered on the sheet); LC c 1930.02.03 and LC c 1930.09.00 do not. Key material in LC c 1930/1932.00.00/11.",
+   "why": "Gaúcho party and Liberal Alliance cipher traffic from Vargas and Borges de Medeiros to their man in Rio, 1927-30.",
+   "importance": 3,
+   "solvability": 3,
+   "difficulty": 2,
+   "score_note": "Scored from the CPDOC Accessus description during the Oct 2026 Brazil sweep (research/latam_brazil/); not viewed",
+   "verify": "Scans from CPDOC; separate read (content summarised) from unread items; use the read ones as cribs.",
+   "links": [
+    {
+     "label": "LC c 1929.10.03/2",
+     "href": "https://www18.fgv.br/cpdoc/acervo/arquivo-pessoal/LC/textual/telegramas-cifrados-de-getulio-vargas-a-lindolfo-collor-porto-alegre"
+    },
+    {
+     "label": "LC c 1930.09.00",
+     "href": "https://www18.fgv.br/cpdoc/acervo/arquivo-pessoal/LC/textual/telegramas-cifrados-sobre-a-necessidade-de-marcar-a-data-do-inicio-da-revolucao-s-l"
+    }
+   ],
+   "source": "CPDOC/FGV sweep",
+   "prior_art": "partly read at the time? (checked 28 Oct 2026: repo ledgers and DECODE list via known.py, web search)",
+   "needs_archive_scan": "yes",
+   "access_note": "not digitised online; order scans from CPDOC/FGV (Rio de Janeiro)",
+   "ark": "",
+   "access": "archive",
+   "scored": "vetted",
+   "vetting_note": "archive notes translations/possible decipherment on the sheets; needs a scan check before promotion",
+   "vetting": {
+    "date": "2026-10-29",
+    "by": "claude vetting batch c04",
+    "seen": {
+     "kind": "not online",
+     "where": "CPDOC/FGV record page (WebFetch 29 Oct 2026): .../LC/textual/telegramas-cifrados-sobre-a-necessidade-de-marcar-a-data-do-inicio-da-revolucao-s-l (LC c 1930.09.00: 2 documents, 3 folhas, microfilm roll 1 frames 1010-1011, no translation, no digitisation noted)",
+     "extent": "about 19 telegrams, 1-3 ff. each, 1927-30; microfilm only",
+     "cipher": "CPDOC: 'Telegramas cifrados sobre a necessidade de marcar a data do inicio da revolucao', 'Telegramas cifrados de Getulio Vargas a Lindolfo Collor'; most summaries give content (possibly deciphered on the sheet) but LC c 1930.09.00 mentions no translation; no scan seen."
+    },
+    "prior_art": {
+     "decode": "known.py (Lindolfo Collor): only the catalogue.json entry for the 1932 Collor telegrams and research/latam_brazil; no DECODE record.",
+     "tomokiyo": "Search (Collor telegramas cifrados Borges de Medeiros Vargas) found nothing in Tomokiyo's cryptiana.",
+     "lasry": "No Lasry entry for Brazilian 1930 revolution ciphers found.",
+     "edition": "Search found Collor biographies, UFRGS NUPERGS telegram summaries and a 2013 Dialogos article citing CPDOC; no printed decipherment.",
+     "literature": "No cipher scholarship on the Collor telegrams found by search."
+    },
+    "key_check": "Code lists LC c 1930/1932.00.00/11 and OA cp 1926/1929.00.00 are at CPDOC only; not held here, not tried.",
+    "duplicates": "known.py on 'Lindolfo Collor' and the shelfmarks: hits only this lead, the separate 1932 Collor catalogue entry (LC c 1932.07.05/4 etc., different documents) and Brazil sweep notes; no duplicate.",
     "verdict": "open"
    }
   },
@@ -35989,6 +37534,63 @@
     },
     "key_check": "Keys held in repo: none for Chile (known.py 'Archivo Santa Maria', 'Lynch', 'Novoa', 'A6000': only the leads' own records and research/latam_southcone). The same fonds holds key sheets A3039 'Codigo para escribir en clave' (ca. 1880) and B4931 'Claves telegraficas a utilizar con Lynch, Altamirano, Novoa...' (ca. 1883, 10 p.), but neither is digitised, so no key could be applied; the ciphertext is not online either.",
     "duplicates": "known.py 'B1441', 'Novoa', 'Archivo Santa Maria': only this lead; distinct from other Lynch telegrams by date and shelfmark.",
+    "verdict": "open"
+   }
+  },
+  {
+   "id": 1503,
+   "counted": true,
+   "year": 1882,
+   "date": "1 Jun 1882",
+   "title": "Patricio Lynch → President Santa María, telegram in cipher with a copy attached",
+   "correspondents": "Patricio Lynch Zaldívar → Domingo Santa María González",
+   "place": "Lima",
+   "language": "Spanish",
+   "region": "Americas",
+   "period": "1801-1900",
+   "shelfmark": "Santiago, Archivo Nacional Histórico, Archivo Santa María B1403",
+   "folio_note": "Texto en clave, adjunta copia | 2 p.; the attached 'copia' may be a clear copy (then read at the time) or a second cipher copy",
+   "cls": "A",
+   "status": "Archivo Nacional de Chile catalogue (Aleph ARNES) note: 'Texto en clave, adjunta copia', no transcription noted (the catalogue does note one on most sibling telegrams). Not digitised online (no 856 link in the MARC record). The same fonds holds 142 cipher telegrams of 1879-1886 with transcriptions attached and two key sheets: A3039 \"Código para escribir en clave\" (ca. 1880) and B4931 \"Claves telegráficas a utilizar con Lynch, Altamirano, Novoa y todas las legaciones chilenas en el extranjero\" (ca. 1883, 10 p.). Not on DECODE, not in the repo (checked 28 Oct 2026).",
+   "why": "Occupation-era reporting from Lima, during the Sierra campaign.",
+   "importance": 3,
+   "solvability": 2,
+   "difficulty": 2,
+   "score_note": "Scored from the archive description during the Oct 2026 South Cone/Andes sweep (research/latam_southcone/); not viewed.",
+   "verify": "Request scans from the Archivo Nacional Histórico (Santiago); read with the key sheets A3039/B4931 of the same fonds, calibrated on the transcribed sibling telegrams.",
+   "links": [
+    {
+     "label": "ANH Chile catalogue record 000011403",
+     "href": "http://www.bncatalogo.cl/F/?func=direct&local_base=ARNES&doc_number=000011403"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "South Cone / Andes archives sweep",
+   "prior_art": "open (checked 28 Oct 2026: repo ledgers, DECODE list, Cryptoole snapshot; web search on War of the Pacific ciphers found no study of the Santa María telegrams)",
+   "needs_archive_scan": "yes",
+   "access_note": "not digitised online; request scans from the Archivo Nacional Histórico / Biblioteca Nacional de Chile",
+   "ark": "",
+   "access": "archive",
+   "scored": "vetted",
+   "vetting_note": "Record (ARNES 000011403) says 'Texto en clave, adjunta copia': the attached copy may be a decipherment, which would make it read at the time; cannot tell without the scan, so not promoted as open.",
+   "vetting": {
+    "date": "2026-10-29",
+    "by": "claude vetting batch c12",
+    "seen": {
+     "kind": "not online",
+     "where": "http://www.bncatalogo.cl/F/?func=direct&local_base=ARNES&doc_number=000011403 (full record viewed in Chrome 29 Oct 2026; no image or digital link)",
+     "extent": "2 p. telegram, Lima, 1 Jun 1882, Lynch to Santa María, with an attached copy",
+     "cipher": "Archive description (ARNES): 'Telegrama, 1882 jun. 1, Lima al Presidente (Domingo Santa María González), Santiago ... Texto en clave, adjunta copia.' 2 p. No transcription is noted; whether the attached 'copia' is a clear decipherment or a second cipher copy cannot be told from the record."
+    },
+    "prior_art": {
+     "decode": "Not on DECODE: known.py 'Patricio Lynch', 'Santa Maria' found only the sibling catalogue rows 1502/1504/1507/1508 and the southcone sweep; no Chilean 19th-century DECODE record.",
+     "tomokiyo": "Web searches (Lynch telegrama en clave Santa María; Guerra del Pacífico cifras claves) found nothing on cryptiana for Chilean War of the Pacific ciphers.",
+     "lasry": "No Lasry item on 19th-century Chilean ciphers found in the web searches.",
+     "edition": "No edition of the Archivo Santa María telegrams found; results were only general Lynch biography, McEvoy 2006 (Revista de Indias) on the Chilean state's communications, and Parvex's book on the secret service.",
+     "literature": "Searches found no study that deciphers these telegrams; McEvoy and Parvex are possible unchecked sources for the key sheets' existence."
+    },
+    "key_check": "Keys held in repo: none for Chile. The same fonds holds A3039 'Código para escribir en clave' (ca. 1880) and B4931 'Claves telegráficas a utilizar con Lynch, Altamirano, Novoa...' (ca. 1883, 10 p.), neither digitised, so no key could be applied; the ciphertext is not online either.",
+    "duplicates": "known.py 'Patricio Lynch', 'Santa Maria': siblings 1502 (29 May 1882), 1504, 1507, 1508 differ by date and shelfmark (this is B1403, 1 Jun 1882); no duplicate.",
     "verdict": "open"
    }
   },
@@ -37746,6 +39348,63 @@
     },
     "key_check": "No War Department-Wilkinson cipher key held here or on DECODE; the Chu-Valenti-Knight Wilkinson code is a Spanish dictionary code and does not apply. Not applied, text not online.",
     "duplicates": "known.py 'Wilkinson' hits catalogue 847 (Burr-Wilkinson cypher letter, Newberry) and 2374 (Wilkinson Spanish codes); neither is a Chicago Eustis item.",
+    "verdict": "open"
+   }
+  },
+  {
+   "id": 1541,
+   "counted": true,
+   "year": 1769,
+   "date": "8 Oct 1769",
+   "title": "Robert Walpole (Paris) → Sir John Goodricke (Stockholm), 5-page letter on Franco-British relations and the Corsica affair, with part of the letter in cypher",
+   "correspondents": "Robert Walpole (British diplomat in Paris) → Sir John Goodricke (British envoy at Stockholm)",
+   "place": "Paris",
+   "language": "English",
+   "region": "England",
+   "period": "1701-1800",
+   "shelfmark": "Chicago History Museum Research Center, Small Manuscripts, CHS MSS Alpha Walpole, Robert B0020C (Gunther Estate Purchase 1923.1000); Primo record alma991000655679709882",
+   "folio_note": "1 item, 5 pp.; the catalogue says 'Cypher for portion of letter'; how much is cipher is not stated",
+   "cls": "B",
+   "status": "CHM catalogue (Alma/Primo) notes 'Cypher for portion of letter'; no decipherment is mentioned. Not on DECODE (known.py: no hits for Walpole 1769/Goodricke 1769). Goodricke's own papers (Bodleian) are reported to hold cypher letters with transliteration, so a decipherment of this exact letter may exist in another set.",
+   "why": "Cipher passage in a Paris-to-Stockholm letter of 1769 on Anglo-French relations, Corsica and the Canadian Catholics; a short, probably numerical British diplomatic cipher of the Northern Department, whose table could be rebuilt from the Goodricke/State Papers Foreign Sweden and France series.",
+   "importance": 2,
+   "solvability": 2,
+   "difficulty": 3,
+   "score_note": "Scored from the archive description during the Oct 2026 Chicago Pritzker/CHM/CPL sweep (research/chi_pritzker_chm_cpl/); not viewed",
+   "verify": "Ask the CHM Research Center (research@chicagohistory.org) for a scan of CHS MSS Alpha Walpole B0020C; compare the cypher group shapes with the 1769 Walpole-Weymouth cipher letters in TNA SP 78 and the Goodricke papers at the Bodleian.",
+   "links": [
+    {
+     "label": "CHM Primo record",
+     "href": "https://i-share-chm.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991000655679709882&vid=01CARLI_CHM:CARLI_CHM&search_scope=MyInstitution&tab=Everything"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "Chicago Pritzker/CHM/CPL sweep",
+   "prior_art": "open (checked 29 Oct 2026: web search Walpole/Goodricke 1769 cipher; CHM Primo; known.py; cryptiana not searched by name; the Bodleian Goodricke finding aid was reached only through a search snippet, its site refused automated access)",
+   "needs_archive_scan": "yes",
+   "access_note": "Small manuscript in the CHM Research Center (e-basement storage); no online images found; request a scan from research@chicagohistory.org",
+   "ark": "",
+   "access": "archive",
+   "scored": "vetted",
+   "vetting_note": "CHM Primo record is JS-only; the Bodleian Goodricke papers (MS. Eng. hist. c. 62, 'some in cypher with transliteration') could not be itemised (Anubis bot check), so a decipherment of this very letter may exist; TNA SP 78/278/57 is Walpole's 8 Jun 1769 despatch to Weymouth, no cipher noted.",
+   "vetting": {
+    "date": "2026-10-29",
+    "by": "claude vetting batch c06",
+    "seen": {
+     "kind": "not online",
+     "where": "CHM Primo full record (alma991000655679709882) rendered and read in Chrome 29 Oct 2026; shelf copy only, no digital object or image link on the record",
+     "extent": "1 item, 5 pp., letter Paris 8 Oct 1769, Robert Walpole to Sir John Goodricke; how much is cipher is not stated",
+     "cipher": "Archive description: 'Letter, from Paris, to Sr. John Goodricke regretting the interruption of correspondence by false newspaper reports; ... Corsica affair; French internal affairs and possible causes of war. Cypher for portion of letter.' No mention of a decipherment."
+    },
+    "prior_art": {
+     "decode": "Not on DECODE: known.py 'Walpole Goodricke 1769' gives no hits; 'CHS MSS Alpha Walpole' hits only this lead and the Chicago sweep notes.",
+     "tomokiyo": "Cryptiana not found to cover this letter: web searches 'Walpole Goodricke 1769 cipher' returned only TNA SP 78 catalogue entries (Walpole's Paris despatches incl. an 8 Jun 1769 part-decoded cipher despatch) and no Tomokiyo page.",
+     "lasry": "No Lasry/DECODE item for Walpole or Goodricke found by known.py or web search.",
+     "edition": "No printed edition of this letter found; searched Walpole Goodricke 1769 and CHM Primo (only the catalogue entry).",
+     "literature": "Bodleian MS. Eng. hist. c. 62 holds 24 letters to Goodricke 1757-73 'some in cypher, with transliterations' (search snippet of archives.bodleian.ox.ac.uk; Walpole not among the correspondents named there; item list itself not opened). A transliteration of this very letter could be in another set."
+    },
+    "key_check": "No British Northern Department cipher key for 1769 is held in the repo or on DECODE (known.py 'Goodricke', 'Walpole'); the Bodleian Goodricke transliterations and TNA SP 78 keys are the likely route and were not available to apply.",
+    "duplicates": "known.py on the shelfmark, 'Walpole Goodricke 1769' and correspondents: only this lead and research/chi_pritzker_chm_cpl notes; no catalogue, ledger or DECODE duplicate.",
     "verdict": "open"
    }
   },

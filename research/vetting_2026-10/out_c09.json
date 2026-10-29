@@ -1,0 +1,120 @@
+{
+ "1333": {
+  "vetting": {
+   "date": "2026-10-29",
+   "by": "claude vetting batch c09",
+   "seen": {
+    "kind": "scan",
+    "where": "Chrome, 29 Oct 2026: https://ambrosiana.comperio.it/opac/detail/view/ambro:catalog:606779, four images 'Foglio pagina 0103/0104' (images 2-4 opened in the viewer; the first thumbnail was not opened)",
+    "extent": "f. 103r is a full page of about 45 lines of continuous digits, no word division; the leaf numbered 104 carries about seven lines of the same continuous cipher at the head and is blank below; one image is an empty verso.",
+    "cipher": "OPAC note 'Lettera in cifra', sender and recipient N.D., 1560, 4 cc. (103r-104v). Seen: a numeric cipher in single digits written continuously, with no clear Italian, no interlinear text and no decipherment on or with the leaves."
+   },
+   "prior_art": {
+    "decode": "Not on DECODE: known.py and the DECODE view dumps have no Ambrosiana record for this letter.",
+    "tomokiyo": "No Tomokiyo cryptiana page on Borromeo or Ambrosiana ciphers of 1560 found (web searches 'F 100 inf Borromeo cifra' and 'Borromeo cifrario 1560 Pio IV'); none in the repo ledgers.",
+    "lasry": "No Lasry paper or GL.htm entry on this letter found by web search or in the repo.",
+    "edition": "Searched 'Monumenta Borromaica epistolario cifre decifrate' and the 1560 Pius IV cipher query: Turchini's Monumenta borromaica I describes the archive (about 20,000 letters online) but no edition of ciphered letters was found; not known to be printed.",
+    "literature": "Three web searches (shelfmark, Borromeo cifrario 1560, Pius IV cipher / Segreteria di Stato) found no study of this letter; the sender is unidentified in the record."
+   },
+   "key_check": "The only key near this series is Borromeo's cifrario for Bascape (Ambrosiana F 57 inf. n. 275, ff. 314v-315r, 1580), seen on the images: a nomenclator of names and places with numbers 31-39 plus rules, twenty years later and a different system. The 1560 digit stream has no word division and no nomenclator signs, so that key was not applied and no held key is known to fit.",
+   "duplicates": "known.py 'F 100 inf', 'Borromeo', 'Ambrosiana' on 29 Oct 2026: hits only in research/milan_archives (this item's own sweep) and leads.json, none in catalogue.json, targets/, DECODE dumps or decode_updates; no other record of this letter.",
+   "verdict": "open"
+  }
+ },
+ "1334": {
+  "vetting": {
+   "date": "2026-10-29",
+   "by": "claude vetting batch c09",
+   "seen": {
+    "kind": "scan",
+    "where": "Chrome, 29 Oct 2026: https://ambrosiana.comperio.it/opac/detail/view/ambro:catalog:594139, both images 'Foglio pagina 0652' opened in the viewer",
+    "extent": "one leaf (ff. 652r-v): the written image has 10 lines, about 5 of them runs of cipher signs interlined with clear Italian words ('Le cause di sospicione', 'a S. S.', 'per il quale'); the other image is a faint leaf with show-through only.",
+    "cipher": "OPAC note 'Ep. scritta per lo piu in cifra', N.D. to N.D., 1573, subjects Gregory XIII and Maffei. Seen: arbitrary signs (Greek-like letters, crosses, digits) in runs of 8-20 between clear words, no decipherment or key written on the leaf."
+   },
+   "prior_art": {
+    "decode": "Not on DECODE (known.py 'F 46 inf', 'Ambrosiana': no record).",
+    "tomokiyo": "No Tomokiyo page on 1573 Borromeo ciphers found (web search 'Borromeo 1573 Ambrosiana F 46 inf cifra simboli').",
+    "lasry": "No Lasry or GL.htm entry for an Ambrosiana 1573 letter found by web search or in the repo.",
+    "edition": "Searched 'Gregorio XIII Maffei Milano 1573 Borromeo lettera cifrata Requesens': found only a dealer's note on the 1573 Requesens bando; no edition of this ciphered letter found.",
+    "literature": "Three searches (shelfmark, 1573 jurisdictional dispute with Requesens, Monumenta Borromaica) found no study of the cipher; sender unidentified."
+   },
+   "key_check": "Borromeo's Bascape cifrario (F 57 inf. n. 275, 1580) is a numeric nomenclator with name numbers, not a sign alphabet, so it does not apply to the 1573 sign runs; no Speciano key was located and none is held in the repo, so nothing was tried.",
+   "duplicates": "known.py 'F 46 inf', 'Borromeo', 'Ambrosiana' on 29 Oct 2026: only research/milan_archives and leads.json; no catalogue.json, target or DECODE record; no other copy of this letter found.",
+   "verdict": "open"
+  }
+ },
+ "1335": {
+  "vetting": {
+   "date": "2026-10-29",
+   "by": "claude vetting batch c09",
+   "seen": {
+    "kind": "scan",
+    "where": "Chrome, 29 Oct 2026: https://ambrosiana.comperio.it/opac/detail/view/ambro:catalog:596522 (F 57 inf. n. 149, f. 193r opened) and the key record https://ambrosiana.comperio.it/opac/detail/view/ambro:catalog:596651 (F 57 inf. n. 275, f. 315 images opened); the F 58 inf. 247/249 letters were not reopened",
+    "extent": "F 57 inf. 149 (3 Dec 1580, Madrid): f. 193r carries about 20 lines of dense numeric groups with address and seal; key n. 275 is a sideways leaf (f. 315r) listing names and places with numbers (31, 33, 34, 37, 38, 39 visible) and rules for nulls and doubled letters, plus a faint f. 314/315 verso.",
+    "cipher": "OPAC note: 'L'ep. contiene parte cifrata (cfr c. 193r); la cifra per la decodifica si trova alle cc. 314v-315r (ep. F 57 inf., n. 275)'. Seen: numeric code groups on the letter, no decipherment on it; the key is a nomenclator-plus-rules sheet filed in the same series."
+   },
+   "prior_art": {
+    "decode": "Not on DECODE (known.py 'Bascap', 'F 57 inf', 'F 58 inf': only research/milan_archives and leads.json).",
+    "tomokiyo": "No Tomokiyo cryptiana page on Bascape or Borromeo ciphers found (searches 'Bascape Borromeo 1580 cifra cifrario' and the English mission query).",
+    "lasry": "No Lasry paper or GL.htm entry found on the Borromeo-Bascape cifrario by web search or in the repo.",
+    "edition": "Searched Bascape's 1580 Spanish mission: A. Borromeo's chapter on the Milan jurisdictional disputes and BL Add MS 28390-1 (Borromeo-Philip II letters) turned up, but no edition giving these letters deciphered.",
+    "literature": "Four web searches (Bascape Badajoz cifra, Monumenta Borromaica, mission edition) found no study of this cipher."
+   },
+   "key_check": "The cifrario is filed with the letters (F 57 inf. n. 275, sent with Borromeo's letter of 14 July 1580). It was seen but NOT applied: the leaf is rotated, faint at about 750 px and its code groups were not transcribed, so this is a key lookup still to be run, not a reading.",
+   "duplicates": "known.py 'Bascap', 'F 57 inf', 'F 58 inf' on 29 Oct 2026: only research/milan_archives and leads.json; no catalogue.json, target or DECODE record.",
+   "verdict": "key_lookup",
+   "closed": "Key sits in the same Ambrosiana series (F 57 inf. n. 275, ff. 314v-315r); the work is to transcribe it at higher resolution and apply it to F 57 inf. 149 and F 58 inf. 247/249, not to break an unknown cipher."
+  }
+ },
+ "1126": {
+  "unvetted": "Edition (IA beitrgezurgesch00dittgoog) was read by an earlier sweep; the original (Riksarkivet, Gustav Adolf correspondence) is not online and lead access is not 'archive', so 'not online' is not allowed. Blocker: no Riksarkivet scan or finding-aid record for no. 33 reachable in this pass; the 'dann dechiffrirt' remark on sibling letters means a decipherment may sit in the volume."
+ },
+ "1127": {
+  "unvetted": "Same blocker as 1126: only Kirchhoff's printed excerpt (Beilage II no. 31) is available; Riksarkivet original not online, access not 'archive', and whether a contemporary decipherment accompanies it is unknown."
+ },
+ "1128": {
+  "unvetted": "Only Klinckowstroem's footnote (vol. 1, p. 156) is known; the letter (Fersen papers, Stafsund/Riksarkivet) is not online and access is not 'archive'. Blocker: no leaf; Fersen's own marginal decipherments may exist on the original."
+ },
+ "1129": {
+  "unvetted": "Besancon Memoire Vive viewer is JavaScript and reCAPTCHA gated (not solved); CCFr record Ms Granvelle 75 fol. 63 gives only 'en chiffre non traduit'. Blocker: no image reachable, access not 'archive'."
+ },
+ "1130": {
+  "unvetted": "Same blocker as 1129 (Ms Granvelle 75 fol. 115, Besancon Memoire Vive reCAPTCHA gate): no image, record text only, access not 'archive'."
+ },
+ "1131": {
+  "unvetted": "Chrome pass 29 Oct 2026: gallica.bnf.fr search returned a Cloudflare 'Just a moment' bot check (not clicked through) and archivesetmanuscrits.bnf.fr/resultats.html?q=Ms-6829 returned 'la page n'existe pas'. Blocker: no BnF/Arsenal record or digitised leaf reachable; the lead is also an item in a Recueil de pieces, so it may be a copy of an already-known letter."
+ },
+ "1132": {
+  "unvetted": "Calendar line only (BRAH 96, 'en gran parte sin descifrar'); original in HHStA Vienna not online, access not 'archive'. Blocker: no scan or finding aid; overlap with catalogue 511 undecided."
+ },
+ "1133": {
+  "unvetted": "Calendar line only (BRAH 97, HHStA Span. Corr. Fasz. 82); not online, access not 'archive', cipher extent unknown."
+ },
+ "1134": {
+  "unvetted": "Calendar line only (BRAH 98, 'en parte indescifrable', HHStA Span. Varia); may mean illegible rather than cipher, fascicle number garbled, not online, access not 'archive'."
+ },
+ "1160": {
+  "unvetted": "Kalliope DE-611-HS-3435271 re-fetched 29 Oct 2026: key leaf Chart. A 40 Bl. 186a (8.6 x 21 cm, verso blank), undated, creator Albrecht Kraus, no digital copy noted. Blocker: Forschungsbibliothek Gotha has no images online, access not 'archive'; whether the 'Geheimsprache' is a code vocabulary or a letter cipher cannot be judged without a scan."
+ },
+ "1161": {
+  "unvetted": "SLUB Mscr.Dresd.N.103 is digitised (https://digital.slub-dresden.de/werkansicht/dlf/184098/1, 100 Bl., Italian/Latin, probably Padua 1537, Public Domain; the Anubis check passed by itself in Chrome), but the sign-system pages are not itemised in the record and were not located in this pass (only the cover viewed). Blocker: find the Zeichensysteme leaves by paging the 200 images; cipher vs alphabet table undecided."
+ },
+ "1162": {
+  "unvetted": "Kalliope DE-611-HS-3576380 re-fetched: Silbermann 'Livre de la specification des prix', 198 pp., 1753, 'partly in cipher'; a digital copy exists (http://digital.slub-dresden.de/id1696251605) and the volume is edited in Schaefer, Das Silbermann-Archiv (1994), pp. 433-470. Blocker: scans not viewed and Schaefer's edition (which may print the cipher parts read) not consulted, so prior art is unsettled."
+ },
+ "1163": {
+  "unvetted": "Only Kalliope abstracts of Kinkel's replies (13, 14, 16, 17 Feb 1860) were seen; Minna Werner's cipher letter of 11 Feb 1860 is not itemised and no Bonn images were located. Blocker: no ciphertext identified; Kinkel read it so a decipherment may exist; access not 'archive'."
+ },
+ "1164": {
+  "unvetted": "Chrome pass 29 Oct 2026: SLUB Mscr.Dresd.J.345 (https://digital.slub-dresden.de/werkansicht/dlf/179487/502, 866 Bl.) seen: f. 248v carries a hand-drawn sign alphabet headed in German ('Dies ist das Alphabet ...', about 24 signs with numerals) and the following leaves (checked f. 252v, image 510) hold full pages of text in a Hebrew-like sign script with word spaces. So the key sits on the same leaf as the text, a likely simple substitution script, but the glyphs were not transcribed, no reading was attempted and the prior-art searches were not run for this lead. Retry: transcribe the 248v alphabet, apply it from f. 249r, then run the three searches."
+ },
+ "1165": {
+  "unvetted": "Kalliope/swisscollections record fetched 29 Oct 2026 (StBZ Pb 82, 2nd half 18th c., spells 'in Geheimschrift' on the first pages): the record states no digital copy. Blocker: no images online, access not 'archive'."
+ },
+ "1167": {
+  "unvetted": "Series-level description only (LBC MIBA01C525, 21 volumes 1683-1720): no holder, inventory, images or specific cipher letter; known.py hits only research/italian_catalogues. Blocker: no individual ciphertext identifiable."
+ },
+ "1168": {
+  "unvetted": "Series-level description only (LBC MIBA00359B, 125 units of Milanese legates 1516-1751): no holder, images or specific item; known.py hits only research/italian_catalogues. Blocker: no individual ciphertext identifiable."
+ }
+}
