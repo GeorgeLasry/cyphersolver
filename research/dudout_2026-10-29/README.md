@@ -9,7 +9,7 @@ Findings are his, not re-checked here unless a line below says so. Credit him wh
 - Leads closed in `research/leads.json` (`docs/_check_catalogue.py --close`, reason cites this folder): 1126, 1274, 1335, 1152, 1063,
   1064, 1068, 882, 1280, 1279 (read: existing decipherment or print), 1331, 1322 (not a cipher).
 - Short notes appended to the NOTES.md of sessa1524, castelcicala1816, breves1610, ceva1632, sega1591, garcilaso1498, jones1802,
-  augur1874, lopehurtado1523, martinique1778.
+  augur1874, lopehurtado1523,.
 
 ## Held
 - **meiji1874**: Satoshi, Ono Tetsuya (2010) and Nagata Junko (1989) describe the 1874 Army 7 x 7 square already. Do not present the key as
