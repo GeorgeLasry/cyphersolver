@@ -1,0 +1,69 @@
+# Output of slotsearch.py (28 Oct 2026). Candidates are slots, not readings.
+order test: 280 of 330 adjacent firm entries in alphabetical order (84.8%); shuffled: mean 165 (50.1%), sd 5.4, max 183; real is 21 sd above the shuffles
+
+50 breaks (group a value a > group b value b), first 40:
+  8=uingt > 11=cinquante
+  11=cinquante > 12=a
+  17=mille > 18=a
+  36=at > 42=accepte
+  69=auoit > 78=ambassadeur
+  123=br > 130=ble
+  130=ble > 133=bien
+  134=esprit > 136=besoin
+  155=cy > 157=c
+  174=cu > 183=cas
+  191=cest > 192=certain
+  290=dur > 291=d
+  345=dit > 346=disant
+  356=donne > 357=donc
+  383=et > 384=er
+  390=ex > 399=ecrire
+  434=fais > 435=etat
+  446=extraordinaire > 454=espagne
+  456=faut > 461=fait
+  468=fort > 473=faire
+  488=foy > 493=fournir
+  510=gi > 515=gagne
+  542=moyen > 551=mettre
+  551=mettre > 560=gi
+  588=il > 589=if
+  596=on > 597=ialouse
+  635=iuste > 638=italie
+  666=lu > 668=l
+  692=mais > 693=main
+  704=mon > 709=maieste
+  759=non > 764=necessaire
+  791=sois > 792=oit
+  792=oit > 793=oient
+  797=ont > 807=obstin
+  825=pe > 828=par
+  842=puis > 843=paix
+  870=perte > 874=personne
+  890=pro > 891=preliminaire
+  930=quils > 932=quelque
+  947=ri > 948=re
+
+slot candidates for the open report groups (French words sorting between the neighbours, commonest first; v = u, j = i):
+    6 L02      None= .. 8=uingt: 11333 words; commonest: de et la le que en il ie les qu est ce qui pour ne
+   65 L06      59=agit .. 67=auoir: 774 words; commonest: au auec ai auoir and auait apres amour ainsi ame auez assez aues artagnan aime
+   84 L05      78=ambassadeur .. 92=asseure: 387 words; commonest: and apres amour ame artagnan armee are ans annee ami amitie armes asseure amis arriue
+  122 L08      119=bi .. 123=br: 142 words; commonest: bien bon bonne bons bonheur bouche bois bientot bout bonnes bonte biron bonacieux biens blanc
+  214 L06      208=comme .. 217=concert: 87 words; commonest: comme comte comment con compte comptes commence compagnie como comtesse commencement compere commun commission commis
+  222 L13      218=conclure .. 224=confidence: 33 words; commonest: confiance conduite condition conduire conditions conde conference confederez conduit confidence conclusion condamne conclure confesse conduicte
+  285 L05      282=des .. 289=du: 482 words; commonest: du des dit dieu deux dont dict dire donc donne donner deuant don dicte digne
+  460 L04      456=faut .. 461=fait [neighbours out of order: words after the lower or before the upper]: 489 words; commonest: faire fait faut faict fut fort france femme fois fol fils for frere fin fonds
+  585 L11,L12  581=ie .. 588=il: 53 words; commonest: il ie ieune iii iean ieunes ieu iette ieunesse ignore ieter ieanne iete iesus ieta
+  689 L03      674=lieu .. 690=m: 199 words; commonest: lui luy lieu loin lit lieux lorsque long longtemps lorsqu louis longue liure liures lumiere
+  711 L07      709=maieste .. 732=mieux: 374 words; commonest: me mais mes meme main mal mieux mains maitre maison mesme mars mettre marquis mere
+  726 L09      709=maieste .. 732=mieux: 374 words; commonest: me mais mes meme main mal mieux mains maitre maison mesme mars mettre marquis mere
+  805 L01      797=ont .. 807=obstin [neighbours out of order: words after the lower or before the upper]: 166 words; commonest: ou ont orig oui ordre ose obiet oblige obeissance ordres ouurage ordinaire opinion other ordonne
+  816 L07,L13  807=obstin .. 821=p: 225 words; commonest: on ou of ont orig oui occasion ordre ombre octobre oeil ose one occasions ordres
+  836 L11      835=pour .. 838=pre: 69 words; commonest: pour pouuoir pourquoi pourra pre pouuait pourtant pouuez pourroit pourueoir pourres pourceaugnac pourrait pouues pousse
+  937 L07      936=quoy .. 941=r: 2 words; commonest: quoy quum
+  974 L03      972=rendu .. 984=resolu: 120 words; commonest: repos repondit rendu resolu reponse reprit repondre res reputation representer representation represente rentre reprendre rene
+ 1019 L07      1018=ser .. 1020=si: 102 words; commonest: si ses sera seruice seul seulement sganarelle seruir seule seroit serait seront ser seruiteurs seruiteur
+ 1052 L09      1049=sentiment .. 1063=soupcon: 347 words; commonest: son si ses sont soit sera seruice seul seulement sganarelle sort soir sorte soeur seruir
+ 1118 L08      1114=tout .. 1121=tache [neighbours out of order: words after the lower or before the upper]: 217 words; commonest: tout tu tres toute trop toutes trois trouue trouuer transmise triste table traite tue trauers
+ 1152 L11      1150=uo .. 1154=uous: 96 words; commonest: uous uotre uostre uos uoir uoila uoulu uois uoit uoix uolonte uoulez uoici uouloir uol
+ 1210 L03      1209=cinq .. 1211=sept: 7900 words; commonest: de et la le que en il ie les qu est qui pour ne du
+ 1250 L04      1213=neuf .. None=~: 4502 words; commonest: que uous qu un qui pour par une nous plus pas se on son si
