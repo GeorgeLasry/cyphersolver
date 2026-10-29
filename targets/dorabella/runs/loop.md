@@ -79,3 +79,4 @@ structure (repeated bigrams, opposite flips), not a reading; a reading must reac
 | 69 | Bauer's printed solutions as keys | Palmer, Sams, Roberts: is the symbol-to-letter map consistent? | negative: Palmer 83/87 consistent but gibberish before respelling; Roberts 58/87; Sams 94 letters for 87 signs |
 | 70 | Schooling-card keywords | TRUTH, MERCURY, TYRANT, MARCO, EDU, CAE, BAB, JIG, AMDG added to R3 and R23 lists | negative: -5.68 / -5.94 vs controls -2.4..-1.8 |
 | 71 | Liszt fragment as a second text, same key | consensus + 18 Liszt signs, strict, en-modern and en-elgar | negative: −3.04 / −3.02 inside shuffles (−3.02..−3.37); controls 6/6 |
+| 72 | Cryptogram card, high resolution | Padgett's 2527-px photo (Bennett) transcribed | closed: the signs step A to H clockwise, an alphabet exercise; no message, no key values |

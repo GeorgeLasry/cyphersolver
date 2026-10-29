@@ -213,6 +213,12 @@ no repeated 4-gram. Orientation F carries 23/87.
    105 signs should solve where 87 did not. en-modern −3.043, en-elgar −3.023; shuffles −3.02..−3.37; controls 6/6
    recovered (0.90-1.00). **Negative**: no shared simple-substitution table, at the transcription available.
 
+29. **The "Cryptogram" card at 2527 px** (Padgett's blog, Jan 2025, from Chris Bennett; `research_siblings/siblings.md`
+   section 3). Middle line `A3 B2 C2 D2 E2 F2 G3 H2 A2 A1`: all eight orientations in clockwise order, then back to A.
+   That makes it an alphabet exercise in the same sign system, not a message. It fits an orientation-major table
+   (step 12, Roe grid), but the arc counts it uses are not the 1-2-3 order, so it gives no key values. Closes the
+   "second text" lead for this card. Bauer's cards 1-4 (pp. 139-140) are the Schooling solution; this is card 6.
+
 ## Where it stands (28 Oct 2026)
 
 Not deciphered. Outcome: not solved (attempted, open).
@@ -234,7 +240,8 @@ What this session establishes, beyond Wase 2023:
   would sharpen the angle measurement. Found 29 Oct 2026: archive.org `edwardelgarmemor0000mrsr` is the 1947 edition,
   scanned 2022 in greyscale JP2 (196 images), lending-only (access-restricted); a borrowed view can be screenshotted
   for the plate, then `measure.py`.
-- Second texts: Liszt fragment and Cryptogram card ~18 signs each; Courage cards untranscribed. Blocker: no
+- Second texts: Liszt fragment (step 28, negative jointly) and Cryptogram card (step 29, an alphabet exercise); the rest of
+  the nine-card Schooling series untranscribed. Blocker: no
   text long enough to check a key on two documents; the Courage cards need museum access.
 - Plaintext register: the Elgar model has only 49k chars of his words and no held-out control. Blocker: his
   collected letters (Moore 1987, 1990; Young 1956) are in copyright/lending-only.
