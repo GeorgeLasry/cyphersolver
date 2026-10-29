@@ -1,0 +1,312 @@
+"""Build candidates.json for the Belgium/Luxembourg sweep (Oct 2026) from the hits checked by hand.
+Sources: ead_hits.json (grep_ead.py over AGATHA EAD exports), context.py look-ups, lux_hits.json (lux_harvest.py)."""
+import json
+
+AG = 'https://agatha.arch.be/en/data/ead/'
+LU = 'https://archives.services-publics.lu/api/descriptions/'
+NOTE = 'Scored from the archive description during the Oct 2026 Belgium/Luxembourg sweep (research/belgium_lux/); not viewed'
+CHK = 'checked 28 Oct 2026: web search, repo known.py, DECODE list'
+SRC_BE = 'State Archives of Belgium (AGATHA) sweep'
+SRC_LU = 'Archives nationales de Luxembourg (ANLux) sweep'
+SEG_SUM = 'BE-A0510_000027_002526'   # Secrétairerie d'État et de Guerre, inventaire sommaire
+SEA = 'BE-A0510_000022_002527'       # Secrétairerie d'État allemande
+AUD = 'BE-A0510_000799_005978'       # Kernarchief van de Audiëntie
+URSEL = 'BE-A0510_000626_003392'
+KEYS = ('keys in the same archive: Audience 646/1-3 "Sleutels voor cijferschrift" 1520-1692 (not on DECODE), '
+        'SEG 2 "liasse de chiffres divers" 1647-1698 (DECODE R958-R965) and SEA 1 (DECODE R937-R953)')
+
+
+ACCESS_BE = 'not digitised: AGR reading room or a scan order'
+
+
+def row(**k):
+    k.setdefault('needs_archive_scan', 'yes')
+    k.setdefault('access_note', ACCESS_BE)
+    k.setdefault('score_note', NOTE)
+    k.setdefault('seen', 'catalogue')
+    k.setdefault('source', SRC_BE)
+    return k
+
+
+def envoy(year, date, who, place, lang, inv, nums, imp, why, extra=''):
+    """A Cardinal-Infante / governor-general envoy series in the SEG summary inventory: cipher likely, not stated."""
+    return row(year=year, date=date,
+               title=f'{who}: despatches to Brussels (series likely to hold cipher)',
+               correspondents=who, place=place, language=lang, region='Low Countries',
+               period='1611-1650' if year < 1651 else '1651-1700',
+               shelfmark=f'Archives générales du Royaume, Brussels, Secrétairerie d\'État et de Guerre {nums}',
+               folio_note='whole volumes; how much is in cipher not stated', cls='B',
+               status=('Inventory (Inventaire sommaire SEG) gives the series only; cipher not mentioned, but envoy despatches '
+                       'of the 1630s were routinely partly ciphered. Not on DECODE (DECODE holds SEG 2559 and 1236 only). '
+                       + KEYS + '.' + extra),
+               why=why, importance=imp, solvability=2, difficulty=2,
+               verify='Order or view a sample volume; look for figure groups and interlinear decipherments; match against SEG 2 keys.',
+               links=[{'label': 'AGATHA inventory (SEG summary)', 'href': AG + inv}],
+               prior_art=f'open as far as known ({CHK}); the 1630s Brussels-Madrid side is summarised in Lonchay & Cuvelier, '
+                         'Correspondance de la Cour d\'Espagne (1923-37), which does not cover these envoy letters')
+
+
+C = [
+    row(year=1751, date='1751-1752',
+        title='Giovanni Giacomo Zamboni (London) → Botta Adorno: news from London, partly in cipher',
+        correspondents='Giovanni Giacomo Zamboni → Antonio Otto marquis de Botta Adorno (Brussels)',
+        place='London', language='French / Italian', region='Low Countries', period='1701-1800',
+        shelfmark='Archives générales du Royaume, Brussels, Secrétairerie d\'État et de Guerre 1051, ff. 358-380v',
+        folio_note='ff. 358-380v (23 ff.), letters received partly in cipher, with copies of Zamboni\'s letters',
+        cls='C',
+        status='Inventory I 556 (Leyder, Duquenne, Romaneix-Andrieu 2013): "Une partie des lettres reçues est en chiffre". '
+               'Not on DECODE; not in repo. Zamboni died 1753 (faire-part in the same volume).',
+        why='London intelligence to the Austrian Netherlands minister on the eve of the Diplomatic Revolution.',
+        importance=3, solvability=2, difficulty=3,
+        verify='View SEG 1051 ff. 358-380 (not digitised; reading room or scan order).',
+        links=[{'label': 'AGATHA inventory I 556', 'href': AG + 'BE-A0510_000027_006871'}],
+        prior_art=f'open ({CHK})'),
+    row(year=1526, date='Jul 1526 - Dec 1527',
+        title='Nicolas Perrenot de Granvelle, ambassador in France → Margaret of Austria: ciphered letters',
+        correspondents='Nicolas Perrenot de Granvelle → Margaret of Austria (Mechelen)',
+        place='France (court of Francis I)', language='French', region='Low Countries', period='1497-1559',
+        shelfmark='Archives générales du Royaume, Brussels, Audience 1409/18',
+        folio_note='one file; size not given', cls='B',
+        status='Kernarchief van de Audiëntie: "Gecodeerde brieven van Nicolas Perrenot de Granvelle, ambassadeur in Frankrijk, '
+               'juli 1526 - december 1527"; no decipherment noted (contrast Audience 92, 1543, "met ontcijfering"). '
+               'Audience 646/1 holds keys 1520-1621. Not on DECODE.',
+        why='The embassy after the Treaty of Madrid and the League of Cognac, Charles V\'s side of the 1526-27 crisis.',
+        importance=4, solvability=2, difficulty=2,
+        verify='Check J.-P. Devos, Les chiffres de Philippe II / his 1950 study of the 1521-27 Habsburg ciphers, '
+               'which used the Brussels keys; then view Audience 1409/18.',
+        links=[{'label': 'AGATHA Audiëntie kernarchief', 'href': AG + AUD}],
+        prior_art=f'unclear: Devos (1950) studied the 1521-27 ciphers of Charles V\'s diplomats, possibly from this file ({CHK})'),
+    row(year=1607, date='4 Jan 1607 - 26 Mar 1609',
+        title='Archduke Albert → Baron d\'Hoboken (Conrad Schetz), ambassador in England: letters, one in cipher, with the 1605 key',
+        correspondents='Archduke Albert → Conrad Schetz, baron d\'Hoboken (London)',
+        place='Brussels', language='French / Spanish', region='Low Countries', period='1598-1610',
+        shelfmark='Archives générales du Royaume, Brussels, Archives de la famille d\'Ursel (inventory, Conrard Schetz, '
+                  'papiers d\'office, ambassadeur en Angleterre): "Lettres de l\'archiduc Albert ... dont une chiffrée" '
+                  'and "Chiffre pour le baron d\'Hoboken allant en Angleterre, 20 mars 1605"',
+        folio_note='one ciphered letter among the series; key sheet of 20 Mar 1605 in the same file', cls='A',
+        status='Key and ciphertext in the same family fonds (unnumbered items, ***). Not on DECODE; not in repo. '
+               'Hoboken\'s own despatches to Albert are cited as Papiers d\'État et de l\'Audience 365.',
+        why='Archducal diplomacy with James I after the 1604 peace, Gunpowder Plot aftermath, the 1609 truce.',
+        importance=3, solvability=3, difficulty=1,
+        verify='Locate the item numbers in the d\'Ursel inventory and view key + letter.',
+        links=[{'label': 'AGATHA d\'Ursel inventory', 'href': AG + URSEL}],
+        prior_art=f'open ({CHK}; no edition of Hoboken\'s correspondence found)'),
+    row(year=1605, date='1605-1609',
+        title='Baron d\'Hoboken (London) → Archduke Albert: despatches (cipher likely, key of 1605 known)',
+        correspondents='Conrad Schetz, baron d\'Hoboken → Archduke Albert',
+        place='London', language='French', region='Low Countries', period='1598-1610',
+        shelfmark='Archives générales du Royaume, Brussels, Audience 365 (cited as PEA 365/73 etc.); cf. Audience 358 '
+                  '("met ambassadeurs in Engeland, 1518-1605") and 367',
+        folio_note='bundle; cipher not stated', cls='B',
+        status='Cipher not stated in the inventory; the d\'Ursel fonds holds the 20 Mar 1605 cipher made for this embassy. '
+               'Not on DECODE.',
+        why='Ambassador\'s reports from Jacobean London.',
+        importance=3, solvability=2, difficulty=1,
+        verify='View Audience 365 for figure passages; pair with the d\'Ursel key.',
+        links=[{'label': 'AGATHA Audiëntie kernarchief', 'href': AG + AUD}],
+        prior_art=f'open ({CHK})'),
+    row(year=1629, date='1629-1636',
+        title='Antoine Schetz de Grobendonck, governor of \'s-Hertogenbosch: office papers "sometimes ciphered"',
+        correspondents='Antoine Schetz de Grobendonck ↔ Brussels government and others',
+        place='\'s-Hertogenbosch / Antwerp', language='French / Spanish', region='Low Countries', period='1611-1650',
+        shelfmark='Archives générales du Royaume, Brussels, Archives de la famille d\'Ursel, Antoine Schetz de Grobendoncq, '
+                  'papiers d\'office (gouverneur de Bois-le-Duc)',
+        folio_note='bundle: correspondence, military news 1633 and 1636, memoranda and pieces "souvent originales, parfois chiffrées"',
+        cls='C',
+        status='Inventory states some pieces are ciphered. Not on DECODE; not in repo.',
+        why='The 1629 siege of \'s-Hertogenbosch and its justification; 1630s frontier intelligence.',
+        importance=3, solvability=2, difficulty=3,
+        verify='View the bundle; count ciphered pieces.',
+        links=[{'label': 'AGATHA d\'Ursel inventory', 'href': AG + URSEL}],
+        prior_art=f'open ({CHK})'),
+    row(year=1619, date='1619',
+        title='Guillaume Portugal, secretary of the Spanish legation in Prague: ciphered correspondence',
+        correspondents='Guillaume Portugal (Spanish embassy of Oñate) ↔ unknown',
+        place='Prague', language='Spanish / French', region='Central Europe', period='1611-1650',
+        shelfmark='Archives de l\'État à Mons, Archives de la famille de La Boëssière-Thiennes 1487',
+        folio_note='"Correspondance chiffrée. 1619."; size not given', cls='C',
+        status='Inventory item under "Guillaume Portugal, secrétaire à la légation espagnole à Prague". Not on DECODE; not in repo.',
+        why='The Spanish embassy at the outbreak of the Thirty Years War (Bohemian revolt, election of Ferdinand II).',
+        importance=4, solvability=2, difficulty=3,
+        verify='View La Boëssière 1487 (State Archives in Mons).',
+        access_note='not digitised: State Archives in Mons reading room or a scan order',
+        links=[{'label': 'AGATHA La Boëssière-Thiennes inventory', 'href': AG + 'BE-A0524_706061_702988'}],
+        prior_art=f'open ({CHK})'),
+    row(year=1674, date='1674',
+        title='Alexandre de Bournonville: ciphered service letter (1674 campaign)',
+        correspondents='unknown → Alexandre de Bournonville (Imperial general)',
+        place='unknown', language='unknown (French or Spanish)', region='Central Europe', period='1651-1700',
+        shelfmark='Archives générales du Royaume, Brussels, Famille de Bournonville (inventaire détaillé) 5/16',
+        folio_note='one letter; cf. no. 2, cahier 1611-1699', cls='C',
+        status='"Lettre chiffrée pour affaires de service, 1674". Not on DECODE; not in repo.',
+        why='Bournonville commanded the Imperial army on the Rhine against Turenne in 1674.',
+        importance=3, solvability=2, difficulty=3,
+        verify='View Bournonville 5/16.',
+        links=[{'label': 'AGATHA Bournonville inventory', 'href': AG + 'BE-A0510_000466_003136'}],
+        prior_art=f'open ({CHK})'),
+    row(year=1690, date='late 17th century',
+        title='Claris de Clairmont papers: cipher code and an enciphered piece',
+        correspondents='unknown (Louis Antoine de Claris de Clairmont papers)',
+        place='unknown', language='unknown', region='Low Countries', period='1651-1700',
+        shelfmark='Archives de l\'État à Liège, Archives de la famille de Mercy-Argenteau 799',
+        folio_note='key and one ciphertext', cls='A',
+        status='"Code de chiffrement et pièce cryptée [fin XVIIe siècle]"; key filed with the ciphertext. Not on DECODE.',
+        why='Unknown; small self-contained key + text pair.',
+        importance=2, solvability=3, difficulty=1,
+        verify='View Mercy-Argenteau 799 (State Archives in Liège).',
+        access_note='not digitised: State Archives in Liège reading room or a scan order',
+        links=[{'label': 'AGATHA Mercy-Argenteau inventory', 'href': AG + 'BE-A0523_709809_709823'}],
+        prior_art=f'open ({CHK})'),
+    row(year=1530, date='1506-1559 (Charles V\'s reign)',
+        title='Huy formulary: copied letters of the Privy Council, Great Council and Rome, some lines in cipher',
+        correspondents='various (Privy Council, Council of Brabant, Rome) — copies kept at Huy',
+        place='Huy / Brussels', language='French / Latin', region='Low Countries', period='1497-1559',
+        shelfmark='Archives de l\'État à Liège, Ville de Huy (Ancien Régime), Manuscrits 0/I, ff. 7-536',
+        folio_note='ff. 7-536; "certaines ont des lignes écrites en caractères chiffrés"', cls='C',
+        status='Inventory note; datable letters 1506-1559. Not on DECODE; not in repo.',
+        why='Possibly early Habsburg-Liège or Roman cipher lines, unusual in a town formulary.',
+        importance=2, solvability=2, difficulty=3,
+        verify='View the register and locate the cipher lines.',
+        access_note='not digitised: State Archives in Liège reading room or a scan order',
+        links=[{'label': 'AGATHA Huy inventory', 'href': AG + 'BE-A0523_712722_713042'}],
+        prior_art=f'open ({CHK})'),
+    row(year=1637, date='14 Jul 1637',
+        title='Léonard Zutman: ciphered letter to Father Joseph (Paris) found on him',
+        correspondents='unknown (Liège) → Father Joseph (François Leclerc du Tremblay), Paris',
+        place='Liège / Spanish Netherlands', language='French', region='Low Countries', period='1611-1650',
+        shelfmark='Archives générales du Royaume, Brussels, Conseil privé espagnol, consultes reg. 303 ff. 118-119 (analysis); '
+                  'the letter itself, if kept, in the case file',
+        folio_note='consulte only certain; the intercepted letter not located', cls='C',
+        status='Consulte analysis: Zutman, a Liège merchant going to France, had concealed a ciphered letter to Father Joseph. '
+               'Not on DECODE.',
+        why='A French intelligence channel through Liège in the war of 1635-59, addressed to Richelieu\'s éminence grise.',
+        importance=3, solvability=1, difficulty=3,
+        verify='Find whether the letter survives (Conseil privé cartons, Audience, SEG 1637).',
+        links=[{'label': 'AGATHA Conseil privé consultes', 'href': AG + 'BE-A0510_000428_003349'}],
+        prior_art=f'open ({CHK})'),
+    row(year=1756, date='1753-1767',
+        title='Ministry of Count Cobenzl: "Correspondance chiffrée" from Vienna (and the Secrétaire des chiffres)',
+        correspondents='Vienna (court chancellery / Kaunitz) ↔ Charles de Cobenzl, minister plenipotentiary, Brussels',
+        place='Vienna / Brussels', language='French / German', region='Low Countries', period='1701-1800',
+        shelfmark='Archives générales du Royaume, Brussels, Index de la correspondance du ministère Charles de Cobenzl '
+                  '(DiVa), index nos. 8448-8450 (Nov-Dec 1756), 13306 (3 Jan 1767), 43928 (26 Sep 1753), 43929 (27 Dec 1765), '
+                  '44041 (Secrétaire des chiffres, 22 Dec 1760), 47188 (Püchler, Geheime Ziffer-Sekretär, 26 Feb 1763)',
+        folio_note='index cards digitised on DiVa (account needed); the letters are in the SEG / Chancellerie series they cite (W = Wien)',
+        cls='B',
+        status='DiVa index entries headed "Correspondance chiffrée"; the underlying letters not identified yet. '
+               'Repo already read van Swieten → Cobenzl 1757-59 (SEG 1236, DECODE R955-R957), whose figures may share the key.',
+        why='Vienna\'s ciphered instructions to Brussels during the Seven Years War.',
+        importance=3, solvability=2, difficulty=2,
+        verify='Sign in to AGATHA, open the index cards, follow them to the SEG volume, view the letters.',
+        needs_archive_scan='partly',
+        access_note='index cards scanned on DiVa behind a free AGATHA account; the letters themselves not digitised (AGR)',
+        links=[{'label': 'AGATHA Cobenzl index', 'href': AG + 'BE-A0550_722447_803086'},
+               {'label': 'DiVa card 8448', 'href': 'https://agatha.arch.be/data/images/550/550_0005_000_00000_8448/'}],
+        prior_art=f'open ({CHK})'),
+    row(year=1867, date='Apr-May 1867',
+        title='Belgian Foreign Affairs ↔ Sylvain Van de Weyer (London): telegrams clear and in cipher, Luxembourg crisis',
+        correspondents='Belgian Ministry of Foreign Affairs ↔ Sylvain Van de Weyer, minister in London',
+        place='Brussels / London', language='French', region='Low Countries', period='1801-1900',
+        shelfmark='Archives générales du Royaume, Brussels, Papiers Sylvain Van de Weyer 37',
+        folio_note='telegram file; "en clair et chiffrés"', cls='C',
+        status='Inventory: "Télégrammes en clair et chiffrés des Affaires Etrangères, avril-mai 1867" under the London '
+               'conference on Luxembourg. Not on DECODE.',
+        why='Belgium\'s diplomacy at the 1867 London Conference that neutralised Luxembourg.',
+        importance=3, solvability=2, difficulty=3,
+        verify='View file 37; check whether the cipher telegrams carry decodes.',
+        links=[{'label': 'AGATHA Van de Weyer inventory', 'href': AG + 'BE-A0510_000326_002805'}],
+        prior_art=f'open ({CHK})'),
+    row(year=1900, date='1899-1904',
+        title='Ciphered telegrams from Peking (Goffinet papers, Royal Palace)',
+        correspondents='Belgian legation, Peking → Brussels (King Leopold II\'s cabinet)',
+        place='Peking', language='French', region='Other', period='1801-1900',
+        shelfmark='Archives of the Royal Palace, Brussels, Archives Goffinet 1597',
+        folio_note='telegrams 1899, 1900, 1901, 1904; Goffinet 653 holds transcriptions of ciphered telegrams (late 19th c.)',
+        cls='C',
+        status='Inventory: "Télégrammes chiffrés depuis Pékin". Decodes may be attached. Not on DECODE.',
+        why='Boxer rising and Belgian railway concessions (Peking-Hankow) seen from Leopold II\'s side.',
+        importance=3, solvability=2, difficulty=3,
+        verify='View Goffinet 1597 and 653 (Archives of the Royal Palace).',
+        access_note='not digitised: Archives of the Royal Palace, Brussels (by permission)',
+        links=[{'label': 'AGATHA Goffinet inventory', 'href': AG + 'BE-A0546_005670_803278'}],
+        prior_art=f'open ({CHK})'),
+    row(year=1614, date='1598-1624',
+        title='Archducal envoys at the Imperial court (Visscher, Zeelandre, Bruneau, Bodenius, Renz) → German secretariat',
+        correspondents='Pierre de Visscher, Jacques de Zeelandre, Jacques Bruneau, G.-G. Bodenius, J.-A. Renz → Antonio Suárez de Argüello / J.-J. Fleckhammer',
+        place='Prague / Vienna', language='French / German / Spanish', region='Low Countries', period='1611-1650',
+        shelfmark='Archives générales du Royaume, Brussels, Secrétairerie d\'État allemande 422-451, 525',
+        folio_note='about 25 volumes; cipher not stated', cls='B',
+        status='Cipher not stated; SEA 1 ("Chiffres et sigles (cryptographes) servant à la correspondance du secrétaire '
+               'd\'État allemand", DECODE R937-R953) holds the keys of this office. Repo has SEA 540 (1634-40) read.',
+        why='Brussels\' reporting from Rudolf II\'s and Matthias\'s courts up to the Bohemian war.',
+        importance=4, solvability=2, difficulty=2,
+        verify='Sample SEA 438-444 (Visscher) for figure passages; match against R937-R953.',
+        links=[{'label': 'AGATHA SEA inventory', 'href': AG + SEA}],
+        prior_art=f'open as far as known ({CHK})'),
+    envoy(1633, '1633-1641', 'Marqués de Castañeda (ambassador in Vienna) ↔ the Cardinal-Infante', 'Vienna',
+          'Spanish', SEG_SUM, '314-328', 4, 'Spanish-Imperial coordination from Nördlingen to 1641.'),
+    envoy(1633, '1633-1637', 'Conde de Oñate (ambassador extraordinary in Germany) ↔ the Cardinal-Infante', 'Vienna / Germany',
+          'Spanish', SEG_SUM, '329-339', 4, 'Oñate\'s embassy around Nördlingen and the Peace of Prague.'),
+    envoy(1633, '1633-1642', 'Francisco de Melo (ambassador in Italy, then Germany) ↔ the Cardinal-Infante', 'Genoa / Vienna',
+          'Spanish', SEG_SUM, '351-362', 4, 'Melo before he succeeded as governor-general (Rocroi 1643).'),
+    envoy(1633, '1633-1642', 'Spanish envoys in London (Necolalde, Cárdenas, Velada, Malvezzi) ↔ the Cardinal-Infante', 'London',
+          'Spanish', SEG_SUM, '364-378', 4, 'Charles I\'s England 1633-42, including the 1639 Downs affair and the 1640-41 embassy.',
+          ' Repo has malvezzi1548 (a different Malvezzi); catalogue 372 is Philip IV → Velada 1640 (Simancas).'),
+    envoy(1633, '1633-1640', 'Diego de Saavedra Fajardo (resident in Bavaria) ↔ the Cardinal-Infante', 'Munich / Regensburg',
+          'Spanish', SEG_SUM, '385-396', 4, 'Saavedra Fajardo\'s German mission, a major figure of Spanish letters.'),
+    envoy(1633, '1633-1641', 'Marqués de Castel Rodrigo and other ambassadors in Rome ↔ the Cardinal-Infante', 'Rome',
+          'Spanish', SEG_SUM, '424-433', 3, 'Spain at the Barberini court during the war with France.'),
+    envoy(1633, '1633-1641', 'Conde de la Roca (ambassador in Venice) ↔ the Cardinal-Infante', 'Venice',
+          'Spanish', SEG_SUM, '441-448', 3, 'Venice as a listening post in the 1630s.'),
+    envoy(1648, '1648-1650', 'Antoine Brun (Münster, then The Hague) ↔ Conde de Peñaranda', 'Münster / The Hague',
+          'Spanish / French', SEG_SUM, '602-606', 4, 'The Peace of Münster and the first Spanish embassy to the Dutch Republic.'),
+    row(year=1540, date='1518-1744 (mainly 16th c.)',
+        title='Governors-general\'s correspondence with ambassadors in England, France and Rome (Audience)',
+        correspondents='Netherlands ambassadors in England, Paris and Rome ↔ governors-general (Margaret of Austria to the Infanta)',
+        place='London / Paris / Rome', language='French / Spanish', region='Low Countries', period='1497-1559',
+        shelfmark='Archives générales du Royaume, Brussels, Audience 358, 367, 405/2, 1537 (England); 419-426 (Paris); '
+                  '471-472 (Rome); 1410/3 (Hannart 1536)',
+        folio_note='bundles; cipher not stated', cls='B',
+        status='Cipher not stated; Audience 646/1-3 keys 1520-1692 in the same fonds; Audience 92 (Granvelle 1543, '
+               'with decipherment) shows the office kept decipherments. Not on DECODE.',
+        why='The Brussels side of Habsburg diplomacy with Henry VIII, Francis I and the popes.',
+        importance=4, solvability=2, difficulty=2,
+        verify='Sample the bundles for figure passages; check Devos\'s 1950s cipher studies for which were read.',
+        links=[{'label': 'AGATHA Audiëntie kernarchief', 'href': AG + AUD}],
+        prior_art=f'partly calendared (CSP Spain, L&P Henry VIII use Brussels copies); cipher passages not known to be read ({CHK})'),
+    row(year=1601, date='17th century',
+        title='Luxembourg recipe book with recipes in a numeric secret script (f. 70r-v)',
+        correspondents='unknown compiler',
+        place='Luxembourg', language='French / Latin', region='Low Countries', period='1611-1650',
+        shelfmark='Archives nationales de Luxembourg, Section historique de l\'Institut grand-ducal, Abt. 15 no. 146 '
+                  '(LU/ANLUX/003/00042/023/009/00002, SHL-Abt15-0146)',
+        folio_note='f. 70r-v; 74 ff., worm damage ff. 1-21, 52-74', cls='C',
+        status='ANLux description: "Einzelne Rezepte scheinen in einer aus Zahlen bestehenden verschlüsselten Geheimschrift '
+               'geschrieben zu sein (f. 70r-70v)". Digitised as a PDF (representation 20174) but not published; '
+               'portal search needs eAccess login. Not on DECODE.',
+        why='Small numeric cipher in a medical/cosmetic recipe book; probably a simple substitution.',
+        importance=1, solvability=3, difficulty=2,
+        verify='Request the PDF from ANLux (service.accueil@an.etat.lu) or view with a reader account.',
+        access_note='digitised (PDF, representation 20174) but unpublished: ANLux reader account / eAccess login or e-mail request',
+        links=[{'label': 'ANLux API record 265578', 'href': LU + '265578'}],
+        source=SRC_LU, prior_art=f'open ({CHK})'),
+    row(year=1943, date='1943-1945',
+        title='Luxembourg government in exile: cipher cables (Legallais / legation in Washington; exile government)',
+        correspondents='Hugues Le Gallais, Luxembourg legation Washington ↔ government in exile (London)',
+        place='Washington / London', language='French', region='Low Countries', period='1901-1950',
+        shelfmark='Archives nationales de Luxembourg, Affaires étrangères AE-GtEx-261 (1943), AE-GtEx-255 (1944), '
+                  'AE-GtEx-271 (1944), AE-AW-0015 (1943-45)',
+        folio_note='files of "câbles chiffrés"; likely the deciphered texts', cls='C',
+        status='Titles only ("Câbles chiffrés"). Ministry files of the period usually hold the decoded text; '
+               'whether the cipher groups survive is unknown. Not digitised. Not on DECODE.',
+        why='Wartime diplomacy of the Grand Duchy\'s exile government.',
+        importance=2, solvability=1, difficulty=4,
+        verify='Ask ANLux whether the files contain the cipher groups or only the decodes.',
+        access_note='not digitised: ANLux reading room (Belval) or a scan request',
+        links=[{'label': 'ANLux API record 152360', 'href': LU + '152360'},
+               {'label': 'ANLux API record 154068', 'href': LU + '154068'}],
+        source=SRC_LU, prior_art=f'open ({CHK})'),
+]
+
+json.dump(C, open('candidates.json', 'w', encoding='utf8'), ensure_ascii=False, indent=1)
+print(len(C), 'candidates')

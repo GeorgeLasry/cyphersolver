@@ -56,9 +56,17 @@ In your folder `research/<your_folder>/`:
   "seen": "catalogue" (description only) or "image" (you looked at the scan),
   "source": "<archive name> sweep",
   "prior_art": "open (checked 26 Oct 2026: ...)" or what was found,
+  "needs_archive_scan": "yes | no | partly | unknown",
+  "access_note": "what it takes to see the ciphertext, e.g. \"scans on DiVa behind a free AGATHA account\"",
   "decode_ids": [1234]              // only if on DECODE
 }
 ```
+
+`needs_archive_scan` is required on every row: `no` = the ciphertext images are online (a login or account still
+counts as online; say so in `access_note`); `yes` = nothing to work from without the archive (reading room, scan
+order, e-mail request); `partly` = some pieces online, others not (or an online index only); `unknown` = not
+determined. At merge, `yes` becomes `access: "archive"` in catalogue.json, which shows the "needs archive scans"
+pill on the catalogue page.
 
 Scores: importance = historical weight (a ruler's or ambassador's despatch on a major affair 4-5; routine
 merchant or family letter 1-2). Solvability = odds of a full reading from material online (images online + long
