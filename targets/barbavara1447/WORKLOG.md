@@ -8,3 +8,8 @@
 - 2026-10-28 Transcribed the six clear copies (texts/decipherments_18c.md); noted the copyists' gaps (f. 39 blank, sign ꝺ+÷ drawn in the margin and left blank on ff. 55v and 74v, "Cologna" for Bologna on f. 68).
 - 2026-10-28 Not done: sign-level transcription of the cipher leaves, the f. 135/143 glosses, Mazzatinti's f. 50.
 - 2026-10-28 Lead 1314 closed as read (existing decipherment); DECODE queue note on R1857.
+- 2026-10-28 Pusterla's letters (lead 1313) checked: late clear copies for all; folded into this folder (one key), see WORKLOG_pusterla.md.
+- 2026-10-28 R1857 label 'Duca di Ferrara' found over d+÷ (first misread as 'Ducati / Ferrara'); fits all five blanks.
+- 2026-10-28 Pusterla's eight copies transcribed and translated (two subagents); Z-like sign = Micheletto Attendolo [?] from context.
+- 2026-10-29 ff. 135 and 143: 55 cipher runs deciphered with the key and the glosses (subagent); 50 read, 5 open.
+- 2026-10-29 Write-up: docs/barbavara1447.html, profile texts, key-web edge k-r1857, reveal from f. 135 run 1, ledgers.

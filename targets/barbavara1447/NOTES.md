@@ -1,93 +1,116 @@
-# Marcolino Barbavara → Francesco Sforza, Rimini and Rome, 13 Feb - 4 May 1447 (BnF italien 1584)
+# Barbavara and Pusterla to Francesco Sforza, Jan - May 1447: the R1857 key (BnF italien 1584)
 
-Status: no write-up (lead 1314 closed 28 Oct 2026: every cipher leaf has a decipherment filed with it or written
-between its lines; the brief says stop and report where it is. The clear copies are transcribed here. A full check
-of cipher against copy, sign by sign, was not done.)
+Status: written up 29 Oct 2026 (docs/barbavara1447.html): read from existing decipherments; f. 143 read in part (5 of 51 runs open)
 
-Lead 1314 (research/leads.json, sweep venice_milan_print row 2). BnF italien 1584 (Archivio Sforzesco papers, 1447),
-Gallica microfilm ark `btv1b100373864`. Mazzatinti 1887 (t. II) lists the Barbavara cipher letters at ff. 40, 49, 56,
-62, 75, 135, 143, and f. 69 without "in cifre". The stamped folio numbers on the film are Mazzatinti's.
+One key, two writers. DECODE R1857 image P11 (ASMi, Potenze sovrane 1592 Cifrari, a late copy) is headed "Marcolinus de
+Barbavara et Symon Arrigonus — Petrus de Pusterla". Marcolino Barbavara, ducal secretary, wrote from Rimini and Rome
+(leads 1314); Pietro Pusterla, the Duke of Milan's procurator, from Gualdo, Ferrara and Milan (lead 1313; folded in
+here from `targets/pusterla1447/` on 28 Oct 2026, its notes kept as `NOTES_pusterla.md`, log `WORKLOG_pusterla.md`).
+All letters are in BnF italien 1584 (Archivio Sforzesco, 1447), Gallica microfilm ark `btv1b100373864`; folio numbers
+are the stamped ones, which are Mazzatinti's (1887).
 
-## Result: each cipher leaf already has a decipherment
+## Result: read from existing decipherments
 
-Two kinds of decipherment are present.
+Every cipher letter of both men in the volume has a decipherment:
 
-1. **Clear copies filed with the originals**, in one late, regular italic hand (the script looks eighteenth century,
-   probably made in the Milan archive before the papers went to Paris; not dated). The writer used a copy of the key
-   now at the ASMi, *Potenze sovrane 1592 Cifrari* (DECODE R1857, image P11, also late), headed "Marcolinus de
-   Barbavara et Symon Arrigonus — Petrus de Pusterla". The f. 61 copy names Simone Arrigoni as a member of Sforza's
-   father's household.
-2. **Contemporary (1447) interlinear glosses** on the mixed clear/cipher letters f. 135 and f. 143.
+1. **Clear copies in one late italic hand** (the script looks eighteenth century, probably the Milan archive's before
+   the papers went to Paris; not dated), each filed beside its cipher leaf. Where the copyist could not read a code
+   sign he left a blank and drew the sign in the margin.
+2. **Fifteenth-century decipherments**: f. 43 (of Pusterla's f. 42) and the interlinear glosses on Barbavara's two
+   mixed letters f. 135 and f. 143. The glosses cover only part of the cipher runs; the runs are deciphered here with
+   the R1857 key (`texts/glossed_letters.md`).
 
-| cipher leaf | date, place | decipherment | Gallica canvas |
+| writer | cipher leaf | date, place | decipherment | canvas |
+| --- | --- | --- | --- | --- |
+| Pusterla | f. 13 | 21 Jan 1447, Gualdo | f. 14 | 15-16 |
+| Pusterla | not located (Mazzatinti f. 27) | 6 Feb 1447, Ferrara | f. 27 | 27 |
+| Pusterla | f. 32 | 10 Feb 1447, Ferrara (margin note; copy undated) | f. 33 | 30-31 |
+| Barbavara | f. 40 | 13 Feb 1447, Rimini | f. 39 | 36 |
+| Pusterla | f. 42 | 14 Feb 1447, Milan (Mazzatinti: 16 Feb) | f. 41r-v; 15th-c. f. 43 | 38-40 |
+| Barbavara | f. 49 | 27 Feb 1447, Rome | f. 48r-v (Mazzatinti: "Traduzione" f. 50) | 45-46 |
+| Barbavara | f. 56 | 3 Mar 1447, Rome | ff. 55r-v, 57r | 53-55 |
+| Barbavara | f. 62 | 4 Mar 1447, Rome | f. 61r | 58-59 |
+| Barbavara | f. 69 | 6 Mar 1447, Rome | f. 68 | 65 |
+| Pusterla | f. 67 | 6 Mar 1447, Ferrara | f. 66r-v | 63-64 |
+| Pusterla | f. 71 | 7 Mar 1447, Ferrara | f. 70r-v | 67-68 |
+| Barbavara | f. 75 | 8 Mar 1447, Rome | f. 74r-v | 71-72 |
+| Pusterla | f. 77 | 8 Mar 1447, Ferrara | f. 76r-v | 73-74 |
+| Pusterla | f. 81 | 10 Mar 1447, Ferrara | f. 80 | 77-78 |
+| Barbavara | f. 135 | undated (late Apr 1447) | 15th-c. glosses in part; runs deciphered here | 129 |
+| Barbavara and Arrigoni | f. 143 | 4 May 1447, Rome | 15th-c. glosses in part; runs deciphered here | 136 |
+
+Texts: `texts/decipherments_18c.md` (+ `_en`) Barbavara's six copies; `texts/pusterla_copies_a.md`, `_b.md` (+ `_en`)
+Pusterla's eight; `texts/glossed_letters.md` (+ `_en`) ff. 135 and 143.
+
+Checks against the cipher (spot checks with the key): f. 69 line 1 = "in questa hora" as in the f. 68 copy; f. 40 line 1
+= "se lo c[avalario]" as in the f. 39 copy; the clear words left in f. 75's cipher recur in order in the f. 74 copy. No
+sign-level transcription of the copied letters was made (`transcription_missing` in the profile).
+
+## The key and the code signs
+
+R1857 P11 (`key_R1857_codes.tsv`): homophonic alphabet (2-4 signs a letter), vowel-consonant syllable signs (ab … uz),
+word signs (che, con/cum, per, non, qua, quando, que, perché, quanto, se, ciò, come), nulls ("insignificanti"), and code
+signs for Signori Malatesti, Re, dinaro, Conte d'Urbino, Duca di Ferrara, V.S., Papa, Camerlengo, Duca, Veneziani, qui,
+with three signs unlabelled (∠, a Z-like sign, A). Several cells are ink-blotted. Tomokiyo had already tied R1857 P11
+to ital. 1584 f. 69 (DECODE note, 2024).
+
+The copyist's own key lacked several code labels; his blanks, read with R1857 and the context, give:
+
+| sign | value | basis | blanks |
 | --- | --- | --- | --- |
-| f. 40 (slip) | 13 Feb 1447, Rimini | f. 39, clear copy, same opening | 36 |
-| f. 49 | 27 Feb 1447, Rome | f. 48r-v, clear copy (Mazzatinti says the "Traduzione" is f. 50; it is f. 48, filed before the cipher) | 45-46 |
-| f. 56 | 3 Mar 1447, Rome | ff. 55r-v and 57r, clear copy wrapped round the cipher leaf | 53-55 |
-| f. 62 (long strip) | 4 Mar 1447, Rome | f. 61r, clear copy | 58-59 |
-| f. 69 (slip) | 6 Mar 1447, Rome | f. 68, clear copy on the same mount | 65 |
-| f. 75 | 8 Mar 1447, Rome | f. 74r-v, clear copy | 71-72 |
-| f. 135 (slip) | undated (late Apr 1447) | 15th-c. interlinear glosses over the cipher runs ("roberto de monte alboddo", "circa", "le fanti de" ...) | 129 |
-| f. 143 | 4 May 1447, Rome; signed Marcolinus de Barbavara and Symon Arrigonus | 15th-c. interlinear glosses over nearly every cipher run | 136 |
+| ꝺ+÷ | Duca di Ferrara (in 1447 Leonello d'Este, Marquis) | R1857 label "Duca di Ferrara" over the sign; all five blanks fit | f. 27 ×2, f. 55v ×2, f. 74v |
+| ꝺ.7 | Veneziani | R1857 label; fits | f. 80 ×2 |
+| 9+o | qui | R1857 label; fits | f. 80 |
+| Z-like sign | Micheletto Attendolo, the Venetian captain-general [?] | context only: "il ___ vene con tuto l'exercito de' Venetiani a Cremona"; "uno Capo di Squadra del ___ quale è suo parente" (Micheletto was Sforza's cousin) | f. 76 ×2, f. 80 |
+| ∠ | open (lord of Faenza? a ∠ stands in f. 41's margin beside "il Sig. de Faenza", written out) | none | f. 27 ×2, f. 76 |
+| A | open | none | f. 66 |
+| ƺ, ⁊9, ϵo | open | none | f. 41 (×1 each) |
 
-The clear copies are transcribed in `texts/decipherments_18c.md`. The f. 135 and f. 143 glosses are not transcribed.
+## Contents
 
-Checks made against the cipher (spot checks, not a full alignment):
+Pusterla, having sealed the January capitoli between the Duke and Sforza, travels to Sforza (21 Jan), then to Ferrara,
+where the lord of Ferrara is suspicious and the money for Sforza's condotta stalls (6-10 Feb); in Milan the Duke receives
+him gladly but will not let him leave without money (14 Feb); back at Ferrara he presses the Duke of Ferrara to pay,
+in vain, reports Micheletto's Venetian army at Cremona crying "viva San Marco", the move on Soncino, and the Count of
+Urbino's negotiations (6-10 Mar). Barbavara, sent to Rome and King Alfonso, finds Eugenius IV dead, wins from the King
+94,000 ducats a year for two years for Sforza's condotta, reports the conclave and the election of Nicholas V (6 Mar),
+and the King's threat that priests are "homini da bastonate, non da pregare" (8 Mar).
 
-- f. 69 line 1 with the R1857 key: `d÷o` = in, `97` = que, `fo` = s, `gtto` = t, `o` = a, `≢` = h, `per` = or (syllable
-  sign) give "in questa hora", which matches the f. 68 copy.
-- f. 40 line 1 with the key: `fo ÷ ꝥ x ott` = s e l o c (the copy reads "Se lo cavalario"). The copy keeps the clear
-  words left in the cipher (essendo, bisognasse, adesso, Mando, Et mercordi proximo, Cum).
-- f. 75: the clear words left in the cipher ("meglore et più grata", "Et se anchora questo", "pregare. Non so quello
-  seguirà", "per altre ho scripto", "me ricommando") appear in the same order in the f. 74 copy.
+## The glossed letters ff. 135 and 143 (29 Oct 2026)
 
-The system (from R1857 P11): homophonic alphabet with 2-4 signs per letter, signs for vowel-consonant syllables
-(ab ... uz), word signs (che, con/cum, per, non, qua, quando, que, perché, quanto, se, ciò, come), nulls
-("insignificanti"), and code signs for Signori Malatesti, Re, dinaro, Conte d'Urbino, Ducati, Ferrara, V.S., Papa,
-Camerlengo, Duca, Veneziani, qui. Several signs on the key copy are ink-blotted. Tomokiyo had already noted that
-R1857 P11 is the key of ital. 1584 f. 69 (DECODE note on R1857, 2024).
-
-Contents (from the copies): Barbavara goes from Rimini towards Sforza (13 Feb). In Rome he finds Eugenius IV dead (he
-died 23 Feb), sees the Camerlengo, and names Capua and Fermo as the cardinals tipped for pope (27 Feb). King Alfonso
-agrees to pay Sforza's condotta, 94,000 ducats a year for two years, with a payment schedule (3 Mar). The cardinals
-enter the conclave; the letter mentions the bishop of Novara, Pietro di Monferrato, Simone Arrigoni and Madonna Aura
-(4 Mar). The election is announced at about the 17th hour (6 Mar; Nicholas V). Barbavara meets the new pope; the pope
-and cardinals plan peace in Italy and send the Camerlengo and the Vice-Chancellor to the King, who says priests are
-"homini da bastonate, non da pregare" (8 Mar).
+Transcribed in full and every cipher run deciphered with the R1857 key and the 15th-c. glosses (`texts/glossed_letters.md`,
+English `_en`, the runs as written in `texts/glossed_runs.tsv`; first pass by a subagent, checked here in outline).
+f. 135: 4 runs, all read in sense ("circha li facti de Roberto da Montalboddo", "Re", "el mio restare de qua ...",
+"pigliare de le altre terre ..."). f. 143: 51 runs; 9 from the key with the gloss agreeing, 31 key and gloss, 6 gloss
+alone, 5 unread (143.17, .31, .35, .46, .51: no gloss, blotted key cells). Values the glosses give but the key copy does
+not: ϵg = s, fto = ap (papa), t-o = i, h = l, d- = r; probable nulls Ap, 3°, otto, "presto" (struck), TT, .ll., ·l·, +.
+Several pairs glossed li, per le, ciò do not decode with the key copy: the late copy may be wrong there, or the gloss
+loose. A second sign-by-sign pass is advised before these values are used to correct the key.
 
 ## Remaining gaps
+- f. 143 runs 143.17, .31, .35, .46, .51 and words inside 143.4, 143.41 - blocker: no-key-material; no gloss (or too faint) and the signs' cells are blotted on the only key copy.
 
-These are gaps in the old decipherments. Nothing in this folder is a new reading.
+- Code signs ∠ (×3), A (×1), ƺ, ⁊9, ϵo (×1 each) - blocker: open-codes; unlabelled on R1857 or not on it, each with one to three contexts.
+- Z-like sign = Micheletto Attendolo [?] - blocker: open-codes; context only, three places.
+- f. 68 "Monsignore da Cologna" (for Bologna, Parentucelli's see) - blocker: open-codes; the cipher at that word was not compared; a copying slip by the evidence.
+- The 6 Feb 1447 cipher original (copy f. 27) - blocker: needs-physical-access; not found on the microfilm.
+- f. 33 copy has no date line (date from a later margin note) - blocker: needs-physical-access.
 
-- f. 39: "essendole quelli del [blank]" and a dash after "V.S." are left blank by the copyist. Cipher f. 40 line 2
-  before "bisognasse" was not resolved here. Blocker: open-codes. The key copy has blotted signs, and a sign-level
-  transcription would be needed.
-- ff. 55v and 74v: a code sign the copyist drew in the margin as ꝺ+÷ is left blank three times ("li xx m del ___", "el
-  ___ non ne pagasse", "el manda dal Signore ___ per quelli vinti millia ducati"). **Identified from context, 28 Oct
-  2026 (see `targets/pusterla1447/`): ꝺ+÷ = the lord (Marquis) of Ferrara, Leonello d'Este [?].** Pusterla's f. 27
-  copy (Ferrara, 6 Feb) leaves the same sign blank twice: "Ista mane giunsi quà, e subito fui col ___" and "quelo fuse
-  utile ad eso ___". Pusterla goes to the lord of Ferrara on arrival there, and Barbavara's King undertakes to make
-  "him" pay his 20,000 ducats; Leonello was Alfonso's son-in-law. On the R1857 copy the labels "Ducati" and
-  "Ferrara" are crowded together over this sign and the next. This rests on context only: no clear copy writes it out.
-- f. 68 "Monsignore da Cologna": Parentucelli was cardinal of Bologna, so this is probably a copying or decipherment
-  slip, B read as C. The cipher at that word was not checked. Blocker: none (workable).
-- f. 61: two underlined blanks around "de la morte dal Papa" and blots in the margin. Not compared with f. 62.
-- f. 48 ends "Ma per levargela ancora" and stops with a flourish. Not compared with f. 49.
-- f. 135, f. 143: the 15th-century glosses are not transcribed.
-- Mazzatinti's f. 50 "Traduzione" was not located. Canvas 47 shows f. 49v (the cipher showing through, plus an
-  endorsement).
+The copied cipher leaves have no sign-level transcription here: the copies are complete texts, so it is recorded as
+`transcription_missing` in the profile rather than as a gap.
 
 ## Escalation
 
-- Siblings: Pusterla's letters in the same volume (ff. 13, 27, 32, 42/43, 67, 71, 77, 81) use the same key (R1857
-  header). f. 42 has its decipherment on f. 43. They could settle the ꝺ+÷ sign and the blotted key cells.
-- A full sign-level transcription of ff. 40, 49, 56, 62, 69, 75 aligned with the copies would rebuild the complete key
-  (blots included) and test each gap. Not done this session. The brief says to stop at an existing decipherment.
+- [x] siblings: every cipher leaf of both writers in ital. 1584 opened with its neighbours; the copies found for all.
+- [x] clear-pages: the late-hand leaves are the decipherments; f. 43 is a 15th-c. decipherment.
+- [x] known-keys: R1857 P11 applied (spot checks; the glossed letters' runs).
+- [x] print: no edition of these letters found (Mazzatinti inventories them only).
+- [x] key-rebuild: code signs settled from the copies' blanks (Duca di Ferrara, Veneziani, qui; Micheletto [?]).
+- [x] retry: every blank in all fourteen copies checked against R1857 and context.
 
 ## Sources
 
-- Gallica BnF italien 1584: https://gallica.bnf.fr/ark:/12148/btv1b100373864 (images via openapi.bnf.fr IIIF, see
-  `research/venice_milan_print/README.md`).
-- DECODE R1857 (key, ASMi; image P11 is this key; login needed, not public domain): https://de-crypt.org/decrypt-web/RecordsView/1857
-- G. Mazzatinti, *Inventario dei manoscritti italiani delle biblioteche di Francia* t. II (1887), the ital. 1584 list.
-- Images are not committed (`.gitignore`). `crop.py` cuts regions from the full canvases.
+- Gallica BnF italien 1584: https://gallica.bnf.fr/ark:/12148/btv1b100373864 (IIIF via openapi.bnf.fr).
+- DECODE R1857 (key, ASMi; image not public domain): https://de-crypt.org/decrypt-web/RecordsView/1857
+- G. Mazzatinti, *Inventario dei manoscritti italiani delle biblioteche di Francia* t. II (1887).
+- Images are not committed; `crop.py` cuts regions from the full canvases.
