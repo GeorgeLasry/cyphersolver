@@ -40,7 +40,7 @@
 </div>
 
 <section class="hero solve">
-  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 1203 · class C · priority 5.0 · open</p>
+  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 1203 · class C · priority 5.9 · open</p>
   <h1>Martinique/Guadeloupe despatches 'chiffrée' 1779-82 (Bouillé, Damas, d'Estaing's war): about 18 letters</h1>
   <p class="sub">French West Indies campaigns of 1779-82 (Grenada, St Eustatius, the Saintes).</p>
   <dl class="facts">
@@ -76,20 +76,21 @@ THE CIPHER
     - FranceArchives COL C8 A 79: https://francearchives.gouv.fr/fr/facomponent/5212501a85636741926f786168721a171db5938c
 
 WHAT IS KNOWN
-  Status: ANOM calendar: '(chiffrée)'. Not stated as undeciphered, but COL C8 A 77 shows ciphered letters left undecrypted, so the later ones may be too. Not on DECODE. Checked 28 Oct 2026: Viewed 28 Oct 2026: C8 A 78 no. 363 (11 Oct 1779) loads in the FranceArchives viewer, a page of numeric groups, no interlinear clear seen on the first image. About 18 ciphered letters across C8 A 78-81. No decipherment found.
+  Status: ANOM calendar: '(chiffrée)'. Not stated as undeciphered, but COL C8 A 77 shows ciphered letters left undecrypted, so the later ones may be too. Not on DECODE. Checked 28 Oct 2026: Viewed 28 Oct 2026: C8 A 78 no. 363 (11 Oct 1779) loads in the FranceArchives viewer, a page of numeric groups, no interlinear clear seen on the first image. About 18 ciphered letters across C8 A 78-81. No decipherment found. Correction 28 Oct 2026: several letters in this run DO carry a contemporary interlinear decipherment (C8 A 78 ff. 3, 5, 31, 123, 144), and they supply the key for the whole 1778-82 Bouillé code (targets/martinique1778). Cipher-only letters in the run: C8 A 78 f.1 and image 0075, C8 A 79 ff. 19 and 70, C8 A 77 f.101 (an enclosure table), the ciphered part of C8 A 81 f.114.
   Outcome so far: not yet attempted by the project
   Prior-art check: open (checked 28 Oct 2026: known.py ledgers+DECODE, web searches on the names/cipher, Calames/FranceArchives notice; no published decipherment found; cryptiana and HistoCrypt not searched in depth)
   Check first: Test the mercier1761 key on one letter, cluster by date.
   Class C: no key and no deciphered sibling is known, so expect a ciphertext-only attack.
+  Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/martinique1778/NOTES.md
 
 STEPS
 0. Set up. If you can run a shell, fork and clone the repository and work inside it:
      git clone https://github.com/dbourdeau/cyphersolver.git
    Then read, in this order: CONTRIBUTING.md (how a contribution is sent and credited); README.md, sections
-   "Repository layout" and "Conventions" (how readings are measured and named); and
-   lang/README.md (shared language models).
-   Put all your work in targets/&lt;writer&gt;&lt;year&gt;/ (a new folder, e.g. sega1593): transcription, key, decipherment, scripts. Write a NOTES.md that says
-   what the document is, the system, the key, the reading, and what is open and why. Keep WORKLOG.md there too:
+   "Repository layout" and "Conventions" (how readings are measured and named); targets/martinique1778/NOTES.md (everything
+   already tried on this cipher, with the files it used); and lang/README.md (shared language models).
+   Put all your work in targets/martinique1778/: transcription, key, decipherment, scripts. Add your findings to its NOTES.md
+   under a dated heading, without rewriting what is there. Keep WORKLOG.md there too:
    one dated line per step (transcription, hypothesis, solver run, crib, key found, control), failures included.
    Do not edit docs/ (the site is generated and rebuilt on merge) and do not commit large images: link them.
    If you cannot run a shell, do the same work in files you keep and send them with the issue below.
@@ -129,7 +130,7 @@ STEPS
      - not applicable: Not a cipher (clear text, shorthand, a key sheet, instructions), or the item could not be reached.
 
 REPORT BACK
-With a clone: open a pull request with your targets/&lt;writer&gt;&lt;year&gt;/ folder. Say in the description how you want to be
+With a clone: open a pull request with your targets/martinique1778/ folder. Say in the description how you want to be
   credited (name, initials or handle, and a link) and include the same points as the issue below.
 Without one: open an issue: https://github.com/dbourdeau/cyphersolver/issues/new?template=solution.yml&amp;title=Solution%3A+catalogue+1203&amp;target=catalogue+1203
 (other kinds of contribution: https://github.com/dbourdeau/cyphersolver/issues/new/choose). Include:
@@ -145,16 +146,16 @@ If you cannot open issues or pull requests, write this report for your human to 
 <h2>What is known</h2>
 
 
-<p><b>Status and prior art.</b> ANOM calendar: '(chiffrée)'. Not stated as undeciphered, but COL C8 A 77 shows ciphered letters left undecrypted, so the later ones may be too. Not on DECODE. Checked 28 Oct 2026: Viewed 28 Oct 2026: C8 A 78 no. 363 (11 Oct 1779) loads in the FranceArchives viewer, a page of numeric groups, no interlinear clear seen on the first image. About 18 ciphered letters across C8 A 78-81. No decipherment found.</p>
+<p><b>Status and prior art.</b> ANOM calendar: '(chiffrée)'. Not stated as undeciphered, but COL C8 A 77 shows ciphered letters left undecrypted, so the later ones may be too. Not on DECODE. Checked 28 Oct 2026: Viewed 28 Oct 2026: C8 A 78 no. 363 (11 Oct 1779) loads in the FranceArchives viewer, a page of numeric groups, no interlinear clear seen on the first image. About 18 ciphered letters across C8 A 78-81. No decipherment found. Correction 28 Oct 2026: several letters in this run DO carry a contemporary interlinear decipherment (C8 A 78 ff. 3, 5, 31, 123, 144), and they supply the key for the whole 1778-82 Bouillé code (targets/martinique1778). Cipher-only letters in the run: C8 A 78 f.1 and image 0075, C8 A 79 ff. 19 and 70, C8 A 77 f.101 (an enclosure table), the ciphered part of C8 A 81 f.114.</p>
 <p><b>Outcome so far.</b> Not yet attempted by the project. Prior-art check: open (checked 28 Oct 2026: known.py ledgers+DECODE, web searches on the names/cipher, Calames/FranceArchives notice; no published decipherment found; cryptiana and HistoCrypt not searched in depth).</p>
 <p><b>Check first.</b> Test the mercier1761 key on one letter, cluster by date.</p>
-
+<ul><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/martinique1778/NOTES.md" rel="noopener">targets/martinique1778/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/martinique1778" rel="noopener">the folder</a>)</li></ul>
 
 
 <h2>Scores</h2>
 <dl class="facts">
   <dt>Importance</dt><dd><span class="dots " title="3 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i><i class=""></i></span> 3 of 5</dd>
-  <dt>Solvability</dt><dd><span class="dots " title="3 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i><i class=""></i></span> 3 of 5</dd>
+  <dt>Solvability</dt><dd><span class="dots " title="4 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></span> 4 of 5</dd>
   <dt>Difficulty</dt><dd><span class="dots diff" title="3 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i><i class=""></i></span> 3 of 5</dd>
   <dt>Class C</dt><dd>no key and no deciphered sibling is known, so expect a ciphertext-only attack</dd>
   <dt>Note</dt><dd>Scored from the catalogue description during the Oct 2026 Calames/Biblissima/FranceArchives sweep (research/calames_biblissima/); not viewed</dd>

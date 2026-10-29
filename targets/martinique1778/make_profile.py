@@ -1,0 +1,102 @@
+"""Write profile.json for martinique1778 (kept as a script so the solution steps are easy to extend)."""
+import json, os
+H = os.path.dirname(os.path.abspath(__file__))
+D = '2026-10-28'
+def step(kind, what, result, technique=None):
+    s = {"date": D, "kind": kind, "what": what, "result": result}
+    if technique: s["technique"] = technique
+    return s
+doc = lambda **k: k
+p = {
+ "schema_version": 1,
+ "target": "martinique1778",
+ "title": "Bouillé to the Navy minister, Martinique, 17 Sep 1778 (ANOM COL C8 A 77 f. 88, no. 238)",
+ "documents": [
+  {"id": "C8A77-f88", "shelfmark": "Archives nationales d'outre-mer, COL C8 A 77 f. 88 (no. 238, duplicata)", "date": "17 Sep 1778", "year": 1778,
+   "country": "France", "route": "Martinique -> Versailles", "language": "French", "pages": 1,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {"location": ["none"], "source": "None filed: ANOM calendar says 'Lettre chiffrée non décryptée'. A same-code decipherment exists on C8 A 78 f. 123 (1779)."},
+   "length": {"tokens": 181, "distinct": 109, "unit": "code groups", "measured": True, "file": "groups1778_f88.txt"},
+   "transcription": {"by": "llm from images", "source": "ANOM IIIF image FRANOM23_C8A_077_0141 (ark:/61561/zn401ysswzzd), viewed in the built-in browser in 640x360 crops",
+                     "image_quality": "good",
+                     "notes": "12 lines of full-stop separated 1-3 digit groups; 4 written like h, 5 like S; a '+' above 451 and an 'x' after 37 on line 4 are marks, not digits."},
+   "read": "not read", "places": {"from": "Martinique", "to": "Versailles"}},
+  {"id": "C8A78-f123", "shelfmark": "Archives nationales d'outre-mer, COL C8 A 78 f. 123 (no. 363, duplicata)", "date": "11 Oct 1779", "year": 1779,
+   "country": "France", "route": "Martinique -> Versailles", "language": "French", "pages": 1,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {"location": ["interlinear"], "source": "Contemporary decipherment written above every code group, syllable by syllable."},
+   "length": {"tokens": 104, "distinct": 77, "unit": "code groups", "measured": True, "file": "groups1779_f123.txt"},
+   "transcription": {"by": "llm from images", "source": "ANOM IIIF image FRANOM23_C8A_078_0197 (ark:/61561/zn401hbbgchz)", "image_quality": "good",
+                     "notes": "104 group/clear pairs in pairs1779_f123.txt; interlinear labels sit up-left of their group; semicolon and comma written in the line."},
+   "read": "not applicable", "places": {"from": "Martinique", "to": "Versailles"}}
+,
+  {"id": "C8A78-f3", "shelfmark": "Archives nationales d'outre-mer, COL C8 A 78 f. 3 (no. 173)", "date": "6 May 1779", "year": 1779, "country": "France", "route": "Martinique -> Versailles", "language": "French", "pages": 3,
+   "cleartext_in_document": "separate passages", "plaintext": {"location": ["interlinear"], "source": "Contemporary interlinear decipherment (images 0004-0006); partly transcribed (first two lines)."},
+   "length": {"tokens": "unknown", "distinct": "unknown", "unit": "code groups", "measured": False, "file": "pairs1779_f3_f31.txt"},
+   "transcription": {"by": "llm from images", "source": "ANOM IIIF FRANOM23_C8A_078_0004-0006 (ark:/61561/zn401ififp)", "image_quality": "good", "notes": "Only lines 1-2 of image 0004 paired."},
+   "read": "not applicable", "places": {"from": "Martinique", "to": "Versailles"}},
+  {"id": "C8A78-f31", "shelfmark": "Archives nationales d'outre-mer, COL C8 A 78 f. 31 (no. 281, duplicata)", "date": "8 Mar 1779", "year": 1779, "country": "France", "route": "Martinique -> Versailles", "language": "French", "pages": 2,
+   "cleartext_in_document": "separate passages", "plaintext": {"location": ["interlinear"], "source": "Contemporary interlinear decipherment of a troop return (images 0046-0047); partly transcribed."},
+   "length": {"tokens": "unknown", "distinct": "unknown", "unit": "code groups", "measured": False, "file": "pairs1779_f3_f31.txt"},
+   "transcription": {"by": "llm from images", "source": "ANOM IIIF FRANOM23_C8A_078_0046-0047 (ark:/61561/zn401cww1vys)", "image_quality": "poor", "notes": "About 60 pairs from the first image; alignments through bleed-through are partly uncertain."},
+   "read": "not applicable", "places": {"from": "Martinique", "to": "Versailles"}}
+ ],
+ "system": {
+  "types": ["code"],
+  "summary": "Numerical nomenclator, values 1-845 so far, mixing letters, syllables and whole words (and place names with their article: 428 = la Guadeloupe); the same code in 1778 and 1779 (Bouillé). Not the 1761 Windward Islands code (max 696) and not the 1765 d'Ennery form.",
+  "symbol_kind": "digits", "distinct_symbols": 109,
+  "diacritics": {"used": False},
+  "homophones": {"used": "unknown"},
+  "nomenclator": {"present": True},
+  "nulls": {"present": "unknown"},
+  "key_order": "unknown", "word_division": "none", "doubled_letters": "unknown",
+  "sibling_key": "C8 A 78 f. 123 (no. 363, 11 Oct 1779), same code with interlinear decipherment"
+ },
+ "conditions": {
+  "prior_solution": {"exists": "in archive", "where": "Contemporary interlinear decipherment of a 1779 letter in the same code (C8 A 78 f. 123); none for f. 88 ('non décryptée').", "found": "during attempt", "used": True},
+  "inputs": ["images", "sibling key"],
+  "attack": "sibling key",
+  "human_role": "Assigned the target with the instruction to test the mercier1761 key and its structure.",
+  "tools": ["built-in browser (ANOM IIIF/IIP images, canvas crops)", "Python"],
+  "models": ["claude-sonnet-5-5"],
+  "sessions": 2, "first_date": D, "last_date": D
+ },
+ "solution": [
+  step("access", "Opened the FranceArchives record for f. 88, found the ANOM IIIF manifest and the IIP image URL; direct curl of the image gets 403, the browser pane loads it (no proof-of-work bypass).", "worked"),
+  step("transcription", "Transcribed the 12 cipher lines of f. 88 from 640x360 crops, digit by digit: 181 groups, 109 distinct, values 1-845, full-stop separated.", "worked"),
+  step("statistics", "Range and frequency: 28 groups above 696 and 17 above 800, top groups 361 x9, 587 x5, 110 x5, 817 x5, 23 x5, 270 x4; IC 0.0088. Range excludes the 1761 code (max 696).", "worked", ["frequency analysis"]),
+  step("sibling key", "Applied the mercier1761 key (key1761.tsv, 201 values, max 696): 39 of 181 tokens valued, output word salad.", "ruled out", ["key matching"]),
+  step("sibling key", "Applied the 1765 d'Ennery form (key1765_ennery.tsv, 800 entries): 164 of 181 valued, all nonsense; 17 groups above its maximum.", "ruled out", ["key matching"]),
+  step("access", "Looked for neighbouring clear letters: f. 87 (no. 237, same date) is clear, a request for the inspection of the Dominica hospitals; read at low resolution only.", "partial", ["contextual inference"]),
+  step("access", "Opened catalogue 1203's sample letter C8 A 78 f. 123 (no. 363, 11 Oct 1779): it carries a contemporary interlinear decipherment above every group (the catalogue note said none was seen).", "worked"),
+  step("transcription", "Transcribed the 104 groups of f. 123 with their interlinear clear syllables in 800x450 crops (pairs1779_f123.txt).", "worked"),
+  step("key from source", "Aligned the pairs: 77 code groups with values (now key_bouille.tsv); readings include 361 de, 587 la, 381 des, 303 troupes, 270+44+398 Cette, 309+12+754+162 moitié, 428 la Guadeloupe, 631 deffen(se).", "worked", ["plaintext matching"]),
+  step("statistics", "Same-code test between f. 88 and f. 123: 42 of 109 distinct groups shared; 10 shared adjacent pairs and 2 shared triples against means 1.55 and 0.01 after 2000 shuffles of the 1778 order (p < 0.001).", "worked", ["repeat/pattern analysis", "statistical test"]),
+  step("key from source", "Applied key1779.tsv to f. 88: 90 of 181 tokens (49.7%) valued; coherent stretches 'l'état de la [694] des troupes' (with 250 = l', 5 = at), 'Cette ... isle ... est', 'moitié'; the rest valued groups are function words, 91 tokens unvalued.", "partial", ["key matching", "contextual inference"]),
+  step("hypothesis", "Tentative values from context, not entered in the key: 250 = l', 5 = at, 191 = j', 815 = is or ment, giving 'de ce mois, j'attends' on line 2.", "partial", ["contextual inference"]),
+  step("solver", "No ciphertext-only anneal run: the mercier1761 control (same shape, ~800 entries, 818 tokens) recovered 5-9% and the truth outscored the found key; 181 tokens is smaller.", "ruled out", ["simulated annealing"]),
+  step("literature search", "No new web search on this target in this session (catalogue sweep of 28 Oct found nothing published).", "failed"),
+  step("access", "Session 2: resolved the ANOM manifests for the listed letters through FranceArchives search + manifest JSON (image numbers: C8 A 78 f.1 = 0001-0003, f.3 = 0004-0006, f.5 = 0007, f.31 = 0046-0047, f.144 = 0233-0246; C8 A 79 f.4 = 0005-0006, f.19 = 0029-0030, f.24 = 0035-0037, f.70 = 0107; C8 A 81 f.97 = 0167-0172, f.104 = 0178-0186, f.114 = 0195-0203; C8 A 77 f.101 = 0162-0164).", "worked"),
+  step("access", "Survey of the first image(s): interlinear decipherment present on C8 A 78 f.3, f.5, f.31, f.144 (and f.123); none on f.1 (note 'duplicata ... déchiffrée'), C8 A 79 f.19, f.70, C8 A 77 f.101 (pure cipher); clear first image on C8 A 79 f.4, f.24, C8 A 81 f.97, f.104; C8 A 81 f.114 clear opening with cipher lines under it (not read); f.101 image 0163 is a table of cipher groups in two columns.", "worked"),
+  step("transcription", "Paired f.3 lines 1-2 and about 60 groups of f.31 (lines 1-3 and further lines read off 0.8-scale crops) in pairs1779_f3_f31.txt; alignments through ink bleed-through on f.31 partly uncertain; conflicts kept (67 qua/vous, 503 par/e, 305 se/e, 718 a/a, 185 es/ez).", "partial"),
+  step("key from source", "Merged all pairs into key_bouille.tsv (123 groups, provenance per value): new values include 694 situation, 267 la Martinique, 636 au, 104 1er, 116 ma, 325 rs, 508 pi, 78 ho, 417 ta, 453 cents, 91 x, 709 si, 37 hommes, 558 recrue, 268 garnison, 682 dont, 815 is, 250 l', 287 etat, 837 honneur.", "worked", ["plaintext matching"]),
+  step("key from source", "Applied the extended key to f.88: 123 of 181 tokens (68.0%) valued, 61 of 109 distinct groups; the reading is a monthly troop return: l'etat de la situation des troupes au 1er de ce mois ... garnison de la Martinique ... cents ... hommes ... hopital ... la Guadeloupe ... troupes.", "partial", ["key matching"]),
+  step("verification", "Strict sense proxy (measure_sense.py: valued stretches cut at unvalued groups, fr-gutenberg word list + declared additions): 105 of 181 tokens (58.0%) fall inside dictionary words. The proxy accepts word-shaped strings, so it overstates reading; not the 95% bar.", "partial", ["language-model scoring"]),
+  step("hypothesis", "Tentative values from contexts that parallel f.123/f.31 (tentative.tsv): 5 = at (l'et-at), 538 = fe and 614 = f ('hommes ef-fe-c-ti-f-s' = effectifs; f.123 has 594 658 345 754 for ef fe c ti). With them 128 of 181 (70.7%) valued. Not in the key.", "partial", ["contextual inference", "crib testing"]),
+  step("statistics", "f.101 (5 Dec 1778) opens with the phrase of f.88 lines 1-2: 208 250 837 361 57 147 1 250 287 361 694 381 303 361 267 636 104 361 270 309 815 = [J'ai] l'honneur de vous envoy-er l'etat de la situation des troupes de la Martinique au 1er de ce mois; the next monthly return in the same code (not yet transcribed).", "worked", ["repeat/pattern analysis"])
+ ],
+ "outcome": {
+  "method": "key recovered based on adjacent plaintext",
+  "method_basis": "Key for the Bouillé code (values to 845) read off the interlinear decipherments of letters of 1779 in the same volume series (C8 A 78 f. 123 fully paired; f. 3 and f. 31 partly), same code shown statistically for f. 88; applied to the 1778 letter: 68.0% of tokens valued, 58.0% inside dictionary words (strict proxy), a readable monthly troop return with 67 groups open.",
+  "contribution": ["transcription", "key recovered", "catalogue correction"],
+  "class": "read in part", "key": "partial", "fraction_read": 0.58, "fraction_read_method": "measured",
+  "verification": [],
+  "notes": "Read in part, about 58% by the strict dictionary proxy (overstates: it accepts word-shaped strings); the 95% read bar is far off. Most of f. 3 (3 images), f. 31 (2 images), f. 5 and f. 144 (interlinear) are untranscribed and would extend the key; f. 101 (5 Dec 1778) and the cipher-only letters f. 1, C8 A 79 f. 19, f. 70 are in the same code.",
+  "gaps": [
+   {"item": "67 of 109 distinct groups of f. 88 (58 tokens unvalued)", "blocker": "not-attempted", "detail": "interlinear decipherments on C8 A 78 f. 3, f. 5, f. 31 (most of it), f. 144 not yet paired"},
+   {"item": "f. 101 (5 Dec 1778) and its table enclosure (image 0163); cipher-only letters C8 A 78 f. 1, C8 A 79 f. 19, f. 70", "blocker": "not-attempted", "detail": "same code; to be read once the key is extended"},
+   {"item": "minister's ciphered minutes C8 A 77 ff. 31, 43; MAR/G/178 keys", "blocker": "needs-physical-access", "detail": "MAR/G/178 offline; minutes not opened"}
+  ]
+ }
+}
+json.dump(p, open(os.path.join(H, 'profile.json'), 'w', encoding='utf8'), ensure_ascii=False, indent=1)
