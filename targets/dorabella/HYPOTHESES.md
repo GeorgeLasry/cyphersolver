@@ -86,7 +86,7 @@ has 27, so it was written with one fixed table throughout. The rows below stay a
 
 | branch | status | evidence |
 |---|---|---|
-| reversal, boustrophedon, line orders, mirror, upside-down lines | NEG | S 3, R 5 |
+| reversal, boustrophedon, line orders, mirror, upside-down lines | NEG (full power: every per-line reversal mix, columns, spiral, diagonals, with and without misreads) | S 3, R 5, R 44, R 48, R 65, R 66 |
 | columnar w ≤ 7, rail fence, snake, decimation | NEG / X (written order already has the most repeated pairs) | S 3, R 8 |
 | misaligned orientation / arc streams | NEG | R 14 |
 | nulls (by class, rare signs, every k-th) | NEG | S 15, R 12 |
@@ -99,6 +99,7 @@ has 27, so it was written with one fixed table throughout. The rows below stay a
 | branch | status | evidence |
 |---|---|---|
 | floating cribs (50 words) | NEG | S 7 |
+| a quotation anywhere in the English corpus (letters or word initials) | NEG | R 18, R 22, R 67 |
 | fixed openings / sign-offs | X for sign-offs; NEG for openings | R 10 |
 | Lullaby melodies | NEG | S 20, 25 |
 | Playfair (cipher pairs never identical) | X | R 12 |
