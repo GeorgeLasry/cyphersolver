@@ -189,6 +189,30 @@ no repeated 4-gram. Orientation F carries 23/87.
    (R 25–26); Playfair, sign-offs and Elgar-table-plus-transposition are excluded by logic (R 10, 12, 18); key changes,
    heavy misreads and polygraphic units cannot be decided at 87 signs (R 15, 16, 27).
 
+27. **Padgett's reply and Bauer ch. 3 (pp. 129-140), 29 Oct 2026** (`padgett_test.py`, `padgett_controls.py`,
+   `attempts_test.py`; Padgett email of 29 Oct 2026; Bauer, *Unsolved!* 2017, figs 3.3-3.15, read from the author's
+   own copy). (a) Padgett's claim that the notebook key turns the note into Spanish words is reproducible as a
+   string fact: the consensus tokens under the notebook table read `BPECAHTCKYFRQDRIRRHPPRDXYXGFSTRTHXCKLCERREHGQTRFRHUSQDXKKXFSESHUSEDUWGSERHUQSGCPGSHCDXC`,
+   and PECA (2-5), Y, IR, CERRE (38-42), SE/ES, SED (65-67), SER (71-73) are all in it (EDU at 66-68 is his
+   dotted-D). But it is not evidence of Spanish: best non-overlapping parse into a 30,500-word Spanish lexicon covers
+   30 of 87 signs, against a mean of 29.4 (P = 0.47) for random bijective keys on the same sign sequence. Shuffles of
+   the signs give P = 0.005, because they destroy the sequence's letter skew; that is the wrong null. English, French,
+   Italian, Latin, German under the same key and nulls: no language stands out (P 0.4-0.9 against random keys). His
+   in-order list of eight words is not a disjoint parse (SE and ES share a letter). The row-length and dot layers
+   (C-E-A, "C BAB JIG", E/A/D/G, AMDG, K.147) have a free choice at every step; not tested further.
+   (b) Bauer p. 135 states that the notebook key gives gibberish on Dorabella and on the Liszt fragment: agrees with
+   step 1. (c) The three solutions Bauer prints: Palmer 2007 is a near-consistent substitution (83 of 87 signs on one
+   symbol-to-letter map, four conflicts she resolved by hand) whose raw text needs back-slang and re-spelling; Roberts
+   2009 explains 58 of 87; Sams 1970 has 94 letters for 87 signs. None reads as text. (d) Elgar's Schooling cards
+   (figs 3.12-3.15) give his keywords TRUTH and MERCURY (TYRANT is Schooling's); added with MARCO, EDU, CAE, BAB, JIG,
+   AMDG to the round 3 and 23 key lists: negative (R3 -5.68 vs controls -2.4..-1.8; R23 -5.94). Bauer's cards 1-4
+   are the Schooling challenge solution (key family COURAGE); cards 5-6 (pp. 141 on) not yet seen here.
+
+28. **Liszt fragment under the same key** (`ct_liszt.txt` = consensus + Padgett's 18-sign Liszt reading as a fourth
+   line; `solve.py --injective`, `runs/liszt_joint_*.txt`). If the 1886 fragment and the 1897 note share one table,
+   105 signs should solve where 87 did not. en-modern −3.043, en-elgar −3.023; shuffles −3.02..−3.37; controls 6/6
+   recovered (0.90-1.00). **Negative**: no shared simple-substitution table, at the transcription available.
+
 ## Where it stands (28 Oct 2026)
 
 Not deciphered. Outcome: not solved (attempted, open).
@@ -207,7 +231,9 @@ What this session establishes, beyond Wase 2023:
 
 - Transcription: all attested disputes and the 1937-plate measurements tried (steps 9, 11). Blocker: the
   original is lost; the 1937 first-edition scan is binarised. A greyscale scan of the 1937/1946/1949 plate
-  would sharpen the angle measurement.
+  would sharpen the angle measurement. Found 29 Oct 2026: archive.org `edwardelgarmemor0000mrsr` is the 1947 edition,
+  scanned 2022 in greyscale JP2 (196 images), lending-only (access-restricted); a borrowed view can be screenshotted
+  for the plate, then `measure.py`.
 - Second texts: Liszt fragment and Cryptogram card ~18 signs each; Courage cards untranscribed. Blocker: no
   text long enough to check a key on two documents; the Courage cards need museum access.
 - Plaintext register: the Elgar model has only 49k chars of his words and no held-out control. Blocker: his

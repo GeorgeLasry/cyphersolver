@@ -202,7 +202,9 @@ def round2b():
 E24 = 'abcdefghiklmnopqrstuwxyz'                  # Elgar's notebook table order (I/J, U/V merged)
 KEYWORDS = ['courage', 'dora', 'dorabella', 'penny', 'dorapenny', 'misspenny', 'elgar', 'edward', 'edwardelgar',
             'alice', 'carice', 'enigma', 'malvern', 'forli', 'wolverhampton', 'prudentia', 'caractacus',
-            'luxchristi', 'boscobel', 'kites', 'kite', 'oak', 'variations', 'worcester', 'music', 'secret', 'cipher']
+            'luxchristi', 'boscobel', 'kites', 'kite', 'oak', 'variations', 'worcester', 'music', 'secret', 'cipher',
+            # 29 Oct 2026: Elgar's own Schooling-card keywords (Bauer 2017 figs 3.14, 3.15), his dog, Padgett's anagram keys
+            'truth', 'mercury', 'tyrant', 'marco', 'schooling', 'edu', 'cae', 'bab', 'jig', 'peca', 'amdg', 'mozart']
 
 
 def k24(word):

@@ -105,6 +105,16 @@ His posts (Nov 2019, Mar 2020) describe Elgar's solution of Schooling's 1896 cip
 
 ---
 
+## Padgett reply, 29 Oct 2026 (live lead: Chris Bennett)
+
+Robert W. Padgett replied and copied Chris Bennett, former curator at the Elgar Birthplace Museum, who gave him the
+high-resolution photographs of Index Card No. 6 and the notebook page. Ask Bennett: where the cards, the notebook and
+the painted box are held now; whether the full card series (cards 5 onward, including the run of arc signs) can be
+photographed; reproduction terms. Padgett has not seen the painted box. His own Spanish reading is tested in NOTES
+step 27 (negative). Bauer, *Unsolved!* ch. 3 prints cards 1-4 (pp. 139-140); the pages after 140 are still to be seen.
+
+---
+
 ## When something comes back
 
 Put the files in `targets/dorabella/src/incoming/` with a note of the holder, reference, date and the permission terms.
