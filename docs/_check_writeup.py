@@ -574,6 +574,13 @@ def audit(brief=False):
     for n, cs in stopped:
         print(f'   #{n} {str(entries[n].get("title", ""))[:50]}  <- ' + ', '.join(f'targets/{f}/ ({st})' for f, st, _ in cs))
     problems += len(stopped)
+    # 12. the catalogue vetting gate (_check_catalogue.py): entries from GATE_ID on need a complete vetting block
+    import _check_catalogue
+    fail, line = _check_catalogue.summary()
+    print(f'L. Catalogue vetting (README Conventions, "Catalogue vetting bar"): {line}')
+    for e in fail:
+        print(f'   #{e["id"]} {str(e.get("title", ""))[:50]}  (move to research/leads.json or vet it)')
+    problems += len(fail)
     return problems, gaps
 
 # ---------------------------------------------------------------------------

@@ -9,7 +9,9 @@ import glob, json, os, re, sys
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 cat_path = os.path.join(ROOT, 'catalogue.json')
 cat = json.load(open(cat_path, encoding='utf-8'))
-by_id = {e['id']: e for e in cat['entries']}
+leads_path = os.path.join(ROOT, 'research', 'leads.json')    # the sweep rows moved to leads on 28 Oct 2026
+ld = json.load(open(leads_path, encoding='utf-8'))
+by_id = {e['id']: e for e in cat['entries'] + ld['leads']}
 V = []
 for f in sorted(glob.glob(os.path.join(ROOT, 'research/verify_2026-10/[a-g]_*.json'))):
     V += json.load(open(f, encoding='utf-8'))
@@ -46,9 +48,13 @@ for v in V:
         e['status'] += ' (could not be verified: see prior_art)'
     n += 1
 cat['entries'] = [e for e in cat['entries'] if e['id'] not in drop]
+ld['leads'] = [e for e in ld['leads'] if e['id'] not in drop]
 print('updated', n, 'dropped', sorted(drop))
 if '--write' in sys.argv:
     with open(cat_path, 'w', encoding='utf-8') as fh:
         json.dump(cat, fh, ensure_ascii=False, indent=1)
+        fh.write('\n')
+    with open(leads_path, 'w', encoding='utf-8') as fh:
+        json.dump(ld, fh, ensure_ascii=False, indent=1)
         fh.write('\n')
     print('written')
