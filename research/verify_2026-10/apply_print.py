@@ -10,7 +10,9 @@ ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)
 HERE = os.path.join(ROOT, 'research', 'verify_2026-10')
 cat_path = os.path.join(ROOT, 'catalogue.json')
 cat = json.load(open(cat_path, encoding='utf-8'))
-by_id = {e['id']: e for e in cat['entries']}
+leads_path = os.path.join(ROOT, 'research', 'leads.json')
+ld = json.load(open(leads_path, encoding='utf-8'))
+by_id = {e['id']: e for e in cat['entries'] + ld['leads']}
 F = []
 for n in ('p_english.json', 'p_french.json'):
     F += json.load(open(os.path.join(HERE, n), encoding='utf-8'))
@@ -39,12 +41,16 @@ for i, txt in ((1202, 'Key status 28 Oct 2026 (targets/martinique1778): the sibl
         by_id[i]['status'] = (by_id[i].get('status', '') + ' ' + txt).strip()
         by_id[i]['solvability'] = 4
 
-drop = {c[0] for c in closed}
-cat['entries'] = [e for e in cat['entries'] if e['id'] not in drop]
-print('closed', sorted(drop))
+print('to close', [c[0] for c in closed])
 if '--write' in sys.argv:
-    json.dump(cat, open(cat_path, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
-    open(cat_path, 'a', encoding='utf-8').write('\n')
+    for path, d in ((cat_path, cat), (leads_path, ld)):
+        with open(path, 'w', encoding='utf-8') as fh:
+            json.dump(d, fh, ensure_ascii=False, indent=1)
+            fh.write('\n')
+    import subprocess
+    for i, t, c, n in closed:
+        subprocess.run([sys.executable, os.path.join(ROOT, 'docs', '_check_catalogue.py'), '--close', str(i), 'read',
+                        ('Printed deciphered: ' + c)[:300]], check=False)
     with open(os.path.join(HERE, 'CLOSED.md'), 'w', encoding='utf-8') as fh:
         fh.write('# Leads closed by the printed-edition check (28 Oct 2026)\n\nThese catalogue rows were removed: the letter is already printed deciphered.\n\n')
         for i, t, c, n in closed:

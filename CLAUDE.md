@@ -41,6 +41,16 @@ reading. The checker and the Stop hook enforce the `## Remaining gaps` and `## E
 If a target is genuinely not finished, or deliberately not written up (found solved by others with nothing added
 here), put `Status: in progress` or `Status: no write-up` in the first forty lines of its `NOTES.md`.
 
+## The catalogue holds vetted leads only
+
+New finds are leads, not catalogue entries. Sweeps write `research/<sweep>/candidates.json`, and
+`research/archive_sweep_2026-10/merge.py --write` merges them into `research/leads.json`, never into `catalogue.json`.
+A lead enters the catalogue only through `python docs/_check_catalogue.py --promote <id>`, which refuses it until its
+`vetting` block meets the vetting bar in README Conventions: ciphertext seen, prior art searched in DECODE, Tomokiyo,
+Lasry, the edition and the literature, held keys ruled out, duplicates searched, verdict `open`. Never add an entry to
+`catalogue.json` by hand or by script around the gate. `python docs/_check_catalogue.py` must print `result: valid`
+before a commit that touches `catalogue.json`. The SessionStart audit (section L) lists any entry that fails.
+
 ## Outcome method and priorities
 
 Every profile carries `outcome.method`, George Lasry's categories (`docs/_methods.py`, `docs/glossary.html`): key
