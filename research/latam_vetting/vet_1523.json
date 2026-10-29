@@ -1,0 +1,37 @@
+{
+ "id": 1523,
+ "vetting": {
+  "date": "2026-10-28",
+  "by": "Claude session (LatAm vetting, 28 Oct 2026)",
+  "seen": {
+   "kind": "scan",
+   "where": "AGN Colombia DataViva, record 66b0cd4f151c9d47762a2382 (https://dataviva.archivogeneral.gov.co/explore/agn/detail/66b0cd4f151c9d47762a2382); all 24 images were downloaded through the public API (POST /api/records/public/<unit>/pages with the file's record_id) and viewed. The cipher is on gallery index 11 (f. 227v) and index 12 (f. 228r), in López Méndez's letter of 29 Jan 1819 (ff. 226-228).",
+   "extent": "Fifteen underlined cipher words, about 70 letters, inside a Spanish clear-text letter: ten words on f. 227v lines 20-22, two words on f. 227v line 27, two words split across f. 227v (last line) and f. 228r (line 1), and one word on f. 228r lines 5-6. Everything else in the unit is in clear (ff. 222-224 Hurry, Powles & Hurry; ff. 230-231 Herring and Saffray; ff. 232-233 a printed loan certificate; ff. 225 and 229 blank).",
+   "cipher": "A letter substitution in ordinary lowercase letters in which many letters carry a small superscript digit 1-7; the same letter with different digits stands for different plaintext letters (e1=b, e2=f, e3=l, e4=r, e5=t, e7=y), so it is a table cipher of letter plus row number, not a plain monoalphabet. No decipherment is written over or beside the cipher words and the unit holds no key and no clear copy."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE: known.py found no hit for López Méndez, Lopez Mendez, MacGregor, Gambier or the shelfmark SAA-I.17 in the DECODE view dumps; only this lead itself.",
+   "tomokiyo": "Not in Tomokiyo's cryptiana: the index page crypto.htm (fetched 28 Oct 2026) has no Bolívar, Gran Colombia or 1819 London page; its only Spanish-American items are a Jesuit cipher from Peru (1601) and a line-segment memorial from Peru (1604).",
+   "lasry": "Nothing by Lasry on this cipher: the GL.htm copies in the repository (targets/gramont1529, targets/vasto1527/prior, targets/esp318/lit/crypt) have no Bolívar, López Méndez or Colombia entry, and his published work is on Spanish and other European ciphers of the 16th-18th centuries.",
+   "edition": "Not found printed. Fifteen volumes of O'Leary's Memorias on archive.org (tomos I, II, VI, IX, XVI, XXII, XXIV, XXV, XXVI, XXVIII pt 2, XXIX, XXX, XXXI and the narrative) were grepped for Paxtor/Paxton, Gambier, 'perjuicio indecible', 'salido con fianza', 'cinco meses' and López Méndez: the only López Méndez letter is a Lima letter of 1826 (tomo IX). The O'Leary volumes of correspondence not on archive.org, Lecuna's Cartas del Libertador (Bolívar's own letters, not letters to him) and the Archivo del Libertador online (did not answer earlier in the sweep) were not checked.",
+   "literature": "Web searches in Spanish and English (López Méndez + Bolívar 1819 + cifra/clave/Gambier/Peter Paxtor; the deciphered phrases 'perjuicio indecible', 'preso', 'fianza' with Mac Gregor) found nothing on this cipher; a Cambridge article on Bolívar's British networks (JLAS 2024) cites López Méndez letters of 1817 but not this one. Galende Díaz 2000 (read in full) summarises Bákula 1949: Bolívar's key 'revealed by O'Leary' is a simple substitution whose only difficulty is the word division, unlike this superscript table. Bákula 1949 itself was not reachable."
+  },
+  "key_check": "No held key reads it. The Revenga 1822 key (targets/revenga1822) is a monoalphabetic substitution with a = word space and no superscripts, and Crawford 1813 is the JQA numeric code, so neither fits. Bolívar's key as Galende 2000 n. 41 describes it after Bákula (simple substitution) and Santander's (two interleaved half-alphabets, n. 45) are single alphabets and cannot give one letter several values by superscript. Without a key, most of the passage was recovered here from context and the clear text alone: 'que he estado preso cinco meses y he salido con fianza', 'Mac Gregor', 'para Mar...caibo?' and 'ir á Santafé' (sample in research/latam_vetting/1523_sample.txt). The structure of the table (letter plus row digit) and four values (plain e, m6, r1, plain t) remain open.",
+  "duplicates": "known.py was run on 'López Méndez', 'Lopez Mendez', 'SAA-I.17', 'MacGregor' and 'Gambier': the only hits are this lead in research/leads.json and research/latam_north (README, candidates.json). No DECODE id, catalogue entry or target folder covers López Méndez to Bolívar, 29 Jan 1819.",
+  "verdict": "open"
+ },
+ "lead_updates": {
+  "seen": "image",
+  "folio_note": "ff. 222-233 (blank 225, 229); the cipher is in López Méndez's letter of 29 Jan 1819, ff. 226-228: 15 underlined cipher words (about 70 letters) on f. 227v and f. 228r (DataViva gallery index 11-12). The rest of the unit is clear English and Spanish and a printed loan certificate.",
+  "status_append": "Vetted 28 Oct 2026 on the scans: the cipher is a letter table with superscript row digits (1-7), 15 words in a clear letter. Not printed in the O'Leary volumes on archive.org. Most of it was recovered from context during vetting: López Méndez was jailed five months and freed on bail; MacGregor 'ha causado un perjuicio indecible a nuestra causa'; MacGregor plans to go to Santafé (sample file research/latam_vetting/1523_sample.txt).",
+  "date": "29 Jan 1819 (London)",
+  "solvability": 5,
+  "difficulty": 1,
+  "importance": 3,
+  "prior_art": "open as checked 28 Oct 2026: not on DECODE or cryptiana; not in 15 O'Leary volumes on archive.org; Bákula 1949 and the Archivo del Libertador not reached",
+  "links": [
+   {"label": "DataViva record", "href": "https://dataviva.archivogeneral.gov.co/explore/agn/detail/66b0cd4f151c9d47762a2382"},
+   {"label": "DataViva gallery, f. 227v (index 11)", "href": "https://dataviva.archivogeneral.gov.co/gallery/66b0cd4f151c9d47762a2382?index=11"}
+  ]
+ }
+}

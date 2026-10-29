@@ -1,0 +1,28 @@
+{
+ "id": 1471,
+ "vetting": {
+  "date": "2026-10-28",
+  "by": "Claude session (LatAm vetting, 28 Oct 2026)",
+  "seen": {
+   "kind": "scan",
+   "where": "https://www.docvirt.com/docreader.net/docreader.aspx?bib=FSC_CONTEST&pasta=FSC%20cont%201914.10.07/2 (pagfis 587, viewed and downloaded 28 Oct 2026).",
+   "extent": "One telegram form, Rio no. 1454, received Curitiba 7 Oct 1914: three cipher words (16, 8 and 5 letters) in a clear telegram, repeated once as a service check.",
+   "cipher": "Vigenère with the key restarted per word; all three cipher words carry a pencil gloss on the sheet: 'restabelecimento', 'harmonia' and 'Pedro' (the last one, over AFTGC, was missed in the lead record)."
+  },
+  "prior_art": {
+   "decode": "Searched the DECODE dumps for Brazil, Brasil and Setembrino: not on DECODE.",
+   "tomokiyo": "Nothing on cryptiana for Brazilian 1914 army ciphers (web search) and nothing in the repo ledgers.",
+   "lasry": "No Lasry paper or GL.htm entry covers it (known.py and web search).",
+   "edition": "No printed edition known; the reading is the contemporary pencil gloss on the telegram itself.",
+   "literature": "Web searches (Portuguese and English) on 1914 War Ministry cipher telegrams and the Contestado war found nothing on this telegram."
+  },
+  "key_check": "The glosses give the key LBQPOHVJ (Vigenère, standard alphabet, restarted per word) consistently for all three words; letter 15 of the first word is a transmission slip. Nothing in it is unread. The key does not read the Ceará telegrams of lead 1470, which use other keys.",
+  "duplicates": "known.py on 'FSC cont 1914', 'Vespasiano', 'Setembrino': hits only on this lead and 1470; no catalogue entry, target or DECODE id.",
+  "verdict": "read"
+ },
+ "lead_updates": {
+  "folio_note": "1 f.; DocReader bib FSC_CONTEST pagfis 587. Clear telegram with cipher words CFIIOIZUPDYBSUDX - SBHBCUDJ - AFTGC, repeated as service check; pencil glosses 'restabelecimento', 'harmonia', 'Pedro' over all three.",
+  "status_append": "Vetted 28 Oct 2026: all three cipher words glossed at the time (AFTGC = 'Pedro'); key LBQPOHVJ, Vigenère restarted per word; it does not read 1470 (different key). Verdict read; useful only as evidence of the system.",
+  "prior_art": "read at the time (pencil glosses on the sheet)"
+ }
+}

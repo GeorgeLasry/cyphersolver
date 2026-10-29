@@ -75,6 +75,19 @@ the model was given, the solution steps and the outcome (`profile.schema.json`; 
 - Record whether a reading already existed anywhere and when it was found: that is the contamination question.
 - `python docs/_check_profile.py <folder>` must print `result: valid`. `_check_writeup.py` requires it too.
 
+## Archive sweeps blocked by a bot check
+
+When a sweep or a fetch from an archive (Gallica, DECODE, PARES, HathiTrust, a library catalogue ...) hits a bot
+check (a 403 to curl/WebFetch, a Cloudflare or "verify you are human" page, a CAPTCHA, an empty JS-only shell), do
+not stop the sweep and do not mark the source as unavailable. Switch to Claude in Chrome (`mcp__claude-in-chrome__*`,
+the user's real Chrome) and continue the sweep there; read pages with `get_page_text` / `read_page`.
+
+- Try a known script-friendly route first if one exists (e.g. Gallica's `openapi.bnf.fr` IIIF URLs), then Chrome.
+- Never solve or click through a CAPTCHA yourself. If Chrome shows one, ask the user to clear it in that tab, then
+  carry on.
+- Keep the request rate polite (no parallel tab floods); the user's own session is on the line.
+- Note in the sweep's notes which source needed Chrome, so the next sweep goes straight there.
+
 ## Working in the shared checkout
 
 - Several sessions share this working tree and switch its branch. Run `git status -sb` before committing; if the

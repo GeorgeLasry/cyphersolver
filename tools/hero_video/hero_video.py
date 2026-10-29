@@ -1,4 +1,4 @@
-"""Render the site's two pixel-art videos: the front page's 36-second cut and the full cut on the contribute page.
+"""Render the site's two pixel-art videos: the front page's 41-second cut and the full cut on the contribute page.
 
     python tools/hero_video/hero_video.py                      # the front-page cut: docs/hero.mp4 + poster
     python tools/hero_video/hero_video.py --cut full           # the contribute page's: docs/hero_full.mp4 + poster
@@ -20,7 +20,8 @@ Storyboard of the front-page cut (seconds; CUTS below is the source of truth, an
               failure, close up
   18.75-32.5  how to contribute: pick from the catalogue or Read Further, paste the page into Claude Code, which
               works through it and reports back; credited by name
-  32.5-36.25  pick a cipher, break it, write it up (the page puts its buttons over the end)
+  32.5-37.5   to the archive: the archives with the most open requests (archive_requests.json); one is taken
+  37.5-41.25  pick a cipher, break it, write it up (the page puts its buttons over the end)
 The full cut adds "how it works" after the cipher, the headline counts and the paper.
 """
 import argparse
@@ -303,7 +304,8 @@ def ledger():
 
 def shown(L):
     """What a render puts on screen from the site's data; update.py compares it with the site to see if it is stale."""
-    return {k: L[k] for k in ('entries', 'keys', 'silence', 'open', 'partial', 'first', 'last')} | {
+    return {k: L[k] for k in ('entries', 'keys', 'silence', 'open', 'partial', 'first', 'last', 'requests')} | {
+        'archives': [r[1] for r in L['arch_rows']],
         'picked': L['cat_rows'][0][0], 'oldest': L['oldest'][3], 'oldest_read': L['oldest_read'][3],
         'featured': FT['slug'] if FT else None}
 
@@ -326,7 +328,29 @@ def lists():
         if len(rows) < 4:
             sys.exit(f'docs/{page}: fewer than four rows')
         out[key + '_rows'] = rows
+    out.update(archives())
     return out
+
+
+ARCH_SHORT = {'Bibliothèque nationale de France': 'BNF', 'Arxiu Capitular de Barcelona': 'CATHEDRAL ARCHIVE',
+              'Real Academia de la Historia': 'REAL ACADEMIA', 'Archivio Apostolico Vaticano': 'VATICAN ARCHIVES',
+              'The National Archives': 'NATIONAL ARCHIVES', 'British Library': 'BRITISH LIBRARY',
+              'U.S. National Archives (NARA)': 'NARA', 'Hungarian National Archives (MNL OL)': 'MNL OL',
+              'Nationaal Archief': 'NATIONAAL ARCHIEF', 'Riksarkivet': 'RIKSARKIVET'}
+
+
+def archives():
+    """The open archive requests (archive_requests.json, the page docs/archives.html): their count, and the four
+    archives with the most, as (city, short name, count)."""
+    reqs = json.loads((DOCS.parent / 'archive_requests.json').read_text(encoding='utf8'))['requests']
+    live = [r for r in reqs if r['status'] in ('open', 'claimed', 'requested')]
+    n = {}
+    for r in live:
+        if r.get('city'):
+            n[(r['city'], r['archive'])] = n.get((r['city'], r['archive']), 0) + 1
+    top = sorted(n.items(), key=lambda kv: (-kv[1], kv[0]))[:4]
+    return dict(requests=floor(str(len(live))), archives=len({a for _, a in n}),
+                arch_rows=[(caps(c.split(',')[0]), caps(ARCH_SHORT.get(a, a)), k) for (c, a), k in top])
 
 
 def caps(s):
@@ -1365,6 +1389,47 @@ def scene_contribute(t):
     return a
 
 
+# ---------------------------------------------------------------- the archive
+
+ARCH = dict(click=2.5, foot=3.1)      # seconds into the archive scene
+
+
+def scene_archive(t):
+    """docs/archives.html: the archives with the most open requests; one is taken with "I can do this"."""
+    cv = Cv(night_bg())
+    text(cv, 'TO THE ARCHIVE', W // 2, 8, C['gold2'], 2, 'c', shadow=C['void'])
+    x, y, w, h = 20, 28, 280, 120
+    browser(cv, x, y, w, h, URL + 'ARCHIVES.HTML')
+    sx = text(cv, f"{plus(LG['requests'])} REQUESTS", x + 8, y + 16, C['gold2'])
+    text(cv, fit('THAT NEED THE ORIGINAL', x + w - 8 - sx - 8), sx + 8, y + 16, C['muted'])
+    bw = tw('I CAN DO THIS') + 8
+    for k, (city, name, n) in enumerate(LG['arch_rows']):
+        ti = .3 + k * .22
+        if t < ti:
+            break
+        q = ease_out((t - ti) / .3)
+        ry = y + 28 + k * 17 + round((1 - q) * 6)
+        cv.rect(x + 6, ry, w - 12, 14, C['night'])
+        cx = text(cv, city, x + 11, ry + 4, C['gold2']) + 6
+        text(cv, fit(f'{name} · {n}', x + w - 16 - bw - cx), cx, ry + 4, C['ink2'])
+        bx = x + w - 10 - bw
+        if k == 0 and t >= ARCH['click']:
+            cv.rect(bx, ry + 2, bw, 10, C['goldhi'] if t < ARCH['click'] + .08 else C['green'])
+            blit(cv, 'check', bx + 3, ry + 1)
+            text(cv, 'TAKEN', bx + bw // 2 + 5, ry + 4, C['void'], 1, 'c')
+        else:
+            cv.box(bx, ry + 2, bw, 10, C['gold'] if k == 0 else C['golddk'])
+            text(cv, 'I CAN DO THIS', bx + bw // 2, ry + 4, C['gold'] if k == 0 else C['golddk'], 1, 'c')
+    text_lines(cv, ['VISIT, ORDER A SCAN, OR FIND THE BOOK'], W // 2, y + 99, t, ARCH['foot'], C['ink'], 1, cps=44)
+    if t >= 1.3:
+        target = (x + w - 10 - bw // 2, y + 28 + 7)
+        px, py = glide(t, 1.3, 2.3, (160, 176), target)
+        pointer(cv, px, py, abs(t - ARCH['click']) < .1)
+    a = cv.a()
+    dither(a, VIG, C['void'])
+    return a
+
+
 # ---------------------------------------------------------------- the close
 
 def scene_cta(t):
@@ -1388,36 +1453,38 @@ CUTS = dict(
     hero=dict(
         # the ledger is short here (its counts are on the page under the video); contributing gets the whole
         # walkthrough, because that is what the front page asks of a visitor
-        dur=36.25, page='index.html', out='hero.mp4', poster='hero_poster.png', poster_at=6.4,
+        dur=41.25, page='index.html', out='hero.mp4', poster='hero_poster.png', poster_at=6.4,
         scenes=[(0.0, scene_decipher, 'decipher'), (11.25, ledger_scene(4.4, 99, False), 'ledger'),
-                (18.75, scene_contribute, 'contribute'), (32.5, scene_cta, 'cta')],
+                (18.75, scene_contribute, 'contribute'), (32.5, scene_archive, 'archive'), (37.5, scene_cta, 'cta')],
         vo=[('a1', .6, True), ('a2', 3.1, True), ('b1', 11.6, True), ('f1', 19.1, True), ('f2', 24.2, True),
-            ('f3', 29.55, True), ('g1', 32.85, False)],
-        chapters=[(0, 'The letter'), (11.25, 'The ledger'), (18.75, 'How to contribute')],
+            ('f3', 29.55, True), ('h1', 32.85, True), ('g1', 37.85, False)],
+        chapters=[(0, 'The letter'), (11.25, 'The ledger'), (18.75, 'How to contribute'), (32.5, 'To the archive')],
         links=[(0, 11.25, FEATURED, ''), (11.25, 18.75, '#scoreboard', 'See the ledger'),
-               (18.75, 32.5, 'catalogue.html', 'Open the catalogue')],
+               (18.75, 32.5, 'catalogue.html', 'Open the catalogue'), (32.5, 37.5, 'archives.html', 'See the requests')],
         end=[('catalogue.html', 'Pick a cipher'), ('#random', 'Random cipher'), ('contribute.html', 'How to contribute')],
         # (section, chord, length in bars): see audio.py
         bars=[('intro', 'AM', 1), ('intro', 'F', 1), ('decipher', 'DM', 1), ('decipher', 'E', 1), ('decipher', 'AM', .5),
               ('ledger', 'AM', 1), ('ledger', 'F', 1), ('ledger', 'G', 1),
               ('tune1', 'F', 1), ('tune2', 'G', 1), ('tune3', 'C', 1), ('tune4', 'AM', 1), ('tune5', 'F', 1),
-              ('tune6', 'G', .5), ('close', 'C', 1.5)]),
+              ('tune6', 'G', .5), ('drive', 'F', 1), ('drive', 'G', 1), ('close', 'C', 1.5)]),
     full=dict(
-        dur=53.75, page='contribute.html', out='hero_full.mp4', poster='hero_full_poster.png', poster_at=6.4,
+        dur=58.75, page='contribute.html', out='hero_full.mp4', poster='hero_full_poster.png', poster_at=6.4,
         scenes=[(0.0, scene_decipher, 'decipher'), (11.25, scene_method, 'method'),
                 (21.25, ledger_scene(4.6, 8.6, True), 'ledger'), (36.25, scene_contribute, 'contribute'),
-                (50.0, scene_cta, 'cta')],
+                (50.0, scene_archive, 'archive'), (55.0, scene_cta, 'cta')],
         vo=[('a1', .6, True), ('a2', 3.1, True), ('c1', 11.6, False), ('c2', 16.9, True), ('b1', 21.6, True),
-            ('e2', 27.6, True), ('f1', 36.6, True), ('f2', 41.7, True), ('f3', 47.05, True), ('g1', 50.35, False)],
-        chapters=[(0, 'The letter'), (11.25, 'How it works'), (21.25, 'The ledger'), (36.25, 'How to contribute')],
-        links=[(0, 11.25, FEATURED, ''), (36.25, 50.0, 'catalogue.html', 'Open the catalogue')],
-        end=[('catalogue.html', 'Pick a cipher'), ('further.html', 'Read Further')],
+            ('e2', 27.6, True), ('f1', 36.6, True), ('f2', 41.7, True), ('f3', 47.05, True), ('h1', 50.35, True), ('g1', 55.35, False)],
+        chapters=[(0, 'The letter'), (11.25, 'How it works'), (21.25, 'The ledger'), (36.25, 'How to contribute'),
+                  (50.0, 'To the archive')],
+        links=[(0, 11.25, FEATURED, ''), (36.25, 50.0, 'catalogue.html', 'Open the catalogue'),
+               (50.0, 55.0, 'archives.html', 'See the requests')],
+        end=[('catalogue.html', 'Pick a cipher'), ('further.html', 'Read Further'), ('archives.html', 'To the archive')],
         bars=[('intro', 'AM', 1), ('intro', 'F', 1), ('decipher', 'DM', 1), ('decipher', 'E', 1), ('decipher', 'AM', .5),
               ('build', 'F', 1), ('build', 'G', 1), ('drive', 'AM', 1), ('drive', 'F', 1),
               ('ledger', 'AM', 1), ('ledger', 'F', 1), ('ledger', 'C', 1), ('ledger', 'G', 1), ('ledger', 'AM', 1),
               ('ledger', 'AM', 1),
               ('tune1', 'F', 1), ('tune2', 'G', 1), ('tune3', 'C', 1), ('tune4', 'AM', 1), ('tune5', 'F', 1),
-              ('tune6', 'G', .5), ('close', 'C', 1.5)]),
+              ('tune6', 'G', .5), ('drive', 'F', 1), ('drive', 'G', 1), ('close', 'C', 1.5)]),
 )
 CUT = CUTS['hero']
 TRANS = .4
