@@ -8,6 +8,8 @@ Signals, from the entry's own fields only (nothing is fetched):
   record, IIIF ...), or text saying images/scans are online or digitised (not when hedged: "check whether ...").
   Links to printed catalogues and calendars (archive.org, HathiTrust) do not count: they show the description,
   not the ciphertext;
+- archive also: an item known only from a printed calendar or catalogue (CSP, L&P, Clarendon, Lope de Soria,
+  Cottonian catalogue) with no manuscript-image link;
 - archive: needs_archive_scan "yes", or text saying not digitised / not scanned / no images / physical only / scan
   order / reproduction request / reading room.
 One side only -> that value with a note quoting the evidence. Both sides or neither -> left as it is and listed in
@@ -39,6 +41,10 @@ IMAGE_HOSTS = re.compile(r"gallica\.bnf\.fr/ark|e-codices|de-crypt\.org|digi\.va
                          r"bvpb\.mcu\.es|europeana\.eu/.+/item|digitale-sammlungen|"
                          r"manuscripts\.bl\.uk|bl\.uk/manuscripts|onb\.ac\.at|mdz-nbn|e-rara|dfg-viewer|"
                          r"/images/|imagesonline|archives-nationales.culture.gouv.fr/.*/media", re.I)
+# Items known only from a printed calendar or catalogue: the original manuscript is not online unless a link shows it
+# (decided by Dan, 28 Oct 2026, for the CSP, L&P, Clarendon, Lope de Soria and Cotton-catalogue groups)
+PRINTED = re.compile(r"^(?:Calendar of (?:the )?(?:Clarendon )?State Papers|CSP\b|Letters and Papers, Foreign and Domestic|"
+                     r"Archive of Lope de Soria|A Catalogue of the Manuscripts in the Cottonian Library)", re.I)
 SEEN_ONLINE = re.compile(r"^(?:images?|viewed|partly|images and transcriptions.*)$", re.I)
 
 
@@ -56,6 +62,8 @@ def evidence(e):
             on.append(f"link {l.get('label') or ''} ({l['href']})"); break
     for m in ARCHIVE.finditer(text):
         off.append(snip(text, m))
+    if not on and PRINTED.match(e.get('shelfmark') or ''):
+        off.append('known only from a printed calendar/catalogue (' + e['shelfmark'][:70] + '); original manuscript not online')
     masked = ARCHIVE.sub(' ', text)            # "not digitised" must not count as "digitised"
     for m in ONLINE.finditer(masked):
         if not (HEDGE.search(masked[max(0, m.start() - 60):m.start()]) or HEDGE_AFTER.search(masked[m.end():m.end() + 40])):   # "check whether the scans are online"
