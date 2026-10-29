@@ -219,6 +219,14 @@ no repeated 4-gram. Orientation F carries 23/87.
    (step 12, Roe grid), but the arc counts it uses are not the 1-2-3 order, so it gives no key values. Closes the
    "second text" lead for this card. Bauer's cards 1-4 (pp. 139-140) are the Schooling solution; this is card 6.
 
+30. **Notebook key with turned signs** (`rotlattice.py`, `runs/rotlattice.txt`). If Elgar used his notebook key but
+   sometimes drew a sign turned round (the excess of 180-degree flips suggests it), each sign stands for 2-4 letters;
+   exact order-4 Viterbi picks the best path (I/J, U/V both allowed). Variants: turned 180, any 90, mirrored left-right,
+   top-bottom, rotate-180 + both mirrors. Controls (English under the notebook key, 35% of signs turned): 0.90-1.00
+   recovered in every variant except any-90 (0.70-0.84, partial). The note: inside random keys on the same signs in every
+   variant (P 0.47-0.96, en-modern and en-elgar, 200 nulls each), far below controls (best any-90 -2.25 vs -1.51..-1.72),
+   gibberish. Any-90 beats shuffles (P 0.015) only through the known sequential structure. **Negative**.
+
 ## Where it stands (29 Oct 2026)
 
 Unchanged by rounds 68-72 (Padgett's reply, Bauer ch. 3): every branch decidable with the material in hand is NEG, X

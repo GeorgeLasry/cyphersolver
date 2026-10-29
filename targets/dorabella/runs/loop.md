@@ -80,3 +80,4 @@ structure (repeated bigrams, opposite flips), not a reading; a reading must reac
 | 70 | Schooling-card keywords | TRUTH, MERCURY, TYRANT, MARCO, EDU, CAE, BAB, JIG, AMDG added to R3 and R23 lists | negative: -5.68 / -5.94 vs controls -2.4..-1.8 |
 | 71 | Liszt fragment as a second text, same key | consensus + 18 Liszt signs, strict, en-modern and en-elgar | negative: −3.04 / −3.02 inside shuffles (−3.02..−3.37); controls 6/6 |
 | 72 | Cryptogram card, high resolution | Padgett's 2527-px photo (Bennett) transcribed | closed: the signs step A to H clockwise, an alphabet exercise; no message, no key values |
+| 73 | notebook key, signs drawn turned | per-sign 180 / 90 / mirror alternatives, exact Viterbi, en-modern + en-elgar, 200 random-key and shuffle nulls, turned-sign controls | negative with power (controls 0.90-1.00, any-90 partial 0.70-0.84): the note inside random keys (P 0.47-0.96), gibberish |
