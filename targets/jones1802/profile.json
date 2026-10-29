@@ -1,0 +1,347 @@
+{
+  "schema_version": 1,
+  "target": "jones1802",
+  "title": "Harford Jones's Baghdad code: Jones to Dundas 1798 (IOR/L/PS/9/76/49, clear copy /51) and two informant letters from Erzeroum, c. 1801-02 (IOR/L/PS/9/76/212, /217)",
+  "documents": [
+    {
+      "id": "49",
+      "shelfmark": "BL IOR/L/PS/9/76/49 (clear copy IOR/L/PS/9/76/51)",
+      "date": "17 Dec 1798",
+      "year": 1798,
+      "country": "Ottoman Empire (Baghdad); British (East India Company)",
+      "route": "Baghdad -> London",
+      "language": "English",
+      "pages": 2,
+      "cleartext_in_document": "interspersed",
+      "plaintext": {
+        "location": [
+          "separate folio"
+        ],
+        "source": "IOR/L/PS/9/76/51, 'Copy - Original in Cypher. Secret.', the same letter in clear (QDL vdc_100109378680.0x000001), catalogued as its decoded copy."
+      },
+      "length": {
+        "tokens": 323,
+        "distinct": 180,
+        "unit": "code groups",
+        "measured": true,
+        "file": "ct_49.txt"
+      },
+      "transcription": {
+        "by": "llm from images",
+        "source": "QDL IIIF images (vdc_100109378677.0x000001), read from 1000-px crops of about 40% page width",
+        "image_quality": "good",
+        "notes": "Measured with --digits; align.py's tokens give 326 groups because it splits two groups written without a stop (e.g. 236,58,55,2) and drops the f. 1v catchword. Doubts: the superscript over 187,3 and the blotted 179,7."
+      }
+    },
+    {
+      "id": "212",
+      "shelfmark": "BL IOR/L/PS/9/76/212",
+      "date": "20 Nov [1801], received 6 Jan [1802]",
+      "year": 1801,
+      "country": "Ottoman Empire (Erzeroum)",
+      "route": "Erzeroum -> Baghdad",
+      "language": "English (translation of the informant's letter)",
+      "pages": 6,
+      "cleartext_in_document": "interspersed",
+      "plaintext": {
+        "location": [
+          "none"
+        ],
+        "source": "No decipherment on the leaves; no edition found (web search 29 Oct 2026)."
+      },
+      "length": {
+        "tokens": 591,
+        "distinct": 127,
+        "unit": "code groups",
+        "measured": true,
+        "file": "ct_212.txt"
+      },
+      "transcription": {
+        "by": "llm from images",
+        "source": "QDL IIIF images (vdc_100109378870.0x000001), images 1-6, read from 1000-px crops",
+        "image_quality": "good",
+        "notes": "Measured with --digits, which also counts clear numbers (20th, 6th, 12000); apply.py counts 580 code groups."
+      },
+      "read": "read in part"
+    },
+    {
+      "id": "217",
+      "shelfmark": "BL IOR/L/PS/9/76/217",
+      "date": "19 Dec [1801], received 12 Feb [1802]",
+      "year": 1801,
+      "country": "Ottoman Empire (Erzeroum)",
+      "route": "Erzeroum -> Baghdad",
+      "language": "English (translation of the informant's letter)",
+      "pages": 2,
+      "cleartext_in_document": "interspersed",
+      "plaintext": {
+        "location": [
+          "none"
+        ],
+        "source": "No decipherment on the leaves; no edition found (web search 29 Oct 2026)."
+      },
+      "length": {
+        "tokens": 135,
+        "distinct": 60,
+        "unit": "code groups",
+        "measured": true,
+        "file": "ct_217.txt"
+      },
+      "transcription": {
+        "by": "llm from images",
+        "source": "QDL IIIF images (vdc_100109378875.0x000001), images 1-2, read from 1000-px crops",
+        "image_quality": "good",
+        "notes": "Measured with --digits, which also counts clear numbers (8000, 12000, 400); apply.py counts 128 code groups."
+      },
+      "read": "read in part"
+    }
+  ],
+  "system": {
+    "types": [
+      "code",
+      "nomenclator"
+    ],
+    "summary": "One-part English code of page,word groups in a roughly alphabetical book of about 445 pages, with letter groups for spelling names and inflection suffixes, used inline in clear English.",
+    "symbol_kind": "digits and letters",
+    "digit_groups": {
+      "width": "variable",
+      "separation": "mixed"
+    },
+    "distinct_symbols": "unknown",
+    "diacritics": {
+      "used": false
+    },
+    "homophones": {
+      "used": true
+    },
+    "nomenclator": {
+      "present": true,
+      "kinds": [
+        "common words",
+        "names",
+        "places",
+        "titles"
+      ]
+    },
+    "nulls": {
+      "present": false,
+      "count": 0
+    },
+    "key_order": "partly alphabetical",
+    "word_division": "kept",
+    "doubled_letters": "written twice in spelled names (RUSSIANS, EECHMIASIN, MOOSHA)",
+    "sibling_key": "IOR/L/PS/9/76/49 with its clear copy /51 (1798)",
+    "notes": "Groups are separated by stops; commas join page and word. A third number marks inflection (177,12 have, 177,12,2 had). Function words take ,2 groups on many pages. Pages 442-443 hold personal names."
+  },
+  "conditions": {
+    "prior_solution": {
+      "exists": "no",
+      "where": "212/217: no decipherment on the leaves and no edition found (web search 29 Oct 2026). 49: read at the time; its clear copy is /51.",
+      "found": "not found",
+      "used": false
+    },
+    "inputs": [
+      "images",
+      "cleartext context",
+      "known plaintext"
+    ],
+    "attack": "known plaintext",
+    "human_role": "Asked for a Middle East archive sweep with online images, chose to view the c. 1802 Jones letters, and asked for this target to be opened and the 1798 values tested on 1802. No target-specific hints.",
+    "tools": [
+      "align.py (DP alignment of 49 with 51)",
+      "apply.py (1798 values applied to 1802)",
+      "built-in browser on QDL IIIF"
+    ],
+    "models": [
+      "claude-opus-5-5"
+    ],
+    "sessions": 1,
+    "first_date": "2026-10-29",
+    "last_date": "2026-10-29"
+  },
+  "solution": [
+    {
+      "date": "2026-10-28",
+      "kind": "access",
+      "what": "QDL sweep (research/qdl/) found 212/217 ('Letter in Cypher', c. 1802); qdl.qa returns 403 to curl, so images were read in the desktop app's browser from iiif.qdl.qa.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-10-29",
+      "kind": "sibling key",
+      "what": "Searched QDL for Jones's cipher items; found /49 (Jones to Dundas, 1798, in code) and /51, catalogued as its decoded copy, which is headed 'Copy - Original in Cypher. Secret.'",
+      "result": "worked"
+    },
+    {
+      "date": "2026-10-29",
+      "kind": "transcription",
+      "what": "Transcribed /49 (two pages of page,word groups mixed with clear words) and /51 (clear) from IIIF crops.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-10-29",
+      "kind": "hypothesis",
+      "technique": [
+        "plaintext matching",
+        "key-structure hypothesis"
+      ],
+      "what": "Read the first lines of /49 against /51: one group per word (a = 1,1; confidential 75,2; conversation 75,28), clear words left in, suffixes (230,1 ing = making), and names spelled with letter groups whose pages rise with the alphabet (CONSTANTINOPLE, RUSSIANS). Concluded a one-part alphabetical code.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-10-29",
+      "kind": "solver",
+      "technique": [
+        "beam/DP decoding",
+        "plaintext matching"
+      ],
+      "what": "align.py: dynamic-programming alignment of 49 with 51 over (group, word, letter position), seeded letter groups, learning new letters (G 161,70). First run misaligned at the f. 1v catchword and at ENGLAND; fixed by dropping the catchword and allowing unseeded letters.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-10-29",
+      "kind": "transcription",
+      "what": "Transcribed /217 (2 pp.) and /212 (6 pp.) from IIIF crops.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-10-29",
+      "kind": "sibling key",
+      "what": "apply.py: applied the 1798 table to 212/217. 1798 values cover 50% of 217's 128 groups and 57% of 212's 580 (mostly letter groups; 1798 word groups recur only 19 times, each in sense: received, Bacha, Government, party, put, then, some).",
+      "result": "worked"
+    },
+    {
+      "date": "2026-10-29",
+      "kind": "crib",
+      "technique": [
+        "contextual inference",
+        "crib testing"
+      ],
+      "what": "Fixed the letter groups the 1798 letter does not use from spelled names in 1802 (B 28,1 ABDULLAH/BAGDAD; H 174,7; K 213,8 KARAPET/KARS; M 228,45 MERDIN/ERZEROUM; Z 440,72; Y 439,66 BAYEZEED; F 141,67 SEFLIS; second codes C 49,10 ASTRACHAN, N 249,48). Raises coverage to 68% (217) and 78% (212).",
+      "result": "worked"
+    },
+    {
+      "date": "2026-10-29",
+      "kind": "prediction",
+      "technique": [
+        "contextual inference",
+        "key-structure hypothesis"
+      ],
+      "what": "Proposed values for open word groups from their alphabet stretch and context (95,32 dated; 255,4 November; 188,31 January; 378,44 Tartar; 164,30 General; 272,17 Patriarch; 128,21 Emperor; 149,56 Firman; 394,37 troops). Not yet checked across repeats.",
+      "result": "partial"
+    },
+    {
+      "date": "2026-10-29",
+      "kind": "literature search",
+      "what": "Web search for any decipherment or study of Harford Jones's cipher: none found.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-10-28",
+      "kind": "verification",
+      "technique": [
+        "statistical test",
+        "language-model scoring"
+      ],
+      "what": "Statistical validation (docs/_validate.py): 645 tokens, 96 types, en-modern order 4: reading -2.669 per letter; random keys -3.814 (z 4.1); key annealed onto shuffled ciphertext best -2.317 (mean -2.34, z -15.1); annealer on the real text -2.003. Verdict: underdetermined.",
+      "result": "partial"
+    },
+    {
+      "date": "2026-10-29",
+      "kind": "sibling key",
+      "what": "Opened siblings /214, /243, /244, /274, /211, /213 on QDL. /214 uses a different homophonic two-digit alphabet for dates and names (RESHED, NOV, JAN, ARMENIANS); the rest are clear. None is a clear copy of a coded letter.",
+      "result": "failed"
+    },
+    {
+      "date": "2026-10-29",
+      "kind": "hypothesis",
+      "technique": [
+        "key-structure hypothesis",
+        "contextual inference",
+        "manual reconstruction"
+      ],
+      "what": "Bracketed the open groups by page position in the alphabet and context (proposals.tsv, 98 groups graded H/M/L): e.g. ALTOON IAAK = altun ayak \"golden leg\", the convent of the three churches = Uch Kilise; three misreadings resolved to 1798 values; 1798 table corrected (169,25 Government, 327,66 said).",
+      "result": "worked"
+    },
+    {
+      "date": "2026-10-29",
+      "kind": "reading",
+      "what": "apply.py --retry: 645 of 708 groups (91%) at grade H or better, 32 M, 25 L, 6 open.",
+      "result": "partial"
+    }
+  ],
+  "outcome": {
+    "validation": {
+      "date": "2026-10-28",
+      "model": "en-modern",
+      "file": "validation.tsv",
+      "tokens": 645,
+      "types": 96,
+      "tokens_per_type": 6.72,
+      "score": -2.669,
+      "nulls": {
+        "random keys": {
+          "n": 200,
+          "mean": -3.814,
+          "sd": 0.281,
+          "max": -3.197,
+          "z": 4.1,
+          "p": 0.005
+        },
+        "shuffled refit": {
+          "n": 6,
+          "mean": -2.34,
+          "sd": 0.022,
+          "max": -2.317,
+          "z": -15.1,
+          "p": 1.0
+        }
+      },
+      "power": -2.003,
+      "verdict": "underdetermined",
+      "notes": "claimed per-occurrence score -2.664; polyphony 0.005; 1112 unread tokens left out; annealer on the real text from random keys reached -2.003"
+    },
+    "class": "read in part",
+    "key": "partial",
+    "method": "key recovered based on plaintext from external sources",
+    "first_break": "unknown",
+    "fraction_read_method": "measured",
+    "fraction_read_source": "apply.py --retry, 29 Oct 2026: code groups given a 1798 value, a letter fixed by a 1802 name, or a grade-H proposal (645 of 708 in ct_212.txt + ct_217.txt); grade M (32) and L (25) proposals and 6 open groups counted unread",
+    "fraction_read": 0.91,
+    "codes_open": {
+      "open": 4,
+      "total": "unknown",
+      "tokens_open": 6
+    },
+    "verification": [
+      "contemporary decipherment",
+      "historical consistency"
+    ],
+    "credits": [
+      {
+        "who": "contemporary",
+        "role": "key or decipherment used",
+        "note": "clear copy IOR/L/PS/9/76/51 of the 1798 code letter /49, made at the time; the 1798 table was rebuilt from the pair"
+      }
+    ],
+    "gaps": [
+      {
+        "item": "groups with only an M or L value (57 tokens) and 6 open tokens (443,48 x3, 48,75,3, 239,69, 53,36)",
+        "blocker": "open-codes"
+      },
+      {
+        "item": "the ,2 function-word groups (homophones or a rule)",
+        "blocker": "open-codes"
+      },
+      {
+        "item": "name groups 442,55 / 442,56 (which Catholicos); the two letters conflict",
+        "blocker": "open-codes"
+      },
+      {
+        "item": "transcription doubts: /49 187,3 and 179,7; /217 213,7; /212 SGUSGEG",
+        "blocker": "open-codes"
+      }
+    ],
+    "notes": "Status in progress; work set aside 29 Oct 2026 to log the QDL sweep. The 1798 key from the 49/51 pair reads the 1802 letters (same code book). With 1802 name letters and graded proposals by alphabet position and context, 91% of groups read at grade H; validation underdetermined (letter model cannot separate spelled foreign names and isolated code words from a fitted key)."
+  }
+}

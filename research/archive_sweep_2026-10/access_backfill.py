@@ -1,4 +1,4 @@
-"""Backfill `access` and `access_note` on catalogue.json entries that have no `access` yet (28 Oct 2026).
+"""Backfill `access` and `access_note` on catalogue.json entries and research/leads.json leads that have no `access` yet (28 Oct 2026).
 
     python research/archive_sweep_2026-10/access_backfill.py            # dry run: counts + access_uncertain.md
     python research/archive_sweep_2026-10/access_backfill.py --write    # write catalogue.json
@@ -77,26 +77,32 @@ def snip(t, m, w=60):
 
 
 def main(write):
-    path = os.path.join(ROOT, 'catalogue.json')
-    cat = json.load(open(path, encoding='utf-8'))
+    # catalogue.json (vetted entries) and research/leads.json (unvetted leads) both carry access
+    files = [('catalogue.json', 'entries'), (os.path.join('research', 'leads.json'), 'leads')]
     n = {'archive': 0, 'online': 0, 'uncertain': 0, 'kept': 0}
-    unc = []
-    for e in cat['entries']:
-        if e.get('access'):
-            n['kept'] += 1
+    unc, loaded = [], []
+    for rel, key in files:
+        path = os.path.join(ROOT, rel)
+        if not os.path.exists(path):
             continue
-        on, off = evidence(e)
-        if off and not on:
-            e['access'] = 'archive'
-            e.setdefault('access_note', 'not online (backfilled 28 Oct 2026 from the entry: ' + off[0][:160] + ')')
-            n['archive'] += 1
-        elif on and not off:
-            e['access'] = 'online'
-            e.setdefault('access_note', 'online (backfilled 28 Oct 2026 from the entry: ' + on[0][:160] + ')')
-            n['online'] += 1
-        else:
-            n['uncertain'] += 1
-            unc.append((e, on, off))
+        data = json.load(open(path, encoding='utf-8'))
+        loaded.append((path, data))
+        for e in data[key]:
+            if e.get('access'):
+                n['kept'] += 1
+                continue
+            on, off = evidence(e)
+            if off and not on:
+                e['access'] = 'archive'
+                e.setdefault('access_note', 'not online (backfilled 28 Oct 2026 from the entry: ' + off[0][:160] + ')')
+                n['archive'] += 1
+            elif on and not off:
+                e['access'] = 'online'
+                e.setdefault('access_note', 'online (backfilled 28 Oct 2026 from the entry: ' + on[0][:160] + ')')
+                n['online'] += 1
+            else:
+                n['uncertain'] += 1
+                unc.append((e, on, off))
     print(n)
     out = ['# Catalogue entries whose archive access could not be decided (28 Oct 2026)', '',
            'From `access_backfill.py`: the entry\'s own fields gave either no access evidence or evidence both ways.',
@@ -125,9 +131,10 @@ def main(write):
         out += [f'### {g} ({len(rows)})', ''] + table(rows, False)
     open(os.path.join(HERE, 'access_uncertain.md'), 'w', encoding='utf-8').write('\n'.join(out))
     if write:
-        with open(path, 'w', encoding='utf-8') as fh:
-            json.dump(cat, fh, ensure_ascii=False, indent=1)
-            fh.write('\n')
+        for path, data in loaded:
+            with open(path, 'w', encoding='utf-8') as fh:
+                json.dump(data, fh, ensure_ascii=False, indent=1)
+                fh.write('\n')
 
 
 if __name__ == '__main__':
