@@ -73,7 +73,7 @@ def run(args):
         if ARC:
             return np.array([(t // 3) * 3 + min(2, max(0, t % 3 + d)) for t, d in zip(base, sl)])
         return np.array([((t // 3 + d) % 8) * 3 + t % 3 for t, d in zip(base, sl)])
-    if MODE == 'homo':
+    if MODE in ('homo', 'homoslip'):
         key = np.array([rng.randrange(A) for _ in range(24)])
     else:
         key = np.array(rng.sample(range(A), 24) if A >= 24 else [rng.randrange(A) for _ in range(24)])
@@ -85,17 +85,17 @@ def run(args):
         T = 4.0 * (1 - i / ITERS) ** 2 + 0.03
         k2, s2, c2 = key, slips, c
         u = rng.random()
-        if MODE == 'misread' and u < 0.2:
+        if MODE in ('misread', 'homoslip') and u < 0.2:
             s2 = slips.copy(); p = rng.randrange(n)
             s2[p] = 0 if slips[p] else rng.choice((-2, -1, 1, 2) if BOTH else (-1, 1))
             if np.count_nonzero(s2) > K:
                 continue
             c2 = reading(s2)
-        elif MODE == 'homo' and u < 0.4:
+        elif MODE in ('homo', 'homoslip') and u < 0.4:
             k2 = key.copy(); k2[rng.randrange(24)] = rng.randrange(A)
             if np.bincount(k2, minlength=A).max() > 2:
                 continue
-        elif u < 0.5 and MODE != 'homo':
+        elif u < 0.5 and MODE not in ('homo', 'homoslip'):
             k2 = key.copy(); s = rng.randrange(24)
             free = [a for a in range(A) if a not in set(k2.tolist())]
             if not free:
@@ -127,13 +127,16 @@ def make_controls(n_ctl, rng):
         letters = sorted(set(pt)); cells = rng.sample(TOKS, 24)
         if len(letters) > 24:
             continue
-        if MODE == 'homo':
+        if MODE in ('homo', 'homoslip'):
             freq = sorted(letters, key=lambda ch: -pt.count(ch))[:6]
             spare = [c for c in cells if c not in cells[:len(letters)]]
             key = {ch: [cells[i % 24]] for i, ch in enumerate(letters)}
             for ch, extra in zip(freq, spare):
                 key[ch].append(extra)
             sg = [rng.choice(key[ch]) for ch in pt]
+            if MODE == 'homoslip':
+                for q in rng.sample(range(87), K):
+                    o, a = sg[q]; sg[q] = ((o + rng.choice((-1, 1))) % 8, a)
         else:
             key = {ch: cells[i % 24] for i, ch in enumerate(letters)}
             sg = [key[ch] for ch in pt]

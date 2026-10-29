@@ -202,3 +202,12 @@ round	hypothesis	D	nulls	controls	verdict	best text	note
 57	German + misreads (≤6)	-2.729	-3.029..-2.844	-2.037..-1.774	negative		ctl 4/4 recovered
 57	Italian + misreads (≤6)	-2.585	-2.963..-2.693	-2.110..-2.012	negative		word seg -4.07 = shuffles
 57	Spanish + misreads (≤6)	-2.417	-2.736..-2.597	-2.335..-1.938	negative		word seg -3.48 = shuffles
+58	homophones + misreads (≤2 per letter, ≤6 slips)	-2.164	-2.408..-2.213	-2.197..-2.064	no power	uyroatsofthersevertyyesotothesestoofforhertmrsehethersofftherethershamerethrem	ctl acc 0.06..0.61
+59	Elgar register + misreads of either kind (≤6)	-2.551	-2.820..-2.570	-1.964..-1.867	negative	kslipdringformofoodssomegetbarorceincilooldthrobodyahmennebaladyalmoutalodyhati	ctl acc 0.90..0.97; word seg -3.89 vs shuffles -3.70..-4.08
+60	seven smaller languages + misreads (≤6)	see r60_65.txt			negative		above shuffles, below recovered controls; da/hu full power
+61	homophones it/es (≤2 per letter)	it -2.125; es -2.174	it -2.116; es -2.140		negative		note does not beat shuffles
+62	back-slang/reversed/abbrev/skeleton + misreads	see r60_65.txt			no power		controls 0-1/4 recovered
+63	measured + Jager transcriptions, homophones				negative		word seg -4.10/-3.76 vs shuffles -2.88..-3.97
+64	phonetic English (25 classes) + misreads				no power		0/3 controls recovered
+65	columns / line-reversed order + misreads				negative / recheck		line-reversed word seg -3.22 vs 4 shuffles -3.63..-4.88
+65b	line-reversed + misreads recheck (2 searches, 8 more shuffles)	-2.523; -2.476	-2.810..-2.585		negative	orficinessteevengerclawthadsmorillingouterewentdeed	decodes disagree; word seg -3.85/-3.80 vs shuffles -4.89..-3.52 (2 of 8 better)
