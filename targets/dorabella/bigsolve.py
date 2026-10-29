@@ -65,7 +65,11 @@ def run(args):
     base = np.array([TOKS.index(tuple(s)) for s in seq]); n = len(base)
     slips = np.zeros(n, dtype=np.int64)                     # -1, 0, +1 orientation slip per position
     ARC = os.environ.get('DORA_SLIP') == 'arcs'          # slips in the arc count (1..3) instead of the orientation
+    BOTH = os.environ.get('DORA_SLIP') == 'both'          # +-1 turns the orientation, +-2 changes the arc count
     def reading(sl):
+        if BOTH:
+            return np.array([(((t // 3 + d) % 8) * 3 + t % 3) if abs(d) == 1 else
+                             ((t // 3) * 3 + min(2, max(0, t % 3 + (d // 2)))) for t, d in zip(base, sl)])
         if ARC:
             return np.array([(t // 3) * 3 + min(2, max(0, t % 3 + d)) for t, d in zip(base, sl)])
         return np.array([((t // 3 + d) % 8) * 3 + t % 3 for t, d in zip(base, sl)])
@@ -83,7 +87,7 @@ def run(args):
         u = rng.random()
         if MODE == 'misread' and u < 0.2:
             s2 = slips.copy(); p = rng.randrange(n)
-            s2[p] = 0 if slips[p] else rng.choice((-1, 1))
+            s2[p] = 0 if slips[p] else rng.choice((-2, -1, 1, 2) if BOTH else (-1, 1))
             if np.count_nonzero(s2) > K:
                 continue
             c2 = reading(s2)
@@ -135,7 +139,10 @@ def make_controls(n_ctl, rng):
             sg = [key[ch] for ch in pt]
             for q in rng.sample(range(87), K):
                 o, a = sg[q]
-                if os.environ.get('DORA_SLIP') == 'arcs':
+                kind = os.environ.get('DORA_SLIP')
+                if kind == 'both':
+                    kind = rng.choice(('arcs', 'orient'))
+                if kind == 'arcs':
                     sg[q] = (o, 1 if a != 1 else rng.choice((0, 2)))      # a neighbouring arc count
                 else:
                     sg[q] = ((o + rng.choice((-1, 1))) % 8, a)
