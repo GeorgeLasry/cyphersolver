@@ -190,9 +190,30 @@
    "what": "align1474.py aligns the 310 signs with the paragraph's 325 letters and re-estimates the key (2 passes); about 30 signs valued; 'si aya' and 'a bueltas' settled from the cipher; 'rompido' kept after a 12x check.",
    "result": "worked"
   },
-  {"date": "2026-10-29", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 310 tokens, 47 types, es-golden-age order 4: reading -3.311 per letter; polyphonic: 20% of read tokens differ from their type's commonest value. Verdict: not applicable.", "result": "partial"}
+  {
+   "date": "2026-10-29",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Statistical validation (docs/_validate.py): 310 tokens, 47 types, es-golden-age order 4: reading -3.311 per letter; polyphonic: 20% of read tokens differ from their type's commonest value. Verdict: not applicable.",
+   "result": "partial"
+  }
  ],
- "outcome": {"validation": {"date": "2026-10-29", "model": "es-golden-age", "file": "validation.tsv", "tokens": 310, "types": 47, "tokens_per_type": 6.6, "score": -3.311, "nulls": {}, "verdict": "not applicable", "notes": "polyphonic: 20% of read tokens differ from their type's commonest value"}, 
+ "outcome": {
+  "validation": {
+   "date": "2026-10-29",
+   "model": "es-golden-age",
+   "file": "validation.tsv",
+   "tokens": 310,
+   "types": 47,
+   "tokens_per_type": 6.6,
+   "score": -3.311,
+   "nulls": {},
+   "verdict": "not applicable",
+   "notes": "polyphonic: 20% of read tokens differ from their type's commonest value"
+  },
   "class": "read in part",
   "key": "partial",
   "method": "key recovered based on adjacent plaintext",
@@ -204,7 +225,10 @@
   "fraction_read": 0.97,
   "fraction_read_method": "estimated",
   "fraction_read_source": "d64: 199 of 201 signs read (two open, 13 places with a value chosen by sense); d73: all of the passage read from the clear paragraph, with three doubtful words.",
-  "verification": ["contemporary decipherment", "independent clear copy"],
+  "verification": [
+   "contemporary decipherment",
+   "independent clear copy"
+  ],
   "provenance": "contributed",
   "credits": [
    {
@@ -247,7 +271,13 @@
     "language": "es",
     "state": "read in part",
     "read_share": 0.97,
-    "summary": "Ferdinand reports the troops he brings for the relief of Perpignan: his continos and the men from Castile, more than 500 horse from Aragon, the Valencians (some already at Barcelona), 800 horse in all with 100 men-at-arms."
+    "summary": "Ferdinand reports the troops he brings for the relief of Perpignan: his continos and the men from Castile, more than 500 horse from Aragon, the Valencians (some already at Barcelona), 800 horse in all with 100 men-at-arms.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude (Sonnet 5.5), maintainer review",
+     "date": "2026-10-30",
+     "note": "Read the reading file as sentences in Spanish and checked it against the English translation; coherent, with the holes the NOTES list. Not checked against the page image by a person."
+    }
    },
    {
     "doc": "d73",
@@ -260,7 +290,13 @@
     "language": "es",
     "state": "read",
     "read_share": 0.98,
-    "summary": "Ferdinand is astonished that the infanta Juana's marriage has not been broken off as negotiated, and asks that Mossèn Santcliment be the one sent to Naples, so that his own affairs are handled with the others."
+    "summary": "Ferdinand is astonished that the infanta Juana's marriage has not been broken off as negotiated, and asks that Mossèn Santcliment be the one sent to Naples, so that his own affairs are handled with the others.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude (Sonnet 5.5), maintainer review",
+     "date": "2026-10-30",
+     "note": "Read the reading file as sentences in Spanish and checked it against the English translation; coherent, with the holes the NOTES list. Not checked against the page image by a person."
+    }
    }
   ],
   "key_file": [
