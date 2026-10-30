@@ -19,17 +19,17 @@
     "source": "The Latin exemplar on f. 30 (image 4) filed with the two cipher copies (f. 28, f. 29)."
    },
    "length": {
-    "tokens": "unknown",
-    "distinct": "unknown",
+    "tokens": 572,
+    "distinct": 80,
     "unit": "symbols",
     "measured": false,
-    "file": "none"
+    "file": "transcription/f29_lines_01-07.txt"
    },
    "transcription": {
     "by": "llm from images",
     "source": "AIS getimage.aspx, width 2400",
     "image_quality": "good",
-    "notes": "Cipher not yet transcribed. The Latin exemplar is transcribed in texts/exemplar_7-4-4_A.txt."
+    "notes": "f. 29 (copy A) transcribed sign by sign, 13 lines, 572 signs including 21 null words, by two image agents on 30 Oct 2026 (transcription/f29_lines_01-07.txt, f29_lines_08-13.txt). The agents had the Latin exemplar open, so values marked * come from it and unmarked values may be biased toward it; a blind re-transcription has not been made. f. 28 and the 7-4-5 copies not transcribed."
    },
    "read": "not read"
   },
@@ -142,6 +142,29 @@
     "key-structure hypothesis",
     "key matching"
    ]
+  },
+  {
+   "date": "2026-10-30",
+   "kind": "transcription",
+   "what": "Cut 13 lines of f. 29 into 26 half-line crops (2x) and had two image agents transcribe them sign by sign, with the R367 key brief and the exemplar as crib; 572 signs, 80 sign labels, 6 left unknown.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-30",
+   "kind": "crib",
+   "what": "Decoded f. 29 with the R367 values and aligned the result on the Latin exemplar (global alignment, align_f29.py). The cipher is the exemplar's text from 'Sigismundus Augustus' on, preceded by a short extra passage: 462 of 473 key-derived tokens (97.7%) match; 56 tokens depend on the exemplar and are not counted. The exemplar's heading is not enciphered.",
+   "result": "worked",
+   "technique": [
+    "crib testing",
+    "plaintext matching",
+    "key matching"
+   ]
+  },
+  {
+   "date": "2026-10-30",
+   "kind": "control",
+   "what": "Tabulated sign label against value: 80 labels, 15 with more than one value, the rest consistent. Two values differ from KEY_BRIEF.md (r and x look reversed; some pi and cup forms). No independent (blind) transcription has been made, so the match rate is an upper bound.",
+   "result": "partial"
   }
  ],
  "outcome": {

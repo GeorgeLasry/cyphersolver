@@ -1,6 +1,6 @@
 # Sigismund August, Frater Georg and Queen Isabella to Ibrahim Pasha, 1548 (catalogue 885)
 
-Status: in progress. Images fetched, Latin exemplars of two letters transcribed, cipher not yet transcribed or decoded.
+Status: in progress. 7-4-4 f. 29 transcribed and decoded (the cipher spells the exemplar, 97.7% of key-derived tokens); f. 28, 7-4-5 and 7-4-9 not yet.
 
 HHStA Wien, StAbt Türkei I 7-4-4 (AIS 7040827, f. 28-30, 5 images), 7-4-5 (AIS 7040824, f. 31-34, 6 images), 7-4-9
 (AIS 7040845, f. 51-59, 11 images). Copies of letters to Ibrahim Pasha ("Hebrai Bassa") that Malvezzi sent to
@@ -32,22 +32,44 @@ nulls, and the graphic signs (hash, pi, crossed circles, breve and bar forms) ar
 tested. The Latin exemplar of 7-4-4 is about 560 letters; the cipher on f. 29 is 13 lines of about 45 signs, the same
 order of magnitude, so f. 29 may encipher exactly this text (with nulls). Not yet tested.
 
+## 7-4-4 f. 29 transcribed and decoded (30 Oct 2026)
+
+Thirteen lines, 572 signs (21 of them Latin-letter null words), transcribed from half-line crops by two image agents
+(`TRANSCRIPTION_BRIEF.md`; `transcription/f29_lines_01-07.txt`, `f29_lines_08-13.txt`, labels in `f29_labels_*.txt`).
+`align_f29.py` aligns the values on `texts/exemplar_7-4-4_A.txt`: the cipher spells the exemplar from *Sigismundus
+Augustus Dei gratia Rex Poloniae ...* to *... Maiestatis*, with 462 of 473 key-derived tokens matching (97.7%;
+`transcription/f29_alignment.txt`). 56 further tokens take their value from the exemplar (marked `*`) and are not counted.
+The exemplar's heading (*Ad Hebrai Bassa. Exemplum literae Regis Poloniae*) is not enciphered. The cipher opens with
+a short passage not in the exemplar (*replica*, after the nulls *idcirco b d*), and the last line ends *Maiestatis
+propria* where the exemplar reads *... Prebria*. The date clause and the closing (*Regni vero nri primo, Et loco suo, ex
+commissione ...*) fit only in part (L11-L12); 11 signs there are unexplained.
+
+**Caveat.** Both transcribers had the exemplar open. Unmarked values may still lean toward it, so 97.7% is an upper
+bound; a blind transcription of a few lines would test it. The sign-to-value table (`transcription/f29_label_values.tsv`)
+is consistent for 65 of 80 labels; 15 labels carry two values (mostly e/ae and u/e, the circle-on-stem family the key
+brief already calls ambiguous).
+
+**Corrections to the R367 brief** (from the transcribers, unchecked): r and x look reversed (the 9 with a crossed tail
+reads r, the 9 with a long smooth tail reads x); a pi with a right-leg stub reads s; a cup with a taller left upright
+reads g; the small round cup and the open arch read l.
+
 ## Remaining gaps
 
-- transcription of the cipher on f. 28 and f. 29 (7-4-4), f. 31-33 (7-4-5) and the enclosures of 7-4-9 - blocker: open-codes; nothing is blocked from outside, the work has not been done
+- 7-4-4 f. 28 (second cipher copy), f. 31-33 (7-4-5) and the enclosures of 7-4-9 not transcribed - blocker: open-codes; nothing is blocked from outside, the work has not been done
+- f. 29 L11-L12: 11 signs after *octauo* and before *Regni*/*commissione* unexplained; L01 first passage (*replica*) not in the exemplar; one `?` - blocker: open-codes
 
 ## Escalation
 
 - [x] siblings: malvezzi1548 (R366, R367, R386) is the same key family; its brief is the starting key
 - [ ] clear-pages: the Latin exemplars on f. 30 and f. 34 are the plaintext; 7-4-9 not yet read
-- [ ] known-keys: apply R367 unchanged to a transcribed line, then extend by alignment on the exemplar
+- [x] known-keys: R367 applied to f. 29; it fits (97.7% of key-derived tokens), with the r/x and a few other corrections above
 - [ ] print: Austro-Turcica 1541-1552 (pp. 276-278) not seen
 - [ ] key-rebuild
 - [ ] retry
 
 ## Next steps
 
-1. Transcribe the cipher of 7-4-4 f. 29 sign by sign from the 2400-px image (13 lines), using the R367 labels.
-2. Decode with the R367 alphabet and align the result on `texts/exemplar_7-4-4_A.txt`; the exemplar settles doubtful signs.
+1. Blind check: transcribe 2-3 lines of f. 29 without the exemplar and compare with the values above.
+2. Explain L11-L12 (the date clause) and the opening *replica* passage.
 3. Repeat for f. 28, then 7-4-5 (B and C against the two exemplars), then the 7-4-9 enclosures.
 4. Credit Harrison Bornstein (PR #196) for the lead to the Malvezzi key.
