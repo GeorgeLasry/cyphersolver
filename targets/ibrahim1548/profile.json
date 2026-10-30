@@ -29,7 +29,7 @@
     "by": "llm from images",
     "source": "AIS getimage.aspx, width 2400",
     "image_quality": "good",
-    "notes": "f. 29 (copy A) transcribed sign by sign, 13 lines, 572 signs including 21 null words, by two image agents on 30 Oct 2026 (transcription/f29_lines_01-07.txt, f29_lines_08-13.txt). The agents had the Latin exemplar open, so values marked * come from it and unmarked values may be biased toward it; a blind re-transcription has not been made. f. 28 and the 7-4-5 copies not transcribed."
+    "notes": "f. 29 (copy A) transcribed sign by sign, 13 lines, 572 signs including 21 null words, by two image agents on 30 Oct 2026 (transcription/f29_lines_01-07.txt, f29_lines_08-13.txt). The agents had the Latin exemplar open, so values marked * come from it and unmarked values may be biased toward it; a blind re-transcription has not been made. f. 28 and the 7-4-5 copies not transcribed. Blind check of lines 8-10: 61.4% match against the exemplar vs 99.2% crib-assisted (transcription/blind/RESULT.md); use 61% as the independent fit."
    },
    "read": "not read"
   },
@@ -165,6 +165,16 @@
    "kind": "control",
    "what": "Tabulated sign label against value: 80 labels, 15 with more than one value, the rest consistent. Two values differ from KEY_BRIEF.md (r and x look reversed; some pi and cup forms). No independent (blind) transcription has been made, so the match rate is an upper bound.",
    "result": "partial"
+  },
+  {
+   "date": "2026-10-30",
+   "kind": "control",
+   "what": "Blind check: one image agent transcribed f. 29 lines 8-10 from the crops and the R367 key files only (no exemplar, no crib). Against the exemplar segment its values match 70 of 114 scored tokens (61.4%), against 99.2% for the crib-assisted values of the same lines; the two transcriptions agree on 61 of 142 values. The key family is confirmed without the crib, but the earlier 97.7% overstated the independent fit.",
+   "result": "partial",
+   "technique": [
+    "statistical test",
+    "plaintext matching"
+   ]
   }
  ],
  "outcome": {

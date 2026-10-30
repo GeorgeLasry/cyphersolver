@@ -44,8 +44,11 @@ a short passage not in the exemplar (*replica*, after the nulls *idcirco b d*), 
 propria* where the exemplar reads *... Prebria*. The date clause and the closing (*Regni vero nri primo, Et loco suo, ex
 commissione ...*) fit only in part (L11-L12); 11 signs there are unexplained.
 
-**Caveat.** Both transcribers had the exemplar open. Unmarked values may still lean toward it, so 97.7% is an upper
-bound; a blind transcription of a few lines would test it. The sign-to-value table (`transcription/f29_label_values.tsv`)
+**Caveat, and the blind check.** Both transcribers had the exemplar open, so 97.7% is an upper bound. A blind
+transcription of lines 8-10 (no exemplar, no crib; `transcription/blind/RESULT.md`) matches the exemplar for 61.4% of its
+scored tokens (70/114), against 99.2% for the crib-assisted values of the same lines; the two transcriptions agree on 43%
+of values. So the key family is confirmed without the crib (chance is about 8%), but the crib moved the ambiguous
+signs: quote 61% as the independent fit, one noisy transcriber, three lines. The sign-to-value table (`transcription/f29_label_values.tsv`)
 is consistent for 65 of 80 labels; 15 labels carry two values (mostly e/ae and u/e, the circle-on-stem family the key
 brief already calls ambiguous).
 
@@ -69,7 +72,7 @@ reads g; the small round cup and the open arch read l.
 
 ## Next steps
 
-1. Blind check: transcribe 2-3 lines of f. 29 without the exemplar and compare with the values above.
+1. Second blind transcriber (or the stable label table without the crib) on lines 8-10 and on L02-L05, to firm up the 61%.
 2. Explain L11-L12 (the date clause) and the opening *replica* passage.
 3. Repeat for f. 28, then 7-4-5 (B and C against the two exemplars), then the 7-4-9 enclosures.
 4. Credit Harrison Bornstein (PR #196) for the lead to the Malvezzi key.
