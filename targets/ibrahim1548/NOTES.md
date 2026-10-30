@@ -56,6 +56,15 @@ brief already calls ambiguous).
 reads r, the 9 with a long smooth tail reads x); a pi with a right-leg stub reads s; a cup with a taller left upright
 reads g; the small round cup and the open arch read l.
 
+## f. 28 looked at, not transcribed (30 Oct 2026, paused)
+
+f. 28 (image 1 of AIS 7040827; also headed A, docket "1548 1/6") is not a second copy of f. 29's length: a header
+line (*... cum*, *1548 1/6*) and about 19 closely set lines of cipher, roughly 1,000 signs against the exemplar's 560
+letters, in a denser hand with many look-alike signs. It begins *... dicirco Dar.* (nulls) and ends *n spu atq spo*
+(nulls). Lines run down to the right by about 2.5 degrees (a deskew near 2.5 degrees sharpens the line profile best),
+and line spacing is about 66 px, so crops need rotation first. Whether it enciphers the same text with many more nulls
+or a longer text is not known; the exemplar crib may not fit. Work paused by the user on 30 Oct 2026.
+
 ## Remaining gaps
 
 - 7-4-4 f. 28 (second cipher copy), f. 31-33 (7-4-5) and the enclosures of 7-4-9 not transcribed - blocker: open-codes; nothing is blocked from outside, the work has not been done
